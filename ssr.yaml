@@ -5,59 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 法国_R_372, server: iepl-gz.safetelescope.cc, port: 49853, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 香港 Hongkong HKBN(VIP)●, server: gz1.52168.xyz, port: 11113, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:6cx2xnjg6ug, obfs-param: 1b73b623.baidu.com, udp: true}
-  - {name: 法国_R_274, server: gzyd-01.cctelescope.xyz, port: 23033, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 韩国直连, server: 61.111.128.153, port: 8888, type: ss, cipher: rc4-md5, password: Xiongmao@^ios.ss, udp: true}
-  - {name: 越南 Vietnam(VIP)●, server: gz1.52168.xyz, port: 11107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:6cx2xnjg6ug, obfs-param: 1b73b623.baidu.com, udp: true}
-  - {name: 美国 America●, server: gz1.52168.xyz, port: 11109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:6cx2xnjg6ug, obfs-param: 1b73b623.baidu.com, udp: true}
-  - {name: 德国 Germany★, server: gz2.52168.xyz, port: 12101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:6cx2xnjg6ug, obfs-param: 1b73b623.baidu.com, udp: true}
-  - {name: 俄罗斯 Russia★, server: gz2.52168.xyz, port: 12103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:6cx2xnjg6ug, obfs-param: 1b73b623.baidu.com, udp: true}
-  - {name: 菲律宾 Philippine●, server: gz1.52168.xyz, port: 11101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:6cx2xnjg6ug, obfs-param: 1b73b623.baidu.com, udp: true}
+  - {name: Hong Kong, server: 0001.hk.genzpn.com, port: 80, type: vmess, uuid: 4f4418cd-385c-4203-a323-1b4d2be8e495, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl.ops.kgvn.garenanow.com.akamaized.net}, udp: true}
+  - {name: 狮城01|公益|×2.0, server: gycm.01.211129.xyz, port: 12331, type: trojan, password: 61642317-a73a-4b99-869c-2c2bcf3fd545, sni: gycm.01.211129.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 法国_R_372
-      - 香港 Hongkong HKBN(VIP)●
-      - 法国_R_274
-      - 韩国直连
-      - 越南 Vietnam(VIP)●
-      - 美国 America●
-      - 德国 Germany★
-      - 俄罗斯 Russia★
-      - 菲律宾 Philippine●
+      - Hong Kong
+      - 狮城01|公益|×2.0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 法国_R_372
-      - 香港 Hongkong HKBN(VIP)●
-      - 法国_R_274
-      - 韩国直连
-      - 越南 Vietnam(VIP)●
-      - 美国 America●
-      - 德国 Germany★
-      - 俄罗斯 Russia★
-      - 菲律宾 Philippine●
+      - Hong Kong
+      - 狮城01|公益|×2.0
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 法国_R_372
-      - 香港 Hongkong HKBN(VIP)●
-      - 法国_R_274
-      - 韩国直连
-      - 越南 Vietnam(VIP)●
-      - 美国 America●
-      - 德国 Germany★
-      - 俄罗斯 Russia★
-      - 菲律宾 Philippine●
+      - Hong Kong
+      - 狮城01|公益|×2.0
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,64 +48,35 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 法国_R_372
-      - 香港 Hongkong HKBN(VIP)●
-      - 法国_R_274
-      - 韩国直连
-      - 越南 Vietnam(VIP)●
-      - 美国 America●
-      - 德国 Germany★
-      - 俄罗斯 Russia★
-      - 菲律宾 Philippine●
+      - Hong Kong
+      - 狮城01|公益|×2.0
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 Hongkong HKBN(VIP)●
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 法国_R_372
-      - 香港 Hongkong HKBN(VIP)●
-      - 法国_R_274
-      - 韩国直连
-      - 越南 Vietnam(VIP)●
-      - 美国 America●
-      - 德国 Germany★
-      - 俄罗斯 Russia★
-      - 菲律宾 Philippine●
+      - Hong Kong
+      - 狮城01|公益|×2.0
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 法国_R_372
-      - 香港 Hongkong HKBN(VIP)●
-      - 法国_R_274
-      - 韩国直连
-      - 越南 Vietnam(VIP)●
-      - 美国 America●
-      - 德国 Germany★
-      - 俄罗斯 Russia★
-      - 菲律宾 Philippine●
+      - Hong Kong
+      - 狮城01|公益|×2.0
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 法国_R_372
-      - 香港 Hongkong HKBN(VIP)●
-      - 法国_R_274
-      - 韩国直连
-      - 越南 Vietnam(VIP)●
-      - 美国 America●
-      - 德国 Germany★
-      - 俄罗斯 Russia★
-      - 菲律宾 Philippine●
+      - Hong Kong
+      - 狮城01|公益|×2.0
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -149,15 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 法国_R_372
-      - 香港 Hongkong HKBN(VIP)●
-      - 法国_R_274
-      - 韩国直连
-      - 越南 Vietnam(VIP)●
-      - 美国 America●
-      - 德国 Germany★
-      - 俄罗斯 Russia★
-      - 菲律宾 Philippine●
+      - Hong Kong
+      - 狮城01|公益|×2.0
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
