@@ -5,79 +5,79 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK-Openit.ml, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-f23c91cfbbc9, skip-cert-verify: true, udp: true}
-  - {name: HK-Openit.ml 2, server: hkcn2.doubledou.win, port: 4588, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, skip-cert-verify: true, udp: true}
-  - {name: HK-Openit.ml 3, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 5c7b33c6-6d83-11eb-b77b-f23c913c8d2b, skip-cert-verify: true, udp: true}
-  - {name: US-Openit.ml, server: qwanck.xyz, port: 443, type: trojan, password: 57aa53f3afbd, skip-cert-verify: true, udp: true}
-  - {name: KR-Openit.ml, server: sol.doubledou.win, port: 4588, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, skip-cert-verify: true, udp: true}
-  - {name: JP-Openit.ml, server: www.tokyo2023.ga, port: 443, type: trojan, password: 4f7dc540-d244-4e64-af21-4b5bb300add3, skip-cert-verify: true, udp: true}
-  - {name: TW-Openit.ml, server: tw.tcpbbr.net, port: 443, type: trojan, password: b155c2a4-ee79-11eb-a8bf-f23c91cfbbc9, skip-cert-verify: true, udp: true}
-  - {name: US-Openit.ml 2, server: hkaz3.xmrth-node.xyz, port: 14138, type: vmess, uuid: f6d03f94-7d51-3ed2-981a-f3298aedd9b5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: hkaz3.xmrth-node.xyz}}, udp: true}
-  - {name: US-Openit.ml 3, server: v2losdmit1.doubledou.win, port: 6674, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, skip-cert-verify: true, udp: true}
-  - {name: US-Openit.ml 4, server: cuvip.doubledou.win, port: 4583, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, skip-cert-verify: true, udp: true}
-  - {name: NL-Openit.ml, server: 213.183.59.229, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: RELAY-Openit.ml, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: VN-Openit.ml, server: vn01v2.vpnsieure.com, port: 80, type: vmess, uuid: 330efbdb-7171-4fd1-a524-d7b7d8e76732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnsieure, headers: {Host: vn01v2.vpnsieure.com}}, udp: true}
-  - {name: JP-Openit.ml 2, server: free.spcloud.us, port: 20010, type: trojan, password: 118fc04e-fb8c-4154-9092-352cf1958fcd, skip-cert-verify: true, udp: true}
+  - {name: 新加坡1-湘日隧道, server: 211.91.243.131, port: 49669, type: ss, cipher: aes-256-gcm, password: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, udp: true}
+  - {name: 日本4-湘日隧道, server: cs.kjch.xyz, port: 36905, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /adjas, headers: {Host: cs.kjch.xyz}}, udp: true}
+  - {name: DM香港1-湘日隧道, server: cs.kjch.xyz, port: 48408, type: ss, cipher: aes-256-gcm, password: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, udp: true}
+  - {name: 新加坡2-湘日隧道, server: 211.91.243.131, port: 33192, type: ss, cipher: aes-256-gcm, password: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, udp: true}
+  - {name: 新加坡4-湘日隧道, server: cs.kjch.xyz, port: 53137, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sadhj32, headers: {Host: cs.kjch.xyz}}, udp: true}
+  - {name: 日本2-湘日隧道, server: 211.91.243.131, port: 63421, type: ss, cipher: aes-256-gcm, password: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, udp: true}
+  - {name: 香港1-湘日隧道, server: 211.91.243.131, port: 22881, type: ss, cipher: aes-256-gcm, password: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, udp: true}
+  - {name: 新加坡3-湘日隧道, server: cs.kjch.xyz, port: 37828, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sadhj32, headers: {Host: cs.kjch.xyz}}, udp: true}
+  - {name: 美国2-湘日隧道, server: 211.91.243.131, port: 46703, type: ss, cipher: aes-256-gcm, password: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, udp: true}
+  - {name: 日本1-湘日隧道, server: 211.91.243.131, port: 57573, type: ss, cipher: aes-256-gcm, password: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, udp: true}
+  - {name: 美国4-湘日隧道, server: cs.kjch.xyz, port: 59827, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sksjdcsj392, headers: {Host: cs.kjch.xyz}}, udp: true}
+  - {name: 美国3-湘日隧道, server: cs.kjch.xyz, port: 52179, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /skj392, headers: {Host: cs.kjch.xyz}}, udp: true}
+  - {name: 德国-湘日隧道, server: 211.91.243.131, port: 38267, type: ss, cipher: aes-256-gcm, password: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, udp: true}
+  - {name: 美国1-湘日隧道, server: 211.91.243.131, port: 14716, type: ss, cipher: aes-256-gcm, password: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-Openit.ml
-      - HK-Openit.ml 2
-      - HK-Openit.ml 3
-      - US-Openit.ml
-      - KR-Openit.ml
-      - JP-Openit.ml
-      - TW-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - US-Openit.ml 4
-      - NL-Openit.ml
-      - RELAY-Openit.ml
-      - VN-Openit.ml
-      - JP-Openit.ml 2
+      - 新加坡1-湘日隧道
+      - 日本4-湘日隧道
+      - DM香港1-湘日隧道
+      - 新加坡2-湘日隧道
+      - 新加坡4-湘日隧道
+      - 日本2-湘日隧道
+      - 香港1-湘日隧道
+      - 新加坡3-湘日隧道
+      - 美国2-湘日隧道
+      - 日本1-湘日隧道
+      - 美国4-湘日隧道
+      - 美国3-湘日隧道
+      - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK-Openit.ml
-      - HK-Openit.ml 2
-      - HK-Openit.ml 3
-      - US-Openit.ml
-      - KR-Openit.ml
-      - JP-Openit.ml
-      - TW-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - US-Openit.ml 4
-      - NL-Openit.ml
-      - RELAY-Openit.ml
-      - VN-Openit.ml
-      - JP-Openit.ml 2
+      - 新加坡1-湘日隧道
+      - 日本4-湘日隧道
+      - DM香港1-湘日隧道
+      - 新加坡2-湘日隧道
+      - 新加坡4-湘日隧道
+      - 日本2-湘日隧道
+      - 香港1-湘日隧道
+      - 新加坡3-湘日隧道
+      - 美国2-湘日隧道
+      - 日本1-湘日隧道
+      - 美国4-湘日隧道
+      - 美国3-湘日隧道
+      - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-Openit.ml
-      - HK-Openit.ml 2
-      - HK-Openit.ml 3
-      - US-Openit.ml
-      - KR-Openit.ml
-      - JP-Openit.ml
-      - TW-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - US-Openit.ml 4
-      - NL-Openit.ml
-      - RELAY-Openit.ml
-      - VN-Openit.ml
-      - JP-Openit.ml 2
+      - 新加坡1-湘日隧道
+      - 日本4-湘日隧道
+      - DM香港1-湘日隧道
+      - 新加坡2-湘日隧道
+      - 新加坡4-湘日隧道
+      - 日本2-湘日隧道
+      - 香港1-湘日隧道
+      - 新加坡3-湘日隧道
+      - 美国2-湘日隧道
+      - 日本1-湘日隧道
+      - 美国4-湘日隧道
+      - 美国3-湘日隧道
+      - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,83 +96,85 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-Openit.ml
-      - HK-Openit.ml 2
-      - HK-Openit.ml 3
-      - US-Openit.ml
-      - KR-Openit.ml
-      - JP-Openit.ml
-      - TW-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - US-Openit.ml 4
-      - NL-Openit.ml
-      - RELAY-Openit.ml
-      - VN-Openit.ml
-      - JP-Openit.ml 2
+      - 新加坡1-湘日隧道
+      - 日本4-湘日隧道
+      - DM香港1-湘日隧道
+      - 新加坡2-湘日隧道
+      - 新加坡4-湘日隧道
+      - 日本2-湘日隧道
+      - 香港1-湘日隧道
+      - 新加坡3-湘日隧道
+      - 美国2-湘日隧道
+      - 日本1-湘日隧道
+      - 美国4-湘日隧道
+      - 美国3-湘日隧道
+      - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - DM香港1-湘日隧道
+      - 香港1-湘日隧道
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK-Openit.ml
-      - HK-Openit.ml 2
-      - HK-Openit.ml 3
-      - US-Openit.ml
-      - KR-Openit.ml
-      - JP-Openit.ml
-      - TW-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - US-Openit.ml 4
-      - NL-Openit.ml
-      - RELAY-Openit.ml
-      - VN-Openit.ml
-      - JP-Openit.ml 2
+      - 新加坡1-湘日隧道
+      - 日本4-湘日隧道
+      - DM香港1-湘日隧道
+      - 新加坡2-湘日隧道
+      - 新加坡4-湘日隧道
+      - 日本2-湘日隧道
+      - 香港1-湘日隧道
+      - 新加坡3-湘日隧道
+      - 美国2-湘日隧道
+      - 日本1-湘日隧道
+      - 美国4-湘日隧道
+      - 美国3-湘日隧道
+      - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK-Openit.ml
-      - HK-Openit.ml 2
-      - HK-Openit.ml 3
-      - US-Openit.ml
-      - KR-Openit.ml
-      - JP-Openit.ml
-      - TW-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - US-Openit.ml 4
-      - NL-Openit.ml
-      - RELAY-Openit.ml
-      - VN-Openit.ml
-      - JP-Openit.ml 2
+      - 新加坡1-湘日隧道
+      - 日本4-湘日隧道
+      - DM香港1-湘日隧道
+      - 新加坡2-湘日隧道
+      - 新加坡4-湘日隧道
+      - 日本2-湘日隧道
+      - 香港1-湘日隧道
+      - 新加坡3-湘日隧道
+      - 美国2-湘日隧道
+      - 日本1-湘日隧道
+      - 美国4-湘日隧道
+      - 美国3-湘日隧道
+      - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK-Openit.ml
-      - HK-Openit.ml 2
-      - HK-Openit.ml 3
-      - US-Openit.ml
-      - KR-Openit.ml
-      - JP-Openit.ml
-      - TW-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - US-Openit.ml 4
-      - NL-Openit.ml
-      - RELAY-Openit.ml
-      - VN-Openit.ml
-      - JP-Openit.ml 2
+      - 新加坡1-湘日隧道
+      - 日本4-湘日隧道
+      - DM香港1-湘日隧道
+      - 新加坡2-湘日隧道
+      - 新加坡4-湘日隧道
+      - 日本2-湘日隧道
+      - 香港1-湘日隧道
+      - 新加坡3-湘日隧道
+      - 美国2-湘日隧道
+      - 日本1-湘日隧道
+      - 美国4-湘日隧道
+      - 美国3-湘日隧道
+      - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -188,20 +190,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK-Openit.ml
-      - HK-Openit.ml 2
-      - HK-Openit.ml 3
-      - US-Openit.ml
-      - KR-Openit.ml
-      - JP-Openit.ml
-      - TW-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - US-Openit.ml 4
-      - NL-Openit.ml
-      - RELAY-Openit.ml
-      - VN-Openit.ml
-      - JP-Openit.ml 2
+      - 新加坡1-湘日隧道
+      - 日本4-湘日隧道
+      - DM香港1-湘日隧道
+      - 新加坡2-湘日隧道
+      - 新加坡4-湘日隧道
+      - 日本2-湘日隧道
+      - 香港1-湘日隧道
+      - 新加坡3-湘日隧道
+      - 美国2-湘日隧道
+      - 日本1-湘日隧道
+      - 美国4-湘日隧道
+      - 美国3-湘日隧道
+      - 德国-湘日隧道
+      - 美国1-湘日隧道
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
