@@ -5,6 +5,30 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 香港IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: ed119cb3-5a9d-44eb-a382-9de92208d1cd, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45149, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: ed119cb3-5a9d-44eb-a382-9de92208d1cd, udp: true}
+  - {name: 日本IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45184, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: ed119cb3-5a9d-44eb-a382-9de92208d1cd, udp: true}
+  - {name: 香港IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45239, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 香港家庭宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45250, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 日本IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: ed119cb3-5a9d-44eb-a382-9de92208d1cd, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45149, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 美国IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: ed119cb3-5a9d-44eb-a382-9de92208d1cd, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: ed119cb3-5a9d-44eb-a382-9de92208d1cd, udp: true}
+  - {name: 美国IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45194, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 日本IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45184, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 美国IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: ed119cb3-5a9d-44eb-a382-9de92208d1cd, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45239, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 日本IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: ed119cb3-5a9d-44eb-a382-9de92208d1cd, udp: true}
+  - {name: 英国IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45413, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 英国IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45413, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 英国IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45324, type: ss, cipher: chacha20-ietf-poly1305, password: ed119cb3-5a9d-44eb-a382-9de92208d1cd, udp: true}
+  - {name: 免费|美国1, server: node.relay.az.naiun.pw, port: 80, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: node.free.usa.naiun.pw}}, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: ed119cb3-5a9d-44eb-a382-9de92208d1cd, udp: true}
+  - {name: 美国IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45194, type: vmess, uuid: ed119cb3-5a9d-44eb-a382-9de92208d1cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hz.bgp.rx.naiun.pw}}, udp: true}
   - {name: 1-美国11节点负载均衡, server: ddns1.pdjc.cc, port: 42000, type: ss, cipher: chacha20-ietf-poly1305, password: 1f316deb-02e7-4050-acd9-abcb3942fd37, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -12,12 +36,60 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 免费|美国1
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
       - 1-美国11节点负载均衡
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 免费|美国1
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
       - 1-美国11节点负载均衡
   - name: 🎥 NETFLIX
     type: select
@@ -25,6 +97,30 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 免费|美国1
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
       - 1-美国11节点负载均衡
   - name: ⛔️ 广告拦截
     type: select
@@ -44,23 +140,105 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 免费|美国1
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
       - 1-美国11节点负载均衡
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|SS|A01
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 免费|美国1
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
       - 1-美国11节点负载均衡
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 免费|美国1
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
       - 1-美国11节点负载均衡
   - name: 🍎 苹果服务
     type: select
@@ -68,6 +246,30 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 免费|美国1
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
       - 1-美国11节点负载均衡
   - name: 🎯 全球直连
     type: select
@@ -84,6 +286,30 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 免费|美国1
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
       - 1-美国11节点负载均衡
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
