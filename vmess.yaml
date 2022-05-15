@@ -5,39 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Lv.2 | 韩国 | 深圳移动 | 1.0×, server: z-fs.mceee.xyz, port: 22521, type: vmess, uuid: 08752e57-b75a-3d00-a5ea-63ee858fc7b9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /download, headers: {Host: z-fs.mceee.xyz}}, udp: true}
-  - {name: Lv.3 | 香港 | 江西CN2 | 1.5×, server: z-cn2.mceee.xyz, port: 23131, type: vmess, uuid: 08752e57-b75a-3d00-a5ea-63ee858fc7b9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /download, headers: {Host: z-cn2.mceee.xyz}}, udp: true}
-  - {name: Lv.4 | 日本 | 深港IEPL 8k | 2×, server: x.mceee.xyz, port: 26031, type: vmess, uuid: 08752e57-b75a-3d00-a5ea-63ee858fc7b9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Lv.1 | 美国 | 长沙联通 | 1.0×, server: z-cs.mceee.xyz, port: 21611, type: vmess, uuid: 08752e57-b75a-3d00-a5ea-63ee858fc7b9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /download, headers: {Host: z-cs.mceee.xyz}}, udp: true}
+  - {name: JK1-V4-沪新GIA01|v2ray, server: jike-gzyd.jiserver.xyz, port: 29851, type: vmess, uuid: 94b9abbb-57bb-3df8-90d9-ab92beb98269, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jike1, headers: {Host: jike1-giasg01.jiserver.xyz}}, udp: true}
+  - {name: JK1-V4-广新新机房01|v2ray, server: shlt.jiserver.xyz, port: 39503, type: vmess, uuid: 94b9abbb-57bb-3df8-90d9-ab92beb98269, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jike1, headers: {Host: jike1-azsg02.jiserver.xyz}}, udp: true}
+  - {name: JK1-V4-湖新LINODE02|v2ray|1.5x流量, server: jike1-gzyd.jiserver.xyz, port: 39569, type: vmess, uuid: 94b9abbb-57bb-3df8-90d9-ab92beb98269, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jike1, headers: {Host: jike1-linode10.jiserver.xyz}}, udp: true}
+  - {name: JK1-V4-沪德GIA01|v2ray, server: shlt.jiserver.xyz, port: 29891, type: vmess, uuid: 94b9abbb-57bb-3df8-90d9-ab92beb98269, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jike1, headers: {Host: jike1-de01.jiserver.xyz}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Lv.2 | 韩国 | 深圳移动 | 1.0×
-      - Lv.3 | 香港 | 江西CN2 | 1.5×
-      - Lv.4 | 日本 | 深港IEPL 8k | 2×
-      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V4-广新新机房01|v2ray
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-沪德GIA01|v2ray
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Lv.2 | 韩国 | 深圳移动 | 1.0×
-      - Lv.3 | 香港 | 江西CN2 | 1.5×
-      - Lv.4 | 日本 | 深港IEPL 8k | 2×
-      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V4-广新新机房01|v2ray
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-沪德GIA01|v2ray
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Lv.2 | 韩国 | 深圳移动 | 1.0×
-      - Lv.3 | 香港 | 江西CN2 | 1.5×
-      - Lv.4 | 日本 | 深港IEPL 8k | 2×
-      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V4-广新新机房01|v2ray
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-沪德GIA01|v2ray
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,45 +56,43 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Lv.2 | 韩国 | 深圳移动 | 1.0×
-      - Lv.3 | 香港 | 江西CN2 | 1.5×
-      - Lv.4 | 日本 | 深港IEPL 8k | 2×
-      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V4-广新新机房01|v2ray
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-沪德GIA01|v2ray
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Lv.3 | 香港 | 江西CN2 | 1.5×
-      - Lv.4 | 日本 | 深港IEPL 8k | 2×
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Lv.2 | 韩国 | 深圳移动 | 1.0×
-      - Lv.3 | 香港 | 江西CN2 | 1.5×
-      - Lv.4 | 日本 | 深港IEPL 8k | 2×
-      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V4-广新新机房01|v2ray
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-沪德GIA01|v2ray
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Lv.2 | 韩国 | 深圳移动 | 1.0×
-      - Lv.3 | 香港 | 江西CN2 | 1.5×
-      - Lv.4 | 日本 | 深港IEPL 8k | 2×
-      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V4-广新新机房01|v2ray
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-沪德GIA01|v2ray
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Lv.2 | 韩国 | 深圳移动 | 1.0×
-      - Lv.3 | 香港 | 江西CN2 | 1.5×
-      - Lv.4 | 日本 | 深港IEPL 8k | 2×
-      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V4-广新新机房01|v2ray
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-沪德GIA01|v2ray
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -110,10 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Lv.2 | 韩国 | 深圳移动 | 1.0×
-      - Lv.3 | 香港 | 江西CN2 | 1.5×
-      - Lv.4 | 日本 | 深港IEPL 8k | 2×
-      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V4-广新新机房01|v2ray
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-沪德GIA01|v2ray
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
