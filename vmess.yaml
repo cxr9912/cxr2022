@@ -5,63 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TG@nfeng6 中国 HongKong 02, server: bb01.nfeng6.pp.ua, port: 16020, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+  - {name: TG@nfeng6 柬埔寨 Phnom Penh, server: bb01.nfeng6.pp.ua, port: 26240, type: ss, cipher: aes-128-gcm, password: jtSJt37IdLG0SWcx, udp: true}
+  - {name: TG@nfeng6 中国 HongKong 02, server: bb01.nfeng6.pp.ua, port: 16020, type: ss, cipher: aes-128-gcm, password: jtSJt37IdLG0SWcx, udp: true}
   - {name: TG@nfeng6 日本 Osaka, server: bb01.nfeng6.pp.ua, port: 16000, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
   - {name: JK1-V4-沪新GIA01|v2ray, server: jike-gzyd.jiserver.xyz, port: 29851, type: vmess, uuid: 94b9abbb-57bb-3df8-90d9-ab92beb98269, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-giasg01.jiserver.xyz}, udp: true}
-  - {name: TG@nfeng6 菲律宾 Manila, server: bb01.nfeng6.pp.ua, port: 26210, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
-  - {name: TG@nfeng6 柬埔寨 Phnom Penh, server: bb01.nfeng6.pp.ua, port: 26240, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
-  - {name: TG@nfeng6 美国 Los Angeles, server: bb01.nfeng6.pp.ua, port: 16010, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+  - {name: TG@nfeng6 马来西亚 Kuala Lumpur, server: bb01.nfeng6.pp.ua, port: 26220, type: ss, cipher: aes-128-gcm, password: jtSJt37IdLG0SWcx, udp: true}
   - {name: TG@nfeng6 中国 Taipei 02, server: bb01.nfeng6.pp.ua, port: 16040, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+  - {name: TG@nfeng6 日本 Osaka 2, server: bb01.nfeng6.pp.ua, port: 16000, type: ss, cipher: aes-128-gcm, password: jtSJt37IdLG0SWcx, udp: true}
+  - {name: TG@nfeng6 菲律宾 Manila, server: bb01.nfeng6.pp.ua, port: 26210, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+  - {name: TG@nfeng6 菲律宾 Manila 2, server: bb01.nfeng6.pp.ua, port: 26210, type: ss, cipher: aes-128-gcm, password: jtSJt37IdLG0SWcx, udp: true}
+  - {name: TG@nfeng6 中国 Taipei 02 2, server: bb01.nfeng6.pp.ua, port: 16040, type: ss, cipher: aes-128-gcm, password: jtSJt37IdLG0SWcx, udp: true}
+  - {name: TG@nfeng6 美国 Los Angeles, server: bb01.nfeng6.pp.ua, port: 16010, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
   - {name: JK1-V4-广新新机房01|v2ray, server: shlt.jiserver.xyz, port: 39503, type: vmess, uuid: 94b9abbb-57bb-3df8-90d9-ab92beb98269, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azsg02.jiserver.xyz}, udp: true}
+  - {name: TG@nfeng6 美国 Los Angeles 2, server: bb01.nfeng6.pp.ua, port: 16010, type: ss, cipher: aes-128-gcm, password: jtSJt37IdLG0SWcx, udp: true}
   - {name: JK1-V4-沪德GIA01|v2ray, server: shlt.jiserver.xyz, port: 29891, type: vmess, uuid: 94b9abbb-57bb-3df8-90d9-ab92beb98269, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-de01.jiserver.xyz}, udp: true}
-  - {name: TG@nfeng6 新加坡 Singapore 02, server: bb01.nfeng6.pp.ua, port: 16030, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+  - {name: TG@nfeng6 新加坡 Singapore 02, server: bb01.nfeng6.pp.ua, port: 16030, type: ss, cipher: aes-128-gcm, password: jtSJt37IdLG0SWcx, udp: true}
+  - {name: TG@nfeng6 新加坡 Singapore 02 2, server: bb01.nfeng6.pp.ua, port: 16030, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+  - {name: TG@nfeng6 中国 HongKong 02 2, server: bb01.nfeng6.pp.ua, port: 16020, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+  - {name: TG@nfeng6 柬埔寨 Phnom Penh 2, server: bb01.nfeng6.pp.ua, port: 26240, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - TG@nfeng6 柬埔寨 Phnom Penh
       - TG@nfeng6 中国 HongKong 02
       - TG@nfeng6 日本 Osaka
       - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 菲律宾 Manila
-      - TG@nfeng6 柬埔寨 Phnom Penh
-      - TG@nfeng6 美国 Los Angeles
+      - TG@nfeng6 马来西亚 Kuala Lumpur
       - TG@nfeng6 中国 Taipei 02
+      - TG@nfeng6 日本 Osaka 2
+      - TG@nfeng6 菲律宾 Manila
+      - TG@nfeng6 菲律宾 Manila 2
+      - TG@nfeng6 中国 Taipei 02 2
+      - TG@nfeng6 美国 Los Angeles
       - JK1-V4-广新新机房01|v2ray
+      - TG@nfeng6 美国 Los Angeles 2
       - JK1-V4-沪德GIA01|v2ray
       - TG@nfeng6 新加坡 Singapore 02
+      - TG@nfeng6 新加坡 Singapore 02 2
+      - TG@nfeng6 中国 HongKong 02 2
+      - TG@nfeng6 柬埔寨 Phnom Penh 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - TG@nfeng6 柬埔寨 Phnom Penh
       - TG@nfeng6 中国 HongKong 02
       - TG@nfeng6 日本 Osaka
       - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 菲律宾 Manila
-      - TG@nfeng6 柬埔寨 Phnom Penh
-      - TG@nfeng6 美国 Los Angeles
+      - TG@nfeng6 马来西亚 Kuala Lumpur
       - TG@nfeng6 中国 Taipei 02
+      - TG@nfeng6 日本 Osaka 2
+      - TG@nfeng6 菲律宾 Manila
+      - TG@nfeng6 菲律宾 Manila 2
+      - TG@nfeng6 中国 Taipei 02 2
+      - TG@nfeng6 美国 Los Angeles
       - JK1-V4-广新新机房01|v2ray
+      - TG@nfeng6 美国 Los Angeles 2
       - JK1-V4-沪德GIA01|v2ray
       - TG@nfeng6 新加坡 Singapore 02
+      - TG@nfeng6 新加坡 Singapore 02 2
+      - TG@nfeng6 中国 HongKong 02 2
+      - TG@nfeng6 柬埔寨 Phnom Penh 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - TG@nfeng6 柬埔寨 Phnom Penh
       - TG@nfeng6 中国 HongKong 02
       - TG@nfeng6 日本 Osaka
       - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 菲律宾 Manila
-      - TG@nfeng6 柬埔寨 Phnom Penh
-      - TG@nfeng6 美国 Los Angeles
+      - TG@nfeng6 马来西亚 Kuala Lumpur
       - TG@nfeng6 中国 Taipei 02
+      - TG@nfeng6 日本 Osaka 2
+      - TG@nfeng6 菲律宾 Manila
+      - TG@nfeng6 菲律宾 Manila 2
+      - TG@nfeng6 中国 Taipei 02 2
+      - TG@nfeng6 美国 Los Angeles
       - JK1-V4-广新新机房01|v2ray
+      - TG@nfeng6 美国 Los Angeles 2
       - JK1-V4-沪德GIA01|v2ray
       - TG@nfeng6 新加坡 Singapore 02
+      - TG@nfeng6 新加坡 Singapore 02 2
+      - TG@nfeng6 中国 HongKong 02 2
+      - TG@nfeng6 柬埔寨 Phnom Penh 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,16 +112,24 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - TG@nfeng6 柬埔寨 Phnom Penh
       - TG@nfeng6 中国 HongKong 02
       - TG@nfeng6 日本 Osaka
       - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 菲律宾 Manila
-      - TG@nfeng6 柬埔寨 Phnom Penh
-      - TG@nfeng6 美国 Los Angeles
+      - TG@nfeng6 马来西亚 Kuala Lumpur
       - TG@nfeng6 中国 Taipei 02
+      - TG@nfeng6 日本 Osaka 2
+      - TG@nfeng6 菲律宾 Manila
+      - TG@nfeng6 菲律宾 Manila 2
+      - TG@nfeng6 中国 Taipei 02 2
+      - TG@nfeng6 美国 Los Angeles
       - JK1-V4-广新新机房01|v2ray
+      - TG@nfeng6 美国 Los Angeles 2
       - JK1-V4-沪德GIA01|v2ray
       - TG@nfeng6 新加坡 Singapore 02
+      - TG@nfeng6 新加坡 Singapore 02 2
+      - TG@nfeng6 中国 HongKong 02 2
+      - TG@nfeng6 柬埔寨 Phnom Penh 2
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -100,47 +140,71 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - TG@nfeng6 柬埔寨 Phnom Penh
       - TG@nfeng6 中国 HongKong 02
       - TG@nfeng6 日本 Osaka
       - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 菲律宾 Manila
-      - TG@nfeng6 柬埔寨 Phnom Penh
-      - TG@nfeng6 美国 Los Angeles
+      - TG@nfeng6 马来西亚 Kuala Lumpur
       - TG@nfeng6 中国 Taipei 02
+      - TG@nfeng6 日本 Osaka 2
+      - TG@nfeng6 菲律宾 Manila
+      - TG@nfeng6 菲律宾 Manila 2
+      - TG@nfeng6 中国 Taipei 02 2
+      - TG@nfeng6 美国 Los Angeles
       - JK1-V4-广新新机房01|v2ray
+      - TG@nfeng6 美国 Los Angeles 2
       - JK1-V4-沪德GIA01|v2ray
       - TG@nfeng6 新加坡 Singapore 02
+      - TG@nfeng6 新加坡 Singapore 02 2
+      - TG@nfeng6 中国 HongKong 02 2
+      - TG@nfeng6 柬埔寨 Phnom Penh 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - TG@nfeng6 柬埔寨 Phnom Penh
       - TG@nfeng6 中国 HongKong 02
       - TG@nfeng6 日本 Osaka
       - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 菲律宾 Manila
-      - TG@nfeng6 柬埔寨 Phnom Penh
-      - TG@nfeng6 美国 Los Angeles
+      - TG@nfeng6 马来西亚 Kuala Lumpur
       - TG@nfeng6 中国 Taipei 02
+      - TG@nfeng6 日本 Osaka 2
+      - TG@nfeng6 菲律宾 Manila
+      - TG@nfeng6 菲律宾 Manila 2
+      - TG@nfeng6 中国 Taipei 02 2
+      - TG@nfeng6 美国 Los Angeles
       - JK1-V4-广新新机房01|v2ray
+      - TG@nfeng6 美国 Los Angeles 2
       - JK1-V4-沪德GIA01|v2ray
       - TG@nfeng6 新加坡 Singapore 02
+      - TG@nfeng6 新加坡 Singapore 02 2
+      - TG@nfeng6 中国 HongKong 02 2
+      - TG@nfeng6 柬埔寨 Phnom Penh 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - TG@nfeng6 柬埔寨 Phnom Penh
       - TG@nfeng6 中国 HongKong 02
       - TG@nfeng6 日本 Osaka
       - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 菲律宾 Manila
-      - TG@nfeng6 柬埔寨 Phnom Penh
-      - TG@nfeng6 美国 Los Angeles
+      - TG@nfeng6 马来西亚 Kuala Lumpur
       - TG@nfeng6 中国 Taipei 02
+      - TG@nfeng6 日本 Osaka 2
+      - TG@nfeng6 菲律宾 Manila
+      - TG@nfeng6 菲律宾 Manila 2
+      - TG@nfeng6 中国 Taipei 02 2
+      - TG@nfeng6 美国 Los Angeles
       - JK1-V4-广新新机房01|v2ray
+      - TG@nfeng6 美国 Los Angeles 2
       - JK1-V4-沪德GIA01|v2ray
       - TG@nfeng6 新加坡 Singapore 02
+      - TG@nfeng6 新加坡 Singapore 02 2
+      - TG@nfeng6 中国 HongKong 02 2
+      - TG@nfeng6 柬埔寨 Phnom Penh 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -156,16 +220,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - TG@nfeng6 柬埔寨 Phnom Penh
       - TG@nfeng6 中国 HongKong 02
       - TG@nfeng6 日本 Osaka
       - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 菲律宾 Manila
-      - TG@nfeng6 柬埔寨 Phnom Penh
-      - TG@nfeng6 美国 Los Angeles
+      - TG@nfeng6 马来西亚 Kuala Lumpur
       - TG@nfeng6 中国 Taipei 02
+      - TG@nfeng6 日本 Osaka 2
+      - TG@nfeng6 菲律宾 Manila
+      - TG@nfeng6 菲律宾 Manila 2
+      - TG@nfeng6 中国 Taipei 02 2
+      - TG@nfeng6 美国 Los Angeles
       - JK1-V4-广新新机房01|v2ray
+      - TG@nfeng6 美国 Los Angeles 2
       - JK1-V4-沪德GIA01|v2ray
       - TG@nfeng6 新加坡 Singapore 02
+      - TG@nfeng6 新加坡 Singapore 02 2
+      - TG@nfeng6 中国 HongKong 02 2
+      - TG@nfeng6 柬埔寨 Phnom Penh 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
