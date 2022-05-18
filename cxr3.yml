@@ -5,37 +5,34 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: LV2 香港01流媒体解锁, server: native.youzi.win, port: 28881, type: vmess, uuid: c28c3721-09cc-485f-b4ac-69e69672f4ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV2 香港02流媒体解锁, server: native.youzi.win, port: 28882, type: vmess, uuid: c28c3721-09cc-485f-b4ac-69e69672f4ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV1 香港 - realm隧道, server: hk.youzi.win, port: 27771, type: vmess, uuid: c28c3721-09cc-485f-b4ac-69e69672f4ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV1 新加坡 - realm隧道, server: sg.youzi.win, port: 27773, type: vmess, uuid: c28c3721-09cc-485f-b4ac-69e69672f4ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV1 日本 - realm隧道, server: jp.youzi.win, port: 27775, type: vmess, uuid: c28c3721-09cc-485f-b4ac-69e69672f4ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV1 韩国 - realm隧道, server: kr.youzi.win, port: 27772, type: vmess, uuid: c28c3721-09cc-485f-b4ac-69e69672f4ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV1 美国 - realm隧道, server: us.youzi.win, port: 27774, type: vmess, uuid: c28c3721-09cc-485f-b4ac-69e69672f4ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 香港 - realm隧道, server: hk.youzi.win, port: 27771, type: vmess, uuid: f3c1094a-4ac9-4fee-88bc-d22e7e975f99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 新加坡 - realm隧道, server: sg.youzi.win, port: 27773, type: vmess, uuid: f3c1094a-4ac9-4fee-88bc-d22e7e975f99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 韩国 - realm隧道, server: kr.youzi.win, port: 27772, type: vmess, uuid: f3c1094a-4ac9-4fee-88bc-d22e7e975f99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 日本 - realm隧道, server: jp.youzi.win, port: 27775, type: vmess, uuid: f3c1094a-4ac9-4fee-88bc-d22e7e975f99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 香港01流媒体解锁, server: native.youzi.win, port: 28881, type: vmess, uuid: f3c1094a-4ac9-4fee-88bc-d22e7e975f99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 美国 - realm隧道, server: us.youzi.win, port: 27774, type: vmess, uuid: f3c1094a-4ac9-4fee-88bc-d22e7e975f99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - LV2 香港01流媒体解锁
-      - LV2 香港02流媒体解锁
       - LV1 香港 - realm隧道
       - LV1 新加坡 - realm隧道
-      - LV1 日本 - realm隧道
       - LV1 韩国 - realm隧道
+      - LV1 日本 - realm隧道
+      - LV1 香港01流媒体解锁
       - LV1 美国 - realm隧道
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - LV2 香港01流媒体解锁
-      - LV2 香港02流媒体解锁
       - LV1 香港 - realm隧道
       - LV1 新加坡 - realm隧道
-      - LV1 日本 - realm隧道
       - LV1 韩国 - realm隧道
+      - LV1 日本 - realm隧道
+      - LV1 香港01流媒体解锁
       - LV1 美国 - realm隧道
   - name: 🎥 NETFLIX
     type: select
@@ -43,12 +40,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - LV2 香港01流媒体解锁
-      - LV2 香港02流媒体解锁
       - LV1 香港 - realm隧道
       - LV1 新加坡 - realm隧道
-      - LV1 日本 - realm隧道
       - LV1 韩国 - realm隧道
+      - LV1 日本 - realm隧道
+      - LV1 香港01流媒体解锁
       - LV1 美国 - realm隧道
   - name: ⛔️ 广告拦截
     type: select
@@ -68,44 +64,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - LV2 香港01流媒体解锁
-      - LV2 香港02流媒体解锁
       - LV1 香港 - realm隧道
       - LV1 新加坡 - realm隧道
-      - LV1 日本 - realm隧道
       - LV1 韩国 - realm隧道
+      - LV1 日本 - realm隧道
+      - LV1 香港01流媒体解锁
       - LV1 美国 - realm隧道
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - LV2 香港01流媒体解锁
-      - LV2 香港02流媒体解锁
       - LV1 香港 - realm隧道
+      - LV1 香港01流媒体解锁
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - LV2 香港01流媒体解锁
-      - LV2 香港02流媒体解锁
       - LV1 香港 - realm隧道
       - LV1 新加坡 - realm隧道
-      - LV1 日本 - realm隧道
       - LV1 韩国 - realm隧道
+      - LV1 日本 - realm隧道
+      - LV1 香港01流媒体解锁
       - LV1 美国 - realm隧道
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - LV2 香港01流媒体解锁
-      - LV2 香港02流媒体解锁
       - LV1 香港 - realm隧道
       - LV1 新加坡 - realm隧道
-      - LV1 日本 - realm隧道
       - LV1 韩国 - realm隧道
+      - LV1 日本 - realm隧道
+      - LV1 香港01流媒体解锁
       - LV1 美国 - realm隧道
   - name: 🍎 苹果服务
     type: select
@@ -113,12 +105,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - LV2 香港01流媒体解锁
-      - LV2 香港02流媒体解锁
       - LV1 香港 - realm隧道
       - LV1 新加坡 - realm隧道
-      - LV1 日本 - realm隧道
       - LV1 韩国 - realm隧道
+      - LV1 日本 - realm隧道
+      - LV1 香港01流媒体解锁
       - LV1 美国 - realm隧道
   - name: 🎯 全球直连
     type: select
@@ -135,12 +126,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - LV2 香港01流媒体解锁
-      - LV2 香港02流媒体解锁
       - LV1 香港 - realm隧道
       - LV1 新加坡 - realm隧道
-      - LV1 日本 - realm隧道
       - LV1 韩国 - realm隧道
+      - LV1 日本 - realm隧道
+      - LV1 香港01流媒体解锁
       - LV1 美国 - realm隧道
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
