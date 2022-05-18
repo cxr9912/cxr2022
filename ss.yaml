@@ -5,67 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: VIP1新加坡  优化线路①, server: gzzv.v2ssyhub.xyz, port: 62104, type: vmess, uuid: f7dcb4b7-20fb-49b8-849f-daeb4e5e0541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港九龍城區, server: hk.iplc.im, port: 31101, type: ss, cipher: chacha20-ietf-poly1305, password: 733e4766-140e-41fa-b500-c4ffbf4db3f2, udp: true}
   - {name: VIP3新加坡 优化线路③, server: gzzv.v2ssyhub.xyz, port: 62110, type: vmess, uuid: f7dcb4b7-20fb-49b8-849f-daeb4e5e0541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: VIP1美国★优化线路③, server: gzzv.v2ssyhub.xyz, port: 62108, type: vmess, uuid: f7dcb4b7-20fb-49b8-849f-daeb4e5e0541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: VIP1匈牙利 优化线路①, server: gzzv.v2ssyhub.xyz, port: 62111, type: vmess, uuid: f7dcb4b7-20fb-49b8-849f-daeb4e5e0541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: VIP1荷兰★优化线路④, server: gzzv.v2ssyhub.xyz, port: 62109, type: vmess, uuid: f7dcb4b7-20fb-49b8-849f-daeb4e5e0541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: VIP1荷兰★优化线路④ 2, server: gzzv.v2ssyhub.xyz, port: 62109, type: vmess, uuid: f7dcb4b7-20fb-49b8-849f-daeb4e5e0541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 印度海得拉巴, server: in.iplc.skin, port: 11109, type: ss, cipher: chacha20-ietf-poly1305, password: 733e4766-140e-41fa-b500-c4ffbf4db3f2, udp: true}
+  - {name: VIP1匈牙利 优化线路①, server: gzzv.v2ssyhub.xyz, port: 62111, type: vmess, uuid: f7dcb4b7-20fb-49b8-849f-daeb4e5e0541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国伦敦, server: gb.iplc.skin, port: 11108, type: ss, cipher: chacha20-ietf-poly1305, password: 733e4766-140e-41fa-b500-c4ffbf4db3f2, udp: true}
   - {name: VIP1韩国 优化线路③, server: gzzv.v2ssyhub.xyz, port: 62113, type: vmess, uuid: f7dcb4b7-20fb-49b8-849f-daeb4e5e0541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国費利蒙, server: us.iplc.sbs, port: 21102, type: ss, cipher: chacha20-ietf-poly1305, password: 733e4766-140e-41fa-b500-c4ffbf4db3f2, udp: true}
+  - {name: JK1-V4-沪新GIA01|v2ray, server: jike-gzyd.jiserver.xyz, port: 29851, type: vmess, uuid: 94b9abbb-57bb-3df8-90d9-ab92beb98269, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-giasg01.jiserver.xyz}, udp: true}
+  - {name: VIP1新加坡  优化线路①, server: gzzv.v2ssyhub.xyz, port: 62104, type: vmess, uuid: f7dcb4b7-20fb-49b8-849f-daeb4e5e0541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 柬埔寨金边, server: kh.iplc.skin, port: 11121, type: ss, cipher: chacha20-ietf-poly1305, password: 733e4766-140e-41fa-b500-c4ffbf4db3f2, udp: true}
   - {name: VIP1日本★优化线路①, server: gzzv.v2ssyhub.xyz, port: 62107, type: vmess, uuid: f7dcb4b7-20fb-49b8-849f-daeb4e5e0541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: VIP1日本★优化线路③, server: gzzv.v2ssyhub.xyz, port: 62105, type: vmess, uuid: f7dcb4b7-20fb-49b8-849f-daeb4e5e0541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG频道@Jsnzk, server: hk.iplc.sbs, port: 21101, type: ss, cipher: chacha20-ietf-poly1305, password: 733e4766-140e-41fa-b500-c4ffbf4db3f2, udp: true}
   - {name: VIP2新加坡  优化线路②, server: gzzv.v2ssyhub.xyz, port: 62112, type: vmess, uuid: f7dcb4b7-20fb-49b8-849f-daeb4e5e0541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JK1-V4-沪新GIA01|v2ray, server: jike-gzyd.jiserver.xyz, port: 29851, type: vmess, uuid: 94b9abbb-57bb-3df8-90d9-ab92beb98269, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-giasg01.jiserver.xyz}, udp: true}
-  - {name: _CN_11, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VIP1新加坡  优化线路①
+      - 香港九龍城區
       - VIP3新加坡 优化线路③
-      - VIP1美国★优化线路③
-      - VIP1匈牙利 优化线路①
       - VIP1荷兰★优化线路④
+      - VIP1荷兰★优化线路④ 2
+      - 印度海得拉巴
+      - VIP1匈牙利 优化线路①
+      - 英国伦敦
       - VIP1韩国 优化线路③
+      - 美国費利蒙
+      - JK1-V4-沪新GIA01|v2ray
+      - VIP1新加坡  优化线路①
+      - 柬埔寨金边
       - VIP1日本★优化线路①
       - VIP1日本★优化线路③
+      - TG频道@Jsnzk
       - VIP2新加坡  优化线路②
-      - JK1-V4-沪新GIA01|v2ray
-      - _CN_11
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - VIP1新加坡  优化线路①
+      - 香港九龍城區
       - VIP3新加坡 优化线路③
-      - VIP1美国★优化线路③
-      - VIP1匈牙利 优化线路①
       - VIP1荷兰★优化线路④
+      - VIP1荷兰★优化线路④ 2
+      - 印度海得拉巴
+      - VIP1匈牙利 优化线路①
+      - 英国伦敦
       - VIP1韩国 优化线路③
+      - 美国費利蒙
+      - JK1-V4-沪新GIA01|v2ray
+      - VIP1新加坡  优化线路①
+      - 柬埔寨金边
       - VIP1日本★优化线路①
       - VIP1日本★优化线路③
+      - TG频道@Jsnzk
       - VIP2新加坡  优化线路②
-      - JK1-V4-沪新GIA01|v2ray
-      - _CN_11
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VIP1新加坡  优化线路①
+      - 香港九龍城區
       - VIP3新加坡 优化线路③
-      - VIP1美国★优化线路③
-      - VIP1匈牙利 优化线路①
       - VIP1荷兰★优化线路④
+      - VIP1荷兰★优化线路④ 2
+      - 印度海得拉巴
+      - VIP1匈牙利 优化线路①
+      - 英国伦敦
       - VIP1韩国 优化线路③
+      - 美国費利蒙
+      - JK1-V4-沪新GIA01|v2ray
+      - VIP1新加坡  优化线路①
+      - 柬埔寨金边
       - VIP1日本★优化线路①
       - VIP1日本★优化线路③
+      - TG频道@Jsnzk
       - VIP2新加坡  优化线路②
-      - JK1-V4-沪新GIA01|v2ray
-      - _CN_11
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,71 +104,92 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VIP1新加坡  优化线路①
+      - 香港九龍城區
       - VIP3新加坡 优化线路③
-      - VIP1美国★优化线路③
-      - VIP1匈牙利 优化线路①
       - VIP1荷兰★优化线路④
+      - VIP1荷兰★优化线路④ 2
+      - 印度海得拉巴
+      - VIP1匈牙利 优化线路①
+      - 英国伦敦
       - VIP1韩国 优化线路③
+      - 美国費利蒙
+      - JK1-V4-沪新GIA01|v2ray
+      - VIP1新加坡  优化线路①
+      - 柬埔寨金边
       - VIP1日本★优化线路①
       - VIP1日本★优化线路③
+      - TG频道@Jsnzk
       - VIP2新加坡  优化线路②
-      - JK1-V4-沪新GIA01|v2ray
-      - _CN_11
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港九龍城區
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - VIP1新加坡  优化线路①
+      - 香港九龍城區
       - VIP3新加坡 优化线路③
-      - VIP1美国★优化线路③
-      - VIP1匈牙利 优化线路①
       - VIP1荷兰★优化线路④
+      - VIP1荷兰★优化线路④ 2
+      - 印度海得拉巴
+      - VIP1匈牙利 优化线路①
+      - 英国伦敦
       - VIP1韩国 优化线路③
+      - 美国費利蒙
+      - JK1-V4-沪新GIA01|v2ray
+      - VIP1新加坡  优化线路①
+      - 柬埔寨金边
       - VIP1日本★优化线路①
       - VIP1日本★优化线路③
+      - TG频道@Jsnzk
       - VIP2新加坡  优化线路②
-      - JK1-V4-沪新GIA01|v2ray
-      - _CN_11
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - VIP1新加坡  优化线路①
+      - 香港九龍城區
       - VIP3新加坡 优化线路③
-      - VIP1美国★优化线路③
-      - VIP1匈牙利 优化线路①
       - VIP1荷兰★优化线路④
+      - VIP1荷兰★优化线路④ 2
+      - 印度海得拉巴
+      - VIP1匈牙利 优化线路①
+      - 英国伦敦
       - VIP1韩国 优化线路③
+      - 美国費利蒙
+      - JK1-V4-沪新GIA01|v2ray
+      - VIP1新加坡  优化线路①
+      - 柬埔寨金边
       - VIP1日本★优化线路①
       - VIP1日本★优化线路③
+      - TG频道@Jsnzk
       - VIP2新加坡  优化线路②
-      - JK1-V4-沪新GIA01|v2ray
-      - _CN_11
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VIP1新加坡  优化线路①
+      - 香港九龍城區
       - VIP3新加坡 优化线路③
-      - VIP1美国★优化线路③
-      - VIP1匈牙利 优化线路①
       - VIP1荷兰★优化线路④
+      - VIP1荷兰★优化线路④ 2
+      - 印度海得拉巴
+      - VIP1匈牙利 优化线路①
+      - 英国伦敦
       - VIP1韩国 优化线路③
+      - 美国費利蒙
+      - JK1-V4-沪新GIA01|v2ray
+      - VIP1新加坡  优化线路①
+      - 柬埔寨金边
       - VIP1日本★优化线路①
       - VIP1日本★优化线路③
+      - TG频道@Jsnzk
       - VIP2新加坡  优化线路②
-      - JK1-V4-沪新GIA01|v2ray
-      - _CN_11
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,17 +205,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VIP1新加坡  优化线路①
+      - 香港九龍城區
       - VIP3新加坡 优化线路③
-      - VIP1美国★优化线路③
-      - VIP1匈牙利 优化线路①
       - VIP1荷兰★优化线路④
+      - VIP1荷兰★优化线路④ 2
+      - 印度海得拉巴
+      - VIP1匈牙利 优化线路①
+      - 英国伦敦
       - VIP1韩国 优化线路③
+      - 美国費利蒙
+      - JK1-V4-沪新GIA01|v2ray
+      - VIP1新加坡  优化线路①
+      - 柬埔寨金边
       - VIP1日本★优化线路①
       - VIP1日本★优化线路③
+      - TG频道@Jsnzk
       - VIP2新加坡  优化线路②
-      - JK1-V4-沪新GIA01|v2ray
-      - _CN_11
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
