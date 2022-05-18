@@ -5,67 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_9, server: 183.232.48.148, port: 26037, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_10, server: 183.232.48.148, port: 26023, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_8, server: 183.232.48.148, port: 26021, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JK1-V4-沪新GIA01|v2ray, server: jike-gzyd.jiserver.xyz, port: 29851, type: vmess, uuid: 94b9abbb-57bb-3df8-90d9-ab92beb98269, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-giasg01.jiserver.xyz}, udp: true}
+  - {name: _CN_11, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: _CN_13, server: 183.232.48.148, port: 26039, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: _CN_7, server: 183.232.48.148, port: 26036, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JK1-V4-沪新GIA01|v2ray, server: jike-gzyd.jiserver.xyz, port: 29851, type: vmess, uuid: 94b9abbb-57bb-3df8-90d9-ab92beb98269, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-giasg01.jiserver.xyz}, udp: true}
-  - {name: TG@nfeng6 中国 HongKong 02 2, server: bb01.nfeng6.pp.ua, port: 16020, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
-  - {name: _CN_11, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TG@nfeng6 中国 Taipei 02, server: bb01.nfeng6.pp.ua, port: 16040, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
-  - {name: TG@nfeng6 柬埔寨 Phnom Penh 2, server: bb01.nfeng6.pp.ua, port: 26240, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
-  - {name: TG@nfeng6 菲律宾 Manila, server: bb01.nfeng6.pp.ua, port: 26210, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+  - {name: _CN_8, server: 183.232.48.148, port: 26021, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_9
-      - _CN_10
-      - _CN_8
+      - JK1-V4-沪新GIA01|v2ray
+      - _CN_11
       - _CN_13
       - _CN_7
-      - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 中国 HongKong 02 2
-      - _CN_11
-      - TG@nfeng6 中国 Taipei 02
-      - TG@nfeng6 柬埔寨 Phnom Penh 2
-      - TG@nfeng6 菲律宾 Manila
+      - _CN_8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_9
-      - _CN_10
-      - _CN_8
+      - JK1-V4-沪新GIA01|v2ray
+      - _CN_11
       - _CN_13
       - _CN_7
-      - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 中国 HongKong 02 2
-      - _CN_11
-      - TG@nfeng6 中国 Taipei 02
-      - TG@nfeng6 柬埔寨 Phnom Penh 2
-      - TG@nfeng6 菲律宾 Manila
+      - _CN_8
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_9
-      - _CN_10
-      - _CN_8
+      - JK1-V4-沪新GIA01|v2ray
+      - _CN_11
       - _CN_13
       - _CN_7
-      - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 中国 HongKong 02 2
-      - _CN_11
-      - TG@nfeng6 中国 Taipei 02
-      - TG@nfeng6 柬埔寨 Phnom Penh 2
-      - TG@nfeng6 菲律宾 Manila
+      - _CN_8
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,17 +60,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_9
-      - _CN_10
-      - _CN_8
+      - JK1-V4-沪新GIA01|v2ray
+      - _CN_11
       - _CN_13
       - _CN_7
-      - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 中国 HongKong 02 2
-      - _CN_11
-      - TG@nfeng6 中国 Taipei 02
-      - TG@nfeng6 柬埔寨 Phnom Penh 2
-      - TG@nfeng6 菲律宾 Manila
+      - _CN_8
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -105,50 +75,32 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_9
-      - _CN_10
-      - _CN_8
+      - JK1-V4-沪新GIA01|v2ray
+      - _CN_11
       - _CN_13
       - _CN_7
-      - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 中国 HongKong 02 2
-      - _CN_11
-      - TG@nfeng6 中国 Taipei 02
-      - TG@nfeng6 柬埔寨 Phnom Penh 2
-      - TG@nfeng6 菲律宾 Manila
+      - _CN_8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_9
-      - _CN_10
-      - _CN_8
+      - JK1-V4-沪新GIA01|v2ray
+      - _CN_11
       - _CN_13
       - _CN_7
-      - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 中国 HongKong 02 2
-      - _CN_11
-      - TG@nfeng6 中国 Taipei 02
-      - TG@nfeng6 柬埔寨 Phnom Penh 2
-      - TG@nfeng6 菲律宾 Manila
+      - _CN_8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_9
-      - _CN_10
-      - _CN_8
+      - JK1-V4-沪新GIA01|v2ray
+      - _CN_11
       - _CN_13
       - _CN_7
-      - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 中国 HongKong 02 2
-      - _CN_11
-      - TG@nfeng6 中国 Taipei 02
-      - TG@nfeng6 柬埔寨 Phnom Penh 2
-      - TG@nfeng6 菲律宾 Manila
+      - _CN_8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,17 +116,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_9
-      - _CN_10
-      - _CN_8
+      - JK1-V4-沪新GIA01|v2ray
+      - _CN_11
       - _CN_13
       - _CN_7
-      - JK1-V4-沪新GIA01|v2ray
-      - TG@nfeng6 中国 HongKong 02 2
-      - _CN_11
-      - TG@nfeng6 中国 Taipei 02
-      - TG@nfeng6 柬埔寨 Phnom Penh 2
-      - TG@nfeng6 菲律宾 Manila
+      - _CN_8
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
