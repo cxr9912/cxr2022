@@ -5,83 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DM香港1-湘日隧道, server: cs.kjch.xyz, port: 48408, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: 新加坡1-湘日隧道, server: 211.91.243.131, port: 49669, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: 日本4-湘日隧道, server: cs.kjch.xyz, port: 36905, type: vmess, uuid: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /adjas, ws-headers: {Host: cs.kjch.xyz}, udp: true}
-  - {name: 新加坡4-湘日隧道, server: cs.kjch.xyz, port: 53137, type: vmess, uuid: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sadhj32, ws-headers: {Host: cs.kjch.xyz}, udp: true}
-  - {name: 日本2-湘日隧道, server: 211.91.243.131, port: 63421, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: 日本1-湘日隧道, server: 211.91.243.131, port: 57573, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: 新加坡3-湘日隧道, server: cs.kjch.xyz, port: 37828, type: vmess, uuid: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sadhj32, ws-headers: {Host: cs.kjch.xyz}, udp: true}
-  - {name: 日本3-湘日隧道, server: cs.kjch.xyz, port: 52185, type: vmess, uuid: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sada, ws-headers: {Host: cs.kjch.xyz}, udp: true}
-  - {name: 香港1-湘日隧道, server: 211.91.243.131, port: 22881, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: 美国3-湘日隧道, server: cs.kjch.xyz, port: 52179, type: vmess, uuid: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /skj392, ws-headers: {Host: cs.kjch.xyz}, udp: true}
-  - {name: 新加坡2-湘日隧道, server: 211.91.243.131, port: 33192, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: 美国2-湘日隧道, server: 211.91.243.131, port: 46703, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: 美国4-湘日隧道, server: cs.kjch.xyz, port: 59827, type: vmess, uuid: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sksjdcsj392, ws-headers: {Host: cs.kjch.xyz}, udp: true}
-  - {name: 美国1-湘日隧道, server: 211.91.243.131, port: 14716, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: 德国-湘日隧道, server: 211.91.243.131, port: 38267, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
+  - {name: 韩国2-湘日隧道, server: cs.kjch.xyz, port: 51783, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sada, ws-headers: {Host: cs.kjch.xyz}, udp: true}
+  - {name: 新加坡1-湘日隧道, server: 211.91.243.131, port: 49669, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
+  - {name: 新加坡2-湘日隧道, server: 211.91.243.131, port: 33192, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
+  - {name: DM香港1-湘日隧道, server: cs.kjch.xyz, port: 48408, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
+  - {name: 日本1-湘日隧道, server: 211.91.243.131, port: 57573, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
+  - {name: 新加坡4-湘日隧道, server: cs.kjch.xyz, port: 53137, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sadhj32, ws-headers: {Host: cs.kjch.xyz}, udp: true}
+  - {name: 新加坡3-湘日隧道, server: cs.kjch.xyz, port: 37828, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sadhj32, ws-headers: {Host: cs.kjch.xyz}, udp: true}
+  - {name: 日本3-湘日隧道, server: cs.kjch.xyz, port: 52185, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sada, ws-headers: {Host: cs.kjch.xyz}, udp: true}
+  - {name: 香港1-湘日隧道, server: 211.91.243.131, port: 22881, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
+  - {name: 美国4-湘日隧道, server: cs.kjch.xyz, port: 59827, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sksjdcsj392, ws-headers: {Host: cs.kjch.xyz}, udp: true}
+  - {name: 韩国1-湘日隧道, server: cs.kjch.xyz, port: 58796, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sada, ws-headers: {Host: cs.kjch.xyz}, udp: true}
+  - {name: 日本4-湘日隧道, server: cs.kjch.xyz, port: 36905, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /adjas, ws-headers: {Host: cs.kjch.xyz}, udp: true}
+  - {name: 美国2-湘日隧道, server: 211.91.243.131, port: 46703, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
+  - {name: 美国3-湘日隧道, server: cs.kjch.xyz, port: 52179, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /skj392, ws-headers: {Host: cs.kjch.xyz}, udp: true}
+  - {name: 日本2-湘日隧道, server: 211.91.243.131, port: 63421, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
+  - {name: 德国-湘日隧道, server: 211.91.243.131, port: 38267, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
+  - {name: 美国1-湘日隧道, server: 211.91.243.131, port: 14716, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DM香港1-湘日隧道
+      - 韩国2-湘日隧道
       - 新加坡1-湘日隧道
-      - 日本4-湘日隧道
-      - 新加坡4-湘日隧道
-      - 日本2-湘日隧道
+      - 新加坡2-湘日隧道
+      - DM香港1-湘日隧道
       - 日本1-湘日隧道
+      - 新加坡4-湘日隧道
       - 新加坡3-湘日隧道
       - 日本3-湘日隧道
       - 香港1-湘日隧道
-      - 美国3-湘日隧道
-      - 新加坡2-湘日隧道
-      - 美国2-湘日隧道
       - 美国4-湘日隧道
-      - 美国1-湘日隧道
+      - 韩国1-湘日隧道
+      - 日本4-湘日隧道
+      - 美国2-湘日隧道
+      - 美国3-湘日隧道
+      - 日本2-湘日隧道
       - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DM香港1-湘日隧道
+      - 韩国2-湘日隧道
       - 新加坡1-湘日隧道
-      - 日本4-湘日隧道
-      - 新加坡4-湘日隧道
-      - 日本2-湘日隧道
+      - 新加坡2-湘日隧道
+      - DM香港1-湘日隧道
       - 日本1-湘日隧道
+      - 新加坡4-湘日隧道
       - 新加坡3-湘日隧道
       - 日本3-湘日隧道
       - 香港1-湘日隧道
-      - 美国3-湘日隧道
-      - 新加坡2-湘日隧道
-      - 美国2-湘日隧道
       - 美国4-湘日隧道
-      - 美国1-湘日隧道
+      - 韩国1-湘日隧道
+      - 日本4-湘日隧道
+      - 美国2-湘日隧道
+      - 美国3-湘日隧道
+      - 日本2-湘日隧道
       - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DM香港1-湘日隧道
+      - 韩国2-湘日隧道
       - 新加坡1-湘日隧道
-      - 日本4-湘日隧道
-      - 新加坡4-湘日隧道
-      - 日本2-湘日隧道
+      - 新加坡2-湘日隧道
+      - DM香港1-湘日隧道
       - 日本1-湘日隧道
+      - 新加坡4-湘日隧道
       - 新加坡3-湘日隧道
       - 日本3-湘日隧道
       - 香港1-湘日隧道
-      - 美国3-湘日隧道
-      - 新加坡2-湘日隧道
-      - 美国2-湘日隧道
       - 美国4-湘日隧道
-      - 美国1-湘日隧道
+      - 韩国1-湘日隧道
+      - 日本4-湘日隧道
+      - 美国2-湘日隧道
+      - 美国3-湘日隧道
+      - 日本2-湘日隧道
       - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -100,21 +108,23 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DM香港1-湘日隧道
+      - 韩国2-湘日隧道
       - 新加坡1-湘日隧道
-      - 日本4-湘日隧道
-      - 新加坡4-湘日隧道
-      - 日本2-湘日隧道
+      - 新加坡2-湘日隧道
+      - DM香港1-湘日隧道
       - 日本1-湘日隧道
+      - 新加坡4-湘日隧道
       - 新加坡3-湘日隧道
       - 日本3-湘日隧道
       - 香港1-湘日隧道
-      - 美国3-湘日隧道
-      - 新加坡2-湘日隧道
-      - 美国2-湘日隧道
       - 美国4-湘日隧道
-      - 美国1-湘日隧道
+      - 韩国1-湘日隧道
+      - 日本4-湘日隧道
+      - 美国2-湘日隧道
+      - 美国3-湘日隧道
+      - 日本2-湘日隧道
       - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -127,62 +137,68 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - DM香港1-湘日隧道
+      - 韩国2-湘日隧道
       - 新加坡1-湘日隧道
-      - 日本4-湘日隧道
-      - 新加坡4-湘日隧道
-      - 日本2-湘日隧道
+      - 新加坡2-湘日隧道
+      - DM香港1-湘日隧道
       - 日本1-湘日隧道
+      - 新加坡4-湘日隧道
       - 新加坡3-湘日隧道
       - 日本3-湘日隧道
       - 香港1-湘日隧道
-      - 美国3-湘日隧道
-      - 新加坡2-湘日隧道
-      - 美国2-湘日隧道
       - 美国4-湘日隧道
-      - 美国1-湘日隧道
+      - 韩国1-湘日隧道
+      - 日本4-湘日隧道
+      - 美国2-湘日隧道
+      - 美国3-湘日隧道
+      - 日本2-湘日隧道
       - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - DM香港1-湘日隧道
+      - 韩国2-湘日隧道
       - 新加坡1-湘日隧道
-      - 日本4-湘日隧道
-      - 新加坡4-湘日隧道
-      - 日本2-湘日隧道
+      - 新加坡2-湘日隧道
+      - DM香港1-湘日隧道
       - 日本1-湘日隧道
+      - 新加坡4-湘日隧道
       - 新加坡3-湘日隧道
       - 日本3-湘日隧道
       - 香港1-湘日隧道
-      - 美国3-湘日隧道
-      - 新加坡2-湘日隧道
-      - 美国2-湘日隧道
       - 美国4-湘日隧道
-      - 美国1-湘日隧道
+      - 韩国1-湘日隧道
+      - 日本4-湘日隧道
+      - 美国2-湘日隧道
+      - 美国3-湘日隧道
+      - 日本2-湘日隧道
       - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DM香港1-湘日隧道
+      - 韩国2-湘日隧道
       - 新加坡1-湘日隧道
-      - 日本4-湘日隧道
-      - 新加坡4-湘日隧道
-      - 日本2-湘日隧道
+      - 新加坡2-湘日隧道
+      - DM香港1-湘日隧道
       - 日本1-湘日隧道
+      - 新加坡4-湘日隧道
       - 新加坡3-湘日隧道
       - 日本3-湘日隧道
       - 香港1-湘日隧道
-      - 美国3-湘日隧道
-      - 新加坡2-湘日隧道
-      - 美国2-湘日隧道
       - 美国4-湘日隧道
-      - 美国1-湘日隧道
+      - 韩国1-湘日隧道
+      - 日本4-湘日隧道
+      - 美国2-湘日隧道
+      - 美国3-湘日隧道
+      - 日本2-湘日隧道
       - 德国-湘日隧道
+      - 美国1-湘日隧道
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -198,21 +214,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DM香港1-湘日隧道
+      - 韩国2-湘日隧道
       - 新加坡1-湘日隧道
-      - 日本4-湘日隧道
-      - 新加坡4-湘日隧道
-      - 日本2-湘日隧道
+      - 新加坡2-湘日隧道
+      - DM香港1-湘日隧道
       - 日本1-湘日隧道
+      - 新加坡4-湘日隧道
       - 新加坡3-湘日隧道
       - 日本3-湘日隧道
       - 香港1-湘日隧道
-      - 美国3-湘日隧道
-      - 新加坡2-湘日隧道
-      - 美国2-湘日隧道
       - 美国4-湘日隧道
-      - 美国1-湘日隧道
+      - 韩国1-湘日隧道
+      - 日本4-湘日隧道
+      - 美国2-湘日隧道
+      - 美国3-湘日隧道
+      - 日本2-湘日隧道
       - 德国-湘日隧道
+      - 美国1-湘日隧道
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
