@@ -5,127 +5,319 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡 TG@nfeng6#68, server: fg01.nfeng6.pp.ua, port: 37824, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 新加坡 TG@nfeng6#96, server: fg01.nfeng6.pp.ua, port: 52103, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 TG@nfeng6#30, server: fg01.nfeng6.pp.ua, port: 10013, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 新加坡 TG@nfeng6#67, server: fg01.nfeng6.pp.ua, port: 37823, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 新加坡 TG@nfeng6#94, server: fg01.nfeng6.pp.ua, port: 52105, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 TG@nfeng6#65, server: fg01.nfeng6.pp.ua, port: 37821, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 日本 TG@nfeng6#92, server: fg01.nfeng6.pp.ua, port: 52106, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 TG@nfeng6#33, server: fg01.nfeng6.pp.ua, port: 37815, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /baidu, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#32, server: fg01.nfeng6.pp.ua, port: 37814, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#27, server: fg01.nfeng6.pp.ua, port: 10041, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 台湾 TG@nfeng6#34, server: fg01.nfeng6.pp.ua, port: 10020, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#21, server: fg01.nfeng6.pp.ua, port: 10032, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 日本 TG@nfeng6#66, server: fg01.nfeng6.pp.ua, port: 37822, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 美国 TG@nfeng6#100, server: fg01.nfeng6.pp.ua, port: 52117, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 TG@nfeng6#31, server: fg01.nfeng6.pp.ua, port: 10014, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 美国 TG@nfeng6#90, server: fg01.nfeng6.pp.ua, port: 52107, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 TG@nfeng6#102, server: fg01.nfeng6.pp.ua, port: 52119, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 加拿大 TG@nfeng6#99, server: fg01.nfeng6.pp.ua, port: 52116, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 圣何塞 TG@nfeng6#89, server: fg01.nfeng6.pp.ua, port: 37825, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /baidu, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 加拿大 TG@nfeng6#46, server: fg01.nfeng6.pp.ua, port: 52125, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚 TG@nfeng6#45, server: fg01.nfeng6.pp.ua, port: 10046, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 法国 TG@nfeng6#48, server: fg01.nfeng6.pp.ua, port: 10027, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#30 2, server: fg01.nfeng6.pp.ua, port: 37817, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 英国 TG@nfeng6#104, server: fg01.nfeng6.pp.ua, port: 52120, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国 TG@nfeng6#47, server: fg01.nfeng6.pp.ua, port: 37816, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 美国 TG@nfeng6#12, server: fg01.nfeng6.pp.ua, port: 37813, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
+  - {name: 新加坡1|Netflix, server: gdcm3.relay.qchwnd.moe, port: 44605, type: trojan, password: 01483648-ae6d-4dfb-a54e-493e7463f4a5, sni: gdcm3.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: lv.5-中国==>日本3, server: zh01lv5jp03.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>香港6, server: zh01lv5hk06.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: 日本-02 |, server: szcm.9218561.xyz, port: 24615, type: trojan, password: 270183d3-8fa4-3ec6-8946-3ac350e6838c, sni: szcm.9218561.xyz, skip-cert-verify: true, udp: true}
+  - {name: Alien, server: shbgp.gia.wiki, port: 31353, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: lv.5-中国==>日本5, server: zh01lv5jp05.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: 日本-03 |, server: cscu.01.211129.xyz, port: 32814, type: trojan, password: 270183d3-8fa4-3ec6-8946-3ac350e6838c, sni: cscu.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: lv.5-中国==>香港9, server: zh01lv5hk09.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>香港5, server: zh01lv5hk05.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: 日本-02 | Linode, server: cscu.01.211129.xyz, port: 14359, type: trojan, password: 270183d3-8fa4-3ec6-8946-3ac350e6838c, sni: cscu.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: lv.5-中国==>日本4, server: zh01lv5jp04.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: Alien 2, server: gzbgp.gia.wiki, port: 30412, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港1-湘日隧道, server: 211.91.243.131, port: 22881, type: ss, cipher: aes-256-gcm, password: fc10d769-ef2c-4221-98e3-65e2a4784689, udp: true}
+  - {name: lv.5-中国==>香港3, server: zh01lv5hk03.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: 新加坡2-湘日隧道, server: 211.91.243.131, port: 33192, type: ss, cipher: aes-256-gcm, password: fc10d769-ef2c-4221-98e3-65e2a4784689, udp: true}
+  - {name: 新加坡1-湘日隧道, server: 211.91.243.131, port: 49669, type: ss, cipher: aes-256-gcm, password: fc10d769-ef2c-4221-98e3-65e2a4784689, udp: true}
+  - {name: Alien 3, server: shbgp.gia.wiki, port: 31354, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: lv.5-中国==>日本2, server: zh01lv5jp02.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: DM香港1-湘日隧道, server: cs.kjch.xyz, port: 48408, type: ss, cipher: aes-256-gcm, password: fc10d769-ef2c-4221-98e3-65e2a4784689, udp: true}
+  - {name: 香港-01 |, server: cscu.9218561.xyz, port: 44543, type: trojan, password: 270183d3-8fa4-3ec6-8946-3ac350e6838c, sni: cscu.9218561.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾1, server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: 01483648-ae6d-4dfb-a54e-493e7463f4a5, sni: tw.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 日本2-湘日隧道, server: 211.91.243.131, port: 63421, type: ss, cipher: aes-256-gcm, password: fc10d769-ef2c-4221-98e3-65e2a4784689, udp: true}
+  - {name: lv.5-中国==>日本1, server: zh01lv5jp01.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: Alien 4, server: 125.94.37.107, port: 15643, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 5, server: 125.94.37.107, port: 28020, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: lv.5-中国==>印度5, server: zh01lv5in05.feiguayun.xyz, port: 38087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: 日本-01 |, server: shcu.01.211129.xyz, port: 22982, type: trojan, password: 270183d3-8fa4-3ec6-8946-3ac350e6838c, sni: shcu.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本1-湘日隧道, server: 211.91.243.131, port: 57573, type: ss, cipher: aes-256-gcm, password: fc10d769-ef2c-4221-98e3-65e2a4784689, udp: true}
+  - {name: 香港-03 |沪港隧道, server: cscu.01.211129.xyz, port: 23563, type: trojan, password: 270183d3-8fa4-3ec6-8946-3ac350e6838c, sni: cscu.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: Alien 6, server: shbgp.gia.wiki, port: 31355, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: lv.5-中国==>印度3, server: zh01lv5in03.feiguayun.xyz, port: 38087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>印度4, server: zh01lv5in04.feiguayun.xyz, port: 38087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: Alien 7, server: a2e9b941934e4e7d.gia.wiki, port: 10345, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 8, server: shbgp.gia.wiki, port: 31357, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 9, server: a2e9b941934e4e7d.gia.wiki, port: 10358, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 10, server: shbgp.gia.wiki, port: 31371, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 11, server: a2e9b941934e4e7d.gia.wiki, port: 10348, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: lv.5-中国==>香港10, server: zh01lv5hk10.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>英国5, server: zh01lv5uk05.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>印度2, server: zh01lv5in02.feiguayun.xyz, port: 38087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>英国4, server: zh01lv5uk04.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>印度1, server: zh01lv5in01.feiguayun.xyz, port: 38087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: 美国2-湘日隧道, server: 211.91.243.131, port: 46703, type: ss, cipher: aes-256-gcm, password: fc10d769-ef2c-4221-98e3-65e2a4784689, udp: true}
+  - {name: 美国-02 |, server: shcu.01.211129.xyz, port: 19618, type: trojan, password: 270183d3-8fa4-3ec6-8946-3ac350e6838c, sni: shcu.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: Alien 12, server: a2e9b941934e4e7d.gia.wiki, port: 10357, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 13, server: 125.94.37.107, port: 50603, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: lv.5-中国==>英国1, server: zh01lv5uk01.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>英国3, server: zh01lv5uk03.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>德国1, server: zh01lv5ge01.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>德国5, server: zh01lv5ge05.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>英国2, server: zh01lv5uk02.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: Alien 14, server: a2e9b941934e4e7d.gia.wiki, port: 10365, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国1-湘日隧道, server: 211.91.243.131, port: 14716, type: ss, cipher: aes-256-gcm, password: fc10d769-ef2c-4221-98e3-65e2a4784689, udp: true}
+  - {name: Alien 15, server: shbgp.gia.wiki, port: 31356, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国-湘日隧道, server: 211.91.243.131, port: 38267, type: ss, cipher: aes-256-gcm, password: fc10d769-ef2c-4221-98e3-65e2a4784689, udp: true}
+  - {name: lv.5-中国==>加拿大4, server: zh01lv5ca04.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>加拿大1, server: zh01lv5ca01.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>加拿大3, server: zh01lv5ca03.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>澳大利亚3, server: zh01lv5au03.feiguayun.xyz, port: 39087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>加拿大2, server: zh01lv5ca02.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>加拿大5, server: zh01lv5ca05.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>新加坡5, server: zh01lv5sgp05.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: Alien 16, server: a2e9b941934e4e7d.gia.wiki, port: 10355, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: lv.5-中国==>德国4, server: zh01lv5ge04.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>美国3, server: zh01lv5us03.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>澳大利亚4, server: zh01lv5au04.feiguayun.xyz, port: 39087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>美国2, server: zh01lv5us02.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>新加坡3, server: zh01lv5sgp03.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>美国4, server: zh01lv5us04.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>德国3, server: zh01lv5ge03.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>美国5, server: zh01lv5us05.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>新加坡4, server: zh01lv5sgp04.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>美国1, server: zh01lv5us01.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
+  - {name: lv.5-中国==>新加坡2, server: zh01lv5sgp02.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: be9a0961-b894-4dab-945c-f9694e904d97, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#96
-      - 香港 TG@nfeng6#30
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#27
-      - 台湾 TG@nfeng6#34
-      - 香港 TG@nfeng6#21
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#100
-      - 香港 TG@nfeng6#31
-      - 美国 TG@nfeng6#90
-      - 德国 TG@nfeng6#102
-      - 加拿大 TG@nfeng6#99
-      - 圣何塞 TG@nfeng6#89
-      - 加拿大 TG@nfeng6#46
-      - 澳大利亚 TG@nfeng6#45
-      - 法国 TG@nfeng6#48
-      - 香港 TG@nfeng6#30 2
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 美国 TG@nfeng6#12
+      - 新加坡1|Netflix
+      - lv.5-中国==>日本3
+      - lv.5-中国==>香港6
+      - 日本-02 |
+      - Alien
+      - lv.5-中国==>日本5
+      - 日本-03 |
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港5
+      - 日本-02 | Linode
+      - lv.5-中国==>日本4
+      - Alien 2
+      - 香港1-湘日隧道
+      - lv.5-中国==>香港3
+      - 新加坡2-湘日隧道
+      - 新加坡1-湘日隧道
+      - Alien 3
+      - lv.5-中国==>日本2
+      - DM香港1-湘日隧道
+      - 香港-01 |
+      - 台湾1
+      - 日本2-湘日隧道
+      - lv.5-中国==>日本1
+      - Alien 4
+      - Alien 5
+      - lv.5-中国==>印度5
+      - 日本-01 |
+      - 日本1-湘日隧道
+      - 香港-03 |沪港隧道
+      - Alien 6
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - Alien 7
+      - Alien 8
+      - Alien 9
+      - Alien 10
+      - Alien 11
+      - lv.5-中国==>香港10
+      - lv.5-中国==>英国5
+      - lv.5-中国==>印度2
+      - lv.5-中国==>英国4
+      - lv.5-中国==>印度1
+      - 美国2-湘日隧道
+      - 美国-02 |
+      - Alien 12
+      - Alien 13
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国3
+      - lv.5-中国==>德国1
+      - lv.5-中国==>德国5
+      - lv.5-中国==>英国2
+      - Alien 14
+      - 美国1-湘日隧道
+      - Alien 15
+      - 德国-湘日隧道
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>新加坡5
+      - Alien 16
+      - lv.5-中国==>德国4
+      - lv.5-中国==>美国3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>美国2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>德国3
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>美国1
+      - lv.5-中国==>新加坡2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#96
-      - 香港 TG@nfeng6#30
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#27
-      - 台湾 TG@nfeng6#34
-      - 香港 TG@nfeng6#21
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#100
-      - 香港 TG@nfeng6#31
-      - 美国 TG@nfeng6#90
-      - 德国 TG@nfeng6#102
-      - 加拿大 TG@nfeng6#99
-      - 圣何塞 TG@nfeng6#89
-      - 加拿大 TG@nfeng6#46
-      - 澳大利亚 TG@nfeng6#45
-      - 法国 TG@nfeng6#48
-      - 香港 TG@nfeng6#30 2
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 美国 TG@nfeng6#12
+      - 新加坡1|Netflix
+      - lv.5-中国==>日本3
+      - lv.5-中国==>香港6
+      - 日本-02 |
+      - Alien
+      - lv.5-中国==>日本5
+      - 日本-03 |
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港5
+      - 日本-02 | Linode
+      - lv.5-中国==>日本4
+      - Alien 2
+      - 香港1-湘日隧道
+      - lv.5-中国==>香港3
+      - 新加坡2-湘日隧道
+      - 新加坡1-湘日隧道
+      - Alien 3
+      - lv.5-中国==>日本2
+      - DM香港1-湘日隧道
+      - 香港-01 |
+      - 台湾1
+      - 日本2-湘日隧道
+      - lv.5-中国==>日本1
+      - Alien 4
+      - Alien 5
+      - lv.5-中国==>印度5
+      - 日本-01 |
+      - 日本1-湘日隧道
+      - 香港-03 |沪港隧道
+      - Alien 6
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - Alien 7
+      - Alien 8
+      - Alien 9
+      - Alien 10
+      - Alien 11
+      - lv.5-中国==>香港10
+      - lv.5-中国==>英国5
+      - lv.5-中国==>印度2
+      - lv.5-中国==>英国4
+      - lv.5-中国==>印度1
+      - 美国2-湘日隧道
+      - 美国-02 |
+      - Alien 12
+      - Alien 13
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国3
+      - lv.5-中国==>德国1
+      - lv.5-中国==>德国5
+      - lv.5-中国==>英国2
+      - Alien 14
+      - 美国1-湘日隧道
+      - Alien 15
+      - 德国-湘日隧道
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>新加坡5
+      - Alien 16
+      - lv.5-中国==>德国4
+      - lv.5-中国==>美国3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>美国2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>德国3
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>美国1
+      - lv.5-中国==>新加坡2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#96
-      - 香港 TG@nfeng6#30
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#27
-      - 台湾 TG@nfeng6#34
-      - 香港 TG@nfeng6#21
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#100
-      - 香港 TG@nfeng6#31
-      - 美国 TG@nfeng6#90
-      - 德国 TG@nfeng6#102
-      - 加拿大 TG@nfeng6#99
-      - 圣何塞 TG@nfeng6#89
-      - 加拿大 TG@nfeng6#46
-      - 澳大利亚 TG@nfeng6#45
-      - 法国 TG@nfeng6#48
-      - 香港 TG@nfeng6#30 2
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 美国 TG@nfeng6#12
+      - 新加坡1|Netflix
+      - lv.5-中国==>日本3
+      - lv.5-中国==>香港6
+      - 日本-02 |
+      - Alien
+      - lv.5-中国==>日本5
+      - 日本-03 |
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港5
+      - 日本-02 | Linode
+      - lv.5-中国==>日本4
+      - Alien 2
+      - 香港1-湘日隧道
+      - lv.5-中国==>香港3
+      - 新加坡2-湘日隧道
+      - 新加坡1-湘日隧道
+      - Alien 3
+      - lv.5-中国==>日本2
+      - DM香港1-湘日隧道
+      - 香港-01 |
+      - 台湾1
+      - 日本2-湘日隧道
+      - lv.5-中国==>日本1
+      - Alien 4
+      - Alien 5
+      - lv.5-中国==>印度5
+      - 日本-01 |
+      - 日本1-湘日隧道
+      - 香港-03 |沪港隧道
+      - Alien 6
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - Alien 7
+      - Alien 8
+      - Alien 9
+      - Alien 10
+      - Alien 11
+      - lv.5-中国==>香港10
+      - lv.5-中国==>英国5
+      - lv.5-中国==>印度2
+      - lv.5-中国==>英国4
+      - lv.5-中国==>印度1
+      - 美国2-湘日隧道
+      - 美国-02 |
+      - Alien 12
+      - Alien 13
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国3
+      - lv.5-中国==>德国1
+      - lv.5-中国==>德国5
+      - lv.5-中国==>英国2
+      - Alien 14
+      - 美国1-湘日隧道
+      - Alien 15
+      - 德国-湘日隧道
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>新加坡5
+      - Alien 16
+      - lv.5-中国==>德国4
+      - lv.5-中国==>美国3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>美国2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>德国3
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>美国1
+      - lv.5-中国==>新加坡2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -144,139 +336,333 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#96
-      - 香港 TG@nfeng6#30
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#27
-      - 台湾 TG@nfeng6#34
-      - 香港 TG@nfeng6#21
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#100
-      - 香港 TG@nfeng6#31
-      - 美国 TG@nfeng6#90
-      - 德国 TG@nfeng6#102
-      - 加拿大 TG@nfeng6#99
-      - 圣何塞 TG@nfeng6#89
-      - 加拿大 TG@nfeng6#46
-      - 澳大利亚 TG@nfeng6#45
-      - 法国 TG@nfeng6#48
-      - 香港 TG@nfeng6#30 2
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 美国 TG@nfeng6#12
+      - 新加坡1|Netflix
+      - lv.5-中国==>日本3
+      - lv.5-中国==>香港6
+      - 日本-02 |
+      - Alien
+      - lv.5-中国==>日本5
+      - 日本-03 |
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港5
+      - 日本-02 | Linode
+      - lv.5-中国==>日本4
+      - Alien 2
+      - 香港1-湘日隧道
+      - lv.5-中国==>香港3
+      - 新加坡2-湘日隧道
+      - 新加坡1-湘日隧道
+      - Alien 3
+      - lv.5-中国==>日本2
+      - DM香港1-湘日隧道
+      - 香港-01 |
+      - 台湾1
+      - 日本2-湘日隧道
+      - lv.5-中国==>日本1
+      - Alien 4
+      - Alien 5
+      - lv.5-中国==>印度5
+      - 日本-01 |
+      - 日本1-湘日隧道
+      - 香港-03 |沪港隧道
+      - Alien 6
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - Alien 7
+      - Alien 8
+      - Alien 9
+      - Alien 10
+      - Alien 11
+      - lv.5-中国==>香港10
+      - lv.5-中国==>英国5
+      - lv.5-中国==>印度2
+      - lv.5-中国==>英国4
+      - lv.5-中国==>印度1
+      - 美国2-湘日隧道
+      - 美国-02 |
+      - Alien 12
+      - Alien 13
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国3
+      - lv.5-中国==>德国1
+      - lv.5-中国==>德国5
+      - lv.5-中国==>英国2
+      - Alien 14
+      - 美国1-湘日隧道
+      - Alien 15
+      - 德国-湘日隧道
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>新加坡5
+      - Alien 16
+      - lv.5-中国==>德国4
+      - lv.5-中国==>美国3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>美国2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>德国3
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>美国1
+      - lv.5-中国==>新加坡2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 TG@nfeng6#30
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#27
-      - 台湾 TG@nfeng6#34
-      - 香港 TG@nfeng6#21
-      - 香港 TG@nfeng6#31
-      - 香港 TG@nfeng6#30 2
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港5
+      - 香港1-湘日隧道
+      - lv.5-中国==>香港3
+      - DM香港1-湘日隧道
+      - 香港-01 |
+      - 台湾1
+      - 香港-03 |沪港隧道
+      - lv.5-中国==>香港10
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#96
-      - 香港 TG@nfeng6#30
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#27
-      - 台湾 TG@nfeng6#34
-      - 香港 TG@nfeng6#21
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#100
-      - 香港 TG@nfeng6#31
-      - 美国 TG@nfeng6#90
-      - 德国 TG@nfeng6#102
-      - 加拿大 TG@nfeng6#99
-      - 圣何塞 TG@nfeng6#89
-      - 加拿大 TG@nfeng6#46
-      - 澳大利亚 TG@nfeng6#45
-      - 法国 TG@nfeng6#48
-      - 香港 TG@nfeng6#30 2
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 美国 TG@nfeng6#12
+      - 新加坡1|Netflix
+      - lv.5-中国==>日本3
+      - lv.5-中国==>香港6
+      - 日本-02 |
+      - Alien
+      - lv.5-中国==>日本5
+      - 日本-03 |
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港5
+      - 日本-02 | Linode
+      - lv.5-中国==>日本4
+      - Alien 2
+      - 香港1-湘日隧道
+      - lv.5-中国==>香港3
+      - 新加坡2-湘日隧道
+      - 新加坡1-湘日隧道
+      - Alien 3
+      - lv.5-中国==>日本2
+      - DM香港1-湘日隧道
+      - 香港-01 |
+      - 台湾1
+      - 日本2-湘日隧道
+      - lv.5-中国==>日本1
+      - Alien 4
+      - Alien 5
+      - lv.5-中国==>印度5
+      - 日本-01 |
+      - 日本1-湘日隧道
+      - 香港-03 |沪港隧道
+      - Alien 6
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - Alien 7
+      - Alien 8
+      - Alien 9
+      - Alien 10
+      - Alien 11
+      - lv.5-中国==>香港10
+      - lv.5-中国==>英国5
+      - lv.5-中国==>印度2
+      - lv.5-中国==>英国4
+      - lv.5-中国==>印度1
+      - 美国2-湘日隧道
+      - 美国-02 |
+      - Alien 12
+      - Alien 13
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国3
+      - lv.5-中国==>德国1
+      - lv.5-中国==>德国5
+      - lv.5-中国==>英国2
+      - Alien 14
+      - 美国1-湘日隧道
+      - Alien 15
+      - 德国-湘日隧道
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>新加坡5
+      - Alien 16
+      - lv.5-中国==>德国4
+      - lv.5-中国==>美国3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>美国2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>德国3
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>美国1
+      - lv.5-中国==>新加坡2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#96
-      - 香港 TG@nfeng6#30
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#27
-      - 台湾 TG@nfeng6#34
-      - 香港 TG@nfeng6#21
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#100
-      - 香港 TG@nfeng6#31
-      - 美国 TG@nfeng6#90
-      - 德国 TG@nfeng6#102
-      - 加拿大 TG@nfeng6#99
-      - 圣何塞 TG@nfeng6#89
-      - 加拿大 TG@nfeng6#46
-      - 澳大利亚 TG@nfeng6#45
-      - 法国 TG@nfeng6#48
-      - 香港 TG@nfeng6#30 2
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 美国 TG@nfeng6#12
+      - 新加坡1|Netflix
+      - lv.5-中国==>日本3
+      - lv.5-中国==>香港6
+      - 日本-02 |
+      - Alien
+      - lv.5-中国==>日本5
+      - 日本-03 |
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港5
+      - 日本-02 | Linode
+      - lv.5-中国==>日本4
+      - Alien 2
+      - 香港1-湘日隧道
+      - lv.5-中国==>香港3
+      - 新加坡2-湘日隧道
+      - 新加坡1-湘日隧道
+      - Alien 3
+      - lv.5-中国==>日本2
+      - DM香港1-湘日隧道
+      - 香港-01 |
+      - 台湾1
+      - 日本2-湘日隧道
+      - lv.5-中国==>日本1
+      - Alien 4
+      - Alien 5
+      - lv.5-中国==>印度5
+      - 日本-01 |
+      - 日本1-湘日隧道
+      - 香港-03 |沪港隧道
+      - Alien 6
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - Alien 7
+      - Alien 8
+      - Alien 9
+      - Alien 10
+      - Alien 11
+      - lv.5-中国==>香港10
+      - lv.5-中国==>英国5
+      - lv.5-中国==>印度2
+      - lv.5-中国==>英国4
+      - lv.5-中国==>印度1
+      - 美国2-湘日隧道
+      - 美国-02 |
+      - Alien 12
+      - Alien 13
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国3
+      - lv.5-中国==>德国1
+      - lv.5-中国==>德国5
+      - lv.5-中国==>英国2
+      - Alien 14
+      - 美国1-湘日隧道
+      - Alien 15
+      - 德国-湘日隧道
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>新加坡5
+      - Alien 16
+      - lv.5-中国==>德国4
+      - lv.5-中国==>美国3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>美国2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>德国3
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>美国1
+      - lv.5-中国==>新加坡2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#96
-      - 香港 TG@nfeng6#30
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#27
-      - 台湾 TG@nfeng6#34
-      - 香港 TG@nfeng6#21
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#100
-      - 香港 TG@nfeng6#31
-      - 美国 TG@nfeng6#90
-      - 德国 TG@nfeng6#102
-      - 加拿大 TG@nfeng6#99
-      - 圣何塞 TG@nfeng6#89
-      - 加拿大 TG@nfeng6#46
-      - 澳大利亚 TG@nfeng6#45
-      - 法国 TG@nfeng6#48
-      - 香港 TG@nfeng6#30 2
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 美国 TG@nfeng6#12
+      - 新加坡1|Netflix
+      - lv.5-中国==>日本3
+      - lv.5-中国==>香港6
+      - 日本-02 |
+      - Alien
+      - lv.5-中国==>日本5
+      - 日本-03 |
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港5
+      - 日本-02 | Linode
+      - lv.5-中国==>日本4
+      - Alien 2
+      - 香港1-湘日隧道
+      - lv.5-中国==>香港3
+      - 新加坡2-湘日隧道
+      - 新加坡1-湘日隧道
+      - Alien 3
+      - lv.5-中国==>日本2
+      - DM香港1-湘日隧道
+      - 香港-01 |
+      - 台湾1
+      - 日本2-湘日隧道
+      - lv.5-中国==>日本1
+      - Alien 4
+      - Alien 5
+      - lv.5-中国==>印度5
+      - 日本-01 |
+      - 日本1-湘日隧道
+      - 香港-03 |沪港隧道
+      - Alien 6
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - Alien 7
+      - Alien 8
+      - Alien 9
+      - Alien 10
+      - Alien 11
+      - lv.5-中国==>香港10
+      - lv.5-中国==>英国5
+      - lv.5-中国==>印度2
+      - lv.5-中国==>英国4
+      - lv.5-中国==>印度1
+      - 美国2-湘日隧道
+      - 美国-02 |
+      - Alien 12
+      - Alien 13
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国3
+      - lv.5-中国==>德国1
+      - lv.5-中国==>德国5
+      - lv.5-中国==>英国2
+      - Alien 14
+      - 美国1-湘日隧道
+      - Alien 15
+      - 德国-湘日隧道
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>新加坡5
+      - Alien 16
+      - lv.5-中国==>德国4
+      - lv.5-中国==>美国3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>美国2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>德国3
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>美国1
+      - lv.5-中国==>新加坡2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -292,32 +678,80 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#96
-      - 香港 TG@nfeng6#30
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#27
-      - 台湾 TG@nfeng6#34
-      - 香港 TG@nfeng6#21
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#100
-      - 香港 TG@nfeng6#31
-      - 美国 TG@nfeng6#90
-      - 德国 TG@nfeng6#102
-      - 加拿大 TG@nfeng6#99
-      - 圣何塞 TG@nfeng6#89
-      - 加拿大 TG@nfeng6#46
-      - 澳大利亚 TG@nfeng6#45
-      - 法国 TG@nfeng6#48
-      - 香港 TG@nfeng6#30 2
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 美国 TG@nfeng6#12
+      - 新加坡1|Netflix
+      - lv.5-中国==>日本3
+      - lv.5-中国==>香港6
+      - 日本-02 |
+      - Alien
+      - lv.5-中国==>日本5
+      - 日本-03 |
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港5
+      - 日本-02 | Linode
+      - lv.5-中国==>日本4
+      - Alien 2
+      - 香港1-湘日隧道
+      - lv.5-中国==>香港3
+      - 新加坡2-湘日隧道
+      - 新加坡1-湘日隧道
+      - Alien 3
+      - lv.5-中国==>日本2
+      - DM香港1-湘日隧道
+      - 香港-01 |
+      - 台湾1
+      - 日本2-湘日隧道
+      - lv.5-中国==>日本1
+      - Alien 4
+      - Alien 5
+      - lv.5-中国==>印度5
+      - 日本-01 |
+      - 日本1-湘日隧道
+      - 香港-03 |沪港隧道
+      - Alien 6
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - Alien 7
+      - Alien 8
+      - Alien 9
+      - Alien 10
+      - Alien 11
+      - lv.5-中国==>香港10
+      - lv.5-中国==>英国5
+      - lv.5-中国==>印度2
+      - lv.5-中国==>英国4
+      - lv.5-中国==>印度1
+      - 美国2-湘日隧道
+      - 美国-02 |
+      - Alien 12
+      - Alien 13
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国3
+      - lv.5-中国==>德国1
+      - lv.5-中国==>德国5
+      - lv.5-中国==>英国2
+      - Alien 14
+      - 美国1-湘日隧道
+      - Alien 15
+      - 德国-湘日隧道
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>新加坡5
+      - Alien 16
+      - lv.5-中国==>德国4
+      - lv.5-中国==>美国3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>美国2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>德国3
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>美国1
+      - lv.5-中国==>新加坡2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -10519,4 +10953,3 @@ rules:
  - DOMAIN-KEYWORD,XLLiveUD,🎯 全球直连
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
-
