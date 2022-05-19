@@ -5,95 +5,159 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK香港 BGP 03*, server: hk.relay.113e.dogenode.xyz, port: 8113, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: HK香港 HKT 01**, server: hk.relay.121q.dogenode.xyz, port: 8121, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: JP日本 02, server: jp.relay.xsw2.dogenode.xyz, port: 8202, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: 新加坡 01, server: sg.anycast.1qwe.dogenode.xyz, port: 3501, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: HK香港 BGP 01*, server: hk.relay.111q.dogenode.xyz, port: 8111, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: HK香港 HKT 03**, server: hk.relay.123e.dogenode.xyz, port: 8123, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: 香港 BGP 01*, server: hk.anycast.111q.dogenode.xyz, port: 3111, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
   - {name: HK香港 BGP 02*, server: hk.relay.112w.dogenode.xyz, port: 8112, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: HK香港 HGC 01*, server: hk.relay.131q.dogenode.xyz, port: 8131, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: 香港 BGP 01*, server: hk.anycast.111q.dogenode.xyz, port: 3111, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: HK香港 BGP 01*, server: hk.relay.111q.dogenode.xyz, port: 8111, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: HK香港 HKT 02**, server: hk.relay.122w.dogenode.xyz, port: 8122, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: HK香港 HKT 03**, server: hk.relay.123e.dogenode.xyz, port: 8123, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: HK香港 BGP 03*, server: hk.relay.113e.dogenode.xyz, port: 8113, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: 香港 BGP 02*, server: hk.anycast.112w.dogenode.xyz, port: 3112, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: HK香港 HGC 02*, server: hk.relay.132w.dogenode.xyz, port: 8132, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: HK香港 NTT 01, server: hk.relay.151q.dogenode.xyz, port: 8151, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: 香港 HKT 01**, server: hk.anycast.121q.dogenode.xyz, port: 3121, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: HK香港 HKT 01**, server: hk.relay.121q.dogenode.xyz, port: 8121, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
   - {name: 香港 NTT 01, server: hk.anycast.151q.dogenode.xyz, port: 3151, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: MY马来西亚 02*, server: my.relay.2ewr.dogenode.xyz, port: 8892, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: JP日本 31**, server: jp.relay.231q.dogenode.xyz, port: 8231, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: 新加坡 51*, server: sg.anycast.551q.dogenode.xyz, port: 3551, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: JP日本 21*, server: jp.relay.221q.dogenode.xyz, port: 8221, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: SG新加坡 51*, server: sg.relay.551q.dogenode.xyz, port: 8551, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
   - {name: SG新加坡 01, server: sg.relay.1qwe.dogenode.xyz, port: 8501, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: JP日本 01, server: jp.relay.zaq1.dogenode.xyz, port: 8201, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: 台湾 01*, server: tw.anycast.1aqz.dogenode.xyz, port: 3401, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: 新加坡 01, server: sg.anycast.1qwe.dogenode.xyz, port: 3501, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: SG新加坡+51*, server: sg.relay.551q.dogenode.xyz, port: 8551, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: JP日本+31**, server: jp.relay.231q.dogenode.xyz, port: 8231, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: JP日本+21*, server: jp.relay.221q.dogenode.xyz, port: 8221, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: 新加坡+51*, server: sg.anycast.551q.dogenode.xyz, port: 3551, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: TW台湾+01*, server: tw.relay.1aqz.dogenode.xyz, port: 8401, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: TW台湾+03*, server: tw.relay.3dec.dogenode.xyz, port: 8403, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: 泰国+01*, server: th.anycast.1wqe.dogenode.xyz, port: 3841, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: 日本+31**, server: jp.anycast.231q.dogenode.xyz, port: 3231, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: KR韩国+01, server: kr.relay.1wqe.dogenode.xyz, port: 8811, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: MY马来西亚+01*, server: my.relay.1wqe.dogenode.xyz, port: 8891, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: US美国+02, server: us.relay.311q.dogenode.xyz, port: 8311, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: US美国+03, server: us.relay.321q.dogenode.xyz, port: 8321, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: US美国+04, server: us.relay.322w.dogenode.xyz, port: 8322, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: UK英国+01, server: eu.relay.1sad.dogenode.xyz, port: 8601, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: Others加拿大+01, server: ca.relay.1wqe.dogenode.xyz, port: 8851, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: 加拿大+01, server: ca.anycast.1wqe.dogenode.xyz, port: 3851, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: 美国+01, server: us.anycast.1qsc.dogenode.xyz, port: 3301, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: MY马来西亚+02*, server: my.relay.2ewr.dogenode.xyz, port: 8892, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: US美国+01, server: us.relay.1qsc.dogenode.xyz, port: 8301, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
+  - {name: ZA南非+01*, server: za.relay.1wqe.dogenode.xyz, port: 8871, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK香港 BGP 03*
-      - HK香港 HKT 01**
-      - JP日本 02
-      - 新加坡 01
-      - HK香港 BGP 01*
-      - HK香港 HKT 03**
-      - 香港 BGP 01*
       - HK香港 BGP 02*
-      - HK香港 HGC 01*
+      - 香港 BGP 01*
+      - HK香港 BGP 01*
+      - HK香港 HKT 02**
+      - HK香港 HKT 03**
+      - HK香港 BGP 03*
+      - 香港 BGP 02*
+      - HK香港 HGC 02*
+      - HK香港 NTT 01
+      - 香港 HKT 01**
+      - HK香港 HKT 01**
       - 香港 NTT 01
-      - MY马来西亚 02*
-      - JP日本 31**
-      - 新加坡 51*
-      - JP日本 21*
-      - SG新加坡 51*
       - SG新加坡 01
-      - JP日本 01
-      - 台湾 01*
+      - 新加坡 01
+      - SG新加坡+51*
+      - JP日本+31**
+      - JP日本+21*
+      - 新加坡+51*
+      - TW台湾+01*
+      - TW台湾+03*
+      - 泰国+01*
+      - 日本+31**
+      - KR韩国+01
+      - MY马来西亚+01*
+      - US美国+02
+      - US美国+03
+      - US美国+04
+      - UK英国+01
+      - Others加拿大+01
+      - 加拿大+01
+      - 美国+01
+      - MY马来西亚+02*
+      - US美国+01
+      - ZA南非+01*
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK香港 BGP 03*
-      - HK香港 HKT 01**
-      - JP日本 02
-      - 新加坡 01
-      - HK香港 BGP 01*
-      - HK香港 HKT 03**
-      - 香港 BGP 01*
       - HK香港 BGP 02*
-      - HK香港 HGC 01*
+      - 香港 BGP 01*
+      - HK香港 BGP 01*
+      - HK香港 HKT 02**
+      - HK香港 HKT 03**
+      - HK香港 BGP 03*
+      - 香港 BGP 02*
+      - HK香港 HGC 02*
+      - HK香港 NTT 01
+      - 香港 HKT 01**
+      - HK香港 HKT 01**
       - 香港 NTT 01
-      - MY马来西亚 02*
-      - JP日本 31**
-      - 新加坡 51*
-      - JP日本 21*
-      - SG新加坡 51*
       - SG新加坡 01
-      - JP日本 01
-      - 台湾 01*
+      - 新加坡 01
+      - SG新加坡+51*
+      - JP日本+31**
+      - JP日本+21*
+      - 新加坡+51*
+      - TW台湾+01*
+      - TW台湾+03*
+      - 泰国+01*
+      - 日本+31**
+      - KR韩国+01
+      - MY马来西亚+01*
+      - US美国+02
+      - US美国+03
+      - US美国+04
+      - UK英国+01
+      - Others加拿大+01
+      - 加拿大+01
+      - 美国+01
+      - MY马来西亚+02*
+      - US美国+01
+      - ZA南非+01*
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK香港 BGP 03*
-      - HK香港 HKT 01**
-      - JP日本 02
-      - 新加坡 01
-      - HK香港 BGP 01*
-      - HK香港 HKT 03**
-      - 香港 BGP 01*
       - HK香港 BGP 02*
-      - HK香港 HGC 01*
+      - 香港 BGP 01*
+      - HK香港 BGP 01*
+      - HK香港 HKT 02**
+      - HK香港 HKT 03**
+      - HK香港 BGP 03*
+      - 香港 BGP 02*
+      - HK香港 HGC 02*
+      - HK香港 NTT 01
+      - 香港 HKT 01**
+      - HK香港 HKT 01**
       - 香港 NTT 01
-      - MY马来西亚 02*
-      - JP日本 31**
-      - 新加坡 51*
-      - JP日本 21*
-      - SG新加坡 51*
       - SG新加坡 01
-      - JP日本 01
-      - 台湾 01*
+      - 新加坡 01
+      - SG新加坡+51*
+      - JP日本+31**
+      - JP日本+21*
+      - 新加坡+51*
+      - TW台湾+01*
+      - TW台湾+03*
+      - 泰国+01*
+      - 日本+31**
+      - KR韩国+01
+      - MY马来西亚+01*
+      - US美国+02
+      - US美国+03
+      - US美国+04
+      - UK英国+01
+      - Others加拿大+01
+      - 加拿大+01
+      - 美国+01
+      - MY马来西亚+02*
+      - US美国+01
+      - ZA南非+01*
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -112,108 +176,177 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK香港 BGP 03*
-      - HK香港 HKT 01**
-      - JP日本 02
-      - 新加坡 01
-      - HK香港 BGP 01*
-      - HK香港 HKT 03**
-      - 香港 BGP 01*
       - HK香港 BGP 02*
-      - HK香港 HGC 01*
+      - 香港 BGP 01*
+      - HK香港 BGP 01*
+      - HK香港 HKT 02**
+      - HK香港 HKT 03**
+      - HK香港 BGP 03*
+      - 香港 BGP 02*
+      - HK香港 HGC 02*
+      - HK香港 NTT 01
+      - 香港 HKT 01**
+      - HK香港 HKT 01**
       - 香港 NTT 01
-      - MY马来西亚 02*
-      - JP日本 31**
-      - 新加坡 51*
-      - JP日本 21*
-      - SG新加坡 51*
       - SG新加坡 01
-      - JP日本 01
-      - 台湾 01*
+      - 新加坡 01
+      - SG新加坡+51*
+      - JP日本+31**
+      - JP日本+21*
+      - 新加坡+51*
+      - TW台湾+01*
+      - TW台湾+03*
+      - 泰国+01*
+      - 日本+31**
+      - KR韩国+01
+      - MY马来西亚+01*
+      - US美国+02
+      - US美国+03
+      - US美国+04
+      - UK英国+01
+      - Others加拿大+01
+      - 加拿大+01
+      - 美国+01
+      - MY马来西亚+02*
+      - US美国+01
+      - ZA南非+01*
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - HK香港 BGP 03*
-      - HK香港 HKT 01**
-      - HK香港 BGP 01*
-      - HK香港 HKT 03**
-      - 香港 BGP 01*
       - HK香港 BGP 02*
-      - HK香港 HGC 01*
+      - 香港 BGP 01*
+      - HK香港 BGP 01*
+      - HK香港 HKT 02**
+      - HK香港 HKT 03**
+      - HK香港 BGP 03*
+      - 香港 BGP 02*
+      - HK香港 HGC 02*
+      - HK香港 NTT 01
+      - 香港 HKT 01**
+      - HK香港 HKT 01**
       - 香港 NTT 01
-      - 台湾 01*
+      - TW台湾+01*
+      - TW台湾+03*
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK香港 BGP 03*
-      - HK香港 HKT 01**
-      - JP日本 02
-      - 新加坡 01
-      - HK香港 BGP 01*
-      - HK香港 HKT 03**
-      - 香港 BGP 01*
       - HK香港 BGP 02*
-      - HK香港 HGC 01*
+      - 香港 BGP 01*
+      - HK香港 BGP 01*
+      - HK香港 HKT 02**
+      - HK香港 HKT 03**
+      - HK香港 BGP 03*
+      - 香港 BGP 02*
+      - HK香港 HGC 02*
+      - HK香港 NTT 01
+      - 香港 HKT 01**
+      - HK香港 HKT 01**
       - 香港 NTT 01
-      - MY马来西亚 02*
-      - JP日本 31**
-      - 新加坡 51*
-      - JP日本 21*
-      - SG新加坡 51*
       - SG新加坡 01
-      - JP日本 01
-      - 台湾 01*
+      - 新加坡 01
+      - SG新加坡+51*
+      - JP日本+31**
+      - JP日本+21*
+      - 新加坡+51*
+      - TW台湾+01*
+      - TW台湾+03*
+      - 泰国+01*
+      - 日本+31**
+      - KR韩国+01
+      - MY马来西亚+01*
+      - US美国+02
+      - US美国+03
+      - US美国+04
+      - UK英国+01
+      - Others加拿大+01
+      - 加拿大+01
+      - 美国+01
+      - MY马来西亚+02*
+      - US美国+01
+      - ZA南非+01*
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK香港 BGP 03*
-      - HK香港 HKT 01**
-      - JP日本 02
-      - 新加坡 01
-      - HK香港 BGP 01*
-      - HK香港 HKT 03**
-      - 香港 BGP 01*
       - HK香港 BGP 02*
-      - HK香港 HGC 01*
+      - 香港 BGP 01*
+      - HK香港 BGP 01*
+      - HK香港 HKT 02**
+      - HK香港 HKT 03**
+      - HK香港 BGP 03*
+      - 香港 BGP 02*
+      - HK香港 HGC 02*
+      - HK香港 NTT 01
+      - 香港 HKT 01**
+      - HK香港 HKT 01**
       - 香港 NTT 01
-      - MY马来西亚 02*
-      - JP日本 31**
-      - 新加坡 51*
-      - JP日本 21*
-      - SG新加坡 51*
       - SG新加坡 01
-      - JP日本 01
-      - 台湾 01*
+      - 新加坡 01
+      - SG新加坡+51*
+      - JP日本+31**
+      - JP日本+21*
+      - 新加坡+51*
+      - TW台湾+01*
+      - TW台湾+03*
+      - 泰国+01*
+      - 日本+31**
+      - KR韩国+01
+      - MY马来西亚+01*
+      - US美国+02
+      - US美国+03
+      - US美国+04
+      - UK英国+01
+      - Others加拿大+01
+      - 加拿大+01
+      - 美国+01
+      - MY马来西亚+02*
+      - US美国+01
+      - ZA南非+01*
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK香港 BGP 03*
-      - HK香港 HKT 01**
-      - JP日本 02
-      - 新加坡 01
-      - HK香港 BGP 01*
-      - HK香港 HKT 03**
-      - 香港 BGP 01*
       - HK香港 BGP 02*
-      - HK香港 HGC 01*
+      - 香港 BGP 01*
+      - HK香港 BGP 01*
+      - HK香港 HKT 02**
+      - HK香港 HKT 03**
+      - HK香港 BGP 03*
+      - 香港 BGP 02*
+      - HK香港 HGC 02*
+      - HK香港 NTT 01
+      - 香港 HKT 01**
+      - HK香港 HKT 01**
       - 香港 NTT 01
-      - MY马来西亚 02*
-      - JP日本 31**
-      - 新加坡 51*
-      - JP日本 21*
-      - SG新加坡 51*
       - SG新加坡 01
-      - JP日本 01
-      - 台湾 01*
+      - 新加坡 01
+      - SG新加坡+51*
+      - JP日本+31**
+      - JP日本+21*
+      - 新加坡+51*
+      - TW台湾+01*
+      - TW台湾+03*
+      - 泰国+01*
+      - 日本+31**
+      - KR韩国+01
+      - MY马来西亚+01*
+      - US美国+02
+      - US美国+03
+      - US美国+04
+      - UK英国+01
+      - Others加拿大+01
+      - 加拿大+01
+      - 美国+01
+      - MY马来西亚+02*
+      - US美国+01
+      - ZA南非+01*
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -229,24 +362,40 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK香港 BGP 03*
-      - HK香港 HKT 01**
-      - JP日本 02
-      - 新加坡 01
-      - HK香港 BGP 01*
-      - HK香港 HKT 03**
-      - 香港 BGP 01*
       - HK香港 BGP 02*
-      - HK香港 HGC 01*
+      - 香港 BGP 01*
+      - HK香港 BGP 01*
+      - HK香港 HKT 02**
+      - HK香港 HKT 03**
+      - HK香港 BGP 03*
+      - 香港 BGP 02*
+      - HK香港 HGC 02*
+      - HK香港 NTT 01
+      - 香港 HKT 01**
+      - HK香港 HKT 01**
       - 香港 NTT 01
-      - MY马来西亚 02*
-      - JP日本 31**
-      - 新加坡 51*
-      - JP日本 21*
-      - SG新加坡 51*
       - SG新加坡 01
-      - JP日本 01
-      - 台湾 01*
+      - 新加坡 01
+      - SG新加坡+51*
+      - JP日本+31**
+      - JP日本+21*
+      - 新加坡+51*
+      - TW台湾+01*
+      - TW台湾+03*
+      - 泰国+01*
+      - 日本+31**
+      - KR韩国+01
+      - MY马来西亚+01*
+      - US美国+02
+      - US美国+03
+      - US美国+04
+      - UK英国+01
+      - Others加拿大+01
+      - 加拿大+01
+      - 美国+01
+      - MY马来西亚+02*
+      - US美国+01
+      - ZA南非+01*
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
