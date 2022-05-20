@@ -5,10 +5,18 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: LV1 新加坡 - 隧道「1.5x」, server: sg.youzi.win, port: 27773, type: vmess, uuid: 209c4394-b07e-4266-9429-c5a4c8844e9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 香港02流媒体解锁「4x」, server: bgp.youzi.win, port: 62012, type: vmess, uuid: 209c4394-b07e-4266-9429-c5a4c8844e9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 韩国 - 隧道「1.5x」, server: kr.youzi.win, port: 27772, type: vmess, uuid: 209c4394-b07e-4266-9429-c5a4c8844e9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: 4.85 MB/s 欢迎使用Welink345 请定期更新订阅, server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: e7a9521f-ca6f-4eb7-ab1a-46d8cd8b52d8, sni: tw.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: LV1 香港01流媒体解锁「4x」, server: bgp.youzi.win, port: 62011, type: vmess, uuid: 209c4394-b07e-4266-9429-c5a4c8844e9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 香港 - 隧道「1.5x」, server: hk.youzi.win, port: 27771, type: vmess, uuid: 209c4394-b07e-4266-9429-c5a4c8844e9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 日本 - 隧道「1.5x」, server: jp.youzi.win, port: 27775, type: vmess, uuid: 209c4394-b07e-4266-9429-c5a4c8844e9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 美国 - 隧道「1.5x」, server: us.youzi.win, port: 27774, type: vmess, uuid: 209c4394-b07e-4266-9429-c5a4c8844e9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
   - {name: 7.83 MB/s 新加坡1|Netflix, server: gdcm3.relay.qchwnd.moe, port: 44605, type: trojan, password: e7a9521f-ca6f-4eb7-ab1a-46d8cd8b52d8, sni: gdcm3.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
   - {name: 钉钉 | 80 | 上海 | 5G口, server: 139.219.129.4, port: 80, type: vmess, uuid: 4a2faefb-e947-48c2-a9a3-403659433f36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
   - {name: 80 | 冰钉 | 新加坡 | 01, server: 18.138.255.0, port: 80, type: vmess, uuid: f247de4f-2e93-4a96-92d5-ed90e0e3c78a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: down.dingtalk.com}, udp: true}
-  - {name: 4.85 MB/s 欢迎使用Welink345 请定期更新订阅, server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: e7a9521f-ca6f-4eb7-ab1a-46d8cd8b52d8, sni: tw.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2, server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: e7a9521f-ca6f-4eb7-ab1a-46d8cd8b52d8, sni: tw.node.qchwnd.moe, skip-cert-verify: true, udp: true}
   - {name: "2.36 MB/s[负载均衡]韩国1", server: ocikr.node.qchwnd.moe, port: 44600, type: trojan, password: e7a9521f-ca6f-4eb7-ab1a-46d8cd8b52d8, sni: ocikr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -16,20 +24,36 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - LV1 新加坡 - 隧道「1.5x」
+      - LV1 香港02流媒体解锁「4x」
+      - LV1 韩国 - 隧道「1.5x」
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - LV1 香港01流媒体解锁「4x」
+      - LV1 香港 - 隧道「1.5x」
+      - LV1 日本 - 隧道「1.5x」
+      - LV1 美国 - 隧道「1.5x」
       - 7.83 MB/s 新加坡1|Netflix
       - 钉钉 | 80 | 上海 | 5G口
       - 80 | 冰钉 | 新加坡 | 01
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
       - 2.36 MB/s[负载均衡]韩国1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - LV1 新加坡 - 隧道「1.5x」
+      - LV1 香港02流媒体解锁「4x」
+      - LV1 韩国 - 隧道「1.5x」
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - LV1 香港01流媒体解锁「4x」
+      - LV1 香港 - 隧道「1.5x」
+      - LV1 日本 - 隧道「1.5x」
+      - LV1 美国 - 隧道「1.5x」
       - 7.83 MB/s 新加坡1|Netflix
       - 钉钉 | 80 | 上海 | 5G口
       - 80 | 冰钉 | 新加坡 | 01
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
       - 2.36 MB/s[负载均衡]韩国1
   - name: 🎥 NETFLIX
     type: select
@@ -37,10 +61,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - LV1 新加坡 - 隧道「1.5x」
+      - LV1 香港02流媒体解锁「4x」
+      - LV1 韩国 - 隧道「1.5x」
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - LV1 香港01流媒体解锁「4x」
+      - LV1 香港 - 隧道「1.5x」
+      - LV1 日本 - 隧道「1.5x」
+      - LV1 美国 - 隧道「1.5x」
       - 7.83 MB/s 新加坡1|Netflix
       - 钉钉 | 80 | 上海 | 5G口
       - 80 | 冰钉 | 新加坡 | 01
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
       - 2.36 MB/s[负载均衡]韩国1
   - name: ⛔️ 广告拦截
     type: select
@@ -60,35 +92,62 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - LV1 新加坡 - 隧道「1.5x」
+      - LV1 香港02流媒体解锁「4x」
+      - LV1 韩国 - 隧道「1.5x」
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - LV1 香港01流媒体解锁「4x」
+      - LV1 香港 - 隧道「1.5x」
+      - LV1 日本 - 隧道「1.5x」
+      - LV1 美国 - 隧道「1.5x」
       - 7.83 MB/s 新加坡1|Netflix
       - 钉钉 | 80 | 上海 | 5G口
       - 80 | 冰钉 | 新加坡 | 01
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
       - 2.36 MB/s[负载均衡]韩国1
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - LV1 香港02流媒体解锁「4x」
+      - LV1 香港01流媒体解锁「4x」
+      - LV1 香港 - 隧道「1.5x」
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - LV1 新加坡 - 隧道「1.5x」
+      - LV1 香港02流媒体解锁「4x」
+      - LV1 韩国 - 隧道「1.5x」
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - LV1 香港01流媒体解锁「4x」
+      - LV1 香港 - 隧道「1.5x」
+      - LV1 日本 - 隧道「1.5x」
+      - LV1 美国 - 隧道「1.5x」
       - 7.83 MB/s 新加坡1|Netflix
       - 钉钉 | 80 | 上海 | 5G口
       - 80 | 冰钉 | 新加坡 | 01
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
       - 2.36 MB/s[负载均衡]韩国1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - LV1 新加坡 - 隧道「1.5x」
+      - LV1 香港02流媒体解锁「4x」
+      - LV1 韩国 - 隧道「1.5x」
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - LV1 香港01流媒体解锁「4x」
+      - LV1 香港 - 隧道「1.5x」
+      - LV1 日本 - 隧道「1.5x」
+      - LV1 美国 - 隧道「1.5x」
       - 7.83 MB/s 新加坡1|Netflix
       - 钉钉 | 80 | 上海 | 5G口
       - 80 | 冰钉 | 新加坡 | 01
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
       - 2.36 MB/s[负载均衡]韩国1
   - name: 🍎 苹果服务
     type: select
@@ -96,10 +155,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - LV1 新加坡 - 隧道「1.5x」
+      - LV1 香港02流媒体解锁「4x」
+      - LV1 韩国 - 隧道「1.5x」
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - LV1 香港01流媒体解锁「4x」
+      - LV1 香港 - 隧道「1.5x」
+      - LV1 日本 - 隧道「1.5x」
+      - LV1 美国 - 隧道「1.5x」
       - 7.83 MB/s 新加坡1|Netflix
       - 钉钉 | 80 | 上海 | 5G口
       - 80 | 冰钉 | 新加坡 | 01
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
       - 2.36 MB/s[负载均衡]韩国1
   - name: 🎯 全球直连
     type: select
@@ -116,10 +183,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - LV1 新加坡 - 隧道「1.5x」
+      - LV1 香港02流媒体解锁「4x」
+      - LV1 韩国 - 隧道「1.5x」
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - LV1 香港01流媒体解锁「4x」
+      - LV1 香港 - 隧道「1.5x」
+      - LV1 日本 - 隧道「1.5x」
+      - LV1 美国 - 隧道「1.5x」
       - 7.83 MB/s 新加坡1|Netflix
       - 钉钉 | 80 | 上海 | 5G口
       - 80 | 冰钉 | 新加坡 | 01
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅
+      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
       - 2.36 MB/s[负载均衡]韩国1
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
