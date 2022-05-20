@@ -5,51 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Alien, server: dgcn.gia.wiki, port: 10408, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 2, server: 125.94.37.107, port: 60160, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 3, server: 125.94.37.107, port: 59932, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 4, server: 125.94.37.107, port: 40712, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 5, server: 125.94.37.107, port: 54848, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-01 |, server: gycm.01.211129.xyz, port: 17946, type: trojan, password: 270183d3-8fa4-3ec6-8946-3ac350e6838c, sni: gycm.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: Alien 6, server: 120.233.185.227, port: 20001, type: vmess, uuid: dfb02c26-3b48-4bbc-9ec3-3a6b9dc9d870, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V1-香港B2|广电, server: zfcm2.55k.buzz, port: 10002, type: trojan, password: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, sni: zfcm2.55k.buzz, skip-cert-verify: true, udp: true}
+  - {name: "V1-香港B3|广电[临时]", server: zfcm2.55k.buzz, port: 10003, type: trojan, password: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, sni: zfcm2.55k.buzz, skip-cert-verify: true, udp: true}
+  - {name: V2-新加坡A1|广港, server: zfcm2.55k.buzz, port: 55011, type: trojan, password: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, sni: zfcm2.55k.buzz, skip-cert-verify: true, udp: true}
+  - {name: "V3-香港BGP|广港[临时]", server: zfcm2.55k.buzz, port: 11003, type: vmess, uuid: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "?ed=2048", ws-headers: {Host: zfcm2.55k.buzz}, udp: true}
+  - {name: V3-香港HGC119|广港A, server: zfcm2.55k.buzz, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, udp: true}
+  - {name: V2-美国25|广港, server: zfcm2.55k.buzz, port: 27905, type: vmess, uuid: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zfcm2.55k.buzz}, udp: true}
+  - {name: V3-香港D|广港A, server: zfcm2.55k.buzz, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, udp: true}
+  - {name: V2-韩国C1|安徽, server: zfcu1.55k.buzz, port: 10012, type: ss, cipher: chacha20-ietf-poly1305, password: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, udp: true}
+  - {name: "V3-伦敦A|广港[原生IP]", server: zfcm2.55k.buzz, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, udp: true}
+  - {name: V1-香港B3|深圳, server: zfcm1.55k.buzz, port: 10005, type: trojan, password: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, sni: zfcm1.55k.buzz, skip-cert-verify: true, udp: true}
+  - {name: V1-美国RN|皖日x0.8, server: zfcu1.55k.buzz, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, udp: true}
+  - {name: "中转-韩国A4|安徽[原生IP]", server: zfcu1.55k.buzz, port: 10013, type: trojan, password: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, sni: zfcu1.55k.buzz, skip-cert-verify: true, udp: true}
+  - {name: "V3-台湾|广港A[原生IP]", server: zfcm2.55k.buzz, port: 11004, type: vmess, uuid: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zfcm2.55k.buzz}, udp: true}
+  - {name: "V1-台湾|深圳[原生IP]", server: sz.by55k1.xyz, port: 10007, type: vmess, uuid: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sz.by55k1.xyz}, udp: true}
+  - {name: 隧道-首尔|深港H, server: zfcm1.55k.buzz, port: 22492, type: ss, cipher: chacha20-ietf-poly1305, password: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, udp: true}
+  - {name: "V1-新加坡A1|深圳[原生IP]", server: sz.by55k1.xyz, port: 10003, type: trojan, password: bd7edabb-ec61-4ce0-9912-4e019fa2f37d, sni: sz.by55k1.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Alien
-      - Alien 2
-      - Alien 3
-      - Alien 4
-      - Alien 5
-      - 新加坡-01 |
-      - Alien 6
+      - V1-香港B2|广电
+      - V1-香港B3|广电[临时]
+      - V2-新加坡A1|广港
+      - V3-香港BGP|广港[临时]
+      - V3-香港HGC119|广港A
+      - V2-美国25|广港
+      - V3-香港D|广港A
+      - V2-韩国C1|安徽
+      - V3-伦敦A|广港[原生IP]
+      - V1-香港B3|深圳
+      - V1-美国RN|皖日x0.8
+      - 中转-韩国A4|安徽[原生IP]
+      - V3-台湾|广港A[原生IP]
+      - V1-台湾|深圳[原生IP]
+      - 隧道-首尔|深港H
+      - V1-新加坡A1|深圳[原生IP]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Alien
-      - Alien 2
-      - Alien 3
-      - Alien 4
-      - Alien 5
-      - 新加坡-01 |
-      - Alien 6
+      - V1-香港B2|广电
+      - V1-香港B3|广电[临时]
+      - V2-新加坡A1|广港
+      - V3-香港BGP|广港[临时]
+      - V3-香港HGC119|广港A
+      - V2-美国25|广港
+      - V3-香港D|广港A
+      - V2-韩国C1|安徽
+      - V3-伦敦A|广港[原生IP]
+      - V1-香港B3|深圳
+      - V1-美国RN|皖日x0.8
+      - 中转-韩国A4|安徽[原生IP]
+      - V3-台湾|广港A[原生IP]
+      - V1-台湾|深圳[原生IP]
+      - 隧道-首尔|深港H
+      - V1-新加坡A1|深圳[原生IP]
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Alien
-      - Alien 2
-      - Alien 3
-      - Alien 4
-      - Alien 5
-      - 新加坡-01 |
-      - Alien 6
+      - V1-香港B2|广电
+      - V1-香港B3|广电[临时]
+      - V2-新加坡A1|广港
+      - V3-香港BGP|广港[临时]
+      - V3-香港HGC119|广港A
+      - V2-美国25|广港
+      - V3-香港D|广港A
+      - V2-韩国C1|安徽
+      - V3-伦敦A|广港[原生IP]
+      - V1-香港B3|深圳
+      - V1-美国RN|皖日x0.8
+      - 中转-韩国A4|安徽[原生IP]
+      - V3-台湾|广港A[原生IP]
+      - V1-台湾|深圳[原生IP]
+      - 隧道-首尔|深港H
+      - V1-新加坡A1|深圳[原生IP]
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,55 +104,103 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Alien
-      - Alien 2
-      - Alien 3
-      - Alien 4
-      - Alien 5
-      - 新加坡-01 |
-      - Alien 6
+      - V1-香港B2|广电
+      - V1-香港B3|广电[临时]
+      - V2-新加坡A1|广港
+      - V3-香港BGP|广港[临时]
+      - V3-香港HGC119|广港A
+      - V2-美国25|广港
+      - V3-香港D|广港A
+      - V2-韩国C1|安徽
+      - V3-伦敦A|广港[原生IP]
+      - V1-香港B3|深圳
+      - V1-美国RN|皖日x0.8
+      - 中转-韩国A4|安徽[原生IP]
+      - V3-台湾|广港A[原生IP]
+      - V1-台湾|深圳[原生IP]
+      - 隧道-首尔|深港H
+      - V1-新加坡A1|深圳[原生IP]
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - V1-香港B2|广电
+      - V1-香港B3|广电[临时]
+      - V2-新加坡A1|广港
+      - V3-香港BGP|广港[临时]
+      - V3-香港HGC119|广港A
+      - V2-美国25|广港
+      - V3-香港D|广港A
+      - V3-伦敦A|广港[原生IP]
+      - V1-香港B3|深圳
+      - V3-台湾|广港A[原生IP]
+      - V1-台湾|深圳[原生IP]
+      - 隧道-首尔|深港H
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Alien
-      - Alien 2
-      - Alien 3
-      - Alien 4
-      - Alien 5
-      - 新加坡-01 |
-      - Alien 6
+      - V1-香港B2|广电
+      - V1-香港B3|广电[临时]
+      - V2-新加坡A1|广港
+      - V3-香港BGP|广港[临时]
+      - V3-香港HGC119|广港A
+      - V2-美国25|广港
+      - V3-香港D|广港A
+      - V2-韩国C1|安徽
+      - V3-伦敦A|广港[原生IP]
+      - V1-香港B3|深圳
+      - V1-美国RN|皖日x0.8
+      - 中转-韩国A4|安徽[原生IP]
+      - V3-台湾|广港A[原生IP]
+      - V1-台湾|深圳[原生IP]
+      - 隧道-首尔|深港H
+      - V1-新加坡A1|深圳[原生IP]
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Alien
-      - Alien 2
-      - Alien 3
-      - Alien 4
-      - Alien 5
-      - 新加坡-01 |
-      - Alien 6
+      - V1-香港B2|广电
+      - V1-香港B3|广电[临时]
+      - V2-新加坡A1|广港
+      - V3-香港BGP|广港[临时]
+      - V3-香港HGC119|广港A
+      - V2-美国25|广港
+      - V3-香港D|广港A
+      - V2-韩国C1|安徽
+      - V3-伦敦A|广港[原生IP]
+      - V1-香港B3|深圳
+      - V1-美国RN|皖日x0.8
+      - 中转-韩国A4|安徽[原生IP]
+      - V3-台湾|广港A[原生IP]
+      - V1-台湾|深圳[原生IP]
+      - 隧道-首尔|深港H
+      - V1-新加坡A1|深圳[原生IP]
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Alien
-      - Alien 2
-      - Alien 3
-      - Alien 4
-      - Alien 5
-      - 新加坡-01 |
-      - Alien 6
+      - V1-香港B2|广电
+      - V1-香港B3|广电[临时]
+      - V2-新加坡A1|广港
+      - V3-香港BGP|广港[临时]
+      - V3-香港HGC119|广港A
+      - V2-美国25|广港
+      - V3-香港D|广港A
+      - V2-韩国C1|安徽
+      - V3-伦敦A|广港[原生IP]
+      - V1-香港B3|深圳
+      - V1-美国RN|皖日x0.8
+      - 中转-韩国A4|安徽[原生IP]
+      - V3-台湾|广港A[原生IP]
+      - V1-台湾|深圳[原生IP]
+      - 隧道-首尔|深港H
+      - V1-新加坡A1|深圳[原生IP]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +216,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Alien
-      - Alien 2
-      - Alien 3
-      - Alien 4
-      - Alien 5
-      - 新加坡-01 |
-      - Alien 6
+      - V1-香港B2|广电
+      - V1-香港B3|广电[临时]
+      - V2-新加坡A1|广港
+      - V3-香港BGP|广港[临时]
+      - V3-香港HGC119|广港A
+      - V2-美国25|广港
+      - V3-香港D|广港A
+      - V2-韩国C1|安徽
+      - V3-伦敦A|广港[原生IP]
+      - V1-香港B3|深圳
+      - V1-美国RN|皖日x0.8
+      - 中转-韩国A4|安徽[原生IP]
+      - V3-台湾|广港A[原生IP]
+      - V1-台湾|深圳[原生IP]
+      - 隧道-首尔|深港H
+      - V1-新加坡A1|深圳[原生IP]
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
