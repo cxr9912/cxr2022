@@ -5,63 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: vpnpool-香港Nerocloud-nf, server: 183.232.56.182, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Nerocloud-nf, server: 183.232.56.182, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
   - {name: vpnpool-Tokyo-DMIT-nf, server: 183.232.56.182, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 我又来了 2, server: 54.255.192.197, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 我又来了 4, server: 13.215.184.2, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: vpnhat-Tokyo-DMIT-nf, server: 112.65.95.60, port: 11424, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Nerocloud-nf, server: 183.232.56.182, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
   - {name: vpnhat-台中Hinet-dip, server: 112.65.95.60, port: 11428, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 日本 Japan(VIP)★, server: gz2.52168.org, port: 12107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 泰国 Thailand★, server: gz2.52168.org, port: 12109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 香港 Hongkong HKT(VIP)●, server: gz1.52168.org, port: 11112, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnpool-香港Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf
       - vpnpool-Tokyo-DMIT-nf
-      - 我又来了 2
-      - 我又来了 4
-      - vpnhat-Tokyo-DMIT-nf
+      - vpnpool-香港Nerocloud-nf
       - vpnhat-台中Hinet-dip
-      - 日本 Japan(VIP)★
-      - 泰国 Thailand★
-      - 香港 Hongkong HKT(VIP)●
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - vpnpool-香港Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf
       - vpnpool-Tokyo-DMIT-nf
-      - 我又来了 2
-      - 我又来了 4
-      - vpnhat-Tokyo-DMIT-nf
+      - vpnpool-香港Nerocloud-nf
       - vpnhat-台中Hinet-dip
-      - 日本 Japan(VIP)★
-      - 泰国 Thailand★
-      - 香港 Hongkong HKT(VIP)●
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnpool-香港Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf
       - vpnpool-Tokyo-DMIT-nf
-      - 我又来了 2
-      - 我又来了 4
-      - vpnhat-Tokyo-DMIT-nf
+      - vpnpool-香港Nerocloud-nf
       - vpnhat-台中Hinet-dip
-      - 日本 Japan(VIP)★
-      - 泰国 Thailand★
-      - 香港 Hongkong HKT(VIP)●
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,70 +52,41 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnpool-香港Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf
       - vpnpool-Tokyo-DMIT-nf
-      - 我又来了 2
-      - 我又来了 4
-      - vpnhat-Tokyo-DMIT-nf
+      - vpnpool-香港Nerocloud-nf
       - vpnhat-台中Hinet-dip
-      - 日本 Japan(VIP)★
-      - 泰国 Thailand★
-      - 香港 Hongkong HKT(VIP)●
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - vpnpool-香港Nerocloud-nf
       - vpnhat-台中Hinet-dip
-      - 香港 Hongkong HKT(VIP)●
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - vpnpool-香港Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf
       - vpnpool-Tokyo-DMIT-nf
-      - 我又来了 2
-      - 我又来了 4
-      - vpnhat-Tokyo-DMIT-nf
+      - vpnpool-香港Nerocloud-nf
       - vpnhat-台中Hinet-dip
-      - 日本 Japan(VIP)★
-      - 泰国 Thailand★
-      - 香港 Hongkong HKT(VIP)●
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - vpnpool-香港Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf
       - vpnpool-Tokyo-DMIT-nf
-      - 我又来了 2
-      - 我又来了 4
-      - vpnhat-Tokyo-DMIT-nf
+      - vpnpool-香港Nerocloud-nf
       - vpnhat-台中Hinet-dip
-      - 日本 Japan(VIP)★
-      - 泰国 Thailand★
-      - 香港 Hongkong HKT(VIP)●
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnpool-香港Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf
       - vpnpool-Tokyo-DMIT-nf
-      - 我又来了 2
-      - 我又来了 4
-      - vpnhat-Tokyo-DMIT-nf
+      - vpnpool-香港Nerocloud-nf
       - vpnhat-台中Hinet-dip
-      - 日本 Japan(VIP)★
-      - 泰国 Thailand★
-      - 香港 Hongkong HKT(VIP)●
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -159,16 +102,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnpool-香港Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf
       - vpnpool-Tokyo-DMIT-nf
-      - 我又来了 2
-      - 我又来了 4
-      - vpnhat-Tokyo-DMIT-nf
+      - vpnpool-香港Nerocloud-nf
       - vpnhat-台中Hinet-dip
-      - 日本 Japan(VIP)★
-      - 泰国 Thailand★
-      - 香港 Hongkong HKT(VIP)●
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
