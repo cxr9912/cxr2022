@@ -5,39 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 HKT 01**, server: hk.anycast.121q.dogenode.xyz, port: 3121, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
-  - {name: 广港|Misaka, server: gzyd.qlyun.xyz, port: 50003, type: ss, cipher: chacha20-ietf-poly1305, password: e9f1a619-2b58-4423-a38e-1c1902abfc07, udp: true}
-  - {name: 广新|NeroCloud, server: gycm.01.211129.xyz, port: 49499, type: ss, cipher: chacha20-ietf-poly1305, password: e9f1a619-2b58-4423-a38e-1c1902abfc07, udp: true}
-  - {name: 直连|Misaka, server: msjp0.vperfact.in, port: 23432, type: ss, cipher: chacha20-ietf-poly1305, password: e9f1a619-2b58-4423-a38e-1c1902abfc07, udp: true}
+  - {name: 直连|Misaka, server: 170.39.227.219, port: 24212, type: ss, cipher: chacha20-ietf-poly1305, password: ee7471a2-66b4-4800-8e1a-c46c2f1f1e2b, udp: true}
+  - {name: 广移|Oracle 1, server: gzyd.qlyun.xyz, port: 10040, type: ss, cipher: chacha20-ietf-poly1305, password: ee7471a2-66b4-4800-8e1a-c46c2f1f1e2b, udp: true}
+  - {name: 直连｜HKT, server: gzyd.qlyun.xyz, port: 50007, type: ss, cipher: chacha20-ietf-poly1305, password: ee7471a2-66b4-4800-8e1a-c46c2f1f1e2b, udp: true}
+  - {name: 广新|NeroCloud, server: gycm.01.211129.xyz, port: 49499, type: ss, cipher: chacha20-ietf-poly1305, password: ee7471a2-66b4-4800-8e1a-c46c2f1f1e2b, udp: true}
+  - {name: 广电|Misaka, server: gzct.01.211129.xyz, port: 35153, type: ss, cipher: chacha20-ietf-poly1305, password: ee7471a2-66b4-4800-8e1a-c46c2f1f1e2b, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 HKT 01**
-      - 广港|Misaka
-      - 广新|NeroCloud
       - 直连|Misaka
+      - 广移|Oracle 1
+      - 直连｜HKT
+      - 广新|NeroCloud
+      - 广电|Misaka
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 HKT 01**
-      - 广港|Misaka
-      - 广新|NeroCloud
       - 直连|Misaka
+      - 广移|Oracle 1
+      - 直连｜HKT
+      - 广新|NeroCloud
+      - 广电|Misaka
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 HKT 01**
-      - 广港|Misaka
-      - 广新|NeroCloud
       - 直连|Misaka
+      - 广移|Oracle 1
+      - 直连｜HKT
+      - 广新|NeroCloud
+      - 广电|Misaka
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,45 +60,48 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 HKT 01**
-      - 广港|Misaka
-      - 广新|NeroCloud
       - 直连|Misaka
+      - 广移|Oracle 1
+      - 直连｜HKT
+      - 广新|NeroCloud
+      - 广电|Misaka
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 HKT 01**
-      - 广港|Misaka
+      - 直连｜HKT
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 HKT 01**
-      - 广港|Misaka
-      - 广新|NeroCloud
       - 直连|Misaka
+      - 广移|Oracle 1
+      - 直连｜HKT
+      - 广新|NeroCloud
+      - 广电|Misaka
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 HKT 01**
-      - 广港|Misaka
-      - 广新|NeroCloud
       - 直连|Misaka
+      - 广移|Oracle 1
+      - 直连｜HKT
+      - 广新|NeroCloud
+      - 广电|Misaka
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 HKT 01**
-      - 广港|Misaka
-      - 广新|NeroCloud
       - 直连|Misaka
+      - 广移|Oracle 1
+      - 直连｜HKT
+      - 广新|NeroCloud
+      - 广电|Misaka
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -110,10 +117,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 HKT 01**
-      - 广港|Misaka
-      - 广新|NeroCloud
       - 直连|Misaka
+      - 广移|Oracle 1
+      - 直连｜HKT
+      - 广新|NeroCloud
+      - 广电|Misaka
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
