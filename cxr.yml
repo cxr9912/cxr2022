@@ -5,107 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本3广港, server: relay.gzbgp.entrance1-fp.icu, port: 46134, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sada, headers: {Host: relay.gzbgp.entrance1-fp.icu}}, udp: true}
-  - {name: 香港BGP1广港, server: relay.gzbgp.entrance1-fp.icu, port: 45921, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
-  - {name: 日本4广港, server: relay.gzbgp.entrance1-fp.icu, port: 46148, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /adjas, headers: {Host: relay.gzbgp.entrance1-fp.icu}}, udp: true}
-  - {name: 香港BGP2广港, server: relay.gzbgp.entrance1-fp.icu, port: 45922, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
-  - {name: 日本2广港, server: relay.gzbgp.entrance1-fp.icu, port: 46131, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
-  - {name: 韩国1广港, server: relay.gzbgp.entrance1-fp.icu, port: 46150, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sada, headers: {Host: relay.gzbgp.entrance1-fp.icu}}, udp: true}
-  - {name: 韩国2广港, server: relay.gzbgp.entrance1-fp.icu, port: 46140, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sada, headers: {Host: relay.gzbgp.entrance1-fp.icu}}, udp: true}
-  - {name: 日本1广港, server: relay.gzbgp.entrance1-fp.icu, port: 46130, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
-  - {name: 香港1皖日, server: relay.ahbgp.entrance1-fp.icu, port: 45503, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
-  - {name: 香港2皖日, server: relay.ahbgp.entrance1-fp.icu, port: 45502, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
-  - {name: 新加坡4皖日, server: relay.ahbgp.entrance1-fp.icu, port: 45573, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sadhj32, headers: {Host: relay.ahbgp.entrance1-fp.icu}}, udp: true}
-  - {name: 香港3皖日, server: relay.ahbgp.entrance1-fp.icu, port: 45505, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
-  - {name: 新加坡2皖日, server: relay.ahbgp.entrance1-fp.icu, port: 45551, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
-  - {name: 香港5皖日, server: relay.ahbgp.entrance1-fp.icu, port: 45529, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
-  - {name: 新加坡3皖日, server: relay.ahbgp.entrance1-fp.icu, port: 45617, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sadhj32, headers: {Host: relay.ahbgp.entrance1-fp.icu}}, udp: true}
-  - {name: 香港4皖日, server: relay.ahbgp.entrance1-fp.icu, port: 45528, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
-  - {name: 新加坡1皖日, server: relay.ahbgp.entrance1-fp.icu, port: 45540, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
-  - {name: 美国2皖日, server: relay.ahbgp.entrance1-fp.icu, port: 45537, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
-  - {name: 美国3皖日, server: relay.ahbgp.entrance1-fp.icu, port: 45538, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /skj392, headers: {Host: relay.ahbgp.entrance1-fp.icu}}, udp: true}
-  - {name: 美国4皖日, server: relay.ahbgp.entrance1-fp.icu, port: 45539, type: vmess, uuid: 7f218ffa-8ba2-441a-be98-7645b13b6903, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sksjdcsj392, headers: {Host: relay.ahbgp.entrance1-fp.icu}}, udp: true}
-  - {name: 美国1皖日, server: relay.ahbgp.entrance1-fp.icu, port: 45536, type: ss, cipher: aes-256-gcm, password: 7f218ffa-8ba2-441a-be98-7645b13b6903, udp: true}
+  - {name: HK1|10G|WS, server: 20.187.88.241, port: 80, type: vmess, uuid: 60de7e1f-9832-4fa1-b499-623a5a255ea3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: HK3|10G|WS, server: 20.24.84.244, port: 80, type: vmess, uuid: 60de7e1f-9832-4fa1-b499-623a5a255ea3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: JPN4|WS|10G|独享|1.5x, server: 52.140.218.222, port: 80, type: vmess, uuid: 60de7e1f-9832-4fa1-b499-623a5a255ea3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: TW台湾 04*, server: tw.relay.4frv.dogenode.xyz, port: 8404, type: ss, cipher: chacha20-ietf-poly1305, password: NHNwZW4IuxuNUWDN, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本3广港
-      - 香港BGP1广港
-      - 日本4广港
-      - 香港BGP2广港
-      - 日本2广港
-      - 韩国1广港
-      - 韩国2广港
-      - 日本1广港
-      - 香港1皖日
-      - 香港2皖日
-      - 新加坡4皖日
-      - 香港3皖日
-      - 新加坡2皖日
-      - 香港5皖日
-      - 新加坡3皖日
-      - 香港4皖日
-      - 新加坡1皖日
-      - 美国2皖日
-      - 美国3皖日
-      - 美国4皖日
-      - 美国1皖日
+      - HK1|10G|WS
+      - HK3|10G|WS
+      - JPN4|WS|10G|独享|1.5x
+      - TW台湾 04*
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本3广港
-      - 香港BGP1广港
-      - 日本4广港
-      - 香港BGP2广港
-      - 日本2广港
-      - 韩国1广港
-      - 韩国2广港
-      - 日本1广港
-      - 香港1皖日
-      - 香港2皖日
-      - 新加坡4皖日
-      - 香港3皖日
-      - 新加坡2皖日
-      - 香港5皖日
-      - 新加坡3皖日
-      - 香港4皖日
-      - 新加坡1皖日
-      - 美国2皖日
-      - 美国3皖日
-      - 美国4皖日
-      - 美国1皖日
+      - HK1|10G|WS
+      - HK3|10G|WS
+      - JPN4|WS|10G|独享|1.5x
+      - TW台湾 04*
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本3广港
-      - 香港BGP1广港
-      - 日本4广港
-      - 香港BGP2广港
-      - 日本2广港
-      - 韩国1广港
-      - 韩国2广港
-      - 日本1广港
-      - 香港1皖日
-      - 香港2皖日
-      - 新加坡4皖日
-      - 香港3皖日
-      - 新加坡2皖日
-      - 香港5皖日
-      - 新加坡3皖日
-      - 香港4皖日
-      - 新加坡1皖日
-      - 美国2皖日
-      - 美国3皖日
-      - 美国4皖日
-      - 美国1皖日
+      - HK1|10G|WS
+      - HK3|10G|WS
+      - JPN4|WS|10G|独享|1.5x
+      - TW台湾 04*
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -124,124 +56,44 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本3广港
-      - 香港BGP1广港
-      - 日本4广港
-      - 香港BGP2广港
-      - 日本2广港
-      - 韩国1广港
-      - 韩国2广港
-      - 日本1广港
-      - 香港1皖日
-      - 香港2皖日
-      - 新加坡4皖日
-      - 香港3皖日
-      - 新加坡2皖日
-      - 香港5皖日
-      - 新加坡3皖日
-      - 香港4皖日
-      - 新加坡1皖日
-      - 美国2皖日
-      - 美国3皖日
-      - 美国4皖日
-      - 美国1皖日
+      - HK1|10G|WS
+      - HK3|10G|WS
+      - JPN4|WS|10G|独享|1.5x
+      - TW台湾 04*
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 日本3广港
-      - 香港BGP1广港
-      - 日本4广港
-      - 香港BGP2广港
-      - 日本2广港
-      - 韩国1广港
-      - 韩国2广港
-      - 日本1广港
-      - 香港1皖日
-      - 香港2皖日
-      - 香港3皖日
-      - 香港5皖日
-      - 香港4皖日
+      - TW台湾 04*
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本3广港
-      - 香港BGP1广港
-      - 日本4广港
-      - 香港BGP2广港
-      - 日本2广港
-      - 韩国1广港
-      - 韩国2广港
-      - 日本1广港
-      - 香港1皖日
-      - 香港2皖日
-      - 新加坡4皖日
-      - 香港3皖日
-      - 新加坡2皖日
-      - 香港5皖日
-      - 新加坡3皖日
-      - 香港4皖日
-      - 新加坡1皖日
-      - 美国2皖日
-      - 美国3皖日
-      - 美国4皖日
-      - 美国1皖日
+      - HK1|10G|WS
+      - HK3|10G|WS
+      - JPN4|WS|10G|独享|1.5x
+      - TW台湾 04*
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本3广港
-      - 香港BGP1广港
-      - 日本4广港
-      - 香港BGP2广港
-      - 日本2广港
-      - 韩国1广港
-      - 韩国2广港
-      - 日本1广港
-      - 香港1皖日
-      - 香港2皖日
-      - 新加坡4皖日
-      - 香港3皖日
-      - 新加坡2皖日
-      - 香港5皖日
-      - 新加坡3皖日
-      - 香港4皖日
-      - 新加坡1皖日
-      - 美国2皖日
-      - 美国3皖日
-      - 美国4皖日
-      - 美国1皖日
+      - HK1|10G|WS
+      - HK3|10G|WS
+      - JPN4|WS|10G|独享|1.5x
+      - TW台湾 04*
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本3广港
-      - 香港BGP1广港
-      - 日本4广港
-      - 香港BGP2广港
-      - 日本2广港
-      - 韩国1广港
-      - 韩国2广港
-      - 日本1广港
-      - 香港1皖日
-      - 香港2皖日
-      - 新加坡4皖日
-      - 香港3皖日
-      - 新加坡2皖日
-      - 香港5皖日
-      - 新加坡3皖日
-      - 香港4皖日
-      - 新加坡1皖日
-      - 美国2皖日
-      - 美国3皖日
-      - 美国4皖日
-      - 美国1皖日
+      - HK1|10G|WS
+      - HK3|10G|WS
+      - JPN4|WS|10G|独享|1.5x
+      - TW台湾 04*
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -257,27 +109,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本3广港
-      - 香港BGP1广港
-      - 日本4广港
-      - 香港BGP2广港
-      - 日本2广港
-      - 韩国1广港
-      - 韩国2广港
-      - 日本1广港
-      - 香港1皖日
-      - 香港2皖日
-      - 新加坡4皖日
-      - 香港3皖日
-      - 新加坡2皖日
-      - 香港5皖日
-      - 新加坡3皖日
-      - 香港4皖日
-      - 新加坡1皖日
-      - 美国2皖日
-      - 美国3皖日
-      - 美国4皖日
-      - 美国1皖日
+      - HK1|10G|WS
+      - HK3|10G|WS
+      - JPN4|WS|10G|独享|1.5x
+      - TW台湾 04*
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
