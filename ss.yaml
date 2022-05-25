@@ -5,119 +5,83 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡A|广移A>HKM247, server: gzyd.01.403w.club, port: 20005, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港C|广移A>HKM247, server: gzyd.01.403w.club, port: 20001, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国F|广移B>AZJP, server: gzyd.02.403w.club, port: 21736, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港C|广移B>落地, server: gzyd.02.403w.club, port: 49999, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国B|莞联>AZJP, server: dglt.01.403w.club, port: 10295, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国F|广移A>AWSJP, server: gzyd.01.403w.club, port: 30006, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国A|莞联B>AZHK, server: dglt.01.403w.club, port: 10298, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国A|广移A>AZJP, server: gzyd.01.403w.club, port: 30004, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国D|莞联>AZHK, server: dglt.01.403w.club, port: 10323, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国B|莞联>AZHK, server: dglt.01.403w.club, port: 10309, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港B|广移B>HKM247, server: gzyd.02.403w.club, port: 49919, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯A|广移A>AZJP, server: gzyd.01.403w.club, port: 30007, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾A|广移A>HKBGP, server: gzyd.01.403w.club, port: 30002, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本B|广移A>AZJP, server: gzyd.01.403w.club, port: 20009, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本C|广移B>AZJP, server: gzyd.02.403w.club, port: 10315, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国A|广移B>AZJP, server: gzyd.02.403w.club, port: 41376, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本C|广移A>AZJP, server: gzyd.01.403w.club, port: 30001, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港C|广移B>HKM247, server: gzyd.02.403w.club, port: 20000, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本A|广移B>AZJP, server: gzyd.02.403w.club, port: 10311, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡B|莞联>AZHK, server: dglt.01.403w.club, port: 10319, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 公益节点不保障任何服务，需要优质节点请购买付费订阅*, server: gzyd.01.403w.club, port: 30003, type: ss, cipher: chacha20-ietf-poly1305, password: 132b4945-8c1e-4c65-8087-78e31fa81252, udp: true}
-  - {name: 香港A|莞联>AZHK, server: dglt.01.403w.club, port: 10291, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本B|莞联>AZHK, server: dglt.01.403w.club, port: 10312, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本B|广移A>落地, server: gzyd.01.403w.club, port: 30005, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港03 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40053, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港08 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40058, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港05 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40055, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港07 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40057, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港10 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40060, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港01 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40051, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港06 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40056, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港02 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40052, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港04 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40054, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本04 @BPJC_Group, server: bbbbbbppppppjcjapan01.zztcloud.xyz, port: 40064, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjcjapan01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本03 @BPJC_Group, server: bbbbbbppppppjcjapan01.zztcloud.xyz, port: 40063, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjcjapan01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本05 @BPJC_Group, server: bbbbbbppppppjcjapan01.zztcloud.xyz, port: 40065, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjcjapan01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本01 @BPJC_Group, server: bbbbbbppppppjcjapan01.zztcloud.xyz, port: 40061, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjcjapan01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本02 @BPJC_Group, server: bbbbbbppppppjcjapan01.zztcloud.xyz, port: 40062, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjcjapan01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港09 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40059, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡A|广移A>HKM247
-      - 香港C|广移A>HKM247
-      - 美国F|广移B>AZJP
-      - 香港C|广移B>落地
-      - 韩国B|莞联>AZJP
-      - 美国F|广移A>AWSJP
-      - 德国A|莞联B>AZHK
-      - 美国A|广移A>AZJP
-      - 美国D|莞联>AZHK
-      - 德国B|莞联>AZHK
-      - 香港B|广移B>HKM247
-      - 俄罗斯A|广移A>AZJP
-      - 台湾A|广移A>HKBGP
-      - 日本B|广移A>AZJP
-      - 日本C|广移B>AZJP
-      - 美国A|广移B>AZJP
-      - 日本C|广移A>AZJP
-      - 香港C|广移B>HKM247
-      - 日本A|广移B>AZJP
-      - 新加坡B|莞联>AZHK
-      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
-      - 香港A|莞联>AZHK
-      - 日本B|莞联>AZHK
-      - 日本B|广移A>落地
+      - 香港03 @BPJC_Group
+      - 香港08 @BPJC_Group
+      - 香港05 @BPJC_Group
+      - 香港07 @BPJC_Group
+      - 香港10 @BPJC_Group
+      - 香港01 @BPJC_Group
+      - 香港06 @BPJC_Group
+      - 香港02 @BPJC_Group
+      - 香港04 @BPJC_Group
+      - 日本04 @BPJC_Group
+      - 日本03 @BPJC_Group
+      - 日本05 @BPJC_Group
+      - 日本01 @BPJC_Group
+      - 日本02 @BPJC_Group
+      - 香港09 @BPJC_Group
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡A|广移A>HKM247
-      - 香港C|广移A>HKM247
-      - 美国F|广移B>AZJP
-      - 香港C|广移B>落地
-      - 韩国B|莞联>AZJP
-      - 美国F|广移A>AWSJP
-      - 德国A|莞联B>AZHK
-      - 美国A|广移A>AZJP
-      - 美国D|莞联>AZHK
-      - 德国B|莞联>AZHK
-      - 香港B|广移B>HKM247
-      - 俄罗斯A|广移A>AZJP
-      - 台湾A|广移A>HKBGP
-      - 日本B|广移A>AZJP
-      - 日本C|广移B>AZJP
-      - 美国A|广移B>AZJP
-      - 日本C|广移A>AZJP
-      - 香港C|广移B>HKM247
-      - 日本A|广移B>AZJP
-      - 新加坡B|莞联>AZHK
-      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
-      - 香港A|莞联>AZHK
-      - 日本B|莞联>AZHK
-      - 日本B|广移A>落地
+      - 香港03 @BPJC_Group
+      - 香港08 @BPJC_Group
+      - 香港05 @BPJC_Group
+      - 香港07 @BPJC_Group
+      - 香港10 @BPJC_Group
+      - 香港01 @BPJC_Group
+      - 香港06 @BPJC_Group
+      - 香港02 @BPJC_Group
+      - 香港04 @BPJC_Group
+      - 日本04 @BPJC_Group
+      - 日本03 @BPJC_Group
+      - 日本05 @BPJC_Group
+      - 日本01 @BPJC_Group
+      - 日本02 @BPJC_Group
+      - 香港09 @BPJC_Group
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡A|广移A>HKM247
-      - 香港C|广移A>HKM247
-      - 美国F|广移B>AZJP
-      - 香港C|广移B>落地
-      - 韩国B|莞联>AZJP
-      - 美国F|广移A>AWSJP
-      - 德国A|莞联B>AZHK
-      - 美国A|广移A>AZJP
-      - 美国D|莞联>AZHK
-      - 德国B|莞联>AZHK
-      - 香港B|广移B>HKM247
-      - 俄罗斯A|广移A>AZJP
-      - 台湾A|广移A>HKBGP
-      - 日本B|广移A>AZJP
-      - 日本C|广移B>AZJP
-      - 美国A|广移B>AZJP
-      - 日本C|广移A>AZJP
-      - 香港C|广移B>HKM247
-      - 日本A|广移B>AZJP
-      - 新加坡B|莞联>AZHK
-      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
-      - 香港A|莞联>AZHK
-      - 日本B|莞联>AZHK
-      - 日本B|广移A>落地
+      - 香港03 @BPJC_Group
+      - 香港08 @BPJC_Group
+      - 香港05 @BPJC_Group
+      - 香港07 @BPJC_Group
+      - 香港10 @BPJC_Group
+      - 香港01 @BPJC_Group
+      - 香港06 @BPJC_Group
+      - 香港02 @BPJC_Group
+      - 香港04 @BPJC_Group
+      - 日本04 @BPJC_Group
+      - 日本03 @BPJC_Group
+      - 日本05 @BPJC_Group
+      - 日本01 @BPJC_Group
+      - 日本02 @BPJC_Group
+      - 香港09 @BPJC_Group
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -136,129 +100,97 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡A|广移A>HKM247
-      - 香港C|广移A>HKM247
-      - 美国F|广移B>AZJP
-      - 香港C|广移B>落地
-      - 韩国B|莞联>AZJP
-      - 美国F|广移A>AWSJP
-      - 德国A|莞联B>AZHK
-      - 美国A|广移A>AZJP
-      - 美国D|莞联>AZHK
-      - 德国B|莞联>AZHK
-      - 香港B|广移B>HKM247
-      - 俄罗斯A|广移A>AZJP
-      - 台湾A|广移A>HKBGP
-      - 日本B|广移A>AZJP
-      - 日本C|广移B>AZJP
-      - 美国A|广移B>AZJP
-      - 日本C|广移A>AZJP
-      - 香港C|广移B>HKM247
-      - 日本A|广移B>AZJP
-      - 新加坡B|莞联>AZHK
-      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
-      - 香港A|莞联>AZHK
-      - 日本B|莞联>AZHK
-      - 日本B|广移A>落地
+      - 香港03 @BPJC_Group
+      - 香港08 @BPJC_Group
+      - 香港05 @BPJC_Group
+      - 香港07 @BPJC_Group
+      - 香港10 @BPJC_Group
+      - 香港01 @BPJC_Group
+      - 香港06 @BPJC_Group
+      - 香港02 @BPJC_Group
+      - 香港04 @BPJC_Group
+      - 日本04 @BPJC_Group
+      - 日本03 @BPJC_Group
+      - 日本05 @BPJC_Group
+      - 日本01 @BPJC_Group
+      - 日本02 @BPJC_Group
+      - 香港09 @BPJC_Group
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港C|广移A>HKM247
-      - 香港C|广移B>落地
-      - 香港B|广移B>HKM247
-      - 台湾A|广移A>HKBGP
-      - 香港C|广移B>HKM247
-      - 香港A|莞联>AZHK
+      - 香港03 @BPJC_Group
+      - 香港08 @BPJC_Group
+      - 香港05 @BPJC_Group
+      - 香港07 @BPJC_Group
+      - 香港10 @BPJC_Group
+      - 香港01 @BPJC_Group
+      - 香港06 @BPJC_Group
+      - 香港02 @BPJC_Group
+      - 香港04 @BPJC_Group
+      - 香港09 @BPJC_Group
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡A|广移A>HKM247
-      - 香港C|广移A>HKM247
-      - 美国F|广移B>AZJP
-      - 香港C|广移B>落地
-      - 韩国B|莞联>AZJP
-      - 美国F|广移A>AWSJP
-      - 德国A|莞联B>AZHK
-      - 美国A|广移A>AZJP
-      - 美国D|莞联>AZHK
-      - 德国B|莞联>AZHK
-      - 香港B|广移B>HKM247
-      - 俄罗斯A|广移A>AZJP
-      - 台湾A|广移A>HKBGP
-      - 日本B|广移A>AZJP
-      - 日本C|广移B>AZJP
-      - 美国A|广移B>AZJP
-      - 日本C|广移A>AZJP
-      - 香港C|广移B>HKM247
-      - 日本A|广移B>AZJP
-      - 新加坡B|莞联>AZHK
-      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
-      - 香港A|莞联>AZHK
-      - 日本B|莞联>AZHK
-      - 日本B|广移A>落地
+      - 香港03 @BPJC_Group
+      - 香港08 @BPJC_Group
+      - 香港05 @BPJC_Group
+      - 香港07 @BPJC_Group
+      - 香港10 @BPJC_Group
+      - 香港01 @BPJC_Group
+      - 香港06 @BPJC_Group
+      - 香港02 @BPJC_Group
+      - 香港04 @BPJC_Group
+      - 日本04 @BPJC_Group
+      - 日本03 @BPJC_Group
+      - 日本05 @BPJC_Group
+      - 日本01 @BPJC_Group
+      - 日本02 @BPJC_Group
+      - 香港09 @BPJC_Group
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡A|广移A>HKM247
-      - 香港C|广移A>HKM247
-      - 美国F|广移B>AZJP
-      - 香港C|广移B>落地
-      - 韩国B|莞联>AZJP
-      - 美国F|广移A>AWSJP
-      - 德国A|莞联B>AZHK
-      - 美国A|广移A>AZJP
-      - 美国D|莞联>AZHK
-      - 德国B|莞联>AZHK
-      - 香港B|广移B>HKM247
-      - 俄罗斯A|广移A>AZJP
-      - 台湾A|广移A>HKBGP
-      - 日本B|广移A>AZJP
-      - 日本C|广移B>AZJP
-      - 美国A|广移B>AZJP
-      - 日本C|广移A>AZJP
-      - 香港C|广移B>HKM247
-      - 日本A|广移B>AZJP
-      - 新加坡B|莞联>AZHK
-      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
-      - 香港A|莞联>AZHK
-      - 日本B|莞联>AZHK
-      - 日本B|广移A>落地
+      - 香港03 @BPJC_Group
+      - 香港08 @BPJC_Group
+      - 香港05 @BPJC_Group
+      - 香港07 @BPJC_Group
+      - 香港10 @BPJC_Group
+      - 香港01 @BPJC_Group
+      - 香港06 @BPJC_Group
+      - 香港02 @BPJC_Group
+      - 香港04 @BPJC_Group
+      - 日本04 @BPJC_Group
+      - 日本03 @BPJC_Group
+      - 日本05 @BPJC_Group
+      - 日本01 @BPJC_Group
+      - 日本02 @BPJC_Group
+      - 香港09 @BPJC_Group
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡A|广移A>HKM247
-      - 香港C|广移A>HKM247
-      - 美国F|广移B>AZJP
-      - 香港C|广移B>落地
-      - 韩国B|莞联>AZJP
-      - 美国F|广移A>AWSJP
-      - 德国A|莞联B>AZHK
-      - 美国A|广移A>AZJP
-      - 美国D|莞联>AZHK
-      - 德国B|莞联>AZHK
-      - 香港B|广移B>HKM247
-      - 俄罗斯A|广移A>AZJP
-      - 台湾A|广移A>HKBGP
-      - 日本B|广移A>AZJP
-      - 日本C|广移B>AZJP
-      - 美国A|广移B>AZJP
-      - 日本C|广移A>AZJP
-      - 香港C|广移B>HKM247
-      - 日本A|广移B>AZJP
-      - 新加坡B|莞联>AZHK
-      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
-      - 香港A|莞联>AZHK
-      - 日本B|莞联>AZHK
-      - 日本B|广移A>落地
+      - 香港03 @BPJC_Group
+      - 香港08 @BPJC_Group
+      - 香港05 @BPJC_Group
+      - 香港07 @BPJC_Group
+      - 香港10 @BPJC_Group
+      - 香港01 @BPJC_Group
+      - 香港06 @BPJC_Group
+      - 香港02 @BPJC_Group
+      - 香港04 @BPJC_Group
+      - 日本04 @BPJC_Group
+      - 日本03 @BPJC_Group
+      - 日本05 @BPJC_Group
+      - 日本01 @BPJC_Group
+      - 日本02 @BPJC_Group
+      - 香港09 @BPJC_Group
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -274,30 +206,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡A|广移A>HKM247
-      - 香港C|广移A>HKM247
-      - 美国F|广移B>AZJP
-      - 香港C|广移B>落地
-      - 韩国B|莞联>AZJP
-      - 美国F|广移A>AWSJP
-      - 德国A|莞联B>AZHK
-      - 美国A|广移A>AZJP
-      - 美国D|莞联>AZHK
-      - 德国B|莞联>AZHK
-      - 香港B|广移B>HKM247
-      - 俄罗斯A|广移A>AZJP
-      - 台湾A|广移A>HKBGP
-      - 日本B|广移A>AZJP
-      - 日本C|广移B>AZJP
-      - 美国A|广移B>AZJP
-      - 日本C|广移A>AZJP
-      - 香港C|广移B>HKM247
-      - 日本A|广移B>AZJP
-      - 新加坡B|莞联>AZHK
-      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
-      - 香港A|莞联>AZHK
-      - 日本B|莞联>AZHK
-      - 日本B|广移A>落地
+      - 香港03 @BPJC_Group
+      - 香港08 @BPJC_Group
+      - 香港05 @BPJC_Group
+      - 香港07 @BPJC_Group
+      - 香港10 @BPJC_Group
+      - 香港01 @BPJC_Group
+      - 香港06 @BPJC_Group
+      - 香港02 @BPJC_Group
+      - 香港04 @BPJC_Group
+      - 日本04 @BPJC_Group
+      - 日本03 @BPJC_Group
+      - 日本05 @BPJC_Group
+      - 日本01 @BPJC_Group
+      - 日本02 @BPJC_Group
+      - 香港09 @BPJC_Group
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
