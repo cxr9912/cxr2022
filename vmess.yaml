@@ -5,123 +5,251 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: lv.5-中国==>日本2, server: zh01lv5jp02.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>日本1, server: zh01lv5jp01.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: 售后tg/土豆：@tzgaowei, server: test2.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>香港8, server: zh01lv5hk08.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>香港4, server: zh01lv5hk04.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>日本4, server: zh01lv5jp04.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>香港2, server: zh01lv5hk02.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>香港5, server: zh01lv5hk05.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>香港10, server: zh01lv5hk10.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>香港3, server: zh01lv5hk03.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>日本5, server: zh01lv5jp05.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>香港9, server: zh01lv5hk09.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>英国5, server: zh01lv5uk05.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>英国4, server: zh01lv5uk04.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>英国2, server: zh01lv5uk02.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>加拿大5, server: zh01lv5ca05.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>美国1, server: zh01lv5us01.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>英国1, server: zh01lv5uk01.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>加拿大4, server: zh01lv5ca04.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>加拿大3, server: zh01lv5ca03.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>英国3, server: zh01lv5uk03.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>德国1, server: zh01lv5ge01.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>德国3, server: zh01lv5ge03.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>德国5, server: zh01lv5ge05.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
-  - {name: lv.5-中国==>德国4, server: zh01lv5ge04.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: f8841c12-5050-4747-bd37-bb88ce87e23c, udp: true}
+  - {name: 售后tg/土豆：@tzgaowei, server: test2.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: 土豆下载地址：potato.im, server: test3.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>香港1, server: zh01lv5hk01.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>香港2, server: zh01lv5hk02.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>香港3, server: zh01lv5hk03.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>香港4, server: zh01lv5hk04.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>香港5, server: zh01lv5hk05.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>香港6, server: zh01lv5hk06.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>香港7, server: zh01lv5hk07.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>香港8, server: zh01lv5hk08.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>香港9, server: zh01lv5hk09.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>香港10, server: zh01lv5hk10.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>台湾1-Netflix, server: zh01lv5tw01.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>台湾2-Netflix, server: zh01lv5tw02.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>台湾3-Netflix, server: zh01lv5tw03.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>台湾4-Netflix, server: zh01lv5tw04.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>台湾5-Netflix, server: zh01lv5tw05.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>日本1, server: zh01lv5jp01.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>日本2, server: zh01lv5jp02.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>日本3, server: zh01lv5jp03.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>日本4, server: zh01lv5jp04.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>日本5, server: zh01lv5jp05.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>美国1, server: zh01lv5us01.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>美国2, server: zh01lv5us02.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>美国3, server: zh01lv5us03.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>美国4, server: zh01lv5us04.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>美国5, server: zh01lv5us05.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>新加坡1, server: zh01lv5sgp01.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>新加坡2, server: zh01lv5sgp02.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>新加坡3, server: zh01lv5sgp03.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>新加坡4, server: zh01lv5sgp04.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>新加坡5, server: zh01lv5sgp05.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>英国1, server: zh01lv5uk01.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>英国2, server: zh01lv5uk02.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>英国3, server: zh01lv5uk03.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>英国4, server: zh01lv5uk04.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>英国5, server: zh01lv5uk05.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>德国1, server: zh01lv5ge01.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>德国2, server: zh01lv5ge02.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>德国3, server: zh01lv5ge03.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>德国4, server: zh01lv5ge04.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>德国5, server: zh01lv5ge05.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>加拿大1, server: zh01lv5ca01.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>加拿大2, server: zh01lv5ca02.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>加拿大3, server: zh01lv5ca03.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>加拿大4, server: zh01lv5ca04.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>加拿大5, server: zh01lv5ca05.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>印度1, server: zh01lv5in01.feiguayun.xyz, port: 38087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>印度2, server: zh01lv5in02.feiguayun.xyz, port: 38087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>印度3, server: zh01lv5in03.feiguayun.xyz, port: 38087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>印度4, server: zh01lv5in04.feiguayun.xyz, port: 38087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>印度5, server: zh01lv5in05.feiguayun.xyz, port: 38087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>澳大利亚1, server: zh01lv5au01.feiguayun.xyz, port: 39087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>澳大利亚2, server: zh01lv5au02.feiguayun.xyz, port: 39087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>澳大利亚3, server: zh01lv5au03.feiguayun.xyz, port: 39087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>澳大利亚4, server: zh01lv5au04.feiguayun.xyz, port: 39087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
+  - {name: lv.5-中国==>澳大利亚5, server: zh01lv5au05.feiguayun.xyz, port: 39087, type: ss, cipher: aes-256-gcm, password: 6b5c482e-ba1e-4552-9d73-debbdd52871b, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - lv.5-中国==>日本2
-      - lv.5-中国==>日本1
       - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港4
-      - lv.5-中国==>日本4
+      - 土豆下载地址：potato.im
+      - lv.5-中国==>香港1
       - lv.5-中国==>香港2
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港10
       - lv.5-中国==>香港3
-      - lv.5-中国==>日本5
+      - lv.5-中国==>香港4
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港8
       - lv.5-中国==>香港9
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大5
+      - lv.5-中国==>香港10
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾4-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>日本1
+      - lv.5-中国==>日本2
+      - lv.5-中国==>日本3
+      - lv.5-中国==>日本4
+      - lv.5-中国==>日本5
       - lv.5-中国==>美国1
+      - lv.5-中国==>美国2
+      - lv.5-中国==>美国3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡1
+      - lv.5-中国==>新加坡2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>新加坡5
       - lv.5-中国==>英国1
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大3
+      - lv.5-中国==>英国2
       - lv.5-中国==>英国3
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国5
       - lv.5-中国==>德国1
+      - lv.5-中国==>德国2
       - lv.5-中国==>德国3
-      - lv.5-中国==>德国5
       - lv.5-中国==>德国4
+      - lv.5-中国==>德国5
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>印度1
+      - lv.5-中国==>印度2
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - lv.5-中国==>印度5
+      - lv.5-中国==>澳大利亚1
+      - lv.5-中国==>澳大利亚2
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>澳大利亚5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - lv.5-中国==>日本2
-      - lv.5-中国==>日本1
       - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港4
-      - lv.5-中国==>日本4
+      - 土豆下载地址：potato.im
+      - lv.5-中国==>香港1
       - lv.5-中国==>香港2
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港10
       - lv.5-中国==>香港3
-      - lv.5-中国==>日本5
+      - lv.5-中国==>香港4
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港8
       - lv.5-中国==>香港9
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大5
+      - lv.5-中国==>香港10
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾4-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>日本1
+      - lv.5-中国==>日本2
+      - lv.5-中国==>日本3
+      - lv.5-中国==>日本4
+      - lv.5-中国==>日本5
       - lv.5-中国==>美国1
+      - lv.5-中国==>美国2
+      - lv.5-中国==>美国3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡1
+      - lv.5-中国==>新加坡2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>新加坡5
       - lv.5-中国==>英国1
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大3
+      - lv.5-中国==>英国2
       - lv.5-中国==>英国3
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国5
       - lv.5-中国==>德国1
+      - lv.5-中国==>德国2
       - lv.5-中国==>德国3
-      - lv.5-中国==>德国5
       - lv.5-中国==>德国4
+      - lv.5-中国==>德国5
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>印度1
+      - lv.5-中国==>印度2
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - lv.5-中国==>印度5
+      - lv.5-中国==>澳大利亚1
+      - lv.5-中国==>澳大利亚2
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>澳大利亚5
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - lv.5-中国==>日本2
-      - lv.5-中国==>日本1
       - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港4
-      - lv.5-中国==>日本4
+      - 土豆下载地址：potato.im
+      - lv.5-中国==>香港1
       - lv.5-中国==>香港2
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港10
       - lv.5-中国==>香港3
-      - lv.5-中国==>日本5
+      - lv.5-中国==>香港4
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港8
       - lv.5-中国==>香港9
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大5
+      - lv.5-中国==>香港10
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾4-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>日本1
+      - lv.5-中国==>日本2
+      - lv.5-中国==>日本3
+      - lv.5-中国==>日本4
+      - lv.5-中国==>日本5
       - lv.5-中国==>美国1
+      - lv.5-中国==>美国2
+      - lv.5-中国==>美国3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡1
+      - lv.5-中国==>新加坡2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>新加坡5
       - lv.5-中国==>英国1
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大3
+      - lv.5-中国==>英国2
       - lv.5-中国==>英国3
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国5
       - lv.5-中国==>德国1
+      - lv.5-中国==>德国2
       - lv.5-中国==>德国3
-      - lv.5-中国==>德国5
       - lv.5-中国==>德国4
+      - lv.5-中国==>德国5
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>印度1
+      - lv.5-中国==>印度2
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - lv.5-中国==>印度5
+      - lv.5-中国==>澳大利亚1
+      - lv.5-中国==>澳大利亚2
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>澳大利亚5
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -140,134 +268,270 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - lv.5-中国==>日本2
-      - lv.5-中国==>日本1
       - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港4
-      - lv.5-中国==>日本4
+      - 土豆下载地址：potato.im
+      - lv.5-中国==>香港1
       - lv.5-中国==>香港2
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港10
       - lv.5-中国==>香港3
-      - lv.5-中国==>日本5
+      - lv.5-中国==>香港4
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港8
       - lv.5-中国==>香港9
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大5
+      - lv.5-中国==>香港10
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾4-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>日本1
+      - lv.5-中国==>日本2
+      - lv.5-中国==>日本3
+      - lv.5-中国==>日本4
+      - lv.5-中国==>日本5
       - lv.5-中国==>美国1
+      - lv.5-中国==>美国2
+      - lv.5-中国==>美国3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡1
+      - lv.5-中国==>新加坡2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>新加坡5
       - lv.5-中国==>英国1
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大3
+      - lv.5-中国==>英国2
       - lv.5-中国==>英国3
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国5
       - lv.5-中国==>德国1
+      - lv.5-中国==>德国2
       - lv.5-中国==>德国3
-      - lv.5-中国==>德国5
       - lv.5-中国==>德国4
+      - lv.5-中国==>德国5
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>印度1
+      - lv.5-中国==>印度2
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - lv.5-中国==>印度5
+      - lv.5-中国==>澳大利亚1
+      - lv.5-中国==>澳大利亚2
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>澳大利亚5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港4
+      - lv.5-中国==>香港1
       - lv.5-中国==>香港2
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港10
       - lv.5-中国==>香港3
+      - lv.5-中国==>香港4
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港8
       - lv.5-中国==>香港9
+      - lv.5-中国==>香港10
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾4-Netflix
+      - lv.5-中国==>台湾5-Netflix
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - lv.5-中国==>日本2
-      - lv.5-中国==>日本1
       - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港4
-      - lv.5-中国==>日本4
+      - 土豆下载地址：potato.im
+      - lv.5-中国==>香港1
       - lv.5-中国==>香港2
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港10
       - lv.5-中国==>香港3
-      - lv.5-中国==>日本5
+      - lv.5-中国==>香港4
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港8
       - lv.5-中国==>香港9
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大5
+      - lv.5-中国==>香港10
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾4-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>日本1
+      - lv.5-中国==>日本2
+      - lv.5-中国==>日本3
+      - lv.5-中国==>日本4
+      - lv.5-中国==>日本5
       - lv.5-中国==>美国1
+      - lv.5-中国==>美国2
+      - lv.5-中国==>美国3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡1
+      - lv.5-中国==>新加坡2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>新加坡5
       - lv.5-中国==>英国1
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大3
+      - lv.5-中国==>英国2
       - lv.5-中国==>英国3
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国5
       - lv.5-中国==>德国1
+      - lv.5-中国==>德国2
       - lv.5-中国==>德国3
-      - lv.5-中国==>德国5
       - lv.5-中国==>德国4
+      - lv.5-中国==>德国5
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>印度1
+      - lv.5-中国==>印度2
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - lv.5-中国==>印度5
+      - lv.5-中国==>澳大利亚1
+      - lv.5-中国==>澳大利亚2
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>澳大利亚5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - lv.5-中国==>日本2
-      - lv.5-中国==>日本1
       - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港4
-      - lv.5-中国==>日本4
+      - 土豆下载地址：potato.im
+      - lv.5-中国==>香港1
       - lv.5-中国==>香港2
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港10
       - lv.5-中国==>香港3
-      - lv.5-中国==>日本5
+      - lv.5-中国==>香港4
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港8
       - lv.5-中国==>香港9
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大5
+      - lv.5-中国==>香港10
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾4-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>日本1
+      - lv.5-中国==>日本2
+      - lv.5-中国==>日本3
+      - lv.5-中国==>日本4
+      - lv.5-中国==>日本5
       - lv.5-中国==>美国1
+      - lv.5-中国==>美国2
+      - lv.5-中国==>美国3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡1
+      - lv.5-中国==>新加坡2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>新加坡5
       - lv.5-中国==>英国1
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大3
+      - lv.5-中国==>英国2
       - lv.5-中国==>英国3
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国5
       - lv.5-中国==>德国1
+      - lv.5-中国==>德国2
       - lv.5-中国==>德国3
-      - lv.5-中国==>德国5
       - lv.5-中国==>德国4
+      - lv.5-中国==>德国5
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>印度1
+      - lv.5-中国==>印度2
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - lv.5-中国==>印度5
+      - lv.5-中国==>澳大利亚1
+      - lv.5-中国==>澳大利亚2
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>澳大利亚5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - lv.5-中国==>日本2
-      - lv.5-中国==>日本1
       - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港4
-      - lv.5-中国==>日本4
+      - 土豆下载地址：potato.im
+      - lv.5-中国==>香港1
       - lv.5-中国==>香港2
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港10
       - lv.5-中国==>香港3
-      - lv.5-中国==>日本5
+      - lv.5-中国==>香港4
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港8
       - lv.5-中国==>香港9
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大5
+      - lv.5-中国==>香港10
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾4-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>日本1
+      - lv.5-中国==>日本2
+      - lv.5-中国==>日本3
+      - lv.5-中国==>日本4
+      - lv.5-中国==>日本5
       - lv.5-中国==>美国1
+      - lv.5-中国==>美国2
+      - lv.5-中国==>美国3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡1
+      - lv.5-中国==>新加坡2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>新加坡5
       - lv.5-中国==>英国1
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大3
+      - lv.5-中国==>英国2
       - lv.5-中国==>英国3
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国5
       - lv.5-中国==>德国1
+      - lv.5-中国==>德国2
       - lv.5-中国==>德国3
-      - lv.5-中国==>德国5
       - lv.5-中国==>德国4
+      - lv.5-中国==>德国5
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>印度1
+      - lv.5-中国==>印度2
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - lv.5-中国==>印度5
+      - lv.5-中国==>澳大利亚1
+      - lv.5-中国==>澳大利亚2
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>澳大利亚5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -283,31 +547,63 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - lv.5-中国==>日本2
-      - lv.5-中国==>日本1
       - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港4
-      - lv.5-中国==>日本4
+      - 土豆下载地址：potato.im
+      - lv.5-中国==>香港1
       - lv.5-中国==>香港2
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港10
       - lv.5-中国==>香港3
-      - lv.5-中国==>日本5
+      - lv.5-中国==>香港4
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港8
       - lv.5-中国==>香港9
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大5
+      - lv.5-中国==>香港10
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾4-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>日本1
+      - lv.5-中国==>日本2
+      - lv.5-中国==>日本3
+      - lv.5-中国==>日本4
+      - lv.5-中国==>日本5
       - lv.5-中国==>美国1
+      - lv.5-中国==>美国2
+      - lv.5-中国==>美国3
+      - lv.5-中国==>美国4
+      - lv.5-中国==>美国5
+      - lv.5-中国==>新加坡1
+      - lv.5-中国==>新加坡2
+      - lv.5-中国==>新加坡3
+      - lv.5-中国==>新加坡4
+      - lv.5-中国==>新加坡5
       - lv.5-中国==>英国1
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大3
+      - lv.5-中国==>英国2
       - lv.5-中国==>英国3
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国5
       - lv.5-中国==>德国1
+      - lv.5-中国==>德国2
       - lv.5-中国==>德国3
-      - lv.5-中国==>德国5
       - lv.5-中国==>德国4
+      - lv.5-中国==>德国5
+      - lv.5-中国==>加拿大1
+      - lv.5-中国==>加拿大2
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>印度1
+      - lv.5-中国==>印度2
+      - lv.5-中国==>印度3
+      - lv.5-中国==>印度4
+      - lv.5-中国==>印度5
+      - lv.5-中国==>澳大利亚1
+      - lv.5-中国==>澳大利亚2
+      - lv.5-中国==>澳大利亚3
+      - lv.5-中国==>澳大利亚4
+      - lv.5-中国==>澳大利亚5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
