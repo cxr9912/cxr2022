@@ -5,63 +5,119 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: VIP2-广移1-香港, server: zz.ctzcloud.com, port: 9000, type: vmess, uuid: 2202997f-f9d3-3bd8-a4a6-d11aa9e3ff11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: VIP2-香港3-直连, server: dmhkp.ctzcloud.com, port: 9948, type: vmess, uuid: 2202997f-f9d3-3bd8-a4a6-d11aa9e3ff11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: VIP2-广移3-香港, server: zz.ctzcloud.com, port: 9002, type: vmess, uuid: 2202997f-f9d3-3bd8-a4a6-d11aa9e3ff11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: VIP2-广移2-香港, server: zz.ctzcloud.com, port: 9001, type: vmess, uuid: 2202997f-f9d3-3bd8-a4a6-d11aa9e3ff11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: VIP2-广移4-香港, server: zz.ctzcloud.com, port: 9003, type: vmess, uuid: 2202997f-f9d3-3bd8-a4a6-d11aa9e3ff11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: VIP2-广移7-新加坡, server: zz.ctzcloud.com, port: 9006, type: vmess, uuid: 2202997f-f9d3-3bd8-a4a6-d11aa9e3ff11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: VIP2-广移5-新加坡, server: zz.ctzcloud.com, port: 9004, type: vmess, uuid: 2202997f-f9d3-3bd8-a4a6-d11aa9e3ff11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: VIP2-广移9-台湾, server: zz.ctzcloud.com, port: 9008, type: vmess, uuid: 2202997f-f9d3-3bd8-a4a6-d11aa9e3ff11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: VIP2-广移6-新加坡, server: zz.ctzcloud.com, port: 9005, type: vmess, uuid: 2202997f-f9d3-3bd8-a4a6-d11aa9e3ff11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: VIP1-台湾2-直连, server: tw.ctzcloud.com, port: 7741, type: vmess, uuid: 2202997f-f9d3-3bd8-a4a6-d11aa9e3ff11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡A|广移A>HKM247, server: gzyd.01.403w.club, port: 20005, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港C|广移A>HKM247, server: gzyd.01.403w.club, port: 20001, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国F|广移B>AZJP, server: gzyd.02.403w.club, port: 21736, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港C|广移B>落地, server: gzyd.02.403w.club, port: 49999, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国B|莞联>AZJP, server: dglt.01.403w.club, port: 10295, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国F|广移A>AWSJP, server: gzyd.01.403w.club, port: 30006, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国A|莞联B>AZHK, server: dglt.01.403w.club, port: 10298, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国A|广移A>AZJP, server: gzyd.01.403w.club, port: 30004, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国D|莞联>AZHK, server: dglt.01.403w.club, port: 10323, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国B|莞联>AZHK, server: dglt.01.403w.club, port: 10309, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港B|广移B>HKM247, server: gzyd.02.403w.club, port: 49919, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯A|广移A>AZJP, server: gzyd.01.403w.club, port: 30007, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾A|广移A>HKBGP, server: gzyd.01.403w.club, port: 30002, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本B|广移A>AZJP, server: gzyd.01.403w.club, port: 20009, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本C|广移B>AZJP, server: gzyd.02.403w.club, port: 10315, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国A|广移B>AZJP, server: gzyd.02.403w.club, port: 41376, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本C|广移A>AZJP, server: gzyd.01.403w.club, port: 30001, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港C|广移B>HKM247, server: gzyd.02.403w.club, port: 20000, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本A|广移B>AZJP, server: gzyd.02.403w.club, port: 10311, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡B|莞联>AZHK, server: dglt.01.403w.club, port: 10319, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 公益节点不保障任何服务，需要优质节点请购买付费订阅*, server: gzyd.01.403w.club, port: 30003, type: ss, cipher: chacha20-ietf-poly1305, password: 132b4945-8c1e-4c65-8087-78e31fa81252, udp: true}
+  - {name: 香港A|莞联>AZHK, server: dglt.01.403w.club, port: 10291, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本B|莞联>AZHK, server: dglt.01.403w.club, port: 10312, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本B|广移A>落地, server: gzyd.01.403w.club, port: 30005, type: vmess, uuid: 132b4945-8c1e-4c65-8087-78e31fa81252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VIP2-广移1-香港
-      - VIP2-香港3-直连
-      - VIP2-广移3-香港
-      - VIP2-广移2-香港
-      - VIP2-广移4-香港
-      - VIP2-广移7-新加坡
-      - VIP2-广移5-新加坡
-      - VIP2-广移9-台湾
-      - VIP2-广移6-新加坡
-      - VIP1-台湾2-直连
+      - 新加坡A|广移A>HKM247
+      - 香港C|广移A>HKM247
+      - 美国F|广移B>AZJP
+      - 香港C|广移B>落地
+      - 韩国B|莞联>AZJP
+      - 美国F|广移A>AWSJP
+      - 德国A|莞联B>AZHK
+      - 美国A|广移A>AZJP
+      - 美国D|莞联>AZHK
+      - 德国B|莞联>AZHK
+      - 香港B|广移B>HKM247
+      - 俄罗斯A|广移A>AZJP
+      - 台湾A|广移A>HKBGP
+      - 日本B|广移A>AZJP
+      - 日本C|广移B>AZJP
+      - 美国A|广移B>AZJP
+      - 日本C|广移A>AZJP
+      - 香港C|广移B>HKM247
+      - 日本A|广移B>AZJP
+      - 新加坡B|莞联>AZHK
+      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
+      - 香港A|莞联>AZHK
+      - 日本B|莞联>AZHK
+      - 日本B|广移A>落地
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - VIP2-广移1-香港
-      - VIP2-香港3-直连
-      - VIP2-广移3-香港
-      - VIP2-广移2-香港
-      - VIP2-广移4-香港
-      - VIP2-广移7-新加坡
-      - VIP2-广移5-新加坡
-      - VIP2-广移9-台湾
-      - VIP2-广移6-新加坡
-      - VIP1-台湾2-直连
+      - 新加坡A|广移A>HKM247
+      - 香港C|广移A>HKM247
+      - 美国F|广移B>AZJP
+      - 香港C|广移B>落地
+      - 韩国B|莞联>AZJP
+      - 美国F|广移A>AWSJP
+      - 德国A|莞联B>AZHK
+      - 美国A|广移A>AZJP
+      - 美国D|莞联>AZHK
+      - 德国B|莞联>AZHK
+      - 香港B|广移B>HKM247
+      - 俄罗斯A|广移A>AZJP
+      - 台湾A|广移A>HKBGP
+      - 日本B|广移A>AZJP
+      - 日本C|广移B>AZJP
+      - 美国A|广移B>AZJP
+      - 日本C|广移A>AZJP
+      - 香港C|广移B>HKM247
+      - 日本A|广移B>AZJP
+      - 新加坡B|莞联>AZHK
+      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
+      - 香港A|莞联>AZHK
+      - 日本B|莞联>AZHK
+      - 日本B|广移A>落地
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VIP2-广移1-香港
-      - VIP2-香港3-直连
-      - VIP2-广移3-香港
-      - VIP2-广移2-香港
-      - VIP2-广移4-香港
-      - VIP2-广移7-新加坡
-      - VIP2-广移5-新加坡
-      - VIP2-广移9-台湾
-      - VIP2-广移6-新加坡
-      - VIP1-台湾2-直连
+      - 新加坡A|广移A>HKM247
+      - 香港C|广移A>HKM247
+      - 美国F|广移B>AZJP
+      - 香港C|广移B>落地
+      - 韩国B|莞联>AZJP
+      - 美国F|广移A>AWSJP
+      - 德国A|莞联B>AZHK
+      - 美国A|广移A>AZJP
+      - 美国D|莞联>AZHK
+      - 德国B|莞联>AZHK
+      - 香港B|广移B>HKM247
+      - 俄罗斯A|广移A>AZJP
+      - 台湾A|广移A>HKBGP
+      - 日本B|广移A>AZJP
+      - 日本C|广移B>AZJP
+      - 美国A|广移B>AZJP
+      - 日本C|广移A>AZJP
+      - 香港C|广移B>HKM247
+      - 日本A|广移B>AZJP
+      - 新加坡B|莞联>AZHK
+      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
+      - 香港A|莞联>AZHK
+      - 日本B|莞联>AZHK
+      - 日本B|广移A>落地
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,74 +136,129 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VIP2-广移1-香港
-      - VIP2-香港3-直连
-      - VIP2-广移3-香港
-      - VIP2-广移2-香港
-      - VIP2-广移4-香港
-      - VIP2-广移7-新加坡
-      - VIP2-广移5-新加坡
-      - VIP2-广移9-台湾
-      - VIP2-广移6-新加坡
-      - VIP1-台湾2-直连
+      - 新加坡A|广移A>HKM247
+      - 香港C|广移A>HKM247
+      - 美国F|广移B>AZJP
+      - 香港C|广移B>落地
+      - 韩国B|莞联>AZJP
+      - 美国F|广移A>AWSJP
+      - 德国A|莞联B>AZHK
+      - 美国A|广移A>AZJP
+      - 美国D|莞联>AZHK
+      - 德国B|莞联>AZHK
+      - 香港B|广移B>HKM247
+      - 俄罗斯A|广移A>AZJP
+      - 台湾A|广移A>HKBGP
+      - 日本B|广移A>AZJP
+      - 日本C|广移B>AZJP
+      - 美国A|广移B>AZJP
+      - 日本C|广移A>AZJP
+      - 香港C|广移B>HKM247
+      - 日本A|广移B>AZJP
+      - 新加坡B|莞联>AZHK
+      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
+      - 香港A|莞联>AZHK
+      - 日本B|莞联>AZHK
+      - 日本B|广移A>落地
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - VIP2-广移1-香港
-      - VIP2-香港3-直连
-      - VIP2-广移3-香港
-      - VIP2-广移2-香港
-      - VIP2-广移4-香港
-      - VIP2-广移9-台湾
-      - VIP1-台湾2-直连
+      - 香港C|广移A>HKM247
+      - 香港C|广移B>落地
+      - 香港B|广移B>HKM247
+      - 台湾A|广移A>HKBGP
+      - 香港C|广移B>HKM247
+      - 香港A|莞联>AZHK
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - VIP2-广移1-香港
-      - VIP2-香港3-直连
-      - VIP2-广移3-香港
-      - VIP2-广移2-香港
-      - VIP2-广移4-香港
-      - VIP2-广移7-新加坡
-      - VIP2-广移5-新加坡
-      - VIP2-广移9-台湾
-      - VIP2-广移6-新加坡
-      - VIP1-台湾2-直连
+      - 新加坡A|广移A>HKM247
+      - 香港C|广移A>HKM247
+      - 美国F|广移B>AZJP
+      - 香港C|广移B>落地
+      - 韩国B|莞联>AZJP
+      - 美国F|广移A>AWSJP
+      - 德国A|莞联B>AZHK
+      - 美国A|广移A>AZJP
+      - 美国D|莞联>AZHK
+      - 德国B|莞联>AZHK
+      - 香港B|广移B>HKM247
+      - 俄罗斯A|广移A>AZJP
+      - 台湾A|广移A>HKBGP
+      - 日本B|广移A>AZJP
+      - 日本C|广移B>AZJP
+      - 美国A|广移B>AZJP
+      - 日本C|广移A>AZJP
+      - 香港C|广移B>HKM247
+      - 日本A|广移B>AZJP
+      - 新加坡B|莞联>AZHK
+      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
+      - 香港A|莞联>AZHK
+      - 日本B|莞联>AZHK
+      - 日本B|广移A>落地
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - VIP2-广移1-香港
-      - VIP2-香港3-直连
-      - VIP2-广移3-香港
-      - VIP2-广移2-香港
-      - VIP2-广移4-香港
-      - VIP2-广移7-新加坡
-      - VIP2-广移5-新加坡
-      - VIP2-广移9-台湾
-      - VIP2-广移6-新加坡
-      - VIP1-台湾2-直连
+      - 新加坡A|广移A>HKM247
+      - 香港C|广移A>HKM247
+      - 美国F|广移B>AZJP
+      - 香港C|广移B>落地
+      - 韩国B|莞联>AZJP
+      - 美国F|广移A>AWSJP
+      - 德国A|莞联B>AZHK
+      - 美国A|广移A>AZJP
+      - 美国D|莞联>AZHK
+      - 德国B|莞联>AZHK
+      - 香港B|广移B>HKM247
+      - 俄罗斯A|广移A>AZJP
+      - 台湾A|广移A>HKBGP
+      - 日本B|广移A>AZJP
+      - 日本C|广移B>AZJP
+      - 美国A|广移B>AZJP
+      - 日本C|广移A>AZJP
+      - 香港C|广移B>HKM247
+      - 日本A|广移B>AZJP
+      - 新加坡B|莞联>AZHK
+      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
+      - 香港A|莞联>AZHK
+      - 日本B|莞联>AZHK
+      - 日本B|广移A>落地
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VIP2-广移1-香港
-      - VIP2-香港3-直连
-      - VIP2-广移3-香港
-      - VIP2-广移2-香港
-      - VIP2-广移4-香港
-      - VIP2-广移7-新加坡
-      - VIP2-广移5-新加坡
-      - VIP2-广移9-台湾
-      - VIP2-广移6-新加坡
-      - VIP1-台湾2-直连
+      - 新加坡A|广移A>HKM247
+      - 香港C|广移A>HKM247
+      - 美国F|广移B>AZJP
+      - 香港C|广移B>落地
+      - 韩国B|莞联>AZJP
+      - 美国F|广移A>AWSJP
+      - 德国A|莞联B>AZHK
+      - 美国A|广移A>AZJP
+      - 美国D|莞联>AZHK
+      - 德国B|莞联>AZHK
+      - 香港B|广移B>HKM247
+      - 俄罗斯A|广移A>AZJP
+      - 台湾A|广移A>HKBGP
+      - 日本B|广移A>AZJP
+      - 日本C|广移B>AZJP
+      - 美国A|广移B>AZJP
+      - 日本C|广移A>AZJP
+      - 香港C|广移B>HKM247
+      - 日本A|广移B>AZJP
+      - 新加坡B|莞联>AZHK
+      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
+      - 香港A|莞联>AZHK
+      - 日本B|莞联>AZHK
+      - 日本B|广移A>落地
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -163,16 +274,30 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VIP2-广移1-香港
-      - VIP2-香港3-直连
-      - VIP2-广移3-香港
-      - VIP2-广移2-香港
-      - VIP2-广移4-香港
-      - VIP2-广移7-新加坡
-      - VIP2-广移5-新加坡
-      - VIP2-广移9-台湾
-      - VIP2-广移6-新加坡
-      - VIP1-台湾2-直连
+      - 新加坡A|广移A>HKM247
+      - 香港C|广移A>HKM247
+      - 美国F|广移B>AZJP
+      - 香港C|广移B>落地
+      - 韩国B|莞联>AZJP
+      - 美国F|广移A>AWSJP
+      - 德国A|莞联B>AZHK
+      - 美国A|广移A>AZJP
+      - 美国D|莞联>AZHK
+      - 德国B|莞联>AZHK
+      - 香港B|广移B>HKM247
+      - 俄罗斯A|广移A>AZJP
+      - 台湾A|广移A>HKBGP
+      - 日本B|广移A>AZJP
+      - 日本C|广移B>AZJP
+      - 美国A|广移B>AZJP
+      - 日本C|广移A>AZJP
+      - 香港C|广移B>HKM247
+      - 日本A|广移B>AZJP
+      - 新加坡B|莞联>AZHK
+      - 公益节点不保障任何服务，需要优质节点请购买付费订阅*
+      - 香港A|莞联>AZHK
+      - 日本B|莞联>AZHK
+      - 日本B|广移A>落地
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
