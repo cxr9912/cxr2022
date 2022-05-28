@@ -5,91 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "深港专线转香港HGC商宽7[倍率:2.5]", server: 42.157.196.246, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线转香港HGC商宽[倍率:2.5]", server: 42.157.196.247, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线4[倍率:2.5]", server: 42.157.196.245, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "广东移动转香港HKT[M][倍率:0.9]", server: 120.233.185.87, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线2[倍率:2.5]", server: 211.99.100.26, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线转香港HGC商宽3[倍率:2.5]", server: 211.99.100.20, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "广州移动转香港NTT[倍率:0.8]", server: 120.233.185.99, port: 65520, type: ss, cipher: chacha20-ietf, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 663a437393.microsoft.com}, udp: true}
-  - {name: "深港专线转香港HGC商宽8[倍率:2.5]", server: 42.157.196.249, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线转香港Azure[倍率:2.5]", server: 42.157.196.249, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "广东移动转香港NTT[倍率:0.8]", server: 120.233.185.83, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线转香港HGC商宽6[倍率:2.5]", server: 42.157.196.194, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "广州移动转香港NTT3[倍率:0.9]", server: 120.233.185.97, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "广东移动转日本NTT[倍率:0.8]", server: 120.233.185.88, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线转香港HGC[倍率:2.5]", server: 42.157.196.243, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线5[倍率:2.5]", server: 42.157.196.243, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线转香港NTT2[倍率:2.5]", server: 211.99.100.21, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "广东移动转香港CM[M][倍率:0.9]", server: 120.233.185.84, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
+  - {name: 香港DC, server: crus10.gzfxd.xyz, port: 16616, type: vmess, uuid: fbf3212a-f0f3-46d9-a59a-73aa7ccd277f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: crus10.gzfxd.xyz}}, udp: true}
+  - {name: 日本Az高速, server: crus7.gzfxd.xyz, port: 10106, type: vmess, uuid: fbf3212a-f0f3-46d9-a59a-73aa7ccd277f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: crus7.gzfxd.xyz}}, udp: true}
+  - {name: 韩国Az高速x0.5x, server: crus8.gzfxd.xyz, port: 16616, type: vmess, uuid: fbf3212a-f0f3-46d9-a59a-73aa7ccd277f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: crus8.gzfxd.xyz}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 深港专线4[倍率:2.5]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - 深港专线2[倍率:2.5]
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 广州移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 广东移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 广东移动转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 深港专线5[倍率:2.5]
-      - 深港专线转香港NTT2[倍率:2.5]
-      - 广东移动转香港CM[M][倍率:0.9]
+      - 香港DC
+      - 日本Az高速
+      - 韩国Az高速x0.5x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 深港专线4[倍率:2.5]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - 深港专线2[倍率:2.5]
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 广州移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 广东移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 广东移动转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 深港专线5[倍率:2.5]
-      - 深港专线转香港NTT2[倍率:2.5]
-      - 广东移动转香港CM[M][倍率:0.9]
+      - 香港DC
+      - 日本Az高速
+      - 韩国Az高速x0.5x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 深港专线4[倍率:2.5]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - 深港专线2[倍率:2.5]
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 广州移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 广东移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 广东移动转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 深港专线5[倍率:2.5]
-      - 深港专线转香港NTT2[倍率:2.5]
-      - 广东移动转香港CM[M][倍率:0.9]
+      - 香港DC
+      - 日本Az高速
+      - 韩国Az高速x0.5x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -108,111 +52,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 深港专线4[倍率:2.5]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - 深港专线2[倍率:2.5]
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 广州移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 广东移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 广东移动转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 深港专线5[倍率:2.5]
-      - 深港专线转香港NTT2[倍率:2.5]
-      - 广东移动转香港CM[M][倍率:0.9]
+      - 香港DC
+      - 日本Az高速
+      - 韩国Az高速x0.5x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 深港专线4[倍率:2.5]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - 深港专线2[倍率:2.5]
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 广州移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 广东移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 深港专线5[倍率:2.5]
-      - 深港专线转香港NTT2[倍率:2.5]
-      - 广东移动转香港CM[M][倍率:0.9]
+      - 香港DC
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 深港专线4[倍率:2.5]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - 深港专线2[倍率:2.5]
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 广州移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 广东移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 广东移动转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 深港专线5[倍率:2.5]
-      - 深港专线转香港NTT2[倍率:2.5]
-      - 广东移动转香港CM[M][倍率:0.9]
+      - 香港DC
+      - 日本Az高速
+      - 韩国Az高速x0.5x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 深港专线4[倍率:2.5]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - 深港专线2[倍率:2.5]
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 广州移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 广东移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 广东移动转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 深港专线5[倍率:2.5]
-      - 深港专线转香港NTT2[倍率:2.5]
-      - 广东移动转香港CM[M][倍率:0.9]
+      - 香港DC
+      - 日本Az高速
+      - 韩国Az高速x0.5x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 深港专线4[倍率:2.5]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - 深港专线2[倍率:2.5]
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 广州移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 广东移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 广东移动转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 深港专线5[倍率:2.5]
-      - 深港专线转香港NTT2[倍率:2.5]
-      - 广东移动转香港CM[M][倍率:0.9]
+      - 香港DC
+      - 日本Az高速
+      - 韩国Az高速x0.5x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -228,23 +101,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 深港专线4[倍率:2.5]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - 深港专线2[倍率:2.5]
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 广州移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 广东移动转香港NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 广东移动转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 深港专线5[倍率:2.5]
-      - 深港专线转香港NTT2[倍率:2.5]
-      - 广东移动转香港CM[M][倍率:0.9]
+      - 香港DC
+      - 日本Az高速
+      - 韩国Az高速x0.5x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -9201,6 +9060,8 @@ rules:
  - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,idmchina.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,imazingchina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,jihehuaban.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,keyshot.cc,🛑 全球拦截
@@ -9270,6 +9131,8 @@ rules:
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+ - DOMAIN,radio.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,tv.applemusic.com,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
@@ -9314,6 +9177,7 @@ rules:
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
  - DOMAIN,linear.tv.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,uts-api.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -9400,6 +9264,7 @@ rules:
  - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,210.71.227.200/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
@@ -9500,15 +9365,14 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
  - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,bilibili.tv,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
- - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
- - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
+ - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
+ - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
@@ -9526,6 +9390,7 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
@@ -9539,11 +9404,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
- - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,91.105.192.0/23,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,185.76.151.0/24,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
  - DOMAIN,payments-jp.amazon.com,🔰 节点选择
@@ -9552,16 +9420,36 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
+ - DOMAIN,clubhouse.pubnubapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
  - DOMAIN-SUFFIX,binance.com,🔰 节点选择
+ - DOMAIN-SUFFIX,binance.us,🔰 节点选择
  - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
  - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bithumb.com,🔰 节点选择
  - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bitstamp.net,🔰 节点选择
+ - DOMAIN-SUFFIX,bittrex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bybit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinbase.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coincheck.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coingecko.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinmarketcap.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinone.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,ftx.com,🔰 节点选择
  - DOMAIN-SUFFIX,gate.io,🔰 节点选择
+ - DOMAIN-SUFFIX,gemini.com,🔰 节点选择
  - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,korbit.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,kraken.com,🔰 节点选择
+ - DOMAIN-SUFFIX,kucoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,liquid.com,🔰 节点选择
  - DOMAIN-SUFFIX,okex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,poloniex.com,🔰 节点选择
  - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
  - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,discord.com,🔰 节点选择
@@ -9594,6 +9482,7 @@ rules:
  - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
  - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
  - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
+ - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
  - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
@@ -9644,11 +9533,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,91.105.192.0/23,🔰 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,185.76.151.0/24,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,🔰 节点选择,no-resolve
  - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
  - DOMAIN-SUFFIX,t.co,🔰 节点选择
@@ -9717,7 +9609,6 @@ rules:
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
- - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -9811,7 +9702,6 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
- - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
@@ -9837,6 +9727,7 @@ rules:
  - DOMAIN-SUFFIX,marc.info,🔰 节点选择
  - DOMAIN-SUFFIX,matters.news,🔰 节点选择
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
+ - DOMAIN-SUFFIX,medibang.com,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
  - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
@@ -9926,6 +9817,7 @@ rules:
  - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
  - DOMAIN-SUFFIX,substack.com,🔰 节点选择
+ - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -9941,6 +9833,7 @@ rules:
  - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
  - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
+ - DOMAIN-SUFFIX,tradingview.com,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
  - DOMAIN-SUFFIX,tutanota.com,🔰 节点选择
@@ -10057,20 +9950,33 @@ rules:
  - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
  - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
  - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
- - DOMAIN,beta.music.apple.com,🔰 节点选择
- - DOMAIN,tv.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
  - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,beta.music.apple.com,🔰 节点选择
  - DOMAIN,lookup-api.apple.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,books.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN,tv.apple.com,🔰 节点选择
+ - DOMAIN,amp-api.podcasts.apple.com,🔰 节点选择
+ - DOMAIN,bookkeeper.itunes.apple.com,🔰 节点选择
+ - DOMAIN,gateway.icloud.com,🔰 节点选择
+ - DOMAIN-SUFFIX,apple.news,🔰 节点选择
+ - DOMAIN,news-assets.apple.com,🔰 节点选择
+ - DOMAIN,news-client.apple.com,🔰 节点选择
+ - DOMAIN,news-client-search.apple.com,🔰 节点选择
+ - DOMAIN,news-edge.apple.com,🔰 节点选择
+ - DOMAIN,news-events.apple.com,🔰 节点选择
+ - DOMAIN,apple.comscoreresearch.com,🔰 节点选择
  - DOMAIN-SUFFIX,go.dev,🔰 节点选择
  - DOMAIN-SUFFIX,golang.org,🔰 节点选择
+ - DOMAIN-SUFFIX,aicoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,aimoon.com,🔰 节点选择
  - DOMAIN-SUFFIX,bing.com,🔰 节点选择
  - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
  - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
  - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,linkedin.com,🔰 节点选择
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
@@ -10078,12 +9984,10 @@ rules:
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
  - DOMAIN,ocsp.apple.com,🔰 节点选择
- - DOMAIN,xp.apple.com,🔰 节点选择
  - DOMAIN,cacerts.digicert.com,🔰 节点选择
  - DOMAIN,crl3.digicert.com,🔰 节点选择
  - DOMAIN,crl4.digicert.com,🔰 节点选择
  - DOMAIN,ocsp.digicert.com,🔰 节点选择
- - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
  - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
  - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
  - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
@@ -10239,19 +10143,11 @@ rules:
  - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tencent-cloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
- - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
@@ -10331,6 +10227,7 @@ rules:
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
+ - DOMAIN-SUFFIX,cibntv.net,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
@@ -10375,8 +10272,6 @@ rules:
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
- - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
- - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
@@ -10399,6 +10294,7 @@ rules:
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
+ - DOMAIN-SUFFIX,shouqianba.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
