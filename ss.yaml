@@ -6,13 +6,10 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 新加坡SS, server: gz.bgp.rx.naiun.pw, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: c4122b7a-a8a8-4647-ac4d-bd6339b76930, udp: true}
+  - {name: HK001, server: hz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: c4122b7a-a8a8-4647-ac4d-bd6339b76930, udp: true}
+  - {name: 香港SS, server: gz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: c4122b7a-a8a8-4647-ac4d-bd6339b76930, udp: true}
   - {name: 香港NF, server: gz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: c4122b7a-a8a8-4647-ac4d-bd6339b76930, udp: true}
   - {name: 日本SS, server: gz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: c4122b7a-a8a8-4647-ac4d-bd6339b76930, udp: true}
-  - {name: 香港B01, server: hz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 8f85e44f-3cf4-42be-8c47-eefcf58c6112, udp: true}
-  - {name: 香港SS, server: gz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: c4122b7a-a8a8-4647-ac4d-bd6339b76930, udp: true}
-  - {name: HK001, server: hz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: c4122b7a-a8a8-4647-ac4d-bd6339b76930, udp: true}
-  - {name: 新加坡A01, server: gz.bgp.rx.naiun.pw, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 8f85e44f-3cf4-42be-8c47-eefcf58c6112, udp: true}
-  - {name: 香港3长沙联通, server: cscu.01.211129.xyz, port: 13961, type: trojan, password: a1fdbed3-6fb6-4d1a-aa9e-79041ec281f3, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -20,26 +17,20 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 新加坡SS
+      - HK001
+      - 香港SS
       - 香港NF
       - 日本SS
-      - 香港B01
-      - 香港SS
-      - HK001
-      - 新加坡A01
-      - 香港3长沙联通
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 新加坡SS
+      - HK001
+      - 香港SS
       - 香港NF
       - 日本SS
-      - 香港B01
-      - 香港SS
-      - HK001
-      - 新加坡A01
-      - 香港3长沙联通
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -47,13 +38,10 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 新加坡SS
+      - HK001
+      - 香港SS
       - 香港NF
       - 日本SS
-      - 香港B01
-      - 香港SS
-      - HK001
-      - 新加坡A01
-      - 香港3长沙联通
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -73,21 +61,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 新加坡SS
+      - HK001
+      - 香港SS
       - 香港NF
       - 日本SS
-      - 香港B01
-      - 香港SS
-      - HK001
-      - 新加坡A01
-      - 香港3长沙联通
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港NF
-      - 香港B01
       - 香港SS
-      - 香港3长沙联通
+      - 香港NF
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -95,26 +78,20 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 新加坡SS
+      - HK001
+      - 香港SS
       - 香港NF
       - 日本SS
-      - 香港B01
-      - 香港SS
-      - HK001
-      - 新加坡A01
-      - 香港3长沙联通
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 新加坡SS
+      - HK001
+      - 香港SS
       - 香港NF
       - 日本SS
-      - 香港B01
-      - 香港SS
-      - HK001
-      - 新加坡A01
-      - 香港3长沙联通
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -122,13 +99,10 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 新加坡SS
+      - HK001
+      - 香港SS
       - 香港NF
       - 日本SS
-      - 香港B01
-      - 香港SS
-      - HK001
-      - 新加坡A01
-      - 香港3长沙联通
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -145,13 +119,10 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 新加坡SS
+      - HK001
+      - 香港SS
       - 香港NF
       - 日本SS
-      - 香港B01
-      - 香港SS
-      - HK001
-      - 新加坡A01
-      - 香港3长沙联通
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
