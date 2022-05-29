@@ -5,43 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: V310U-1x-BGP-HK-NF, server: fwgudlya.nodelist.xyz, port: 1310, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4823:qB3E52, obfs-param: "", udp: true}
-  - {name: V308U-1x-BGP-HK-NF, server: fwgudlya.nodelist.xyz, port: 1308, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4823:qB3E52, obfs-param: "", udp: true}
+  - {name: V306U-1x-BGP-HK-NF, server: fwgudlya.nodelist.xyz, port: 1306, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4823:qB3E52, obfs-param: "", udp: true}
   - {name: V309U-1x-BGP-HK-NF, server: fwgudlya.nodelist.xyz, port: 1309, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4823:qB3E52, obfs-param: "", udp: true}
   - {name: V307U-1x-BGP-HK-NF, server: fwgudlya.nodelist.xyz, port: 1307, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4823:qB3E52, obfs-param: "", udp: true}
-  - {name: V306U-1x-BGP-HK-NF, server: fwgudlya.nodelist.xyz, port: 1306, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4823:qB3E52, obfs-param: "", udp: true}
+  - {name: V310U-1x-BGP-HK-NF, server: fwgudlya.nodelist.xyz, port: 1310, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4823:qB3E52, obfs-param: "", udp: true}
+  - {name: V308U-1x-BGP-HK-NF, server: fwgudlya.nodelist.xyz, port: 1308, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4823:qB3E52, obfs-param: "", udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V310U-1x-BGP-HK-NF
-      - V308U-1x-BGP-HK-NF
+      - V306U-1x-BGP-HK-NF
       - V309U-1x-BGP-HK-NF
       - V307U-1x-BGP-HK-NF
-      - V306U-1x-BGP-HK-NF
+      - V310U-1x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - V310U-1x-BGP-HK-NF
-      - V308U-1x-BGP-HK-NF
+      - V306U-1x-BGP-HK-NF
       - V309U-1x-BGP-HK-NF
       - V307U-1x-BGP-HK-NF
-      - V306U-1x-BGP-HK-NF
+      - V310U-1x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V310U-1x-BGP-HK-NF
-      - V308U-1x-BGP-HK-NF
+      - V306U-1x-BGP-HK-NF
       - V309U-1x-BGP-HK-NF
       - V307U-1x-BGP-HK-NF
-      - V306U-1x-BGP-HK-NF
+      - V310U-1x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,11 +60,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V310U-1x-BGP-HK-NF
-      - V308U-1x-BGP-HK-NF
+      - V306U-1x-BGP-HK-NF
       - V309U-1x-BGP-HK-NF
       - V307U-1x-BGP-HK-NF
-      - V306U-1x-BGP-HK-NF
+      - V310U-1x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -75,32 +75,32 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - V310U-1x-BGP-HK-NF
-      - V308U-1x-BGP-HK-NF
+      - V306U-1x-BGP-HK-NF
       - V309U-1x-BGP-HK-NF
       - V307U-1x-BGP-HK-NF
-      - V306U-1x-BGP-HK-NF
+      - V310U-1x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - V310U-1x-BGP-HK-NF
-      - V308U-1x-BGP-HK-NF
+      - V306U-1x-BGP-HK-NF
       - V309U-1x-BGP-HK-NF
       - V307U-1x-BGP-HK-NF
-      - V306U-1x-BGP-HK-NF
+      - V310U-1x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V310U-1x-BGP-HK-NF
-      - V308U-1x-BGP-HK-NF
+      - V306U-1x-BGP-HK-NF
       - V309U-1x-BGP-HK-NF
       - V307U-1x-BGP-HK-NF
-      - V306U-1x-BGP-HK-NF
+      - V310U-1x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +116,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V310U-1x-BGP-HK-NF
-      - V308U-1x-BGP-HK-NF
+      - V306U-1x-BGP-HK-NF
       - V309U-1x-BGP-HK-NF
       - V307U-1x-BGP-HK-NF
-      - V306U-1x-BGP-HK-NF
+      - V310U-1x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
