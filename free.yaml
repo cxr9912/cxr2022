@@ -5,31 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡1a, server: tx49sg.fans8.xyz, port: 443, type: trojan, password: cd3d48cb-6641-4183-aff1-f8f6789fecce, sni: tx49sg.fans8.xyz, skip-cert-verify: true, udp: true}
   - {name: 新加坡 | 公益 | 0.2x, server: hk.zzk8.me, port: 51008, type: trojan, password: eab523e0-cf9e-4303-9a86-f187945950c8, sni: hk.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: 日本Az高速, server: crus7.gzfxd.xyz, port: 10106, type: vmess, uuid: fbf3212a-f0f3-46d9-a59a-73aa7ccd277f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: crus7.gzfxd.xyz}, udp: true}
+  - {name: 韩国Az高速x0.5x, server: crus8.gzfxd.xyz, port: 16616, type: vmess, uuid: fbf3212a-f0f3-46d9-a59a-73aa7ccd277f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: crus8.gzfxd.xyz}, udp: true}
+  - {name: 新加坡1a, server: tx49sg.fans8.xyz, port: 443, type: trojan, password: cd3d48cb-6641-4183-aff1-f8f6789fecce, sni: tx49sg.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: LV1联通优化节点「1x」, server: 01.youzi.win, port: 443, type: trojan, password: 0639a796-70ed-4c91-b3ac-1d6d3265f0d1, sni: 01.youzi.win, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡1a
       - 新加坡 | 公益 | 0.2x
+      - 日本Az高速
+      - 韩国Az高速x0.5x
+      - 新加坡1a
+      - LV1联通优化节点「1x」
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡1a
       - 新加坡 | 公益 | 0.2x
+      - 日本Az高速
+      - 韩国Az高速x0.5x
+      - 新加坡1a
+      - LV1联通优化节点「1x」
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡1a
       - 新加坡 | 公益 | 0.2x
+      - 日本Az高速
+      - 韩国Az高速x0.5x
+      - 新加坡1a
+      - LV1联通优化节点「1x」
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,8 +60,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡1a
       - 新加坡 | 公益 | 0.2x
+      - 日本Az高速
+      - 韩国Az高速x0.5x
+      - 新加坡1a
+      - LV1联通优化节点「1x」
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -60,23 +75,32 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡1a
       - 新加坡 | 公益 | 0.2x
+      - 日本Az高速
+      - 韩国Az高速x0.5x
+      - 新加坡1a
+      - LV1联通优化节点「1x」
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡1a
       - 新加坡 | 公益 | 0.2x
+      - 日本Az高速
+      - 韩国Az高速x0.5x
+      - 新加坡1a
+      - LV1联通优化节点「1x」
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡1a
       - 新加坡 | 公益 | 0.2x
+      - 日本Az高速
+      - 韩国Az高速x0.5x
+      - 新加坡1a
+      - LV1联通优化节点「1x」
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +116,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡1a
       - 新加坡 | 公益 | 0.2x
+      - 日本Az高速
+      - 韩国Az高速x0.5x
+      - 新加坡1a
+      - LV1联通优化节点「1x」
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
