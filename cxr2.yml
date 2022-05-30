@@ -5,99 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港家庭宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45149, type: vmess, uuid: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 台湾家庭宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 日本IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45149, type: vmess, uuid: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 香港家庭宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, udp: true}
-  - {name: 美国IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, udp: true}
-  - {name: 香港家庭宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45250, type: vmess, uuid: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 日本IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, udp: true}
-  - {name: 美国IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45194, type: vmess, uuid: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 台湾家庭宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 日本IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45184, type: vmess, uuid: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 英国IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45324, type: ss, cipher: chacha20-ietf-poly1305, password: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, udp: true}
-  - {name: 英国IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45413, type: vmess, uuid: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 美国IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45194, type: vmess, uuid: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 台湾家庭宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, udp: true}
-  - {name: 美国IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, udp: true}
-  - {name: 英国IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45324, type: ss, cipher: chacha20-ietf-poly1305, password: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, udp: true}
-  - {name: 英国IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45413, type: vmess, uuid: 4d7ea00b-00d0-43ce-af10-771e1dc0202a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
+  - {name: LV1移动优化节点「1x」, server: 02.youzi.win, port: 443, type: trojan, password: 0639a796-70ed-4c91-b3ac-1d6d3265f0d1, sni: 02.youzi.win, skip-cert-verify: true, udp: true}
+  - {name: LV1龟壳(Oracle)春川「1x」, server: 03.youzi.win, port: 443, type: trojan, password: 0639a796-70ed-4c91-b3ac-1d6d3265f0d1, sni: 03.youzi.win, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 英国IDC宽频|NF解锁|SS|A01
-      - 英国IDC宽频|NF解锁|V2|A01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|V2|B01
+      - LV1移动优化节点「1x」
+      - LV1龟壳(Oracle)春川「1x」
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 英国IDC宽频|NF解锁|SS|A01
-      - 英国IDC宽频|NF解锁|V2|A01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|V2|B01
+      - LV1移动优化节点「1x」
+      - LV1龟壳(Oracle)春川「1x」
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 英国IDC宽频|NF解锁|SS|A01
-      - 英国IDC宽频|NF解锁|V2|A01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|V2|B01
+      - LV1移动优化节点「1x」
+      - LV1龟壳(Oracle)春川「1x」
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -116,109 +48,35 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 英国IDC宽频|NF解锁|SS|A01
-      - 英国IDC宽频|NF解锁|V2|A01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|V2|B01
+      - LV1移动优化节点「1x」
+      - LV1龟壳(Oracle)春川「1x」
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 台湾家庭宽频|NF解锁|SS|B01
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 英国IDC宽频|NF解锁|SS|A01
-      - 英国IDC宽频|NF解锁|V2|A01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|V2|B01
+      - LV1移动优化节点「1x」
+      - LV1龟壳(Oracle)春川「1x」
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 英国IDC宽频|NF解锁|SS|A01
-      - 英国IDC宽频|NF解锁|V2|A01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|V2|B01
+      - LV1移动优化节点「1x」
+      - LV1龟壳(Oracle)春川「1x」
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 英国IDC宽频|NF解锁|SS|A01
-      - 英国IDC宽频|NF解锁|V2|A01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|V2|B01
+      - LV1移动优化节点「1x」
+      - LV1龟壳(Oracle)春川「1x」
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -234,25 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 英国IDC宽频|NF解锁|SS|A01
-      - 英国IDC宽频|NF解锁|V2|A01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|SS|B01
-      - 英国IDC宽频|NF解锁|V2|B01
+      - LV1移动优化节点「1x」
+      - LV1龟壳(Oracle)春川「1x」
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
