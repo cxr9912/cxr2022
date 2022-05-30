@@ -7,9 +7,6 @@ external-controller: :9090
 proxies:
   - {name: 【1x速】香港-200mbps no:1, server: no1.tinkhub.me, port: 443, type: vmess, uuid: d981f853-0581-4d2a-85a6-54a6491ee616, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: 【1x速】香港-10000mbps no:4, server: no4.tinkhub.me, port: 8443, type: vmess, uuid: d981f853-0581-4d2a-85a6-54a6491ee616, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 【赞助专属1】香港500mbps no:1, server: zz1.tinkhub.me, port: 443, type: vmess, uuid: d981f853-0581-4d2a-85a6-54a6491ee616, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US-A, server: shcm.pdjc.cc, port: 42000, type: trojan, password: 1f316deb-02e7-4050-acd9-abcb3942fd37, sni: shcm.pdjc.cc, skip-cert-verify: true, udp: true}
-  - {name: 【1x速】日本-10000mbps no:3, server: no3.tinkhub.me, port: 65259, type: vmess, uuid: d981f853-0581-4d2a-85a6-54a6491ee616, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.azure.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -18,9 +15,6 @@ proxy-groups:
       - 🎯 全球直连
       - 【1x速】香港-200mbps no:1
       - 【1x速】香港-10000mbps no:4
-      - 【赞助专属1】香港500mbps no:1
-      - US-A
-      - 【1x速】日本-10000mbps no:3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -28,9 +22,6 @@ proxy-groups:
     proxies:
       - 【1x速】香港-200mbps no:1
       - 【1x速】香港-10000mbps no:4
-      - 【赞助专属1】香港500mbps no:1
-      - US-A
-      - 【1x速】日本-10000mbps no:3
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -39,9 +30,6 @@ proxy-groups:
       - 🎯 全球直连
       - 【1x速】香港-200mbps no:1
       - 【1x速】香港-10000mbps no:4
-      - 【赞助专属1】香港500mbps no:1
-      - US-A
-      - 【1x速】日本-10000mbps no:3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -62,16 +50,12 @@ proxy-groups:
       - 🎯 全球直连
       - 【1x速】香港-200mbps no:1
       - 【1x速】香港-10000mbps no:4
-      - 【赞助专属1】香港500mbps no:1
-      - US-A
-      - 【1x速】日本-10000mbps no:3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 【1x速】香港-200mbps no:1
       - 【1x速】香港-10000mbps no:4
-      - 【赞助专属1】香港500mbps no:1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -80,9 +64,6 @@ proxy-groups:
       - 🔰 节点选择
       - 【1x速】香港-200mbps no:1
       - 【1x速】香港-10000mbps no:4
-      - 【赞助专属1】香港500mbps no:1
-      - US-A
-      - 【1x速】日本-10000mbps no:3
   - name: 📲 电报信息
     type: select
     proxies:
@@ -90,9 +71,6 @@ proxy-groups:
       - 🎯 全球直连
       - 【1x速】香港-200mbps no:1
       - 【1x速】香港-10000mbps no:4
-      - 【赞助专属1】香港500mbps no:1
-      - US-A
-      - 【1x速】日本-10000mbps no:3
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -101,9 +79,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 【1x速】香港-200mbps no:1
       - 【1x速】香港-10000mbps no:4
-      - 【赞助专属1】香港500mbps no:1
-      - US-A
-      - 【1x速】日本-10000mbps no:3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -121,9 +96,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 【1x速】香港-200mbps no:1
       - 【1x速】香港-10000mbps no:4
-      - 【赞助专属1】香港500mbps no:1
-      - US-A
-      - 【1x速】日本-10000mbps no:3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
