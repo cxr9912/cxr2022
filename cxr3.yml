@@ -5,175 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: lv.5-中国==>台湾2-Netflix, server: zh01lv5tw02.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>台湾3-Netflix, server: zh01lv5tw03.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>台湾1-Netflix, server: zh01lv5tw01.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>香港9, server: zh01lv5hk09.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>香港4, server: zh01lv5hk04.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>香港10, server: zh01lv5hk10.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>日本2, server: zh01lv5jp02.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>香港8, server: zh01lv5hk08.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>香港3, server: zh01lv5hk03.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>台湾4-Netflix, server: zh01lv5tw04.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>香港1, server: zh01lv5hk01.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>香港2, server: zh01lv5hk02.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>台湾5-Netflix, server: zh01lv5tw05.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: 土豆下载地址：potato.im, server: test3.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>德国2, server: zh01lv5ge02.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>德国1, server: zh01lv5ge01.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>美国2, server: zh01lv5us02.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>美国3, server: zh01lv5us03.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>新加坡2, server: zh01lv5sgp02.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>加拿大2, server: zh01lv5ca02.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>英国3, server: zh01lv5uk03.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>英国5, server: zh01lv5uk05.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>加拿大3, server: zh01lv5ca03.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>新加坡5, server: zh01lv5sgp05.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>英国1, server: zh01lv5uk01.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>英国2, server: zh01lv5uk02.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>加拿大4, server: zh01lv5ca04.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>加拿大1, server: zh01lv5ca01.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>英国4, server: zh01lv5uk04.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>美国4, server: zh01lv5us04.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>新加坡3, server: zh01lv5sgp03.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>新加坡1, server: zh01lv5sgp01.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>新加坡4, server: zh01lv5sgp04.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>美国5, server: zh01lv5us05.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>德国5, server: zh01lv5ge05.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>德国3, server: zh01lv5ge03.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>加拿大5, server: zh01lv5ca05.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
-  - {name: lv.5-中国==>德国4, server: zh01lv5ge04.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: d851868f-75a8-4652-83b1-5376a6f4053a, udp: true}
+  - {name: "[公益]高速|香港 10", server: 3.says.cloud, port: 10010, type: trojan, password: cf2c9170-5c65-4db6-b367-d9a94471dbce, sni: 3.says.cloud, skip-cert-verify: true, udp: true}
+  - {name: "[公益]高速|香港 02", server: 3.says.cloud, port: 10002, type: trojan, password: cf2c9170-5c65-4db6-b367-d9a94471dbce, sni: 3.says.cloud, skip-cert-verify: true, udp: true}
+  - {name: "[公益]高速|香港 08", server: 3.says.cloud, port: 10008, type: trojan, password: cf2c9170-5c65-4db6-b367-d9a94471dbce, sni: 3.says.cloud, skip-cert-verify: true, udp: true}
+  - {name: "[公益]高速|香港 03", server: 3.says.cloud, port: 10003, type: trojan, password: cf2c9170-5c65-4db6-b367-d9a94471dbce, sni: 3.says.cloud, skip-cert-verify: true, udp: true}
+  - {name: "[公益]高速|香港 06", server: 3.says.cloud, port: 10006, type: trojan, password: cf2c9170-5c65-4db6-b367-d9a94471dbce, sni: 3.says.cloud, skip-cert-verify: true, udp: true}
+  - {name: "[公益]高速|香港 05", server: 3.says.cloud, port: 10005, type: trojan, password: cf2c9170-5c65-4db6-b367-d9a94471dbce, sni: 3.says.cloud, skip-cert-verify: true, udp: true}
+  - {name: "[公益]高速|香港 01", server: 3.says.cloud, port: 10001, type: trojan, password: cf2c9170-5c65-4db6-b367-d9a94471dbce, sni: 3.says.cloud, skip-cert-verify: true, udp: true}
+  - {name: "[公益]高速|香港 04", server: 3.says.cloud, port: 10004, type: trojan, password: cf2c9170-5c65-4db6-b367-d9a94471dbce, sni: 3.says.cloud, skip-cert-verify: true, udp: true}
+  - {name: "[公益]高速|香港 09", server: 3.says.cloud, port: 10009, type: trojan, password: cf2c9170-5c65-4db6-b367-d9a94471dbce, sni: 3.says.cloud, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - lv.5-中国==>台湾2-Netflix
-      - lv.5-中国==>台湾3-Netflix
-      - lv.5-中国==>台湾1-Netflix
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港4
-      - lv.5-中国==>香港10
-      - lv.5-中国==>日本2
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港3
-      - lv.5-中国==>台湾4-Netflix
-      - lv.5-中国==>香港1
-      - lv.5-中国==>香港2
-      - lv.5-中国==>台湾5-Netflix
-      - 土豆下载地址：potato.im
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国1
-      - lv.5-中国==>美国2
-      - lv.5-中国==>美国3
-      - lv.5-中国==>新加坡2
-      - lv.5-中国==>加拿大2
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>新加坡5
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大1
-      - lv.5-中国==>英国4
-      - lv.5-中国==>美国4
-      - lv.5-中国==>新加坡3
-      - lv.5-中国==>新加坡1
-      - lv.5-中国==>新加坡4
-      - lv.5-中国==>美国5
-      - lv.5-中国==>德国5
-      - lv.5-中国==>德国3
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>德国4
+      - "[公益]高速|香港 10"
+      - "[公益]高速|香港 02"
+      - "[公益]高速|香港 08"
+      - "[公益]高速|香港 03"
+      - "[公益]高速|香港 06"
+      - "[公益]高速|香港 05"
+      - "[公益]高速|香港 01"
+      - "[公益]高速|香港 04"
+      - "[公益]高速|香港 09"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - lv.5-中国==>台湾2-Netflix
-      - lv.5-中国==>台湾3-Netflix
-      - lv.5-中国==>台湾1-Netflix
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港4
-      - lv.5-中国==>香港10
-      - lv.5-中国==>日本2
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港3
-      - lv.5-中国==>台湾4-Netflix
-      - lv.5-中国==>香港1
-      - lv.5-中国==>香港2
-      - lv.5-中国==>台湾5-Netflix
-      - 土豆下载地址：potato.im
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国1
-      - lv.5-中国==>美国2
-      - lv.5-中国==>美国3
-      - lv.5-中国==>新加坡2
-      - lv.5-中国==>加拿大2
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>新加坡5
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大1
-      - lv.5-中国==>英国4
-      - lv.5-中国==>美国4
-      - lv.5-中国==>新加坡3
-      - lv.5-中国==>新加坡1
-      - lv.5-中国==>新加坡4
-      - lv.5-中国==>美国5
-      - lv.5-中国==>德国5
-      - lv.5-中国==>德国3
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>德国4
+      - "[公益]高速|香港 10"
+      - "[公益]高速|香港 02"
+      - "[公益]高速|香港 08"
+      - "[公益]高速|香港 03"
+      - "[公益]高速|香港 06"
+      - "[公益]高速|香港 05"
+      - "[公益]高速|香港 01"
+      - "[公益]高速|香港 04"
+      - "[公益]高速|香港 09"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - lv.5-中国==>台湾2-Netflix
-      - lv.5-中国==>台湾3-Netflix
-      - lv.5-中国==>台湾1-Netflix
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港4
-      - lv.5-中国==>香港10
-      - lv.5-中国==>日本2
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港3
-      - lv.5-中国==>台湾4-Netflix
-      - lv.5-中国==>香港1
-      - lv.5-中国==>香港2
-      - lv.5-中国==>台湾5-Netflix
-      - 土豆下载地址：potato.im
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国1
-      - lv.5-中国==>美国2
-      - lv.5-中国==>美国3
-      - lv.5-中国==>新加坡2
-      - lv.5-中国==>加拿大2
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>新加坡5
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大1
-      - lv.5-中国==>英国4
-      - lv.5-中国==>美国4
-      - lv.5-中国==>新加坡3
-      - lv.5-中国==>新加坡1
-      - lv.5-中国==>新加坡4
-      - lv.5-中国==>美国5
-      - lv.5-中国==>德国5
-      - lv.5-中国==>德国3
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>德国4
+      - "[公益]高速|香港 10"
+      - "[公益]高速|香港 02"
+      - "[公益]高速|香港 08"
+      - "[公益]高速|香港 03"
+      - "[公益]高速|香港 06"
+      - "[公益]高速|香港 05"
+      - "[公益]高速|香港 01"
+      - "[公益]高速|香港 04"
+      - "[公益]高速|香港 09"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -192,191 +76,72 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - lv.5-中国==>台湾2-Netflix
-      - lv.5-中国==>台湾3-Netflix
-      - lv.5-中国==>台湾1-Netflix
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港4
-      - lv.5-中国==>香港10
-      - lv.5-中国==>日本2
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港3
-      - lv.5-中国==>台湾4-Netflix
-      - lv.5-中国==>香港1
-      - lv.5-中国==>香港2
-      - lv.5-中国==>台湾5-Netflix
-      - 土豆下载地址：potato.im
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国1
-      - lv.5-中国==>美国2
-      - lv.5-中国==>美国3
-      - lv.5-中国==>新加坡2
-      - lv.5-中国==>加拿大2
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>新加坡5
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大1
-      - lv.5-中国==>英国4
-      - lv.5-中国==>美国4
-      - lv.5-中国==>新加坡3
-      - lv.5-中国==>新加坡1
-      - lv.5-中国==>新加坡4
-      - lv.5-中国==>美国5
-      - lv.5-中国==>德国5
-      - lv.5-中国==>德国3
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>德国4
+      - "[公益]高速|香港 10"
+      - "[公益]高速|香港 02"
+      - "[公益]高速|香港 08"
+      - "[公益]高速|香港 03"
+      - "[公益]高速|香港 06"
+      - "[公益]高速|香港 05"
+      - "[公益]高速|香港 01"
+      - "[公益]高速|香港 04"
+      - "[公益]高速|香港 09"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - lv.5-中国==>台湾2-Netflix
-      - lv.5-中国==>台湾3-Netflix
-      - lv.5-中国==>台湾1-Netflix
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港4
-      - lv.5-中国==>香港10
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港3
-      - lv.5-中国==>台湾4-Netflix
-      - lv.5-中国==>香港1
-      - lv.5-中国==>香港2
-      - lv.5-中国==>台湾5-Netflix
+      - "[公益]高速|香港 10"
+      - "[公益]高速|香港 02"
+      - "[公益]高速|香港 08"
+      - "[公益]高速|香港 03"
+      - "[公益]高速|香港 06"
+      - "[公益]高速|香港 05"
+      - "[公益]高速|香港 01"
+      - "[公益]高速|香港 04"
+      - "[公益]高速|香港 09"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - lv.5-中国==>台湾2-Netflix
-      - lv.5-中国==>台湾3-Netflix
-      - lv.5-中国==>台湾1-Netflix
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港4
-      - lv.5-中国==>香港10
-      - lv.5-中国==>日本2
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港3
-      - lv.5-中国==>台湾4-Netflix
-      - lv.5-中国==>香港1
-      - lv.5-中国==>香港2
-      - lv.5-中国==>台湾5-Netflix
-      - 土豆下载地址：potato.im
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国1
-      - lv.5-中国==>美国2
-      - lv.5-中国==>美国3
-      - lv.5-中国==>新加坡2
-      - lv.5-中国==>加拿大2
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>新加坡5
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大1
-      - lv.5-中国==>英国4
-      - lv.5-中国==>美国4
-      - lv.5-中国==>新加坡3
-      - lv.5-中国==>新加坡1
-      - lv.5-中国==>新加坡4
-      - lv.5-中国==>美国5
-      - lv.5-中国==>德国5
-      - lv.5-中国==>德国3
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>德国4
+      - "[公益]高速|香港 10"
+      - "[公益]高速|香港 02"
+      - "[公益]高速|香港 08"
+      - "[公益]高速|香港 03"
+      - "[公益]高速|香港 06"
+      - "[公益]高速|香港 05"
+      - "[公益]高速|香港 01"
+      - "[公益]高速|香港 04"
+      - "[公益]高速|香港 09"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - lv.5-中国==>台湾2-Netflix
-      - lv.5-中国==>台湾3-Netflix
-      - lv.5-中国==>台湾1-Netflix
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港4
-      - lv.5-中国==>香港10
-      - lv.5-中国==>日本2
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港3
-      - lv.5-中国==>台湾4-Netflix
-      - lv.5-中国==>香港1
-      - lv.5-中国==>香港2
-      - lv.5-中国==>台湾5-Netflix
-      - 土豆下载地址：potato.im
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国1
-      - lv.5-中国==>美国2
-      - lv.5-中国==>美国3
-      - lv.5-中国==>新加坡2
-      - lv.5-中国==>加拿大2
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>新加坡5
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大1
-      - lv.5-中国==>英国4
-      - lv.5-中国==>美国4
-      - lv.5-中国==>新加坡3
-      - lv.5-中国==>新加坡1
-      - lv.5-中国==>新加坡4
-      - lv.5-中国==>美国5
-      - lv.5-中国==>德国5
-      - lv.5-中国==>德国3
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>德国4
+      - "[公益]高速|香港 10"
+      - "[公益]高速|香港 02"
+      - "[公益]高速|香港 08"
+      - "[公益]高速|香港 03"
+      - "[公益]高速|香港 06"
+      - "[公益]高速|香港 05"
+      - "[公益]高速|香港 01"
+      - "[公益]高速|香港 04"
+      - "[公益]高速|香港 09"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - lv.5-中国==>台湾2-Netflix
-      - lv.5-中国==>台湾3-Netflix
-      - lv.5-中国==>台湾1-Netflix
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港4
-      - lv.5-中国==>香港10
-      - lv.5-中国==>日本2
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港3
-      - lv.5-中国==>台湾4-Netflix
-      - lv.5-中国==>香港1
-      - lv.5-中国==>香港2
-      - lv.5-中国==>台湾5-Netflix
-      - 土豆下载地址：potato.im
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国1
-      - lv.5-中国==>美国2
-      - lv.5-中国==>美国3
-      - lv.5-中国==>新加坡2
-      - lv.5-中国==>加拿大2
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>新加坡5
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大1
-      - lv.5-中国==>英国4
-      - lv.5-中国==>美国4
-      - lv.5-中国==>新加坡3
-      - lv.5-中国==>新加坡1
-      - lv.5-中国==>新加坡4
-      - lv.5-中国==>美国5
-      - lv.5-中国==>德国5
-      - lv.5-中国==>德国3
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>德国4
+      - "[公益]高速|香港 10"
+      - "[公益]高速|香港 02"
+      - "[公益]高速|香港 08"
+      - "[公益]高速|香港 03"
+      - "[公益]高速|香港 06"
+      - "[公益]高速|香港 05"
+      - "[公益]高速|香港 01"
+      - "[公益]高速|香港 04"
+      - "[公益]高速|香港 09"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -392,44 +157,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - lv.5-中国==>台湾2-Netflix
-      - lv.5-中国==>台湾3-Netflix
-      - lv.5-中国==>台湾1-Netflix
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港4
-      - lv.5-中国==>香港10
-      - lv.5-中国==>日本2
-      - lv.5-中国==>香港8
-      - lv.5-中国==>香港3
-      - lv.5-中国==>台湾4-Netflix
-      - lv.5-中国==>香港1
-      - lv.5-中国==>香港2
-      - lv.5-中国==>台湾5-Netflix
-      - 土豆下载地址：potato.im
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国1
-      - lv.5-中国==>美国2
-      - lv.5-中国==>美国3
-      - lv.5-中国==>新加坡2
-      - lv.5-中国==>加拿大2
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>新加坡5
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>加拿大1
-      - lv.5-中国==>英国4
-      - lv.5-中国==>美国4
-      - lv.5-中国==>新加坡3
-      - lv.5-中国==>新加坡1
-      - lv.5-中国==>新加坡4
-      - lv.5-中国==>美国5
-      - lv.5-中国==>德国5
-      - lv.5-中国==>德国3
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>德国4
+      - "[公益]高速|香港 10"
+      - "[公益]高速|香港 02"
+      - "[公益]高速|香港 08"
+      - "[公益]高速|香港 03"
+      - "[公益]高速|香港 06"
+      - "[公益]高速|香港 05"
+      - "[公益]高速|香港 01"
+      - "[公益]高速|香港 04"
+      - "[公益]高速|香港 09"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
