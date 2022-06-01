@@ -5,39 +5,107 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK13, server: 3.says.cloud, port: 10006, type: trojan, password: e4497944-728b-4099-bcd7-0ece95ec4183, sni: 3.says.cloud, skip-cert-verify: true, udp: true}
-  - {name: HK17, server: 3.says.cloud, port: 10005, type: trojan, password: e4497944-728b-4099-bcd7-0ece95ec4183, sni: 3.says.cloud, skip-cert-verify: true, udp: true}
-  - {name: Alien, server: 129.226.213.241, port: 24824, type: vmess, uuid: 8c1e17cf-c378-403f-862c-62897510116c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 2, server: 161.117.224.49, port: 29235, type: vmess, uuid: 71090d6b-ae98-4b7e-8367-bc1c700a75c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 01, server: t1.yunshang.co.uk, port: 55503, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t1.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 台湾原生 02, server: t2.yunshang.co.uk, port: 55506, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t2.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 02, server: t2.yunshang.co.uk, port: 55503, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t2.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 台湾原生 01, server: t1.yunshang.co.uk, port: 55506, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t1.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚 01, server: t1.yunshang.co.uk, port: 55509, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t1.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 香港 03, server: t3.yunshang.co.uk, port: 55501, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t3.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚 02, server: t2.yunshang.co.uk, port: 55509, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t2.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 01, server: t1.yunshang.co.uk, port: 55505, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t1.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 日本 03, server: t3.yunshang.co.uk, port: 55504, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t3.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 台湾原生 03, server: t3.yunshang.co.uk, port: 55506, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t3.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 03, server: t3.yunshang.co.uk, port: 55503, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t3.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚 03, server: t3.yunshang.co.uk, port: 55509, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t3.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 03, server: t3.yunshang.co.uk, port: 55505, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t3.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 英国 01, server: t1.yunshang.co.uk, port: 55508, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t1.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 韩国 02, server: t2.yunshang.co.uk, port: 55507, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t2.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 韩国 01, server: t1.yunshang.co.uk, port: 55507, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t1.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 韩国 03, server: t3.yunshang.co.uk, port: 55507, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t3.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 02, server: t2.yunshang.co.uk, port: 55505, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t2.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 英国 03, server: t3.yunshang.co.uk, port: 55508, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t3.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 香港 02, server: t2.yunshang.co.uk, port: 55501, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t2.yunshang.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 香港 01, server: t1.yunshang.co.uk, port: 55501, type: trojan, password: 0679e5f5-79cc-43f8-863d-8018541ceb63, sni: t1.yunshang.co.uk, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK13
-      - HK17
-      - Alien
-      - Alien 2
+      - 新加坡 01
+      - 台湾原生 02
+      - 新加坡 02
+      - 台湾原生 01
+      - 澳大利亚 01
+      - 香港 03
+      - 澳大利亚 02
+      - 美国 01
+      - 日本 03
+      - 台湾原生 03
+      - 新加坡 03
+      - 澳大利亚 03
+      - 美国 03
+      - 英国 01
+      - 韩国 02
+      - 韩国 01
+      - 韩国 03
+      - 美国 02
+      - 英国 03
+      - 香港 02
+      - 香港 01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK13
-      - HK17
-      - Alien
-      - Alien 2
+      - 新加坡 01
+      - 台湾原生 02
+      - 新加坡 02
+      - 台湾原生 01
+      - 澳大利亚 01
+      - 香港 03
+      - 澳大利亚 02
+      - 美国 01
+      - 日本 03
+      - 台湾原生 03
+      - 新加坡 03
+      - 澳大利亚 03
+      - 美国 03
+      - 英国 01
+      - 韩国 02
+      - 韩国 01
+      - 韩国 03
+      - 美国 02
+      - 英国 03
+      - 香港 02
+      - 香港 01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK13
-      - HK17
-      - Alien
-      - Alien 2
+      - 新加坡 01
+      - 台湾原生 02
+      - 新加坡 02
+      - 台湾原生 01
+      - 澳大利亚 01
+      - 香港 03
+      - 澳大利亚 02
+      - 美国 01
+      - 日本 03
+      - 台湾原生 03
+      - 新加坡 03
+      - 澳大利亚 03
+      - 美国 03
+      - 英国 01
+      - 韩国 02
+      - 韩国 01
+      - 韩国 03
+      - 美国 02
+      - 英国 03
+      - 香港 02
+      - 香港 01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,43 +124,117 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK13
-      - HK17
-      - Alien
-      - Alien 2
+      - 新加坡 01
+      - 台湾原生 02
+      - 新加坡 02
+      - 台湾原生 01
+      - 澳大利亚 01
+      - 香港 03
+      - 澳大利亚 02
+      - 美国 01
+      - 日本 03
+      - 台湾原生 03
+      - 新加坡 03
+      - 澳大利亚 03
+      - 美国 03
+      - 英国 01
+      - 韩国 02
+      - 韩国 01
+      - 韩国 03
+      - 美国 02
+      - 英国 03
+      - 香港 02
+      - 香港 01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾原生 02
+      - 台湾原生 01
+      - 香港 03
+      - 台湾原生 03
+      - 香港 02
+      - 香港 01
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK13
-      - HK17
-      - Alien
-      - Alien 2
+      - 新加坡 01
+      - 台湾原生 02
+      - 新加坡 02
+      - 台湾原生 01
+      - 澳大利亚 01
+      - 香港 03
+      - 澳大利亚 02
+      - 美国 01
+      - 日本 03
+      - 台湾原生 03
+      - 新加坡 03
+      - 澳大利亚 03
+      - 美国 03
+      - 英国 01
+      - 韩国 02
+      - 韩国 01
+      - 韩国 03
+      - 美国 02
+      - 英国 03
+      - 香港 02
+      - 香港 01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK13
-      - HK17
-      - Alien
-      - Alien 2
+      - 新加坡 01
+      - 台湾原生 02
+      - 新加坡 02
+      - 台湾原生 01
+      - 澳大利亚 01
+      - 香港 03
+      - 澳大利亚 02
+      - 美国 01
+      - 日本 03
+      - 台湾原生 03
+      - 新加坡 03
+      - 澳大利亚 03
+      - 美国 03
+      - 英国 01
+      - 韩国 02
+      - 韩国 01
+      - 韩国 03
+      - 美国 02
+      - 英国 03
+      - 香港 02
+      - 香港 01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK13
-      - HK17
-      - Alien
-      - Alien 2
+      - 新加坡 01
+      - 台湾原生 02
+      - 新加坡 02
+      - 台湾原生 01
+      - 澳大利亚 01
+      - 香港 03
+      - 澳大利亚 02
+      - 美国 01
+      - 日本 03
+      - 台湾原生 03
+      - 新加坡 03
+      - 澳大利亚 03
+      - 美国 03
+      - 英国 01
+      - 韩国 02
+      - 韩国 01
+      - 韩国 03
+      - 美国 02
+      - 英国 03
+      - 香港 02
+      - 香港 01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +250,27 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK13
-      - HK17
-      - Alien
-      - Alien 2
+      - 新加坡 01
+      - 台湾原生 02
+      - 新加坡 02
+      - 台湾原生 01
+      - 澳大利亚 01
+      - 香港 03
+      - 澳大利亚 02
+      - 美国 01
+      - 日本 03
+      - 台湾原生 03
+      - 新加坡 03
+      - 澳大利亚 03
+      - 美国 03
+      - 英国 01
+      - 韩国 02
+      - 韩国 01
+      - 韩国 03
+      - 美国 02
+      - 英国 03
+      - 香港 02
+      - 香港 01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
