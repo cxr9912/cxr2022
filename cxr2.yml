@@ -5,31 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: LV1移动优化节点「1x」, server: 02.youzi.win, port: 443, type: trojan, password: 0639a796-70ed-4c91-b3ac-1d6d3265f0d1, sni: 02.youzi.win, skip-cert-verify: true, udp: true}
-  - {name: LV1龟壳(Oracle)春川「1x」, server: 03.youzi.win, port: 443, type: trojan, password: 0639a796-70ed-4c91-b3ac-1d6d3265f0d1, sni: 03.youzi.win, skip-cert-verify: true, udp: true}
+  - {name: "Incheon, V2", server: V2-NODE-2.GFWAIRPORT.NET, port: 50001, type: vmess, uuid: b7f48c18-51af-4365-9a2c-621070dfc176, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: V2-NODE-2.GFWAIRPORT.NET}, udp: true}
+  - {name: US_910 | 15.44Mb, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_987 | 12.86Mb, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_947 | 15.60Mb, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_966 | 13.78Mb, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_989 | 12.67Mb, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1141 | 10.19Mb, server: 38.68.134.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1120 | 16.97Mb, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_1112 | 15.59Mb, server: 169.197.142.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_935 |  9.16Mb, server: 38.68.134.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - LV1移动优化节点「1x」
-      - LV1龟壳(Oracle)春川「1x」
+      - Incheon, V2
+      - US_910 | 15.44Mb
+      - US_987 | 12.86Mb
+      - US_947 | 15.60Mb
+      - US_966 | 13.78Mb
+      - US_989 | 12.67Mb
+      - US_1141 | 10.19Mb
+      - US_1120 | 16.97Mb
+      - US_1112 | 15.59Mb
+      - US_935 |  9.16Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - LV1移动优化节点「1x」
-      - LV1龟壳(Oracle)春川「1x」
+      - Incheon, V2
+      - US_910 | 15.44Mb
+      - US_987 | 12.86Mb
+      - US_947 | 15.60Mb
+      - US_966 | 13.78Mb
+      - US_989 | 12.67Mb
+      - US_1141 | 10.19Mb
+      - US_1120 | 16.97Mb
+      - US_1112 | 15.59Mb
+      - US_935 |  9.16Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - LV1移动优化节点「1x」
-      - LV1龟壳(Oracle)春川「1x」
+      - Incheon, V2
+      - US_910 | 15.44Mb
+      - US_987 | 12.86Mb
+      - US_947 | 15.60Mb
+      - US_966 | 13.78Mb
+      - US_989 | 12.67Mb
+      - US_1141 | 10.19Mb
+      - US_1120 | 16.97Mb
+      - US_1112 | 15.59Mb
+      - US_935 |  9.16Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,8 +80,16 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - LV1移动优化节点「1x」
-      - LV1龟壳(Oracle)春川「1x」
+      - Incheon, V2
+      - US_910 | 15.44Mb
+      - US_987 | 12.86Mb
+      - US_947 | 15.60Mb
+      - US_966 | 13.78Mb
+      - US_989 | 12.67Mb
+      - US_1141 | 10.19Mb
+      - US_1120 | 16.97Mb
+      - US_1112 | 15.59Mb
+      - US_935 |  9.16Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -60,23 +100,47 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - LV1移动优化节点「1x」
-      - LV1龟壳(Oracle)春川「1x」
+      - Incheon, V2
+      - US_910 | 15.44Mb
+      - US_987 | 12.86Mb
+      - US_947 | 15.60Mb
+      - US_966 | 13.78Mb
+      - US_989 | 12.67Mb
+      - US_1141 | 10.19Mb
+      - US_1120 | 16.97Mb
+      - US_1112 | 15.59Mb
+      - US_935 |  9.16Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - LV1移动优化节点「1x」
-      - LV1龟壳(Oracle)春川「1x」
+      - Incheon, V2
+      - US_910 | 15.44Mb
+      - US_987 | 12.86Mb
+      - US_947 | 15.60Mb
+      - US_966 | 13.78Mb
+      - US_989 | 12.67Mb
+      - US_1141 | 10.19Mb
+      - US_1120 | 16.97Mb
+      - US_1112 | 15.59Mb
+      - US_935 |  9.16Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - LV1移动优化节点「1x」
-      - LV1龟壳(Oracle)春川「1x」
+      - Incheon, V2
+      - US_910 | 15.44Mb
+      - US_987 | 12.86Mb
+      - US_947 | 15.60Mb
+      - US_966 | 13.78Mb
+      - US_989 | 12.67Mb
+      - US_1141 | 10.19Mb
+      - US_1120 | 16.97Mb
+      - US_1112 | 15.59Mb
+      - US_935 |  9.16Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +156,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - LV1移动优化节点「1x」
-      - LV1龟壳(Oracle)春川「1x」
+      - Incheon, V2
+      - US_910 | 15.44Mb
+      - US_987 | 12.86Mb
+      - US_947 | 15.60Mb
+      - US_966 | 13.78Mb
+      - US_989 | 12.67Mb
+      - US_1141 | 10.19Mb
+      - US_1120 | 16.97Mb
+      - US_1112 | 15.59Mb
+      - US_935 |  9.16Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
