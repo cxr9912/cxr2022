@@ -5,39 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2, server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: e7a9521f-ca6f-4eb7-ab1a-46d8cd8b52d8, sni: tw.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 钉钉 | 443 | 香港 | 01, server: 43.129.87.145, port: 443, type: vmess, uuid: 785f6d71-9d7a-4402-821d-2505604a7e0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 钉钉 | 80 | 香港 | 01, server: 20.239.182.18, port: 80, type: vmess, uuid: 785f6d71-9d7a-4402-821d-2505604a7e0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 钉钉 | 80 | 日本 | 01, server: jp-01.dingzige.gq, port: 80, type: vmess, uuid: 785f6d71-9d7a-4402-821d-2505604a7e0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
   - {name: 韩国Az高速x0.5x, server: crus8.gzfxd.xyz, port: 16616, type: vmess, uuid: fbf3212a-f0f3-46d9-a59a-73aa7ccd277f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: crus8.gzfxd.xyz}, udp: true}
-  - {name: 日本-80端口, server: crus4.gzfxd.xyz, port: 80, type: vmess, uuid: fbf3212a-f0f3-46d9-a59a-73aa7ccd277f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: crus4.gzfxd.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
-      - 钉钉 | 443 | 香港 | 01
+      - 钉钉 | 80 | 香港 | 01
+      - 钉钉 | 80 | 日本 | 01
       - 韩国Az高速x0.5x
-      - 日本-80端口
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
-      - 钉钉 | 443 | 香港 | 01
+      - 钉钉 | 80 | 香港 | 01
+      - 钉钉 | 80 | 日本 | 01
       - 韩国Az高速x0.5x
-      - 日本-80端口
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
-      - 钉钉 | 443 | 香港 | 01
+      - 钉钉 | 80 | 香港 | 01
+      - 钉钉 | 80 | 日本 | 01
       - 韩国Az高速x0.5x
-      - 日本-80端口
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,44 +52,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
-      - 钉钉 | 443 | 香港 | 01
+      - 钉钉 | 80 | 香港 | 01
+      - 钉钉 | 80 | 日本 | 01
       - 韩国Az高速x0.5x
-      - 日本-80端口
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 钉钉 | 443 | 香港 | 01
+      - 钉钉 | 80 | 香港 | 01
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
-      - 钉钉 | 443 | 香港 | 01
+      - 钉钉 | 80 | 香港 | 01
+      - 钉钉 | 80 | 日本 | 01
       - 韩国Az高速x0.5x
-      - 日本-80端口
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
-      - 钉钉 | 443 | 香港 | 01
+      - 钉钉 | 80 | 香港 | 01
+      - 钉钉 | 80 | 日本 | 01
       - 韩国Az高速x0.5x
-      - 日本-80端口
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
-      - 钉钉 | 443 | 香港 | 01
+      - 钉钉 | 80 | 香港 | 01
+      - 钉钉 | 80 | 日本 | 01
       - 韩国Az高速x0.5x
-      - 日本-80端口
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -109,10 +101,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 4.85 MB/s 欢迎使用Welink345 请定期更新订阅 2
-      - 钉钉 | 443 | 香港 | 01
+      - 钉钉 | 80 | 香港 | 01
+      - 钉钉 | 80 | 日本 | 01
       - 韩国Az高速x0.5x
-      - 日本-80端口
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
