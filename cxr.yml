@@ -5,55 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[0.7x-2x]🇸🇬 广港|Misaka", server: 36.139.153.214, port: 45019, type: ss, cipher: aes-128-gcm, password: 5e02473c-6dc6-48f2-959d-eb8b60a9519e, udp: true}
-  - {name: "[0x-1.25x]🇸🇬 广港BGP|Oracle 1", server: relay.gzbgp.entrance1-fp.icu, port: 46101, type: ss, cipher: aes-128-gcm, password: 5e02473c-6dc6-48f2-959d-eb8b60a9519e, udp: true}
-  - {name: "[1x-3x]🇭🇰 广州BGP|HGC", server: relay.gzbgppro.entrance1-fp.icu, port: 25134, type: ss, cipher: aes-128-gcm, password: 5e02473c-6dc6-48f2-959d-eb8b60a9519e, udp: true}
-  - {name: "[0.4x-1x]🇭🇰 广移|Misaka", server: 183.232.239.72, port: 31112, type: ss, cipher: aes-128-gcm, password: 5e02473c-6dc6-48f2-959d-eb8b60a9519e, udp: true}
-  - {name: "[0.2x～2x]🇨🇳 广港|Hinet", server: 36.139.153.214, port: 46222, type: ss, cipher: aes-128-gcm, password: 5e02473c-6dc6-48f2-959d-eb8b60a9519e, udp: true}
-  - {name: "[0.2x-1x]🇺🇸 广港|Misaka", server: 36.139.153.214, port: 53254, type: ss, cipher: aes-128-gcm, password: 5e02473c-6dc6-48f2-959d-eb8b60a9519e, udp: true}
-  - {name: "[0.2x-2x]🇸🇬 广港|NeroCloud", server: relay.gzbgp.entrance1-fp.icu, port: 46113, type: ss, cipher: aes-128-gcm, password: 5e02473c-6dc6-48f2-959d-eb8b60a9519e, udp: true}
-  - {name: "[0.15x-0.7x]🇸🇬 广港|Oracle 2", server: 36.139.153.214, port: 45086, type: ss, cipher: aes-128-gcm, password: 5e02473c-6dc6-48f2-959d-eb8b60a9519e, udp: true}
+  - {name: KR A 004, server: hkaz4.xmrth-node.xyz, port: 15379, type: vmess, uuid: 9a9912b8-2c8e-3690-b7a7-84d94676a36e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: KR A 003, server: hkaz3.xmrth-node.xyz, port: 13738, type: vmess, uuid: 9a9912b8-2c8e-3690-b7a7-84d94676a36e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: IN A 003, server: hkaz3.xmrth-node.xyz, port: 14390, type: vmess, uuid: 9a9912b8-2c8e-3690-b7a7-84d94676a36e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: HK 008, server: hkaz008.xmrth-node.xyz, port: 15897, type: vmess, uuid: 9a9912b8-2c8e-3690-b7a7-84d94676a36e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: HK 010, server: hkaz010.xmrth-node.xyz, port: 15964, type: vmess, uuid: 9a9912b8-2c8e-3690-b7a7-84d94676a36e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: HK 104, server: hkaz4.xmrth-node.xyz, port: 15866, type: vmess, uuid: 9a9912b8-2c8e-3690-b7a7-84d94676a36e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: HK 102, server: hkaz2.xmrth-node.xyz, port: 16077, type: vmess, uuid: 9a9912b8-2c8e-3690-b7a7-84d94676a36e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: HK 009, server: hkaz009.xmrth-node.xyz, port: 16075, type: vmess, uuid: 9a9912b8-2c8e-3690-b7a7-84d94676a36e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: SG 005, server: sgaws005.xmrth-node.xyz, port: 16013, type: vmess, uuid: 9a9912b8-2c8e-3690-b7a7-84d94676a36e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: "Incheon, V2", server: V2-NODE-2.GFWAIRPORT.NET, port: 50001, type: vmess, uuid: b7f48c18-51af-4365-9a2c-621070dfc176, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: V2-NODE-2.GFWAIRPORT.NET}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - "[0x-1.25x]🇸🇬 广港BGP|Oracle 1"
-      - "[1x-3x]🇭🇰 广州BGP|HGC"
-      - "[0.4x-1x]🇭🇰 广移|Misaka"
-      - "[0.2x～2x]🇨🇳 广港|Hinet"
-      - "[0.2x-1x]🇺🇸 广港|Misaka"
-      - "[0.2x-2x]🇸🇬 广港|NeroCloud"
-      - "[0.15x-0.7x]🇸🇬 广港|Oracle 2"
+      - KR A 004
+      - KR A 003
+      - IN A 003
+      - HK 008
+      - HK 010
+      - HK 104
+      - HK 102
+      - HK 009
+      - SG 005
+      - Incheon, V2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - "[0x-1.25x]🇸🇬 广港BGP|Oracle 1"
-      - "[1x-3x]🇭🇰 广州BGP|HGC"
-      - "[0.4x-1x]🇭🇰 广移|Misaka"
-      - "[0.2x～2x]🇨🇳 广港|Hinet"
-      - "[0.2x-1x]🇺🇸 广港|Misaka"
-      - "[0.2x-2x]🇸🇬 广港|NeroCloud"
-      - "[0.15x-0.7x]🇸🇬 广港|Oracle 2"
+      - KR A 004
+      - KR A 003
+      - IN A 003
+      - HK 008
+      - HK 010
+      - HK 104
+      - HK 102
+      - HK 009
+      - SG 005
+      - Incheon, V2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - "[0x-1.25x]🇸🇬 广港BGP|Oracle 1"
-      - "[1x-3x]🇭🇰 广州BGP|HGC"
-      - "[0.4x-1x]🇭🇰 广移|Misaka"
-      - "[0.2x～2x]🇨🇳 广港|Hinet"
-      - "[0.2x-1x]🇺🇸 广港|Misaka"
-      - "[0.2x-2x]🇸🇬 广港|NeroCloud"
-      - "[0.15x-0.7x]🇸🇬 广港|Oracle 2"
+      - KR A 004
+      - KR A 003
+      - IN A 003
+      - HK 008
+      - HK 010
+      - HK 104
+      - HK 102
+      - HK 009
+      - SG 005
+      - Incheon, V2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,66 +80,67 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - "[0x-1.25x]🇸🇬 广港BGP|Oracle 1"
-      - "[1x-3x]🇭🇰 广州BGP|HGC"
-      - "[0.4x-1x]🇭🇰 广移|Misaka"
-      - "[0.2x～2x]🇨🇳 广港|Hinet"
-      - "[0.2x-1x]🇺🇸 广港|Misaka"
-      - "[0.2x-2x]🇸🇬 广港|NeroCloud"
-      - "[0.15x-0.7x]🇸🇬 广港|Oracle 2"
+      - KR A 004
+      - KR A 003
+      - IN A 003
+      - HK 008
+      - HK 010
+      - HK 104
+      - HK 102
+      - HK 009
+      - SG 005
+      - Incheon, V2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - "[0x-1.25x]🇸🇬 广港BGP|Oracle 1"
-      - "[1x-3x]🇭🇰 广州BGP|HGC"
-      - "[0.2x～2x]🇨🇳 广港|Hinet"
-      - "[0.2x-1x]🇺🇸 广港|Misaka"
-      - "[0.2x-2x]🇸🇬 广港|NeroCloud"
-      - "[0.15x-0.7x]🇸🇬 广港|Oracle 2"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - "[0x-1.25x]🇸🇬 广港BGP|Oracle 1"
-      - "[1x-3x]🇭🇰 广州BGP|HGC"
-      - "[0.4x-1x]🇭🇰 广移|Misaka"
-      - "[0.2x～2x]🇨🇳 广港|Hinet"
-      - "[0.2x-1x]🇺🇸 广港|Misaka"
-      - "[0.2x-2x]🇸🇬 广港|NeroCloud"
-      - "[0.15x-0.7x]🇸🇬 广港|Oracle 2"
+      - KR A 004
+      - KR A 003
+      - IN A 003
+      - HK 008
+      - HK 010
+      - HK 104
+      - HK 102
+      - HK 009
+      - SG 005
+      - Incheon, V2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - "[0x-1.25x]🇸🇬 广港BGP|Oracle 1"
-      - "[1x-3x]🇭🇰 广州BGP|HGC"
-      - "[0.4x-1x]🇭🇰 广移|Misaka"
-      - "[0.2x～2x]🇨🇳 广港|Hinet"
-      - "[0.2x-1x]🇺🇸 广港|Misaka"
-      - "[0.2x-2x]🇸🇬 广港|NeroCloud"
-      - "[0.15x-0.7x]🇸🇬 广港|Oracle 2"
+      - KR A 004
+      - KR A 003
+      - IN A 003
+      - HK 008
+      - HK 010
+      - HK 104
+      - HK 102
+      - HK 009
+      - SG 005
+      - Incheon, V2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - "[0x-1.25x]🇸🇬 广港BGP|Oracle 1"
-      - "[1x-3x]🇭🇰 广州BGP|HGC"
-      - "[0.4x-1x]🇭🇰 广移|Misaka"
-      - "[0.2x～2x]🇨🇳 广港|Hinet"
-      - "[0.2x-1x]🇺🇸 广港|Misaka"
-      - "[0.2x-2x]🇸🇬 广港|NeroCloud"
-      - "[0.15x-0.7x]🇸🇬 广港|Oracle 2"
+      - KR A 004
+      - KR A 003
+      - IN A 003
+      - HK 008
+      - HK 010
+      - HK 104
+      - HK 102
+      - HK 009
+      - SG 005
+      - Incheon, V2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -147,14 +156,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - "[0x-1.25x]🇸🇬 广港BGP|Oracle 1"
-      - "[1x-3x]🇭🇰 广州BGP|HGC"
-      - "[0.4x-1x]🇭🇰 广移|Misaka"
-      - "[0.2x～2x]🇨🇳 广港|Hinet"
-      - "[0.2x-1x]🇺🇸 广港|Misaka"
-      - "[0.2x-2x]🇸🇬 广港|NeroCloud"
-      - "[0.15x-0.7x]🇸🇬 广港|Oracle 2"
+      - KR A 004
+      - KR A 003
+      - IN A 003
+      - HK 008
+      - HK 010
+      - HK 104
+      - HK 102
+      - HK 009
+      - SG 005
+      - Incheon, V2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
