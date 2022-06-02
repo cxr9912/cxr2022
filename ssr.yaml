@@ -5,127 +5,195 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[CT/CM]香港 07", server: shcu001online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 09", server: shcu001online.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 14", server: shusacu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 11", server: shusacu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT B", server: cncusouth.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT D", server: shonlinecu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 10", server: cnrelaycm.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT C", server: shcris03.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 04", server: shcu001online.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 15", server: shsuconpro.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT H", server: shonlinecu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 I 3.5, server: usastandard2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 F 3.5, server: usastandard2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 G 3.5, server: usastandard2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 A 3.5, server: usastandard.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 B 3.5, server: usastandard.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 H 3.5, server: usastandard2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 D 3.5, server: usastandard.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 C 3.5, server: usastandard.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 E 3.5, server: usastandard.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化-2, server: shusa.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化-1, server: shusa.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 加拿大, server: relaypro.procncon.xyz, port: 615, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 意大利, server: relaypro.procncon.xyz, port: 612, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT A", server: shonlinecu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 新加坡C, server: shallaz4.dnsflix.com, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
+  - {name: HK-GLaDOS-GEO-32, server: c0fd425.gc.gladns.com, port: 3384, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP-GLaDOS-GEO-00, server: 32e3a78.ga.gladns.com, port: 3382, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP-GLaDOS-GEO-32, server: c0fd425.gc.gladns.com, port: 3382, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP-GLaDOS-GEO-01, server: 32e3a78.gb.gladns.com, port: 3382, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-30, server: c0fd425.pa.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pa.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: HK-GLaDOS-GEO-00, server: 32e3a78.ga.gladns.com, port: 3384, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: SG-GLaDOS-GEO-32, server: c0fd425.gc.gladns.com, port: 3385, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP-GLaDOS-GEO-10, server: 5fc3d08.ga.gladns.com, port: 3382, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-23, server: 0a39e00.pd.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pd.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-02, server: 32e3a78.pc.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP-GLaDOS-GEO-20, server: 0a39e00.ga.gladns.com, port: 3382, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-31, server: c0fd425.pb.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-34, server: c0fd425.pe.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pe.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-20, server: 0a39e00.pa.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pa.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: SG-GLaDOS-GEO-22, server: 0a39e00.gc.gladns.com, port: 3385, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: SG-GLaDOS-GEO-20, server: 0a39e00.ga.gladns.com, port: 3385, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: SG-GLaDOS-GEO-12, server: 5fc3d08.gc.gladns.com, port: 3385, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP-GLaDOS-GEO-30, server: c0fd425.ga.gladns.com, port: 3382, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP-GLaDOS-GEO-12, server: 5fc3d08.gc.gladns.com, port: 3382, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP-GLaDOS-GEO-22, server: 0a39e00.gc.gladns.com, port: 3382, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: HK-GLaDOS-GEO-22, server: 0a39e00.gc.gladns.com, port: 3384, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: SG-GLaDOS-GEO-21, server: 0a39e00.gb.gladns.com, port: 3385, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: HK-GLaDOS-GEO-30, server: c0fd425.ga.gladns.com, port: 3384, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: HK-GLaDOS-GEO-31, server: c0fd425.gb.gladns.com, port: 3384, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: HK-GLaDOS-GEO-20, server: 0a39e00.ga.gladns.com, port: 3384, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: HK-GLaDOS-GEO-12, server: 5fc3d08.gc.gladns.com, port: 3384, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP-GLaDOS-GEO-31, server: c0fd425.gb.gladns.com, port: 3382, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-22, server: 0a39e00.pc.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-07, server: 32e3a78.ph.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.ph.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-04, server: 32e3a78.pe.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pe.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: SG-GLaDOS-GEO-10, server: 5fc3d08.ga.gladns.com, port: 3385, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-24, server: 0a39e00.pe.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pe.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-11, server: 5fc3d08.pb.gladns.com, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.pb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-35, server: c0fd425.pf.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pf.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-01, server: 32e3a78.pb.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP-GLaDOS-GEO-21, server: 0a39e00.gb.gladns.com, port: 3382, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: SG-GLaDOS-GEO-02, server: 32e3a78.gc.gladns.com, port: 3385, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: TW-GLaDOS-GEO-32, server: c0fd425.gc.gladns.com, port: 3383, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-21, server: 0a39e00.pb.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-25, server: 0a39e00.pf.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pf.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-10, server: 5fc3d08.pa.gladns.com, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.pa.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-05, server: 32e3a78.pf.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pf.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-17, server: 5fc3d08.ph.gladns.com, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.ph.gladns.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - "[CT/CM]香港 14"
-      - "[CT/CM]香港 11"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT D"
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT C"
-      - "[CT/CM]香港 04"
-      - "[CT/CM]香港 15"
-      - "[CT/CM] HKT H"
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化-2
-      - 美国 优化-1
-      - 加拿大
-      - 意大利
-      - "[CT/CM] HKT A"
-      - 新加坡C
+      - HK-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-00
+      - JP-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-01
+      - GLaDOS-N2-30
+      - HK-GLaDOS-GEO-00
+      - SG-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-10
+      - GLaDOS-N2-23
+      - GLaDOS-N2-02
+      - JP-GLaDOS-GEO-20
+      - GLaDOS-N2-31
+      - GLaDOS-N2-34
+      - GLaDOS-N2-20
+      - SG-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-20
+      - SG-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-30
+      - JP-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-22
+      - HK-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-21
+      - HK-GLaDOS-GEO-30
+      - HK-GLaDOS-GEO-31
+      - HK-GLaDOS-GEO-20
+      - HK-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-31
+      - GLaDOS-N2-22
+      - GLaDOS-N2-07
+      - GLaDOS-N2-04
+      - SG-GLaDOS-GEO-10
+      - GLaDOS-N2-24
+      - GLaDOS-N2-11
+      - GLaDOS-N2-35
+      - GLaDOS-N2-01
+      - JP-GLaDOS-GEO-21
+      - SG-GLaDOS-GEO-02
+      - TW-GLaDOS-GEO-32
+      - GLaDOS-N2-21
+      - GLaDOS-N2-25
+      - GLaDOS-N2-10
+      - GLaDOS-N2-05
+      - GLaDOS-N2-17
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - "[CT/CM]香港 14"
-      - "[CT/CM]香港 11"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT D"
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT C"
-      - "[CT/CM]香港 04"
-      - "[CT/CM]香港 15"
-      - "[CT/CM] HKT H"
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化-2
-      - 美国 优化-1
-      - 加拿大
-      - 意大利
-      - "[CT/CM] HKT A"
-      - 新加坡C
+      - HK-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-00
+      - JP-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-01
+      - GLaDOS-N2-30
+      - HK-GLaDOS-GEO-00
+      - SG-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-10
+      - GLaDOS-N2-23
+      - GLaDOS-N2-02
+      - JP-GLaDOS-GEO-20
+      - GLaDOS-N2-31
+      - GLaDOS-N2-34
+      - GLaDOS-N2-20
+      - SG-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-20
+      - SG-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-30
+      - JP-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-22
+      - HK-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-21
+      - HK-GLaDOS-GEO-30
+      - HK-GLaDOS-GEO-31
+      - HK-GLaDOS-GEO-20
+      - HK-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-31
+      - GLaDOS-N2-22
+      - GLaDOS-N2-07
+      - GLaDOS-N2-04
+      - SG-GLaDOS-GEO-10
+      - GLaDOS-N2-24
+      - GLaDOS-N2-11
+      - GLaDOS-N2-35
+      - GLaDOS-N2-01
+      - JP-GLaDOS-GEO-21
+      - SG-GLaDOS-GEO-02
+      - TW-GLaDOS-GEO-32
+      - GLaDOS-N2-21
+      - GLaDOS-N2-25
+      - GLaDOS-N2-10
+      - GLaDOS-N2-05
+      - GLaDOS-N2-17
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - "[CT/CM]香港 14"
-      - "[CT/CM]香港 11"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT D"
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT C"
-      - "[CT/CM]香港 04"
-      - "[CT/CM]香港 15"
-      - "[CT/CM] HKT H"
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化-2
-      - 美国 优化-1
-      - 加拿大
-      - 意大利
-      - "[CT/CM] HKT A"
-      - 新加坡C
+      - HK-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-00
+      - JP-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-01
+      - GLaDOS-N2-30
+      - HK-GLaDOS-GEO-00
+      - SG-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-10
+      - GLaDOS-N2-23
+      - GLaDOS-N2-02
+      - JP-GLaDOS-GEO-20
+      - GLaDOS-N2-31
+      - GLaDOS-N2-34
+      - GLaDOS-N2-20
+      - SG-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-20
+      - SG-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-30
+      - JP-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-22
+      - HK-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-21
+      - HK-GLaDOS-GEO-30
+      - HK-GLaDOS-GEO-31
+      - HK-GLaDOS-GEO-20
+      - HK-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-31
+      - GLaDOS-N2-22
+      - GLaDOS-N2-07
+      - GLaDOS-N2-04
+      - SG-GLaDOS-GEO-10
+      - GLaDOS-N2-24
+      - GLaDOS-N2-11
+      - GLaDOS-N2-35
+      - GLaDOS-N2-01
+      - JP-GLaDOS-GEO-21
+      - SG-GLaDOS-GEO-02
+      - TW-GLaDOS-GEO-32
+      - GLaDOS-N2-21
+      - GLaDOS-N2-25
+      - GLaDOS-N2-10
+      - GLaDOS-N2-05
+      - GLaDOS-N2-17
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -144,143 +212,199 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - "[CT/CM]香港 14"
-      - "[CT/CM]香港 11"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT D"
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT C"
-      - "[CT/CM]香港 04"
-      - "[CT/CM]香港 15"
-      - "[CT/CM] HKT H"
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化-2
-      - 美国 优化-1
-      - 加拿大
-      - 意大利
-      - "[CT/CM] HKT A"
-      - 新加坡C
+      - HK-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-00
+      - JP-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-01
+      - GLaDOS-N2-30
+      - HK-GLaDOS-GEO-00
+      - SG-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-10
+      - GLaDOS-N2-23
+      - GLaDOS-N2-02
+      - JP-GLaDOS-GEO-20
+      - GLaDOS-N2-31
+      - GLaDOS-N2-34
+      - GLaDOS-N2-20
+      - SG-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-20
+      - SG-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-30
+      - JP-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-22
+      - HK-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-21
+      - HK-GLaDOS-GEO-30
+      - HK-GLaDOS-GEO-31
+      - HK-GLaDOS-GEO-20
+      - HK-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-31
+      - GLaDOS-N2-22
+      - GLaDOS-N2-07
+      - GLaDOS-N2-04
+      - SG-GLaDOS-GEO-10
+      - GLaDOS-N2-24
+      - GLaDOS-N2-11
+      - GLaDOS-N2-35
+      - GLaDOS-N2-01
+      - JP-GLaDOS-GEO-21
+      - SG-GLaDOS-GEO-02
+      - TW-GLaDOS-GEO-32
+      - GLaDOS-N2-21
+      - GLaDOS-N2-25
+      - GLaDOS-N2-10
+      - GLaDOS-N2-05
+      - GLaDOS-N2-17
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - "[CT/CM]香港 14"
-      - "[CT/CM]香港 11"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT D"
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT C"
-      - "[CT/CM]香港 04"
-      - "[CT/CM]香港 15"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT A"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - "[CT/CM]香港 14"
-      - "[CT/CM]香港 11"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT D"
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT C"
-      - "[CT/CM]香港 04"
-      - "[CT/CM]香港 15"
-      - "[CT/CM] HKT H"
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化-2
-      - 美国 优化-1
-      - 加拿大
-      - 意大利
-      - "[CT/CM] HKT A"
-      - 新加坡C
+      - HK-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-00
+      - JP-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-01
+      - GLaDOS-N2-30
+      - HK-GLaDOS-GEO-00
+      - SG-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-10
+      - GLaDOS-N2-23
+      - GLaDOS-N2-02
+      - JP-GLaDOS-GEO-20
+      - GLaDOS-N2-31
+      - GLaDOS-N2-34
+      - GLaDOS-N2-20
+      - SG-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-20
+      - SG-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-30
+      - JP-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-22
+      - HK-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-21
+      - HK-GLaDOS-GEO-30
+      - HK-GLaDOS-GEO-31
+      - HK-GLaDOS-GEO-20
+      - HK-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-31
+      - GLaDOS-N2-22
+      - GLaDOS-N2-07
+      - GLaDOS-N2-04
+      - SG-GLaDOS-GEO-10
+      - GLaDOS-N2-24
+      - GLaDOS-N2-11
+      - GLaDOS-N2-35
+      - GLaDOS-N2-01
+      - JP-GLaDOS-GEO-21
+      - SG-GLaDOS-GEO-02
+      - TW-GLaDOS-GEO-32
+      - GLaDOS-N2-21
+      - GLaDOS-N2-25
+      - GLaDOS-N2-10
+      - GLaDOS-N2-05
+      - GLaDOS-N2-17
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - "[CT/CM]香港 14"
-      - "[CT/CM]香港 11"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT D"
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT C"
-      - "[CT/CM]香港 04"
-      - "[CT/CM]香港 15"
-      - "[CT/CM] HKT H"
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化-2
-      - 美国 优化-1
-      - 加拿大
-      - 意大利
-      - "[CT/CM] HKT A"
-      - 新加坡C
+      - HK-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-00
+      - JP-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-01
+      - GLaDOS-N2-30
+      - HK-GLaDOS-GEO-00
+      - SG-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-10
+      - GLaDOS-N2-23
+      - GLaDOS-N2-02
+      - JP-GLaDOS-GEO-20
+      - GLaDOS-N2-31
+      - GLaDOS-N2-34
+      - GLaDOS-N2-20
+      - SG-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-20
+      - SG-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-30
+      - JP-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-22
+      - HK-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-21
+      - HK-GLaDOS-GEO-30
+      - HK-GLaDOS-GEO-31
+      - HK-GLaDOS-GEO-20
+      - HK-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-31
+      - GLaDOS-N2-22
+      - GLaDOS-N2-07
+      - GLaDOS-N2-04
+      - SG-GLaDOS-GEO-10
+      - GLaDOS-N2-24
+      - GLaDOS-N2-11
+      - GLaDOS-N2-35
+      - GLaDOS-N2-01
+      - JP-GLaDOS-GEO-21
+      - SG-GLaDOS-GEO-02
+      - TW-GLaDOS-GEO-32
+      - GLaDOS-N2-21
+      - GLaDOS-N2-25
+      - GLaDOS-N2-10
+      - GLaDOS-N2-05
+      - GLaDOS-N2-17
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - "[CT/CM]香港 14"
-      - "[CT/CM]香港 11"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT D"
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT C"
-      - "[CT/CM]香港 04"
-      - "[CT/CM]香港 15"
-      - "[CT/CM] HKT H"
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化-2
-      - 美国 优化-1
-      - 加拿大
-      - 意大利
-      - "[CT/CM] HKT A"
-      - 新加坡C
+      - HK-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-00
+      - JP-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-01
+      - GLaDOS-N2-30
+      - HK-GLaDOS-GEO-00
+      - SG-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-10
+      - GLaDOS-N2-23
+      - GLaDOS-N2-02
+      - JP-GLaDOS-GEO-20
+      - GLaDOS-N2-31
+      - GLaDOS-N2-34
+      - GLaDOS-N2-20
+      - SG-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-20
+      - SG-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-30
+      - JP-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-22
+      - HK-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-21
+      - HK-GLaDOS-GEO-30
+      - HK-GLaDOS-GEO-31
+      - HK-GLaDOS-GEO-20
+      - HK-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-31
+      - GLaDOS-N2-22
+      - GLaDOS-N2-07
+      - GLaDOS-N2-04
+      - SG-GLaDOS-GEO-10
+      - GLaDOS-N2-24
+      - GLaDOS-N2-11
+      - GLaDOS-N2-35
+      - GLaDOS-N2-01
+      - JP-GLaDOS-GEO-21
+      - SG-GLaDOS-GEO-02
+      - TW-GLaDOS-GEO-32
+      - GLaDOS-N2-21
+      - GLaDOS-N2-25
+      - GLaDOS-N2-10
+      - GLaDOS-N2-05
+      - GLaDOS-N2-17
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -296,32 +420,49 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - "[CT/CM]香港 14"
-      - "[CT/CM]香港 11"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT D"
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT C"
-      - "[CT/CM]香港 04"
-      - "[CT/CM]香港 15"
-      - "[CT/CM] HKT H"
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化-2
-      - 美国 优化-1
-      - 加拿大
-      - 意大利
-      - "[CT/CM] HKT A"
-      - 新加坡C
+      - HK-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-00
+      - JP-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-01
+      - GLaDOS-N2-30
+      - HK-GLaDOS-GEO-00
+      - SG-GLaDOS-GEO-32
+      - JP-GLaDOS-GEO-10
+      - GLaDOS-N2-23
+      - GLaDOS-N2-02
+      - JP-GLaDOS-GEO-20
+      - GLaDOS-N2-31
+      - GLaDOS-N2-34
+      - GLaDOS-N2-20
+      - SG-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-20
+      - SG-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-30
+      - JP-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-22
+      - HK-GLaDOS-GEO-22
+      - SG-GLaDOS-GEO-21
+      - HK-GLaDOS-GEO-30
+      - HK-GLaDOS-GEO-31
+      - HK-GLaDOS-GEO-20
+      - HK-GLaDOS-GEO-12
+      - JP-GLaDOS-GEO-31
+      - GLaDOS-N2-22
+      - GLaDOS-N2-07
+      - GLaDOS-N2-04
+      - SG-GLaDOS-GEO-10
+      - GLaDOS-N2-24
+      - GLaDOS-N2-11
+      - GLaDOS-N2-35
+      - GLaDOS-N2-01
+      - JP-GLaDOS-GEO-21
+      - SG-GLaDOS-GEO-02
+      - TW-GLaDOS-GEO-32
+      - GLaDOS-N2-21
+      - GLaDOS-N2-25
+      - GLaDOS-N2-10
+      - GLaDOS-N2-05
+      - GLaDOS-N2-17
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
