@@ -5,139 +5,119 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本 V2ray B, server: shhkmmw.ggboynextdoor.best, port: 11105, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 V2ray, server: shhkmmw.ggboynextdoor.best, port: 11005, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 V2ray, server: shhkmmw.ggboynextdoor.best, port: 11001, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /websocket, ws-headers: {Host: www.icloud.com}, udp: true}
-  - {name: 新加坡 V2ray IEPL, server: shhkmmw.ggboynextdoor.best, port: 11113, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 V2ray, server: shhkmmw.ggboynextdoor.best, port: 11003, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国 V2ray B, server: shhkmmw.ggboynextdoor.best, port: 11106, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国 V2ray, server: shhkmmw.ggboynextdoor.best, port: 11006, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 马来西亚 V2ray, server: shhkmmw.ggboynextdoor.best, port: 11014, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2ray B, server: shhkmmw.ggboynextdoor.best, port: 11104, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 v2ray IEPL, server: shhkmmw.ggboynextdoor.best, port: 11111, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2ray, server: shhkmmw.ggboynextdoor.best, port: 11004, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2ray IEPL, server: shhkmmw.ggboynextdoor.best, port: 11114, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 V2ray B, server: shhkmmw.ggboynextdoor.best, port: 11103, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 V2ray, server: shhkmmw.ggboynextdoor.best, port: 11008, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 V2ray B, server: shhkmmw.ggboynextdoor.best, port: 11107, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国 V2ray, server: shhkmmw.ggboynextdoor.best, port: 11009, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 V2ray, server: shhkmmw.ggboynextdoor.best, port: 11007, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 阿根廷 V2ray, server: shhkmmw.ggboynextdoor.best, port: 11012, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 西班牙 V2ray, server: shhkmmw.ggboynextdoor.best, port: 11011, type: vmess, uuid: 8854363e-7ed4-391f-bea2-3396889b2ffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "Incheon, V2", server: V2-NODE-2.GFWAIRPORT.NET, port: 50001, type: vmess, uuid: b7f48c18-51af-4365-9a2c-621070dfc176, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: V2-NODE-2.GFWAIRPORT.NET}, udp: true}
-  - {name: US_910 | 15.44Mb, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_987 | 12.86Mb, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_947 | 15.60Mb, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_966 | 13.78Mb, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_989 | 12.67Mb, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1141 | 10.19Mb, server: 38.68.134.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1120 | 16.97Mb, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_1112 | 15.59Mb, server: 169.197.142.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_935 |  9.16Mb, server: 38.68.134.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 中国-香港3【1x】, server: hk2703.cloudmatrix.xyz, port: 2703, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: hk2703.cloudmatrix.xyz}, udp: true}
+  - {name: 新加坡4【1x】, server: sg2604.cloudmatrix.xyz, port: 2604, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: sg2604.cloudmatrix.xyz}, udp: true}
+  - {name: 中国-台湾2【1x】, server: tw2502.cloudmatrix.xyz, port: 2502, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: tw2502.cloudmatrix.xyz}, udp: true}
+  - {name: 中国-香港5【1x】, server: hk21201.cloudmatrix.xyz, port: 21201, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: hk21201.cloudmatrix.xyz}, udp: true}
+  - {name: 新加坡3【1x】, server: sg2603.cloudmatrix.xyz, port: 2603, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: sg2603.cloudmatrix.xyz}, udp: true}
+  - {name: 新加坡6【1x】, server: sg21102.cloudmatrix.xyz, port: 21102, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: sg21102.cloudmatrix.xyz}, udp: true}
+  - {name: 新加坡2【1x】, server: sg2602.cloudmatrix.xyz, port: 2602, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: sg2602.cloudmatrix.xyz}, udp: true}
+  - {name: 中国-台湾4【1x】, server: tw2504.cloudmatrix.xyz, port: 2504, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: tw2504.cloudmatrix.xyz}, udp: true}
+  - {name: 新加坡1【1x】, server: sg2601.cloudmatrix.xyz, port: 2601, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: sg2601.cloudmatrix.xyz}, udp: true}
+  - {name: 日本-东京3【1x】, server: jp2802.cloudmatrix.xyz, port: 2802, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp2802.cloudmatrix.xyz}, udp: true}
+  - {name: 中国-香港2【1x】, server: hk2702.cloudmatrix.xyz, port: 2702, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: hk2702.cloudmatrix.xyz}, udp: true}
+  - {name: 中国-台湾3【1x】, server: tw2501.cloudmatrix.xyz, port: 2501, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: tw2501.cloudmatrix.xyz}, udp: true}
+  - {name: 美国-洛杉矶2【1x】, server: us2407.cloudmatrix.xyz, port: 2407, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: us2407.cloudmatrix.xyz}, udp: true}
+  - {name: 日本-东京2【1x】, server: jp2803.cloudmatrix.xyz, port: 2803, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp2803.cloudmatrix.xyz}, udp: true}
+  - {name: 美国-圣何塞5【1x】, server: us24055.cloudmatrix.xyz, port: 24055, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: us24055.cloudmatrix.xyz}, udp: true}
+  - {name: 中国-香港4【1x】, server: hk2704.cloudmatrix.xyz, port: 2704, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: hk2704.cloudmatrix.xyz}, udp: true}
+  - {name: 中国-香港1【1x】, server: hk2701.cloudmatrix.xyz, port: 2701, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: hk2701.cloudmatrix.xyz}, udp: true}
+  - {name: 美国-圣何塞4【1x】, server: us24054.cloudmatrix.xyz, port: 24054, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: us24054.cloudmatrix.xyz}, udp: true}
+  - {name: 英国-伦敦1【1x】, server: uk2901.cloudmatrix.xyz, port: 2901, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: uk2901.cloudmatrix.xyz}, udp: true}
+  - {name: 美国 -圣何塞2【1x】, server: us24052.cloudmatrix.xyz, port: 24052, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: us24052.cloudmatrix.xyz}, udp: true}
+  - {name: 中国-台湾6【1x】, server: tw2506.cloudmatrix.xyz, port: 2506, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: tw2506.cloudmatrix.xyz}, udp: true}
+  - {name: 美国-洛杉矶3【1x】, server: us24058.cloudmatrix.xyz, port: 24058, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: us24058.cloudmatrix.xyz}, udp: true}
+  - {name: 日本-东京1【1x】, server: jp21301.cloudmatrix.xyz, port: 21301, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp21301.cloudmatrix.xyz}, udp: true}
+  - {name: 新加坡5【1x】, server: sg21101.cloudmatrix.xyz, port: 21101, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: sg21101.cloudmatrix.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 V2ray B
-      - 日本 V2ray
-      - 香港 V2ray
-      - 新加坡 V2ray IEPL
-      - 新加坡 V2ray
-      - 韩国 V2ray B
-      - 韩国 V2ray
-      - 马来西亚 V2ray
-      - 美国 V2ray B
-      - 香港 v2ray IEPL
-      - 美国 V2ray
-      - 美国 V2ray IEPL
-      - 新加坡 V2ray B
-      - 德国 V2ray
-      - 俄罗斯 V2ray B
-      - 英国 V2ray
-      - 俄罗斯 V2ray
-      - 阿根廷 V2ray
-      - 西班牙 V2ray
-      - Incheon, V2
-      - US_910 | 15.44Mb
-      - US_987 | 12.86Mb
-      - US_947 | 15.60Mb
-      - US_966 | 13.78Mb
-      - US_989 | 12.67Mb
-      - US_1141 | 10.19Mb
-      - US_1120 | 16.97Mb
-      - US_1112 | 15.59Mb
-      - US_935 |  9.16Mb
+      - 中国-香港3【1x】
+      - 新加坡4【1x】
+      - 中国-台湾2【1x】
+      - 中国-香港5【1x】
+      - 新加坡3【1x】
+      - 新加坡6【1x】
+      - 新加坡2【1x】
+      - 中国-台湾4【1x】
+      - 新加坡1【1x】
+      - 日本-东京3【1x】
+      - 中国-香港2【1x】
+      - 中国-台湾3【1x】
+      - 美国-洛杉矶2【1x】
+      - 日本-东京2【1x】
+      - 美国-圣何塞5【1x】
+      - 中国-香港4【1x】
+      - 中国-香港1【1x】
+      - 美国-圣何塞4【1x】
+      - 英国-伦敦1【1x】
+      - 美国 -圣何塞2【1x】
+      - 中国-台湾6【1x】
+      - 美国-洛杉矶3【1x】
+      - 日本-东京1【1x】
+      - 新加坡5【1x】
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本 V2ray B
-      - 日本 V2ray
-      - 香港 V2ray
-      - 新加坡 V2ray IEPL
-      - 新加坡 V2ray
-      - 韩国 V2ray B
-      - 韩国 V2ray
-      - 马来西亚 V2ray
-      - 美国 V2ray B
-      - 香港 v2ray IEPL
-      - 美国 V2ray
-      - 美国 V2ray IEPL
-      - 新加坡 V2ray B
-      - 德国 V2ray
-      - 俄罗斯 V2ray B
-      - 英国 V2ray
-      - 俄罗斯 V2ray
-      - 阿根廷 V2ray
-      - 西班牙 V2ray
-      - Incheon, V2
-      - US_910 | 15.44Mb
-      - US_987 | 12.86Mb
-      - US_947 | 15.60Mb
-      - US_966 | 13.78Mb
-      - US_989 | 12.67Mb
-      - US_1141 | 10.19Mb
-      - US_1120 | 16.97Mb
-      - US_1112 | 15.59Mb
-      - US_935 |  9.16Mb
+      - 中国-香港3【1x】
+      - 新加坡4【1x】
+      - 中国-台湾2【1x】
+      - 中国-香港5【1x】
+      - 新加坡3【1x】
+      - 新加坡6【1x】
+      - 新加坡2【1x】
+      - 中国-台湾4【1x】
+      - 新加坡1【1x】
+      - 日本-东京3【1x】
+      - 中国-香港2【1x】
+      - 中国-台湾3【1x】
+      - 美国-洛杉矶2【1x】
+      - 日本-东京2【1x】
+      - 美国-圣何塞5【1x】
+      - 中国-香港4【1x】
+      - 中国-香港1【1x】
+      - 美国-圣何塞4【1x】
+      - 英国-伦敦1【1x】
+      - 美国 -圣何塞2【1x】
+      - 中国-台湾6【1x】
+      - 美国-洛杉矶3【1x】
+      - 日本-东京1【1x】
+      - 新加坡5【1x】
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 V2ray B
-      - 日本 V2ray
-      - 香港 V2ray
-      - 新加坡 V2ray IEPL
-      - 新加坡 V2ray
-      - 韩国 V2ray B
-      - 韩国 V2ray
-      - 马来西亚 V2ray
-      - 美国 V2ray B
-      - 香港 v2ray IEPL
-      - 美国 V2ray
-      - 美国 V2ray IEPL
-      - 新加坡 V2ray B
-      - 德国 V2ray
-      - 俄罗斯 V2ray B
-      - 英国 V2ray
-      - 俄罗斯 V2ray
-      - 阿根廷 V2ray
-      - 西班牙 V2ray
-      - Incheon, V2
-      - US_910 | 15.44Mb
-      - US_987 | 12.86Mb
-      - US_947 | 15.60Mb
-      - US_966 | 13.78Mb
-      - US_989 | 12.67Mb
-      - US_1141 | 10.19Mb
-      - US_1120 | 16.97Mb
-      - US_1112 | 15.59Mb
-      - US_935 |  9.16Mb
+      - 中国-香港3【1x】
+      - 新加坡4【1x】
+      - 中国-台湾2【1x】
+      - 中国-香港5【1x】
+      - 新加坡3【1x】
+      - 新加坡6【1x】
+      - 新加坡2【1x】
+      - 中国-台湾4【1x】
+      - 新加坡1【1x】
+      - 日本-东京3【1x】
+      - 中国-香港2【1x】
+      - 中国-台湾3【1x】
+      - 美国-洛杉矶2【1x】
+      - 日本-东京2【1x】
+      - 美国-圣何塞5【1x】
+      - 中国-香港4【1x】
+      - 中国-香港1【1x】
+      - 美国-圣何塞4【1x】
+      - 英国-伦敦1【1x】
+      - 美国 -圣何塞2【1x】
+      - 中国-台湾6【1x】
+      - 美国-洛杉矶3【1x】
+      - 日本-东京1【1x】
+      - 新加坡5【1x】
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -156,145 +136,132 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 V2ray B
-      - 日本 V2ray
-      - 香港 V2ray
-      - 新加坡 V2ray IEPL
-      - 新加坡 V2ray
-      - 韩国 V2ray B
-      - 韩国 V2ray
-      - 马来西亚 V2ray
-      - 美国 V2ray B
-      - 香港 v2ray IEPL
-      - 美国 V2ray
-      - 美国 V2ray IEPL
-      - 新加坡 V2ray B
-      - 德国 V2ray
-      - 俄罗斯 V2ray B
-      - 英国 V2ray
-      - 俄罗斯 V2ray
-      - 阿根廷 V2ray
-      - 西班牙 V2ray
-      - Incheon, V2
-      - US_910 | 15.44Mb
-      - US_987 | 12.86Mb
-      - US_947 | 15.60Mb
-      - US_966 | 13.78Mb
-      - US_989 | 12.67Mb
-      - US_1141 | 10.19Mb
-      - US_1120 | 16.97Mb
-      - US_1112 | 15.59Mb
-      - US_935 |  9.16Mb
+      - 中国-香港3【1x】
+      - 新加坡4【1x】
+      - 中国-台湾2【1x】
+      - 中国-香港5【1x】
+      - 新加坡3【1x】
+      - 新加坡6【1x】
+      - 新加坡2【1x】
+      - 中国-台湾4【1x】
+      - 新加坡1【1x】
+      - 日本-东京3【1x】
+      - 中国-香港2【1x】
+      - 中国-台湾3【1x】
+      - 美国-洛杉矶2【1x】
+      - 日本-东京2【1x】
+      - 美国-圣何塞5【1x】
+      - 中国-香港4【1x】
+      - 中国-香港1【1x】
+      - 美国-圣何塞4【1x】
+      - 英国-伦敦1【1x】
+      - 美国 -圣何塞2【1x】
+      - 中国-台湾6【1x】
+      - 美国-洛杉矶3【1x】
+      - 日本-东京1【1x】
+      - 新加坡5【1x】
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 V2ray
-      - 香港 v2ray IEPL
+      - 中国-香港3【1x】
+      - 中国-台湾2【1x】
+      - 中国-香港5【1x】
+      - 中国-台湾4【1x】
+      - 中国-香港2【1x】
+      - 中国-台湾3【1x】
+      - 中国-香港4【1x】
+      - 中国-香港1【1x】
+      - 中国-台湾6【1x】
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本 V2ray B
-      - 日本 V2ray
-      - 香港 V2ray
-      - 新加坡 V2ray IEPL
-      - 新加坡 V2ray
-      - 韩国 V2ray B
-      - 韩国 V2ray
-      - 马来西亚 V2ray
-      - 美国 V2ray B
-      - 香港 v2ray IEPL
-      - 美国 V2ray
-      - 美国 V2ray IEPL
-      - 新加坡 V2ray B
-      - 德国 V2ray
-      - 俄罗斯 V2ray B
-      - 英国 V2ray
-      - 俄罗斯 V2ray
-      - 阿根廷 V2ray
-      - 西班牙 V2ray
-      - Incheon, V2
-      - US_910 | 15.44Mb
-      - US_987 | 12.86Mb
-      - US_947 | 15.60Mb
-      - US_966 | 13.78Mb
-      - US_989 | 12.67Mb
-      - US_1141 | 10.19Mb
-      - US_1120 | 16.97Mb
-      - US_1112 | 15.59Mb
-      - US_935 |  9.16Mb
+      - 中国-香港3【1x】
+      - 新加坡4【1x】
+      - 中国-台湾2【1x】
+      - 中国-香港5【1x】
+      - 新加坡3【1x】
+      - 新加坡6【1x】
+      - 新加坡2【1x】
+      - 中国-台湾4【1x】
+      - 新加坡1【1x】
+      - 日本-东京3【1x】
+      - 中国-香港2【1x】
+      - 中国-台湾3【1x】
+      - 美国-洛杉矶2【1x】
+      - 日本-东京2【1x】
+      - 美国-圣何塞5【1x】
+      - 中国-香港4【1x】
+      - 中国-香港1【1x】
+      - 美国-圣何塞4【1x】
+      - 英国-伦敦1【1x】
+      - 美国 -圣何塞2【1x】
+      - 中国-台湾6【1x】
+      - 美国-洛杉矶3【1x】
+      - 日本-东京1【1x】
+      - 新加坡5【1x】
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本 V2ray B
-      - 日本 V2ray
-      - 香港 V2ray
-      - 新加坡 V2ray IEPL
-      - 新加坡 V2ray
-      - 韩国 V2ray B
-      - 韩国 V2ray
-      - 马来西亚 V2ray
-      - 美国 V2ray B
-      - 香港 v2ray IEPL
-      - 美国 V2ray
-      - 美国 V2ray IEPL
-      - 新加坡 V2ray B
-      - 德国 V2ray
-      - 俄罗斯 V2ray B
-      - 英国 V2ray
-      - 俄罗斯 V2ray
-      - 阿根廷 V2ray
-      - 西班牙 V2ray
-      - Incheon, V2
-      - US_910 | 15.44Mb
-      - US_987 | 12.86Mb
-      - US_947 | 15.60Mb
-      - US_966 | 13.78Mb
-      - US_989 | 12.67Mb
-      - US_1141 | 10.19Mb
-      - US_1120 | 16.97Mb
-      - US_1112 | 15.59Mb
-      - US_935 |  9.16Mb
+      - 中国-香港3【1x】
+      - 新加坡4【1x】
+      - 中国-台湾2【1x】
+      - 中国-香港5【1x】
+      - 新加坡3【1x】
+      - 新加坡6【1x】
+      - 新加坡2【1x】
+      - 中国-台湾4【1x】
+      - 新加坡1【1x】
+      - 日本-东京3【1x】
+      - 中国-香港2【1x】
+      - 中国-台湾3【1x】
+      - 美国-洛杉矶2【1x】
+      - 日本-东京2【1x】
+      - 美国-圣何塞5【1x】
+      - 中国-香港4【1x】
+      - 中国-香港1【1x】
+      - 美国-圣何塞4【1x】
+      - 英国-伦敦1【1x】
+      - 美国 -圣何塞2【1x】
+      - 中国-台湾6【1x】
+      - 美国-洛杉矶3【1x】
+      - 日本-东京1【1x】
+      - 新加坡5【1x】
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 V2ray B
-      - 日本 V2ray
-      - 香港 V2ray
-      - 新加坡 V2ray IEPL
-      - 新加坡 V2ray
-      - 韩国 V2ray B
-      - 韩国 V2ray
-      - 马来西亚 V2ray
-      - 美国 V2ray B
-      - 香港 v2ray IEPL
-      - 美国 V2ray
-      - 美国 V2ray IEPL
-      - 新加坡 V2ray B
-      - 德国 V2ray
-      - 俄罗斯 V2ray B
-      - 英国 V2ray
-      - 俄罗斯 V2ray
-      - 阿根廷 V2ray
-      - 西班牙 V2ray
-      - Incheon, V2
-      - US_910 | 15.44Mb
-      - US_987 | 12.86Mb
-      - US_947 | 15.60Mb
-      - US_966 | 13.78Mb
-      - US_989 | 12.67Mb
-      - US_1141 | 10.19Mb
-      - US_1120 | 16.97Mb
-      - US_1112 | 15.59Mb
-      - US_935 |  9.16Mb
+      - 中国-香港3【1x】
+      - 新加坡4【1x】
+      - 中国-台湾2【1x】
+      - 中国-香港5【1x】
+      - 新加坡3【1x】
+      - 新加坡6【1x】
+      - 新加坡2【1x】
+      - 中国-台湾4【1x】
+      - 新加坡1【1x】
+      - 日本-东京3【1x】
+      - 中国-香港2【1x】
+      - 中国-台湾3【1x】
+      - 美国-洛杉矶2【1x】
+      - 日本-东京2【1x】
+      - 美国-圣何塞5【1x】
+      - 中国-香港4【1x】
+      - 中国-香港1【1x】
+      - 美国-圣何塞4【1x】
+      - 英国-伦敦1【1x】
+      - 美国 -圣何塞2【1x】
+      - 中国-台湾6【1x】
+      - 美国-洛杉矶3【1x】
+      - 日本-东京1【1x】
+      - 新加坡5【1x】
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -310,35 +277,30 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 V2ray B
-      - 日本 V2ray
-      - 香港 V2ray
-      - 新加坡 V2ray IEPL
-      - 新加坡 V2ray
-      - 韩国 V2ray B
-      - 韩国 V2ray
-      - 马来西亚 V2ray
-      - 美国 V2ray B
-      - 香港 v2ray IEPL
-      - 美国 V2ray
-      - 美国 V2ray IEPL
-      - 新加坡 V2ray B
-      - 德国 V2ray
-      - 俄罗斯 V2ray B
-      - 英国 V2ray
-      - 俄罗斯 V2ray
-      - 阿根廷 V2ray
-      - 西班牙 V2ray
-      - Incheon, V2
-      - US_910 | 15.44Mb
-      - US_987 | 12.86Mb
-      - US_947 | 15.60Mb
-      - US_966 | 13.78Mb
-      - US_989 | 12.67Mb
-      - US_1141 | 10.19Mb
-      - US_1120 | 16.97Mb
-      - US_1112 | 15.59Mb
-      - US_935 |  9.16Mb
+      - 中国-香港3【1x】
+      - 新加坡4【1x】
+      - 中国-台湾2【1x】
+      - 中国-香港5【1x】
+      - 新加坡3【1x】
+      - 新加坡6【1x】
+      - 新加坡2【1x】
+      - 中国-台湾4【1x】
+      - 新加坡1【1x】
+      - 日本-东京3【1x】
+      - 中国-香港2【1x】
+      - 中国-台湾3【1x】
+      - 美国-洛杉矶2【1x】
+      - 日本-东京2【1x】
+      - 美国-圣何塞5【1x】
+      - 中国-香港4【1x】
+      - 中国-香港1【1x】
+      - 美国-圣何塞4【1x】
+      - 英国-伦敦1【1x】
+      - 美国 -圣何塞2【1x】
+      - 中国-台湾6【1x】
+      - 美国-洛杉矶3【1x】
+      - 日本-东京1【1x】
+      - 新加坡5【1x】
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
