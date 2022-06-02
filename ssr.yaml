@@ -5,195 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK-GLaDOS-GEO-32, server: c0fd425.gc.gladns.com, port: 3384, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP-GLaDOS-GEO-00, server: 32e3a78.ga.gladns.com, port: 3382, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP-GLaDOS-GEO-32, server: c0fd425.gc.gladns.com, port: 3382, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP-GLaDOS-GEO-01, server: 32e3a78.gb.gladns.com, port: 3382, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-30, server: c0fd425.pa.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pa.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: HK-GLaDOS-GEO-00, server: 32e3a78.ga.gladns.com, port: 3384, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: SG-GLaDOS-GEO-32, server: c0fd425.gc.gladns.com, port: 3385, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP-GLaDOS-GEO-10, server: 5fc3d08.ga.gladns.com, port: 3382, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-23, server: 0a39e00.pd.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pd.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-02, server: 32e3a78.pc.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP-GLaDOS-GEO-20, server: 0a39e00.ga.gladns.com, port: 3382, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-31, server: c0fd425.pb.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-34, server: c0fd425.pe.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pe.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-20, server: 0a39e00.pa.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pa.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: SG-GLaDOS-GEO-22, server: 0a39e00.gc.gladns.com, port: 3385, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: SG-GLaDOS-GEO-20, server: 0a39e00.ga.gladns.com, port: 3385, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: SG-GLaDOS-GEO-12, server: 5fc3d08.gc.gladns.com, port: 3385, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP-GLaDOS-GEO-30, server: c0fd425.ga.gladns.com, port: 3382, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP-GLaDOS-GEO-12, server: 5fc3d08.gc.gladns.com, port: 3382, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP-GLaDOS-GEO-22, server: 0a39e00.gc.gladns.com, port: 3382, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: HK-GLaDOS-GEO-22, server: 0a39e00.gc.gladns.com, port: 3384, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: SG-GLaDOS-GEO-21, server: 0a39e00.gb.gladns.com, port: 3385, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: HK-GLaDOS-GEO-30, server: c0fd425.ga.gladns.com, port: 3384, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: HK-GLaDOS-GEO-31, server: c0fd425.gb.gladns.com, port: 3384, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: HK-GLaDOS-GEO-20, server: 0a39e00.ga.gladns.com, port: 3384, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: HK-GLaDOS-GEO-12, server: 5fc3d08.gc.gladns.com, port: 3384, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP-GLaDOS-GEO-31, server: c0fd425.gb.gladns.com, port: 3382, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-22, server: 0a39e00.pc.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-07, server: 32e3a78.ph.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.ph.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-04, server: 32e3a78.pe.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pe.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: SG-GLaDOS-GEO-10, server: 5fc3d08.ga.gladns.com, port: 3385, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-24, server: 0a39e00.pe.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pe.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-11, server: 5fc3d08.pb.gladns.com, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.pb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-35, server: c0fd425.pf.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pf.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-01, server: 32e3a78.pb.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP-GLaDOS-GEO-21, server: 0a39e00.gb.gladns.com, port: 3382, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: SG-GLaDOS-GEO-02, server: 32e3a78.gc.gladns.com, port: 3385, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TW-GLaDOS-GEO-32, server: c0fd425.gc.gladns.com, port: 3383, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-21, server: 0a39e00.pb.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-25, server: 0a39e00.pf.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pf.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-10, server: 5fc3d08.pa.gladns.com, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.pa.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-05, server: 32e3a78.pf.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pf.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-17, server: 5fc3d08.ph.gladns.com, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.ph.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: ✈️ 新加坡 02 - SS测试节点, server: 120.233.185.227, port: 32334, type: ss, cipher: aes-128-gcm, password: dea7b3ac-2006-41bd-a714-b2de429c8423, udp: true}
+  - {name: ✈️ 东京 02 - SS测试, server: dns.ekgjslkfgljs.tk, port: 23302, type: ss, cipher: aes-256-gcm, password: dea7b3ac-2006-41bd-a714-b2de429c8423, udp: true}
+  - {name: ✈️ 东京 01 - SS测试, server: dns.ekgjslkfgljs.tk, port: 23301, type: ss, cipher: aes-256-gcm, password: dea7b3ac-2006-41bd-a714-b2de429c8423, udp: true}
+  - {name: ✈️ 香港 03, server: hk-relay-a.124125.xyz, port: 10032, type: trojan, password: dea7b3ac-2006-41bd-a714-b2de429c8423, sni: hk-relay-a.124125.xyz, skip-cert-verify: true, udp: true}
+  - {name: ✈️ 新加坡 02 - 负载均衡 - 智能解析, server: sg-relay-b.124125.xyz, port: 33334, type: trojan, password: dea7b3ac-2006-41bd-a714-b2de429c8423, sni: sg-relay-b.124125.xyz, skip-cert-verify: true, udp: true}
+  - {name: ✈️ 日本 03 - 负载均衡 - 智能解析, server: jp-relay-b.124125.xyz, port: 33003, type: trojan, password: dea7b3ac-2006-41bd-a714-b2de429c8423, sni: jp-relay-b.124125.xyz, skip-cert-verify: true, udp: true}
+  - {name: ✈️ 韩国 02 - 负载均衡 - 智能解析, server: kr-relay-a.124125.xyz, port: 34002, type: trojan, password: dea7b3ac-2006-41bd-a714-b2de429c8423, sni: kr-relay-a.124125.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 02 - 智能解析, server: hk-relay-c.124125.xyz, port: 33372, type: trojan, password: dea7b3ac-2006-41bd-a714-b2de429c8423, sni: hk-relay-c.124125.xyz, skip-cert-verify: true, udp: true}
+  - {name: ✈️ 日本 01 - 负载均衡, server: jp-relay-a.124125.xyz, port: 33301, type: trojan, password: dea7b3ac-2006-41bd-a714-b2de429c8423, sni: jp-relay-a.124125.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 01 - 智能解析, server: hk-relay-c.124125.xyz, port: 33371, type: trojan, password: dea7b3ac-2006-41bd-a714-b2de429c8423, sni: hk-relay-c.124125.xyz, skip-cert-verify: true, udp: true}
+  - {name: ✈️ 日本 04 - 负载均衡 - 智能解析, server: jp-relay-b.124125.xyz, port: 33004, type: trojan, password: dea7b3ac-2006-41bd-a714-b2de429c8423, sni: jp-relay-b.124125.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-00
-      - JP-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-01
-      - GLaDOS-N2-30
-      - HK-GLaDOS-GEO-00
-      - SG-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-10
-      - GLaDOS-N2-23
-      - GLaDOS-N2-02
-      - JP-GLaDOS-GEO-20
-      - GLaDOS-N2-31
-      - GLaDOS-N2-34
-      - GLaDOS-N2-20
-      - SG-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-20
-      - SG-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-30
-      - JP-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-22
-      - HK-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-21
-      - HK-GLaDOS-GEO-30
-      - HK-GLaDOS-GEO-31
-      - HK-GLaDOS-GEO-20
-      - HK-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-31
-      - GLaDOS-N2-22
-      - GLaDOS-N2-07
-      - GLaDOS-N2-04
-      - SG-GLaDOS-GEO-10
-      - GLaDOS-N2-24
-      - GLaDOS-N2-11
-      - GLaDOS-N2-35
-      - GLaDOS-N2-01
-      - JP-GLaDOS-GEO-21
-      - SG-GLaDOS-GEO-02
-      - TW-GLaDOS-GEO-32
-      - GLaDOS-N2-21
-      - GLaDOS-N2-25
-      - GLaDOS-N2-10
-      - GLaDOS-N2-05
-      - GLaDOS-N2-17
+      - ✈️ 新加坡 02 - SS测试节点
+      - ✈️ 东京 02 - SS测试
+      - ✈️ 东京 01 - SS测试
+      - ✈️ 香港 03
+      - ✈️ 新加坡 02 - 负载均衡 - 智能解析
+      - ✈️ 日本 03 - 负载均衡 - 智能解析
+      - ✈️ 韩国 02 - 负载均衡 - 智能解析
+      - 香港 02 - 智能解析
+      - ✈️ 日本 01 - 负载均衡
+      - 香港 01 - 智能解析
+      - ✈️ 日本 04 - 负载均衡 - 智能解析
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-00
-      - JP-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-01
-      - GLaDOS-N2-30
-      - HK-GLaDOS-GEO-00
-      - SG-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-10
-      - GLaDOS-N2-23
-      - GLaDOS-N2-02
-      - JP-GLaDOS-GEO-20
-      - GLaDOS-N2-31
-      - GLaDOS-N2-34
-      - GLaDOS-N2-20
-      - SG-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-20
-      - SG-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-30
-      - JP-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-22
-      - HK-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-21
-      - HK-GLaDOS-GEO-30
-      - HK-GLaDOS-GEO-31
-      - HK-GLaDOS-GEO-20
-      - HK-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-31
-      - GLaDOS-N2-22
-      - GLaDOS-N2-07
-      - GLaDOS-N2-04
-      - SG-GLaDOS-GEO-10
-      - GLaDOS-N2-24
-      - GLaDOS-N2-11
-      - GLaDOS-N2-35
-      - GLaDOS-N2-01
-      - JP-GLaDOS-GEO-21
-      - SG-GLaDOS-GEO-02
-      - TW-GLaDOS-GEO-32
-      - GLaDOS-N2-21
-      - GLaDOS-N2-25
-      - GLaDOS-N2-10
-      - GLaDOS-N2-05
-      - GLaDOS-N2-17
+      - ✈️ 新加坡 02 - SS测试节点
+      - ✈️ 东京 02 - SS测试
+      - ✈️ 东京 01 - SS测试
+      - ✈️ 香港 03
+      - ✈️ 新加坡 02 - 负载均衡 - 智能解析
+      - ✈️ 日本 03 - 负载均衡 - 智能解析
+      - ✈️ 韩国 02 - 负载均衡 - 智能解析
+      - 香港 02 - 智能解析
+      - ✈️ 日本 01 - 负载均衡
+      - 香港 01 - 智能解析
+      - ✈️ 日本 04 - 负载均衡 - 智能解析
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-00
-      - JP-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-01
-      - GLaDOS-N2-30
-      - HK-GLaDOS-GEO-00
-      - SG-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-10
-      - GLaDOS-N2-23
-      - GLaDOS-N2-02
-      - JP-GLaDOS-GEO-20
-      - GLaDOS-N2-31
-      - GLaDOS-N2-34
-      - GLaDOS-N2-20
-      - SG-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-20
-      - SG-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-30
-      - JP-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-22
-      - HK-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-21
-      - HK-GLaDOS-GEO-30
-      - HK-GLaDOS-GEO-31
-      - HK-GLaDOS-GEO-20
-      - HK-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-31
-      - GLaDOS-N2-22
-      - GLaDOS-N2-07
-      - GLaDOS-N2-04
-      - SG-GLaDOS-GEO-10
-      - GLaDOS-N2-24
-      - GLaDOS-N2-11
-      - GLaDOS-N2-35
-      - GLaDOS-N2-01
-      - JP-GLaDOS-GEO-21
-      - SG-GLaDOS-GEO-02
-      - TW-GLaDOS-GEO-32
-      - GLaDOS-N2-21
-      - GLaDOS-N2-25
-      - GLaDOS-N2-10
-      - GLaDOS-N2-05
-      - GLaDOS-N2-17
+      - ✈️ 新加坡 02 - SS测试节点
+      - ✈️ 东京 02 - SS测试
+      - ✈️ 东京 01 - SS测试
+      - ✈️ 香港 03
+      - ✈️ 新加坡 02 - 负载均衡 - 智能解析
+      - ✈️ 日本 03 - 负载均衡 - 智能解析
+      - ✈️ 韩国 02 - 负载均衡 - 智能解析
+      - 香港 02 - 智能解析
+      - ✈️ 日本 01 - 负载均衡
+      - 香港 01 - 智能解析
+      - ✈️ 日本 04 - 负载均衡 - 智能解析
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -212,199 +84,74 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-00
-      - JP-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-01
-      - GLaDOS-N2-30
-      - HK-GLaDOS-GEO-00
-      - SG-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-10
-      - GLaDOS-N2-23
-      - GLaDOS-N2-02
-      - JP-GLaDOS-GEO-20
-      - GLaDOS-N2-31
-      - GLaDOS-N2-34
-      - GLaDOS-N2-20
-      - SG-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-20
-      - SG-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-30
-      - JP-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-22
-      - HK-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-21
-      - HK-GLaDOS-GEO-30
-      - HK-GLaDOS-GEO-31
-      - HK-GLaDOS-GEO-20
-      - HK-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-31
-      - GLaDOS-N2-22
-      - GLaDOS-N2-07
-      - GLaDOS-N2-04
-      - SG-GLaDOS-GEO-10
-      - GLaDOS-N2-24
-      - GLaDOS-N2-11
-      - GLaDOS-N2-35
-      - GLaDOS-N2-01
-      - JP-GLaDOS-GEO-21
-      - SG-GLaDOS-GEO-02
-      - TW-GLaDOS-GEO-32
-      - GLaDOS-N2-21
-      - GLaDOS-N2-25
-      - GLaDOS-N2-10
-      - GLaDOS-N2-05
-      - GLaDOS-N2-17
+      - ✈️ 新加坡 02 - SS测试节点
+      - ✈️ 东京 02 - SS测试
+      - ✈️ 东京 01 - SS测试
+      - ✈️ 香港 03
+      - ✈️ 新加坡 02 - 负载均衡 - 智能解析
+      - ✈️ 日本 03 - 负载均衡 - 智能解析
+      - ✈️ 韩国 02 - 负载均衡 - 智能解析
+      - 香港 02 - 智能解析
+      - ✈️ 日本 01 - 负载均衡
+      - 香港 01 - 智能解析
+      - ✈️ 日本 04 - 负载均衡 - 智能解析
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - ✈️ 香港 03
+      - 香港 02 - 智能解析
+      - 香港 01 - 智能解析
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-00
-      - JP-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-01
-      - GLaDOS-N2-30
-      - HK-GLaDOS-GEO-00
-      - SG-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-10
-      - GLaDOS-N2-23
-      - GLaDOS-N2-02
-      - JP-GLaDOS-GEO-20
-      - GLaDOS-N2-31
-      - GLaDOS-N2-34
-      - GLaDOS-N2-20
-      - SG-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-20
-      - SG-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-30
-      - JP-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-22
-      - HK-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-21
-      - HK-GLaDOS-GEO-30
-      - HK-GLaDOS-GEO-31
-      - HK-GLaDOS-GEO-20
-      - HK-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-31
-      - GLaDOS-N2-22
-      - GLaDOS-N2-07
-      - GLaDOS-N2-04
-      - SG-GLaDOS-GEO-10
-      - GLaDOS-N2-24
-      - GLaDOS-N2-11
-      - GLaDOS-N2-35
-      - GLaDOS-N2-01
-      - JP-GLaDOS-GEO-21
-      - SG-GLaDOS-GEO-02
-      - TW-GLaDOS-GEO-32
-      - GLaDOS-N2-21
-      - GLaDOS-N2-25
-      - GLaDOS-N2-10
-      - GLaDOS-N2-05
-      - GLaDOS-N2-17
+      - ✈️ 新加坡 02 - SS测试节点
+      - ✈️ 东京 02 - SS测试
+      - ✈️ 东京 01 - SS测试
+      - ✈️ 香港 03
+      - ✈️ 新加坡 02 - 负载均衡 - 智能解析
+      - ✈️ 日本 03 - 负载均衡 - 智能解析
+      - ✈️ 韩国 02 - 负载均衡 - 智能解析
+      - 香港 02 - 智能解析
+      - ✈️ 日本 01 - 负载均衡
+      - 香港 01 - 智能解析
+      - ✈️ 日本 04 - 负载均衡 - 智能解析
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-00
-      - JP-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-01
-      - GLaDOS-N2-30
-      - HK-GLaDOS-GEO-00
-      - SG-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-10
-      - GLaDOS-N2-23
-      - GLaDOS-N2-02
-      - JP-GLaDOS-GEO-20
-      - GLaDOS-N2-31
-      - GLaDOS-N2-34
-      - GLaDOS-N2-20
-      - SG-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-20
-      - SG-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-30
-      - JP-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-22
-      - HK-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-21
-      - HK-GLaDOS-GEO-30
-      - HK-GLaDOS-GEO-31
-      - HK-GLaDOS-GEO-20
-      - HK-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-31
-      - GLaDOS-N2-22
-      - GLaDOS-N2-07
-      - GLaDOS-N2-04
-      - SG-GLaDOS-GEO-10
-      - GLaDOS-N2-24
-      - GLaDOS-N2-11
-      - GLaDOS-N2-35
-      - GLaDOS-N2-01
-      - JP-GLaDOS-GEO-21
-      - SG-GLaDOS-GEO-02
-      - TW-GLaDOS-GEO-32
-      - GLaDOS-N2-21
-      - GLaDOS-N2-25
-      - GLaDOS-N2-10
-      - GLaDOS-N2-05
-      - GLaDOS-N2-17
+      - ✈️ 新加坡 02 - SS测试节点
+      - ✈️ 东京 02 - SS测试
+      - ✈️ 东京 01 - SS测试
+      - ✈️ 香港 03
+      - ✈️ 新加坡 02 - 负载均衡 - 智能解析
+      - ✈️ 日本 03 - 负载均衡 - 智能解析
+      - ✈️ 韩国 02 - 负载均衡 - 智能解析
+      - 香港 02 - 智能解析
+      - ✈️ 日本 01 - 负载均衡
+      - 香港 01 - 智能解析
+      - ✈️ 日本 04 - 负载均衡 - 智能解析
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-00
-      - JP-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-01
-      - GLaDOS-N2-30
-      - HK-GLaDOS-GEO-00
-      - SG-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-10
-      - GLaDOS-N2-23
-      - GLaDOS-N2-02
-      - JP-GLaDOS-GEO-20
-      - GLaDOS-N2-31
-      - GLaDOS-N2-34
-      - GLaDOS-N2-20
-      - SG-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-20
-      - SG-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-30
-      - JP-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-22
-      - HK-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-21
-      - HK-GLaDOS-GEO-30
-      - HK-GLaDOS-GEO-31
-      - HK-GLaDOS-GEO-20
-      - HK-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-31
-      - GLaDOS-N2-22
-      - GLaDOS-N2-07
-      - GLaDOS-N2-04
-      - SG-GLaDOS-GEO-10
-      - GLaDOS-N2-24
-      - GLaDOS-N2-11
-      - GLaDOS-N2-35
-      - GLaDOS-N2-01
-      - JP-GLaDOS-GEO-21
-      - SG-GLaDOS-GEO-02
-      - TW-GLaDOS-GEO-32
-      - GLaDOS-N2-21
-      - GLaDOS-N2-25
-      - GLaDOS-N2-10
-      - GLaDOS-N2-05
-      - GLaDOS-N2-17
+      - ✈️ 新加坡 02 - SS测试节点
+      - ✈️ 东京 02 - SS测试
+      - ✈️ 东京 01 - SS测试
+      - ✈️ 香港 03
+      - ✈️ 新加坡 02 - 负载均衡 - 智能解析
+      - ✈️ 日本 03 - 负载均衡 - 智能解析
+      - ✈️ 韩国 02 - 负载均衡 - 智能解析
+      - 香港 02 - 智能解析
+      - ✈️ 日本 01 - 负载均衡
+      - 香港 01 - 智能解析
+      - ✈️ 日本 04 - 负载均衡 - 智能解析
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -420,49 +167,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-00
-      - JP-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-01
-      - GLaDOS-N2-30
-      - HK-GLaDOS-GEO-00
-      - SG-GLaDOS-GEO-32
-      - JP-GLaDOS-GEO-10
-      - GLaDOS-N2-23
-      - GLaDOS-N2-02
-      - JP-GLaDOS-GEO-20
-      - GLaDOS-N2-31
-      - GLaDOS-N2-34
-      - GLaDOS-N2-20
-      - SG-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-20
-      - SG-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-30
-      - JP-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-22
-      - HK-GLaDOS-GEO-22
-      - SG-GLaDOS-GEO-21
-      - HK-GLaDOS-GEO-30
-      - HK-GLaDOS-GEO-31
-      - HK-GLaDOS-GEO-20
-      - HK-GLaDOS-GEO-12
-      - JP-GLaDOS-GEO-31
-      - GLaDOS-N2-22
-      - GLaDOS-N2-07
-      - GLaDOS-N2-04
-      - SG-GLaDOS-GEO-10
-      - GLaDOS-N2-24
-      - GLaDOS-N2-11
-      - GLaDOS-N2-35
-      - GLaDOS-N2-01
-      - JP-GLaDOS-GEO-21
-      - SG-GLaDOS-GEO-02
-      - TW-GLaDOS-GEO-32
-      - GLaDOS-N2-21
-      - GLaDOS-N2-25
-      - GLaDOS-N2-10
-      - GLaDOS-N2-05
-      - GLaDOS-N2-17
+      - ✈️ 新加坡 02 - SS测试节点
+      - ✈️ 东京 02 - SS测试
+      - ✈️ 东京 01 - SS测试
+      - ✈️ 香港 03
+      - ✈️ 新加坡 02 - 负载均衡 - 智能解析
+      - ✈️ 日本 03 - 负载均衡 - 智能解析
+      - ✈️ 韩国 02 - 负载均衡 - 智能解析
+      - 香港 02 - 智能解析
+      - ✈️ 日本 01 - 负载均衡
+      - 香港 01 - 智能解析
+      - ✈️ 日本 04 - 负载均衡 - 智能解析
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
