@@ -5,59 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港1深圳移动, server: 120.233.73.108, port: 12509, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港3-流媒体解锁, server: 120.233.73.108, port: 19438, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 E 白嫖机场群:@BPJC_Group, server: ddddddddd1.xn--mesv7f5toqlp.club, port: 11115, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: ddddddddd1.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
-  - {name: 香港 C 白嫖机场群:@BPJC_Group, server: ddddddddd1.xn--mesv7f5toqlp.club, port: 11113, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: ddddddddd1.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
-  - {name: 香港 D 白嫖机场群:@BPJC_Group, server: ddddddddd1.xn--mesv7f5toqlp.club, port: 11114, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: ddddddddd1.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
-  - {name: 香港 A 白嫖机场群:@BPJC_Group, server: ddddddddd1.xn--mesv7f5toqlp.club, port: 11111, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: ddddddddd1.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
-  - {name: 香港 B 白嫖机场群:@BPJC_Group, server: ddddddddd1.xn--mesv7f5toqlp.club, port: 11112, type: trojan, password: 237aaab5-8243-4c97-8716-8e380890eea2, sni: ddddddddd1.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
-  - {name: 韩国1深移-解锁D+, server: 120.233.73.108, port: 15861, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国2深圳移动, server: 120.233.73.108, port: 57725, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2深圳移动, server: 120.233.73.108, port: 36325, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cn23421, ws-headers: {Host: dosg2.jiantian.xyz}, udp: true}
+  - {name: 日本3深日隧道, server: 120.233.73.108, port: 50337, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dssfsj1a1w023, ws-headers: {Host: jp4.jiantian.xyz}, udp: true}
+  - {name: 日本2深日隧道, server: 120.233.73.108, port: 63696, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dssfsja1w023, ws-headers: {Host: jp3.jiantian.xyz}, udp: true}
+  - {name: 香港BGP2深日隧道, server: 120.233.73.108, port: 47023, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dssfsja1023, ws-headers: {Host: hkbgp2.jiantian.xyz}, udp: true}
+  - {name: 香港BGP1深日隧道, server: 120.233.73.108, port: 28421, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dssfsja023, ws-headers: {Host: hkbgp1.jiantian.xyz}, udp: true}
+  - {name: 韩国1深移-解锁D+, server: 120.233.73.108, port: 15861, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cx3242, ws-headers: {Host: vukr1.jiantian.xyz}, udp: true}
+  - {name: 美国4深日隧道D+, server: 120.233.73.108, port: 51826, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /adsa21377, ws-headers: {Host: vus2.jiantian.xyz}, udp: true}
+  - {name: 美国2深日隧道D+, server: 120.233.73.108, port: 57804, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dsf32sja023, ws-headers: {Host: dous2.jiantian.xyz}, udp: true}
+  - {name: 美国3深日隧道D+, server: 120.233.73.108, port: 33306, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /adsa21377, ws-headers: {Host: vus1.jiantian.xyz}, udp: true}
+  - {name: 韩国2深圳移动, server: 120.233.73.108, port: 57725, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sadasl12, ws-headers: {Host: vukr2.jiantian.xyz}, udp: true}
+  - {name: 香港1深圳移动, server: 120.233.73.108, port: 12509, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /adsaa21377, ws-headers: {Host: dmit1.jiantian.xyz}, udp: true}
+  - {name: 香港3-流媒体解锁, server: 120.233.73.108, port: 19438, type: vmess, uuid: 24daa032-aa5f-4dc2-a9ba-60da223b84bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /232sada1, ws-headers: {Host: dmit3.jiantian.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 新加坡2深圳移动
+      - 日本3深日隧道
+      - 日本2深日隧道
+      - 香港BGP2深日隧道
+      - 香港BGP1深日隧道
+      - 韩国1深移-解锁D+
+      - 美国4深日隧道D+
+      - 美国2深日隧道D+
+      - 美国3深日隧道D+
+      - 韩国2深圳移动
       - 香港1深圳移动
       - 香港3-流媒体解锁
-      - 香港 E 白嫖机场群:@BPJC_Group
-      - 香港 C 白嫖机场群:@BPJC_Group
-      - 香港 D 白嫖机场群:@BPJC_Group
-      - 香港 A 白嫖机场群:@BPJC_Group
-      - 香港 B 白嫖机场群:@BPJC_Group
-      - 韩国1深移-解锁D+
-      - 韩国2深圳移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 新加坡2深圳移动
+      - 日本3深日隧道
+      - 日本2深日隧道
+      - 香港BGP2深日隧道
+      - 香港BGP1深日隧道
+      - 韩国1深移-解锁D+
+      - 美国4深日隧道D+
+      - 美国2深日隧道D+
+      - 美国3深日隧道D+
+      - 韩国2深圳移动
       - 香港1深圳移动
       - 香港3-流媒体解锁
-      - 香港 E 白嫖机场群:@BPJC_Group
-      - 香港 C 白嫖机场群:@BPJC_Group
-      - 香港 D 白嫖机场群:@BPJC_Group
-      - 香港 A 白嫖机场群:@BPJC_Group
-      - 香港 B 白嫖机场群:@BPJC_Group
-      - 韩国1深移-解锁D+
-      - 韩国2深圳移动
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 新加坡2深圳移动
+      - 日本3深日隧道
+      - 日本2深日隧道
+      - 香港BGP2深日隧道
+      - 香港BGP1深日隧道
+      - 韩国1深移-解锁D+
+      - 美国4深日隧道D+
+      - 美国2深日隧道D+
+      - 美国3深日隧道D+
+      - 韩国2深圳移动
       - 香港1深圳移动
       - 香港3-流媒体解锁
-      - 香港 E 白嫖机场群:@BPJC_Group
-      - 香港 C 白嫖机场群:@BPJC_Group
-      - 香港 D 白嫖机场群:@BPJC_Group
-      - 香港 A 白嫖机场群:@BPJC_Group
-      - 香港 B 白嫖机场群:@BPJC_Group
-      - 韩国1深移-解锁D+
-      - 韩国2深圳移动
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,70 +88,79 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 新加坡2深圳移动
+      - 日本3深日隧道
+      - 日本2深日隧道
+      - 香港BGP2深日隧道
+      - 香港BGP1深日隧道
+      - 韩国1深移-解锁D+
+      - 美国4深日隧道D+
+      - 美国2深日隧道D+
+      - 美国3深日隧道D+
+      - 韩国2深圳移动
       - 香港1深圳移动
       - 香港3-流媒体解锁
-      - 香港 E 白嫖机场群:@BPJC_Group
-      - 香港 C 白嫖机场群:@BPJC_Group
-      - 香港 D 白嫖机场群:@BPJC_Group
-      - 香港 A 白嫖机场群:@BPJC_Group
-      - 香港 B 白嫖机场群:@BPJC_Group
-      - 韩国1深移-解锁D+
-      - 韩国2深圳移动
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港BGP2深日隧道
+      - 香港BGP1深日隧道
       - 香港1深圳移动
       - 香港3-流媒体解锁
-      - 香港 E 白嫖机场群:@BPJC_Group
-      - 香港 C 白嫖机场群:@BPJC_Group
-      - 香港 D 白嫖机场群:@BPJC_Group
-      - 香港 A 白嫖机场群:@BPJC_Group
-      - 香港 B 白嫖机场群:@BPJC_Group
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 新加坡2深圳移动
+      - 日本3深日隧道
+      - 日本2深日隧道
+      - 香港BGP2深日隧道
+      - 香港BGP1深日隧道
+      - 韩国1深移-解锁D+
+      - 美国4深日隧道D+
+      - 美国2深日隧道D+
+      - 美国3深日隧道D+
+      - 韩国2深圳移动
       - 香港1深圳移动
       - 香港3-流媒体解锁
-      - 香港 E 白嫖机场群:@BPJC_Group
-      - 香港 C 白嫖机场群:@BPJC_Group
-      - 香港 D 白嫖机场群:@BPJC_Group
-      - 香港 A 白嫖机场群:@BPJC_Group
-      - 香港 B 白嫖机场群:@BPJC_Group
-      - 韩国1深移-解锁D+
-      - 韩国2深圳移动
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 新加坡2深圳移动
+      - 日本3深日隧道
+      - 日本2深日隧道
+      - 香港BGP2深日隧道
+      - 香港BGP1深日隧道
+      - 韩国1深移-解锁D+
+      - 美国4深日隧道D+
+      - 美国2深日隧道D+
+      - 美国3深日隧道D+
+      - 韩国2深圳移动
       - 香港1深圳移动
       - 香港3-流媒体解锁
-      - 香港 E 白嫖机场群:@BPJC_Group
-      - 香港 C 白嫖机场群:@BPJC_Group
-      - 香港 D 白嫖机场群:@BPJC_Group
-      - 香港 A 白嫖机场群:@BPJC_Group
-      - 香港 B 白嫖机场群:@BPJC_Group
-      - 韩国1深移-解锁D+
-      - 韩国2深圳移动
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 新加坡2深圳移动
+      - 日本3深日隧道
+      - 日本2深日隧道
+      - 香港BGP2深日隧道
+      - 香港BGP1深日隧道
+      - 韩国1深移-解锁D+
+      - 美国4深日隧道D+
+      - 美国2深日隧道D+
+      - 美国3深日隧道D+
+      - 韩国2深圳移动
       - 香港1深圳移动
       - 香港3-流媒体解锁
-      - 香港 E 白嫖机场群:@BPJC_Group
-      - 香港 C 白嫖机场群:@BPJC_Group
-      - 香港 D 白嫖机场群:@BPJC_Group
-      - 香港 A 白嫖机场群:@BPJC_Group
-      - 香港 B 白嫖机场群:@BPJC_Group
-      - 韩国1深移-解锁D+
-      - 韩国2深圳移动
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -155,15 +176,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 新加坡2深圳移动
+      - 日本3深日隧道
+      - 日本2深日隧道
+      - 香港BGP2深日隧道
+      - 香港BGP1深日隧道
+      - 韩国1深移-解锁D+
+      - 美国4深日隧道D+
+      - 美国2深日隧道D+
+      - 美国3深日隧道D+
+      - 韩国2深圳移动
       - 香港1深圳移动
       - 香港3-流媒体解锁
-      - 香港 E 白嫖机场群:@BPJC_Group
-      - 香港 C 白嫖机场群:@BPJC_Group
-      - 香港 D 白嫖机场群:@BPJC_Group
-      - 香港 A 白嫖机场群:@BPJC_Group
-      - 香港 B 白嫖机场群:@BPJC_Group
-      - 韩国1深移-解锁D+
-      - 韩国2深圳移动
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
