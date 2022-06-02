@@ -5,27 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 韩国Az高速x0.5x, server: crus8.gzfxd.xyz, port: 16616, type: vmess, uuid: fbf3212a-f0f3-46d9-a59a-73aa7ccd277f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: crus8.gzfxd.xyz}, udp: true}
+  - {name: HK 105, server: hkaz5.xmrth-node.xyz, port: 15904, type: vmess, uuid: 575a1787-d789-3c40-90ac-691dbd1cc093, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: JP 004, server: jplin004.xmrth-node.xyz, port: 16034, type: vmess, uuid: 575a1787-d789-3c40-90ac-691dbd1cc093, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: KR 003, server: kraws003.xmrth-node.xyz, port: 15861, type: vmess, uuid: 575a1787-d789-3c40-90ac-691dbd1cc093, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: KR 004, server: kraws004.xmrth-node.xyz, port: 15975, type: vmess, uuid: 575a1787-d789-3c40-90ac-691dbd1cc093, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: KR 005, server: kraws005.xmrth-node.xyz, port: 16079, type: vmess, uuid: 575a1787-d789-3c40-90ac-691dbd1cc093, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: KR 006, server: kraws006.xmrth-node.xyz, port: 15949, type: vmess, uuid: 575a1787-d789-3c40-90ac-691dbd1cc093, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: KR 002, server: kraws002.xmrth-node.xyz, port: 15868, type: vmess, uuid: 575a1787-d789-3c40-90ac-691dbd1cc093, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: JP 005, server: jplin005.xmrth-node.xyz, port: 15698, type: vmess, uuid: 575a1787-d789-3c40-90ac-691dbd1cc093, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: JP 006, server: jpaws006.xmrth-node.xyz, port: 15863, type: vmess, uuid: 575a1787-d789-3c40-90ac-691dbd1cc093, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 韩国Az高速x0.5x
+      - HK 105
+      - JP 004
+      - KR 003
+      - KR 004
+      - KR 005
+      - KR 006
+      - KR 002
+      - JP 005
+      - JP 006
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 韩国Az高速x0.5x
+      - HK 105
+      - JP 004
+      - KR 003
+      - KR 004
+      - KR 005
+      - KR 006
+      - KR 002
+      - JP 005
+      - JP 006
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 韩国Az高速x0.5x
+      - HK 105
+      - JP 004
+      - KR 003
+      - KR 004
+      - KR 005
+      - KR 006
+      - KR 002
+      - JP 005
+      - JP 006
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -44,7 +76,15 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 韩国Az高速x0.5x
+      - HK 105
+      - JP 004
+      - KR 003
+      - KR 004
+      - KR 005
+      - KR 006
+      - KR 002
+      - JP 005
+      - JP 006
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -55,20 +95,44 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 韩国Az高速x0.5x
+      - HK 105
+      - JP 004
+      - KR 003
+      - KR 004
+      - KR 005
+      - KR 006
+      - KR 002
+      - JP 005
+      - JP 006
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 韩国Az高速x0.5x
+      - HK 105
+      - JP 004
+      - KR 003
+      - KR 004
+      - KR 005
+      - KR 006
+      - KR 002
+      - JP 005
+      - JP 006
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 韩国Az高速x0.5x
+      - HK 105
+      - JP 004
+      - KR 003
+      - KR 004
+      - KR 005
+      - KR 006
+      - KR 002
+      - JP 005
+      - JP 006
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,7 +148,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 韩国Az高速x0.5x
+      - HK 105
+      - JP 004
+      - KR 003
+      - KR 004
+      - KR 005
+      - KR 006
+      - KR 002
+      - JP 005
+      - JP 006
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
