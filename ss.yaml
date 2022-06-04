@@ -5,10 +5,10 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国|t.me/Rzyfx, server: zz.vip341.xyz, port: 48003, type: vmess, uuid: a6d9fad7-a7ee-3344-a4d9-a6e50759d241, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: zz.vip341.xyz}}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|V2|IPLC, server: 120.232.240.58, port: 45239, type: vmess, uuid: 843bc7d0-3402-41ff-ba54-52f116b51266, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|SS|IPLC, server: 120.232.240.58, port: 45240, type: ss, cipher: aes-128-gcm, password: 843bc7d0-3402-41ff-ba54-52f116b51266, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|IPLC, server: 120.232.240.58, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 843bc7d0-3402-41ff-ba54-52f116b51266, udp: true}
   - {name: ✈️ 日本 01 - 负载均衡, server: jp-relay-a.124125.xyz, port: 33301, type: trojan, password: dea7b3ac-2006-41bd-a714-b2de429c8423, sni: jp-relay-a.124125.xyz, skip-cert-verify: true, udp: true}
-  - {name: ✈️ 东京 01 - SS测试, server: dns.ekgjslkfgljs.tk, port: 23301, type: ss, cipher: aes-256-gcm, password: dea7b3ac-2006-41bd-a714-b2de429c8423, udp: true}
-  - {name: ✈️ 东京 02 - SS测试, server: dns.ekgjslkfgljs.tk, port: 23302, type: ss, cipher: aes-256-gcm, password: dea7b3ac-2006-41bd-a714-b2de429c8423, udp: true}
   - {name: 福建|t.me/Rzyfx, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -16,20 +16,20 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国|t.me/Rzyfx
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
       - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 东京 02 - SS测试
       - 福建|t.me/Rzyfx
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国|t.me/Rzyfx
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
       - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 东京 02 - SS测试
       - 福建|t.me/Rzyfx
   - name: 🎥 NETFLIX
     type: select
@@ -37,10 +37,10 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国|t.me/Rzyfx
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
       - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 东京 02 - SS测试
       - 福建|t.me/Rzyfx
   - name: ⛔️ 广告拦截
     type: select
@@ -60,35 +60,38 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国|t.me/Rzyfx
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
       - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 东京 02 - SS测试
       - 福建|t.me/Rzyfx
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国|t.me/Rzyfx
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
       - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 东京 02 - SS测试
       - 福建|t.me/Rzyfx
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国|t.me/Rzyfx
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
       - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 东京 02 - SS测试
       - 福建|t.me/Rzyfx
   - name: 🍎 苹果服务
     type: select
@@ -96,10 +99,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国|t.me/Rzyfx
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
       - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 东京 02 - SS测试
       - 福建|t.me/Rzyfx
   - name: 🎯 全球直连
     type: select
@@ -116,10 +119,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国|t.me/Rzyfx
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
       - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 东京 02 - SS测试
       - 福建|t.me/Rzyfx
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
