@@ -5,35 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: ✈️ 东京 01 - SS测试, server: dns.ekgjslkfgljs.tk, port: 23301, type: ss, cipher: aes-256-gcm, password: dea7b3ac-2006-41bd-a714-b2de429c8423, udp: true}
-  - {name: ✈️ 日本 01 - 负载均衡, server: jp-relay-a.124125.xyz, port: 33301, type: trojan, password: dea7b3ac-2006-41bd-a714-b2de429c8423, sni: jp-relay-a.124125.xyz, skip-cert-verify: true, udp: true}
-  - {name: ✈️ 东京 02 - SS测试, server: dns.ekgjslkfgljs.tk, port: 23302, type: ss, cipher: aes-256-gcm, password: dea7b3ac-2006-41bd-a714-b2de429c8423, udp: true}
+  - {name: "Singapore, V2 - B Group", server: 18.141.140.161, port: 50001, type: vmess, uuid: cee06b77-8fed-4fdf-bfd9-29fcc656845c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "Tokyo, V2 - B Group", server: 35.77.230.213, port: 50001, type: vmess, uuid: cee06b77-8fed-4fdf-bfd9-29fcc656845c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "Incheon, SS - B Group", server: 15.164.236.57, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: cee06b77-8fed-4fdf-bfd9-29fcc656845c, udp: true}
+  - {name: "Incheon, V2 - B Group", server: 3.38.154.31, port: 50001, type: vmess, uuid: cee06b77-8fed-4fdf-bfd9-29fcc656845c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "Singapore, SS - B Group", server: 18.141.8.162, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: cee06b77-8fed-4fdf-bfd9-29fcc656845c, udp: true}
+  - {name: "California, SS - B Group", server: 34.221.179.59, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: cee06b77-8fed-4fdf-bfd9-29fcc656845c, udp: true}
+  - {name: "Hongkong, SS - B Group", server: 16.162.112.226, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: cee06b77-8fed-4fdf-bfd9-29fcc656845c, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 02 - SS测试
+      - Singapore, V2 - B Group
+      - Tokyo, V2 - B Group
+      - Incheon, SS - B Group
+      - Incheon, V2 - B Group
+      - Singapore, SS - B Group
+      - California, SS - B Group
+      - Hongkong, SS - B Group
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 02 - SS测试
+      - Singapore, V2 - B Group
+      - Tokyo, V2 - B Group
+      - Incheon, SS - B Group
+      - Incheon, V2 - B Group
+      - Singapore, SS - B Group
+      - California, SS - B Group
+      - Hongkong, SS - B Group
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 02 - SS测试
+      - Singapore, V2 - B Group
+      - Tokyo, V2 - B Group
+      - Incheon, SS - B Group
+      - Incheon, V2 - B Group
+      - Singapore, SS - B Group
+      - California, SS - B Group
+      - Hongkong, SS - B Group
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,9 +68,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 02 - SS测试
+      - Singapore, V2 - B Group
+      - Tokyo, V2 - B Group
+      - Incheon, SS - B Group
+      - Incheon, V2 - B Group
+      - Singapore, SS - B Group
+      - California, SS - B Group
+      - Hongkong, SS - B Group
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -65,26 +85,38 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 02 - SS测试
+      - Singapore, V2 - B Group
+      - Tokyo, V2 - B Group
+      - Incheon, SS - B Group
+      - Incheon, V2 - B Group
+      - Singapore, SS - B Group
+      - California, SS - B Group
+      - Hongkong, SS - B Group
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 02 - SS测试
+      - Singapore, V2 - B Group
+      - Tokyo, V2 - B Group
+      - Incheon, SS - B Group
+      - Incheon, V2 - B Group
+      - Singapore, SS - B Group
+      - California, SS - B Group
+      - Hongkong, SS - B Group
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 02 - SS测试
+      - Singapore, V2 - B Group
+      - Tokyo, V2 - B Group
+      - Incheon, SS - B Group
+      - Incheon, V2 - B Group
+      - Singapore, SS - B Group
+      - California, SS - B Group
+      - Hongkong, SS - B Group
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +132,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ✈️ 东京 01 - SS测试
-      - ✈️ 日本 01 - 负载均衡
-      - ✈️ 东京 02 - SS测试
+      - Singapore, V2 - B Group
+      - Tokyo, V2 - B Group
+      - Incheon, SS - B Group
+      - Incheon, V2 - B Group
+      - Singapore, SS - B Group
+      - California, SS - B Group
+      - Hongkong, SS - B Group
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
