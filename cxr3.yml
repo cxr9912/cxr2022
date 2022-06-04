@@ -5,31 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: YouTube梦歌|Netflix_85, server: cdn2.myuuusss.com, port: 32022, type: ss, cipher: aes-128-gcm, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
-  - {name: 80 | 新加坡, server: xjp-01.aikala.shop, port: 80, type: vmess, uuid: f247de4f-2e93-4a96-92d5-ed90e0e3c78a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: down.dingtalk.com}}, udp: true}
+  - {name: tg@nfeng6-日本 多台负载均衡 中继C, server: gg03.nfeng6.pp.ua, port: 63086, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: /t.me/nfeng6}}, udp: true}
+  - {name: tg@nfeng6-印度01 中继B, server: gg02.nfeng6.pp.ua, port: 63051, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls, headers: {Host: /t.me/nfeng6}}, udp: true}
+  - {name: tg@nfeng6-新加坡 多台负载均衡 中继A, server: gg02.nfeng6.pp.ua, port: 63087, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: /t.me/nfeng6}}, udp: true}
+  - {name: tg@nfeng6-韩国01 中继B, server: gg02.nfeng6.pp.ua, port: 63004, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: /t.me/nfeng6}}, udp: true}
+  - {name: tg@nfeng6-香港 多台负载均衡 中继B, server: gg02.nfeng6.pp.ua, port: 63078, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: /t.me/nfeng6}}, udp: true}
+  - {name: tg@nfeng6-美国03 中继C, server: gg03.nfeng6.pp.ua, port: 63069, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: /t.me/nfeng6}}, udp: true}
+  - {name: tg@nfeng6-美国03 中继A, server: gg01.nfeng6.pp.ua, port: 63069, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: /t.me/nfeng6}}, udp: true}
+  - {name: tg@nfeng6-日本 多台负载均衡 中继A, server: gg01.nfeng6.pp.ua, port: 63086, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: /t.me/nfeng6}}, udp: true}
+  - {name: tg@nfeng6-土耳其01 中继A, server: gg01.nfeng6.pp.ua, port: 63028, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: /t.me/nfeng6}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌|Netflix_85
-      - 80 | 新加坡
+      - tg@nfeng6-日本 多台负载均衡 中继C
+      - tg@nfeng6-印度01 中继B
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - tg@nfeng6-韩国01 中继B
+      - tg@nfeng6-香港 多台负载均衡 中继B
+      - tg@nfeng6-美国03 中继C
+      - tg@nfeng6-美国03 中继A
+      - tg@nfeng6-日本 多台负载均衡 中继A
+      - tg@nfeng6-土耳其01 中继A
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - YouTube梦歌|Netflix_85
-      - 80 | 新加坡
+      - tg@nfeng6-日本 多台负载均衡 中继C
+      - tg@nfeng6-印度01 中继B
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - tg@nfeng6-韩国01 中继B
+      - tg@nfeng6-香港 多台负载均衡 中继B
+      - tg@nfeng6-美国03 中继C
+      - tg@nfeng6-美国03 中继A
+      - tg@nfeng6-日本 多台负载均衡 中继A
+      - tg@nfeng6-土耳其01 中继A
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌|Netflix_85
-      - 80 | 新加坡
+      - tg@nfeng6-日本 多台负载均衡 中继C
+      - tg@nfeng6-印度01 中继B
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - tg@nfeng6-韩国01 中继B
+      - tg@nfeng6-香港 多台负载均衡 中继B
+      - tg@nfeng6-美国03 中继C
+      - tg@nfeng6-美国03 中继A
+      - tg@nfeng6-日本 多台负载均衡 中继A
+      - tg@nfeng6-土耳其01 中继A
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,35 +76,67 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌|Netflix_85
-      - 80 | 新加坡
+      - tg@nfeng6-日本 多台负载均衡 中继C
+      - tg@nfeng6-印度01 中继B
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - tg@nfeng6-韩国01 中继B
+      - tg@nfeng6-香港 多台负载均衡 中继B
+      - tg@nfeng6-美国03 中继C
+      - tg@nfeng6-美国03 中继A
+      - tg@nfeng6-日本 多台负载均衡 中继A
+      - tg@nfeng6-土耳其01 中继A
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - tg@nfeng6-日本 多台负载均衡 中继C
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - tg@nfeng6-香港 多台负载均衡 中继B
+      - tg@nfeng6-日本 多台负载均衡 中继A
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - YouTube梦歌|Netflix_85
-      - 80 | 新加坡
+      - tg@nfeng6-日本 多台负载均衡 中继C
+      - tg@nfeng6-印度01 中继B
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - tg@nfeng6-韩国01 中继B
+      - tg@nfeng6-香港 多台负载均衡 中继B
+      - tg@nfeng6-美国03 中继C
+      - tg@nfeng6-美国03 中继A
+      - tg@nfeng6-日本 多台负载均衡 中继A
+      - tg@nfeng6-土耳其01 中继A
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - YouTube梦歌|Netflix_85
-      - 80 | 新加坡
+      - tg@nfeng6-日本 多台负载均衡 中继C
+      - tg@nfeng6-印度01 中继B
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - tg@nfeng6-韩国01 中继B
+      - tg@nfeng6-香港 多台负载均衡 中继B
+      - tg@nfeng6-美国03 中继C
+      - tg@nfeng6-美国03 中继A
+      - tg@nfeng6-日本 多台负载均衡 中继A
+      - tg@nfeng6-土耳其01 中继A
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube梦歌|Netflix_85
-      - 80 | 新加坡
+      - tg@nfeng6-日本 多台负载均衡 中继C
+      - tg@nfeng6-印度01 中继B
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - tg@nfeng6-韩国01 中继B
+      - tg@nfeng6-香港 多台负载均衡 中继B
+      - tg@nfeng6-美国03 中继C
+      - tg@nfeng6-美国03 中继A
+      - tg@nfeng6-日本 多台负载均衡 中继A
+      - tg@nfeng6-土耳其01 中继A
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +152,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube梦歌|Netflix_85
-      - 80 | 新加坡
+      - tg@nfeng6-日本 多台负载均衡 中继C
+      - tg@nfeng6-印度01 中继B
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - tg@nfeng6-韩国01 中继B
+      - tg@nfeng6-香港 多台负载均衡 中继B
+      - tg@nfeng6-美国03 中继C
+      - tg@nfeng6-美国03 中继A
+      - tg@nfeng6-日本 多台负载均衡 中继A
+      - tg@nfeng6-土耳其01 中继A
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
