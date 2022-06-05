@@ -5,39 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_中国->🇭🇰_HK_香港_2, server: 120.233.185.189, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ=, udp: true}
-  - {name: _US_美国_6, server: 20.210.229.72, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾, server: 120.233.185.189, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ=, udp: true}
-  - {name: _TW_台湾_1, server: 211.72.35.158, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|IPLC, server: 120.232.240.58, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 3aa609ac-9183-43d7-b965-0a3100b2b2e9, udp: true}
+  - {name: 香港IDC宽频|NF解锁|V2|IPLC, server: 120.232.240.58, port: 45239, type: vmess, uuid: 3aa609ac-9183-43d7-b965-0a3100b2b2e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|SS|IPLC, server: 120.232.240.58, port: 45240, type: ss, cipher: aes-128-gcm, password: 3aa609ac-9183-43d7-b965-0a3100b2b2e9, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港_2
-      - _US_美国_6
-      - _CN_中国->🇹🇼_TW_台湾
-      - _TW_台湾_1
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_中国->🇭🇰_HK_香港_2
-      - _US_美国_6
-      - _CN_中国->🇹🇼_TW_台湾
-      - _TW_台湾_1
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港_2
-      - _US_美国_6
-      - _CN_中国->🇹🇼_TW_台湾
-      - _TW_台湾_1
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,46 +52,42 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港_2
-      - _US_美国_6
-      - _CN_中国->🇹🇼_TW_台湾
-      - _TW_台湾_1
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港_2
-      - _CN_中国->🇹🇼_TW_台湾
-      - _TW_台湾_1
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_中国->🇭🇰_HK_香港_2
-      - _US_美国_6
-      - _CN_中国->🇹🇼_TW_台湾
-      - _TW_台湾_1
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港_2
-      - _US_美国_6
-      - _CN_中国->🇹🇼_TW_台湾
-      - _TW_台湾_1
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国->🇭🇰_HK_香港_2
-      - _US_美国_6
-      - _CN_中国->🇹🇼_TW_台湾
-      - _TW_台湾_1
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -111,10 +103,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国->🇭🇰_HK_香港_2
-      - _US_美国_6
-      - _CN_中国->🇹🇼_TW_台湾
-      - _TW_台湾_1
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|IPLC
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
