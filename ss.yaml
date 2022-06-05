@@ -5,43 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港IDC宽频|NF解锁|V2|IPLC, server: 120.232.240.58, port: 45239, type: vmess, uuid: 843bc7d0-3402-41ff-ba54-52f116b51266, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港家庭宽频|NF解锁|SS|IPLC, server: 120.232.240.58, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 843bc7d0-3402-41ff-ba54-52f116b51266, udp: true}
-  - {name: 香港IDC宽频|NF解锁|SS|IPLC, server: 120.232.240.58, port: 45240, type: ss, cipher: aes-128-gcm, password: 843bc7d0-3402-41ff-ba54-52f116b51266, udp: true}
-  - {name: 香港IDC宽频|NF解锁|SS|IPLC 2, server: 120.232.240.58, port: 45240, type: ss, cipher: aes-128-gcm, password: 66c7e300-ae71-45d7-bba2-fe4670e2807a, udp: true}
-  - {name: 香港家庭宽频|NF解锁|SS|IPLC 2, server: 120.232.240.58, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 66c7e300-ae71-45d7-bba2-fe4670e2807a, udp: true}
+  - {name: tg@nfeng6 9, server: az06dcjhh.kuli888.xyz, port: 443, type: trojan, password: f2e10c99-be6d-356e-82b5-5c304f6b1264, sni: az06feiydwf.kulime.space, skip-cert-verify: true, udp: true}
+  - {name: tg@nfeng6 7, server: v1az03.kuli888.xyz, port: 443, type: trojan, password: f2e10c99-be6d-356e-82b5-5c304f6b1264, sni: v1az03.kuli888.xyz, skip-cert-verify: true, udp: true}
+  - {name: tg@nfeng6 12, server: v1hugang3.kuli888.xyz, port: 11150, type: trojan, password: f2e10c99-be6d-356e-82b5-5c304f6b1264, sni: hk05.kuli888.xyz, skip-cert-verify: true, udp: true}
+  - {name: tg@nfeng6 11, server: hk04.kuli888.xyz, port: 8080, type: trojan, password: f2e10c99-be6d-356e-82b5-5c304f6b1264, sni: hk04.kuli888.xyz, skip-cert-verify: true, udp: true}
+  - {name: tg@nfeng6 16, server: v1shengang.kuli888.xyz, port: 52016, type: trojan, password: f2e10c99-be6d-356e-82b5-5c304f6b1264, sni: vdfasfeffawkje.kuli888.xyz, skip-cert-verify: true, udp: true}
+  - {name: tg@nfeng6 6, server: hk07.kuli888.xyz, port: 443, type: trojan, password: f2e10c99-be6d-356e-82b5-5c304f6b1264, sni: safwv07dawjncwsdc.kulime.space, skip-cert-verify: true, udp: true}
+  - {name: tg@nfeng6 15, server: v1hugang5.kuli888.xyz, port: 10028, type: trojan, password: f2e10c99-be6d-356e-82b5-5c304f6b1264, sni: hk06.kuli888.xyz, skip-cert-verify: true, udp: true}
+  - {name: tg@nfeng6 10, server: az01.kuli888.xyz, port: 443, type: trojan, password: f2e10c99-be6d-356e-82b5-5c304f6b1264, sni: az01dacjdcndacc.kulime.space, skip-cert-verify: true, udp: true}
+  - {name: tg@nfeng6 8, server: az05feiy.kuli888.xyz, port: 443, type: trojan, password: f2e10c99-be6d-356e-82b5-5c304f6b1264, sni: fy05dascefbb.kulime.space, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港IDC宽频|NF解锁|V2|IPLC
-      - 香港家庭宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC 2
-      - 香港家庭宽频|NF解锁|SS|IPLC 2
+      - tg@nfeng6 9
+      - tg@nfeng6 7
+      - tg@nfeng6 12
+      - tg@nfeng6 11
+      - tg@nfeng6 16
+      - tg@nfeng6 6
+      - tg@nfeng6 15
+      - tg@nfeng6 10
+      - tg@nfeng6 8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港IDC宽频|NF解锁|V2|IPLC
-      - 香港家庭宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC 2
-      - 香港家庭宽频|NF解锁|SS|IPLC 2
+      - tg@nfeng6 9
+      - tg@nfeng6 7
+      - tg@nfeng6 12
+      - tg@nfeng6 11
+      - tg@nfeng6 16
+      - tg@nfeng6 6
+      - tg@nfeng6 15
+      - tg@nfeng6 10
+      - tg@nfeng6 8
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港IDC宽频|NF解锁|V2|IPLC
-      - 香港家庭宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC 2
-      - 香港家庭宽频|NF解锁|SS|IPLC 2
+      - tg@nfeng6 9
+      - tg@nfeng6 7
+      - tg@nfeng6 12
+      - tg@nfeng6 11
+      - tg@nfeng6 16
+      - tg@nfeng6 6
+      - tg@nfeng6 15
+      - tg@nfeng6 10
+      - tg@nfeng6 8
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,52 +76,63 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港IDC宽频|NF解锁|V2|IPLC
-      - 香港家庭宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC 2
-      - 香港家庭宽频|NF解锁|SS|IPLC 2
+      - tg@nfeng6 9
+      - tg@nfeng6 7
+      - tg@nfeng6 12
+      - tg@nfeng6 11
+      - tg@nfeng6 16
+      - tg@nfeng6 6
+      - tg@nfeng6 15
+      - tg@nfeng6 10
+      - tg@nfeng6 8
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港IDC宽频|NF解锁|V2|IPLC
-      - 香港家庭宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC 2
-      - 香港家庭宽频|NF解锁|SS|IPLC 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港IDC宽频|NF解锁|V2|IPLC
-      - 香港家庭宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC 2
-      - 香港家庭宽频|NF解锁|SS|IPLC 2
+      - tg@nfeng6 9
+      - tg@nfeng6 7
+      - tg@nfeng6 12
+      - tg@nfeng6 11
+      - tg@nfeng6 16
+      - tg@nfeng6 6
+      - tg@nfeng6 15
+      - tg@nfeng6 10
+      - tg@nfeng6 8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港IDC宽频|NF解锁|V2|IPLC
-      - 香港家庭宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC 2
-      - 香港家庭宽频|NF解锁|SS|IPLC 2
+      - tg@nfeng6 9
+      - tg@nfeng6 7
+      - tg@nfeng6 12
+      - tg@nfeng6 11
+      - tg@nfeng6 16
+      - tg@nfeng6 6
+      - tg@nfeng6 15
+      - tg@nfeng6 10
+      - tg@nfeng6 8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港IDC宽频|NF解锁|V2|IPLC
-      - 香港家庭宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC 2
-      - 香港家庭宽频|NF解锁|SS|IPLC 2
+      - tg@nfeng6 9
+      - tg@nfeng6 7
+      - tg@nfeng6 12
+      - tg@nfeng6 11
+      - tg@nfeng6 16
+      - tg@nfeng6 6
+      - tg@nfeng6 15
+      - tg@nfeng6 10
+      - tg@nfeng6 8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -121,11 +148,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港IDC宽频|NF解锁|V2|IPLC
-      - 香港家庭宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC
-      - 香港IDC宽频|NF解锁|SS|IPLC 2
-      - 香港家庭宽频|NF解锁|SS|IPLC 2
+      - tg@nfeng6 9
+      - tg@nfeng6 7
+      - tg@nfeng6 12
+      - tg@nfeng6 11
+      - tg@nfeng6 16
+      - tg@nfeng6 6
+      - tg@nfeng6 15
+      - tg@nfeng6 10
+      - tg@nfeng6 8
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
