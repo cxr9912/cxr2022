@@ -5,39 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港3, server: dmit3.jiantian.xyz, port: 443, type: vmess, uuid: a2dbc246-3639-45e1-a81a-24c868261d00, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /232sada1, ws-headers: {Host: dmit3.jiantian.xyz}, udp: true}
-  - {name: 美国2, server: dous2.jiantian.xyz, port: 443, type: vmess, uuid: a2dbc246-3639-45e1-a81a-24c868261d00, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dsf32sja023, ws-headers: {Host: dous2.jiantian.xyz}, udp: true}
-  - {name: 美国3, server: vus1.jiantian.xyz, port: 443, type: vmess, uuid: a2dbc246-3639-45e1-a81a-24c868261d00, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /adsa21377, ws-headers: {Host: vus1.jiantian.xyz}, udp: true}
-  - {name: 日本3, server: jp4.jiantian.xyz, port: 443, type: vmess, uuid: a2dbc246-3639-45e1-a81a-24c868261d00, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dssfsj1a1w023, ws-headers: {Host: jp4.jiantian.xyz}, udp: true}
+  - {name: 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314, server: 116.129.253.130, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296, server: 116.129.253.130, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
+  - {name: 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292, server: 116.129.253.130, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293, server: 116.129.253.130, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港3
-      - 美国2
-      - 美国3
-      - 日本3
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港3
-      - 美国2
-      - 美国3
-      - 日本3
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港3
-      - 美国2
-      - 美国3
-      - 日本3
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,44 +64,51 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港3
-      - 美国2
-      - 美国3
-      - 日本3
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港3
-      - 美国2
-      - 美国3
-      - 日本3
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港3
-      - 美国2
-      - 美国3
-      - 日本3
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港3
-      - 美国2
-      - 美国3
-      - 日本3
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -109,10 +124,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港3
-      - 美国2
-      - 美国3
-      - 日本3
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
+      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
