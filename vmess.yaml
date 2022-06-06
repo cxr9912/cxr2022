@@ -5,47 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314, server: 116.129.253.130, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296, server: 116.129.253.130, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292, server: 116.129.253.130, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293, server: 116.129.253.130, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|SS|IPLC, server: 120.232.240.58, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 6787382e-d795-4ce5-9e52-5017dfccfb17, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|IPLC, server: 120.232.240.58, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 6787382e-d795-4ce5-9e52-5017dfccfb17, udp: true}
+  - {name: 香港IDC宽频|NF解锁|V2|IPLC, server: 120.232.240.58, port: 45239, type: vmess, uuid: 6787382e-d795-4ce5-9e52-5017dfccfb17, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.240.58}, udp: true}
+  - {name: 美国IDC宽频|NF解锁|V2|IPLC, server: 120.232.240.58, port: 45194, type: vmess, uuid: 6787382e-d795-4ce5-9e52-5017dfccfb17, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.240.58}, udp: true}
+  - {name: 美国IDC宽频|NF解锁|SS|IPLC, server: 120.232.240.58, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 6787382e-d795-4ce5-9e52-5017dfccfb17, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|SS|IPLC, server: 120.232.240.58, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 6787382e-d795-4ce5-9e52-5017dfccfb17, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|V2|IPLC, server: 120.232.240.58, port: 45394, type: vmess, uuid: 6787382e-d795-4ce5-9e52-5017dfccfb17, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.240.58}, udp: true}
+  - {name: 日本IDC宽频|NF解锁|SS|IPLC, server: 120.232.240.58, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 6787382e-d795-4ce5-9e52-5017dfccfb17, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|V2|IPLC, server: 120.232.240.58, port: 45149, type: vmess, uuid: 6787382e-d795-4ce5-9e52-5017dfccfb17, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.240.58}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|V2|IPLC
+      - 日本IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|IPLC
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|V2|IPLC
+      - 日本IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|IPLC
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|V2|IPLC
+      - 日本IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|IPLC
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,51 +76,67 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|V2|IPLC
+      - 日本IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|IPLC
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|V2|IPLC
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|V2|IPLC
+      - 日本IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|IPLC
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|V2|IPLC
+      - 日本IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|IPLC
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|V2|IPLC
+      - 日本IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|IPLC
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,12 +152,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_314
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_296
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_301
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_300
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_292
-      - 【tg@freevpn8】_🇨🇳CN-🇹🇼TW_293
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|V2|IPLC
+      - 美国IDC宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 台湾家庭宽频|NF解锁|V2|IPLC
+      - 日本IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|IPLC
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
