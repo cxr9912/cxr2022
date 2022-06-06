@@ -5,6 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 敏感期特供-日本-专线, server: gy.12.dog, port: 34047, type: ss, cipher: chacha20-ietf-poly1305, password: 7b561e94-42f3-4f92-979c-4cf97c328025, udp: true}
   - {name: 敏感期特供-新加坡-专线, server: gy.12.dog, port: 20511, type: ss, cipher: chacha20-ietf-poly1305, password: 7b561e94-42f3-4f92-979c-4cf97c328025, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -12,12 +13,14 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 敏感期特供-日本-专线
       - 敏感期特供-新加坡-专线
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 敏感期特供-日本-专线
       - 敏感期特供-新加坡-专线
   - name: 🎥 NETFLIX
     type: select
@@ -25,6 +28,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 敏感期特供-日本-专线
       - 敏感期特供-新加坡-专线
   - name: ⛔️ 广告拦截
     type: select
@@ -44,6 +48,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 敏感期特供-日本-专线
       - 敏感期特供-新加坡-专线
   - name: 🌏 国内媒体
     type: select
@@ -55,12 +60,14 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 敏感期特供-日本-专线
       - 敏感期特供-新加坡-专线
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 敏感期特供-日本-专线
       - 敏感期特供-新加坡-专线
   - name: 🍎 苹果服务
     type: select
@@ -68,6 +75,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 敏感期特供-日本-专线
       - 敏感期特供-新加坡-专线
   - name: 🎯 全球直连
     type: select
@@ -84,6 +92,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 敏感期特供-日本-专线
       - 敏感期特供-新加坡-专线
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
