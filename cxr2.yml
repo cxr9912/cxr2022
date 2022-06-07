@@ -5,47 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 396, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: HK 885, server: 47.243.87.171, port: 443, type: vmess, uuid: 4af38112-0854-48d8-9387-5ece4078a599, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /szGxn, ws-headers: {Host: 47.243.87.171}, udp: true}
   - {name: CN 1131, server: 116.129.254.65, port: 63086, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: 116.129.254.65}, udp: true}
   - {name: CN 1251, server: 116.129.254.65, port: 63069, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.65}, udp: true}
-  - {name: HK 885, server: 47.243.87.171, port: 443, type: vmess, uuid: 4af38112-0854-48d8-9387-5ece4078a599, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /szGxn, ws-headers: {Host: 47.243.87.171}, udp: true}
-  - {name: tg@nfeng6-土耳其01 中继C, server: gg03.nfeng6.pp.ua, port: 63028, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: /t.me/nfeng6}, udp: true}
-  - {name: tg@nfeng6-巴西01 中继C, server: gg03.nfeng6.pp.ua, port: 63041, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: /t.me/nfeng6}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 396
+      - HK 885
       - CN 1131
       - CN 1251
-      - HK 885
-      - tg@nfeng6-土耳其01 中继C
-      - tg@nfeng6-巴西01 中继C
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 396
+      - HK 885
       - CN 1131
       - CN 1251
-      - HK 885
-      - tg@nfeng6-土耳其01 中继C
-      - tg@nfeng6-巴西01 中继C
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 396
+      - HK 885
       - CN 1131
       - CN 1251
-      - HK 885
-      - tg@nfeng6-土耳其01 中继C
-      - tg@nfeng6-巴西01 中继C
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,12 +52,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 396
+      - HK 885
       - CN 1131
       - CN 1251
-      - HK 885
-      - tg@nfeng6-土耳其01 中继C
-      - tg@nfeng6-巴西01 中继C
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -80,35 +65,26 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 396
+      - HK 885
       - CN 1131
       - CN 1251
-      - HK 885
-      - tg@nfeng6-土耳其01 中继C
-      - tg@nfeng6-巴西01 中继C
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 396
+      - HK 885
       - CN 1131
       - CN 1251
-      - HK 885
-      - tg@nfeng6-土耳其01 中继C
-      - tg@nfeng6-巴西01 中继C
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 396
+      - HK 885
       - CN 1131
       - CN 1251
-      - HK 885
-      - tg@nfeng6-土耳其01 中继C
-      - tg@nfeng6-巴西01 中继C
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,12 +100,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 396
+      - HK 885
       - CN 1131
       - CN 1251
-      - HK 885
-      - tg@nfeng6-土耳其01 中继C
-      - tg@nfeng6-巴西01 中继C
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
