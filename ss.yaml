@@ -5,31 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 敏感期特供-日本-专线, server: gy.12.dog, port: 34047, type: ss, cipher: chacha20-ietf-poly1305, password: 7b561e94-42f3-4f92-979c-4cf97c328025, udp: true}
-  - {name: 敏感期特供-新加坡-专线, server: gy.12.dog, port: 20511, type: ss, cipher: chacha20-ietf-poly1305, password: 7b561e94-42f3-4f92-979c-4cf97c328025, udp: true}
+  - {name: TW01-V2-直连, server: tw01.henet.cyou, port: 20000, type: vmess, uuid: 70fb26a4-e972-4e46-b8c2-69722a214770, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
+  - {name: TW02-V2-直连, server: tw02.henet.cyou, port: 20000, type: vmess, uuid: 70fb26a4-e972-4e46-b8c2-69722a214770, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
+  - {name: JP02-V2-直连, server: jp02.henet.cyou, port: 20000, type: vmess, uuid: 70fb26a4-e972-4e46-b8c2-69722a214770, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
+  - {name: JP01-V2-直连, server: jp01.henet.cyou, port: 20000, type: vmess, uuid: 70fb26a4-e972-4e46-b8c2-69722a214770, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
+  - {name: US02-V2-直连, server: us02.henet.cyou, port: 20000, type: vmess, uuid: 70fb26a4-e972-4e46-b8c2-69722a214770, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 敏感期特供-日本-专线
-      - 敏感期特供-新加坡-专线
+      - TW01-V2-直连
+      - TW02-V2-直连
+      - JP02-V2-直连
+      - JP01-V2-直连
+      - US02-V2-直连
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 敏感期特供-日本-专线
-      - 敏感期特供-新加坡-专线
+      - TW01-V2-直连
+      - TW02-V2-直连
+      - JP02-V2-直连
+      - JP01-V2-直连
+      - US02-V2-直连
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 敏感期特供-日本-专线
-      - 敏感期特供-新加坡-专线
+      - TW01-V2-直连
+      - TW02-V2-直连
+      - JP02-V2-直连
+      - JP01-V2-直连
+      - US02-V2-直连
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,8 +60,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 敏感期特供-日本-专线
-      - 敏感期特供-新加坡-专线
+      - TW01-V2-直连
+      - TW02-V2-直连
+      - JP02-V2-直连
+      - JP01-V2-直连
+      - US02-V2-直连
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -60,23 +75,32 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 敏感期特供-日本-专线
-      - 敏感期特供-新加坡-专线
+      - TW01-V2-直连
+      - TW02-V2-直连
+      - JP02-V2-直连
+      - JP01-V2-直连
+      - US02-V2-直连
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 敏感期特供-日本-专线
-      - 敏感期特供-新加坡-专线
+      - TW01-V2-直连
+      - TW02-V2-直连
+      - JP02-V2-直连
+      - JP01-V2-直连
+      - US02-V2-直连
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 敏感期特供-日本-专线
-      - 敏感期特供-新加坡-专线
+      - TW01-V2-直连
+      - TW02-V2-直连
+      - JP02-V2-直连
+      - JP01-V2-直连
+      - US02-V2-直连
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +116,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 敏感期特供-日本-专线
-      - 敏感期特供-新加坡-专线
+      - TW01-V2-直连
+      - TW02-V2-直连
+      - JP02-V2-直连
+      - JP01-V2-直连
+      - US02-V2-直连
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
