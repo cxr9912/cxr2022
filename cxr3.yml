@@ -5,47 +5,115 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TG@nodesharing, server: 120.232.240.58, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 373b4b4f-0acd-4a29-8eb2-78388a0b2de0, udp: true}
-  - {name: TG@nodesharing 2, server: iepl-api.1.xxxyyyzzzyyyxxx.xyz, port: 35001, type: ss, cipher: chacha20-ietf-poly1305, password: 1d88a43d-2f4e-4aba-a146-bf2325549314, udp: true}
-  - {name: TG@nodesharing 3, server: iepl-api.2.xxxyyyzzzyyyxxx.xyz, port: 35002, type: ss, cipher: chacha20-ietf-poly1305, password: 1d88a43d-2f4e-4aba-a146-bf2325549314, udp: true}
-  - {name: TG@nodesharing 4, server: iepl-api.4.xxxyyyzzzyyyxxx.xyz, port: 35004, type: ss, cipher: chacha20-ietf-poly1305, password: 1d88a43d-2f4e-4aba-a146-bf2325549314, udp: true}
-  - {name: TG@nodesharing 5, server: iepl-api.3.xxxyyyzzzyyyxxx.xyz, port: 35003, type: ss, cipher: chacha20-ietf-poly1305, password: 1d88a43d-2f4e-4aba-a146-bf2325549314, udp: true}
-  - {name: TG@nodesharing 6, server: iepl-api.5.xxxyyyzzzyyyxxx.xyz, port: 35005, type: ss, cipher: chacha20-ietf-poly1305, password: 1d88a43d-2f4e-4aba-a146-bf2325549314, udp: true}
+  - {name: ｜CN｜openit｜357, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜332, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜352, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜318, server: 14.29.124.168, port: 25229, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜349, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜351, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜322, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜328, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜313, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜324, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜323, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜315, server: 14.29.124.168, port: 25215, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜311, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜355, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜US｜openit｜375, server: 20.210.229.72, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: ｜CN｜openit｜329, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜350, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜356, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜US｜openit｜377, server: 20.210.229.72, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: ｜CN｜openit｜346, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜321, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜316, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜HK｜openit｜415, server: gy.moonfree.top, port: 17252, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gy.moonfree.top}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG@nodesharing
-      - TG@nodesharing 2
-      - TG@nodesharing 3
-      - TG@nodesharing 4
-      - TG@nodesharing 5
-      - TG@nodesharing 6
+      - ｜CN｜openit｜357
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜352
+      - ｜CN｜openit｜318
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜351
+      - ｜CN｜openit｜322
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜324
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜311
+      - ｜CN｜openit｜355
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜350
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜346
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜316
+      - ｜HK｜openit｜415
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TG@nodesharing
-      - TG@nodesharing 2
-      - TG@nodesharing 3
-      - TG@nodesharing 4
-      - TG@nodesharing 5
-      - TG@nodesharing 6
+      - ｜CN｜openit｜357
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜352
+      - ｜CN｜openit｜318
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜351
+      - ｜CN｜openit｜322
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜324
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜311
+      - ｜CN｜openit｜355
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜350
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜346
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜316
+      - ｜HK｜openit｜415
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG@nodesharing
-      - TG@nodesharing 2
-      - TG@nodesharing 3
-      - TG@nodesharing 4
-      - TG@nodesharing 5
-      - TG@nodesharing 6
+      - ｜CN｜openit｜357
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜352
+      - ｜CN｜openit｜318
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜351
+      - ｜CN｜openit｜322
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜324
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜311
+      - ｜CN｜openit｜355
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜350
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜346
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜316
+      - ｜HK｜openit｜415
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,12 +132,29 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG@nodesharing
-      - TG@nodesharing 2
-      - TG@nodesharing 3
-      - TG@nodesharing 4
-      - TG@nodesharing 5
-      - TG@nodesharing 6
+      - ｜CN｜openit｜357
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜352
+      - ｜CN｜openit｜318
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜351
+      - ｜CN｜openit｜322
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜324
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜311
+      - ｜CN｜openit｜355
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜350
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜346
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜316
+      - ｜HK｜openit｜415
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -80,35 +165,86 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TG@nodesharing
-      - TG@nodesharing 2
-      - TG@nodesharing 3
-      - TG@nodesharing 4
-      - TG@nodesharing 5
-      - TG@nodesharing 6
+      - ｜CN｜openit｜357
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜352
+      - ｜CN｜openit｜318
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜351
+      - ｜CN｜openit｜322
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜324
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜311
+      - ｜CN｜openit｜355
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜350
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜346
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜316
+      - ｜HK｜openit｜415
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TG@nodesharing
-      - TG@nodesharing 2
-      - TG@nodesharing 3
-      - TG@nodesharing 4
-      - TG@nodesharing 5
-      - TG@nodesharing 6
+      - ｜CN｜openit｜357
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜352
+      - ｜CN｜openit｜318
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜351
+      - ｜CN｜openit｜322
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜324
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜311
+      - ｜CN｜openit｜355
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜350
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜346
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜316
+      - ｜HK｜openit｜415
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG@nodesharing
-      - TG@nodesharing 2
-      - TG@nodesharing 3
-      - TG@nodesharing 4
-      - TG@nodesharing 5
-      - TG@nodesharing 6
+      - ｜CN｜openit｜357
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜352
+      - ｜CN｜openit｜318
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜351
+      - ｜CN｜openit｜322
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜324
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜311
+      - ｜CN｜openit｜355
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜350
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜346
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜316
+      - ｜HK｜openit｜415
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,12 +260,29 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG@nodesharing
-      - TG@nodesharing 2
-      - TG@nodesharing 3
-      - TG@nodesharing 4
-      - TG@nodesharing 5
-      - TG@nodesharing 6
+      - ｜CN｜openit｜357
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜352
+      - ｜CN｜openit｜318
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜351
+      - ｜CN｜openit｜322
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜324
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜311
+      - ｜CN｜openit｜355
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜350
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜346
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜316
+      - ｜HK｜openit｜415
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
