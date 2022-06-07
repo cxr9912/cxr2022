@@ -5,9 +5,6 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国(TG频道:@kxswa), server: 116.129.253.130, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: 中国(TG频道:@kxswa) 2, server: 116.129.253.130, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: 荷兰(TG频道:@kxswa), server: ss5.hao1799.net, port: 22382, type: vmess, uuid: ccd31532-5925-4dc0-8dfa-74162e3c07b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港(TG频道:@kxswa), server: 47.243.87.171, port: 443, type: vmess, uuid: 4af38112-0854-48d8-9387-5ece4078a599, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /szGxn, ws-headers: {Host: 47.243.87.171}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -15,18 +12,12 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国(TG频道:@kxswa)
-      - 中国(TG频道:@kxswa) 2
-      - 荷兰(TG频道:@kxswa)
       - 香港(TG频道:@kxswa)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国(TG频道:@kxswa)
-      - 中国(TG频道:@kxswa) 2
-      - 荷兰(TG频道:@kxswa)
       - 香港(TG频道:@kxswa)
   - name: 🎥 NETFLIX
     type: select
@@ -34,9 +25,6 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国(TG频道:@kxswa)
-      - 中国(TG频道:@kxswa) 2
-      - 荷兰(TG频道:@kxswa)
       - 香港(TG频道:@kxswa)
   - name: ⛔️ 广告拦截
     type: select
@@ -56,9 +44,6 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国(TG频道:@kxswa)
-      - 中国(TG频道:@kxswa) 2
-      - 荷兰(TG频道:@kxswa)
       - 香港(TG频道:@kxswa)
   - name: 🌏 国内媒体
     type: select
@@ -71,18 +56,12 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国(TG频道:@kxswa)
-      - 中国(TG频道:@kxswa) 2
-      - 荷兰(TG频道:@kxswa)
       - 香港(TG频道:@kxswa)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国(TG频道:@kxswa)
-      - 中国(TG频道:@kxswa) 2
-      - 荷兰(TG频道:@kxswa)
       - 香港(TG频道:@kxswa)
   - name: 🍎 苹果服务
     type: select
@@ -90,9 +69,6 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国(TG频道:@kxswa)
-      - 中国(TG频道:@kxswa) 2
-      - 荷兰(TG频道:@kxswa)
       - 香港(TG频道:@kxswa)
   - name: 🎯 全球直连
     type: select
@@ -109,9 +85,6 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国(TG频道:@kxswa)
-      - 中国(TG频道:@kxswa) 2
-      - 荷兰(TG频道:@kxswa)
       - 香港(TG频道:@kxswa)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
