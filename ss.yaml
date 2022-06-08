@@ -5,43 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TW01-V2-直连, server: tw01.henet.cyou, port: 20000, type: vmess, uuid: 70fb26a4-e972-4e46-b8c2-69722a214770, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: TW02-V2-直连, server: tw02.henet.cyou, port: 20000, type: vmess, uuid: 70fb26a4-e972-4e46-b8c2-69722a214770, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: JP02-V2-直连, server: jp02.henet.cyou, port: 20000, type: vmess, uuid: 70fb26a4-e972-4e46-b8c2-69722a214770, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: JP01-V2-直连, server: jp01.henet.cyou, port: 20000, type: vmess, uuid: 70fb26a4-e972-4e46-b8c2-69722a214770, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: US02-V2-直连, server: us02.henet.cyou, port: 20000, type: vmess, uuid: 70fb26a4-e972-4e46-b8c2-69722a214770, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
+  - {name: "[Trojan] 🇯🇵 日本|TG@p2psharing 4", server: 120.233.187.199, port: 20014, type: trojan, password: 079db44d-72e6-3ed1-bd9a-f870c19c15cb, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇯🇵 日本|TG@p2psharing 3", server: 120.233.187.199, port: 20003, type: trojan, password: 079db44d-72e6-3ed1-bd9a-f870c19c15cb, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇯🇵 日本|TG@p2psharing", server: 116.129.253.128, port: 20010, type: trojan, password: 079db44d-72e6-3ed1-bd9a-f870c19c15cb, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇦🇺 澳大利亚|TG@p2psharing 2", server: 120.233.187.199, port: 20008, type: trojan, password: 079db44d-72e6-3ed1-bd9a-f870c19c15cb, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇸🇬 新加坡|TG@p2psharing", server: 116.129.253.128, port: 20006, type: trojan, password: 079db44d-72e6-3ed1-bd9a-f870c19c15cb, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇬🇧 英国|TG@p2psharing", server: 116.129.253.128, port: 20016, type: trojan, password: 079db44d-72e6-3ed1-bd9a-f870c19c15cb, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰|TG@p2psharing", server: 116.129.253.128, port: 20005, type: trojan, password: 079db44d-72e6-3ed1-bd9a-f870c19c15cb, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇩🇪 德国|TG@p2psharing", server: 116.129.253.128, port: 20003, type: trojan, password: 079db44d-72e6-3ed1-bd9a-f870c19c15cb, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇫🇷 法国|TG@p2psharing", server: 116.129.253.128, port: 20009, type: trojan, password: 079db44d-72e6-3ed1-bd9a-f870c19c15cb, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇱🇺 卢森堡|TG@p2psharing", server: 116.129.253.128, port: 20007, type: trojan, password: 079db44d-72e6-3ed1-bd9a-f870c19c15cb, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇧🇷 巴西|TG@p2psharing", server: 116.129.253.128, port: 20013, type: trojan, password: 079db44d-72e6-3ed1-bd9a-f870c19c15cb, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇭🇰 香港|TG@p2psharing", server: 120.233.187.199, port: 20001, type: trojan, password: 079db44d-72e6-3ed1-bd9a-f870c19c15cb, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇹🇼 台湾|TG@p2psharing", server: 120.233.187.199, port: 20004, type: trojan, password: 079db44d-72e6-3ed1-bd9a-f870c19c15cb, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TW01-V2-直连
-      - TW02-V2-直连
-      - JP02-V2-直连
-      - JP01-V2-直连
-      - US02-V2-直连
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 4"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 3"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing"
+      - "[Trojan] 🇦🇺 澳大利亚|TG@p2psharing 2"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing"
+      - "[Trojan] 🇬🇧 英国|TG@p2psharing"
+      - "[Trojan] 🇳🇱 荷兰|TG@p2psharing"
+      - "[Trojan] 🇩🇪 德国|TG@p2psharing"
+      - "[Trojan] 🇫🇷 法国|TG@p2psharing"
+      - "[Trojan] 🇱🇺 卢森堡|TG@p2psharing"
+      - "[Trojan] 🇧🇷 巴西|TG@p2psharing"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TW01-V2-直连
-      - TW02-V2-直连
-      - JP02-V2-直连
-      - JP01-V2-直连
-      - US02-V2-直连
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 4"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 3"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing"
+      - "[Trojan] 🇦🇺 澳大利亚|TG@p2psharing 2"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing"
+      - "[Trojan] 🇬🇧 英国|TG@p2psharing"
+      - "[Trojan] 🇳🇱 荷兰|TG@p2psharing"
+      - "[Trojan] 🇩🇪 德国|TG@p2psharing"
+      - "[Trojan] 🇫🇷 法国|TG@p2psharing"
+      - "[Trojan] 🇱🇺 卢森堡|TG@p2psharing"
+      - "[Trojan] 🇧🇷 巴西|TG@p2psharing"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TW01-V2-直连
-      - TW02-V2-直连
-      - JP02-V2-直连
-      - JP01-V2-直连
-      - US02-V2-直连
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 4"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 3"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing"
+      - "[Trojan] 🇦🇺 澳大利亚|TG@p2psharing 2"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing"
+      - "[Trojan] 🇬🇧 英国|TG@p2psharing"
+      - "[Trojan] 🇳🇱 荷兰|TG@p2psharing"
+      - "[Trojan] 🇩🇪 德国|TG@p2psharing"
+      - "[Trojan] 🇫🇷 法国|TG@p2psharing"
+      - "[Trojan] 🇱🇺 卢森堡|TG@p2psharing"
+      - "[Trojan] 🇧🇷 巴西|TG@p2psharing"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,47 +92,81 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TW01-V2-直连
-      - TW02-V2-直连
-      - JP02-V2-直连
-      - JP01-V2-直连
-      - US02-V2-直连
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 4"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 3"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing"
+      - "[Trojan] 🇦🇺 澳大利亚|TG@p2psharing 2"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing"
+      - "[Trojan] 🇬🇧 英国|TG@p2psharing"
+      - "[Trojan] 🇳🇱 荷兰|TG@p2psharing"
+      - "[Trojan] 🇩🇪 德国|TG@p2psharing"
+      - "[Trojan] 🇫🇷 法国|TG@p2psharing"
+      - "[Trojan] 🇱🇺 卢森堡|TG@p2psharing"
+      - "[Trojan] 🇧🇷 巴西|TG@p2psharing"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TW01-V2-直连
-      - TW02-V2-直连
-      - JP02-V2-直连
-      - JP01-V2-直连
-      - US02-V2-直连
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 4"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 3"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing"
+      - "[Trojan] 🇦🇺 澳大利亚|TG@p2psharing 2"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing"
+      - "[Trojan] 🇬🇧 英国|TG@p2psharing"
+      - "[Trojan] 🇳🇱 荷兰|TG@p2psharing"
+      - "[Trojan] 🇩🇪 德国|TG@p2psharing"
+      - "[Trojan] 🇫🇷 法国|TG@p2psharing"
+      - "[Trojan] 🇱🇺 卢森堡|TG@p2psharing"
+      - "[Trojan] 🇧🇷 巴西|TG@p2psharing"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TW01-V2-直连
-      - TW02-V2-直连
-      - JP02-V2-直连
-      - JP01-V2-直连
-      - US02-V2-直连
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 4"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 3"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing"
+      - "[Trojan] 🇦🇺 澳大利亚|TG@p2psharing 2"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing"
+      - "[Trojan] 🇬🇧 英国|TG@p2psharing"
+      - "[Trojan] 🇳🇱 荷兰|TG@p2psharing"
+      - "[Trojan] 🇩🇪 德国|TG@p2psharing"
+      - "[Trojan] 🇫🇷 法国|TG@p2psharing"
+      - "[Trojan] 🇱🇺 卢森堡|TG@p2psharing"
+      - "[Trojan] 🇧🇷 巴西|TG@p2psharing"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TW01-V2-直连
-      - TW02-V2-直连
-      - JP02-V2-直连
-      - JP01-V2-直连
-      - US02-V2-直连
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 4"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 3"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing"
+      - "[Trojan] 🇦🇺 澳大利亚|TG@p2psharing 2"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing"
+      - "[Trojan] 🇬🇧 英国|TG@p2psharing"
+      - "[Trojan] 🇳🇱 荷兰|TG@p2psharing"
+      - "[Trojan] 🇩🇪 德国|TG@p2psharing"
+      - "[Trojan] 🇫🇷 法国|TG@p2psharing"
+      - "[Trojan] 🇱🇺 卢森堡|TG@p2psharing"
+      - "[Trojan] 🇧🇷 巴西|TG@p2psharing"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +182,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TW01-V2-直连
-      - TW02-V2-直连
-      - JP02-V2-直连
-      - JP01-V2-直连
-      - US02-V2-直连
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 4"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing 3"
+      - "[Trojan] 🇯🇵 日本|TG@p2psharing"
+      - "[Trojan] 🇦🇺 澳大利亚|TG@p2psharing 2"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing"
+      - "[Trojan] 🇬🇧 英国|TG@p2psharing"
+      - "[Trojan] 🇳🇱 荷兰|TG@p2psharing"
+      - "[Trojan] 🇩🇪 德国|TG@p2psharing"
+      - "[Trojan] 🇫🇷 法国|TG@p2psharing"
+      - "[Trojan] 🇱🇺 卢森堡|TG@p2psharing"
+      - "[Trojan] 🇧🇷 巴西|TG@p2psharing"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
