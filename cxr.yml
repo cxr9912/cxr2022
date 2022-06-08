@@ -5,83 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 7, server: aws-hk03.xiaohouzi.club, port: 10050, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 香港 2, server: sh.xiaohouzi.club, port: 25241, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 香港 8, server: sh.xiaohouzi.club, port: 17901, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 香港 4, server: sh.xiaohouzi.club, port: 24912, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 法国, server: sh.xiaohouzi.club, port: 24873, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 香港 10, server: sh.xiaohouzi.club, port: 25231, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 香港 9, server: sh.xiaohouzi.club, port: 25233, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 加拿大, server: mc.xiaohouzi.club, port: 27811, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 香港, server: mc.xiaohouzi.club, port: 27820, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 韩国 2, server: mc.xiaohouzi.club, port: 28323, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 新加坡, server: vusig02.xiaohouzi.club, port: 10050, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 韩国 4, server: mc.xiaohouzi.club, port: 28324, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 韩国, server: mc.xiaohouzi.club, port: 28321, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 日本 3, server: awshk06.xiaohouzi.club, port: 10050, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: 美国, server: mc.xiaohouzi.club, port: 22703, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: 香港|TG@p2psharing, server: 20.24.196.159, port: 80, type: vmess, uuid: d15b0ba2-d4b2-4685-8a3c-7f2db25d9f23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: 韩国|TG@p2psharing, server: 13.125.248.124, port: 80, type: vmess, uuid: d15b0ba2-d4b2-4685-8a3c-7f2db25d9f23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: 日本|TG@p2psharing, server: 35.79.20.174, port: 80, type: vmess, uuid: d15b0ba2-d4b2-4685-8a3c-7f2db25d9f23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: 香港|TG@p2psharing 2, server: 47.243.255.150, port: 80, type: vmess, uuid: d15b0ba2-d4b2-4685-8a3c-7f2db25d9f23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: 新加坡|TG@p2psharing, server: 8.219.89.62, port: 80, type: vmess, uuid: d15b0ba2-d4b2-4685-8a3c-7f2db25d9f23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 7
-      - 香港 2
-      - 香港 8
-      - 香港 4
-      - 法国
-      - 香港 10
-      - 香港 9
-      - 加拿大
-      - 香港
-      - 韩国 2
-      - 新加坡
-      - 韩国 4
-      - 韩国
-      - 日本 3
-      - 美国
+      - 香港|TG@p2psharing
+      - 韩国|TG@p2psharing
+      - 日本|TG@p2psharing
+      - 香港|TG@p2psharing 2
+      - 新加坡|TG@p2psharing
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 7
-      - 香港 2
-      - 香港 8
-      - 香港 4
-      - 法国
-      - 香港 10
-      - 香港 9
-      - 加拿大
-      - 香港
-      - 韩国 2
-      - 新加坡
-      - 韩国 4
-      - 韩国
-      - 日本 3
-      - 美国
+      - 香港|TG@p2psharing
+      - 韩国|TG@p2psharing
+      - 日本|TG@p2psharing
+      - 香港|TG@p2psharing 2
+      - 新加坡|TG@p2psharing
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 7
-      - 香港 2
-      - 香港 8
-      - 香港 4
-      - 法国
-      - 香港 10
-      - 香港 9
-      - 加拿大
-      - 香港
-      - 韩国 2
-      - 新加坡
-      - 韩国 4
-      - 韩国
-      - 日本 3
-      - 美国
+      - 香港|TG@p2psharing
+      - 韩国|TG@p2psharing
+      - 日本|TG@p2psharing
+      - 香港|TG@p2psharing 2
+      - 新加坡|TG@p2psharing
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -100,94 +60,49 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 7
-      - 香港 2
-      - 香港 8
-      - 香港 4
-      - 法国
-      - 香港 10
-      - 香港 9
-      - 加拿大
-      - 香港
-      - 韩国 2
-      - 新加坡
-      - 韩国 4
-      - 韩国
-      - 日本 3
-      - 美国
+      - 香港|TG@p2psharing
+      - 韩国|TG@p2psharing
+      - 日本|TG@p2psharing
+      - 香港|TG@p2psharing 2
+      - 新加坡|TG@p2psharing
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 7
-      - 香港 2
-      - 香港 8
-      - 香港 4
-      - 香港 10
-      - 香港 9
-      - 香港
+      - 香港|TG@p2psharing
+      - 香港|TG@p2psharing 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 7
-      - 香港 2
-      - 香港 8
-      - 香港 4
-      - 法国
-      - 香港 10
-      - 香港 9
-      - 加拿大
-      - 香港
-      - 韩国 2
-      - 新加坡
-      - 韩国 4
-      - 韩国
-      - 日本 3
-      - 美国
+      - 香港|TG@p2psharing
+      - 韩国|TG@p2psharing
+      - 日本|TG@p2psharing
+      - 香港|TG@p2psharing 2
+      - 新加坡|TG@p2psharing
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 7
-      - 香港 2
-      - 香港 8
-      - 香港 4
-      - 法国
-      - 香港 10
-      - 香港 9
-      - 加拿大
-      - 香港
-      - 韩国 2
-      - 新加坡
-      - 韩国 4
-      - 韩国
-      - 日本 3
-      - 美国
+      - 香港|TG@p2psharing
+      - 韩国|TG@p2psharing
+      - 日本|TG@p2psharing
+      - 香港|TG@p2psharing 2
+      - 新加坡|TG@p2psharing
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 7
-      - 香港 2
-      - 香港 8
-      - 香港 4
-      - 法国
-      - 香港 10
-      - 香港 9
-      - 加拿大
-      - 香港
-      - 韩国 2
-      - 新加坡
-      - 韩国 4
-      - 韩国
-      - 日本 3
-      - 美国
+      - 香港|TG@p2psharing
+      - 韩国|TG@p2psharing
+      - 日本|TG@p2psharing
+      - 香港|TG@p2psharing 2
+      - 新加坡|TG@p2psharing
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -203,21 +118,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 7
-      - 香港 2
-      - 香港 8
-      - 香港 4
-      - 法国
-      - 香港 10
-      - 香港 9
-      - 加拿大
-      - 香港
-      - 韩国 2
-      - 新加坡
-      - 韩国 4
-      - 韩国
-      - 日本 3
-      - 美国
+      - 香港|TG@p2psharing
+      - 韩国|TG@p2psharing
+      - 日本|TG@p2psharing
+      - 香港|TG@p2psharing 2
+      - 新加坡|TG@p2psharing
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
