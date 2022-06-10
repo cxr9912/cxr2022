@@ -5,27 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港(TG频道:@kxswa), server: 47.243.87.171, port: 443, type: vmess, uuid: 4af38112-0854-48d8-9387-5ece4078a599, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /szGxn, ws-headers: {Host: 47.243.87.171}, udp: true}
+  - {name: "[VMess] 🇭🇰 香港|TG@p2psahring 4", server: 120.241.236.189, port: 21124, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: "[VMess] 🇭🇰 香港|TG@p2psahring 7", server: 120.241.236.189, port: 21135, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: "[VMess] 🇭🇰 香港|TG@p2psahring 8", server: 120.241.236.189, port: 21136, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: "[VMess] 🇭🇰 香港|TG@p2psahring 6", server: 120.241.236.189, port: 21126, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: "[VMess] 🇭🇰 香港|TG@p2psahring 9", server: 120.241.236.189, port: 21153, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 3", server: 120.241.236.189, port: 21121, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 4", server: 120.241.236.189, port: 21122, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 5", server: 120.241.236.189, port: 21147, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 8", server: 120.241.236.189, port: 21112, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 2", server: 120.241.236.189, port: 21116, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 7", server: 120.241.236.189, port: 21111, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 6", server: 120.241.236.189, port: 21148, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港(TG频道:@kxswa)
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港(TG频道:@kxswa)
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港(TG频道:@kxswa)
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -44,32 +88,80 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港(TG频道:@kxswa)
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港(TG频道:@kxswa)
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港(TG频道:@kxswa)
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港(TG频道:@kxswa)
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港(TG频道:@kxswa)
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -85,7 +177,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港(TG频道:@kxswa)
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
+      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
+      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
