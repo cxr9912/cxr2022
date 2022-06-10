@@ -5,43 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 流量站-香港6-分流-国内江苏, server: hk6.mianliusao.dynv6.net, port: 80, type: vmess, uuid: 33d808ef-b974-4d63-b81c-a7937a193b53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: a.189.cn}, udp: true}
-  - {name: 流量站-香港3, server: hk3.mianliusao.dynv6.net, port: 80, type: vmess, uuid: 33d808ef-b974-4d63-b81c-a7937a193b53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: gd.189.cn}, udp: true}
-  - {name: 流量站-香港2, server: hk2.mianliusao.dynv6.net, port: 80, type: vmess, uuid: 33d808ef-b974-4d63-b81c-a7937a193b53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: gd.189.cn}, udp: true}
-  - {name: 流量站-韩国（流媒体）, server: hg1.mianliusao.dynv6.net, port: 80, type: vmess, uuid: 33d808ef-b974-4d63-b81c-a7937a193b53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: a.189.cn}, udp: true}
-  - {name: 流量站-香港4-分流-国内杭州, server: hk4.mianliusao.dynv6.net, port: 80, type: vmess, uuid: 33d808ef-b974-4d63-b81c-a7937a193b53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 香港dmit-广港隧道, server: gy.ziqiyun.xyz, port: 45054, type: ss, cipher: chacha20-ietf-poly1305, password: 297545c2-a59d-4610-9580-a7baa3657a57, udp: true}
+  - {name: 香港HTK-广港隧道, server: gy.ziqiyun.xyz, port: 35992, type: ss, cipher: chacha20-ietf-poly1305, password: 297545c2-a59d-4610-9580-a7baa3657a57, udp: true}
+  - {name: 台湾家宽-广港隧道, server: gy.ziqiyun.xyz, port: 41354, type: ss, cipher: chacha20-ietf-poly1305, password: 297545c2-a59d-4610-9580-a7baa3657a57, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 流量站-香港6-分流-国内江苏
-      - 流量站-香港3
-      - 流量站-香港2
-      - 流量站-韩国（流媒体）
-      - 流量站-香港4-分流-国内杭州
+      - 香港dmit-广港隧道
+      - 香港HTK-广港隧道
+      - 台湾家宽-广港隧道
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 流量站-香港6-分流-国内江苏
-      - 流量站-香港3
-      - 流量站-香港2
-      - 流量站-韩国（流媒体）
-      - 流量站-香港4-分流-国内杭州
+      - 香港dmit-广港隧道
+      - 香港HTK-广港隧道
+      - 台湾家宽-广港隧道
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 流量站-香港6-分流-国内江苏
-      - 流量站-香港3
-      - 流量站-香港2
-      - 流量站-韩国（流媒体）
-      - 流量站-香港4-分流-国内杭州
+      - 香港dmit-广港隧道
+      - 香港HTK-广港隧道
+      - 台湾家宽-广港隧道
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,51 +52,42 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 流量站-香港6-分流-国内江苏
-      - 流量站-香港3
-      - 流量站-香港2
-      - 流量站-韩国（流媒体）
-      - 流量站-香港4-分流-国内杭州
+      - 香港dmit-广港隧道
+      - 香港HTK-广港隧道
+      - 台湾家宽-广港隧道
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 流量站-香港6-分流-国内江苏
-      - 流量站-香港3
-      - 流量站-香港2
-      - 流量站-香港4-分流-国内杭州
+      - 香港dmit-广港隧道
+      - 香港HTK-广港隧道
+      - 台湾家宽-广港隧道
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 流量站-香港6-分流-国内江苏
-      - 流量站-香港3
-      - 流量站-香港2
-      - 流量站-韩国（流媒体）
-      - 流量站-香港4-分流-国内杭州
+      - 香港dmit-广港隧道
+      - 香港HTK-广港隧道
+      - 台湾家宽-广港隧道
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 流量站-香港6-分流-国内江苏
-      - 流量站-香港3
-      - 流量站-香港2
-      - 流量站-韩国（流媒体）
-      - 流量站-香港4-分流-国内杭州
+      - 香港dmit-广港隧道
+      - 香港HTK-广港隧道
+      - 台湾家宽-广港隧道
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 流量站-香港6-分流-国内江苏
-      - 流量站-香港3
-      - 流量站-香港2
-      - 流量站-韩国（流媒体）
-      - 流量站-香港4-分流-国内杭州
+      - 香港dmit-广港隧道
+      - 香港HTK-广港隧道
+      - 台湾家宽-广港隧道
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -120,11 +103,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 流量站-香港6-分流-国内江苏
-      - 流量站-香港3
-      - 流量站-香港2
-      - 流量站-韩国（流媒体）
-      - 流量站-香港4-分流-国内杭州
+      - 香港dmit-广港隧道
+      - 香港HTK-广港隧道
+      - 台湾家宽-广港隧道
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
