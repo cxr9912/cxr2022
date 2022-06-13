@@ -5,31 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国-tg频道:@bpjzx2 16, server: 116.129.254.65, port: 63086, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: 116.129.254.65}, udp: true}
-  - {name: 中国-tg频道:@bpjzx2 13, server: 116.129.254.78, port: 63087, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me.vpnhat}, udp: true}
+  - {name: HK1-IEPL-HKT-禁google-X2, server: cdn1.myuuusss.com, port: 20007, type: ss, cipher: aes-128-gcm, password: 3fdacd71-7533-4836-98c3-47ad435b6f70, udp: true}
+  - {name: HK6-IEPL-HKT-X2, server: cdn1.myuuusss.com, port: 20222, type: vmess, uuid: 3fdacd71-7533-4836-98c3-47ad435b6f70, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cdn1.myuuusss.com}, udp: true}
+  - {name: HK4-BGP-HGC, server: cdn2.myuuusss.com, port: 32118, type: vmess, uuid: 3fdacd71-7533-4836-98c3-47ad435b6f70, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cdn2.myuuusss.com}, udp: true}
+  - {name: HK3-IEPL-HGC-X2, server: cdn1.myuuusss.com, port: 30031, type: ss, cipher: chacha20-ietf-poly1305, password: 3fdacd71-7533-4836-98c3-47ad435b6f70, udp: true}
+  - {name: HK2-IEPL-HGC-X2, server: cdn1.myuuusss.com, port: 30041, type: ss, cipher: chacha20-ietf-poly1305, password: 3fdacd71-7533-4836-98c3-47ad435b6f70, udp: true}
+  - {name: HK4-IEPL-HGC-X2, server: cdn1.myuuusss.com, port: 32118, type: vmess, uuid: 3fdacd71-7533-4836-98c3-47ad435b6f70, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cdn1.myuuusss.com}, udp: true}
+  - {name: 3游戏加速-超高倍率-非游戏勿选X5, server: iplc.myuuusss.com, port: 11221, type: ss, cipher: chacha20-ietf-poly1305, password: 3fdacd71-7533-4836-98c3-47ad435b6f70, udp: true}
+  - {name: H5-IEPL-HGC-X2, server: cdn1.myuuusss.com, port: 30042, type: vmess, uuid: 3fdacd71-7533-4836-98c3-47ad435b6f70, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cdn1.myuuusss.com}, udp: true}
+  - {name: 2游戏加速-超高倍率-非游戏勿选X5, server: iplc2.myuuusss.com, port: 15900, type: ss, cipher: chacha20-ietf-poly1305, password: 3fdacd71-7533-4836-98c3-47ad435b6f70, udp: true}
+  - {name: 1游戏加速-超高倍率-非游戏勿选X5, server: iplc.myuuusss.com, port: 20847, type: ss, cipher: chacha20-ietf-poly1305, password: 3fdacd71-7533-4836-98c3-47ad435b6f70, udp: true}
+  - {name: 备用|防止失联线路, server: back.myuuusss.com, port: 443, type: vmess, uuid: 3fdacd71-7533-4836-98c3-47ad435b6f70, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: back.myuuusss.com}, udp: true}
+  - {name: 美国游戏专线-超高倍率X5, server: us-c1.myuuusss.com, port: 23223, type: vmess, uuid: 3fdacd71-7533-4836-98c3-47ad435b6f70, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us-c1.myuuusss.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-tg频道:@bpjzx2 16
-      - 中国-tg频道:@bpjzx2 13
+      - HK1-IEPL-HKT-禁google-X2
+      - HK6-IEPL-HKT-X2
+      - HK4-BGP-HGC
+      - HK3-IEPL-HGC-X2
+      - HK2-IEPL-HGC-X2
+      - HK4-IEPL-HGC-X2
+      - 3游戏加速-超高倍率-非游戏勿选X5
+      - H5-IEPL-HGC-X2
+      - 2游戏加速-超高倍率-非游戏勿选X5
+      - 1游戏加速-超高倍率-非游戏勿选X5
+      - 备用|防止失联线路
+      - 美国游戏专线-超高倍率X5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国-tg频道:@bpjzx2 16
-      - 中国-tg频道:@bpjzx2 13
+      - HK1-IEPL-HKT-禁google-X2
+      - HK6-IEPL-HKT-X2
+      - HK4-BGP-HGC
+      - HK3-IEPL-HGC-X2
+      - HK2-IEPL-HGC-X2
+      - HK4-IEPL-HGC-X2
+      - 3游戏加速-超高倍率-非游戏勿选X5
+      - H5-IEPL-HGC-X2
+      - 2游戏加速-超高倍率-非游戏勿选X5
+      - 1游戏加速-超高倍率-非游戏勿选X5
+      - 备用|防止失联线路
+      - 美国游戏专线-超高倍率X5
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-tg频道:@bpjzx2 16
-      - 中国-tg频道:@bpjzx2 13
+      - HK1-IEPL-HKT-禁google-X2
+      - HK6-IEPL-HKT-X2
+      - HK4-BGP-HGC
+      - HK3-IEPL-HGC-X2
+      - HK2-IEPL-HGC-X2
+      - HK4-IEPL-HGC-X2
+      - 3游戏加速-超高倍率-非游戏勿选X5
+      - H5-IEPL-HGC-X2
+      - 2游戏加速-超高倍率-非游戏勿选X5
+      - 1游戏加速-超高倍率-非游戏勿选X5
+      - 备用|防止失联线路
+      - 美国游戏专线-超高倍率X5
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,35 +88,82 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-tg频道:@bpjzx2 16
-      - 中国-tg频道:@bpjzx2 13
+      - HK1-IEPL-HKT-禁google-X2
+      - HK6-IEPL-HKT-X2
+      - HK4-BGP-HGC
+      - HK3-IEPL-HGC-X2
+      - HK2-IEPL-HGC-X2
+      - HK4-IEPL-HGC-X2
+      - 3游戏加速-超高倍率-非游戏勿选X5
+      - H5-IEPL-HGC-X2
+      - 2游戏加速-超高倍率-非游戏勿选X5
+      - 1游戏加速-超高倍率-非游戏勿选X5
+      - 备用|防止失联线路
+      - 美国游戏专线-超高倍率X5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - HK1-IEPL-HKT-禁google-X2
+      - HK6-IEPL-HKT-X2
+      - HK4-BGP-HGC
+      - HK3-IEPL-HGC-X2
+      - HK2-IEPL-HGC-X2
+      - HK4-IEPL-HGC-X2
+      - H5-IEPL-HGC-X2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国-tg频道:@bpjzx2 16
-      - 中国-tg频道:@bpjzx2 13
+      - HK1-IEPL-HKT-禁google-X2
+      - HK6-IEPL-HKT-X2
+      - HK4-BGP-HGC
+      - HK3-IEPL-HGC-X2
+      - HK2-IEPL-HGC-X2
+      - HK4-IEPL-HGC-X2
+      - 3游戏加速-超高倍率-非游戏勿选X5
+      - H5-IEPL-HGC-X2
+      - 2游戏加速-超高倍率-非游戏勿选X5
+      - 1游戏加速-超高倍率-非游戏勿选X5
+      - 备用|防止失联线路
+      - 美国游戏专线-超高倍率X5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国-tg频道:@bpjzx2 16
-      - 中国-tg频道:@bpjzx2 13
+      - HK1-IEPL-HKT-禁google-X2
+      - HK6-IEPL-HKT-X2
+      - HK4-BGP-HGC
+      - HK3-IEPL-HGC-X2
+      - HK2-IEPL-HGC-X2
+      - HK4-IEPL-HGC-X2
+      - 3游戏加速-超高倍率-非游戏勿选X5
+      - H5-IEPL-HGC-X2
+      - 2游戏加速-超高倍率-非游戏勿选X5
+      - 1游戏加速-超高倍率-非游戏勿选X5
+      - 备用|防止失联线路
+      - 美国游戏专线-超高倍率X5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国-tg频道:@bpjzx2 16
-      - 中国-tg频道:@bpjzx2 13
+      - HK1-IEPL-HKT-禁google-X2
+      - HK6-IEPL-HKT-X2
+      - HK4-BGP-HGC
+      - HK3-IEPL-HGC-X2
+      - HK2-IEPL-HGC-X2
+      - HK4-IEPL-HGC-X2
+      - 3游戏加速-超高倍率-非游戏勿选X5
+      - H5-IEPL-HGC-X2
+      - 2游戏加速-超高倍率-非游戏勿选X5
+      - 1游戏加速-超高倍率-非游戏勿选X5
+      - 备用|防止失联线路
+      - 美国游戏专线-超高倍率X5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +179,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国-tg频道:@bpjzx2 16
-      - 中国-tg频道:@bpjzx2 13
+      - HK1-IEPL-HKT-禁google-X2
+      - HK6-IEPL-HKT-X2
+      - HK4-BGP-HGC
+      - HK3-IEPL-HGC-X2
+      - HK2-IEPL-HGC-X2
+      - HK4-IEPL-HGC-X2
+      - 3游戏加速-超高倍率-非游戏勿选X5
+      - H5-IEPL-HGC-X2
+      - 2游戏加速-超高倍率-非游戏勿选X5
+      - 1游戏加速-超高倍率-非游戏勿选X5
+      - 备用|防止失联线路
+      - 美国游戏专线-超高倍率X5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
