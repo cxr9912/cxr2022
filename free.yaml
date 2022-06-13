@@ -5,35 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港dmit-广港隧道, server: gy.ziqiyun.xyz, port: 45054, type: ss, cipher: chacha20-ietf-poly1305, password: 297545c2-a59d-4610-9580-a7baa3657a57, udp: true}
-  - {name: 香港HTK-广港隧道, server: gy.ziqiyun.xyz, port: 35992, type: ss, cipher: chacha20-ietf-poly1305, password: 297545c2-a59d-4610-9580-a7baa3657a57, udp: true}
-  - {name: 台湾家宽-广港隧道, server: gy.ziqiyun.xyz, port: 41354, type: ss, cipher: chacha20-ietf-poly1305, password: 297545c2-a59d-4610-9580-a7baa3657a57, udp: true}
+  - {name: "[Trojan] 🇭🇰 香港|TG@p2psharing", server: 220.246.124.74, port: 45678, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
+  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 6", server: 120.241.236.204, port: 12581, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 12", server: 120.241.236.204, port: 41203, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 3", server: 120.241.236.204, port: 33400, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[Trojan] 🇭🇰 香港|TG@p2psharing 2", server: 20.247.104.230, port: 443, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港dmit-广港隧道
-      - 香港HTK-广港隧道
-      - 台湾家宽-广港隧道
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 3"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港dmit-广港隧道
-      - 香港HTK-广港隧道
-      - 台湾家宽-广港隧道
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 3"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港dmit-广港隧道
-      - 香港HTK-广港隧道
-      - 台湾家宽-广港隧道
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 3"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,42 +60,52 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港dmit-广港隧道
-      - 香港HTK-广港隧道
-      - 台湾家宽-广港隧道
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 3"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港dmit-广港隧道
-      - 香港HTK-广港隧道
-      - 台湾家宽-广港隧道
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 3"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港dmit-广港隧道
-      - 香港HTK-广港隧道
-      - 台湾家宽-广港隧道
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 3"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港dmit-广港隧道
-      - 香港HTK-广港隧道
-      - 台湾家宽-广港隧道
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 3"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港dmit-广港隧道
-      - 香港HTK-广港隧道
-      - 台湾家宽-广港隧道
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 3"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -103,9 +121,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港dmit-广港隧道
-      - 香港HTK-广港隧道
-      - 台湾家宽-广港隧道
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 3"
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
