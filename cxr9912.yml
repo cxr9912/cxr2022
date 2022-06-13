@@ -5,179 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[Trojan] 🇭🇰 香港|TG@p2psharing 2", server: 20.247.104.230, port: 443, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 12", server: 120.241.236.204, port: 41203, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 6", server: 120.241.236.204, port: 12581, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇯🇵 日本|TG@p2psharing 6", server: 120.241.236.204, port: 40010, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing 6", server: 120.241.236.204, port: 40008, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 15", server: 120.241.236.204, port: 17202, type: ss, cipher: aes-128-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇯🇵 日本|TG@p2psharing 3", server: 120.241.236.204, port: 17206, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 5", server: 36.133.220.204, port: 12581, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 14", server: 36.133.220.204, port: 17202, type: ss, cipher: aes-128-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing 8", server: 36.139.162.99, port: 17207, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 2", server: 36.133.220.204, port: 33400, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇬🇧 英国|TG@p2psharing 2", server: 36.139.162.99, port: 17216, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 11", server: 36.133.220.204, port: 41203, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing 3", server: 36.133.220.204, port: 40009, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing 5", server: 36.133.220.204, port: 40008, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇯🇵 日本|TG@p2psharing 5", server: 36.133.220.204, port: 40010, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing 2", server: 36.133.220.204, port: 17208, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇭🇰 香港|TG@p2psharing", server: 36.139.162.99, port: 33400, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 13", server: 36.139.162.99, port: 17202, type: ss, cipher: aes-128-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[Trojan] 🇹🇼 台湾|TG@p2psharing 2", server: 36.139.162.99, port: 17217, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 🇯🇵 日本|TG@p2psharing 4", server: 36.139.162.99, port: 40010, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 4", server: 36.139.162.99, port: 12581, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[Trojan] 🇹🇼 台湾|TG@p2psharing", server: 36.133.220.204, port: 17217, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4", server: 36.133.220.204, port: 17212, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing 4", server: 36.139.162.99, port: 40008, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇺🇸 美国|TG@p2psharing", server: 36.133.220.204, port: 36000, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇯🇵 日本|TG@p2psharing", server: 36.133.220.204, port: 17206, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇯🇵 日本|TG@p2psharing 2", server: 36.139.162.99, port: 17206, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇺🇸 美国|TG@p2psharing 2", server: 36.139.162.99, port: 36000, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇺🇸 美国|TG@p2psharing 4", server: 36.139.162.99, port: 36001, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing", server: 36.139.162.99, port: 17208, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇺🇸 美国|TG@p2psharing 3", server: 36.133.220.204, port: 36001, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[Trojan] 🇹🇭 泰国|TG@p2psharing", server: 36.133.220.204, port: 63072, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 🇺🇸 美国|TG@p2psharing 5", server: 36.133.220.204, port: 36003, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇷🇺 俄罗斯|TG@p2psharing", server: 36.133.220.204, port: 17218, type: ss, cipher: aes-128-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇬🇧 英国|TG@p2psharing", server: 36.133.220.204, port: 17216, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[SS] 🇺🇸 美国|TG@p2psharing 6", server: 36.139.162.99, port: 36003, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
-  - {name: "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3", server: 36.139.162.99, port: 17212, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 🇹🇷 土耳其|TG@p2psharing", server: 36.133.220.204, port: 17219, type: ss, cipher: aes-128-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: 香港IDC宽频|NF解锁|SS|A01, server: 36.139.154.162, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 0a197eaa-52bc-435d-a6e4-e38b090f7e80, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|A01, server: 36.139.154.162, port: 45103, type: ss, cipher: chacha20-ietf-poly1305, password: 0a197eaa-52bc-435d-a6e4-e38b090f7e80, udp: true}
+  - {name: 香港 负载均衡, server: azhk.n.optage.moe, port: 62500, type: trojan, password: 56bc02da-d09c-42aa-ae72-8e58fd226f38, sni: azhk.n.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: 美国 B01, server: relaybgp_pro.flyxxl.xyz, port: 45431, type: ss, cipher: chacha20-ietf-poly1305, password: 4298ec29-9a37-4f2d-9c8a-5dc466893eb1, udp: true}
+  - {name: "台湾 I5 | IEPL,限时体验8小时 | 0x", server: 120.232.132.71, port: 25680, type: trojan, password: 3b4a79d, skip-cert-verify: true, udp: true}
+  - {name: 香港 B03^, server: relaybgp_pro.flyxxl.xyz, port: 45601, type: ss, cipher: chacha20-ietf-poly1305, password: 4298ec29-9a37-4f2d-9c8a-5dc466893eb1, udp: true}
+  - {name: 美国A, server: 120.241.236.93, port: 51700, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|IPLC, server: 36.139.153.214, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 0a197eaa-52bc-435d-a6e4-e38b090f7e80, udp: true}
+  - {name: 负载均衡, server: azhk.n.optage.moe, port: 62500, type: trojan, password: 6db23a93-95fa-4e1c-aa7c-6c1885e1c0d4, sni: azhk.n.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: 马来西亚 | 移动云, server: relay_cm1.flyxxl.xyz, port: 25002, type: trojan, password: 4298ec29-9a37-4f2d-9c8a-5dc466893eb1, sni: relay_cm1.flyxxl.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇺🇸 美国|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
-      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
-      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
-      - "[SS] 🇬🇧 英国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 香港 负载均衡
+      - 美国 B01
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 香港 B03^
+      - 美国A
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 负载均衡
+      - 马来西亚 | 移动云
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇺🇸 美国|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
-      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
-      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
-      - "[SS] 🇬🇧 英国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 香港 负载均衡
+      - 美国 B01
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 香港 B03^
+      - 美国A
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 负载均衡
+      - 马来西亚 | 移动云
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇺🇸 美国|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
-      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
-      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
-      - "[SS] 🇬🇧 英国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 香港 负载均衡
+      - 美国 B01
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 香港 B03^
+      - 美国A
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 负载均衡
+      - 马来西亚 | 移动云
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -196,196 +80,73 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇺🇸 美国|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
-      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
-      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
-      - "[SS] 🇬🇧 英国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 香港 负载均衡
+      - 美国 B01
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 香港 B03^
+      - 美国A
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 负载均衡
+      - 马来西亚 | 移动云
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
-      - "[SS] 🇭🇰 香港|TG@p2psharing"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 香港 负载均衡
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 香港 B03^
+      - 香港家庭宽频|NF解锁|SS|IPLC
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇺🇸 美国|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
-      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
-      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
-      - "[SS] 🇬🇧 英国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 香港 负载均衡
+      - 美国 B01
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 香港 B03^
+      - 美国A
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 负载均衡
+      - 马来西亚 | 移动云
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇺🇸 美国|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
-      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
-      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
-      - "[SS] 🇬🇧 英国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 香港 负载均衡
+      - 美国 B01
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 香港 B03^
+      - 美国A
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 负载均衡
+      - 马来西亚 | 移动云
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇺🇸 美国|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
-      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
-      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
-      - "[SS] 🇬🇧 英国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 香港 负载均衡
+      - 美国 B01
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 香港 B03^
+      - 美国A
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 负载均衡
+      - 马来西亚 | 移动云
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -401,45 +162,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
-      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
-      - "[SS] 🇭🇰 香港|TG@p2psharing"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
-      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
-      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
-      - "[SS] 🇺🇸 美国|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing"
-      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
-      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
-      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
-      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
-      - "[SS] 🇬🇧 英国|TG@p2psharing"
-      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
-      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
-      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 香港 负载均衡
+      - 美国 B01
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 香港 B03^
+      - 美国A
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 负载均衡
+      - 马来西亚 | 移动云
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
