@@ -6,22 +6,36 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 日常推荐4-台湾, server: zz6.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: zz6.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 新加坡2, server: sgp2.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: sgp2.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 韩国2, server: kr2.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: kr2.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 日本2, server: jp2.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: jp2.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 日常推荐2-香港, server: ct.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: ct.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 日常推荐1-台湾, server: cm.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: cm.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 韩国, server: sk.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: sk.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 台湾, server: hinet.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: hinet.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 香港, server: zz5.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: zz5.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 美国2, server: usa2.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: usa2.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 新加坡, server: sgp.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: sgp.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 欧洲-英国, server: vnt.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: vnt.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 日本3, server: zz4.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: zz4.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 印度, server: yd.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: yd.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-悉尼, server: au.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: au.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: 美国, server: usa1.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: usa1.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 台湾-流媒体-2, server: transit1.fanqiang.eu, port: 15005, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 香港Azure-3, server: hk11.fanqiang.eu, port: 18888, type: vmess, uuid: 0d6dad80-1b20-4d2e-9939-a011f7860777, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: hk11.fanqiang.eu, grpc-opts: {grpc-service-name: fanqiang.eu}, udp: true}
+  - {name: 香港CMI-流媒体-2, server: transit1.fanqiang.eu, port: 15040, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 香港CMI-流媒体-1, server: transit1.fanqiang.eu, port: 15039, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 香港Azure-1-新加坡流媒体, server: transit1.fanqiang.eu, port: 15021, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT家庭宽带-流媒体, server: transit1.fanqiang.eu, port: 15020, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
   - {name: 加拿大, server: ca.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: ca.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 美国, server: usa1.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: usa1.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚-悉尼, server: au.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: au.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 印度, server: yd.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: yd.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 香港Azure-2, server: transit1.fanqiang.eu, port: 15022, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 欧洲-英国, server: vnt.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: vnt.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 香港, server: zz5.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: zz5.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 新加坡, server: sgp.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: sgp.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 韩国|春川-流媒体-1, server: transit1.fanqiang.eu, port: 15018, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 日本|大阪-流媒体, server: transit1.fanqiang.eu, port: 15045, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 美国2, server: usa2.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: usa2.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 台湾, server: hinet.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: hinet.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 韩国, server: sk.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: sk.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 美国|洛杉矶-2, server: transit1.fanqiang.eu, port: 15009, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 美国|凤凰城-流媒体-2, server: transit1.fanqiang.eu, port: 15007, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 美国|洛杉矶-1, server: transit1.fanqiang.eu, port: 15008, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 澳洲|悉尼-流媒体-倍率0.8, server: transit1.fanqiang.eu, port: 15002, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 日常推荐1-台湾, server: cm.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: cm.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 印尼|雅加达-流媒体, server: transit1.fanqiang.eu, port: 15017, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 日本2, server: jp2.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: jp2.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 韩国2, server: kr2.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: kr2.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 日本3, server: zz4.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: zz4.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2, server: sgp2.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: sgp2.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 韩国|春川-流媒体-2, server: transit1.fanqiang.eu, port: 15019, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -29,44 +43,72 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 日常推荐4-台湾
-      - 新加坡2
-      - 韩国2
-      - 日本2
-      - 日常推荐2-香港
-      - 日常推荐1-台湾
-      - 韩国
-      - 台湾
-      - 香港
-      - 美国2
-      - 新加坡
-      - 欧洲-英国
-      - 日本3
-      - 印度
-      - 澳大利亚-悉尼
-      - 美国
+      - 台湾-流媒体-2
+      - 香港Azure-3
+      - 香港CMI-流媒体-2
+      - 香港CMI-流媒体-1
+      - 香港Azure-1-新加坡流媒体
+      - 香港HKT家庭宽带-流媒体
       - 加拿大
+      - 美国
+      - 澳大利亚-悉尼
+      - 印度
+      - 香港Azure-2
+      - 欧洲-英国
+      - 香港
+      - 新加坡
+      - 韩国|春川-流媒体-1
+      - 日本|大阪-流媒体
+      - 美国2
+      - 台湾
+      - 韩国
+      - 美国|洛杉矶-2
+      - 美国|凤凰城-流媒体-2
+      - 美国|洛杉矶-1
+      - 澳洲|悉尼-流媒体-倍率0.8
+      - 日常推荐1-台湾
+      - 印尼|雅加达-流媒体
+      - 日本2
+      - 韩国2
+      - 日本3
+      - 新加坡2
+      - 韩国|春川-流媒体-2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 日常推荐4-台湾
-      - 新加坡2
-      - 韩国2
-      - 日本2
-      - 日常推荐2-香港
-      - 日常推荐1-台湾
-      - 韩国
-      - 台湾
-      - 香港
-      - 美国2
-      - 新加坡
-      - 欧洲-英国
-      - 日本3
-      - 印度
-      - 澳大利亚-悉尼
-      - 美国
+      - 台湾-流媒体-2
+      - 香港Azure-3
+      - 香港CMI-流媒体-2
+      - 香港CMI-流媒体-1
+      - 香港Azure-1-新加坡流媒体
+      - 香港HKT家庭宽带-流媒体
       - 加拿大
+      - 美国
+      - 澳大利亚-悉尼
+      - 印度
+      - 香港Azure-2
+      - 欧洲-英国
+      - 香港
+      - 新加坡
+      - 韩国|春川-流媒体-1
+      - 日本|大阪-流媒体
+      - 美国2
+      - 台湾
+      - 韩国
+      - 美国|洛杉矶-2
+      - 美国|凤凰城-流媒体-2
+      - 美国|洛杉矶-1
+      - 澳洲|悉尼-流媒体-倍率0.8
+      - 日常推荐1-台湾
+      - 印尼|雅加达-流媒体
+      - 日本2
+      - 韩国2
+      - 日本3
+      - 新加坡2
+      - 韩国|春川-流媒体-2
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -74,22 +116,36 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 日常推荐4-台湾
-      - 新加坡2
-      - 韩国2
-      - 日本2
-      - 日常推荐2-香港
-      - 日常推荐1-台湾
-      - 韩国
-      - 台湾
-      - 香港
-      - 美国2
-      - 新加坡
-      - 欧洲-英国
-      - 日本3
-      - 印度
-      - 澳大利亚-悉尼
-      - 美国
+      - 台湾-流媒体-2
+      - 香港Azure-3
+      - 香港CMI-流媒体-2
+      - 香港CMI-流媒体-1
+      - 香港Azure-1-新加坡流媒体
+      - 香港HKT家庭宽带-流媒体
       - 加拿大
+      - 美国
+      - 澳大利亚-悉尼
+      - 印度
+      - 香港Azure-2
+      - 欧洲-英国
+      - 香港
+      - 新加坡
+      - 韩国|春川-流媒体-1
+      - 日本|大阪-流媒体
+      - 美国2
+      - 台湾
+      - 韩国
+      - 美国|洛杉矶-2
+      - 美国|凤凰城-流媒体-2
+      - 美国|洛杉矶-1
+      - 澳洲|悉尼-流媒体-倍率0.8
+      - 日常推荐1-台湾
+      - 印尼|雅加达-流媒体
+      - 日本2
+      - 韩国2
+      - 日本3
+      - 新加坡2
+      - 韩国|春川-流媒体-2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -109,31 +165,51 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 日常推荐4-台湾
-      - 新加坡2
-      - 韩国2
-      - 日本2
-      - 日常推荐2-香港
-      - 日常推荐1-台湾
-      - 韩国
-      - 台湾
-      - 香港
-      - 美国2
-      - 新加坡
-      - 欧洲-英国
-      - 日本3
-      - 印度
-      - 澳大利亚-悉尼
-      - 美国
+      - 台湾-流媒体-2
+      - 香港Azure-3
+      - 香港CMI-流媒体-2
+      - 香港CMI-流媒体-1
+      - 香港Azure-1-新加坡流媒体
+      - 香港HKT家庭宽带-流媒体
       - 加拿大
+      - 美国
+      - 澳大利亚-悉尼
+      - 印度
+      - 香港Azure-2
+      - 欧洲-英国
+      - 香港
+      - 新加坡
+      - 韩国|春川-流媒体-1
+      - 日本|大阪-流媒体
+      - 美国2
+      - 台湾
+      - 韩国
+      - 美国|洛杉矶-2
+      - 美国|凤凰城-流媒体-2
+      - 美国|洛杉矶-1
+      - 澳洲|悉尼-流媒体-倍率0.8
+      - 日常推荐1-台湾
+      - 印尼|雅加达-流媒体
+      - 日本2
+      - 韩国2
+      - 日本3
+      - 新加坡2
+      - 韩国|春川-流媒体-2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 日常推荐4-台湾
-      - 日常推荐2-香港
-      - 日常推荐1-台湾
-      - 台湾
+      - 台湾-流媒体-2
+      - 香港Azure-3
+      - 香港CMI-流媒体-2
+      - 香港CMI-流媒体-1
+      - 香港Azure-1-新加坡流媒体
+      - 香港HKT家庭宽带-流媒体
+      - 香港Azure-2
       - 香港
+      - 台湾
+      - 日常推荐1-台湾
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -141,44 +217,72 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 日常推荐4-台湾
-      - 新加坡2
-      - 韩国2
-      - 日本2
-      - 日常推荐2-香港
-      - 日常推荐1-台湾
-      - 韩国
-      - 台湾
-      - 香港
-      - 美国2
-      - 新加坡
-      - 欧洲-英国
-      - 日本3
-      - 印度
-      - 澳大利亚-悉尼
-      - 美国
+      - 台湾-流媒体-2
+      - 香港Azure-3
+      - 香港CMI-流媒体-2
+      - 香港CMI-流媒体-1
+      - 香港Azure-1-新加坡流媒体
+      - 香港HKT家庭宽带-流媒体
       - 加拿大
+      - 美国
+      - 澳大利亚-悉尼
+      - 印度
+      - 香港Azure-2
+      - 欧洲-英国
+      - 香港
+      - 新加坡
+      - 韩国|春川-流媒体-1
+      - 日本|大阪-流媒体
+      - 美国2
+      - 台湾
+      - 韩国
+      - 美国|洛杉矶-2
+      - 美国|凤凰城-流媒体-2
+      - 美国|洛杉矶-1
+      - 澳洲|悉尼-流媒体-倍率0.8
+      - 日常推荐1-台湾
+      - 印尼|雅加达-流媒体
+      - 日本2
+      - 韩国2
+      - 日本3
+      - 新加坡2
+      - 韩国|春川-流媒体-2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 日常推荐4-台湾
-      - 新加坡2
-      - 韩国2
-      - 日本2
-      - 日常推荐2-香港
-      - 日常推荐1-台湾
-      - 韩国
-      - 台湾
-      - 香港
-      - 美国2
-      - 新加坡
-      - 欧洲-英国
-      - 日本3
-      - 印度
-      - 澳大利亚-悉尼
-      - 美国
+      - 台湾-流媒体-2
+      - 香港Azure-3
+      - 香港CMI-流媒体-2
+      - 香港CMI-流媒体-1
+      - 香港Azure-1-新加坡流媒体
+      - 香港HKT家庭宽带-流媒体
       - 加拿大
+      - 美国
+      - 澳大利亚-悉尼
+      - 印度
+      - 香港Azure-2
+      - 欧洲-英国
+      - 香港
+      - 新加坡
+      - 韩国|春川-流媒体-1
+      - 日本|大阪-流媒体
+      - 美国2
+      - 台湾
+      - 韩国
+      - 美国|洛杉矶-2
+      - 美国|凤凰城-流媒体-2
+      - 美国|洛杉矶-1
+      - 澳洲|悉尼-流媒体-倍率0.8
+      - 日常推荐1-台湾
+      - 印尼|雅加达-流媒体
+      - 日本2
+      - 韩国2
+      - 日本3
+      - 新加坡2
+      - 韩国|春川-流媒体-2
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -186,22 +290,36 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 日常推荐4-台湾
-      - 新加坡2
-      - 韩国2
-      - 日本2
-      - 日常推荐2-香港
-      - 日常推荐1-台湾
-      - 韩国
-      - 台湾
-      - 香港
-      - 美国2
-      - 新加坡
-      - 欧洲-英国
-      - 日本3
-      - 印度
-      - 澳大利亚-悉尼
-      - 美国
+      - 台湾-流媒体-2
+      - 香港Azure-3
+      - 香港CMI-流媒体-2
+      - 香港CMI-流媒体-1
+      - 香港Azure-1-新加坡流媒体
+      - 香港HKT家庭宽带-流媒体
       - 加拿大
+      - 美国
+      - 澳大利亚-悉尼
+      - 印度
+      - 香港Azure-2
+      - 欧洲-英国
+      - 香港
+      - 新加坡
+      - 韩国|春川-流媒体-1
+      - 日本|大阪-流媒体
+      - 美国2
+      - 台湾
+      - 韩国
+      - 美国|洛杉矶-2
+      - 美国|凤凰城-流媒体-2
+      - 美国|洛杉矶-1
+      - 澳洲|悉尼-流媒体-倍率0.8
+      - 日常推荐1-台湾
+      - 印尼|雅加达-流媒体
+      - 日本2
+      - 韩国2
+      - 日本3
+      - 新加坡2
+      - 韩国|春川-流媒体-2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -218,22 +336,36 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 日常推荐4-台湾
-      - 新加坡2
-      - 韩国2
-      - 日本2
-      - 日常推荐2-香港
-      - 日常推荐1-台湾
-      - 韩国
-      - 台湾
-      - 香港
-      - 美国2
-      - 新加坡
-      - 欧洲-英国
-      - 日本3
-      - 印度
-      - 澳大利亚-悉尼
-      - 美国
+      - 台湾-流媒体-2
+      - 香港Azure-3
+      - 香港CMI-流媒体-2
+      - 香港CMI-流媒体-1
+      - 香港Azure-1-新加坡流媒体
+      - 香港HKT家庭宽带-流媒体
       - 加拿大
+      - 美国
+      - 澳大利亚-悉尼
+      - 印度
+      - 香港Azure-2
+      - 欧洲-英国
+      - 香港
+      - 新加坡
+      - 韩国|春川-流媒体-1
+      - 日本|大阪-流媒体
+      - 美国2
+      - 台湾
+      - 韩国
+      - 美国|洛杉矶-2
+      - 美国|凤凰城-流媒体-2
+      - 美国|洛杉矶-1
+      - 澳洲|悉尼-流媒体-倍率0.8
+      - 日常推荐1-台湾
+      - 印尼|雅加达-流媒体
+      - 日本2
+      - 韩国2
+      - 日本3
+      - 新加坡2
+      - 韩国|春川-流媒体-2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
