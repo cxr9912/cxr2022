@@ -5,6 +5,9 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: "[Trojan] 🇭🇰 香港|TG@p2psharing 2", server: 20.247.104.230, port: 443, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
+  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 12", server: 120.241.236.204, port: 41203, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 6", server: 120.241.236.204, port: 12581, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
   - {name: "[SS] 🇯🇵 日本|TG@p2psharing 6", server: 120.241.236.204, port: 40010, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
   - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing 6", server: 120.241.236.204, port: 40008, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
   - {name: "[SS] 🇭🇰 香港|TG@p2psharing 15", server: 120.241.236.204, port: 17202, type: ss, cipher: aes-128-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
@@ -47,6 +50,9 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
       - "[SS] 🇯🇵 日本|TG@p2psharing 6"
       - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
       - "[SS] 🇭🇰 香港|TG@p2psharing 15"
@@ -88,6 +94,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
       - "[SS] 🇯🇵 日本|TG@p2psharing 6"
       - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
       - "[SS] 🇭🇰 香港|TG@p2psharing 15"
@@ -130,6 +139,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
       - "[SS] 🇯🇵 日本|TG@p2psharing 6"
       - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
       - "[SS] 🇭🇰 香港|TG@p2psharing 15"
@@ -184,6 +196,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
       - "[SS] 🇯🇵 日本|TG@p2psharing 6"
       - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
       - "[SS] 🇭🇰 香港|TG@p2psharing 15"
@@ -224,6 +239,9 @@ proxy-groups:
     type: select
     proxies:
       - 🎯 全球直连
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
       - "[SS] 🇭🇰 香港|TG@p2psharing 15"
       - "[SS] 🇭🇰 香港|TG@p2psharing 5"
       - "[SS] 🇭🇰 香港|TG@p2psharing 14"
@@ -240,6 +258,9 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
       - "[SS] 🇯🇵 日本|TG@p2psharing 6"
       - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
       - "[SS] 🇭🇰 香港|TG@p2psharing 15"
@@ -281,6 +302,9 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
       - "[SS] 🇯🇵 日本|TG@p2psharing 6"
       - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
       - "[SS] 🇭🇰 香港|TG@p2psharing 15"
@@ -323,6 +347,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
       - "[SS] 🇯🇵 日本|TG@p2psharing 6"
       - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
       - "[SS] 🇭🇰 香港|TG@p2psharing 15"
@@ -374,6 +401,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - "[Trojan] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 12"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 6"
       - "[SS] 🇯🇵 日本|TG@p2psharing 6"
       - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
       - "[SS] 🇭🇰 香港|TG@p2psharing 15"
