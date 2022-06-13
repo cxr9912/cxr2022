@@ -5,75 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: ｜CN｜https://fk.myue.cc/｜18, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: ｜CN｜https://fk.myue.cc/｜15, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: ｜CN｜https://fk.myue.cc/｜11, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: ｜CN｜https://fk.myue.cc/｜23, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: ｜CN｜https://fk.myue.cc/｜13, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: ｜CN｜https://fk.myue.cc/｜8, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: ｜CN｜https://fk.myue.cc/｜6, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 307, server: 116.129.254.212, port: 48606, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
-  - {name: Singapore NETFLIX, server: sg-cn.teacher2050.com, port: 43508, type: trojan, password: E44523FE-B9E4-BD49-AEAF-DBABE701D016, sni: sg-cn.teacher2050.com, skip-cert-verify: true, udp: true}
-  - {name: CN 308, server: 116.129.254.212, port: 48609, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
-  - {name: JP 72, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: ｜CN｜https://fk.myue.cc/｜64, server: 120.241.236.93, port: 34955, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true, udp: true}
-  - {name: ｜CN｜https://fk.myue.cc/｜16, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 日常推荐4-台湾, server: zz6.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: zz6.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2, server: sgp2.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: sgp2.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 韩国2, server: kr2.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: kr2.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 日本2, server: jp2.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: jp2.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 日常推荐2-香港, server: ct.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: ct.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 日常推荐1-台湾, server: cm.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: cm.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 韩国, server: sk.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: sk.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 台湾, server: hinet.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: hinet.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 香港, server: zz5.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: zz5.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 美国2, server: usa2.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: usa2.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 新加坡, server: sgp.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: sgp.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 欧洲-英国, server: vnt.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: vnt.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 日本3, server: zz4.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: zz4.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 印度, server: yd.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: yd.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚-悉尼, server: au.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: au.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 美国, server: usa1.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: usa1.91js.pw, skip-cert-verify: true, udp: true}
+  - {name: 加拿大, server: ca.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: ca.91js.pw, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ｜CN｜https://fk.myue.cc/｜18
-      - ｜CN｜https://fk.myue.cc/｜15
-      - ｜CN｜https://fk.myue.cc/｜11
-      - ｜CN｜https://fk.myue.cc/｜23
-      - ｜CN｜https://fk.myue.cc/｜13
-      - ｜CN｜https://fk.myue.cc/｜8
-      - ｜CN｜https://fk.myue.cc/｜6
-      - CN 307
-      - Singapore NETFLIX
-      - CN 308
-      - JP 72
-      - ｜CN｜https://fk.myue.cc/｜64
-      - ｜CN｜https://fk.myue.cc/｜16
+      - 日常推荐4-台湾
+      - 新加坡2
+      - 韩国2
+      - 日本2
+      - 日常推荐2-香港
+      - 日常推荐1-台湾
+      - 韩国
+      - 台湾
+      - 香港
+      - 美国2
+      - 新加坡
+      - 欧洲-英国
+      - 日本3
+      - 印度
+      - 澳大利亚-悉尼
+      - 美国
+      - 加拿大
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - ｜CN｜https://fk.myue.cc/｜18
-      - ｜CN｜https://fk.myue.cc/｜15
-      - ｜CN｜https://fk.myue.cc/｜11
-      - ｜CN｜https://fk.myue.cc/｜23
-      - ｜CN｜https://fk.myue.cc/｜13
-      - ｜CN｜https://fk.myue.cc/｜8
-      - ｜CN｜https://fk.myue.cc/｜6
-      - CN 307
-      - Singapore NETFLIX
-      - CN 308
-      - JP 72
-      - ｜CN｜https://fk.myue.cc/｜64
-      - ｜CN｜https://fk.myue.cc/｜16
+      - 日常推荐4-台湾
+      - 新加坡2
+      - 韩国2
+      - 日本2
+      - 日常推荐2-香港
+      - 日常推荐1-台湾
+      - 韩国
+      - 台湾
+      - 香港
+      - 美国2
+      - 新加坡
+      - 欧洲-英国
+      - 日本3
+      - 印度
+      - 澳大利亚-悉尼
+      - 美国
+      - 加拿大
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ｜CN｜https://fk.myue.cc/｜18
-      - ｜CN｜https://fk.myue.cc/｜15
-      - ｜CN｜https://fk.myue.cc/｜11
-      - ｜CN｜https://fk.myue.cc/｜23
-      - ｜CN｜https://fk.myue.cc/｜13
-      - ｜CN｜https://fk.myue.cc/｜8
-      - ｜CN｜https://fk.myue.cc/｜6
-      - CN 307
-      - Singapore NETFLIX
-      - CN 308
-      - JP 72
-      - ｜CN｜https://fk.myue.cc/｜64
-      - ｜CN｜https://fk.myue.cc/｜16
+      - 日常推荐4-台湾
+      - 新加坡2
+      - 韩国2
+      - 日本2
+      - 日常推荐2-香港
+      - 日常推荐1-台湾
+      - 韩国
+      - 台湾
+      - 香港
+      - 美国2
+      - 新加坡
+      - 欧洲-英国
+      - 日本3
+      - 印度
+      - 澳大利亚-悉尼
+      - 美国
+      - 加拿大
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,79 +108,100 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ｜CN｜https://fk.myue.cc/｜18
-      - ｜CN｜https://fk.myue.cc/｜15
-      - ｜CN｜https://fk.myue.cc/｜11
-      - ｜CN｜https://fk.myue.cc/｜23
-      - ｜CN｜https://fk.myue.cc/｜13
-      - ｜CN｜https://fk.myue.cc/｜8
-      - ｜CN｜https://fk.myue.cc/｜6
-      - CN 307
-      - Singapore NETFLIX
-      - CN 308
-      - JP 72
-      - ｜CN｜https://fk.myue.cc/｜64
-      - ｜CN｜https://fk.myue.cc/｜16
+      - 日常推荐4-台湾
+      - 新加坡2
+      - 韩国2
+      - 日本2
+      - 日常推荐2-香港
+      - 日常推荐1-台湾
+      - 韩国
+      - 台湾
+      - 香港
+      - 美国2
+      - 新加坡
+      - 欧洲-英国
+      - 日本3
+      - 印度
+      - 澳大利亚-悉尼
+      - 美国
+      - 加拿大
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 日常推荐4-台湾
+      - 日常推荐2-香港
+      - 日常推荐1-台湾
+      - 台湾
+      - 香港
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - ｜CN｜https://fk.myue.cc/｜18
-      - ｜CN｜https://fk.myue.cc/｜15
-      - ｜CN｜https://fk.myue.cc/｜11
-      - ｜CN｜https://fk.myue.cc/｜23
-      - ｜CN｜https://fk.myue.cc/｜13
-      - ｜CN｜https://fk.myue.cc/｜8
-      - ｜CN｜https://fk.myue.cc/｜6
-      - CN 307
-      - Singapore NETFLIX
-      - CN 308
-      - JP 72
-      - ｜CN｜https://fk.myue.cc/｜64
-      - ｜CN｜https://fk.myue.cc/｜16
+      - 日常推荐4-台湾
+      - 新加坡2
+      - 韩国2
+      - 日本2
+      - 日常推荐2-香港
+      - 日常推荐1-台湾
+      - 韩国
+      - 台湾
+      - 香港
+      - 美国2
+      - 新加坡
+      - 欧洲-英国
+      - 日本3
+      - 印度
+      - 澳大利亚-悉尼
+      - 美国
+      - 加拿大
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - ｜CN｜https://fk.myue.cc/｜18
-      - ｜CN｜https://fk.myue.cc/｜15
-      - ｜CN｜https://fk.myue.cc/｜11
-      - ｜CN｜https://fk.myue.cc/｜23
-      - ｜CN｜https://fk.myue.cc/｜13
-      - ｜CN｜https://fk.myue.cc/｜8
-      - ｜CN｜https://fk.myue.cc/｜6
-      - CN 307
-      - Singapore NETFLIX
-      - CN 308
-      - JP 72
-      - ｜CN｜https://fk.myue.cc/｜64
-      - ｜CN｜https://fk.myue.cc/｜16
+      - 日常推荐4-台湾
+      - 新加坡2
+      - 韩国2
+      - 日本2
+      - 日常推荐2-香港
+      - 日常推荐1-台湾
+      - 韩国
+      - 台湾
+      - 香港
+      - 美国2
+      - 新加坡
+      - 欧洲-英国
+      - 日本3
+      - 印度
+      - 澳大利亚-悉尼
+      - 美国
+      - 加拿大
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ｜CN｜https://fk.myue.cc/｜18
-      - ｜CN｜https://fk.myue.cc/｜15
-      - ｜CN｜https://fk.myue.cc/｜11
-      - ｜CN｜https://fk.myue.cc/｜23
-      - ｜CN｜https://fk.myue.cc/｜13
-      - ｜CN｜https://fk.myue.cc/｜8
-      - ｜CN｜https://fk.myue.cc/｜6
-      - CN 307
-      - Singapore NETFLIX
-      - CN 308
-      - JP 72
-      - ｜CN｜https://fk.myue.cc/｜64
-      - ｜CN｜https://fk.myue.cc/｜16
+      - 日常推荐4-台湾
+      - 新加坡2
+      - 韩国2
+      - 日本2
+      - 日常推荐2-香港
+      - 日常推荐1-台湾
+      - 韩国
+      - 台湾
+      - 香港
+      - 美国2
+      - 新加坡
+      - 欧洲-英国
+      - 日本3
+      - 印度
+      - 澳大利亚-悉尼
+      - 美国
+      - 加拿大
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -180,19 +217,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ｜CN｜https://fk.myue.cc/｜18
-      - ｜CN｜https://fk.myue.cc/｜15
-      - ｜CN｜https://fk.myue.cc/｜11
-      - ｜CN｜https://fk.myue.cc/｜23
-      - ｜CN｜https://fk.myue.cc/｜13
-      - ｜CN｜https://fk.myue.cc/｜8
-      - ｜CN｜https://fk.myue.cc/｜6
-      - CN 307
-      - Singapore NETFLIX
-      - CN 308
-      - JP 72
-      - ｜CN｜https://fk.myue.cc/｜64
-      - ｜CN｜https://fk.myue.cc/｜16
+      - 日常推荐4-台湾
+      - 新加坡2
+      - 韩国2
+      - 日本2
+      - 日常推荐2-香港
+      - 日常推荐1-台湾
+      - 韩国
+      - 台湾
+      - 香港
+      - 美国2
+      - 新加坡
+      - 欧洲-英国
+      - 日本3
+      - 印度
+      - 澳大利亚-悉尼
+      - 美国
+      - 加拿大
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
