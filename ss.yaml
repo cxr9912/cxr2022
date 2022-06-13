@@ -5,43 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TG:yzcloud-日本-Linode_1, server: 116.129.254.212, port: 48608, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==, udp: true}
-  - {name: TG:yzcloud-台中Hinet-dip, server: 58.247.140.151, port: 11428, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==, udp: true}
-  - {name: TG:yzcloud-新加坡-Contabo-dip_1_2, server: 36.138.176.120, port: 48610, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==, udp: true}
-  - {name: TG:yzcloud-美国-Misaka-dip, server: 58.247.140.151, port: 11427, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==, udp: true}
-  - {name: TG:yzcloud-俄罗斯-Baxet-dip_2_2, server: 36.138.176.120, port: 48601, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==, udp: true}
+  - {name: "SGP 01 x1.0 [Trojan] [中轉]", server: cm.3sx.xyz, port: 12311, type: trojan, password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457, sni: cm.3sx.xyz, skip-cert-verify: true, udp: true}
+  - {name: "HKG 04 x3.0 [Trojan] [中轉] 限速100M", server: cm.3sx.xyz, port: 12305, type: trojan, password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457, sni: cm.3sx.xyz, skip-cert-verify: true, udp: true}
+  - {name: HKG IEPL.A/02 x3.0, server: iepl.3sx.xyz, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457, udp: true}
+  - {name: SGP IEPL.A/01 x3.0, server: iepl.3sx.xyz, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457, udp: true}
+  - {name: SGP CM.B/01 x1.0, server: cmb.3sx.xyz, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457, udp: true}
+  - {name: HKG CM.B/05 x1.0, server: cmb.3sx.xyz, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457, udp: true}
+  - {name: HKG CM.B/02 x1.0, server: cmb.3sx.xyz, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG:yzcloud-日本-Linode_1
-      - TG:yzcloud-台中Hinet-dip
-      - TG:yzcloud-新加坡-Contabo-dip_1_2
-      - TG:yzcloud-美国-Misaka-dip
-      - TG:yzcloud-俄罗斯-Baxet-dip_2_2
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 04 x3.0 [Trojan] [中轉] 限速100M
+      - HKG IEPL.A/02 x3.0
+      - SGP IEPL.A/01 x3.0
+      - SGP CM.B/01 x1.0
+      - HKG CM.B/05 x1.0
+      - HKG CM.B/02 x1.0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TG:yzcloud-日本-Linode_1
-      - TG:yzcloud-台中Hinet-dip
-      - TG:yzcloud-新加坡-Contabo-dip_1_2
-      - TG:yzcloud-美国-Misaka-dip
-      - TG:yzcloud-俄罗斯-Baxet-dip_2_2
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 04 x3.0 [Trojan] [中轉] 限速100M
+      - HKG IEPL.A/02 x3.0
+      - SGP IEPL.A/01 x3.0
+      - SGP CM.B/01 x1.0
+      - HKG CM.B/05 x1.0
+      - HKG CM.B/02 x1.0
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG:yzcloud-日本-Linode_1
-      - TG:yzcloud-台中Hinet-dip
-      - TG:yzcloud-新加坡-Contabo-dip_1_2
-      - TG:yzcloud-美国-Misaka-dip
-      - TG:yzcloud-俄罗斯-Baxet-dip_2_2
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 04 x3.0 [Trojan] [中轉] 限速100M
+      - HKG IEPL.A/02 x3.0
+      - SGP IEPL.A/01 x3.0
+      - SGP CM.B/01 x1.0
+      - HKG CM.B/05 x1.0
+      - HKG CM.B/02 x1.0
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,48 +68,55 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG:yzcloud-日本-Linode_1
-      - TG:yzcloud-台中Hinet-dip
-      - TG:yzcloud-新加坡-Contabo-dip_1_2
-      - TG:yzcloud-美国-Misaka-dip
-      - TG:yzcloud-俄罗斯-Baxet-dip_2_2
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 04 x3.0 [Trojan] [中轉] 限速100M
+      - HKG IEPL.A/02 x3.0
+      - SGP IEPL.A/01 x3.0
+      - SGP CM.B/01 x1.0
+      - HKG CM.B/05 x1.0
+      - HKG CM.B/02 x1.0
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - TG:yzcloud-台中Hinet-dip
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TG:yzcloud-日本-Linode_1
-      - TG:yzcloud-台中Hinet-dip
-      - TG:yzcloud-新加坡-Contabo-dip_1_2
-      - TG:yzcloud-美国-Misaka-dip
-      - TG:yzcloud-俄罗斯-Baxet-dip_2_2
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 04 x3.0 [Trojan] [中轉] 限速100M
+      - HKG IEPL.A/02 x3.0
+      - SGP IEPL.A/01 x3.0
+      - SGP CM.B/01 x1.0
+      - HKG CM.B/05 x1.0
+      - HKG CM.B/02 x1.0
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TG:yzcloud-日本-Linode_1
-      - TG:yzcloud-台中Hinet-dip
-      - TG:yzcloud-新加坡-Contabo-dip_1_2
-      - TG:yzcloud-美国-Misaka-dip
-      - TG:yzcloud-俄罗斯-Baxet-dip_2_2
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 04 x3.0 [Trojan] [中轉] 限速100M
+      - HKG IEPL.A/02 x3.0
+      - SGP IEPL.A/01 x3.0
+      - SGP CM.B/01 x1.0
+      - HKG CM.B/05 x1.0
+      - HKG CM.B/02 x1.0
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG:yzcloud-日本-Linode_1
-      - TG:yzcloud-台中Hinet-dip
-      - TG:yzcloud-新加坡-Contabo-dip_1_2
-      - TG:yzcloud-美国-Misaka-dip
-      - TG:yzcloud-俄罗斯-Baxet-dip_2_2
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 04 x3.0 [Trojan] [中轉] 限速100M
+      - HKG IEPL.A/02 x3.0
+      - SGP IEPL.A/01 x3.0
+      - SGP CM.B/01 x1.0
+      - HKG CM.B/05 x1.0
+      - HKG CM.B/02 x1.0
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -117,11 +132,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG:yzcloud-日本-Linode_1
-      - TG:yzcloud-台中Hinet-dip
-      - TG:yzcloud-新加坡-Contabo-dip_1_2
-      - TG:yzcloud-美国-Misaka-dip
-      - TG:yzcloud-俄罗斯-Baxet-dip_2_2
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 04 x3.0 [Trojan] [中轉] 限速100M
+      - HKG IEPL.A/02 x3.0
+      - SGP IEPL.A/01 x3.0
+      - SGP CM.B/01 x1.0
+      - HKG CM.B/05 x1.0
+      - HKG CM.B/02 x1.0
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
