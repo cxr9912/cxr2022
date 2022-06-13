@@ -5,71 +5,167 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[VMess] 🇭🇰 香港|TG@p2psahring 4", server: 120.241.236.189, port: 21124, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: "[VMess] 🇭🇰 香港|TG@p2psahring 7", server: 120.241.236.189, port: 21135, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: "[VMess] 🇭🇰 香港|TG@p2psahring 8", server: 120.241.236.189, port: 21136, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: "[VMess] 🇭🇰 香港|TG@p2psahring 6", server: 120.241.236.189, port: 21126, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: "[VMess] 🇭🇰 香港|TG@p2psahring 9", server: 120.241.236.189, port: 21153, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 3", server: 120.241.236.189, port: 21121, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 4", server: 120.241.236.189, port: 21122, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 5", server: 120.241.236.189, port: 21147, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 8", server: 120.241.236.189, port: 21112, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 2", server: 120.241.236.189, port: 21116, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 7", server: 120.241.236.189, port: 21111, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: "[VMess] 🇸🇬 新加坡|TG@p2psahring 6", server: 120.241.236.189, port: 21148, type: vmess, uuid: 2fa8f251-9daf-3ffa-8606-0db449400d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: "[SS] 🇯🇵 日本|TG@p2psharing 6", server: 120.241.236.204, port: 40010, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing 6", server: 120.241.236.204, port: 40008, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 15", server: 120.241.236.204, port: 17202, type: ss, cipher: aes-128-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇯🇵 日本|TG@p2psharing 3", server: 120.241.236.204, port: 17206, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 5", server: 36.133.220.204, port: 12581, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 14", server: 36.133.220.204, port: 17202, type: ss, cipher: aes-128-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing 8", server: 36.139.162.99, port: 17207, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 2", server: 36.133.220.204, port: 33400, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇬🇧 英国|TG@p2psharing 2", server: 36.139.162.99, port: 17216, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 11", server: 36.133.220.204, port: 41203, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing 3", server: 36.133.220.204, port: 40009, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing 5", server: 36.133.220.204, port: 40008, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇯🇵 日本|TG@p2psharing 5", server: 36.133.220.204, port: 40010, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing 2", server: 36.133.220.204, port: 17208, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇭🇰 香港|TG@p2psharing", server: 36.139.162.99, port: 33400, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 13", server: 36.139.162.99, port: 17202, type: ss, cipher: aes-128-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[Trojan] 🇹🇼 台湾|TG@p2psharing 2", server: 36.139.162.99, port: 17217, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
+  - {name: "[SS] 🇯🇵 日本|TG@p2psharing 4", server: 36.139.162.99, port: 40010, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇭🇰 香港|TG@p2psharing 4", server: 36.139.162.99, port: 12581, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[Trojan] 🇹🇼 台湾|TG@p2psharing", server: 36.133.220.204, port: 17217, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4", server: 36.133.220.204, port: 17212, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing 4", server: 36.139.162.99, port: 40008, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇺🇸 美国|TG@p2psharing", server: 36.133.220.204, port: 36000, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇯🇵 日本|TG@p2psharing", server: 36.133.220.204, port: 17206, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇯🇵 日本|TG@p2psharing 2", server: 36.139.162.99, port: 17206, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇺🇸 美国|TG@p2psharing 2", server: 36.139.162.99, port: 36000, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇺🇸 美国|TG@p2psharing 4", server: 36.139.162.99, port: 36001, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡|TG@p2psharing", server: 36.139.162.99, port: 17208, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇺🇸 美国|TG@p2psharing 3", server: 36.133.220.204, port: 36001, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[Trojan] 🇹🇭 泰国|TG@p2psharing", server: 36.133.220.204, port: 63072, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
+  - {name: "[SS] 🇺🇸 美国|TG@p2psharing 5", server: 36.133.220.204, port: 36003, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇷🇺 俄罗斯|TG@p2psharing", server: 36.133.220.204, port: 17218, type: ss, cipher: aes-128-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇬🇧 英国|TG@p2psharing", server: 36.133.220.204, port: 17216, type: ss, cipher: aes-256-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[SS] 🇺🇸 美国|TG@p2psharing 6", server: 36.139.162.99, port: 36003, type: ss, cipher: chacha20-ietf-poly1305, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
+  - {name: "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3", server: 36.139.162.99, port: 17212, type: trojan, password: f65324a4-f64b-4f22-bf88-8a151db0909c, skip-cert-verify: true, udp: true}
+  - {name: "[SS] 🇹🇷 土耳其|TG@p2psharing", server: 36.133.220.204, port: 17219, type: ss, cipher: aes-128-gcm, password: f65324a4-f64b-4f22-bf88-8a151db0909c, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇺🇸 美国|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
+      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
+      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
+      - "[SS] 🇬🇧 英国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇺🇸 美国|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
+      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
+      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
+      - "[SS] 🇬🇧 英国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇺🇸 美国|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
+      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
+      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
+      - "[SS] 🇬🇧 英国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,80 +184,181 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇺🇸 美国|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
+      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
+      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
+      - "[SS] 🇬🇧 英国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
+      - "[SS] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇺🇸 美国|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
+      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
+      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
+      - "[SS] 🇬🇧 英国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇺🇸 美国|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
+      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
+      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
+      - "[SS] 🇬🇧 英国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇺🇸 美国|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
+      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
+      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
+      - "[SS] 🇬🇧 英国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -177,18 +374,42 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 4"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 7"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 8"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 6"
-      - "[VMess] 🇭🇰 香港|TG@p2psahring 9"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 3"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 4"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 5"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 8"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 2"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 7"
-      - "[VMess] 🇸🇬 新加坡|TG@p2psahring 6"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 6"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 6"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 15"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 3"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 5"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 14"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 8"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 2"
+      - "[SS] 🇬🇧 英国|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 11"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 5"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 5"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 2"
+      - "[SS] 🇭🇰 香港|TG@p2psharing"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 13"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing 2"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 4"
+      - "[SS] 🇭🇰 香港|TG@p2psharing 4"
+      - "[Trojan] 🇹🇼 台湾|TG@p2psharing"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing 4"
+      - "[SS] 🇺🇸 美国|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing"
+      - "[SS] 🇯🇵 日本|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 2"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 4"
+      - "[SS] 🇸🇬 新加坡|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 3"
+      - "[Trojan] 🇹🇭 泰国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 5"
+      - "[SS] 🇷🇺 俄罗斯|TG@p2psharing"
+      - "[SS] 🇬🇧 英国|TG@p2psharing"
+      - "[SS] 🇺🇸 美国|TG@p2psharing 6"
+      - "[Trojan] 🇸🇬 新加坡|TG@p2psharing 3"
+      - "[SS] 🇹🇷 土耳其|TG@p2psharing"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
