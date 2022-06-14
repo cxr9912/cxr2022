@@ -5,103 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: SGPIEPL.A/01x3.0, server: iepl.3sx.xyz, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: HKGIEPL.A/01x3.0, server: iepl.3sx.xyz, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: HKGCM.A/01x1.0, server: cm.3sx.xyz, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: HKGIEPL.A/04x3.0, server: iepl.3sx.xyz, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: SGPCM.A/02x1.0, server: cm.3sx.xyz, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: JPNCM.A/02x1.0, server: cm.3sx.xyz, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: TWNCM.A/02x1.0, server: cm.3sx.xyz, port: 41002, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: HKGCM.A/03x1.0, server: cm.3sx.xyz, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: HKGCM.A/02x1.0, server: cm.3sx.xyz, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: TWNCM.A/01x1.0, server: cm.3sx.xyz, port: 41001, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: HKGIEPL.A/03x3.0, server: iepl.3sx.xyz, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: JPNCM.A/01x1.0, server: cm.3sx.xyz, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: SGP01x1.0Trojan測試性節點, server: cm.3sx.xyz, port: 12311, type: trojan, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, sni: cm.3sx.xyz, skip-cert-verify: true, udp: true}
-  - {name: HKGCM.A/05x1.0, server: cm.3sx.xyz, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: TWNIEPL.A/01x3.0, server: iepl.3sx.xyz, port: 41001, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: SGPCM.A/01x1.0, server: cm.3sx.xyz, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: HKGDMIT01x3.0Trojan測試性節點, server: 154.3.35.129, port: 12306, type: trojan, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, skip-cert-verify: true, udp: true}
-  - {name: HKGHKBN01x1.0Trojan測試性節點, server: 59.148.152.78, port: 12306, type: trojan, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, skip-cert-verify: true, udp: true}
-  - {name: RUSCM.A/01x1.0, server: cm.3sx.xyz, port: 61024, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
-  - {name: HKGIEPL.A/02x3.0, server: iepl.3sx.xyz, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
+  - {name: 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20735, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: "台湾 I5 | IEPL,限时体验8小时 | 0x", server: 120.232.132.71, port: 25680, type: trojan, password: 3b4a79d, skip-cert-verify: true, udp: true}
+  - {name: 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20728, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20733, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SGPIEPL.A/01x3.0
-      - HKGIEPL.A/01x3.0
-      - HKGCM.A/01x1.0
-      - HKGIEPL.A/04x3.0
-      - SGPCM.A/02x1.0
-      - JPNCM.A/02x1.0
-      - TWNCM.A/02x1.0
-      - HKGCM.A/03x1.0
-      - HKGCM.A/02x1.0
-      - TWNCM.A/01x1.0
-      - HKGIEPL.A/03x3.0
-      - JPNCM.A/01x1.0
-      - SGP01x1.0Trojan測試性節點
-      - HKGCM.A/05x1.0
-      - TWNIEPL.A/01x3.0
-      - SGPCM.A/01x1.0
-      - HKGDMIT01x3.0Trojan測試性節點
-      - HKGHKBN01x1.0Trojan測試性節點
-      - RUSCM.A/01x1.0
-      - HKGIEPL.A/02x3.0
+      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - SGPIEPL.A/01x3.0
-      - HKGIEPL.A/01x3.0
-      - HKGCM.A/01x1.0
-      - HKGIEPL.A/04x3.0
-      - SGPCM.A/02x1.0
-      - JPNCM.A/02x1.0
-      - TWNCM.A/02x1.0
-      - HKGCM.A/03x1.0
-      - HKGCM.A/02x1.0
-      - TWNCM.A/01x1.0
-      - HKGIEPL.A/03x3.0
-      - JPNCM.A/01x1.0
-      - SGP01x1.0Trojan測試性節點
-      - HKGCM.A/05x1.0
-      - TWNIEPL.A/01x3.0
-      - SGPCM.A/01x1.0
-      - HKGDMIT01x3.0Trojan測試性節點
-      - HKGHKBN01x1.0Trojan測試性節點
-      - RUSCM.A/01x1.0
-      - HKGIEPL.A/02x3.0
+      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SGPIEPL.A/01x3.0
-      - HKGIEPL.A/01x3.0
-      - HKGCM.A/01x1.0
-      - HKGIEPL.A/04x3.0
-      - SGPCM.A/02x1.0
-      - JPNCM.A/02x1.0
-      - TWNCM.A/02x1.0
-      - HKGCM.A/03x1.0
-      - HKGCM.A/02x1.0
-      - TWNCM.A/01x1.0
-      - HKGIEPL.A/03x3.0
-      - JPNCM.A/01x1.0
-      - SGP01x1.0Trojan測試性節點
-      - HKGCM.A/05x1.0
-      - TWNIEPL.A/01x3.0
-      - SGPCM.A/01x1.0
-      - HKGDMIT01x3.0Trojan測試性節點
-      - HKGHKBN01x1.0Trojan測試性節點
-      - RUSCM.A/01x1.0
-      - HKGIEPL.A/02x3.0
+      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -120,108 +76,67 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SGPIEPL.A/01x3.0
-      - HKGIEPL.A/01x3.0
-      - HKGCM.A/01x1.0
-      - HKGIEPL.A/04x3.0
-      - SGPCM.A/02x1.0
-      - JPNCM.A/02x1.0
-      - TWNCM.A/02x1.0
-      - HKGCM.A/03x1.0
-      - HKGCM.A/02x1.0
-      - TWNCM.A/01x1.0
-      - HKGIEPL.A/03x3.0
-      - JPNCM.A/01x1.0
-      - SGP01x1.0Trojan測試性節點
-      - HKGCM.A/05x1.0
-      - TWNIEPL.A/01x3.0
-      - SGPCM.A/01x1.0
-      - HKGDMIT01x3.0Trojan測試性節點
-      - HKGHKBN01x1.0Trojan測試性節點
-      - RUSCM.A/01x1.0
-      - HKGIEPL.A/02x3.0
+      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - HKGHKBN01x1.0Trojan測試性節點
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - SGPIEPL.A/01x3.0
-      - HKGIEPL.A/01x3.0
-      - HKGCM.A/01x1.0
-      - HKGIEPL.A/04x3.0
-      - SGPCM.A/02x1.0
-      - JPNCM.A/02x1.0
-      - TWNCM.A/02x1.0
-      - HKGCM.A/03x1.0
-      - HKGCM.A/02x1.0
-      - TWNCM.A/01x1.0
-      - HKGIEPL.A/03x3.0
-      - JPNCM.A/01x1.0
-      - SGP01x1.0Trojan測試性節點
-      - HKGCM.A/05x1.0
-      - TWNIEPL.A/01x3.0
-      - SGPCM.A/01x1.0
-      - HKGDMIT01x3.0Trojan測試性節點
-      - HKGHKBN01x1.0Trojan測試性節點
-      - RUSCM.A/01x1.0
-      - HKGIEPL.A/02x3.0
+      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - SGPIEPL.A/01x3.0
-      - HKGIEPL.A/01x3.0
-      - HKGCM.A/01x1.0
-      - HKGIEPL.A/04x3.0
-      - SGPCM.A/02x1.0
-      - JPNCM.A/02x1.0
-      - TWNCM.A/02x1.0
-      - HKGCM.A/03x1.0
-      - HKGCM.A/02x1.0
-      - TWNCM.A/01x1.0
-      - HKGIEPL.A/03x3.0
-      - JPNCM.A/01x1.0
-      - SGP01x1.0Trojan測試性節點
-      - HKGCM.A/05x1.0
-      - TWNIEPL.A/01x3.0
-      - SGPCM.A/01x1.0
-      - HKGDMIT01x3.0Trojan測試性節點
-      - HKGHKBN01x1.0Trojan測試性節點
-      - RUSCM.A/01x1.0
-      - HKGIEPL.A/02x3.0
+      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SGPIEPL.A/01x3.0
-      - HKGIEPL.A/01x3.0
-      - HKGCM.A/01x1.0
-      - HKGIEPL.A/04x3.0
-      - SGPCM.A/02x1.0
-      - JPNCM.A/02x1.0
-      - TWNCM.A/02x1.0
-      - HKGCM.A/03x1.0
-      - HKGCM.A/02x1.0
-      - TWNCM.A/01x1.0
-      - HKGIEPL.A/03x3.0
-      - JPNCM.A/01x1.0
-      - SGP01x1.0Trojan測試性節點
-      - HKGCM.A/05x1.0
-      - TWNIEPL.A/01x3.0
-      - SGPCM.A/01x1.0
-      - HKGDMIT01x3.0Trojan測試性節點
-      - HKGHKBN01x1.0Trojan測試性節點
-      - RUSCM.A/01x1.0
-      - HKGIEPL.A/02x3.0
+      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -237,26 +152,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SGPIEPL.A/01x3.0
-      - HKGIEPL.A/01x3.0
-      - HKGCM.A/01x1.0
-      - HKGIEPL.A/04x3.0
-      - SGPCM.A/02x1.0
-      - JPNCM.A/02x1.0
-      - TWNCM.A/02x1.0
-      - HKGCM.A/03x1.0
-      - HKGCM.A/02x1.0
-      - TWNCM.A/01x1.0
-      - HKGIEPL.A/03x3.0
-      - JPNCM.A/01x1.0
-      - SGP01x1.0Trojan測試性節點
-      - HKGCM.A/05x1.0
-      - TWNIEPL.A/01x3.0
-      - SGPCM.A/01x1.0
-      - HKGDMIT01x3.0Trojan測試性節點
-      - HKGHKBN01x1.0Trojan測試性節點
-      - RUSCM.A/01x1.0
-      - HKGIEPL.A/02x3.0
+      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
