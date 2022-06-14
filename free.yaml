@@ -5,6 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 新加坡, server: mi.sg.vpn.gouyun.xyz, port: 20031, type: trojan, password: e6e05155-245c-48f9-87c9-d0d9d8133f8a, sni: mi.sg.vpn.gouyun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾, server: mi.tw.vpn.gouyun.xyz, port: 20030, type: trojan, password: e6e05155-245c-48f9-87c9-d0d9d8133f8a, sni: mi.tw.vpn.gouyun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 印度, server: mi.id2.vpn.gouyun.xyz, port: 20041, type: trojan, password: e6e05155-245c-48f9-87c9-d0d9d8133f8a, sni: mi.id2.vpn.gouyun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 韩国, server: mi.hg.vpn.gouyun.xyz, port: 20022, type: trojan, password: e6e05155-245c-48f9-87c9-d0d9d8133f8a, sni: mi.hg.vpn.gouyun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港, server: azhk.gouyun.xyz, port: 20035, type: trojan, password: e6e05155-245c-48f9-87c9-d0d9d8133f8a, sni: azhk.gouyun.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港 负载均衡, server: azhk.n.optage.moe, port: 62500, type: trojan, password: d3c34184-e1b5-42d0-8f52-d89c8a095301, sni: azhk.n.optage.moe, skip-cert-verify: true, udp: true}
   - {name: 日本东京 负载均衡, server: ocijp.n.optage.moe, port: 62500, type: trojan, password: d3c34184-e1b5-42d0-8f52-d89c8a095301, sni: ocijp.n.optage.moe, skip-cert-verify: true, udp: true}
 proxy-groups:
@@ -13,6 +18,11 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 新加坡
+      - 台湾
+      - 印度
+      - 韩国
+      - 香港
       - 香港 负载均衡
       - 日本东京 负载均衡
   - name: ♻️ 自动选择
@@ -20,6 +30,11 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 新加坡
+      - 台湾
+      - 印度
+      - 韩国
+      - 香港
       - 香港 负载均衡
       - 日本东京 负载均衡
   - name: 🎥 NETFLIX
@@ -28,6 +43,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 新加坡
+      - 台湾
+      - 印度
+      - 韩国
+      - 香港
       - 香港 负载均衡
       - 日本东京 负载均衡
   - name: ⛔️ 广告拦截
@@ -48,12 +68,19 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 新加坡
+      - 台湾
+      - 印度
+      - 韩国
+      - 香港
       - 香港 负载均衡
       - 日本东京 负载均衡
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾
+      - 香港
       - 香港 负载均衡
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
@@ -61,6 +88,11 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 新加坡
+      - 台湾
+      - 印度
+      - 韩国
+      - 香港
       - 香港 负载均衡
       - 日本东京 负载均衡
   - name: 📲 电报信息
@@ -68,6 +100,11 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 新加坡
+      - 台湾
+      - 印度
+      - 韩国
+      - 香港
       - 香港 负载均衡
       - 日本东京 负载均衡
   - name: 🍎 苹果服务
@@ -76,6 +113,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 新加坡
+      - 台湾
+      - 印度
+      - 韩国
+      - 香港
       - 香港 负载均衡
       - 日本东京 负载均衡
   - name: 🎯 全球直连
@@ -93,6 +135,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 新加坡
+      - 台湾
+      - 印度
+      - 韩国
+      - 香港
       - 香港 负载均衡
       - 日本东京 负载均衡
 rules:
