@@ -5,39 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK-tg频道:@ripaojiedian, server: cm.3sx.xyz, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
-  - {name: 香港2-tg频道:@ripaojiedian, server: 36.139.115.13, port: 53008, type: vmess, uuid: 5cc53db3-4d0f-36c0-9d94-2bde0bc4cf0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.115.13}, udp: true}
-  - {name: 韩国|tg频道:@ripaojiedian, server: 36.139.115.13, port: 8053, type: vmess, uuid: 5cc53db3-4d0f-36c0-9d94-2bde0bc4cf0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.115.13}, udp: true}
-  - {name: 香港-tg频道:@ripaojiedian, server: 36.134.116.212, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: b13a962e-afb4-4435-a362-d955b5a7db44, udp: true}
+  - {name: HKG HKBN 01 x1.0 Trojan測試性節點, server: 59.148.152.78, port: 12306, type: trojan, password: d80412a5-1757-48a5-b493-e2de1265cc11, skip-cert-verify: true, udp: true}
+  - {name: HKG CM.A/05 x1.0, server: cm.3sx.xyz, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: SGP CM.A/02 x1.0, server: cm.3sx.xyz, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: "SGP 01 x1.0 [Trojan] [中轉]", server: cm.3sx.xyz, port: 12311, type: trojan, password: d80412a5-1757-48a5-b493-e2de1265cc11, sni: cm.3sx.xyz, skip-cert-verify: true, udp: true}
+  - {name: "HKG 05 x1.0 [Trojan] [中轉]", server: cm.3sx.xyz, port: 12306, type: trojan, password: d80412a5-1757-48a5-b493-e2de1265cc11, sni: cm.3sx.xyz, skip-cert-verify: true, udp: true}
+  - {name: "HKG 01 x1.0 [Trojan] [中轉]", server: cm.3sx.xyz, port: 12301, type: trojan, password: d80412a5-1757-48a5-b493-e2de1265cc11, sni: cm.3sx.xyz, skip-cert-verify: true, udp: true}
+  - {name: HKG CM.A/01 x1.0, server: cm.3sx.xyz, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: HKG CM.A/03 x1.0, server: cm.3sx.xyz, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: TWN CM.A/01 x1.0, server: cm.3sx.xyz, port: 41001, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: JPN CM.A/01 x1.0, server: cm.3sx.xyz, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: HKG CM.A/02 x1.0, server: cm.3sx.xyz, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: JPN CM.A/02 x1.0, server: cm.3sx.xyz, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: HKG CM.A/04 x1.0, server: cm.3sx.xyz, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: SGP CM.A/01 x1.0, server: cm.3sx.xyz, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: GBR CM.A/01 x1.0, server: cm.3sx.xyz, port: 61023, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: RUS CM.A/01 x1.0, server: cm.3sx.xyz, port: 61024, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-tg频道:@ripaojiedian
-      - 香港2-tg频道:@ripaojiedian
-      - 韩国|tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
+      - HKG HKBN 01 x1.0 Trojan測試性節點
+      - HKG CM.A/05 x1.0
+      - SGP CM.A/02 x1.0
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 05 x1.0 [Trojan] [中轉]
+      - HKG 01 x1.0 [Trojan] [中轉]
+      - HKG CM.A/01 x1.0
+      - HKG CM.A/03 x1.0
+      - TWN CM.A/01 x1.0
+      - JPN CM.A/01 x1.0
+      - HKG CM.A/02 x1.0
+      - JPN CM.A/02 x1.0
+      - HKG CM.A/04 x1.0
+      - SGP CM.A/01 x1.0
+      - GBR CM.A/01 x1.0
+      - RUS CM.A/01 x1.0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK-tg频道:@ripaojiedian
-      - 香港2-tg频道:@ripaojiedian
-      - 韩国|tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
+      - HKG HKBN 01 x1.0 Trojan測試性節點
+      - HKG CM.A/05 x1.0
+      - SGP CM.A/02 x1.0
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 05 x1.0 [Trojan] [中轉]
+      - HKG 01 x1.0 [Trojan] [中轉]
+      - HKG CM.A/01 x1.0
+      - HKG CM.A/03 x1.0
+      - TWN CM.A/01 x1.0
+      - JPN CM.A/01 x1.0
+      - HKG CM.A/02 x1.0
+      - JPN CM.A/02 x1.0
+      - HKG CM.A/04 x1.0
+      - SGP CM.A/01 x1.0
+      - GBR CM.A/01 x1.0
+      - RUS CM.A/01 x1.0
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-tg频道:@ripaojiedian
-      - 香港2-tg频道:@ripaojiedian
-      - 韩国|tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
+      - HKG HKBN 01 x1.0 Trojan測試性節點
+      - HKG CM.A/05 x1.0
+      - SGP CM.A/02 x1.0
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 05 x1.0 [Trojan] [中轉]
+      - HKG 01 x1.0 [Trojan] [中轉]
+      - HKG CM.A/01 x1.0
+      - HKG CM.A/03 x1.0
+      - TWN CM.A/01 x1.0
+      - JPN CM.A/01 x1.0
+      - HKG CM.A/02 x1.0
+      - JPN CM.A/02 x1.0
+      - HKG CM.A/04 x1.0
+      - SGP CM.A/01 x1.0
+      - GBR CM.A/01 x1.0
+      - RUS CM.A/01 x1.0
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,45 +104,92 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-tg频道:@ripaojiedian
-      - 香港2-tg频道:@ripaojiedian
-      - 韩国|tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
+      - HKG HKBN 01 x1.0 Trojan測試性節點
+      - HKG CM.A/05 x1.0
+      - SGP CM.A/02 x1.0
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 05 x1.0 [Trojan] [中轉]
+      - HKG 01 x1.0 [Trojan] [中轉]
+      - HKG CM.A/01 x1.0
+      - HKG CM.A/03 x1.0
+      - TWN CM.A/01 x1.0
+      - JPN CM.A/01 x1.0
+      - HKG CM.A/02 x1.0
+      - JPN CM.A/02 x1.0
+      - HKG CM.A/04 x1.0
+      - SGP CM.A/01 x1.0
+      - GBR CM.A/01 x1.0
+      - RUS CM.A/01 x1.0
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港2-tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
+      - HKG HKBN 01 x1.0 Trojan測試性節點
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK-tg频道:@ripaojiedian
-      - 香港2-tg频道:@ripaojiedian
-      - 韩国|tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
+      - HKG HKBN 01 x1.0 Trojan測試性節點
+      - HKG CM.A/05 x1.0
+      - SGP CM.A/02 x1.0
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 05 x1.0 [Trojan] [中轉]
+      - HKG 01 x1.0 [Trojan] [中轉]
+      - HKG CM.A/01 x1.0
+      - HKG CM.A/03 x1.0
+      - TWN CM.A/01 x1.0
+      - JPN CM.A/01 x1.0
+      - HKG CM.A/02 x1.0
+      - JPN CM.A/02 x1.0
+      - HKG CM.A/04 x1.0
+      - SGP CM.A/01 x1.0
+      - GBR CM.A/01 x1.0
+      - RUS CM.A/01 x1.0
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK-tg频道:@ripaojiedian
-      - 香港2-tg频道:@ripaojiedian
-      - 韩国|tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
+      - HKG HKBN 01 x1.0 Trojan測試性節點
+      - HKG CM.A/05 x1.0
+      - SGP CM.A/02 x1.0
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 05 x1.0 [Trojan] [中轉]
+      - HKG 01 x1.0 [Trojan] [中轉]
+      - HKG CM.A/01 x1.0
+      - HKG CM.A/03 x1.0
+      - TWN CM.A/01 x1.0
+      - JPN CM.A/01 x1.0
+      - HKG CM.A/02 x1.0
+      - JPN CM.A/02 x1.0
+      - HKG CM.A/04 x1.0
+      - SGP CM.A/01 x1.0
+      - GBR CM.A/01 x1.0
+      - RUS CM.A/01 x1.0
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK-tg频道:@ripaojiedian
-      - 香港2-tg频道:@ripaojiedian
-      - 韩国|tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
+      - HKG HKBN 01 x1.0 Trojan測試性節點
+      - HKG CM.A/05 x1.0
+      - SGP CM.A/02 x1.0
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 05 x1.0 [Trojan] [中轉]
+      - HKG 01 x1.0 [Trojan] [中轉]
+      - HKG CM.A/01 x1.0
+      - HKG CM.A/03 x1.0
+      - TWN CM.A/01 x1.0
+      - JPN CM.A/01 x1.0
+      - HKG CM.A/02 x1.0
+      - JPN CM.A/02 x1.0
+      - HKG CM.A/04 x1.0
+      - SGP CM.A/01 x1.0
+      - GBR CM.A/01 x1.0
+      - RUS CM.A/01 x1.0
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -110,10 +205,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK-tg频道:@ripaojiedian
-      - 香港2-tg频道:@ripaojiedian
-      - 韩国|tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
+      - HKG HKBN 01 x1.0 Trojan測試性節點
+      - HKG CM.A/05 x1.0
+      - SGP CM.A/02 x1.0
+      - SGP 01 x1.0 [Trojan] [中轉]
+      - HKG 05 x1.0 [Trojan] [中轉]
+      - HKG 01 x1.0 [Trojan] [中轉]
+      - HKG CM.A/01 x1.0
+      - HKG CM.A/03 x1.0
+      - TWN CM.A/01 x1.0
+      - JPN CM.A/01 x1.0
+      - HKG CM.A/02 x1.0
+      - JPN CM.A/02 x1.0
+      - HKG CM.A/04 x1.0
+      - SGP CM.A/01 x1.0
+      - GBR CM.A/01 x1.0
+      - RUS CM.A/01 x1.0
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
