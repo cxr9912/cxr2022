@@ -5,87 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HKG HKBN 01 x1.0 Trojan測試性節點, server: 59.148.152.78, port: 12306, type: trojan, password: d80412a5-1757-48a5-b493-e2de1265cc11, skip-cert-verify: true, udp: true}
-  - {name: HKG CM.A/05 x1.0, server: cm.3sx.xyz, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
-  - {name: SGP CM.A/02 x1.0, server: cm.3sx.xyz, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
-  - {name: "SGP 01 x1.0 [Trojan] [中轉]", server: cm.3sx.xyz, port: 12311, type: trojan, password: d80412a5-1757-48a5-b493-e2de1265cc11, sni: cm.3sx.xyz, skip-cert-verify: true, udp: true}
-  - {name: "HKG 05 x1.0 [Trojan] [中轉]", server: cm.3sx.xyz, port: 12306, type: trojan, password: d80412a5-1757-48a5-b493-e2de1265cc11, sni: cm.3sx.xyz, skip-cert-verify: true, udp: true}
-  - {name: "HKG 01 x1.0 [Trojan] [中轉]", server: cm.3sx.xyz, port: 12301, type: trojan, password: d80412a5-1757-48a5-b493-e2de1265cc11, sni: cm.3sx.xyz, skip-cert-verify: true, udp: true}
-  - {name: HKG CM.A/01 x1.0, server: cm.3sx.xyz, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
-  - {name: HKG CM.A/03 x1.0, server: cm.3sx.xyz, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
-  - {name: TWN CM.A/01 x1.0, server: cm.3sx.xyz, port: 41001, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
-  - {name: JPN CM.A/01 x1.0, server: cm.3sx.xyz, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
-  - {name: HKG CM.A/02 x1.0, server: cm.3sx.xyz, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
-  - {name: JPN CM.A/02 x1.0, server: cm.3sx.xyz, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
-  - {name: HKG CM.A/04 x1.0, server: cm.3sx.xyz, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
-  - {name: SGP CM.A/01 x1.0, server: cm.3sx.xyz, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
-  - {name: GBR CM.A/01 x1.0, server: cm.3sx.xyz, port: 61023, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
-  - {name: RUS CM.A/01 x1.0, server: cm.3sx.xyz, port: 61024, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: 香港 高级节点1  广州移动, server: gy.anoob.cc, port: 46000, type: vmess, uuid: 08682055-9821-30a8-8f68-de5e2a0d2297, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ssr, ws-headers: {Host: baidu.com}, udp: true}
+  - {name: 台湾 03 解锁 Netflix 中转, server: cn2.anoob.cc, port: 56688, type: vmess, uuid: 08682055-9821-30a8-8f68-de5e2a0d2297, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /oooo, ws-headers: {Host: baidu.com}, udp: true}
+  - {name: 日本 高级节点2, server: cn2.anoob.cc, port: 38000, type: vmess, uuid: 08682055-9821-30a8-8f68-de5e2a0d2297, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ssr, ws-headers: {Host: baidu.com}, udp: true}
+  - {name: 台湾 02 解锁 Netflix, server: gy.anoob.cc, port: 29600, type: vmess, uuid: 08682055-9821-30a8-8f68-de5e2a0d2297, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /oooo, ws-headers: {Host: baidu.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HKG HKBN 01 x1.0 Trojan測試性節點
-      - HKG CM.A/05 x1.0
-      - SGP CM.A/02 x1.0
-      - SGP 01 x1.0 [Trojan] [中轉]
-      - HKG 05 x1.0 [Trojan] [中轉]
-      - HKG 01 x1.0 [Trojan] [中轉]
-      - HKG CM.A/01 x1.0
-      - HKG CM.A/03 x1.0
-      - TWN CM.A/01 x1.0
-      - JPN CM.A/01 x1.0
-      - HKG CM.A/02 x1.0
-      - JPN CM.A/02 x1.0
-      - HKG CM.A/04 x1.0
-      - SGP CM.A/01 x1.0
-      - GBR CM.A/01 x1.0
-      - RUS CM.A/01 x1.0
+      - 香港 高级节点1  广州移动
+      - 台湾 03 解锁 Netflix 中转
+      - 日本 高级节点2
+      - 台湾 02 解锁 Netflix
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HKG HKBN 01 x1.0 Trojan測試性節點
-      - HKG CM.A/05 x1.0
-      - SGP CM.A/02 x1.0
-      - SGP 01 x1.0 [Trojan] [中轉]
-      - HKG 05 x1.0 [Trojan] [中轉]
-      - HKG 01 x1.0 [Trojan] [中轉]
-      - HKG CM.A/01 x1.0
-      - HKG CM.A/03 x1.0
-      - TWN CM.A/01 x1.0
-      - JPN CM.A/01 x1.0
-      - HKG CM.A/02 x1.0
-      - JPN CM.A/02 x1.0
-      - HKG CM.A/04 x1.0
-      - SGP CM.A/01 x1.0
-      - GBR CM.A/01 x1.0
-      - RUS CM.A/01 x1.0
+      - 香港 高级节点1  广州移动
+      - 台湾 03 解锁 Netflix 中转
+      - 日本 高级节点2
+      - 台湾 02 解锁 Netflix
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HKG HKBN 01 x1.0 Trojan測試性節點
-      - HKG CM.A/05 x1.0
-      - SGP CM.A/02 x1.0
-      - SGP 01 x1.0 [Trojan] [中轉]
-      - HKG 05 x1.0 [Trojan] [中轉]
-      - HKG 01 x1.0 [Trojan] [中轉]
-      - HKG CM.A/01 x1.0
-      - HKG CM.A/03 x1.0
-      - TWN CM.A/01 x1.0
-      - JPN CM.A/01 x1.0
-      - HKG CM.A/02 x1.0
-      - JPN CM.A/02 x1.0
-      - HKG CM.A/04 x1.0
-      - SGP CM.A/01 x1.0
-      - GBR CM.A/01 x1.0
-      - RUS CM.A/01 x1.0
+      - 香港 高级节点1  广州移动
+      - 台湾 03 解锁 Netflix 中转
+      - 日本 高级节点2
+      - 台湾 02 解锁 Netflix
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -104,92 +56,46 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HKG HKBN 01 x1.0 Trojan測試性節點
-      - HKG CM.A/05 x1.0
-      - SGP CM.A/02 x1.0
-      - SGP 01 x1.0 [Trojan] [中轉]
-      - HKG 05 x1.0 [Trojan] [中轉]
-      - HKG 01 x1.0 [Trojan] [中轉]
-      - HKG CM.A/01 x1.0
-      - HKG CM.A/03 x1.0
-      - TWN CM.A/01 x1.0
-      - JPN CM.A/01 x1.0
-      - HKG CM.A/02 x1.0
-      - JPN CM.A/02 x1.0
-      - HKG CM.A/04 x1.0
-      - SGP CM.A/01 x1.0
-      - GBR CM.A/01 x1.0
-      - RUS CM.A/01 x1.0
+      - 香港 高级节点1  广州移动
+      - 台湾 03 解锁 Netflix 中转
+      - 日本 高级节点2
+      - 台湾 02 解锁 Netflix
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - HKG HKBN 01 x1.0 Trojan測試性節點
+      - 香港 高级节点1  广州移动
+      - 台湾 03 解锁 Netflix 中转
+      - 台湾 02 解锁 Netflix
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HKG HKBN 01 x1.0 Trojan測試性節點
-      - HKG CM.A/05 x1.0
-      - SGP CM.A/02 x1.0
-      - SGP 01 x1.0 [Trojan] [中轉]
-      - HKG 05 x1.0 [Trojan] [中轉]
-      - HKG 01 x1.0 [Trojan] [中轉]
-      - HKG CM.A/01 x1.0
-      - HKG CM.A/03 x1.0
-      - TWN CM.A/01 x1.0
-      - JPN CM.A/01 x1.0
-      - HKG CM.A/02 x1.0
-      - JPN CM.A/02 x1.0
-      - HKG CM.A/04 x1.0
-      - SGP CM.A/01 x1.0
-      - GBR CM.A/01 x1.0
-      - RUS CM.A/01 x1.0
+      - 香港 高级节点1  广州移动
+      - 台湾 03 解锁 Netflix 中转
+      - 日本 高级节点2
+      - 台湾 02 解锁 Netflix
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HKG HKBN 01 x1.0 Trojan測試性節點
-      - HKG CM.A/05 x1.0
-      - SGP CM.A/02 x1.0
-      - SGP 01 x1.0 [Trojan] [中轉]
-      - HKG 05 x1.0 [Trojan] [中轉]
-      - HKG 01 x1.0 [Trojan] [中轉]
-      - HKG CM.A/01 x1.0
-      - HKG CM.A/03 x1.0
-      - TWN CM.A/01 x1.0
-      - JPN CM.A/01 x1.0
-      - HKG CM.A/02 x1.0
-      - JPN CM.A/02 x1.0
-      - HKG CM.A/04 x1.0
-      - SGP CM.A/01 x1.0
-      - GBR CM.A/01 x1.0
-      - RUS CM.A/01 x1.0
+      - 香港 高级节点1  广州移动
+      - 台湾 03 解锁 Netflix 中转
+      - 日本 高级节点2
+      - 台湾 02 解锁 Netflix
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HKG HKBN 01 x1.0 Trojan測試性節點
-      - HKG CM.A/05 x1.0
-      - SGP CM.A/02 x1.0
-      - SGP 01 x1.0 [Trojan] [中轉]
-      - HKG 05 x1.0 [Trojan] [中轉]
-      - HKG 01 x1.0 [Trojan] [中轉]
-      - HKG CM.A/01 x1.0
-      - HKG CM.A/03 x1.0
-      - TWN CM.A/01 x1.0
-      - JPN CM.A/01 x1.0
-      - HKG CM.A/02 x1.0
-      - JPN CM.A/02 x1.0
-      - HKG CM.A/04 x1.0
-      - SGP CM.A/01 x1.0
-      - GBR CM.A/01 x1.0
-      - RUS CM.A/01 x1.0
+      - 香港 高级节点1  广州移动
+      - 台湾 03 解锁 Netflix 中转
+      - 日本 高级节点2
+      - 台湾 02 解锁 Netflix
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -205,22 +111,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HKG HKBN 01 x1.0 Trojan測試性節點
-      - HKG CM.A/05 x1.0
-      - SGP CM.A/02 x1.0
-      - SGP 01 x1.0 [Trojan] [中轉]
-      - HKG 05 x1.0 [Trojan] [中轉]
-      - HKG 01 x1.0 [Trojan] [中轉]
-      - HKG CM.A/01 x1.0
-      - HKG CM.A/03 x1.0
-      - TWN CM.A/01 x1.0
-      - JPN CM.A/01 x1.0
-      - HKG CM.A/02 x1.0
-      - JPN CM.A/02 x1.0
-      - HKG CM.A/04 x1.0
-      - SGP CM.A/01 x1.0
-      - GBR CM.A/01 x1.0
-      - RUS CM.A/01 x1.0
+      - 香港 高级节点1  广州移动
+      - 台湾 03 解锁 Netflix 中转
+      - 日本 高级节点2
+      - 台湾 02 解锁 Netflix
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
