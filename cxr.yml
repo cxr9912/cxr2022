@@ -5,31 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK-tg频道:@ripaojiedian, server: cm.3sx.xyz, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
-  - {name: SG-tg频道:@ripaojiedian, server: cmb.3sx.xyz, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: V1|香港|Nginx+Trojan|01, server: www.anlocl.gq, port: 20521, type: trojan, password: 77065fa6-b38e-302c-beea-4b047967af01, sni: www.anlocl.gq, skip-cert-verify: true, udp: true}
+  - {name: V1|香港|Nginx+Trojan|02, server: www.anlocl.gq, port: 30521, type: trojan, password: 77065fa6-b38e-302c-beea-4b047967af01, sni: www.anlocl.gq, skip-cert-verify: true, udp: true}
+  - {name: V4|韩国|隧道|流媒体中继|01, server: gy.feethree.top, port: 50439, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: gy.feethree.top}, udp: true}
+  - {name: V3|新加坡-广州|中继|02, server: gy.feethree.top, port: 36746, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: gy.feethree.top}, udp: true}
+  - {name: V4|日本|隧道|流媒体中继|02, server: gy.feethree.top, port: 19380, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: gy.feethree.top}, udp: true}
+  - {name: V3|日本-广州|流媒体中继|01, server: gy3.anoob.icu, port: 36847, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: gy3.anoob.icu}, udp: true}
+  - {name: V2|韩国-长沙|中继|01, server: lt.feethree.top, port: 16887, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: lt.feethree.top}, udp: true}
+  - {name: V2|新加坡-长沙|原生中继|02, server: lt.feethree.top, port: 26835, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: lt.feethree.top}, udp: true}
+  - {name: V2|韩国-长沙|中继|02, server: lt.feethree.top, port: 46347, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: lt.feethree.top}, udp: true}
+  - {name: V4|香港|隧道|流媒体中继|01, server: gy.feethree.top, port: 28254, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: gy.feethree.top}, udp: true}
+  - {name: V3|新加坡-广州|原生中继|03, server: gy3.anoob.icu, port: 20789, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: gy3.anoob.icu}, udp: true}
+  - {name: V2|日本-长沙|中继|01, server: lt.feethree.top, port: 53611, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: lt.feethree.top}, udp: true}
+  - {name: V4|日本|隧道|中继|02, server: lt.feethree.top, port: 10223, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: lt.feethree.top}, udp: true}
+  - {name: V3|日本-广州|中继|01, server: gy.feethree.top, port: 33530, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: gy.feethree.top}, udp: true}
+  - {name: V3|香港-广州|中继|CMI|01, server: gy.feethree.top, port: 33950, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: gy.feethree.top}, udp: true}
+  - {name: V4|日本|隧道|中继01, server: gy.feethree.top, port: 50533, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: gy.feethree.top}, udp: true}
+  - {name: V4|新加坡|隧道|原生中继|01, server: gy.feethree.top, port: 54062, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: gy.feethree.top}, udp: true}
+  - {name: V3|新加坡-广州|流媒体中继|01, server: gy3.anoob.icu, port: 34274, type: vmess, uuid: 77065fa6-b38e-302c-beea-4b047967af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: gy3.anoob.icu}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-tg频道:@ripaojiedian
-      - SG-tg频道:@ripaojiedian
+      - V1|香港|Nginx+Trojan|01
+      - V1|香港|Nginx+Trojan|02
+      - V4|韩国|隧道|流媒体中继|01
+      - V3|新加坡-广州|中继|02
+      - V4|日本|隧道|流媒体中继|02
+      - V3|日本-广州|流媒体中继|01
+      - V2|韩国-长沙|中继|01
+      - V2|新加坡-长沙|原生中继|02
+      - V2|韩国-长沙|中继|02
+      - V4|香港|隧道|流媒体中继|01
+      - V3|新加坡-广州|原生中继|03
+      - V2|日本-长沙|中继|01
+      - V4|日本|隧道|中继|02
+      - V3|日本-广州|中继|01
+      - V3|香港-广州|中继|CMI|01
+      - V4|日本|隧道|中继01
+      - V4|新加坡|隧道|原生中继|01
+      - V3|新加坡-广州|流媒体中继|01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK-tg频道:@ripaojiedian
-      - SG-tg频道:@ripaojiedian
+      - V1|香港|Nginx+Trojan|01
+      - V1|香港|Nginx+Trojan|02
+      - V4|韩国|隧道|流媒体中继|01
+      - V3|新加坡-广州|中继|02
+      - V4|日本|隧道|流媒体中继|02
+      - V3|日本-广州|流媒体中继|01
+      - V2|韩国-长沙|中继|01
+      - V2|新加坡-长沙|原生中继|02
+      - V2|韩国-长沙|中继|02
+      - V4|香港|隧道|流媒体中继|01
+      - V3|新加坡-广州|原生中继|03
+      - V2|日本-长沙|中继|01
+      - V4|日本|隧道|中继|02
+      - V3|日本-广州|中继|01
+      - V3|香港-广州|中继|CMI|01
+      - V4|日本|隧道|中继01
+      - V4|新加坡|隧道|原生中继|01
+      - V3|新加坡-广州|流媒体中继|01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-tg频道:@ripaojiedian
-      - SG-tg频道:@ripaojiedian
+      - V1|香港|Nginx+Trojan|01
+      - V1|香港|Nginx+Trojan|02
+      - V4|韩国|隧道|流媒体中继|01
+      - V3|新加坡-广州|中继|02
+      - V4|日本|隧道|流媒体中继|02
+      - V3|日本-广州|流媒体中继|01
+      - V2|韩国-长沙|中继|01
+      - V2|新加坡-长沙|原生中继|02
+      - V2|韩国-长沙|中继|02
+      - V4|香港|隧道|流媒体中继|01
+      - V3|新加坡-广州|原生中继|03
+      - V2|日本-长沙|中继|01
+      - V4|日本|隧道|中继|02
+      - V3|日本-广州|中继|01
+      - V3|香港-广州|中继|CMI|01
+      - V4|日本|隧道|中继01
+      - V4|新加坡|隧道|原生中继|01
+      - V3|新加坡-广州|流媒体中继|01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,35 +112,103 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-tg频道:@ripaojiedian
-      - SG-tg频道:@ripaojiedian
+      - V1|香港|Nginx+Trojan|01
+      - V1|香港|Nginx+Trojan|02
+      - V4|韩国|隧道|流媒体中继|01
+      - V3|新加坡-广州|中继|02
+      - V4|日本|隧道|流媒体中继|02
+      - V3|日本-广州|流媒体中继|01
+      - V2|韩国-长沙|中继|01
+      - V2|新加坡-长沙|原生中继|02
+      - V2|韩国-长沙|中继|02
+      - V4|香港|隧道|流媒体中继|01
+      - V3|新加坡-广州|原生中继|03
+      - V2|日本-长沙|中继|01
+      - V4|日本|隧道|中继|02
+      - V3|日本-广州|中继|01
+      - V3|香港-广州|中继|CMI|01
+      - V4|日本|隧道|中继01
+      - V4|新加坡|隧道|原生中继|01
+      - V3|新加坡-广州|流媒体中继|01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - V1|香港|Nginx+Trojan|01
+      - V1|香港|Nginx+Trojan|02
+      - V4|香港|隧道|流媒体中继|01
+      - V3|香港-广州|中继|CMI|01
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK-tg频道:@ripaojiedian
-      - SG-tg频道:@ripaojiedian
+      - V1|香港|Nginx+Trojan|01
+      - V1|香港|Nginx+Trojan|02
+      - V4|韩国|隧道|流媒体中继|01
+      - V3|新加坡-广州|中继|02
+      - V4|日本|隧道|流媒体中继|02
+      - V3|日本-广州|流媒体中继|01
+      - V2|韩国-长沙|中继|01
+      - V2|新加坡-长沙|原生中继|02
+      - V2|韩国-长沙|中继|02
+      - V4|香港|隧道|流媒体中继|01
+      - V3|新加坡-广州|原生中继|03
+      - V2|日本-长沙|中继|01
+      - V4|日本|隧道|中继|02
+      - V3|日本-广州|中继|01
+      - V3|香港-广州|中继|CMI|01
+      - V4|日本|隧道|中继01
+      - V4|新加坡|隧道|原生中继|01
+      - V3|新加坡-广州|流媒体中继|01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK-tg频道:@ripaojiedian
-      - SG-tg频道:@ripaojiedian
+      - V1|香港|Nginx+Trojan|01
+      - V1|香港|Nginx+Trojan|02
+      - V4|韩国|隧道|流媒体中继|01
+      - V3|新加坡-广州|中继|02
+      - V4|日本|隧道|流媒体中继|02
+      - V3|日本-广州|流媒体中继|01
+      - V2|韩国-长沙|中继|01
+      - V2|新加坡-长沙|原生中继|02
+      - V2|韩国-长沙|中继|02
+      - V4|香港|隧道|流媒体中继|01
+      - V3|新加坡-广州|原生中继|03
+      - V2|日本-长沙|中继|01
+      - V4|日本|隧道|中继|02
+      - V3|日本-广州|中继|01
+      - V3|香港-广州|中继|CMI|01
+      - V4|日本|隧道|中继01
+      - V4|新加坡|隧道|原生中继|01
+      - V3|新加坡-广州|流媒体中继|01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK-tg频道:@ripaojiedian
-      - SG-tg频道:@ripaojiedian
+      - V1|香港|Nginx+Trojan|01
+      - V1|香港|Nginx+Trojan|02
+      - V4|韩国|隧道|流媒体中继|01
+      - V3|新加坡-广州|中继|02
+      - V4|日本|隧道|流媒体中继|02
+      - V3|日本-广州|流媒体中继|01
+      - V2|韩国-长沙|中继|01
+      - V2|新加坡-长沙|原生中继|02
+      - V2|韩国-长沙|中继|02
+      - V4|香港|隧道|流媒体中继|01
+      - V3|新加坡-广州|原生中继|03
+      - V2|日本-长沙|中继|01
+      - V4|日本|隧道|中继|02
+      - V3|日本-广州|中继|01
+      - V3|香港-广州|中继|CMI|01
+      - V4|日本|隧道|中继01
+      - V4|新加坡|隧道|原生中继|01
+      - V3|新加坡-广州|流媒体中继|01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +224,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK-tg频道:@ripaojiedian
-      - SG-tg频道:@ripaojiedian
+      - V1|香港|Nginx+Trojan|01
+      - V1|香港|Nginx+Trojan|02
+      - V4|韩国|隧道|流媒体中继|01
+      - V3|新加坡-广州|中继|02
+      - V4|日本|隧道|流媒体中继|02
+      - V3|日本-广州|流媒体中继|01
+      - V2|韩国-长沙|中继|01
+      - V2|新加坡-长沙|原生中继|02
+      - V2|韩国-长沙|中继|02
+      - V4|香港|隧道|流媒体中继|01
+      - V3|新加坡-广州|原生中继|03
+      - V2|日本-长沙|中继|01
+      - V4|日本|隧道|中继|02
+      - V3|日本-广州|中继|01
+      - V3|香港-广州|中继|CMI|01
+      - V4|日本|隧道|中继01
+      - V4|新加坡|隧道|原生中继|01
+      - V3|新加坡-广州|流媒体中继|01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
