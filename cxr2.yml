@@ -5,35 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 2022-06-14 10:50:43 速度 12023 节点编号 000629 TW, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: 2022-06-14 11:03:23 速度 12639 节点编号 023309 SG, server: 34.142.196.145, port: 13856, type: ss, cipher: chacha20-ietf-poly1305, password: XxIjXPk6xKuY, udp: true}
-  - {name: 2022-06-14 10:48:49 速度 15125 节点编号 010196 HK, server: hk-5.netflixssr.com, port: 644, type: vmess, uuid: 3107fc75-f61d-30aa-85b0-2b9861cfd485, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/v1/stream, ws-headers: {Host: hk-5.netflixssr.com}, udp: true}
+  - {name: 新加坡tj-tg频道:@ripaojiedian, server: hk64.fans8.xyz, port: 443, type: trojan, password: 08445e6d-0a42-4433-8565-2e4b7de180ac, sni: hk64.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本2-tg频道:@ripaojiedian, server: 52.140.214.217, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: 台湾tj-tg频道:@ripaojiedian, server: 67tw01.fans8.xyz, port: 443, type: trojan, password: 08445e6d-0a42-4433-8565-2e4b7de180ac, sni: 67tw01.fans8.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 2022-06-14 10:50:43 速度 12023 节点编号 000629 TW
-      - 2022-06-14 11:03:23 速度 12639 节点编号 023309 SG
-      - 2022-06-14 10:48:49 速度 15125 节点编号 010196 HK
+      - 新加坡tj-tg频道:@ripaojiedian
+      - 日本2-tg频道:@ripaojiedian
+      - 台湾tj-tg频道:@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 2022-06-14 10:50:43 速度 12023 节点编号 000629 TW
-      - 2022-06-14 11:03:23 速度 12639 节点编号 023309 SG
-      - 2022-06-14 10:48:49 速度 15125 节点编号 010196 HK
+      - 新加坡tj-tg频道:@ripaojiedian
+      - 日本2-tg频道:@ripaojiedian
+      - 台湾tj-tg频道:@ripaojiedian
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 2022-06-14 10:50:43 速度 12023 节点编号 000629 TW
-      - 2022-06-14 11:03:23 速度 12639 节点编号 023309 SG
-      - 2022-06-14 10:48:49 速度 15125 节点编号 010196 HK
+      - 新加坡tj-tg频道:@ripaojiedian
+      - 日本2-tg频道:@ripaojiedian
+      - 台湾tj-tg频道:@ripaojiedian
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,39 +52,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 2022-06-14 10:50:43 速度 12023 节点编号 000629 TW
-      - 2022-06-14 11:03:23 速度 12639 节点编号 023309 SG
-      - 2022-06-14 10:48:49 速度 15125 节点编号 010196 HK
+      - 新加坡tj-tg频道:@ripaojiedian
+      - 日本2-tg频道:@ripaojiedian
+      - 台湾tj-tg频道:@ripaojiedian
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾tj-tg频道:@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 2022-06-14 10:50:43 速度 12023 节点编号 000629 TW
-      - 2022-06-14 11:03:23 速度 12639 节点编号 023309 SG
-      - 2022-06-14 10:48:49 速度 15125 节点编号 010196 HK
+      - 新加坡tj-tg频道:@ripaojiedian
+      - 日本2-tg频道:@ripaojiedian
+      - 台湾tj-tg频道:@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 2022-06-14 10:50:43 速度 12023 节点编号 000629 TW
-      - 2022-06-14 11:03:23 速度 12639 节点编号 023309 SG
-      - 2022-06-14 10:48:49 速度 15125 节点编号 010196 HK
+      - 新加坡tj-tg频道:@ripaojiedian
+      - 日本2-tg频道:@ripaojiedian
+      - 台湾tj-tg频道:@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 2022-06-14 10:50:43 速度 12023 节点编号 000629 TW
-      - 2022-06-14 11:03:23 速度 12639 节点编号 023309 SG
-      - 2022-06-14 10:48:49 速度 15125 节点编号 010196 HK
+      - 新加坡tj-tg频道:@ripaojiedian
+      - 日本2-tg频道:@ripaojiedian
+      - 台湾tj-tg频道:@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +101,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 2022-06-14 10:50:43 速度 12023 节点编号 000629 TW
-      - 2022-06-14 11:03:23 速度 12639 节点编号 023309 SG
-      - 2022-06-14 10:48:49 速度 15125 节点编号 010196 HK
+      - 新加坡tj-tg频道:@ripaojiedian
+      - 日本2-tg频道:@ripaojiedian
+      - 台湾tj-tg频道:@ripaojiedian
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
