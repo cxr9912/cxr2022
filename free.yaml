@@ -5,51 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡, server: mi.sg.vpn.gouyun.xyz, port: 20031, type: trojan, password: e6e05155-245c-48f9-87c9-d0d9d8133f8a, sni: mi.sg.vpn.gouyun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾, server: mi.tw.vpn.gouyun.xyz, port: 20030, type: trojan, password: e6e05155-245c-48f9-87c9-d0d9d8133f8a, sni: mi.tw.vpn.gouyun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 印度, server: mi.id2.vpn.gouyun.xyz, port: 20041, type: trojan, password: e6e05155-245c-48f9-87c9-d0d9d8133f8a, sni: mi.id2.vpn.gouyun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国, server: mi.hg.vpn.gouyun.xyz, port: 20022, type: trojan, password: e6e05155-245c-48f9-87c9-d0d9d8133f8a, sni: mi.hg.vpn.gouyun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港, server: azhk.gouyun.xyz, port: 20035, type: trojan, password: e6e05155-245c-48f9-87c9-d0d9d8133f8a, sni: azhk.gouyun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 负载均衡, server: azhk.n.optage.moe, port: 62500, type: trojan, password: d3c34184-e1b5-42d0-8f52-d89c8a095301, sni: azhk.n.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: 日本东京 负载均衡, server: ocijp.n.optage.moe, port: 62500, type: trojan, password: d3c34184-e1b5-42d0-8f52-d89c8a095301, sni: ocijp.n.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: ss丨隧道丨香港100Mbps, server: gx3.mayiyun.shop, port: 10016, type: ss, cipher: aes-256-gcm, password: 94ff1ce8-30d2-4b8f-8973-e7046364f260, udp: true}
+  - {name: 8080丨隧道丨台湾100Mbps, server: gx3.mayiyun.shop, port: 8080, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: down.dingtalk.com}, udp: true}
+  - {name: ss丨隧道丨新加坡100Mbps, server: gx3.mayiyun.shop, port: 10014, type: ss, cipher: aes-256-gcm, password: 94ff1ce8-30d2-4b8f-8973-e7046364f260, udp: true}
+  - {name: 443丨香港1Gbps, server: hk.mayiyun.shop, port: 443, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: open.dingtalk.com}, udp: true}
+  - {name: ss丨隧道丨台湾100Mbps, server: gx3.mayiyun.shop, port: 10015, type: ss, cipher: aes-256-gcm, password: 94ff1ce8-30d2-4b8f-8973-e7046364f260, udp: true}
+  - {name: 443丨华南高速丨100Mbps丨3, server: gx3.mayiyun.shop, port: 443, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: open.dingtalk.com}, udp: true}
+  - {name: ss丨隧道丨德国100Mbps, server: gx3.mayiyun.shop, port: 10018, type: ss, cipher: aes-256-gcm, password: 94ff1ce8-30d2-4b8f-8973-e7046364f260, udp: true}
+  - {name: 8080丨隧道丨香港100Mbps丨2, server: gx.mayiyun.shop, port: 8080, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: down.dingtalk.com}, udp: true}
+  - {name: 80丨华南高速丨100Mbp丨3, server: gx3.mayiyun.shop, port: 80, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: open.dingtalk.com}, udp: true}
+  - {name: 80丨电信停机卡丨华南, server: gx.mayiyun.shop, port: 80, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ll, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: ss丨美国洛杉矶丨, server: usa.mayiyun.shop, port: 20012, type: ss, cipher: aes-256-gcm, password: 94ff1ce8-30d2-4b8f-8973-e7046364f260, udp: true}
+  - {name: 80丨美国洛杉矶丨, server: usa.mayiyun.shop, port: 80, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: open.dingtalk.com}, udp: true}
+  - {name: 80丨美国圣何塞丨, server: usa1.mayiyun.shop, port: 80, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: open.dingtalk.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡
-      - 台湾
-      - 印度
-      - 韩国
-      - 香港
-      - 香港 负载均衡
-      - 日本东京 负载均衡
+      - ss丨隧道丨香港100Mbps
+      - 8080丨隧道丨台湾100Mbps
+      - ss丨隧道丨新加坡100Mbps
+      - 443丨香港1Gbps
+      - ss丨隧道丨台湾100Mbps
+      - 443丨华南高速丨100Mbps丨3
+      - ss丨隧道丨德国100Mbps
+      - 8080丨隧道丨香港100Mbps丨2
+      - 80丨华南高速丨100Mbp丨3
+      - 80丨电信停机卡丨华南
+      - ss丨美国洛杉矶丨
+      - 80丨美国洛杉矶丨
+      - 80丨美国圣何塞丨
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡
-      - 台湾
-      - 印度
-      - 韩国
-      - 香港
-      - 香港 负载均衡
-      - 日本东京 负载均衡
+      - ss丨隧道丨香港100Mbps
+      - 8080丨隧道丨台湾100Mbps
+      - ss丨隧道丨新加坡100Mbps
+      - 443丨香港1Gbps
+      - ss丨隧道丨台湾100Mbps
+      - 443丨华南高速丨100Mbps丨3
+      - ss丨隧道丨德国100Mbps
+      - 8080丨隧道丨香港100Mbps丨2
+      - 80丨华南高速丨100Mbp丨3
+      - 80丨电信停机卡丨华南
+      - ss丨美国洛杉矶丨
+      - 80丨美国洛杉矶丨
+      - 80丨美国圣何塞丨
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡
-      - 台湾
-      - 印度
-      - 韩国
-      - 香港
-      - 香港 负载均衡
-      - 日本东京 负载均衡
+      - ss丨隧道丨香港100Mbps
+      - 8080丨隧道丨台湾100Mbps
+      - ss丨隧道丨新加坡100Mbps
+      - 443丨香港1Gbps
+      - ss丨隧道丨台湾100Mbps
+      - 443丨华南高速丨100Mbps丨3
+      - ss丨隧道丨德国100Mbps
+      - 8080丨隧道丨香港100Mbps丨2
+      - 80丨华南高速丨100Mbp丨3
+      - 80丨电信停机卡丨华南
+      - ss丨美国洛杉矶丨
+      - 80丨美国洛杉矶丨
+      - 80丨美国圣何塞丨
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,58 +92,84 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡
-      - 台湾
-      - 印度
-      - 韩国
-      - 香港
-      - 香港 负载均衡
-      - 日本东京 负载均衡
+      - ss丨隧道丨香港100Mbps
+      - 8080丨隧道丨台湾100Mbps
+      - ss丨隧道丨新加坡100Mbps
+      - 443丨香港1Gbps
+      - ss丨隧道丨台湾100Mbps
+      - 443丨华南高速丨100Mbps丨3
+      - ss丨隧道丨德国100Mbps
+      - 8080丨隧道丨香港100Mbps丨2
+      - 80丨华南高速丨100Mbp丨3
+      - 80丨电信停机卡丨华南
+      - ss丨美国洛杉矶丨
+      - 80丨美国洛杉矶丨
+      - 80丨美国圣何塞丨
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾
-      - 香港
-      - 香港 负载均衡
+      - ss丨隧道丨香港100Mbps
+      - 8080丨隧道丨台湾100Mbps
+      - 443丨香港1Gbps
+      - ss丨隧道丨台湾100Mbps
+      - 8080丨隧道丨香港100Mbps丨2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡
-      - 台湾
-      - 印度
-      - 韩国
-      - 香港
-      - 香港 负载均衡
-      - 日本东京 负载均衡
+      - ss丨隧道丨香港100Mbps
+      - 8080丨隧道丨台湾100Mbps
+      - ss丨隧道丨新加坡100Mbps
+      - 443丨香港1Gbps
+      - ss丨隧道丨台湾100Mbps
+      - 443丨华南高速丨100Mbps丨3
+      - ss丨隧道丨德国100Mbps
+      - 8080丨隧道丨香港100Mbps丨2
+      - 80丨华南高速丨100Mbp丨3
+      - 80丨电信停机卡丨华南
+      - ss丨美国洛杉矶丨
+      - 80丨美国洛杉矶丨
+      - 80丨美国圣何塞丨
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡
-      - 台湾
-      - 印度
-      - 韩国
-      - 香港
-      - 香港 负载均衡
-      - 日本东京 负载均衡
+      - ss丨隧道丨香港100Mbps
+      - 8080丨隧道丨台湾100Mbps
+      - ss丨隧道丨新加坡100Mbps
+      - 443丨香港1Gbps
+      - ss丨隧道丨台湾100Mbps
+      - 443丨华南高速丨100Mbps丨3
+      - ss丨隧道丨德国100Mbps
+      - 8080丨隧道丨香港100Mbps丨2
+      - 80丨华南高速丨100Mbp丨3
+      - 80丨电信停机卡丨华南
+      - ss丨美国洛杉矶丨
+      - 80丨美国洛杉矶丨
+      - 80丨美国圣何塞丨
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡
-      - 台湾
-      - 印度
-      - 韩国
-      - 香港
-      - 香港 负载均衡
-      - 日本东京 负载均衡
+      - ss丨隧道丨香港100Mbps
+      - 8080丨隧道丨台湾100Mbps
+      - ss丨隧道丨新加坡100Mbps
+      - 443丨香港1Gbps
+      - ss丨隧道丨台湾100Mbps
+      - 443丨华南高速丨100Mbps丨3
+      - ss丨隧道丨德国100Mbps
+      - 8080丨隧道丨香港100Mbps丨2
+      - 80丨华南高速丨100Mbp丨3
+      - 80丨电信停机卡丨华南
+      - ss丨美国洛杉矶丨
+      - 80丨美国洛杉矶丨
+      - 80丨美国圣何塞丨
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -135,13 +185,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡
-      - 台湾
-      - 印度
-      - 韩国
-      - 香港
-      - 香港 负载均衡
-      - 日本东京 负载均衡
+      - ss丨隧道丨香港100Mbps
+      - 8080丨隧道丨台湾100Mbps
+      - ss丨隧道丨新加坡100Mbps
+      - 443丨香港1Gbps
+      - ss丨隧道丨台湾100Mbps
+      - 443丨华南高速丨100Mbps丨3
+      - ss丨隧道丨德国100Mbps
+      - 8080丨隧道丨香港100Mbps丨2
+      - 80丨华南高速丨100Mbp丨3
+      - 80丨电信停机卡丨华南
+      - ss丨美国洛杉矶丨
+      - 80丨美国洛杉矶丨
+      - 80丨美国圣何塞丨
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
