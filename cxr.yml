@@ -5,79 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: ss丨隧道丨台湾100Mbps, server: gx3.mayiyun.shop, port: 10015, type: ss, cipher: aes-256-gcm, password: 94ff1ce8-30d2-4b8f-8973-e7046364f260, udp: true}
-  - {name: ss丨隧道丨新加坡100Mbps, server: gx3.mayiyun.shop, port: 10014, type: ss, cipher: aes-256-gcm, password: 94ff1ce8-30d2-4b8f-8973-e7046364f260, udp: true}
-  - {name: 8080丨隧道丨台湾100Mbps, server: gx3.mayiyun.shop, port: 8080, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: down.dingtalk.com}, udp: true}
-  - {name: 80丨电信停机卡丨华南, server: gx.mayiyun.shop, port: 80, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ll, ws-headers: {Host: a.189.cn}, udp: true}
-  - {name: ss丨隧道丨德国100Mbps, server: gx3.mayiyun.shop, port: 10018, type: ss, cipher: aes-256-gcm, password: 94ff1ce8-30d2-4b8f-8973-e7046364f260, udp: true}
-  - {name: 80丨华南高速丨100Mbps, server: gx.mayiyun.shop, port: 80, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ll, ws-headers: {Host: open.dingtalk.com}, udp: true}
-  - {name: 443丨华南高速丨100Mbps丨3, server: gx3.mayiyun.shop, port: 443, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: open.dingtalk.com}, udp: true}
-  - {name: ss丨美国圣何塞丨, server: usa1.mayiyun.shop, port: 20012, type: ss, cipher: aes-256-gcm, password: 94ff1ce8-30d2-4b8f-8973-e7046364f260, udp: true}
-  - {name: ss丨美国洛杉矶丨, server: usa.mayiyun.shop, port: 20012, type: ss, cipher: aes-256-gcm, password: 94ff1ce8-30d2-4b8f-8973-e7046364f260, udp: true}
-  - {name: 80丨美国圣何塞丨, server: usa1.mayiyun.shop, port: 80, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: open.dingtalk.com}, udp: true}
-  - {name: 80丨华南高速丨100Mbp丨3, server: gx3.mayiyun.shop, port: 80, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: open.dingtalk.com}, udp: true}
-  - {name: ss丨日本500Mbps丨, server: jp5.mayiyun.shop, port: 10014, type: ss, cipher: chacha20-ietf-poly1305, password: 94ff1ce8-30d2-4b8f-8973-e7046364f260, udp: true}
-  - {name: 80丨上海丨8m丨游戏节点, server: sh.mayiyun.shop, port: 80, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: down.dingtalk.com}, udp: true}
-  - {name: 80丨美国洛杉矶丨, server: usa.mayiyun.shop, port: 80, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: open.dingtalk.com}, udp: true}
+  - {name: "0.8x[NF][IEPL]Malaysia", server: 36.138.178.149, port: 33312, type: ss, cipher: aes-256-gcm, password: 79a2c6d5-4afd-4aa5-aaa6-7e6a968b5ca7, udp: true}
+  - {name: "2x[NF][D+][IEPL]1NB Taiwan", server: 36.138.178.149, port: 50906, type: ss, cipher: aes-256-gcm, password: 79a2c6d5-4afd-4aa5-aaa6-7e6a968b5ca7, udp: true}
+  - {name: "0.5x[NF][D+][IEPL]Oracle Singapore 2", server: 36.138.178.149, port: 38864, type: ss, cipher: aes-256-gcm, password: 79a2c6d5-4afd-4aa5-aaa6-7e6a968b5ca7, udp: true}
+  - {name: "0.8x[BBC][NF][D+][Direct]Oracle United Kingdom Newport", server: 36.138.178.149, port: 64009, type: ss, cipher: aes-256-gcm, password: 79a2c6d5-4afd-4aa5-aaa6-7e6a968b5ca7, udp: true}
+  - {name: "15x[IEPL]DW Argentina Rosario", server: 36.138.178.149, port: 52492, type: ss, cipher: aes-256-gcm, password: 79a2c6d5-4afd-4aa5-aaa6-7e6a968b5ca7, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ss丨隧道丨台湾100Mbps
-      - ss丨隧道丨新加坡100Mbps
-      - 8080丨隧道丨台湾100Mbps
-      - 80丨电信停机卡丨华南
-      - ss丨隧道丨德国100Mbps
-      - 80丨华南高速丨100Mbps
-      - 443丨华南高速丨100Mbps丨3
-      - ss丨美国圣何塞丨
-      - ss丨美国洛杉矶丨
-      - 80丨美国圣何塞丨
-      - 80丨华南高速丨100Mbp丨3
-      - ss丨日本500Mbps丨
-      - 80丨上海丨8m丨游戏节点
-      - 80丨美国洛杉矶丨
+      - 0.8x[NF][IEPL]Malaysia
+      - 2x[NF][D+][IEPL]1NB Taiwan
+      - 0.5x[NF][D+][IEPL]Oracle Singapore 2
+      - 0.8x[BBC][NF][D+][Direct]Oracle United Kingdom Newport
+      - 15x[IEPL]DW Argentina Rosario
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - ss丨隧道丨台湾100Mbps
-      - ss丨隧道丨新加坡100Mbps
-      - 8080丨隧道丨台湾100Mbps
-      - 80丨电信停机卡丨华南
-      - ss丨隧道丨德国100Mbps
-      - 80丨华南高速丨100Mbps
-      - 443丨华南高速丨100Mbps丨3
-      - ss丨美国圣何塞丨
-      - ss丨美国洛杉矶丨
-      - 80丨美国圣何塞丨
-      - 80丨华南高速丨100Mbp丨3
-      - ss丨日本500Mbps丨
-      - 80丨上海丨8m丨游戏节点
-      - 80丨美国洛杉矶丨
+      - 0.8x[NF][IEPL]Malaysia
+      - 2x[NF][D+][IEPL]1NB Taiwan
+      - 0.5x[NF][D+][IEPL]Oracle Singapore 2
+      - 0.8x[BBC][NF][D+][Direct]Oracle United Kingdom Newport
+      - 15x[IEPL]DW Argentina Rosario
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ss丨隧道丨台湾100Mbps
-      - ss丨隧道丨新加坡100Mbps
-      - 8080丨隧道丨台湾100Mbps
-      - 80丨电信停机卡丨华南
-      - ss丨隧道丨德国100Mbps
-      - 80丨华南高速丨100Mbps
-      - 443丨华南高速丨100Mbps丨3
-      - ss丨美国圣何塞丨
-      - ss丨美国洛杉矶丨
-      - 80丨美国圣何塞丨
-      - 80丨华南高速丨100Mbp丨3
-      - ss丨日本500Mbps丨
-      - 80丨上海丨8m丨游戏节点
-      - 80丨美国洛杉矶丨
+      - 0.8x[NF][IEPL]Malaysia
+      - 2x[NF][D+][IEPL]1NB Taiwan
+      - 0.5x[NF][D+][IEPL]Oracle Singapore 2
+      - 0.8x[BBC][NF][D+][Direct]Oracle United Kingdom Newport
+      - 15x[IEPL]DW Argentina Rosario
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,85 +60,47 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ss丨隧道丨台湾100Mbps
-      - ss丨隧道丨新加坡100Mbps
-      - 8080丨隧道丨台湾100Mbps
-      - 80丨电信停机卡丨华南
-      - ss丨隧道丨德国100Mbps
-      - 80丨华南高速丨100Mbps
-      - 443丨华南高速丨100Mbps丨3
-      - ss丨美国圣何塞丨
-      - ss丨美国洛杉矶丨
-      - 80丨美国圣何塞丨
-      - 80丨华南高速丨100Mbp丨3
-      - ss丨日本500Mbps丨
-      - 80丨上海丨8m丨游戏节点
-      - 80丨美国洛杉矶丨
+      - 0.8x[NF][IEPL]Malaysia
+      - 2x[NF][D+][IEPL]1NB Taiwan
+      - 0.5x[NF][D+][IEPL]Oracle Singapore 2
+      - 0.8x[BBC][NF][D+][Direct]Oracle United Kingdom Newport
+      - 15x[IEPL]DW Argentina Rosario
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - ss丨隧道丨台湾100Mbps
-      - 8080丨隧道丨台湾100Mbps
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - ss丨隧道丨台湾100Mbps
-      - ss丨隧道丨新加坡100Mbps
-      - 8080丨隧道丨台湾100Mbps
-      - 80丨电信停机卡丨华南
-      - ss丨隧道丨德国100Mbps
-      - 80丨华南高速丨100Mbps
-      - 443丨华南高速丨100Mbps丨3
-      - ss丨美国圣何塞丨
-      - ss丨美国洛杉矶丨
-      - 80丨美国圣何塞丨
-      - 80丨华南高速丨100Mbp丨3
-      - ss丨日本500Mbps丨
-      - 80丨上海丨8m丨游戏节点
-      - 80丨美国洛杉矶丨
+      - 0.8x[NF][IEPL]Malaysia
+      - 2x[NF][D+][IEPL]1NB Taiwan
+      - 0.5x[NF][D+][IEPL]Oracle Singapore 2
+      - 0.8x[BBC][NF][D+][Direct]Oracle United Kingdom Newport
+      - 15x[IEPL]DW Argentina Rosario
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - ss丨隧道丨台湾100Mbps
-      - ss丨隧道丨新加坡100Mbps
-      - 8080丨隧道丨台湾100Mbps
-      - 80丨电信停机卡丨华南
-      - ss丨隧道丨德国100Mbps
-      - 80丨华南高速丨100Mbps
-      - 443丨华南高速丨100Mbps丨3
-      - ss丨美国圣何塞丨
-      - ss丨美国洛杉矶丨
-      - 80丨美国圣何塞丨
-      - 80丨华南高速丨100Mbp丨3
-      - ss丨日本500Mbps丨
-      - 80丨上海丨8m丨游戏节点
-      - 80丨美国洛杉矶丨
+      - 0.8x[NF][IEPL]Malaysia
+      - 2x[NF][D+][IEPL]1NB Taiwan
+      - 0.5x[NF][D+][IEPL]Oracle Singapore 2
+      - 0.8x[BBC][NF][D+][Direct]Oracle United Kingdom Newport
+      - 15x[IEPL]DW Argentina Rosario
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ss丨隧道丨台湾100Mbps
-      - ss丨隧道丨新加坡100Mbps
-      - 8080丨隧道丨台湾100Mbps
-      - 80丨电信停机卡丨华南
-      - ss丨隧道丨德国100Mbps
-      - 80丨华南高速丨100Mbps
-      - 443丨华南高速丨100Mbps丨3
-      - ss丨美国圣何塞丨
-      - ss丨美国洛杉矶丨
-      - 80丨美国圣何塞丨
-      - 80丨华南高速丨100Mbp丨3
-      - ss丨日本500Mbps丨
-      - 80丨上海丨8m丨游戏节点
-      - 80丨美国洛杉矶丨
+      - 0.8x[NF][IEPL]Malaysia
+      - 2x[NF][D+][IEPL]1NB Taiwan
+      - 0.5x[NF][D+][IEPL]Oracle Singapore 2
+      - 0.8x[BBC][NF][D+][Direct]Oracle United Kingdom Newport
+      - 15x[IEPL]DW Argentina Rosario
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -190,20 +116,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ss丨隧道丨台湾100Mbps
-      - ss丨隧道丨新加坡100Mbps
-      - 8080丨隧道丨台湾100Mbps
-      - 80丨电信停机卡丨华南
-      - ss丨隧道丨德国100Mbps
-      - 80丨华南高速丨100Mbps
-      - 443丨华南高速丨100Mbps丨3
-      - ss丨美国圣何塞丨
-      - ss丨美国洛杉矶丨
-      - 80丨美国圣何塞丨
-      - 80丨华南高速丨100Mbp丨3
-      - ss丨日本500Mbps丨
-      - 80丨上海丨8m丨游戏节点
-      - 80丨美国洛杉矶丨
+      - 0.8x[NF][IEPL]Malaysia
+      - 2x[NF][D+][IEPL]1NB Taiwan
+      - 0.5x[NF][D+][IEPL]Oracle Singapore 2
+      - 0.8x[BBC][NF][D+][Direct]Oracle United Kingdom Newport
+      - 15x[IEPL]DW Argentina Rosario
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
