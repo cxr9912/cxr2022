@@ -5,59 +5,155 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20735, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: "台湾 I5 | IEPL,限时体验8小时 | 0x", server: 120.232.132.71, port: 25680, type: trojan, password: 3b4a79d, skip-cert-verify: true, udp: true}
-  - {name: 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20728, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20733, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本|01|LIN香港AZ中转, server: azhk2.170809.xyz, port: 64293, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本|05|OC香港AZ中转, server: azhk2.170809.xyz, port: 31282, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|17AZ中转, server: azhk1.170809.xyz, port: 53410, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|17香港AZ中转, server: azhk2.170809.xyz, port: 62277, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|01|LIN香港AZ中转, server: azhk1.170809.xyz, port: 35686, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|01|OC香港AZ中转, server: azhk2.170809.xyz, port: 21989, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|02|DO香港AZ中转, server: azhk1.170809.xyz, port: 41975, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|03香港AZ中转, server: azhk1.170809.xyz, port: 63987, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|13香港AZ中转, server: azhk2.170809.xyz, port: 33932, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|21AZ中转, server: azhk1.170809.xyz, port: 31578, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|08奈飞香港AZ中转, server: azhk2.170809.xyz, port: 57557, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|07奈飞香港AZ中转, server: azhk1.170809.xyz, port: 51389, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|12香港AZ中转, server: azhk2.170809.xyz, port: 44450, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|12奈飞联通中转, server: azhk1.170809.xyz, port: 19494, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|10AZ中转, server: azhk1.170809.xyz, port: 39947, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|06奈飞, server: hkmax06.170809.xyz, port: 443, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: hkmax06.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|10奈飞, server: hkmax10.170809.xyz, port: 444, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: hkmax10.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|12奈飞, server: hkmax12.170809.xyz, port: 444, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: hkmax12.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|12|奈飞, server: hk12.170809.xyz, port: 443, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: hk12.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 韩国|04|AZ, server: kr04.170809.xyz, port: 45555, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: kr04.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|13|香港AZ中转, server: azhk2.170809.xyz, port: 36730, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|07奈飞AZ三线中转, server: azhk2.170809.xyz, port: 48146, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国|04|RN香港AZ中转, server: azhk2.170809.xyz, port: 52718, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|03|OC奈飞香港AZ中转, server: azhk1.170809.xyz, port: 55745, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本|04|OC香港AZ中转, server: azhk2.170809.xyz, port: 32145, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|22AZ中转, server: azhk2.170809.xyz, port: 23693, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|08|DO香港AZ中转, server: azhk2.170809.xyz, port: 30808, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本|03|LINAZ中转, server: azhk1.170809.xyz, port: 60003, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国|02|RN香港AZ中转, server: azhk2.170809.xyz, port: 26197, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 印度|02|LIN香港AZ中转, server: azhk2.170809.xyz, port: 42776, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 韩国|04|AZ香港AZ中转, server: azhk1.170809.xyz, port: 47455, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|20AZ中转, server: azhk1.170809.xyz, port: 53802, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|04|OC香港AZ中转, server: azhk1.170809.xyz, port: 25393, type: trojan, password: 85435e43-f002-4e77-85f1-5e72eb39e059, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾 I5 | IEPL,限时体验8小时 | 0x
-      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 日本|01|LIN香港AZ中转
+      - 日本|05|OC香港AZ中转
+      - 香港|17AZ中转
+      - 香港|17香港AZ中转
+      - 新加坡|01|LIN香港AZ中转
+      - 新加坡|01|OC香港AZ中转
+      - 新加坡|02|DO香港AZ中转
+      - 香港|03香港AZ中转
+      - 香港|13香港AZ中转
+      - 香港|21AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞香港AZ中转
+      - 香港|12香港AZ中转
+      - 香港|12奈飞联通中转
+      - 香港|10AZ中转
+      - 香港|06奈飞
+      - 香港|10奈飞
+      - 香港|12奈飞
+      - 香港|12|奈飞
+      - 韩国|04|AZ
+      - 香港|13|香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 美国|04|RN香港AZ中转
+      - 新加坡|03|OC奈飞香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 新加坡|08|DO香港AZ中转
+      - 日本|03|LINAZ中转
+      - 美国|02|RN香港AZ中转
+      - 印度|02|LIN香港AZ中转
+      - 韩国|04|AZ香港AZ中转
+      - 香港|20AZ中转
+      - 新加坡|04|OC香港AZ中转
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾 I5 | IEPL,限时体验8小时 | 0x
-      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 日本|01|LIN香港AZ中转
+      - 日本|05|OC香港AZ中转
+      - 香港|17AZ中转
+      - 香港|17香港AZ中转
+      - 新加坡|01|LIN香港AZ中转
+      - 新加坡|01|OC香港AZ中转
+      - 新加坡|02|DO香港AZ中转
+      - 香港|03香港AZ中转
+      - 香港|13香港AZ中转
+      - 香港|21AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞香港AZ中转
+      - 香港|12香港AZ中转
+      - 香港|12奈飞联通中转
+      - 香港|10AZ中转
+      - 香港|06奈飞
+      - 香港|10奈飞
+      - 香港|12奈飞
+      - 香港|12|奈飞
+      - 韩国|04|AZ
+      - 香港|13|香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 美国|04|RN香港AZ中转
+      - 新加坡|03|OC奈飞香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 新加坡|08|DO香港AZ中转
+      - 日本|03|LINAZ中转
+      - 美国|02|RN香港AZ中转
+      - 印度|02|LIN香港AZ中转
+      - 韩国|04|AZ香港AZ中转
+      - 香港|20AZ中转
+      - 新加坡|04|OC香港AZ中转
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾 I5 | IEPL,限时体验8小时 | 0x
-      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 日本|01|LIN香港AZ中转
+      - 日本|05|OC香港AZ中转
+      - 香港|17AZ中转
+      - 香港|17香港AZ中转
+      - 新加坡|01|LIN香港AZ中转
+      - 新加坡|01|OC香港AZ中转
+      - 新加坡|02|DO香港AZ中转
+      - 香港|03香港AZ中转
+      - 香港|13香港AZ中转
+      - 香港|21AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞香港AZ中转
+      - 香港|12香港AZ中转
+      - 香港|12奈飞联通中转
+      - 香港|10AZ中转
+      - 香港|06奈飞
+      - 香港|10奈飞
+      - 香港|12奈飞
+      - 香港|12|奈飞
+      - 韩国|04|AZ
+      - 香港|13|香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 美国|04|RN香港AZ中转
+      - 新加坡|03|OC奈飞香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 新加坡|08|DO香港AZ中转
+      - 日本|03|LINAZ中转
+      - 美国|02|RN香港AZ中转
+      - 印度|02|LIN香港AZ中转
+      - 韩国|04|AZ香港AZ中转
+      - 香港|20AZ中转
+      - 新加坡|04|OC香港AZ中转
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,67 +172,190 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾 I5 | IEPL,限时体验8小时 | 0x
-      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 日本|01|LIN香港AZ中转
+      - 日本|05|OC香港AZ中转
+      - 香港|17AZ中转
+      - 香港|17香港AZ中转
+      - 新加坡|01|LIN香港AZ中转
+      - 新加坡|01|OC香港AZ中转
+      - 新加坡|02|DO香港AZ中转
+      - 香港|03香港AZ中转
+      - 香港|13香港AZ中转
+      - 香港|21AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞香港AZ中转
+      - 香港|12香港AZ中转
+      - 香港|12奈飞联通中转
+      - 香港|10AZ中转
+      - 香港|06奈飞
+      - 香港|10奈飞
+      - 香港|12奈飞
+      - 香港|12|奈飞
+      - 韩国|04|AZ
+      - 香港|13|香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 美国|04|RN香港AZ中转
+      - 新加坡|03|OC奈飞香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 新加坡|08|DO香港AZ中转
+      - 日本|03|LINAZ中转
+      - 美国|02|RN香港AZ中转
+      - 印度|02|LIN香港AZ中转
+      - 韩国|04|AZ香港AZ中转
+      - 香港|20AZ中转
+      - 新加坡|04|OC香港AZ中转
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾 I5 | IEPL,限时体验8小时 | 0x
+      - 日本|01|LIN香港AZ中转
+      - 日本|05|OC香港AZ中转
+      - 香港|17AZ中转
+      - 香港|17香港AZ中转
+      - 新加坡|01|LIN香港AZ中转
+      - 新加坡|01|OC香港AZ中转
+      - 新加坡|02|DO香港AZ中转
+      - 香港|03香港AZ中转
+      - 香港|13香港AZ中转
+      - 香港|21AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞香港AZ中转
+      - 香港|12香港AZ中转
+      - 香港|12奈飞联通中转
+      - 香港|10AZ中转
+      - 香港|06奈飞
+      - 香港|10奈飞
+      - 香港|12奈飞
+      - 香港|12|奈飞
+      - 香港|13|香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 美国|04|RN香港AZ中转
+      - 新加坡|03|OC奈飞香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 新加坡|08|DO香港AZ中转
+      - 美国|02|RN香港AZ中转
+      - 印度|02|LIN香港AZ中转
+      - 韩国|04|AZ香港AZ中转
+      - 香港|20AZ中转
+      - 新加坡|04|OC香港AZ中转
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾 I5 | IEPL,限时体验8小时 | 0x
-      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 日本|01|LIN香港AZ中转
+      - 日本|05|OC香港AZ中转
+      - 香港|17AZ中转
+      - 香港|17香港AZ中转
+      - 新加坡|01|LIN香港AZ中转
+      - 新加坡|01|OC香港AZ中转
+      - 新加坡|02|DO香港AZ中转
+      - 香港|03香港AZ中转
+      - 香港|13香港AZ中转
+      - 香港|21AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞香港AZ中转
+      - 香港|12香港AZ中转
+      - 香港|12奈飞联通中转
+      - 香港|10AZ中转
+      - 香港|06奈飞
+      - 香港|10奈飞
+      - 香港|12奈飞
+      - 香港|12|奈飞
+      - 韩国|04|AZ
+      - 香港|13|香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 美国|04|RN香港AZ中转
+      - 新加坡|03|OC奈飞香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 新加坡|08|DO香港AZ中转
+      - 日本|03|LINAZ中转
+      - 美国|02|RN香港AZ中转
+      - 印度|02|LIN香港AZ中转
+      - 韩国|04|AZ香港AZ中转
+      - 香港|20AZ中转
+      - 新加坡|04|OC香港AZ中转
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾 I5 | IEPL,限时体验8小时 | 0x
-      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 日本|01|LIN香港AZ中转
+      - 日本|05|OC香港AZ中转
+      - 香港|17AZ中转
+      - 香港|17香港AZ中转
+      - 新加坡|01|LIN香港AZ中转
+      - 新加坡|01|OC香港AZ中转
+      - 新加坡|02|DO香港AZ中转
+      - 香港|03香港AZ中转
+      - 香港|13香港AZ中转
+      - 香港|21AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞香港AZ中转
+      - 香港|12香港AZ中转
+      - 香港|12奈飞联通中转
+      - 香港|10AZ中转
+      - 香港|06奈飞
+      - 香港|10奈飞
+      - 香港|12奈飞
+      - 香港|12|奈飞
+      - 韩国|04|AZ
+      - 香港|13|香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 美国|04|RN香港AZ中转
+      - 新加坡|03|OC奈飞香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 新加坡|08|DO香港AZ中转
+      - 日本|03|LINAZ中转
+      - 美国|02|RN香港AZ中转
+      - 印度|02|LIN香港AZ中转
+      - 韩国|04|AZ香港AZ中转
+      - 香港|20AZ中转
+      - 新加坡|04|OC香港AZ中转
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾 I5 | IEPL,限时体验8小时 | 0x
-      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 日本|01|LIN香港AZ中转
+      - 日本|05|OC香港AZ中转
+      - 香港|17AZ中转
+      - 香港|17香港AZ中转
+      - 新加坡|01|LIN香港AZ中转
+      - 新加坡|01|OC香港AZ中转
+      - 新加坡|02|DO香港AZ中转
+      - 香港|03香港AZ中转
+      - 香港|13香港AZ中转
+      - 香港|21AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞香港AZ中转
+      - 香港|12香港AZ中转
+      - 香港|12奈飞联通中转
+      - 香港|10AZ中转
+      - 香港|06奈飞
+      - 香港|10奈飞
+      - 香港|12奈飞
+      - 香港|12|奈飞
+      - 韩国|04|AZ
+      - 香港|13|香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 美国|04|RN香港AZ中转
+      - 新加坡|03|OC奈飞香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 新加坡|08|DO香港AZ中转
+      - 日本|03|LINAZ中转
+      - 美国|02|RN香港AZ中转
+      - 印度|02|LIN香港AZ中转
+      - 韩国|04|AZ香港AZ中转
+      - 香港|20AZ中转
+      - 新加坡|04|OC香港AZ中转
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -152,15 +371,39 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾 I5 | IEPL,限时体验8小时 | 0x
-      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 日本|01|LIN香港AZ中转
+      - 日本|05|OC香港AZ中转
+      - 香港|17AZ中转
+      - 香港|17香港AZ中转
+      - 新加坡|01|LIN香港AZ中转
+      - 新加坡|01|OC香港AZ中转
+      - 新加坡|02|DO香港AZ中转
+      - 香港|03香港AZ中转
+      - 香港|13香港AZ中转
+      - 香港|21AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞香港AZ中转
+      - 香港|12香港AZ中转
+      - 香港|12奈飞联通中转
+      - 香港|10AZ中转
+      - 香港|06奈飞
+      - 香港|10奈飞
+      - 香港|12奈飞
+      - 香港|12|奈飞
+      - 韩国|04|AZ
+      - 香港|13|香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 美国|04|RN香港AZ中转
+      - 新加坡|03|OC奈飞香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 新加坡|08|DO香港AZ中转
+      - 日本|03|LINAZ中转
+      - 美国|02|RN香港AZ中转
+      - 印度|02|LIN香港AZ中转
+      - 韩国|04|AZ香港AZ中转
+      - 香港|20AZ中转
+      - 新加坡|04|OC香港AZ中转
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
