@@ -5,27 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Hongkong 1, server: hk1.fuzzypn.me, port: 80, type: vmess, uuid: 872277ec-0e63-434f-9be2-5cf96ff6d661, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/fuzzypn?ed=2048", ws-headers: {Host: v.akamaized.net}, udp: true}
+  - {name: 新加坡|tg频道:@ripaojiedian, server: gzyd1.xxcv.cc, port: 30040, type: trojan, password: 5108ad44-d614-459f-95bf-798b9eb3fdb8, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: 香港|tg频道:@ripaojiedian, server: gzyd2.xxcv.cc, port: 30160, type: trojan, password: 5108ad44-d614-459f-95bf-798b9eb3fdb8, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: 使用前更新订阅, server: 103.180.149.88, port: 80, type: vmess, uuid: 3849e48e-f276-4612-a1b9-6f07d1ab1bad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vpngiare.net, ws-headers: {Host: vpngiare.akamaized.net}, udp: true}
+  - {name: 新加坡2-tg频道:@ripaojiedian, server: zh01lv5sgp03.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: 28880f3f-07f4-4bc7-825f-0ac0ebc07047, udp: true}
+  - {name: Az香港|tg频道:@ripaojiedian, server: hk1.ningmengshui.xyz, port: 80, type: vmess, uuid: b17f9999-1608-4911-86f2-d0cf20bf1356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.youku.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Hongkong 1
+      - 新加坡|tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 使用前更新订阅
+      - 新加坡2-tg频道:@ripaojiedian
+      - Az香港|tg频道:@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Hongkong 1
+      - 新加坡|tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 使用前更新订阅
+      - 新加坡2-tg频道:@ripaojiedian
+      - Az香港|tg频道:@ripaojiedian
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Hongkong 1
+      - 新加坡|tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 使用前更新订阅
+      - 新加坡2-tg频道:@ripaojiedian
+      - Az香港|tg频道:@ripaojiedian
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -44,31 +60,49 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Hongkong 1
+      - 新加坡|tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 使用前更新订阅
+      - 新加坡2-tg频道:@ripaojiedian
+      - Az香港|tg频道:@ripaojiedian
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港|tg频道:@ripaojiedian
+      - Az香港|tg频道:@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Hongkong 1
+      - 新加坡|tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 使用前更新订阅
+      - 新加坡2-tg频道:@ripaojiedian
+      - Az香港|tg频道:@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Hongkong 1
+      - 新加坡|tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 使用前更新订阅
+      - 新加坡2-tg频道:@ripaojiedian
+      - Az香港|tg频道:@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Hongkong 1
+      - 新加坡|tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 使用前更新订阅
+      - 新加坡2-tg频道:@ripaojiedian
+      - Az香港|tg频道:@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,7 +118,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Hongkong 1
+      - 新加坡|tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 使用前更新订阅
+      - 新加坡2-tg频道:@ripaojiedian
+      - Az香港|tg频道:@ripaojiedian
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
