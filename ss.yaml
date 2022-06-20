@@ -6,10 +6,16 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: Az香港1, server: hk1.ningmengshui.xyz, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.youku.com}, udp: true}
-  - {name: Az香港4, server: hk4.ningmengshui.xyz, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk4.ningmengshui.xyz}, udp: true}
-  - {name: Az香港12, server: hk12.ningmengshui.xyz, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk12.ningmengshui.xyz}, udp: true}
+  - {name: Az香港7, server: hk7.ningmengshui.xyz, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk7.ningmengshui.xyz]}}, udp: true}
+  - {name: Az香港13, server: hk13.ningmengshui.xyz, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk13.ningmengshui.xyz]}}, udp: true}
+  - {name: Az香港2, server: hk2.ningmengshui.xyz, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk2.ningmengshui.xyz]}}, udp: true}
+  - {name: Az香港5, server: hk5.ningmengshui.xyz, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk5.ningmengshui.xyz]}}, udp: true}
+  - {name: Az香港14, server: hk14.ningmengshui.xyz, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ali2.a.yximgs.com}, udp: true}
+  - {name: Az香港8, server: hk8.ningmengshui.xyz, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk8.ningmengshui.xyz]}}, udp: true}
+  - {name: Az香港3, server: hk3.ningmengshui.xyz, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk3.ningmengshui.xyz]}}, udp: true}
+  - {name: Az香港10, server: hk10.ningmengshui.xyz, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk10.ningmengshui.xyz]}}, udp: true}
+  - {name: AZ香港11, server: hk11.ningmengshui.xyz, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk11.ningmengshui.xyz]}}, udp: true}
   - {name: opc日本2, server: 152.69.199.111, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.youku.com}, udp: true}
-  - {name: 江苏BGP, server: 43.248.79.72, port: 80, type: vmess, uuid: 1e9f956b-1720-4519-b5c9-333247f6c23f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -17,20 +23,32 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Az香港1
-      - Az香港4
-      - Az香港12
+      - Az香港7
+      - Az香港13
+      - Az香港2
+      - Az香港5
+      - Az香港14
+      - Az香港8
+      - Az香港3
+      - Az香港10
+      - AZ香港11
       - opc日本2
-      - 江苏BGP
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - Az香港1
-      - Az香港4
-      - Az香港12
+      - Az香港7
+      - Az香港13
+      - Az香港2
+      - Az香港5
+      - Az香港14
+      - Az香港8
+      - Az香港3
+      - Az香港10
+      - AZ香港11
       - opc日本2
-      - 江苏BGP
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -38,10 +56,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Az香港1
-      - Az香港4
-      - Az香港12
+      - Az香港7
+      - Az香港13
+      - Az香港2
+      - Az香港5
+      - Az香港14
+      - Az香港8
+      - Az香港3
+      - Az香港10
+      - AZ香港11
       - opc日本2
-      - 江苏BGP
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -61,17 +85,30 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Az香港1
-      - Az香港4
-      - Az香港12
+      - Az香港7
+      - Az香港13
+      - Az香港2
+      - Az香港5
+      - Az香港14
+      - Az香港8
+      - Az香港3
+      - Az香港10
+      - AZ香港11
       - opc日本2
-      - 江苏BGP
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - Az香港1
-      - Az香港4
-      - Az香港12
+      - Az香港7
+      - Az香港13
+      - Az香港2
+      - Az香港5
+      - Az香港14
+      - Az香港8
+      - Az香港3
+      - Az香港10
+      - AZ香港11
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -79,20 +116,32 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - Az香港1
-      - Az香港4
-      - Az香港12
+      - Az香港7
+      - Az香港13
+      - Az香港2
+      - Az香港5
+      - Az香港14
+      - Az香港8
+      - Az香港3
+      - Az香港10
+      - AZ香港11
       - opc日本2
-      - 江苏BGP
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - Az香港1
-      - Az香港4
-      - Az香港12
+      - Az香港7
+      - Az香港13
+      - Az香港2
+      - Az香港5
+      - Az香港14
+      - Az香港8
+      - Az香港3
+      - Az香港10
+      - AZ香港11
       - opc日本2
-      - 江苏BGP
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -100,10 +149,16 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - Az香港1
-      - Az香港4
-      - Az香港12
+      - Az香港7
+      - Az香港13
+      - Az香港2
+      - Az香港5
+      - Az香港14
+      - Az香港8
+      - Az香港3
+      - Az香港10
+      - AZ香港11
       - opc日本2
-      - 江苏BGP
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -120,10 +175,16 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - Az香港1
-      - Az香港4
-      - Az香港12
+      - Az香港7
+      - Az香港13
+      - Az香港2
+      - Az香港5
+      - Az香港14
+      - Az香港8
+      - Az香港3
+      - Az香港10
+      - AZ香港11
       - opc日本2
-      - 江苏BGP
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
