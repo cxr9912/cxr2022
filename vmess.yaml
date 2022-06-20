@@ -5,111 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 台湾 ❀原生❀大妮妮❀1x, server: dx.yhy520.xyz, port: 58821, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾 ❀原生❀小妮妮❀1x, server: lt.yhy520.xyz, port: 58827, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 ❀原生❀小妮妮❀1x, server: lt.yhy520.xyz, port: 58820, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 ❀小妮妮2号❀1x, server: lt.yhy520.xyz, port: 58802, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 ❀大妮妮1号❀1x, server: dx.yhy520.xyz, port: 58803, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 ❀大妮妮2号❀1x, server: lt.yhy520.xyz, port: 58819, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 印度 ❀大妮妮❀1x, server: dx.yhy520.xyz, port: 58811, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 印度 ❀小妮妮❀1x, server: lt.yhy520.xyz, port: 58812, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国 ❀原生❀大妮妮❀1x, server: dx.yhy520.xyz, port: 58816, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国 ❀大妮妮❀1x, server: dx.yhy520.xyz, port: 58817, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国 ❀小妮妮❀1x, server: lt.yhy520.xyz, port: 58818, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 ❀大妮妮❀1x, server: dx.yhy520.xyz, port: 58828, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 ❀小妮妮❀1x, server: lt.yhy520.xyz, port: 58813, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 越南 ❀原生❀大妮妮❀1x, server: dx.yhy520.xyz, port: 58814, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 印尼 ❀原生❀大妮妮❀1x, server: dx.yhy520.xyz, port: 58824, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国 ❀小妮妮❀1x, server: lt.yhy520.xyz, port: 58810, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 印尼 ❀原生❀小妮妮❀1x, server: lt.yhy520.xyz, port: 58829, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本 ❀小妮妮❀1x, server: lt.yhy520.xyz, port: 58806, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 ❀小妮妮❀1x, server: lt.yhy520.xyz, port: 58808, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: "泰国 ❀原生❀大妮妮❀1x\t", server: dx.yhy520.xyz, port: 58825, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本 ❀大妮妮❀1x, server: dx.yhy520.xyz, port: 58805, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 泰国 ❀原生❀小妮妮❀1x, server: lt.yhy520.xyz, port: 58830, type: trojan, password: 8dbdb7f6-7708-3cbc-a950-c8d96865de96, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK3-BGP-HGC, server: cdn2.myuuusss.com, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 8bc68e0d-3c27-4ecd-8672-4824cb7eab2b, udp: true}
+  - {name: TW-BGP-HiNit-观影推荐线路, server: cdn2.myuuusss.com, port: 20011, type: ss, cipher: aes-128-gcm, password: 8bc68e0d-3c27-4ecd-8672-4824cb7eab2b, udp: true}
+  - {name: TW2-BGP-HiNit-观影推荐线路, server: cdn2.myuuusss.com, port: 20111, type: ss, cipher: aes-128-gcm, password: 8bc68e0d-3c27-4ecd-8672-4824cb7eab2b, udp: true}
+  - {name: HK4-IEPL-HGC-X2, server: cdn1.myuuusss.com, port: 32118, type: vmess, uuid: 8bc68e0d-3c27-4ecd-8672-4824cb7eab2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cdn1.myuuusss.com}, udp: true}
+  - {name: HK3-IEPL-HGC-X2, server: cdn1.myuuusss.com, port: 30031, type: ss, cipher: chacha20-ietf-poly1305, password: 8bc68e0d-3c27-4ecd-8672-4824cb7eab2b, udp: true}
+  - {name: JP-BGP, server: cdn2.myuuusss.com, port: 20021, type: ss, cipher: aes-128-gcm, password: 8bc68e0d-3c27-4ecd-8672-4824cb7eab2b, udp: true}
+  - {name: 备用|防止失联线路, server: back.myuuusss.com, port: 443, type: vmess, uuid: 8bc68e0d-3c27-4ecd-8672-4824cb7eab2b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: back.myuuusss.com}, udp: true}
+  - {name: NL(荷兰)-BGP, server: cdn2.myuuusss.com, port: 20098, type: ss, cipher: aes-128-gcm, password: 8bc68e0d-3c27-4ecd-8672-4824cb7eab2b, udp: true}
+  - {name: 美国游戏专线-超高倍率X5, server: us-c1.myuuusss.com, port: 23223, type: vmess, uuid: 8bc68e0d-3c27-4ecd-8672-4824cb7eab2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us-c1.myuuusss.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾 ❀原生❀大妮妮❀1x
-      - 台湾 ❀原生❀小妮妮❀1x
-      - 香港 ❀原生❀小妮妮❀1x
-      - 香港 ❀小妮妮2号❀1x
-      - 香港 ❀大妮妮1号❀1x
-      - 香港 ❀大妮妮2号❀1x
-      - 印度 ❀大妮妮❀1x
-      - 印度 ❀小妮妮❀1x
-      - 美国 ❀原生❀大妮妮❀1x
-      - 美国 ❀大妮妮❀1x
-      - 美国 ❀小妮妮❀1x
-      - 俄罗斯 ❀大妮妮❀1x
-      - 俄罗斯 ❀小妮妮❀1x
-      - 越南 ❀原生❀大妮妮❀1x
-      - 印尼 ❀原生❀大妮妮❀1x
-      - 韩国 ❀小妮妮❀1x
-      - 印尼 ❀原生❀小妮妮❀1x
-      - 日本 ❀小妮妮❀1x
-      - 新加坡 ❀小妮妮❀1x
-      - "泰国 ❀原生❀大妮妮❀1x\t"
-      - 日本 ❀大妮妮❀1x
-      - 泰国 ❀原生❀小妮妮❀1x
+      - HK3-BGP-HGC
+      - TW-BGP-HiNit-观影推荐线路
+      - TW2-BGP-HiNit-观影推荐线路
+      - HK4-IEPL-HGC-X2
+      - HK3-IEPL-HGC-X2
+      - JP-BGP
+      - 备用|防止失联线路
+      - NL(荷兰)-BGP
+      - 美国游戏专线-超高倍率X5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 台湾 ❀原生❀大妮妮❀1x
-      - 台湾 ❀原生❀小妮妮❀1x
-      - 香港 ❀原生❀小妮妮❀1x
-      - 香港 ❀小妮妮2号❀1x
-      - 香港 ❀大妮妮1号❀1x
-      - 香港 ❀大妮妮2号❀1x
-      - 印度 ❀大妮妮❀1x
-      - 印度 ❀小妮妮❀1x
-      - 美国 ❀原生❀大妮妮❀1x
-      - 美国 ❀大妮妮❀1x
-      - 美国 ❀小妮妮❀1x
-      - 俄罗斯 ❀大妮妮❀1x
-      - 俄罗斯 ❀小妮妮❀1x
-      - 越南 ❀原生❀大妮妮❀1x
-      - 印尼 ❀原生❀大妮妮❀1x
-      - 韩国 ❀小妮妮❀1x
-      - 印尼 ❀原生❀小妮妮❀1x
-      - 日本 ❀小妮妮❀1x
-      - 新加坡 ❀小妮妮❀1x
-      - "泰国 ❀原生❀大妮妮❀1x\t"
-      - 日本 ❀大妮妮❀1x
-      - 泰国 ❀原生❀小妮妮❀1x
+      - HK3-BGP-HGC
+      - TW-BGP-HiNit-观影推荐线路
+      - TW2-BGP-HiNit-观影推荐线路
+      - HK4-IEPL-HGC-X2
+      - HK3-IEPL-HGC-X2
+      - JP-BGP
+      - 备用|防止失联线路
+      - NL(荷兰)-BGP
+      - 美国游戏专线-超高倍率X5
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾 ❀原生❀大妮妮❀1x
-      - 台湾 ❀原生❀小妮妮❀1x
-      - 香港 ❀原生❀小妮妮❀1x
-      - 香港 ❀小妮妮2号❀1x
-      - 香港 ❀大妮妮1号❀1x
-      - 香港 ❀大妮妮2号❀1x
-      - 印度 ❀大妮妮❀1x
-      - 印度 ❀小妮妮❀1x
-      - 美国 ❀原生❀大妮妮❀1x
-      - 美国 ❀大妮妮❀1x
-      - 美国 ❀小妮妮❀1x
-      - 俄罗斯 ❀大妮妮❀1x
-      - 俄罗斯 ❀小妮妮❀1x
-      - 越南 ❀原生❀大妮妮❀1x
-      - 印尼 ❀原生❀大妮妮❀1x
-      - 韩国 ❀小妮妮❀1x
-      - 印尼 ❀原生❀小妮妮❀1x
-      - 日本 ❀小妮妮❀1x
-      - 新加坡 ❀小妮妮❀1x
-      - "泰国 ❀原生❀大妮妮❀1x\t"
-      - 日本 ❀大妮妮❀1x
-      - 泰国 ❀原生❀小妮妮❀1x
+      - HK3-BGP-HGC
+      - TW-BGP-HiNit-观影推荐线路
+      - TW2-BGP-HiNit-观影推荐线路
+      - HK4-IEPL-HGC-X2
+      - HK3-IEPL-HGC-X2
+      - JP-BGP
+      - 备用|防止失联线路
+      - NL(荷兰)-BGP
+      - 美国游戏专线-超高倍率X5
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -128,121 +76,66 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾 ❀原生❀大妮妮❀1x
-      - 台湾 ❀原生❀小妮妮❀1x
-      - 香港 ❀原生❀小妮妮❀1x
-      - 香港 ❀小妮妮2号❀1x
-      - 香港 ❀大妮妮1号❀1x
-      - 香港 ❀大妮妮2号❀1x
-      - 印度 ❀大妮妮❀1x
-      - 印度 ❀小妮妮❀1x
-      - 美国 ❀原生❀大妮妮❀1x
-      - 美国 ❀大妮妮❀1x
-      - 美国 ❀小妮妮❀1x
-      - 俄罗斯 ❀大妮妮❀1x
-      - 俄罗斯 ❀小妮妮❀1x
-      - 越南 ❀原生❀大妮妮❀1x
-      - 印尼 ❀原生❀大妮妮❀1x
-      - 韩国 ❀小妮妮❀1x
-      - 印尼 ❀原生❀小妮妮❀1x
-      - 日本 ❀小妮妮❀1x
-      - 新加坡 ❀小妮妮❀1x
-      - "泰国 ❀原生❀大妮妮❀1x\t"
-      - 日本 ❀大妮妮❀1x
-      - 泰国 ❀原生❀小妮妮❀1x
+      - HK3-BGP-HGC
+      - TW-BGP-HiNit-观影推荐线路
+      - TW2-BGP-HiNit-观影推荐线路
+      - HK4-IEPL-HGC-X2
+      - HK3-IEPL-HGC-X2
+      - JP-BGP
+      - 备用|防止失联线路
+      - NL(荷兰)-BGP
+      - 美国游戏专线-超高倍率X5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾 ❀原生❀大妮妮❀1x
-      - 台湾 ❀原生❀小妮妮❀1x
-      - 香港 ❀原生❀小妮妮❀1x
-      - 香港 ❀小妮妮2号❀1x
-      - 香港 ❀大妮妮1号❀1x
-      - 香港 ❀大妮妮2号❀1x
+      - HK3-BGP-HGC
+      - HK4-IEPL-HGC-X2
+      - HK3-IEPL-HGC-X2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台湾 ❀原生❀大妮妮❀1x
-      - 台湾 ❀原生❀小妮妮❀1x
-      - 香港 ❀原生❀小妮妮❀1x
-      - 香港 ❀小妮妮2号❀1x
-      - 香港 ❀大妮妮1号❀1x
-      - 香港 ❀大妮妮2号❀1x
-      - 印度 ❀大妮妮❀1x
-      - 印度 ❀小妮妮❀1x
-      - 美国 ❀原生❀大妮妮❀1x
-      - 美国 ❀大妮妮❀1x
-      - 美国 ❀小妮妮❀1x
-      - 俄罗斯 ❀大妮妮❀1x
-      - 俄罗斯 ❀小妮妮❀1x
-      - 越南 ❀原生❀大妮妮❀1x
-      - 印尼 ❀原生❀大妮妮❀1x
-      - 韩国 ❀小妮妮❀1x
-      - 印尼 ❀原生❀小妮妮❀1x
-      - 日本 ❀小妮妮❀1x
-      - 新加坡 ❀小妮妮❀1x
-      - "泰国 ❀原生❀大妮妮❀1x\t"
-      - 日本 ❀大妮妮❀1x
-      - 泰国 ❀原生❀小妮妮❀1x
+      - HK3-BGP-HGC
+      - TW-BGP-HiNit-观影推荐线路
+      - TW2-BGP-HiNit-观影推荐线路
+      - HK4-IEPL-HGC-X2
+      - HK3-IEPL-HGC-X2
+      - JP-BGP
+      - 备用|防止失联线路
+      - NL(荷兰)-BGP
+      - 美国游戏专线-超高倍率X5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台湾 ❀原生❀大妮妮❀1x
-      - 台湾 ❀原生❀小妮妮❀1x
-      - 香港 ❀原生❀小妮妮❀1x
-      - 香港 ❀小妮妮2号❀1x
-      - 香港 ❀大妮妮1号❀1x
-      - 香港 ❀大妮妮2号❀1x
-      - 印度 ❀大妮妮❀1x
-      - 印度 ❀小妮妮❀1x
-      - 美国 ❀原生❀大妮妮❀1x
-      - 美国 ❀大妮妮❀1x
-      - 美国 ❀小妮妮❀1x
-      - 俄罗斯 ❀大妮妮❀1x
-      - 俄罗斯 ❀小妮妮❀1x
-      - 越南 ❀原生❀大妮妮❀1x
-      - 印尼 ❀原生❀大妮妮❀1x
-      - 韩国 ❀小妮妮❀1x
-      - 印尼 ❀原生❀小妮妮❀1x
-      - 日本 ❀小妮妮❀1x
-      - 新加坡 ❀小妮妮❀1x
-      - "泰国 ❀原生❀大妮妮❀1x\t"
-      - 日本 ❀大妮妮❀1x
-      - 泰国 ❀原生❀小妮妮❀1x
+      - HK3-BGP-HGC
+      - TW-BGP-HiNit-观影推荐线路
+      - TW2-BGP-HiNit-观影推荐线路
+      - HK4-IEPL-HGC-X2
+      - HK3-IEPL-HGC-X2
+      - JP-BGP
+      - 备用|防止失联线路
+      - NL(荷兰)-BGP
+      - 美国游戏专线-超高倍率X5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾 ❀原生❀大妮妮❀1x
-      - 台湾 ❀原生❀小妮妮❀1x
-      - 香港 ❀原生❀小妮妮❀1x
-      - 香港 ❀小妮妮2号❀1x
-      - 香港 ❀大妮妮1号❀1x
-      - 香港 ❀大妮妮2号❀1x
-      - 印度 ❀大妮妮❀1x
-      - 印度 ❀小妮妮❀1x
-      - 美国 ❀原生❀大妮妮❀1x
-      - 美国 ❀大妮妮❀1x
-      - 美国 ❀小妮妮❀1x
-      - 俄罗斯 ❀大妮妮❀1x
-      - 俄罗斯 ❀小妮妮❀1x
-      - 越南 ❀原生❀大妮妮❀1x
-      - 印尼 ❀原生❀大妮妮❀1x
-      - 韩国 ❀小妮妮❀1x
-      - 印尼 ❀原生❀小妮妮❀1x
-      - 日本 ❀小妮妮❀1x
-      - 新加坡 ❀小妮妮❀1x
-      - "泰国 ❀原生❀大妮妮❀1x\t"
-      - 日本 ❀大妮妮❀1x
-      - 泰国 ❀原生❀小妮妮❀1x
+      - HK3-BGP-HGC
+      - TW-BGP-HiNit-观影推荐线路
+      - TW2-BGP-HiNit-观影推荐线路
+      - HK4-IEPL-HGC-X2
+      - HK3-IEPL-HGC-X2
+      - JP-BGP
+      - 备用|防止失联线路
+      - NL(荷兰)-BGP
+      - 美国游戏专线-超高倍率X5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -258,28 +151,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾 ❀原生❀大妮妮❀1x
-      - 台湾 ❀原生❀小妮妮❀1x
-      - 香港 ❀原生❀小妮妮❀1x
-      - 香港 ❀小妮妮2号❀1x
-      - 香港 ❀大妮妮1号❀1x
-      - 香港 ❀大妮妮2号❀1x
-      - 印度 ❀大妮妮❀1x
-      - 印度 ❀小妮妮❀1x
-      - 美国 ❀原生❀大妮妮❀1x
-      - 美国 ❀大妮妮❀1x
-      - 美国 ❀小妮妮❀1x
-      - 俄罗斯 ❀大妮妮❀1x
-      - 俄罗斯 ❀小妮妮❀1x
-      - 越南 ❀原生❀大妮妮❀1x
-      - 印尼 ❀原生❀大妮妮❀1x
-      - 韩国 ❀小妮妮❀1x
-      - 印尼 ❀原生❀小妮妮❀1x
-      - 日本 ❀小妮妮❀1x
-      - 新加坡 ❀小妮妮❀1x
-      - "泰国 ❀原生❀大妮妮❀1x\t"
-      - 日本 ❀大妮妮❀1x
-      - 泰国 ❀原生❀小妮妮❀1x
+      - HK3-BGP-HGC
+      - TW-BGP-HiNit-观影推荐线路
+      - TW2-BGP-HiNit-观影推荐线路
+      - HK4-IEPL-HGC-X2
+      - HK3-IEPL-HGC-X2
+      - JP-BGP
+      - 备用|防止失联线路
+      - NL(荷兰)-BGP
+      - 美国游戏专线-超高倍率X5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
