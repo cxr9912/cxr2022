@@ -5,203 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 台湾Hinet～广州移动(中转) | 解锁流媒体, server: gzyd1.xxcv.cc, port: 20020, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体, server: gzyd1.xxcv.cc, port: 20090, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国亚马逊-广移2三线负载均衡(中转) | 解锁流媒体, server: gzyd2.xxcv.cc, port: 20130, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾Hinet～广州移动2(中转) | 解锁流媒体, server: gzyd2.xxcv.cc, port: 20020, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: Oracle新加坡-广移(中转), server: gzyd1.xxcv.cc, port: 20100, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本NTT-广州移动2 | (中转), server: gzyd2.xxcv.cc, port: 20120, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡G-Core-广移2四线负载均衡(中转) | 解锁流媒体, server: gzyd2.xxcv.cc, port: 20090, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: Oracle新加坡-广移2(中转), server: gzyd2.xxcv.cc, port: 20100, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本NTT-广州移动 | (中转), server: gzyd1.xxcv.cc, port: 20120, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国亚马逊-河移三线负载均衡(中转) | 解锁流媒体, server: hnyd.xxcv.cc, port: 20130, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港HGC～河南移动  (中转) | 解锁流媒体, server: hnyd.xxcv.cc, port: 20030, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡G-Core-河移四线负载均衡(中转) | 解锁流媒体, server: hnyd.xxcv.cc, port: 20090, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 越南 | 广州移动(中转), server: gzyd1.xxcv.cc, port: 20110, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: Oracle新加坡-河移(中转), server: hnyd.xxcv.cc, port: 20100, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: Oracle日本东京-河移三线负载均衡(中转), server: hnyd.xxcv.cc, port: 20040, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 越南 | 广州移动2(中转), server: gzyd2.xxcv.cc, port: 20110, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本NTT-河南移动 | (中转), server: hnyd.xxcv.cc, port: 20120, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 越南-3号, server: 103.173.255.127, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 越南-5号, server: 103.173.255.234, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 越南-4号, server: 103.173.255.228, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 德国linode-广州移动负载均衡(中转) | 解锁流媒体, server: gzyd1.xxcv.cc, port: 20070, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 德国linode-广州移动2负载均衡(中转) | 解锁流媒体, server: gzyd2.xxcv.cc, port: 20070, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 德国-广州移动双线负载均衡(中转) | 解锁流媒体, server: gzyd1.xxcv.cc, port: 20060, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本, server: 118.107.57.227, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国圣何塞-广州移动2负载均衡(中转) | 解锁流媒体, server: gzyd2.xxcv.cc, port: 20010, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 德国linode-河南移动负载均衡(中转) | 解锁流媒体, server: hnyd.xxcv.cc, port: 20070, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 德国-河南移动双线负载均衡(中转) | 解锁流媒体, server: hnyd.xxcv.cc, port: 20060, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 越南 | 河南移动(中转), server: hnyd.xxcv.cc, port: 20110, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国-河移三线负载均衡(中转), server: hnyd.xxcv.cc, port: 20080, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: Oracle迪拜-广移三线负载均衡(中转), server: gzyd1.xxcv.cc, port: 20140, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: Oracle迪拜-河移三线负载均衡(中转), server: hnyd.xxcv.cc, port: 20140, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国亚马逊-3号 | 解锁流媒体, server: 3.35.48.120, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: Oracle迪拜-广移2三线负载均衡(中转), server: gzyd2.xxcv.cc, port: 20140, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾Hinet-1号线路(中转) | 解锁流媒体, server: hnyd.xxcv.cc, port: 36660, type: vmess, uuid: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: huayun.xyz}}, udp: true}
-  - {name: 香港HGC-4号线路 | 解锁流媒体, server: 23.99.119.36, port: 443, type: vmess, uuid: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/guolicheng/hkhgc?ed=2048", headers: {Host: hkhgc.meizhiyuanya.xyz}}, udp: true}
-  - {name: 香港HGC-1号线路(中转) | 解锁流媒体, server: hnyd.xxcv.cc, port: 36660, type: vmess, uuid: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/guolicheng/hkhgc?ed=2048", headers: {Host: huayun.xyz}}, udp: true}
-  - {name: Oracle迪拜-1号(电信网优化), server: 193.123.69.94, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾Hinet-2号线路 | 解锁流媒体, server: 18.163.249.175, port: 443, type: vmess, uuid: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: hinet.meizhiyuanya.xyz}}, udp: true}
-  - {name: 台湾Hinet-4号线路 | 解锁流媒体, server: 3.112.55.68, port: 443, type: vmess, uuid: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: hinet.meizhiyuanya.xyz}}, udp: true}
-  - {name: 德国-广州移动2双线负载均衡(中转) | 解锁流媒体, server: gzyd2.xxcv.cc, port: 20060, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: Oracle日本东京-2号, server: 141.147.191.85, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本NTT-1号, server: 203.138.98.199, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国-4号, server: 144.24.87.99, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港HGC-3号线路 | 解锁流媒体, server: 47.91.144.17, port: 443, type: vmess, uuid: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/guolicheng/hkhgc?ed=2048", headers: {Host: hkhgc.meizhiyuanya.xyz}}, udp: true}
-  - {name: 韩国-2号, server: 144.24.69.60, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港煎酿三宝 04-D, server: 20.239.179.123, port: 12388, type: trojan, password: e9fbd1ca-3b1b-4f79-80cb-4c0f7928fa29, skip-cert-verify: true, udp: true}
+  - {name: 香港丝袜奶茶 02-D, server: 20.239.160.239, port: 12339, type: trojan, password: e9fbd1ca-3b1b-4f79-80cb-4c0f7928fa29, skip-cert-verify: true, udp: true}
+  - {name: 香港杨枝甘露 03-D, server: 104.208.84.160, port: 12369, type: trojan, password: e9fbd1ca-3b1b-4f79-80cb-4c0f7928fa29, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾Hinet～广州移动(中转) | 解锁流媒体
-      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
-      - 韩国亚马逊-广移2三线负载均衡(中转) | 解锁流媒体
-      - 台湾Hinet～广州移动2(中转) | 解锁流媒体
-      - Oracle新加坡-广移(中转)
-      - 日本NTT-广州移动2 | (中转)
-      - 新加坡G-Core-广移2四线负载均衡(中转) | 解锁流媒体
-      - Oracle新加坡-广移2(中转)
-      - 日本NTT-广州移动 | (中转)
-      - 韩国亚马逊-河移三线负载均衡(中转) | 解锁流媒体
-      - 香港HGC～河南移动  (中转) | 解锁流媒体
-      - 新加坡G-Core-河移四线负载均衡(中转) | 解锁流媒体
-      - 越南 | 广州移动(中转)
-      - Oracle新加坡-河移(中转)
-      - Oracle日本东京-河移三线负载均衡(中转)
-      - 越南 | 广州移动2(中转)
-      - 日本NTT-河南移动 | (中转)
-      - 越南-3号
-      - 越南-5号
-      - 越南-4号
-      - 德国linode-广州移动负载均衡(中转) | 解锁流媒体
-      - 德国linode-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国-广州移动双线负载均衡(中转) | 解锁流媒体
-      - 日本
-      - 美国圣何塞-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国linode-河南移动负载均衡(中转) | 解锁流媒体
-      - 德国-河南移动双线负载均衡(中转) | 解锁流媒体
-      - 越南 | 河南移动(中转)
-      - 韩国-河移三线负载均衡(中转)
-      - Oracle迪拜-广移三线负载均衡(中转)
-      - Oracle迪拜-河移三线负载均衡(中转)
-      - 韩国亚马逊-3号 | 解锁流媒体
-      - Oracle迪拜-广移2三线负载均衡(中转)
-      - 台湾Hinet-1号线路(中转) | 解锁流媒体
-      - 香港HGC-4号线路 | 解锁流媒体
-      - 香港HGC-1号线路(中转) | 解锁流媒体
-      - Oracle迪拜-1号(电信网优化)
-      - 台湾Hinet-2号线路 | 解锁流媒体
-      - 台湾Hinet-4号线路 | 解锁流媒体
-      - 德国-广州移动2双线负载均衡(中转) | 解锁流媒体
-      - Oracle日本东京-2号
-      - 日本NTT-1号
-      - 韩国-4号
-      - 香港HGC-3号线路 | 解锁流媒体
-      - 韩国-2号
+      - 香港煎酿三宝 04-D
+      - 香港丝袜奶茶 02-D
+      - 香港杨枝甘露 03-D
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 台湾Hinet～广州移动(中转) | 解锁流媒体
-      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
-      - 韩国亚马逊-广移2三线负载均衡(中转) | 解锁流媒体
-      - 台湾Hinet～广州移动2(中转) | 解锁流媒体
-      - Oracle新加坡-广移(中转)
-      - 日本NTT-广州移动2 | (中转)
-      - 新加坡G-Core-广移2四线负载均衡(中转) | 解锁流媒体
-      - Oracle新加坡-广移2(中转)
-      - 日本NTT-广州移动 | (中转)
-      - 韩国亚马逊-河移三线负载均衡(中转) | 解锁流媒体
-      - 香港HGC～河南移动  (中转) | 解锁流媒体
-      - 新加坡G-Core-河移四线负载均衡(中转) | 解锁流媒体
-      - 越南 | 广州移动(中转)
-      - Oracle新加坡-河移(中转)
-      - Oracle日本东京-河移三线负载均衡(中转)
-      - 越南 | 广州移动2(中转)
-      - 日本NTT-河南移动 | (中转)
-      - 越南-3号
-      - 越南-5号
-      - 越南-4号
-      - 德国linode-广州移动负载均衡(中转) | 解锁流媒体
-      - 德国linode-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国-广州移动双线负载均衡(中转) | 解锁流媒体
-      - 日本
-      - 美国圣何塞-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国linode-河南移动负载均衡(中转) | 解锁流媒体
-      - 德国-河南移动双线负载均衡(中转) | 解锁流媒体
-      - 越南 | 河南移动(中转)
-      - 韩国-河移三线负载均衡(中转)
-      - Oracle迪拜-广移三线负载均衡(中转)
-      - Oracle迪拜-河移三线负载均衡(中转)
-      - 韩国亚马逊-3号 | 解锁流媒体
-      - Oracle迪拜-广移2三线负载均衡(中转)
-      - 台湾Hinet-1号线路(中转) | 解锁流媒体
-      - 香港HGC-4号线路 | 解锁流媒体
-      - 香港HGC-1号线路(中转) | 解锁流媒体
-      - Oracle迪拜-1号(电信网优化)
-      - 台湾Hinet-2号线路 | 解锁流媒体
-      - 台湾Hinet-4号线路 | 解锁流媒体
-      - 德国-广州移动2双线负载均衡(中转) | 解锁流媒体
-      - Oracle日本东京-2号
-      - 日本NTT-1号
-      - 韩国-4号
-      - 香港HGC-3号线路 | 解锁流媒体
-      - 韩国-2号
+      - 香港煎酿三宝 04-D
+      - 香港丝袜奶茶 02-D
+      - 香港杨枝甘露 03-D
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾Hinet～广州移动(中转) | 解锁流媒体
-      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
-      - 韩国亚马逊-广移2三线负载均衡(中转) | 解锁流媒体
-      - 台湾Hinet～广州移动2(中转) | 解锁流媒体
-      - Oracle新加坡-广移(中转)
-      - 日本NTT-广州移动2 | (中转)
-      - 新加坡G-Core-广移2四线负载均衡(中转) | 解锁流媒体
-      - Oracle新加坡-广移2(中转)
-      - 日本NTT-广州移动 | (中转)
-      - 韩国亚马逊-河移三线负载均衡(中转) | 解锁流媒体
-      - 香港HGC～河南移动  (中转) | 解锁流媒体
-      - 新加坡G-Core-河移四线负载均衡(中转) | 解锁流媒体
-      - 越南 | 广州移动(中转)
-      - Oracle新加坡-河移(中转)
-      - Oracle日本东京-河移三线负载均衡(中转)
-      - 越南 | 广州移动2(中转)
-      - 日本NTT-河南移动 | (中转)
-      - 越南-3号
-      - 越南-5号
-      - 越南-4号
-      - 德国linode-广州移动负载均衡(中转) | 解锁流媒体
-      - 德国linode-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国-广州移动双线负载均衡(中转) | 解锁流媒体
-      - 日本
-      - 美国圣何塞-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国linode-河南移动负载均衡(中转) | 解锁流媒体
-      - 德国-河南移动双线负载均衡(中转) | 解锁流媒体
-      - 越南 | 河南移动(中转)
-      - 韩国-河移三线负载均衡(中转)
-      - Oracle迪拜-广移三线负载均衡(中转)
-      - Oracle迪拜-河移三线负载均衡(中转)
-      - 韩国亚马逊-3号 | 解锁流媒体
-      - Oracle迪拜-广移2三线负载均衡(中转)
-      - 台湾Hinet-1号线路(中转) | 解锁流媒体
-      - 香港HGC-4号线路 | 解锁流媒体
-      - 香港HGC-1号线路(中转) | 解锁流媒体
-      - Oracle迪拜-1号(电信网优化)
-      - 台湾Hinet-2号线路 | 解锁流媒体
-      - 台湾Hinet-4号线路 | 解锁流媒体
-      - 德国-广州移动2双线负载均衡(中转) | 解锁流媒体
-      - Oracle日本东京-2号
-      - 日本NTT-1号
-      - 韩国-4号
-      - 香港HGC-3号线路 | 解锁流媒体
-      - 韩国-2号
+      - 香港煎酿三宝 04-D
+      - 香港丝袜奶茶 02-D
+      - 香港杨枝甘露 03-D
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -220,216 +52,42 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾Hinet～广州移动(中转) | 解锁流媒体
-      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
-      - 韩国亚马逊-广移2三线负载均衡(中转) | 解锁流媒体
-      - 台湾Hinet～广州移动2(中转) | 解锁流媒体
-      - Oracle新加坡-广移(中转)
-      - 日本NTT-广州移动2 | (中转)
-      - 新加坡G-Core-广移2四线负载均衡(中转) | 解锁流媒体
-      - Oracle新加坡-广移2(中转)
-      - 日本NTT-广州移动 | (中转)
-      - 韩国亚马逊-河移三线负载均衡(中转) | 解锁流媒体
-      - 香港HGC～河南移动  (中转) | 解锁流媒体
-      - 新加坡G-Core-河移四线负载均衡(中转) | 解锁流媒体
-      - 越南 | 广州移动(中转)
-      - Oracle新加坡-河移(中转)
-      - Oracle日本东京-河移三线负载均衡(中转)
-      - 越南 | 广州移动2(中转)
-      - 日本NTT-河南移动 | (中转)
-      - 越南-3号
-      - 越南-5号
-      - 越南-4号
-      - 德国linode-广州移动负载均衡(中转) | 解锁流媒体
-      - 德国linode-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国-广州移动双线负载均衡(中转) | 解锁流媒体
-      - 日本
-      - 美国圣何塞-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国linode-河南移动负载均衡(中转) | 解锁流媒体
-      - 德国-河南移动双线负载均衡(中转) | 解锁流媒体
-      - 越南 | 河南移动(中转)
-      - 韩国-河移三线负载均衡(中转)
-      - Oracle迪拜-广移三线负载均衡(中转)
-      - Oracle迪拜-河移三线负载均衡(中转)
-      - 韩国亚马逊-3号 | 解锁流媒体
-      - Oracle迪拜-广移2三线负载均衡(中转)
-      - 台湾Hinet-1号线路(中转) | 解锁流媒体
-      - 香港HGC-4号线路 | 解锁流媒体
-      - 香港HGC-1号线路(中转) | 解锁流媒体
-      - Oracle迪拜-1号(电信网优化)
-      - 台湾Hinet-2号线路 | 解锁流媒体
-      - 台湾Hinet-4号线路 | 解锁流媒体
-      - 德国-广州移动2双线负载均衡(中转) | 解锁流媒体
-      - Oracle日本东京-2号
-      - 日本NTT-1号
-      - 韩国-4号
-      - 香港HGC-3号线路 | 解锁流媒体
-      - 韩国-2号
+      - 香港煎酿三宝 04-D
+      - 香港丝袜奶茶 02-D
+      - 香港杨枝甘露 03-D
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾Hinet～广州移动(中转) | 解锁流媒体
-      - 台湾Hinet～广州移动2(中转) | 解锁流媒体
-      - 香港HGC～河南移动  (中转) | 解锁流媒体
-      - 台湾Hinet-1号线路(中转) | 解锁流媒体
-      - 香港HGC-4号线路 | 解锁流媒体
-      - 香港HGC-1号线路(中转) | 解锁流媒体
-      - 台湾Hinet-2号线路 | 解锁流媒体
-      - 台湾Hinet-4号线路 | 解锁流媒体
-      - 香港HGC-3号线路 | 解锁流媒体
+      - 香港煎酿三宝 04-D
+      - 香港丝袜奶茶 02-D
+      - 香港杨枝甘露 03-D
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台湾Hinet～广州移动(中转) | 解锁流媒体
-      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
-      - 韩国亚马逊-广移2三线负载均衡(中转) | 解锁流媒体
-      - 台湾Hinet～广州移动2(中转) | 解锁流媒体
-      - Oracle新加坡-广移(中转)
-      - 日本NTT-广州移动2 | (中转)
-      - 新加坡G-Core-广移2四线负载均衡(中转) | 解锁流媒体
-      - Oracle新加坡-广移2(中转)
-      - 日本NTT-广州移动 | (中转)
-      - 韩国亚马逊-河移三线负载均衡(中转) | 解锁流媒体
-      - 香港HGC～河南移动  (中转) | 解锁流媒体
-      - 新加坡G-Core-河移四线负载均衡(中转) | 解锁流媒体
-      - 越南 | 广州移动(中转)
-      - Oracle新加坡-河移(中转)
-      - Oracle日本东京-河移三线负载均衡(中转)
-      - 越南 | 广州移动2(中转)
-      - 日本NTT-河南移动 | (中转)
-      - 越南-3号
-      - 越南-5号
-      - 越南-4号
-      - 德国linode-广州移动负载均衡(中转) | 解锁流媒体
-      - 德国linode-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国-广州移动双线负载均衡(中转) | 解锁流媒体
-      - 日本
-      - 美国圣何塞-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国linode-河南移动负载均衡(中转) | 解锁流媒体
-      - 德国-河南移动双线负载均衡(中转) | 解锁流媒体
-      - 越南 | 河南移动(中转)
-      - 韩国-河移三线负载均衡(中转)
-      - Oracle迪拜-广移三线负载均衡(中转)
-      - Oracle迪拜-河移三线负载均衡(中转)
-      - 韩国亚马逊-3号 | 解锁流媒体
-      - Oracle迪拜-广移2三线负载均衡(中转)
-      - 台湾Hinet-1号线路(中转) | 解锁流媒体
-      - 香港HGC-4号线路 | 解锁流媒体
-      - 香港HGC-1号线路(中转) | 解锁流媒体
-      - Oracle迪拜-1号(电信网优化)
-      - 台湾Hinet-2号线路 | 解锁流媒体
-      - 台湾Hinet-4号线路 | 解锁流媒体
-      - 德国-广州移动2双线负载均衡(中转) | 解锁流媒体
-      - Oracle日本东京-2号
-      - 日本NTT-1号
-      - 韩国-4号
-      - 香港HGC-3号线路 | 解锁流媒体
-      - 韩国-2号
+      - 香港煎酿三宝 04-D
+      - 香港丝袜奶茶 02-D
+      - 香港杨枝甘露 03-D
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台湾Hinet～广州移动(中转) | 解锁流媒体
-      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
-      - 韩国亚马逊-广移2三线负载均衡(中转) | 解锁流媒体
-      - 台湾Hinet～广州移动2(中转) | 解锁流媒体
-      - Oracle新加坡-广移(中转)
-      - 日本NTT-广州移动2 | (中转)
-      - 新加坡G-Core-广移2四线负载均衡(中转) | 解锁流媒体
-      - Oracle新加坡-广移2(中转)
-      - 日本NTT-广州移动 | (中转)
-      - 韩国亚马逊-河移三线负载均衡(中转) | 解锁流媒体
-      - 香港HGC～河南移动  (中转) | 解锁流媒体
-      - 新加坡G-Core-河移四线负载均衡(中转) | 解锁流媒体
-      - 越南 | 广州移动(中转)
-      - Oracle新加坡-河移(中转)
-      - Oracle日本东京-河移三线负载均衡(中转)
-      - 越南 | 广州移动2(中转)
-      - 日本NTT-河南移动 | (中转)
-      - 越南-3号
-      - 越南-5号
-      - 越南-4号
-      - 德国linode-广州移动负载均衡(中转) | 解锁流媒体
-      - 德国linode-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国-广州移动双线负载均衡(中转) | 解锁流媒体
-      - 日本
-      - 美国圣何塞-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国linode-河南移动负载均衡(中转) | 解锁流媒体
-      - 德国-河南移动双线负载均衡(中转) | 解锁流媒体
-      - 越南 | 河南移动(中转)
-      - 韩国-河移三线负载均衡(中转)
-      - Oracle迪拜-广移三线负载均衡(中转)
-      - Oracle迪拜-河移三线负载均衡(中转)
-      - 韩国亚马逊-3号 | 解锁流媒体
-      - Oracle迪拜-广移2三线负载均衡(中转)
-      - 台湾Hinet-1号线路(中转) | 解锁流媒体
-      - 香港HGC-4号线路 | 解锁流媒体
-      - 香港HGC-1号线路(中转) | 解锁流媒体
-      - Oracle迪拜-1号(电信网优化)
-      - 台湾Hinet-2号线路 | 解锁流媒体
-      - 台湾Hinet-4号线路 | 解锁流媒体
-      - 德国-广州移动2双线负载均衡(中转) | 解锁流媒体
-      - Oracle日本东京-2号
-      - 日本NTT-1号
-      - 韩国-4号
-      - 香港HGC-3号线路 | 解锁流媒体
-      - 韩国-2号
+      - 香港煎酿三宝 04-D
+      - 香港丝袜奶茶 02-D
+      - 香港杨枝甘露 03-D
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾Hinet～广州移动(中转) | 解锁流媒体
-      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
-      - 韩国亚马逊-广移2三线负载均衡(中转) | 解锁流媒体
-      - 台湾Hinet～广州移动2(中转) | 解锁流媒体
-      - Oracle新加坡-广移(中转)
-      - 日本NTT-广州移动2 | (中转)
-      - 新加坡G-Core-广移2四线负载均衡(中转) | 解锁流媒体
-      - Oracle新加坡-广移2(中转)
-      - 日本NTT-广州移动 | (中转)
-      - 韩国亚马逊-河移三线负载均衡(中转) | 解锁流媒体
-      - 香港HGC～河南移动  (中转) | 解锁流媒体
-      - 新加坡G-Core-河移四线负载均衡(中转) | 解锁流媒体
-      - 越南 | 广州移动(中转)
-      - Oracle新加坡-河移(中转)
-      - Oracle日本东京-河移三线负载均衡(中转)
-      - 越南 | 广州移动2(中转)
-      - 日本NTT-河南移动 | (中转)
-      - 越南-3号
-      - 越南-5号
-      - 越南-4号
-      - 德国linode-广州移动负载均衡(中转) | 解锁流媒体
-      - 德国linode-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国-广州移动双线负载均衡(中转) | 解锁流媒体
-      - 日本
-      - 美国圣何塞-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国linode-河南移动负载均衡(中转) | 解锁流媒体
-      - 德国-河南移动双线负载均衡(中转) | 解锁流媒体
-      - 越南 | 河南移动(中转)
-      - 韩国-河移三线负载均衡(中转)
-      - Oracle迪拜-广移三线负载均衡(中转)
-      - Oracle迪拜-河移三线负载均衡(中转)
-      - 韩国亚马逊-3号 | 解锁流媒体
-      - Oracle迪拜-广移2三线负载均衡(中转)
-      - 台湾Hinet-1号线路(中转) | 解锁流媒体
-      - 香港HGC-4号线路 | 解锁流媒体
-      - 香港HGC-1号线路(中转) | 解锁流媒体
-      - Oracle迪拜-1号(电信网优化)
-      - 台湾Hinet-2号线路 | 解锁流媒体
-      - 台湾Hinet-4号线路 | 解锁流媒体
-      - 德国-广州移动2双线负载均衡(中转) | 解锁流媒体
-      - Oracle日本东京-2号
-      - 日本NTT-1号
-      - 韩国-4号
-      - 香港HGC-3号线路 | 解锁流媒体
-      - 韩国-2号
+      - 香港煎酿三宝 04-D
+      - 香港丝袜奶茶 02-D
+      - 香港杨枝甘露 03-D
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -445,51 +103,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾Hinet～广州移动(中转) | 解锁流媒体
-      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
-      - 韩国亚马逊-广移2三线负载均衡(中转) | 解锁流媒体
-      - 台湾Hinet～广州移动2(中转) | 解锁流媒体
-      - Oracle新加坡-广移(中转)
-      - 日本NTT-广州移动2 | (中转)
-      - 新加坡G-Core-广移2四线负载均衡(中转) | 解锁流媒体
-      - Oracle新加坡-广移2(中转)
-      - 日本NTT-广州移动 | (中转)
-      - 韩国亚马逊-河移三线负载均衡(中转) | 解锁流媒体
-      - 香港HGC～河南移动  (中转) | 解锁流媒体
-      - 新加坡G-Core-河移四线负载均衡(中转) | 解锁流媒体
-      - 越南 | 广州移动(中转)
-      - Oracle新加坡-河移(中转)
-      - Oracle日本东京-河移三线负载均衡(中转)
-      - 越南 | 广州移动2(中转)
-      - 日本NTT-河南移动 | (中转)
-      - 越南-3号
-      - 越南-5号
-      - 越南-4号
-      - 德国linode-广州移动负载均衡(中转) | 解锁流媒体
-      - 德国linode-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国-广州移动双线负载均衡(中转) | 解锁流媒体
-      - 日本
-      - 美国圣何塞-广州移动2负载均衡(中转) | 解锁流媒体
-      - 德国linode-河南移动负载均衡(中转) | 解锁流媒体
-      - 德国-河南移动双线负载均衡(中转) | 解锁流媒体
-      - 越南 | 河南移动(中转)
-      - 韩国-河移三线负载均衡(中转)
-      - Oracle迪拜-广移三线负载均衡(中转)
-      - Oracle迪拜-河移三线负载均衡(中转)
-      - 韩国亚马逊-3号 | 解锁流媒体
-      - Oracle迪拜-广移2三线负载均衡(中转)
-      - 台湾Hinet-1号线路(中转) | 解锁流媒体
-      - 香港HGC-4号线路 | 解锁流媒体
-      - 香港HGC-1号线路(中转) | 解锁流媒体
-      - Oracle迪拜-1号(电信网优化)
-      - 台湾Hinet-2号线路 | 解锁流媒体
-      - 台湾Hinet-4号线路 | 解锁流媒体
-      - 德国-广州移动2双线负载均衡(中转) | 解锁流媒体
-      - Oracle日本东京-2号
-      - 日本NTT-1号
-      - 韩国-4号
-      - 香港HGC-3号线路 | 解锁流媒体
-      - 韩国-2号
+      - 香港煎酿三宝 04-D
+      - 香港丝袜奶茶 02-D
+      - 香港杨枝甘露 03-D
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -9446,8 +9062,6 @@ rules:
  - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,idmchina.net,🛑 全球拦截
- - DOMAIN-SUFFIX,imazingchina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,jihehuaban.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,keyshot.cc,🛑 全球拦截
@@ -9517,8 +9131,6 @@ rules:
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
- - DOMAIN,radio.itunes.apple.com,🌍 国外媒体
- - DOMAIN,tv.applemusic.com,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
@@ -9563,7 +9175,6 @@ rules:
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
  - DOMAIN,linear.tv.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
- - DOMAIN,uts-api.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -9650,7 +9261,6 @@ rules:
  - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
- - IP-CIDR,210.71.227.200/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
@@ -9751,14 +9361,15 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
- - DOMAIN-SUFFIX,bilibili.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
  - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,biligame.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,biligame.net,🌏 国内媒体
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
- - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
- - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
@@ -9776,7 +9387,6 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
- - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
@@ -9790,14 +9400,11 @@ rules:
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
- - IP-CIDR,91.105.192.0/23,📲 电报信息,no-resolve
+ - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
- - IP-CIDR,185.76.151.0/24,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
  - DOMAIN,payments-jp.amazon.com,🔰 节点选择
@@ -9806,36 +9413,16 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
- - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
- - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
- - DOMAIN,clubhouse.pubnubapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
  - DOMAIN-SUFFIX,binance.com,🔰 节点选择
- - DOMAIN-SUFFIX,binance.us,🔰 节点选择
  - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
  - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bithumb.com,🔰 节点选择
  - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bitstamp.net,🔰 节点选择
- - DOMAIN-SUFFIX,bittrex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bybit.com,🔰 节点选择
- - DOMAIN-SUFFIX,coinbase.com,🔰 节点选择
- - DOMAIN-SUFFIX,coincheck.com,🔰 节点选择
- - DOMAIN-SUFFIX,coingecko.com,🔰 节点选择
- - DOMAIN-SUFFIX,coinmarketcap.com,🔰 节点选择
- - DOMAIN-SUFFIX,coinone.co.kr,🔰 节点选择
- - DOMAIN-SUFFIX,ftx.com,🔰 节点选择
  - DOMAIN-SUFFIX,gate.io,🔰 节点选择
- - DOMAIN-SUFFIX,gemini.com,🔰 节点选择
  - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
- - DOMAIN-SUFFIX,korbit.co.kr,🔰 节点选择
- - DOMAIN-SUFFIX,kraken.com,🔰 节点选择
- - DOMAIN-SUFFIX,kucoin.com,🔰 节点选择
- - DOMAIN-SUFFIX,liquid.com,🔰 节点选择
  - DOMAIN-SUFFIX,okex.com,🔰 节点选择
- - DOMAIN-SUFFIX,poloniex.com,🔰 节点选择
  - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
  - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,discord.com,🔰 节点选择
@@ -9868,7 +9455,6 @@ rules:
  - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
  - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
  - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
- - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
  - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
@@ -9919,14 +9505,11 @@ rules:
  - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,91.105.192.0/23,🔰 节点选择,no-resolve
+ - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
- - IP-CIDR,185.76.151.0/24,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
- - IP-CIDR6,2001:b28:f23c::/48,🔰 节点选择,no-resolve
- - IP-CIDR6,2a0a:f280::/32,🔰 节点选择,no-resolve
  - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
  - DOMAIN-SUFFIX,t.co,🔰 节点选择
@@ -9995,6 +9578,7 @@ rules:
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -10088,6 +9672,7 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
@@ -10113,7 +9698,6 @@ rules:
  - DOMAIN-SUFFIX,marc.info,🔰 节点选择
  - DOMAIN-SUFFIX,matters.news,🔰 节点选择
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
- - DOMAIN-SUFFIX,medibang.com,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
  - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
@@ -10203,7 +9787,6 @@ rules:
  - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
  - DOMAIN-SUFFIX,substack.com,🔰 节点选择
- - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -10219,7 +9802,6 @@ rules:
  - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
  - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
- - DOMAIN-SUFFIX,tradingview.com,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
  - DOMAIN-SUFFIX,tutanota.com,🔰 节点选择
@@ -10336,33 +9918,20 @@ rules:
  - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
  - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
  - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
  - DOMAIN,beta.music.apple.com,🔰 节点选择
- - DOMAIN,lookup-api.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,books.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
  - DOMAIN,tv.apple.com,🔰 节点选择
- - DOMAIN,amp-api.podcasts.apple.com,🔰 节点选择
- - DOMAIN,bookkeeper.itunes.apple.com,🔰 节点选择
- - DOMAIN,gateway.icloud.com,🔰 节点选择
- - DOMAIN-SUFFIX,apple.news,🔰 节点选择
- - DOMAIN,news-assets.apple.com,🔰 节点选择
- - DOMAIN,news-client.apple.com,🔰 节点选择
- - DOMAIN,news-client-search.apple.com,🔰 节点选择
- - DOMAIN,news-edge.apple.com,🔰 节点选择
- - DOMAIN,news-events.apple.com,🔰 节点选择
- - DOMAIN,apple.comscoreresearch.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,lookup-api.apple.com,🔰 节点选择
  - DOMAIN-SUFFIX,go.dev,🔰 节点选择
  - DOMAIN-SUFFIX,golang.org,🔰 节点选择
- - DOMAIN-SUFFIX,aicoin.com,🔰 节点选择
- - DOMAIN-SUFFIX,aimoon.com,🔰 节点选择
  - DOMAIN-SUFFIX,bing.com,🔰 节点选择
  - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
  - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
  - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
- - DOMAIN-SUFFIX,linkedin.com,🔰 节点选择
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
@@ -10370,10 +9939,12 @@ rules:
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
  - DOMAIN,ocsp.apple.com,🔰 节点选择
+ - DOMAIN,xp.apple.com,🔰 节点选择
  - DOMAIN,cacerts.digicert.com,🔰 节点选择
  - DOMAIN,crl3.digicert.com,🔰 节点选择
  - DOMAIN,crl4.digicert.com,🔰 节点选择
  - DOMAIN,ocsp.digicert.com,🔰 节点选择
+ - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
  - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
  - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
  - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
@@ -10529,11 +10100,19 @@ rules:
  - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
- - DOMAIN-SUFFIX,tencent-cloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
+ - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
+ - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
+ - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
@@ -10613,7 +10192,6 @@ rules:
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
- - DOMAIN-SUFFIX,cibntv.net,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
@@ -10658,6 +10236,8 @@ rules:
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
+ - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
+ - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
@@ -10680,7 +10260,6 @@ rules:
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
- - DOMAIN-SUFFIX,shouqianba.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
