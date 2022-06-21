@@ -5,27 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Az香港14, server: hk14.ningmengshui.xyz, port: 80, type: vmess, uuid: b17f9999-1608-4911-86f2-d0cf20bf1356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ali2.a.yximgs.com}, udp: true}
+  - {name: 日本IDC宽频|NF解锁|SS|A01, server: 36.139.154.162, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|V2|A01, server: 36.139.154.162, port: 45149, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.162}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|V2|A01, server: 36.139.154.162, port: 45239, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.162}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|SS|A01, server: 36.139.154.162, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|SS|A01, server: 36.139.154.162, port: 45105, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|SS|A01, server: 36.139.154.17, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
+  - {name: 日本IDC宽频|NF解锁|V2|A01, server: 36.139.154.17, port: 45184, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.17}, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|V2|A01, server: 36.139.154.17, port: 45394, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.17}, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45149, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
+  - {name: 日本IDC宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
+  - {name: 香港IDC宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45239, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
+  - {name: 日本IDC宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45184, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
+  - {name: 美国IDC宽频|NF解锁|SS|A01, server: 36.139.154.17, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
+  - {name: 香港家庭宽频|NF解锁|V2|A01, server: 36.139.154.162, port: 45250, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.162}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Az香港14
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Az香港14
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Az香港14
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -44,32 +104,98 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Az香港14
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Az香港14
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港家庭宽频|NF解锁|V2|A01
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Az香港14
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Az香港14
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Az香港14
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -85,7 +211,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Az香港14
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
