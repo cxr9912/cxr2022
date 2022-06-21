@@ -5,35 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港煎酿三宝 04-D, server: 20.239.179.123, port: 12388, type: trojan, password: e9fbd1ca-3b1b-4f79-80cb-4c0f7928fa29, skip-cert-verify: true, udp: true}
-  - {name: 香港丝袜奶茶 02-D, server: 20.239.160.239, port: 12339, type: trojan, password: e9fbd1ca-3b1b-4f79-80cb-4c0f7928fa29, skip-cert-verify: true, udp: true}
-  - {name: 香港杨枝甘露 03-D, server: 104.208.84.160, port: 12369, type: trojan, password: e9fbd1ca-3b1b-4f79-80cb-4c0f7928fa29, skip-cert-verify: true, udp: true}
+  - {name: HK-tg频道:@ripaojiedian, server: 52.184.90.142, port: 80, type: vmess, uuid: 3849e48e-f276-4612-a1b9-6f07d1ab1bad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vpngiare.net, ws-headers: {Host: vpngiare.akamaized.net}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港煎酿三宝 04-D
-      - 香港丝袜奶茶 02-D
-      - 香港杨枝甘露 03-D
+      - HK-tg频道:@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港煎酿三宝 04-D
-      - 香港丝袜奶茶 02-D
-      - 香港杨枝甘露 03-D
+      - HK-tg频道:@ripaojiedian
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港煎酿三宝 04-D
-      - 香港丝袜奶茶 02-D
-      - 香港杨枝甘露 03-D
+      - HK-tg频道:@ripaojiedian
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,42 +44,31 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港煎酿三宝 04-D
-      - 香港丝袜奶茶 02-D
-      - 香港杨枝甘露 03-D
+      - HK-tg频道:@ripaojiedian
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港煎酿三宝 04-D
-      - 香港丝袜奶茶 02-D
-      - 香港杨枝甘露 03-D
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港煎酿三宝 04-D
-      - 香港丝袜奶茶 02-D
-      - 香港杨枝甘露 03-D
+      - HK-tg频道:@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港煎酿三宝 04-D
-      - 香港丝袜奶茶 02-D
-      - 香港杨枝甘露 03-D
+      - HK-tg频道:@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港煎酿三宝 04-D
-      - 香港丝袜奶茶 02-D
-      - 香港杨枝甘露 03-D
+      - HK-tg频道:@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -103,9 +84,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港煎酿三宝 04-D
-      - 香港丝袜奶茶 02-D
-      - 香港杨枝甘露 03-D
+      - HK-tg频道:@ripaojiedian
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
