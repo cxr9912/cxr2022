@@ -5,51 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 3｜openit.ml, server: yqy17122.cdn-china.net, port: 17122, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: CN 2｜openit.ml, server: yqy1214221.cdn-china.net, port: 14221, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: CN 13｜openit.ml, server: yqy31128.cdn-china.net, port: 31128, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: CN 8｜openit.ml, server: yqy32128.cdn-china.net, port: 32128, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: CN 1｜openit.ml, server: yqy31225.cdn-china.net, port: 31225, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: CN 12｜openit.ml, server: yqy72028.cdn-china.net, port: 52028, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: US 26｜openit.ml, server: scloud54.jafiyun.life, port: 22054, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, sni: scloud54.jafiyun.life, skip-cert-verify: true, udp: true}
+  - {name: CN 8｜openit.ml, server: 120.233.186.71, port: 3383, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: CN 7｜openit.ml, server: 103.56.60.235, port: 3383, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: CN 6｜openit.ml, server: 103.56.62.145, port: 3383, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: US 17｜openit.ml, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: CN 1｜openit.ml, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: TW 1｜openit.ml, server: 211.72.35.153, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: US 2｜openit.ml, server: rn.tianxie.jp.eu.org, port: 443, type: trojan, password: c06bb8e0-7989-4885-9560-df320b7ce1d3, sni: rn.tianxie.jp.eu.org, skip-cert-verify: true, udp: true}
+  - {name: LT 1｜openit.ml, server: 45.137.97.205, port: 58000, type: trojan, password: 44ddff24-9b11-4879-8f70-7eb69c32e735, skip-cert-verify: true, udp: true}
+  - {name: US 3｜openit.ml, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us02.yiyodns.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 3｜openit.ml
-      - CN 2｜openit.ml
-      - CN 13｜openit.ml
       - CN 8｜openit.ml
+      - CN 7｜openit.ml
+      - CN 6｜openit.ml
+      - US 17｜openit.ml
       - CN 1｜openit.ml
-      - CN 12｜openit.ml
-      - US 26｜openit.ml
+      - TW 1｜openit.ml
+      - US 2｜openit.ml
+      - LT 1｜openit.ml
+      - US 3｜openit.ml
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 3｜openit.ml
-      - CN 2｜openit.ml
-      - CN 13｜openit.ml
       - CN 8｜openit.ml
+      - CN 7｜openit.ml
+      - CN 6｜openit.ml
+      - US 17｜openit.ml
       - CN 1｜openit.ml
-      - CN 12｜openit.ml
-      - US 26｜openit.ml
+      - TW 1｜openit.ml
+      - US 2｜openit.ml
+      - LT 1｜openit.ml
+      - US 3｜openit.ml
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 3｜openit.ml
-      - CN 2｜openit.ml
-      - CN 13｜openit.ml
       - CN 8｜openit.ml
+      - CN 7｜openit.ml
+      - CN 6｜openit.ml
+      - US 17｜openit.ml
       - CN 1｜openit.ml
-      - CN 12｜openit.ml
-      - US 26｜openit.ml
+      - TW 1｜openit.ml
+      - US 2｜openit.ml
+      - LT 1｜openit.ml
+      - US 3｜openit.ml
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,13 +76,15 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 3｜openit.ml
-      - CN 2｜openit.ml
-      - CN 13｜openit.ml
       - CN 8｜openit.ml
+      - CN 7｜openit.ml
+      - CN 6｜openit.ml
+      - US 17｜openit.ml
       - CN 1｜openit.ml
-      - CN 12｜openit.ml
-      - US 26｜openit.ml
+      - TW 1｜openit.ml
+      - US 2｜openit.ml
+      - LT 1｜openit.ml
+      - US 3｜openit.ml
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -85,38 +95,44 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 3｜openit.ml
-      - CN 2｜openit.ml
-      - CN 13｜openit.ml
       - CN 8｜openit.ml
+      - CN 7｜openit.ml
+      - CN 6｜openit.ml
+      - US 17｜openit.ml
       - CN 1｜openit.ml
-      - CN 12｜openit.ml
-      - US 26｜openit.ml
+      - TW 1｜openit.ml
+      - US 2｜openit.ml
+      - LT 1｜openit.ml
+      - US 3｜openit.ml
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 3｜openit.ml
-      - CN 2｜openit.ml
-      - CN 13｜openit.ml
       - CN 8｜openit.ml
+      - CN 7｜openit.ml
+      - CN 6｜openit.ml
+      - US 17｜openit.ml
       - CN 1｜openit.ml
-      - CN 12｜openit.ml
-      - US 26｜openit.ml
+      - TW 1｜openit.ml
+      - US 2｜openit.ml
+      - LT 1｜openit.ml
+      - US 3｜openit.ml
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 3｜openit.ml
-      - CN 2｜openit.ml
-      - CN 13｜openit.ml
       - CN 8｜openit.ml
+      - CN 7｜openit.ml
+      - CN 6｜openit.ml
+      - US 17｜openit.ml
       - CN 1｜openit.ml
-      - CN 12｜openit.ml
-      - US 26｜openit.ml
+      - TW 1｜openit.ml
+      - US 2｜openit.ml
+      - LT 1｜openit.ml
+      - US 3｜openit.ml
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +148,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 3｜openit.ml
-      - CN 2｜openit.ml
-      - CN 13｜openit.ml
       - CN 8｜openit.ml
+      - CN 7｜openit.ml
+      - CN 6｜openit.ml
+      - US 17｜openit.ml
       - CN 1｜openit.ml
-      - CN 12｜openit.ml
-      - US 26｜openit.ml
+      - TW 1｜openit.ml
+      - US 2｜openit.ml
+      - LT 1｜openit.ml
+      - US 3｜openit.ml
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
