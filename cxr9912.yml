@@ -5,35 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK 164, server: hk12.ningmengshui.xyz, port: 80, type: vmess, uuid: b17f9999-1608-4911-86f2-d0cf20bf1356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk12.ningmengshui.xyz}, udp: true}
-  - {name: US 138, server: v47.v2dns.bar, port: 2052, type: vmess, uuid: 0c68af8a-961a-3065-a3a7-1800ebc70bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v47-unlimitndxd, ws-headers: {Host: v47.v2dns.bar}, udp: true}
-  - {name: UN 109, server: v125.v2dns.bar, port: 80, type: vmess, uuid: 0c68af8a-961a-3065-a3a7-1800ebc70bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v1252N93nZez6Py, ws-headers: {Host: v125.v2dns.bar}, udp: true}
+  - {name: 香港 A 三网直连优化 0.6x, server: hkt1.okr.pub, port: 13443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: hkt1.okr.pub, skip-cert-verify: true, udp: true}
+  - {name: 香港BGP-杭港BGP隧道, server: 36.134.116.212, port: 45101, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: 日本 B 跨境隧道优化, server: jp2.xn--6p1awey07c.xyz, port: 15443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: jp2.xn--6p1awey07c.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本 A 跨境隧道优化, server: jp1.xn--6p1awey07c.xyz, port: 15443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: jp1.xn--6p1awey07c.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 C 跨境隧道优化, server: sg3.xn--6p1awey07c.xyz, port: 17443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: sg3.xn--6p1awey07c.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港33, server: 613hk.fans8.xyz, port: 443, type: trojan, password: 6f5e02bd-9b8f-44bc-b681-55150c102911, sni: 613hk.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 B 跨境隧道优化, server: sg2.xn--6p1awey07c.xyz, port: 17443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: sg2.xn--6p1awey07c.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾 B 跨境隧道优化, server: tw2.xn--6p1awey07c.xyz, port: 43443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: tw2.xn--6p1awey07c.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾 C 跨境隧道优化, server: tw3.xn--6p1awey07c.xyz, port: 43443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: tw3.xn--6p1awey07c.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本11, server: 20.210.249.230, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: "日本 [直连A] 1x", server: dnsfree02.theworkpc.com, port: 39812, type: vmess, uuid: 3e0a6f9a-a478-4752-900d-837b39d70792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: 韩国11, server: 20.214.174.83, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: 台湾 A 跨境隧道优化, server: tw1.xn--6p1awey07c.xyz, port: 43443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: tw1.xn--6p1awey07c.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本11 2, server: 116.129.253.99, port: 30021, type: vmess, uuid: ae92efdd-696d-395f-81ae-3a9d06158d08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 越南 B 移动电信优化, server: vn.xn--6p1awey07c.xyz, port: 18443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: vn.xn--6p1awey07c.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡11, server: sg0601.fans8.xyz, port: 443, type: trojan, password: 6f5e02bd-9b8f-44bc-b681-55150c102911, sni: sg0601.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: "香港 [直连D] 1x", server: dnsfree01.theworkpc.com, port: 20944, type: vmess, uuid: 3e0a6f9a-a478-4752-900d-837b39d70792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK 164
-      - US 138
-      - UN 109
+      - 香港 A 三网直连优化 0.6x
+      - 香港BGP-杭港BGP隧道
+      - 日本 B 跨境隧道优化
+      - 日本 A 跨境隧道优化
+      - 新加坡 C 跨境隧道优化
+      - 香港33
+      - 新加坡 B 跨境隧道优化
+      - 台湾 B 跨境隧道优化
+      - 台湾 C 跨境隧道优化
+      - 日本11
+      - 日本 [直连A] 1x
+      - 韩国11
+      - 台湾 A 跨境隧道优化
+      - 日本11 2
+      - 越南 B 移动电信优化
+      - 新加坡11
+      - 香港 [直连D] 1x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK 164
-      - US 138
-      - UN 109
+      - 香港 A 三网直连优化 0.6x
+      - 香港BGP-杭港BGP隧道
+      - 日本 B 跨境隧道优化
+      - 日本 A 跨境隧道优化
+      - 新加坡 C 跨境隧道优化
+      - 香港33
+      - 新加坡 B 跨境隧道优化
+      - 台湾 B 跨境隧道优化
+      - 台湾 C 跨境隧道优化
+      - 日本11
+      - 日本 [直连A] 1x
+      - 韩国11
+      - 台湾 A 跨境隧道优化
+      - 日本11 2
+      - 越南 B 移动电信优化
+      - 新加坡11
+      - 香港 [直连D] 1x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK 164
-      - US 138
-      - UN 109
+      - 香港 A 三网直连优化 0.6x
+      - 香港BGP-杭港BGP隧道
+      - 日本 B 跨境隧道优化
+      - 日本 A 跨境隧道优化
+      - 新加坡 C 跨境隧道优化
+      - 香港33
+      - 新加坡 B 跨境隧道优化
+      - 台湾 B 跨境隧道优化
+      - 台湾 C 跨境隧道优化
+      - 日本11
+      - 日本 [直连A] 1x
+      - 韩国11
+      - 台湾 A 跨境隧道优化
+      - 日本11 2
+      - 越南 B 移动电信优化
+      - 新加坡11
+      - 香港 [直连D] 1x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,39 +108,102 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK 164
-      - US 138
-      - UN 109
+      - 香港 A 三网直连优化 0.6x
+      - 香港BGP-杭港BGP隧道
+      - 日本 B 跨境隧道优化
+      - 日本 A 跨境隧道优化
+      - 新加坡 C 跨境隧道优化
+      - 香港33
+      - 新加坡 B 跨境隧道优化
+      - 台湾 B 跨境隧道优化
+      - 台湾 C 跨境隧道优化
+      - 日本11
+      - 日本 [直连A] 1x
+      - 韩国11
+      - 台湾 A 跨境隧道优化
+      - 日本11 2
+      - 越南 B 移动电信优化
+      - 新加坡11
+      - 香港 [直连D] 1x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 A 三网直连优化 0.6x
+      - 香港BGP-杭港BGP隧道
+      - 香港33
+      - 台湾 B 跨境隧道优化
+      - 台湾 C 跨境隧道优化
+      - 台湾 A 跨境隧道优化
+      - 香港 [直连D] 1x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK 164
-      - US 138
-      - UN 109
+      - 香港 A 三网直连优化 0.6x
+      - 香港BGP-杭港BGP隧道
+      - 日本 B 跨境隧道优化
+      - 日本 A 跨境隧道优化
+      - 新加坡 C 跨境隧道优化
+      - 香港33
+      - 新加坡 B 跨境隧道优化
+      - 台湾 B 跨境隧道优化
+      - 台湾 C 跨境隧道优化
+      - 日本11
+      - 日本 [直连A] 1x
+      - 韩国11
+      - 台湾 A 跨境隧道优化
+      - 日本11 2
+      - 越南 B 移动电信优化
+      - 新加坡11
+      - 香港 [直连D] 1x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK 164
-      - US 138
-      - UN 109
+      - 香港 A 三网直连优化 0.6x
+      - 香港BGP-杭港BGP隧道
+      - 日本 B 跨境隧道优化
+      - 日本 A 跨境隧道优化
+      - 新加坡 C 跨境隧道优化
+      - 香港33
+      - 新加坡 B 跨境隧道优化
+      - 台湾 B 跨境隧道优化
+      - 台湾 C 跨境隧道优化
+      - 日本11
+      - 日本 [直连A] 1x
+      - 韩国11
+      - 台湾 A 跨境隧道优化
+      - 日本11 2
+      - 越南 B 移动电信优化
+      - 新加坡11
+      - 香港 [直连D] 1x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK 164
-      - US 138
-      - UN 109
+      - 香港 A 三网直连优化 0.6x
+      - 香港BGP-杭港BGP隧道
+      - 日本 B 跨境隧道优化
+      - 日本 A 跨境隧道优化
+      - 新加坡 C 跨境隧道优化
+      - 香港33
+      - 新加坡 B 跨境隧道优化
+      - 台湾 B 跨境隧道优化
+      - 台湾 C 跨境隧道优化
+      - 日本11
+      - 日本 [直连A] 1x
+      - 韩国11
+      - 台湾 A 跨境隧道优化
+      - 日本11 2
+      - 越南 B 移动电信优化
+      - 新加坡11
+      - 香港 [直连D] 1x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +219,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK 164
-      - US 138
-      - UN 109
+      - 香港 A 三网直连优化 0.6x
+      - 香港BGP-杭港BGP隧道
+      - 日本 B 跨境隧道优化
+      - 日本 A 跨境隧道优化
+      - 新加坡 C 跨境隧道优化
+      - 香港33
+      - 新加坡 B 跨境隧道优化
+      - 台湾 B 跨境隧道优化
+      - 台湾 C 跨境隧道优化
+      - 日本11
+      - 日本 [直连A] 1x
+      - 韩国11
+      - 台湾 A 跨境隧道优化
+      - 日本11 2
+      - 越南 B 移动电信优化
+      - 新加坡11
+      - 香港 [直连D] 1x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
