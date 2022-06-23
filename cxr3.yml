@@ -5,71 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 7｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
-  - {name: CN 6｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN 5｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: US 19｜openit.ml, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: HK 3｜openit.ml, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-hk01.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK 12｜openit.ml, server: tj-hk02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-hk02.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 5｜openit.ml, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: TW 1｜openit.ml, server: 211.72.35.153, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: US 7｜openit.ml, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us02.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 6｜openit.ml, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US 46｜openit.ml, server: scloud54.jafiyun.life, port: 22054, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, sni: scloud54.jafiyun.life, skip-cert-verify: true, udp: true}
-  - {name: US 32｜openit.ml, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, sni: fhcamd1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2-tg频道:@ripaojiedian, server: 67sg01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, sni: 67sg01.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港高速-tg频道:@ripaojiedian, server: 20.239.67.237, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: 香港|tg频道:@ripaojiedian, server: node-hk.pyhdxy.top, port: 10000, type: trojan, password: f9628fbd-ef2a-4d8a-baa7-9b8a56a91091, sni: node-hk.pyhdxy.top, skip-cert-verify: true, udp: true}
+  - {name: 香港1-tg频道:@ripaojiedian, server: 611hk01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, sni: 611hk01.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: 东京-tg频道:@ripaojiedian, server: 20.222.100.86, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: 香港B-tg频道:@ripaojiedian, server: 20.187.100.208, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: 香港3-tg频道:@ripaojiedian, server: 615hk.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, sni: 615hk.fans8.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 7｜openit.ml
-      - CN 6｜openit.ml
-      - CN 5｜openit.ml
-      - US 19｜openit.ml
-      - HK 3｜openit.ml
-      - HK 12｜openit.ml
-      - US 5｜openit.ml
-      - TW 1｜openit.ml
-      - US 7｜openit.ml
-      - US 6｜openit.ml
-      - US 46｜openit.ml
-      - US 32｜openit.ml
+      - 新加坡2-tg频道:@ripaojiedian
+      - 香港高速-tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 香港1-tg频道:@ripaojiedian
+      - 东京-tg频道:@ripaojiedian
+      - 香港B-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 7｜openit.ml
-      - CN 6｜openit.ml
-      - CN 5｜openit.ml
-      - US 19｜openit.ml
-      - HK 3｜openit.ml
-      - HK 12｜openit.ml
-      - US 5｜openit.ml
-      - TW 1｜openit.ml
-      - US 7｜openit.ml
-      - US 6｜openit.ml
-      - US 46｜openit.ml
-      - US 32｜openit.ml
+      - 新加坡2-tg频道:@ripaojiedian
+      - 香港高速-tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 香港1-tg频道:@ripaojiedian
+      - 东京-tg频道:@ripaojiedian
+      - 香港B-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 7｜openit.ml
-      - CN 6｜openit.ml
-      - CN 5｜openit.ml
-      - US 19｜openit.ml
-      - HK 3｜openit.ml
-      - HK 12｜openit.ml
-      - US 5｜openit.ml
-      - TW 1｜openit.ml
-      - US 7｜openit.ml
-      - US 6｜openit.ml
-      - US 46｜openit.ml
-      - US 32｜openit.ml
+      - 新加坡2-tg频道:@ripaojiedian
+      - 香港高速-tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 香港1-tg频道:@ripaojiedian
+      - 东京-tg频道:@ripaojiedian
+      - 香港B-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,75 +68,60 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 7｜openit.ml
-      - CN 6｜openit.ml
-      - CN 5｜openit.ml
-      - US 19｜openit.ml
-      - HK 3｜openit.ml
-      - HK 12｜openit.ml
-      - US 5｜openit.ml
-      - TW 1｜openit.ml
-      - US 7｜openit.ml
-      - US 6｜openit.ml
-      - US 46｜openit.ml
-      - US 32｜openit.ml
+      - 新加坡2-tg频道:@ripaojiedian
+      - 香港高速-tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 香港1-tg频道:@ripaojiedian
+      - 东京-tg频道:@ripaojiedian
+      - 香港B-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港高速-tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 香港1-tg频道:@ripaojiedian
+      - 香港B-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 7｜openit.ml
-      - CN 6｜openit.ml
-      - CN 5｜openit.ml
-      - US 19｜openit.ml
-      - HK 3｜openit.ml
-      - HK 12｜openit.ml
-      - US 5｜openit.ml
-      - TW 1｜openit.ml
-      - US 7｜openit.ml
-      - US 6｜openit.ml
-      - US 46｜openit.ml
-      - US 32｜openit.ml
+      - 新加坡2-tg频道:@ripaojiedian
+      - 香港高速-tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 香港1-tg频道:@ripaojiedian
+      - 东京-tg频道:@ripaojiedian
+      - 香港B-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 7｜openit.ml
-      - CN 6｜openit.ml
-      - CN 5｜openit.ml
-      - US 19｜openit.ml
-      - HK 3｜openit.ml
-      - HK 12｜openit.ml
-      - US 5｜openit.ml
-      - TW 1｜openit.ml
-      - US 7｜openit.ml
-      - US 6｜openit.ml
-      - US 46｜openit.ml
-      - US 32｜openit.ml
+      - 新加坡2-tg频道:@ripaojiedian
+      - 香港高速-tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 香港1-tg频道:@ripaojiedian
+      - 东京-tg频道:@ripaojiedian
+      - 香港B-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 7｜openit.ml
-      - CN 6｜openit.ml
-      - CN 5｜openit.ml
-      - US 19｜openit.ml
-      - HK 3｜openit.ml
-      - HK 12｜openit.ml
-      - US 5｜openit.ml
-      - TW 1｜openit.ml
-      - US 7｜openit.ml
-      - US 6｜openit.ml
-      - US 46｜openit.ml
-      - US 32｜openit.ml
+      - 新加坡2-tg频道:@ripaojiedian
+      - 香港高速-tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 香港1-tg频道:@ripaojiedian
+      - 东京-tg频道:@ripaojiedian
+      - 香港B-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -172,18 +137,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 7｜openit.ml
-      - CN 6｜openit.ml
-      - CN 5｜openit.ml
-      - US 19｜openit.ml
-      - HK 3｜openit.ml
-      - HK 12｜openit.ml
-      - US 5｜openit.ml
-      - TW 1｜openit.ml
-      - US 7｜openit.ml
-      - US 6｜openit.ml
-      - US 46｜openit.ml
-      - US 32｜openit.ml
+      - 新加坡2-tg频道:@ripaojiedian
+      - 香港高速-tg频道:@ripaojiedian
+      - 香港|tg频道:@ripaojiedian
+      - 香港1-tg频道:@ripaojiedian
+      - 东京-tg频道:@ripaojiedian
+      - 香港B-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
