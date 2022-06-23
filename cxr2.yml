@@ -5,59 +5,131 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 8｜openit.ml, server: 120.233.186.71, port: 3383, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN 7｜openit.ml, server: 103.56.60.235, port: 3383, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN 6｜openit.ml, server: 103.56.62.145, port: 3383, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: US 17｜openit.ml, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: CN 1｜openit.ml, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: TW 1｜openit.ml, server: 211.72.35.153, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: US 2｜openit.ml, server: rn.tianxie.jp.eu.org, port: 443, type: trojan, password: c06bb8e0-7989-4885-9560-df320b7ce1d3, sni: rn.tianxie.jp.eu.org, skip-cert-verify: true, udp: true}
-  - {name: LT 1｜openit.ml, server: 45.137.97.205, port: 58000, type: trojan, password: 44ddff24-9b11-4879-8f70-7eb69c32e735, skip-cert-verify: true, udp: true}
-  - {name: US 3｜openit.ml, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us02.yiyodns.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 3｜openit.ml, server: zhuanfabj2.yooo.me, port: 3218, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: zhuanfabj2.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: HK 7｜openit.ml, server: azgy001.xiba1.xyz, port: 6004, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 5｜openit.ml, server: c68b799.pc.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, sni: c68b799.pc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN 7｜openit.ml, server: c68b799.pe.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, sni: c68b799.pe.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 14｜openit.ml, server: zhuanfabj2.yooo.me, port: 3526, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: zhuanfabj2.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: US 22｜openit.ml, server: azqt001.xiba1.xyz, port: 20745, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 12｜openit.ml, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 11｜openit.ml, server: azgy001.xiba1.xyz, port: 20714, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 4｜openit.ml, server: zhuanfabj1.yooo.me, port: 52671, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: zhuanfabj1.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: HK 9｜openit.ml, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 6｜openit.ml, server: azgy001.xiba1.xyz, port: 6003, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 8｜openit.ml, server: zhuanfabj1.yooo.me, port: 8641, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: zhuanfabj1.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: CN 6｜openit.ml, server: zhuanfabj1.yooo.me, port: 32699, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: zhuanfabj1.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: CN 9｜openit.ml, server: zhuanfabj1.yooo.me, port: 38216, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: zhuanfabj1.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: CN 12｜openit.ml, server: zhuanfabj1.yooo.me, port: 44174, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: zhuanfabj1.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: HK 5｜openit.ml, server: c68b799.pa.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, sni: c68b799.pa.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN 15｜openit.ml, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: CN 14｜openit.ml, server: zhuanfabj1.yooo.me, port: 36289, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: zhuanfabj1.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: HK 2｜openit.ml, server: node-hk.pyhdxy.top, port: 10000, type: trojan, password: f9628fbd-ef2a-4d8a-baa7-9b8a56a91091, sni: node-hk.pyhdxy.top, skip-cert-verify: true, udp: true}
+  - {name: SG 3｜openit.ml, server: 67sg01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, sni: 67sg01.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 10｜openit.ml, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 8｜openit.ml, server: c68b799.pb.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, sni: c68b799.pb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: NL 1｜openit.ml, server: de1-2.nrojat.com, port: 443, type: trojan, password: EJBsFzWnEgXZnmzHq8, sni: de1-2.nrojat.com, skip-cert-verify: true, udp: true}
+  - {name: CN 13｜openit.ml, server: c68b799.ga.gladns.com, port: 3382, type: trojan, password: 8d105878309ac3ef, sni: c68b799.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: AU 6｜openit.ml, server: au1-3.nrojat.com, port: 443, type: trojan, password: EJBsFzWnEgXZnmzHq8, sni: au1-3.nrojat.com, skip-cert-verify: true, udp: true}
+  - {name: AU 5｜openit.ml, server: au1-1.nrojat.com, port: 443, type: trojan, password: EJBsFzWnEgXZnmzHq8, sni: au1-1.nrojat.com, skip-cert-verify: true, udp: true}
+  - {name: AU 7｜openit.ml, server: au1-2.nrojat.com, port: 443, type: trojan, password: EJBsFzWnEgXZnmzHq8, sni: au1-2.nrojat.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 8｜openit.ml
+      - HK 3｜openit.ml
+      - HK 7｜openit.ml
+      - CN 5｜openit.ml
       - CN 7｜openit.ml
+      - HK 14｜openit.ml
+      - US 22｜openit.ml
+      - HK 12｜openit.ml
+      - HK 11｜openit.ml
+      - CN 4｜openit.ml
+      - HK 9｜openit.ml
+      - HK 6｜openit.ml
+      - CN 8｜openit.ml
       - CN 6｜openit.ml
-      - US 17｜openit.ml
-      - CN 1｜openit.ml
-      - TW 1｜openit.ml
-      - US 2｜openit.ml
-      - LT 1｜openit.ml
-      - US 3｜openit.ml
+      - CN 9｜openit.ml
+      - CN 12｜openit.ml
+      - HK 5｜openit.ml
+      - CN 15｜openit.ml
+      - CN 14｜openit.ml
+      - HK 2｜openit.ml
+      - SG 3｜openit.ml
+      - HK 10｜openit.ml
+      - HK 8｜openit.ml
+      - NL 1｜openit.ml
+      - CN 13｜openit.ml
+      - AU 6｜openit.ml
+      - AU 5｜openit.ml
+      - AU 7｜openit.ml
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 8｜openit.ml
+      - HK 3｜openit.ml
+      - HK 7｜openit.ml
+      - CN 5｜openit.ml
       - CN 7｜openit.ml
+      - HK 14｜openit.ml
+      - US 22｜openit.ml
+      - HK 12｜openit.ml
+      - HK 11｜openit.ml
+      - CN 4｜openit.ml
+      - HK 9｜openit.ml
+      - HK 6｜openit.ml
+      - CN 8｜openit.ml
       - CN 6｜openit.ml
-      - US 17｜openit.ml
-      - CN 1｜openit.ml
-      - TW 1｜openit.ml
-      - US 2｜openit.ml
-      - LT 1｜openit.ml
-      - US 3｜openit.ml
+      - CN 9｜openit.ml
+      - CN 12｜openit.ml
+      - HK 5｜openit.ml
+      - CN 15｜openit.ml
+      - CN 14｜openit.ml
+      - HK 2｜openit.ml
+      - SG 3｜openit.ml
+      - HK 10｜openit.ml
+      - HK 8｜openit.ml
+      - NL 1｜openit.ml
+      - CN 13｜openit.ml
+      - AU 6｜openit.ml
+      - AU 5｜openit.ml
+      - AU 7｜openit.ml
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 8｜openit.ml
+      - HK 3｜openit.ml
+      - HK 7｜openit.ml
+      - CN 5｜openit.ml
       - CN 7｜openit.ml
+      - HK 14｜openit.ml
+      - US 22｜openit.ml
+      - HK 12｜openit.ml
+      - HK 11｜openit.ml
+      - CN 4｜openit.ml
+      - HK 9｜openit.ml
+      - HK 6｜openit.ml
+      - CN 8｜openit.ml
       - CN 6｜openit.ml
-      - US 17｜openit.ml
-      - CN 1｜openit.ml
-      - TW 1｜openit.ml
-      - US 2｜openit.ml
-      - LT 1｜openit.ml
-      - US 3｜openit.ml
+      - CN 9｜openit.ml
+      - CN 12｜openit.ml
+      - HK 5｜openit.ml
+      - CN 15｜openit.ml
+      - CN 14｜openit.ml
+      - HK 2｜openit.ml
+      - SG 3｜openit.ml
+      - HK 10｜openit.ml
+      - HK 8｜openit.ml
+      - NL 1｜openit.ml
+      - CN 13｜openit.ml
+      - AU 6｜openit.ml
+      - AU 5｜openit.ml
+      - AU 7｜openit.ml
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,15 +148,33 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 8｜openit.ml
+      - HK 3｜openit.ml
+      - HK 7｜openit.ml
+      - CN 5｜openit.ml
       - CN 7｜openit.ml
+      - HK 14｜openit.ml
+      - US 22｜openit.ml
+      - HK 12｜openit.ml
+      - HK 11｜openit.ml
+      - CN 4｜openit.ml
+      - HK 9｜openit.ml
+      - HK 6｜openit.ml
+      - CN 8｜openit.ml
       - CN 6｜openit.ml
-      - US 17｜openit.ml
-      - CN 1｜openit.ml
-      - TW 1｜openit.ml
-      - US 2｜openit.ml
-      - LT 1｜openit.ml
-      - US 3｜openit.ml
+      - CN 9｜openit.ml
+      - CN 12｜openit.ml
+      - HK 5｜openit.ml
+      - CN 15｜openit.ml
+      - CN 14｜openit.ml
+      - HK 2｜openit.ml
+      - SG 3｜openit.ml
+      - HK 10｜openit.ml
+      - HK 8｜openit.ml
+      - NL 1｜openit.ml
+      - CN 13｜openit.ml
+      - AU 6｜openit.ml
+      - AU 5｜openit.ml
+      - AU 7｜openit.ml
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -95,44 +185,98 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 8｜openit.ml
+      - HK 3｜openit.ml
+      - HK 7｜openit.ml
+      - CN 5｜openit.ml
       - CN 7｜openit.ml
+      - HK 14｜openit.ml
+      - US 22｜openit.ml
+      - HK 12｜openit.ml
+      - HK 11｜openit.ml
+      - CN 4｜openit.ml
+      - HK 9｜openit.ml
+      - HK 6｜openit.ml
+      - CN 8｜openit.ml
       - CN 6｜openit.ml
-      - US 17｜openit.ml
-      - CN 1｜openit.ml
-      - TW 1｜openit.ml
-      - US 2｜openit.ml
-      - LT 1｜openit.ml
-      - US 3｜openit.ml
+      - CN 9｜openit.ml
+      - CN 12｜openit.ml
+      - HK 5｜openit.ml
+      - CN 15｜openit.ml
+      - CN 14｜openit.ml
+      - HK 2｜openit.ml
+      - SG 3｜openit.ml
+      - HK 10｜openit.ml
+      - HK 8｜openit.ml
+      - NL 1｜openit.ml
+      - CN 13｜openit.ml
+      - AU 6｜openit.ml
+      - AU 5｜openit.ml
+      - AU 7｜openit.ml
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 8｜openit.ml
+      - HK 3｜openit.ml
+      - HK 7｜openit.ml
+      - CN 5｜openit.ml
       - CN 7｜openit.ml
+      - HK 14｜openit.ml
+      - US 22｜openit.ml
+      - HK 12｜openit.ml
+      - HK 11｜openit.ml
+      - CN 4｜openit.ml
+      - HK 9｜openit.ml
+      - HK 6｜openit.ml
+      - CN 8｜openit.ml
       - CN 6｜openit.ml
-      - US 17｜openit.ml
-      - CN 1｜openit.ml
-      - TW 1｜openit.ml
-      - US 2｜openit.ml
-      - LT 1｜openit.ml
-      - US 3｜openit.ml
+      - CN 9｜openit.ml
+      - CN 12｜openit.ml
+      - HK 5｜openit.ml
+      - CN 15｜openit.ml
+      - CN 14｜openit.ml
+      - HK 2｜openit.ml
+      - SG 3｜openit.ml
+      - HK 10｜openit.ml
+      - HK 8｜openit.ml
+      - NL 1｜openit.ml
+      - CN 13｜openit.ml
+      - AU 6｜openit.ml
+      - AU 5｜openit.ml
+      - AU 7｜openit.ml
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 8｜openit.ml
+      - HK 3｜openit.ml
+      - HK 7｜openit.ml
+      - CN 5｜openit.ml
       - CN 7｜openit.ml
+      - HK 14｜openit.ml
+      - US 22｜openit.ml
+      - HK 12｜openit.ml
+      - HK 11｜openit.ml
+      - CN 4｜openit.ml
+      - HK 9｜openit.ml
+      - HK 6｜openit.ml
+      - CN 8｜openit.ml
       - CN 6｜openit.ml
-      - US 17｜openit.ml
-      - CN 1｜openit.ml
-      - TW 1｜openit.ml
-      - US 2｜openit.ml
-      - LT 1｜openit.ml
-      - US 3｜openit.ml
+      - CN 9｜openit.ml
+      - CN 12｜openit.ml
+      - HK 5｜openit.ml
+      - CN 15｜openit.ml
+      - CN 14｜openit.ml
+      - HK 2｜openit.ml
+      - SG 3｜openit.ml
+      - HK 10｜openit.ml
+      - HK 8｜openit.ml
+      - NL 1｜openit.ml
+      - CN 13｜openit.ml
+      - AU 6｜openit.ml
+      - AU 5｜openit.ml
+      - AU 7｜openit.ml
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,15 +292,33 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 8｜openit.ml
+      - HK 3｜openit.ml
+      - HK 7｜openit.ml
+      - CN 5｜openit.ml
       - CN 7｜openit.ml
+      - HK 14｜openit.ml
+      - US 22｜openit.ml
+      - HK 12｜openit.ml
+      - HK 11｜openit.ml
+      - CN 4｜openit.ml
+      - HK 9｜openit.ml
+      - HK 6｜openit.ml
+      - CN 8｜openit.ml
       - CN 6｜openit.ml
-      - US 17｜openit.ml
-      - CN 1｜openit.ml
-      - TW 1｜openit.ml
-      - US 2｜openit.ml
-      - LT 1｜openit.ml
-      - US 3｜openit.ml
+      - CN 9｜openit.ml
+      - CN 12｜openit.ml
+      - HK 5｜openit.ml
+      - CN 15｜openit.ml
+      - CN 14｜openit.ml
+      - HK 2｜openit.ml
+      - SG 3｜openit.ml
+      - HK 10｜openit.ml
+      - HK 8｜openit.ml
+      - NL 1｜openit.ml
+      - CN 13｜openit.ml
+      - AU 6｜openit.ml
+      - AU 5｜openit.ml
+      - AU 7｜openit.ml
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
