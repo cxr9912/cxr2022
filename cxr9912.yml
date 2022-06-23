@@ -1,4 +1,3 @@
-
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6,79 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港1, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 8e295665-f1af-3973-bc49-02e180e35b5f, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet～广州移动 | 解锁流媒体, server: 183.232.230.214, port: 49871, type: ss, cipher: chacha20-ietf-poly1305, password: d84fd904-268c-4b42-93cc-39a710042377, udp: true}
   - {name: 台湾-广州移动负载均衡 | 解锁流媒体, server: gzyd1.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
   - {name: 台湾-广州移动2负载均衡 | 解锁流媒体, server: gzyd2.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 台湾-河南移动负载均衡 | 解锁流媒体, server: hnyd.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 越南 | 广州移动2, server: gzyd2.52147.top, port: 30120, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 越南 | 广州移动, server: gzyd1.52147.top, port: 30120, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 越南-1号, server: 103.173.255.21, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true, udp: true}
-  - {name: 越南 | 河南移动, server: hnyd.52147.top, port: 30120, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 德国-河移双线负载均衡 | 解锁流媒体, server: hnyd.52147.top, port: 30080, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 越南-4号, server: 103.173.255.234, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true, udp: true}
-  - {name: 越南-2号, server: 103.173.255.127, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true, udp: true}
-  - {name: 德国-广移2双线负载均衡 | 解锁流媒体, server: gzyd2.52147.top, port: 30080, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 德国-广移双线负载均衡 | 解锁流媒体, server: gzyd1.52147.top, port: 30080, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 越南-3号, server: 103.173.255.228, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true, udp: true}
-  - {name: 日本NTT-2号 | 解锁流媒体, server: 164.70.68.67, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet | 解锁流媒体, server: hinet.52147.top, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港1
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾Hinet～广州移动 | 解锁流媒体
       - 台湾-广州移动负载均衡 | 解锁流媒体
       - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾-河南移动负载均衡 | 解锁流媒体
-      - 越南 | 广州移动2
-      - 越南 | 广州移动
-      - 越南-1号
-      - 越南 | 河南移动
-      - 德国-河移双线负载均衡 | 解锁流媒体
-      - 越南-4号
-      - 越南-2号
-      - 德国-广移2双线负载均衡 | 解锁流媒体
-      - 德国-广移双线负载均衡 | 解锁流媒体
-      - 越南-3号
-      - 日本NTT-2号 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港1
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾Hinet～广州移动 | 解锁流媒体
       - 台湾-广州移动负载均衡 | 解锁流媒体
       - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾-河南移动负载均衡 | 解锁流媒体
-      - 越南 | 广州移动2
-      - 越南 | 广州移动
-      - 越南-1号
-      - 越南 | 河南移动
-      - 德国-河移双线负载均衡 | 解锁流媒体
-      - 越南-4号
-      - 越南-2号
-      - 德国-广移2双线负载均衡 | 解锁流媒体
-      - 德国-广移双线负载均衡 | 解锁流媒体
-      - 越南-3号
-      - 日本NTT-2号 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港1
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾Hinet～广州移动 | 解锁流媒体
       - 台湾-广州移动负载均衡 | 解锁流媒体
       - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾-河南移动负载均衡 | 解锁流媒体
-      - 越南 | 广州移动2
-      - 越南 | 广州移动
-      - 越南-1号
-      - 越南 | 河南移动
-      - 德国-河移双线负载均衡 | 解锁流媒体
-      - 越南-4号
-      - 越南-2号
-      - 德国-广移2双线负载均衡 | 解锁流媒体
-      - 德国-广移双线负载均衡 | 解锁流媒体
-      - 越南-3号
-      - 日本NTT-2号 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -97,86 +80,77 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港1
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾Hinet～广州移动 | 解锁流媒体
       - 台湾-广州移动负载均衡 | 解锁流媒体
       - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾-河南移动负载均衡 | 解锁流媒体
-      - 越南 | 广州移动2
-      - 越南 | 广州移动
-      - 越南-1号
-      - 越南 | 河南移动
-      - 德国-河移双线负载均衡 | 解锁流媒体
-      - 越南-4号
-      - 越南-2号
-      - 德国-广移2双线负载均衡 | 解锁流媒体
-      - 德国-广移双线负载均衡 | 解锁流媒体
-      - 越南-3号
-      - 日本NTT-2号 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港1
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾Hinet～广州移动 | 解锁流媒体
       - 台湾-广州移动负载均衡 | 解锁流媒体
       - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾-河南移动负载均衡 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港1
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾Hinet～广州移动 | 解锁流媒体
       - 台湾-广州移动负载均衡 | 解锁流媒体
       - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾-河南移动负载均衡 | 解锁流媒体
-      - 越南 | 广州移动2
-      - 越南 | 广州移动
-      - 越南-1号
-      - 越南 | 河南移动
-      - 德国-河移双线负载均衡 | 解锁流媒体
-      - 越南-4号
-      - 越南-2号
-      - 德国-广移2双线负载均衡 | 解锁流媒体
-      - 德国-广移双线负载均衡 | 解锁流媒体
-      - 越南-3号
-      - 日本NTT-2号 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港1
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾Hinet～广州移动 | 解锁流媒体
       - 台湾-广州移动负载均衡 | 解锁流媒体
       - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾-河南移动负载均衡 | 解锁流媒体
-      - 越南 | 广州移动2
-      - 越南 | 广州移动
-      - 越南-1号
-      - 越南 | 河南移动
-      - 德国-河移双线负载均衡 | 解锁流媒体
-      - 越南-4号
-      - 越南-2号
-      - 德国-广移2双线负载均衡 | 解锁流媒体
-      - 德国-广移双线负载均衡 | 解锁流媒体
-      - 越南-3号
-      - 日本NTT-2号 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港1
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾Hinet～广州移动 | 解锁流媒体
       - 台湾-广州移动负载均衡 | 解锁流媒体
       - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾-河南移动负载均衡 | 解锁流媒体
-      - 越南 | 广州移动2
-      - 越南 | 广州移动
-      - 越南-1号
-      - 越南 | 河南移动
-      - 德国-河移双线负载均衡 | 解锁流媒体
-      - 越南-4号
-      - 越南-2号
-      - 德国-广移2双线负载均衡 | 解锁流媒体
-      - 德国-广移双线负载均衡 | 解锁流媒体
-      - 越南-3号
-      - 日本NTT-2号 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -192,20 +166,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港1
+      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 台湾Hinet～广州移动 | 解锁流媒体
       - 台湾-广州移动负载均衡 | 解锁流媒体
       - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾-河南移动负载均衡 | 解锁流媒体
-      - 越南 | 广州移动2
-      - 越南 | 广州移动
-      - 越南-1号
-      - 越南 | 河南移动
-      - 德国-河移双线负载均衡 | 解锁流媒体
-      - 越南-4号
-      - 越南-2号
-      - 德国-广移2双线负载均衡 | 解锁流媒体
-      - 德国-广移双线负载均衡 | 解锁流媒体
-      - 越南-3号
-      - 日本NTT-2号 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
