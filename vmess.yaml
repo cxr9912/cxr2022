@@ -5,71 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 宁夏, server: 68.79.47.58, port: 8090, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 江苏BGP, server: 43.248.79.72, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Az香港4, server: hk4.ningmengshui.xyz, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk4.ningmengshui.xyz}, udp: true}
-  - {name: Az香港12, server: hk12.ningmengshui.xyz, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk12.ningmengshui.xyz}, udp: true}
-  - {name: 江苏移动, server: 221.181.168.11, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Az香港9, server: hk9.ningmengshui.xyz, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dm.toutiao.com}, udp: true}
-  - {name: Az香港9 2, server: hk9.ningmengshui.xyz, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dm.toutiao.com}, udp: true}
+  - {name: Az香港2, server: hk2.ningmengshui.xyz, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk2.ningmengshui.xyz]}}, udp: true}
   - {name: Az香港3, server: hk3.ningmengshui.xyz, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk3.ningmengshui.xyz]}}, udp: true}
   - {name: Az香港5, server: hk5.ningmengshui.xyz, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk5.ningmengshui.xyz]}}, udp: true}
   - {name: Az香港8, server: hk8.ningmengshui.xyz, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk8.ningmengshui.xyz]}}, udp: true}
   - {name: AZ香港11, server: hk11.ningmengshui.xyz, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk11.ningmengshui.xyz]}}, udp: true}
   - {name: Opc日本3, server: 138.2.59.97, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [138.2.59.97]}}, udp: true}
+  - {name: Opc日本3 2, server: 138.2.59.97, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [138.2.59.97]}}, udp: true}
+  - {name: Az香港1, server: hk1.ningmengshui.xyz, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.youku.com}, udp: true}
+  - {name: Az香港4, server: hk4.ningmengshui.xyz, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk4.ningmengshui.xyz}, udp: true}
+  - {name: Az香港12, server: hk12.ningmengshui.xyz, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk12.ningmengshui.xyz}, udp: true}
+  - {name: 江苏移动, server: 221.181.168.11, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 江苏移动 2, server: 221.181.168.11, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 江苏BGP, server: 43.248.79.72, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 江苏BGP 2, server: 43.248.79.72, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: Az香港8 2, server: hk8.ningmengshui.xyz, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hk8.ningmengshui.xyz]}}, udp: true}
+  - {name: opc日本2, server: 152.69.199.111, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.youku.com}, udp: true}
+  - {name: 宁夏, server: 68.79.47.58, port: 8090, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 宁夏 2, server: 68.79.47.58, port: 8090, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 宁夏
-      - 江苏BGP
-      - Az香港4
-      - Az香港12
-      - 江苏移动
-      - Az香港9
-      - Az香港9 2
+      - Az香港2
       - Az香港3
       - Az香港5
       - Az香港8
       - AZ香港11
       - Opc日本3
+      - Opc日本3 2
+      - Az香港1
+      - Az香港4
+      - Az香港12
+      - 江苏移动
+      - 江苏移动 2
+      - 江苏BGP
+      - 江苏BGP 2
+      - Az香港8 2
+      - opc日本2
+      - 宁夏
+      - 宁夏 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 宁夏
-      - 江苏BGP
-      - Az香港4
-      - Az香港12
-      - 江苏移动
-      - Az香港9
-      - Az香港9 2
+      - Az香港2
       - Az香港3
       - Az香港5
       - Az香港8
       - AZ香港11
       - Opc日本3
+      - Opc日本3 2
+      - Az香港1
+      - Az香港4
+      - Az香港12
+      - 江苏移动
+      - 江苏移动 2
+      - 江苏BGP
+      - 江苏BGP 2
+      - Az香港8 2
+      - opc日本2
+      - 宁夏
+      - 宁夏 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 宁夏
-      - 江苏BGP
-      - Az香港4
-      - Az香港12
-      - 江苏移动
-      - Az香港9
-      - Az香港9 2
+      - Az香港2
       - Az香港3
       - Az香港5
       - Az香港8
       - AZ香港11
       - Opc日本3
+      - Opc日本3 2
+      - Az香港1
+      - Az香港4
+      - Az香港12
+      - 江苏移动
+      - 江苏移动 2
+      - 江苏BGP
+      - 江苏BGP 2
+      - Az香港8 2
+      - opc日本2
+      - 宁夏
+      - 宁夏 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,83 +112,108 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 宁夏
-      - 江苏BGP
-      - Az香港4
-      - Az香港12
-      - 江苏移动
-      - Az香港9
-      - Az香港9 2
+      - Az香港2
       - Az香港3
       - Az香港5
       - Az香港8
       - AZ香港11
       - Opc日本3
+      - Opc日本3 2
+      - Az香港1
+      - Az香港4
+      - Az香港12
+      - 江苏移动
+      - 江苏移动 2
+      - 江苏BGP
+      - 江苏BGP 2
+      - Az香港8 2
+      - opc日本2
+      - 宁夏
+      - 宁夏 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Az香港4
-      - Az香港12
-      - Az香港9
-      - Az香港9 2
+      - Az香港2
       - Az香港3
       - Az香港5
       - Az香港8
       - AZ香港11
+      - Az香港1
+      - Az香港4
+      - Az香港12
+      - Az香港8 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 宁夏
-      - 江苏BGP
-      - Az香港4
-      - Az香港12
-      - 江苏移动
-      - Az香港9
-      - Az香港9 2
+      - Az香港2
       - Az香港3
       - Az香港5
       - Az香港8
       - AZ香港11
       - Opc日本3
+      - Opc日本3 2
+      - Az香港1
+      - Az香港4
+      - Az香港12
+      - 江苏移动
+      - 江苏移动 2
+      - 江苏BGP
+      - 江苏BGP 2
+      - Az香港8 2
+      - opc日本2
+      - 宁夏
+      - 宁夏 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 宁夏
-      - 江苏BGP
-      - Az香港4
-      - Az香港12
-      - 江苏移动
-      - Az香港9
-      - Az香港9 2
+      - Az香港2
       - Az香港3
       - Az香港5
       - Az香港8
       - AZ香港11
       - Opc日本3
+      - Opc日本3 2
+      - Az香港1
+      - Az香港4
+      - Az香港12
+      - 江苏移动
+      - 江苏移动 2
+      - 江苏BGP
+      - 江苏BGP 2
+      - Az香港8 2
+      - opc日本2
+      - 宁夏
+      - 宁夏 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 宁夏
-      - 江苏BGP
-      - Az香港4
-      - Az香港12
-      - 江苏移动
-      - Az香港9
-      - Az香港9 2
+      - Az香港2
       - Az香港3
       - Az香港5
       - Az香港8
       - AZ香港11
       - Opc日本3
+      - Opc日本3 2
+      - Az香港1
+      - Az香港4
+      - Az香港12
+      - 江苏移动
+      - 江苏移动 2
+      - 江苏BGP
+      - 江苏BGP 2
+      - Az香港8 2
+      - opc日本2
+      - 宁夏
+      - 宁夏 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -180,18 +229,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 宁夏
-      - 江苏BGP
-      - Az香港4
-      - Az香港12
-      - 江苏移动
-      - Az香港9
-      - Az香港9 2
+      - Az香港2
       - Az香港3
       - Az香港5
       - Az香港8
       - AZ香港11
       - Opc日本3
+      - Opc日本3 2
+      - Az香港1
+      - Az香港4
+      - Az香港12
+      - 江苏移动
+      - 江苏移动 2
+      - 江苏BGP
+      - 江苏BGP 2
+      - Az香港8 2
+      - opc日本2
+      - 宁夏
+      - 宁夏 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
