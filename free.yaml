@@ -5,87 +5,83 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本IDC宽频|NF解锁|SS|A01, server: 36.139.154.162, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|V2|A01, server: 36.139.154.162, port: 45149, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.162}, udp: true}
-  - {name: 香港IDC宽频|NF解锁|V2|A01, server: 36.139.154.162, port: 45239, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.162}, udp: true}
-  - {name: 香港IDC宽频|NF解锁|SS|A01, server: 36.139.154.162, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|SS|A01, server: 36.139.154.162, port: 45105, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
-  - {name: 台湾家庭宽频|NF解锁|SS|A01, server: 36.139.154.17, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
-  - {name: 日本IDC宽频|NF解锁|V2|A01, server: 36.139.154.17, port: 45184, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.17}, udp: true}
-  - {name: 台湾家庭宽频|NF解锁|V2|A01, server: 36.139.154.17, port: 45394, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.17}, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45149, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
-  - {name: 日本IDC宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
-  - {name: 香港IDC宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45239, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
-  - {name: 香港IDC宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
-  - {name: 日本IDC宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45184, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
-  - {name: 美国IDC宽频|NF解锁|SS|A01, server: 36.139.154.17, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57c596-1178-425d-aecc-54af9b8840ca, udp: true}
-  - {name: 香港家庭宽频|NF解锁|V2|A01, server: 36.139.154.162, port: 45250, type: vmess, uuid: 8f57c596-1178-425d-aecc-54af9b8840ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.162}, udp: true}
+  - {name: 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20740, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20733, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20739, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20728, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20729, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20732, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡  | Trojan | F | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20734, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|A01
+      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | F | 1.0x | 青铜 |  AZ |
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|A01
+      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | F | 1.0x | 青铜 |  AZ |
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|A01
+      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | F | 1.0x | 青铜 |  AZ |
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -104,98 +100,93 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|A01
+      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | F | 1.0x | 青铜 |  AZ |
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 香港家庭宽频|NF解锁|V2|A01
+      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|A01
+      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | F | 1.0x | 青铜 |  AZ |
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|A01
+      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | F | 1.0x | 青铜 |  AZ |
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|A01
+      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | F | 1.0x | 青铜 |  AZ |
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -211,22 +202,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|V2|A01
+      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
+      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 新加坡  | Trojan | F | 1.0x | 青铜 |  AZ |
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
