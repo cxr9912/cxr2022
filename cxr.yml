@@ -5,51 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: v1丨香港丨优化丨1Gbps, server: zhilianwr1.yooo.me, port: 41255, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: v1丨新加坡丨中继丨HK隧道, server: zhuanfabj2.yooo.me, port: 3218, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: zhuanfabj2.yooo.me, skip-cert-verify: true, udp: true}
-  - {name: v1丨香港丨微软丨优化  Netflix 解锁, server: wr4zhilian2.yooo.me, port: 32124, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: v1丨香港丨微软丨2丨落地, server: zhilianwr3.yooo.me, port: 42254, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: v1丨香港丨微软丨AZ丨3, server: wr4zhilian1.yooo.me, port: 42356, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: wr4zhilian1.yooo.me, skip-cert-verify: true, udp: true}
-  - {name: v1丨香港丨HKT  2丨, server: zhuanfawr3.yooo.me, port: 56701, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: zhuanfawr3.yooo.me, skip-cert-verify: true, udp: true}
-  - {name: v1丨香港丨直连 1Gbps, server: wr4zhilian3.yooo.me, port: 12345, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet～广州移动 | 解锁流媒体, server: 183.232.230.214, port: 49871, type: ss, cipher: chacha20-ietf-poly1305, password: d84fd904-268c-4b42-93cc-39a710042377, udp: true}
+  - {name: 台湾-广州移动2负载均衡 | 解锁流媒体, server: gzyd2.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet | 解锁流媒体, server: hinet.52147.top, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾-广州移动负载均衡 | 解锁流媒体, server: gzyd1.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾-河南移动负载均衡 | 解锁流媒体, server: hnyd.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 越南 | 广州移动, server: gzyd1.52147.top, port: 30120, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 越南-4号, server: 103.173.255.234, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true, udp: true}
+  - {name: 越南-3号, server: 103.173.255.228, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true, udp: true}
+  - {name: 德国-广移2双线负载均衡 | 解锁流媒体, server: gzyd2.52147.top, port: 30080, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 德国-广移双线负载均衡 | 解锁流媒体, server: gzyd1.52147.top, port: 30080, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 越南 | 河南移动, server: hnyd.52147.top, port: 30120, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 越南-2号, server: 103.173.255.127, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true, udp: true}
+  - {name: 日本NTT-1号 | 解锁流媒体, server: 203.138.98.199, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true, udp: true}
+  - {name: 日本NTT-广州移动负载均衡 | 解锁流媒体, server: gzyd1.52147.top, port: 30130, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 日本NTT-广州移动2负载均衡 | 解锁流媒体, server: gzyd2.52147.top, port: 30130, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 越南-1号, server: 103.173.255.21, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v1丨香港丨优化丨1Gbps
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨香港丨微软丨优化  Netflix 解锁
-      - v1丨香港丨微软丨2丨落地
-      - v1丨香港丨微软丨AZ丨3
-      - v1丨香港丨HKT  2丨
-      - v1丨香港丨直连 1Gbps
+      - 台湾Hinet～广州移动 | 解锁流媒体
+      - 台湾-广州移动2负载均衡 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-广州移动负载均衡 | 解锁流媒体
+      - 台湾-河南移动负载均衡 | 解锁流媒体
+      - 越南 | 广州移动
+      - 越南-4号
+      - 越南-3号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-2号
+      - 日本NTT-1号 | 解锁流媒体
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 越南-1号
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - v1丨香港丨优化丨1Gbps
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨香港丨微软丨优化  Netflix 解锁
-      - v1丨香港丨微软丨2丨落地
-      - v1丨香港丨微软丨AZ丨3
-      - v1丨香港丨HKT  2丨
-      - v1丨香港丨直连 1Gbps
+      - 台湾Hinet～广州移动 | 解锁流媒体
+      - 台湾-广州移动2负载均衡 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-广州移动负载均衡 | 解锁流媒体
+      - 台湾-河南移动负载均衡 | 解锁流媒体
+      - 越南 | 广州移动
+      - 越南-4号
+      - 越南-3号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-2号
+      - 日本NTT-1号 | 解锁流媒体
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 越南-1号
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v1丨香港丨优化丨1Gbps
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨香港丨微软丨优化  Netflix 解锁
-      - v1丨香港丨微软丨2丨落地
-      - v1丨香港丨微软丨AZ丨3
-      - v1丨香港丨HKT  2丨
-      - v1丨香港丨直连 1Gbps
+      - 台湾Hinet～广州移动 | 解锁流媒体
+      - 台湾-广州移动2负载均衡 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-广州移动负载均衡 | 解锁流媒体
+      - 台湾-河南移动负载均衡 | 解锁流媒体
+      - 越南 | 广州移动
+      - 越南-4号
+      - 越南-3号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-2号
+      - 日本NTT-1号 | 解锁流媒体
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 越南-1号
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,61 +104,96 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v1丨香港丨优化丨1Gbps
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨香港丨微软丨优化  Netflix 解锁
-      - v1丨香港丨微软丨2丨落地
-      - v1丨香港丨微软丨AZ丨3
-      - v1丨香港丨HKT  2丨
-      - v1丨香港丨直连 1Gbps
+      - 台湾Hinet～广州移动 | 解锁流媒体
+      - 台湾-广州移动2负载均衡 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-广州移动负载均衡 | 解锁流媒体
+      - 台湾-河南移动负载均衡 | 解锁流媒体
+      - 越南 | 广州移动
+      - 越南-4号
+      - 越南-3号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-2号
+      - 日本NTT-1号 | 解锁流媒体
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 越南-1号
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - v1丨香港丨优化丨1Gbps
-      - v1丨香港丨微软丨优化  Netflix 解锁
-      - v1丨香港丨微软丨2丨落地
-      - v1丨香港丨微软丨AZ丨3
-      - v1丨香港丨HKT  2丨
-      - v1丨香港丨直连 1Gbps
+      - 台湾Hinet～广州移动 | 解锁流媒体
+      - 台湾-广州移动2负载均衡 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-广州移动负载均衡 | 解锁流媒体
+      - 台湾-河南移动负载均衡 | 解锁流媒体
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - v1丨香港丨优化丨1Gbps
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨香港丨微软丨优化  Netflix 解锁
-      - v1丨香港丨微软丨2丨落地
-      - v1丨香港丨微软丨AZ丨3
-      - v1丨香港丨HKT  2丨
-      - v1丨香港丨直连 1Gbps
+      - 台湾Hinet～广州移动 | 解锁流媒体
+      - 台湾-广州移动2负载均衡 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-广州移动负载均衡 | 解锁流媒体
+      - 台湾-河南移动负载均衡 | 解锁流媒体
+      - 越南 | 广州移动
+      - 越南-4号
+      - 越南-3号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-2号
+      - 日本NTT-1号 | 解锁流媒体
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 越南-1号
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - v1丨香港丨优化丨1Gbps
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨香港丨微软丨优化  Netflix 解锁
-      - v1丨香港丨微软丨2丨落地
-      - v1丨香港丨微软丨AZ丨3
-      - v1丨香港丨HKT  2丨
-      - v1丨香港丨直连 1Gbps
+      - 台湾Hinet～广州移动 | 解锁流媒体
+      - 台湾-广州移动2负载均衡 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-广州移动负载均衡 | 解锁流媒体
+      - 台湾-河南移动负载均衡 | 解锁流媒体
+      - 越南 | 广州移动
+      - 越南-4号
+      - 越南-3号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-2号
+      - 日本NTT-1号 | 解锁流媒体
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 越南-1号
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v1丨香港丨优化丨1Gbps
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨香港丨微软丨优化  Netflix 解锁
-      - v1丨香港丨微软丨2丨落地
-      - v1丨香港丨微软丨AZ丨3
-      - v1丨香港丨HKT  2丨
-      - v1丨香港丨直连 1Gbps
+      - 台湾Hinet～广州移动 | 解锁流媒体
+      - 台湾-广州移动2负载均衡 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-广州移动负载均衡 | 解锁流媒体
+      - 台湾-河南移动负载均衡 | 解锁流媒体
+      - 越南 | 广州移动
+      - 越南-4号
+      - 越南-3号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-2号
+      - 日本NTT-1号 | 解锁流媒体
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 越南-1号
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -138,13 +209,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v1丨香港丨优化丨1Gbps
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨香港丨微软丨优化  Netflix 解锁
-      - v1丨香港丨微软丨2丨落地
-      - v1丨香港丨微软丨AZ丨3
-      - v1丨香港丨HKT  2丨
-      - v1丨香港丨直连 1Gbps
+      - 台湾Hinet～广州移动 | 解锁流媒体
+      - 台湾-广州移动2负载均衡 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-广州移动负载均衡 | 解锁流媒体
+      - 台湾-河南移动负载均衡 | 解锁流媒体
+      - 越南 | 广州移动
+      - 越南-4号
+      - 越南-3号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-2号
+      - 日本NTT-1号 | 解锁流媒体
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 越南-1号
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
