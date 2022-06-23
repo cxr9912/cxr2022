@@ -5,67 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港4, server: v2hk4-ws-tls.ytv2line.top, port: 48203, type: vmess, uuid: 8d5e7a95-a0c5-444f-b9d7-e680eed2ee3a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cpyhyfd3, ws-headers: {Host: v2hk4-ws-tls.ytv2line.top}, udp: true}
-  - {name: 香港, server: v2hk-ws-tls.ytv2line.top, port: 48203, type: vmess, uuid: 8d5e7a95-a0c5-444f-b9d7-e680eed2ee3a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cpyhyfd3, ws-headers: {Host: v2hk-ws-tls.ytv2line.top}, udp: true}
-  - {name: 日本4, server: v2jp4.ytv2line.top, port: 48103, type: vmess, uuid: 8d5e7a95-a0c5-444f-b9d7-e680eed2ee3a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cpyhyfd3, ws-headers: {Host: v2jp4.ytv2line.top}, udp: true}
-  - {name: 香港3, server: v2hk3-ws-tls.ytv2line.top, port: 48203, type: vmess, uuid: 8d5e7a95-a0c5-444f-b9d7-e680eed2ee3a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cpyhyfd3, ws-headers: {Host: v2hk3-ws-tls.ytv2line.top}, udp: true}
-  - {name: 日本3, server: v2jp3-ws-tls.ytv2line.top, port: 48103, type: vmess, uuid: 8d5e7a95-a0c5-444f-b9d7-e680eed2ee3a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cpyhyfd3, ws-headers: {Host: v2jp3-ws-tls.ytv2line.top}, udp: true}
-  - {name: 日本, server: v2jp-ws-tls.ytv2line.top, port: 48103, type: vmess, uuid: 8d5e7a95-a0c5-444f-b9d7-e680eed2ee3a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cpyhyfd3, ws-headers: {Host: v2jp-ws-tls.ytv2line.top}, udp: true}
-  - {name: 香港5, server: v2hk5-ws-tls.ytv2line.top, port: 48203, type: vmess, uuid: 8d5e7a95-a0c5-444f-b9d7-e680eed2ee3a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cpyhyfd3, ws-headers: {Host: v2hk5-ws-tls.ytv2line.top}, udp: true}
-  - {name: 香港6, server: v2hk6.ytv2line.top, port: 48203, type: vmess, uuid: 8d5e7a95-a0c5-444f-b9d7-e680eed2ee3a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cpyhyfd3, ws-headers: {Host: v2hk6.ytv2line.top}, udp: true}
-  - {name: 韩国, server: v2kr.ytv2line.top, port: 48502, type: vmess, uuid: 8d5e7a95-a0c5-444f-b9d7-e680eed2ee3a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cpyhyfd3, ws-headers: {Host: v2kr.ytv2line.top}, udp: true}
-  - {name: 美国3, server: v2usa3-ws-tls.ytv2line.top, port: 48602, type: vmess, uuid: 8d5e7a95-a0c5-444f-b9d7-e680eed2ee3a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cpyhyfd3, ws-headers: {Host: v2usa3-ws-tls.ytv2line.top}, udp: true}
-  - {name: 德国, server: v2de.ytv2line.top, port: 48802, type: vmess, uuid: 8d5e7a95-a0c5-444f-b9d7-e680eed2ee3a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cpyhyfd3, ws-headers: {Host: v2de.ytv2line.top}, udp: true}
+  - {name: v1丨香港丨优化丨1Gbps, server: zhilianwr1.yooo.me, port: 41255, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: v1丨新加坡丨中继丨HK隧道, server: zhuanfabj2.yooo.me, port: 3218, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: zhuanfabj2.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: v1丨香港丨微软丨优化  Netflix 解锁, server: wr4zhilian2.yooo.me, port: 32124, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: v1丨香港丨微软丨2丨落地, server: zhilianwr3.yooo.me, port: 42254, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: v1丨香港丨微软丨AZ丨3, server: wr4zhilian1.yooo.me, port: 42356, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: wr4zhilian1.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: v1丨香港丨HKT  2丨, server: zhuanfawr3.yooo.me, port: 56701, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, sni: zhuanfawr3.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: v1丨香港丨直连 1Gbps, server: wr4zhilian3.yooo.me, port: 12345, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港4
-      - 香港
-      - 日本4
-      - 香港3
-      - 日本3
-      - 日本
-      - 香港5
-      - 香港6
-      - 韩国
-      - 美国3
-      - 德国
+      - v1丨香港丨优化丨1Gbps
+      - v1丨新加坡丨中继丨HK隧道
+      - v1丨香港丨微软丨优化  Netflix 解锁
+      - v1丨香港丨微软丨2丨落地
+      - v1丨香港丨微软丨AZ丨3
+      - v1丨香港丨HKT  2丨
+      - v1丨香港丨直连 1Gbps
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港4
-      - 香港
-      - 日本4
-      - 香港3
-      - 日本3
-      - 日本
-      - 香港5
-      - 香港6
-      - 韩国
-      - 美国3
-      - 德国
+      - v1丨香港丨优化丨1Gbps
+      - v1丨新加坡丨中继丨HK隧道
+      - v1丨香港丨微软丨优化  Netflix 解锁
+      - v1丨香港丨微软丨2丨落地
+      - v1丨香港丨微软丨AZ丨3
+      - v1丨香港丨HKT  2丨
+      - v1丨香港丨直连 1Gbps
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港4
-      - 香港
-      - 日本4
-      - 香港3
-      - 日本3
-      - 日本
-      - 香港5
-      - 香港6
-      - 韩国
-      - 美国3
-      - 德国
+      - v1丨香港丨优化丨1Gbps
+      - v1丨新加坡丨中继丨HK隧道
+      - v1丨香港丨微软丨优化  Netflix 解锁
+      - v1丨香港丨微软丨2丨落地
+      - v1丨香港丨微软丨AZ丨3
+      - v1丨香港丨HKT  2丨
+      - v1丨香港丨直连 1Gbps
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,76 +68,61 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港4
-      - 香港
-      - 日本4
-      - 香港3
-      - 日本3
-      - 日本
-      - 香港5
-      - 香港6
-      - 韩国
-      - 美国3
-      - 德国
+      - v1丨香港丨优化丨1Gbps
+      - v1丨新加坡丨中继丨HK隧道
+      - v1丨香港丨微软丨优化  Netflix 解锁
+      - v1丨香港丨微软丨2丨落地
+      - v1丨香港丨微软丨AZ丨3
+      - v1丨香港丨HKT  2丨
+      - v1丨香港丨直连 1Gbps
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港4
-      - 香港
-      - 香港3
-      - 香港5
-      - 香港6
+      - v1丨香港丨优化丨1Gbps
+      - v1丨香港丨微软丨优化  Netflix 解锁
+      - v1丨香港丨微软丨2丨落地
+      - v1丨香港丨微软丨AZ丨3
+      - v1丨香港丨HKT  2丨
+      - v1丨香港丨直连 1Gbps
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港4
-      - 香港
-      - 日本4
-      - 香港3
-      - 日本3
-      - 日本
-      - 香港5
-      - 香港6
-      - 韩国
-      - 美国3
-      - 德国
+      - v1丨香港丨优化丨1Gbps
+      - v1丨新加坡丨中继丨HK隧道
+      - v1丨香港丨微软丨优化  Netflix 解锁
+      - v1丨香港丨微软丨2丨落地
+      - v1丨香港丨微软丨AZ丨3
+      - v1丨香港丨HKT  2丨
+      - v1丨香港丨直连 1Gbps
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港4
-      - 香港
-      - 日本4
-      - 香港3
-      - 日本3
-      - 日本
-      - 香港5
-      - 香港6
-      - 韩国
-      - 美国3
-      - 德国
+      - v1丨香港丨优化丨1Gbps
+      - v1丨新加坡丨中继丨HK隧道
+      - v1丨香港丨微软丨优化  Netflix 解锁
+      - v1丨香港丨微软丨2丨落地
+      - v1丨香港丨微软丨AZ丨3
+      - v1丨香港丨HKT  2丨
+      - v1丨香港丨直连 1Gbps
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港4
-      - 香港
-      - 日本4
-      - 香港3
-      - 日本3
-      - 日本
-      - 香港5
-      - 香港6
-      - 韩国
-      - 美国3
-      - 德国
+      - v1丨香港丨优化丨1Gbps
+      - v1丨新加坡丨中继丨HK隧道
+      - v1丨香港丨微软丨优化  Netflix 解锁
+      - v1丨香港丨微软丨2丨落地
+      - v1丨香港丨微软丨AZ丨3
+      - v1丨香港丨HKT  2丨
+      - v1丨香港丨直连 1Gbps
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -169,17 +138,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港4
-      - 香港
-      - 日本4
-      - 香港3
-      - 日本3
-      - 日本
-      - 香港5
-      - 香港6
-      - 韩国
-      - 美国3
-      - 德国
+      - v1丨香港丨优化丨1Gbps
+      - v1丨新加坡丨中继丨HK隧道
+      - v1丨香港丨微软丨优化  Netflix 解锁
+      - v1丨香港丨微软丨2丨落地
+      - v1丨香港丨微软丨AZ丨3
+      - v1丨香港丨HKT  2丨
+      - v1丨香港丨直连 1Gbps
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
