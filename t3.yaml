@@ -5,63 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20739, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20733, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20735, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20729, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡  | Trojan | D | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20731, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20740, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡  | Trojan | D1 | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20742, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20732, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 广港隧道-香港bgp, server: 36.139.154.162, port: 45275, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 广港隧道-日本, server: 36.139.154.162, port: 45280, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 杭港BGP隧道-香港bgp, server: 36.134.116.212, port: 45254, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 杭港BGP隧道-台湾, server: 36.134.116.212, port: 45253, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 广港隧道-美国, server: 36.139.154.162, port: 45281, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 广港隧道-台湾, server: 36.139.154.162, port: 45273, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 杭港BGP隧道-香港bgp
+      - 杭港BGP隧道-台湾
+      - 广港隧道-美国
+      - 广港隧道-台湾
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 杭港BGP隧道-香港bgp
+      - 杭港BGP隧道-台湾
+      - 广港隧道-美国
+      - 广港隧道-台湾
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 杭港BGP隧道-香港bgp
+      - 杭港BGP隧道-台湾
+      - 广港隧道-美国
+      - 广港隧道-台湾
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,67 +64,57 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 杭港BGP隧道-香港bgp
+      - 杭港BGP隧道-台湾
+      - 广港隧道-美国
+      - 广港隧道-台湾
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 杭港BGP隧道-香港bgp
+      - 杭港BGP隧道-台湾
+      - 广港隧道-美国
+      - 广港隧道-台湾
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 杭港BGP隧道-香港bgp
+      - 杭港BGP隧道-台湾
+      - 广港隧道-美国
+      - 广港隧道-台湾
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 杭港BGP隧道-香港bgp
+      - 杭港BGP隧道-台湾
+      - 广港隧道-美国
+      - 广港隧道-台湾
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 杭港BGP隧道-香港bgp
+      - 杭港BGP隧道-台湾
+      - 广港隧道-美国
+      - 广港隧道-台湾
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -156,16 +130,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡  | Trojan | C1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | G | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | A1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | B1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | D1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | E1 | 1.0x | 青铜 |  AZ |
-      - 新加坡  | Trojan | C | 1.0x | 青铜 |  AZ |
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 杭港BGP隧道-香港bgp
+      - 杭港BGP隧道-台湾
+      - 广港隧道-美国
+      - 广港隧道-台湾
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
