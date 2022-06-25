@@ -5,63 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港1, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 8e295665-f1af-3973-bc49-02e180e35b5f, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾Hinet～广州移动 | 解锁流媒体, server: 183.232.230.214, port: 49871, type: ss, cipher: chacha20-ietf-poly1305, password: d84fd904-268c-4b42-93cc-39a710042377, udp: true}
-  - {name: 台湾-广州移动负载均衡 | 解锁流媒体, server: gzyd1.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 台湾-广州移动2负载均衡 | 解锁流媒体, server: gzyd2.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 台湾Hinet | 解锁流媒体, server: hinet.52147.top, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 广港隧道-台湾, server: 36.139.154.162, port: 45273, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 广港隧道-香港bgp, server: 36.139.154.162, port: 45275, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 广港隧道-日本, server: 36.139.154.162, port: 45280, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 广港BGP隧道-香港Azure, server: 36.139.9.191, port: 45713, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 晥日隧道-日本, server: 58.242.130.170, port: 45164, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 杭港BGP隧道-台湾, server: 36.134.116.212, port: 45253, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 广港BGP隧道-香港bgp, server: 36.139.9.191, port: 45707, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 广港隧道-美国, server: 36.139.154.162, port: 45281, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 广港隧道-香港Azure, server: 36.139.154.162, port: 45276, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 广港隧道-香港htk, server: 36.139.154.162, port: 45271, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: 广港BGP隧道-台湾, server: 36.139.9.191, port: 45706, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港1
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾Hinet～广州移动 | 解锁流媒体
-      - 台湾-广州移动负载均衡 | 解锁流媒体
-      - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
+      - 广港隧道-台湾
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 广港BGP隧道-香港Azure
+      - 晥日隧道-日本
+      - 杭港BGP隧道-台湾
+      - 广港BGP隧道-香港bgp
+      - 广港隧道-美国
+      - 广港隧道-香港Azure
+      - 广港隧道-香港htk
+      - 广港BGP隧道-台湾
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港1
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾Hinet～广州移动 | 解锁流媒体
-      - 台湾-广州移动负载均衡 | 解锁流媒体
-      - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
+      - 广港隧道-台湾
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 广港BGP隧道-香港Azure
+      - 晥日隧道-日本
+      - 杭港BGP隧道-台湾
+      - 广港BGP隧道-香港bgp
+      - 广港隧道-美国
+      - 广港隧道-香港Azure
+      - 广港隧道-香港htk
+      - 广港BGP隧道-台湾
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港1
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾Hinet～广州移动 | 解锁流媒体
-      - 台湾-广州移动负载均衡 | 解锁流媒体
-      - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
+      - 广港隧道-台湾
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 广港BGP隧道-香港Azure
+      - 晥日隧道-日本
+      - 杭港BGP隧道-台湾
+      - 广港BGP隧道-香港bgp
+      - 广港隧道-美国
+      - 广港隧道-香港Azure
+      - 广港隧道-香港htk
+      - 广港BGP隧道-台湾
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,77 +84,81 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港1
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾Hinet～广州移动 | 解锁流媒体
-      - 台湾-广州移动负载均衡 | 解锁流媒体
-      - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
+      - 广港隧道-台湾
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 广港BGP隧道-香港Azure
+      - 晥日隧道-日本
+      - 杭港BGP隧道-台湾
+      - 广港BGP隧道-香港bgp
+      - 广港隧道-美国
+      - 广港隧道-香港Azure
+      - 广港隧道-香港htk
+      - 广港BGP隧道-台湾
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港1
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾Hinet～广州移动 | 解锁流媒体
-      - 台湾-广州移动负载均衡 | 解锁流媒体
-      - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
+      - 广港隧道-台湾
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 广港BGP隧道-香港Azure
+      - 杭港BGP隧道-台湾
+      - 广港BGP隧道-香港bgp
+      - 广港隧道-美国
+      - 广港隧道-香港Azure
+      - 广港隧道-香港htk
+      - 广港BGP隧道-台湾
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港1
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾Hinet～广州移动 | 解锁流媒体
-      - 台湾-广州移动负载均衡 | 解锁流媒体
-      - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
+      - 广港隧道-台湾
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 广港BGP隧道-香港Azure
+      - 晥日隧道-日本
+      - 杭港BGP隧道-台湾
+      - 广港BGP隧道-香港bgp
+      - 广港隧道-美国
+      - 广港隧道-香港Azure
+      - 广港隧道-香港htk
+      - 广港BGP隧道-台湾
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港1
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾Hinet～广州移动 | 解锁流媒体
-      - 台湾-广州移动负载均衡 | 解锁流媒体
-      - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
+      - 广港隧道-台湾
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 广港BGP隧道-香港Azure
+      - 晥日隧道-日本
+      - 杭港BGP隧道-台湾
+      - 广港BGP隧道-香港bgp
+      - 广港隧道-美国
+      - 广港隧道-香港Azure
+      - 广港隧道-香港htk
+      - 广港BGP隧道-台湾
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港1
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾Hinet～广州移动 | 解锁流媒体
-      - 台湾-广州移动负载均衡 | 解锁流媒体
-      - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
+      - 广港隧道-台湾
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 广港BGP隧道-香港Azure
+      - 晥日隧道-日本
+      - 杭港BGP隧道-台湾
+      - 广港BGP隧道-香港bgp
+      - 广港隧道-美国
+      - 广港隧道-香港Azure
+      - 广港隧道-香港htk
+      - 广港BGP隧道-台湾
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -166,16 +174,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 | Trojan | C | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港1
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | J | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 台湾Hinet～广州移动 | 解锁流媒体
-      - 台湾-广州移动负载均衡 | 解锁流媒体
-      - 台湾-广州移动2负载均衡 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
+      - 广港隧道-台湾
+      - 广港隧道-香港bgp
+      - 广港隧道-日本
+      - 广港BGP隧道-香港Azure
+      - 晥日隧道-日本
+      - 杭港BGP隧道-台湾
+      - 广港BGP隧道-香港bgp
+      - 广港隧道-美国
+      - 广港隧道-香港Azure
+      - 广港隧道-香港htk
+      - 广港BGP隧道-台湾
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
