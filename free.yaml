@@ -5,35 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港_TG@nodesharing_35, server: appu479822956408.api.steamgamepowered.net, port: 18180, type: trojan, password: 50b17da8-f0d0-449a-a90e-e19493289760, sni: appu479822956408.api.steamgamepowered.net, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_89, server: idcdo11948.netvigators.xyz, port: 31666, type: trojan, password: 50b17da8-f0d0-449a-a90e-e19493289760, sni: idcdo11948.netvigators.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_122, server: fileu479822956408.edge.pubmed-hub.com, port: 41288, type: trojan, password: 50b17da8-f0d0-449a-a90e-e19493289760, sni: fileu479822956408.edge.pubmed-hub.com, skip-cert-verify: true, udp: true}
+  - {name: 专线|原生|亚洲|中国香港01, server: ink-gzzf-hk.inkiwike.com, port: 45457, type: vmess, uuid: 820aa5e5-4df6-4aaa-90a5-1cf80e32f238, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /iqiyi, ws-headers: {Host: iQiyi.com}, udp: true}
+  - {name: 专线|广播|亚洲|新加坡, server: cn.cmcmyd.986888.xyz, port: 27482, type: vmess, uuid: 820aa5e5-4df6-4aaa-90a5-1cf80e32f238, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /iqiyi, ws-headers: {Host: iQiyi.com}, udp: true}
+  - {name: 专线|广播|亚洲|韩国首尔, server: 140.179.148.92, port: 50168, type: vmess, uuid: 820aa5e5-4df6-4aaa-90a5-1cf80e32f238, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /iqiyi, ws-headers: {Host: iQiyi.com}, udp: true}
+  - {name: 专线|原生|美洲|美国西雅图, server: 140.179.148.92, port: 52442, type: vmess, uuid: 820aa5e5-4df6-4aaa-90a5-1cf80e32f238, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /iqiyi, ws-headers: {Host: iQiyi.com}, udp: true}
+  - {name: 专线|广播|亚洲|日本大阪, server: 140.179.148.92, port: 16212, type: vmess, uuid: 820aa5e5-4df6-4aaa-90a5-1cf80e32f238, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /iqiyi, ws-headers: {Host: iQiyi.com}, udp: true}
+  - {name: 专线|广播|亚洲|中国香港02, server: ink-gzzf-hk.inkiwike.com, port: 45459, type: vmess, uuid: 820aa5e5-4df6-4aaa-90a5-1cf80e32f238, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /iqiyi, ws-headers: {Host: iQiyi.com}, udp: true}
+  - {name: 专线|广播|亚洲|马来西亚03, server: iplc.wenzhoucloud.trojanv2ray.online, port: 20006, type: vmess, uuid: 820aa5e5-4df6-4aaa-90a5-1cf80e32f238, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /iqiyi, ws-headers: {Host: iQiyi.com}, udp: true}
+  - {name: 专线|广播|亚洲|马来西亚04, server: iplc.wenzhoucloud.trojanv2ray.online, port: 20007, type: vmess, uuid: 820aa5e5-4df6-4aaa-90a5-1cf80e32f238, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /iqiyi, ws-headers: {Host: iQiyi.com}, udp: true}
+  - {name: 专线|广播|美洲|美国圣何塞02, server: 140.179.148.92, port: 45596, type: vmess, uuid: 820aa5e5-4df6-4aaa-90a5-1cf80e32f238, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /iqiyi, ws-headers: {Host: iQiyi.com}, udp: true}
+  - {name: 专线|广播|美洲|美国圣何塞01, server: 140.179.148.92, port: 55662, type: vmess, uuid: 820aa5e5-4df6-4aaa-90a5-1cf80e32f238, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /iqiyi, ws-headers: {Host: iQiyi.com}, udp: true}
+  - {name: 专线|广播|亚洲|马来西亚02, server: iplc.wenzhoucloud.trojanv2ray.online, port: 20005, type: vmess, uuid: 820aa5e5-4df6-4aaa-90a5-1cf80e32f238, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /iqiyi, ws-headers: {Host: iQiyi.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港_TG@nodesharing_35
-      - 香港_TG@nodesharing_89
-      - 香港_TG@nodesharing_122
+      - 专线|原生|亚洲|中国香港01
+      - 专线|广播|亚洲|新加坡
+      - 专线|广播|亚洲|韩国首尔
+      - 专线|原生|美洲|美国西雅图
+      - 专线|广播|亚洲|日本大阪
+      - 专线|广播|亚洲|中国香港02
+      - 专线|广播|亚洲|马来西亚03
+      - 专线|广播|亚洲|马来西亚04
+      - 专线|广播|美洲|美国圣何塞02
+      - 专线|广播|美洲|美国圣何塞01
+      - 专线|广播|亚洲|马来西亚02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港_TG@nodesharing_35
-      - 香港_TG@nodesharing_89
-      - 香港_TG@nodesharing_122
+      - 专线|原生|亚洲|中国香港01
+      - 专线|广播|亚洲|新加坡
+      - 专线|广播|亚洲|韩国首尔
+      - 专线|原生|美洲|美国西雅图
+      - 专线|广播|亚洲|日本大阪
+      - 专线|广播|亚洲|中国香港02
+      - 专线|广播|亚洲|马来西亚03
+      - 专线|广播|亚洲|马来西亚04
+      - 专线|广播|美洲|美国圣何塞02
+      - 专线|广播|美洲|美国圣何塞01
+      - 专线|广播|亚洲|马来西亚02
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港_TG@nodesharing_35
-      - 香港_TG@nodesharing_89
-      - 香港_TG@nodesharing_122
+      - 专线|原生|亚洲|中国香港01
+      - 专线|广播|亚洲|新加坡
+      - 专线|广播|亚洲|韩国首尔
+      - 专线|原生|美洲|美国西雅图
+      - 专线|广播|亚洲|日本大阪
+      - 专线|广播|亚洲|中国香港02
+      - 专线|广播|亚洲|马来西亚03
+      - 专线|广播|亚洲|马来西亚04
+      - 专线|广播|美洲|美国圣何塞02
+      - 专线|广播|美洲|美国圣何塞01
+      - 专线|广播|亚洲|马来西亚02
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,42 +84,73 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港_TG@nodesharing_35
-      - 香港_TG@nodesharing_89
-      - 香港_TG@nodesharing_122
+      - 专线|原生|亚洲|中国香港01
+      - 专线|广播|亚洲|新加坡
+      - 专线|广播|亚洲|韩国首尔
+      - 专线|原生|美洲|美国西雅图
+      - 专线|广播|亚洲|日本大阪
+      - 专线|广播|亚洲|中国香港02
+      - 专线|广播|亚洲|马来西亚03
+      - 专线|广播|亚洲|马来西亚04
+      - 专线|广播|美洲|美国圣何塞02
+      - 专线|广播|美洲|美国圣何塞01
+      - 专线|广播|亚洲|马来西亚02
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港_TG@nodesharing_35
-      - 香港_TG@nodesharing_89
-      - 香港_TG@nodesharing_122
+      - 专线|原生|亚洲|中国香港01
+      - 专线|广播|亚洲|中国香港02
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港_TG@nodesharing_35
-      - 香港_TG@nodesharing_89
-      - 香港_TG@nodesharing_122
+      - 专线|原生|亚洲|中国香港01
+      - 专线|广播|亚洲|新加坡
+      - 专线|广播|亚洲|韩国首尔
+      - 专线|原生|美洲|美国西雅图
+      - 专线|广播|亚洲|日本大阪
+      - 专线|广播|亚洲|中国香港02
+      - 专线|广播|亚洲|马来西亚03
+      - 专线|广播|亚洲|马来西亚04
+      - 专线|广播|美洲|美国圣何塞02
+      - 专线|广播|美洲|美国圣何塞01
+      - 专线|广播|亚洲|马来西亚02
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港_TG@nodesharing_35
-      - 香港_TG@nodesharing_89
-      - 香港_TG@nodesharing_122
+      - 专线|原生|亚洲|中国香港01
+      - 专线|广播|亚洲|新加坡
+      - 专线|广播|亚洲|韩国首尔
+      - 专线|原生|美洲|美国西雅图
+      - 专线|广播|亚洲|日本大阪
+      - 专线|广播|亚洲|中国香港02
+      - 专线|广播|亚洲|马来西亚03
+      - 专线|广播|亚洲|马来西亚04
+      - 专线|广播|美洲|美国圣何塞02
+      - 专线|广播|美洲|美国圣何塞01
+      - 专线|广播|亚洲|马来西亚02
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港_TG@nodesharing_35
-      - 香港_TG@nodesharing_89
-      - 香港_TG@nodesharing_122
+      - 专线|原生|亚洲|中国香港01
+      - 专线|广播|亚洲|新加坡
+      - 专线|广播|亚洲|韩国首尔
+      - 专线|原生|美洲|美国西雅图
+      - 专线|广播|亚洲|日本大阪
+      - 专线|广播|亚洲|中国香港02
+      - 专线|广播|亚洲|马来西亚03
+      - 专线|广播|亚洲|马来西亚04
+      - 专线|广播|美洲|美国圣何塞02
+      - 专线|广播|美洲|美国圣何塞01
+      - 专线|广播|亚洲|马来西亚02
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -103,9 +166,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港_TG@nodesharing_35
-      - 香港_TG@nodesharing_89
-      - 香港_TG@nodesharing_122
+      - 专线|原生|亚洲|中国香港01
+      - 专线|广播|亚洲|新加坡
+      - 专线|广播|亚洲|韩国首尔
+      - 专线|原生|美洲|美国西雅图
+      - 专线|广播|亚洲|日本大阪
+      - 专线|广播|亚洲|中国香港02
+      - 专线|广播|亚洲|马来西亚03
+      - 专线|广播|亚洲|马来西亚04
+      - 专线|广播|美洲|美国圣何塞02
+      - 专线|广播|美洲|美国圣何塞01
+      - 专线|广播|亚洲|马来西亚02
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
