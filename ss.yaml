@@ -5,63 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: bb72ed6f-0c7e-31e8-9ec8-8479cd2cf29b, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: bb72ed6f-0c7e-31e8-9ec8-8479cd2cf29b, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: bb72ed6f-0c7e-31e8-9ec8-8479cd2cf29b, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: bb72ed6f-0c7e-31e8-9ec8-8479cd2cf29b, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港  | Trojan | B | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20719, type: trojan, password: bb72ed6f-0c7e-31e8-9ec8-8479cd2cf29b, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: bb72ed6f-0c7e-31e8-9ec8-8479cd2cf29b, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 马来西亚 | Trojan | 體驗節點 |  A | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |, server: azgy001.xiba1.xyz, port: 6003, type: trojan, password: bb72ed6f-0c7e-31e8-9ec8-8479cd2cf29b, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: "马来西亚 | Trojan | 體驗套餐 | B | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t", server: azgy001.xiba1.xyz, port: 6004, type: trojan, password: bb72ed6f-0c7e-31e8-9ec8-8479cd2cf29b, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: bb72ed6f-0c7e-31e8-9ec8-8479cd2cf29b, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: bb72ed6f-0c7e-31e8-9ec8-8479cd2cf29b, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT03   2x, server: 112.64.53.176, port: 63082, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkt3-cdn.tencent.best}, udp: true}
+  - {name: 台湾 多台负载均衡 B 1.5x, server: 116.129.254.65, port: 63088, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
+  - {name: 香港HKT02   2x, server: 112.64.53.176, port: 63081, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkt2-cdn.tencent.best}, udp: true}
+  - {name: 韩国01 B | x1.5, server: 116.129.254.65, port: 63004, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-kr01.covid19.rip}, udp: true}
+  - {name: 印度01 B | 1.5x, server: 116.129.254.65, port: 63051, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: mugua-in01.airport-v2.com}, udp: true}
+  - {name: 台湾 多台负载均衡 E 1.5x, server: 112.64.53.176, port: 63088, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
+  - {name: 台湾 多台负载均衡 D 1.5x, server: 159.27.90.254, port: 63088, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
+  - {name: 美国01 B | 1.5x, server: 116.129.254.65, port: 63014, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港  | Trojan | B | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 马来西亚 | Trojan | 體驗節點 |  A | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - "马来西亚 | Trojan | 體驗套餐 | B | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港HKT03   2x
+      - 台湾 多台负载均衡 B 1.5x
+      - 香港HKT02   2x
+      - 韩国01 B | x1.5
+      - 印度01 B | 1.5x
+      - 台湾 多台负载均衡 E 1.5x
+      - 台湾 多台负载均衡 D 1.5x
+      - 美国01 B | 1.5x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港  | Trojan | B | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 马来西亚 | Trojan | 體驗節點 |  A | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - "马来西亚 | Trojan | 體驗套餐 | B | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港HKT03   2x
+      - 台湾 多台负载均衡 B 1.5x
+      - 香港HKT02   2x
+      - 韩国01 B | x1.5
+      - 印度01 B | 1.5x
+      - 台湾 多台负载均衡 E 1.5x
+      - 台湾 多台负载均衡 D 1.5x
+      - 美国01 B | 1.5x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港  | Trojan | B | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 马来西亚 | Trojan | 體驗節點 |  A | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - "马来西亚 | Trojan | 體驗套餐 | B | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港HKT03   2x
+      - 台湾 多台负载均衡 B 1.5x
+      - 香港HKT02   2x
+      - 韩国01 B | x1.5
+      - 印度01 B | 1.5x
+      - 台湾 多台负载均衡 E 1.5x
+      - 台湾 多台负载均衡 D 1.5x
+      - 美国01 B | 1.5x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,75 +72,64 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港  | Trojan | B | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 马来西亚 | Trojan | 體驗節點 |  A | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - "马来西亚 | Trojan | 體驗套餐 | B | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港HKT03   2x
+      - 台湾 多台负载均衡 B 1.5x
+      - 香港HKT02   2x
+      - 韩国01 B | x1.5
+      - 印度01 B | 1.5x
+      - 台湾 多台负载均衡 E 1.5x
+      - 台湾 多台负载均衡 D 1.5x
+      - 美国01 B | 1.5x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港  | Trojan | B | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港HKT03   2x
+      - 台湾 多台负载均衡 B 1.5x
+      - 香港HKT02   2x
+      - 台湾 多台负载均衡 E 1.5x
+      - 台湾 多台负载均衡 D 1.5x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港  | Trojan | B | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 马来西亚 | Trojan | 體驗節點 |  A | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - "马来西亚 | Trojan | 體驗套餐 | B | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港HKT03   2x
+      - 台湾 多台负载均衡 B 1.5x
+      - 香港HKT02   2x
+      - 韩国01 B | x1.5
+      - 印度01 B | 1.5x
+      - 台湾 多台负载均衡 E 1.5x
+      - 台湾 多台负载均衡 D 1.5x
+      - 美国01 B | 1.5x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港  | Trojan | B | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 马来西亚 | Trojan | 體驗節點 |  A | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - "马来西亚 | Trojan | 體驗套餐 | B | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港HKT03   2x
+      - 台湾 多台负载均衡 B 1.5x
+      - 香港HKT02   2x
+      - 韩国01 B | x1.5
+      - 印度01 B | 1.5x
+      - 台湾 多台负载均衡 E 1.5x
+      - 台湾 多台负载均衡 D 1.5x
+      - 美国01 B | 1.5x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港  | Trojan | B | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 马来西亚 | Trojan | 體驗節點 |  A | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - "马来西亚 | Trojan | 體驗套餐 | B | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港HKT03   2x
+      - 台湾 多台负载均衡 B 1.5x
+      - 香港HKT02   2x
+      - 韩国01 B | x1.5
+      - 印度01 B | 1.5x
+      - 台湾 多台负载均衡 E 1.5x
+      - 台湾 多台负载均衡 D 1.5x
+      - 美国01 B | 1.5x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,16 +145,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 | Trojan | G | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | H | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | F | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | I | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港  | Trojan | B | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | A | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 马来西亚 | Trojan | 體驗節點 |  A | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - "马来西亚 | Trojan | 體驗套餐 | B | 1 | 25.0x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |\t"
-      - 香港 | Trojan | E | 0.8x | 黃金 | 港區流媒體解鎖 |
-      - 香港 | Trojan | D | 0.8x | 黃金 | 港區流媒體解鎖 |
+      - 香港HKT03   2x
+      - 台湾 多台负载均衡 B 1.5x
+      - 香港HKT02   2x
+      - 韩国01 B | x1.5
+      - 印度01 B | 1.5x
+      - 台湾 多台负载均衡 E 1.5x
+      - 台湾 多台负载均衡 D 1.5x
+      - 美国01 B | 1.5x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
