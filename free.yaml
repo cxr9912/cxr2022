@@ -5,31 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本_TG@nodesharing_45, server: 20.89.94.62, port: 443, type: vmess, uuid: c85b08cb-e81a-4d8b-997f-e43870dc52dc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: 20.89.94.62, grpc-opts: {grpc-service-name: b357b3f2}, udp: true}
-  - {name: 中国_TG@nodesharing_136, server: 113.142.205.92, port: 443, type: vmess, uuid: 96d14945-08f3-4968-8cec-9c2672f1d966, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/1024vws?ed=2048", ws-headers: {Host: cc2.tianxie.us.eu.org}, udp: true}
+  - {name: 香港_TG@nodesharing_35, server: appu479822956408.api.steamgamepowered.net, port: 18180, type: trojan, password: 50b17da8-f0d0-449a-a90e-e19493289760, sni: appu479822956408.api.steamgamepowered.net, skip-cert-verify: true, udp: true}
+  - {name: 香港_TG@nodesharing_89, server: idcdo11948.netvigators.xyz, port: 31666, type: trojan, password: 50b17da8-f0d0-449a-a90e-e19493289760, sni: idcdo11948.netvigators.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港_TG@nodesharing_122, server: fileu479822956408.edge.pubmed-hub.com, port: 41288, type: trojan, password: 50b17da8-f0d0-449a-a90e-e19493289760, sni: fileu479822956408.edge.pubmed-hub.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本_TG@nodesharing_45
-      - 中国_TG@nodesharing_136
+      - 香港_TG@nodesharing_35
+      - 香港_TG@nodesharing_89
+      - 香港_TG@nodesharing_122
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本_TG@nodesharing_45
-      - 中国_TG@nodesharing_136
+      - 香港_TG@nodesharing_35
+      - 香港_TG@nodesharing_89
+      - 香港_TG@nodesharing_122
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本_TG@nodesharing_45
-      - 中国_TG@nodesharing_136
+      - 香港_TG@nodesharing_35
+      - 香港_TG@nodesharing_89
+      - 香港_TG@nodesharing_122
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,35 +52,42 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本_TG@nodesharing_45
-      - 中国_TG@nodesharing_136
+      - 香港_TG@nodesharing_35
+      - 香港_TG@nodesharing_89
+      - 香港_TG@nodesharing_122
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港_TG@nodesharing_35
+      - 香港_TG@nodesharing_89
+      - 香港_TG@nodesharing_122
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本_TG@nodesharing_45
-      - 中国_TG@nodesharing_136
+      - 香港_TG@nodesharing_35
+      - 香港_TG@nodesharing_89
+      - 香港_TG@nodesharing_122
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本_TG@nodesharing_45
-      - 中国_TG@nodesharing_136
+      - 香港_TG@nodesharing_35
+      - 香港_TG@nodesharing_89
+      - 香港_TG@nodesharing_122
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本_TG@nodesharing_45
-      - 中国_TG@nodesharing_136
+      - 香港_TG@nodesharing_35
+      - 香港_TG@nodesharing_89
+      - 香港_TG@nodesharing_122
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +103,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本_TG@nodesharing_45
-      - 中国_TG@nodesharing_136
+      - 香港_TG@nodesharing_35
+      - 香港_TG@nodesharing_89
+      - 香港_TG@nodesharing_122
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
