@@ -5,39 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US 13｜openit.ml, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: CN 4｜openit.ml, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: HK 1｜openit.ml, server: tj-hk02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-hk02.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 19｜openit.ml, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, sni: fhcamd1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 日本3-tg频道:@ripaojiedian, server: 36.139.154.17, port: 45184, type: vmess, uuid: 11d24df8-4651-4db7-97d7-b0bb70b73ba5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.17}, udp: true}
+  - {name: 香港-tg频道:@ripaojiedian, server: 626hk02.ok365.cyou, port: 80, type: trojan, password: ef6c7fc6-6551-472b-921c-8f28606785de, sni: 626hk02.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: 新加坡-tg频道:@ripaojiedian, server: 626sg.ok365.cyou, port: 443, type: trojan, password: ef6c7fc6-6551-472b-921c-8f28606785de, sni: 626sg.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本JP-tg频道:@ripaojiedian, server: 20.222.200.60, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: 台湾2-tg频道:@ripaojiedian, server: 120.232.132.71, port: 25680, type: trojan, password: Mfd9ca63, skip-cert-verify: true, udp: true}
+  - {name: 香港3-tg频道:@ripaojiedian, server: azhj001.xiba1.xyz, port: 20719, type: trojan, password: f6f51e72-46a6-385b-9947-db5e448ea9b8, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 13｜openit.ml
-      - CN 4｜openit.ml
-      - HK 1｜openit.ml
-      - US 19｜openit.ml
+      - 日本3-tg频道:@ripaojiedian
+      - 香港-tg频道:@ripaojiedian
+      - 新加坡-tg频道:@ripaojiedian
+      - 日本JP-tg频道:@ripaojiedian
+      - 台湾2-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US 13｜openit.ml
-      - CN 4｜openit.ml
-      - HK 1｜openit.ml
-      - US 19｜openit.ml
+      - 日本3-tg频道:@ripaojiedian
+      - 香港-tg频道:@ripaojiedian
+      - 新加坡-tg频道:@ripaojiedian
+      - 日本JP-tg频道:@ripaojiedian
+      - 台湾2-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 13｜openit.ml
-      - CN 4｜openit.ml
-      - HK 1｜openit.ml
-      - US 19｜openit.ml
+      - 日本3-tg频道:@ripaojiedian
+      - 香港-tg频道:@ripaojiedian
+      - 新加坡-tg频道:@ripaojiedian
+      - 日本JP-tg频道:@ripaojiedian
+      - 台湾2-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,43 +64,54 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 13｜openit.ml
-      - CN 4｜openit.ml
-      - HK 1｜openit.ml
-      - US 19｜openit.ml
+      - 日本3-tg频道:@ripaojiedian
+      - 香港-tg频道:@ripaojiedian
+      - 新加坡-tg频道:@ripaojiedian
+      - 日本JP-tg频道:@ripaojiedian
+      - 台湾2-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港-tg频道:@ripaojiedian
+      - 台湾2-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US 13｜openit.ml
-      - CN 4｜openit.ml
-      - HK 1｜openit.ml
-      - US 19｜openit.ml
+      - 日本3-tg频道:@ripaojiedian
+      - 香港-tg频道:@ripaojiedian
+      - 新加坡-tg频道:@ripaojiedian
+      - 日本JP-tg频道:@ripaojiedian
+      - 台湾2-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US 13｜openit.ml
-      - CN 4｜openit.ml
-      - HK 1｜openit.ml
-      - US 19｜openit.ml
+      - 日本3-tg频道:@ripaojiedian
+      - 香港-tg频道:@ripaojiedian
+      - 新加坡-tg频道:@ripaojiedian
+      - 日本JP-tg频道:@ripaojiedian
+      - 台湾2-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 13｜openit.ml
-      - CN 4｜openit.ml
-      - HK 1｜openit.ml
-      - US 19｜openit.ml
+      - 日本3-tg频道:@ripaojiedian
+      - 香港-tg频道:@ripaojiedian
+      - 新加坡-tg频道:@ripaojiedian
+      - 日本JP-tg频道:@ripaojiedian
+      - 台湾2-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +127,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 13｜openit.ml
-      - CN 4｜openit.ml
-      - HK 1｜openit.ml
-      - US 19｜openit.ml
+      - 日本3-tg频道:@ripaojiedian
+      - 香港-tg频道:@ripaojiedian
+      - 新加坡-tg频道:@ripaojiedian
+      - 日本JP-tg频道:@ripaojiedian
+      - 台湾2-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
