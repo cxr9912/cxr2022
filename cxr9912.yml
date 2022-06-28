@@ -5,67 +5,99 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 广港隧道-台湾, server: 36.139.154.162, port: 45273, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
-  - {name: 广港隧道-香港bgp, server: 36.139.154.162, port: 45275, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
-  - {name: 广港隧道-日本, server: 36.139.154.162, port: 45280, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
-  - {name: 广港BGP隧道-香港Azure, server: 36.139.9.191, port: 45713, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
-  - {name: 晥日隧道-日本, server: 58.242.130.170, port: 45164, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
-  - {name: 杭港BGP隧道-台湾, server: 36.134.116.212, port: 45253, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
-  - {name: 广港BGP隧道-香港bgp, server: 36.139.9.191, port: 45707, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
-  - {name: 广港隧道-美国, server: 36.139.154.162, port: 45281, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
-  - {name: 广港隧道-香港Azure, server: 36.139.154.162, port: 45276, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
-  - {name: 广港隧道-香港htk, server: 36.139.154.162, port: 45271, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
-  - {name: 广港BGP隧道-台湾, server: 36.139.9.191, port: 45706, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
+  - {name: erhvjb, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: 00301563-a02b-30b9-a17a-8ba7db573dea, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: bnkvnk, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: c2d62c65-5d48-3d17-8982-b4e85377c8c1, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: ytgvbjuub, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: f54eb670-c1a7-3739-be5b-d1c4d0736f11, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: xfvhthn, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: c2d62c65-5d48-3d17-8982-b4e85377c8c1, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: ccbnhyhj, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 00301563-a02b-30b9-a17a-8ba7db573dea, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: jgbkhkm, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 00301563-a02b-30b9-a17a-8ba7db573dea, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: lkjgvbbjh, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: 00301563-a02b-30b9-a17a-8ba7db573dea, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: vhhnjjnn, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: gvvghhhhhh, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: 00301563-a02b-30b9-a17a-8ba7db573dea, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: kjfbnkn, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: jkjgjkm, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: c2d62c65-5d48-3d17-8982-b4e85377c8c1, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: rthjbbb, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: vhjhgnn, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: csebnn, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 00301563-a02b-30b9-a17a-8ba7db573dea, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: bhfstfgyhh, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: ghjhjm, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: c2d62c65-5d48-3d17-8982-b4e85377c8c1, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: gandfubjjk, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: fdtjuduhyjh, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: c2d62c65-5d48-3d17-8982-b4e85377c8c1, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: vbjfhjn, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: c2d62c65-5d48-3d17-8982-b4e85377c8c1, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广港隧道-台湾
-      - 广港隧道-香港bgp
-      - 广港隧道-日本
-      - 广港BGP隧道-香港Azure
-      - 晥日隧道-日本
-      - 杭港BGP隧道-台湾
-      - 广港BGP隧道-香港bgp
-      - 广港隧道-美国
-      - 广港隧道-香港Azure
-      - 广港隧道-香港htk
-      - 广港BGP隧道-台湾
+      - erhvjb
+      - bnkvnk
+      - ytgvbjuub
+      - xfvhthn
+      - ccbnhyhj
+      - jgbkhkm
+      - lkjgvbbjh
+      - vhhnjjnn
+      - gvvghhhhhh
+      - kjfbnkn
+      - jkjgjkm
+      - rthjbbb
+      - vhjhgnn
+      - csebnn
+      - bhfstfgyhh
+      - ghjhjm
+      - gandfubjjk
+      - fdtjuduhyjh
+      - vbjfhjn
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 广港隧道-台湾
-      - 广港隧道-香港bgp
-      - 广港隧道-日本
-      - 广港BGP隧道-香港Azure
-      - 晥日隧道-日本
-      - 杭港BGP隧道-台湾
-      - 广港BGP隧道-香港bgp
-      - 广港隧道-美国
-      - 广港隧道-香港Azure
-      - 广港隧道-香港htk
-      - 广港BGP隧道-台湾
+      - erhvjb
+      - bnkvnk
+      - ytgvbjuub
+      - xfvhthn
+      - ccbnhyhj
+      - jgbkhkm
+      - lkjgvbbjh
+      - vhhnjjnn
+      - gvvghhhhhh
+      - kjfbnkn
+      - jkjgjkm
+      - rthjbbb
+      - vhjhgnn
+      - csebnn
+      - bhfstfgyhh
+      - ghjhjm
+      - gandfubjjk
+      - fdtjuduhyjh
+      - vbjfhjn
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广港隧道-台湾
-      - 广港隧道-香港bgp
-      - 广港隧道-日本
-      - 广港BGP隧道-香港Azure
-      - 晥日隧道-日本
-      - 杭港BGP隧道-台湾
-      - 广港BGP隧道-香港bgp
-      - 广港隧道-美国
-      - 广港隧道-香港Azure
-      - 广港隧道-香港htk
-      - 广港BGP隧道-台湾
+      - erhvjb
+      - bnkvnk
+      - ytgvbjuub
+      - xfvhthn
+      - ccbnhyhj
+      - jgbkhkm
+      - lkjgvbbjh
+      - vhhnjjnn
+      - gvvghhhhhh
+      - kjfbnkn
+      - jkjgjkm
+      - rthjbbb
+      - vhjhgnn
+      - csebnn
+      - bhfstfgyhh
+      - ghjhjm
+      - gandfubjjk
+      - fdtjuduhyjh
+      - vbjfhjn
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,81 +116,104 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广港隧道-台湾
-      - 广港隧道-香港bgp
-      - 广港隧道-日本
-      - 广港BGP隧道-香港Azure
-      - 晥日隧道-日本
-      - 杭港BGP隧道-台湾
-      - 广港BGP隧道-香港bgp
-      - 广港隧道-美国
-      - 广港隧道-香港Azure
-      - 广港隧道-香港htk
-      - 广港BGP隧道-台湾
+      - erhvjb
+      - bnkvnk
+      - ytgvbjuub
+      - xfvhthn
+      - ccbnhyhj
+      - jgbkhkm
+      - lkjgvbbjh
+      - vhhnjjnn
+      - gvvghhhhhh
+      - kjfbnkn
+      - jkjgjkm
+      - rthjbbb
+      - vhjhgnn
+      - csebnn
+      - bhfstfgyhh
+      - ghjhjm
+      - gandfubjjk
+      - fdtjuduhyjh
+      - vbjfhjn
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 广港隧道-台湾
-      - 广港隧道-香港bgp
-      - 广港隧道-日本
-      - 广港BGP隧道-香港Azure
-      - 杭港BGP隧道-台湾
-      - 广港BGP隧道-香港bgp
-      - 广港隧道-美国
-      - 广港隧道-香港Azure
-      - 广港隧道-香港htk
-      - 广港BGP隧道-台湾
+      - jgbkhkm
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 广港隧道-台湾
-      - 广港隧道-香港bgp
-      - 广港隧道-日本
-      - 广港BGP隧道-香港Azure
-      - 晥日隧道-日本
-      - 杭港BGP隧道-台湾
-      - 广港BGP隧道-香港bgp
-      - 广港隧道-美国
-      - 广港隧道-香港Azure
-      - 广港隧道-香港htk
-      - 广港BGP隧道-台湾
+      - erhvjb
+      - bnkvnk
+      - ytgvbjuub
+      - xfvhthn
+      - ccbnhyhj
+      - jgbkhkm
+      - lkjgvbbjh
+      - vhhnjjnn
+      - gvvghhhhhh
+      - kjfbnkn
+      - jkjgjkm
+      - rthjbbb
+      - vhjhgnn
+      - csebnn
+      - bhfstfgyhh
+      - ghjhjm
+      - gandfubjjk
+      - fdtjuduhyjh
+      - vbjfhjn
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 广港隧道-台湾
-      - 广港隧道-香港bgp
-      - 广港隧道-日本
-      - 广港BGP隧道-香港Azure
-      - 晥日隧道-日本
-      - 杭港BGP隧道-台湾
-      - 广港BGP隧道-香港bgp
-      - 广港隧道-美国
-      - 广港隧道-香港Azure
-      - 广港隧道-香港htk
-      - 广港BGP隧道-台湾
+      - erhvjb
+      - bnkvnk
+      - ytgvbjuub
+      - xfvhthn
+      - ccbnhyhj
+      - jgbkhkm
+      - lkjgvbbjh
+      - vhhnjjnn
+      - gvvghhhhhh
+      - kjfbnkn
+      - jkjgjkm
+      - rthjbbb
+      - vhjhgnn
+      - csebnn
+      - bhfstfgyhh
+      - ghjhjm
+      - gandfubjjk
+      - fdtjuduhyjh
+      - vbjfhjn
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广港隧道-台湾
-      - 广港隧道-香港bgp
-      - 广港隧道-日本
-      - 广港BGP隧道-香港Azure
-      - 晥日隧道-日本
-      - 杭港BGP隧道-台湾
-      - 广港BGP隧道-香港bgp
-      - 广港隧道-美国
-      - 广港隧道-香港Azure
-      - 广港隧道-香港htk
-      - 广港BGP隧道-台湾
+      - erhvjb
+      - bnkvnk
+      - ytgvbjuub
+      - xfvhthn
+      - ccbnhyhj
+      - jgbkhkm
+      - lkjgvbbjh
+      - vhhnjjnn
+      - gvvghhhhhh
+      - kjfbnkn
+      - jkjgjkm
+      - rthjbbb
+      - vhjhgnn
+      - csebnn
+      - bhfstfgyhh
+      - ghjhjm
+      - gandfubjjk
+      - fdtjuduhyjh
+      - vbjfhjn
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -174,17 +229,25 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广港隧道-台湾
-      - 广港隧道-香港bgp
-      - 广港隧道-日本
-      - 广港BGP隧道-香港Azure
-      - 晥日隧道-日本
-      - 杭港BGP隧道-台湾
-      - 广港BGP隧道-香港bgp
-      - 广港隧道-美国
-      - 广港隧道-香港Azure
-      - 广港隧道-香港htk
-      - 广港BGP隧道-台湾
+      - erhvjb
+      - bnkvnk
+      - ytgvbjuub
+      - xfvhthn
+      - ccbnhyhj
+      - jgbkhkm
+      - lkjgvbbjh
+      - vhhnjjnn
+      - gvvghhhhhh
+      - kjfbnkn
+      - jkjgjkm
+      - rthjbbb
+      - vhjhgnn
+      - csebnn
+      - bhfstfgyhh
+      - ghjhjm
+      - gandfubjjk
+      - fdtjuduhyjh
+      - vbjfhjn
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
