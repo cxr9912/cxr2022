@@ -5,55 +5,111 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港HKT03   2x, server: 112.64.53.176, port: 63082, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkt3-cdn.tencent.best}, udp: true}
-  - {name: 台湾 多台负载均衡 B 1.5x, server: 116.129.254.65, port: 63088, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: 香港HKT02   2x, server: 112.64.53.176, port: 63081, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkt2-cdn.tencent.best}, udp: true}
-  - {name: 韩国01 B | x1.5, server: 116.129.254.65, port: 63004, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-kr01.covid19.rip}, udp: true}
-  - {name: 印度01 B | 1.5x, server: 116.129.254.65, port: 63051, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: mugua-in01.airport-v2.com}, udp: true}
-  - {name: 台湾 多台负载均衡 E 1.5x, server: 112.64.53.176, port: 63088, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: 台湾 多台负载均衡 D 1.5x, server: 159.27.90.254, port: 63088, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: 美国01 B | 1.5x, server: 116.129.254.65, port: 63014, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
+  - {name: V1 | 美国 US | x1.0, server: gd.cm1.buildyourdream.cyou, port: 16335, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /us1, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V1 | 西班牙 | x1.0, server: gd.cm1.buildyourdream.cyou, port: 16335, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /es, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V1 | 德国 | x1.0, server: gd.cm1.buildyourdream.cyou, port: 16335, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /de, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V1 | 瑞士 | x1.0, server: gd.cm1.buildyourdream.cyou, port: 16335, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ch, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V1 | 悉尼 | x1.0, server: gd.cm1.buildyourdream.cyou, port: 16335, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /au, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V1 | 荷兰 | x1.0, server: gd.cm1.buildyourdream.cyou, port: 16335, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /nl, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V1 | 米兰 | x1.0, server: gd.cm1.buildyourdream.cyou, port: 16335, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /it, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V3 | 台湾 TW 01 | x2.0, server: gd.cm1.buildyourdream.cyou, port: 30092, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tw, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V2 | 韩国 EMBY专用 02 | x1.5, server: gd.cm1.buildyourdream.cyou, port: 30092, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /embykr, ws-headers: {Host: hk.aws-1.fevers.cyou}, udp: true}
+  - {name: V1 | 土耳其 | x1.0, server: gd.cm1.buildyourdream.cyou, port: 16335, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tr, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V2 | 日本 JP 01 | x1.5, server: gd.cm1.buildyourdream.cyou, port: 30092, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V2 | 香港 HK 01 | x1.5, server: gd.cm1.buildyourdream.cyou, port: 30092, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt-n2, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V2 | 香港 HK 02 | x1.5, server: gd.cm1.buildyourdream.cyou, port: 30092, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt-n2, ws-headers: {Host: hk.aws-1.fevers.cyou}, udp: true}
+  - {name: V3 | 台湾 TW 02 | x2.0, server: gd.cm1.buildyourdream.cyou, port: 30092, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tw, ws-headers: {Host: hk.aws-1.fevers.cyou}, udp: true}
+  - {name: V3 | 美国 US 01 | x2.0, server: gd.cm1.buildyourdream.cyou, port: 30092, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /us, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V3 | 香港 HGC原生 | x2.0, server: gd.cm1.buildyourdream.cyou, port: 30090, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hgc, ws-headers: {Host: hk.aws-1.fevers.cyou}, udp: true}
+  - {name: V2 | 日本 JP 02 | x1.5, server: gd.cm1.buildyourdream.cyou, port: 30092, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp, ws-headers: {Host: hk.aws-1.fevers.cyou}, udp: true}
+  - {name: V3 | 香港 WTT原生 | x2.0, server: gd.cm1.buildyourdream.cyou, port: 30090, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wtt, ws-headers: {Host: df7nomqrfkjpc.cloudfront.net}, udp: true}
+  - {name: V1 | 巴西 | x1.0, server: gd.cm1.buildyourdream.cyou, port: 16335, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /br, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V1 | 加拿大 | x1.0, server: gd.cm1.buildyourdream.cyou, port: 16335, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ca, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: 新加坡1, server: shuyun.cdn.yc.21.intvideos.com, port: 23121, type: trojan, password: b79a38a9-373b-49ac-9abe-ee531255c8b6, sni: shuyun.cdn.yc.21.intvideos.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2, server: shuyun.cdn.yc.07.intvideos.com, port: 29007, type: trojan, password: b79a38a9-373b-49ac-9abe-ee531255c8b6, sni: shuyun.cdn.yc.07.intvideos.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港HKT03   2x
-      - 台湾 多台负载均衡 B 1.5x
-      - 香港HKT02   2x
-      - 韩国01 B | x1.5
-      - 印度01 B | 1.5x
-      - 台湾 多台负载均衡 E 1.5x
-      - 台湾 多台负载均衡 D 1.5x
-      - 美国01 B | 1.5x
+      - V1 | 美国 US | x1.0
+      - V1 | 西班牙 | x1.0
+      - V1 | 德国 | x1.0
+      - V1 | 瑞士 | x1.0
+      - V1 | 悉尼 | x1.0
+      - V1 | 荷兰 | x1.0
+      - V1 | 米兰 | x1.0
+      - V3 | 台湾 TW 01 | x2.0
+      - V2 | 韩国 EMBY专用 02 | x1.5
+      - V1 | 土耳其 | x1.0
+      - V2 | 日本 JP 01 | x1.5
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - V3 | 台湾 TW 02 | x2.0
+      - V3 | 美国 US 01 | x2.0
+      - V3 | 香港 HGC原生 | x2.0
+      - V2 | 日本 JP 02 | x1.5
+      - V3 | 香港 WTT原生 | x2.0
+      - V1 | 巴西 | x1.0
+      - V1 | 加拿大 | x1.0
+      - 新加坡1
+      - 新加坡2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港HKT03   2x
-      - 台湾 多台负载均衡 B 1.5x
-      - 香港HKT02   2x
-      - 韩国01 B | x1.5
-      - 印度01 B | 1.5x
-      - 台湾 多台负载均衡 E 1.5x
-      - 台湾 多台负载均衡 D 1.5x
-      - 美国01 B | 1.5x
+      - V1 | 美国 US | x1.0
+      - V1 | 西班牙 | x1.0
+      - V1 | 德国 | x1.0
+      - V1 | 瑞士 | x1.0
+      - V1 | 悉尼 | x1.0
+      - V1 | 荷兰 | x1.0
+      - V1 | 米兰 | x1.0
+      - V3 | 台湾 TW 01 | x2.0
+      - V2 | 韩国 EMBY专用 02 | x1.5
+      - V1 | 土耳其 | x1.0
+      - V2 | 日本 JP 01 | x1.5
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - V3 | 台湾 TW 02 | x2.0
+      - V3 | 美国 US 01 | x2.0
+      - V3 | 香港 HGC原生 | x2.0
+      - V2 | 日本 JP 02 | x1.5
+      - V3 | 香港 WTT原生 | x2.0
+      - V1 | 巴西 | x1.0
+      - V1 | 加拿大 | x1.0
+      - 新加坡1
+      - 新加坡2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港HKT03   2x
-      - 台湾 多台负载均衡 B 1.5x
-      - 香港HKT02   2x
-      - 韩国01 B | x1.5
-      - 印度01 B | 1.5x
-      - 台湾 多台负载均衡 E 1.5x
-      - 台湾 多台负载均衡 D 1.5x
-      - 美国01 B | 1.5x
+      - V1 | 美国 US | x1.0
+      - V1 | 西班牙 | x1.0
+      - V1 | 德国 | x1.0
+      - V1 | 瑞士 | x1.0
+      - V1 | 悉尼 | x1.0
+      - V1 | 荷兰 | x1.0
+      - V1 | 米兰 | x1.0
+      - V3 | 台湾 TW 01 | x2.0
+      - V2 | 韩国 EMBY专用 02 | x1.5
+      - V1 | 土耳其 | x1.0
+      - V2 | 日本 JP 01 | x1.5
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - V3 | 台湾 TW 02 | x2.0
+      - V3 | 美国 US 01 | x2.0
+      - V3 | 香港 HGC原生 | x2.0
+      - V2 | 日本 JP 02 | x1.5
+      - V3 | 香港 WTT原生 | x2.0
+      - V1 | 巴西 | x1.0
+      - V1 | 加拿大 | x1.0
+      - 新加坡1
+      - 新加坡2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,64 +128,121 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港HKT03   2x
-      - 台湾 多台负载均衡 B 1.5x
-      - 香港HKT02   2x
-      - 韩国01 B | x1.5
-      - 印度01 B | 1.5x
-      - 台湾 多台负载均衡 E 1.5x
-      - 台湾 多台负载均衡 D 1.5x
-      - 美国01 B | 1.5x
+      - V1 | 美国 US | x1.0
+      - V1 | 西班牙 | x1.0
+      - V1 | 德国 | x1.0
+      - V1 | 瑞士 | x1.0
+      - V1 | 悉尼 | x1.0
+      - V1 | 荷兰 | x1.0
+      - V1 | 米兰 | x1.0
+      - V3 | 台湾 TW 01 | x2.0
+      - V2 | 韩国 EMBY专用 02 | x1.5
+      - V1 | 土耳其 | x1.0
+      - V2 | 日本 JP 01 | x1.5
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - V3 | 台湾 TW 02 | x2.0
+      - V3 | 美国 US 01 | x2.0
+      - V3 | 香港 HGC原生 | x2.0
+      - V2 | 日本 JP 02 | x1.5
+      - V3 | 香港 WTT原生 | x2.0
+      - V1 | 巴西 | x1.0
+      - V1 | 加拿大 | x1.0
+      - 新加坡1
+      - 新加坡2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港HKT03   2x
-      - 台湾 多台负载均衡 B 1.5x
-      - 香港HKT02   2x
-      - 台湾 多台负载均衡 E 1.5x
-      - 台湾 多台负载均衡 D 1.5x
+      - V3 | 台湾 TW 01 | x2.0
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - V3 | 台湾 TW 02 | x2.0
+      - V3 | 香港 HGC原生 | x2.0
+      - V3 | 香港 WTT原生 | x2.0
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港HKT03   2x
-      - 台湾 多台负载均衡 B 1.5x
-      - 香港HKT02   2x
-      - 韩国01 B | x1.5
-      - 印度01 B | 1.5x
-      - 台湾 多台负载均衡 E 1.5x
-      - 台湾 多台负载均衡 D 1.5x
-      - 美国01 B | 1.5x
+      - V1 | 美国 US | x1.0
+      - V1 | 西班牙 | x1.0
+      - V1 | 德国 | x1.0
+      - V1 | 瑞士 | x1.0
+      - V1 | 悉尼 | x1.0
+      - V1 | 荷兰 | x1.0
+      - V1 | 米兰 | x1.0
+      - V3 | 台湾 TW 01 | x2.0
+      - V2 | 韩国 EMBY专用 02 | x1.5
+      - V1 | 土耳其 | x1.0
+      - V2 | 日本 JP 01 | x1.5
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - V3 | 台湾 TW 02 | x2.0
+      - V3 | 美国 US 01 | x2.0
+      - V3 | 香港 HGC原生 | x2.0
+      - V2 | 日本 JP 02 | x1.5
+      - V3 | 香港 WTT原生 | x2.0
+      - V1 | 巴西 | x1.0
+      - V1 | 加拿大 | x1.0
+      - 新加坡1
+      - 新加坡2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港HKT03   2x
-      - 台湾 多台负载均衡 B 1.5x
-      - 香港HKT02   2x
-      - 韩国01 B | x1.5
-      - 印度01 B | 1.5x
-      - 台湾 多台负载均衡 E 1.5x
-      - 台湾 多台负载均衡 D 1.5x
-      - 美国01 B | 1.5x
+      - V1 | 美国 US | x1.0
+      - V1 | 西班牙 | x1.0
+      - V1 | 德国 | x1.0
+      - V1 | 瑞士 | x1.0
+      - V1 | 悉尼 | x1.0
+      - V1 | 荷兰 | x1.0
+      - V1 | 米兰 | x1.0
+      - V3 | 台湾 TW 01 | x2.0
+      - V2 | 韩国 EMBY专用 02 | x1.5
+      - V1 | 土耳其 | x1.0
+      - V2 | 日本 JP 01 | x1.5
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - V3 | 台湾 TW 02 | x2.0
+      - V3 | 美国 US 01 | x2.0
+      - V3 | 香港 HGC原生 | x2.0
+      - V2 | 日本 JP 02 | x1.5
+      - V3 | 香港 WTT原生 | x2.0
+      - V1 | 巴西 | x1.0
+      - V1 | 加拿大 | x1.0
+      - 新加坡1
+      - 新加坡2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港HKT03   2x
-      - 台湾 多台负载均衡 B 1.5x
-      - 香港HKT02   2x
-      - 韩国01 B | x1.5
-      - 印度01 B | 1.5x
-      - 台湾 多台负载均衡 E 1.5x
-      - 台湾 多台负载均衡 D 1.5x
-      - 美国01 B | 1.5x
+      - V1 | 美国 US | x1.0
+      - V1 | 西班牙 | x1.0
+      - V1 | 德国 | x1.0
+      - V1 | 瑞士 | x1.0
+      - V1 | 悉尼 | x1.0
+      - V1 | 荷兰 | x1.0
+      - V1 | 米兰 | x1.0
+      - V3 | 台湾 TW 01 | x2.0
+      - V2 | 韩国 EMBY专用 02 | x1.5
+      - V1 | 土耳其 | x1.0
+      - V2 | 日本 JP 01 | x1.5
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - V3 | 台湾 TW 02 | x2.0
+      - V3 | 美国 US 01 | x2.0
+      - V3 | 香港 HGC原生 | x2.0
+      - V2 | 日本 JP 02 | x1.5
+      - V3 | 香港 WTT原生 | x2.0
+      - V1 | 巴西 | x1.0
+      - V1 | 加拿大 | x1.0
+      - 新加坡1
+      - 新加坡2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -145,14 +258,28 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港HKT03   2x
-      - 台湾 多台负载均衡 B 1.5x
-      - 香港HKT02   2x
-      - 韩国01 B | x1.5
-      - 印度01 B | 1.5x
-      - 台湾 多台负载均衡 E 1.5x
-      - 台湾 多台负载均衡 D 1.5x
-      - 美国01 B | 1.5x
+      - V1 | 美国 US | x1.0
+      - V1 | 西班牙 | x1.0
+      - V1 | 德国 | x1.0
+      - V1 | 瑞士 | x1.0
+      - V1 | 悉尼 | x1.0
+      - V1 | 荷兰 | x1.0
+      - V1 | 米兰 | x1.0
+      - V3 | 台湾 TW 01 | x2.0
+      - V2 | 韩国 EMBY专用 02 | x1.5
+      - V1 | 土耳其 | x1.0
+      - V2 | 日本 JP 01 | x1.5
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - V3 | 台湾 TW 02 | x2.0
+      - V3 | 美国 US 01 | x2.0
+      - V3 | 香港 HGC原生 | x2.0
+      - V2 | 日本 JP 02 | x1.5
+      - V3 | 香港 WTT原生 | x2.0
+      - V1 | 巴西 | x1.0
+      - V1 | 加拿大 | x1.0
+      - 新加坡1
+      - 新加坡2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
