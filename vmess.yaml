@@ -5,111 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 台灣 广移, server: ygzyd.sub-nthu.com, port: 35005, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: ygzyd.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: "[2.5x] 韩国 9929", server: updates.sub-nthu.com, port: 35007, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: updates.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: "[2.5x] 香港 9929", server: updates.sub-nthu.com, port: 35002, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: updates.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 台灣 CN2, server: cn2hn.sub-nthu.com, port: 35005, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 香港 CN2, server: cn2hn.sub-nthu.com, port: 35002, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: "[2.5x] 東京 9929", server: updates.sub-nthu.com, port: 35001, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: updates.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 東京 上联, server: shlt.sub-nthu.com, port: 35001, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 上联, server: shlt.sub-nthu.com, port: 35003, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 香港 上联, server: shlt.sub-nthu.com, port: 35002, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 CN2, server: cn2hn.sub-nthu.com, port: 35003, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 韩国 CN2, server: cn2hn.sub-nthu.com, port: 35007, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 東京 CN2, server: cn2hn.sub-nthu.com, port: 35001, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: "[2.5x] 英国 9929", server: updates.sub-nthu.com, port: 35008, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: updates.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 英国 广移, server: ygzyd.sub-nthu.com, port: 35008, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: ygzyd.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: "[2.5x] 台灣 9929", server: updates.sub-nthu.com, port: 35005, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: updates.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 台灣 上联, server: shlt.sub-nthu.com, port: 35005, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 美國 上联, server: shlt.sub-nthu.com, port: 35000, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 美國 CN2, server: cn2hn.sub-nthu.com, port: 35000, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 英国 CN2, server: cn2hn.sub-nthu.com, port: 35008, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 美國 广移, server: ygzyd.sub-nthu.com, port: 35000, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: ygzyd.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 英国 上联, server: shlt.sub-nthu.com, port: 35008, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 广移, server: ygzyd.sub-nthu.com, port: 35003, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: ygzyd.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: "[LV1·解锁] 狮城04 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /j20-sp4, ws-headers: {Host: pp1.zhengzhongfeizhu.xyz}, udp: true}
+  - {name: "[LV2·原生] 香港B1 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /j20-hgc1, ws-headers: {Host: pp1.zhengzhongfeizhu.xyz}, udp: true}
+  - {name: "[LV2·原生] 香港B2 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /j20-hgc2, ws-headers: {Host: pp1.zhengzhongfeizhu.xyz}, udp: true}
+  - {name: "[LV2·原生] 香港B4 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /j20-hgc4, ws-headers: {Host: pp1.zhengzhongfeizhu.xyz}, udp: true}
+  - {name: "[LV1·解锁] 狮城02 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /j20-sp2, ws-headers: {Host: pp1.zhengzhongfeizhu.xyz}, udp: true}
+  - {name: "[LV2·原生] 美国03 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /j20-usa3-242, ws-headers: {Host: pp1.zhengzhongfeizhu.xyz}, udp: true}
+  - {name: "[LV2·原生] 香港02 | IEPL 专线 | 3x", server: pp1.zhengzhongfeizhu.xyz, port: 33003, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台灣 广移
-      - "[2.5x] 韩国 9929"
-      - "[2.5x] 香港 9929"
-      - 台灣 CN2
-      - 香港 CN2
-      - "[2.5x] 東京 9929"
-      - 東京 上联
-      - 新加坡 上联
-      - 香港 上联
-      - 新加坡 CN2
-      - 韩国 CN2
-      - 東京 CN2
-      - "[2.5x] 英国 9929"
-      - 英国 广移
-      - "[2.5x] 台灣 9929"
-      - 台灣 上联
-      - 美國 上联
-      - 美國 CN2
-      - 英国 CN2
-      - 美國 广移
-      - 英国 上联
-      - 新加坡 广移
+      - "[LV1·解锁] 狮城04 | 中转"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV1·解锁] 狮城02 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 台灣 广移
-      - "[2.5x] 韩国 9929"
-      - "[2.5x] 香港 9929"
-      - 台灣 CN2
-      - 香港 CN2
-      - "[2.5x] 東京 9929"
-      - 東京 上联
-      - 新加坡 上联
-      - 香港 上联
-      - 新加坡 CN2
-      - 韩国 CN2
-      - 東京 CN2
-      - "[2.5x] 英国 9929"
-      - 英国 广移
-      - "[2.5x] 台灣 9929"
-      - 台灣 上联
-      - 美國 上联
-      - 美國 CN2
-      - 英国 CN2
-      - 美國 广移
-      - 英国 上联
-      - 新加坡 广移
+      - "[LV1·解锁] 狮城04 | 中转"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV1·解锁] 狮城02 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台灣 广移
-      - "[2.5x] 韩国 9929"
-      - "[2.5x] 香港 9929"
-      - 台灣 CN2
-      - 香港 CN2
-      - "[2.5x] 東京 9929"
-      - 東京 上联
-      - 新加坡 上联
-      - 香港 上联
-      - 新加坡 CN2
-      - 韩国 CN2
-      - 東京 CN2
-      - "[2.5x] 英国 9929"
-      - 英国 广移
-      - "[2.5x] 台灣 9929"
-      - 台灣 上联
-      - 美國 上联
-      - 美國 CN2
-      - 英国 CN2
-      - 美國 广移
-      - 英国 上联
-      - 新加坡 广移
+      - "[LV1·解锁] 狮城04 | 中转"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV1·解锁] 狮城02 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -128,122 +68,59 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台灣 广移
-      - "[2.5x] 韩国 9929"
-      - "[2.5x] 香港 9929"
-      - 台灣 CN2
-      - 香港 CN2
-      - "[2.5x] 東京 9929"
-      - 東京 上联
-      - 新加坡 上联
-      - 香港 上联
-      - 新加坡 CN2
-      - 韩国 CN2
-      - 東京 CN2
-      - "[2.5x] 英国 9929"
-      - 英国 广移
-      - "[2.5x] 台灣 9929"
-      - 台灣 上联
-      - 美國 上联
-      - 美國 CN2
-      - 英国 CN2
-      - 美國 广移
-      - 英国 上联
-      - 新加坡 广移
+      - "[LV1·解锁] 狮城04 | 中转"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV1·解锁] 狮城02 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台灣 广移
-      - "[2.5x] 香港 9929"
-      - 台灣 CN2
-      - 香港 CN2
-      - 香港 上联
-      - "[2.5x] 台灣 9929"
-      - 台灣 上联
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台灣 广移
-      - "[2.5x] 韩国 9929"
-      - "[2.5x] 香港 9929"
-      - 台灣 CN2
-      - 香港 CN2
-      - "[2.5x] 東京 9929"
-      - 東京 上联
-      - 新加坡 上联
-      - 香港 上联
-      - 新加坡 CN2
-      - 韩国 CN2
-      - 東京 CN2
-      - "[2.5x] 英国 9929"
-      - 英国 广移
-      - "[2.5x] 台灣 9929"
-      - 台灣 上联
-      - 美國 上联
-      - 美國 CN2
-      - 英国 CN2
-      - 美國 广移
-      - 英国 上联
-      - 新加坡 广移
+      - "[LV1·解锁] 狮城04 | 中转"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV1·解锁] 狮城02 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台灣 广移
-      - "[2.5x] 韩国 9929"
-      - "[2.5x] 香港 9929"
-      - 台灣 CN2
-      - 香港 CN2
-      - "[2.5x] 東京 9929"
-      - 東京 上联
-      - 新加坡 上联
-      - 香港 上联
-      - 新加坡 CN2
-      - 韩国 CN2
-      - 東京 CN2
-      - "[2.5x] 英国 9929"
-      - 英国 广移
-      - "[2.5x] 台灣 9929"
-      - 台灣 上联
-      - 美國 上联
-      - 美國 CN2
-      - 英国 CN2
-      - 美國 广移
-      - 英国 上联
-      - 新加坡 广移
+      - "[LV1·解锁] 狮城04 | 中转"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV1·解锁] 狮城02 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台灣 广移
-      - "[2.5x] 韩国 9929"
-      - "[2.5x] 香港 9929"
-      - 台灣 CN2
-      - 香港 CN2
-      - "[2.5x] 東京 9929"
-      - 東京 上联
-      - 新加坡 上联
-      - 香港 上联
-      - 新加坡 CN2
-      - 韩国 CN2
-      - 東京 CN2
-      - "[2.5x] 英国 9929"
-      - 英国 广移
-      - "[2.5x] 台灣 9929"
-      - 台灣 上联
-      - 美國 上联
-      - 美國 CN2
-      - 英国 CN2
-      - 美國 广移
-      - 英国 上联
-      - 新加坡 广移
+      - "[LV1·解锁] 狮城04 | 中转"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV1·解锁] 狮城02 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -259,28 +136,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台灣 广移
-      - "[2.5x] 韩国 9929"
-      - "[2.5x] 香港 9929"
-      - 台灣 CN2
-      - 香港 CN2
-      - "[2.5x] 東京 9929"
-      - 東京 上联
-      - 新加坡 上联
-      - 香港 上联
-      - 新加坡 CN2
-      - 韩国 CN2
-      - 東京 CN2
-      - "[2.5x] 英国 9929"
-      - 英国 广移
-      - "[2.5x] 台灣 9929"
-      - 台灣 上联
-      - 美國 上联
-      - 美國 CN2
-      - 英国 CN2
-      - 美國 广移
-      - 英国 上联
-      - 新加坡 广移
+      - "[LV1·解锁] 狮城04 | 中转"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV1·解锁] 狮城02 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
