@@ -5,95 +5,167 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 18｜openit.ml, server: 120.233.187.199, port: 20004, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, skip-cert-verify: true, udp: true}
-  - {name: CN 22｜openit.ml, server: 120.233.187.199, port: 20014, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, skip-cert-verify: true, udp: true}
-  - {name: US 16｜openit.ml, server: az.az-bgp.chuangshi999.xyz, port: 64340, type: trojan, password: eae49aca-72e6-4465-a863-f5ab350997ef, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 25｜openit.ml, server: 120.233.187.199, port: 20013, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, skip-cert-verify: true, udp: true}
-  - {name: CN 17｜openit.ml, server: 116.129.253.128, port: 20010, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, skip-cert-verify: true, udp: true}
-  - {name: CN 32｜openit.ml, server: gzyd2.52147.top, port: 20110, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: US 40｜openit.ml, server: az.az-bgp.chuangshi999.xyz, port: 31250, type: trojan, password: eae49aca-72e6-4465-a863-f5ab350997ef, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 21｜openit.ml, server: 116.129.253.128, port: 20006, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, skip-cert-verify: true, udp: true}
-  - {name: CN 6｜openit.ml, server: hnyd.52147.top, port: 20110, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CN 27｜openit.ml, server: 116.129.253.128, port: 20003, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, skip-cert-verify: true, udp: true}
-  - {name: CN 11｜openit.ml, server: hnyd.52147.top, port: 30120, type: trojan, password: 52a98419-efab-4c34-b4cc-4e2a7bc37029, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: US 42｜openit.ml, server: az.az-bgp.chuangshi999.xyz, port: 33346, type: trojan, password: eae49aca-72e6-4465-a863-f5ab350997ef, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 29｜openit.ml, server: 116.129.253.128, port: 20009, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, skip-cert-verify: true, udp: true}
-  - {name: CN 26｜openit.ml, server: 116.129.253.128, port: 20005, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, skip-cert-verify: true, udp: true}
-  - {name: CN 30｜openit.ml, server: 116.129.253.128, port: 20007, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, skip-cert-verify: true, udp: true}
-  - {name: CN 12｜openit.ml, server: hlu.bgp2.liuliangzhuanfa.xyz, port: 47718, type: trojan, password: eae49aca-72e6-4465-a863-f5ab350997ef, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 28｜openit.ml, server: hnyd.52147.top, port: 30080, type: trojan, password: 52a98419-efab-4c34-b4cc-4e2a7bc37029, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: US 35｜openit.ml, server: az.az-bgp.chuangshi999.xyz, port: 39675, type: trojan, password: eae49aca-72e6-4465-a863-f5ab350997ef, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 9｜openit.ml, server: sh.zf.edu.ge, port: 39412, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: CN 4｜openit.ml, server: sh.zf.edu.ge, port: 39402, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: CN 5｜openit.ml, server: sh.zf.edu.ge, port: 39407, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: CN 7｜openit.ml, server: sh.zf.edu.ge, port: 39406, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: CN 6｜openit.ml, server: sh.zf.edu.ge, port: 39403, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: HK 1｜openit.ml, server: trhk.moonfree.top, port: 443, type: trojan, password: 534fad63-f38a-4970-b3d1-41ac2de0afa5, sni: trhk.moonfree.top, skip-cert-verify: true, udp: true}
+  - {name: CN 11｜openit.ml, server: sh.zf.edu.ge, port: 38404, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: CN 16｜openit.ml, server: sh.zf.edu.ge, port: 38408, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: CN 15｜openit.ml, server: sh.zf.edu.ge, port: 38403, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: CN 12｜openit.ml, server: sh.zf.edu.ge, port: 38407, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: CN 10｜openit.ml, server: sh.zf.edu.ge, port: 38402, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: SG 1｜openit.ml, server: bj2.zf.edu.ge, port: 39407, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: CN 17｜openit.ml, server: sh.zf.edu.ge, port: 38401, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: CN 14｜openit.ml, server: sh.zf.edu.ge, port: 38405, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: CN 13｜openit.ml, server: sh.zf.edu.ge, port: 38409, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: SG 15｜openit.ml, server: bj2.zf.edu.ge, port: 38404, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: SG 4｜openit.ml, server: bj2.zf.edu.ge, port: 39403, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: SG 14｜openit.ml, server: bj2.zf.edu.ge, port: 38408, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: HK 3｜openit.ml, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 8｜openit.ml, server: cnmddgjs.mayiyun.shop, port: 10022, type: ss, cipher: aes-256-gcm, password: 2fd060fa-5c95-4abe-9d45-66a0ca8a82c8, udp: true}
+  - {name: CN 19｜openit.ml, server: cnmddgjs.mayiyun.shop, port: 10021, type: ss, cipher: aes-256-gcm, password: 2fd060fa-5c95-4abe-9d45-66a0ca8a82c8, udp: true}
+  - {name: SG 21｜openit.ml, server: ru.zf.edu.ge, port: 33571, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: CN 18｜openit.ml, server: cnmddgjs.mayiyun.shop, port: 10017, type: ss, cipher: aes-256-gcm, password: 2fd060fa-5c95-4abe-9d45-66a0ca8a82c8, udp: true}
+  - {name: SG 5｜openit.ml, server: bj.zf.edu.ge, port: 39403, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: SG 3｜openit.ml, server: bj.zf.edu.ge, port: 39407, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: US 5｜openit.ml, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: SG 2｜openit.ml, server: bj.zf.edu.ge, port: 39402, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: US 3｜openit.ml, server: bai-piao-wang-zhe10.98848.xyz, port: 48240, type: trojan, password: 685022af-2086-454c-8725-8ff6b6ab1d13, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG 6｜openit.ml, server: bj.zf.edu.ge, port: 39406, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: US 7｜openit.ml, server: bai-piao-wang-zhe10.98848.xyz, port: 22168, type: trojan, password: 685022af-2086-454c-8725-8ff6b6ab1d13, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG 8｜openit.ml, server: bj2.zf.edu.ge, port: 39400, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: SG 16｜openit.ml, server: bj.zf.edu.ge, port: 38403, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: SG 20｜openit.ml, server: bj.zf.edu.ge, port: 38401, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: SG 17｜openit.ml, server: bj.zf.edu.ge, port: 38408, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: SG 9｜openit.ml, server: bj2.zf.edu.ge, port: 39412, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
+  - {name: SG 18｜openit.ml, server: bj.zf.edu.ge, port: 38405, type: ss, cipher: chacha20-ietf-poly1305, password: 117e0e28-957d-48c7-90af-f7f7fdfd0e2d, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 18｜openit.ml
-      - CN 22｜openit.ml
-      - US 16｜openit.ml
-      - CN 25｜openit.ml
-      - CN 17｜openit.ml
-      - CN 32｜openit.ml
-      - US 40｜openit.ml
-      - CN 21｜openit.ml
+      - CN 9｜openit.ml
+      - CN 4｜openit.ml
+      - CN 5｜openit.ml
+      - CN 7｜openit.ml
       - CN 6｜openit.ml
-      - CN 27｜openit.ml
+      - HK 1｜openit.ml
       - CN 11｜openit.ml
-      - US 42｜openit.ml
-      - CN 29｜openit.ml
-      - CN 26｜openit.ml
-      - CN 30｜openit.ml
+      - CN 16｜openit.ml
+      - CN 15｜openit.ml
       - CN 12｜openit.ml
-      - CN 28｜openit.ml
-      - US 35｜openit.ml
+      - CN 10｜openit.ml
+      - SG 1｜openit.ml
+      - CN 17｜openit.ml
+      - CN 14｜openit.ml
+      - CN 13｜openit.ml
+      - SG 15｜openit.ml
+      - SG 4｜openit.ml
+      - SG 14｜openit.ml
+      - HK 3｜openit.ml
+      - CN 8｜openit.ml
+      - CN 19｜openit.ml
+      - SG 21｜openit.ml
+      - CN 18｜openit.ml
+      - SG 5｜openit.ml
+      - SG 3｜openit.ml
+      - US 5｜openit.ml
+      - SG 2｜openit.ml
+      - US 3｜openit.ml
+      - SG 6｜openit.ml
+      - US 7｜openit.ml
+      - SG 8｜openit.ml
+      - SG 16｜openit.ml
+      - SG 20｜openit.ml
+      - SG 17｜openit.ml
+      - SG 9｜openit.ml
+      - SG 18｜openit.ml
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 18｜openit.ml
-      - CN 22｜openit.ml
-      - US 16｜openit.ml
-      - CN 25｜openit.ml
-      - CN 17｜openit.ml
-      - CN 32｜openit.ml
-      - US 40｜openit.ml
-      - CN 21｜openit.ml
+      - CN 9｜openit.ml
+      - CN 4｜openit.ml
+      - CN 5｜openit.ml
+      - CN 7｜openit.ml
       - CN 6｜openit.ml
-      - CN 27｜openit.ml
+      - HK 1｜openit.ml
       - CN 11｜openit.ml
-      - US 42｜openit.ml
-      - CN 29｜openit.ml
-      - CN 26｜openit.ml
-      - CN 30｜openit.ml
+      - CN 16｜openit.ml
+      - CN 15｜openit.ml
       - CN 12｜openit.ml
-      - CN 28｜openit.ml
-      - US 35｜openit.ml
+      - CN 10｜openit.ml
+      - SG 1｜openit.ml
+      - CN 17｜openit.ml
+      - CN 14｜openit.ml
+      - CN 13｜openit.ml
+      - SG 15｜openit.ml
+      - SG 4｜openit.ml
+      - SG 14｜openit.ml
+      - HK 3｜openit.ml
+      - CN 8｜openit.ml
+      - CN 19｜openit.ml
+      - SG 21｜openit.ml
+      - CN 18｜openit.ml
+      - SG 5｜openit.ml
+      - SG 3｜openit.ml
+      - US 5｜openit.ml
+      - SG 2｜openit.ml
+      - US 3｜openit.ml
+      - SG 6｜openit.ml
+      - US 7｜openit.ml
+      - SG 8｜openit.ml
+      - SG 16｜openit.ml
+      - SG 20｜openit.ml
+      - SG 17｜openit.ml
+      - SG 9｜openit.ml
+      - SG 18｜openit.ml
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 18｜openit.ml
-      - CN 22｜openit.ml
-      - US 16｜openit.ml
-      - CN 25｜openit.ml
-      - CN 17｜openit.ml
-      - CN 32｜openit.ml
-      - US 40｜openit.ml
-      - CN 21｜openit.ml
+      - CN 9｜openit.ml
+      - CN 4｜openit.ml
+      - CN 5｜openit.ml
+      - CN 7｜openit.ml
       - CN 6｜openit.ml
-      - CN 27｜openit.ml
+      - HK 1｜openit.ml
       - CN 11｜openit.ml
-      - US 42｜openit.ml
-      - CN 29｜openit.ml
-      - CN 26｜openit.ml
-      - CN 30｜openit.ml
+      - CN 16｜openit.ml
+      - CN 15｜openit.ml
       - CN 12｜openit.ml
-      - CN 28｜openit.ml
-      - US 35｜openit.ml
+      - CN 10｜openit.ml
+      - SG 1｜openit.ml
+      - CN 17｜openit.ml
+      - CN 14｜openit.ml
+      - CN 13｜openit.ml
+      - SG 15｜openit.ml
+      - SG 4｜openit.ml
+      - SG 14｜openit.ml
+      - HK 3｜openit.ml
+      - CN 8｜openit.ml
+      - CN 19｜openit.ml
+      - SG 21｜openit.ml
+      - CN 18｜openit.ml
+      - SG 5｜openit.ml
+      - SG 3｜openit.ml
+      - US 5｜openit.ml
+      - SG 2｜openit.ml
+      - US 3｜openit.ml
+      - SG 6｜openit.ml
+      - US 7｜openit.ml
+      - SG 8｜openit.ml
+      - SG 16｜openit.ml
+      - SG 20｜openit.ml
+      - SG 17｜openit.ml
+      - SG 9｜openit.ml
+      - SG 18｜openit.ml
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -112,24 +184,42 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 18｜openit.ml
-      - CN 22｜openit.ml
-      - US 16｜openit.ml
-      - CN 25｜openit.ml
-      - CN 17｜openit.ml
-      - CN 32｜openit.ml
-      - US 40｜openit.ml
-      - CN 21｜openit.ml
+      - CN 9｜openit.ml
+      - CN 4｜openit.ml
+      - CN 5｜openit.ml
+      - CN 7｜openit.ml
       - CN 6｜openit.ml
-      - CN 27｜openit.ml
+      - HK 1｜openit.ml
       - CN 11｜openit.ml
-      - US 42｜openit.ml
-      - CN 29｜openit.ml
-      - CN 26｜openit.ml
-      - CN 30｜openit.ml
+      - CN 16｜openit.ml
+      - CN 15｜openit.ml
       - CN 12｜openit.ml
-      - CN 28｜openit.ml
-      - US 35｜openit.ml
+      - CN 10｜openit.ml
+      - SG 1｜openit.ml
+      - CN 17｜openit.ml
+      - CN 14｜openit.ml
+      - CN 13｜openit.ml
+      - SG 15｜openit.ml
+      - SG 4｜openit.ml
+      - SG 14｜openit.ml
+      - HK 3｜openit.ml
+      - CN 8｜openit.ml
+      - CN 19｜openit.ml
+      - SG 21｜openit.ml
+      - CN 18｜openit.ml
+      - SG 5｜openit.ml
+      - SG 3｜openit.ml
+      - US 5｜openit.ml
+      - SG 2｜openit.ml
+      - US 3｜openit.ml
+      - SG 6｜openit.ml
+      - US 7｜openit.ml
+      - SG 8｜openit.ml
+      - SG 16｜openit.ml
+      - SG 20｜openit.ml
+      - SG 17｜openit.ml
+      - SG 9｜openit.ml
+      - SG 18｜openit.ml
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -140,71 +230,125 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 18｜openit.ml
-      - CN 22｜openit.ml
-      - US 16｜openit.ml
-      - CN 25｜openit.ml
-      - CN 17｜openit.ml
-      - CN 32｜openit.ml
-      - US 40｜openit.ml
-      - CN 21｜openit.ml
+      - CN 9｜openit.ml
+      - CN 4｜openit.ml
+      - CN 5｜openit.ml
+      - CN 7｜openit.ml
       - CN 6｜openit.ml
-      - CN 27｜openit.ml
+      - HK 1｜openit.ml
       - CN 11｜openit.ml
-      - US 42｜openit.ml
-      - CN 29｜openit.ml
-      - CN 26｜openit.ml
-      - CN 30｜openit.ml
+      - CN 16｜openit.ml
+      - CN 15｜openit.ml
       - CN 12｜openit.ml
-      - CN 28｜openit.ml
-      - US 35｜openit.ml
+      - CN 10｜openit.ml
+      - SG 1｜openit.ml
+      - CN 17｜openit.ml
+      - CN 14｜openit.ml
+      - CN 13｜openit.ml
+      - SG 15｜openit.ml
+      - SG 4｜openit.ml
+      - SG 14｜openit.ml
+      - HK 3｜openit.ml
+      - CN 8｜openit.ml
+      - CN 19｜openit.ml
+      - SG 21｜openit.ml
+      - CN 18｜openit.ml
+      - SG 5｜openit.ml
+      - SG 3｜openit.ml
+      - US 5｜openit.ml
+      - SG 2｜openit.ml
+      - US 3｜openit.ml
+      - SG 6｜openit.ml
+      - US 7｜openit.ml
+      - SG 8｜openit.ml
+      - SG 16｜openit.ml
+      - SG 20｜openit.ml
+      - SG 17｜openit.ml
+      - SG 9｜openit.ml
+      - SG 18｜openit.ml
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 18｜openit.ml
-      - CN 22｜openit.ml
-      - US 16｜openit.ml
-      - CN 25｜openit.ml
-      - CN 17｜openit.ml
-      - CN 32｜openit.ml
-      - US 40｜openit.ml
-      - CN 21｜openit.ml
+      - CN 9｜openit.ml
+      - CN 4｜openit.ml
+      - CN 5｜openit.ml
+      - CN 7｜openit.ml
       - CN 6｜openit.ml
-      - CN 27｜openit.ml
+      - HK 1｜openit.ml
       - CN 11｜openit.ml
-      - US 42｜openit.ml
-      - CN 29｜openit.ml
-      - CN 26｜openit.ml
-      - CN 30｜openit.ml
+      - CN 16｜openit.ml
+      - CN 15｜openit.ml
       - CN 12｜openit.ml
-      - CN 28｜openit.ml
-      - US 35｜openit.ml
+      - CN 10｜openit.ml
+      - SG 1｜openit.ml
+      - CN 17｜openit.ml
+      - CN 14｜openit.ml
+      - CN 13｜openit.ml
+      - SG 15｜openit.ml
+      - SG 4｜openit.ml
+      - SG 14｜openit.ml
+      - HK 3｜openit.ml
+      - CN 8｜openit.ml
+      - CN 19｜openit.ml
+      - SG 21｜openit.ml
+      - CN 18｜openit.ml
+      - SG 5｜openit.ml
+      - SG 3｜openit.ml
+      - US 5｜openit.ml
+      - SG 2｜openit.ml
+      - US 3｜openit.ml
+      - SG 6｜openit.ml
+      - US 7｜openit.ml
+      - SG 8｜openit.ml
+      - SG 16｜openit.ml
+      - SG 20｜openit.ml
+      - SG 17｜openit.ml
+      - SG 9｜openit.ml
+      - SG 18｜openit.ml
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 18｜openit.ml
-      - CN 22｜openit.ml
-      - US 16｜openit.ml
-      - CN 25｜openit.ml
-      - CN 17｜openit.ml
-      - CN 32｜openit.ml
-      - US 40｜openit.ml
-      - CN 21｜openit.ml
+      - CN 9｜openit.ml
+      - CN 4｜openit.ml
+      - CN 5｜openit.ml
+      - CN 7｜openit.ml
       - CN 6｜openit.ml
-      - CN 27｜openit.ml
+      - HK 1｜openit.ml
       - CN 11｜openit.ml
-      - US 42｜openit.ml
-      - CN 29｜openit.ml
-      - CN 26｜openit.ml
-      - CN 30｜openit.ml
+      - CN 16｜openit.ml
+      - CN 15｜openit.ml
       - CN 12｜openit.ml
-      - CN 28｜openit.ml
-      - US 35｜openit.ml
+      - CN 10｜openit.ml
+      - SG 1｜openit.ml
+      - CN 17｜openit.ml
+      - CN 14｜openit.ml
+      - CN 13｜openit.ml
+      - SG 15｜openit.ml
+      - SG 4｜openit.ml
+      - SG 14｜openit.ml
+      - HK 3｜openit.ml
+      - CN 8｜openit.ml
+      - CN 19｜openit.ml
+      - SG 21｜openit.ml
+      - CN 18｜openit.ml
+      - SG 5｜openit.ml
+      - SG 3｜openit.ml
+      - US 5｜openit.ml
+      - SG 2｜openit.ml
+      - US 3｜openit.ml
+      - SG 6｜openit.ml
+      - US 7｜openit.ml
+      - SG 8｜openit.ml
+      - SG 16｜openit.ml
+      - SG 20｜openit.ml
+      - SG 17｜openit.ml
+      - SG 9｜openit.ml
+      - SG 18｜openit.ml
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -220,24 +364,42 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 18｜openit.ml
-      - CN 22｜openit.ml
-      - US 16｜openit.ml
-      - CN 25｜openit.ml
-      - CN 17｜openit.ml
-      - CN 32｜openit.ml
-      - US 40｜openit.ml
-      - CN 21｜openit.ml
+      - CN 9｜openit.ml
+      - CN 4｜openit.ml
+      - CN 5｜openit.ml
+      - CN 7｜openit.ml
       - CN 6｜openit.ml
-      - CN 27｜openit.ml
+      - HK 1｜openit.ml
       - CN 11｜openit.ml
-      - US 42｜openit.ml
-      - CN 29｜openit.ml
-      - CN 26｜openit.ml
-      - CN 30｜openit.ml
+      - CN 16｜openit.ml
+      - CN 15｜openit.ml
       - CN 12｜openit.ml
-      - CN 28｜openit.ml
-      - US 35｜openit.ml
+      - CN 10｜openit.ml
+      - SG 1｜openit.ml
+      - CN 17｜openit.ml
+      - CN 14｜openit.ml
+      - CN 13｜openit.ml
+      - SG 15｜openit.ml
+      - SG 4｜openit.ml
+      - SG 14｜openit.ml
+      - HK 3｜openit.ml
+      - CN 8｜openit.ml
+      - CN 19｜openit.ml
+      - SG 21｜openit.ml
+      - CN 18｜openit.ml
+      - SG 5｜openit.ml
+      - SG 3｜openit.ml
+      - US 5｜openit.ml
+      - SG 2｜openit.ml
+      - US 3｜openit.ml
+      - SG 6｜openit.ml
+      - US 7｜openit.ml
+      - SG 8｜openit.ml
+      - SG 16｜openit.ml
+      - SG 20｜openit.ml
+      - SG 17｜openit.ml
+      - SG 9｜openit.ml
+      - SG 18｜openit.ml
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
