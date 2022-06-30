@@ -5,79 +5,295 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "香港✈️中转 [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 45379, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: "新加坡✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 26539, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: lhercjukk, server: 36.139.154.162, port: 45303, type: trojan, password: 45a02ace-0d89-45a8-92a1-ecaf81d870b9, skip-cert-verify: true, udp: true}
-  - {name: JP02-V2-AWSBJ, server: bj1.xlao.cn, port: 30003, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: "日本✈️中转 [香港Azure]", server: az.az-bgp.chuangshi999.xyz, port: 64340, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: "台湾✈️中转 [香港Azure]", server: az.az-bgp.chuangshi999.xyz, port: 39675, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: "印度✈️中转   [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 47718, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本 负载(4台)2x, server: hunan.zhongzhuanjizhongzhuanji.cf, port: 13691, type: ss, cipher: chacha20-ietf-poly1305, password: b30c429b-2ec9-415d-9152-4cfd1044def4, udp: true}
-  - {name: "香港✈️中转 [香港Azure]", server: az.az-bgp.chuangshi999.xyz, port: 22818, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: "印度✈️中转  [湖南长沙BGP]", server: cs.bgp.liuliangzhuanfa.xyz, port: 33514, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: cs.bgp.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: "美国✈️中转 [香港Azure]", server: az.az-bgp.chuangshi999.xyz, port: 31250, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: "印度✈️中转 [香港Azure]", server: az.az-bgp.chuangshi999.xyz, port: 33346, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: oyedhcjgjj, server: 20.239.156.36, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: ghnhvn, server: 20.24.85.15, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: 中国_TG@nodesharing_275_275, server: 1.tw.zz.xxxxx.x-t-fuckword.network, port: 53137, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_30_30, server: 1.5.1.fuckppppp.today, port: 50010, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_TG@nodesharing_265_265, server: azhk.mayiyun.shop, port: 80, type: vmess, uuid: 2fd060fa-5c95-4abe-9d45-66a0ca8a82c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ll, ws-headers: {Host: down.dingtalk.com}, udp: true}
+  - {name: 中国_TG@nodesharing_249_249, server: tw1.v3.zz.cn.fuckword.club, port: 49111, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_35_35, server: 3.hk.zz.xxxxx.x-t-fuckword.network, port: 36681, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_37_37, server: 2.3.1.fuckppppp.today, port: 50000, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_36_36, server: 7.hk.zz.xxxxx.x-t-fuckword.network, port: 58416, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_100_100, server: hkt01.hk.zz.xxxxx.x-t-fuckword.network, port: 56812, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_289_289, server: 2.8.1.fuckppppp.today, port: 20000, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_27_27, server: word.10.1.fuckword.club, port: 20001, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_220_220, server: ftp.cn.debian.cdnet.in, port: 8010, type: ss, cipher: aes-128-gcm, password: 888ba77d-38d3-4b9a-bda3-ab639885e8b8, udp: true}
+  - {name: 中国_TG@nodesharing_29_29, server: 2.sg.zz.xxxxx.x-t-fuckword.network, port: 60301, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_17_17, server: 2.game.speed.zz.001.oooooooooo.icu, port: 53945, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_15_15, server: sg1.v3.zz.cn.fuckword.club, port: 47533, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_25_25, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_31_31, server: word.13.1.fuckword.club, port: 53127, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_177_177, server: word.12.1.fuckword.club, port: 48744, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_237_237, server: 1.5.1.fuckppppp.today, port: 50010, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_93_93, server: word.2.fuckword.club, port: 48751, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_305_305, server: word.12.1.fuckword.club, port: 48744, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_38_38, server: word.2.fuckword.club, port: 47831, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_316_316, server: 2.9.0.fuckppppp.today, port: 53942, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_430_430, server: 3.game.speed.zz.001.oooooooooo.icu, port: 25841, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_105_105, server: ftp.cn.debian.cdnet.in, port: 8030, type: ss, cipher: aes-128-gcm, password: 888ba77d-38d3-4b9a-bda3-ab639885e8b8, udp: true}
+  - {name: 中国_TG@nodesharing_439_439, server: cn.gysz1.986888.xyz, port: 65432, type: ss, cipher: chacha20-ietf-poly1305, password: 893d27d4-02c5-41d2-a9d6-250d4cf3ac7a, udp: true}
+  - {name: 中国_TG@nodesharing_19_19, server: sg2.v3.zz.cn.fuckword.club, port: 47534, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_162_162, server: us1.v2.zz.cn.fuckword.club, port: 47602, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_22_22, server: word.2.fuckword.club, port: 36678, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_2_2, server: 5.hk.zz.xxxxx.x-t-fuckword.network, port: 36690, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_8_8, server: hk1.v3.zz.cn.fuckword.club, port: 47605, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_3_3, server: gb1.v2.zz.cn.fuckword.club, port: 47836, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_9_9, server: iplc-9-8-7-6-5-4-3-2-1.001.zz.fuckword.club, port: 53941, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_335_335, server: word.14.1.fuckword.club, port: 48861, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_152_152, server: us4.v2.zz.cn.fuckword.club, port: 23009, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_73_73, server: word.14.1.fuckword.club, port: 48861, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_214_214, server: 5.jp.zz.xxxxx.x-t-fuckword.network, port: 48752, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_44_44, server: ftp.cn.debian.cdnet.in, port: 8040, type: ss, cipher: aes-128-gcm, password: 888ba77d-38d3-4b9a-bda3-ab639885e8b8, udp: true}
+  - {name: 中国_TG@nodesharing_127_127, server: 1.us.zz.xxxxx.x-t-fuckword.network, port: 36677, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_79_79, server: word.4.1.fuckword.club, port: 49121, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_242_242, server: 1.game.speed.zz.001.oooooooooo.icu, port: 53944, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_72_72, server: 3.6.1.fuckppppp.today, port: 49125, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_97_97, server: us1.v2.zz.cn.fuckword.club, port: 47602, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_288_288, server: 3.4.1.fuckppppp.today, port: 49126, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_280_280, server: word.4.1.fuckword.club, port: 49121, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_385_385, server: 3.6.1.fuckppppp.today, port: 49125, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_222_222, server: 5.jp.zz.xxxxx.x-t-fuckword.network, port: 48752, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_70_70, server: us2.v3.zz.cn.fuckword.club, port: 58420, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_234_234, server: us4.v2.zz.cn.fuckword.club, port: 23009, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_10_10, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_11_11, server: 1.hk.zz.xxxxx.x-t-fuckword.network, port: 36672, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_94_94, server: 1.6.1.fuckppppp.today, port: 49127, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_148_148, server: 1.game.speed.zz.001.oooooooooo.icu, port: 53944, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_5_5, server: word.10.1.fuckword.club, port: 20001, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_1_1, server: 7.hk.zz.xxxxx.x-t-fuckword.network, port: 58416, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_6_6, server: 2.7.1.fuckppppp.today, port: 50002, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_85_85, server: 3.4.1.fuckppppp.today, port: 49126, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_178_178, server: gd.cm1.buildyourdream.cyou, port: 30092, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /embyjp, ws-headers: {Host: hk.aws-1.fevers.cyou}, udp: true}
+  - {name: 中国_TG@nodesharing_299_299, server: 3.8.1.fuckppppp.today, port: 53125, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_111_111, server: 1.kr.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本_TG@nodesharing_431_431, server: shuyun.cdn.yc.11.intvideos.com, port: 39011, type: trojan, password: b79a38a9-373b-49ac-9abe-ee531255c8b6, sni: shuyun.cdn.yc.11.intvideos.com, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_126_126, server: ftp.cn.debian.cdnet.in, port: 8060, type: ss, cipher: aes-128-gcm, password: 888ba77d-38d3-4b9a-bda3-ab639885e8b8, udp: true}
+  - {name: 中国_TG@nodesharing_349_349, server: 159.27.90.254, port: 63087, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
+  - {name: 中国_TG@nodesharing_116_116, server: 1.kr.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_247_247, server: gd.cm1.buildyourdream.cyou, port: 16335, type: vmess, uuid: 4570ab98-b644-3137-827c-8e8816a31ab3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ch, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: 中国_TG@nodesharing_59_59, server: 116.129.254.65, port: 63086, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
+  - {name: 中国_TG@nodesharing_156_156, server: 2.1.1.fuckppppp.today, port: 53126, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_333_333, server: 2.1.1.fuckppppp.today, port: 53126, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_160_160, server: word.2.fuckword.club, port: 47532, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港✈️中转 [湘沪BGP]
-      - 新加坡✈️中转  [湘沪BGP]
-      - lhercjukk
-      - JP02-V2-AWSBJ
-      - 日本✈️中转 [香港Azure]
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 日本 负载(4台)2x
-      - 香港✈️中转 [香港Azure]
-      - 印度✈️中转  [湖南长沙BGP]
-      - 美国✈️中转 [香港Azure]
-      - 印度✈️中转 [香港Azure]
-      - oyedhcjgjj
-      - ghnhvn
+      - 中国_TG@nodesharing_275_275
+      - 中国_TG@nodesharing_30_30
+      - 美国_TG@nodesharing_265_265
+      - 中国_TG@nodesharing_249_249
+      - 中国_TG@nodesharing_35_35
+      - 中国_TG@nodesharing_37_37
+      - 中国_TG@nodesharing_36_36
+      - 中国_TG@nodesharing_100_100
+      - 中国_TG@nodesharing_289_289
+      - 中国_TG@nodesharing_27_27
+      - 中国_TG@nodesharing_220_220
+      - 中国_TG@nodesharing_29_29
+      - 中国_TG@nodesharing_17_17
+      - 中国_TG@nodesharing_15_15
+      - 中国_TG@nodesharing_25_25
+      - 中国_TG@nodesharing_31_31
+      - 中国_TG@nodesharing_177_177
+      - 中国_TG@nodesharing_237_237
+      - 中国_TG@nodesharing_93_93
+      - 中国_TG@nodesharing_305_305
+      - 中国_TG@nodesharing_38_38
+      - 中国_TG@nodesharing_316_316
+      - 中国_TG@nodesharing_430_430
+      - 中国_TG@nodesharing_105_105
+      - 中国_TG@nodesharing_439_439
+      - 中国_TG@nodesharing_19_19
+      - 中国_TG@nodesharing_162_162
+      - 中国_TG@nodesharing_22_22
+      - 中国_TG@nodesharing_2_2
+      - 中国_TG@nodesharing_8_8
+      - 中国_TG@nodesharing_3_3
+      - 中国_TG@nodesharing_9_9
+      - 中国_TG@nodesharing_335_335
+      - 中国_TG@nodesharing_152_152
+      - 中国_TG@nodesharing_73_73
+      - 中国_TG@nodesharing_214_214
+      - 中国_TG@nodesharing_44_44
+      - 中国_TG@nodesharing_127_127
+      - 中国_TG@nodesharing_79_79
+      - 中国_TG@nodesharing_242_242
+      - 中国_TG@nodesharing_72_72
+      - 中国_TG@nodesharing_97_97
+      - 中国_TG@nodesharing_288_288
+      - 中国_TG@nodesharing_280_280
+      - 中国_TG@nodesharing_385_385
+      - 中国_TG@nodesharing_222_222
+      - 中国_TG@nodesharing_70_70
+      - 中国_TG@nodesharing_234_234
+      - 中国_TG@nodesharing_10_10
+      - 中国_TG@nodesharing_11_11
+      - 中国_TG@nodesharing_94_94
+      - 中国_TG@nodesharing_148_148
+      - 中国_TG@nodesharing_5_5
+      - 中国_TG@nodesharing_1_1
+      - 中国_TG@nodesharing_6_6
+      - 中国_TG@nodesharing_85_85
+      - 中国_TG@nodesharing_178_178
+      - 中国_TG@nodesharing_299_299
+      - 中国_TG@nodesharing_111_111
+      - 日本_TG@nodesharing_431_431
+      - 中国_TG@nodesharing_126_126
+      - 中国_TG@nodesharing_349_349
+      - 中国_TG@nodesharing_116_116
+      - 中国_TG@nodesharing_247_247
+      - 中国_TG@nodesharing_59_59
+      - 中国_TG@nodesharing_156_156
+      - 中国_TG@nodesharing_333_333
+      - 中国_TG@nodesharing_160_160
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港✈️中转 [湘沪BGP]
-      - 新加坡✈️中转  [湘沪BGP]
-      - lhercjukk
-      - JP02-V2-AWSBJ
-      - 日本✈️中转 [香港Azure]
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 日本 负载(4台)2x
-      - 香港✈️中转 [香港Azure]
-      - 印度✈️中转  [湖南长沙BGP]
-      - 美国✈️中转 [香港Azure]
-      - 印度✈️中转 [香港Azure]
-      - oyedhcjgjj
-      - ghnhvn
+      - 中国_TG@nodesharing_275_275
+      - 中国_TG@nodesharing_30_30
+      - 美国_TG@nodesharing_265_265
+      - 中国_TG@nodesharing_249_249
+      - 中国_TG@nodesharing_35_35
+      - 中国_TG@nodesharing_37_37
+      - 中国_TG@nodesharing_36_36
+      - 中国_TG@nodesharing_100_100
+      - 中国_TG@nodesharing_289_289
+      - 中国_TG@nodesharing_27_27
+      - 中国_TG@nodesharing_220_220
+      - 中国_TG@nodesharing_29_29
+      - 中国_TG@nodesharing_17_17
+      - 中国_TG@nodesharing_15_15
+      - 中国_TG@nodesharing_25_25
+      - 中国_TG@nodesharing_31_31
+      - 中国_TG@nodesharing_177_177
+      - 中国_TG@nodesharing_237_237
+      - 中国_TG@nodesharing_93_93
+      - 中国_TG@nodesharing_305_305
+      - 中国_TG@nodesharing_38_38
+      - 中国_TG@nodesharing_316_316
+      - 中国_TG@nodesharing_430_430
+      - 中国_TG@nodesharing_105_105
+      - 中国_TG@nodesharing_439_439
+      - 中国_TG@nodesharing_19_19
+      - 中国_TG@nodesharing_162_162
+      - 中国_TG@nodesharing_22_22
+      - 中国_TG@nodesharing_2_2
+      - 中国_TG@nodesharing_8_8
+      - 中国_TG@nodesharing_3_3
+      - 中国_TG@nodesharing_9_9
+      - 中国_TG@nodesharing_335_335
+      - 中国_TG@nodesharing_152_152
+      - 中国_TG@nodesharing_73_73
+      - 中国_TG@nodesharing_214_214
+      - 中国_TG@nodesharing_44_44
+      - 中国_TG@nodesharing_127_127
+      - 中国_TG@nodesharing_79_79
+      - 中国_TG@nodesharing_242_242
+      - 中国_TG@nodesharing_72_72
+      - 中国_TG@nodesharing_97_97
+      - 中国_TG@nodesharing_288_288
+      - 中国_TG@nodesharing_280_280
+      - 中国_TG@nodesharing_385_385
+      - 中国_TG@nodesharing_222_222
+      - 中国_TG@nodesharing_70_70
+      - 中国_TG@nodesharing_234_234
+      - 中国_TG@nodesharing_10_10
+      - 中国_TG@nodesharing_11_11
+      - 中国_TG@nodesharing_94_94
+      - 中国_TG@nodesharing_148_148
+      - 中国_TG@nodesharing_5_5
+      - 中国_TG@nodesharing_1_1
+      - 中国_TG@nodesharing_6_6
+      - 中国_TG@nodesharing_85_85
+      - 中国_TG@nodesharing_178_178
+      - 中国_TG@nodesharing_299_299
+      - 中国_TG@nodesharing_111_111
+      - 日本_TG@nodesharing_431_431
+      - 中国_TG@nodesharing_126_126
+      - 中国_TG@nodesharing_349_349
+      - 中国_TG@nodesharing_116_116
+      - 中国_TG@nodesharing_247_247
+      - 中国_TG@nodesharing_59_59
+      - 中国_TG@nodesharing_156_156
+      - 中国_TG@nodesharing_333_333
+      - 中国_TG@nodesharing_160_160
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港✈️中转 [湘沪BGP]
-      - 新加坡✈️中转  [湘沪BGP]
-      - lhercjukk
-      - JP02-V2-AWSBJ
-      - 日本✈️中转 [香港Azure]
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 日本 负载(4台)2x
-      - 香港✈️中转 [香港Azure]
-      - 印度✈️中转  [湖南长沙BGP]
-      - 美国✈️中转 [香港Azure]
-      - 印度✈️中转 [香港Azure]
-      - oyedhcjgjj
-      - ghnhvn
+      - 中国_TG@nodesharing_275_275
+      - 中国_TG@nodesharing_30_30
+      - 美国_TG@nodesharing_265_265
+      - 中国_TG@nodesharing_249_249
+      - 中国_TG@nodesharing_35_35
+      - 中国_TG@nodesharing_37_37
+      - 中国_TG@nodesharing_36_36
+      - 中国_TG@nodesharing_100_100
+      - 中国_TG@nodesharing_289_289
+      - 中国_TG@nodesharing_27_27
+      - 中国_TG@nodesharing_220_220
+      - 中国_TG@nodesharing_29_29
+      - 中国_TG@nodesharing_17_17
+      - 中国_TG@nodesharing_15_15
+      - 中国_TG@nodesharing_25_25
+      - 中国_TG@nodesharing_31_31
+      - 中国_TG@nodesharing_177_177
+      - 中国_TG@nodesharing_237_237
+      - 中国_TG@nodesharing_93_93
+      - 中国_TG@nodesharing_305_305
+      - 中国_TG@nodesharing_38_38
+      - 中国_TG@nodesharing_316_316
+      - 中国_TG@nodesharing_430_430
+      - 中国_TG@nodesharing_105_105
+      - 中国_TG@nodesharing_439_439
+      - 中国_TG@nodesharing_19_19
+      - 中国_TG@nodesharing_162_162
+      - 中国_TG@nodesharing_22_22
+      - 中国_TG@nodesharing_2_2
+      - 中国_TG@nodesharing_8_8
+      - 中国_TG@nodesharing_3_3
+      - 中国_TG@nodesharing_9_9
+      - 中国_TG@nodesharing_335_335
+      - 中国_TG@nodesharing_152_152
+      - 中国_TG@nodesharing_73_73
+      - 中国_TG@nodesharing_214_214
+      - 中国_TG@nodesharing_44_44
+      - 中国_TG@nodesharing_127_127
+      - 中国_TG@nodesharing_79_79
+      - 中国_TG@nodesharing_242_242
+      - 中国_TG@nodesharing_72_72
+      - 中国_TG@nodesharing_97_97
+      - 中国_TG@nodesharing_288_288
+      - 中国_TG@nodesharing_280_280
+      - 中国_TG@nodesharing_385_385
+      - 中国_TG@nodesharing_222_222
+      - 中国_TG@nodesharing_70_70
+      - 中国_TG@nodesharing_234_234
+      - 中国_TG@nodesharing_10_10
+      - 中国_TG@nodesharing_11_11
+      - 中国_TG@nodesharing_94_94
+      - 中国_TG@nodesharing_148_148
+      - 中国_TG@nodesharing_5_5
+      - 中国_TG@nodesharing_1_1
+      - 中国_TG@nodesharing_6_6
+      - 中国_TG@nodesharing_85_85
+      - 中国_TG@nodesharing_178_178
+      - 中国_TG@nodesharing_299_299
+      - 中国_TG@nodesharing_111_111
+      - 日本_TG@nodesharing_431_431
+      - 中国_TG@nodesharing_126_126
+      - 中国_TG@nodesharing_349_349
+      - 中国_TG@nodesharing_116_116
+      - 中国_TG@nodesharing_247_247
+      - 中国_TG@nodesharing_59_59
+      - 中国_TG@nodesharing_156_156
+      - 中国_TG@nodesharing_333_333
+      - 中国_TG@nodesharing_160_160
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,90 +312,299 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港✈️中转 [湘沪BGP]
-      - 新加坡✈️中转  [湘沪BGP]
-      - lhercjukk
-      - JP02-V2-AWSBJ
-      - 日本✈️中转 [香港Azure]
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 日本 负载(4台)2x
-      - 香港✈️中转 [香港Azure]
-      - 印度✈️中转  [湖南长沙BGP]
-      - 美国✈️中转 [香港Azure]
-      - 印度✈️中转 [香港Azure]
-      - oyedhcjgjj
-      - ghnhvn
+      - 中国_TG@nodesharing_275_275
+      - 中国_TG@nodesharing_30_30
+      - 美国_TG@nodesharing_265_265
+      - 中国_TG@nodesharing_249_249
+      - 中国_TG@nodesharing_35_35
+      - 中国_TG@nodesharing_37_37
+      - 中国_TG@nodesharing_36_36
+      - 中国_TG@nodesharing_100_100
+      - 中国_TG@nodesharing_289_289
+      - 中国_TG@nodesharing_27_27
+      - 中国_TG@nodesharing_220_220
+      - 中国_TG@nodesharing_29_29
+      - 中国_TG@nodesharing_17_17
+      - 中国_TG@nodesharing_15_15
+      - 中国_TG@nodesharing_25_25
+      - 中国_TG@nodesharing_31_31
+      - 中国_TG@nodesharing_177_177
+      - 中国_TG@nodesharing_237_237
+      - 中国_TG@nodesharing_93_93
+      - 中国_TG@nodesharing_305_305
+      - 中国_TG@nodesharing_38_38
+      - 中国_TG@nodesharing_316_316
+      - 中国_TG@nodesharing_430_430
+      - 中国_TG@nodesharing_105_105
+      - 中国_TG@nodesharing_439_439
+      - 中国_TG@nodesharing_19_19
+      - 中国_TG@nodesharing_162_162
+      - 中国_TG@nodesharing_22_22
+      - 中国_TG@nodesharing_2_2
+      - 中国_TG@nodesharing_8_8
+      - 中国_TG@nodesharing_3_3
+      - 中国_TG@nodesharing_9_9
+      - 中国_TG@nodesharing_335_335
+      - 中国_TG@nodesharing_152_152
+      - 中国_TG@nodesharing_73_73
+      - 中国_TG@nodesharing_214_214
+      - 中国_TG@nodesharing_44_44
+      - 中国_TG@nodesharing_127_127
+      - 中国_TG@nodesharing_79_79
+      - 中国_TG@nodesharing_242_242
+      - 中国_TG@nodesharing_72_72
+      - 中国_TG@nodesharing_97_97
+      - 中国_TG@nodesharing_288_288
+      - 中国_TG@nodesharing_280_280
+      - 中国_TG@nodesharing_385_385
+      - 中国_TG@nodesharing_222_222
+      - 中国_TG@nodesharing_70_70
+      - 中国_TG@nodesharing_234_234
+      - 中国_TG@nodesharing_10_10
+      - 中国_TG@nodesharing_11_11
+      - 中国_TG@nodesharing_94_94
+      - 中国_TG@nodesharing_148_148
+      - 中国_TG@nodesharing_5_5
+      - 中国_TG@nodesharing_1_1
+      - 中国_TG@nodesharing_6_6
+      - 中国_TG@nodesharing_85_85
+      - 中国_TG@nodesharing_178_178
+      - 中国_TG@nodesharing_299_299
+      - 中国_TG@nodesharing_111_111
+      - 日本_TG@nodesharing_431_431
+      - 中国_TG@nodesharing_126_126
+      - 中国_TG@nodesharing_349_349
+      - 中国_TG@nodesharing_116_116
+      - 中国_TG@nodesharing_247_247
+      - 中国_TG@nodesharing_59_59
+      - 中国_TG@nodesharing_156_156
+      - 中国_TG@nodesharing_333_333
+      - 中国_TG@nodesharing_160_160
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港✈️中转 [湘沪BGP]
-      - 日本✈️中转 [香港Azure]
-      - 台湾✈️中转 [香港Azure]
-      - 日本 负载(4台)2x
-      - 香港✈️中转 [香港Azure]
-      - 美国✈️中转 [香港Azure]
-      - 印度✈️中转 [香港Azure]
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港✈️中转 [湘沪BGP]
-      - 新加坡✈️中转  [湘沪BGP]
-      - lhercjukk
-      - JP02-V2-AWSBJ
-      - 日本✈️中转 [香港Azure]
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 日本 负载(4台)2x
-      - 香港✈️中转 [香港Azure]
-      - 印度✈️中转  [湖南长沙BGP]
-      - 美国✈️中转 [香港Azure]
-      - 印度✈️中转 [香港Azure]
-      - oyedhcjgjj
-      - ghnhvn
+      - 中国_TG@nodesharing_275_275
+      - 中国_TG@nodesharing_30_30
+      - 美国_TG@nodesharing_265_265
+      - 中国_TG@nodesharing_249_249
+      - 中国_TG@nodesharing_35_35
+      - 中国_TG@nodesharing_37_37
+      - 中国_TG@nodesharing_36_36
+      - 中国_TG@nodesharing_100_100
+      - 中国_TG@nodesharing_289_289
+      - 中国_TG@nodesharing_27_27
+      - 中国_TG@nodesharing_220_220
+      - 中国_TG@nodesharing_29_29
+      - 中国_TG@nodesharing_17_17
+      - 中国_TG@nodesharing_15_15
+      - 中国_TG@nodesharing_25_25
+      - 中国_TG@nodesharing_31_31
+      - 中国_TG@nodesharing_177_177
+      - 中国_TG@nodesharing_237_237
+      - 中国_TG@nodesharing_93_93
+      - 中国_TG@nodesharing_305_305
+      - 中国_TG@nodesharing_38_38
+      - 中国_TG@nodesharing_316_316
+      - 中国_TG@nodesharing_430_430
+      - 中国_TG@nodesharing_105_105
+      - 中国_TG@nodesharing_439_439
+      - 中国_TG@nodesharing_19_19
+      - 中国_TG@nodesharing_162_162
+      - 中国_TG@nodesharing_22_22
+      - 中国_TG@nodesharing_2_2
+      - 中国_TG@nodesharing_8_8
+      - 中国_TG@nodesharing_3_3
+      - 中国_TG@nodesharing_9_9
+      - 中国_TG@nodesharing_335_335
+      - 中国_TG@nodesharing_152_152
+      - 中国_TG@nodesharing_73_73
+      - 中国_TG@nodesharing_214_214
+      - 中国_TG@nodesharing_44_44
+      - 中国_TG@nodesharing_127_127
+      - 中国_TG@nodesharing_79_79
+      - 中国_TG@nodesharing_242_242
+      - 中国_TG@nodesharing_72_72
+      - 中国_TG@nodesharing_97_97
+      - 中国_TG@nodesharing_288_288
+      - 中国_TG@nodesharing_280_280
+      - 中国_TG@nodesharing_385_385
+      - 中国_TG@nodesharing_222_222
+      - 中国_TG@nodesharing_70_70
+      - 中国_TG@nodesharing_234_234
+      - 中国_TG@nodesharing_10_10
+      - 中国_TG@nodesharing_11_11
+      - 中国_TG@nodesharing_94_94
+      - 中国_TG@nodesharing_148_148
+      - 中国_TG@nodesharing_5_5
+      - 中国_TG@nodesharing_1_1
+      - 中国_TG@nodesharing_6_6
+      - 中国_TG@nodesharing_85_85
+      - 中国_TG@nodesharing_178_178
+      - 中国_TG@nodesharing_299_299
+      - 中国_TG@nodesharing_111_111
+      - 日本_TG@nodesharing_431_431
+      - 中国_TG@nodesharing_126_126
+      - 中国_TG@nodesharing_349_349
+      - 中国_TG@nodesharing_116_116
+      - 中国_TG@nodesharing_247_247
+      - 中国_TG@nodesharing_59_59
+      - 中国_TG@nodesharing_156_156
+      - 中国_TG@nodesharing_333_333
+      - 中国_TG@nodesharing_160_160
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港✈️中转 [湘沪BGP]
-      - 新加坡✈️中转  [湘沪BGP]
-      - lhercjukk
-      - JP02-V2-AWSBJ
-      - 日本✈️中转 [香港Azure]
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 日本 负载(4台)2x
-      - 香港✈️中转 [香港Azure]
-      - 印度✈️中转  [湖南长沙BGP]
-      - 美国✈️中转 [香港Azure]
-      - 印度✈️中转 [香港Azure]
-      - oyedhcjgjj
-      - ghnhvn
+      - 中国_TG@nodesharing_275_275
+      - 中国_TG@nodesharing_30_30
+      - 美国_TG@nodesharing_265_265
+      - 中国_TG@nodesharing_249_249
+      - 中国_TG@nodesharing_35_35
+      - 中国_TG@nodesharing_37_37
+      - 中国_TG@nodesharing_36_36
+      - 中国_TG@nodesharing_100_100
+      - 中国_TG@nodesharing_289_289
+      - 中国_TG@nodesharing_27_27
+      - 中国_TG@nodesharing_220_220
+      - 中国_TG@nodesharing_29_29
+      - 中国_TG@nodesharing_17_17
+      - 中国_TG@nodesharing_15_15
+      - 中国_TG@nodesharing_25_25
+      - 中国_TG@nodesharing_31_31
+      - 中国_TG@nodesharing_177_177
+      - 中国_TG@nodesharing_237_237
+      - 中国_TG@nodesharing_93_93
+      - 中国_TG@nodesharing_305_305
+      - 中国_TG@nodesharing_38_38
+      - 中国_TG@nodesharing_316_316
+      - 中国_TG@nodesharing_430_430
+      - 中国_TG@nodesharing_105_105
+      - 中国_TG@nodesharing_439_439
+      - 中国_TG@nodesharing_19_19
+      - 中国_TG@nodesharing_162_162
+      - 中国_TG@nodesharing_22_22
+      - 中国_TG@nodesharing_2_2
+      - 中国_TG@nodesharing_8_8
+      - 中国_TG@nodesharing_3_3
+      - 中国_TG@nodesharing_9_9
+      - 中国_TG@nodesharing_335_335
+      - 中国_TG@nodesharing_152_152
+      - 中国_TG@nodesharing_73_73
+      - 中国_TG@nodesharing_214_214
+      - 中国_TG@nodesharing_44_44
+      - 中国_TG@nodesharing_127_127
+      - 中国_TG@nodesharing_79_79
+      - 中国_TG@nodesharing_242_242
+      - 中国_TG@nodesharing_72_72
+      - 中国_TG@nodesharing_97_97
+      - 中国_TG@nodesharing_288_288
+      - 中国_TG@nodesharing_280_280
+      - 中国_TG@nodesharing_385_385
+      - 中国_TG@nodesharing_222_222
+      - 中国_TG@nodesharing_70_70
+      - 中国_TG@nodesharing_234_234
+      - 中国_TG@nodesharing_10_10
+      - 中国_TG@nodesharing_11_11
+      - 中国_TG@nodesharing_94_94
+      - 中国_TG@nodesharing_148_148
+      - 中国_TG@nodesharing_5_5
+      - 中国_TG@nodesharing_1_1
+      - 中国_TG@nodesharing_6_6
+      - 中国_TG@nodesharing_85_85
+      - 中国_TG@nodesharing_178_178
+      - 中国_TG@nodesharing_299_299
+      - 中国_TG@nodesharing_111_111
+      - 日本_TG@nodesharing_431_431
+      - 中国_TG@nodesharing_126_126
+      - 中国_TG@nodesharing_349_349
+      - 中国_TG@nodesharing_116_116
+      - 中国_TG@nodesharing_247_247
+      - 中国_TG@nodesharing_59_59
+      - 中国_TG@nodesharing_156_156
+      - 中国_TG@nodesharing_333_333
+      - 中国_TG@nodesharing_160_160
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港✈️中转 [湘沪BGP]
-      - 新加坡✈️中转  [湘沪BGP]
-      - lhercjukk
-      - JP02-V2-AWSBJ
-      - 日本✈️中转 [香港Azure]
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 日本 负载(4台)2x
-      - 香港✈️中转 [香港Azure]
-      - 印度✈️中转  [湖南长沙BGP]
-      - 美国✈️中转 [香港Azure]
-      - 印度✈️中转 [香港Azure]
-      - oyedhcjgjj
-      - ghnhvn
+      - 中国_TG@nodesharing_275_275
+      - 中国_TG@nodesharing_30_30
+      - 美国_TG@nodesharing_265_265
+      - 中国_TG@nodesharing_249_249
+      - 中国_TG@nodesharing_35_35
+      - 中国_TG@nodesharing_37_37
+      - 中国_TG@nodesharing_36_36
+      - 中国_TG@nodesharing_100_100
+      - 中国_TG@nodesharing_289_289
+      - 中国_TG@nodesharing_27_27
+      - 中国_TG@nodesharing_220_220
+      - 中国_TG@nodesharing_29_29
+      - 中国_TG@nodesharing_17_17
+      - 中国_TG@nodesharing_15_15
+      - 中国_TG@nodesharing_25_25
+      - 中国_TG@nodesharing_31_31
+      - 中国_TG@nodesharing_177_177
+      - 中国_TG@nodesharing_237_237
+      - 中国_TG@nodesharing_93_93
+      - 中国_TG@nodesharing_305_305
+      - 中国_TG@nodesharing_38_38
+      - 中国_TG@nodesharing_316_316
+      - 中国_TG@nodesharing_430_430
+      - 中国_TG@nodesharing_105_105
+      - 中国_TG@nodesharing_439_439
+      - 中国_TG@nodesharing_19_19
+      - 中国_TG@nodesharing_162_162
+      - 中国_TG@nodesharing_22_22
+      - 中国_TG@nodesharing_2_2
+      - 中国_TG@nodesharing_8_8
+      - 中国_TG@nodesharing_3_3
+      - 中国_TG@nodesharing_9_9
+      - 中国_TG@nodesharing_335_335
+      - 中国_TG@nodesharing_152_152
+      - 中国_TG@nodesharing_73_73
+      - 中国_TG@nodesharing_214_214
+      - 中国_TG@nodesharing_44_44
+      - 中国_TG@nodesharing_127_127
+      - 中国_TG@nodesharing_79_79
+      - 中国_TG@nodesharing_242_242
+      - 中国_TG@nodesharing_72_72
+      - 中国_TG@nodesharing_97_97
+      - 中国_TG@nodesharing_288_288
+      - 中国_TG@nodesharing_280_280
+      - 中国_TG@nodesharing_385_385
+      - 中国_TG@nodesharing_222_222
+      - 中国_TG@nodesharing_70_70
+      - 中国_TG@nodesharing_234_234
+      - 中国_TG@nodesharing_10_10
+      - 中国_TG@nodesharing_11_11
+      - 中国_TG@nodesharing_94_94
+      - 中国_TG@nodesharing_148_148
+      - 中国_TG@nodesharing_5_5
+      - 中国_TG@nodesharing_1_1
+      - 中国_TG@nodesharing_6_6
+      - 中国_TG@nodesharing_85_85
+      - 中国_TG@nodesharing_178_178
+      - 中国_TG@nodesharing_299_299
+      - 中国_TG@nodesharing_111_111
+      - 日本_TG@nodesharing_431_431
+      - 中国_TG@nodesharing_126_126
+      - 中国_TG@nodesharing_349_349
+      - 中国_TG@nodesharing_116_116
+      - 中国_TG@nodesharing_247_247
+      - 中国_TG@nodesharing_59_59
+      - 中国_TG@nodesharing_156_156
+      - 中国_TG@nodesharing_333_333
+      - 中国_TG@nodesharing_160_160
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -195,20 +620,74 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港✈️中转 [湘沪BGP]
-      - 新加坡✈️中转  [湘沪BGP]
-      - lhercjukk
-      - JP02-V2-AWSBJ
-      - 日本✈️中转 [香港Azure]
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 日本 负载(4台)2x
-      - 香港✈️中转 [香港Azure]
-      - 印度✈️中转  [湖南长沙BGP]
-      - 美国✈️中转 [香港Azure]
-      - 印度✈️中转 [香港Azure]
-      - oyedhcjgjj
-      - ghnhvn
+      - 中国_TG@nodesharing_275_275
+      - 中国_TG@nodesharing_30_30
+      - 美国_TG@nodesharing_265_265
+      - 中国_TG@nodesharing_249_249
+      - 中国_TG@nodesharing_35_35
+      - 中国_TG@nodesharing_37_37
+      - 中国_TG@nodesharing_36_36
+      - 中国_TG@nodesharing_100_100
+      - 中国_TG@nodesharing_289_289
+      - 中国_TG@nodesharing_27_27
+      - 中国_TG@nodesharing_220_220
+      - 中国_TG@nodesharing_29_29
+      - 中国_TG@nodesharing_17_17
+      - 中国_TG@nodesharing_15_15
+      - 中国_TG@nodesharing_25_25
+      - 中国_TG@nodesharing_31_31
+      - 中国_TG@nodesharing_177_177
+      - 中国_TG@nodesharing_237_237
+      - 中国_TG@nodesharing_93_93
+      - 中国_TG@nodesharing_305_305
+      - 中国_TG@nodesharing_38_38
+      - 中国_TG@nodesharing_316_316
+      - 中国_TG@nodesharing_430_430
+      - 中国_TG@nodesharing_105_105
+      - 中国_TG@nodesharing_439_439
+      - 中国_TG@nodesharing_19_19
+      - 中国_TG@nodesharing_162_162
+      - 中国_TG@nodesharing_22_22
+      - 中国_TG@nodesharing_2_2
+      - 中国_TG@nodesharing_8_8
+      - 中国_TG@nodesharing_3_3
+      - 中国_TG@nodesharing_9_9
+      - 中国_TG@nodesharing_335_335
+      - 中国_TG@nodesharing_152_152
+      - 中国_TG@nodesharing_73_73
+      - 中国_TG@nodesharing_214_214
+      - 中国_TG@nodesharing_44_44
+      - 中国_TG@nodesharing_127_127
+      - 中国_TG@nodesharing_79_79
+      - 中国_TG@nodesharing_242_242
+      - 中国_TG@nodesharing_72_72
+      - 中国_TG@nodesharing_97_97
+      - 中国_TG@nodesharing_288_288
+      - 中国_TG@nodesharing_280_280
+      - 中国_TG@nodesharing_385_385
+      - 中国_TG@nodesharing_222_222
+      - 中国_TG@nodesharing_70_70
+      - 中国_TG@nodesharing_234_234
+      - 中国_TG@nodesharing_10_10
+      - 中国_TG@nodesharing_11_11
+      - 中国_TG@nodesharing_94_94
+      - 中国_TG@nodesharing_148_148
+      - 中国_TG@nodesharing_5_5
+      - 中国_TG@nodesharing_1_1
+      - 中国_TG@nodesharing_6_6
+      - 中国_TG@nodesharing_85_85
+      - 中国_TG@nodesharing_178_178
+      - 中国_TG@nodesharing_299_299
+      - 中国_TG@nodesharing_111_111
+      - 日本_TG@nodesharing_431_431
+      - 中国_TG@nodesharing_126_126
+      - 中国_TG@nodesharing_349_349
+      - 中国_TG@nodesharing_116_116
+      - 中国_TG@nodesharing_247_247
+      - 中国_TG@nodesharing_59_59
+      - 中国_TG@nodesharing_156_156
+      - 中国_TG@nodesharing_333_333
+      - 中国_TG@nodesharing_160_160
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
