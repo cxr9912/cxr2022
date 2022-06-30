@@ -5,63 +5,111 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港高级IPLC, server: 20.239.156.36, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 香港高速IEPL, server: 20.24.92.151, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 新加坡优化|X0.01, server: 626sg.ok365.cyou, port: 443, type: trojan, password: 02f61efe-8380-413a-9233-6328ef8997f4, sni: 626sg.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: "日本✈️中转 [香港Azure]", server: az.az-bgp.chuangshi999.xyz, port: 64340, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国首尔, server: 36.139.154.162, port: 45303, type: trojan, password: 45a02ace-0d89-45a8-92a1-ecaf81d870b9, skip-cert-verify: true, udp: true}
-  - {name: HK_ 228, server: 116.129.254.65, port: 63004, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-kr01.covid19.rip}, udp: true}
-  - {name: "台湾✈️中转 [香港Azure]", server: az.az-bgp.chuangshi999.xyz, port: 39675, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: "印度✈️中转   [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 47718, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港隧道中转, server: 20.24.85.15, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 距离下次重置剩余：29 天, server: 120.232.238.137, port: 10106, type: ss, cipher: chacha20-ietf-poly1305, password: c84849ea-4970-444c-9c61-3b7251fb7269, udp: true}
+  - {name: 台灣 广移, server: ygzyd.sub-nthu.com, port: 35005, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: ygzyd.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: "[2.5x] 韩国 9929", server: updates.sub-nthu.com, port: 35007, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: updates.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: "[2.5x] 香港 9929", server: updates.sub-nthu.com, port: 35002, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: updates.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 台灣 CN2, server: cn2hn.sub-nthu.com, port: 35005, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 CN2, server: cn2hn.sub-nthu.com, port: 35002, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: "[2.5x] 東京 9929", server: updates.sub-nthu.com, port: 35001, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: updates.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 東京 上联, server: shlt.sub-nthu.com, port: 35001, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 上联, server: shlt.sub-nthu.com, port: 35003, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 上联, server: shlt.sub-nthu.com, port: 35002, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 CN2, server: cn2hn.sub-nthu.com, port: 35003, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 韩国 CN2, server: cn2hn.sub-nthu.com, port: 35007, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 東京 CN2, server: cn2hn.sub-nthu.com, port: 35001, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: "[2.5x] 英国 9929", server: updates.sub-nthu.com, port: 35008, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: updates.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 英国 广移, server: ygzyd.sub-nthu.com, port: 35008, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: ygzyd.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: "[2.5x] 台灣 9929", server: updates.sub-nthu.com, port: 35005, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: updates.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 台灣 上联, server: shlt.sub-nthu.com, port: 35005, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 美國 上联, server: shlt.sub-nthu.com, port: 35000, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 美國 CN2, server: cn2hn.sub-nthu.com, port: 35000, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 英国 CN2, server: cn2hn.sub-nthu.com, port: 35008, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 美國 广移, server: ygzyd.sub-nthu.com, port: 35000, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: ygzyd.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 英国 上联, server: shlt.sub-nthu.com, port: 35008, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 广移, server: ygzyd.sub-nthu.com, port: 35003, type: trojan, password: 833833e6-6465-4332-834c-41304265f655, sni: ygzyd.sub-nthu.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港高级IPLC
-      - 香港高速IEPL
-      - 新加坡优化|X0.01
-      - 日本✈️中转 [香港Azure]
-      - 韩国首尔
-      - HK_ 228
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 香港隧道中转
-      - 距离下次重置剩余：29 天
+      - 台灣 广移
+      - "[2.5x] 韩国 9929"
+      - "[2.5x] 香港 9929"
+      - 台灣 CN2
+      - 香港 CN2
+      - "[2.5x] 東京 9929"
+      - 東京 上联
+      - 新加坡 上联
+      - 香港 上联
+      - 新加坡 CN2
+      - 韩国 CN2
+      - 東京 CN2
+      - "[2.5x] 英国 9929"
+      - 英国 广移
+      - "[2.5x] 台灣 9929"
+      - 台灣 上联
+      - 美國 上联
+      - 美國 CN2
+      - 英国 CN2
+      - 美國 广移
+      - 英国 上联
+      - 新加坡 广移
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港高级IPLC
-      - 香港高速IEPL
-      - 新加坡优化|X0.01
-      - 日本✈️中转 [香港Azure]
-      - 韩国首尔
-      - HK_ 228
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 香港隧道中转
-      - 距离下次重置剩余：29 天
+      - 台灣 广移
+      - "[2.5x] 韩国 9929"
+      - "[2.5x] 香港 9929"
+      - 台灣 CN2
+      - 香港 CN2
+      - "[2.5x] 東京 9929"
+      - 東京 上联
+      - 新加坡 上联
+      - 香港 上联
+      - 新加坡 CN2
+      - 韩国 CN2
+      - 東京 CN2
+      - "[2.5x] 英国 9929"
+      - 英国 广移
+      - "[2.5x] 台灣 9929"
+      - 台灣 上联
+      - 美國 上联
+      - 美國 CN2
+      - 英国 CN2
+      - 美國 广移
+      - 英国 上联
+      - 新加坡 广移
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港高级IPLC
-      - 香港高速IEPL
-      - 新加坡优化|X0.01
-      - 日本✈️中转 [香港Azure]
-      - 韩国首尔
-      - HK_ 228
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 香港隧道中转
-      - 距离下次重置剩余：29 天
+      - 台灣 广移
+      - "[2.5x] 韩国 9929"
+      - "[2.5x] 香港 9929"
+      - 台灣 CN2
+      - 香港 CN2
+      - "[2.5x] 東京 9929"
+      - 東京 上联
+      - 新加坡 上联
+      - 香港 上联
+      - 新加坡 CN2
+      - 韩国 CN2
+      - 東京 CN2
+      - "[2.5x] 英国 9929"
+      - 英国 广移
+      - "[2.5x] 台灣 9929"
+      - 台灣 上联
+      - 美國 上联
+      - 美國 CN2
+      - 英国 CN2
+      - 美國 广移
+      - 英国 上联
+      - 新加坡 广移
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,72 +128,122 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港高级IPLC
-      - 香港高速IEPL
-      - 新加坡优化|X0.01
-      - 日本✈️中转 [香港Azure]
-      - 韩国首尔
-      - HK_ 228
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 香港隧道中转
-      - 距离下次重置剩余：29 天
+      - 台灣 广移
+      - "[2.5x] 韩国 9929"
+      - "[2.5x] 香港 9929"
+      - 台灣 CN2
+      - 香港 CN2
+      - "[2.5x] 東京 9929"
+      - 東京 上联
+      - 新加坡 上联
+      - 香港 上联
+      - 新加坡 CN2
+      - 韩国 CN2
+      - 東京 CN2
+      - "[2.5x] 英国 9929"
+      - 英国 广移
+      - "[2.5x] 台灣 9929"
+      - 台灣 上联
+      - 美國 上联
+      - 美國 CN2
+      - 英国 CN2
+      - 美國 广移
+      - 英国 上联
+      - 新加坡 广移
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港高级IPLC
-      - 香港高速IEPL
-      - 日本✈️中转 [香港Azure]
-      - 台湾✈️中转 [香港Azure]
-      - 香港隧道中转
+      - 台灣 广移
+      - "[2.5x] 香港 9929"
+      - 台灣 CN2
+      - 香港 CN2
+      - 香港 上联
+      - "[2.5x] 台灣 9929"
+      - 台灣 上联
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港高级IPLC
-      - 香港高速IEPL
-      - 新加坡优化|X0.01
-      - 日本✈️中转 [香港Azure]
-      - 韩国首尔
-      - HK_ 228
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 香港隧道中转
-      - 距离下次重置剩余：29 天
+      - 台灣 广移
+      - "[2.5x] 韩国 9929"
+      - "[2.5x] 香港 9929"
+      - 台灣 CN2
+      - 香港 CN2
+      - "[2.5x] 東京 9929"
+      - 東京 上联
+      - 新加坡 上联
+      - 香港 上联
+      - 新加坡 CN2
+      - 韩国 CN2
+      - 東京 CN2
+      - "[2.5x] 英国 9929"
+      - 英国 广移
+      - "[2.5x] 台灣 9929"
+      - 台灣 上联
+      - 美國 上联
+      - 美國 CN2
+      - 英国 CN2
+      - 美國 广移
+      - 英国 上联
+      - 新加坡 广移
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港高级IPLC
-      - 香港高速IEPL
-      - 新加坡优化|X0.01
-      - 日本✈️中转 [香港Azure]
-      - 韩国首尔
-      - HK_ 228
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 香港隧道中转
-      - 距离下次重置剩余：29 天
+      - 台灣 广移
+      - "[2.5x] 韩国 9929"
+      - "[2.5x] 香港 9929"
+      - 台灣 CN2
+      - 香港 CN2
+      - "[2.5x] 東京 9929"
+      - 東京 上联
+      - 新加坡 上联
+      - 香港 上联
+      - 新加坡 CN2
+      - 韩国 CN2
+      - 東京 CN2
+      - "[2.5x] 英国 9929"
+      - 英国 广移
+      - "[2.5x] 台灣 9929"
+      - 台灣 上联
+      - 美國 上联
+      - 美國 CN2
+      - 英国 CN2
+      - 美國 广移
+      - 英国 上联
+      - 新加坡 广移
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港高级IPLC
-      - 香港高速IEPL
-      - 新加坡优化|X0.01
-      - 日本✈️中转 [香港Azure]
-      - 韩国首尔
-      - HK_ 228
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 香港隧道中转
-      - 距离下次重置剩余：29 天
+      - 台灣 广移
+      - "[2.5x] 韩国 9929"
+      - "[2.5x] 香港 9929"
+      - 台灣 CN2
+      - 香港 CN2
+      - "[2.5x] 東京 9929"
+      - 東京 上联
+      - 新加坡 上联
+      - 香港 上联
+      - 新加坡 CN2
+      - 韩国 CN2
+      - 東京 CN2
+      - "[2.5x] 英国 9929"
+      - 英国 广移
+      - "[2.5x] 台灣 9929"
+      - 台灣 上联
+      - 美國 上联
+      - 美國 CN2
+      - 英国 CN2
+      - 美國 广移
+      - 英国 上联
+      - 新加坡 广移
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -161,16 +259,28 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港高级IPLC
-      - 香港高速IEPL
-      - 新加坡优化|X0.01
-      - 日本✈️中转 [香港Azure]
-      - 韩国首尔
-      - HK_ 228
-      - 台湾✈️中转 [香港Azure]
-      - 印度✈️中转   [湘沪BGP]
-      - 香港隧道中转
-      - 距离下次重置剩余：29 天
+      - 台灣 广移
+      - "[2.5x] 韩国 9929"
+      - "[2.5x] 香港 9929"
+      - 台灣 CN2
+      - 香港 CN2
+      - "[2.5x] 東京 9929"
+      - 東京 上联
+      - 新加坡 上联
+      - 香港 上联
+      - 新加坡 CN2
+      - 韩国 CN2
+      - 東京 CN2
+      - "[2.5x] 英国 9929"
+      - 英国 广移
+      - "[2.5x] 台灣 9929"
+      - 台灣 上联
+      - 美國 上联
+      - 美國 CN2
+      - 英国 CN2
+      - 美國 广移
+      - 英国 上联
+      - 新加坡 广移
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
