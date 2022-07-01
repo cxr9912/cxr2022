@@ -5,51 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[LV1·解锁] 狮城04 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /j20-sp4, ws-headers: {Host: pp1.zhengzhongfeizhu.xyz}, udp: true}
-  - {name: "[LV2·原生] 香港B1 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /j20-hgc1, ws-headers: {Host: pp1.zhengzhongfeizhu.xyz}, udp: true}
-  - {name: "[LV2·原生] 香港B2 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /j20-hgc2, ws-headers: {Host: pp1.zhengzhongfeizhu.xyz}, udp: true}
-  - {name: "[LV2·原生] 香港B4 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /j20-hgc4, ws-headers: {Host: pp1.zhengzhongfeizhu.xyz}, udp: true}
-  - {name: "[LV1·解锁] 狮城02 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /j20-sp2, ws-headers: {Host: pp1.zhengzhongfeizhu.xyz}, udp: true}
-  - {name: "[LV2·原生] 美国03 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /j20-usa3-242, ws-headers: {Host: pp1.zhengzhongfeizhu.xyz}, udp: true}
-  - {name: "[LV2·原生] 香港02 | IEPL 专线 | 3x", server: pp1.zhengzhongfeizhu.xyz, port: 33003, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本IDC宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45184, type: vmess, uuid: ca87bbfd-a35f-4525-a7e3-79c0f42b7b2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|V2|IPLC, server: 36.139.153.214, port: 45239, type: vmess, uuid: ca87bbfd-a35f-4525-a7e3-79c0f42b7b2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.153.214}, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: ca87bbfd-a35f-4525-a7e3-79c0f42b7b2a, udp: true}
+  - {name: 香港IDC宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: ca87bbfd-a35f-4525-a7e3-79c0f42b7b2a, udp: true}
+  - {name: 日本IDC宽频|NF解锁|V2|A01, server: 36.139.154.17, port: 45184, type: vmess, uuid: ca87bbfd-a35f-4525-a7e3-79c0f42b7b2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.17}, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|V2|A01, server: 36.139.154.17, port: 45394, type: vmess, uuid: ca87bbfd-a35f-4525-a7e3-79c0f42b7b2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.17}, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|SS|A01, server: 36.139.154.17, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: ca87bbfd-a35f-4525-a7e3-79c0f42b7b2a, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|SS|IPLC, server: 36.139.153.214, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: ca87bbfd-a35f-4525-a7e3-79c0f42b7b2a, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|V2|A01, server: 36.139.154.162, port: 45149, type: vmess, uuid: ca87bbfd-a35f-4525-a7e3-79c0f42b7b2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.162}, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|SS|IPLC, server: 36.139.153.214, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: ca87bbfd-a35f-4525-a7e3-79c0f42b7b2a, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45149, type: vmess, uuid: ca87bbfd-a35f-4525-a7e3-79c0f42b7b2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|IPLC, server: 36.139.153.214, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: ca87bbfd-a35f-4525-a7e3-79c0f42b7b2a, udp: true}
+  - {name: 美国IDC宽频|NF解锁|SS|A01, server: 36.139.154.17, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: ca87bbfd-a35f-4525-a7e3-79c0f42b7b2a, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[LV1·解锁] 狮城04 | 中转"
-      - "[LV2·原生] 香港B1 | 中转"
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港B4 | 中转"
-      - "[LV1·解锁] 狮城02 | 中转"
-      - "[LV2·原生] 美国03 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 美国IDC宽频|NF解锁|SS|A01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[LV1·解锁] 狮城04 | 中转"
-      - "[LV2·原生] 香港B1 | 中转"
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港B4 | 中转"
-      - "[LV1·解锁] 狮城02 | 中转"
-      - "[LV2·原生] 美国03 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 美国IDC宽频|NF解锁|SS|A01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[LV1·解锁] 狮城04 | 中转"
-      - "[LV2·原生] 香港B1 | 中转"
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港B4 | 中转"
-      - "[LV1·解锁] 狮城02 | 中转"
-      - "[LV2·原生] 美国03 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 美国IDC宽频|NF解锁|SS|A01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,59 +92,85 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[LV1·解锁] 狮城04 | 中转"
-      - "[LV2·原生] 香港B1 | 中转"
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港B4 | 中转"
-      - "[LV1·解锁] 狮城02 | 中转"
-      - "[LV2·原生] 美国03 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 美国IDC宽频|NF解锁|SS|A01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[LV2·原生] 香港B1 | 中转"
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港B4 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 香港家庭宽频|NF解锁|SS|IPLC
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[LV1·解锁] 狮城04 | 中转"
-      - "[LV2·原生] 香港B1 | 中转"
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港B4 | 中转"
-      - "[LV1·解锁] 狮城02 | 中转"
-      - "[LV2·原生] 美国03 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 美国IDC宽频|NF解锁|SS|A01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[LV1·解锁] 狮城04 | 中转"
-      - "[LV2·原生] 香港B1 | 中转"
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港B4 | 中转"
-      - "[LV1·解锁] 狮城02 | 中转"
-      - "[LV2·原生] 美国03 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 美国IDC宽频|NF解锁|SS|A01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[LV1·解锁] 狮城04 | 中转"
-      - "[LV2·原生] 香港B1 | 中转"
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港B4 | 中转"
-      - "[LV1·解锁] 狮城02 | 中转"
-      - "[LV2·原生] 美国03 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 美国IDC宽频|NF解锁|SS|A01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -136,13 +186,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[LV1·解锁] 狮城04 | 中转"
-      - "[LV2·原生] 香港B1 | 中转"
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港B4 | 中转"
-      - "[LV1·解锁] 狮城02 | 中转"
-      - "[LV2·原生] 美国03 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|IPLC
+      - 美国IDC宽频|NF解锁|SS|A01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
