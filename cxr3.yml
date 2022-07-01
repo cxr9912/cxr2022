@@ -5,47 +5,227 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本3-tg频道:@ripaojiedian, server: 36.139.154.17, port: 45184, type: vmess, uuid: 11d24df8-4651-4db7-97d7-b0bb70b73ba5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.139.154.17}, udp: true}
-  - {name: 香港-tg频道:@ripaojiedian, server: 626hk02.ok365.cyou, port: 80, type: trojan, password: ef6c7fc6-6551-472b-921c-8f28606785de, sni: 626hk02.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-tg频道:@ripaojiedian, server: 626sg.ok365.cyou, port: 443, type: trojan, password: ef6c7fc6-6551-472b-921c-8f28606785de, sni: 626sg.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: 日本JP-tg频道:@ripaojiedian, server: 20.222.200.60, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 台湾2-tg频道:@ripaojiedian, server: 120.232.132.71, port: 25680, type: trojan, password: Mfd9ca63, skip-cert-verify: true, udp: true}
-  - {name: 香港3-tg频道:@ripaojiedian, server: azhj001.xiba1.xyz, port: 20719, type: trojan, password: f6f51e72-46a6-385b-9947-db5e448ea9b8, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_37, server: word.10.1.fuckword.club, port: 20001, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_294, server: 2.7.1.fuckppppp.today, port: 50002, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_220, server: 5.hk.zz.xxxxx.x-t-fuckword.network, port: 36690, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_161, server: 2.7.1.fuckppppp.today, port: 50002, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_195, server: cn.gysz1.986888.xyz, port: 65432, type: ss, cipher: chacha20-ietf-poly1305, password: 893d27d4-02c5-41d2-a9d6-250d4cf3ac7a, udp: true}
+  - {name: TG@nodesharing_167, server: iplc-9-8-7-6-5-4-3-2-1.001.zz.fuckword.club, port: 53941, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_83, server: 3.6.1.fuckppppp.today, port: 49125, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_95, server: word.4.1.fuckword.club, port: 49121, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_198, server: word.13.1.fuckword.club, port: 53127, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_9, server: hk2.v3.zz.cn.fuckword.club, port: 47835, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_47, server: tw1.v3.zz.cn.fuckword.club, port: 49111, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_14, server: word.18.fuckword.club, port: 58417, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_217, server: 1.us.zz.xxxxx.x-t-fuckword.network, port: 36677, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_224, server: us2.v3.zz.cn.fuckword.club, port: 58420, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_22, server: 2.sg.zz.xxxxx.x-t-fuckword.network, port: 60301, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_27, server: 1.5.1.fuckppppp.today, port: 50010, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_283, server: 5.jp.zz.xxxxx.x-t-fuckword.network, port: 48752, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_88, server: 159.27.90.254, port: 63088, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
+  - {name: TG@nodesharing_59, server: 3.4.1.fuckppppp.today, port: 49126, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_179, server: sg2.v3.zz.cn.fuckword.club, port: 47534, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_55, server: tw02.henet.cyou, port: 20000, type: vmess, uuid: 5999692f-a9c4-4744-b051-92035b988317, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
+  - {name: TG@nodesharing_156, server: 116.129.254.65, port: 63051, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: mugua-in01.airport-v2.com}, udp: true}
+  - {name: TG@nodesharing_136, server: 3.4.1.fuckppppp.today, port: 49126, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_208, server: word.2.fuckword.club, port: 47532, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_10, server: hk1.v2.zz.cn.fuckword.club, port: 49511, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_249, server: hk1.v2.zz.cn.fuckword.club, port: 49511, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_57, server: word.2.fuckword.club, port: 48751, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_33, server: 1.hk.zz.xxxxx.x-t-fuckword.network, port: 36672, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_96, server: 2.3.1.fuckppppp.today, port: 50000, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_62, server: 1.tw.zz.xxxxx.x-t-fuckword.network, port: 53137, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_46, server: us2.v3.zz.cn.fuckword.club, port: 58420, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_121, server: 3.8.1.fuckppppp.today, port: 53125, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_255, server: 3.2.1.fuckppppp.today, port: 60302, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_171, server: 1.kr.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_270, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_191, server: us4.v2.zz.cn.fuckword.club, port: 23009, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_300, server: us1.v2.zz.cn.fuckword.club, port: 47602, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_36, server: word.2.fuckword.club, port: 47831, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_89, server: 159.27.90.254, port: 63086, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
+  - {name: TG@nodesharing_295, server: word.4.1.fuckword.club, port: 49121, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_282, server: word.2.fuckword.club, port: 47532, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_206, server: 1.kr.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_45, server: 1.6.1.fuckppppp.today, port: 49127, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_163, server: 3.hk.zz.xxxxx.x-t-fuckword.network, port: 36681, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_132, server: eva.marythunt.xyz, port: 33243, type: vmess, uuid: d022f57c-484d-4a17-b405-967d7497efdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: YouTube-aweikeji}, udp: true}
+  - {name: TG@nodesharing_74, server: v20.emovpn.xyz, port: 1256, type: vmess, uuid: 177fb4f9-f416-45e9-bd1f-4c28307be367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
+  - {name: TG@nodesharing_137, server: 51.103.146.120, port: 443, type: vmess, uuid: 126110be-5dd5-429f-b05b-4fcc4cd03b86, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: 51.103.146.120, grpc-opts: {grpc-service-name: 5c8be001}, udp: true}
+  - {name: TG@nodesharing_143, server: 116.129.254.65, port: 63014, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
+  - {name: TG@nodesharing_232, server: 116.129.254.65, port: 63069, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-us03.covid19.rip}, udp: true}
+  - {name: TG@nodesharing_29, server: hk2.v2.zz.cn.fuckword.club, port: 49112, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_148, server: 23.102.1.76, port: 443, type: vmess, uuid: 0b0269fb-90ef-481f-b509-20fc3ab6009f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: 23.102.1.76, grpc-opts: {grpc-service-name: 913e3a4e}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本3-tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
-      - 新加坡-tg频道:@ripaojiedian
-      - 日本JP-tg频道:@ripaojiedian
-      - 台湾2-tg频道:@ripaojiedian
-      - 香港3-tg频道:@ripaojiedian
+      - TG@nodesharing_37
+      - TG@nodesharing_294
+      - TG@nodesharing_220
+      - TG@nodesharing_161
+      - TG@nodesharing_195
+      - TG@nodesharing_167
+      - TG@nodesharing_83
+      - TG@nodesharing_95
+      - TG@nodesharing_198
+      - TG@nodesharing_9
+      - TG@nodesharing_47
+      - TG@nodesharing_14
+      - TG@nodesharing_217
+      - TG@nodesharing_224
+      - TG@nodesharing_22
+      - TG@nodesharing_27
+      - TG@nodesharing_283
+      - TG@nodesharing_88
+      - TG@nodesharing_59
+      - TG@nodesharing_179
+      - TG@nodesharing_55
+      - TG@nodesharing_156
+      - TG@nodesharing_136
+      - TG@nodesharing_208
+      - TG@nodesharing_10
+      - TG@nodesharing_249
+      - TG@nodesharing_57
+      - TG@nodesharing_33
+      - TG@nodesharing_96
+      - TG@nodesharing_62
+      - TG@nodesharing_46
+      - TG@nodesharing_121
+      - TG@nodesharing_255
+      - TG@nodesharing_171
+      - TG@nodesharing_270
+      - TG@nodesharing_191
+      - TG@nodesharing_300
+      - TG@nodesharing_36
+      - TG@nodesharing_89
+      - TG@nodesharing_295
+      - TG@nodesharing_282
+      - TG@nodesharing_206
+      - TG@nodesharing_45
+      - TG@nodesharing_163
+      - TG@nodesharing_132
+      - TG@nodesharing_74
+      - TG@nodesharing_137
+      - TG@nodesharing_143
+      - TG@nodesharing_232
+      - TG@nodesharing_29
+      - TG@nodesharing_148
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本3-tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
-      - 新加坡-tg频道:@ripaojiedian
-      - 日本JP-tg频道:@ripaojiedian
-      - 台湾2-tg频道:@ripaojiedian
-      - 香港3-tg频道:@ripaojiedian
+      - TG@nodesharing_37
+      - TG@nodesharing_294
+      - TG@nodesharing_220
+      - TG@nodesharing_161
+      - TG@nodesharing_195
+      - TG@nodesharing_167
+      - TG@nodesharing_83
+      - TG@nodesharing_95
+      - TG@nodesharing_198
+      - TG@nodesharing_9
+      - TG@nodesharing_47
+      - TG@nodesharing_14
+      - TG@nodesharing_217
+      - TG@nodesharing_224
+      - TG@nodesharing_22
+      - TG@nodesharing_27
+      - TG@nodesharing_283
+      - TG@nodesharing_88
+      - TG@nodesharing_59
+      - TG@nodesharing_179
+      - TG@nodesharing_55
+      - TG@nodesharing_156
+      - TG@nodesharing_136
+      - TG@nodesharing_208
+      - TG@nodesharing_10
+      - TG@nodesharing_249
+      - TG@nodesharing_57
+      - TG@nodesharing_33
+      - TG@nodesharing_96
+      - TG@nodesharing_62
+      - TG@nodesharing_46
+      - TG@nodesharing_121
+      - TG@nodesharing_255
+      - TG@nodesharing_171
+      - TG@nodesharing_270
+      - TG@nodesharing_191
+      - TG@nodesharing_300
+      - TG@nodesharing_36
+      - TG@nodesharing_89
+      - TG@nodesharing_295
+      - TG@nodesharing_282
+      - TG@nodesharing_206
+      - TG@nodesharing_45
+      - TG@nodesharing_163
+      - TG@nodesharing_132
+      - TG@nodesharing_74
+      - TG@nodesharing_137
+      - TG@nodesharing_143
+      - TG@nodesharing_232
+      - TG@nodesharing_29
+      - TG@nodesharing_148
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本3-tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
-      - 新加坡-tg频道:@ripaojiedian
-      - 日本JP-tg频道:@ripaojiedian
-      - 台湾2-tg频道:@ripaojiedian
-      - 香港3-tg频道:@ripaojiedian
+      - TG@nodesharing_37
+      - TG@nodesharing_294
+      - TG@nodesharing_220
+      - TG@nodesharing_161
+      - TG@nodesharing_195
+      - TG@nodesharing_167
+      - TG@nodesharing_83
+      - TG@nodesharing_95
+      - TG@nodesharing_198
+      - TG@nodesharing_9
+      - TG@nodesharing_47
+      - TG@nodesharing_14
+      - TG@nodesharing_217
+      - TG@nodesharing_224
+      - TG@nodesharing_22
+      - TG@nodesharing_27
+      - TG@nodesharing_283
+      - TG@nodesharing_88
+      - TG@nodesharing_59
+      - TG@nodesharing_179
+      - TG@nodesharing_55
+      - TG@nodesharing_156
+      - TG@nodesharing_136
+      - TG@nodesharing_208
+      - TG@nodesharing_10
+      - TG@nodesharing_249
+      - TG@nodesharing_57
+      - TG@nodesharing_33
+      - TG@nodesharing_96
+      - TG@nodesharing_62
+      - TG@nodesharing_46
+      - TG@nodesharing_121
+      - TG@nodesharing_255
+      - TG@nodesharing_171
+      - TG@nodesharing_270
+      - TG@nodesharing_191
+      - TG@nodesharing_300
+      - TG@nodesharing_36
+      - TG@nodesharing_89
+      - TG@nodesharing_295
+      - TG@nodesharing_282
+      - TG@nodesharing_206
+      - TG@nodesharing_45
+      - TG@nodesharing_163
+      - TG@nodesharing_132
+      - TG@nodesharing_74
+      - TG@nodesharing_137
+      - TG@nodesharing_143
+      - TG@nodesharing_232
+      - TG@nodesharing_29
+      - TG@nodesharing_148
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,54 +244,231 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本3-tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
-      - 新加坡-tg频道:@ripaojiedian
-      - 日本JP-tg频道:@ripaojiedian
-      - 台湾2-tg频道:@ripaojiedian
-      - 香港3-tg频道:@ripaojiedian
+      - TG@nodesharing_37
+      - TG@nodesharing_294
+      - TG@nodesharing_220
+      - TG@nodesharing_161
+      - TG@nodesharing_195
+      - TG@nodesharing_167
+      - TG@nodesharing_83
+      - TG@nodesharing_95
+      - TG@nodesharing_198
+      - TG@nodesharing_9
+      - TG@nodesharing_47
+      - TG@nodesharing_14
+      - TG@nodesharing_217
+      - TG@nodesharing_224
+      - TG@nodesharing_22
+      - TG@nodesharing_27
+      - TG@nodesharing_283
+      - TG@nodesharing_88
+      - TG@nodesharing_59
+      - TG@nodesharing_179
+      - TG@nodesharing_55
+      - TG@nodesharing_156
+      - TG@nodesharing_136
+      - TG@nodesharing_208
+      - TG@nodesharing_10
+      - TG@nodesharing_249
+      - TG@nodesharing_57
+      - TG@nodesharing_33
+      - TG@nodesharing_96
+      - TG@nodesharing_62
+      - TG@nodesharing_46
+      - TG@nodesharing_121
+      - TG@nodesharing_255
+      - TG@nodesharing_171
+      - TG@nodesharing_270
+      - TG@nodesharing_191
+      - TG@nodesharing_300
+      - TG@nodesharing_36
+      - TG@nodesharing_89
+      - TG@nodesharing_295
+      - TG@nodesharing_282
+      - TG@nodesharing_206
+      - TG@nodesharing_45
+      - TG@nodesharing_163
+      - TG@nodesharing_132
+      - TG@nodesharing_74
+      - TG@nodesharing_137
+      - TG@nodesharing_143
+      - TG@nodesharing_232
+      - TG@nodesharing_29
+      - TG@nodesharing_148
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港-tg频道:@ripaojiedian
-      - 台湾2-tg频道:@ripaojiedian
-      - 香港3-tg频道:@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本3-tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
-      - 新加坡-tg频道:@ripaojiedian
-      - 日本JP-tg频道:@ripaojiedian
-      - 台湾2-tg频道:@ripaojiedian
-      - 香港3-tg频道:@ripaojiedian
+      - TG@nodesharing_37
+      - TG@nodesharing_294
+      - TG@nodesharing_220
+      - TG@nodesharing_161
+      - TG@nodesharing_195
+      - TG@nodesharing_167
+      - TG@nodesharing_83
+      - TG@nodesharing_95
+      - TG@nodesharing_198
+      - TG@nodesharing_9
+      - TG@nodesharing_47
+      - TG@nodesharing_14
+      - TG@nodesharing_217
+      - TG@nodesharing_224
+      - TG@nodesharing_22
+      - TG@nodesharing_27
+      - TG@nodesharing_283
+      - TG@nodesharing_88
+      - TG@nodesharing_59
+      - TG@nodesharing_179
+      - TG@nodesharing_55
+      - TG@nodesharing_156
+      - TG@nodesharing_136
+      - TG@nodesharing_208
+      - TG@nodesharing_10
+      - TG@nodesharing_249
+      - TG@nodesharing_57
+      - TG@nodesharing_33
+      - TG@nodesharing_96
+      - TG@nodesharing_62
+      - TG@nodesharing_46
+      - TG@nodesharing_121
+      - TG@nodesharing_255
+      - TG@nodesharing_171
+      - TG@nodesharing_270
+      - TG@nodesharing_191
+      - TG@nodesharing_300
+      - TG@nodesharing_36
+      - TG@nodesharing_89
+      - TG@nodesharing_295
+      - TG@nodesharing_282
+      - TG@nodesharing_206
+      - TG@nodesharing_45
+      - TG@nodesharing_163
+      - TG@nodesharing_132
+      - TG@nodesharing_74
+      - TG@nodesharing_137
+      - TG@nodesharing_143
+      - TG@nodesharing_232
+      - TG@nodesharing_29
+      - TG@nodesharing_148
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本3-tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
-      - 新加坡-tg频道:@ripaojiedian
-      - 日本JP-tg频道:@ripaojiedian
-      - 台湾2-tg频道:@ripaojiedian
-      - 香港3-tg频道:@ripaojiedian
+      - TG@nodesharing_37
+      - TG@nodesharing_294
+      - TG@nodesharing_220
+      - TG@nodesharing_161
+      - TG@nodesharing_195
+      - TG@nodesharing_167
+      - TG@nodesharing_83
+      - TG@nodesharing_95
+      - TG@nodesharing_198
+      - TG@nodesharing_9
+      - TG@nodesharing_47
+      - TG@nodesharing_14
+      - TG@nodesharing_217
+      - TG@nodesharing_224
+      - TG@nodesharing_22
+      - TG@nodesharing_27
+      - TG@nodesharing_283
+      - TG@nodesharing_88
+      - TG@nodesharing_59
+      - TG@nodesharing_179
+      - TG@nodesharing_55
+      - TG@nodesharing_156
+      - TG@nodesharing_136
+      - TG@nodesharing_208
+      - TG@nodesharing_10
+      - TG@nodesharing_249
+      - TG@nodesharing_57
+      - TG@nodesharing_33
+      - TG@nodesharing_96
+      - TG@nodesharing_62
+      - TG@nodesharing_46
+      - TG@nodesharing_121
+      - TG@nodesharing_255
+      - TG@nodesharing_171
+      - TG@nodesharing_270
+      - TG@nodesharing_191
+      - TG@nodesharing_300
+      - TG@nodesharing_36
+      - TG@nodesharing_89
+      - TG@nodesharing_295
+      - TG@nodesharing_282
+      - TG@nodesharing_206
+      - TG@nodesharing_45
+      - TG@nodesharing_163
+      - TG@nodesharing_132
+      - TG@nodesharing_74
+      - TG@nodesharing_137
+      - TG@nodesharing_143
+      - TG@nodesharing_232
+      - TG@nodesharing_29
+      - TG@nodesharing_148
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本3-tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
-      - 新加坡-tg频道:@ripaojiedian
-      - 日本JP-tg频道:@ripaojiedian
-      - 台湾2-tg频道:@ripaojiedian
-      - 香港3-tg频道:@ripaojiedian
+      - TG@nodesharing_37
+      - TG@nodesharing_294
+      - TG@nodesharing_220
+      - TG@nodesharing_161
+      - TG@nodesharing_195
+      - TG@nodesharing_167
+      - TG@nodesharing_83
+      - TG@nodesharing_95
+      - TG@nodesharing_198
+      - TG@nodesharing_9
+      - TG@nodesharing_47
+      - TG@nodesharing_14
+      - TG@nodesharing_217
+      - TG@nodesharing_224
+      - TG@nodesharing_22
+      - TG@nodesharing_27
+      - TG@nodesharing_283
+      - TG@nodesharing_88
+      - TG@nodesharing_59
+      - TG@nodesharing_179
+      - TG@nodesharing_55
+      - TG@nodesharing_156
+      - TG@nodesharing_136
+      - TG@nodesharing_208
+      - TG@nodesharing_10
+      - TG@nodesharing_249
+      - TG@nodesharing_57
+      - TG@nodesharing_33
+      - TG@nodesharing_96
+      - TG@nodesharing_62
+      - TG@nodesharing_46
+      - TG@nodesharing_121
+      - TG@nodesharing_255
+      - TG@nodesharing_171
+      - TG@nodesharing_270
+      - TG@nodesharing_191
+      - TG@nodesharing_300
+      - TG@nodesharing_36
+      - TG@nodesharing_89
+      - TG@nodesharing_295
+      - TG@nodesharing_282
+      - TG@nodesharing_206
+      - TG@nodesharing_45
+      - TG@nodesharing_163
+      - TG@nodesharing_132
+      - TG@nodesharing_74
+      - TG@nodesharing_137
+      - TG@nodesharing_143
+      - TG@nodesharing_232
+      - TG@nodesharing_29
+      - TG@nodesharing_148
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -127,12 +484,57 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本3-tg频道:@ripaojiedian
-      - 香港-tg频道:@ripaojiedian
-      - 新加坡-tg频道:@ripaojiedian
-      - 日本JP-tg频道:@ripaojiedian
-      - 台湾2-tg频道:@ripaojiedian
-      - 香港3-tg频道:@ripaojiedian
+      - TG@nodesharing_37
+      - TG@nodesharing_294
+      - TG@nodesharing_220
+      - TG@nodesharing_161
+      - TG@nodesharing_195
+      - TG@nodesharing_167
+      - TG@nodesharing_83
+      - TG@nodesharing_95
+      - TG@nodesharing_198
+      - TG@nodesharing_9
+      - TG@nodesharing_47
+      - TG@nodesharing_14
+      - TG@nodesharing_217
+      - TG@nodesharing_224
+      - TG@nodesharing_22
+      - TG@nodesharing_27
+      - TG@nodesharing_283
+      - TG@nodesharing_88
+      - TG@nodesharing_59
+      - TG@nodesharing_179
+      - TG@nodesharing_55
+      - TG@nodesharing_156
+      - TG@nodesharing_136
+      - TG@nodesharing_208
+      - TG@nodesharing_10
+      - TG@nodesharing_249
+      - TG@nodesharing_57
+      - TG@nodesharing_33
+      - TG@nodesharing_96
+      - TG@nodesharing_62
+      - TG@nodesharing_46
+      - TG@nodesharing_121
+      - TG@nodesharing_255
+      - TG@nodesharing_171
+      - TG@nodesharing_270
+      - TG@nodesharing_191
+      - TG@nodesharing_300
+      - TG@nodesharing_36
+      - TG@nodesharing_89
+      - TG@nodesharing_295
+      - TG@nodesharing_282
+      - TG@nodesharing_206
+      - TG@nodesharing_45
+      - TG@nodesharing_163
+      - TG@nodesharing_132
+      - TG@nodesharing_74
+      - TG@nodesharing_137
+      - TG@nodesharing_143
+      - TG@nodesharing_232
+      - TG@nodesharing_29
+      - TG@nodesharing_148
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
