@@ -5,103 +5,99 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Taiwan 11, server: 211.99.114.119, port: 19036, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Taiwan 01, server: 211.99.114.119, port: 19003, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Taiwan 14, server: 211.99.114.119, port: 19039, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Taiwan 03, server: 211.99.114.119, port: 19009, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Taiwan 02, server: 211.99.114.119, port: 19006, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Taiwan 15, server: 211.99.114.119, port: 19043, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Singapore 04, server: 211.99.114.119, port: 18813, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Taiwan 10, server: 211.99.114.119, port: 19033, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Taiwan 04, server: 211.99.114.119, port: 19013, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Singapore 13, server: 211.99.114.119, port: 18843, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Singapore 03, server: 211.99.114.119, port: 18809, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Taiwan 05, server: 211.99.114.119, port: 19016, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Singapore 01, server: 211.99.114.119, port: 18803, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Singapore 02, server: 211.99.114.119, port: 18806, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Hong Kong 12, server: 211.99.114.119, port: 15039, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Hong Kong 14, server: 211.99.114.119, port: 15046, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Singapore 05, server: 211.99.114.119, port: 18816, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Taiwan 09, server: 211.99.114.119, port: 19029, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Hong Kong 13, server: 211.99.114.119, port: 15043, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
-  - {name: Japan 06, server: 36.134.37.211, port: 17019, type: ss, cipher: aes-128-gcm, password: KClwEs06JK8ps3kmf2V5h, udp: true}
+  - {name: 台湾Hinet-广移2 | 解锁流媒体, server: gzyd2.52147.top, port: 30010, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet-广州移动 | 解锁流媒体, server: gzyd1.52147.top, port: 30010, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 越南 | 广州移动2, server: gzyd2.52147.top, port: 30120, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本NTT-广州移动负载均衡 | 解锁流媒体, server: gzyd1.52147.top, port: 30130, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT-河移 | 解锁流媒体, server: hnyd.52147.top, port: 30180, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet | 解锁流媒体, server: hinet.52147.top, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet-河移 | 解锁流媒体, server: hnyd.52147.top, port: 30010, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT-广移2 | 解锁流媒体, server: gzyd2.52147.top, port: 30180, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 越南 | 河南移动, server: hnyd.52147.top, port: 30120, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 越南-1号, server: 103.173.255.21, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 德国-广移2双线负载均衡 | 解锁流媒体, server: gzyd2.52147.top, port: 30080, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 越南-4号, server: 103.173.255.234, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本NTT-河南移动负载均衡 | 解锁流媒体, server: hnyd.52147.top, port: 30130, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 德国-广移双线负载均衡 | 解锁流媒体, server: gzyd1.52147.top, port: 30080, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 德国-河移双线负载均衡 | 解锁流媒体, server: hnyd.52147.top, port: 30080, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 越南-3号, server: 103.173.255.228, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本NTT-广州移动2负载均衡 | 解锁流媒体, server: gzyd2.52147.top, port: 30130, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT | 解锁流媒体, server: hkt.52147.top, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本NTT-1号 | 解锁流媒体, server: 203.138.98.199, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: huayun.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Taiwan 11
-      - Taiwan 01
-      - Taiwan 14
-      - Taiwan 03
-      - Taiwan 02
-      - Taiwan 15
-      - Singapore 04
-      - Taiwan 10
-      - Taiwan 04
-      - Singapore 13
-      - Singapore 03
-      - Taiwan 05
-      - Singapore 01
-      - Singapore 02
-      - Hong Kong 12
-      - Hong Kong 14
-      - Singapore 05
-      - Taiwan 09
-      - Hong Kong 13
-      - Japan 06
+      - 台湾Hinet-广移2 | 解锁流媒体
+      - 台湾Hinet-广州移动 | 解锁流媒体
+      - 越南 | 广州移动2
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet-河移 | 解锁流媒体
+      - 香港HKT-广移2 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-1号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 越南-4号
+      - 日本NTT-河南移动负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 德国-河移双线负载均衡 | 解锁流媒体
+      - 越南-3号
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 日本NTT-1号 | 解锁流媒体
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Taiwan 11
-      - Taiwan 01
-      - Taiwan 14
-      - Taiwan 03
-      - Taiwan 02
-      - Taiwan 15
-      - Singapore 04
-      - Taiwan 10
-      - Taiwan 04
-      - Singapore 13
-      - Singapore 03
-      - Taiwan 05
-      - Singapore 01
-      - Singapore 02
-      - Hong Kong 12
-      - Hong Kong 14
-      - Singapore 05
-      - Taiwan 09
-      - Hong Kong 13
-      - Japan 06
+      - 台湾Hinet-广移2 | 解锁流媒体
+      - 台湾Hinet-广州移动 | 解锁流媒体
+      - 越南 | 广州移动2
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet-河移 | 解锁流媒体
+      - 香港HKT-广移2 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-1号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 越南-4号
+      - 日本NTT-河南移动负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 德国-河移双线负载均衡 | 解锁流媒体
+      - 越南-3号
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 日本NTT-1号 | 解锁流媒体
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Taiwan 11
-      - Taiwan 01
-      - Taiwan 14
-      - Taiwan 03
-      - Taiwan 02
-      - Taiwan 15
-      - Singapore 04
-      - Taiwan 10
-      - Taiwan 04
-      - Singapore 13
-      - Singapore 03
-      - Taiwan 05
-      - Singapore 01
-      - Singapore 02
-      - Hong Kong 12
-      - Hong Kong 14
-      - Singapore 05
-      - Taiwan 09
-      - Hong Kong 13
-      - Japan 06
+      - 台湾Hinet-广移2 | 解锁流媒体
+      - 台湾Hinet-广州移动 | 解锁流媒体
+      - 越南 | 广州移动2
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet-河移 | 解锁流媒体
+      - 香港HKT-广移2 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-1号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 越南-4号
+      - 日本NTT-河南移动负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 德国-河移双线负载均衡 | 解锁流媒体
+      - 越南-3号
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 日本NTT-1号 | 解锁流媒体
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -120,107 +116,110 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Taiwan 11
-      - Taiwan 01
-      - Taiwan 14
-      - Taiwan 03
-      - Taiwan 02
-      - Taiwan 15
-      - Singapore 04
-      - Taiwan 10
-      - Taiwan 04
-      - Singapore 13
-      - Singapore 03
-      - Taiwan 05
-      - Singapore 01
-      - Singapore 02
-      - Hong Kong 12
-      - Hong Kong 14
-      - Singapore 05
-      - Taiwan 09
-      - Hong Kong 13
-      - Japan 06
+      - 台湾Hinet-广移2 | 解锁流媒体
+      - 台湾Hinet-广州移动 | 解锁流媒体
+      - 越南 | 广州移动2
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet-河移 | 解锁流媒体
+      - 香港HKT-广移2 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-1号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 越南-4号
+      - 日本NTT-河南移动负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 德国-河移双线负载均衡 | 解锁流媒体
+      - 越南-3号
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 日本NTT-1号 | 解锁流媒体
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾Hinet-广移2 | 解锁流媒体
+      - 台湾Hinet-广州移动 | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet-河移 | 解锁流媒体
+      - 香港HKT-广移2 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Taiwan 11
-      - Taiwan 01
-      - Taiwan 14
-      - Taiwan 03
-      - Taiwan 02
-      - Taiwan 15
-      - Singapore 04
-      - Taiwan 10
-      - Taiwan 04
-      - Singapore 13
-      - Singapore 03
-      - Taiwan 05
-      - Singapore 01
-      - Singapore 02
-      - Hong Kong 12
-      - Hong Kong 14
-      - Singapore 05
-      - Taiwan 09
-      - Hong Kong 13
-      - Japan 06
+      - 台湾Hinet-广移2 | 解锁流媒体
+      - 台湾Hinet-广州移动 | 解锁流媒体
+      - 越南 | 广州移动2
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet-河移 | 解锁流媒体
+      - 香港HKT-广移2 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-1号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 越南-4号
+      - 日本NTT-河南移动负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 德国-河移双线负载均衡 | 解锁流媒体
+      - 越南-3号
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 日本NTT-1号 | 解锁流媒体
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Taiwan 11
-      - Taiwan 01
-      - Taiwan 14
-      - Taiwan 03
-      - Taiwan 02
-      - Taiwan 15
-      - Singapore 04
-      - Taiwan 10
-      - Taiwan 04
-      - Singapore 13
-      - Singapore 03
-      - Taiwan 05
-      - Singapore 01
-      - Singapore 02
-      - Hong Kong 12
-      - Hong Kong 14
-      - Singapore 05
-      - Taiwan 09
-      - Hong Kong 13
-      - Japan 06
+      - 台湾Hinet-广移2 | 解锁流媒体
+      - 台湾Hinet-广州移动 | 解锁流媒体
+      - 越南 | 广州移动2
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet-河移 | 解锁流媒体
+      - 香港HKT-广移2 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-1号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 越南-4号
+      - 日本NTT-河南移动负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 德国-河移双线负载均衡 | 解锁流媒体
+      - 越南-3号
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 日本NTT-1号 | 解锁流媒体
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Taiwan 11
-      - Taiwan 01
-      - Taiwan 14
-      - Taiwan 03
-      - Taiwan 02
-      - Taiwan 15
-      - Singapore 04
-      - Taiwan 10
-      - Taiwan 04
-      - Singapore 13
-      - Singapore 03
-      - Taiwan 05
-      - Singapore 01
-      - Singapore 02
-      - Hong Kong 12
-      - Hong Kong 14
-      - Singapore 05
-      - Taiwan 09
-      - Hong Kong 13
-      - Japan 06
+      - 台湾Hinet-广移2 | 解锁流媒体
+      - 台湾Hinet-广州移动 | 解锁流媒体
+      - 越南 | 广州移动2
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet-河移 | 解锁流媒体
+      - 香港HKT-广移2 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-1号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 越南-4号
+      - 日本NTT-河南移动负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 德国-河移双线负载均衡 | 解锁流媒体
+      - 越南-3号
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 日本NTT-1号 | 解锁流媒体
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -236,26 +235,25 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Taiwan 11
-      - Taiwan 01
-      - Taiwan 14
-      - Taiwan 03
-      - Taiwan 02
-      - Taiwan 15
-      - Singapore 04
-      - Taiwan 10
-      - Taiwan 04
-      - Singapore 13
-      - Singapore 03
-      - Taiwan 05
-      - Singapore 01
-      - Singapore 02
-      - Hong Kong 12
-      - Hong Kong 14
-      - Singapore 05
-      - Taiwan 09
-      - Hong Kong 13
-      - Japan 06
+      - 台湾Hinet-广移2 | 解锁流媒体
+      - 台湾Hinet-广州移动 | 解锁流媒体
+      - 越南 | 广州移动2
+      - 日本NTT-广州移动负载均衡 | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet-河移 | 解锁流媒体
+      - 香港HKT-广移2 | 解锁流媒体
+      - 越南 | 河南移动
+      - 越南-1号
+      - 德国-广移2双线负载均衡 | 解锁流媒体
+      - 越南-4号
+      - 日本NTT-河南移动负载均衡 | 解锁流媒体
+      - 德国-广移双线负载均衡 | 解锁流媒体
+      - 德国-河移双线负载均衡 | 解锁流媒体
+      - 越南-3号
+      - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 日本NTT-1号 | 解锁流媒体
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
