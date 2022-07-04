@@ -5,111 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Scould台湾01|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 台湾01|三网优化|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 东京|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dj01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 日本原生IP|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 日本01|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 日本03|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp03, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 日本02|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp02, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 台湾04|优选原生IP|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet04, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 新加坡|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp03, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 韩国|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: lindoe日本|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 台湾02|三网优化|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet02, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 香港HKT01|优选原生IP|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /HKT01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 香港HKT03|优选原生IP|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /HKT03, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 香港HKT02|优选原生IP|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /HKT02, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: scloud台湾06-原生IP, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet06, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 日本优选原生IP01|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 日本优选原生IP03|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ03, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 日本优选原生IP02|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ02, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 英国|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 日本04|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: a98ad008-1945-48fd-a0da-eee17f584b3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese03, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 美国|直连|1x, server: 45.88.148.234, port: 38443, type: trojan, password: a98ad008-1945-48fd-a0da-eee17f584b3b, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 多台负载均衡 B 1.5x, server: 116.129.254.65, port: 63087, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
+  - {name: 韩国01 B | x1.5, server: 116.129.254.65, port: 63004, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-kr01.covid19.rip}, udp: true}
+  - {name: 台湾 多台负载均衡 B 1.5x, server: 116.129.254.65, port: 63088, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
+  - {name: 美国03 A |  1.5x, server: 112.64.98.133, port: 63069, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-us03.covid19.rip}, udp: true}
+  - {name: 美国03 B |  1.5x, server: 116.129.254.65, port: 63069, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-us03.covid19.rip}, udp: true}
+  - {name: 巴西01 B, server: 116.129.254.65, port: 63041, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-br01.covid19.rip}, udp: true}
+  - {name: 美国03 D | 1.5x, server: 159.27.90.254, port: 63069, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-us03.covid19.rip}, udp: true}
+  - {name: 日本 多台负载均衡 B 1.5x, server: 116.129.254.65, port: 63086, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
+  - {name: 印度01 B | 1.5x, server: 116.129.254.65, port: 63051, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: mugua-in01.airport-v2.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Scould台湾01|解锁流媒体|1x
-      - 台湾01|三网优化|解锁流媒体|1x
-      - 东京|解锁流媒体|1x
-      - 日本原生IP|解锁流媒体|1x
-      - 日本01|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本02|三网优化|1x
-      - 台湾04|优选原生IP|1x
-      - 新加坡|三网优化|1x
-      - 韩国|解锁流媒体|1x
-      - lindoe日本|三网优化|1x
-      - 台湾02|三网优化|解锁流媒体|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - scloud台湾06-原生IP
-      - 日本优选原生IP01|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 英国|三网优化|1x
-      - 日本04|三网优化|1x
-      - 美国|直连|1x
+      - 新加坡 多台负载均衡 B 1.5x
+      - 韩国01 B | x1.5
+      - 台湾 多台负载均衡 B 1.5x
+      - 美国03 A |  1.5x
+      - 美国03 B |  1.5x
+      - 巴西01 B
+      - 美国03 D | 1.5x
+      - 日本 多台负载均衡 B 1.5x
+      - 印度01 B | 1.5x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Scould台湾01|解锁流媒体|1x
-      - 台湾01|三网优化|解锁流媒体|1x
-      - 东京|解锁流媒体|1x
-      - 日本原生IP|解锁流媒体|1x
-      - 日本01|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本02|三网优化|1x
-      - 台湾04|优选原生IP|1x
-      - 新加坡|三网优化|1x
-      - 韩国|解锁流媒体|1x
-      - lindoe日本|三网优化|1x
-      - 台湾02|三网优化|解锁流媒体|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - scloud台湾06-原生IP
-      - 日本优选原生IP01|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 英国|三网优化|1x
-      - 日本04|三网优化|1x
-      - 美国|直连|1x
+      - 新加坡 多台负载均衡 B 1.5x
+      - 韩国01 B | x1.5
+      - 台湾 多台负载均衡 B 1.5x
+      - 美国03 A |  1.5x
+      - 美国03 B |  1.5x
+      - 巴西01 B
+      - 美国03 D | 1.5x
+      - 日本 多台负载均衡 B 1.5x
+      - 印度01 B | 1.5x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Scould台湾01|解锁流媒体|1x
-      - 台湾01|三网优化|解锁流媒体|1x
-      - 东京|解锁流媒体|1x
-      - 日本原生IP|解锁流媒体|1x
-      - 日本01|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本02|三网优化|1x
-      - 台湾04|优选原生IP|1x
-      - 新加坡|三网优化|1x
-      - 韩国|解锁流媒体|1x
-      - lindoe日本|三网优化|1x
-      - 台湾02|三网优化|解锁流媒体|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - scloud台湾06-原生IP
-      - 日本优选原生IP01|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 英国|三网优化|1x
-      - 日本04|三网优化|1x
-      - 美国|直连|1x
+      - 新加坡 多台负载均衡 B 1.5x
+      - 韩国01 B | x1.5
+      - 台湾 多台负载均衡 B 1.5x
+      - 美国03 A |  1.5x
+      - 美国03 B |  1.5x
+      - 巴西01 B
+      - 美国03 D | 1.5x
+      - 日本 多台负载均衡 B 1.5x
+      - 印度01 B | 1.5x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -128,123 +76,66 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Scould台湾01|解锁流媒体|1x
-      - 台湾01|三网优化|解锁流媒体|1x
-      - 东京|解锁流媒体|1x
-      - 日本原生IP|解锁流媒体|1x
-      - 日本01|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本02|三网优化|1x
-      - 台湾04|优选原生IP|1x
-      - 新加坡|三网优化|1x
-      - 韩国|解锁流媒体|1x
-      - lindoe日本|三网优化|1x
-      - 台湾02|三网优化|解锁流媒体|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - scloud台湾06-原生IP
-      - 日本优选原生IP01|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 英国|三网优化|1x
-      - 日本04|三网优化|1x
-      - 美国|直连|1x
+      - 新加坡 多台负载均衡 B 1.5x
+      - 韩国01 B | x1.5
+      - 台湾 多台负载均衡 B 1.5x
+      - 美国03 A |  1.5x
+      - 美国03 B |  1.5x
+      - 巴西01 B
+      - 美国03 D | 1.5x
+      - 日本 多台负载均衡 B 1.5x
+      - 印度01 B | 1.5x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Scould台湾01|解锁流媒体|1x
-      - 台湾01|三网优化|解锁流媒体|1x
-      - 台湾04|优选原生IP|1x
-      - 台湾02|三网优化|解锁流媒体|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - scloud台湾06-原生IP
+      - 新加坡 多台负载均衡 B 1.5x
+      - 台湾 多台负载均衡 B 1.5x
+      - 日本 多台负载均衡 B 1.5x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Scould台湾01|解锁流媒体|1x
-      - 台湾01|三网优化|解锁流媒体|1x
-      - 东京|解锁流媒体|1x
-      - 日本原生IP|解锁流媒体|1x
-      - 日本01|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本02|三网优化|1x
-      - 台湾04|优选原生IP|1x
-      - 新加坡|三网优化|1x
-      - 韩国|解锁流媒体|1x
-      - lindoe日本|三网优化|1x
-      - 台湾02|三网优化|解锁流媒体|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - scloud台湾06-原生IP
-      - 日本优选原生IP01|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 英国|三网优化|1x
-      - 日本04|三网优化|1x
-      - 美国|直连|1x
+      - 新加坡 多台负载均衡 B 1.5x
+      - 韩国01 B | x1.5
+      - 台湾 多台负载均衡 B 1.5x
+      - 美国03 A |  1.5x
+      - 美国03 B |  1.5x
+      - 巴西01 B
+      - 美国03 D | 1.5x
+      - 日本 多台负载均衡 B 1.5x
+      - 印度01 B | 1.5x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Scould台湾01|解锁流媒体|1x
-      - 台湾01|三网优化|解锁流媒体|1x
-      - 东京|解锁流媒体|1x
-      - 日本原生IP|解锁流媒体|1x
-      - 日本01|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本02|三网优化|1x
-      - 台湾04|优选原生IP|1x
-      - 新加坡|三网优化|1x
-      - 韩国|解锁流媒体|1x
-      - lindoe日本|三网优化|1x
-      - 台湾02|三网优化|解锁流媒体|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - scloud台湾06-原生IP
-      - 日本优选原生IP01|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 英国|三网优化|1x
-      - 日本04|三网优化|1x
-      - 美国|直连|1x
+      - 新加坡 多台负载均衡 B 1.5x
+      - 韩国01 B | x1.5
+      - 台湾 多台负载均衡 B 1.5x
+      - 美国03 A |  1.5x
+      - 美国03 B |  1.5x
+      - 巴西01 B
+      - 美国03 D | 1.5x
+      - 日本 多台负载均衡 B 1.5x
+      - 印度01 B | 1.5x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Scould台湾01|解锁流媒体|1x
-      - 台湾01|三网优化|解锁流媒体|1x
-      - 东京|解锁流媒体|1x
-      - 日本原生IP|解锁流媒体|1x
-      - 日本01|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本02|三网优化|1x
-      - 台湾04|优选原生IP|1x
-      - 新加坡|三网优化|1x
-      - 韩国|解锁流媒体|1x
-      - lindoe日本|三网优化|1x
-      - 台湾02|三网优化|解锁流媒体|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - scloud台湾06-原生IP
-      - 日本优选原生IP01|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 英国|三网优化|1x
-      - 日本04|三网优化|1x
-      - 美国|直连|1x
+      - 新加坡 多台负载均衡 B 1.5x
+      - 韩国01 B | x1.5
+      - 台湾 多台负载均衡 B 1.5x
+      - 美国03 A |  1.5x
+      - 美国03 B |  1.5x
+      - 巴西01 B
+      - 美国03 D | 1.5x
+      - 日本 多台负载均衡 B 1.5x
+      - 印度01 B | 1.5x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -260,28 +151,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Scould台湾01|解锁流媒体|1x
-      - 台湾01|三网优化|解锁流媒体|1x
-      - 东京|解锁流媒体|1x
-      - 日本原生IP|解锁流媒体|1x
-      - 日本01|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本02|三网优化|1x
-      - 台湾04|优选原生IP|1x
-      - 新加坡|三网优化|1x
-      - 韩国|解锁流媒体|1x
-      - lindoe日本|三网优化|1x
-      - 台湾02|三网优化|解锁流媒体|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - scloud台湾06-原生IP
-      - 日本优选原生IP01|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 英国|三网优化|1x
-      - 日本04|三网优化|1x
-      - 美国|直连|1x
+      - 新加坡 多台负载均衡 B 1.5x
+      - 韩国01 B | x1.5
+      - 台湾 多台负载均衡 B 1.5x
+      - 美国03 A |  1.5x
+      - 美国03 B |  1.5x
+      - 巴西01 B
+      - 美国03 D | 1.5x
+      - 日本 多台负载均衡 B 1.5x
+      - 印度01 B | 1.5x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
