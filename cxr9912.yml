@@ -5,55 +5,99 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: mvswigj, server: gzyd1.52147.top, port: 30010, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: mcseifkj, server: hinet.52147.top, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
-  - {name: mvczeufj, server: 103.173.255.127, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, skip-cert-verify: true, udp: true}
-  - {name: mczshbk, server: 103.173.255.21, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, skip-cert-verify: true, udp: true}
-  - {name: kcdeickk, server: gzyd2.52147.top, port: 30010, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: mvctjbn, server: hlu.bgp2.liuliangzhuanfa.xyz, port: 31097, type: trojan, password: 644c9b90-3bf9-4d95-a837-ce83c31ed839, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: lgdtokj, server: hlu.bgp2.liuliangzhuanfa.xyz, port: 42167, type: trojan, password: 644c9b90-3bf9-4d95-a837-ce83c31ed839, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: nxseifj, server: 164.70.68.67, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, skip-cert-verify: true, udp: true}
+  - {name: ncsyifi, server: ftp.cn.debian.cdnet.in, port: 8070, type: ss, cipher: aes-128-gcm, password: a9a2a0a5-7340-45f2-9cad-4351a42316e1, udp: true}
+  - {name: "[LV2·原生] 香港03 | IEPL 专线 | 3x", server: pp1.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 香港04 | IEPL 专线 | 3x", server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 香港B2 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 香港03 | IEPL 专线 | 3x 2", server: pp1.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 香港01 | IEPL 专线 | 3x", server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 香港01 | IEPL 专线 | 3x 2", server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 香港B1 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 香港04 | IEPL 专线 | 3x 2", server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 香港02 | IEPL 专线 | 3x", server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 香港B4 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 香港B4 | 中转 2", server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 香港B1 | 中转 2", server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 美国04 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 美国03 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 33001, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: kfzyxhvn, server: ftp.cn.debian.cdnet.in, port: 8050, type: ss, cipher: aes-128-gcm, password: a9a2a0a5-7340-45f2-9cad-4351a42316e1, udp: true}
+  - {name: mcidtigk, server: 194.156.231.126, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: bcfdkgih, server: 5.183.176.92, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: poyybiio, server: ftp.cn.debian.cdnet.in, port: 8040, type: ss, cipher: aes-128-gcm, password: a9a2a0a5-7340-45f2-9cad-4351a42316e1, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - mvswigj
-      - mcseifkj
-      - mvczeufj
-      - mczshbk
-      - kcdeickk
-      - mvctjbn
-      - lgdtokj
-      - nxseifj
+      - ncsyifi
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV2·原生] 香港B4 | 中转 2"
+      - "[LV2·原生] 香港B1 | 中转 2"
+      - "[LV2·原生] 美国04 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - kfzyxhvn
+      - mcidtigk
+      - bcfdkgih
+      - poyybiio
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - mvswigj
-      - mcseifkj
-      - mvczeufj
-      - mczshbk
-      - kcdeickk
-      - mvctjbn
-      - lgdtokj
-      - nxseifj
+      - ncsyifi
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV2·原生] 香港B4 | 中转 2"
+      - "[LV2·原生] 香港B1 | 中转 2"
+      - "[LV2·原生] 美国04 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - kfzyxhvn
+      - mcidtigk
+      - bcfdkgih
+      - poyybiio
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - mvswigj
-      - mcseifkj
-      - mvczeufj
-      - mczshbk
-      - kcdeickk
-      - mvctjbn
-      - lgdtokj
-      - nxseifj
+      - ncsyifi
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV2·原生] 香港B4 | 中转 2"
+      - "[LV2·原生] 香港B1 | 中转 2"
+      - "[LV2·原生] 美国04 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - kfzyxhvn
+      - mcidtigk
+      - bcfdkgih
+      - poyybiio
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,59 +116,115 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - mvswigj
-      - mcseifkj
-      - mvczeufj
-      - mczshbk
-      - kcdeickk
-      - mvctjbn
-      - lgdtokj
-      - nxseifj
+      - ncsyifi
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV2·原生] 香港B4 | 中转 2"
+      - "[LV2·原生] 香港B1 | 中转 2"
+      - "[LV2·原生] 美国04 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - kfzyxhvn
+      - mcidtigk
+      - bcfdkgih
+      - poyybiio
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV2·原生] 香港B4 | 中转 2"
+      - "[LV2·原生] 香港B1 | 中转 2"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - mvswigj
-      - mcseifkj
-      - mvczeufj
-      - mczshbk
-      - kcdeickk
-      - mvctjbn
-      - lgdtokj
-      - nxseifj
+      - ncsyifi
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV2·原生] 香港B4 | 中转 2"
+      - "[LV2·原生] 香港B1 | 中转 2"
+      - "[LV2·原生] 美国04 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - kfzyxhvn
+      - mcidtigk
+      - bcfdkgih
+      - poyybiio
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - mvswigj
-      - mcseifkj
-      - mvczeufj
-      - mczshbk
-      - kcdeickk
-      - mvctjbn
-      - lgdtokj
-      - nxseifj
+      - ncsyifi
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV2·原生] 香港B4 | 中转 2"
+      - "[LV2·原生] 香港B1 | 中转 2"
+      - "[LV2·原生] 美国04 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - kfzyxhvn
+      - mcidtigk
+      - bcfdkgih
+      - poyybiio
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - mvswigj
-      - mcseifkj
-      - mvczeufj
-      - mczshbk
-      - kcdeickk
-      - mvctjbn
-      - lgdtokj
-      - nxseifj
+      - ncsyifi
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV2·原生] 香港B4 | 中转 2"
+      - "[LV2·原生] 香港B1 | 中转 2"
+      - "[LV2·原生] 美国04 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - kfzyxhvn
+      - mcidtigk
+      - bcfdkgih
+      - poyybiio
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,14 +240,25 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - mvswigj
-      - mcseifkj
-      - mvczeufj
-      - mczshbk
-      - kcdeickk
-      - mvctjbn
-      - lgdtokj
-      - nxseifj
+      - ncsyifi
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B2 | 中转"
+      - "[LV2·原生] 香港03 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港01 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港B1 | 中转"
+      - "[LV2·原生] 香港04 | IEPL 专线 | 3x 2"
+      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
+      - "[LV2·原生] 香港B4 | 中转"
+      - "[LV2·原生] 香港B4 | 中转 2"
+      - "[LV2·原生] 香港B1 | 中转 2"
+      - "[LV2·原生] 美国04 | 中转"
+      - "[LV2·原生] 美国03 | 中转"
+      - kfzyxhvn
+      - mcidtigk
+      - bcfdkgih
+      - poyybiio
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
