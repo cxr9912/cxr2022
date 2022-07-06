@@ -5,47 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 东京优-tg频道:@ripaojiedian, server: 52.253.106.228, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 韩国-tg频道:@ripaojiedian, server: 20.249.22.226, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 日本高速|tg频道:@ripaojiedian, server: 20.210.216.117, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 美国优化-tg频道:@ripaojiedian, server: 625us.ok365.cyou, port: 443, type: trojan, password: 30ff4b59-cf4a-4e44-9677-88a823434cd7, sni: 625us.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: 防失联节点-tg频道:@ripaojiedian, server: cf.fullcloud.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxusa.fovi.tk}, udp: true}
-  - {name: 台湾优化-tg频道:@ripaojiedian, server: 625tw.ok365.cyou, port: 443, type: trojan, password: 30ff4b59-cf4a-4e44-9677-88a823434cd7, sni: 625tw.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: 距离下次重置剩余：20 天, server: 103.173.155.72, port: 38000, type: trojan, password: 6711c6cf-847a-4177-b059-55f519b09de4, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT, server: hkt.52147.top, port: 38000, type: trojan, password: 6711c6cf-847a-4177-b059-55f519b09de4, sni: hkt.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 美国圣何塞-1号, server: 45.88.148.234, port: 38000, type: trojan, password: 6711c6cf-847a-4177-b059-55f519b09de4, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 东京优-tg频道:@ripaojiedian
-      - 韩国-tg频道:@ripaojiedian
-      - 日本高速|tg频道:@ripaojiedian
-      - 美国优化-tg频道:@ripaojiedian
-      - 防失联节点-tg频道:@ripaojiedian
-      - 台湾优化-tg频道:@ripaojiedian
+      - 距离下次重置剩余：20 天
+      - 香港HKT
+      - 美国圣何塞-1号
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 东京优-tg频道:@ripaojiedian
-      - 韩国-tg频道:@ripaojiedian
-      - 日本高速|tg频道:@ripaojiedian
-      - 美国优化-tg频道:@ripaojiedian
-      - 防失联节点-tg频道:@ripaojiedian
-      - 台湾优化-tg频道:@ripaojiedian
+      - 距离下次重置剩余：20 天
+      - 香港HKT
+      - 美国圣何塞-1号
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 东京优-tg频道:@ripaojiedian
-      - 韩国-tg频道:@ripaojiedian
-      - 日本高速|tg频道:@ripaojiedian
-      - 美国优化-tg频道:@ripaojiedian
-      - 防失联节点-tg频道:@ripaojiedian
-      - 台湾优化-tg频道:@ripaojiedian
+      - 距离下次重置剩余：20 天
+      - 香港HKT
+      - 美国圣何塞-1号
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,52 +52,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 东京优-tg频道:@ripaojiedian
-      - 韩国-tg频道:@ripaojiedian
-      - 日本高速|tg频道:@ripaojiedian
-      - 美国优化-tg频道:@ripaojiedian
-      - 防失联节点-tg频道:@ripaojiedian
-      - 台湾优化-tg频道:@ripaojiedian
+      - 距离下次重置剩余：20 天
+      - 香港HKT
+      - 美国圣何塞-1号
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾优化-tg频道:@ripaojiedian
+      - 香港HKT
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 东京优-tg频道:@ripaojiedian
-      - 韩国-tg频道:@ripaojiedian
-      - 日本高速|tg频道:@ripaojiedian
-      - 美国优化-tg频道:@ripaojiedian
-      - 防失联节点-tg频道:@ripaojiedian
-      - 台湾优化-tg频道:@ripaojiedian
+      - 距离下次重置剩余：20 天
+      - 香港HKT
+      - 美国圣何塞-1号
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 东京优-tg频道:@ripaojiedian
-      - 韩国-tg频道:@ripaojiedian
-      - 日本高速|tg频道:@ripaojiedian
-      - 美国优化-tg频道:@ripaojiedian
-      - 防失联节点-tg频道:@ripaojiedian
-      - 台湾优化-tg频道:@ripaojiedian
+      - 距离下次重置剩余：20 天
+      - 香港HKT
+      - 美国圣何塞-1号
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 东京优-tg频道:@ripaojiedian
-      - 韩国-tg频道:@ripaojiedian
-      - 日本高速|tg频道:@ripaojiedian
-      - 美国优化-tg频道:@ripaojiedian
-      - 防失联节点-tg频道:@ripaojiedian
-      - 台湾优化-tg频道:@ripaojiedian
+      - 距离下次重置剩余：20 天
+      - 香港HKT
+      - 美国圣何塞-1号
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -125,12 +101,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 东京优-tg频道:@ripaojiedian
-      - 韩国-tg频道:@ripaojiedian
-      - 日本高速|tg频道:@ripaojiedian
-      - 美国优化-tg频道:@ripaojiedian
-      - 防失联节点-tg频道:@ripaojiedian
-      - 台湾优化-tg频道:@ripaojiedian
+      - 距离下次重置剩余：20 天
+      - 香港HKT
+      - 美国圣何塞-1号
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
