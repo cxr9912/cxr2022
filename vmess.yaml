@@ -5,55 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP1(IEPL)+-+负载均衡专线, server: ftp.cn.debian.cdnet.in, port: 8030, type: ss, cipher: aes-128-gcm, password: a9a2a0a5-7340-45f2-9cad-4351a42316e1, udp: true}
-  - {name: "[LV2·原生] 香港B2 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: KR1(IEPL)+-+负载均衡专线, server: ftp.cn.debian.cdnet.in, port: 8040, type: ss, cipher: aes-128-gcm, password: a9a2a0a5-7340-45f2-9cad-4351a42316e1, udp: true}
-  - {name: US1(IEPL)+-+负载均衡专线, server: ftp.cn.debian.cdnet.in, port: 8070, type: ss, cipher: aes-128-gcm, password: a9a2a0a5-7340-45f2-9cad-4351a42316e1, udp: true}
+  - {name: lv1 台湾Hinet1 直连, server: ntw01.vsvideo.live, port: 25634, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: ntw01.vsvideo.live, skip-cert-verify: true, udp: true}
   - {name: "[LV2·原生] 香港02 | IEPL 专线 | 3x", server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[LV2·原生] 香港B2 | 中转 2", server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[LV2·原生] 香港B4 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: 9.序号+29689+2.53Mb/s+JP+10:18:10, server: 194.156.231.126, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP1(IEPL)+-+负载均衡专线
-      - "[LV2·原生] 香港B2 | 中转"
-      - KR1(IEPL)+-+负载均衡专线
-      - US1(IEPL)+-+负载均衡专线
+      - lv1 台湾Hinet1 直连
       - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[LV2·原生] 香港B2 | 中转 2"
-      - "[LV2·原生] 香港B4 | 中转"
-      - 9.序号+29689+2.53Mb/s+JP+10:18:10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP1(IEPL)+-+负载均衡专线
-      - "[LV2·原生] 香港B2 | 中转"
-      - KR1(IEPL)+-+负载均衡专线
-      - US1(IEPL)+-+负载均衡专线
+      - lv1 台湾Hinet1 直连
       - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[LV2·原生] 香港B2 | 中转 2"
-      - "[LV2·原生] 香港B4 | 中转"
-      - 9.序号+29689+2.53Mb/s+JP+10:18:10
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP1(IEPL)+-+负载均衡专线
-      - "[LV2·原生] 香港B2 | 中转"
-      - KR1(IEPL)+-+负载均衡专线
-      - US1(IEPL)+-+负载均衡专线
+      - lv1 台湾Hinet1 直连
       - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[LV2·原生] 香港B2 | 中转 2"
-      - "[LV2·原生] 香港B4 | 中转"
-      - 9.序号+29689+2.53Mb/s+JP+10:18:10
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,63 +48,37 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP1(IEPL)+-+负载均衡专线
-      - "[LV2·原生] 香港B2 | 中转"
-      - KR1(IEPL)+-+负载均衡专线
-      - US1(IEPL)+-+负载均衡专线
+      - lv1 台湾Hinet1 直连
       - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[LV2·原生] 香港B2 | 中转 2"
-      - "[LV2·原生] 香港B4 | 中转"
-      - 9.序号+29689+2.53Mb/s+JP+10:18:10
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[LV2·原生] 香港B2 | 中转"
+      - lv1 台湾Hinet1 直连
       - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[LV2·原生] 香港B2 | 中转 2"
-      - "[LV2·原生] 香港B4 | 中转"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP1(IEPL)+-+负载均衡专线
-      - "[LV2·原生] 香港B2 | 中转"
-      - KR1(IEPL)+-+负载均衡专线
-      - US1(IEPL)+-+负载均衡专线
+      - lv1 台湾Hinet1 直连
       - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[LV2·原生] 香港B2 | 中转 2"
-      - "[LV2·原生] 香港B4 | 中转"
-      - 9.序号+29689+2.53Mb/s+JP+10:18:10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP1(IEPL)+-+负载均衡专线
-      - "[LV2·原生] 香港B2 | 中转"
-      - KR1(IEPL)+-+负载均衡专线
-      - US1(IEPL)+-+负载均衡专线
+      - lv1 台湾Hinet1 直连
       - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[LV2·原生] 香港B2 | 中转 2"
-      - "[LV2·原生] 香港B4 | 中转"
-      - 9.序号+29689+2.53Mb/s+JP+10:18:10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP1(IEPL)+-+负载均衡专线
-      - "[LV2·原生] 香港B2 | 中转"
-      - KR1(IEPL)+-+负载均衡专线
-      - US1(IEPL)+-+负载均衡专线
+      - lv1 台湾Hinet1 直连
       - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[LV2·原生] 香港B2 | 中转 2"
-      - "[LV2·原生] 香港B4 | 中转"
-      - 9.序号+29689+2.53Mb/s+JP+10:18:10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -144,14 +94,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP1(IEPL)+-+负载均衡专线
-      - "[LV2·原生] 香港B2 | 中转"
-      - KR1(IEPL)+-+负载均衡专线
-      - US1(IEPL)+-+负载均衡专线
+      - lv1 台湾Hinet1 直连
       - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[LV2·原生] 香港B2 | 中转 2"
-      - "[LV2·原生] 香港B4 | 中转"
-      - 9.序号+29689+2.53Mb/s+JP+10:18:10
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
