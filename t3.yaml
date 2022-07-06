@@ -5,47 +5,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Super 香港07  | IEPL | 倍率:2.3, server: jaibio5c.nodeinfo.icu, port: 7007, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 192073:D1ZGOg, obfs-param: cb12f192073.www.gov.hk, udp: true}
-  - {name: Super 香港06  | IEPL | 倍率:2.5, server: iqu5ujio.nodeinfo.icu, port: 7006, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 192073:D1ZGOg, obfs-param: cb12f192073.www.gov.hk, udp: true}
-  - {name: Super 香港01  | MIEPL | 倍率:2.8, server: ota2wier.nodeinfo.icu, port: 7001, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 192073:D1ZGOg, obfs-param: cb12f192073.www.gov.hk, udp: true}
-  - {name: Super 香港03  | MIEPL | 倍率:2.5, server: vahv9diw.nodeinfo.icu, port: 7003, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 192073:D1ZGOg, obfs-param: cb12f192073.www.gov.hk, udp: true}
-  - {name: Super 香港02  | MIEPL | 倍率:2.5, server: feeco8oo.nodeinfo.icu, port: 7002, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 192073:D1ZGOg, obfs-param: cb12f192073.www.gov.hk, udp: true}
-  - {name: Super 香港08  | IEPL | 倍率:2.3, server: aemoo9wi.nodeinfo.icu, port: 7008, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 192073:D1ZGOg, obfs-param: cb12f192073.www.gov.hk, udp: true}
+  - {name: 日本IDC宽频|NF解锁|V2|A01, server: 116.63.103.11, port: 45184, type: vmess, uuid: 20b48507-b52b-49bc-93b4-90ef114532fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.63.103.11}, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45394, type: vmess, uuid: 20b48507-b52b-49bc-93b4-90ef114532fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
+  - {name: 日本IDC宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 20b48507-b52b-49bc-93b4-90ef114532fa, udp: true}
+  - {name: 日本IDC宽频|NF解锁|SS|A01, server: 116.63.103.11, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 20b48507-b52b-49bc-93b4-90ef114532fa, udp: true}
+  - {name: 香港IDC宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45239, type: vmess, uuid: 20b48507-b52b-49bc-93b4-90ef114532fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
+  - {name: 香港家庭宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45250, type: vmess, uuid: 20b48507-b52b-49bc-93b4-90ef114532fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 20b48507-b52b-49bc-93b4-90ef114532fa, udp: true}
+  - {name: 香港IDC宽频|NF解锁|V2|IPLC, server: 120.233.25.23, port: 45239, type: vmess, uuid: 20b48507-b52b-49bc-93b4-90ef114532fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.233.25.23}, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|SS|A01, server: 116.63.103.11, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 20b48507-b52b-49bc-93b4-90ef114532fa, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 20b48507-b52b-49bc-93b4-90ef114532fa, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45149, type: vmess, uuid: 20b48507-b52b-49bc-93b4-90ef114532fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|SS|IPLC, server: 120.233.25.23, port: 45240, type: ss, cipher: aes-128-gcm, password: 20b48507-b52b-49bc-93b4-90ef114532fa, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 20b48507-b52b-49bc-93b4-90ef114532fa, udp: true}
+  - {name: 香港IDC宽频|NF解锁|SS|A01, server: 116.63.103.11, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 20b48507-b52b-49bc-93b4-90ef114532fa, udp: true}
+  - {name: 美国IDC宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45194, type: vmess, uuid: 20b48507-b52b-49bc-93b4-90ef114532fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
+  - {name: 英国IDC宽频|NF解锁|SS|A01, server: 116.63.103.11, port: 45324, type: ss, cipher: chacha20-ietf-poly1305, password: 20b48507-b52b-49bc-93b4-90ef114532fa, udp: true}
+  - {name: 美国IDC宽频|NF解锁|SS|A01, server: 116.63.103.11, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 20b48507-b52b-49bc-93b4-90ef114532fa, udp: true}
+  - {name: 英国IDC宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45324, type: ss, cipher: chacha20-ietf-poly1305, password: 20b48507-b52b-49bc-93b4-90ef114532fa, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|SS|B01, server: 36.134.116.212, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 20b48507-b52b-49bc-93b4-90ef114532fa, udp: true}
+  - {name: 英国IDC宽频|NF解锁|V2|B01, server: 36.134.116.212, port: 45413, type: vmess, uuid: 20b48507-b52b-49bc-93b4-90ef114532fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 36.134.116.212}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港03  | MIEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港08  | IEPL | 倍率:2.3
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 英国IDC宽频|NF解锁|V2|B01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港03  | MIEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港08  | IEPL | 倍率:2.3
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 英国IDC宽频|NF解锁|V2|B01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港03  | MIEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港08  | IEPL | 倍率:2.3
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 英国IDC宽频|NF解锁|V2|B01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,57 +120,116 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港03  | MIEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港08  | IEPL | 倍率:2.3
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 英国IDC宽频|NF解锁|V2|B01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港03  | MIEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港08  | IEPL | 倍率:2.3
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港03  | MIEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港08  | IEPL | 倍率:2.3
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 英国IDC宽频|NF解锁|V2|B01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港03  | MIEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港08  | IEPL | 倍率:2.3
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 英国IDC宽频|NF解锁|V2|B01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港03  | MIEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港08  | IEPL | 倍率:2.3
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 英国IDC宽频|NF解锁|V2|B01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,12 +245,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港03  | MIEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港08  | IEPL | 倍率:2.3
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 台湾家庭宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|IPLC
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 英国IDC宽频|NF解锁|V2|B01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
