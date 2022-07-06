@@ -5,83 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国_TG@nodesharing_68, server: gzyd1.52147.top, port: 30120, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 中国_TG@nodesharing_70, server: gzyd1.52147.top, port: 30130, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 中国_TG@nodesharing_58, server: gzyd2.52147.top, port: 30130, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 中国_TG@nodesharing_78, server: hnyd.52147.top, port: 30180, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 中国_TG@nodesharing_64, server: gzyd2.52147.top, port: 30120, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 美国_TG@nodesharing_94, server: azhj001.xiba1.xyz, port: 20715, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: TG@nodesharing_45, server: 103.173.255.127, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, skip-cert-verify: true, udp: true}
-  - {name: 中国_TG@nodesharing_109, server: gzyd2.52147.top, port: 30180, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 中国_TG@nodesharing_75, server: hnyd.52147.top, port: 30130, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 中国_TG@nodesharing_74, server: hnyd.52147.top, port: 30120, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_102, server: azgy001.xiba1.xyz, port: 20716, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: TG@nodesharing_22, server: 103.173.255.21, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, skip-cert-verify: true, udp: true}
-  - {name: TG@nodesharing_20, server: 103.173.255.228, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, skip-cert-verify: true, udp: true}
-  - {name: 中国_TG@nodesharing_174, server: gzyd1.52147.top, port: 30080, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_3, server: hkt.52147.top, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: hkt.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 美国_TG@nodesharing_130, server: api.qiscus.com, port: 443, type: vmess, uuid: 8f9b60e6-1db3-42e4-97b9-1e311f427649, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /vmess-ws-makae, ws-headers: {Host: bn-id01.ipv2ray.xyz}, udp: true}
+  - {name: TG@nodesharing_119, server: cf.fullcloud.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxusa.fovi.tk}, udp: true}
+  - {name: 美国_TG@nodesharing_128, server: lms.uin-antasari.ac.id, port: 80, type: vmess, uuid: 46bfdb59-83c6-4710-877e-c809b5a90dff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vpnneo, ws-headers: {Host: ctn.nextvpn.cc}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_TG@nodesharing_68
-      - 中国_TG@nodesharing_70
-      - 中国_TG@nodesharing_58
-      - 中国_TG@nodesharing_78
-      - 中国_TG@nodesharing_64
-      - 美国_TG@nodesharing_94
-      - TG@nodesharing_45
-      - 中国_TG@nodesharing_109
-      - 中国_TG@nodesharing_75
-      - 中国_TG@nodesharing_74
-      - 香港_TG@nodesharing_102
-      - TG@nodesharing_22
-      - TG@nodesharing_20
-      - 中国_TG@nodesharing_174
-      - 香港_TG@nodesharing_3
+      - 美国_TG@nodesharing_130
+      - TG@nodesharing_119
+      - 美国_TG@nodesharing_128
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国_TG@nodesharing_68
-      - 中国_TG@nodesharing_70
-      - 中国_TG@nodesharing_58
-      - 中国_TG@nodesharing_78
-      - 中国_TG@nodesharing_64
-      - 美国_TG@nodesharing_94
-      - TG@nodesharing_45
-      - 中国_TG@nodesharing_109
-      - 中国_TG@nodesharing_75
-      - 中国_TG@nodesharing_74
-      - 香港_TG@nodesharing_102
-      - TG@nodesharing_22
-      - TG@nodesharing_20
-      - 中国_TG@nodesharing_174
-      - 香港_TG@nodesharing_3
+      - 美国_TG@nodesharing_130
+      - TG@nodesharing_119
+      - 美国_TG@nodesharing_128
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_TG@nodesharing_68
-      - 中国_TG@nodesharing_70
-      - 中国_TG@nodesharing_58
-      - 中国_TG@nodesharing_78
-      - 中国_TG@nodesharing_64
-      - 美国_TG@nodesharing_94
-      - TG@nodesharing_45
-      - 中国_TG@nodesharing_109
-      - 中国_TG@nodesharing_75
-      - 中国_TG@nodesharing_74
-      - 香港_TG@nodesharing_102
-      - TG@nodesharing_22
-      - TG@nodesharing_20
-      - 中国_TG@nodesharing_174
-      - 香港_TG@nodesharing_3
+      - 美国_TG@nodesharing_130
+      - TG@nodesharing_119
+      - 美国_TG@nodesharing_128
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -100,89 +52,39 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_TG@nodesharing_68
-      - 中国_TG@nodesharing_70
-      - 中国_TG@nodesharing_58
-      - 中国_TG@nodesharing_78
-      - 中国_TG@nodesharing_64
-      - 美国_TG@nodesharing_94
-      - TG@nodesharing_45
-      - 中国_TG@nodesharing_109
-      - 中国_TG@nodesharing_75
-      - 中国_TG@nodesharing_74
-      - 香港_TG@nodesharing_102
-      - TG@nodesharing_22
-      - TG@nodesharing_20
-      - 中国_TG@nodesharing_174
-      - 香港_TG@nodesharing_3
+      - 美国_TG@nodesharing_130
+      - TG@nodesharing_119
+      - 美国_TG@nodesharing_128
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港_TG@nodesharing_102
-      - 香港_TG@nodesharing_3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国_TG@nodesharing_68
-      - 中国_TG@nodesharing_70
-      - 中国_TG@nodesharing_58
-      - 中国_TG@nodesharing_78
-      - 中国_TG@nodesharing_64
-      - 美国_TG@nodesharing_94
-      - TG@nodesharing_45
-      - 中国_TG@nodesharing_109
-      - 中国_TG@nodesharing_75
-      - 中国_TG@nodesharing_74
-      - 香港_TG@nodesharing_102
-      - TG@nodesharing_22
-      - TG@nodesharing_20
-      - 中国_TG@nodesharing_174
-      - 香港_TG@nodesharing_3
+      - 美国_TG@nodesharing_130
+      - TG@nodesharing_119
+      - 美国_TG@nodesharing_128
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国_TG@nodesharing_68
-      - 中国_TG@nodesharing_70
-      - 中国_TG@nodesharing_58
-      - 中国_TG@nodesharing_78
-      - 中国_TG@nodesharing_64
-      - 美国_TG@nodesharing_94
-      - TG@nodesharing_45
-      - 中国_TG@nodesharing_109
-      - 中国_TG@nodesharing_75
-      - 中国_TG@nodesharing_74
-      - 香港_TG@nodesharing_102
-      - TG@nodesharing_22
-      - TG@nodesharing_20
-      - 中国_TG@nodesharing_174
-      - 香港_TG@nodesharing_3
+      - 美国_TG@nodesharing_130
+      - TG@nodesharing_119
+      - 美国_TG@nodesharing_128
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国_TG@nodesharing_68
-      - 中国_TG@nodesharing_70
-      - 中国_TG@nodesharing_58
-      - 中国_TG@nodesharing_78
-      - 中国_TG@nodesharing_64
-      - 美国_TG@nodesharing_94
-      - TG@nodesharing_45
-      - 中国_TG@nodesharing_109
-      - 中国_TG@nodesharing_75
-      - 中国_TG@nodesharing_74
-      - 香港_TG@nodesharing_102
-      - TG@nodesharing_22
-      - TG@nodesharing_20
-      - 中国_TG@nodesharing_174
-      - 香港_TG@nodesharing_3
+      - 美国_TG@nodesharing_130
+      - TG@nodesharing_119
+      - 美国_TG@nodesharing_128
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -198,21 +100,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国_TG@nodesharing_68
-      - 中国_TG@nodesharing_70
-      - 中国_TG@nodesharing_58
-      - 中国_TG@nodesharing_78
-      - 中国_TG@nodesharing_64
-      - 美国_TG@nodesharing_94
-      - TG@nodesharing_45
-      - 中国_TG@nodesharing_109
-      - 中国_TG@nodesharing_75
-      - 中国_TG@nodesharing_74
-      - 香港_TG@nodesharing_102
-      - TG@nodesharing_22
-      - TG@nodesharing_20
-      - 中国_TG@nodesharing_174
-      - 香港_TG@nodesharing_3
+      - 美国_TG@nodesharing_130
+      - TG@nodesharing_119
+      - 美国_TG@nodesharing_128
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
