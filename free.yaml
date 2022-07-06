@@ -5,47 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[LV2·原生] 香港B2 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[LV2·原生] 香港02 | IEPL 专线 | 3x", server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[家宽]台湾04|动态IP 1x", server: bpjcjapan.loseyourip.com, port: 12344, type: vmess, uuid: 546660e6-01ad-4eaa-a640-83864829f8f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: "[家宽]台湾03|动态IP 1x", server: bpjcjapan.loseyourip.com, port: 12343, type: vmess, uuid: 546660e6-01ad-4eaa-a640-83864829f8f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: "[家宽]台湾08|动态IP 1x", server: bpjcjapan.loseyourip.com, port: 30914, type: vmess, uuid: 546660e6-01ad-4eaa-a640-83864829f8f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: "[家宽]台湾01|动态IP 1x", server: bpjcjapan.loseyourip.com, port: 12341, type: vmess, uuid: 546660e6-01ad-4eaa-a640-83864829f8f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: lv.5-中国==>台湾2-Netflix, server: zh01lv5tw02.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.5-中国==>台湾3-Netflix, server: zh01lv5tw03.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.5-中国==>台湾5-Netflix, server: zh01lv5tw05.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.5-中国==>新加坡5-Netflix, server: zh01lv5sgp05.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.5-中国==>台湾1-Netflix, server: zh01lv5tw01.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.5-中国==>新加坡4-Netflix, server: zh01lv5sgp04.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.3-新加坡2-NF&D+, server: zh01lv3sgp02.feiguayun.xyz, port: 50031, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.3-香港1, server: zh01lv3hk01.feiguayun.xyz, port: 50311, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.3-香港2, server: zh01lv3hk02.feiguayun.xyz, port: 50311, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.3-新加坡3-NF&D+, server: zh01lv3sgp03.feiguayun.xyz, port: 50031, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.3-香港3, server: zh01lv3hk03.feiguayun.xyz, port: 50311, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.3-台湾1-Netlfix, server: zh01lv3tw01.feiguayun.xyz, port: 50321, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.3-美国3, server: zh01lv3us03.feiguayun.xyz, port: 50001, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.3-美国2, server: zh01lv3us02.feiguayun.xyz, port: 50001, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.3-台湾2-Netlfix, server: zh01lv3tw02.feiguayun.xyz, port: 50321, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
+  - {name: lv.3-台湾3-Netlfix, server: zh01lv3tw03.feiguayun.xyz, port: 50321, type: ss, cipher: aes-256-gcm, password: 203a6578-5876-4a86-992d-262952d8b084, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[家宽]台湾04|动态IP 1x"
-      - "[家宽]台湾03|动态IP 1x"
-      - "[家宽]台湾08|动态IP 1x"
-      - "[家宽]台湾01|动态IP 1x"
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>新加坡5-Netflix
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>新加坡4-Netflix
+      - lv.3-新加坡2-NF&D+
+      - lv.3-香港1
+      - lv.3-香港2
+      - lv.3-新加坡3-NF&D+
+      - lv.3-香港3
+      - lv.3-台湾1-Netlfix
+      - lv.3-美国3
+      - lv.3-美国2
+      - lv.3-台湾2-Netlfix
+      - lv.3-台湾3-Netlfix
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[家宽]台湾04|动态IP 1x"
-      - "[家宽]台湾03|动态IP 1x"
-      - "[家宽]台湾08|动态IP 1x"
-      - "[家宽]台湾01|动态IP 1x"
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>新加坡5-Netflix
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>新加坡4-Netflix
+      - lv.3-新加坡2-NF&D+
+      - lv.3-香港1
+      - lv.3-香港2
+      - lv.3-新加坡3-NF&D+
+      - lv.3-香港3
+      - lv.3-台湾1-Netlfix
+      - lv.3-美国3
+      - lv.3-美国2
+      - lv.3-台湾2-Netlfix
+      - lv.3-台湾3-Netlfix
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[家宽]台湾04|动态IP 1x"
-      - "[家宽]台湾03|动态IP 1x"
-      - "[家宽]台湾08|动态IP 1x"
-      - "[家宽]台湾01|动态IP 1x"
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>新加坡5-Netflix
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>新加坡4-Netflix
+      - lv.3-新加坡2-NF&D+
+      - lv.3-香港1
+      - lv.3-香港2
+      - lv.3-新加坡3-NF&D+
+      - lv.3-香港3
+      - lv.3-台湾1-Netlfix
+      - lv.3-美国3
+      - lv.3-美国2
+      - lv.3-台湾2-Netlfix
+      - lv.3-台湾3-Netlfix
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,57 +104,101 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[家宽]台湾04|动态IP 1x"
-      - "[家宽]台湾03|动态IP 1x"
-      - "[家宽]台湾08|动态IP 1x"
-      - "[家宽]台湾01|动态IP 1x"
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>新加坡5-Netflix
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>新加坡4-Netflix
+      - lv.3-新加坡2-NF&D+
+      - lv.3-香港1
+      - lv.3-香港2
+      - lv.3-新加坡3-NF&D+
+      - lv.3-香港3
+      - lv.3-台湾1-Netlfix
+      - lv.3-美国3
+      - lv.3-美国2
+      - lv.3-台湾2-Netlfix
+      - lv.3-台湾3-Netlfix
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[家宽]台湾04|动态IP 1x"
-      - "[家宽]台湾03|动态IP 1x"
-      - "[家宽]台湾08|动态IP 1x"
-      - "[家宽]台湾01|动态IP 1x"
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>台湾1-Netflix
+      - lv.3-香港1
+      - lv.3-香港2
+      - lv.3-香港3
+      - lv.3-台湾1-Netlfix
+      - lv.3-台湾2-Netlfix
+      - lv.3-台湾3-Netlfix
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[家宽]台湾04|动态IP 1x"
-      - "[家宽]台湾03|动态IP 1x"
-      - "[家宽]台湾08|动态IP 1x"
-      - "[家宽]台湾01|动态IP 1x"
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>新加坡5-Netflix
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>新加坡4-Netflix
+      - lv.3-新加坡2-NF&D+
+      - lv.3-香港1
+      - lv.3-香港2
+      - lv.3-新加坡3-NF&D+
+      - lv.3-香港3
+      - lv.3-台湾1-Netlfix
+      - lv.3-美国3
+      - lv.3-美国2
+      - lv.3-台湾2-Netlfix
+      - lv.3-台湾3-Netlfix
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[家宽]台湾04|动态IP 1x"
-      - "[家宽]台湾03|动态IP 1x"
-      - "[家宽]台湾08|动态IP 1x"
-      - "[家宽]台湾01|动态IP 1x"
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>新加坡5-Netflix
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>新加坡4-Netflix
+      - lv.3-新加坡2-NF&D+
+      - lv.3-香港1
+      - lv.3-香港2
+      - lv.3-新加坡3-NF&D+
+      - lv.3-香港3
+      - lv.3-台湾1-Netlfix
+      - lv.3-美国3
+      - lv.3-美国2
+      - lv.3-台湾2-Netlfix
+      - lv.3-台湾3-Netlfix
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[家宽]台湾04|动态IP 1x"
-      - "[家宽]台湾03|动态IP 1x"
-      - "[家宽]台湾08|动态IP 1x"
-      - "[家宽]台湾01|动态IP 1x"
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>新加坡5-Netflix
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>新加坡4-Netflix
+      - lv.3-新加坡2-NF&D+
+      - lv.3-香港1
+      - lv.3-香港2
+      - lv.3-新加坡3-NF&D+
+      - lv.3-香港3
+      - lv.3-台湾1-Netlfix
+      - lv.3-美国3
+      - lv.3-美国2
+      - lv.3-台湾2-Netlfix
+      - lv.3-台湾3-Netlfix
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,12 +214,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[LV2·原生] 香港B2 | 中转"
-      - "[LV2·原生] 香港02 | IEPL 专线 | 3x"
-      - "[家宽]台湾04|动态IP 1x"
-      - "[家宽]台湾03|动态IP 1x"
-      - "[家宽]台湾08|动态IP 1x"
-      - "[家宽]台湾01|动态IP 1x"
+      - lv.5-中国==>台湾2-Netflix
+      - lv.5-中国==>台湾3-Netflix
+      - lv.5-中国==>台湾5-Netflix
+      - lv.5-中国==>新加坡5-Netflix
+      - lv.5-中国==>台湾1-Netflix
+      - lv.5-中国==>新加坡4-Netflix
+      - lv.3-新加坡2-NF&D+
+      - lv.3-香港1
+      - lv.3-香港2
+      - lv.3-新加坡3-NF&D+
+      - lv.3-香港3
+      - lv.3-台湾1-Netlfix
+      - lv.3-美国3
+      - lv.3-美国2
+      - lv.3-台湾2-Netlfix
+      - lv.3-台湾3-Netlfix
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
