@@ -5,99 +5,731 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: v1丨新加坡丨中继丨HK隧道, server: zhuanfa1.suyun.live, port: 6232, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨泰国丨北京- HK隧道-泰国丨2丨萨瓦迪卡, server: zhuanfa1.suyun.live, port: 38216, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨日本丨中继丨东京丨2丨1Gbps, server: zhuanfa1.suyun.live, port: 8641, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨台湾丨原生丨中台中继丨, server: zhuanfa1.suyun.live, port: 32699, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨新加坡丨 私人订制, server: zhuanfa1.suyun.live, port: 3526, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨香港丨AZ丨2丨北京—香港, server: zhuanfa1.suyun.live, port: 42024, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨印度丨北京- HK隧道-印度丨中转丨2, server: zhuanfa1.suyun.live, port: 44174, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨台湾三网丨联通中继, server: zhuanfa1.suyun.live, port: 23712, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨香港丨高速丨联通免流丨V2ray, server: zhuanfa1.suyun.live, port: 11987, type: vmess, uuid: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.bing.com}, udp: true}
-  - {name: v1丨香港丨沪港中继丨HKT, server: zhuanfa1.suyun.live, port: 52671, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨越南丨京港中继丨Trojan, server: zhuanfa1.suyun.live, port: 23987, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨台湾丨原生丨静态, server: zhuanfa1.suyun.live, port: 52993, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨香港丨直连 1Gbps, server: wr4zhilian3.yooo.me, port: 12345, type: vmess, uuid: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: v1丨马来西亚丨原生丨广移中继, server: zhuanfa1.suyun.live, port: 21308, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨香港丨微软丨1丨北京—香港丨, server: zhuanfa1.suyun.live, port: 45024, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨美国丨原生丨三网优化丨广移中继, server: zhuanfa1.suyun.live, port: 35790, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨韩国丨微软丨北京-韩国丨2丨1Gbps, server: zhuanfa1.suyun.live, port: 36777, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨英国丨专线-上海丨, server: zhuanfa1.suyun.live, port: 32362, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨美国丨隧道中转丨解锁流媒体1, server: zhuanfa1.suyun.live, port: 36289, type: trojan, password: e9d3628b-ba7f-3092-b1ec-5ff851e00d35, sni: zhuanfa1.suyun.live, skip-cert-verify: true, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB, server: sg04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 香港 油尖旺御金·国峯 網上行寬頻 D05, server: hkt05.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-爱尔兰 IPLC D03, server: ir03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 D 07, server: kr17.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB, server: sg07.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 香港 油尖旺御金·国峯 網上行寬頻 D03, server: hkt03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB, server: hk06.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB, server: sg06.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 D 10, server: kr20.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-加拿大 IPLC D03, server: ca03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-韩国 IPLC D02 Netflix, server: kr02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-韩国 IPLC D09 Netflix, server: kr09.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 D 05, server: kr15.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 D 09, server: kr19.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 香港 油尖旺御金·国峯 網上行寬頻 D06, server: hkt06.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: VIP6专属 香港 QAT - Accelerate 01, server: qat01.virtual-strike.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-澳大利亚 IPLC 悉尼 D02, server: au02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-韩国 IPLC D05 Netflix, server: kr05.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 D 03, server: kr13.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: VIP6专属 香港 QAT - Accelerate 05, server: qat05.virtual-strike.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB, server: hk09.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 D 08, server: kr18.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-法国 IPLC D03, server: fr03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-韩国 IPLC D04 Netflix, server: kr04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 D 02, server: kr12.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-加拿大 IPLC D05, server: ca05.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-印度 马哈拉施特拉 IPLC D12, server: in12.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB, server: sg03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 D 13, server: kr23.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: VIP6专属 香港 QAT - Accelerate 09, server: qat09.virtual-strike.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-加拿大 IPLC D04, server: ca04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-印度 马哈拉施特拉 IPLC D09, server: in09.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-印度 马哈拉施特拉 IPLC D10, server: in10.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-澳大利亚 IPLC 悉尼 D01, server: au01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-爱尔兰 IPLC D05, server: ir05.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 D 06, server: kr16.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: VIP6专属 香港 QAT - Accelerate 02, server: qat02.virtual-strike.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: VIP6专属 香港 QAT - Accelerate 10, server: qat10.virtual-strike.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-印度 马哈拉施特拉 IPLC D06, server: in06.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB, server: sg10.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-印度 马哈拉施特拉 IPLC D07, server: in07.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-澳大利亚 IPLC 悉尼 D03, server: au03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 D 04, server: kr14.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-印度 马哈拉施特拉 IPLC D11, server: in11.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB, server: sg09.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 D 12, server: kr22.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-印度 马哈拉施特拉 IPLC D05, server: in05.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-法国 IPLC D04, server: fr04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-韩国 IPLC D07 Netflix, server: kr07.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: VIP6专属 香港 QAT - Accelerate 06, server: qat06.virtual-strike.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: VIP6专属 香港 QAT - Accelerate 08, server: qat08.virtual-strike.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-印度 马哈拉施特拉 IPLC D01, server: in01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-加拿大 IPLC D02, server: ca02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-法国 IPLC D01, server: fr01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB, server: hk08.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: VIP6专属 香港 QAT - Accelerate 04, server: qat04.virtual-strike.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-印度 马哈拉施特拉 IPLC D04, server: in04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 D 01 1Gbps HBO TVB, server: sg01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 D 07 1Gbps HBO TVB, server: hk07.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 香港 油尖旺御金·国峯 網上行寬頻 D04, server: hkt04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-韩国 IPLC D10 Netflix, server: kr10.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB, server: sg08.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-韩国 IPLC D01 Netflix, server: kr01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 D 10 1Gbps HBO TVB, server: hk10.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-印度 马哈拉施特拉 IPLC D02, server: in02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 D 01, server: kr11.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 D 02 1Gbps HBO TVB, server: hk02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-爱尔兰 IPLC D02, server: ir02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-澳大利亚 IPLC 悉尼 D04, server: au04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 D 01 1Gbps HBO TVB, server: hk01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 试用/续费 接入, server: test01.alderlake.gay, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-韩国 IPLC D03 Netflix, server: kr03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 D 11, server: kr21.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-爱尔兰 IPLC D01, server: ir01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps, server: hr10.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: VIP6专属 香港 QAT - Accelerate 07, server: qat07.virtual-strike.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB, server: sg11.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01, server: pvcc01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ D 04, server: jp04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-印度 马哈拉施特拉 IPLC D08, server: in08.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接 D12, server: tw22.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾宜兰 IPLC D03, server: tw03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾宜兰 IPLC D02, server: tw02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾宜兰 IPLC D04, server: tw04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾宜兰 IPLC D05, server: tw05.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps, server: hr12.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps, server: hr04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-印度 马哈拉施特拉 IPLC D03, server: in03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-韩国 IPLC D06 Netflix, server: kr06.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps, server: hr09.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps, server: hr08.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ D 07, server: jp07.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps, server: hr07.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps, server: hr03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 新加坡 Legacy Magic IEPL 中继 D04 Netflix, server: sgp04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps, server: hr01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 新加坡 Magic IEPL 中继 D03 Netflix, server: sgp08.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB, server: hk04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 新加坡 Legacy Magic IEPL 中继 D02 Netflix, server: sgp02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 俄罗斯 02, server: ru02.ptrecord.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04, server: hg04.ptrecord.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接 D08, server: tw18.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ D 03, server: jp03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps, server: hr02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-英国伦敦电信 IEPL D6, server: uk06.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 新加坡高级 IEPL 中继 D02 Netflix, server: sgp12.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ D 01, server: jp01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 新加坡 Legacy Magic IEPL 中继 D03 Netflix, server: sgp03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-英国伦敦电信 IEPL D2, server: uk02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-英国伦敦电信 IEPL D3, server: uk03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-英国伦敦电信 IEPL D4, server: uk04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: "俄罗斯 01\t", server: ru01.ptrecord.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01, server: hg01.ptrecord.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾宜兰 IPLC D07, server: tw07.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03, server: hg03.ptrecord.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ D 10, server: jp10.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 新加坡 Magic IEPL 中继 D05 Netflix, server: sgp10.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ D 02, server: jp02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ D 09, server: jp09.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 新加坡高级 IEPL 中继 D01 Netflix, server: sgp11.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05, server: hg05.ptrecord.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 D6 1000Mbps, server: hr06.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 新加坡 Legacy Magic IEPL 中继 D05 Netflix, server: sgp05.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ D 08, server: jp08.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-英国伦敦电信 IEPL D1, server: uk01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps, server: hr05.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 新加坡 Legacy Magic IEPL 中继 D01 Netflix, server: sgp01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 新加坡 Magic IEPL 中继 D02 Netflix, server: sgp07.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 俄罗斯 03, server: ru03.ptrecord.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 俄罗斯 04, server: ru04.ptrecord.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-澳大利亚 IPLC 悉尼 D05, server: au05.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 精简 31, server: 31.ultralab.club, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾宜兰 IPLC D08, server: tw08.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 精简 34, server: 34.ultralab.club, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 精简 32, server: 32.ultralab.club, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 巴西, server: br01.ptrecord.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 精简 36, server: 36.ultralab.club, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接 D09, server: tw19.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接  D04, server: tw14.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-韩国 IPLC D08 Netflix, server: kr08.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 精简 37, server: 37.ultralab.club, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 精简 38, server: 38.ultralab.club, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-法国 IPLC D02, server: fr02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ D 06, server: jp06.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 新加坡 Magic IEPL 中继 D01 Netflix, server: sgp06.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 土耳其, server: trk01.ptrecord.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 新加坡 Magic IEPL 中继 D04 Netflix, server: sgp09.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾宜兰 IPLC D06, server: tw06.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02, server: hg02.ptrecord.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接  D02, server: tw12.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接  D06, server: tw16.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 精简 35, server: 35.ultralab.club, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 香港 油尖旺御金·国峯 網上行寬頻 D01, server: hkt01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-法国 IPLC D05, server: fr05.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 美国实验性 IEPL 中继 D05, server: us10.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 美国高级 IEPL 中继 D04, server: us04.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 美国高级 IEPL 中继 D02, server: us02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 美国实验性 IEPL 中继 D03, server: us08.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 美国高级 IEPL 中继 D01, server: us01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 美国高级 IEPL 中继 D05, server: us05.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 美国高级 IEPL 中继 D03, server: us03.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 美国实验性 IEPL 中继 D01, server: us06.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 精简 39, server: 39.ultralab.club, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 精简 33, server: 33.ultralab.club, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接  D05, server: tw15.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 美国实验性 IEPL 中继 D02, server: us07.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接 D10, server: tw20.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾宜兰 IPLC D10, server: tw10.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 美国实验性 IEPL 中继 D04, server: us09.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: VIP6专属 香港 QAT - Accelerate 03, server: qat03.virtual-strike.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB, server: sg02.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接  D01, server: tw11.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾宜兰 IPLC D09, server: tw09.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 阿根廷, server: agt01.ptrecord.com, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接  D03, server: tw13.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 中国-加拿大 IPLC D01, server: ca01.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ D 05, server: jp05.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨泰国丨北京- HK隧道-泰国丨2丨萨瓦迪卡
-      - v1丨日本丨中继丨东京丨2丨1Gbps
-      - v1丨台湾丨原生丨中台中继丨
-      - v1丨新加坡丨 私人订制
-      - v1丨香港丨AZ丨2丨北京—香港
-      - v1丨印度丨北京- HK隧道-印度丨中转丨2
-      - v1丨台湾三网丨联通中继
-      - v1丨香港丨高速丨联通免流丨V2ray
-      - v1丨香港丨沪港中继丨HKT
-      - v1丨越南丨京港中继丨Trojan
-      - v1丨台湾丨原生丨静态
-      - v1丨香港丨直连 1Gbps
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨香港丨微软丨1丨北京—香港丨
-      - v1丨美国丨原生丨三网优化丨广移中继
-      - v1丨韩国丨微软丨北京-韩国丨2丨1Gbps
-      - v1丨英国丨专线-上海丨
-      - v1丨美国丨隧道中转丨解锁流媒体1
+      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D05
+      - 中国-爱尔兰 IPLC D03
+      - 韩国 전라북도 전주시 商宽 D 07
+      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D03
+      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 10
+      - 中国-加拿大 IPLC D03
+      - 中国-韩国 IPLC D02 Netflix
+      - 中国-韩国 IPLC D09 Netflix
+      - 韩国 전라북도 전주시 商宽 D 05
+      - 韩国 전라북도 전주시 商宽 D 09
+      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - VIP6专属 香港 QAT - Accelerate 01
+      - 中国-澳大利亚 IPLC 悉尼 D02
+      - 中国-韩国 IPLC D05 Netflix
+      - 韩国 전라북도 전주시 商宽 D 03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 08
+      - 中国-法国 IPLC D03
+      - 中国-韩国 IPLC D04 Netflix
+      - 韩国 전라북도 전주시 商宽 D 02
+      - 中国-加拿大 IPLC D05
+      - 中国-印度 马哈拉施特拉 IPLC D12
+      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 13
+      - VIP6专属 香港 QAT - Accelerate 09
+      - 中国-加拿大 IPLC D04
+      - 中国-印度 马哈拉施特拉 IPLC D09
+      - 中国-印度 马哈拉施特拉 IPLC D10
+      - 中国-澳大利亚 IPLC 悉尼 D01
+      - 中国-爱尔兰 IPLC D05
+      - 韩国 전라북도 전주시 商宽 D 06
+      - VIP6专属 香港 QAT - Accelerate 02
+      - VIP6专属 香港 QAT - Accelerate 10
+      - 中国-印度 马哈拉施特拉 IPLC D06
+      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D07
+      - 中国-澳大利亚 IPLC 悉尼 D03
+      - 韩国 전라북도 전주시 商宽 D 04
+      - 中国-印度 马哈拉施特拉 IPLC D11
+      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 12
+      - 中国-印度 马哈拉施特拉 IPLC D05
+      - 中国-法国 IPLC D04
+      - 中国-韩国 IPLC D07 Netflix
+      - VIP6专属 香港 QAT - Accelerate 06
+      - VIP6专属 香港 QAT - Accelerate 08
+      - 中国-印度 马哈拉施特拉 IPLC D01
+      - 中国-加拿大 IPLC D02
+      - 中国-法国 IPLC D01
+      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
+      - VIP6专属 香港 QAT - Accelerate 04
+      - 中国-印度 马哈拉施特拉 IPLC D04
+      - 中国-香港 IPLC Equinix HK2 D 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D04
+      - 中国-韩国 IPLC D10 Netflix
+      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
+      - 中国-韩国 IPLC D01 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D02
+      - 韩国 전라북도 전주시 商宽 D 01
+      - 中国-香港 IEPL Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC D02
+      - 中国-澳大利亚 IPLC 悉尼 D04
+      - 中国-香港 IEPL Equinix HK2 D 01 1Gbps HBO TVB
+      - 试用/续费 接入
+      - 中国-韩国 IPLC D03 Netflix
+      - 韩国 전라북도 전주시 商宽 D 11
+      - 中国-爱尔兰 IPLC D01
+      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
+      - VIP6专属 香港 QAT - Accelerate 07
+      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 04
+      - 中国-印度 马哈拉施特拉 IPLC D08
+      - 中国-台湾IEPL Hinet固接 D12
+      - 中国-台湾宜兰 IPLC D03
+      - 中国-台湾宜兰 IPLC D02
+      - 中国-台湾宜兰 IPLC D04
+      - 中国-台湾宜兰 IPLC D05
+      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
+      - 中国-印度 马哈拉施特拉 IPLC D03
+      - 中国-韩国 IPLC D06 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
+      - 日本 まつやまし auひかり ホーム1ギガ D 07
+      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D04 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
+      - 新加坡 Magic IEPL 中继 D03 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
+      - 新加坡 Legacy Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 中国-台湾IEPL Hinet固接 D08
+      - 日本 まつやまし auひかり ホーム1ギガ D 03
+      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
+      - 中国-英国伦敦电信 IEPL D6
+      - 新加坡高级 IEPL 中继 D02 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 01
+      - 新加坡 Legacy Magic IEPL 中继 D03 Netflix
+      - 中国-英国伦敦电信 IEPL D2
+      - 中国-英国伦敦电信 IEPL D3
+      - 中国-英国伦敦电信 IEPL D4
+      - "俄罗斯 01\t"
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 中国-台湾宜兰 IPLC D07
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 日本 まつやまし auひかり ホーム1ギガ D 10
+      - 新加坡 Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 02
+      - 日本 まつやまし auひかり ホーム1ギガ D 09
+      - 新加坡高级 IEPL 中继 D01 Netflix
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 中国-日本 多协议标签交换虚拟专用网 D6 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 08
+      - 中国-英国伦敦电信 IEPL D1
+      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
+      - 新加坡 Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 中国-澳大利亚 IPLC 悉尼 D05
+      - 精简 31
+      - 中国-台湾宜兰 IPLC D08
+      - 精简 34
+      - 精简 32
+      - 巴西
+      - 精简 36
+      - 中国-台湾IEPL Hinet固接 D09
+      - 中国-台湾IEPL Hinet固接  D04
+      - 中国-韩国 IPLC D08 Netflix
+      - 精简 37
+      - 精简 38
+      - 中国-法国 IPLC D02
+      - 日本 まつやまし auひかり ホーム1ギガ D 06
+      - 新加坡 Magic IEPL 中继 D01 Netflix
+      - 土耳其
+      - 新加坡 Magic IEPL 中继 D04 Netflix
+      - 中国-台湾宜兰 IPLC D06
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 中国-台湾IEPL Hinet固接  D02
+      - 中国-台湾IEPL Hinet固接  D06
+      - 精简 35
+      - 香港 油尖旺御金·国峯 網上行寬頻 D01
+      - 中国-法国 IPLC D05
+      - 美国实验性 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D04
+      - 美国高级 IEPL 中继 D02
+      - 美国实验性 IEPL 中继 D03
+      - 美国高级 IEPL 中继 D01
+      - 美国高级 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D03
+      - 美国实验性 IEPL 中继 D01
+      - 精简 39
+      - 精简 33
+      - 中国-台湾IEPL Hinet固接  D05
+      - 美国实验性 IEPL 中继 D02
+      - 中国-台湾IEPL Hinet固接 D10
+      - 中国-台湾宜兰 IPLC D10
+      - 美国实验性 IEPL 中继 D04
+      - VIP6专属 香港 QAT - Accelerate 03
+      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-台湾IEPL Hinet固接  D01
+      - 中国-台湾宜兰 IPLC D09
+      - 阿根廷
+      - 中国-台湾IEPL Hinet固接  D03
+      - 中国-加拿大 IPLC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 05
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨泰国丨北京- HK隧道-泰国丨2丨萨瓦迪卡
-      - v1丨日本丨中继丨东京丨2丨1Gbps
-      - v1丨台湾丨原生丨中台中继丨
-      - v1丨新加坡丨 私人订制
-      - v1丨香港丨AZ丨2丨北京—香港
-      - v1丨印度丨北京- HK隧道-印度丨中转丨2
-      - v1丨台湾三网丨联通中继
-      - v1丨香港丨高速丨联通免流丨V2ray
-      - v1丨香港丨沪港中继丨HKT
-      - v1丨越南丨京港中继丨Trojan
-      - v1丨台湾丨原生丨静态
-      - v1丨香港丨直连 1Gbps
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨香港丨微软丨1丨北京—香港丨
-      - v1丨美国丨原生丨三网优化丨广移中继
-      - v1丨韩国丨微软丨北京-韩国丨2丨1Gbps
-      - v1丨英国丨专线-上海丨
-      - v1丨美国丨隧道中转丨解锁流媒体1
+      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D05
+      - 中国-爱尔兰 IPLC D03
+      - 韩国 전라북도 전주시 商宽 D 07
+      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D03
+      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 10
+      - 中国-加拿大 IPLC D03
+      - 中国-韩国 IPLC D02 Netflix
+      - 中国-韩国 IPLC D09 Netflix
+      - 韩国 전라북도 전주시 商宽 D 05
+      - 韩国 전라북도 전주시 商宽 D 09
+      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - VIP6专属 香港 QAT - Accelerate 01
+      - 中国-澳大利亚 IPLC 悉尼 D02
+      - 中国-韩国 IPLC D05 Netflix
+      - 韩国 전라북도 전주시 商宽 D 03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 08
+      - 中国-法国 IPLC D03
+      - 中国-韩国 IPLC D04 Netflix
+      - 韩国 전라북도 전주시 商宽 D 02
+      - 中国-加拿大 IPLC D05
+      - 中国-印度 马哈拉施特拉 IPLC D12
+      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 13
+      - VIP6专属 香港 QAT - Accelerate 09
+      - 中国-加拿大 IPLC D04
+      - 中国-印度 马哈拉施特拉 IPLC D09
+      - 中国-印度 马哈拉施特拉 IPLC D10
+      - 中国-澳大利亚 IPLC 悉尼 D01
+      - 中国-爱尔兰 IPLC D05
+      - 韩国 전라북도 전주시 商宽 D 06
+      - VIP6专属 香港 QAT - Accelerate 02
+      - VIP6专属 香港 QAT - Accelerate 10
+      - 中国-印度 马哈拉施特拉 IPLC D06
+      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D07
+      - 中国-澳大利亚 IPLC 悉尼 D03
+      - 韩国 전라북도 전주시 商宽 D 04
+      - 中国-印度 马哈拉施特拉 IPLC D11
+      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 12
+      - 中国-印度 马哈拉施特拉 IPLC D05
+      - 中国-法国 IPLC D04
+      - 中国-韩国 IPLC D07 Netflix
+      - VIP6专属 香港 QAT - Accelerate 06
+      - VIP6专属 香港 QAT - Accelerate 08
+      - 中国-印度 马哈拉施特拉 IPLC D01
+      - 中国-加拿大 IPLC D02
+      - 中国-法国 IPLC D01
+      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
+      - VIP6专属 香港 QAT - Accelerate 04
+      - 中国-印度 马哈拉施特拉 IPLC D04
+      - 中国-香港 IPLC Equinix HK2 D 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D04
+      - 中国-韩国 IPLC D10 Netflix
+      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
+      - 中国-韩国 IPLC D01 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D02
+      - 韩国 전라북도 전주시 商宽 D 01
+      - 中国-香港 IEPL Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC D02
+      - 中国-澳大利亚 IPLC 悉尼 D04
+      - 中国-香港 IEPL Equinix HK2 D 01 1Gbps HBO TVB
+      - 试用/续费 接入
+      - 中国-韩国 IPLC D03 Netflix
+      - 韩国 전라북도 전주시 商宽 D 11
+      - 中国-爱尔兰 IPLC D01
+      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
+      - VIP6专属 香港 QAT - Accelerate 07
+      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 04
+      - 中国-印度 马哈拉施特拉 IPLC D08
+      - 中国-台湾IEPL Hinet固接 D12
+      - 中国-台湾宜兰 IPLC D03
+      - 中国-台湾宜兰 IPLC D02
+      - 中国-台湾宜兰 IPLC D04
+      - 中国-台湾宜兰 IPLC D05
+      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
+      - 中国-印度 马哈拉施特拉 IPLC D03
+      - 中国-韩国 IPLC D06 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
+      - 日本 まつやまし auひかり ホーム1ギガ D 07
+      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D04 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
+      - 新加坡 Magic IEPL 中继 D03 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
+      - 新加坡 Legacy Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 中国-台湾IEPL Hinet固接 D08
+      - 日本 まつやまし auひかり ホーム1ギガ D 03
+      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
+      - 中国-英国伦敦电信 IEPL D6
+      - 新加坡高级 IEPL 中继 D02 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 01
+      - 新加坡 Legacy Magic IEPL 中继 D03 Netflix
+      - 中国-英国伦敦电信 IEPL D2
+      - 中国-英国伦敦电信 IEPL D3
+      - 中国-英国伦敦电信 IEPL D4
+      - "俄罗斯 01\t"
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 中国-台湾宜兰 IPLC D07
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 日本 まつやまし auひかり ホーム1ギガ D 10
+      - 新加坡 Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 02
+      - 日本 まつやまし auひかり ホーム1ギガ D 09
+      - 新加坡高级 IEPL 中继 D01 Netflix
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 中国-日本 多协议标签交换虚拟专用网 D6 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 08
+      - 中国-英国伦敦电信 IEPL D1
+      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
+      - 新加坡 Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 中国-澳大利亚 IPLC 悉尼 D05
+      - 精简 31
+      - 中国-台湾宜兰 IPLC D08
+      - 精简 34
+      - 精简 32
+      - 巴西
+      - 精简 36
+      - 中国-台湾IEPL Hinet固接 D09
+      - 中国-台湾IEPL Hinet固接  D04
+      - 中国-韩国 IPLC D08 Netflix
+      - 精简 37
+      - 精简 38
+      - 中国-法国 IPLC D02
+      - 日本 まつやまし auひかり ホーム1ギガ D 06
+      - 新加坡 Magic IEPL 中继 D01 Netflix
+      - 土耳其
+      - 新加坡 Magic IEPL 中继 D04 Netflix
+      - 中国-台湾宜兰 IPLC D06
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 中国-台湾IEPL Hinet固接  D02
+      - 中国-台湾IEPL Hinet固接  D06
+      - 精简 35
+      - 香港 油尖旺御金·国峯 網上行寬頻 D01
+      - 中国-法国 IPLC D05
+      - 美国实验性 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D04
+      - 美国高级 IEPL 中继 D02
+      - 美国实验性 IEPL 中继 D03
+      - 美国高级 IEPL 中继 D01
+      - 美国高级 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D03
+      - 美国实验性 IEPL 中继 D01
+      - 精简 39
+      - 精简 33
+      - 中国-台湾IEPL Hinet固接  D05
+      - 美国实验性 IEPL 中继 D02
+      - 中国-台湾IEPL Hinet固接 D10
+      - 中国-台湾宜兰 IPLC D10
+      - 美国实验性 IEPL 中继 D04
+      - VIP6专属 香港 QAT - Accelerate 03
+      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-台湾IEPL Hinet固接  D01
+      - 中国-台湾宜兰 IPLC D09
+      - 阿根廷
+      - 中国-台湾IEPL Hinet固接  D03
+      - 中国-加拿大 IPLC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 05
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨泰国丨北京- HK隧道-泰国丨2丨萨瓦迪卡
-      - v1丨日本丨中继丨东京丨2丨1Gbps
-      - v1丨台湾丨原生丨中台中继丨
-      - v1丨新加坡丨 私人订制
-      - v1丨香港丨AZ丨2丨北京—香港
-      - v1丨印度丨北京- HK隧道-印度丨中转丨2
-      - v1丨台湾三网丨联通中继
-      - v1丨香港丨高速丨联通免流丨V2ray
-      - v1丨香港丨沪港中继丨HKT
-      - v1丨越南丨京港中继丨Trojan
-      - v1丨台湾丨原生丨静态
-      - v1丨香港丨直连 1Gbps
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨香港丨微软丨1丨北京—香港丨
-      - v1丨美国丨原生丨三网优化丨广移中继
-      - v1丨韩国丨微软丨北京-韩国丨2丨1Gbps
-      - v1丨英国丨专线-上海丨
-      - v1丨美国丨隧道中转丨解锁流媒体1
+      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D05
+      - 中国-爱尔兰 IPLC D03
+      - 韩国 전라북도 전주시 商宽 D 07
+      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D03
+      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 10
+      - 中国-加拿大 IPLC D03
+      - 中国-韩国 IPLC D02 Netflix
+      - 中国-韩国 IPLC D09 Netflix
+      - 韩国 전라북도 전주시 商宽 D 05
+      - 韩国 전라북도 전주시 商宽 D 09
+      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - VIP6专属 香港 QAT - Accelerate 01
+      - 中国-澳大利亚 IPLC 悉尼 D02
+      - 中国-韩国 IPLC D05 Netflix
+      - 韩国 전라북도 전주시 商宽 D 03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 08
+      - 中国-法国 IPLC D03
+      - 中国-韩国 IPLC D04 Netflix
+      - 韩国 전라북도 전주시 商宽 D 02
+      - 中国-加拿大 IPLC D05
+      - 中国-印度 马哈拉施特拉 IPLC D12
+      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 13
+      - VIP6专属 香港 QAT - Accelerate 09
+      - 中国-加拿大 IPLC D04
+      - 中国-印度 马哈拉施特拉 IPLC D09
+      - 中国-印度 马哈拉施特拉 IPLC D10
+      - 中国-澳大利亚 IPLC 悉尼 D01
+      - 中国-爱尔兰 IPLC D05
+      - 韩国 전라북도 전주시 商宽 D 06
+      - VIP6专属 香港 QAT - Accelerate 02
+      - VIP6专属 香港 QAT - Accelerate 10
+      - 中国-印度 马哈拉施特拉 IPLC D06
+      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D07
+      - 中国-澳大利亚 IPLC 悉尼 D03
+      - 韩国 전라북도 전주시 商宽 D 04
+      - 中国-印度 马哈拉施特拉 IPLC D11
+      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 12
+      - 中国-印度 马哈拉施特拉 IPLC D05
+      - 中国-法国 IPLC D04
+      - 中国-韩国 IPLC D07 Netflix
+      - VIP6专属 香港 QAT - Accelerate 06
+      - VIP6专属 香港 QAT - Accelerate 08
+      - 中国-印度 马哈拉施特拉 IPLC D01
+      - 中国-加拿大 IPLC D02
+      - 中国-法国 IPLC D01
+      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
+      - VIP6专属 香港 QAT - Accelerate 04
+      - 中国-印度 马哈拉施特拉 IPLC D04
+      - 中国-香港 IPLC Equinix HK2 D 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D04
+      - 中国-韩国 IPLC D10 Netflix
+      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
+      - 中国-韩国 IPLC D01 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D02
+      - 韩国 전라북도 전주시 商宽 D 01
+      - 中国-香港 IEPL Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC D02
+      - 中国-澳大利亚 IPLC 悉尼 D04
+      - 中国-香港 IEPL Equinix HK2 D 01 1Gbps HBO TVB
+      - 试用/续费 接入
+      - 中国-韩国 IPLC D03 Netflix
+      - 韩国 전라북도 전주시 商宽 D 11
+      - 中国-爱尔兰 IPLC D01
+      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
+      - VIP6专属 香港 QAT - Accelerate 07
+      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 04
+      - 中国-印度 马哈拉施特拉 IPLC D08
+      - 中国-台湾IEPL Hinet固接 D12
+      - 中国-台湾宜兰 IPLC D03
+      - 中国-台湾宜兰 IPLC D02
+      - 中国-台湾宜兰 IPLC D04
+      - 中国-台湾宜兰 IPLC D05
+      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
+      - 中国-印度 马哈拉施特拉 IPLC D03
+      - 中国-韩国 IPLC D06 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
+      - 日本 まつやまし auひかり ホーム1ギガ D 07
+      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D04 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
+      - 新加坡 Magic IEPL 中继 D03 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
+      - 新加坡 Legacy Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 中国-台湾IEPL Hinet固接 D08
+      - 日本 まつやまし auひかり ホーム1ギガ D 03
+      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
+      - 中国-英国伦敦电信 IEPL D6
+      - 新加坡高级 IEPL 中继 D02 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 01
+      - 新加坡 Legacy Magic IEPL 中继 D03 Netflix
+      - 中国-英国伦敦电信 IEPL D2
+      - 中国-英国伦敦电信 IEPL D3
+      - 中国-英国伦敦电信 IEPL D4
+      - "俄罗斯 01\t"
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 中国-台湾宜兰 IPLC D07
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 日本 まつやまし auひかり ホーム1ギガ D 10
+      - 新加坡 Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 02
+      - 日本 まつやまし auひかり ホーム1ギガ D 09
+      - 新加坡高级 IEPL 中继 D01 Netflix
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 中国-日本 多协议标签交换虚拟专用网 D6 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 08
+      - 中国-英国伦敦电信 IEPL D1
+      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
+      - 新加坡 Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 中国-澳大利亚 IPLC 悉尼 D05
+      - 精简 31
+      - 中国-台湾宜兰 IPLC D08
+      - 精简 34
+      - 精简 32
+      - 巴西
+      - 精简 36
+      - 中国-台湾IEPL Hinet固接 D09
+      - 中国-台湾IEPL Hinet固接  D04
+      - 中国-韩国 IPLC D08 Netflix
+      - 精简 37
+      - 精简 38
+      - 中国-法国 IPLC D02
+      - 日本 まつやまし auひかり ホーム1ギガ D 06
+      - 新加坡 Magic IEPL 中继 D01 Netflix
+      - 土耳其
+      - 新加坡 Magic IEPL 中继 D04 Netflix
+      - 中国-台湾宜兰 IPLC D06
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 中国-台湾IEPL Hinet固接  D02
+      - 中国-台湾IEPL Hinet固接  D06
+      - 精简 35
+      - 香港 油尖旺御金·国峯 網上行寬頻 D01
+      - 中国-法国 IPLC D05
+      - 美国实验性 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D04
+      - 美国高级 IEPL 中继 D02
+      - 美国实验性 IEPL 中继 D03
+      - 美国高级 IEPL 中继 D01
+      - 美国高级 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D03
+      - 美国实验性 IEPL 中继 D01
+      - 精简 39
+      - 精简 33
+      - 中国-台湾IEPL Hinet固接  D05
+      - 美国实验性 IEPL 中继 D02
+      - 中国-台湾IEPL Hinet固接 D10
+      - 中国-台湾宜兰 IPLC D10
+      - 美国实验性 IEPL 中继 D04
+      - VIP6专属 香港 QAT - Accelerate 03
+      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-台湾IEPL Hinet固接  D01
+      - 中国-台湾宜兰 IPLC D09
+      - 阿根廷
+      - 中国-台湾IEPL Hinet固接  D03
+      - 中国-加拿大 IPLC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 05
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -116,112 +748,792 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨泰国丨北京- HK隧道-泰国丨2丨萨瓦迪卡
-      - v1丨日本丨中继丨东京丨2丨1Gbps
-      - v1丨台湾丨原生丨中台中继丨
-      - v1丨新加坡丨 私人订制
-      - v1丨香港丨AZ丨2丨北京—香港
-      - v1丨印度丨北京- HK隧道-印度丨中转丨2
-      - v1丨台湾三网丨联通中继
-      - v1丨香港丨高速丨联通免流丨V2ray
-      - v1丨香港丨沪港中继丨HKT
-      - v1丨越南丨京港中继丨Trojan
-      - v1丨台湾丨原生丨静态
-      - v1丨香港丨直连 1Gbps
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨香港丨微软丨1丨北京—香港丨
-      - v1丨美国丨原生丨三网优化丨广移中继
-      - v1丨韩国丨微软丨北京-韩国丨2丨1Gbps
-      - v1丨英国丨专线-上海丨
-      - v1丨美国丨隧道中转丨解锁流媒体1
+      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D05
+      - 中国-爱尔兰 IPLC D03
+      - 韩国 전라북도 전주시 商宽 D 07
+      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D03
+      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 10
+      - 中国-加拿大 IPLC D03
+      - 中国-韩国 IPLC D02 Netflix
+      - 中国-韩国 IPLC D09 Netflix
+      - 韩国 전라북도 전주시 商宽 D 05
+      - 韩国 전라북도 전주시 商宽 D 09
+      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - VIP6专属 香港 QAT - Accelerate 01
+      - 中国-澳大利亚 IPLC 悉尼 D02
+      - 中国-韩国 IPLC D05 Netflix
+      - 韩国 전라북도 전주시 商宽 D 03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 08
+      - 中国-法国 IPLC D03
+      - 中国-韩国 IPLC D04 Netflix
+      - 韩国 전라북도 전주시 商宽 D 02
+      - 中国-加拿大 IPLC D05
+      - 中国-印度 马哈拉施特拉 IPLC D12
+      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 13
+      - VIP6专属 香港 QAT - Accelerate 09
+      - 中国-加拿大 IPLC D04
+      - 中国-印度 马哈拉施特拉 IPLC D09
+      - 中国-印度 马哈拉施特拉 IPLC D10
+      - 中国-澳大利亚 IPLC 悉尼 D01
+      - 中国-爱尔兰 IPLC D05
+      - 韩国 전라북도 전주시 商宽 D 06
+      - VIP6专属 香港 QAT - Accelerate 02
+      - VIP6专属 香港 QAT - Accelerate 10
+      - 中国-印度 马哈拉施特拉 IPLC D06
+      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D07
+      - 中国-澳大利亚 IPLC 悉尼 D03
+      - 韩国 전라북도 전주시 商宽 D 04
+      - 中国-印度 马哈拉施特拉 IPLC D11
+      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 12
+      - 中国-印度 马哈拉施特拉 IPLC D05
+      - 中国-法国 IPLC D04
+      - 中国-韩国 IPLC D07 Netflix
+      - VIP6专属 香港 QAT - Accelerate 06
+      - VIP6专属 香港 QAT - Accelerate 08
+      - 中国-印度 马哈拉施特拉 IPLC D01
+      - 中国-加拿大 IPLC D02
+      - 中国-法国 IPLC D01
+      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
+      - VIP6专属 香港 QAT - Accelerate 04
+      - 中国-印度 马哈拉施特拉 IPLC D04
+      - 中国-香港 IPLC Equinix HK2 D 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D04
+      - 中国-韩国 IPLC D10 Netflix
+      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
+      - 中国-韩国 IPLC D01 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D02
+      - 韩国 전라북도 전주시 商宽 D 01
+      - 中国-香港 IEPL Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC D02
+      - 中国-澳大利亚 IPLC 悉尼 D04
+      - 中国-香港 IEPL Equinix HK2 D 01 1Gbps HBO TVB
+      - 试用/续费 接入
+      - 中国-韩国 IPLC D03 Netflix
+      - 韩国 전라북도 전주시 商宽 D 11
+      - 中国-爱尔兰 IPLC D01
+      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
+      - VIP6专属 香港 QAT - Accelerate 07
+      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 04
+      - 中国-印度 马哈拉施特拉 IPLC D08
+      - 中国-台湾IEPL Hinet固接 D12
+      - 中国-台湾宜兰 IPLC D03
+      - 中国-台湾宜兰 IPLC D02
+      - 中国-台湾宜兰 IPLC D04
+      - 中国-台湾宜兰 IPLC D05
+      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
+      - 中国-印度 马哈拉施特拉 IPLC D03
+      - 中国-韩国 IPLC D06 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
+      - 日本 まつやまし auひかり ホーム1ギガ D 07
+      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D04 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
+      - 新加坡 Magic IEPL 中继 D03 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
+      - 新加坡 Legacy Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 中国-台湾IEPL Hinet固接 D08
+      - 日本 まつやまし auひかり ホーム1ギガ D 03
+      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
+      - 中国-英国伦敦电信 IEPL D6
+      - 新加坡高级 IEPL 中继 D02 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 01
+      - 新加坡 Legacy Magic IEPL 中继 D03 Netflix
+      - 中国-英国伦敦电信 IEPL D2
+      - 中国-英国伦敦电信 IEPL D3
+      - 中国-英国伦敦电信 IEPL D4
+      - "俄罗斯 01\t"
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 中国-台湾宜兰 IPLC D07
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 日本 まつやまし auひかり ホーム1ギガ D 10
+      - 新加坡 Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 02
+      - 日本 まつやまし auひかり ホーム1ギガ D 09
+      - 新加坡高级 IEPL 中继 D01 Netflix
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 中国-日本 多协议标签交换虚拟专用网 D6 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 08
+      - 中国-英国伦敦电信 IEPL D1
+      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
+      - 新加坡 Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 中国-澳大利亚 IPLC 悉尼 D05
+      - 精简 31
+      - 中国-台湾宜兰 IPLC D08
+      - 精简 34
+      - 精简 32
+      - 巴西
+      - 精简 36
+      - 中国-台湾IEPL Hinet固接 D09
+      - 中国-台湾IEPL Hinet固接  D04
+      - 中国-韩国 IPLC D08 Netflix
+      - 精简 37
+      - 精简 38
+      - 中国-法国 IPLC D02
+      - 日本 まつやまし auひかり ホーム1ギガ D 06
+      - 新加坡 Magic IEPL 中继 D01 Netflix
+      - 土耳其
+      - 新加坡 Magic IEPL 中继 D04 Netflix
+      - 中国-台湾宜兰 IPLC D06
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 中国-台湾IEPL Hinet固接  D02
+      - 中国-台湾IEPL Hinet固接  D06
+      - 精简 35
+      - 香港 油尖旺御金·国峯 網上行寬頻 D01
+      - 中国-法国 IPLC D05
+      - 美国实验性 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D04
+      - 美国高级 IEPL 中继 D02
+      - 美国实验性 IEPL 中继 D03
+      - 美国高级 IEPL 中继 D01
+      - 美国高级 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D03
+      - 美国实验性 IEPL 中继 D01
+      - 精简 39
+      - 精简 33
+      - 中国-台湾IEPL Hinet固接  D05
+      - 美国实验性 IEPL 中继 D02
+      - 中国-台湾IEPL Hinet固接 D10
+      - 中国-台湾宜兰 IPLC D10
+      - 美国实验性 IEPL 中继 D04
+      - VIP6专属 香港 QAT - Accelerate 03
+      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-台湾IEPL Hinet固接  D01
+      - 中国-台湾宜兰 IPLC D09
+      - 阿根廷
+      - 中国-台湾IEPL Hinet固接  D03
+      - 中国-加拿大 IPLC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 05
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - v1丨台湾丨原生丨中台中继丨
-      - v1丨香港丨AZ丨2丨北京—香港
-      - v1丨台湾三网丨联通中继
-      - v1丨香港丨高速丨联通免流丨V2ray
-      - v1丨香港丨沪港中继丨HKT
-      - v1丨越南丨京港中继丨Trojan
-      - v1丨台湾丨原生丨静态
-      - v1丨香港丨直连 1Gbps
-      - v1丨香港丨微软丨1丨北京—香港丨
+      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D05
+      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D03
+      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - VIP6专属 香港 QAT - Accelerate 01
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
+      - VIP6专属 香港 QAT - Accelerate 09
+      - VIP6专属 香港 QAT - Accelerate 02
+      - VIP6专属 香港 QAT - Accelerate 10
+      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
+      - VIP6专属 香港 QAT - Accelerate 06
+      - VIP6专属 香港 QAT - Accelerate 08
+      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
+      - VIP6专属 香港 QAT - Accelerate 04
+      - 中国-香港 IPLC Equinix HK2 D 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D04
+      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 D 01 1Gbps HBO TVB
+      - VIP6专属 香港 QAT - Accelerate 07
+      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
+      - 中国-台湾IEPL Hinet固接 D12
+      - 中国-台湾宜兰 IPLC D03
+      - 中国-台湾宜兰 IPLC D02
+      - 中国-台湾宜兰 IPLC D04
+      - 中国-台湾宜兰 IPLC D05
+      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 中国-台湾IEPL Hinet固接 D08
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 中国-台湾宜兰 IPLC D07
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 中国-台湾宜兰 IPLC D08
+      - 中国-台湾IEPL Hinet固接 D09
+      - 中国-台湾IEPL Hinet固接  D04
+      - 中国-台湾宜兰 IPLC D06
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 中国-台湾IEPL Hinet固接  D02
+      - 中国-台湾IEPL Hinet固接  D06
+      - 香港 油尖旺御金·国峯 網上行寬頻 D01
+      - 中国-台湾IEPL Hinet固接  D05
+      - 中国-台湾IEPL Hinet固接 D10
+      - 中国-台湾宜兰 IPLC D10
+      - VIP6专属 香港 QAT - Accelerate 03
+      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-台湾IEPL Hinet固接  D01
+      - 中国-台湾宜兰 IPLC D09
+      - 中国-台湾IEPL Hinet固接  D03
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨泰国丨北京- HK隧道-泰国丨2丨萨瓦迪卡
-      - v1丨日本丨中继丨东京丨2丨1Gbps
-      - v1丨台湾丨原生丨中台中继丨
-      - v1丨新加坡丨 私人订制
-      - v1丨香港丨AZ丨2丨北京—香港
-      - v1丨印度丨北京- HK隧道-印度丨中转丨2
-      - v1丨台湾三网丨联通中继
-      - v1丨香港丨高速丨联通免流丨V2ray
-      - v1丨香港丨沪港中继丨HKT
-      - v1丨越南丨京港中继丨Trojan
-      - v1丨台湾丨原生丨静态
-      - v1丨香港丨直连 1Gbps
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨香港丨微软丨1丨北京—香港丨
-      - v1丨美国丨原生丨三网优化丨广移中继
-      - v1丨韩国丨微软丨北京-韩国丨2丨1Gbps
-      - v1丨英国丨专线-上海丨
-      - v1丨美国丨隧道中转丨解锁流媒体1
+      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D05
+      - 中国-爱尔兰 IPLC D03
+      - 韩国 전라북도 전주시 商宽 D 07
+      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D03
+      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 10
+      - 中国-加拿大 IPLC D03
+      - 中国-韩国 IPLC D02 Netflix
+      - 中国-韩国 IPLC D09 Netflix
+      - 韩国 전라북도 전주시 商宽 D 05
+      - 韩国 전라북도 전주시 商宽 D 09
+      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - VIP6专属 香港 QAT - Accelerate 01
+      - 中国-澳大利亚 IPLC 悉尼 D02
+      - 中国-韩国 IPLC D05 Netflix
+      - 韩国 전라북도 전주시 商宽 D 03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 08
+      - 中国-法国 IPLC D03
+      - 中国-韩国 IPLC D04 Netflix
+      - 韩国 전라북도 전주시 商宽 D 02
+      - 中国-加拿大 IPLC D05
+      - 中国-印度 马哈拉施特拉 IPLC D12
+      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 13
+      - VIP6专属 香港 QAT - Accelerate 09
+      - 中国-加拿大 IPLC D04
+      - 中国-印度 马哈拉施特拉 IPLC D09
+      - 中国-印度 马哈拉施特拉 IPLC D10
+      - 中国-澳大利亚 IPLC 悉尼 D01
+      - 中国-爱尔兰 IPLC D05
+      - 韩国 전라북도 전주시 商宽 D 06
+      - VIP6专属 香港 QAT - Accelerate 02
+      - VIP6专属 香港 QAT - Accelerate 10
+      - 中国-印度 马哈拉施特拉 IPLC D06
+      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D07
+      - 中国-澳大利亚 IPLC 悉尼 D03
+      - 韩国 전라북도 전주시 商宽 D 04
+      - 中国-印度 马哈拉施特拉 IPLC D11
+      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 12
+      - 中国-印度 马哈拉施特拉 IPLC D05
+      - 中国-法国 IPLC D04
+      - 中国-韩国 IPLC D07 Netflix
+      - VIP6专属 香港 QAT - Accelerate 06
+      - VIP6专属 香港 QAT - Accelerate 08
+      - 中国-印度 马哈拉施特拉 IPLC D01
+      - 中国-加拿大 IPLC D02
+      - 中国-法国 IPLC D01
+      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
+      - VIP6专属 香港 QAT - Accelerate 04
+      - 中国-印度 马哈拉施特拉 IPLC D04
+      - 中国-香港 IPLC Equinix HK2 D 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D04
+      - 中国-韩国 IPLC D10 Netflix
+      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
+      - 中国-韩国 IPLC D01 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D02
+      - 韩国 전라북도 전주시 商宽 D 01
+      - 中国-香港 IEPL Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC D02
+      - 中国-澳大利亚 IPLC 悉尼 D04
+      - 中国-香港 IEPL Equinix HK2 D 01 1Gbps HBO TVB
+      - 试用/续费 接入
+      - 中国-韩国 IPLC D03 Netflix
+      - 韩国 전라북도 전주시 商宽 D 11
+      - 中国-爱尔兰 IPLC D01
+      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
+      - VIP6专属 香港 QAT - Accelerate 07
+      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 04
+      - 中国-印度 马哈拉施特拉 IPLC D08
+      - 中国-台湾IEPL Hinet固接 D12
+      - 中国-台湾宜兰 IPLC D03
+      - 中国-台湾宜兰 IPLC D02
+      - 中国-台湾宜兰 IPLC D04
+      - 中国-台湾宜兰 IPLC D05
+      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
+      - 中国-印度 马哈拉施特拉 IPLC D03
+      - 中国-韩国 IPLC D06 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
+      - 日本 まつやまし auひかり ホーム1ギガ D 07
+      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D04 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
+      - 新加坡 Magic IEPL 中继 D03 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
+      - 新加坡 Legacy Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 中国-台湾IEPL Hinet固接 D08
+      - 日本 まつやまし auひかり ホーム1ギガ D 03
+      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
+      - 中国-英国伦敦电信 IEPL D6
+      - 新加坡高级 IEPL 中继 D02 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 01
+      - 新加坡 Legacy Magic IEPL 中继 D03 Netflix
+      - 中国-英国伦敦电信 IEPL D2
+      - 中国-英国伦敦电信 IEPL D3
+      - 中国-英国伦敦电信 IEPL D4
+      - "俄罗斯 01\t"
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 中国-台湾宜兰 IPLC D07
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 日本 まつやまし auひかり ホーム1ギガ D 10
+      - 新加坡 Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 02
+      - 日本 まつやまし auひかり ホーム1ギガ D 09
+      - 新加坡高级 IEPL 中继 D01 Netflix
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 中国-日本 多协议标签交换虚拟专用网 D6 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 08
+      - 中国-英国伦敦电信 IEPL D1
+      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
+      - 新加坡 Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 中国-澳大利亚 IPLC 悉尼 D05
+      - 精简 31
+      - 中国-台湾宜兰 IPLC D08
+      - 精简 34
+      - 精简 32
+      - 巴西
+      - 精简 36
+      - 中国-台湾IEPL Hinet固接 D09
+      - 中国-台湾IEPL Hinet固接  D04
+      - 中国-韩国 IPLC D08 Netflix
+      - 精简 37
+      - 精简 38
+      - 中国-法国 IPLC D02
+      - 日本 まつやまし auひかり ホーム1ギガ D 06
+      - 新加坡 Magic IEPL 中继 D01 Netflix
+      - 土耳其
+      - 新加坡 Magic IEPL 中继 D04 Netflix
+      - 中国-台湾宜兰 IPLC D06
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 中国-台湾IEPL Hinet固接  D02
+      - 中国-台湾IEPL Hinet固接  D06
+      - 精简 35
+      - 香港 油尖旺御金·国峯 網上行寬頻 D01
+      - 中国-法国 IPLC D05
+      - 美国实验性 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D04
+      - 美国高级 IEPL 中继 D02
+      - 美国实验性 IEPL 中继 D03
+      - 美国高级 IEPL 中继 D01
+      - 美国高级 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D03
+      - 美国实验性 IEPL 中继 D01
+      - 精简 39
+      - 精简 33
+      - 中国-台湾IEPL Hinet固接  D05
+      - 美国实验性 IEPL 中继 D02
+      - 中国-台湾IEPL Hinet固接 D10
+      - 中国-台湾宜兰 IPLC D10
+      - 美国实验性 IEPL 中继 D04
+      - VIP6专属 香港 QAT - Accelerate 03
+      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-台湾IEPL Hinet固接  D01
+      - 中国-台湾宜兰 IPLC D09
+      - 阿根廷
+      - 中国-台湾IEPL Hinet固接  D03
+      - 中国-加拿大 IPLC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 05
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨泰国丨北京- HK隧道-泰国丨2丨萨瓦迪卡
-      - v1丨日本丨中继丨东京丨2丨1Gbps
-      - v1丨台湾丨原生丨中台中继丨
-      - v1丨新加坡丨 私人订制
-      - v1丨香港丨AZ丨2丨北京—香港
-      - v1丨印度丨北京- HK隧道-印度丨中转丨2
-      - v1丨台湾三网丨联通中继
-      - v1丨香港丨高速丨联通免流丨V2ray
-      - v1丨香港丨沪港中继丨HKT
-      - v1丨越南丨京港中继丨Trojan
-      - v1丨台湾丨原生丨静态
-      - v1丨香港丨直连 1Gbps
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨香港丨微软丨1丨北京—香港丨
-      - v1丨美国丨原生丨三网优化丨广移中继
-      - v1丨韩国丨微软丨北京-韩国丨2丨1Gbps
-      - v1丨英国丨专线-上海丨
-      - v1丨美国丨隧道中转丨解锁流媒体1
+      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D05
+      - 中国-爱尔兰 IPLC D03
+      - 韩国 전라북도 전주시 商宽 D 07
+      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D03
+      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 10
+      - 中国-加拿大 IPLC D03
+      - 中国-韩国 IPLC D02 Netflix
+      - 中国-韩国 IPLC D09 Netflix
+      - 韩国 전라북도 전주시 商宽 D 05
+      - 韩国 전라북도 전주시 商宽 D 09
+      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - VIP6专属 香港 QAT - Accelerate 01
+      - 中国-澳大利亚 IPLC 悉尼 D02
+      - 中国-韩国 IPLC D05 Netflix
+      - 韩国 전라북도 전주시 商宽 D 03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 08
+      - 中国-法国 IPLC D03
+      - 中国-韩国 IPLC D04 Netflix
+      - 韩国 전라북도 전주시 商宽 D 02
+      - 中国-加拿大 IPLC D05
+      - 中国-印度 马哈拉施特拉 IPLC D12
+      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 13
+      - VIP6专属 香港 QAT - Accelerate 09
+      - 中国-加拿大 IPLC D04
+      - 中国-印度 马哈拉施特拉 IPLC D09
+      - 中国-印度 马哈拉施特拉 IPLC D10
+      - 中国-澳大利亚 IPLC 悉尼 D01
+      - 中国-爱尔兰 IPLC D05
+      - 韩国 전라북도 전주시 商宽 D 06
+      - VIP6专属 香港 QAT - Accelerate 02
+      - VIP6专属 香港 QAT - Accelerate 10
+      - 中国-印度 马哈拉施特拉 IPLC D06
+      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D07
+      - 中国-澳大利亚 IPLC 悉尼 D03
+      - 韩国 전라북도 전주시 商宽 D 04
+      - 中国-印度 马哈拉施特拉 IPLC D11
+      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 12
+      - 中国-印度 马哈拉施特拉 IPLC D05
+      - 中国-法国 IPLC D04
+      - 中国-韩国 IPLC D07 Netflix
+      - VIP6专属 香港 QAT - Accelerate 06
+      - VIP6专属 香港 QAT - Accelerate 08
+      - 中国-印度 马哈拉施特拉 IPLC D01
+      - 中国-加拿大 IPLC D02
+      - 中国-法国 IPLC D01
+      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
+      - VIP6专属 香港 QAT - Accelerate 04
+      - 中国-印度 马哈拉施特拉 IPLC D04
+      - 中国-香港 IPLC Equinix HK2 D 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D04
+      - 中国-韩国 IPLC D10 Netflix
+      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
+      - 中国-韩国 IPLC D01 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D02
+      - 韩国 전라북도 전주시 商宽 D 01
+      - 中国-香港 IEPL Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC D02
+      - 中国-澳大利亚 IPLC 悉尼 D04
+      - 中国-香港 IEPL Equinix HK2 D 01 1Gbps HBO TVB
+      - 试用/续费 接入
+      - 中国-韩国 IPLC D03 Netflix
+      - 韩国 전라북도 전주시 商宽 D 11
+      - 中国-爱尔兰 IPLC D01
+      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
+      - VIP6专属 香港 QAT - Accelerate 07
+      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 04
+      - 中国-印度 马哈拉施特拉 IPLC D08
+      - 中国-台湾IEPL Hinet固接 D12
+      - 中国-台湾宜兰 IPLC D03
+      - 中国-台湾宜兰 IPLC D02
+      - 中国-台湾宜兰 IPLC D04
+      - 中国-台湾宜兰 IPLC D05
+      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
+      - 中国-印度 马哈拉施特拉 IPLC D03
+      - 中国-韩国 IPLC D06 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
+      - 日本 まつやまし auひかり ホーム1ギガ D 07
+      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D04 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
+      - 新加坡 Magic IEPL 中继 D03 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
+      - 新加坡 Legacy Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 中国-台湾IEPL Hinet固接 D08
+      - 日本 まつやまし auひかり ホーム1ギガ D 03
+      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
+      - 中国-英国伦敦电信 IEPL D6
+      - 新加坡高级 IEPL 中继 D02 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 01
+      - 新加坡 Legacy Magic IEPL 中继 D03 Netflix
+      - 中国-英国伦敦电信 IEPL D2
+      - 中国-英国伦敦电信 IEPL D3
+      - 中国-英国伦敦电信 IEPL D4
+      - "俄罗斯 01\t"
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 中国-台湾宜兰 IPLC D07
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 日本 まつやまし auひかり ホーム1ギガ D 10
+      - 新加坡 Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 02
+      - 日本 まつやまし auひかり ホーム1ギガ D 09
+      - 新加坡高级 IEPL 中继 D01 Netflix
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 中国-日本 多协议标签交换虚拟专用网 D6 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 08
+      - 中国-英国伦敦电信 IEPL D1
+      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
+      - 新加坡 Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 中国-澳大利亚 IPLC 悉尼 D05
+      - 精简 31
+      - 中国-台湾宜兰 IPLC D08
+      - 精简 34
+      - 精简 32
+      - 巴西
+      - 精简 36
+      - 中国-台湾IEPL Hinet固接 D09
+      - 中国-台湾IEPL Hinet固接  D04
+      - 中国-韩国 IPLC D08 Netflix
+      - 精简 37
+      - 精简 38
+      - 中国-法国 IPLC D02
+      - 日本 まつやまし auひかり ホーム1ギガ D 06
+      - 新加坡 Magic IEPL 中继 D01 Netflix
+      - 土耳其
+      - 新加坡 Magic IEPL 中继 D04 Netflix
+      - 中国-台湾宜兰 IPLC D06
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 中国-台湾IEPL Hinet固接  D02
+      - 中国-台湾IEPL Hinet固接  D06
+      - 精简 35
+      - 香港 油尖旺御金·国峯 網上行寬頻 D01
+      - 中国-法国 IPLC D05
+      - 美国实验性 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D04
+      - 美国高级 IEPL 中继 D02
+      - 美国实验性 IEPL 中继 D03
+      - 美国高级 IEPL 中继 D01
+      - 美国高级 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D03
+      - 美国实验性 IEPL 中继 D01
+      - 精简 39
+      - 精简 33
+      - 中国-台湾IEPL Hinet固接  D05
+      - 美国实验性 IEPL 中继 D02
+      - 中国-台湾IEPL Hinet固接 D10
+      - 中国-台湾宜兰 IPLC D10
+      - 美国实验性 IEPL 中继 D04
+      - VIP6专属 香港 QAT - Accelerate 03
+      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-台湾IEPL Hinet固接  D01
+      - 中国-台湾宜兰 IPLC D09
+      - 阿根廷
+      - 中国-台湾IEPL Hinet固接  D03
+      - 中国-加拿大 IPLC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 05
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨泰国丨北京- HK隧道-泰国丨2丨萨瓦迪卡
-      - v1丨日本丨中继丨东京丨2丨1Gbps
-      - v1丨台湾丨原生丨中台中继丨
-      - v1丨新加坡丨 私人订制
-      - v1丨香港丨AZ丨2丨北京—香港
-      - v1丨印度丨北京- HK隧道-印度丨中转丨2
-      - v1丨台湾三网丨联通中继
-      - v1丨香港丨高速丨联通免流丨V2ray
-      - v1丨香港丨沪港中继丨HKT
-      - v1丨越南丨京港中继丨Trojan
-      - v1丨台湾丨原生丨静态
-      - v1丨香港丨直连 1Gbps
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨香港丨微软丨1丨北京—香港丨
-      - v1丨美国丨原生丨三网优化丨广移中继
-      - v1丨韩国丨微软丨北京-韩国丨2丨1Gbps
-      - v1丨英国丨专线-上海丨
-      - v1丨美国丨隧道中转丨解锁流媒体1
+      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D05
+      - 中国-爱尔兰 IPLC D03
+      - 韩国 전라북도 전주시 商宽 D 07
+      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D03
+      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 10
+      - 中国-加拿大 IPLC D03
+      - 中国-韩国 IPLC D02 Netflix
+      - 中国-韩国 IPLC D09 Netflix
+      - 韩国 전라북도 전주시 商宽 D 05
+      - 韩国 전라북도 전주시 商宽 D 09
+      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - VIP6专属 香港 QAT - Accelerate 01
+      - 中国-澳大利亚 IPLC 悉尼 D02
+      - 中国-韩国 IPLC D05 Netflix
+      - 韩国 전라북도 전주시 商宽 D 03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 08
+      - 中国-法国 IPLC D03
+      - 中国-韩国 IPLC D04 Netflix
+      - 韩国 전라북도 전주시 商宽 D 02
+      - 中国-加拿大 IPLC D05
+      - 中国-印度 马哈拉施特拉 IPLC D12
+      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 13
+      - VIP6专属 香港 QAT - Accelerate 09
+      - 中国-加拿大 IPLC D04
+      - 中国-印度 马哈拉施特拉 IPLC D09
+      - 中国-印度 马哈拉施特拉 IPLC D10
+      - 中国-澳大利亚 IPLC 悉尼 D01
+      - 中国-爱尔兰 IPLC D05
+      - 韩国 전라북도 전주시 商宽 D 06
+      - VIP6专属 香港 QAT - Accelerate 02
+      - VIP6专属 香港 QAT - Accelerate 10
+      - 中国-印度 马哈拉施特拉 IPLC D06
+      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D07
+      - 中国-澳大利亚 IPLC 悉尼 D03
+      - 韩国 전라북도 전주시 商宽 D 04
+      - 中国-印度 马哈拉施特拉 IPLC D11
+      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 12
+      - 中国-印度 马哈拉施特拉 IPLC D05
+      - 中国-法国 IPLC D04
+      - 中国-韩国 IPLC D07 Netflix
+      - VIP6专属 香港 QAT - Accelerate 06
+      - VIP6专属 香港 QAT - Accelerate 08
+      - 中国-印度 马哈拉施特拉 IPLC D01
+      - 中国-加拿大 IPLC D02
+      - 中国-法国 IPLC D01
+      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
+      - VIP6专属 香港 QAT - Accelerate 04
+      - 中国-印度 马哈拉施特拉 IPLC D04
+      - 中国-香港 IPLC Equinix HK2 D 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D04
+      - 中国-韩国 IPLC D10 Netflix
+      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
+      - 中国-韩国 IPLC D01 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D02
+      - 韩国 전라북도 전주시 商宽 D 01
+      - 中国-香港 IEPL Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC D02
+      - 中国-澳大利亚 IPLC 悉尼 D04
+      - 中国-香港 IEPL Equinix HK2 D 01 1Gbps HBO TVB
+      - 试用/续费 接入
+      - 中国-韩国 IPLC D03 Netflix
+      - 韩国 전라북도 전주시 商宽 D 11
+      - 中国-爱尔兰 IPLC D01
+      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
+      - VIP6专属 香港 QAT - Accelerate 07
+      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 04
+      - 中国-印度 马哈拉施特拉 IPLC D08
+      - 中国-台湾IEPL Hinet固接 D12
+      - 中国-台湾宜兰 IPLC D03
+      - 中国-台湾宜兰 IPLC D02
+      - 中国-台湾宜兰 IPLC D04
+      - 中国-台湾宜兰 IPLC D05
+      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
+      - 中国-印度 马哈拉施特拉 IPLC D03
+      - 中国-韩国 IPLC D06 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
+      - 日本 まつやまし auひかり ホーム1ギガ D 07
+      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D04 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
+      - 新加坡 Magic IEPL 中继 D03 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
+      - 新加坡 Legacy Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 中国-台湾IEPL Hinet固接 D08
+      - 日本 まつやまし auひかり ホーム1ギガ D 03
+      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
+      - 中国-英国伦敦电信 IEPL D6
+      - 新加坡高级 IEPL 中继 D02 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 01
+      - 新加坡 Legacy Magic IEPL 中继 D03 Netflix
+      - 中国-英国伦敦电信 IEPL D2
+      - 中国-英国伦敦电信 IEPL D3
+      - 中国-英国伦敦电信 IEPL D4
+      - "俄罗斯 01\t"
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 中国-台湾宜兰 IPLC D07
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 日本 まつやまし auひかり ホーム1ギガ D 10
+      - 新加坡 Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 02
+      - 日本 まつやまし auひかり ホーム1ギガ D 09
+      - 新加坡高级 IEPL 中继 D01 Netflix
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 中国-日本 多协议标签交换虚拟专用网 D6 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 08
+      - 中国-英国伦敦电信 IEPL D1
+      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
+      - 新加坡 Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 中国-澳大利亚 IPLC 悉尼 D05
+      - 精简 31
+      - 中国-台湾宜兰 IPLC D08
+      - 精简 34
+      - 精简 32
+      - 巴西
+      - 精简 36
+      - 中国-台湾IEPL Hinet固接 D09
+      - 中国-台湾IEPL Hinet固接  D04
+      - 中国-韩国 IPLC D08 Netflix
+      - 精简 37
+      - 精简 38
+      - 中国-法国 IPLC D02
+      - 日本 まつやまし auひかり ホーム1ギガ D 06
+      - 新加坡 Magic IEPL 中继 D01 Netflix
+      - 土耳其
+      - 新加坡 Magic IEPL 中继 D04 Netflix
+      - 中国-台湾宜兰 IPLC D06
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 中国-台湾IEPL Hinet固接  D02
+      - 中国-台湾IEPL Hinet固接  D06
+      - 精简 35
+      - 香港 油尖旺御金·国峯 網上行寬頻 D01
+      - 中国-法国 IPLC D05
+      - 美国实验性 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D04
+      - 美国高级 IEPL 中继 D02
+      - 美国实验性 IEPL 中继 D03
+      - 美国高级 IEPL 中继 D01
+      - 美国高级 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D03
+      - 美国实验性 IEPL 中继 D01
+      - 精简 39
+      - 精简 33
+      - 中国-台湾IEPL Hinet固接  D05
+      - 美国实验性 IEPL 中继 D02
+      - 中国-台湾IEPL Hinet固接 D10
+      - 中国-台湾宜兰 IPLC D10
+      - 美国实验性 IEPL 中继 D04
+      - VIP6专属 香港 QAT - Accelerate 03
+      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-台湾IEPL Hinet固接  D01
+      - 中国-台湾宜兰 IPLC D09
+      - 阿根廷
+      - 中国-台湾IEPL Hinet固接  D03
+      - 中国-加拿大 IPLC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 05
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -237,25 +1549,183 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v1丨新加坡丨中继丨HK隧道
-      - v1丨泰国丨北京- HK隧道-泰国丨2丨萨瓦迪卡
-      - v1丨日本丨中继丨东京丨2丨1Gbps
-      - v1丨台湾丨原生丨中台中继丨
-      - v1丨新加坡丨 私人订制
-      - v1丨香港丨AZ丨2丨北京—香港
-      - v1丨印度丨北京- HK隧道-印度丨中转丨2
-      - v1丨台湾三网丨联通中继
-      - v1丨香港丨高速丨联通免流丨V2ray
-      - v1丨香港丨沪港中继丨HKT
-      - v1丨越南丨京港中继丨Trojan
-      - v1丨台湾丨原生丨静态
-      - v1丨香港丨直连 1Gbps
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨香港丨微软丨1丨北京—香港丨
-      - v1丨美国丨原生丨三网优化丨广移中继
-      - v1丨韩国丨微软丨北京-韩国丨2丨1Gbps
-      - v1丨英国丨专线-上海丨
-      - v1丨美国丨隧道中转丨解锁流媒体1
+      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D05
+      - 中国-爱尔兰 IPLC D03
+      - 韩国 전라북도 전주시 商宽 D 07
+      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D03
+      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 10
+      - 中国-加拿大 IPLC D03
+      - 中国-韩国 IPLC D02 Netflix
+      - 中国-韩国 IPLC D09 Netflix
+      - 韩国 전라북도 전주시 商宽 D 05
+      - 韩国 전라북도 전주시 商宽 D 09
+      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - VIP6专属 香港 QAT - Accelerate 01
+      - 中国-澳大利亚 IPLC 悉尼 D02
+      - 中国-韩国 IPLC D05 Netflix
+      - 韩国 전라북도 전주시 商宽 D 03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 08
+      - 中国-法国 IPLC D03
+      - 中国-韩国 IPLC D04 Netflix
+      - 韩国 전라북도 전주시 商宽 D 02
+      - 中国-加拿大 IPLC D05
+      - 中国-印度 马哈拉施特拉 IPLC D12
+      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 13
+      - VIP6专属 香港 QAT - Accelerate 09
+      - 中国-加拿大 IPLC D04
+      - 中国-印度 马哈拉施特拉 IPLC D09
+      - 中国-印度 马哈拉施特拉 IPLC D10
+      - 中国-澳大利亚 IPLC 悉尼 D01
+      - 中国-爱尔兰 IPLC D05
+      - 韩国 전라북도 전주시 商宽 D 06
+      - VIP6专属 香港 QAT - Accelerate 02
+      - VIP6专属 香港 QAT - Accelerate 10
+      - 中国-印度 马哈拉施特拉 IPLC D06
+      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D07
+      - 中国-澳大利亚 IPLC 悉尼 D03
+      - 韩国 전라북도 전주시 商宽 D 04
+      - 中国-印度 马哈拉施特拉 IPLC D11
+      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
+      - 韩国 전라북도 전주시 商宽 D 12
+      - 中国-印度 马哈拉施特拉 IPLC D05
+      - 中国-法国 IPLC D04
+      - 中国-韩国 IPLC D07 Netflix
+      - VIP6专属 香港 QAT - Accelerate 06
+      - VIP6专属 香港 QAT - Accelerate 08
+      - 中国-印度 马哈拉施特拉 IPLC D01
+      - 中国-加拿大 IPLC D02
+      - 中国-法国 IPLC D01
+      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
+      - VIP6专属 香港 QAT - Accelerate 04
+      - 中国-印度 马哈拉施特拉 IPLC D04
+      - 中国-香港 IPLC Equinix HK2 D 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 D 07 1Gbps HBO TVB
+      - 香港 油尖旺御金·国峯 網上行寬頻 D04
+      - 中国-韩国 IPLC D10 Netflix
+      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
+      - 中国-韩国 IPLC D01 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 10 1Gbps HBO TVB
+      - 中国-印度 马哈拉施特拉 IPLC D02
+      - 韩国 전라북도 전주시 商宽 D 01
+      - 中国-香港 IEPL Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC D02
+      - 中国-澳大利亚 IPLC 悉尼 D04
+      - 中国-香港 IEPL Equinix HK2 D 01 1Gbps HBO TVB
+      - 试用/续费 接入
+      - 中国-韩国 IPLC D03 Netflix
+      - 韩国 전라북도 전주시 商宽 D 11
+      - 中国-爱尔兰 IPLC D01
+      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
+      - VIP6专属 香港 QAT - Accelerate 07
+      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 04
+      - 中国-印度 马哈拉施特拉 IPLC D08
+      - 中国-台湾IEPL Hinet固接 D12
+      - 中国-台湾宜兰 IPLC D03
+      - 中国-台湾宜兰 IPLC D02
+      - 中国-台湾宜兰 IPLC D04
+      - 中国-台湾宜兰 IPLC D05
+      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
+      - 中国-印度 马哈拉施特拉 IPLC D03
+      - 中国-韩国 IPLC D06 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
+      - 日本 まつやまし auひかり ホーム1ギガ D 07
+      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D04 Netflix
+      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
+      - 新加坡 Magic IEPL 中继 D03 Netflix
+      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
+      - 新加坡 Legacy Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 中国-台湾IEPL Hinet固接 D08
+      - 日本 まつやまし auひかり ホーム1ギガ D 03
+      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
+      - 中国-英国伦敦电信 IEPL D6
+      - 新加坡高级 IEPL 中继 D02 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 01
+      - 新加坡 Legacy Magic IEPL 中继 D03 Netflix
+      - 中国-英国伦敦电信 IEPL D2
+      - 中国-英国伦敦电信 IEPL D3
+      - 中国-英国伦敦电信 IEPL D4
+      - "俄罗斯 01\t"
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 中国-台湾宜兰 IPLC D07
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 日本 まつやまし auひかり ホーム1ギガ D 10
+      - 新加坡 Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 02
+      - 日本 まつやまし auひかり ホーム1ギガ D 09
+      - 新加坡高级 IEPL 中继 D01 Netflix
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 中国-日本 多协议标签交换虚拟专用网 D6 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D05 Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ D 08
+      - 中国-英国伦敦电信 IEPL D1
+      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
+      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
+      - 新加坡 Magic IEPL 中继 D02 Netflix
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 中国-澳大利亚 IPLC 悉尼 D05
+      - 精简 31
+      - 中国-台湾宜兰 IPLC D08
+      - 精简 34
+      - 精简 32
+      - 巴西
+      - 精简 36
+      - 中国-台湾IEPL Hinet固接 D09
+      - 中国-台湾IEPL Hinet固接  D04
+      - 中国-韩国 IPLC D08 Netflix
+      - 精简 37
+      - 精简 38
+      - 中国-法国 IPLC D02
+      - 日本 まつやまし auひかり ホーム1ギガ D 06
+      - 新加坡 Magic IEPL 中继 D01 Netflix
+      - 土耳其
+      - 新加坡 Magic IEPL 中继 D04 Netflix
+      - 中国-台湾宜兰 IPLC D06
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 中国-台湾IEPL Hinet固接  D02
+      - 中国-台湾IEPL Hinet固接  D06
+      - 精简 35
+      - 香港 油尖旺御金·国峯 網上行寬頻 D01
+      - 中国-法国 IPLC D05
+      - 美国实验性 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D04
+      - 美国高级 IEPL 中继 D02
+      - 美国实验性 IEPL 中继 D03
+      - 美国高级 IEPL 中继 D01
+      - 美国高级 IEPL 中继 D05
+      - 美国高级 IEPL 中继 D03
+      - 美国实验性 IEPL 中继 D01
+      - 精简 39
+      - 精简 33
+      - 中国-台湾IEPL Hinet固接  D05
+      - 美国实验性 IEPL 中继 D02
+      - 中国-台湾IEPL Hinet固接 D10
+      - 中国-台湾宜兰 IPLC D10
+      - 美国实验性 IEPL 中继 D04
+      - VIP6专属 香港 QAT - Accelerate 03
+      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
+      - 中国-台湾IEPL Hinet固接  D01
+      - 中国-台湾宜兰 IPLC D09
+      - 阿根廷
+      - 中国-台湾IEPL Hinet固接  D03
+      - 中国-加拿大 IPLC D01
+      - 日本 まつやまし auひかり ホーム1ギガ D 05
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
