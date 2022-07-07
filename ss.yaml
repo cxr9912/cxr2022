@@ -5,39 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: aws|日本C|X1, server: 52.80.151.97, port: 50024, type: ss, cipher: aes-128-gcm, password: 3a3b0878-2306-4930-9aba-ee411441d9f8, udp: true}
-  - {name: aws|新加坡B|X1, server: 52.80.151.97, port: 50026, type: ss, cipher: aes-128-gcm, password: 3a3b0878-2306-4930-9aba-ee411441d9f8, udp: true}
+  - {name: aws|新加坡B|X1, server: 52.80.151.97, port: 24027, type: ss, cipher: aes-128-gcm, password: 065804dc-ed8a-4dd7-8e6e-3a57c88f9aa7, udp: true}
+  - {name: aws|西雅图B|X1, server: 52.80.151.97, port: 29918, type: ss, cipher: aes-128-gcm, password: 065804dc-ed8a-4dd7-8e6e-3a57c88f9aa7, udp: true}
   - {name: 沪日|西雅图B|X1, server: 52.80.151.97, port: 50032, type: ss, cipher: aes-128-gcm, password: 3a3b0878-2306-4930-9aba-ee411441d9f8, udp: true}
   - {name: 香港|TG专用, server: 161.117.231.89, port: 443, type: vmess, uuid: 3a3b0878-2306-4930-9aba-ee411441d9f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hk.pengui.xyz, ws-headers: {Host: hk.pengui.xyz}, udp: true}
+  - {name: 香港|TG专用 2, server: 161.117.231.89, port: 443, type: vmess, uuid: 065804dc-ed8a-4dd7-8e6e-3a57c88f9aa7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hk.pengui.xyz, ws-headers: {Host: hk.pengui.xyz}, udp: true}
+  - {name: 日本|移动专用, server: 172.64.157.139, port: 443, type: vmess, uuid: 065804dc-ed8a-4dd7-8e6e-3a57c88f9aa7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /azjp.pengui.xyz, ws-headers: {Host: azjp.pengui.xyz}, udp: true}
+  - {name: 香港|移动专用, server: 172.64.157.139, port: 443, type: vmess, uuid: 065804dc-ed8a-4dd7-8e6e-3a57c88f9aa7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hk.pengui.xyz, ws-headers: {Host: hk.pengui.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - aws|日本C|X1
       - aws|新加坡B|X1
+      - aws|西雅图B|X1
       - 沪日|西雅图B|X1
       - 香港|TG专用
+      - 香港|TG专用 2
+      - 日本|移动专用
+      - 香港|移动专用
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - aws|日本C|X1
       - aws|新加坡B|X1
+      - aws|西雅图B|X1
       - 沪日|西雅图B|X1
       - 香港|TG专用
+      - 香港|TG专用 2
+      - 日本|移动专用
+      - 香港|移动专用
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - aws|日本C|X1
       - aws|新加坡B|X1
+      - aws|西雅图B|X1
       - 沪日|西雅图B|X1
       - 香港|TG专用
+      - 香港|TG专用 2
+      - 日本|移动专用
+      - 香港|移动专用
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,44 +68,58 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - aws|日本C|X1
       - aws|新加坡B|X1
+      - aws|西雅图B|X1
       - 沪日|西雅图B|X1
       - 香港|TG专用
+      - 香港|TG专用 2
+      - 日本|移动专用
+      - 香港|移动专用
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港|TG专用
+      - 香港|TG专用 2
+      - 香港|移动专用
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - aws|日本C|X1
       - aws|新加坡B|X1
+      - aws|西雅图B|X1
       - 沪日|西雅图B|X1
       - 香港|TG专用
+      - 香港|TG专用 2
+      - 日本|移动专用
+      - 香港|移动专用
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - aws|日本C|X1
       - aws|新加坡B|X1
+      - aws|西雅图B|X1
       - 沪日|西雅图B|X1
       - 香港|TG专用
+      - 香港|TG专用 2
+      - 日本|移动专用
+      - 香港|移动专用
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - aws|日本C|X1
       - aws|新加坡B|X1
+      - aws|西雅图B|X1
       - 沪日|西雅图B|X1
       - 香港|TG专用
+      - 香港|TG专用 2
+      - 日本|移动专用
+      - 香港|移动专用
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -109,10 +135,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - aws|日本C|X1
       - aws|新加坡B|X1
+      - aws|西雅图B|X1
       - 沪日|西雅图B|X1
       - 香港|TG专用
+      - 香港|TG专用 2
+      - 日本|移动专用
+      - 香港|移动专用
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
