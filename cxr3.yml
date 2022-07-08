@@ -5,35 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 距离下次重置剩余：20 天, server: 103.173.155.72, port: 38000, type: trojan, password: 6711c6cf-847a-4177-b059-55f519b09de4, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_4, server: gzyd1.52147.top, port: 20020, type: trojan, password: 62de567b-6b72-4b8f-bc2b-c2d0d492adca, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 日本_TG@nodesharing_5, server: 194.156.231.223, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 香港_TG@nodesharing_11, server: 73hk02.ok365.cyou, port: 443, type: trojan, password: 89687f0a-bf3e-4a86-8a77-0f82d525db2d, sni: 73hk02.ok365.cyou, skip-cert-verify: true, udp: true}
   - {name: 香港HKT, server: hkt.52147.top, port: 38000, type: trojan, password: 6711c6cf-847a-4177-b059-55f519b09de4, sni: hkt.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 美国圣何塞-1号, server: 45.88.148.234, port: 38000, type: trojan, password: 6711c6cf-847a-4177-b059-55f519b09de4, skip-cert-verify: true, udp: true}
+  - {name: 日本_TG@nodesharing_87, server: 194.156.231.223, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 美国_TG@nodesharing_1, server: 20.24.225.195, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: TG@nodesharing_67, server: 103.186.187.52, port: 28443, type: trojan, password: 62de567b-6b72-4b8f-bc2b-c2d0d492adca, skip-cert-verify: true, udp: true}
+  - {name: 距离下次重置剩余：20 天, server: 103.173.155.72, port: 38000, type: trojan, password: 6711c6cf-847a-4177-b059-55f519b09de4, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_9, server: gzyd1.52147.top, port: 20140, type: trojan, password: 62de567b-6b72-4b8f-bc2b-c2d0d492adca, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾_TG@nodesharing_69, server: hinet.52147.top, port: 28000, type: trojan, password: f5f239fc-d21a-45ba-aeaf-b137d7d730a6, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_5
+      - 香港_TG@nodesharing_11
       - 香港HKT
-      - 美国圣何塞-1号
+      - 日本_TG@nodesharing_87
+      - 美国_TG@nodesharing_1
+      - TG@nodesharing_67
+      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_9
+      - 台湾_TG@nodesharing_69
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_5
+      - 香港_TG@nodesharing_11
       - 香港HKT
-      - 美国圣何塞-1号
+      - 日本_TG@nodesharing_87
+      - 美国_TG@nodesharing_1
+      - TG@nodesharing_67
+      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_9
+      - 台湾_TG@nodesharing_69
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_5
+      - 香港_TG@nodesharing_11
       - 香港HKT
-      - 美国圣何塞-1号
+      - 日本_TG@nodesharing_87
+      - 美国_TG@nodesharing_1
+      - TG@nodesharing_67
+      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_9
+      - 台湾_TG@nodesharing_69
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,40 +80,70 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_5
+      - 香港_TG@nodesharing_11
       - 香港HKT
-      - 美国圣何塞-1号
+      - 日本_TG@nodesharing_87
+      - 美国_TG@nodesharing_1
+      - TG@nodesharing_67
+      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_9
+      - 台湾_TG@nodesharing_69
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港_TG@nodesharing_11
       - 香港HKT
+      - 台湾_TG@nodesharing_69
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_5
+      - 香港_TG@nodesharing_11
       - 香港HKT
-      - 美国圣何塞-1号
+      - 日本_TG@nodesharing_87
+      - 美国_TG@nodesharing_1
+      - TG@nodesharing_67
+      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_9
+      - 台湾_TG@nodesharing_69
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_5
+      - 香港_TG@nodesharing_11
       - 香港HKT
-      - 美国圣何塞-1号
+      - 日本_TG@nodesharing_87
+      - 美国_TG@nodesharing_1
+      - TG@nodesharing_67
+      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_9
+      - 台湾_TG@nodesharing_69
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_5
+      - 香港_TG@nodesharing_11
       - 香港HKT
-      - 美国圣何塞-1号
+      - 日本_TG@nodesharing_87
+      - 美国_TG@nodesharing_1
+      - TG@nodesharing_67
+      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_9
+      - 台湾_TG@nodesharing_69
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -101,9 +159,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_5
+      - 香港_TG@nodesharing_11
       - 香港HKT
-      - 美国圣何塞-1号
+      - 日本_TG@nodesharing_87
+      - 美国_TG@nodesharing_1
+      - TG@nodesharing_67
+      - 距离下次重置剩余：20 天
+      - 中国_TG@nodesharing_9
+      - 台湾_TG@nodesharing_69
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
