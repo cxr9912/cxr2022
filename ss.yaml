@@ -5,51 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: aws|新加坡B|X1, server: 52.80.151.97, port: 24027, type: ss, cipher: aes-128-gcm, password: 065804dc-ed8a-4dd7-8e6e-3a57c88f9aa7, udp: true}
-  - {name: aws|西雅图B|X1, server: 52.80.151.97, port: 29918, type: ss, cipher: aes-128-gcm, password: 065804dc-ed8a-4dd7-8e6e-3a57c88f9aa7, udp: true}
-  - {name: 沪日|西雅图B|X1, server: 52.80.151.97, port: 50032, type: ss, cipher: aes-128-gcm, password: 3a3b0878-2306-4930-9aba-ee411441d9f8, udp: true}
-  - {name: 香港|TG专用, server: 161.117.231.89, port: 443, type: vmess, uuid: 3a3b0878-2306-4930-9aba-ee411441d9f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hk.pengui.xyz, ws-headers: {Host: hk.pengui.xyz}, udp: true}
-  - {name: 香港|TG专用 2, server: 161.117.231.89, port: 443, type: vmess, uuid: 065804dc-ed8a-4dd7-8e6e-3a57c88f9aa7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hk.pengui.xyz, ws-headers: {Host: hk.pengui.xyz}, udp: true}
-  - {name: 日本|移动专用, server: 172.64.157.139, port: 443, type: vmess, uuid: 065804dc-ed8a-4dd7-8e6e-3a57c88f9aa7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /azjp.pengui.xyz, ws-headers: {Host: azjp.pengui.xyz}, udp: true}
-  - {name: 香港|移动专用, server: 172.64.157.139, port: 443, type: vmess, uuid: 065804dc-ed8a-4dd7-8e6e-3a57c88f9aa7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hk.pengui.xyz, ws-headers: {Host: hk.pengui.xyz}, udp: true}
+  - {name: "[大麦]-专线-HK-香港-9-2.0x-视频", server: bgphk9.vip.www.klrxyru.cn, port: 582, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: "[大麦]-专线-SGP-新加坡-2-2.0x-视频", server: relaysgp2.vip.www.klrxyru.cn, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: "[大麦]-专线-SGP-新加坡-1-2.0x-视频", server: relaysgp1.vip.www.klrxyru.cn, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: "[大麦]-专线-HK-香港-A-2.0x-视频", server: bgphka.vip.www.klrxyru.cn, port: 583, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: "[大麦]-专线-HK-香港-6-2.0x-视频", server: bgphk6.vip.www.klrxyru.cn, port: 579, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: "[大麦]-专线-HK-香港-8-2.0x-视频", server: bgphk8.vip.www.klrxyru.cn, port: 581, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: "[大麦]-专线-HK-香港-7-2.0x-视频", server: bgphk7.vip.www.klrxyru.cn, port: 580, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: ldehgk, server: bgphk1.vip.www.klrxyru.cn, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: "[大麦]-专线-HK-香港-2-2.0x-视频", server: bgphk2.vip.www.klrxyru.cn, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: "[大麦]-专线-HK-香港-3-2.0x-视频", server: bgphk3.vip.www.klrxyru.cn, port: 576, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: "[大麦]-专线-JP-日本-3-2.0x-视频", server: relayjp3.vip.www.klrxyru.cn, port: 1453, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: "[大麦]-专线-VN-越南-1-2.0x-视频", server: aiavnd1.vip.www.klrxyru.cn, port: 1611, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: 9, server: 20.24.225.195, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - aws|新加坡B|X1
-      - aws|西雅图B|X1
-      - 沪日|西雅图B|X1
-      - 香港|TG专用
-      - 香港|TG专用 2
-      - 日本|移动专用
-      - 香港|移动专用
+      - "[大麦]-专线-HK-香港-9-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-1-2.0x-视频"
+      - "[大麦]-专线-HK-香港-A-2.0x-视频"
+      - "[大麦]-专线-HK-香港-6-2.0x-视频"
+      - "[大麦]-专线-HK-香港-8-2.0x-视频"
+      - "[大麦]-专线-HK-香港-7-2.0x-视频"
+      - ldehgk
+      - "[大麦]-专线-HK-香港-2-2.0x-视频"
+      - "[大麦]-专线-HK-香港-3-2.0x-视频"
+      - "[大麦]-专线-JP-日本-3-2.0x-视频"
+      - "[大麦]-专线-VN-越南-1-2.0x-视频"
+      - 9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - aws|新加坡B|X1
-      - aws|西雅图B|X1
-      - 沪日|西雅图B|X1
-      - 香港|TG专用
-      - 香港|TG专用 2
-      - 日本|移动专用
-      - 香港|移动专用
+      - "[大麦]-专线-HK-香港-9-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-1-2.0x-视频"
+      - "[大麦]-专线-HK-香港-A-2.0x-视频"
+      - "[大麦]-专线-HK-香港-6-2.0x-视频"
+      - "[大麦]-专线-HK-香港-8-2.0x-视频"
+      - "[大麦]-专线-HK-香港-7-2.0x-视频"
+      - ldehgk
+      - "[大麦]-专线-HK-香港-2-2.0x-视频"
+      - "[大麦]-专线-HK-香港-3-2.0x-视频"
+      - "[大麦]-专线-JP-日本-3-2.0x-视频"
+      - "[大麦]-专线-VN-越南-1-2.0x-视频"
+      - 9
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - aws|新加坡B|X1
-      - aws|西雅图B|X1
-      - 沪日|西雅图B|X1
-      - 香港|TG专用
-      - 香港|TG专用 2
-      - 日本|移动专用
-      - 香港|移动专用
+      - "[大麦]-专线-HK-香港-9-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-1-2.0x-视频"
+      - "[大麦]-专线-HK-香港-A-2.0x-视频"
+      - "[大麦]-专线-HK-香港-6-2.0x-视频"
+      - "[大麦]-专线-HK-香港-8-2.0x-视频"
+      - "[大麦]-专线-HK-香港-7-2.0x-视频"
+      - ldehgk
+      - "[大麦]-专线-HK-香港-2-2.0x-视频"
+      - "[大麦]-专线-HK-香港-3-2.0x-视频"
+      - "[大麦]-专线-JP-日本-3-2.0x-视频"
+      - "[大麦]-专线-VN-越南-1-2.0x-视频"
+      - 9
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,58 +92,86 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - aws|新加坡B|X1
-      - aws|西雅图B|X1
-      - 沪日|西雅图B|X1
-      - 香港|TG专用
-      - 香港|TG专用 2
-      - 日本|移动专用
-      - 香港|移动专用
+      - "[大麦]-专线-HK-香港-9-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-1-2.0x-视频"
+      - "[大麦]-专线-HK-香港-A-2.0x-视频"
+      - "[大麦]-专线-HK-香港-6-2.0x-视频"
+      - "[大麦]-专线-HK-香港-8-2.0x-视频"
+      - "[大麦]-专线-HK-香港-7-2.0x-视频"
+      - ldehgk
+      - "[大麦]-专线-HK-香港-2-2.0x-视频"
+      - "[大麦]-专线-HK-香港-3-2.0x-视频"
+      - "[大麦]-专线-JP-日本-3-2.0x-视频"
+      - "[大麦]-专线-VN-越南-1-2.0x-视频"
+      - 9
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港|TG专用
-      - 香港|TG专用 2
-      - 香港|移动专用
+      - "[大麦]-专线-HK-香港-9-2.0x-视频"
+      - "[大麦]-专线-HK-香港-A-2.0x-视频"
+      - "[大麦]-专线-HK-香港-6-2.0x-视频"
+      - "[大麦]-专线-HK-香港-8-2.0x-视频"
+      - "[大麦]-专线-HK-香港-7-2.0x-视频"
+      - "[大麦]-专线-HK-香港-2-2.0x-视频"
+      - "[大麦]-专线-HK-香港-3-2.0x-视频"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - aws|新加坡B|X1
-      - aws|西雅图B|X1
-      - 沪日|西雅图B|X1
-      - 香港|TG专用
-      - 香港|TG专用 2
-      - 日本|移动专用
-      - 香港|移动专用
+      - "[大麦]-专线-HK-香港-9-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-1-2.0x-视频"
+      - "[大麦]-专线-HK-香港-A-2.0x-视频"
+      - "[大麦]-专线-HK-香港-6-2.0x-视频"
+      - "[大麦]-专线-HK-香港-8-2.0x-视频"
+      - "[大麦]-专线-HK-香港-7-2.0x-视频"
+      - ldehgk
+      - "[大麦]-专线-HK-香港-2-2.0x-视频"
+      - "[大麦]-专线-HK-香港-3-2.0x-视频"
+      - "[大麦]-专线-JP-日本-3-2.0x-视频"
+      - "[大麦]-专线-VN-越南-1-2.0x-视频"
+      - 9
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - aws|新加坡B|X1
-      - aws|西雅图B|X1
-      - 沪日|西雅图B|X1
-      - 香港|TG专用
-      - 香港|TG专用 2
-      - 日本|移动专用
-      - 香港|移动专用
+      - "[大麦]-专线-HK-香港-9-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-1-2.0x-视频"
+      - "[大麦]-专线-HK-香港-A-2.0x-视频"
+      - "[大麦]-专线-HK-香港-6-2.0x-视频"
+      - "[大麦]-专线-HK-香港-8-2.0x-视频"
+      - "[大麦]-专线-HK-香港-7-2.0x-视频"
+      - ldehgk
+      - "[大麦]-专线-HK-香港-2-2.0x-视频"
+      - "[大麦]-专线-HK-香港-3-2.0x-视频"
+      - "[大麦]-专线-JP-日本-3-2.0x-视频"
+      - "[大麦]-专线-VN-越南-1-2.0x-视频"
+      - 9
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - aws|新加坡B|X1
-      - aws|西雅图B|X1
-      - 沪日|西雅图B|X1
-      - 香港|TG专用
-      - 香港|TG专用 2
-      - 日本|移动专用
-      - 香港|移动专用
+      - "[大麦]-专线-HK-香港-9-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-1-2.0x-视频"
+      - "[大麦]-专线-HK-香港-A-2.0x-视频"
+      - "[大麦]-专线-HK-香港-6-2.0x-视频"
+      - "[大麦]-专线-HK-香港-8-2.0x-视频"
+      - "[大麦]-专线-HK-香港-7-2.0x-视频"
+      - ldehgk
+      - "[大麦]-专线-HK-香港-2-2.0x-视频"
+      - "[大麦]-专线-HK-香港-3-2.0x-视频"
+      - "[大麦]-专线-JP-日本-3-2.0x-视频"
+      - "[大麦]-专线-VN-越南-1-2.0x-视频"
+      - 9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -135,13 +187,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - aws|新加坡B|X1
-      - aws|西雅图B|X1
-      - 沪日|西雅图B|X1
-      - 香港|TG专用
-      - 香港|TG专用 2
-      - 日本|移动专用
-      - 香港|移动专用
+      - "[大麦]-专线-HK-香港-9-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-专线-SGP-新加坡-1-2.0x-视频"
+      - "[大麦]-专线-HK-香港-A-2.0x-视频"
+      - "[大麦]-专线-HK-香港-6-2.0x-视频"
+      - "[大麦]-专线-HK-香港-8-2.0x-视频"
+      - "[大麦]-专线-HK-香港-7-2.0x-视频"
+      - ldehgk
+      - "[大麦]-专线-HK-香港-2-2.0x-视频"
+      - "[大麦]-专线-HK-香港-3-2.0x-视频"
+      - "[大麦]-专线-JP-日本-3-2.0x-视频"
+      - "[大麦]-专线-VN-越南-1-2.0x-视频"
+      - 9
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
