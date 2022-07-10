@@ -5,95 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港商宽丨1x HK, server: activity.huawei.daanyht.com, port: 12405, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 7c0817db7e17.microsoft.com}, udp: true}
-  - {name: 香港 02丨1x HK, server: activity.huawei.daanyht.com, port: 12023, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 7c0817db7e17.microsoft.com}, udp: true}
-  - {name: 香港+11丨1x+HK, server: activity.huawei.daanyht.com, port: 12032, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 7c0817db7e17.microsoft.com}, udp: true}
-  - {name: 香港家宽 03丨1x HK, server: activity.huawei.daanyht.com, port: 13112, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 7c0817db7e17.microsoft.com}, udp: true}
-  - {name: 香港 08丨1x HK, server: activity.huawei.daanyht.com, port: 12029, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 7c0817db7e17.microsoft.com}, udp: true}
-  - {name: 台湾Hinet ～广州移动(中转) | 解锁流媒体, server: gzyd1.52147.top, port: 20020, type: trojan, password: a3da3376-881c-4f5a-93cd-e3289e853475, skip-cert-verify: true, udp: true}
-  - {name: 香港家宽 02丨1x HK, server: activity.huawei.daanyht.com, port: 13105, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 7c0817db7e17.microsoft.com}, udp: true}
-  - {name: 香港 10丨1x HK, server: activity.huawei.daanyht.com, port: 12031, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 7c0817db7e17.microsoft.com}, udp: true}
-  - {name: 香港 12丨1x HK, server: activity.huawei.daanyht.com, port: 12033, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 7c0817db7e17.microsoft.com}, udp: true}
-  - {name: 香港 04丨1x HK, server: activity.huawei.daanyht.com, port: 12025, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 7c0817db7e17.microsoft.com}, udp: true}
-  - {name: 香港 13丨1x HK, server: activity.huawei.daanyht.com, port: 12721, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 7c0817db7e17.microsoft.com}, udp: true}
-  - {name: 香港 14丨1x HK, server: activity.huawei.daanyht.com, port: 12722, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 7c0817db7e17.microsoft.com}, udp: true}
-  - {name: 香港+01丨1x+HK, server: activity.huawei.daanyht.com, port: 12022, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 7c0817db7e17.microsoft.com}, udp: true}
-  - {name: 香港 05丨1x HK, server: activity.huawei.daanyht.com, port: 12026, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 7c0817db7e17.microsoft.com}, udp: true}
   - {name: 日本NTT-广州移动2负载均衡 | 解锁流媒体, server: gzyd2.52147.top, port: 30130, type: trojan, password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3, skip-cert-verify: true, udp: true}
-  - {name: HKG HKBN 02 x1.0 Trojan測試性節點, server: 59.148.127.157, port: 12306, type: trojan, password: a997fd8e-59d7-47cf-afe8-2204bd286017, skip-cert-verify: true, udp: true}
-  - {name: HKG CM.B/01 x1.0, server: cmb.3sx.xyz, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
+  - {name: 台湾Hinet ～广州移动(中转) | 解锁流媒体, server: gzyd1.52147.top, port: 20020, type: trojan, password: a3da3376-881c-4f5a-93cd-e3289e853475, skip-cert-verify: true, udp: true}
   - {name: HKG CM.A/05 x1.0, server: 71.131.222.153, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
+  - {name: HKG CM.B/01 x1.0, server: cmb.3sx.xyz, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港商宽丨1x HK
-      - 香港 02丨1x HK
-      - 香港+11丨1x+HK
-      - 香港家宽 03丨1x HK
-      - 香港 08丨1x HK
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 香港家宽 02丨1x HK
-      - 香港 10丨1x HK
-      - 香港 12丨1x HK
-      - 香港 04丨1x HK
-      - 香港 13丨1x HK
-      - 香港 14丨1x HK
-      - 香港+01丨1x+HK
-      - 香港 05丨1x HK
       - 日本NTT-广州移动2负载均衡 | 解锁流媒体
-      - HKG HKBN 02 x1.0 Trojan測試性節點
-      - HKG CM.B/01 x1.0
+      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
       - HKG CM.A/05 x1.0
+      - HKG CM.B/01 x1.0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港商宽丨1x HK
-      - 香港 02丨1x HK
-      - 香港+11丨1x+HK
-      - 香港家宽 03丨1x HK
-      - 香港 08丨1x HK
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 香港家宽 02丨1x HK
-      - 香港 10丨1x HK
-      - 香港 12丨1x HK
-      - 香港 04丨1x HK
-      - 香港 13丨1x HK
-      - 香港 14丨1x HK
-      - 香港+01丨1x+HK
-      - 香港 05丨1x HK
       - 日本NTT-广州移动2负载均衡 | 解锁流媒体
-      - HKG HKBN 02 x1.0 Trojan測試性節點
-      - HKG CM.B/01 x1.0
+      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
       - HKG CM.A/05 x1.0
+      - HKG CM.B/01 x1.0
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港商宽丨1x HK
-      - 香港 02丨1x HK
-      - 香港+11丨1x+HK
-      - 香港家宽 03丨1x HK
-      - 香港 08丨1x HK
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 香港家宽 02丨1x HK
-      - 香港 10丨1x HK
-      - 香港 12丨1x HK
-      - 香港 04丨1x HK
-      - 香港 13丨1x HK
-      - 香港 14丨1x HK
-      - 香港+01丨1x+HK
-      - 香港 05丨1x HK
       - 日本NTT-广州移动2负载均衡 | 解锁流媒体
-      - HKG HKBN 02 x1.0 Trojan測試性節點
-      - HKG CM.B/01 x1.0
+      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
       - HKG CM.A/05 x1.0
+      - HKG CM.B/01 x1.0
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -112,114 +56,44 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港商宽丨1x HK
-      - 香港 02丨1x HK
-      - 香港+11丨1x+HK
-      - 香港家宽 03丨1x HK
-      - 香港 08丨1x HK
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 香港家宽 02丨1x HK
-      - 香港 10丨1x HK
-      - 香港 12丨1x HK
-      - 香港 04丨1x HK
-      - 香港 13丨1x HK
-      - 香港 14丨1x HK
-      - 香港+01丨1x+HK
-      - 香港 05丨1x HK
       - 日本NTT-广州移动2负载均衡 | 解锁流媒体
-      - HKG HKBN 02 x1.0 Trojan測試性節點
-      - HKG CM.B/01 x1.0
+      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
       - HKG CM.A/05 x1.0
+      - HKG CM.B/01 x1.0
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港商宽丨1x HK
-      - 香港 02丨1x HK
-      - 香港+11丨1x+HK
-      - 香港家宽 03丨1x HK
-      - 香港 08丨1x HK
       - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 香港家宽 02丨1x HK
-      - 香港 10丨1x HK
-      - 香港 12丨1x HK
-      - 香港 04丨1x HK
-      - 香港 13丨1x HK
-      - 香港 14丨1x HK
-      - 香港+01丨1x+HK
-      - 香港 05丨1x HK
-      - HKG HKBN 02 x1.0 Trojan測試性節點
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港商宽丨1x HK
-      - 香港 02丨1x HK
-      - 香港+11丨1x+HK
-      - 香港家宽 03丨1x HK
-      - 香港 08丨1x HK
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 香港家宽 02丨1x HK
-      - 香港 10丨1x HK
-      - 香港 12丨1x HK
-      - 香港 04丨1x HK
-      - 香港 13丨1x HK
-      - 香港 14丨1x HK
-      - 香港+01丨1x+HK
-      - 香港 05丨1x HK
       - 日本NTT-广州移动2负载均衡 | 解锁流媒体
-      - HKG HKBN 02 x1.0 Trojan測試性節點
-      - HKG CM.B/01 x1.0
+      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
       - HKG CM.A/05 x1.0
+      - HKG CM.B/01 x1.0
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港商宽丨1x HK
-      - 香港 02丨1x HK
-      - 香港+11丨1x+HK
-      - 香港家宽 03丨1x HK
-      - 香港 08丨1x HK
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 香港家宽 02丨1x HK
-      - 香港 10丨1x HK
-      - 香港 12丨1x HK
-      - 香港 04丨1x HK
-      - 香港 13丨1x HK
-      - 香港 14丨1x HK
-      - 香港+01丨1x+HK
-      - 香港 05丨1x HK
       - 日本NTT-广州移动2负载均衡 | 解锁流媒体
-      - HKG HKBN 02 x1.0 Trojan測試性節點
-      - HKG CM.B/01 x1.0
+      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
       - HKG CM.A/05 x1.0
+      - HKG CM.B/01 x1.0
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港商宽丨1x HK
-      - 香港 02丨1x HK
-      - 香港+11丨1x+HK
-      - 香港家宽 03丨1x HK
-      - 香港 08丨1x HK
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 香港家宽 02丨1x HK
-      - 香港 10丨1x HK
-      - 香港 12丨1x HK
-      - 香港 04丨1x HK
-      - 香港 13丨1x HK
-      - 香港 14丨1x HK
-      - 香港+01丨1x+HK
-      - 香港 05丨1x HK
       - 日本NTT-广州移动2负载均衡 | 解锁流媒体
-      - HKG HKBN 02 x1.0 Trojan測試性節點
-      - HKG CM.B/01 x1.0
+      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
       - HKG CM.A/05 x1.0
+      - HKG CM.B/01 x1.0
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -235,24 +109,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港商宽丨1x HK
-      - 香港 02丨1x HK
-      - 香港+11丨1x+HK
-      - 香港家宽 03丨1x HK
-      - 香港 08丨1x HK
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 香港家宽 02丨1x HK
-      - 香港 10丨1x HK
-      - 香港 12丨1x HK
-      - 香港 04丨1x HK
-      - 香港 13丨1x HK
-      - 香港 14丨1x HK
-      - 香港+01丨1x+HK
-      - 香港 05丨1x HK
       - 日本NTT-广州移动2负载均衡 | 解锁流媒体
-      - HKG HKBN 02 x1.0 Trojan測試性節點
-      - HKG CM.B/01 x1.0
+      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
       - HKG CM.A/05 x1.0
+      - HKG CM.B/01 x1.0
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
