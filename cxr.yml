@@ -5,91 +5,79 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 1｜openit.ml, server: aiasgp1.game.www.klrxyru.cn, port: 1520, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 9｜openit.ml, server: relaysgp2.vip.www.klrxyru.cn, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 29｜openit.ml, server: bgphk5.vip.www.klrxyru.cn, port: 578, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 22｜openit.ml, server: aiashar1.www.klrxyru.cn, port: 1651, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 16｜openit.ml, server: relayus2.vip.www.klrxyru.cn, port: 1402, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 36｜openit.ml, server: relaytr1.vip.www.klrxyru.cn, port: 1561, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 19｜openit.ml, server: aiaru1.www.klrxyru.cn, port: 1601, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 15｜openit.ml, server: relayus1.vip.www.klrxyru.cn, port: 1401, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: TW 1｜openit.ml, server: hinet.52147.top, port: 28443, type: trojan, password: 62de567b-6b72-4b8f-bc2b-c2d0d492adca, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CN 24｜openit.ml, server: bgphk3.vip.www.klrxyru.cn, port: 576, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 35｜openit.ml, server: cucsuk1.vip.www.klrxyru.cn, port: 1351, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 18｜openit.ml, server: aiade1.vip.www.klrxyru.cn, port: 1621, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 7｜openit.ml, server: aiaph1.www.klrxyru.cn, port: 1641, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 11｜openit.ml, server: qdcukr1.vip.www.klrxyru.cn, port: 1551, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: 8d83584393.wns.windows.com, udp: true}
-  - {name: CN 4｜openit.ml, server: relayjp1.vip.www.klrxyru.cn, port: 1451, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 25｜openit.ml, server: bgphk8.vip.www.klrxyru.cn, port: 581, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 37｜openit.ml, server: gzyd1.52147.top, port: 20020, type: trojan, password: 62de567b-6b72-4b8f-bc2b-c2d0d492adca, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_13, server: gzyd1.52147.top, port: 20020, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_9, server: gzyd2.52147.top, port: 20020, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_28, server: gzyd2.52147.top, port: 20120, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_86, server: gzyd2.52147.top, port: 20110, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_111, server: gzyd1.52147.top, port: 20110, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_49, server: gzyd1.52147.top, port: 20120, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_120, server: hnyd.52147.top, port: 20110, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_51, server: gzyd2.52147.top, port: 20170, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_32, server: hnyd.52147.top, port: 20120, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_17, server: hnyd.52147.top, port: 20020, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_59, server: gzyd1.52147.top, port: 20060, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾_TG@nodesharing_8, server: hinet.52147.top, port: 28443, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_68, server: 103.173.255.228, port: 28443, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_54, server: hnyd.52147.top, port: 20060, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 1｜openit.ml
-      - CN 9｜openit.ml
-      - CN 29｜openit.ml
-      - CN 22｜openit.ml
-      - CN 16｜openit.ml
-      - CN 36｜openit.ml
-      - CN 19｜openit.ml
-      - CN 15｜openit.ml
-      - TW 1｜openit.ml
-      - CN 24｜openit.ml
-      - CN 35｜openit.ml
-      - CN 18｜openit.ml
-      - CN 7｜openit.ml
-      - CN 11｜openit.ml
-      - CN 4｜openit.ml
-      - CN 25｜openit.ml
-      - CN 37｜openit.ml
+      - 中国_TG@nodesharing_13
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_28
+      - 中国_TG@nodesharing_86
+      - 中国_TG@nodesharing_111
+      - 中国_TG@nodesharing_49
+      - 中国_TG@nodesharing_120
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_32
+      - 中国_TG@nodesharing_17
+      - 中国_TG@nodesharing_59
+      - 台湾_TG@nodesharing_8
+      - TG@nodesharing_68
+      - 中国_TG@nodesharing_54
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 1｜openit.ml
-      - CN 9｜openit.ml
-      - CN 29｜openit.ml
-      - CN 22｜openit.ml
-      - CN 16｜openit.ml
-      - CN 36｜openit.ml
-      - CN 19｜openit.ml
-      - CN 15｜openit.ml
-      - TW 1｜openit.ml
-      - CN 24｜openit.ml
-      - CN 35｜openit.ml
-      - CN 18｜openit.ml
-      - CN 7｜openit.ml
-      - CN 11｜openit.ml
-      - CN 4｜openit.ml
-      - CN 25｜openit.ml
-      - CN 37｜openit.ml
+      - 中国_TG@nodesharing_13
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_28
+      - 中国_TG@nodesharing_86
+      - 中国_TG@nodesharing_111
+      - 中国_TG@nodesharing_49
+      - 中国_TG@nodesharing_120
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_32
+      - 中国_TG@nodesharing_17
+      - 中国_TG@nodesharing_59
+      - 台湾_TG@nodesharing_8
+      - TG@nodesharing_68
+      - 中国_TG@nodesharing_54
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 1｜openit.ml
-      - CN 9｜openit.ml
-      - CN 29｜openit.ml
-      - CN 22｜openit.ml
-      - CN 16｜openit.ml
-      - CN 36｜openit.ml
-      - CN 19｜openit.ml
-      - CN 15｜openit.ml
-      - TW 1｜openit.ml
-      - CN 24｜openit.ml
-      - CN 35｜openit.ml
-      - CN 18｜openit.ml
-      - CN 7｜openit.ml
-      - CN 11｜openit.ml
-      - CN 4｜openit.ml
-      - CN 25｜openit.ml
-      - CN 37｜openit.ml
+      - 中国_TG@nodesharing_13
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_28
+      - 中国_TG@nodesharing_86
+      - 中国_TG@nodesharing_111
+      - 中国_TG@nodesharing_49
+      - 中国_TG@nodesharing_120
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_32
+      - 中国_TG@nodesharing_17
+      - 中国_TG@nodesharing_59
+      - 台湾_TG@nodesharing_8
+      - TG@nodesharing_68
+      - 中国_TG@nodesharing_54
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -108,95 +96,84 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 1｜openit.ml
-      - CN 9｜openit.ml
-      - CN 29｜openit.ml
-      - CN 22｜openit.ml
-      - CN 16｜openit.ml
-      - CN 36｜openit.ml
-      - CN 19｜openit.ml
-      - CN 15｜openit.ml
-      - TW 1｜openit.ml
-      - CN 24｜openit.ml
-      - CN 35｜openit.ml
-      - CN 18｜openit.ml
-      - CN 7｜openit.ml
-      - CN 11｜openit.ml
-      - CN 4｜openit.ml
-      - CN 25｜openit.ml
-      - CN 37｜openit.ml
+      - 中国_TG@nodesharing_13
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_28
+      - 中国_TG@nodesharing_86
+      - 中国_TG@nodesharing_111
+      - 中国_TG@nodesharing_49
+      - 中国_TG@nodesharing_120
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_32
+      - 中国_TG@nodesharing_17
+      - 中国_TG@nodesharing_59
+      - 台湾_TG@nodesharing_8
+      - TG@nodesharing_68
+      - 中国_TG@nodesharing_54
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾_TG@nodesharing_8
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 1｜openit.ml
-      - CN 9｜openit.ml
-      - CN 29｜openit.ml
-      - CN 22｜openit.ml
-      - CN 16｜openit.ml
-      - CN 36｜openit.ml
-      - CN 19｜openit.ml
-      - CN 15｜openit.ml
-      - TW 1｜openit.ml
-      - CN 24｜openit.ml
-      - CN 35｜openit.ml
-      - CN 18｜openit.ml
-      - CN 7｜openit.ml
-      - CN 11｜openit.ml
-      - CN 4｜openit.ml
-      - CN 25｜openit.ml
-      - CN 37｜openit.ml
+      - 中国_TG@nodesharing_13
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_28
+      - 中国_TG@nodesharing_86
+      - 中国_TG@nodesharing_111
+      - 中国_TG@nodesharing_49
+      - 中国_TG@nodesharing_120
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_32
+      - 中国_TG@nodesharing_17
+      - 中国_TG@nodesharing_59
+      - 台湾_TG@nodesharing_8
+      - TG@nodesharing_68
+      - 中国_TG@nodesharing_54
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 1｜openit.ml
-      - CN 9｜openit.ml
-      - CN 29｜openit.ml
-      - CN 22｜openit.ml
-      - CN 16｜openit.ml
-      - CN 36｜openit.ml
-      - CN 19｜openit.ml
-      - CN 15｜openit.ml
-      - TW 1｜openit.ml
-      - CN 24｜openit.ml
-      - CN 35｜openit.ml
-      - CN 18｜openit.ml
-      - CN 7｜openit.ml
-      - CN 11｜openit.ml
-      - CN 4｜openit.ml
-      - CN 25｜openit.ml
-      - CN 37｜openit.ml
+      - 中国_TG@nodesharing_13
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_28
+      - 中国_TG@nodesharing_86
+      - 中国_TG@nodesharing_111
+      - 中国_TG@nodesharing_49
+      - 中国_TG@nodesharing_120
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_32
+      - 中国_TG@nodesharing_17
+      - 中国_TG@nodesharing_59
+      - 台湾_TG@nodesharing_8
+      - TG@nodesharing_68
+      - 中国_TG@nodesharing_54
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 1｜openit.ml
-      - CN 9｜openit.ml
-      - CN 29｜openit.ml
-      - CN 22｜openit.ml
-      - CN 16｜openit.ml
-      - CN 36｜openit.ml
-      - CN 19｜openit.ml
-      - CN 15｜openit.ml
-      - TW 1｜openit.ml
-      - CN 24｜openit.ml
-      - CN 35｜openit.ml
-      - CN 18｜openit.ml
-      - CN 7｜openit.ml
-      - CN 11｜openit.ml
-      - CN 4｜openit.ml
-      - CN 25｜openit.ml
-      - CN 37｜openit.ml
+      - 中国_TG@nodesharing_13
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_28
+      - 中国_TG@nodesharing_86
+      - 中国_TG@nodesharing_111
+      - 中国_TG@nodesharing_49
+      - 中国_TG@nodesharing_120
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_32
+      - 中国_TG@nodesharing_17
+      - 中国_TG@nodesharing_59
+      - 台湾_TG@nodesharing_8
+      - TG@nodesharing_68
+      - 中国_TG@nodesharing_54
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -212,23 +189,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 1｜openit.ml
-      - CN 9｜openit.ml
-      - CN 29｜openit.ml
-      - CN 22｜openit.ml
-      - CN 16｜openit.ml
-      - CN 36｜openit.ml
-      - CN 19｜openit.ml
-      - CN 15｜openit.ml
-      - TW 1｜openit.ml
-      - CN 24｜openit.ml
-      - CN 35｜openit.ml
-      - CN 18｜openit.ml
-      - CN 7｜openit.ml
-      - CN 11｜openit.ml
-      - CN 4｜openit.ml
-      - CN 25｜openit.ml
-      - CN 37｜openit.ml
+      - 中国_TG@nodesharing_13
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_28
+      - 中国_TG@nodesharing_86
+      - 中国_TG@nodesharing_111
+      - 中国_TG@nodesharing_49
+      - 中国_TG@nodesharing_120
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_32
+      - 中国_TG@nodesharing_17
+      - 中国_TG@nodesharing_59
+      - 台湾_TG@nodesharing_8
+      - TG@nodesharing_68
+      - 中国_TG@nodesharing_54
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
