@@ -5,51 +5,107 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 2｜openit.link, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: CN 10｜openit.link, server: hnyd.52147.top, port: 20110, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CN 4｜openit.link, server: sh.teacat2.xyz, port: 50058, type: ss, cipher: aes-256-gcm, password: 73742ec9-c6cb-49ec-aaf1-85c3a63977e9, udp: true}
-  - {name: CN 5｜openit.link, server: sh.teacat2.xyz, port: 50058, type: ss, cipher: aes-256-gcm, password: 8f6eeacb-f8b2-4daf-a590-5310cbf1639a, udp: true}
-  - {name: CN 3｜openit.link, server: iepl.teacat2.xyz, port: 50000, type: ss, cipher: aes-256-gcm, password: 73742ec9-c6cb-49ec-aaf1-85c3a63977e9, udp: true}
-  - {name: CN 6｜openit.link, server: sh.teacat2.xyz, port: 50060, type: ss, cipher: aes-256-gcm, password: 8f6eeacb-f8b2-4daf-a590-5310cbf1639a, udp: true}
-  - {name: CN 7｜openit.link, server: sh.teacat2.xyz, port: 50060, type: ss, cipher: aes-256-gcm, password: 73742ec9-c6cb-49ec-aaf1-85c3a63977e9, udp: true}
+  - {name: _202, server: shcu.pbap.cc, port: 44616, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: shcu.pbap.cc, skip-cert-verify: true, udp: true}
+  - {name: _253, server: shcu.pbap.cc, port: 44608, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: shcu.pbap.cc, skip-cert-verify: true, udp: true}
+  - {name: _216, server: shcu.pbap.cc, port: 45001, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: shcu.pbap.cc, skip-cert-verify: true, udp: true}
+  - {name: _244, server: shcu.pbap.cc, port: 44605, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: shcu.pbap.cc, skip-cert-verify: true, udp: true}
+  - {name: _222, server: shcu.pbap.cc, port: 44611, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: shcu.pbap.cc, skip-cert-verify: true, udp: true}
+  - {name: _218, server: azhk.r.optage.moe, port: 45002, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _226, server: azhk.r.optage.moe, port: 45005, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _256, server: shcu.pbap.cc, port: 44612, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: shcu.pbap.cc, skip-cert-verify: true, udp: true}
+  - {name: _211, server: azhk.r.optage.moe, port: 45000, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _229, server: azhk.r.optage.moe, port: 46600, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _204, server: azhk.n.optage.moe, port: 44602, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.n.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _215, server: azhk.r.optage.moe, port: 45001, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _209, server: azhk.r.optage.moe, port: 44601, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _213, server: azhk.r.optage.moe, port: 45006, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _254, server: azhk.r.optage.moe, port: 44608, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _231, server: azhk.r.optage.moe, port: 46601, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _220, server: azhk.r.optage.moe, port: 45003, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _224, server: azhk.r.optage.moe, port: 45004, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _235, server: azhk.r.optage.moe, port: 46603, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _257, server: azhk.r.optage.moe, port: 44612, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _242, server: azhk.r.optage.moe, port: 45008, type: trojan, password: 4a613342-bc3f-4fe3-979b-303504b86578, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 2｜openit.link
-      - CN 10｜openit.link
-      - CN 4｜openit.link
-      - CN 5｜openit.link
-      - CN 3｜openit.link
-      - CN 6｜openit.link
-      - CN 7｜openit.link
+      - _202
+      - _253
+      - _216
+      - _244
+      - _222
+      - _218
+      - _226
+      - _256
+      - _211
+      - _229
+      - _204
+      - _215
+      - _209
+      - _213
+      - _254
+      - _231
+      - _220
+      - _224
+      - _235
+      - _257
+      - _242
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 2｜openit.link
-      - CN 10｜openit.link
-      - CN 4｜openit.link
-      - CN 5｜openit.link
-      - CN 3｜openit.link
-      - CN 6｜openit.link
-      - CN 7｜openit.link
+      - _202
+      - _253
+      - _216
+      - _244
+      - _222
+      - _218
+      - _226
+      - _256
+      - _211
+      - _229
+      - _204
+      - _215
+      - _209
+      - _213
+      - _254
+      - _231
+      - _220
+      - _224
+      - _235
+      - _257
+      - _242
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 2｜openit.link
-      - CN 10｜openit.link
-      - CN 4｜openit.link
-      - CN 5｜openit.link
-      - CN 3｜openit.link
-      - CN 6｜openit.link
-      - CN 7｜openit.link
+      - _202
+      - _253
+      - _216
+      - _244
+      - _222
+      - _218
+      - _226
+      - _256
+      - _211
+      - _229
+      - _204
+      - _215
+      - _209
+      - _213
+      - _254
+      - _231
+      - _220
+      - _224
+      - _235
+      - _257
+      - _242
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,13 +124,27 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 2｜openit.link
-      - CN 10｜openit.link
-      - CN 4｜openit.link
-      - CN 5｜openit.link
-      - CN 3｜openit.link
-      - CN 6｜openit.link
-      - CN 7｜openit.link
+      - _202
+      - _253
+      - _216
+      - _244
+      - _222
+      - _218
+      - _226
+      - _256
+      - _211
+      - _229
+      - _204
+      - _215
+      - _209
+      - _213
+      - _254
+      - _231
+      - _220
+      - _224
+      - _235
+      - _257
+      - _242
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -85,38 +155,80 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 2｜openit.link
-      - CN 10｜openit.link
-      - CN 4｜openit.link
-      - CN 5｜openit.link
-      - CN 3｜openit.link
-      - CN 6｜openit.link
-      - CN 7｜openit.link
+      - _202
+      - _253
+      - _216
+      - _244
+      - _222
+      - _218
+      - _226
+      - _256
+      - _211
+      - _229
+      - _204
+      - _215
+      - _209
+      - _213
+      - _254
+      - _231
+      - _220
+      - _224
+      - _235
+      - _257
+      - _242
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 2｜openit.link
-      - CN 10｜openit.link
-      - CN 4｜openit.link
-      - CN 5｜openit.link
-      - CN 3｜openit.link
-      - CN 6｜openit.link
-      - CN 7｜openit.link
+      - _202
+      - _253
+      - _216
+      - _244
+      - _222
+      - _218
+      - _226
+      - _256
+      - _211
+      - _229
+      - _204
+      - _215
+      - _209
+      - _213
+      - _254
+      - _231
+      - _220
+      - _224
+      - _235
+      - _257
+      - _242
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 2｜openit.link
-      - CN 10｜openit.link
-      - CN 4｜openit.link
-      - CN 5｜openit.link
-      - CN 3｜openit.link
-      - CN 6｜openit.link
-      - CN 7｜openit.link
+      - _202
+      - _253
+      - _216
+      - _244
+      - _222
+      - _218
+      - _226
+      - _256
+      - _211
+      - _229
+      - _204
+      - _215
+      - _209
+      - _213
+      - _254
+      - _231
+      - _220
+      - _224
+      - _235
+      - _257
+      - _242
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +244,27 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 2｜openit.link
-      - CN 10｜openit.link
-      - CN 4｜openit.link
-      - CN 5｜openit.link
-      - CN 3｜openit.link
-      - CN 6｜openit.link
-      - CN 7｜openit.link
+      - _202
+      - _253
+      - _216
+      - _244
+      - _222
+      - _218
+      - _226
+      - _256
+      - _211
+      - _229
+      - _204
+      - _215
+      - _209
+      - _213
+      - _254
+      - _231
+      - _220
+      - _224
+      - _235
+      - _257
+      - _242
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
