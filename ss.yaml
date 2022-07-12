@@ -5,43 +5,123 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港4-广港隧道-稳定-1.8x, server: gz1.fkfirewall.top, port: 18625, type: vmess, uuid: 52ced619-1572-4fbc-9c48-398675a7595e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: hk1.fkfirewall.top}, udp: true}
-  - {name: 日本2-广日隧道-稳定-1.8x, server: gz1.fkfirewall.top, port: 54948, type: vmess, uuid: 52ced619-1572-4fbc-9c48-398675a7595e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: jp1.fkfirewall.top}, udp: true}
-  - {name: 香港1-0.8x, server: hk1.fkfirewall.top, port: 443, type: vmess, uuid: 52ced619-1572-4fbc-9c48-398675a7595e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: hk1.fkfirewall.top}, udp: true}
-  - {name: 美国硅谷-广日隧道-1.5x, server: gz1.fkfirewall.top, port: 10060, type: ss, cipher: chacha20-ietf-poly1305, password: 52ced619-1572-4fbc-9c48-398675a7595e, udp: true}
-  - {name: 香港3-川港隧道-稳定-1x, server: sc1.fkfirewall.top, port: 36670, type: vmess, uuid: 52ced619-1572-4fbc-9c48-398675a7595e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: hk1.fkfirewall.top}, udp: true}
+  - {name: 美国_TG@nodesharing_2, server: 20.239.179.251, port: 50045, type: vmess, uuid: e0d8aa68-9187-454d-bbe4-4b4cc8e362e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.239.179.251}, udp: true}
+  - {name: 台湾_TG@nodesharing_5, server: tw.suntory.lol, port: 38512, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: tw.suntory.lol, skip-cert-verify: true, udp: true}
+  - {name: 台湾_TG@nodesharing_136, server: tw.suntory.lol, port: 38511, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: tw.suntory.lol, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_9, server: 120.233.7.225, port: 100, type: trojan, password: 7dp3vF, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_45, server: ftp.cn.debian.cdnet.in, port: 8030, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
+  - {name: 新加坡_TG@nodesharing_11, server: aws.circloud123.com, port: 80, type: vmess, uuid: 542297e7-1070-48f6-a357-00cce33c6a36, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sometimesnaive, ws-headers: {Host: aws.circloud123.com}, udp: true}
+  - {name: 中国_TG@nodesharing_93, server: ftp.cn.debian.cdnet.in, port: 8040, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
+  - {name: 中国_TG@nodesharing_33, server: ftp.cn.debian.cdnet.in, port: 8070, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
+  - {name: 中国_TG@nodesharing_8, server: ftp.cn.debian.cdnet.in, port: 8020, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
+  - {name: 中国_TG@nodesharing_58, server: ftp.cn.debian.cdnet.in, port: 8060, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
+  - {name: 美国_TG@nodesharing_7, server: 20.239.179.251, port: 50045, type: vmess, uuid: 9b61ff46-4c61-4b31-801a-f870d7a1de53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.239.179.251}, udp: true}
+  - {name: 以色列_TG@nodesharing_53, server: ru2.lolvps.xyz, port: 50158, type: vmess, uuid: 882fe300-feb5-4e7b-b272-829e791755ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /J56OYLY9, ws-headers: {Host: ru2.lolvps.xyz}, udp: true}
+  - {name: 中国_TG@nodesharing_4, server: ftp.cn.debian.cdnet.in, port: 8050, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
+  - {name: 日本_TG@nodesharing_131, server: jp.v2yyds.cc, port: 35211, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: jp.v2yyds.cc, skip-cert-verify: true, udp: true}
+  - {name: 新加坡_TG@nodesharing_185, server: 625tw.ok365.cyou, port: 443, type: trojan, password: 1d2a8749-001e-4809-b767-cb04a54bdf7f, sni: 625tw.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_116, server: cf.fullcloud.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxusa.fovi.tk}, udp: true}
+  - {name: 日本_TG@nodesharing_38, server: jp.v2yyds.cc, port: 35213, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: jp.v2yyds.cc, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_122, server: jp02.chaoxn.top, port: 80, type: vmess, uuid: 9e4a7268-4c66-49d9-b6fb-59e33c8c7c59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp02.chaoxn.top}, udp: true}
+  - {name: 美国_TG@nodesharing_125, server: jp3.chaoxn.top, port: 80, type: vmess, uuid: 9e4a7268-4c66-49d9-b6fb-59e33c8c7c59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp3.chaoxn.top}, udp: true}
+  - {name: 美国_TG@nodesharing_123, server: jp4.chaoxn.top, port: 80, type: vmess, uuid: 9e4a7268-4c66-49d9-b6fb-59e33c8c7c59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp4.chaoxn.top}, udp: true}
+  - {name: 美国_TG@nodesharing_86, server: sg.v2yyds.cc, port: 35212, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: sg.v2yyds.cc, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_130, server: k9.v2.gay, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxusa.fovi.tk}, udp: true}
+  - {name: TG@nodesharing_79, server: www.digitalocean.com, port: 443, type: vmess, uuid: 3df66137-a428-429c-a858-8b150721b354, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /youtbue@bai-piao-wang-zhe_vws, ws-headers: {Host: usa23.884899.cf}, udp: true}
+  - {name: 80-日本1号, server: jp1.chaoxn.top, port: 80, type: vmess, uuid: 9e4a7268-4c66-49d9-b6fb-59e33c8c7c59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp1.chaoxn.top}, udp: true}
+  - {name: 美国_TG@nodesharing_160, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus4.0bad.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港4-广港隧道-稳定-1.8x
-      - 日本2-广日隧道-稳定-1.8x
-      - 香港1-0.8x
-      - 美国硅谷-广日隧道-1.5x
-      - 香港3-川港隧道-稳定-1x
+      - 美国_TG@nodesharing_2
+      - 台湾_TG@nodesharing_5
+      - 台湾_TG@nodesharing_136
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_45
+      - 新加坡_TG@nodesharing_11
+      - 中国_TG@nodesharing_93
+      - 中国_TG@nodesharing_33
+      - 中国_TG@nodesharing_8
+      - 中国_TG@nodesharing_58
+      - 美国_TG@nodesharing_7
+      - 以色列_TG@nodesharing_53
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_131
+      - 新加坡_TG@nodesharing_185
+      - TG@nodesharing_116
+      - 日本_TG@nodesharing_38
+      - TG@nodesharing_122
+      - 美国_TG@nodesharing_125
+      - 美国_TG@nodesharing_123
+      - 美国_TG@nodesharing_86
+      - TG@nodesharing_130
+      - TG@nodesharing_79
+      - 80-日本1号
+      - 美国_TG@nodesharing_160
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港4-广港隧道-稳定-1.8x
-      - 日本2-广日隧道-稳定-1.8x
-      - 香港1-0.8x
-      - 美国硅谷-广日隧道-1.5x
-      - 香港3-川港隧道-稳定-1x
+      - 美国_TG@nodesharing_2
+      - 台湾_TG@nodesharing_5
+      - 台湾_TG@nodesharing_136
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_45
+      - 新加坡_TG@nodesharing_11
+      - 中国_TG@nodesharing_93
+      - 中国_TG@nodesharing_33
+      - 中国_TG@nodesharing_8
+      - 中国_TG@nodesharing_58
+      - 美国_TG@nodesharing_7
+      - 以色列_TG@nodesharing_53
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_131
+      - 新加坡_TG@nodesharing_185
+      - TG@nodesharing_116
+      - 日本_TG@nodesharing_38
+      - TG@nodesharing_122
+      - 美国_TG@nodesharing_125
+      - 美国_TG@nodesharing_123
+      - 美国_TG@nodesharing_86
+      - TG@nodesharing_130
+      - TG@nodesharing_79
+      - 80-日本1号
+      - 美国_TG@nodesharing_160
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港4-广港隧道-稳定-1.8x
-      - 日本2-广日隧道-稳定-1.8x
-      - 香港1-0.8x
-      - 美国硅谷-广日隧道-1.5x
-      - 香港3-川港隧道-稳定-1x
+      - 美国_TG@nodesharing_2
+      - 台湾_TG@nodesharing_5
+      - 台湾_TG@nodesharing_136
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_45
+      - 新加坡_TG@nodesharing_11
+      - 中国_TG@nodesharing_93
+      - 中国_TG@nodesharing_33
+      - 中国_TG@nodesharing_8
+      - 中国_TG@nodesharing_58
+      - 美国_TG@nodesharing_7
+      - 以色列_TG@nodesharing_53
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_131
+      - 新加坡_TG@nodesharing_185
+      - TG@nodesharing_116
+      - 日本_TG@nodesharing_38
+      - TG@nodesharing_122
+      - 美国_TG@nodesharing_125
+      - 美国_TG@nodesharing_123
+      - 美国_TG@nodesharing_86
+      - TG@nodesharing_130
+      - TG@nodesharing_79
+      - 80-日本1号
+      - 美国_TG@nodesharing_160
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,50 +140,129 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港4-广港隧道-稳定-1.8x
-      - 日本2-广日隧道-稳定-1.8x
-      - 香港1-0.8x
-      - 美国硅谷-广日隧道-1.5x
-      - 香港3-川港隧道-稳定-1x
+      - 美国_TG@nodesharing_2
+      - 台湾_TG@nodesharing_5
+      - 台湾_TG@nodesharing_136
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_45
+      - 新加坡_TG@nodesharing_11
+      - 中国_TG@nodesharing_93
+      - 中国_TG@nodesharing_33
+      - 中国_TG@nodesharing_8
+      - 中国_TG@nodesharing_58
+      - 美国_TG@nodesharing_7
+      - 以色列_TG@nodesharing_53
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_131
+      - 新加坡_TG@nodesharing_185
+      - TG@nodesharing_116
+      - 日本_TG@nodesharing_38
+      - TG@nodesharing_122
+      - 美国_TG@nodesharing_125
+      - 美国_TG@nodesharing_123
+      - 美国_TG@nodesharing_86
+      - TG@nodesharing_130
+      - TG@nodesharing_79
+      - 80-日本1号
+      - 美国_TG@nodesharing_160
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港4-广港隧道-稳定-1.8x
-      - 香港1-0.8x
-      - 香港3-川港隧道-稳定-1x
+      - 台湾_TG@nodesharing_5
+      - 台湾_TG@nodesharing_136
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港4-广港隧道-稳定-1.8x
-      - 日本2-广日隧道-稳定-1.8x
-      - 香港1-0.8x
-      - 美国硅谷-广日隧道-1.5x
-      - 香港3-川港隧道-稳定-1x
+      - 美国_TG@nodesharing_2
+      - 台湾_TG@nodesharing_5
+      - 台湾_TG@nodesharing_136
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_45
+      - 新加坡_TG@nodesharing_11
+      - 中国_TG@nodesharing_93
+      - 中国_TG@nodesharing_33
+      - 中国_TG@nodesharing_8
+      - 中国_TG@nodesharing_58
+      - 美国_TG@nodesharing_7
+      - 以色列_TG@nodesharing_53
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_131
+      - 新加坡_TG@nodesharing_185
+      - TG@nodesharing_116
+      - 日本_TG@nodesharing_38
+      - TG@nodesharing_122
+      - 美国_TG@nodesharing_125
+      - 美国_TG@nodesharing_123
+      - 美国_TG@nodesharing_86
+      - TG@nodesharing_130
+      - TG@nodesharing_79
+      - 80-日本1号
+      - 美国_TG@nodesharing_160
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港4-广港隧道-稳定-1.8x
-      - 日本2-广日隧道-稳定-1.8x
-      - 香港1-0.8x
-      - 美国硅谷-广日隧道-1.5x
-      - 香港3-川港隧道-稳定-1x
+      - 美国_TG@nodesharing_2
+      - 台湾_TG@nodesharing_5
+      - 台湾_TG@nodesharing_136
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_45
+      - 新加坡_TG@nodesharing_11
+      - 中国_TG@nodesharing_93
+      - 中国_TG@nodesharing_33
+      - 中国_TG@nodesharing_8
+      - 中国_TG@nodesharing_58
+      - 美国_TG@nodesharing_7
+      - 以色列_TG@nodesharing_53
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_131
+      - 新加坡_TG@nodesharing_185
+      - TG@nodesharing_116
+      - 日本_TG@nodesharing_38
+      - TG@nodesharing_122
+      - 美国_TG@nodesharing_125
+      - 美国_TG@nodesharing_123
+      - 美国_TG@nodesharing_86
+      - TG@nodesharing_130
+      - TG@nodesharing_79
+      - 80-日本1号
+      - 美国_TG@nodesharing_160
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港4-广港隧道-稳定-1.8x
-      - 日本2-广日隧道-稳定-1.8x
-      - 香港1-0.8x
-      - 美国硅谷-广日隧道-1.5x
-      - 香港3-川港隧道-稳定-1x
+      - 美国_TG@nodesharing_2
+      - 台湾_TG@nodesharing_5
+      - 台湾_TG@nodesharing_136
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_45
+      - 新加坡_TG@nodesharing_11
+      - 中国_TG@nodesharing_93
+      - 中国_TG@nodesharing_33
+      - 中国_TG@nodesharing_8
+      - 中国_TG@nodesharing_58
+      - 美国_TG@nodesharing_7
+      - 以色列_TG@nodesharing_53
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_131
+      - 新加坡_TG@nodesharing_185
+      - TG@nodesharing_116
+      - 日本_TG@nodesharing_38
+      - TG@nodesharing_122
+      - 美国_TG@nodesharing_125
+      - 美国_TG@nodesharing_123
+      - 美国_TG@nodesharing_86
+      - TG@nodesharing_130
+      - TG@nodesharing_79
+      - 80-日本1号
+      - 美国_TG@nodesharing_160
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -119,11 +278,31 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港4-广港隧道-稳定-1.8x
-      - 日本2-广日隧道-稳定-1.8x
-      - 香港1-0.8x
-      - 美国硅谷-广日隧道-1.5x
-      - 香港3-川港隧道-稳定-1x
+      - 美国_TG@nodesharing_2
+      - 台湾_TG@nodesharing_5
+      - 台湾_TG@nodesharing_136
+      - 中国_TG@nodesharing_9
+      - 中国_TG@nodesharing_45
+      - 新加坡_TG@nodesharing_11
+      - 中国_TG@nodesharing_93
+      - 中国_TG@nodesharing_33
+      - 中国_TG@nodesharing_8
+      - 中国_TG@nodesharing_58
+      - 美国_TG@nodesharing_7
+      - 以色列_TG@nodesharing_53
+      - 中国_TG@nodesharing_4
+      - 日本_TG@nodesharing_131
+      - 新加坡_TG@nodesharing_185
+      - TG@nodesharing_116
+      - 日本_TG@nodesharing_38
+      - TG@nodesharing_122
+      - 美国_TG@nodesharing_125
+      - 美国_TG@nodesharing_123
+      - 美国_TG@nodesharing_86
+      - TG@nodesharing_130
+      - TG@nodesharing_79
+      - 80-日本1号
+      - 美国_TG@nodesharing_160
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
