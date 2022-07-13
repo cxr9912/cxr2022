@@ -5,107 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 台湾 A | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tw1, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 日本 C | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp3, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 台湾 B | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tw2, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 印度 A | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /in, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 日本 B | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp2, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 韓國 A | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /kr, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 香港 A | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk1, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 香港 D | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hgc, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 香港 C | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk3, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 香港 F | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 香港 E | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wtt, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 台湾 C | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tw3, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 德國 01 | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /de, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 美國 B | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /us2, ws-headers: {Host: us1.oceancloud.asia}, udp: true}
-  - {name: 美國 01 | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /us1, ws-headers: {Host: hk.ntt-1.oceancloud.asia}, udp: true}
-  - {name: 瑞士 A | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ch, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 西班牙 A | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /es, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 澳大利亞 A | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /au, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 香港 B | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk2, ws-headers: {Host: freewaytunnel.dev}, udp: true}
-  - {name: 意大利 A | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /it, ws-headers: {Host: hk.cf-1.oceancloud.us}, udp: true}
-  - {name: 日本 A | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: a611dc88-2cbb-34d6-9552-25f467985206, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp1, ws-headers: {Host: freewaytunnel.dev}, udp: true}
+  - {name: 香港1-0.8x, server: hk1.fkfirewall.top, port: 443, type: vmess, uuid: e88ad23b-ae90-4b92-a1b9-272993ecffaa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: hk1.fkfirewall.top}, udp: true}
+  - {name: 香港3-川港隧道-稳定-1x, server: sc1.fkfirewall.top, port: 36670, type: vmess, uuid: e88ad23b-ae90-4b92-a1b9-272993ecffaa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: hk1.fkfirewall.top}, udp: true}
+  - {name: 台湾A2-日本中转, server: jp1.fkfirewall.top, port: 443, type: vmess, uuid: e88ad23b-ae90-4b92-a1b9-272993ecffaa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: tw1.fkfirewall.top}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾 A | 中继 | Prepaid Users
-      - 日本 C | 中继 | Prepaid Users
-      - 台湾 B | 中继 | Prepaid Users
-      - 印度 A | 中继 | Prepaid Users
-      - 日本 B | 中继 | Prepaid Users
-      - 韓國 A | 中继 | Prepaid Users
-      - 香港 A | 中继 | Prepaid Users
-      - 香港 D | 中继 | Prepaid Users
-      - 香港 C | 中继 | Prepaid Users
-      - 香港 F | 中继 | Prepaid Users
-      - 香港 E | 中继 | Prepaid Users
-      - 台湾 C | 中继 | Prepaid Users
-      - 德國 01 | 中继 | Prepaid Users
-      - 美國 B | 中继 | Prepaid Users
-      - 美國 01 | 中继 | Prepaid Users
-      - 瑞士 A | 中继 | Prepaid Users
-      - 西班牙 A | 中继 | Prepaid Users
-      - 澳大利亞 A | 中继 | Prepaid Users
-      - 香港 B | 中继 | Prepaid Users
-      - 意大利 A | 中继 | Prepaid Users
-      - 日本 A | 中继 | Prepaid Users
+      - 香港1-0.8x
+      - 香港3-川港隧道-稳定-1x
+      - 台湾A2-日本中转
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 台湾 A | 中继 | Prepaid Users
-      - 日本 C | 中继 | Prepaid Users
-      - 台湾 B | 中继 | Prepaid Users
-      - 印度 A | 中继 | Prepaid Users
-      - 日本 B | 中继 | Prepaid Users
-      - 韓國 A | 中继 | Prepaid Users
-      - 香港 A | 中继 | Prepaid Users
-      - 香港 D | 中继 | Prepaid Users
-      - 香港 C | 中继 | Prepaid Users
-      - 香港 F | 中继 | Prepaid Users
-      - 香港 E | 中继 | Prepaid Users
-      - 台湾 C | 中继 | Prepaid Users
-      - 德國 01 | 中继 | Prepaid Users
-      - 美國 B | 中继 | Prepaid Users
-      - 美國 01 | 中继 | Prepaid Users
-      - 瑞士 A | 中继 | Prepaid Users
-      - 西班牙 A | 中继 | Prepaid Users
-      - 澳大利亞 A | 中继 | Prepaid Users
-      - 香港 B | 中继 | Prepaid Users
-      - 意大利 A | 中继 | Prepaid Users
-      - 日本 A | 中继 | Prepaid Users
+      - 香港1-0.8x
+      - 香港3-川港隧道-稳定-1x
+      - 台湾A2-日本中转
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾 A | 中继 | Prepaid Users
-      - 日本 C | 中继 | Prepaid Users
-      - 台湾 B | 中继 | Prepaid Users
-      - 印度 A | 中继 | Prepaid Users
-      - 日本 B | 中继 | Prepaid Users
-      - 韓國 A | 中继 | Prepaid Users
-      - 香港 A | 中继 | Prepaid Users
-      - 香港 D | 中继 | Prepaid Users
-      - 香港 C | 中继 | Prepaid Users
-      - 香港 F | 中继 | Prepaid Users
-      - 香港 E | 中继 | Prepaid Users
-      - 台湾 C | 中继 | Prepaid Users
-      - 德國 01 | 中继 | Prepaid Users
-      - 美國 B | 中继 | Prepaid Users
-      - 美國 01 | 中继 | Prepaid Users
-      - 瑞士 A | 中继 | Prepaid Users
-      - 西班牙 A | 中继 | Prepaid Users
-      - 澳大利亞 A | 中继 | Prepaid Users
-      - 香港 B | 中继 | Prepaid Users
-      - 意大利 A | 中继 | Prepaid Users
-      - 日本 A | 中继 | Prepaid Users
+      - 香港1-0.8x
+      - 香港3-川港隧道-稳定-1x
+      - 台湾A2-日本中转
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -124,120 +52,42 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾 A | 中继 | Prepaid Users
-      - 日本 C | 中继 | Prepaid Users
-      - 台湾 B | 中继 | Prepaid Users
-      - 印度 A | 中继 | Prepaid Users
-      - 日本 B | 中继 | Prepaid Users
-      - 韓國 A | 中继 | Prepaid Users
-      - 香港 A | 中继 | Prepaid Users
-      - 香港 D | 中继 | Prepaid Users
-      - 香港 C | 中继 | Prepaid Users
-      - 香港 F | 中继 | Prepaid Users
-      - 香港 E | 中继 | Prepaid Users
-      - 台湾 C | 中继 | Prepaid Users
-      - 德國 01 | 中继 | Prepaid Users
-      - 美國 B | 中继 | Prepaid Users
-      - 美國 01 | 中继 | Prepaid Users
-      - 瑞士 A | 中继 | Prepaid Users
-      - 西班牙 A | 中继 | Prepaid Users
-      - 澳大利亞 A | 中继 | Prepaid Users
-      - 香港 B | 中继 | Prepaid Users
-      - 意大利 A | 中继 | Prepaid Users
-      - 日本 A | 中继 | Prepaid Users
+      - 香港1-0.8x
+      - 香港3-川港隧道-稳定-1x
+      - 台湾A2-日本中转
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾 A | 中继 | Prepaid Users
-      - 台湾 B | 中继 | Prepaid Users
-      - 香港 A | 中继 | Prepaid Users
-      - 香港 D | 中继 | Prepaid Users
-      - 香港 C | 中继 | Prepaid Users
-      - 香港 F | 中继 | Prepaid Users
-      - 香港 E | 中继 | Prepaid Users
-      - 台湾 C | 中继 | Prepaid Users
-      - 香港 B | 中继 | Prepaid Users
+      - 香港1-0.8x
+      - 香港3-川港隧道-稳定-1x
+      - 台湾A2-日本中转
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台湾 A | 中继 | Prepaid Users
-      - 日本 C | 中继 | Prepaid Users
-      - 台湾 B | 中继 | Prepaid Users
-      - 印度 A | 中继 | Prepaid Users
-      - 日本 B | 中继 | Prepaid Users
-      - 韓國 A | 中继 | Prepaid Users
-      - 香港 A | 中继 | Prepaid Users
-      - 香港 D | 中继 | Prepaid Users
-      - 香港 C | 中继 | Prepaid Users
-      - 香港 F | 中继 | Prepaid Users
-      - 香港 E | 中继 | Prepaid Users
-      - 台湾 C | 中继 | Prepaid Users
-      - 德國 01 | 中继 | Prepaid Users
-      - 美國 B | 中继 | Prepaid Users
-      - 美國 01 | 中继 | Prepaid Users
-      - 瑞士 A | 中继 | Prepaid Users
-      - 西班牙 A | 中继 | Prepaid Users
-      - 澳大利亞 A | 中继 | Prepaid Users
-      - 香港 B | 中继 | Prepaid Users
-      - 意大利 A | 中继 | Prepaid Users
-      - 日本 A | 中继 | Prepaid Users
+      - 香港1-0.8x
+      - 香港3-川港隧道-稳定-1x
+      - 台湾A2-日本中转
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台湾 A | 中继 | Prepaid Users
-      - 日本 C | 中继 | Prepaid Users
-      - 台湾 B | 中继 | Prepaid Users
-      - 印度 A | 中继 | Prepaid Users
-      - 日本 B | 中继 | Prepaid Users
-      - 韓國 A | 中继 | Prepaid Users
-      - 香港 A | 中继 | Prepaid Users
-      - 香港 D | 中继 | Prepaid Users
-      - 香港 C | 中继 | Prepaid Users
-      - 香港 F | 中继 | Prepaid Users
-      - 香港 E | 中继 | Prepaid Users
-      - 台湾 C | 中继 | Prepaid Users
-      - 德國 01 | 中继 | Prepaid Users
-      - 美國 B | 中继 | Prepaid Users
-      - 美國 01 | 中继 | Prepaid Users
-      - 瑞士 A | 中继 | Prepaid Users
-      - 西班牙 A | 中继 | Prepaid Users
-      - 澳大利亞 A | 中继 | Prepaid Users
-      - 香港 B | 中继 | Prepaid Users
-      - 意大利 A | 中继 | Prepaid Users
-      - 日本 A | 中继 | Prepaid Users
+      - 香港1-0.8x
+      - 香港3-川港隧道-稳定-1x
+      - 台湾A2-日本中转
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾 A | 中继 | Prepaid Users
-      - 日本 C | 中继 | Prepaid Users
-      - 台湾 B | 中继 | Prepaid Users
-      - 印度 A | 中继 | Prepaid Users
-      - 日本 B | 中继 | Prepaid Users
-      - 韓國 A | 中继 | Prepaid Users
-      - 香港 A | 中继 | Prepaid Users
-      - 香港 D | 中继 | Prepaid Users
-      - 香港 C | 中继 | Prepaid Users
-      - 香港 F | 中继 | Prepaid Users
-      - 香港 E | 中继 | Prepaid Users
-      - 台湾 C | 中继 | Prepaid Users
-      - 德國 01 | 中继 | Prepaid Users
-      - 美國 B | 中继 | Prepaid Users
-      - 美國 01 | 中继 | Prepaid Users
-      - 瑞士 A | 中继 | Prepaid Users
-      - 西班牙 A | 中继 | Prepaid Users
-      - 澳大利亞 A | 中继 | Prepaid Users
-      - 香港 B | 中继 | Prepaid Users
-      - 意大利 A | 中继 | Prepaid Users
-      - 日本 A | 中继 | Prepaid Users
+      - 香港1-0.8x
+      - 香港3-川港隧道-稳定-1x
+      - 台湾A2-日本中转
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -253,27 +103,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾 A | 中继 | Prepaid Users
-      - 日本 C | 中继 | Prepaid Users
-      - 台湾 B | 中继 | Prepaid Users
-      - 印度 A | 中继 | Prepaid Users
-      - 日本 B | 中继 | Prepaid Users
-      - 韓國 A | 中继 | Prepaid Users
-      - 香港 A | 中继 | Prepaid Users
-      - 香港 D | 中继 | Prepaid Users
-      - 香港 C | 中继 | Prepaid Users
-      - 香港 F | 中继 | Prepaid Users
-      - 香港 E | 中继 | Prepaid Users
-      - 台湾 C | 中继 | Prepaid Users
-      - 德國 01 | 中继 | Prepaid Users
-      - 美國 B | 中继 | Prepaid Users
-      - 美國 01 | 中继 | Prepaid Users
-      - 瑞士 A | 中继 | Prepaid Users
-      - 西班牙 A | 中继 | Prepaid Users
-      - 澳大利亞 A | 中继 | Prepaid Users
-      - 香港 B | 中继 | Prepaid Users
-      - 意大利 A | 中继 | Prepaid Users
-      - 日本 A | 中继 | Prepaid Users
+      - 香港1-0.8x
+      - 香港3-川港隧道-稳定-1x
+      - 台湾A2-日本中转
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
