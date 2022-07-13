@@ -5,35 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港1-0.8x, server: hk1.fkfirewall.top, port: 443, type: vmess, uuid: e88ad23b-ae90-4b92-a1b9-272993ecffaa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: hk1.fkfirewall.top}, udp: true}
-  - {name: 香港3-川港隧道-稳定-1x, server: sc1.fkfirewall.top, port: 36670, type: vmess, uuid: e88ad23b-ae90-4b92-a1b9-272993ecffaa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: hk1.fkfirewall.top}, udp: true}
-  - {name: 台湾A2-日本中转, server: jp1.fkfirewall.top, port: 443, type: vmess, uuid: e88ad23b-ae90-4b92-a1b9-272993ecffaa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: tw1.fkfirewall.top}, udp: true}
+  - {name: 台湾-优化2, server: m.mjmjmjmj.cyou, port: 16616, type: vmess, uuid: 4634e865-bbec-47e6-b027-a3fd882cf36a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 柬埔寨-优化, server: u.mjmjmjmj.cyou, port: 16634, type: vmess, uuid: 4634e865-bbec-47e6-b027-a3fd882cf36a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 马来西亚-优化3, server: m.mjmjmjmj.cyou, port: 26623, type: vmess, uuid: 4634e865-bbec-47e6-b027-a3fd882cf36a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 美国_TG@nodesharing_92, server: spotted.bigkangaroo.net, port: 443, type: trojan, password: ZCESAylB2u5jga736e8CTN3DcFCAOYz0DlDyx9F3ZpXnSp3IYRa4RwOSqe8Kax, sni: spotted.bigkangaroo.net, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港1-0.8x
-      - 香港3-川港隧道-稳定-1x
-      - 台湾A2-日本中转
+      - 台湾-优化2
+      - 柬埔寨-优化
+      - 马来西亚-优化3
+      - 美国_TG@nodesharing_92
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港1-0.8x
-      - 香港3-川港隧道-稳定-1x
-      - 台湾A2-日本中转
+      - 台湾-优化2
+      - 柬埔寨-优化
+      - 马来西亚-优化3
+      - 美国_TG@nodesharing_92
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港1-0.8x
-      - 香港3-川港隧道-稳定-1x
-      - 台湾A2-日本中转
+      - 台湾-优化2
+      - 柬埔寨-优化
+      - 马来西亚-优化3
+      - 美国_TG@nodesharing_92
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,42 +56,44 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港1-0.8x
-      - 香港3-川港隧道-稳定-1x
-      - 台湾A2-日本中转
+      - 台湾-优化2
+      - 柬埔寨-优化
+      - 马来西亚-优化3
+      - 美国_TG@nodesharing_92
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港1-0.8x
-      - 香港3-川港隧道-稳定-1x
-      - 台湾A2-日本中转
+      - 台湾-优化2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港1-0.8x
-      - 香港3-川港隧道-稳定-1x
-      - 台湾A2-日本中转
+      - 台湾-优化2
+      - 柬埔寨-优化
+      - 马来西亚-优化3
+      - 美国_TG@nodesharing_92
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港1-0.8x
-      - 香港3-川港隧道-稳定-1x
-      - 台湾A2-日本中转
+      - 台湾-优化2
+      - 柬埔寨-优化
+      - 马来西亚-优化3
+      - 美国_TG@nodesharing_92
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港1-0.8x
-      - 香港3-川港隧道-稳定-1x
-      - 台湾A2-日本中转
+      - 台湾-优化2
+      - 柬埔寨-优化
+      - 马来西亚-优化3
+      - 美国_TG@nodesharing_92
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -103,9 +109,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港1-0.8x
-      - 香港3-川港隧道-稳定-1x
-      - 台湾A2-日本中转
+      - 台湾-优化2
+      - 柬埔寨-优化
+      - 马来西亚-优化3
+      - 美国_TG@nodesharing_92
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
