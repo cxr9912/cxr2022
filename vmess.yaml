@@ -5,155 +5,119 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡/解锁流媒体——移动集群, server: yd.tbstbstbs.life, port: 18818, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yd.tbstbstbs.life}, udp: true}
-  - {name: 新加坡/解锁流媒体——电信集群, server: dx.tbstbstbs.xyz, port: 18818, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dx.tbstbstbs.xyz}, udp: true}
-  - {name: 日本②——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18806, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
-  - {name: 日本——联通集群, server: lt.tbstbstbstbs.com, port: 18813, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lt.tbstbstbstbs.com}, udp: true}
-  - {name: 香港——移动集群, server: yd.tbstbstbs.life, port: 18817, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yd.tbstbstbs.life}, udp: true}
+  - {name: 日本——移动集群, server: yd.tbstbstbs.life, port: 18813, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yd.tbstbstbs.life}, udp: true}
+  - {name: 日本②——移动集群, server: yd.tbstbstbs.life, port: 18806, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yd.tbstbstbs.life}, udp: true}
   - {name: 日本②——联通集群, server: lt.tbstbstbstbs.com, port: 18806, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lt.tbstbstbstbs.com}, udp: true}
+  - {name: 日本②——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18806, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
   - {name: 香港——电信集群, server: dx.tbstbstbs.xyz, port: 18817, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dx.tbstbstbs.xyz}, udp: true}
-  - {name: 德国——移动集群, server: yd.tbstbstbs.life, port: 18816, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yd.tbstbstbs.life}, udp: true}
-  - {name: 香港——联通集群, server: lt.tbstbstbstbs.com, port: 18817, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lt.tbstbstbstbs.com}, udp: true}
-  - {name: 美国——电信集群, server: dx.tbstbstbs.xyz, port: 18814, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dx.tbstbstbs.xyz}, udp: true}
-  - {name: 英国——移动集群, server: yd.tbstbstbs.life, port: 18815, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yd.tbstbstbs.life}, udp: true}
-  - {name: 香港——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18817, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
-  - {name: 台湾/原生IP——联通集群, server: lt.tbstbstbstbs.com, port: 18807, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lt.tbstbstbstbs.com}, udp: true}
-  - {name: 台湾/原生IP——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18807, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
+  - {name: 香港——移动集群, server: yd.tbstbstbs.life, port: 18817, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yd.tbstbstbs.life}, udp: true}
+  - {name: 新加坡/解锁流媒体——电信集群, server: dx.tbstbstbs.xyz, port: 18818, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dx.tbstbstbs.xyz}, udp: true}
   - {name: 新加坡——联通集群, server: lt.tbstbstbstbs.com, port: 18810, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lt.tbstbstbstbs.com}, udp: true}
-  - {name: 台湾/原生IP——移动集群, server: yd.tbstbstbs.life, port: 18807, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yd.tbstbstbs.life}, udp: true}
-  - {name: 印度——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18808, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
-  - {name: 英国——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18815, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
-  - {name: 印度——联通集群, server: lt.tbstbstbstbs.com, port: 18808, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lt.tbstbstbstbs.com}, udp: true}
+  - {name: 香港——联通集群, server: lt.tbstbstbstbs.com, port: 18817, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lt.tbstbstbstbs.com}, udp: true}
+  - {name: jdfnbm, server: 120.233.7.225, port: 100, type: trojan, password: 7dp3vF, skip-cert-verify: true, udp: true}
+  - {name: 日本——联通集群, server: lt.tbstbstbstbs.com, port: 18813, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lt.tbstbstbstbs.com}, udp: true}
   - {name: 新加坡——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18810, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
   - {name: 德国——电信集群, server: dx.tbstbstbs.xyz, port: 18816, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dx.tbstbstbs.xyz}, udp: true}
-  - {name: jdfnbm, server: 120.233.7.225, port: 100, type: trojan, password: 7dp3vF, skip-cert-verify: true, udp: true}
+  - {name: 印度——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18808, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
+  - {name: 印度——联通集群, server: lt.tbstbstbstbs.com, port: 18808, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lt.tbstbstbstbs.com}, udp: true}
+  - {name: 台湾/原生IP——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18807, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
+  - {name: 香港——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18817, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
   - {name: 英国——联通集群, server: lt.tbstbstbstbs.com, port: 18815, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lt.tbstbstbstbs.com}, udp: true}
+  - {name: 美国——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18814, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
+  - {name: 澳洲——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18811, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
+  - {name: 英国——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18815, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
+  - {name: 美国——电信集群, server: dx.tbstbstbs.xyz, port: 18814, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dx.tbstbstbs.xyz}, udp: true}
   - {name: 澳洲——联通集群, server: lt.tbstbstbstbs.com, port: 18811, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lt.tbstbstbstbs.com}, udp: true}
   - {name: 美国——联通集群, server: lt.tbstbstbstbs.com, port: 18814, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lt.tbstbstbstbs.com}, udp: true}
-  - {name: 美国——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18814, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
-  - {name: 英国——电信集群, server: dx.tbstbstbs.xyz, port: 18815, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dx.tbstbstbs.xyz}, udp: true}
-  - {name: 日本②——移动集群, server: yd.tbstbstbs.life, port: 18806, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yd.tbstbstbs.life}, udp: true}
-  - {name: 新加坡——移动集群, server: yd.tbstbstbs.life, port: 18810, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yd.tbstbstbs.life}, udp: true}
-  - {name: 新加坡/解锁流媒体——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18818, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
-  - {name: 日本——移动集群, server: yd.tbstbstbs.life, port: 18813, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yd.tbstbstbs.life}, udp: true}
-  - {name: 澳洲——电信集群, server: dx.tbstbstbs.xyz, port: 18811, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dx.tbstbstbs.xyz}, udp: true}
-  - {name: 澳洲——三网集群, server: tteessttbbss.dzxi.com.cn, port: 18811, type: vmess, uuid: 19c60ed9-20bf-37f1-9701-3f5aa8c184db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tteessttbbss.dzxi.com.cn}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡/解锁流媒体——移动集群
-      - 新加坡/解锁流媒体——电信集群
-      - 日本②——三网集群
-      - 日本——联通集群
-      - 香港——移动集群
+      - 日本——移动集群
+      - 日本②——移动集群
       - 日本②——联通集群
+      - 日本②——三网集群
       - 香港——电信集群
-      - 德国——移动集群
-      - 香港——联通集群
-      - 美国——电信集群
-      - 英国——移动集群
-      - 香港——三网集群
-      - 台湾/原生IP——联通集群
-      - 台湾/原生IP——三网集群
+      - 香港——移动集群
+      - 新加坡/解锁流媒体——电信集群
       - 新加坡——联通集群
-      - 台湾/原生IP——移动集群
-      - 印度——三网集群
-      - 英国——三网集群
-      - 印度——联通集群
+      - 香港——联通集群
+      - jdfnbm
+      - 日本——联通集群
       - 新加坡——三网集群
       - 德国——电信集群
-      - jdfnbm
+      - 印度——三网集群
+      - 印度——联通集群
+      - 台湾/原生IP——三网集群
+      - 香港——三网集群
       - 英国——联通集群
+      - 美国——三网集群
+      - 澳洲——三网集群
+      - 英国——三网集群
+      - 美国——电信集群
       - 澳洲——联通集群
       - 美国——联通集群
-      - 美国——三网集群
-      - 英国——电信集群
-      - 日本②——移动集群
-      - 新加坡——移动集群
-      - 新加坡/解锁流媒体——三网集群
-      - 日本——移动集群
-      - 澳洲——电信集群
-      - 澳洲——三网集群
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡/解锁流媒体——移动集群
-      - 新加坡/解锁流媒体——电信集群
-      - 日本②——三网集群
-      - 日本——联通集群
-      - 香港——移动集群
+      - 日本——移动集群
+      - 日本②——移动集群
       - 日本②——联通集群
+      - 日本②——三网集群
       - 香港——电信集群
-      - 德国——移动集群
-      - 香港——联通集群
-      - 美国——电信集群
-      - 英国——移动集群
-      - 香港——三网集群
-      - 台湾/原生IP——联通集群
-      - 台湾/原生IP——三网集群
+      - 香港——移动集群
+      - 新加坡/解锁流媒体——电信集群
       - 新加坡——联通集群
-      - 台湾/原生IP——移动集群
-      - 印度——三网集群
-      - 英国——三网集群
-      - 印度——联通集群
+      - 香港——联通集群
+      - jdfnbm
+      - 日本——联通集群
       - 新加坡——三网集群
       - 德国——电信集群
-      - jdfnbm
+      - 印度——三网集群
+      - 印度——联通集群
+      - 台湾/原生IP——三网集群
+      - 香港——三网集群
       - 英国——联通集群
+      - 美国——三网集群
+      - 澳洲——三网集群
+      - 英国——三网集群
+      - 美国——电信集群
       - 澳洲——联通集群
       - 美国——联通集群
-      - 美国——三网集群
-      - 英国——电信集群
-      - 日本②——移动集群
-      - 新加坡——移动集群
-      - 新加坡/解锁流媒体——三网集群
-      - 日本——移动集群
-      - 澳洲——电信集群
-      - 澳洲——三网集群
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡/解锁流媒体——移动集群
-      - 新加坡/解锁流媒体——电信集群
-      - 日本②——三网集群
-      - 日本——联通集群
-      - 香港——移动集群
+      - 日本——移动集群
+      - 日本②——移动集群
       - 日本②——联通集群
+      - 日本②——三网集群
       - 香港——电信集群
-      - 德国——移动集群
-      - 香港——联通集群
-      - 美国——电信集群
-      - 英国——移动集群
-      - 香港——三网集群
-      - 台湾/原生IP——联通集群
-      - 台湾/原生IP——三网集群
+      - 香港——移动集群
+      - 新加坡/解锁流媒体——电信集群
       - 新加坡——联通集群
-      - 台湾/原生IP——移动集群
-      - 印度——三网集群
-      - 英国——三网集群
-      - 印度——联通集群
+      - 香港——联通集群
+      - jdfnbm
+      - 日本——联通集群
       - 新加坡——三网集群
       - 德国——电信集群
-      - jdfnbm
+      - 印度——三网集群
+      - 印度——联通集群
+      - 台湾/原生IP——三网集群
+      - 香港——三网集群
       - 英国——联通集群
+      - 美国——三网集群
+      - 澳洲——三网集群
+      - 英国——三网集群
+      - 美国——电信集群
       - 澳洲——联通集群
       - 美国——联通集群
-      - 美国——三网集群
-      - 英国——电信集群
-      - 日本②——移动集群
-      - 新加坡——移动集群
-      - 新加坡/解锁流媒体——三网集群
-      - 日本——移动集群
-      - 澳洲——电信集群
-      - 澳洲——三网集群
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -172,166 +136,128 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡/解锁流媒体——移动集群
-      - 新加坡/解锁流媒体——电信集群
-      - 日本②——三网集群
-      - 日本——联通集群
-      - 香港——移动集群
+      - 日本——移动集群
+      - 日本②——移动集群
       - 日本②——联通集群
+      - 日本②——三网集群
       - 香港——电信集群
-      - 德国——移动集群
-      - 香港——联通集群
-      - 美国——电信集群
-      - 英国——移动集群
-      - 香港——三网集群
-      - 台湾/原生IP——联通集群
-      - 台湾/原生IP——三网集群
+      - 香港——移动集群
+      - 新加坡/解锁流媒体——电信集群
       - 新加坡——联通集群
-      - 台湾/原生IP——移动集群
-      - 印度——三网集群
-      - 英国——三网集群
-      - 印度——联通集群
+      - 香港——联通集群
+      - jdfnbm
+      - 日本——联通集群
       - 新加坡——三网集群
       - 德国——电信集群
-      - jdfnbm
+      - 印度——三网集群
+      - 印度——联通集群
+      - 台湾/原生IP——三网集群
+      - 香港——三网集群
       - 英国——联通集群
+      - 美国——三网集群
+      - 澳洲——三网集群
+      - 英国——三网集群
+      - 美国——电信集群
       - 澳洲——联通集群
       - 美国——联通集群
-      - 美国——三网集群
-      - 英国——电信集群
-      - 日本②——移动集群
-      - 新加坡——移动集群
-      - 新加坡/解锁流媒体——三网集群
-      - 日本——移动集群
-      - 澳洲——电信集群
-      - 澳洲——三网集群
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港——移动集群
       - 香港——电信集群
+      - 香港——移动集群
       - 香港——联通集群
-      - 香港——三网集群
-      - 台湾/原生IP——联通集群
       - 台湾/原生IP——三网集群
-      - 台湾/原生IP——移动集群
+      - 香港——三网集群
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡/解锁流媒体——移动集群
-      - 新加坡/解锁流媒体——电信集群
-      - 日本②——三网集群
-      - 日本——联通集群
-      - 香港——移动集群
+      - 日本——移动集群
+      - 日本②——移动集群
       - 日本②——联通集群
+      - 日本②——三网集群
       - 香港——电信集群
-      - 德国——移动集群
-      - 香港——联通集群
-      - 美国——电信集群
-      - 英国——移动集群
-      - 香港——三网集群
-      - 台湾/原生IP——联通集群
-      - 台湾/原生IP——三网集群
+      - 香港——移动集群
+      - 新加坡/解锁流媒体——电信集群
       - 新加坡——联通集群
-      - 台湾/原生IP——移动集群
-      - 印度——三网集群
-      - 英国——三网集群
-      - 印度——联通集群
+      - 香港——联通集群
+      - jdfnbm
+      - 日本——联通集群
       - 新加坡——三网集群
       - 德国——电信集群
-      - jdfnbm
+      - 印度——三网集群
+      - 印度——联通集群
+      - 台湾/原生IP——三网集群
+      - 香港——三网集群
       - 英国——联通集群
+      - 美国——三网集群
+      - 澳洲——三网集群
+      - 英国——三网集群
+      - 美国——电信集群
       - 澳洲——联通集群
       - 美国——联通集群
-      - 美国——三网集群
-      - 英国——电信集群
-      - 日本②——移动集群
-      - 新加坡——移动集群
-      - 新加坡/解锁流媒体——三网集群
-      - 日本——移动集群
-      - 澳洲——电信集群
-      - 澳洲——三网集群
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡/解锁流媒体——移动集群
-      - 新加坡/解锁流媒体——电信集群
-      - 日本②——三网集群
-      - 日本——联通集群
-      - 香港——移动集群
+      - 日本——移动集群
+      - 日本②——移动集群
       - 日本②——联通集群
+      - 日本②——三网集群
       - 香港——电信集群
-      - 德国——移动集群
-      - 香港——联通集群
-      - 美国——电信集群
-      - 英国——移动集群
-      - 香港——三网集群
-      - 台湾/原生IP——联通集群
-      - 台湾/原生IP——三网集群
+      - 香港——移动集群
+      - 新加坡/解锁流媒体——电信集群
       - 新加坡——联通集群
-      - 台湾/原生IP——移动集群
-      - 印度——三网集群
-      - 英国——三网集群
-      - 印度——联通集群
+      - 香港——联通集群
+      - jdfnbm
+      - 日本——联通集群
       - 新加坡——三网集群
       - 德国——电信集群
-      - jdfnbm
+      - 印度——三网集群
+      - 印度——联通集群
+      - 台湾/原生IP——三网集群
+      - 香港——三网集群
       - 英国——联通集群
+      - 美国——三网集群
+      - 澳洲——三网集群
+      - 英国——三网集群
+      - 美国——电信集群
       - 澳洲——联通集群
       - 美国——联通集群
-      - 美国——三网集群
-      - 英国——电信集群
-      - 日本②——移动集群
-      - 新加坡——移动集群
-      - 新加坡/解锁流媒体——三网集群
-      - 日本——移动集群
-      - 澳洲——电信集群
-      - 澳洲——三网集群
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡/解锁流媒体——移动集群
-      - 新加坡/解锁流媒体——电信集群
-      - 日本②——三网集群
-      - 日本——联通集群
-      - 香港——移动集群
+      - 日本——移动集群
+      - 日本②——移动集群
       - 日本②——联通集群
+      - 日本②——三网集群
       - 香港——电信集群
-      - 德国——移动集群
-      - 香港——联通集群
-      - 美国——电信集群
-      - 英国——移动集群
-      - 香港——三网集群
-      - 台湾/原生IP——联通集群
-      - 台湾/原生IP——三网集群
+      - 香港——移动集群
+      - 新加坡/解锁流媒体——电信集群
       - 新加坡——联通集群
-      - 台湾/原生IP——移动集群
-      - 印度——三网集群
-      - 英国——三网集群
-      - 印度——联通集群
+      - 香港——联通集群
+      - jdfnbm
+      - 日本——联通集群
       - 新加坡——三网集群
       - 德国——电信集群
-      - jdfnbm
+      - 印度——三网集群
+      - 印度——联通集群
+      - 台湾/原生IP——三网集群
+      - 香港——三网集群
       - 英国——联通集群
+      - 美国——三网集群
+      - 澳洲——三网集群
+      - 英国——三网集群
+      - 美国——电信集群
       - 澳洲——联通集群
       - 美国——联通集群
-      - 美国——三网集群
-      - 英国——电信集群
-      - 日本②——移动集群
-      - 新加坡——移动集群
-      - 新加坡/解锁流媒体——三网集群
-      - 日本——移动集群
-      - 澳洲——电信集群
-      - 澳洲——三网集群
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -347,39 +273,30 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡/解锁流媒体——移动集群
-      - 新加坡/解锁流媒体——电信集群
-      - 日本②——三网集群
-      - 日本——联通集群
-      - 香港——移动集群
+      - 日本——移动集群
+      - 日本②——移动集群
       - 日本②——联通集群
+      - 日本②——三网集群
       - 香港——电信集群
-      - 德国——移动集群
-      - 香港——联通集群
-      - 美国——电信集群
-      - 英国——移动集群
-      - 香港——三网集群
-      - 台湾/原生IP——联通集群
-      - 台湾/原生IP——三网集群
+      - 香港——移动集群
+      - 新加坡/解锁流媒体——电信集群
       - 新加坡——联通集群
-      - 台湾/原生IP——移动集群
-      - 印度——三网集群
-      - 英国——三网集群
-      - 印度——联通集群
+      - 香港——联通集群
+      - jdfnbm
+      - 日本——联通集群
       - 新加坡——三网集群
       - 德国——电信集群
-      - jdfnbm
+      - 印度——三网集群
+      - 印度——联通集群
+      - 台湾/原生IP——三网集群
+      - 香港——三网集群
       - 英国——联通集群
+      - 美国——三网集群
+      - 澳洲——三网集群
+      - 英国——三网集群
+      - 美国——电信集群
       - 澳洲——联通集群
       - 美国——联通集群
-      - 美国——三网集群
-      - 英国——电信集群
-      - 日本②——移动集群
-      - 新加坡——移动集群
-      - 新加坡/解锁流媒体——三网集群
-      - 日本——移动集群
-      - 澳洲——电信集群
-      - 澳洲——三网集群
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
