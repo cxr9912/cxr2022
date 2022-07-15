@@ -5,95 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】", server: cu.spacez.cloud, port: 30001, type: trojan, password: 216735c4-d280-4fe4-9e2f-5b2cb570a78c, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
   - {name: "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2", server: cu.spacez.cloud, port: 30001, type: trojan, password: 057b03d2-7ab1-45e1-9d62-704f2eabf150, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
   - {name: "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】", server: cu.spacez.cloud, port: 30007, type: trojan, password: 057b03d2-7ab1-45e1-9d62-704f2eabf150, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】 2", server: cu.spacez.cloud, port: 30007, type: trojan, password: 216735c4-d280-4fe4-9e2f-5b2cb570a78c, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】", server: cm.spacez.cloud, port: 30000, type: trojan, password: 216735c4-d280-4fe4-9e2f-5b2cb570a78c, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
   - {name: "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】", server: cu.spacez.cloud, port: 30002, type: trojan, password: 057b03d2-7ab1-45e1-9d62-704f2eabf150, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】 2", server: cu.spacez.cloud, port: 30002, type: trojan, password: 216735c4-d280-4fe4-9e2f-5b2cb570a78c, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】", server: cm.spacez.cloud, port: 30004, type: trojan, password: 216735c4-d280-4fe4-9e2f-5b2cb570a78c, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】", server: cm.spacez.cloud, port: 30003, type: trojan, password: 216735c4-d280-4fe4-9e2f-5b2cb570a78c, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]02香港-HongKong-1.0x-HGC【和記黃埔】", server: cu.spacez.cloud, port: 30000, type: trojan, password: 216735c4-d280-4fe4-9e2f-5b2cb570a78c, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2", server: cm.spacez.cloud, port: 30000, type: trojan, password: 057b03d2-7ab1-45e1-9d62-704f2eabf150, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】", server: cm.spacez.cloud, port: 30001, type: trojan, password: 216735c4-d280-4fe4-9e2f-5b2cb570a78c, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2", server: cm.spacez.cloud, port: 30001, type: trojan, password: 057b03d2-7ab1-45e1-9d62-704f2eabf150, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
   - {name: "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】 2", server: cm.spacez.cloud, port: 30003, type: trojan, password: 057b03d2-7ab1-45e1-9d62-704f2eabf150, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2", server: cm.spacez.cloud, port: 30000, type: trojan, password: 057b03d2-7ab1-45e1-9d62-704f2eabf150, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
   - {name: "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】 2", server: cm.spacez.cloud, port: 30004, type: trojan, password: 057b03d2-7ab1-45e1-9d62-704f2eabf150, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]29美國-Seattle-1.0x-NTT【NTT數據】", server: cu.spacez.cloud, port: 30009, type: trojan, password: 216735c4-d280-4fe4-9e2f-5b2cb570a78c, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]35英國-London-1.0x-GTHost【GTHost】", server: cu.spacez.cloud, port: 30011, type: trojan, password: 216735c4-d280-4fe4-9e2f-5b2cb570a78c, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]35英國-London-1.0x-GTHost【GTHost】 2", server: cu.spacez.cloud, port: 30011, type: trojan, password: 057b03d2-7ab1-45e1-9d62-704f2eabf150, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2", server: cm.spacez.cloud, port: 30001, type: trojan, password: 057b03d2-7ab1-45e1-9d62-704f2eabf150, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
       - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】"
-      - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】 2"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】"
-      - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】 2"
-      - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】"
-      - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】"
-      - "[Trojan]02香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】 2"
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
       - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】 2"
-      - "[Trojan]29美國-Seattle-1.0x-NTT【NTT數據】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】 2"
+      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
       - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】"
-      - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】 2"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】"
-      - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】 2"
-      - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】"
-      - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】"
-      - "[Trojan]02香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】 2"
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
       - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】 2"
-      - "[Trojan]29美國-Seattle-1.0x-NTT【NTT數據】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】 2"
+      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
       - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】"
-      - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】 2"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】"
-      - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】 2"
-      - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】"
-      - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】"
-      - "[Trojan]02香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】 2"
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
       - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】 2"
-      - "[Trojan]29美國-Seattle-1.0x-NTT【NTT數據】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】 2"
+      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -112,112 +68,61 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
       - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】"
-      - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】 2"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】"
-      - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】 2"
-      - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】"
-      - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】"
-      - "[Trojan]02香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】 2"
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
       - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】 2"
-      - "[Trojan]29美國-Seattle-1.0x-NTT【NTT數據】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】 2"
+      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
       - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】"
-      - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】 2"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】"
-      - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】 2"
-      - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】"
-      - "[Trojan]02香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】 2"
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
+      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
       - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】"
-      - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】 2"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】"
-      - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】 2"
-      - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】"
-      - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】"
-      - "[Trojan]02香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】 2"
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
       - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】 2"
-      - "[Trojan]29美國-Seattle-1.0x-NTT【NTT數據】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】 2"
+      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
       - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】"
-      - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】 2"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】"
-      - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】 2"
-      - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】"
-      - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】"
-      - "[Trojan]02香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】 2"
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
       - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】 2"
-      - "[Trojan]29美國-Seattle-1.0x-NTT【NTT數據】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】 2"
+      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
       - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】"
-      - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】 2"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】"
-      - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】 2"
-      - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】"
-      - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】"
-      - "[Trojan]02香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】 2"
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
       - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】 2"
-      - "[Trojan]29美國-Seattle-1.0x-NTT【NTT數據】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】 2"
+      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -233,24 +138,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
       - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】"
-      - "[Trojan]23日本-Tokyo-1.0x-PCCW【電信盈科】 2"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】"
-      - "[Trojan]08香港-HongKong-1.0x-HKIX【香港國際互聯網交換中心】 2"
-      - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】"
-      - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】"
-      - "[Trojan]02香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
       - "[Trojan]10台灣-Taipei-1.0x-Hinet【中華電信】 2"
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】 2"
       - "[Trojan]13馬來西亞-Kuala Lumpur-1.0x-TMNET【馬來西亞電信】 2"
-      - "[Trojan]29美國-Seattle-1.0x-NTT【NTT數據】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】"
-      - "[Trojan]35英國-London-1.0x-GTHost【GTHost】 2"
+      - "[Trojan]04香港-HongKong-1.0x-HKBN【香港寬頻】 2"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
