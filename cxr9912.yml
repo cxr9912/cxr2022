@@ -5,39 +5,99 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 01【2 LB】, server: aaa-666.txwd.xyz, port: 30014, type: ss, cipher: aes-128-gcm, password: GXFdcGZb5wPiGNf8, udp: true}
-  - {name: 美国 水牛城 01, server: aaa-666.txwd.xyz, port: 32002, type: ss, cipher: aes-128-gcm, password: GXFdcGZb5wPiGNf8, udp: true}
+  - {name: 台湾②, server: cm.awslcn.cc, port: 25232, type: vmess, uuid: acc1d543-c769-48aa-a93b-03e66f10539c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: "[5x]IEPL 专线 香港 NO.3", server: a692d29eaa2fa14b.treenewbe.club, port: 50014, type: ss, cipher: aes-128-gcm, password: 8732ca72-8bc5-4981-aff0-d86163138e56, udp: true}
+  - {name: 香港①, server: cm.awslcn.cc, port: 25234, type: vmess, uuid: acc1d543-c769-48aa-a93b-03e66f10539c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: "[5x]IEPL 专线 香港 NO.2", server: a692d29eaa2fa14b.treenewbe.club, port: 50013, type: ss, cipher: aes-128-gcm, password: 8732ca72-8bc5-4981-aff0-d86163138e56, udp: true}
+  - {name: "[5x]IEPL 专线 香港 NO.1", server: a692d29eaa2fa14b.treenewbe.club, port: 50012, type: ss, cipher: aes-128-gcm, password: 8732ca72-8bc5-4981-aff0-d86163138e56, udp: true}
   - {name: 德国 法兰克福 01 【4 LB】, server: aaa-666.txwd.xyz, port: 30008, type: ss, cipher: aes-128-gcm, password: GXFdcGZb5wPiGNf8, udp: true}
-  - {name: 美国 洛杉矶 01, server: aaa-666.txwd.xyz, port: 30015, type: ss, cipher: aes-128-gcm, password: GXFdcGZb5wPiGNf8, udp: true}
+  - {name: 美国 水牛城 01, server: aaa-666.txwd.xyz, port: 32002, type: ss, cipher: aes-128-gcm, password: GXFdcGZb5wPiGNf8, udp: true}
+  - {name: "台湾✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 31097, type: trojan, password: 747f7f97-813e-49e4-85b0-73c28dd18fba, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[3x]IEPL 专线 台湾 NO.2", server: a692d29eaa2fa14b.treenewbe.club, port: 50011, type: ss, cipher: aes-128-gcm, password: 8732ca72-8bc5-4981-aff0-d86163138e56, udp: true}
+  - {name: "香港✈️中转 [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 45379, type: trojan, password: 747f7f97-813e-49e4-85b0-73c28dd18fba, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[5x]IEPL 专线 香港 NO.4", server: a692d29eaa2fa14b.treenewbe.club, port: 50015, type: ss, cipher: aes-128-gcm, password: 8732ca72-8bc5-4981-aff0-d86163138e56, udp: true}
+  - {name: 香港02, server: cm1.awslcn.cc, port: 25242, type: vmess, uuid: acc1d543-c769-48aa-a93b-03e66f10539c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm1.awslcn.cc}, udp: true}
+  - {name: "[3x]IEPL 专线 台湾 NO.1", server: a692d29eaa2fa14b.treenewbe.club, port: 50010, type: ss, cipher: aes-128-gcm, password: 8732ca72-8bc5-4981-aff0-d86163138e56, udp: true}
+  - {name: "[3x]IEPL 专线 新加坡 NO.1", server: a692d29eaa2fa14b.treenewbe.club, port: 50019, type: ss, cipher: aes-128-gcm, password: 8732ca72-8bc5-4981-aff0-d86163138e56, udp: true}
+  - {name: "俄罗斯✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 42167, type: trojan, password: 747f7f97-813e-49e4-85b0-73c28dd18fba, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[3x]IEPL 专线 新加坡 NO.2", server: a692d29eaa2fa14b.treenewbe.club, port: 50020, type: ss, cipher: aes-128-gcm, password: 8732ca72-8bc5-4981-aff0-d86163138e56, udp: true}
+  - {name: 香港⑤, server: cm.awslcn.cc, port: 25236, type: vmess, uuid: acc1d543-c769-48aa-a93b-03e66f10539c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: 马来01, server: cm.awslcn.cc, port: 25228, type: vmess, uuid: acc1d543-c769-48aa-a93b-03e66f10539c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: 香港 01【2 LB】, server: aaa-666.txwd.xyz, port: 30014, type: ss, cipher: aes-128-gcm, password: GXFdcGZb5wPiGNf8, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 01【2 LB】
-      - 美国 水牛城 01
+      - 台湾②
+      - "[5x]IEPL 专线 香港 NO.3"
+      - 香港①
+      - "[5x]IEPL 专线 香港 NO.2"
+      - "[5x]IEPL 专线 香港 NO.1"
       - 德国 法兰克福 01 【4 LB】
-      - 美国 洛杉矶 01
+      - 美国 水牛城 01
+      - 台湾✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 台湾 NO.2"
+      - 香港✈️中转 [湘沪BGP]
+      - "[5x]IEPL 专线 香港 NO.4"
+      - 香港02
+      - "[3x]IEPL 专线 台湾 NO.1"
+      - "[3x]IEPL 专线 新加坡 NO.1"
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 新加坡 NO.2"
+      - 香港⑤
+      - 马来01
+      - 香港 01【2 LB】
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 01【2 LB】
-      - 美国 水牛城 01
+      - 台湾②
+      - "[5x]IEPL 专线 香港 NO.3"
+      - 香港①
+      - "[5x]IEPL 专线 香港 NO.2"
+      - "[5x]IEPL 专线 香港 NO.1"
       - 德国 法兰克福 01 【4 LB】
-      - 美国 洛杉矶 01
+      - 美国 水牛城 01
+      - 台湾✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 台湾 NO.2"
+      - 香港✈️中转 [湘沪BGP]
+      - "[5x]IEPL 专线 香港 NO.4"
+      - 香港02
+      - "[3x]IEPL 专线 台湾 NO.1"
+      - "[3x]IEPL 专线 新加坡 NO.1"
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 新加坡 NO.2"
+      - 香港⑤
+      - 马来01
+      - 香港 01【2 LB】
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 01【2 LB】
-      - 美国 水牛城 01
+      - 台湾②
+      - "[5x]IEPL 专线 香港 NO.3"
+      - 香港①
+      - "[5x]IEPL 专线 香港 NO.2"
+      - "[5x]IEPL 专线 香港 NO.1"
       - 德国 法兰克福 01 【4 LB】
-      - 美国 洛杉矶 01
+      - 美国 水牛城 01
+      - 台湾✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 台湾 NO.2"
+      - 香港✈️中转 [湘沪BGP]
+      - "[5x]IEPL 专线 香港 NO.4"
+      - 香港02
+      - "[3x]IEPL 专线 台湾 NO.1"
+      - "[3x]IEPL 专线 新加坡 NO.1"
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 新加坡 NO.2"
+      - 香港⑤
+      - 马来01
+      - 香港 01【2 LB】
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,14 +116,41 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 01【2 LB】
-      - 美国 水牛城 01
+      - 台湾②
+      - "[5x]IEPL 专线 香港 NO.3"
+      - 香港①
+      - "[5x]IEPL 专线 香港 NO.2"
+      - "[5x]IEPL 专线 香港 NO.1"
       - 德国 法兰克福 01 【4 LB】
-      - 美国 洛杉矶 01
+      - 美国 水牛城 01
+      - 台湾✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 台湾 NO.2"
+      - 香港✈️中转 [湘沪BGP]
+      - "[5x]IEPL 专线 香港 NO.4"
+      - 香港02
+      - "[3x]IEPL 专线 台湾 NO.1"
+      - "[3x]IEPL 专线 新加坡 NO.1"
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 新加坡 NO.2"
+      - 香港⑤
+      - 马来01
+      - 香港 01【2 LB】
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾②
+      - "[5x]IEPL 专线 香港 NO.3"
+      - 香港①
+      - "[5x]IEPL 专线 香港 NO.2"
+      - "[5x]IEPL 专线 香港 NO.1"
+      - 台湾✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 台湾 NO.2"
+      - 香港✈️中转 [湘沪BGP]
+      - "[5x]IEPL 专线 香港 NO.4"
+      - 香港02
+      - "[3x]IEPL 专线 台湾 NO.1"
+      - 香港⑤
       - 香港 01【2 LB】
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
@@ -71,29 +158,74 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 01【2 LB】
-      - 美国 水牛城 01
+      - 台湾②
+      - "[5x]IEPL 专线 香港 NO.3"
+      - 香港①
+      - "[5x]IEPL 专线 香港 NO.2"
+      - "[5x]IEPL 专线 香港 NO.1"
       - 德国 法兰克福 01 【4 LB】
-      - 美国 洛杉矶 01
+      - 美国 水牛城 01
+      - 台湾✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 台湾 NO.2"
+      - 香港✈️中转 [湘沪BGP]
+      - "[5x]IEPL 专线 香港 NO.4"
+      - 香港02
+      - "[3x]IEPL 专线 台湾 NO.1"
+      - "[3x]IEPL 专线 新加坡 NO.1"
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 新加坡 NO.2"
+      - 香港⑤
+      - 马来01
+      - 香港 01【2 LB】
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 01【2 LB】
-      - 美国 水牛城 01
+      - 台湾②
+      - "[5x]IEPL 专线 香港 NO.3"
+      - 香港①
+      - "[5x]IEPL 专线 香港 NO.2"
+      - "[5x]IEPL 专线 香港 NO.1"
       - 德国 法兰克福 01 【4 LB】
-      - 美国 洛杉矶 01
+      - 美国 水牛城 01
+      - 台湾✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 台湾 NO.2"
+      - 香港✈️中转 [湘沪BGP]
+      - "[5x]IEPL 专线 香港 NO.4"
+      - 香港02
+      - "[3x]IEPL 专线 台湾 NO.1"
+      - "[3x]IEPL 专线 新加坡 NO.1"
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 新加坡 NO.2"
+      - 香港⑤
+      - 马来01
+      - 香港 01【2 LB】
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 01【2 LB】
-      - 美国 水牛城 01
+      - 台湾②
+      - "[5x]IEPL 专线 香港 NO.3"
+      - 香港①
+      - "[5x]IEPL 专线 香港 NO.2"
+      - "[5x]IEPL 专线 香港 NO.1"
       - 德国 法兰克福 01 【4 LB】
-      - 美国 洛杉矶 01
+      - 美国 水牛城 01
+      - 台湾✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 台湾 NO.2"
+      - 香港✈️中转 [湘沪BGP]
+      - "[5x]IEPL 专线 香港 NO.4"
+      - 香港02
+      - "[3x]IEPL 专线 台湾 NO.1"
+      - "[3x]IEPL 专线 新加坡 NO.1"
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 新加坡 NO.2"
+      - 香港⑤
+      - 马来01
+      - 香港 01【2 LB】
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -109,10 +241,25 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 01【2 LB】
-      - 美国 水牛城 01
+      - 台湾②
+      - "[5x]IEPL 专线 香港 NO.3"
+      - 香港①
+      - "[5x]IEPL 专线 香港 NO.2"
+      - "[5x]IEPL 专线 香港 NO.1"
       - 德国 法兰克福 01 【4 LB】
-      - 美国 洛杉矶 01
+      - 美国 水牛城 01
+      - 台湾✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 台湾 NO.2"
+      - 香港✈️中转 [湘沪BGP]
+      - "[5x]IEPL 专线 香港 NO.4"
+      - 香港02
+      - "[3x]IEPL 专线 台湾 NO.1"
+      - "[3x]IEPL 专线 新加坡 NO.1"
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - "[3x]IEPL 专线 新加坡 NO.2"
+      - 香港⑤
+      - 马来01
+      - 香港 01【2 LB】
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
