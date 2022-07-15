@@ -5,79 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港4 | 0.8x, server: just-run.iepl.rpda.edu.pl, port: 40040, type: ss, cipher: aes-256-gcm, password: 131a65af-7b71-48da-b0e3-87990dd91366, udp: true}
-  - {name: 越南 1 | 1x, server: i-just-wanna-run.iepl.rpda.edu.pl, port: 40001, type: vmess, uuid: 131a65af-7b71-48da-b0e3-87990dd91366, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港3 | 0.8x, server: just-run.iepl.rpda.edu.pl, port: 40034, type: ss, cipher: aes-256-gcm, password: 131a65af-7b71-48da-b0e3-87990dd91366, udp: true}
-  - {name: 香港1 | 1x, server: i-just-wanna-run.iepl.rpda.edu.pl, port: 40086, type: vmess, uuid: 131a65af-7b71-48da-b0e3-87990dd91366, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国1 | 1x, server: i-just-wanna-run.iepl.rpda.edu.pl, port: 40023, type: vmess, uuid: 131a65af-7b71-48da-b0e3-87990dd91366, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港2 | 0.8x, server: i-just-wanna-run.iepl.rpda.edu.pl, port: 40096, type: vmess, uuid: 131a65af-7b71-48da-b0e3-87990dd91366, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡2 | 1x, server: i-just-wanna-run.iepl.rpda.edu.pl, port: 40093, type: vmess, uuid: 131a65af-7b71-48da-b0e3-87990dd91366, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 柬埔寨1 | 1x, server: i-just-wanna-run.iepl.rpda.edu.pl, port: 40079, type: vmess, uuid: 131a65af-7b71-48da-b0e3-87990dd91366, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 菲律宾1 | 1x, server: i-just-wanna-run.iepl.rpda.edu.pl, port: 40061, type: vmess, uuid: 131a65af-7b71-48da-b0e3-87990dd91366, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本5 | 1.5x, server: i-just-wanna-run.iepl.rpda.edu.pl, port: 40051, type: vmess, uuid: 131a65af-7b71-48da-b0e3-87990dd91366, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本16 | 1x, server: i-just-wanna-run.iepl.rpda.edu.pl, port: 40019, type: vmess, uuid: 131a65af-7b71-48da-b0e3-87990dd91366, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本18 | 0.8x, server: i-just-wanna-run.iepl.rpda.edu.pl, port: 40094, type: vmess, uuid: 131a65af-7b71-48da-b0e3-87990dd91366, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本1 | 1.5x, server: i-just-wanna-run.iepl.rpda.edu.pl, port: 40098, type: vmess, uuid: 131a65af-7b71-48da-b0e3-87990dd91366, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本14 | 0.8x, server: i-just-wanna-run.iepl.rpda.edu.pl, port: 40073, type: vmess, uuid: 131a65af-7b71-48da-b0e3-87990dd91366, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 01【2 LB】, server: aaa-666.txwd.xyz, port: 30014, type: ss, cipher: aes-128-gcm, password: Nbuk8KTZgivHffBt, udp: true}
+  - {name: 日本 大阪 01【4 LB】, server: aaa-666.txwd.xyz, port: 30005, type: ss, cipher: aes-128-gcm, password: Nbuk8KTZgivHffBt, udp: true}
+  - {name: 韩国 春川 01【4 LB】, server: aaa-666.txwd.xyz, port: 30007, type: ss, cipher: aes-128-gcm, password: Nbuk8KTZgivHffBt, udp: true}
+  - {name: 德国 法兰克福 01 【4 LB】, server: aaa-666.txwd.xyz, port: 30008, type: ss, cipher: aes-128-gcm, password: Nbuk8KTZgivHffBt, udp: true}
+  - {name: 美国 凤凰城 01【4 LB】, server: aaa-666.txwd.xyz, port: 30006, type: ss, cipher: aes-128-gcm, password: Nbuk8KTZgivHffBt, udp: true}
+  - {name: 美国 水牛城 01, server: aaa-666.txwd.xyz, port: 32002, type: ss, cipher: aes-128-gcm, password: Nbuk8KTZgivHffBt, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港4 | 0.8x
-      - 越南 1 | 1x
-      - 香港3 | 0.8x
-      - 香港1 | 1x
-      - 韩国1 | 1x
-      - 香港2 | 0.8x
-      - 新加坡2 | 1x
-      - 柬埔寨1 | 1x
-      - 菲律宾1 | 1x
-      - 日本5 | 1.5x
-      - 日本16 | 1x
-      - 日本18 | 0.8x
-      - 日本1 | 1.5x
-      - 日本14 | 0.8x
+      - 香港 01【2 LB】
+      - 日本 大阪 01【4 LB】
+      - 韩国 春川 01【4 LB】
+      - 德国 法兰克福 01 【4 LB】
+      - 美国 凤凰城 01【4 LB】
+      - 美国 水牛城 01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港4 | 0.8x
-      - 越南 1 | 1x
-      - 香港3 | 0.8x
-      - 香港1 | 1x
-      - 韩国1 | 1x
-      - 香港2 | 0.8x
-      - 新加坡2 | 1x
-      - 柬埔寨1 | 1x
-      - 菲律宾1 | 1x
-      - 日本5 | 1.5x
-      - 日本16 | 1x
-      - 日本18 | 0.8x
-      - 日本1 | 1.5x
-      - 日本14 | 0.8x
+      - 香港 01【2 LB】
+      - 日本 大阪 01【4 LB】
+      - 韩国 春川 01【4 LB】
+      - 德国 法兰克福 01 【4 LB】
+      - 美国 凤凰城 01【4 LB】
+      - 美国 水牛城 01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港4 | 0.8x
-      - 越南 1 | 1x
-      - 香港3 | 0.8x
-      - 香港1 | 1x
-      - 韩国1 | 1x
-      - 香港2 | 0.8x
-      - 新加坡2 | 1x
-      - 柬埔寨1 | 1x
-      - 菲律宾1 | 1x
-      - 日本5 | 1.5x
-      - 日本16 | 1x
-      - 日本18 | 0.8x
-      - 日本1 | 1.5x
-      - 日本14 | 0.8x
+      - 香港 01【2 LB】
+      - 日本 大阪 01【4 LB】
+      - 韩国 春川 01【4 LB】
+      - 德国 法兰克福 01 【4 LB】
+      - 美国 凤凰城 01【4 LB】
+      - 美国 水牛城 01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,87 +64,52 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港4 | 0.8x
-      - 越南 1 | 1x
-      - 香港3 | 0.8x
-      - 香港1 | 1x
-      - 韩国1 | 1x
-      - 香港2 | 0.8x
-      - 新加坡2 | 1x
-      - 柬埔寨1 | 1x
-      - 菲律宾1 | 1x
-      - 日本5 | 1.5x
-      - 日本16 | 1x
-      - 日本18 | 0.8x
-      - 日本1 | 1.5x
-      - 日本14 | 0.8x
+      - 香港 01【2 LB】
+      - 日本 大阪 01【4 LB】
+      - 韩国 春川 01【4 LB】
+      - 德国 法兰克福 01 【4 LB】
+      - 美国 凤凰城 01【4 LB】
+      - 美国 水牛城 01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港4 | 0.8x
-      - 香港3 | 0.8x
-      - 香港1 | 1x
-      - 香港2 | 0.8x
+      - 香港 01【2 LB】
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港4 | 0.8x
-      - 越南 1 | 1x
-      - 香港3 | 0.8x
-      - 香港1 | 1x
-      - 韩国1 | 1x
-      - 香港2 | 0.8x
-      - 新加坡2 | 1x
-      - 柬埔寨1 | 1x
-      - 菲律宾1 | 1x
-      - 日本5 | 1.5x
-      - 日本16 | 1x
-      - 日本18 | 0.8x
-      - 日本1 | 1.5x
-      - 日本14 | 0.8x
+      - 香港 01【2 LB】
+      - 日本 大阪 01【4 LB】
+      - 韩国 春川 01【4 LB】
+      - 德国 法兰克福 01 【4 LB】
+      - 美国 凤凰城 01【4 LB】
+      - 美国 水牛城 01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港4 | 0.8x
-      - 越南 1 | 1x
-      - 香港3 | 0.8x
-      - 香港1 | 1x
-      - 韩国1 | 1x
-      - 香港2 | 0.8x
-      - 新加坡2 | 1x
-      - 柬埔寨1 | 1x
-      - 菲律宾1 | 1x
-      - 日本5 | 1.5x
-      - 日本16 | 1x
-      - 日本18 | 0.8x
-      - 日本1 | 1.5x
-      - 日本14 | 0.8x
+      - 香港 01【2 LB】
+      - 日本 大阪 01【4 LB】
+      - 韩国 春川 01【4 LB】
+      - 德国 法兰克福 01 【4 LB】
+      - 美国 凤凰城 01【4 LB】
+      - 美国 水牛城 01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港4 | 0.8x
-      - 越南 1 | 1x
-      - 香港3 | 0.8x
-      - 香港1 | 1x
-      - 韩国1 | 1x
-      - 香港2 | 0.8x
-      - 新加坡2 | 1x
-      - 柬埔寨1 | 1x
-      - 菲律宾1 | 1x
-      - 日本5 | 1.5x
-      - 日本16 | 1x
-      - 日本18 | 0.8x
-      - 日本1 | 1.5x
-      - 日本14 | 0.8x
+      - 香港 01【2 LB】
+      - 日本 大阪 01【4 LB】
+      - 韩国 春川 01【4 LB】
+      - 德国 法兰克福 01 【4 LB】
+      - 美国 凤凰城 01【4 LB】
+      - 美国 水牛城 01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -192,20 +125,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港4 | 0.8x
-      - 越南 1 | 1x
-      - 香港3 | 0.8x
-      - 香港1 | 1x
-      - 韩国1 | 1x
-      - 香港2 | 0.8x
-      - 新加坡2 | 1x
-      - 柬埔寨1 | 1x
-      - 菲律宾1 | 1x
-      - 日本5 | 1.5x
-      - 日本16 | 1x
-      - 日本18 | 0.8x
-      - 日本1 | 1.5x
-      - 日本14 | 0.8x
+      - 香港 01【2 LB】
+      - 日本 大阪 01【4 LB】
+      - 韩国 春川 01【4 LB】
+      - 德国 法兰克福 01 【4 LB】
+      - 美国 凤凰城 01【4 LB】
+      - 美国 水牛城 01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
