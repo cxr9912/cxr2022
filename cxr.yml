@@ -5,39 +5,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 台湾-优化2, server: m.mjmjmjmj.cyou, port: 16616, type: vmess, uuid: 4634e865-bbec-47e6-b027-a3fd882cf36a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
-  - {name: 柬埔寨-优化, server: u.mjmjmjmj.cyou, port: 16634, type: vmess, uuid: 4634e865-bbec-47e6-b027-a3fd882cf36a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
-  - {name: 马来西亚-优化3, server: m.mjmjmjmj.cyou, port: 26623, type: vmess, uuid: 4634e865-bbec-47e6-b027-a3fd882cf36a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
-  - {name: 美国_TG@nodesharing_92, server: spotted.bigkangaroo.net, port: 443, type: trojan, password: ZCESAylB2u5jga736e8CTN3DcFCAOYz0DlDyx9F3ZpXnSp3IYRa4RwOSqe8Kax, sni: spotted.bigkangaroo.net, skip-cert-verify: true, udp: true}
+  - {name: CN 4 | Airproxies, server: aaa-666.txwd.xyz, port: 30004, type: ss, cipher: aes-128-gcm, password: sbqU9SKl8FkBVs6F, udp: true}
+  - {name: HK 1 | Airproxies, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 5 | Airproxies, server: aaa-666.txwd.xyz, port: 30007, type: ss, cipher: aes-128-gcm, password: sbqU9SKl8FkBVs6F, udp: true}
+  - {name: US 2 | Airproxies, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 22 | Airproxies, server: gzyd1.52147.top, port: 30080, type: trojan, password: 2778263c-486d-4af8-9ba4-25fc536b5bac, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN 11 | Airproxies, server: aaa-666.txwd.xyz, port: 30008, type: ss, cipher: aes-128-gcm, password: Nbuk8KTZgivHffBt, udp: true}
+  - {name: CN 23 | Airproxies, server: gzyd1.52147.top, port: 30010, type: trojan, password: 2778263c-486d-4af8-9ba4-25fc536b5bac, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN 10 | Airproxies, server: aaa-666.txwd.xyz, port: 30008, type: ss, cipher: aes-128-gcm, password: sbqU9SKl8FkBVs6F, udp: true}
+  - {name: CN 21 | Airproxies, server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 12 | Airproxies, server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 17 | Airproxies, server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 13 | Airproxies, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 25 | Airproxies, server: hnyd.52147.top, port: 30010, type: trojan, password: 2778263c-486d-4af8-9ba4-25fc536b5bac, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN 7 | Airproxies, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW 1 | Airproxies, server: hinet.52147.top, port: 28000, type: trojan, password: 2778263c-486d-4af8-9ba4-25fc536b5bac, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN 14 | Airproxies, server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 3 | Airproxies, server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 9 | Airproxies, server: pp1.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 15 | Airproxies, server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 19 | Airproxies, server: aaa-666.txwd.xyz, port: 30006, type: ss, cipher: aes-128-gcm, password: sbqU9SKl8FkBVs6F, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾-优化2
-      - 柬埔寨-优化
-      - 马来西亚-优化3
-      - 美国_TG@nodesharing_92
+      - CN 4 | Airproxies
+      - HK 1 | Airproxies
+      - CN 5 | Airproxies
+      - US 2 | Airproxies
+      - CN 22 | Airproxies
+      - CN 11 | Airproxies
+      - CN 23 | Airproxies
+      - CN 10 | Airproxies
+      - CN 21 | Airproxies
+      - CN 12 | Airproxies
+      - CN 17 | Airproxies
+      - CN 13 | Airproxies
+      - CN 25 | Airproxies
+      - CN 7 | Airproxies
+      - TW 1 | Airproxies
+      - CN 14 | Airproxies
+      - CN 3 | Airproxies
+      - CN 9 | Airproxies
+      - CN 15 | Airproxies
+      - CN 19 | Airproxies
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 台湾-优化2
-      - 柬埔寨-优化
-      - 马来西亚-优化3
-      - 美国_TG@nodesharing_92
+      - CN 4 | Airproxies
+      - HK 1 | Airproxies
+      - CN 5 | Airproxies
+      - US 2 | Airproxies
+      - CN 22 | Airproxies
+      - CN 11 | Airproxies
+      - CN 23 | Airproxies
+      - CN 10 | Airproxies
+      - CN 21 | Airproxies
+      - CN 12 | Airproxies
+      - CN 17 | Airproxies
+      - CN 13 | Airproxies
+      - CN 25 | Airproxies
+      - CN 7 | Airproxies
+      - TW 1 | Airproxies
+      - CN 14 | Airproxies
+      - CN 3 | Airproxies
+      - CN 9 | Airproxies
+      - CN 15 | Airproxies
+      - CN 19 | Airproxies
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾-优化2
-      - 柬埔寨-优化
-      - 马来西亚-优化3
-      - 美国_TG@nodesharing_92
+      - CN 4 | Airproxies
+      - HK 1 | Airproxies
+      - CN 5 | Airproxies
+      - US 2 | Airproxies
+      - CN 22 | Airproxies
+      - CN 11 | Airproxies
+      - CN 23 | Airproxies
+      - CN 10 | Airproxies
+      - CN 21 | Airproxies
+      - CN 12 | Airproxies
+      - CN 17 | Airproxies
+      - CN 13 | Airproxies
+      - CN 25 | Airproxies
+      - CN 7 | Airproxies
+      - TW 1 | Airproxies
+      - CN 14 | Airproxies
+      - CN 3 | Airproxies
+      - CN 9 | Airproxies
+      - CN 15 | Airproxies
+      - CN 19 | Airproxies
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,44 +120,107 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾-优化2
-      - 柬埔寨-优化
-      - 马来西亚-优化3
-      - 美国_TG@nodesharing_92
+      - CN 4 | Airproxies
+      - HK 1 | Airproxies
+      - CN 5 | Airproxies
+      - US 2 | Airproxies
+      - CN 22 | Airproxies
+      - CN 11 | Airproxies
+      - CN 23 | Airproxies
+      - CN 10 | Airproxies
+      - CN 21 | Airproxies
+      - CN 12 | Airproxies
+      - CN 17 | Airproxies
+      - CN 13 | Airproxies
+      - CN 25 | Airproxies
+      - CN 7 | Airproxies
+      - TW 1 | Airproxies
+      - CN 14 | Airproxies
+      - CN 3 | Airproxies
+      - CN 9 | Airproxies
+      - CN 15 | Airproxies
+      - CN 19 | Airproxies
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾-优化2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台湾-优化2
-      - 柬埔寨-优化
-      - 马来西亚-优化3
-      - 美国_TG@nodesharing_92
+      - CN 4 | Airproxies
+      - HK 1 | Airproxies
+      - CN 5 | Airproxies
+      - US 2 | Airproxies
+      - CN 22 | Airproxies
+      - CN 11 | Airproxies
+      - CN 23 | Airproxies
+      - CN 10 | Airproxies
+      - CN 21 | Airproxies
+      - CN 12 | Airproxies
+      - CN 17 | Airproxies
+      - CN 13 | Airproxies
+      - CN 25 | Airproxies
+      - CN 7 | Airproxies
+      - TW 1 | Airproxies
+      - CN 14 | Airproxies
+      - CN 3 | Airproxies
+      - CN 9 | Airproxies
+      - CN 15 | Airproxies
+      - CN 19 | Airproxies
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台湾-优化2
-      - 柬埔寨-优化
-      - 马来西亚-优化3
-      - 美国_TG@nodesharing_92
+      - CN 4 | Airproxies
+      - HK 1 | Airproxies
+      - CN 5 | Airproxies
+      - US 2 | Airproxies
+      - CN 22 | Airproxies
+      - CN 11 | Airproxies
+      - CN 23 | Airproxies
+      - CN 10 | Airproxies
+      - CN 21 | Airproxies
+      - CN 12 | Airproxies
+      - CN 17 | Airproxies
+      - CN 13 | Airproxies
+      - CN 25 | Airproxies
+      - CN 7 | Airproxies
+      - TW 1 | Airproxies
+      - CN 14 | Airproxies
+      - CN 3 | Airproxies
+      - CN 9 | Airproxies
+      - CN 15 | Airproxies
+      - CN 19 | Airproxies
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾-优化2
-      - 柬埔寨-优化
-      - 马来西亚-优化3
-      - 美国_TG@nodesharing_92
+      - CN 4 | Airproxies
+      - HK 1 | Airproxies
+      - CN 5 | Airproxies
+      - US 2 | Airproxies
+      - CN 22 | Airproxies
+      - CN 11 | Airproxies
+      - CN 23 | Airproxies
+      - CN 10 | Airproxies
+      - CN 21 | Airproxies
+      - CN 12 | Airproxies
+      - CN 17 | Airproxies
+      - CN 13 | Airproxies
+      - CN 25 | Airproxies
+      - CN 7 | Airproxies
+      - TW 1 | Airproxies
+      - CN 14 | Airproxies
+      - CN 3 | Airproxies
+      - CN 9 | Airproxies
+      - CN 15 | Airproxies
+      - CN 19 | Airproxies
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -109,10 +236,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾-优化2
-      - 柬埔寨-优化
-      - 马来西亚-优化3
-      - 美国_TG@nodesharing_92
+      - CN 4 | Airproxies
+      - HK 1 | Airproxies
+      - CN 5 | Airproxies
+      - US 2 | Airproxies
+      - CN 22 | Airproxies
+      - CN 11 | Airproxies
+      - CN 23 | Airproxies
+      - CN 10 | Airproxies
+      - CN 21 | Airproxies
+      - CN 12 | Airproxies
+      - CN 17 | Airproxies
+      - CN 13 | Airproxies
+      - CN 25 | Airproxies
+      - CN 7 | Airproxies
+      - TW 1 | Airproxies
+      - CN 14 | Airproxies
+      - CN 3 | Airproxies
+      - CN 9 | Airproxies
+      - CN 15 | Airproxies
+      - CN 19 | Airproxies
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
