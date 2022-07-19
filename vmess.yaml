@@ -5,43 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[高速]香港4-广港隧道-稳定-1.8x", server: gz1.fkfirewall.top, port: 18625, type: vmess, uuid: 500f3944-3699-4ed8-96af-f25c0d51a281, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: hk1.fkfirewall.top}, udp: true}
-  - {name: 日本1-0.8x, server: jp1.fkfirewall.top, port: 11451, type: vmess, uuid: 500f3944-3699-4ed8-96af-f25c0d51a281, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: jp1.fkfirewall.top}, udp: true}
-  - {name: 香港1-0.8x, server: hk1.fkfirewall.top, port: 443, type: vmess, uuid: 500f3944-3699-4ed8-96af-f25c0d51a281, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: hk1.fkfirewall.top}, udp: true}
-  - {name: "[高速]德国4-中欧隧道-1.2x", server: hn1.fkfirewall.top, port: 39373, type: vmess, uuid: 500f3944-3699-4ed8-96af-f25c0d51a281, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: de1.fkfirewall.top}, udp: true}
-  - {name: 香港3-川港隧道-稳定-1x, server: sc1.fkfirewall.top, port: 36670, type: vmess, uuid: 500f3944-3699-4ed8-96af-f25c0d51a281, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: hk1.fkfirewall.top}, udp: true}
+  - {name: hfsfb, server: gdgz.henet.cyou, port: 30011, type: ss, cipher: chacha20-ietf-poly1305, password: c2d0b0f3-3a85-490d-833f-24a9c9284578, udp: true}
+  - {name: TW, server: gdgz.henet.cyou, port: 30011, type: ss, cipher: chacha20-ietf-poly1305, password: 026939c1-7742-463f-97ec-ba8037eeea91, udp: true}
+  - {name: mcdyn, server: 103.253.43.228, port: 443, type: trojan, password: 48a55ebb-54f2-4757-8899-047933695eb2, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[高速]香港4-广港隧道-稳定-1.8x"
-      - 日本1-0.8x
-      - 香港1-0.8x
-      - "[高速]德国4-中欧隧道-1.2x"
-      - 香港3-川港隧道-稳定-1x
+      - hfsfb
+      - TW
+      - mcdyn
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[高速]香港4-广港隧道-稳定-1.8x"
-      - 日本1-0.8x
-      - 香港1-0.8x
-      - "[高速]德国4-中欧隧道-1.2x"
-      - 香港3-川港隧道-稳定-1x
+      - hfsfb
+      - TW
+      - mcdyn
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[高速]香港4-广港隧道-稳定-1.8x"
-      - 日本1-0.8x
-      - 香港1-0.8x
-      - "[高速]德国4-中欧隧道-1.2x"
-      - 香港3-川港隧道-稳定-1x
+      - hfsfb
+      - TW
+      - mcdyn
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,50 +52,39 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[高速]香港4-广港隧道-稳定-1.8x"
-      - 日本1-0.8x
-      - 香港1-0.8x
-      - "[高速]德国4-中欧隧道-1.2x"
-      - 香港3-川港隧道-稳定-1x
+      - hfsfb
+      - TW
+      - mcdyn
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[高速]香港4-广港隧道-稳定-1.8x"
-      - 香港1-0.8x
-      - 香港3-川港隧道-稳定-1x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[高速]香港4-广港隧道-稳定-1.8x"
-      - 日本1-0.8x
-      - 香港1-0.8x
-      - "[高速]德国4-中欧隧道-1.2x"
-      - 香港3-川港隧道-稳定-1x
+      - hfsfb
+      - TW
+      - mcdyn
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[高速]香港4-广港隧道-稳定-1.8x"
-      - 日本1-0.8x
-      - 香港1-0.8x
-      - "[高速]德国4-中欧隧道-1.2x"
-      - 香港3-川港隧道-稳定-1x
+      - hfsfb
+      - TW
+      - mcdyn
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[高速]香港4-广港隧道-稳定-1.8x"
-      - 日本1-0.8x
-      - 香港1-0.8x
-      - "[高速]德国4-中欧隧道-1.2x"
-      - 香港3-川港隧道-稳定-1x
+      - hfsfb
+      - TW
+      - mcdyn
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -119,11 +100,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[高速]香港4-广港隧道-稳定-1.8x"
-      - 日本1-0.8x
-      - 香港1-0.8x
-      - "[高速]德国4-中欧隧道-1.2x"
-      - 香港3-川港隧道-稳定-1x
+      - hfsfb
+      - TW
+      - mcdyn
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
