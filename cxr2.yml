@@ -5,35 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 1 → t.me/s/SCINV, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: HK 5 → t.me/s/SCINV, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: GB 3 → t.me/s/SCINV, server: us-05.licom.ml, port: 12501, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: us-05.licom.ml, skip-cert-verify: true, udp: true}
+  - {name: 台湾 1 广港 2x, server: cn1.node.zeroteam.top, port: 54847, type: trojan, password: 3d9e1871-4078-4a09-b428-dba99c694996, sni: cn1.node.zeroteam.top, skip-cert-verify: true, udp: true}
+  - {name: 香港 1 广港 2x, server: cn1.node.zeroteam.top, port: 45992, type: trojan, password: 3d9e1871-4078-4a09-b428-dba99c694996, sni: cn1.node.zeroteam.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾 1, server: tw1gcp.nana7micloud.online, port: 443, type: trojan, password: 3d9e1871-4078-4a09-b428-dba99c694996, sni: tw1gcp.nana7micloud.online, skip-cert-verify: true, udp: true}
+  - {name: 日本 1 广日 2x, server: cn1.node.zeroteam.top, port: 20446, type: trojan, password: 3d9e1871-4078-4a09-b428-dba99c694996, sni: cn1.node.zeroteam.top, skip-cert-verify: true, udp: true}
+  - {name: 韩国 广日 2x, server: cn1.node.zeroteam.top, port: 59535, type: trojan, password: 3d9e1871-4078-4a09-b428-dba99c694996, sni: cn1.node.zeroteam.top, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 1 广新 2x, server: cn1.node.zeroteam.top, port: 41954, type: trojan, password: 3d9e1871-4078-4a09-b428-dba99c694996, sni: cn1.node.zeroteam.top, skip-cert-verify: true, udp: true}
+  - {name: 英国 1 豫德 2x, server: cn2.node.zeroteam.top, port: 40718, type: trojan, password: 3d9e1871-4078-4a09-b428-dba99c694996, sni: cn2.node.zeroteam.top, skip-cert-verify: true, udp: true}
+  - {name: 德国 1 豫德 2x, server: cn2.node.zeroteam.top, port: 46769, type: trojan, password: 3d9e1871-4078-4a09-b428-dba99c694996, sni: cn2.node.zeroteam.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 1 → t.me/s/SCINV
-      - HK 5 → t.me/s/SCINV
-      - GB 3 → t.me/s/SCINV
+      - 台湾 1 广港 2x
+      - 香港 1 广港 2x
+      - 台湾 1
+      - 日本 1 广日 2x
+      - 韩国 广日 2x
+      - 新加坡 1 广新 2x
+      - 英国 1 豫德 2x
+      - 德国 1 豫德 2x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 1 → t.me/s/SCINV
-      - HK 5 → t.me/s/SCINV
-      - GB 3 → t.me/s/SCINV
+      - 台湾 1 广港 2x
+      - 香港 1 广港 2x
+      - 台湾 1
+      - 日本 1 广日 2x
+      - 韩国 广日 2x
+      - 新加坡 1 广新 2x
+      - 英国 1 豫德 2x
+      - 德国 1 豫德 2x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 1 → t.me/s/SCINV
-      - HK 5 → t.me/s/SCINV
-      - GB 3 → t.me/s/SCINV
+      - 台湾 1 广港 2x
+      - 香港 1 广港 2x
+      - 台湾 1
+      - 日本 1 广日 2x
+      - 韩国 广日 2x
+      - 新加坡 1 广新 2x
+      - 英国 1 豫德 2x
+      - 德国 1 豫德 2x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,39 +72,62 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 1 → t.me/s/SCINV
-      - HK 5 → t.me/s/SCINV
-      - GB 3 → t.me/s/SCINV
+      - 台湾 1 广港 2x
+      - 香港 1 广港 2x
+      - 台湾 1
+      - 日本 1 广日 2x
+      - 韩国 广日 2x
+      - 新加坡 1 广新 2x
+      - 英国 1 豫德 2x
+      - 德国 1 豫德 2x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾 1 广港 2x
+      - 香港 1 广港 2x
+      - 台湾 1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 1 → t.me/s/SCINV
-      - HK 5 → t.me/s/SCINV
-      - GB 3 → t.me/s/SCINV
+      - 台湾 1 广港 2x
+      - 香港 1 广港 2x
+      - 台湾 1
+      - 日本 1 广日 2x
+      - 韩国 广日 2x
+      - 新加坡 1 广新 2x
+      - 英国 1 豫德 2x
+      - 德国 1 豫德 2x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 1 → t.me/s/SCINV
-      - HK 5 → t.me/s/SCINV
-      - GB 3 → t.me/s/SCINV
+      - 台湾 1 广港 2x
+      - 香港 1 广港 2x
+      - 台湾 1
+      - 日本 1 广日 2x
+      - 韩国 广日 2x
+      - 新加坡 1 广新 2x
+      - 英国 1 豫德 2x
+      - 德国 1 豫德 2x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 1 → t.me/s/SCINV
-      - HK 5 → t.me/s/SCINV
-      - GB 3 → t.me/s/SCINV
+      - 台湾 1 广港 2x
+      - 香港 1 广港 2x
+      - 台湾 1
+      - 日本 1 广日 2x
+      - 韩国 广日 2x
+      - 新加坡 1 广新 2x
+      - 英国 1 豫德 2x
+      - 德国 1 豫德 2x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +143,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 1 → t.me/s/SCINV
-      - HK 5 → t.me/s/SCINV
-      - GB 3 → t.me/s/SCINV
+      - 台湾 1 广港 2x
+      - 香港 1 广港 2x
+      - 台湾 1
+      - 日本 1 广日 2x
+      - 韩国 广日 2x
+      - 新加坡 1 广新 2x
+      - 英国 1 豫德 2x
+      - 德国 1 豫德 2x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
