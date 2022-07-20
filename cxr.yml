@@ -5,295 +5,119 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 71 | Airproxies, server: 211.99.114.119, port: 19043, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 59 | Airproxies, server: 211.99.114.119, port: 19003, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 68 | Airproxies, server: 211.99.114.119, port: 19033, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 65 | Airproxies, server: 211.99.114.119, port: 19023, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 61 | Airproxies, server: 211.99.114.119, port: 19009, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 70 | Airproxies, server: 211.99.114.119, port: 19039, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 60 | Airproxies, server: 211.99.114.119, port: 19006, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 67 | Airproxies, server: 211.99.114.119, port: 19029, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 69 | Airproxies, server: 211.99.114.119, port: 19036, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 18 | Airproxies, server: 211.99.114.119, port: 18809, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 15 | Airproxies, server: 211.99.114.119, port: 15049, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 11 | Airproxies, server: 211.99.114.119, port: 15036, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 16 | Airproxies, server: 211.99.114.119, port: 18803, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 17 | Airproxies, server: 211.99.114.119, port: 18806, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 12 | Airproxies, server: 211.99.114.119, port: 15039, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 62 | Airproxies, server: 211.99.114.119, port: 19013, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 64 | Airproxies, server: 211.99.114.119, port: 19019, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 13 | Airproxies, server: 211.99.114.119, port: 15043, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 14 | Airproxies, server: 211.99.114.119, port: 15046, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 24 | Airproxies, server: 211.99.114.119, port: 18829, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 66 | Airproxies, server: 211.99.114.119, port: 19026, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 50 | Airproxies, server: 180.101.133.118, port: 16023, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 40 | Airproxies, server: 180.101.133.118, port: 17039, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 43 | Airproxies, server: 180.101.133.118, port: 17049, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 63 | Airproxies, server: 211.99.114.119, port: 19016, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 21 | Airproxies, server: 211.99.114.119, port: 18819, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 41 | Airproxies, server: 180.101.133.118, port: 17043, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 49 | Airproxies, server: 180.101.133.118, port: 16019, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 39 | Airproxies, server: 180.101.133.118, port: 17036, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 31 | Airproxies, server: 180.101.133.118, port: 17009, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 26 | Airproxies, server: 211.99.114.119, port: 18836, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 5 | Airproxies, server: 211.99.114.119, port: 15016, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 7 | Airproxies, server: 211.99.114.119, port: 15023, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 8 | Airproxies, server: 211.99.114.119, port: 15026, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 38 | Airproxies, server: 180.101.133.118, port: 17033, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 4 | Airproxies, server: 211.99.114.119, port: 15013, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 6 | Airproxies, server: 211.99.114.119, port: 15019, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 2 | Airproxies, server: 211.99.114.119, port: 15006, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 9 | Airproxies, server: 211.99.114.119, port: 15029, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 10 | Airproxies, server: 211.99.114.119, port: 15033, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 37 | Airproxies, server: 180.101.133.118, port: 17029, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 28 | Airproxies, server: 211.99.114.119, port: 18843, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 27 | Airproxies, server: 211.99.114.119, port: 18839, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 51 | Airproxies, server: 180.101.133.118, port: 16026, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 22 | Airproxies, server: 211.99.114.119, port: 18823, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 53 | Airproxies, server: 180.101.133.118, port: 16033, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 25 | Airproxies, server: 211.99.114.119, port: 18833, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 33 | Airproxies, server: 180.101.133.118, port: 17016, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 23 | Airproxies, server: 211.99.114.119, port: 18826, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 48 | Airproxies, server: 180.101.133.118, port: 16016, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 34 | Airproxies, server: 180.101.133.118, port: 17019, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 30 | Airproxies, server: 180.101.133.118, port: 17006, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 36 | Airproxies, server: 180.101.133.118, port: 17026, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 32 | Airproxies, server: 180.101.133.118, port: 17013, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 1 | Airproxies, server: 211.99.114.119, port: 15003, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 3 | Airproxies, server: 211.99.114.119, port: 15009, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 45 | Airproxies, server: 180.101.133.118, port: 16006, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 44 | Airproxies, server: 180.101.133.118, port: 16003, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 47 | Airproxies, server: 180.101.133.118, port: 16013, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 46 | Airproxies, server: 180.101.133.118, port: 16009, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 19 | Airproxies, server: 211.99.114.119, port: 18813, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 29 | Airproxies, server: 180.101.133.118, port: 17003, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 20 | Airproxies, server: 211.99.114.119, port: 18816, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 55 | Airproxies, server: 180.101.133.118, port: 16039, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 56 | Airproxies, server: 180.101.133.118, port: 16043, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 52 | Airproxies, server: 180.101.133.118, port: 16029, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 57 | Airproxies, server: 180.101.133.118, port: 16046, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
-  - {name: CN 54 | Airproxies, server: 180.101.133.118, port: 16036, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: 香港01, server: cm.awslcn.cc, port: 25242, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: 香港①, server: cm.awslcn.cc, port: 25234, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: 香港04, server: cm.awslcn.cc, port: 25223, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: 香港03, server: cu.awslcn.cc, port: 25223, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: 印度01, server: cm.awslcn.cc, port: 25216, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: 香港⑤, server: cm.awslcn.cc, port: 25236, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: 台湾03, server: cu.awslcn.cc, port: 25233, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: 香港⑥, server: cu.awslcn.cc, port: 25236, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: 台湾③, server: cm1.awslcn.cc, port: 25232, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm1.awslcn.cc}, udp: true}
+  - {name: 美国01, server: cm1.awslcn.cc, port: 25239, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm1.awslcn.cc}, udp: true}
+  - {name: 美国02, server: cu.awslcn.cc, port: 25239, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: 香港②, server: cu.awslcn.cc, port: 25234, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: 新加坡02, server: cm1.awslcn.cc, port: 25225, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm1.awslcn.cc}, udp: true}
+  - {name: 德国01, server: cm.awslcn.cc, port: 25241, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: 日本②, server: cu.awslcn.cc, port: 25219, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: 日本①, server: cm.awslcn.cc, port: 25219, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: 新加坡01, server: cm.awslcn.cc, port: 25225, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: 台湾①, server: cu.awslcn.cc, port: 25232, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: 马来02, server: cu.awslcn.cc, port: 25228, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: 美国04, server: cu.awslcn.cc, port: 25238, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: 英国, server: cu.awslcn.cc, port: 25240, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: 美国03, server: cm1.awslcn.cc, port: 25238, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm1.awslcn.cc}, udp: true}
+  - {name: 德国, server: cu.awslcn.cc, port: 25241, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: 台湾01, server: cm.awslcn.cc, port: 25233, type: vmess, uuid: 39423ae5-ca82-4901-8721-d02b03d77934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 71 | Airproxies
-      - CN 59 | Airproxies
-      - CN 68 | Airproxies
-      - CN 65 | Airproxies
-      - CN 61 | Airproxies
-      - CN 70 | Airproxies
-      - CN 60 | Airproxies
-      - CN 67 | Airproxies
-      - CN 69 | Airproxies
-      - CN 18 | Airproxies
-      - CN 15 | Airproxies
-      - CN 11 | Airproxies
-      - CN 16 | Airproxies
-      - CN 17 | Airproxies
-      - CN 12 | Airproxies
-      - CN 62 | Airproxies
-      - CN 64 | Airproxies
-      - CN 13 | Airproxies
-      - CN 14 | Airproxies
-      - CN 24 | Airproxies
-      - CN 66 | Airproxies
-      - CN 50 | Airproxies
-      - CN 40 | Airproxies
-      - CN 43 | Airproxies
-      - CN 63 | Airproxies
-      - CN 21 | Airproxies
-      - CN 41 | Airproxies
-      - CN 49 | Airproxies
-      - CN 39 | Airproxies
-      - CN 31 | Airproxies
-      - CN 26 | Airproxies
-      - CN 5 | Airproxies
-      - CN 7 | Airproxies
-      - CN 8 | Airproxies
-      - CN 38 | Airproxies
-      - CN 4 | Airproxies
-      - CN 6 | Airproxies
-      - CN 2 | Airproxies
-      - CN 9 | Airproxies
-      - CN 10 | Airproxies
-      - CN 37 | Airproxies
-      - CN 28 | Airproxies
-      - CN 27 | Airproxies
-      - CN 51 | Airproxies
-      - CN 22 | Airproxies
-      - CN 53 | Airproxies
-      - CN 25 | Airproxies
-      - CN 33 | Airproxies
-      - CN 23 | Airproxies
-      - CN 48 | Airproxies
-      - CN 34 | Airproxies
-      - CN 30 | Airproxies
-      - CN 36 | Airproxies
-      - CN 32 | Airproxies
-      - CN 1 | Airproxies
-      - CN 3 | Airproxies
-      - CN 45 | Airproxies
-      - CN 44 | Airproxies
-      - CN 47 | Airproxies
-      - CN 46 | Airproxies
-      - CN 19 | Airproxies
-      - CN 29 | Airproxies
-      - CN 20 | Airproxies
-      - CN 55 | Airproxies
-      - CN 56 | Airproxies
-      - CN 52 | Airproxies
-      - CN 57 | Airproxies
-      - CN 54 | Airproxies
+      - 香港01
+      - 香港①
+      - 香港04
+      - 香港03
+      - 印度01
+      - 香港⑤
+      - 台湾03
+      - 香港⑥
+      - 台湾③
+      - 美国01
+      - 美国02
+      - 香港②
+      - 新加坡02
+      - 德国01
+      - 日本②
+      - 日本①
+      - 新加坡01
+      - 台湾①
+      - 马来02
+      - 美国04
+      - 英国
+      - 美国03
+      - 德国
+      - 台湾01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 71 | Airproxies
-      - CN 59 | Airproxies
-      - CN 68 | Airproxies
-      - CN 65 | Airproxies
-      - CN 61 | Airproxies
-      - CN 70 | Airproxies
-      - CN 60 | Airproxies
-      - CN 67 | Airproxies
-      - CN 69 | Airproxies
-      - CN 18 | Airproxies
-      - CN 15 | Airproxies
-      - CN 11 | Airproxies
-      - CN 16 | Airproxies
-      - CN 17 | Airproxies
-      - CN 12 | Airproxies
-      - CN 62 | Airproxies
-      - CN 64 | Airproxies
-      - CN 13 | Airproxies
-      - CN 14 | Airproxies
-      - CN 24 | Airproxies
-      - CN 66 | Airproxies
-      - CN 50 | Airproxies
-      - CN 40 | Airproxies
-      - CN 43 | Airproxies
-      - CN 63 | Airproxies
-      - CN 21 | Airproxies
-      - CN 41 | Airproxies
-      - CN 49 | Airproxies
-      - CN 39 | Airproxies
-      - CN 31 | Airproxies
-      - CN 26 | Airproxies
-      - CN 5 | Airproxies
-      - CN 7 | Airproxies
-      - CN 8 | Airproxies
-      - CN 38 | Airproxies
-      - CN 4 | Airproxies
-      - CN 6 | Airproxies
-      - CN 2 | Airproxies
-      - CN 9 | Airproxies
-      - CN 10 | Airproxies
-      - CN 37 | Airproxies
-      - CN 28 | Airproxies
-      - CN 27 | Airproxies
-      - CN 51 | Airproxies
-      - CN 22 | Airproxies
-      - CN 53 | Airproxies
-      - CN 25 | Airproxies
-      - CN 33 | Airproxies
-      - CN 23 | Airproxies
-      - CN 48 | Airproxies
-      - CN 34 | Airproxies
-      - CN 30 | Airproxies
-      - CN 36 | Airproxies
-      - CN 32 | Airproxies
-      - CN 1 | Airproxies
-      - CN 3 | Airproxies
-      - CN 45 | Airproxies
-      - CN 44 | Airproxies
-      - CN 47 | Airproxies
-      - CN 46 | Airproxies
-      - CN 19 | Airproxies
-      - CN 29 | Airproxies
-      - CN 20 | Airproxies
-      - CN 55 | Airproxies
-      - CN 56 | Airproxies
-      - CN 52 | Airproxies
-      - CN 57 | Airproxies
-      - CN 54 | Airproxies
+      - 香港01
+      - 香港①
+      - 香港04
+      - 香港03
+      - 印度01
+      - 香港⑤
+      - 台湾03
+      - 香港⑥
+      - 台湾③
+      - 美国01
+      - 美国02
+      - 香港②
+      - 新加坡02
+      - 德国01
+      - 日本②
+      - 日本①
+      - 新加坡01
+      - 台湾①
+      - 马来02
+      - 美国04
+      - 英国
+      - 美国03
+      - 德国
+      - 台湾01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 71 | Airproxies
-      - CN 59 | Airproxies
-      - CN 68 | Airproxies
-      - CN 65 | Airproxies
-      - CN 61 | Airproxies
-      - CN 70 | Airproxies
-      - CN 60 | Airproxies
-      - CN 67 | Airproxies
-      - CN 69 | Airproxies
-      - CN 18 | Airproxies
-      - CN 15 | Airproxies
-      - CN 11 | Airproxies
-      - CN 16 | Airproxies
-      - CN 17 | Airproxies
-      - CN 12 | Airproxies
-      - CN 62 | Airproxies
-      - CN 64 | Airproxies
-      - CN 13 | Airproxies
-      - CN 14 | Airproxies
-      - CN 24 | Airproxies
-      - CN 66 | Airproxies
-      - CN 50 | Airproxies
-      - CN 40 | Airproxies
-      - CN 43 | Airproxies
-      - CN 63 | Airproxies
-      - CN 21 | Airproxies
-      - CN 41 | Airproxies
-      - CN 49 | Airproxies
-      - CN 39 | Airproxies
-      - CN 31 | Airproxies
-      - CN 26 | Airproxies
-      - CN 5 | Airproxies
-      - CN 7 | Airproxies
-      - CN 8 | Airproxies
-      - CN 38 | Airproxies
-      - CN 4 | Airproxies
-      - CN 6 | Airproxies
-      - CN 2 | Airproxies
-      - CN 9 | Airproxies
-      - CN 10 | Airproxies
-      - CN 37 | Airproxies
-      - CN 28 | Airproxies
-      - CN 27 | Airproxies
-      - CN 51 | Airproxies
-      - CN 22 | Airproxies
-      - CN 53 | Airproxies
-      - CN 25 | Airproxies
-      - CN 33 | Airproxies
-      - CN 23 | Airproxies
-      - CN 48 | Airproxies
-      - CN 34 | Airproxies
-      - CN 30 | Airproxies
-      - CN 36 | Airproxies
-      - CN 32 | Airproxies
-      - CN 1 | Airproxies
-      - CN 3 | Airproxies
-      - CN 45 | Airproxies
-      - CN 44 | Airproxies
-      - CN 47 | Airproxies
-      - CN 46 | Airproxies
-      - CN 19 | Airproxies
-      - CN 29 | Airproxies
-      - CN 20 | Airproxies
-      - CN 55 | Airproxies
-      - CN 56 | Airproxies
-      - CN 52 | Airproxies
-      - CN 57 | Airproxies
-      - CN 54 | Airproxies
+      - 香港01
+      - 香港①
+      - 香港04
+      - 香港03
+      - 印度01
+      - 香港⑤
+      - 台湾03
+      - 香港⑥
+      - 台湾③
+      - 美国01
+      - 美国02
+      - 香港②
+      - 新加坡02
+      - 德国01
+      - 日本②
+      - 日本①
+      - 新加坡01
+      - 台湾①
+      - 马来02
+      - 美国04
+      - 英国
+      - 美国03
+      - 德国
+      - 台湾01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -312,299 +136,134 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 71 | Airproxies
-      - CN 59 | Airproxies
-      - CN 68 | Airproxies
-      - CN 65 | Airproxies
-      - CN 61 | Airproxies
-      - CN 70 | Airproxies
-      - CN 60 | Airproxies
-      - CN 67 | Airproxies
-      - CN 69 | Airproxies
-      - CN 18 | Airproxies
-      - CN 15 | Airproxies
-      - CN 11 | Airproxies
-      - CN 16 | Airproxies
-      - CN 17 | Airproxies
-      - CN 12 | Airproxies
-      - CN 62 | Airproxies
-      - CN 64 | Airproxies
-      - CN 13 | Airproxies
-      - CN 14 | Airproxies
-      - CN 24 | Airproxies
-      - CN 66 | Airproxies
-      - CN 50 | Airproxies
-      - CN 40 | Airproxies
-      - CN 43 | Airproxies
-      - CN 63 | Airproxies
-      - CN 21 | Airproxies
-      - CN 41 | Airproxies
-      - CN 49 | Airproxies
-      - CN 39 | Airproxies
-      - CN 31 | Airproxies
-      - CN 26 | Airproxies
-      - CN 5 | Airproxies
-      - CN 7 | Airproxies
-      - CN 8 | Airproxies
-      - CN 38 | Airproxies
-      - CN 4 | Airproxies
-      - CN 6 | Airproxies
-      - CN 2 | Airproxies
-      - CN 9 | Airproxies
-      - CN 10 | Airproxies
-      - CN 37 | Airproxies
-      - CN 28 | Airproxies
-      - CN 27 | Airproxies
-      - CN 51 | Airproxies
-      - CN 22 | Airproxies
-      - CN 53 | Airproxies
-      - CN 25 | Airproxies
-      - CN 33 | Airproxies
-      - CN 23 | Airproxies
-      - CN 48 | Airproxies
-      - CN 34 | Airproxies
-      - CN 30 | Airproxies
-      - CN 36 | Airproxies
-      - CN 32 | Airproxies
-      - CN 1 | Airproxies
-      - CN 3 | Airproxies
-      - CN 45 | Airproxies
-      - CN 44 | Airproxies
-      - CN 47 | Airproxies
-      - CN 46 | Airproxies
-      - CN 19 | Airproxies
-      - CN 29 | Airproxies
-      - CN 20 | Airproxies
-      - CN 55 | Airproxies
-      - CN 56 | Airproxies
-      - CN 52 | Airproxies
-      - CN 57 | Airproxies
-      - CN 54 | Airproxies
+      - 香港01
+      - 香港①
+      - 香港04
+      - 香港03
+      - 印度01
+      - 香港⑤
+      - 台湾03
+      - 香港⑥
+      - 台湾③
+      - 美国01
+      - 美国02
+      - 香港②
+      - 新加坡02
+      - 德国01
+      - 日本②
+      - 日本①
+      - 新加坡01
+      - 台湾①
+      - 马来02
+      - 美国04
+      - 英国
+      - 美国03
+      - 德国
+      - 台湾01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港01
+      - 香港①
+      - 香港04
+      - 香港03
+      - 香港⑤
+      - 台湾03
+      - 香港⑥
+      - 台湾③
+      - 香港②
+      - 台湾①
+      - 台湾01
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 71 | Airproxies
-      - CN 59 | Airproxies
-      - CN 68 | Airproxies
-      - CN 65 | Airproxies
-      - CN 61 | Airproxies
-      - CN 70 | Airproxies
-      - CN 60 | Airproxies
-      - CN 67 | Airproxies
-      - CN 69 | Airproxies
-      - CN 18 | Airproxies
-      - CN 15 | Airproxies
-      - CN 11 | Airproxies
-      - CN 16 | Airproxies
-      - CN 17 | Airproxies
-      - CN 12 | Airproxies
-      - CN 62 | Airproxies
-      - CN 64 | Airproxies
-      - CN 13 | Airproxies
-      - CN 14 | Airproxies
-      - CN 24 | Airproxies
-      - CN 66 | Airproxies
-      - CN 50 | Airproxies
-      - CN 40 | Airproxies
-      - CN 43 | Airproxies
-      - CN 63 | Airproxies
-      - CN 21 | Airproxies
-      - CN 41 | Airproxies
-      - CN 49 | Airproxies
-      - CN 39 | Airproxies
-      - CN 31 | Airproxies
-      - CN 26 | Airproxies
-      - CN 5 | Airproxies
-      - CN 7 | Airproxies
-      - CN 8 | Airproxies
-      - CN 38 | Airproxies
-      - CN 4 | Airproxies
-      - CN 6 | Airproxies
-      - CN 2 | Airproxies
-      - CN 9 | Airproxies
-      - CN 10 | Airproxies
-      - CN 37 | Airproxies
-      - CN 28 | Airproxies
-      - CN 27 | Airproxies
-      - CN 51 | Airproxies
-      - CN 22 | Airproxies
-      - CN 53 | Airproxies
-      - CN 25 | Airproxies
-      - CN 33 | Airproxies
-      - CN 23 | Airproxies
-      - CN 48 | Airproxies
-      - CN 34 | Airproxies
-      - CN 30 | Airproxies
-      - CN 36 | Airproxies
-      - CN 32 | Airproxies
-      - CN 1 | Airproxies
-      - CN 3 | Airproxies
-      - CN 45 | Airproxies
-      - CN 44 | Airproxies
-      - CN 47 | Airproxies
-      - CN 46 | Airproxies
-      - CN 19 | Airproxies
-      - CN 29 | Airproxies
-      - CN 20 | Airproxies
-      - CN 55 | Airproxies
-      - CN 56 | Airproxies
-      - CN 52 | Airproxies
-      - CN 57 | Airproxies
-      - CN 54 | Airproxies
+      - 香港01
+      - 香港①
+      - 香港04
+      - 香港03
+      - 印度01
+      - 香港⑤
+      - 台湾03
+      - 香港⑥
+      - 台湾③
+      - 美国01
+      - 美国02
+      - 香港②
+      - 新加坡02
+      - 德国01
+      - 日本②
+      - 日本①
+      - 新加坡01
+      - 台湾①
+      - 马来02
+      - 美国04
+      - 英国
+      - 美国03
+      - 德国
+      - 台湾01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 71 | Airproxies
-      - CN 59 | Airproxies
-      - CN 68 | Airproxies
-      - CN 65 | Airproxies
-      - CN 61 | Airproxies
-      - CN 70 | Airproxies
-      - CN 60 | Airproxies
-      - CN 67 | Airproxies
-      - CN 69 | Airproxies
-      - CN 18 | Airproxies
-      - CN 15 | Airproxies
-      - CN 11 | Airproxies
-      - CN 16 | Airproxies
-      - CN 17 | Airproxies
-      - CN 12 | Airproxies
-      - CN 62 | Airproxies
-      - CN 64 | Airproxies
-      - CN 13 | Airproxies
-      - CN 14 | Airproxies
-      - CN 24 | Airproxies
-      - CN 66 | Airproxies
-      - CN 50 | Airproxies
-      - CN 40 | Airproxies
-      - CN 43 | Airproxies
-      - CN 63 | Airproxies
-      - CN 21 | Airproxies
-      - CN 41 | Airproxies
-      - CN 49 | Airproxies
-      - CN 39 | Airproxies
-      - CN 31 | Airproxies
-      - CN 26 | Airproxies
-      - CN 5 | Airproxies
-      - CN 7 | Airproxies
-      - CN 8 | Airproxies
-      - CN 38 | Airproxies
-      - CN 4 | Airproxies
-      - CN 6 | Airproxies
-      - CN 2 | Airproxies
-      - CN 9 | Airproxies
-      - CN 10 | Airproxies
-      - CN 37 | Airproxies
-      - CN 28 | Airproxies
-      - CN 27 | Airproxies
-      - CN 51 | Airproxies
-      - CN 22 | Airproxies
-      - CN 53 | Airproxies
-      - CN 25 | Airproxies
-      - CN 33 | Airproxies
-      - CN 23 | Airproxies
-      - CN 48 | Airproxies
-      - CN 34 | Airproxies
-      - CN 30 | Airproxies
-      - CN 36 | Airproxies
-      - CN 32 | Airproxies
-      - CN 1 | Airproxies
-      - CN 3 | Airproxies
-      - CN 45 | Airproxies
-      - CN 44 | Airproxies
-      - CN 47 | Airproxies
-      - CN 46 | Airproxies
-      - CN 19 | Airproxies
-      - CN 29 | Airproxies
-      - CN 20 | Airproxies
-      - CN 55 | Airproxies
-      - CN 56 | Airproxies
-      - CN 52 | Airproxies
-      - CN 57 | Airproxies
-      - CN 54 | Airproxies
+      - 香港01
+      - 香港①
+      - 香港04
+      - 香港03
+      - 印度01
+      - 香港⑤
+      - 台湾03
+      - 香港⑥
+      - 台湾③
+      - 美国01
+      - 美国02
+      - 香港②
+      - 新加坡02
+      - 德国01
+      - 日本②
+      - 日本①
+      - 新加坡01
+      - 台湾①
+      - 马来02
+      - 美国04
+      - 英国
+      - 美国03
+      - 德国
+      - 台湾01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 71 | Airproxies
-      - CN 59 | Airproxies
-      - CN 68 | Airproxies
-      - CN 65 | Airproxies
-      - CN 61 | Airproxies
-      - CN 70 | Airproxies
-      - CN 60 | Airproxies
-      - CN 67 | Airproxies
-      - CN 69 | Airproxies
-      - CN 18 | Airproxies
-      - CN 15 | Airproxies
-      - CN 11 | Airproxies
-      - CN 16 | Airproxies
-      - CN 17 | Airproxies
-      - CN 12 | Airproxies
-      - CN 62 | Airproxies
-      - CN 64 | Airproxies
-      - CN 13 | Airproxies
-      - CN 14 | Airproxies
-      - CN 24 | Airproxies
-      - CN 66 | Airproxies
-      - CN 50 | Airproxies
-      - CN 40 | Airproxies
-      - CN 43 | Airproxies
-      - CN 63 | Airproxies
-      - CN 21 | Airproxies
-      - CN 41 | Airproxies
-      - CN 49 | Airproxies
-      - CN 39 | Airproxies
-      - CN 31 | Airproxies
-      - CN 26 | Airproxies
-      - CN 5 | Airproxies
-      - CN 7 | Airproxies
-      - CN 8 | Airproxies
-      - CN 38 | Airproxies
-      - CN 4 | Airproxies
-      - CN 6 | Airproxies
-      - CN 2 | Airproxies
-      - CN 9 | Airproxies
-      - CN 10 | Airproxies
-      - CN 37 | Airproxies
-      - CN 28 | Airproxies
-      - CN 27 | Airproxies
-      - CN 51 | Airproxies
-      - CN 22 | Airproxies
-      - CN 53 | Airproxies
-      - CN 25 | Airproxies
-      - CN 33 | Airproxies
-      - CN 23 | Airproxies
-      - CN 48 | Airproxies
-      - CN 34 | Airproxies
-      - CN 30 | Airproxies
-      - CN 36 | Airproxies
-      - CN 32 | Airproxies
-      - CN 1 | Airproxies
-      - CN 3 | Airproxies
-      - CN 45 | Airproxies
-      - CN 44 | Airproxies
-      - CN 47 | Airproxies
-      - CN 46 | Airproxies
-      - CN 19 | Airproxies
-      - CN 29 | Airproxies
-      - CN 20 | Airproxies
-      - CN 55 | Airproxies
-      - CN 56 | Airproxies
-      - CN 52 | Airproxies
-      - CN 57 | Airproxies
-      - CN 54 | Airproxies
+      - 香港01
+      - 香港①
+      - 香港04
+      - 香港03
+      - 印度01
+      - 香港⑤
+      - 台湾03
+      - 香港⑥
+      - 台湾③
+      - 美国01
+      - 美国02
+      - 香港②
+      - 新加坡02
+      - 德国01
+      - 日本②
+      - 日本①
+      - 新加坡01
+      - 台湾①
+      - 马来02
+      - 美国04
+      - 英国
+      - 美国03
+      - 德国
+      - 台湾01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -620,74 +279,30 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 71 | Airproxies
-      - CN 59 | Airproxies
-      - CN 68 | Airproxies
-      - CN 65 | Airproxies
-      - CN 61 | Airproxies
-      - CN 70 | Airproxies
-      - CN 60 | Airproxies
-      - CN 67 | Airproxies
-      - CN 69 | Airproxies
-      - CN 18 | Airproxies
-      - CN 15 | Airproxies
-      - CN 11 | Airproxies
-      - CN 16 | Airproxies
-      - CN 17 | Airproxies
-      - CN 12 | Airproxies
-      - CN 62 | Airproxies
-      - CN 64 | Airproxies
-      - CN 13 | Airproxies
-      - CN 14 | Airproxies
-      - CN 24 | Airproxies
-      - CN 66 | Airproxies
-      - CN 50 | Airproxies
-      - CN 40 | Airproxies
-      - CN 43 | Airproxies
-      - CN 63 | Airproxies
-      - CN 21 | Airproxies
-      - CN 41 | Airproxies
-      - CN 49 | Airproxies
-      - CN 39 | Airproxies
-      - CN 31 | Airproxies
-      - CN 26 | Airproxies
-      - CN 5 | Airproxies
-      - CN 7 | Airproxies
-      - CN 8 | Airproxies
-      - CN 38 | Airproxies
-      - CN 4 | Airproxies
-      - CN 6 | Airproxies
-      - CN 2 | Airproxies
-      - CN 9 | Airproxies
-      - CN 10 | Airproxies
-      - CN 37 | Airproxies
-      - CN 28 | Airproxies
-      - CN 27 | Airproxies
-      - CN 51 | Airproxies
-      - CN 22 | Airproxies
-      - CN 53 | Airproxies
-      - CN 25 | Airproxies
-      - CN 33 | Airproxies
-      - CN 23 | Airproxies
-      - CN 48 | Airproxies
-      - CN 34 | Airproxies
-      - CN 30 | Airproxies
-      - CN 36 | Airproxies
-      - CN 32 | Airproxies
-      - CN 1 | Airproxies
-      - CN 3 | Airproxies
-      - CN 45 | Airproxies
-      - CN 44 | Airproxies
-      - CN 47 | Airproxies
-      - CN 46 | Airproxies
-      - CN 19 | Airproxies
-      - CN 29 | Airproxies
-      - CN 20 | Airproxies
-      - CN 55 | Airproxies
-      - CN 56 | Airproxies
-      - CN 52 | Airproxies
-      - CN 57 | Airproxies
-      - CN 54 | Airproxies
+      - 香港01
+      - 香港①
+      - 香港04
+      - 香港03
+      - 印度01
+      - 香港⑤
+      - 台湾03
+      - 香港⑥
+      - 台湾③
+      - 美国01
+      - 美国02
+      - 香港②
+      - 新加坡02
+      - 德国01
+      - 日本②
+      - 日本①
+      - 新加坡01
+      - 台湾①
+      - 马来02
+      - 美国04
+      - 英国
+      - 美国03
+      - 德国
+      - 台湾01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
