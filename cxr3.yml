@@ -5,43 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港_TG@nodesharing_23, server: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, port: 443, type: trojan, password: trojan-daozhu-uallen-qbit-azure-hk, sni: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, skip-cert-verify: true, udp: true}
-  - {name: 美国_TG@nodesharing_89, server: azjp.gd1214b.tech, port: 443, type: vmess, uuid: 039c184e-9f50-46ec-80a3-c506c78c2a44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/3f8d7a9ba6?ed=2048", ws-headers: {Host: azjp.gd1214b.tech}, udp: true}
-  - {name: 中国_TG@nodesharing_21, server: ftp.cn.debian.cdnet.in, port: 8030, type: ss, cipher: aes-128-gcm, password: 4f36e1cd-4e82-4976-b72a-2a3068b59433, udp: true}
-  - {name: 新加坡_TG@nodesharing_27, server: 625tw.ok365.cyou, port: 443, type: trojan, password: a8926bac-51cf-4f4a-86fb-cff09ca7939f, sni: 625tw.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: 中国_TG@nodesharing_6, server: ftp.cn.debian.cdnet.in, port: 8020, type: ss, cipher: aes-128-gcm, password: 4f36e1cd-4e82-4976-b72a-2a3068b59433, udp: true}
+  - {name: "香港✈️中转 [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 45379, type: trojan, password: 82a235da-41e1-4ee4-811a-f72859be81a1, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: "俄罗斯✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 42167, type: trojan, password: 82a235da-41e1-4ee4-811a-f72859be81a1, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: "台湾✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 31097, type: trojan, password: 82a235da-41e1-4ee4-811a-f72859be81a1, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港_TG@nodesharing_23
-      - 美国_TG@nodesharing_89
-      - 中国_TG@nodesharing_21
-      - 新加坡_TG@nodesharing_27
-      - 中国_TG@nodesharing_6
+      - 香港✈️中转 [湘沪BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港_TG@nodesharing_23
-      - 美国_TG@nodesharing_89
-      - 中国_TG@nodesharing_21
-      - 新加坡_TG@nodesharing_27
-      - 中国_TG@nodesharing_6
+      - 香港✈️中转 [湘沪BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港_TG@nodesharing_23
-      - 美国_TG@nodesharing_89
-      - 中国_TG@nodesharing_21
-      - 新加坡_TG@nodesharing_27
-      - 中国_TG@nodesharing_6
+      - 香港✈️中转 [湘沪BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,48 +52,41 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港_TG@nodesharing_23
-      - 美国_TG@nodesharing_89
-      - 中国_TG@nodesharing_21
-      - 新加坡_TG@nodesharing_27
-      - 中国_TG@nodesharing_6
+      - 香港✈️中转 [湘沪BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港_TG@nodesharing_23
+      - 香港✈️中转 [湘沪BGP]
+      - 台湾✈️中转  [湘沪BGP]
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港_TG@nodesharing_23
-      - 美国_TG@nodesharing_89
-      - 中国_TG@nodesharing_21
-      - 新加坡_TG@nodesharing_27
-      - 中国_TG@nodesharing_6
+      - 香港✈️中转 [湘沪BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港_TG@nodesharing_23
-      - 美国_TG@nodesharing_89
-      - 中国_TG@nodesharing_21
-      - 新加坡_TG@nodesharing_27
-      - 中国_TG@nodesharing_6
+      - 香港✈️中转 [湘沪BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港_TG@nodesharing_23
-      - 美国_TG@nodesharing_89
-      - 中国_TG@nodesharing_21
-      - 新加坡_TG@nodesharing_27
-      - 中国_TG@nodesharing_6
+      - 香港✈️中转 [湘沪BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -117,11 +102,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港_TG@nodesharing_23
-      - 美国_TG@nodesharing_89
-      - 中国_TG@nodesharing_21
-      - 新加坡_TG@nodesharing_27
-      - 中国_TG@nodesharing_6
+      - 香港✈️中转 [湘沪BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 台湾✈️中转  [湘沪BGP]
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
