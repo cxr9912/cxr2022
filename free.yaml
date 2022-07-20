@@ -5,47 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Az香港4, server: hk4.ningmengshui.xyz, port: 80, type: vmess, uuid: cd623b59-2cef-4d6a-bd1a-7d0d34b9f3e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk4.ningmengshui.xyz}, udp: true}
-  - {name: Az香港12, server: hk12.ningmengshui.xyz, port: 80, type: vmess, uuid: cd623b59-2cef-4d6a-bd1a-7d0d34b9f3e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk12.ningmengshui.xyz}, udp: true}
   - {name: Az香港9, server: hk9.ningmengshui.xyz, port: 80, type: vmess, uuid: cd623b59-2cef-4d6a-bd1a-7d0d34b9f3e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dm.toutiao.com}, udp: true}
-  - {name: Az香港14 Netflix, server: hk14.ningmengshui.xyz, port: 80, type: vmess, uuid: cd623b59-2cef-4d6a-bd1a-7d0d34b9f3e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ali2.a.yximgs.com}, udp: true}
-  - {name: CN 26, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: 国内负载, server: china.ningmengshui.xyz, port: 80, type: vmess, uuid: cd623b59-2cef-4d6a-bd1a-7d0d34b9f3e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: Az香港1, server: hk1.ningmengshui.xyz, port: 80, type: vmess, uuid: cd623b59-2cef-4d6a-bd1a-7d0d34b9f3e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.youku.com}, udp: true}
+  - {name: Az香港12, server: hk12.ningmengshui.xyz, port: 80, type: vmess, uuid: cd623b59-2cef-4d6a-bd1a-7d0d34b9f3e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk12.ningmengshui.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Az香港4
-      - Az香港12
       - Az香港9
-      - Az香港14 Netflix
-      - CN 26
-      - 国内负载
+      - Az香港1
+      - Az香港12
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Az香港4
-      - Az香港12
       - Az香港9
-      - Az香港14 Netflix
-      - CN 26
-      - 国内负载
+      - Az香港1
+      - Az香港12
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Az香港4
-      - Az香港12
       - Az香港9
-      - Az香港14 Netflix
-      - CN 26
-      - 国内负载
+      - Az香港1
+      - Az香港12
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,55 +52,42 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Az香港4
-      - Az香港12
       - Az香港9
-      - Az香港14 Netflix
-      - CN 26
-      - 国内负载
+      - Az香港1
+      - Az香港12
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Az香港4
-      - Az香港12
       - Az香港9
-      - Az香港14 Netflix
+      - Az香港1
+      - Az香港12
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Az香港4
-      - Az香港12
       - Az香港9
-      - Az香港14 Netflix
-      - CN 26
-      - 国内负载
+      - Az香港1
+      - Az香港12
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Az香港4
-      - Az香港12
       - Az香港9
-      - Az香港14 Netflix
-      - CN 26
-      - 国内负载
+      - Az香港1
+      - Az香港12
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Az香港4
-      - Az香港12
       - Az香港9
-      - Az香港14 Netflix
-      - CN 26
-      - 国内负载
+      - Az香港1
+      - Az香港12
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -128,12 +103,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Az香港4
-      - Az香港12
       - Az香港9
-      - Az香港14 Netflix
-      - CN 26
-      - 国内负载
+      - Az香港1
+      - Az香港12
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
