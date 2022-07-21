@@ -5,35 +5,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Az香港9, server: hk9.ningmengshui.xyz, port: 80, type: vmess, uuid: cd623b59-2cef-4d6a-bd1a-7d0d34b9f3e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dm.toutiao.com}, udp: true}
-  - {name: Az香港1, server: hk1.ningmengshui.xyz, port: 80, type: vmess, uuid: cd623b59-2cef-4d6a-bd1a-7d0d34b9f3e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.youku.com}, udp: true}
-  - {name: Az香港12, server: hk12.ningmengshui.xyz, port: 80, type: vmess, uuid: cd623b59-2cef-4d6a-bd1a-7d0d34b9f3e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk12.ningmengshui.xyz}, udp: true}
+  - {name: 香港 HKT03 移动, server: cm.newhua99.top, port: 21699, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: 香港WTT 03, server: cm.newhua99.top, port: 21693, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: 香港 icable 移动01, server: cm.newhua99.top, port: 21681, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: v3｜台湾01 主力, server: cm.newhua99.top, port: 21618, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: v3｜台湾02 主力, server: cm.newhua99.top, port: 21619, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: 香港 WTT01 | 解锁流媒体, server: cm.newhua99.top, port: 21694, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: 德国01, server: cm.newhua99.top, port: 21685, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: 马来西亚 01 | 解锁流媒体, server: cm.newhua99.top, port: 21691, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: 韩国01, server: cm.newhua99.top, port: 21686, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: v3｜美国03 主力, server: cm.newhua99.top, port: 21626, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: 美国01 | 解锁流媒体, server: cm.newhua99.top, port: 21688, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: v3｜新加坡03｜主力, server: cm.newhua99.top, port: 21635, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: 英国01, server: cm.newhua99.top, port: 21684, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: v3｜美国01 主力, server: cm.newhua99.top, port: 21624, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: v3｜美国02 主力, server: cm.newhua99.top, port: 21625, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: v3｜美国04｜解锁流媒体, server: cm.newhua99.top, port: 21636, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: v3｜新加坡02｜主力, server: cm.newhua99.top, port: 21630, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: v3｜新加坡06｜解锁流媒体, server: cm.newhua99.top, port: 21634, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: 印度DO 移动, server: cm.newhua99.top, port: 21682, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
+  - {name: v3｜新加坡01｜主力, server: cm.newhua99.top, port: 21629, type: ss, cipher: aes-128-gcm, password: 44daf139-e752-418f-b79a-9e31f5dd9b18, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Az香港9
-      - Az香港1
-      - Az香港12
+      - 香港 HKT03 移动
+      - 香港WTT 03
+      - 香港 icable 移动01
+      - v3｜台湾01 主力
+      - v3｜台湾02 主力
+      - 香港 WTT01 | 解锁流媒体
+      - 德国01
+      - 马来西亚 01 | 解锁流媒体
+      - 韩国01
+      - v3｜美国03 主力
+      - 美国01 | 解锁流媒体
+      - v3｜新加坡03｜主力
+      - 英国01
+      - v3｜美国01 主力
+      - v3｜美国02 主力
+      - v3｜美国04｜解锁流媒体
+      - v3｜新加坡02｜主力
+      - v3｜新加坡06｜解锁流媒体
+      - 印度DO 移动
+      - v3｜新加坡01｜主力
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Az香港9
-      - Az香港1
-      - Az香港12
+      - 香港 HKT03 移动
+      - 香港WTT 03
+      - 香港 icable 移动01
+      - v3｜台湾01 主力
+      - v3｜台湾02 主力
+      - 香港 WTT01 | 解锁流媒体
+      - 德国01
+      - 马来西亚 01 | 解锁流媒体
+      - 韩国01
+      - v3｜美国03 主力
+      - 美国01 | 解锁流媒体
+      - v3｜新加坡03｜主力
+      - 英国01
+      - v3｜美国01 主力
+      - v3｜美国02 主力
+      - v3｜美国04｜解锁流媒体
+      - v3｜新加坡02｜主力
+      - v3｜新加坡06｜解锁流媒体
+      - 印度DO 移动
+      - v3｜新加坡01｜主力
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Az香港9
-      - Az香港1
-      - Az香港12
+      - 香港 HKT03 移动
+      - 香港WTT 03
+      - 香港 icable 移动01
+      - v3｜台湾01 主力
+      - v3｜台湾02 主力
+      - 香港 WTT01 | 解锁流媒体
+      - 德国01
+      - 马来西亚 01 | 解锁流媒体
+      - 韩国01
+      - v3｜美国03 主力
+      - 美国01 | 解锁流媒体
+      - v3｜新加坡03｜主力
+      - 英国01
+      - v3｜美国01 主力
+      - v3｜美国02 主力
+      - v3｜美国04｜解锁流媒体
+      - v3｜新加坡02｜主力
+      - v3｜新加坡06｜解锁流媒体
+      - 印度DO 移动
+      - v3｜新加坡01｜主力
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,42 +120,113 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Az香港9
-      - Az香港1
-      - Az香港12
+      - 香港 HKT03 移动
+      - 香港WTT 03
+      - 香港 icable 移动01
+      - v3｜台湾01 主力
+      - v3｜台湾02 主力
+      - 香港 WTT01 | 解锁流媒体
+      - 德国01
+      - 马来西亚 01 | 解锁流媒体
+      - 韩国01
+      - v3｜美国03 主力
+      - 美国01 | 解锁流媒体
+      - v3｜新加坡03｜主力
+      - 英国01
+      - v3｜美国01 主力
+      - v3｜美国02 主力
+      - v3｜美国04｜解锁流媒体
+      - v3｜新加坡02｜主力
+      - v3｜新加坡06｜解锁流媒体
+      - 印度DO 移动
+      - v3｜新加坡01｜主力
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Az香港9
-      - Az香港1
-      - Az香港12
+      - 香港 HKT03 移动
+      - 香港WTT 03
+      - 香港 icable 移动01
+      - v3｜台湾01 主力
+      - v3｜台湾02 主力
+      - 香港 WTT01 | 解锁流媒体
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Az香港9
-      - Az香港1
-      - Az香港12
+      - 香港 HKT03 移动
+      - 香港WTT 03
+      - 香港 icable 移动01
+      - v3｜台湾01 主力
+      - v3｜台湾02 主力
+      - 香港 WTT01 | 解锁流媒体
+      - 德国01
+      - 马来西亚 01 | 解锁流媒体
+      - 韩国01
+      - v3｜美国03 主力
+      - 美国01 | 解锁流媒体
+      - v3｜新加坡03｜主力
+      - 英国01
+      - v3｜美国01 主力
+      - v3｜美国02 主力
+      - v3｜美国04｜解锁流媒体
+      - v3｜新加坡02｜主力
+      - v3｜新加坡06｜解锁流媒体
+      - 印度DO 移动
+      - v3｜新加坡01｜主力
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Az香港9
-      - Az香港1
-      - Az香港12
+      - 香港 HKT03 移动
+      - 香港WTT 03
+      - 香港 icable 移动01
+      - v3｜台湾01 主力
+      - v3｜台湾02 主力
+      - 香港 WTT01 | 解锁流媒体
+      - 德国01
+      - 马来西亚 01 | 解锁流媒体
+      - 韩国01
+      - v3｜美国03 主力
+      - 美国01 | 解锁流媒体
+      - v3｜新加坡03｜主力
+      - 英国01
+      - v3｜美国01 主力
+      - v3｜美国02 主力
+      - v3｜美国04｜解锁流媒体
+      - v3｜新加坡02｜主力
+      - v3｜新加坡06｜解锁流媒体
+      - 印度DO 移动
+      - v3｜新加坡01｜主力
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Az香港9
-      - Az香港1
-      - Az香港12
+      - 香港 HKT03 移动
+      - 香港WTT 03
+      - 香港 icable 移动01
+      - v3｜台湾01 主力
+      - v3｜台湾02 主力
+      - 香港 WTT01 | 解锁流媒体
+      - 德国01
+      - 马来西亚 01 | 解锁流媒体
+      - 韩国01
+      - v3｜美国03 主力
+      - 美国01 | 解锁流媒体
+      - v3｜新加坡03｜主力
+      - 英国01
+      - v3｜美国01 主力
+      - v3｜美国02 主力
+      - v3｜美国04｜解锁流媒体
+      - v3｜新加坡02｜主力
+      - v3｜新加坡06｜解锁流媒体
+      - 印度DO 移动
+      - v3｜新加坡01｜主力
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -103,9 +242,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Az香港9
-      - Az香港1
-      - Az香港12
+      - 香港 HKT03 移动
+      - 香港WTT 03
+      - 香港 icable 移动01
+      - v3｜台湾01 主力
+      - v3｜台湾02 主力
+      - 香港 WTT01 | 解锁流媒体
+      - 德国01
+      - 马来西亚 01 | 解锁流媒体
+      - 韩国01
+      - v3｜美国03 主力
+      - 美国01 | 解锁流媒体
+      - v3｜新加坡03｜主力
+      - 英国01
+      - v3｜美国01 主力
+      - v3｜美国02 主力
+      - v3｜美国04｜解锁流媒体
+      - v3｜新加坡02｜主力
+      - v3｜新加坡06｜解锁流媒体
+      - 印度DO 移动
+      - v3｜新加坡01｜主力
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
