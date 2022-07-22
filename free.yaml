@@ -5,31 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 47 | @Airproxies 2, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: US 2 | @Airproxies, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 新加坡C, server: 13.214.181.219, port: 80, type: vmess, uuid: 9493071e-8346-4053-b3a4-a80ebd3d32ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.214.181.219}, udp: true}
+  - {name: 新加坡A, server: 54.255.233.147, port: 80, type: vmess, uuid: 9493071e-8346-4053-b3a4-a80ebd3d32ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 新加坡C-中转, server: nvaxarbvdu.japaneast.cloudapp.azure.com, port: 13333, type: vmess, uuid: 9493071e-8346-4053-b3a4-a80ebd3d32ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: nvaxarbvdu.japaneast.cloudapp.azure.com}, udp: true}
+  - {name: AZ_SG|JP, server: nvaxarbvdu.japaneast.cloudapp.azure.com, port: 16666, type: vmess, uuid: 9493071e-8346-4053-b3a4-a80ebd3d32ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: nvaxarbvdu.japaneast.cloudapp.azure.com}, udp: true}
+  - {name: AZ_HK, server: 104.208.80.22, port: 80, type: vmess, uuid: 9493071e-8346-4053-b3a4-a80ebd3d32ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 104.208.80.22}, udp: true}
+  - {name: Az_SG, server: 20.125.135.196, port: 80, type: vmess, uuid: 9493071e-8346-4053-b3a4-a80ebd3d32ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.125.135.196}, udp: true}
+  - {name: 美国, server: 20.125.130.136, port: 80, type: vmess, uuid: 9493071e-8346-4053-b3a4-a80ebd3d32ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.125.130.136}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 47 | @Airproxies 2
-      - US 2 | @Airproxies
+      - 新加坡C
+      - 新加坡A
+      - 新加坡C-中转
+      - AZ_SG|JP
+      - AZ_HK
+      - Az_SG
+      - 美国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 47 | @Airproxies 2
-      - US 2 | @Airproxies
+      - 新加坡C
+      - 新加坡A
+      - 新加坡C-中转
+      - AZ_SG|JP
+      - AZ_HK
+      - Az_SG
+      - 美国
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 47 | @Airproxies 2
-      - US 2 | @Airproxies
+      - 新加坡C
+      - 新加坡A
+      - 新加坡C-中转
+      - AZ_SG|JP
+      - AZ_HK
+      - Az_SG
+      - 美国
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,8 +68,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 47 | @Airproxies 2
-      - US 2 | @Airproxies
+      - 新加坡C
+      - 新加坡A
+      - 新加坡C-中转
+      - AZ_SG|JP
+      - AZ_HK
+      - Az_SG
+      - 美国
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -60,23 +85,38 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 47 | @Airproxies 2
-      - US 2 | @Airproxies
+      - 新加坡C
+      - 新加坡A
+      - 新加坡C-中转
+      - AZ_SG|JP
+      - AZ_HK
+      - Az_SG
+      - 美国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 47 | @Airproxies 2
-      - US 2 | @Airproxies
+      - 新加坡C
+      - 新加坡A
+      - 新加坡C-中转
+      - AZ_SG|JP
+      - AZ_HK
+      - Az_SG
+      - 美国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 47 | @Airproxies 2
-      - US 2 | @Airproxies
+      - 新加坡C
+      - 新加坡A
+      - 新加坡C-中转
+      - AZ_SG|JP
+      - AZ_HK
+      - Az_SG
+      - 美国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +132,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 47 | @Airproxies 2
-      - US 2 | @Airproxies
+      - 新加坡C
+      - 新加坡A
+      - 新加坡C-中转
+      - AZ_SG|JP
+      - AZ_HK
+      - Az_SG
+      - 美国
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
