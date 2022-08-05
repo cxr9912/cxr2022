@@ -5,39 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 如不能使用请更新订阅, server: u3.yuzex.top, port: 3223, type: vmess, uuid: 1b304616-0d21-47bb-b937-5b7f180252bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hoot, ws-headers: {Host: u3.yuzex.top}, udp: true}
-  - {name: 中国_TG@nodesharing_22, server: 111.45.29.75, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true, udp: true}
-  - {name: CN 1 → TG@SCINV, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: US 17 → TG@SCINV, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: "新加坡✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 26539, type: trojan, password: a8130179-99e6-48b7-a397-6aad11a7f342, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: "香港✈️中转 [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 45379, type: trojan, password: a8130179-99e6-48b7-a397-6aad11a7f342, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: "韩国✈️中转 [广州BGP]", server: az.az-bgp.chuangshi999.xyz, port: 39124, type: trojan, password: a8130179-99e6-48b7-a397-6aad11a7f342, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
+  - {name: "俄罗斯✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 42167, type: trojan, password: a8130179-99e6-48b7-a397-6aad11a7f342, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: "新加坡✈️中转 [广州BGP]", server: az.az-bgp.chuangshi999.xyz, port: 30484, type: trojan, password: a8130179-99e6-48b7-a397-6aad11a7f342, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
+  - {name: "台湾✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 31097, type: trojan, password: a8130179-99e6-48b7-a397-6aad11a7f342, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 如不能使用请更新订阅
-      - 中国_TG@nodesharing_22
-      - CN 1 → TG@SCINV
-      - US 17 → TG@SCINV
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 新加坡✈️中转 [广州BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 如不能使用请更新订阅
-      - 中国_TG@nodesharing_22
-      - CN 1 → TG@SCINV
-      - US 17 → TG@SCINV
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 新加坡✈️中转 [广州BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 如不能使用请更新订阅
-      - 中国_TG@nodesharing_22
-      - CN 1 → TG@SCINV
-      - US 17 → TG@SCINV
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 新加坡✈️中转 [广州BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,43 +64,53 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 如不能使用请更新订阅
-      - 中国_TG@nodesharing_22
-      - CN 1 → TG@SCINV
-      - US 17 → TG@SCINV
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 新加坡✈️中转 [广州BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港✈️中转 [湘沪BGP]
+      - 台湾✈️中转  [湘沪BGP]
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 如不能使用请更新订阅
-      - 中国_TG@nodesharing_22
-      - CN 1 → TG@SCINV
-      - US 17 → TG@SCINV
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 新加坡✈️中转 [广州BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 如不能使用请更新订阅
-      - 中国_TG@nodesharing_22
-      - CN 1 → TG@SCINV
-      - US 17 → TG@SCINV
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 新加坡✈️中转 [广州BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 如不能使用请更新订阅
-      - 中国_TG@nodesharing_22
-      - CN 1 → TG@SCINV
-      - US 17 → TG@SCINV
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 新加坡✈️中转 [广州BGP]
+      - 台湾✈️中转  [湘沪BGP]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +126,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 如不能使用请更新订阅
-      - 中国_TG@nodesharing_22
-      - CN 1 → TG@SCINV
-      - US 17 → TG@SCINV
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
+      - 新加坡✈️中转 [广州BGP]
+      - 台湾✈️中转  [湘沪BGP]
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
