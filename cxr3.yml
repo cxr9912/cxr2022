@@ -5,31 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TG@nodesharing_66, server: cf.fullcloud.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxusa.fovi.tk}, udp: true}
-  - {name: TG@nodesharing_57, server: 104.23.102.53, port: 443, type: vmess, uuid: 5c84e109-4772-4efb-a1cb-7b09d5a1791e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Telegram@BDovo_qaq, ws-headers: {Host: bissen.114514cn.me}, udp: true}
+  - {name: 中国_TG@nodesharing_310, server: x.v4.2.kiki789.com, port: 23148, type: vmess, uuid: ad785fc9-7f42-3396-945a-a179c2454bfa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: vYouTube-aweikeji}, udp: true}
+  - {name: 日本_TG@nodesharing_24, server: jp5.qinghuanyun.top, port: 443, type: vmess, uuid: 06768554-690f-3815-8848-b9f38dcf772b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp5.qinghuanyun.top}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG@nodesharing_66
-      - TG@nodesharing_57
+      - 中国_TG@nodesharing_310
+      - 日本_TG@nodesharing_24
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TG@nodesharing_66
-      - TG@nodesharing_57
+      - 中国_TG@nodesharing_310
+      - 日本_TG@nodesharing_24
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG@nodesharing_66
-      - TG@nodesharing_57
+      - 中国_TG@nodesharing_310
+      - 日本_TG@nodesharing_24
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,8 +48,8 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG@nodesharing_66
-      - TG@nodesharing_57
+      - 中国_TG@nodesharing_310
+      - 日本_TG@nodesharing_24
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -60,23 +60,23 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TG@nodesharing_66
-      - TG@nodesharing_57
+      - 中国_TG@nodesharing_310
+      - 日本_TG@nodesharing_24
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TG@nodesharing_66
-      - TG@nodesharing_57
+      - 中国_TG@nodesharing_310
+      - 日本_TG@nodesharing_24
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG@nodesharing_66
-      - TG@nodesharing_57
+      - 中国_TG@nodesharing_310
+      - 日本_TG@nodesharing_24
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG@nodesharing_66
-      - TG@nodesharing_57
+      - 中国_TG@nodesharing_310
+      - 日本_TG@nodesharing_24
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
