@@ -5,47 +5,79 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "新加坡✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 26539, type: trojan, password: a8130179-99e6-48b7-a397-6aad11a7f342, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: "香港✈️中转 [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 45379, type: trojan, password: a8130179-99e6-48b7-a397-6aad11a7f342, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: "韩国✈️中转 [广州BGP]", server: az.az-bgp.chuangshi999.xyz, port: 39124, type: trojan, password: a8130179-99e6-48b7-a397-6aad11a7f342, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: "俄罗斯✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 42167, type: trojan, password: a8130179-99e6-48b7-a397-6aad11a7f342, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: "新加坡✈️中转 [广州BGP]", server: az.az-bgp.chuangshi999.xyz, port: 30484, type: trojan, password: a8130179-99e6-48b7-a397-6aad11a7f342, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: "台湾✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 31097, type: trojan, password: a8130179-99e6-48b7-a397-6aad11a7f342, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB, server: sg09.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 中国-印度 班加罗尔 एयरटेल IPLC C07, server: in07.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01, server: pvcc01.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB, server: sg19.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 中国-印度 班加罗尔 एयरटेल IPLC C09, server: in09.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 中国-爱尔兰 IPLC C01, server: ir01.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 中国-加拿大 IPLC C01, server: ca01.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB, server: sg18.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 中国-澳大利亚 IPLC 悉尼 C05, server: au05.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 中国-法国 IPLC C02, server: fr02.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB, server: sg17.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB, server: sg05.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB, server: sg20.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 中国-爱尔兰 IPLC C02, server: ir02.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡✈️中转  [湘沪BGP]
-      - 香港✈️中转 [湘沪BGP]
-      - 韩国✈️中转 [广州BGP]
-      - 俄罗斯✈️中转  [湘沪BGP]
-      - 新加坡✈️中转 [广州BGP]
-      - 台湾✈️中转  [湘沪BGP]
+      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
+      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C09
+      - 中国-爱尔兰 IPLC C01
+      - 中国-加拿大 IPLC C01
+      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
+      - 中国-澳大利亚 IPLC 悉尼 C05
+      - 中国-法国 IPLC C02
+      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC C02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡✈️中转  [湘沪BGP]
-      - 香港✈️中转 [湘沪BGP]
-      - 韩国✈️中转 [广州BGP]
-      - 俄罗斯✈️中转  [湘沪BGP]
-      - 新加坡✈️中转 [广州BGP]
-      - 台湾✈️中转  [湘沪BGP]
+      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
+      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C09
+      - 中国-爱尔兰 IPLC C01
+      - 中国-加拿大 IPLC C01
+      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
+      - 中国-澳大利亚 IPLC 悉尼 C05
+      - 中国-法国 IPLC C02
+      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC C02
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡✈️中转  [湘沪BGP]
-      - 香港✈️中转 [湘沪BGP]
-      - 韩国✈️中转 [广州BGP]
-      - 俄罗斯✈️中转  [湘沪BGP]
-      - 新加坡✈️中转 [广州BGP]
-      - 台湾✈️中转  [湘沪BGP]
+      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
+      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C09
+      - 中国-爱尔兰 IPLC C01
+      - 中国-加拿大 IPLC C01
+      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
+      - 中国-澳大利亚 IPLC 悉尼 C05
+      - 中国-法国 IPLC C02
+      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC C02
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,53 +96,89 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡✈️中转  [湘沪BGP]
-      - 香港✈️中转 [湘沪BGP]
-      - 韩国✈️中转 [广州BGP]
-      - 俄罗斯✈️中转  [湘沪BGP]
-      - 新加坡✈️中转 [广州BGP]
-      - 台湾✈️中转  [湘沪BGP]
+      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
+      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C09
+      - 中国-爱尔兰 IPLC C01
+      - 中国-加拿大 IPLC C01
+      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
+      - 中国-澳大利亚 IPLC 悉尼 C05
+      - 中国-法国 IPLC C02
+      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC C02
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港✈️中转 [湘沪BGP]
-      - 台湾✈️中转  [湘沪BGP]
+      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡✈️中转  [湘沪BGP]
-      - 香港✈️中转 [湘沪BGP]
-      - 韩国✈️中转 [广州BGP]
-      - 俄罗斯✈️中转  [湘沪BGP]
-      - 新加坡✈️中转 [广州BGP]
-      - 台湾✈️中转  [湘沪BGP]
+      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
+      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C09
+      - 中国-爱尔兰 IPLC C01
+      - 中国-加拿大 IPLC C01
+      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
+      - 中国-澳大利亚 IPLC 悉尼 C05
+      - 中国-法国 IPLC C02
+      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC C02
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡✈️中转  [湘沪BGP]
-      - 香港✈️中转 [湘沪BGP]
-      - 韩国✈️中转 [广州BGP]
-      - 俄罗斯✈️中转  [湘沪BGP]
-      - 新加坡✈️中转 [广州BGP]
-      - 台湾✈️中转  [湘沪BGP]
+      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
+      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C09
+      - 中国-爱尔兰 IPLC C01
+      - 中国-加拿大 IPLC C01
+      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
+      - 中国-澳大利亚 IPLC 悉尼 C05
+      - 中国-法国 IPLC C02
+      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC C02
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡✈️中转  [湘沪BGP]
-      - 香港✈️中转 [湘沪BGP]
-      - 韩国✈️中转 [广州BGP]
-      - 俄罗斯✈️中转  [湘沪BGP]
-      - 新加坡✈️中转 [广州BGP]
-      - 台湾✈️中转  [湘沪BGP]
+      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
+      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C09
+      - 中国-爱尔兰 IPLC C01
+      - 中国-加拿大 IPLC C01
+      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
+      - 中国-澳大利亚 IPLC 悉尼 C05
+      - 中国-法国 IPLC C02
+      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC C02
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -126,12 +194,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡✈️中转  [湘沪BGP]
-      - 香港✈️中转 [湘沪BGP]
-      - 韩国✈️中转 [广州BGP]
-      - 俄罗斯✈️中转  [湘沪BGP]
-      - 新加坡✈️中转 [广州BGP]
-      - 台湾✈️中转  [湘沪BGP]
+      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
+      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
+      - 中国-印度 班加罗尔 एयरटेल IPLC C09
+      - 中国-爱尔兰 IPLC C01
+      - 中国-加拿大 IPLC C01
+      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
+      - 中国-澳大利亚 IPLC 悉尼 C05
+      - 中国-法国 IPLC C02
+      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
+      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
+      - 中国-爱尔兰 IPLC C02
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
