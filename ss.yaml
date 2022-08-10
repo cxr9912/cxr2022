@@ -5,47 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: SS|美国A01|IDC| 解锁, server: 124.225.25.39, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: bace9a8f-b633-4a15-b6d5-5dd1972b2496, udp: true}
-  - {name: V2RAY-台湾hinet-NETFLIX-迪斯尼01, server: nh-hinet01.xiaohouzi.club, port: 1558, type: vmess, uuid: 6dc17fdb-9bcd-3231-ad6a-6af308aef4cc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: nh-hinet01.xiaohouzi.club}, udp: true}
-  - {name: SS|香港A01|原生解锁, server: 124.225.25.39, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: bace9a8f-b633-4a15-b6d5-5dd1972b2496, udp: true}
-  - {name: scloud台湾05—可下载, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 8e58d8ff-1174-4e26-a51b-855756a5e071, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet05, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: 新加坡01, server: v2sg02.connauto.com, port: 443, type: trojan, password: 208d536b-a83e-3006-97d7-9c5e15dc3669, sni: v2sg02.connauto.com, skip-cert-verify: true, udp: true}
-  - {name: SS|日本A01|IDC| 解锁, server: 124.225.25.39, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: bace9a8f-b633-4a15-b6d5-5dd1972b2496, udp: true}
+  - {name: V1 HK 06, server: hk06.swty.buzz, port: 12155, type: vmess, uuid: b39f53aa-a9cb-4b71-8a3e-1de55e760fdf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: "%7B%22Host%22:%22hk06.swty.buzz%22%7D"}, udp: true}
+  - {name: "新加坡✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 26539, type: trojan, password: de3b9af1-00b6-46ec-98e8-11fb0a452c4c, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: "香港✈️中转 [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 45379, type: trojan, password: de3b9af1-00b6-46ec-98e8-11fb0a452c4c, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: "韩国✈️中转 [广州BGP]", server: az.az-bgp.chuangshi999.xyz, port: 39124, type: trojan, password: de3b9af1-00b6-46ec-98e8-11fb0a452c4c, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
+  - {name: "俄罗斯✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 42167, type: trojan, password: de3b9af1-00b6-46ec-98e8-11fb0a452c4c, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SS|美国A01|IDC| 解锁
-      - V2RAY-台湾hinet-NETFLIX-迪斯尼01
-      - SS|香港A01|原生解锁
-      - scloud台湾05—可下载
-      - 新加坡01
-      - SS|日本A01|IDC| 解锁
+      - V1 HK 06
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - SS|美国A01|IDC| 解锁
-      - V2RAY-台湾hinet-NETFLIX-迪斯尼01
-      - SS|香港A01|原生解锁
-      - scloud台湾05—可下载
-      - 新加坡01
-      - SS|日本A01|IDC| 解锁
+      - V1 HK 06
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SS|美国A01|IDC| 解锁
-      - V2RAY-台湾hinet-NETFLIX-迪斯尼01
-      - SS|香港A01|原生解锁
-      - scloud台湾05—可下载
-      - 新加坡01
-      - SS|日本A01|IDC| 解锁
+      - V1 HK 06
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,54 +60,48 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SS|美国A01|IDC| 解锁
-      - V2RAY-台湾hinet-NETFLIX-迪斯尼01
-      - SS|香港A01|原生解锁
-      - scloud台湾05—可下载
-      - 新加坡01
-      - SS|日本A01|IDC| 解锁
+      - V1 HK 06
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - V2RAY-台湾hinet-NETFLIX-迪斯尼01
-      - SS|香港A01|原生解锁
-      - scloud台湾05—可下载
+      - 香港✈️中转 [湘沪BGP]
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - SS|美国A01|IDC| 解锁
-      - V2RAY-台湾hinet-NETFLIX-迪斯尼01
-      - SS|香港A01|原生解锁
-      - scloud台湾05—可下载
-      - 新加坡01
-      - SS|日本A01|IDC| 解锁
+      - V1 HK 06
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - SS|美国A01|IDC| 解锁
-      - V2RAY-台湾hinet-NETFLIX-迪斯尼01
-      - SS|香港A01|原生解锁
-      - scloud台湾05—可下载
-      - 新加坡01
-      - SS|日本A01|IDC| 解锁
+      - V1 HK 06
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SS|美国A01|IDC| 解锁
-      - V2RAY-台湾hinet-NETFLIX-迪斯尼01
-      - SS|香港A01|原生解锁
-      - scloud台湾05—可下载
-      - 新加坡01
-      - SS|日本A01|IDC| 解锁
+      - V1 HK 06
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -127,12 +117,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SS|美国A01|IDC| 解锁
-      - V2RAY-台湾hinet-NETFLIX-迪斯尼01
-      - SS|香港A01|原生解锁
-      - scloud台湾05—可下载
-      - 新加坡01
-      - SS|日本A01|IDC| 解锁
+      - V1 HK 06
+      - 新加坡✈️中转  [湘沪BGP]
+      - 香港✈️中转 [湘沪BGP]
+      - 韩国✈️中转 [广州BGP]
+      - 俄罗斯✈️中转  [湘沪BGP]
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
