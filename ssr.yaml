@@ -5,39 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Alien, server: 120.241.236.113, port: 16113, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 2, server: 116.129.254.192, port: 16268, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 3, server: 120.233.150.132, port: 16129, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 4, server: 120.241.236.113, port: 16214, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 油尖旺御金·国峯 名氣通電訊 C03, server: hkhe03.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: VIP6专属 香港 QAT - Accelerate 05, server: qat05.virtual-strike.com, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 试用/续费 接入, server: test01.alderlake.gay, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: 中国-爱尔兰 IPLC C05, server: ir05.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: Alien, server: sh2.xn--ltwa5413a.com, port: 61969, type: vmess, uuid: 8469e3b1-52e2-4189-b3f6-5c585f47a6fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 2, server: sh2.xn--ltwa5413a.com, port: 18559, type: vmess, uuid: 8469e3b1-52e2-4189-b3f6-5c585f47a6fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 3, server: sh2.xn--ltwa5413a.com, port: 37413, type: vmess, uuid: 8469e3b1-52e2-4189-b3f6-5c585f47a6fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 4, server: sh2.xn--ltwa5413a.com, port: 31162, type: vmess, uuid: 8469e3b1-52e2-4189-b3f6-5c585f47a6fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 澳门 05, server: mo05.ptrecord.com, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: Alien 5, server: sh2.xn--ltwa5413a.com, port: 18243, type: vmess, uuid: 8469e3b1-52e2-4189-b3f6-5c585f47a6fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 6, server: sh2.xn--ltwa5413a.com, port: 15515, type: vmess, uuid: 8469e3b1-52e2-4189-b3f6-5c585f47a6fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 7, server: cm4.xn--ltwa5413a.com, port: 42116, type: vmess, uuid: 8469e3b1-52e2-4189-b3f6-5c585f47a6fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港 油尖旺御金·国峯 名氣通電訊 C03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 试用/续费 接入
+      - 中国-爱尔兰 IPLC C05
       - Alien
       - Alien 2
       - Alien 3
       - Alien 4
+      - 澳门 05
+      - Alien 5
+      - Alien 6
+      - Alien 7
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 香港 油尖旺御金·国峯 名氣通電訊 C03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 试用/续费 接入
+      - 中国-爱尔兰 IPLC C05
       - Alien
       - Alien 2
       - Alien 3
       - Alien 4
+      - 澳门 05
+      - Alien 5
+      - Alien 6
+      - Alien 7
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港 油尖旺御金·国峯 名氣通電訊 C03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 试用/续费 接入
+      - 中国-爱尔兰 IPLC C05
       - Alien
       - Alien 2
       - Alien 3
       - Alien 4
+      - 澳门 05
+      - Alien 5
+      - Alien 6
+      - Alien 7
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,43 +88,77 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港 油尖旺御金·国峯 名氣通電訊 C03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 试用/续费 接入
+      - 中国-爱尔兰 IPLC C05
       - Alien
       - Alien 2
       - Alien 3
       - Alien 4
+      - 澳门 05
+      - Alien 5
+      - Alien 6
+      - Alien 7
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 油尖旺御金·国峯 名氣通電訊 C03
+      - VIP6专属 香港 QAT - Accelerate 05
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 香港 油尖旺御金·国峯 名氣通電訊 C03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 试用/续费 接入
+      - 中国-爱尔兰 IPLC C05
       - Alien
       - Alien 2
       - Alien 3
       - Alien 4
+      - 澳门 05
+      - Alien 5
+      - Alien 6
+      - Alien 7
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 香港 油尖旺御金·国峯 名氣通電訊 C03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 试用/续费 接入
+      - 中国-爱尔兰 IPLC C05
       - Alien
       - Alien 2
       - Alien 3
       - Alien 4
+      - 澳门 05
+      - Alien 5
+      - Alien 6
+      - Alien 7
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 香港 油尖旺御金·国峯 名氣通電訊 C03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 试用/续费 接入
+      - 中国-爱尔兰 IPLC C05
       - Alien
       - Alien 2
       - Alien 3
       - Alien 4
+      - 澳门 05
+      - Alien 5
+      - Alien 6
+      - Alien 7
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +174,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 香港 油尖旺御金·国峯 名氣通電訊 C03
+      - VIP6专属 香港 QAT - Accelerate 05
+      - 试用/续费 接入
+      - 中国-爱尔兰 IPLC C05
       - Alien
       - Alien 2
       - Alien 3
       - Alien 4
+      - 澳门 05
+      - Alien 5
+      - Alien 6
+      - Alien 7
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
