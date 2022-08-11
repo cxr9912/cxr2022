@@ -5,79 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB, server: sg09.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: 中国-印度 班加罗尔 एयरटेल IPLC C07, server: in07.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01, server: pvcc01.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB, server: sg19.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: 中国-印度 班加罗尔 एयरटेल IPLC C09, server: in09.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: 中国-爱尔兰 IPLC C01, server: ir01.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: 中国-加拿大 IPLC C01, server: ca01.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB, server: sg18.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: 中国-澳大利亚 IPLC 悉尼 C05, server: au05.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: 中国-法国 IPLC C02, server: fr02.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB, server: sg17.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB, server: sg05.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB, server: sg20.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: 中国-爱尔兰 IPLC C02, server: ir02.mellanox.info, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
+  - {name: "V203 美国<->South[*]", server: V203.bgynd.xyz, port: 26203, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "V205 香港<->South[^]", server: V205.bgynd.xyz, port: 26205, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V207 新加坡<->South, server: V207.bgynd.xyz, port: 26207, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V209 日本<->South, server: V209.bgynd.xyz, port: 26209, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V210 日本<->East, server: V210.bgynd.xyz, port: 26210, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V201 美国<->South, server: V201.bgynd.xyz, port: 26201, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "V204 香港<->East[^]", server: V204.bgynd.xyz, port: 26204, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V206 新加坡<->East, server: V206.bgynd.xyz, port: 26206, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V208 泰国<->East, server: V208.bgynd.xyz, port: 26208, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-爱尔兰 IPLC C01
-      - 中国-加拿大 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-法国 IPLC C02
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
+      - V203 美国<->South[*]
+      - V205 香港<->South[^]
+      - V207 新加坡<->South
+      - V209 日本<->South
+      - V210 日本<->East
+      - V201 美国<->South
+      - V204 香港<->East[^]
+      - V206 新加坡<->East
+      - V208 泰国<->East
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-爱尔兰 IPLC C01
-      - 中国-加拿大 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-法国 IPLC C02
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
+      - V203 美国<->South[*]
+      - V205 香港<->South[^]
+      - V207 新加坡<->South
+      - V209 日本<->South
+      - V210 日本<->East
+      - V201 美国<->South
+      - V204 香港<->East[^]
+      - V206 新加坡<->East
+      - V208 泰国<->East
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-爱尔兰 IPLC C01
-      - 中国-加拿大 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-法国 IPLC C02
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
+      - V203 美国<->South[*]
+      - V205 香港<->South[^]
+      - V207 新加坡<->South
+      - V209 日本<->South
+      - V210 日本<->East
+      - V201 美国<->South
+      - V204 香港<->East[^]
+      - V206 新加坡<->East
+      - V208 泰国<->East
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,89 +76,65 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-爱尔兰 IPLC C01
-      - 中国-加拿大 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-法国 IPLC C02
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
+      - V203 美国<->South[*]
+      - V205 香港<->South[^]
+      - V207 新加坡<->South
+      - V209 日本<->South
+      - V210 日本<->East
+      - V201 美国<->South
+      - V204 香港<->East[^]
+      - V206 新加坡<->East
+      - V208 泰国<->East
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
+      - V205 香港<->South[^]
+      - V204 香港<->East[^]
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-爱尔兰 IPLC C01
-      - 中国-加拿大 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-法国 IPLC C02
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
+      - V203 美国<->South[*]
+      - V205 香港<->South[^]
+      - V207 新加坡<->South
+      - V209 日本<->South
+      - V210 日本<->East
+      - V201 美国<->South
+      - V204 香港<->East[^]
+      - V206 新加坡<->East
+      - V208 泰国<->East
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-爱尔兰 IPLC C01
-      - 中国-加拿大 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-法国 IPLC C02
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
+      - V203 美国<->South[*]
+      - V205 香港<->South[^]
+      - V207 新加坡<->South
+      - V209 日本<->South
+      - V210 日本<->East
+      - V201 美国<->South
+      - V204 香港<->East[^]
+      - V206 新加坡<->East
+      - V208 泰国<->East
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-爱尔兰 IPLC C01
-      - 中国-加拿大 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-法国 IPLC C02
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
+      - V203 美国<->South[*]
+      - V205 香港<->South[^]
+      - V207 新加坡<->South
+      - V209 日本<->South
+      - V210 日本<->East
+      - V201 美国<->South
+      - V204 香港<->East[^]
+      - V206 新加坡<->East
+      - V208 泰国<->East
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -194,20 +150,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-爱尔兰 IPLC C01
-      - 中国-加拿大 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-法国 IPLC C02
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
+      - V203 美国<->South[*]
+      - V205 香港<->South[^]
+      - V207 新加坡<->South
+      - V209 日本<->South
+      - V210 日本<->East
+      - V201 美国<->South
+      - V204 香港<->East[^]
+      - V206 新加坡<->East
+      - V208 泰国<->East
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
