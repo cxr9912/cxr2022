@@ -5,231 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 33336, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-awsxjp4, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 33336, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-hk1, headers: {Host: hksdwasd.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 33335, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-awsxjp3, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv2·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 33335, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-awsxjp5, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv2·1.0x] 日本01|IP均衡优化|混合负载|600Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 33335, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-awsrb1, headers: {Host: jpshdwanlx.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 33335, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-awsxjp4, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 33336, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-awsxjp3, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv3·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 33332, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-kr1, headers: {Host: baidu.com}}, udp: true}
-  - {name: "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 12336, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: sdwaigjkguywsxx.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv2·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 33335, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-awsxjp1, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 12335, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: sdwaigjkguywsxx.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 33335, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-hk1, headers: {Host: hksdwasd.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 33335, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-awsxjp2, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv3·1.0x] 日本03|大阪|混合负载|800Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 43382, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv2·1.0x] 日本001|混合负载|1000Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 12341, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: wdaiuxxawdiuaxjp.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP", server: lv2sndwioabiaasw.hjspyto.cn, port: 12356, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: 16-162-192-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 33336, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-awsxjp2, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 12334, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: sdwaigjkguywsxx.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 12349, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: 16-162-192-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 12352, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: 16-162-192-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "[Lv2·1.0x] 日本003|混合负载|1000Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 12343, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: uwayvbjlshiuxaw.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 33336, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-awsxjp1, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 33336, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-awsrb1, headers: {Host: jpshdwanlx.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP", server: lv2sndwioabiaasw.hjspyto.cn, port: 12354, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: 16-162-192-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 12350, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: 16-162-192-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 12351, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: 16-162-192-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP", server: lv2sndwioabiaasw.hjspyto.cn, port: 12355, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: 16-162-192-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "[Lv3·1.0x] 日本002|混合负载|1000Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 12346, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: oiugbalxawdfas.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 12337, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: sdwaigjkguywsxx.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 33336, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-awsxjp5, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv2·1.0x] 日本002|混合负载|1000Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 12342, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: sdwambhjnkl.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP", server: lv2sndwioabiaasw.hjspyto.cn, port: 12353, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: 16-162-192-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 12333, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: sdwaigjkguywsxx.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv2·1.0x] 日本004|混合负载|1000Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 12344, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: iyvwbaniohxcsawa.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv2·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 33331, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-kr3, headers: {Host: baidu.com}}, udp: true}
-  - {name: "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 33331, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-kr1, headers: {Host: baidu.com}}, udp: true}
-  - {name: "[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 33336, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-us3, headers: {Host: ushksw888x.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv3·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 33332, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-kr3, headers: {Host: baidu.com}}, udp: true}
-  - {name: "[Lv2·1.0x] 日本03|大阪|混合负载|800Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 43381, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 33335, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-us1, headers: {Host: ushksw888x.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 33336, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-us1, headers: {Host: ushksw888x.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 33335, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-us3, headers: {Host: ushksw888x.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 33335, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-us2, headers: {Host: ushksw888x.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 33336, type: vmess, uuid: b046d821-b269-3c55-a3bd-e857dcfe68da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tnt-us2, headers: {Host: ushksw888x.vzwzasc.cn}}, udp: true}
-  - {name: "[Lv3·1.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 12324, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: huwkaihsdwal.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv2·2.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享", server: lv2sndwioabiaasw.hjspyto.cn, port: 12323, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: huwkaihsdwal.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享", server: lv3nawlxxxawwwwwx.hjspyto.cn, port: 12332, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: lmwiahnsdx.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连", server: 103.173.254.43, port: 443, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: xwascawz.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv1·0.5x] 越南01|移动/联通/电信|100Mbps|直连", server: 103.173.155.211, port: 443, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: sdhawlhxiuhawox.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv1·0.5x]美国04|移动/联通/电信|300Mbps|直连", server: scus4.ddns-pop.cyou, port: 24567, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: sdhawuyfkjuwx.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连", server: scus2.ddns-pop.cyou, port: 24567, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: sdhawuyfkjuwx.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连", server: scus1.ddns-pop.cyou, port: 24567, type: trojan, password: b046d821-b269-3c55-a3bd-e857dcfe68da, sni: sdhawuyfkjuwx.vzwzasc.cn, skip-cert-verify: true, udp: true}
+  - {name: 香港ttt, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP TYO 04 TR(trojan), server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: LTKPTMbjBDYisdMxKEBDzcduXacOvIVY, sni: cdn.savoy.click, skip-cert-verify: true, udp: true}
+  - {name: V0-东京2 2, server: gyjp2.333003.xyz, port: 19780, type: trojan, password: e8700c50-f4e0-4363-91bb-4b26cbb9318a, sni: gjp2.333003.xyz, skip-cert-verify: true, udp: true}
+  - {name: V0-东京, server: gyjp1.333003.xyz, port: 59324, type: trojan, password: e8700c50-f4e0-4363-91bb-4b26cbb9318a, sni: gjp.333003.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本01|IP均衡优化|混合负载|600Mbps共享"
-      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本001|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x] 日本003|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 日本004|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv2·2.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享"
-      - "[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x] 越南01|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x]美国04|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连"
+      - 香港ttt
+      - JP TYO 04 TR(trojan)
+      - V0-东京2 2
+      - V0-东京
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本01|IP均衡优化|混合负载|600Mbps共享"
-      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本001|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x] 日本003|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 日本004|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv2·2.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享"
-      - "[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x] 越南01|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x]美国04|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连"
+      - 香港ttt
+      - JP TYO 04 TR(trojan)
+      - V0-东京2 2
+      - V0-东京
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本01|IP均衡优化|混合负载|600Mbps共享"
-      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本001|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x] 日本003|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 日本004|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv2·2.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享"
-      - "[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x] 越南01|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x]美国04|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连"
+      - 香港ttt
+      - JP TYO 04 TR(trojan)
+      - V0-东京2 2
+      - V0-东京
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -248,247 +56,44 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本01|IP均衡优化|混合负载|600Mbps共享"
-      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本001|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x] 日本003|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 日本004|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv2·2.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享"
-      - "[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x] 越南01|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x]美国04|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连"
+      - 香港ttt
+      - JP TYO 04 TR(trojan)
+      - V0-东京2 2
+      - V0-东京
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv2·2.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
+      - 香港ttt
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本01|IP均衡优化|混合负载|600Mbps共享"
-      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本001|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x] 日本003|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 日本004|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv2·2.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享"
-      - "[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x] 越南01|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x]美国04|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连"
+      - 香港ttt
+      - JP TYO 04 TR(trojan)
+      - V0-东京2 2
+      - V0-东京
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本01|IP均衡优化|混合负载|600Mbps共享"
-      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本001|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x] 日本003|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 日本004|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv2·2.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享"
-      - "[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x] 越南01|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x]美国04|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连"
+      - 香港ttt
+      - JP TYO 04 TR(trojan)
+      - V0-东京2 2
+      - V0-东京
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本01|IP均衡优化|混合负载|600Mbps共享"
-      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本001|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x] 日本003|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 日本004|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv2·2.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享"
-      - "[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x] 越南01|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x]美国04|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连"
+      - 香港ttt
+      - JP TYO 04 TR(trojan)
+      - V0-东京2 2
+      - V0-东京
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -504,58 +109,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本01|IP均衡优化|混合负载|600Mbps共享"
-      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本001|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x] 日本003|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
-      - "[Lv2·1.0x] 日本002|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
-      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
-      - "[Lv2·1.0x] 日本004|混合负载|1000Mbps共享"
-      - "[Lv2·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 韩国03|IP均衡优化|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 日本03|大阪|混合负载|800Mbps共享"
-      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
-      - "[Lv3·1.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv2·2.0x] 香港01|IP均衡优化 混合负载|1000Mbps共享"
-      - "[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享"
-      - "[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x] 越南01|移动/联通/电信|100Mbps|直连"
-      - "[Lv1·0.5x]美国04|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连"
-      - "[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连"
+      - 香港ttt
+      - JP TYO 04 TR(trojan)
+      - V0-东京2 2
+      - V0-东京
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
