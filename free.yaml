@@ -5,59 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "V203 美国<->South[*]", server: V203.bgynd.xyz, port: 26203, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "V205 香港<->South[^]", server: V205.bgynd.xyz, port: 26205, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V207 新加坡<->South, server: V207.bgynd.xyz, port: 26207, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V209 日本<->South, server: V209.bgynd.xyz, port: 26209, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V210 日本<->East, server: V210.bgynd.xyz, port: 26210, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V201 美国<->South, server: V201.bgynd.xyz, port: 26201, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "V204 香港<->East[^]", server: V204.bgynd.xyz, port: 26204, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V206 新加坡<->East, server: V206.bgynd.xyz, port: 26206, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V208 泰国<->East, server: V208.bgynd.xyz, port: 26208, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "HongKong0105[Relay]", server: fsyd.kruwik.cn, port: 20105, type: trojan, password: fe12dd1d-b699-4c3e-aff5-efa24a6e30aa, sni: fsyd.kruwik.cn, skip-cert-verify: true, udp: true}
+  - {name: "HongKong0103[Relay]", server: cn.cmcmyd.986888.xyz, port: 20103, type: trojan, password: fe12dd1d-b699-4c3e-aff5-efa24a6e30aa, sni: cn.cmcmyd.986888.xyz, skip-cert-verify: true, udp: true}
+  - {name: "HongKong0104[MPLS]", server: azbj01.986888.xyz, port: 20104, type: trojan, password: fe12dd1d-b699-4c3e-aff5-efa24a6e30aa, sni: azbj01.986888.xyz, skip-cert-verify: true, udp: true}
+  - {name: "Hongkong0102[MPLS]", server: azsh01.986888.xyz, port: 20102, type: trojan, password: fe12dd1d-b699-4c3e-aff5-efa24a6e30aa, sni: azsh01.986888.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V203 美国<->South[*]
-      - V205 香港<->South[^]
-      - V207 新加坡<->South
-      - V209 日本<->South
-      - V210 日本<->East
-      - V201 美国<->South
-      - V204 香港<->East[^]
-      - V206 新加坡<->East
-      - V208 泰国<->East
+      - HongKong0105[Relay]
+      - HongKong0103[Relay]
+      - HongKong0104[MPLS]
+      - Hongkong0102[MPLS]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - V203 美国<->South[*]
-      - V205 香港<->South[^]
-      - V207 新加坡<->South
-      - V209 日本<->South
-      - V210 日本<->East
-      - V201 美国<->South
-      - V204 香港<->East[^]
-      - V206 新加坡<->East
-      - V208 泰国<->East
+      - HongKong0105[Relay]
+      - HongKong0103[Relay]
+      - HongKong0104[MPLS]
+      - Hongkong0102[MPLS]
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V203 美国<->South[*]
-      - V205 香港<->South[^]
-      - V207 新加坡<->South
-      - V209 日本<->South
-      - V210 日本<->East
-      - V201 美国<->South
-      - V204 香港<->East[^]
-      - V206 新加坡<->East
-      - V208 泰国<->East
+      - HongKong0105[Relay]
+      - HongKong0103[Relay]
+      - HongKong0104[MPLS]
+      - Hongkong0102[MPLS]
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,65 +56,43 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V203 美国<->South[*]
-      - V205 香港<->South[^]
-      - V207 新加坡<->South
-      - V209 日本<->South
-      - V210 日本<->East
-      - V201 美国<->South
-      - V204 香港<->East[^]
-      - V206 新加坡<->East
-      - V208 泰国<->East
+      - HongKong0105[Relay]
+      - HongKong0103[Relay]
+      - HongKong0104[MPLS]
+      - Hongkong0102[MPLS]
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - V205 香港<->South[^]
-      - V204 香港<->East[^]
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - V203 美国<->South[*]
-      - V205 香港<->South[^]
-      - V207 新加坡<->South
-      - V209 日本<->South
-      - V210 日本<->East
-      - V201 美国<->South
-      - V204 香港<->East[^]
-      - V206 新加坡<->East
-      - V208 泰国<->East
+      - HongKong0105[Relay]
+      - HongKong0103[Relay]
+      - HongKong0104[MPLS]
+      - Hongkong0102[MPLS]
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - V203 美国<->South[*]
-      - V205 香港<->South[^]
-      - V207 新加坡<->South
-      - V209 日本<->South
-      - V210 日本<->East
-      - V201 美国<->South
-      - V204 香港<->East[^]
-      - V206 新加坡<->East
-      - V208 泰国<->East
+      - HongKong0105[Relay]
+      - HongKong0103[Relay]
+      - HongKong0104[MPLS]
+      - Hongkong0102[MPLS]
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V203 美国<->South[*]
-      - V205 香港<->South[^]
-      - V207 新加坡<->South
-      - V209 日本<->South
-      - V210 日本<->East
-      - V201 美国<->South
-      - V204 香港<->East[^]
-      - V206 新加坡<->East
-      - V208 泰国<->East
+      - HongKong0105[Relay]
+      - HongKong0103[Relay]
+      - HongKong0104[MPLS]
+      - Hongkong0102[MPLS]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -150,15 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V203 美国<->South[*]
-      - V205 香港<->South[^]
-      - V207 新加坡<->South
-      - V209 日本<->South
-      - V210 日本<->East
-      - V201 美国<->South
-      - V204 香港<->East[^]
-      - V206 新加坡<->East
-      - V208 泰国<->East
+      - HongKong0105[Relay]
+      - HongKong0103[Relay]
+      - HongKong0104[MPLS]
+      - Hongkong0102[MPLS]
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
