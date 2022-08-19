@@ -5,35 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港ttt, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 东方不败_Cow Vagina🇨🇳_Cow VaginaCN_Cow Vagina中国_Cow Vagina4, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP TYO 04 TR(trojan), server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: LTKPTMbjBDYisdMxKEBDzcduXacOvIVY, sni: jp-tyo-04-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
+  - {name: "Hongkong0102[MPLS]", server: azsh01.986888.xyz, port: 20102, type: trojan, password: 1468f4f0-df85-4433-b450-5da3618b7fca, sni: azsh01.986888.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港ttt
-      - 东方不败_Cow Vagina🇨🇳_Cow VaginaCN_Cow Vagina中国_Cow Vagina4
-      - JP TYO 04 TR(trojan)
+      - Hongkong0102[MPLS]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港ttt
-      - 东方不败_Cow Vagina🇨🇳_Cow VaginaCN_Cow Vagina中国_Cow Vagina4
-      - JP TYO 04 TR(trojan)
+      - Hongkong0102[MPLS]
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港ttt
-      - 东方不败_Cow Vagina🇨🇳_Cow VaginaCN_Cow Vagina中国_Cow Vagina4
-      - JP TYO 04 TR(trojan)
+      - Hongkong0102[MPLS]
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,40 +44,31 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港ttt
-      - 东方不败_Cow Vagina🇨🇳_Cow VaginaCN_Cow Vagina中国_Cow Vagina4
-      - JP TYO 04 TR(trojan)
+      - Hongkong0102[MPLS]
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港ttt
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港ttt
-      - 东方不败_Cow Vagina🇨🇳_Cow VaginaCN_Cow Vagina中国_Cow Vagina4
-      - JP TYO 04 TR(trojan)
+      - Hongkong0102[MPLS]
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港ttt
-      - 东方不败_Cow Vagina🇨🇳_Cow VaginaCN_Cow Vagina中国_Cow Vagina4
-      - JP TYO 04 TR(trojan)
+      - Hongkong0102[MPLS]
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港ttt
-      - 东方不败_Cow Vagina🇨🇳_Cow VaginaCN_Cow Vagina中国_Cow Vagina4
-      - JP TYO 04 TR(trojan)
+      - Hongkong0102[MPLS]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -101,9 +84,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港ttt
-      - 东方不败_Cow Vagina🇨🇳_Cow VaginaCN_Cow Vagina中国_Cow Vagina4
-      - JP TYO 04 TR(trojan)
+      - Hongkong0102[MPLS]
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
