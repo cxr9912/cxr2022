@@ -5,31 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港HKT-dip, server: 43.248.116.201, port: 32000, type: trojan, password: b03ef3ba-dc0b-4f69-aeea-76d337e46f99, skip-cert-verify: true, udp: true}
-  - {name: 香港ttt, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 洛杉矶 01, server: 40.73.113.150, port: 30015, type: ss, cipher: aes-128-gcm, password: KVRlKiJlHoXIYxRB, udp: true}
+  - {name: 德国 法兰克福 01 【4 LB】, server: 40.73.113.150, port: 30008, type: ss, cipher: aes-128-gcm, password: KVRlKiJlHoXIYxRB, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港HKT-dip
-      - 香港ttt
+      - 美国 洛杉矶 01
+      - 德国 法兰克福 01 【4 LB】
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港HKT-dip
-      - 香港ttt
+      - 美国 洛杉矶 01
+      - 德国 法兰克福 01 【4 LB】
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港HKT-dip
-      - 香港ttt
+      - 美国 洛杉矶 01
+      - 德国 法兰克福 01 【4 LB】
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,37 +48,35 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港HKT-dip
-      - 香港ttt
+      - 美国 洛杉矶 01
+      - 德国 法兰克福 01 【4 LB】
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港HKT-dip
-      - 香港ttt
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港HKT-dip
-      - 香港ttt
+      - 美国 洛杉矶 01
+      - 德国 法兰克福 01 【4 LB】
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港HKT-dip
-      - 香港ttt
+      - 美国 洛杉矶 01
+      - 德国 法兰克福 01 【4 LB】
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港HKT-dip
-      - 香港ttt
+      - 美国 洛杉矶 01
+      - 德国 法兰克福 01 【4 LB】
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -94,8 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港HKT-dip
-      - 香港ttt
+      - 美国 洛杉矶 01
+      - 德国 法兰克福 01 【4 LB】
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
