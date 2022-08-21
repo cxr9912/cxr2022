@@ -5,127 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港, server: relay.wl-node1.com, port: 39002, type: ss, cipher: aes-128-gcm, password: dded6ef8-0bc4-4c84-98ec-8e74eba97b00, udp: true}
-  - {name: 标准|香港04解锁|x1.0x, server: zfd-moble.gatknqh.cn, port: 16114, type: vmess, uuid: 7cd050f1-0a72-3c8c-9650-b00faa5bacbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|香港02解锁|x1.0x, server: zfd-moble.gatknqh.cn, port: 16112, type: vmess, uuid: 7cd050f1-0a72-3c8c-9650-b00faa5bacbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_86 TG@peekfun, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws}, udp: true}
+  - {name: 香港7, server: azure.xlzlucky.ml, port: 24285, type: vmess, uuid: 6e0efce1-d794-40d8-ddb6-c9b9605ea0ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: "[B]-普通-日本C", server: b-entry.linkdns.xyz, port: 40256, type: vmess, uuid: 95ebc6b2-7b4c-3816-bc9b-63f56f775373, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test, headers: {Host: map.baidu.com}}, udp: true}
+  - {name: 香港-Basic-09-负载集群b 2, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港-Pro-08-负载集群d, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "Lv2 新加坡 03 [2.0]", server: ersgdf.passwordv2.com, port: 7402, type: ss, cipher: aes-128-gcm, password: c0b4efb0-ab81-46f8-87af-815b62351089, udp: true}
-  - {name: 香港-Basic-09-负载集群b, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IEPL香港 V, server: mzqlpieszcm.julvab.com, port: 59933, type: vmess, uuid: bb8830d9-492f-3a51-bab3-721e49887638, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /microsoft/support, headers: {Host: support.microsoft.com}}, udp: true}
-  - {name: 标准|香港02解锁|x1.0x, server: zfd-moble.gatknqh.cn, port: 16112, type: vmess, uuid: 7cd050f1-0a72-3c8c-9650-b00faa5bacbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IEPL香港  VI, server: mzqlpieszcm.julvab.com, port: 59955, type: vmess, uuid: bb8830d9-492f-3a51-bab3-721e49887638, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /microsoft/support, headers: {Host: support.microsoft.com}}, udp: true}
-  - {name: 香港HKT-优化3, server: t.cccao.cyou, port: 16620, type: vmess, uuid: eea6906b-c9d9-4f5d-b4be-4ed523e1e70d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
-  - {name: 台湾 IV, server: mzqlpieszcm.julvab.com, port: 27717, type: vmess, uuid: bb8830d9-492f-3a51-bab3-721e49887638, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /microsoft/support, headers: {Host: support.microsoft.com}}, udp: true}
-  - {name: 标准|香港01解锁|x1.0x, server: zfd-moble.gatknqh.cn, port: 16111, type: vmess, uuid: 7cd050f1-0a72-3c8c-9650-b00faa5bacbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港-Basic-09-负载集群b 2, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡02解锁|x1.0x, server: zfd-moble.gatknqh.cn, port: 16108, type: vmess, uuid: 7cd050f1-0a72-3c8c-9650-b00faa5bacbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IEPL香港 III, server: mzqlpieszcm.julvab.com, port: 58811, type: vmess, uuid: bb8830d9-492f-3a51-bab3-721e49887638, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IEPL香港 IV, server: cunicom.julvab.com, port: 50922, type: vmess, uuid: bb8830d9-492f-3a51-bab3-721e49887638, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /microsoft/support, headers: {Host: support.microsoft.com}}, udp: true}
-  - {name: 香港HKT-优化2, server: 120-241-236-214.nhost.00cdn.com, port: 16620, type: vmess, uuid: eea6906b-c9d9-4f5d-b4be-4ed523e1e70d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 120-241-236-214.nhost.00cdn.com}}, udp: true}
-  - {name: "[B]-普通-日本C", server: b-entry.linkdns.xyz, port: 40256, type: vmess, uuid: 95ebc6b2-7b4c-3816-bc9b-63f56f775373, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test, headers: {Host: map.baidu.com}}, udp: true}
-  - {name: 香港7, server: azure.xlzlucky.ml, port: 24285, type: vmess, uuid: 6e0efce1-d794-40d8-ddb6-c9b9605ea0ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US SJC AP TR(trojan), server: us-sjc-ap-tr.node.inforun.work, port: 789, type: trojan, password: kFyvvCcvMXQKFcJZWuxcdTZOFummlVbf, sni: cdn.savoy.click, skip-cert-verify: true, udp: true}
-  - {name: 樱花备用1号, server: 153.121.32.77, port: 19999, type: ss, cipher: aes-128-gcm, password: 68d69ff4-03eb-425c-97b0-64a3e16d8af8, udp: true}
-  - {name: US SJC AP V2(vmess), server: us-sjc-ap-v2.node.inforun.work, port: 788, type: vmess, uuid: 4d578f9e-6af4-4d29-966f-88c061d075b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}, udp: true}
-  - {name: SG SIN KRN V2(vmess), server: sg-sin-krn-v2.node.inforun.work, port: 12888, type: vmess, uuid: 4d578f9e-6af4-4d29-966f-88c061d075b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}, udp: true}
-  - {name: CN_86 TG@peekfun, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: JP_8118 @WangCai_1, server: 85.208.108.19, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: JP_5000 @WangCai_1, server: 85.208.108.19, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: JP_3389 @WangCai_1, server: 85.208.108.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港
-      - 标准|香港04解锁|x1.0x
+      - 标准|香港02解锁|x1.0x
+      - CN_86 TG@peekfun
+      - 香港7
+      - "[B]-普通-日本C"
+      - 香港-Basic-09-负载集群b 2
       - 香港-Pro-08-负载集群d
       - Lv2 新加坡 03 [2.0]
-      - 香港-Basic-09-负载集群b
-      - IEPL香港 V
-      - 标准|香港02解锁|x1.0x
-      - IEPL香港  VI
-      - 香港HKT-优化3
-      - 台湾 IV
-      - 标准|香港01解锁|x1.0x
-      - 香港-Basic-09-负载集群b 2
-      - 标准|新加坡02解锁|x1.0x
-      - IEPL香港 III
-      - IEPL香港 IV
-      - 香港HKT-优化2
-      - "[B]-普通-日本C"
-      - 香港7
-      - US SJC AP TR(trojan)
-      - 樱花备用1号
-      - US SJC AP V2(vmess)
-      - SG SIN KRN V2(vmess)
-      - CN_86 TG@peekfun
-      - JP_8118 @WangCai_1
-      - JP_5000 @WangCai_1
-      - JP_3389 @WangCai_1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港
-      - 标准|香港04解锁|x1.0x
+      - 标准|香港02解锁|x1.0x
+      - CN_86 TG@peekfun
+      - 香港7
+      - "[B]-普通-日本C"
+      - 香港-Basic-09-负载集群b 2
       - 香港-Pro-08-负载集群d
       - Lv2 新加坡 03 [2.0]
-      - 香港-Basic-09-负载集群b
-      - IEPL香港 V
-      - 标准|香港02解锁|x1.0x
-      - IEPL香港  VI
-      - 香港HKT-优化3
-      - 台湾 IV
-      - 标准|香港01解锁|x1.0x
-      - 香港-Basic-09-负载集群b 2
-      - 标准|新加坡02解锁|x1.0x
-      - IEPL香港 III
-      - IEPL香港 IV
-      - 香港HKT-优化2
-      - "[B]-普通-日本C"
-      - 香港7
-      - US SJC AP TR(trojan)
-      - 樱花备用1号
-      - US SJC AP V2(vmess)
-      - SG SIN KRN V2(vmess)
-      - CN_86 TG@peekfun
-      - JP_8118 @WangCai_1
-      - JP_5000 @WangCai_1
-      - JP_3389 @WangCai_1
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港
-      - 标准|香港04解锁|x1.0x
+      - 标准|香港02解锁|x1.0x
+      - CN_86 TG@peekfun
+      - 香港7
+      - "[B]-普通-日本C"
+      - 香港-Basic-09-负载集群b 2
       - 香港-Pro-08-负载集群d
       - Lv2 新加坡 03 [2.0]
-      - 香港-Basic-09-负载集群b
-      - IEPL香港 V
-      - 标准|香港02解锁|x1.0x
-      - IEPL香港  VI
-      - 香港HKT-优化3
-      - 台湾 IV
-      - 标准|香港01解锁|x1.0x
-      - 香港-Basic-09-负载集群b 2
-      - 标准|新加坡02解锁|x1.0x
-      - IEPL香港 III
-      - IEPL香港 IV
-      - 香港HKT-优化2
-      - "[B]-普通-日本C"
-      - 香港7
-      - US SJC AP TR(trojan)
-      - 樱花备用1号
-      - US SJC AP V2(vmess)
-      - SG SIN KRN V2(vmess)
-      - CN_86 TG@peekfun
-      - JP_8118 @WangCai_1
-      - JP_5000 @WangCai_1
-      - JP_3389 @WangCai_1
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -144,146 +68,59 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港
-      - 标准|香港04解锁|x1.0x
+      - 标准|香港02解锁|x1.0x
+      - CN_86 TG@peekfun
+      - 香港7
+      - "[B]-普通-日本C"
+      - 香港-Basic-09-负载集群b 2
       - 香港-Pro-08-负载集群d
       - Lv2 新加坡 03 [2.0]
-      - 香港-Basic-09-负载集群b
-      - IEPL香港 V
-      - 标准|香港02解锁|x1.0x
-      - IEPL香港  VI
-      - 香港HKT-优化3
-      - 台湾 IV
-      - 标准|香港01解锁|x1.0x
-      - 香港-Basic-09-负载集群b 2
-      - 标准|新加坡02解锁|x1.0x
-      - IEPL香港 III
-      - IEPL香港 IV
-      - 香港HKT-优化2
-      - "[B]-普通-日本C"
-      - 香港7
-      - US SJC AP TR(trojan)
-      - 樱花备用1号
-      - US SJC AP V2(vmess)
-      - SG SIN KRN V2(vmess)
-      - CN_86 TG@peekfun
-      - JP_8118 @WangCai_1
-      - JP_5000 @WangCai_1
-      - JP_3389 @WangCai_1
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港
-      - 标准|香港04解锁|x1.0x
-      - 香港-Pro-08-负载集群d
-      - 香港-Basic-09-负载集群b
-      - IEPL香港 V
       - 标准|香港02解锁|x1.0x
-      - IEPL香港  VI
-      - 香港HKT-优化3
-      - 台湾 IV
-      - 标准|香港01解锁|x1.0x
-      - 香港-Basic-09-负载集群b 2
-      - IEPL香港 III
-      - IEPL香港 IV
-      - 香港HKT-优化2
       - 香港7
+      - 香港-Basic-09-负载集群b 2
+      - 香港-Pro-08-负载集群d
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港
-      - 标准|香港04解锁|x1.0x
+      - 标准|香港02解锁|x1.0x
+      - CN_86 TG@peekfun
+      - 香港7
+      - "[B]-普通-日本C"
+      - 香港-Basic-09-负载集群b 2
       - 香港-Pro-08-负载集群d
       - Lv2 新加坡 03 [2.0]
-      - 香港-Basic-09-负载集群b
-      - IEPL香港 V
-      - 标准|香港02解锁|x1.0x
-      - IEPL香港  VI
-      - 香港HKT-优化3
-      - 台湾 IV
-      - 标准|香港01解锁|x1.0x
-      - 香港-Basic-09-负载集群b 2
-      - 标准|新加坡02解锁|x1.0x
-      - IEPL香港 III
-      - IEPL香港 IV
-      - 香港HKT-优化2
-      - "[B]-普通-日本C"
-      - 香港7
-      - US SJC AP TR(trojan)
-      - 樱花备用1号
-      - US SJC AP V2(vmess)
-      - SG SIN KRN V2(vmess)
-      - CN_86 TG@peekfun
-      - JP_8118 @WangCai_1
-      - JP_5000 @WangCai_1
-      - JP_3389 @WangCai_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港
-      - 标准|香港04解锁|x1.0x
+      - 标准|香港02解锁|x1.0x
+      - CN_86 TG@peekfun
+      - 香港7
+      - "[B]-普通-日本C"
+      - 香港-Basic-09-负载集群b 2
       - 香港-Pro-08-负载集群d
       - Lv2 新加坡 03 [2.0]
-      - 香港-Basic-09-负载集群b
-      - IEPL香港 V
-      - 标准|香港02解锁|x1.0x
-      - IEPL香港  VI
-      - 香港HKT-优化3
-      - 台湾 IV
-      - 标准|香港01解锁|x1.0x
-      - 香港-Basic-09-负载集群b 2
-      - 标准|新加坡02解锁|x1.0x
-      - IEPL香港 III
-      - IEPL香港 IV
-      - 香港HKT-优化2
-      - "[B]-普通-日本C"
-      - 香港7
-      - US SJC AP TR(trojan)
-      - 樱花备用1号
-      - US SJC AP V2(vmess)
-      - SG SIN KRN V2(vmess)
-      - CN_86 TG@peekfun
-      - JP_8118 @WangCai_1
-      - JP_5000 @WangCai_1
-      - JP_3389 @WangCai_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港
-      - 标准|香港04解锁|x1.0x
+      - 标准|香港02解锁|x1.0x
+      - CN_86 TG@peekfun
+      - 香港7
+      - "[B]-普通-日本C"
+      - 香港-Basic-09-负载集群b 2
       - 香港-Pro-08-负载集群d
       - Lv2 新加坡 03 [2.0]
-      - 香港-Basic-09-负载集群b
-      - IEPL香港 V
-      - 标准|香港02解锁|x1.0x
-      - IEPL香港  VI
-      - 香港HKT-优化3
-      - 台湾 IV
-      - 标准|香港01解锁|x1.0x
-      - 香港-Basic-09-负载集群b 2
-      - 标准|新加坡02解锁|x1.0x
-      - IEPL香港 III
-      - IEPL香港 IV
-      - 香港HKT-优化2
-      - "[B]-普通-日本C"
-      - 香港7
-      - US SJC AP TR(trojan)
-      - 樱花备用1号
-      - US SJC AP V2(vmess)
-      - SG SIN KRN V2(vmess)
-      - CN_86 TG@peekfun
-      - JP_8118 @WangCai_1
-      - JP_5000 @WangCai_1
-      - JP_3389 @WangCai_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -299,32 +136,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港
-      - 标准|香港04解锁|x1.0x
+      - 标准|香港02解锁|x1.0x
+      - CN_86 TG@peekfun
+      - 香港7
+      - "[B]-普通-日本C"
+      - 香港-Basic-09-负载集群b 2
       - 香港-Pro-08-负载集群d
       - Lv2 新加坡 03 [2.0]
-      - 香港-Basic-09-负载集群b
-      - IEPL香港 V
-      - 标准|香港02解锁|x1.0x
-      - IEPL香港  VI
-      - 香港HKT-优化3
-      - 台湾 IV
-      - 标准|香港01解锁|x1.0x
-      - 香港-Basic-09-负载集群b 2
-      - 标准|新加坡02解锁|x1.0x
-      - IEPL香港 III
-      - IEPL香港 IV
-      - 香港HKT-优化2
-      - "[B]-普通-日本C"
-      - 香港7
-      - US SJC AP TR(trojan)
-      - 樱花备用1号
-      - US SJC AP V2(vmess)
-      - SG SIN KRN V2(vmess)
-      - CN_86 TG@peekfun
-      - JP_8118 @WangCai_1
-      - JP_5000 @WangCai_1
-      - JP_3389 @WangCai_1
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
