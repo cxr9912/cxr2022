@@ -5,175 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 64 | @Airproxies, server: 120.233.7.29, port: 25099, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 65 | @Airproxies, server: 120.233.7.76, port: 25098, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 59 | @Airproxies, server: 120.233.7.76, port: 25022, type: ss, cipher: chacha20-ietf-poly1305, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 66 | @Airproxies, server: 120.233.7.29, port: 25027, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 8 | @Airproxies, server: 36.139.158.134, port: 45011, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 67 | @Airproxies, server: 120.233.7.76, port: 25027, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 3 | @Airproxies, server: 36.139.158.134, port: 45018, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 13 | @Airproxies, server: 36.139.158.134, port: 45008, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 17 | @Airproxies, server: 36.139.158.134, port: 45019, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 62 | @Airproxies, server: 120.233.7.29, port: 25021, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 4 | @Airproxies, server: 36.139.158.134, port: 45007, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 7 | @Airproxies, server: 36.139.158.134, port: 45010, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 2 | @Airproxies, server: 36.139.158.134, port: 45006, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 63 | @Airproxies, server: 120.233.7.76, port: 25021, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 49 | @Airproxies, server: 120.233.7.76, port: 25019, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 11 | @Airproxies, server: 36.139.158.134, port: 45014, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 45 | @Airproxies, server: 120.233.7.76, port: 25004, type: ss, cipher: aes-256-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 48 | @Airproxies, server: 120.233.7.29, port: 25019, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 44 | @Airproxies, server: 120.233.7.29, port: 25004, type: ss, cipher: aes-256-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 9 | @Airproxies, server: 36.139.158.134, port: 45003, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 56 | @Airproxies, server: 120.233.7.29, port: 25025, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 57 | @Airproxies, server: 120.233.7.76, port: 25025, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 50 | @Airproxies, server: 120.233.7.29, port: 25001, type: ss, cipher: aes-256-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 6 | @Airproxies, server: 36.139.158.134, port: 45002, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 1 | @Airproxies, server: 36.139.158.134, port: 45045, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 51 | @Airproxies, server: 120.233.7.76, port: 25001, type: ss, cipher: aes-256-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 52 | @Airproxies, server: 120.233.7.29, port: 25023, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 10 | @Airproxies, server: 36.139.158.134, port: 45012, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 54 | @Airproxies, server: 120.233.7.29, port: 25024, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 55 | @Airproxies, server: 120.233.7.76, port: 25024, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 38 | @Airproxies, server: 120.233.7.29, port: 25008, type: ss, cipher: aes-256-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 39 | @Airproxies, server: 120.233.7.76, port: 25008, type: ss, cipher: aes-256-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 60 | @Airproxies, server: 120.233.7.29, port: 25020, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 14 | @Airproxies, server: 36.139.158.134, port: 45005, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 61 | @Airproxies, server: 120.233.7.76, port: 25020, type: ss, cipher: aes-128-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 12 | @Airproxies, server: 36.139.158.134, port: 45021, type: trojan, password: f0330d39-169e-49be-b224-5c0c88763fb0, skip-cert-verify: true, udp: true}
-  - {name: CN 18 | @Airproxies, server: 120.233.7.29, port: 25009, type: ss, cipher: aes-256-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
-  - {name: CN 19 | @Airproxies, server: 120.233.7.76, port: 25009, type: ss, cipher: aes-256-gcm, password: f0330d39-169e-49be-b224-5c0c88763fb0, udp: true}
+  - {name: 中国_TG@nodesharing_51, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_68, server: tw-tpe-h-v2.cdn.savoy.click, port: 10088, type: vmess, uuid: 4d578f9e-6af4-4d29-966f-88c061d075b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: tw-tpe-h-v2.cdn.savoy.click}, udp: true}
+  - {name: 中国_TG@nodesharing_38, server: tw-tpe-h-v2.cdn.savoy.click, port: 10088, type: vmess, uuid: 4d578f9e-6af4-4d29-966f-88c061d075b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
+  - {name: 香港_TG@nodesharing_93, server: 18.167.20.169, port: 8080, type: vmess, uuid: e1f97064-adcd-40d3-91a0-3f0bea035fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: YouTube-aweikeji}, udp: true}
+  - {name: 中国_TG@nodesharing_72, server: 42.186.175.8, port: 443, type: vmess, uuid: a928a26c-2adb-45fe-e57d-8a27dade309e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: sgarm.ptuu.cf}, udp: true}
+  - {name: 美国_TG@nodesharing_54, server: weixin.babazhuji.com, port: 443, type: vmess, uuid: 27848739-7e62-4138-9fd3-098a63964b6b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tech, ws-headers: {Host: weixin.babazhuji.com}, udp: true}
+  - {name: 中国_TG@nodesharing_49, server: pp1.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国_TG@nodesharing_94, server: blogs.microsoft.com, port: 80, type: vmess, uuid: 15df1f53-9101-404b-dd52-7774cdb3c218, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: net2.xtls.my.id}, udp: true}
+  - {name: 中国_TG@nodesharing_12, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_TG@nodesharing_59, server: blogs.microsoft.com, port: 80, type: vmess, uuid: 15df1f53-9101-404b-dd52-7774cdb3c218, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: net1.xtls.my.id}, udp: true}
+  - {name: 美国_TG@nodesharing_25, server: 152.70.136.12, port: 23054, type: vmess, uuid: 199ab409-63c4-43f7-8164-7a8231be4a3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 64 | @Airproxies
-      - CN 65 | @Airproxies
-      - CN 59 | @Airproxies
-      - CN 66 | @Airproxies
-      - CN 8 | @Airproxies
-      - CN 67 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 13 | @Airproxies
-      - CN 17 | @Airproxies
-      - CN 62 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 7 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 63 | @Airproxies
-      - CN 49 | @Airproxies
-      - CN 11 | @Airproxies
-      - CN 45 | @Airproxies
-      - CN 48 | @Airproxies
-      - CN 44 | @Airproxies
-      - CN 9 | @Airproxies
-      - CN 56 | @Airproxies
-      - CN 57 | @Airproxies
-      - CN 50 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN 1 | @Airproxies
-      - CN 51 | @Airproxies
-      - CN 52 | @Airproxies
-      - CN 10 | @Airproxies
-      - CN 54 | @Airproxies
-      - CN 55 | @Airproxies
-      - CN 38 | @Airproxies
-      - CN 39 | @Airproxies
-      - CN 60 | @Airproxies
-      - CN 14 | @Airproxies
-      - CN 61 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 18 | @Airproxies
-      - CN 19 | @Airproxies
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_68
+      - 中国_TG@nodesharing_38
+      - 香港_TG@nodesharing_93
+      - 中国_TG@nodesharing_72
+      - 美国_TG@nodesharing_54
+      - 中国_TG@nodesharing_49
+      - 美国_TG@nodesharing_94
+      - 中国_TG@nodesharing_12
+      - 美国_TG@nodesharing_59
+      - 美国_TG@nodesharing_25
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 64 | @Airproxies
-      - CN 65 | @Airproxies
-      - CN 59 | @Airproxies
-      - CN 66 | @Airproxies
-      - CN 8 | @Airproxies
-      - CN 67 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 13 | @Airproxies
-      - CN 17 | @Airproxies
-      - CN 62 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 7 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 63 | @Airproxies
-      - CN 49 | @Airproxies
-      - CN 11 | @Airproxies
-      - CN 45 | @Airproxies
-      - CN 48 | @Airproxies
-      - CN 44 | @Airproxies
-      - CN 9 | @Airproxies
-      - CN 56 | @Airproxies
-      - CN 57 | @Airproxies
-      - CN 50 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN 1 | @Airproxies
-      - CN 51 | @Airproxies
-      - CN 52 | @Airproxies
-      - CN 10 | @Airproxies
-      - CN 54 | @Airproxies
-      - CN 55 | @Airproxies
-      - CN 38 | @Airproxies
-      - CN 39 | @Airproxies
-      - CN 60 | @Airproxies
-      - CN 14 | @Airproxies
-      - CN 61 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 18 | @Airproxies
-      - CN 19 | @Airproxies
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_68
+      - 中国_TG@nodesharing_38
+      - 香港_TG@nodesharing_93
+      - 中国_TG@nodesharing_72
+      - 美国_TG@nodesharing_54
+      - 中国_TG@nodesharing_49
+      - 美国_TG@nodesharing_94
+      - 中国_TG@nodesharing_12
+      - 美国_TG@nodesharing_59
+      - 美国_TG@nodesharing_25
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 64 | @Airproxies
-      - CN 65 | @Airproxies
-      - CN 59 | @Airproxies
-      - CN 66 | @Airproxies
-      - CN 8 | @Airproxies
-      - CN 67 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 13 | @Airproxies
-      - CN 17 | @Airproxies
-      - CN 62 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 7 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 63 | @Airproxies
-      - CN 49 | @Airproxies
-      - CN 11 | @Airproxies
-      - CN 45 | @Airproxies
-      - CN 48 | @Airproxies
-      - CN 44 | @Airproxies
-      - CN 9 | @Airproxies
-      - CN 56 | @Airproxies
-      - CN 57 | @Airproxies
-      - CN 50 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN 1 | @Airproxies
-      - CN 51 | @Airproxies
-      - CN 52 | @Airproxies
-      - CN 10 | @Airproxies
-      - CN 54 | @Airproxies
-      - CN 55 | @Airproxies
-      - CN 38 | @Airproxies
-      - CN 39 | @Airproxies
-      - CN 60 | @Airproxies
-      - CN 14 | @Airproxies
-      - CN 61 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 18 | @Airproxies
-      - CN 19 | @Airproxies
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_68
+      - 中国_TG@nodesharing_38
+      - 香港_TG@nodesharing_93
+      - 中国_TG@nodesharing_72
+      - 美国_TG@nodesharing_54
+      - 中国_TG@nodesharing_49
+      - 美国_TG@nodesharing_94
+      - 中国_TG@nodesharing_12
+      - 美国_TG@nodesharing_59
+      - 美国_TG@nodesharing_25
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -192,179 +84,72 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 64 | @Airproxies
-      - CN 65 | @Airproxies
-      - CN 59 | @Airproxies
-      - CN 66 | @Airproxies
-      - CN 8 | @Airproxies
-      - CN 67 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 13 | @Airproxies
-      - CN 17 | @Airproxies
-      - CN 62 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 7 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 63 | @Airproxies
-      - CN 49 | @Airproxies
-      - CN 11 | @Airproxies
-      - CN 45 | @Airproxies
-      - CN 48 | @Airproxies
-      - CN 44 | @Airproxies
-      - CN 9 | @Airproxies
-      - CN 56 | @Airproxies
-      - CN 57 | @Airproxies
-      - CN 50 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN 1 | @Airproxies
-      - CN 51 | @Airproxies
-      - CN 52 | @Airproxies
-      - CN 10 | @Airproxies
-      - CN 54 | @Airproxies
-      - CN 55 | @Airproxies
-      - CN 38 | @Airproxies
-      - CN 39 | @Airproxies
-      - CN 60 | @Airproxies
-      - CN 14 | @Airproxies
-      - CN 61 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 18 | @Airproxies
-      - CN 19 | @Airproxies
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_68
+      - 中国_TG@nodesharing_38
+      - 香港_TG@nodesharing_93
+      - 中国_TG@nodesharing_72
+      - 美国_TG@nodesharing_54
+      - 中国_TG@nodesharing_49
+      - 美国_TG@nodesharing_94
+      - 中国_TG@nodesharing_12
+      - 美国_TG@nodesharing_59
+      - 美国_TG@nodesharing_25
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港_TG@nodesharing_93
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 64 | @Airproxies
-      - CN 65 | @Airproxies
-      - CN 59 | @Airproxies
-      - CN 66 | @Airproxies
-      - CN 8 | @Airproxies
-      - CN 67 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 13 | @Airproxies
-      - CN 17 | @Airproxies
-      - CN 62 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 7 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 63 | @Airproxies
-      - CN 49 | @Airproxies
-      - CN 11 | @Airproxies
-      - CN 45 | @Airproxies
-      - CN 48 | @Airproxies
-      - CN 44 | @Airproxies
-      - CN 9 | @Airproxies
-      - CN 56 | @Airproxies
-      - CN 57 | @Airproxies
-      - CN 50 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN 1 | @Airproxies
-      - CN 51 | @Airproxies
-      - CN 52 | @Airproxies
-      - CN 10 | @Airproxies
-      - CN 54 | @Airproxies
-      - CN 55 | @Airproxies
-      - CN 38 | @Airproxies
-      - CN 39 | @Airproxies
-      - CN 60 | @Airproxies
-      - CN 14 | @Airproxies
-      - CN 61 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 18 | @Airproxies
-      - CN 19 | @Airproxies
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_68
+      - 中国_TG@nodesharing_38
+      - 香港_TG@nodesharing_93
+      - 中国_TG@nodesharing_72
+      - 美国_TG@nodesharing_54
+      - 中国_TG@nodesharing_49
+      - 美国_TG@nodesharing_94
+      - 中国_TG@nodesharing_12
+      - 美国_TG@nodesharing_59
+      - 美国_TG@nodesharing_25
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 64 | @Airproxies
-      - CN 65 | @Airproxies
-      - CN 59 | @Airproxies
-      - CN 66 | @Airproxies
-      - CN 8 | @Airproxies
-      - CN 67 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 13 | @Airproxies
-      - CN 17 | @Airproxies
-      - CN 62 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 7 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 63 | @Airproxies
-      - CN 49 | @Airproxies
-      - CN 11 | @Airproxies
-      - CN 45 | @Airproxies
-      - CN 48 | @Airproxies
-      - CN 44 | @Airproxies
-      - CN 9 | @Airproxies
-      - CN 56 | @Airproxies
-      - CN 57 | @Airproxies
-      - CN 50 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN 1 | @Airproxies
-      - CN 51 | @Airproxies
-      - CN 52 | @Airproxies
-      - CN 10 | @Airproxies
-      - CN 54 | @Airproxies
-      - CN 55 | @Airproxies
-      - CN 38 | @Airproxies
-      - CN 39 | @Airproxies
-      - CN 60 | @Airproxies
-      - CN 14 | @Airproxies
-      - CN 61 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 18 | @Airproxies
-      - CN 19 | @Airproxies
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_68
+      - 中国_TG@nodesharing_38
+      - 香港_TG@nodesharing_93
+      - 中国_TG@nodesharing_72
+      - 美国_TG@nodesharing_54
+      - 中国_TG@nodesharing_49
+      - 美国_TG@nodesharing_94
+      - 中国_TG@nodesharing_12
+      - 美国_TG@nodesharing_59
+      - 美国_TG@nodesharing_25
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 64 | @Airproxies
-      - CN 65 | @Airproxies
-      - CN 59 | @Airproxies
-      - CN 66 | @Airproxies
-      - CN 8 | @Airproxies
-      - CN 67 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 13 | @Airproxies
-      - CN 17 | @Airproxies
-      - CN 62 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 7 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 63 | @Airproxies
-      - CN 49 | @Airproxies
-      - CN 11 | @Airproxies
-      - CN 45 | @Airproxies
-      - CN 48 | @Airproxies
-      - CN 44 | @Airproxies
-      - CN 9 | @Airproxies
-      - CN 56 | @Airproxies
-      - CN 57 | @Airproxies
-      - CN 50 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN 1 | @Airproxies
-      - CN 51 | @Airproxies
-      - CN 52 | @Airproxies
-      - CN 10 | @Airproxies
-      - CN 54 | @Airproxies
-      - CN 55 | @Airproxies
-      - CN 38 | @Airproxies
-      - CN 39 | @Airproxies
-      - CN 60 | @Airproxies
-      - CN 14 | @Airproxies
-      - CN 61 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 18 | @Airproxies
-      - CN 19 | @Airproxies
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_68
+      - 中国_TG@nodesharing_38
+      - 香港_TG@nodesharing_93
+      - 中国_TG@nodesharing_72
+      - 美国_TG@nodesharing_54
+      - 中国_TG@nodesharing_49
+      - 美国_TG@nodesharing_94
+      - 中国_TG@nodesharing_12
+      - 美国_TG@nodesharing_59
+      - 美国_TG@nodesharing_25
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -380,44 +165,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 64 | @Airproxies
-      - CN 65 | @Airproxies
-      - CN 59 | @Airproxies
-      - CN 66 | @Airproxies
-      - CN 8 | @Airproxies
-      - CN 67 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 13 | @Airproxies
-      - CN 17 | @Airproxies
-      - CN 62 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 7 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 63 | @Airproxies
-      - CN 49 | @Airproxies
-      - CN 11 | @Airproxies
-      - CN 45 | @Airproxies
-      - CN 48 | @Airproxies
-      - CN 44 | @Airproxies
-      - CN 9 | @Airproxies
-      - CN 56 | @Airproxies
-      - CN 57 | @Airproxies
-      - CN 50 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN 1 | @Airproxies
-      - CN 51 | @Airproxies
-      - CN 52 | @Airproxies
-      - CN 10 | @Airproxies
-      - CN 54 | @Airproxies
-      - CN 55 | @Airproxies
-      - CN 38 | @Airproxies
-      - CN 39 | @Airproxies
-      - CN 60 | @Airproxies
-      - CN 14 | @Airproxies
-      - CN 61 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 18 | @Airproxies
-      - CN 19 | @Airproxies
+      - 中国_TG@nodesharing_51
+      - 中国_TG@nodesharing_68
+      - 中国_TG@nodesharing_38
+      - 香港_TG@nodesharing_93
+      - 中国_TG@nodesharing_72
+      - 美国_TG@nodesharing_54
+      - 中国_TG@nodesharing_49
+      - 美国_TG@nodesharing_94
+      - 中国_TG@nodesharing_12
+      - 美国_TG@nodesharing_59
+      - 美国_TG@nodesharing_25
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
