@@ -5,51 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "SG, Singapore", server: 54.179.88.143, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "JP, Tokyo 2", server: 3.39.227.103, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "US, Houston", server: 3.36.99.11, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "HK, New Territories", server: 18.140.1.222, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "KR, Incheon", server: 13.209.18.199, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: US/2, server: 178.157.62.49, port: 50500, type: trojan, password: c5d997fe-cde6-463c-a671-a296b47289a6, skip-cert-verify: true, udp: true}
-  - {name: "HK, Kowloon", server: 13.124.190.68, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 中国(TG频道:@kxswa), server: hk-hkg-sh-hk-02-tr.cdn.savoy.click, port: 21089, type: trojan, password: kFyvvCcvMXQKFcJZWuxcdTZOFummlVbf, sni: hk-hkg-sh-hk-02-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
+  - {name: CN4｜openit.pw, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN3｜openit.pw, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: US 2｜openit.pw, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG, Singapore
-      - JP, Tokyo 2
-      - US, Houston
-      - HK, New Territories
-      - KR, Incheon
-      - US/2
-      - HK, Kowloon
+      - 中国(TG频道:@kxswa)
+      - CN4｜openit.pw
+      - CN3｜openit.pw
+      - US 2｜openit.pw
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - SG, Singapore
-      - JP, Tokyo 2
-      - US, Houston
-      - HK, New Territories
-      - KR, Incheon
-      - US/2
-      - HK, Kowloon
+      - 中国(TG频道:@kxswa)
+      - CN4｜openit.pw
+      - CN3｜openit.pw
+      - US 2｜openit.pw
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG, Singapore
-      - JP, Tokyo 2
-      - US, Houston
-      - HK, New Territories
-      - KR, Incheon
-      - US/2
-      - HK, Kowloon
+      - 中国(TG频道:@kxswa)
+      - CN4｜openit.pw
+      - CN3｜openit.pw
+      - US 2｜openit.pw
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,13 +56,10 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG, Singapore
-      - JP, Tokyo 2
-      - US, Houston
-      - HK, New Territories
-      - KR, Incheon
-      - US/2
-      - HK, Kowloon
+      - 中国(TG频道:@kxswa)
+      - CN4｜openit.pw
+      - CN3｜openit.pw
+      - US 2｜openit.pw
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -85,38 +70,29 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - SG, Singapore
-      - JP, Tokyo 2
-      - US, Houston
-      - HK, New Territories
-      - KR, Incheon
-      - US/2
-      - HK, Kowloon
+      - 中国(TG频道:@kxswa)
+      - CN4｜openit.pw
+      - CN3｜openit.pw
+      - US 2｜openit.pw
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - SG, Singapore
-      - JP, Tokyo 2
-      - US, Houston
-      - HK, New Territories
-      - KR, Incheon
-      - US/2
-      - HK, Kowloon
+      - 中国(TG频道:@kxswa)
+      - CN4｜openit.pw
+      - CN3｜openit.pw
+      - US 2｜openit.pw
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG, Singapore
-      - JP, Tokyo 2
-      - US, Houston
-      - HK, New Territories
-      - KR, Incheon
-      - US/2
-      - HK, Kowloon
+      - 中国(TG频道:@kxswa)
+      - CN4｜openit.pw
+      - CN3｜openit.pw
+      - US 2｜openit.pw
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG, Singapore
-      - JP, Tokyo 2
-      - US, Houston
-      - HK, New Territories
-      - KR, Incheon
-      - US/2
-      - HK, Kowloon
+      - 中国(TG频道:@kxswa)
+      - CN4｜openit.pw
+      - CN3｜openit.pw
+      - US 2｜openit.pw
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
