@@ -5,27 +5,123 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[B]-普通-日本C", server: b-entry.linkdns.xyz, port: 40256, type: vmess, uuid: 95ebc6b2-7b4c-3816-bc9b-63f56f775373, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /test, ws-headers: {Host: map.baidu.com}, udp: true}
+  - {name: 隧道｜NF｜日本 02, server: kqs-moble.gatknqh.cn, port: 42375, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜新加坡 06, server: kqs-moble.gatknqh.cn, port: 42114, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜香港 04, server: kqs-moble.gatknqh.cn, port: 53305, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜香港 03, server: kqs-moble.gatknqh.cn, port: 53304, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜新加坡 04, server: kqs-moble.gatknqh.cn, port: 19511, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜菲律宾, server: kqs-moble.gatknqh.cn, port: 45005, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜新加坡 09, server: kqs-moble.gatknqh.cn, port: 53091, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜新加坡 08, server: kqs-moble.gatknqh.cn, port: 22284, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜新加坡 07, server: kqs-moble.gatknqh.cn, port: 23236, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜香港 02, server: kqs-moble.gatknqh.cn, port: 45001, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜新加坡 01, server: kqs-moble.gatknqh.cn, port: 47147, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜日本 04, server: kqs-moble.gatknqh.cn, port: 20670, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜日本 03, server: kqs-moble.gatknqh.cn, port: 35380, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜台湾 02, server: kqs-moble.gatknqh.cn, port: 44813, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜新加坡 05, server: kqs-moble.gatknqh.cn, port: 42113, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜新加坡 02, server: kqs-moble.gatknqh.cn, port: 24400, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜新加坡 03, server: kqs-moble.gatknqh.cn, port: 43035, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜台湾 04, server: kqs-moble.gatknqh.cn, port: 53303, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜德国, server: kqs-moble.gatknqh.cn, port: 10781, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜台湾 01, server: kqs-moble.gatknqh.cn, port: 51875, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜美国 01, server: kqs-moble.gatknqh.cn, port: 29123, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜美国 02, server: kqs-moble.gatknqh.cn, port: 29589, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜韩国 02, server: kqs-moble.gatknqh.cn, port: 49971, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜韩国 01, server: kqs-moble.gatknqh.cn, port: 23166, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
+  - {name: 隧道｜NF｜英国, server: kqs-moble.gatknqh.cn, port: 45011, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[B]-普通-日本C"
+      - 隧道｜NF｜日本 02
+      - 隧道｜NF｜新加坡 06
+      - 隧道｜NF｜香港 04
+      - 隧道｜NF｜香港 03
+      - 隧道｜NF｜新加坡 04
+      - 隧道｜NF｜菲律宾
+      - 隧道｜NF｜新加坡 09
+      - 隧道｜NF｜新加坡 08
+      - 隧道｜NF｜新加坡 07
+      - 隧道｜NF｜香港 02
+      - 隧道｜NF｜新加坡 01
+      - 隧道｜NF｜日本 04
+      - 隧道｜NF｜日本 03
+      - 隧道｜NF｜台湾 02
+      - 隧道｜NF｜新加坡 05
+      - 隧道｜NF｜新加坡 02
+      - 隧道｜NF｜新加坡 03
+      - 隧道｜NF｜台湾 04
+      - 隧道｜NF｜德国
+      - 隧道｜NF｜台湾 01
+      - 隧道｜NF｜美国 01
+      - 隧道｜NF｜美国 02
+      - 隧道｜NF｜韩国 02
+      - 隧道｜NF｜韩国 01
+      - 隧道｜NF｜英国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[B]-普通-日本C"
+      - 隧道｜NF｜日本 02
+      - 隧道｜NF｜新加坡 06
+      - 隧道｜NF｜香港 04
+      - 隧道｜NF｜香港 03
+      - 隧道｜NF｜新加坡 04
+      - 隧道｜NF｜菲律宾
+      - 隧道｜NF｜新加坡 09
+      - 隧道｜NF｜新加坡 08
+      - 隧道｜NF｜新加坡 07
+      - 隧道｜NF｜香港 02
+      - 隧道｜NF｜新加坡 01
+      - 隧道｜NF｜日本 04
+      - 隧道｜NF｜日本 03
+      - 隧道｜NF｜台湾 02
+      - 隧道｜NF｜新加坡 05
+      - 隧道｜NF｜新加坡 02
+      - 隧道｜NF｜新加坡 03
+      - 隧道｜NF｜台湾 04
+      - 隧道｜NF｜德国
+      - 隧道｜NF｜台湾 01
+      - 隧道｜NF｜美国 01
+      - 隧道｜NF｜美国 02
+      - 隧道｜NF｜韩国 02
+      - 隧道｜NF｜韩国 01
+      - 隧道｜NF｜英国
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[B]-普通-日本C"
+      - 隧道｜NF｜日本 02
+      - 隧道｜NF｜新加坡 06
+      - 隧道｜NF｜香港 04
+      - 隧道｜NF｜香港 03
+      - 隧道｜NF｜新加坡 04
+      - 隧道｜NF｜菲律宾
+      - 隧道｜NF｜新加坡 09
+      - 隧道｜NF｜新加坡 08
+      - 隧道｜NF｜新加坡 07
+      - 隧道｜NF｜香港 02
+      - 隧道｜NF｜新加坡 01
+      - 隧道｜NF｜日本 04
+      - 隧道｜NF｜日本 03
+      - 隧道｜NF｜台湾 02
+      - 隧道｜NF｜新加坡 05
+      - 隧道｜NF｜新加坡 02
+      - 隧道｜NF｜新加坡 03
+      - 隧道｜NF｜台湾 04
+      - 隧道｜NF｜德国
+      - 隧道｜NF｜台湾 01
+      - 隧道｜NF｜美国 01
+      - 隧道｜NF｜美国 02
+      - 隧道｜NF｜韩国 02
+      - 隧道｜NF｜韩国 01
+      - 隧道｜NF｜英国
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -44,31 +140,133 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[B]-普通-日本C"
+      - 隧道｜NF｜日本 02
+      - 隧道｜NF｜新加坡 06
+      - 隧道｜NF｜香港 04
+      - 隧道｜NF｜香港 03
+      - 隧道｜NF｜新加坡 04
+      - 隧道｜NF｜菲律宾
+      - 隧道｜NF｜新加坡 09
+      - 隧道｜NF｜新加坡 08
+      - 隧道｜NF｜新加坡 07
+      - 隧道｜NF｜香港 02
+      - 隧道｜NF｜新加坡 01
+      - 隧道｜NF｜日本 04
+      - 隧道｜NF｜日本 03
+      - 隧道｜NF｜台湾 02
+      - 隧道｜NF｜新加坡 05
+      - 隧道｜NF｜新加坡 02
+      - 隧道｜NF｜新加坡 03
+      - 隧道｜NF｜台湾 04
+      - 隧道｜NF｜德国
+      - 隧道｜NF｜台湾 01
+      - 隧道｜NF｜美国 01
+      - 隧道｜NF｜美国 02
+      - 隧道｜NF｜韩国 02
+      - 隧道｜NF｜韩国 01
+      - 隧道｜NF｜英国
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 隧道｜NF｜香港 04
+      - 隧道｜NF｜香港 03
+      - 隧道｜NF｜香港 02
+      - 隧道｜NF｜台湾 02
+      - 隧道｜NF｜台湾 04
+      - 隧道｜NF｜台湾 01
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[B]-普通-日本C"
+      - 隧道｜NF｜日本 02
+      - 隧道｜NF｜新加坡 06
+      - 隧道｜NF｜香港 04
+      - 隧道｜NF｜香港 03
+      - 隧道｜NF｜新加坡 04
+      - 隧道｜NF｜菲律宾
+      - 隧道｜NF｜新加坡 09
+      - 隧道｜NF｜新加坡 08
+      - 隧道｜NF｜新加坡 07
+      - 隧道｜NF｜香港 02
+      - 隧道｜NF｜新加坡 01
+      - 隧道｜NF｜日本 04
+      - 隧道｜NF｜日本 03
+      - 隧道｜NF｜台湾 02
+      - 隧道｜NF｜新加坡 05
+      - 隧道｜NF｜新加坡 02
+      - 隧道｜NF｜新加坡 03
+      - 隧道｜NF｜台湾 04
+      - 隧道｜NF｜德国
+      - 隧道｜NF｜台湾 01
+      - 隧道｜NF｜美国 01
+      - 隧道｜NF｜美国 02
+      - 隧道｜NF｜韩国 02
+      - 隧道｜NF｜韩国 01
+      - 隧道｜NF｜英国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[B]-普通-日本C"
+      - 隧道｜NF｜日本 02
+      - 隧道｜NF｜新加坡 06
+      - 隧道｜NF｜香港 04
+      - 隧道｜NF｜香港 03
+      - 隧道｜NF｜新加坡 04
+      - 隧道｜NF｜菲律宾
+      - 隧道｜NF｜新加坡 09
+      - 隧道｜NF｜新加坡 08
+      - 隧道｜NF｜新加坡 07
+      - 隧道｜NF｜香港 02
+      - 隧道｜NF｜新加坡 01
+      - 隧道｜NF｜日本 04
+      - 隧道｜NF｜日本 03
+      - 隧道｜NF｜台湾 02
+      - 隧道｜NF｜新加坡 05
+      - 隧道｜NF｜新加坡 02
+      - 隧道｜NF｜新加坡 03
+      - 隧道｜NF｜台湾 04
+      - 隧道｜NF｜德国
+      - 隧道｜NF｜台湾 01
+      - 隧道｜NF｜美国 01
+      - 隧道｜NF｜美国 02
+      - 隧道｜NF｜韩国 02
+      - 隧道｜NF｜韩国 01
+      - 隧道｜NF｜英国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[B]-普通-日本C"
+      - 隧道｜NF｜日本 02
+      - 隧道｜NF｜新加坡 06
+      - 隧道｜NF｜香港 04
+      - 隧道｜NF｜香港 03
+      - 隧道｜NF｜新加坡 04
+      - 隧道｜NF｜菲律宾
+      - 隧道｜NF｜新加坡 09
+      - 隧道｜NF｜新加坡 08
+      - 隧道｜NF｜新加坡 07
+      - 隧道｜NF｜香港 02
+      - 隧道｜NF｜新加坡 01
+      - 隧道｜NF｜日本 04
+      - 隧道｜NF｜日本 03
+      - 隧道｜NF｜台湾 02
+      - 隧道｜NF｜新加坡 05
+      - 隧道｜NF｜新加坡 02
+      - 隧道｜NF｜新加坡 03
+      - 隧道｜NF｜台湾 04
+      - 隧道｜NF｜德国
+      - 隧道｜NF｜台湾 01
+      - 隧道｜NF｜美国 01
+      - 隧道｜NF｜美国 02
+      - 隧道｜NF｜韩国 02
+      - 隧道｜NF｜韩国 01
+      - 隧道｜NF｜英国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,7 +282,31 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[B]-普通-日本C"
+      - 隧道｜NF｜日本 02
+      - 隧道｜NF｜新加坡 06
+      - 隧道｜NF｜香港 04
+      - 隧道｜NF｜香港 03
+      - 隧道｜NF｜新加坡 04
+      - 隧道｜NF｜菲律宾
+      - 隧道｜NF｜新加坡 09
+      - 隧道｜NF｜新加坡 08
+      - 隧道｜NF｜新加坡 07
+      - 隧道｜NF｜香港 02
+      - 隧道｜NF｜新加坡 01
+      - 隧道｜NF｜日本 04
+      - 隧道｜NF｜日本 03
+      - 隧道｜NF｜台湾 02
+      - 隧道｜NF｜新加坡 05
+      - 隧道｜NF｜新加坡 02
+      - 隧道｜NF｜新加坡 03
+      - 隧道｜NF｜台湾 04
+      - 隧道｜NF｜德国
+      - 隧道｜NF｜台湾 01
+      - 隧道｜NF｜美国 01
+      - 隧道｜NF｜美国 02
+      - 隧道｜NF｜韩国 02
+      - 隧道｜NF｜韩国 01
+      - 隧道｜NF｜英国
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
