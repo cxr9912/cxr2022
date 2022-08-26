@@ -5,87 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Japan, server: caterpie.defun.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: caterpie.defun.us, skip-cert-verify: true, udp: true}
-  - {name: United-States 13, server: nevada.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: nevada.missionsec.us, skip-cert-verify: true, udp: true}
-  - {name: United-States 2, server: hawaii.missionsec.us, port: 18331, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: hawaii.missionsec.us, skip-cert-verify: true, udp: true}
-  - {name: United-States 7, server: books.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: books.missionsec.us, skip-cert-verify: true, udp: true}
-  - {name: United-States 10, server: music.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: music.missionsec.us, skip-cert-verify: true, udp: true}
-  - {name: United-States 12, server: kansas.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: kansas.missionsec.us, skip-cert-verify: true, udp: true}
-  - {name: United-States 14, server: pride.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: pride.missionsec.us, skip-cert-verify: true, udp: true}
-  - {name: United-States-L2 3, server: cuttlefish.fireplay.io, port: 18331, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: cuttlefish.fireplay.io, skip-cert-verify: true, udp: true}
-  - {name: United-States 5, server: games.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: games.missionsec.us, skip-cert-verify: true, udp: true}
-  - {name: United-States 8, server: hacks.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: hacks.missionsec.us, skip-cert-verify: true, udp: true}
-  - {name: United-States 9, server: editors.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: editors.missionsec.us, skip-cert-verify: true, udp: true}
-  - {name: United-States 3, server: fresh.missionsec.us, port: 18331, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: fresh.missionsec.us, skip-cert-verify: true, udp: true}
-  - {name: United-States 6, server: picks.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: picks.missionsec.us, skip-cert-verify: true, udp: true}
-  - {name: United-States-L2 2, server: stonefish.fireplay.io, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: stonefish.fireplay.io, skip-cert-verify: true, udp: true}
-  - {name: United-States 4, server: movies.missionsec.us, port: 18331, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: movies.missionsec.us, skip-cert-verify: true, udp: true}
-  - {name: United-States 11, server: gifts.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: gifts.missionsec.us, skip-cert-verify: true, udp: true}
+  - {name: AZ｜香港tcp｜电信, server: 20.2.66.234, port: 30304, type: vmess, uuid: 4c672267-42ab-43c1-815a-7b80fb289992, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan
-      - United-States 13
-      - United-States 2
-      - United-States 7
-      - United-States 10
-      - United-States 12
-      - United-States 14
-      - United-States-L2 3
-      - United-States 5
-      - United-States 8
-      - United-States 9
-      - United-States 3
-      - United-States 6
-      - United-States-L2 2
-      - United-States 4
-      - United-States 11
+      - AZ｜香港tcp｜电信
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Japan
-      - United-States 13
-      - United-States 2
-      - United-States 7
-      - United-States 10
-      - United-States 12
-      - United-States 14
-      - United-States-L2 3
-      - United-States 5
-      - United-States 8
-      - United-States 9
-      - United-States 3
-      - United-States 6
-      - United-States-L2 2
-      - United-States 4
-      - United-States 11
+      - AZ｜香港tcp｜电信
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan
-      - United-States 13
-      - United-States 2
-      - United-States 7
-      - United-States 10
-      - United-States 12
-      - United-States 14
-      - United-States-L2 3
-      - United-States 5
-      - United-States 8
-      - United-States 9
-      - United-States 3
-      - United-States 6
-      - United-States-L2 2
-      - United-States 4
-      - United-States 11
+      - AZ｜香港tcp｜电信
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -104,91 +44,32 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan
-      - United-States 13
-      - United-States 2
-      - United-States 7
-      - United-States 10
-      - United-States 12
-      - United-States 14
-      - United-States-L2 3
-      - United-States 5
-      - United-States 8
-      - United-States 9
-      - United-States 3
-      - United-States 6
-      - United-States-L2 2
-      - United-States 4
-      - United-States 11
+      - AZ｜香港tcp｜电信
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - AZ｜香港tcp｜电信
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Japan
-      - United-States 13
-      - United-States 2
-      - United-States 7
-      - United-States 10
-      - United-States 12
-      - United-States 14
-      - United-States-L2 3
-      - United-States 5
-      - United-States 8
-      - United-States 9
-      - United-States 3
-      - United-States 6
-      - United-States-L2 2
-      - United-States 4
-      - United-States 11
+      - AZ｜香港tcp｜电信
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Japan
-      - United-States 13
-      - United-States 2
-      - United-States 7
-      - United-States 10
-      - United-States 12
-      - United-States 14
-      - United-States-L2 3
-      - United-States 5
-      - United-States 8
-      - United-States 9
-      - United-States 3
-      - United-States 6
-      - United-States-L2 2
-      - United-States 4
-      - United-States 11
+      - AZ｜香港tcp｜电信
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Japan
-      - United-States 13
-      - United-States 2
-      - United-States 7
-      - United-States 10
-      - United-States 12
-      - United-States 14
-      - United-States-L2 3
-      - United-States 5
-      - United-States 8
-      - United-States 9
-      - United-States 3
-      - United-States 6
-      - United-States-L2 2
-      - United-States 4
-      - United-States 11
+      - AZ｜香港tcp｜电信
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -204,22 +85,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Japan
-      - United-States 13
-      - United-States 2
-      - United-States 7
-      - United-States 10
-      - United-States 12
-      - United-States 14
-      - United-States-L2 3
-      - United-States 5
-      - United-States 8
-      - United-States 9
-      - United-States 3
-      - United-States 6
-      - United-States-L2 2
-      - United-States 4
-      - United-States 11
+      - AZ｜香港tcp｜电信
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
