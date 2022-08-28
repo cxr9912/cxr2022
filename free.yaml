@@ -5,115 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: IEPL 香港 ₃.₅ₓ, server: iepl.linghun3.xyz, port: 39990, type: ss, cipher: aes-256-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 香港3, server: hk3.linghun3.xyz, port: 40003, type: ss, cipher: aes-256-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 新加坡1, server: sg1.linghun3.xyz, port: 40008, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 香港2, server: hk2.linghun3.xyz, port: 40001, type: ss, cipher: aes-256-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: S 韩国1, server: sh.linghun3.xyz, port: 40058, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: IEPL 台湾 ₃.₅ₓ, server: iepl.linghun3.xyz, port: 39991, type: ss, cipher: aes-256-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: S 美国1, server: sh.linghun3.xyz, port: 40006, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 台湾2, server: tw2.linghun3.xyz, port: 40005, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: IEPL 新加坡 ₃.₅ₓ, server: iepl.linghun3.xyz, port: 39993, type: ss, cipher: aes-256-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 波兰1, server: gy.linghun3.xyz, port: 40074, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 新加坡3, server: sg3.linghun3.xyz, port: 40011, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 美国2, server: us2.linghun3.xyz, port: 40007, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 新加坡2, server: sg2.linghun3.xyz, port: 40009, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 巴西1, server: gy.linghun3.xyz, port: 40077, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 德国1, server: gy.linghun3.xyz, port: 40067, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: IEPL 日本 ₃.₅ₓ, server: iepl.linghun3.xyz, port: 39992, type: ss, cipher: aes-256-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: IEPL 韩国 ₃.₅ₓ, server: iepl.linghun3.xyz, port: 39994, type: ss, cipher: aes-256-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 马来西亚1, server: gy.linghun3.xyz, port: 40066, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 乌克兰1, server: gy.linghun3.xyz, port: 40076, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 美国1, server: us1.linghun3.xyz, port: 40006, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 香港1, server: hk1.linghun3.xyz, port: 40000, type: ss, cipher: aes-256-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: G 土耳其1, server: gy.linghun3.xyz, port: 40065, type: ss, cipher: aes-128-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
-  - {name: IEPL 美国 ₃.₅ₓ, server: iepl.linghun3.xyz, port: 39995, type: ss, cipher: aes-256-gcm, password: 81369ad1-2e03-4eaf-beea-797fdca4d2dd, udp: true}
+  - {name: github.com/freefq - 广东省移动 25, server: yum-y.update.mipglxi.cn, port: 6018, type: ss, cipher: aes-128-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: github.com/freefq - 香港环球全域电讯 5, server: tw1-midpoint.kejibear.net, port: 10006, type: vmess, uuid: 7bcd50fc-414b-3e8a-a1a2-d81bd7fc4586, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: tw1-midpoint.kejibear.net}, udp: true}
+  - {name: github.com/freefq - 台湾省新北市中华电信 19, server: tw.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 广东省广州市移动 37, server: hk-hkg-it2-svm-v2.node.inforun.work, port: 13888, type: vmess, uuid: 763b2303-0e16-455e-926d-66d909c3e37b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: hk-hkg-it2-svm-v2.node.inforun.work}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - IEPL 香港 ₃.₅ₓ
-      - G 香港3
-      - G 新加坡1
-      - G 香港2
-      - S 韩国1
-      - IEPL 台湾 ₃.₅ₓ
-      - S 美国1
-      - G 台湾2
-      - IEPL 新加坡 ₃.₅ₓ
-      - G 波兰1
-      - G 新加坡3
-      - G 美国2
-      - G 新加坡2
-      - G 巴西1
-      - G 德国1
-      - IEPL 日本 ₃.₅ₓ
-      - IEPL 韩国 ₃.₅ₓ
-      - G 马来西亚1
-      - G 乌克兰1
-      - G 美国1
-      - G 香港1
-      - G 土耳其1
-      - IEPL 美国 ₃.₅ₓ
+      - github.com/freefq - 广东省移动 25
+      - github.com/freefq - 香港环球全域电讯 5
+      - github.com/freefq - 台湾省新北市中华电信 19
+      - github.com/freefq - 广东省广州市移动 37
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - IEPL 香港 ₃.₅ₓ
-      - G 香港3
-      - G 新加坡1
-      - G 香港2
-      - S 韩国1
-      - IEPL 台湾 ₃.₅ₓ
-      - S 美国1
-      - G 台湾2
-      - IEPL 新加坡 ₃.₅ₓ
-      - G 波兰1
-      - G 新加坡3
-      - G 美国2
-      - G 新加坡2
-      - G 巴西1
-      - G 德国1
-      - IEPL 日本 ₃.₅ₓ
-      - IEPL 韩国 ₃.₅ₓ
-      - G 马来西亚1
-      - G 乌克兰1
-      - G 美国1
-      - G 香港1
-      - G 土耳其1
-      - IEPL 美国 ₃.₅ₓ
+      - github.com/freefq - 广东省移动 25
+      - github.com/freefq - 香港环球全域电讯 5
+      - github.com/freefq - 台湾省新北市中华电信 19
+      - github.com/freefq - 广东省广州市移动 37
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - IEPL 香港 ₃.₅ₓ
-      - G 香港3
-      - G 新加坡1
-      - G 香港2
-      - S 韩国1
-      - IEPL 台湾 ₃.₅ₓ
-      - S 美国1
-      - G 台湾2
-      - IEPL 新加坡 ₃.₅ₓ
-      - G 波兰1
-      - G 新加坡3
-      - G 美国2
-      - G 新加坡2
-      - G 巴西1
-      - G 德国1
-      - IEPL 日本 ₃.₅ₓ
-      - IEPL 韩国 ₃.₅ₓ
-      - G 马来西亚1
-      - G 乌克兰1
-      - G 美国1
-      - G 香港1
-      - G 土耳其1
-      - IEPL 美国 ₃.₅ₓ
+      - github.com/freefq - 广东省移动 25
+      - github.com/freefq - 香港环球全域电讯 5
+      - github.com/freefq - 台湾省新北市中华电信 19
+      - github.com/freefq - 广东省广州市移动 37
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -132,125 +56,45 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - IEPL 香港 ₃.₅ₓ
-      - G 香港3
-      - G 新加坡1
-      - G 香港2
-      - S 韩国1
-      - IEPL 台湾 ₃.₅ₓ
-      - S 美国1
-      - G 台湾2
-      - IEPL 新加坡 ₃.₅ₓ
-      - G 波兰1
-      - G 新加坡3
-      - G 美国2
-      - G 新加坡2
-      - G 巴西1
-      - G 德国1
-      - IEPL 日本 ₃.₅ₓ
-      - IEPL 韩国 ₃.₅ₓ
-      - G 马来西亚1
-      - G 乌克兰1
-      - G 美国1
-      - G 香港1
-      - G 土耳其1
-      - IEPL 美国 ₃.₅ₓ
+      - github.com/freefq - 广东省移动 25
+      - github.com/freefq - 香港环球全域电讯 5
+      - github.com/freefq - 台湾省新北市中华电信 19
+      - github.com/freefq - 广东省广州市移动 37
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - IEPL 香港 ₃.₅ₓ
-      - G 香港3
-      - G 香港2
-      - IEPL 台湾 ₃.₅ₓ
-      - G 台湾2
-      - G 香港1
+      - github.com/freefq - 香港环球全域电讯 5
+      - github.com/freefq - 台湾省新北市中华电信 19
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - IEPL 香港 ₃.₅ₓ
-      - G 香港3
-      - G 新加坡1
-      - G 香港2
-      - S 韩国1
-      - IEPL 台湾 ₃.₅ₓ
-      - S 美国1
-      - G 台湾2
-      - IEPL 新加坡 ₃.₅ₓ
-      - G 波兰1
-      - G 新加坡3
-      - G 美国2
-      - G 新加坡2
-      - G 巴西1
-      - G 德国1
-      - IEPL 日本 ₃.₅ₓ
-      - IEPL 韩国 ₃.₅ₓ
-      - G 马来西亚1
-      - G 乌克兰1
-      - G 美国1
-      - G 香港1
-      - G 土耳其1
-      - IEPL 美国 ₃.₅ₓ
+      - github.com/freefq - 广东省移动 25
+      - github.com/freefq - 香港环球全域电讯 5
+      - github.com/freefq - 台湾省新北市中华电信 19
+      - github.com/freefq - 广东省广州市移动 37
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - IEPL 香港 ₃.₅ₓ
-      - G 香港3
-      - G 新加坡1
-      - G 香港2
-      - S 韩国1
-      - IEPL 台湾 ₃.₅ₓ
-      - S 美国1
-      - G 台湾2
-      - IEPL 新加坡 ₃.₅ₓ
-      - G 波兰1
-      - G 新加坡3
-      - G 美国2
-      - G 新加坡2
-      - G 巴西1
-      - G 德国1
-      - IEPL 日本 ₃.₅ₓ
-      - IEPL 韩国 ₃.₅ₓ
-      - G 马来西亚1
-      - G 乌克兰1
-      - G 美国1
-      - G 香港1
-      - G 土耳其1
-      - IEPL 美国 ₃.₅ₓ
+      - github.com/freefq - 广东省移动 25
+      - github.com/freefq - 香港环球全域电讯 5
+      - github.com/freefq - 台湾省新北市中华电信 19
+      - github.com/freefq - 广东省广州市移动 37
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - IEPL 香港 ₃.₅ₓ
-      - G 香港3
-      - G 新加坡1
-      - G 香港2
-      - S 韩国1
-      - IEPL 台湾 ₃.₅ₓ
-      - S 美国1
-      - G 台湾2
-      - IEPL 新加坡 ₃.₅ₓ
-      - G 波兰1
-      - G 新加坡3
-      - G 美国2
-      - G 新加坡2
-      - G 巴西1
-      - G 德国1
-      - IEPL 日本 ₃.₅ₓ
-      - IEPL 韩国 ₃.₅ₓ
-      - G 马来西亚1
-      - G 乌克兰1
-      - G 美国1
-      - G 香港1
-      - G 土耳其1
-      - IEPL 美国 ₃.₅ₓ
+      - github.com/freefq - 广东省移动 25
+      - github.com/freefq - 香港环球全域电讯 5
+      - github.com/freefq - 台湾省新北市中华电信 19
+      - github.com/freefq - 广东省广州市移动 37
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -266,29 +110,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - IEPL 香港 ₃.₅ₓ
-      - G 香港3
-      - G 新加坡1
-      - G 香港2
-      - S 韩国1
-      - IEPL 台湾 ₃.₅ₓ
-      - S 美国1
-      - G 台湾2
-      - IEPL 新加坡 ₃.₅ₓ
-      - G 波兰1
-      - G 新加坡3
-      - G 美国2
-      - G 新加坡2
-      - G 巴西1
-      - G 德国1
-      - IEPL 日本 ₃.₅ₓ
-      - IEPL 韩国 ₃.₅ₓ
-      - G 马来西亚1
-      - G 乌克兰1
-      - G 美国1
-      - G 香港1
-      - G 土耳其1
-      - IEPL 美国 ₃.₅ₓ
+      - github.com/freefq - 广东省移动 25
+      - github.com/freefq - 香港环球全域电讯 5
+      - github.com/freefq - 台湾省新北市中华电信 19
+      - github.com/freefq - 广东省广州市移动 37
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
