@@ -5,31 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国_TG@nodesharing_310, server: x.v4.2.kiki789.com, port: 23148, type: vmess, uuid: ad785fc9-7f42-3396-945a-a179c2454bfa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: vYouTube-aweikeji}, udp: true}
-  - {name: 日本_TG@nodesharing_24, server: jp5.qinghuanyun.top, port: 443, type: vmess, uuid: 06768554-690f-3815-8848-b9f38dcf772b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp5.qinghuanyun.top}, udp: true}
+  - {name: 中国_TG@nodesharing_4, server: cn201.03download.xyz, port: 11016, type: vmess, uuid: 93367339-24a1-38fc-8706-84b9abeb49f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_16, server: i1.go001.buzz, port: 32601, type: ss, cipher: aes-256-gcm, password: bBEXIq, udp: true}
+  - {name: 中国_TG@nodesharing_60, server: i1.go001.buzz, port: 31102, type: ss, cipher: aes-256-gcm, password: bBEXIq, udp: true}
+  - {name: 美国_TG@nodesharing_18, server: usa001.369boy.com, port: 56301, type: trojan, password: 06bdd305-7399-4558-98d8-594ec44b4fed, sni: usa001.369boy.com, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_59, server: 42.186.175.8, port: 443, type: vmess, uuid: a928a26c-2adb-45fe-e57d-8a27dade309e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: sgarm.ptuu.cf}, udp: true}
+  - {name: 美国_TG@nodesharing_82, server: taobao.babazhuji.com, port: 443, type: vmess, uuid: 2a4918de-adce-4c4e-aa00-88a4227cf6ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /didi, ws-headers: {Host: taobao.babazhuji.com}, udp: true}
+  - {name: 美国_TG@nodesharing_51, server: 38.68.135.18, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_TG@nodesharing_116, server: 38.68.135.18, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_TG@nodesharing_310
-      - 日本_TG@nodesharing_24
+      - 中国_TG@nodesharing_4
+      - 中国_TG@nodesharing_16
+      - 中国_TG@nodesharing_60
+      - 美国_TG@nodesharing_18
+      - 中国_TG@nodesharing_59
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_51
+      - 美国_TG@nodesharing_116
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国_TG@nodesharing_310
-      - 日本_TG@nodesharing_24
+      - 中国_TG@nodesharing_4
+      - 中国_TG@nodesharing_16
+      - 中国_TG@nodesharing_60
+      - 美国_TG@nodesharing_18
+      - 中国_TG@nodesharing_59
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_51
+      - 美国_TG@nodesharing_116
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_TG@nodesharing_310
-      - 日本_TG@nodesharing_24
+      - 中国_TG@nodesharing_4
+      - 中国_TG@nodesharing_16
+      - 中国_TG@nodesharing_60
+      - 美国_TG@nodesharing_18
+      - 中国_TG@nodesharing_59
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_51
+      - 美国_TG@nodesharing_116
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,8 +72,14 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_TG@nodesharing_310
-      - 日本_TG@nodesharing_24
+      - 中国_TG@nodesharing_4
+      - 中国_TG@nodesharing_16
+      - 中国_TG@nodesharing_60
+      - 美国_TG@nodesharing_18
+      - 中国_TG@nodesharing_59
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_51
+      - 美国_TG@nodesharing_116
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -60,23 +90,41 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国_TG@nodesharing_310
-      - 日本_TG@nodesharing_24
+      - 中国_TG@nodesharing_4
+      - 中国_TG@nodesharing_16
+      - 中国_TG@nodesharing_60
+      - 美国_TG@nodesharing_18
+      - 中国_TG@nodesharing_59
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_51
+      - 美国_TG@nodesharing_116
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国_TG@nodesharing_310
-      - 日本_TG@nodesharing_24
+      - 中国_TG@nodesharing_4
+      - 中国_TG@nodesharing_16
+      - 中国_TG@nodesharing_60
+      - 美国_TG@nodesharing_18
+      - 中国_TG@nodesharing_59
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_51
+      - 美国_TG@nodesharing_116
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国_TG@nodesharing_310
-      - 日本_TG@nodesharing_24
+      - 中国_TG@nodesharing_4
+      - 中国_TG@nodesharing_16
+      - 中国_TG@nodesharing_60
+      - 美国_TG@nodesharing_18
+      - 中国_TG@nodesharing_59
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_51
+      - 美国_TG@nodesharing_116
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +140,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国_TG@nodesharing_310
-      - 日本_TG@nodesharing_24
+      - 中国_TG@nodesharing_4
+      - 中国_TG@nodesharing_16
+      - 中国_TG@nodesharing_60
+      - 美国_TG@nodesharing_18
+      - 中国_TG@nodesharing_59
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_51
+      - 美国_TG@nodesharing_116
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
