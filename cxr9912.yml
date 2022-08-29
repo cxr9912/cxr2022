@@ -5,279 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: SG_00 @WangCai_1, server: 81.90.189.52, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_01 @WangCai_1, server: 81.90.189.52, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_02 @WangCai_1, server: 81.90.189.52, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_03 @WangCai_1, server: 81.90.189.52, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_04 @WangCai_1, server: 81.90.189.52, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_05 @WangCai_1, server: 81.90.189.52, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_06 @WangCai_1, server: 81.90.189.52, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_07 @WangCai_1, server: 81.90.189.52, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_08 @WangCai_1, server: 81.90.189.52, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_09 @WangCai_1, server: 81.90.189.52, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_10 @WangCai_1, server: 81.90.189.52, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_11 @WangCai_1, server: 81.90.189.52, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_12 @WangCai_1, server: 81.90.189.52, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_0443 @WangCai_1, server: 38.121.43.204, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_2375 @WangCai_1, server: 38.121.43.204, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_2376 @WangCai_1, server: 38.121.43.204, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_3306 @WangCai_1, server: 38.121.43.204, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_3389 @WangCai_1, server: 38.121.43.204, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_4444 @WangCai_1, server: 38.121.43.204, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_5000 @WangCai_1, server: 38.121.43.204, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5001 @WangCai_1, server: 38.121.43.204, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5003 @WangCai_1, server: 38.121.43.204, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_5004 @WangCai_1, server: 38.121.43.204, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_5500 @WangCai_1, server: 38.121.43.204, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5600 @WangCai_1, server: 38.121.43.204, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5601 @WangCai_1, server: 38.121.43.204, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6379 @WangCai_1, server: 38.121.43.204, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_6679 @WangCai_1, server: 38.121.43.204, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_6697 @WangCai_1, server: 38.121.43.204, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_7001 @WangCai_1, server: 38.121.43.204, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_7002 @WangCai_1, server: 38.121.43.204, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_7306 @WangCai_1, server: 38.121.43.204, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_7307 @WangCai_1, server: 38.121.43.204, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_8000 @WangCai_1, server: 38.121.43.204, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8008 @WangCai_1, server: 38.121.43.204, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8009 @WangCai_1, server: 38.121.43.204, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8080 @WangCai_1, server: 38.121.43.204, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8090 @WangCai_1, server: 38.121.43.204, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_8091 @WangCai_1, server: 38.121.43.204, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_8118 @WangCai_1, server: 38.121.43.204, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8119 @WangCai_1, server: 38.121.43.204, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8881 @WangCai_1, server: 38.121.43.204, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8882 @WangCai_1, server: 38.121.43.204, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8888 @WangCai_1, server: 38.121.43.204, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_9101 @WangCai_1, server: 38.121.43.204, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_9102 @WangCai_1, server: 38.121.43.204, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 9203 @WangCai_1, server: 183.232.158.66, port: 9203, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9205 @WangCai_1, server: 183.232.158.66, port: 9205, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9206 @WangCai_1, server: 183.232.158.66, port: 9206, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9203 @WangCai_1 2, server: 183.232.158.67, port: 9203, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9205 @WangCai_1 2, server: 183.232.158.67, port: 9205, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9206 @WangCai_1 2, server: 183.232.158.67, port: 9206, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9203 @WangCai_1 3, server: 120.233.151.122, port: 9203, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9205 @WangCai_1 3, server: 120.233.151.122, port: 9205, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9206 @WangCai_1 3, server: 120.233.151.122, port: 9206, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9403 @WangCai_1, server: 183.232.158.66, port: 9403, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9405 @WangCai_1, server: 183.232.158.66, port: 9405, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9407 @WangCai_1, server: 183.232.158.66, port: 9407, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9403 @WangCai_1 2, server: 183.232.158.67, port: 9403, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9405 @WangCai_1 2, server: 183.232.158.67, port: 9405, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9407 @WangCai_1 2, server: 183.232.158.67, port: 9407, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9403 @WangCai_1 3, server: 120.233.151.122, port: 9403, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9405 @WangCai_1 3, server: 120.233.151.122, port: 9405, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 9407 @WangCai_1 3, server: 120.233.151.122, port: 9407, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: Scould台湾01|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 95ecb97c-e448-44f5-9192-6653edb57a07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 印度10g, server: 20.204.130.46, port: 80, type: vmess, uuid: 7e1521db-9b26-4f59-8874-e2d8952b551f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.204.130.46}, udp: true}
+  - {name: HK001, server: 20.24.13.172, port: 80, type: vmess, uuid: 7e1521db-9b26-4f59-8874-e2d8952b551f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.24.13.172}, udp: true}
+  - {name: DigitalOcean｜Cloudflare1, server: 104.19.25.63, port: 80, type: vmess, uuid: 20000000-0000-0000-0000-000000000020, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /20, ws-headers: {Host: dosg.cdn.securevpn.cc}, udp: true}
+  - {name: 美国Vip-001, server: usa001.369boy.com, port: 56301, type: trojan, password: 06bdd305-7399-4558-98d8-594ec44b4fed, sni: usa001.369boy.com, skip-cert-verify: true, udp: true}
+  - {name: iplc专线01|直连|限速8mbps|3x, server: jgwdj.bbxy.cloud, port: 48888, type: vmess, uuid: 95ecb97c-e448-44f5-9192-6653edb57a07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: DigitalOcean｜Cloudflare5, server: 104.16.41.191, port: 80, type: vmess, uuid: 20000000-0000-0000-0000-000000000020, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /20, ws-headers: {Host: dosg.cdn.securevpn.cc}, udp: true}
+  - {name: DigitalOcean｜Cloudflare3, server: 104.16.93.227, port: 80, type: vmess, uuid: 20000000-0000-0000-0000-000000000020, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /20, ws-headers: {Host: dosg.cdn.securevpn.cc}, udp: true}
+  - {name: "Go加速 - V2 IEPL | US1\n", server: i1.go001.buzz, port: 32601, type: ss, cipher: aes-256-gcm, password: bBEXIq, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG_00 @WangCai_1
-      - SG_01 @WangCai_1
-      - SG_02 @WangCai_1
-      - SG_03 @WangCai_1
-      - SG_04 @WangCai_1
-      - SG_05 @WangCai_1
-      - SG_06 @WangCai_1
-      - SG_07 @WangCai_1
-      - SG_08 @WangCai_1
-      - SG_09 @WangCai_1
-      - SG_10 @WangCai_1
-      - SG_11 @WangCai_1
-      - SG_12 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_5601 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8080 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_9102 @WangCai_1
-      - 9203 @WangCai_1
-      - 9205 @WangCai_1
-      - 9206 @WangCai_1
-      - 9203 @WangCai_1 2
-      - 9205 @WangCai_1 2
-      - 9206 @WangCai_1 2
-      - 9203 @WangCai_1 3
-      - 9205 @WangCai_1 3
-      - 9206 @WangCai_1 3
-      - 9403 @WangCai_1
-      - 9405 @WangCai_1
-      - 9407 @WangCai_1
-      - 9403 @WangCai_1 2
-      - 9405 @WangCai_1 2
-      - 9407 @WangCai_1 2
-      - 9403 @WangCai_1 3
-      - 9405 @WangCai_1 3
-      - 9407 @WangCai_1 3
+      - Scould台湾01|解锁流媒体|1x
+      - 印度10g
+      - HK001
+      - DigitalOcean｜Cloudflare1
+      - 美国Vip-001
+      - iplc专线01|直连|限速8mbps|3x
+      - DigitalOcean｜Cloudflare5
+      - DigitalOcean｜Cloudflare3
+      - "Go加速 - V2 IEPL | US1\n"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - SG_00 @WangCai_1
-      - SG_01 @WangCai_1
-      - SG_02 @WangCai_1
-      - SG_03 @WangCai_1
-      - SG_04 @WangCai_1
-      - SG_05 @WangCai_1
-      - SG_06 @WangCai_1
-      - SG_07 @WangCai_1
-      - SG_08 @WangCai_1
-      - SG_09 @WangCai_1
-      - SG_10 @WangCai_1
-      - SG_11 @WangCai_1
-      - SG_12 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_5601 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8080 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_9102 @WangCai_1
-      - 9203 @WangCai_1
-      - 9205 @WangCai_1
-      - 9206 @WangCai_1
-      - 9203 @WangCai_1 2
-      - 9205 @WangCai_1 2
-      - 9206 @WangCai_1 2
-      - 9203 @WangCai_1 3
-      - 9205 @WangCai_1 3
-      - 9206 @WangCai_1 3
-      - 9403 @WangCai_1
-      - 9405 @WangCai_1
-      - 9407 @WangCai_1
-      - 9403 @WangCai_1 2
-      - 9405 @WangCai_1 2
-      - 9407 @WangCai_1 2
-      - 9403 @WangCai_1 3
-      - 9405 @WangCai_1 3
-      - 9407 @WangCai_1 3
+      - Scould台湾01|解锁流媒体|1x
+      - 印度10g
+      - HK001
+      - DigitalOcean｜Cloudflare1
+      - 美国Vip-001
+      - iplc专线01|直连|限速8mbps|3x
+      - DigitalOcean｜Cloudflare5
+      - DigitalOcean｜Cloudflare3
+      - "Go加速 - V2 IEPL | US1\n"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG_00 @WangCai_1
-      - SG_01 @WangCai_1
-      - SG_02 @WangCai_1
-      - SG_03 @WangCai_1
-      - SG_04 @WangCai_1
-      - SG_05 @WangCai_1
-      - SG_06 @WangCai_1
-      - SG_07 @WangCai_1
-      - SG_08 @WangCai_1
-      - SG_09 @WangCai_1
-      - SG_10 @WangCai_1
-      - SG_11 @WangCai_1
-      - SG_12 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_5601 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8080 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_9102 @WangCai_1
-      - 9203 @WangCai_1
-      - 9205 @WangCai_1
-      - 9206 @WangCai_1
-      - 9203 @WangCai_1 2
-      - 9205 @WangCai_1 2
-      - 9206 @WangCai_1 2
-      - 9203 @WangCai_1 3
-      - 9205 @WangCai_1 3
-      - 9206 @WangCai_1 3
-      - 9403 @WangCai_1
-      - 9405 @WangCai_1
-      - 9407 @WangCai_1
-      - 9403 @WangCai_1 2
-      - 9405 @WangCai_1 2
-      - 9407 @WangCai_1 2
-      - 9403 @WangCai_1 3
-      - 9405 @WangCai_1 3
-      - 9407 @WangCai_1 3
+      - Scould台湾01|解锁流媒体|1x
+      - 印度10g
+      - HK001
+      - DigitalOcean｜Cloudflare1
+      - 美国Vip-001
+      - iplc专线01|直连|限速8mbps|3x
+      - DigitalOcean｜Cloudflare5
+      - DigitalOcean｜Cloudflare3
+      - "Go加速 - V2 IEPL | US1\n"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -296,283 +76,64 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG_00 @WangCai_1
-      - SG_01 @WangCai_1
-      - SG_02 @WangCai_1
-      - SG_03 @WangCai_1
-      - SG_04 @WangCai_1
-      - SG_05 @WangCai_1
-      - SG_06 @WangCai_1
-      - SG_07 @WangCai_1
-      - SG_08 @WangCai_1
-      - SG_09 @WangCai_1
-      - SG_10 @WangCai_1
-      - SG_11 @WangCai_1
-      - SG_12 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_5601 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8080 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_9102 @WangCai_1
-      - 9203 @WangCai_1
-      - 9205 @WangCai_1
-      - 9206 @WangCai_1
-      - 9203 @WangCai_1 2
-      - 9205 @WangCai_1 2
-      - 9206 @WangCai_1 2
-      - 9203 @WangCai_1 3
-      - 9205 @WangCai_1 3
-      - 9206 @WangCai_1 3
-      - 9403 @WangCai_1
-      - 9405 @WangCai_1
-      - 9407 @WangCai_1
-      - 9403 @WangCai_1 2
-      - 9405 @WangCai_1 2
-      - 9407 @WangCai_1 2
-      - 9403 @WangCai_1 3
-      - 9405 @WangCai_1 3
-      - 9407 @WangCai_1 3
+      - Scould台湾01|解锁流媒体|1x
+      - 印度10g
+      - HK001
+      - DigitalOcean｜Cloudflare1
+      - 美国Vip-001
+      - iplc专线01|直连|限速8mbps|3x
+      - DigitalOcean｜Cloudflare5
+      - DigitalOcean｜Cloudflare3
+      - "Go加速 - V2 IEPL | US1\n"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - Scould台湾01|解锁流媒体|1x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - SG_00 @WangCai_1
-      - SG_01 @WangCai_1
-      - SG_02 @WangCai_1
-      - SG_03 @WangCai_1
-      - SG_04 @WangCai_1
-      - SG_05 @WangCai_1
-      - SG_06 @WangCai_1
-      - SG_07 @WangCai_1
-      - SG_08 @WangCai_1
-      - SG_09 @WangCai_1
-      - SG_10 @WangCai_1
-      - SG_11 @WangCai_1
-      - SG_12 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_5601 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8080 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_9102 @WangCai_1
-      - 9203 @WangCai_1
-      - 9205 @WangCai_1
-      - 9206 @WangCai_1
-      - 9203 @WangCai_1 2
-      - 9205 @WangCai_1 2
-      - 9206 @WangCai_1 2
-      - 9203 @WangCai_1 3
-      - 9205 @WangCai_1 3
-      - 9206 @WangCai_1 3
-      - 9403 @WangCai_1
-      - 9405 @WangCai_1
-      - 9407 @WangCai_1
-      - 9403 @WangCai_1 2
-      - 9405 @WangCai_1 2
-      - 9407 @WangCai_1 2
-      - 9403 @WangCai_1 3
-      - 9405 @WangCai_1 3
-      - 9407 @WangCai_1 3
+      - Scould台湾01|解锁流媒体|1x
+      - 印度10g
+      - HK001
+      - DigitalOcean｜Cloudflare1
+      - 美国Vip-001
+      - iplc专线01|直连|限速8mbps|3x
+      - DigitalOcean｜Cloudflare5
+      - DigitalOcean｜Cloudflare3
+      - "Go加速 - V2 IEPL | US1\n"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - SG_00 @WangCai_1
-      - SG_01 @WangCai_1
-      - SG_02 @WangCai_1
-      - SG_03 @WangCai_1
-      - SG_04 @WangCai_1
-      - SG_05 @WangCai_1
-      - SG_06 @WangCai_1
-      - SG_07 @WangCai_1
-      - SG_08 @WangCai_1
-      - SG_09 @WangCai_1
-      - SG_10 @WangCai_1
-      - SG_11 @WangCai_1
-      - SG_12 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_5601 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8080 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_9102 @WangCai_1
-      - 9203 @WangCai_1
-      - 9205 @WangCai_1
-      - 9206 @WangCai_1
-      - 9203 @WangCai_1 2
-      - 9205 @WangCai_1 2
-      - 9206 @WangCai_1 2
-      - 9203 @WangCai_1 3
-      - 9205 @WangCai_1 3
-      - 9206 @WangCai_1 3
-      - 9403 @WangCai_1
-      - 9405 @WangCai_1
-      - 9407 @WangCai_1
-      - 9403 @WangCai_1 2
-      - 9405 @WangCai_1 2
-      - 9407 @WangCai_1 2
-      - 9403 @WangCai_1 3
-      - 9405 @WangCai_1 3
-      - 9407 @WangCai_1 3
+      - Scould台湾01|解锁流媒体|1x
+      - 印度10g
+      - HK001
+      - DigitalOcean｜Cloudflare1
+      - 美国Vip-001
+      - iplc专线01|直连|限速8mbps|3x
+      - DigitalOcean｜Cloudflare5
+      - DigitalOcean｜Cloudflare3
+      - "Go加速 - V2 IEPL | US1\n"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG_00 @WangCai_1
-      - SG_01 @WangCai_1
-      - SG_02 @WangCai_1
-      - SG_03 @WangCai_1
-      - SG_04 @WangCai_1
-      - SG_05 @WangCai_1
-      - SG_06 @WangCai_1
-      - SG_07 @WangCai_1
-      - SG_08 @WangCai_1
-      - SG_09 @WangCai_1
-      - SG_10 @WangCai_1
-      - SG_11 @WangCai_1
-      - SG_12 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_5601 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8080 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_9102 @WangCai_1
-      - 9203 @WangCai_1
-      - 9205 @WangCai_1
-      - 9206 @WangCai_1
-      - 9203 @WangCai_1 2
-      - 9205 @WangCai_1 2
-      - 9206 @WangCai_1 2
-      - 9203 @WangCai_1 3
-      - 9205 @WangCai_1 3
-      - 9206 @WangCai_1 3
-      - 9403 @WangCai_1
-      - 9405 @WangCai_1
-      - 9407 @WangCai_1
-      - 9403 @WangCai_1 2
-      - 9405 @WangCai_1 2
-      - 9407 @WangCai_1 2
-      - 9403 @WangCai_1 3
-      - 9405 @WangCai_1 3
-      - 9407 @WangCai_1 3
+      - Scould台湾01|解锁流媒体|1x
+      - 印度10g
+      - HK001
+      - DigitalOcean｜Cloudflare1
+      - 美国Vip-001
+      - iplc专线01|直连|限速8mbps|3x
+      - DigitalOcean｜Cloudflare5
+      - DigitalOcean｜Cloudflare3
+      - "Go加速 - V2 IEPL | US1\n"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -588,70 +149,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG_00 @WangCai_1
-      - SG_01 @WangCai_1
-      - SG_02 @WangCai_1
-      - SG_03 @WangCai_1
-      - SG_04 @WangCai_1
-      - SG_05 @WangCai_1
-      - SG_06 @WangCai_1
-      - SG_07 @WangCai_1
-      - SG_08 @WangCai_1
-      - SG_09 @WangCai_1
-      - SG_10 @WangCai_1
-      - SG_11 @WangCai_1
-      - SG_12 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_5601 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8080 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_9102 @WangCai_1
-      - 9203 @WangCai_1
-      - 9205 @WangCai_1
-      - 9206 @WangCai_1
-      - 9203 @WangCai_1 2
-      - 9205 @WangCai_1 2
-      - 9206 @WangCai_1 2
-      - 9203 @WangCai_1 3
-      - 9205 @WangCai_1 3
-      - 9206 @WangCai_1 3
-      - 9403 @WangCai_1
-      - 9405 @WangCai_1
-      - 9407 @WangCai_1
-      - 9403 @WangCai_1 2
-      - 9405 @WangCai_1 2
-      - 9407 @WangCai_1 2
-      - 9403 @WangCai_1 3
-      - 9405 @WangCai_1 3
-      - 9407 @WangCai_1 3
+      - Scould台湾01|解锁流媒体|1x
+      - 印度10g
+      - HK001
+      - DigitalOcean｜Cloudflare1
+      - 美国Vip-001
+      - iplc专线01|直连|限速8mbps|3x
+      - DigitalOcean｜Cloudflare5
+      - DigitalOcean｜Cloudflare3
+      - "Go加速 - V2 IEPL | US1\n"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
