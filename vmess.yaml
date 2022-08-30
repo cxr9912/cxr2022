@@ -5,119 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 印度-边缘访问 DOIN, server: dtin1.bitznet.one, port: 33017, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: dtin1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-核心访问 DP, server: trasg1.bitznet.one, port: 32007, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: trasg1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 日本-核心访问 DP, server: trajp1.bitznet.one, port: 32004, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: trajp1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-边缘访问 VUAU, server: dtau1.bitznet.one, port: 33012, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: dtau1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯-专线访问 GCore, server: iplcru1.bitznet.one, port: 34008, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: iplcru1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-专线访问 VUAU, server: iplcau1.bitznet.one, port: 34012, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: iplcau1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 菲律宾-边缘访问 Comfac, server: dtph1.bitznet.one, port: 33013, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: dtph1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 香港-核心访问 DP, server: trahk1.bitznet.one, port: 32443, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: trahk1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 乌克兰-核心访问 Vik, server: traua1.bitznet.one, port: 32019, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: traua1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 台湾-专线访问 HiNet, server: iplctw1.bitznet.one, port: 34003, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: iplctw1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 菲律宾-核心访问 Comfac, server: traph1.bitznet.one, port: 32013, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: traph1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 法国-专线访问 DP, server: iplcfr1.bitznet.one, port: 34009, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: iplcfr1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 法国-边缘访问 DP, server: dtfr1.bitznet.one, port: 33009, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: dtfr1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 台湾-核心访问 HiNet, server: tratw1.bitznet.one, port: 32003, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: tratw1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 香港-专线访问 DP, server: iplchk1.bitznet.one, port: 34443, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: iplchk1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 香港-核心访问 HKT, server: trahk5.bitznet.one, port: 32000, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: trahk5.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 德国-核心访问 DP, server: trade1.bitznet.one, port: 32011, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: trade1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 英国-核心访问 DP, server: trauk1.bitznet.one, port: 32010, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: trauk1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 法国-核心访问 DP, server: trafr1.bitznet.one, port: 32009, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: trafr1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 巴西-边缘访问 GCore, server: dtbr1.bitznet.one, port: 33016, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: dtbr1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 英国-边缘访问 DP, server: dtuk1.bitznet.one, port: 33010, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: dtuk1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 巴西-核心访问 GCore, server: trabr1.bitznet.one, port: 32016, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: trabr1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 巴西-专线访问 GCore, server: iplcbr1.bitznet.one, port: 34016, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: iplcbr1.bitznet.one, skip-cert-verify: true, udp: true}
-  - {name: 阿根廷-边缘访问 DonWeb, server: dtar1.bitznet.one, port: 33015, type: trojan, password: 74a9ac4f-2f76-418a-8e66-fc327e54ba43, sni: dtar1.bitznet.one, skip-cert-verify: true, udp: true}
+  - {name: trojan🇨🇳Ch, server: 120.241.31.119, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印度-边缘访问 DOIN
-      - 新加坡-核心访问 DP
-      - 日本-核心访问 DP
-      - 澳大利亚-边缘访问 VUAU
-      - 俄罗斯-专线访问 GCore
-      - 澳大利亚-专线访问 VUAU
-      - 菲律宾-边缘访问 Comfac
-      - 香港-核心访问 DP
-      - 乌克兰-核心访问 Vik
-      - 台湾-专线访问 HiNet
-      - 菲律宾-核心访问 Comfac
-      - 法国-专线访问 DP
-      - 法国-边缘访问 DP
-      - 台湾-核心访问 HiNet
-      - 香港-专线访问 DP
-      - 香港-核心访问 HKT
-      - 德国-核心访问 DP
-      - 英国-核心访问 DP
-      - 法国-核心访问 DP
-      - 巴西-边缘访问 GCore
-      - 英国-边缘访问 DP
-      - 巴西-核心访问 GCore
-      - 巴西-专线访问 GCore
-      - 阿根廷-边缘访问 DonWeb
+      - trojan🇨🇳Ch
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 印度-边缘访问 DOIN
-      - 新加坡-核心访问 DP
-      - 日本-核心访问 DP
-      - 澳大利亚-边缘访问 VUAU
-      - 俄罗斯-专线访问 GCore
-      - 澳大利亚-专线访问 VUAU
-      - 菲律宾-边缘访问 Comfac
-      - 香港-核心访问 DP
-      - 乌克兰-核心访问 Vik
-      - 台湾-专线访问 HiNet
-      - 菲律宾-核心访问 Comfac
-      - 法国-专线访问 DP
-      - 法国-边缘访问 DP
-      - 台湾-核心访问 HiNet
-      - 香港-专线访问 DP
-      - 香港-核心访问 HKT
-      - 德国-核心访问 DP
-      - 英国-核心访问 DP
-      - 法国-核心访问 DP
-      - 巴西-边缘访问 GCore
-      - 英国-边缘访问 DP
-      - 巴西-核心访问 GCore
-      - 巴西-专线访问 GCore
-      - 阿根廷-边缘访问 DonWeb
+      - trojan🇨🇳Ch
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印度-边缘访问 DOIN
-      - 新加坡-核心访问 DP
-      - 日本-核心访问 DP
-      - 澳大利亚-边缘访问 VUAU
-      - 俄罗斯-专线访问 GCore
-      - 澳大利亚-专线访问 VUAU
-      - 菲律宾-边缘访问 Comfac
-      - 香港-核心访问 DP
-      - 乌克兰-核心访问 Vik
-      - 台湾-专线访问 HiNet
-      - 菲律宾-核心访问 Comfac
-      - 法国-专线访问 DP
-      - 法国-边缘访问 DP
-      - 台湾-核心访问 HiNet
-      - 香港-专线访问 DP
-      - 香港-核心访问 HKT
-      - 德国-核心访问 DP
-      - 英国-核心访问 DP
-      - 法国-核心访问 DP
-      - 巴西-边缘访问 GCore
-      - 英国-边缘访问 DP
-      - 巴西-核心访问 GCore
-      - 巴西-专线访问 GCore
-      - 阿根廷-边缘访问 DonWeb
+      - trojan🇨🇳Ch
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -136,128 +44,31 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印度-边缘访问 DOIN
-      - 新加坡-核心访问 DP
-      - 日本-核心访问 DP
-      - 澳大利亚-边缘访问 VUAU
-      - 俄罗斯-专线访问 GCore
-      - 澳大利亚-专线访问 VUAU
-      - 菲律宾-边缘访问 Comfac
-      - 香港-核心访问 DP
-      - 乌克兰-核心访问 Vik
-      - 台湾-专线访问 HiNet
-      - 菲律宾-核心访问 Comfac
-      - 法国-专线访问 DP
-      - 法国-边缘访问 DP
-      - 台湾-核心访问 HiNet
-      - 香港-专线访问 DP
-      - 香港-核心访问 HKT
-      - 德国-核心访问 DP
-      - 英国-核心访问 DP
-      - 法国-核心访问 DP
-      - 巴西-边缘访问 GCore
-      - 英国-边缘访问 DP
-      - 巴西-核心访问 GCore
-      - 巴西-专线访问 GCore
-      - 阿根廷-边缘访问 DonWeb
+      - trojan🇨🇳Ch
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港-核心访问 DP
-      - 台湾-专线访问 HiNet
-      - 台湾-核心访问 HiNet
-      - 香港-专线访问 DP
-      - 香港-核心访问 HKT
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 印度-边缘访问 DOIN
-      - 新加坡-核心访问 DP
-      - 日本-核心访问 DP
-      - 澳大利亚-边缘访问 VUAU
-      - 俄罗斯-专线访问 GCore
-      - 澳大利亚-专线访问 VUAU
-      - 菲律宾-边缘访问 Comfac
-      - 香港-核心访问 DP
-      - 乌克兰-核心访问 Vik
-      - 台湾-专线访问 HiNet
-      - 菲律宾-核心访问 Comfac
-      - 法国-专线访问 DP
-      - 法国-边缘访问 DP
-      - 台湾-核心访问 HiNet
-      - 香港-专线访问 DP
-      - 香港-核心访问 HKT
-      - 德国-核心访问 DP
-      - 英国-核心访问 DP
-      - 法国-核心访问 DP
-      - 巴西-边缘访问 GCore
-      - 英国-边缘访问 DP
-      - 巴西-核心访问 GCore
-      - 巴西-专线访问 GCore
-      - 阿根廷-边缘访问 DonWeb
+      - trojan🇨🇳Ch
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 印度-边缘访问 DOIN
-      - 新加坡-核心访问 DP
-      - 日本-核心访问 DP
-      - 澳大利亚-边缘访问 VUAU
-      - 俄罗斯-专线访问 GCore
-      - 澳大利亚-专线访问 VUAU
-      - 菲律宾-边缘访问 Comfac
-      - 香港-核心访问 DP
-      - 乌克兰-核心访问 Vik
-      - 台湾-专线访问 HiNet
-      - 菲律宾-核心访问 Comfac
-      - 法国-专线访问 DP
-      - 法国-边缘访问 DP
-      - 台湾-核心访问 HiNet
-      - 香港-专线访问 DP
-      - 香港-核心访问 HKT
-      - 德国-核心访问 DP
-      - 英国-核心访问 DP
-      - 法国-核心访问 DP
-      - 巴西-边缘访问 GCore
-      - 英国-边缘访问 DP
-      - 巴西-核心访问 GCore
-      - 巴西-专线访问 GCore
-      - 阿根廷-边缘访问 DonWeb
+      - trojan🇨🇳Ch
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 印度-边缘访问 DOIN
-      - 新加坡-核心访问 DP
-      - 日本-核心访问 DP
-      - 澳大利亚-边缘访问 VUAU
-      - 俄罗斯-专线访问 GCore
-      - 澳大利亚-专线访问 VUAU
-      - 菲律宾-边缘访问 Comfac
-      - 香港-核心访问 DP
-      - 乌克兰-核心访问 Vik
-      - 台湾-专线访问 HiNet
-      - 菲律宾-核心访问 Comfac
-      - 法国-专线访问 DP
-      - 法国-边缘访问 DP
-      - 台湾-核心访问 HiNet
-      - 香港-专线访问 DP
-      - 香港-核心访问 HKT
-      - 德国-核心访问 DP
-      - 英国-核心访问 DP
-      - 法国-核心访问 DP
-      - 巴西-边缘访问 GCore
-      - 英国-边缘访问 DP
-      - 巴西-核心访问 GCore
-      - 巴西-专线访问 GCore
-      - 阿根廷-边缘访问 DonWeb
+      - trojan🇨🇳Ch
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -273,30 +84,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 印度-边缘访问 DOIN
-      - 新加坡-核心访问 DP
-      - 日本-核心访问 DP
-      - 澳大利亚-边缘访问 VUAU
-      - 俄罗斯-专线访问 GCore
-      - 澳大利亚-专线访问 VUAU
-      - 菲律宾-边缘访问 Comfac
-      - 香港-核心访问 DP
-      - 乌克兰-核心访问 Vik
-      - 台湾-专线访问 HiNet
-      - 菲律宾-核心访问 Comfac
-      - 法国-专线访问 DP
-      - 法国-边缘访问 DP
-      - 台湾-核心访问 HiNet
-      - 香港-专线访问 DP
-      - 香港-核心访问 HKT
-      - 德国-核心访问 DP
-      - 英国-核心访问 DP
-      - 法国-核心访问 DP
-      - 巴西-边缘访问 GCore
-      - 英国-边缘访问 DP
-      - 巴西-核心访问 GCore
-      - 巴西-专线访问 GCore
-      - 阿根廷-边缘访问 DonWeb
+      - trojan🇨🇳Ch
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
