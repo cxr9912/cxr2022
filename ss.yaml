@@ -5,39 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国GT | 中港链路 | x1, server: gdcm.subnebula.live, port: 49509, type: trojan, password: 91121a75-7327-33e0-ae86-fbc9a76044e9, sni: gdcm.subnebula.live, skip-cert-verify: true, udp: true}
-  - {name: 香港HKT | 中港链路 | x1, server: gdcm.subnebula.live, port: 49511, type: trojan, password: 91121a75-7327-33e0-ae86-fbc9a76044e9, sni: gdcm.subnebula.live, skip-cert-verify: true, udp: true}
-  - {name: _Cow Vagina 23, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: _Cow Vagina 16, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 台湾02|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9013, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT-优化2, server: m.lwvzmdu.cn, port: 16620, type: vmess, uuid: 176da7a9-4d6a-4988-aa1b-baf606449ace, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
+  - {name: V0-东京, server: gyjp1.333003.xyz, port: 19324, type: trojan, password: 6367e137-7366-44e4-a7a1-eba23a6d1e93, sni: gyjp1.333003.xyz, skip-cert-verify: true, udp: true}
+  - {name: V0-东京3, server: gyjp3.333003.xyz, port: 16914, type: ss, cipher: chacha20-ietf-poly1305, password: 6367e137-7366-44e4-a7a1-eba23a6d1e93, udp: true}
+  - {name: 日本-优化2, server: m.lwvzmdu.cn, port: 16617, type: vmess, uuid: 176da7a9-4d6a-4988-aa1b-baf606449ace, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
+  - {name: 日本, server: aws.raytrack.cloud, port: 20030, type: trojan, password: 1b60a674-a7b7-4322-b6e4-f6db29c7e4c9, sni: aws.raytrack.cloud, skip-cert-verify: true, udp: true}
+  - {name: 日本-优化, server: u.cccao.cyou, port: 16617, type: vmess, uuid: 176da7a9-4d6a-4988-aa1b-baf606449ace, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.cccao.cyou}, udp: true}
+  - {name: 香港Az-优化2, server: m.lwvzmdu.cn, port: 16627, type: vmess, uuid: 176da7a9-4d6a-4988-aa1b-baf606449ace, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
+  - {name: Scould台湾01|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: fb0e4355-d025-4292-9c0e-68de955734fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: scloud台湾07—原生IP, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: fb0e4355-d025-4292-9c0e-68de955734fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet07, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: Scloud台湾02|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: fb0e4355-d025-4292-9c0e-68de955734fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet02, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 日本-优化3, server: t.cccao.cyou, port: 16617, type: vmess, uuid: 176da7a9-4d6a-4988-aa1b-baf606449ace, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
+  - {name: 台湾, server: aws.raytrack.cloud, port: 20038, type: trojan, password: 1b60a674-a7b7-4322-b6e4-f6db29c7e4c9, sni: aws.raytrack.cloud, skip-cert-verify: true, udp: true}
+  - {name: 大萝卜鸡洛杉矶, server: 155.94.239.243, port: 20001, type: ss, cipher: aes-128-gcm, password: 61e2d024-31ac-4c8a-8ca8-6ea85ae7941b, udp: true}
+  - {name: 洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧, server: cc.755657.xyz, port: 443, type: trojan, password: ea635091-5d17-42b9-ad81-d26572a9eea8, sni: cc.755657.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港-MyTrojan5, server: dt.755657.xyz, port: 443, type: trojan, password: ea635091-5d17-42b9-ad81-d26572a9eea8, sni: dt.755657.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港-MyVmess5, server: dt.755657.xyz, port: 8443, type: vmess, uuid: ea635091-5d17-42b9-ad81-d26572a9eea8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /java/18/latest/, ws-headers: {Host: dt.755657.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国GT | 中港链路 | x1
-      - 香港HKT | 中港链路 | x1
-      - _Cow Vagina 23
-      - _Cow Vagina 16
+      - 台湾02|原生解锁|中華電信
+      - 香港HKT-优化2
+      - V0-东京
+      - V0-东京3
+      - 日本-优化2
+      - 日本
+      - 日本-优化
+      - 香港Az-优化2
+      - Scould台湾01|解锁流媒体|1x
+      - scloud台湾07—原生IP
+      - Scloud台湾02|解锁流媒体|1x
+      - 日本-优化3
+      - 台湾
+      - 大萝卜鸡洛杉矶
+      - 洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 香港-MyTrojan5
+      - 香港-MyVmess5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国GT | 中港链路 | x1
-      - 香港HKT | 中港链路 | x1
-      - _Cow Vagina 23
-      - _Cow Vagina 16
+      - 台湾02|原生解锁|中華電信
+      - 香港HKT-优化2
+      - V0-东京
+      - V0-东京3
+      - 日本-优化2
+      - 日本
+      - 日本-优化
+      - 香港Az-优化2
+      - Scould台湾01|解锁流媒体|1x
+      - scloud台湾07—原生IP
+      - Scloud台湾02|解锁流媒体|1x
+      - 日本-优化3
+      - 台湾
+      - 大萝卜鸡洛杉矶
+      - 洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 香港-MyTrojan5
+      - 香港-MyVmess5
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国GT | 中港链路 | x1
-      - 香港HKT | 中港链路 | x1
-      - _Cow Vagina 23
-      - _Cow Vagina 16
+      - 台湾02|原生解锁|中華電信
+      - 香港HKT-优化2
+      - V0-东京
+      - V0-东京3
+      - 日本-优化2
+      - 日本
+      - 日本-优化
+      - 香港Az-优化2
+      - Scould台湾01|解锁流媒体|1x
+      - scloud台湾07—原生IP
+      - Scloud台湾02|解锁流媒体|1x
+      - 日本-优化3
+      - 台湾
+      - 大萝卜鸡洛杉矶
+      - 洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 香港-MyTrojan5
+      - 香港-MyVmess5
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,45 +108,104 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国GT | 中港链路 | x1
-      - 香港HKT | 中港链路 | x1
-      - _Cow Vagina 23
-      - _Cow Vagina 16
+      - 台湾02|原生解锁|中華電信
+      - 香港HKT-优化2
+      - V0-东京
+      - V0-东京3
+      - 日本-优化2
+      - 日本
+      - 日本-优化
+      - 香港Az-优化2
+      - Scould台湾01|解锁流媒体|1x
+      - scloud台湾07—原生IP
+      - Scloud台湾02|解锁流媒体|1x
+      - 日本-优化3
+      - 台湾
+      - 大萝卜鸡洛杉矶
+      - 洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 香港-MyTrojan5
+      - 香港-MyVmess5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 美国GT | 中港链路 | x1
-      - 香港HKT | 中港链路 | x1
+      - 台湾02|原生解锁|中華電信
+      - 香港HKT-优化2
+      - 香港Az-优化2
+      - Scould台湾01|解锁流媒体|1x
+      - scloud台湾07—原生IP
+      - Scloud台湾02|解锁流媒体|1x
+      - 台湾
+      - 香港-MyTrojan5
+      - 香港-MyVmess5
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国GT | 中港链路 | x1
-      - 香港HKT | 中港链路 | x1
-      - _Cow Vagina 23
-      - _Cow Vagina 16
+      - 台湾02|原生解锁|中華電信
+      - 香港HKT-优化2
+      - V0-东京
+      - V0-东京3
+      - 日本-优化2
+      - 日本
+      - 日本-优化
+      - 香港Az-优化2
+      - Scould台湾01|解锁流媒体|1x
+      - scloud台湾07—原生IP
+      - Scloud台湾02|解锁流媒体|1x
+      - 日本-优化3
+      - 台湾
+      - 大萝卜鸡洛杉矶
+      - 洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 香港-MyTrojan5
+      - 香港-MyVmess5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国GT | 中港链路 | x1
-      - 香港HKT | 中港链路 | x1
-      - _Cow Vagina 23
-      - _Cow Vagina 16
+      - 台湾02|原生解锁|中華電信
+      - 香港HKT-优化2
+      - V0-东京
+      - V0-东京3
+      - 日本-优化2
+      - 日本
+      - 日本-优化
+      - 香港Az-优化2
+      - Scould台湾01|解锁流媒体|1x
+      - scloud台湾07—原生IP
+      - Scloud台湾02|解锁流媒体|1x
+      - 日本-优化3
+      - 台湾
+      - 大萝卜鸡洛杉矶
+      - 洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 香港-MyTrojan5
+      - 香港-MyVmess5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国GT | 中港链路 | x1
-      - 香港HKT | 中港链路 | x1
-      - _Cow Vagina 23
-      - _Cow Vagina 16
+      - 台湾02|原生解锁|中華電信
+      - 香港HKT-优化2
+      - V0-东京
+      - V0-东京3
+      - 日本-优化2
+      - 日本
+      - 日本-优化
+      - 香港Az-优化2
+      - Scould台湾01|解锁流媒体|1x
+      - scloud台湾07—原生IP
+      - Scloud台湾02|解锁流媒体|1x
+      - 日本-优化3
+      - 台湾
+      - 大萝卜鸡洛杉矶
+      - 洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 香港-MyTrojan5
+      - 香港-MyVmess5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -110,10 +221,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国GT | 中港链路 | x1
-      - 香港HKT | 中港链路 | x1
-      - _Cow Vagina 23
-      - _Cow Vagina 16
+      - 台湾02|原生解锁|中華電信
+      - 香港HKT-优化2
+      - V0-东京
+      - V0-东京3
+      - 日本-优化2
+      - 日本
+      - 日本-优化
+      - 香港Az-优化2
+      - Scould台湾01|解锁流媒体|1x
+      - scloud台湾07—原生IP
+      - Scloud台湾02|解锁流媒体|1x
+      - 日本-优化3
+      - 台湾
+      - 大萝卜鸡洛杉矶
+      - 洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 香港-MyTrojan5
+      - 香港-MyVmess5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
