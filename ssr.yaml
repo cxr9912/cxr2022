@@ -5,123 +5,131 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 大萝卜鸡台湾3, server: aliyun.moble.vnupgcn.cn, port: 9014, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 大萝卜鸡台湾2, server: aliyun.moble.vnupgcn.cn, port: 9012, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 大萝卜鸡台湾1, server: aliyun.moble.vnupgcn.cn, port: 9013, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 大萝卜鸡日本1, server: aliyun.moble.vnupgcn.cn, port: 9037, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 大萝卜鸡日本2, server: aliyun.moble.vnupgcn.cn, port: 9032, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 大萝卜鸡新加坡, server: aliyun.moble.vnupgcn.cn, port: 9044, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾03|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9014, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港09|原生解锁|CMIHK, server: aliyun.moble.vnupgcn.cn, port: 9010, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾01|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9012, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾05|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9016, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾02|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9013, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "日本02{移动①}", server: cm.awslcn.cc, port: 25237, type: vmess, uuid: 51a2f266-8382-49b8-9564-f059b1312fd8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
-  - {name: "日本05{移动①}", server: cm.awslcn.cc, port: 25219, type: vmess, uuid: 51a2f266-8382-49b8-9564-f059b1312fd8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
-  - {name: 大萝卜鸡澳大利亚, server: aliyun.install02.vnupgcn.cn, port: 11925, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 印度03|内网专线|भारत गणराज्य, server: aliyun.install03.vnupgcn.cn, port: 11929, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 大萝卜鸡德国, server: aliyun.install03.vnupgcn.cn, port: 11903, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 大萝卜鸡印度, server: aliyun.install03.vnupgcn.cn, port: 11929, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国01|内网专线|한국, server: aliyun.install01.vnupgcn.cn, port: 11923, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 大萝卜鸡英国, server: aliyun.install03.vnupgcn.cn, port: 11901, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 菲律宾03|内网专线|Manila, server: aliyun.install03.vnupgcn.cn, port: 11906, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 大萝卜鸡柬埔寨, server: aliyun.install02.vnupgcn.cn, port: 11907, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 666, server: www.xyxdbp.xyz, port: 34136, type: vmess, uuid: 52e9ffc9-0831-4c9d-e8ec-e4312caad4c6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 菲律宾01|内网专线|Manila, server: aliyun.install01.vnupgcn.cn, port: 11906, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US SJC 01-V2(vmess), server: us-sjc-01-v2.jd.cjhh.mom, port: 888, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
-  - {name: 大萝卜鸡菲律宾, server: aliyun.install03.vnupgcn.cn, port: 11906, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 泰國 A/01 x1.0, server: 117.164.185.220, port: 61022, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
+  - {name: 香港 A/03 x1.0, server: 117.164.185.220, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
+  - {name: 香港 B/05 x1.0, server: 183.245.146.20, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
+  - {name: 香港 B/01 x1.0, server: 183.245.146.20, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
+  - {name: 日本 A/02 x1.0, server: 117.164.185.220, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
+  - {name: 香港 A/02 x1.0, server: 117.164.185.220, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
+  - {name: 新加坡W1-直连, server: 54.151.212.220, port: 43214, type: vmess, uuid: 5b028d7f-9e30-4475-a558-ebb2c4b02566, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 越南 A/01 x1.0, server: 117.164.185.220, port: 61025, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
+  - {name: 越南 A/03 x1.0, server: 117.164.185.220, port: 61027, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
+  - {name: 越南 A/02 x1.0, server: 117.164.185.220, port: 61026, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
+  - {name: 日本 |Azure 隧道中转 001 |TroJan, server: xray-1.nmcfhpu.cn, port: 18891, type: trojan, password: 335f9213-d2b9-4ab5-83ae-19e21a40830b, sni: xray-1.nmcfhpu.cn, skip-cert-verify: true, udp: true}
+  - {name: 日本 |Azure 隧道中转 002 |TroJan, server: xray-1.nmcfhpu.cn, port: 18892, type: trojan, password: 335f9213-d2b9-4ab5-83ae-19e21a40830b, sni: xray-1.nmcfhpu.cn, skip-cert-verify: true, udp: true}
+  - {name: 日本 |Linode 隧道中转 005|TroJan, server: pass-ln.zekwes.cn, port: 18897, type: trojan, password: 335f9213-d2b9-4ab5-83ae-19e21a40830b, sni: pass-ln.zekwes.cn, skip-cert-verify: true, udp: true}
+  - {name: 香港 HKT 隧道 02 |TroJan, server: xray-1.nmcfhpu.cn, port: 18802, type: trojan, password: 335f9213-d2b9-4ab5-83ae-19e21a40830b, sni: xray-1.nmcfhpu.cn, skip-cert-verify: true, udp: true}
+  - {name: 日本 |Linode 隧道中转 004|TroJan, server: pass-ln.zekwes.cn, port: 18896, type: trojan, password: 335f9213-d2b9-4ab5-83ae-19e21a40830b, sni: pass-ln.zekwes.cn, skip-cert-verify: true, udp: true}
+  - {name: 台灣 A/01 x1.0, server: 117.164.185.220, port: 41001, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
+  - {name: 日本 |GMO 隧道中转001|TroJan, server: xray-1.nmcfhpu.cn, port: 18894, type: trojan, password: 335f9213-d2b9-4ab5-83ae-19e21a40830b, sni: xray-1.nmcfhpu.cn, skip-cert-verify: true, udp: true}
+  - {name: 台湾 Hinet|动态VDS 01, server: xray-1.nmcfhpu.cn, port: 18803, type: trojan, password: 335f9213-d2b9-4ab5-83ae-19e21a40830b, sni: xray-1.nmcfhpu.cn, skip-cert-verify: true, udp: true}
+  - {name: 日本 |Linode 隧道中转 003|TroJan, server: pass-ln.zekwes.cn, port: 18895, type: trojan, password: 335f9213-d2b9-4ab5-83ae-19e21a40830b, sni: pass-ln.zekwes.cn, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 隧道 AWS 01|Trijan, server: xray-1.nmcfhpu.cn, port: 18805, type: trojan, password: 335f9213-d2b9-4ab5-83ae-19e21a40830b, sni: xray-1.nmcfhpu.cn, skip-cert-verify: true, udp: true}
+  - {name: 新加坡B, server: 18.143.91.203, port: 30002, type: vmess, uuid: 5b028d7f-9e30-4475-a558-ebb2c4b02566, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡W2-直连, server: 18.142.227.6, port: 43214, type: vmess, uuid: 5b028d7f-9e30-4475-a558-ebb2c4b02566, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡W2-直连 2, server: 18.142.227.6, port: 43214, type: vmess, uuid: 5b028d7f-9e30-4475-a558-ebb2c4b02566, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 AWS 001 | V2ray, server: awsa1.nmcfhpu.cn, port: 80, type: vmess, uuid: 335f9213-d2b9-4ab5-83ae-19e21a40830b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: awsa1.nmcfhpu.cn}, udp: true}
+  - {name: 香港1 🎬, server: v21.xn--6nq44r2uh9rhj7f.com, port: 80, type: vmess, uuid: a534b80a-e674-4b9d-9778-884d60e8cc55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 限时节点1·日本 | x0, server: bo1.paoche.work, port: 9999, type: trojan, password: 0fc39e24-c3f3-4a34-b277-90edae5891ea, sni: bo1.paoche.work, skip-cert-verify: true, udp: true}
+  - {name: 英国A, server: 51.142.233.54, port: 30006, type: vmess, uuid: 5b028d7f-9e30-4475-a558-ebb2c4b02566, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 大萝卜鸡台湾3
-      - 大萝卜鸡台湾2
-      - 大萝卜鸡台湾1
-      - 大萝卜鸡日本1
-      - 大萝卜鸡日本2
-      - 大萝卜鸡新加坡
-      - 台湾03|原生解锁|中華電信
-      - 香港09|原生解锁|CMIHK
-      - 台湾01|原生解锁|中華電信
-      - 台湾05|原生解锁|中華電信
-      - 台湾02|原生解锁|中華電信
-      - 日本02{移动①}
-      - 日本05{移动①}
-      - 大萝卜鸡澳大利亚
-      - 印度03|内网专线|भारत गणराज्य
-      - 大萝卜鸡德国
-      - 大萝卜鸡印度
-      - 韩国01|内网专线|한국
-      - 大萝卜鸡英国
-      - 菲律宾03|内网专线|Manila
-      - 大萝卜鸡柬埔寨
-      - 666
-      - 菲律宾01|内网专线|Manila
-      - US SJC 01-V2(vmess)
-      - 大萝卜鸡菲律宾
+      - 泰國 A/01 x1.0
+      - 香港 A/03 x1.0
+      - 香港 B/05 x1.0
+      - 香港 B/01 x1.0
+      - 日本 A/02 x1.0
+      - 香港 A/02 x1.0
+      - 新加坡W1-直连
+      - 越南 A/01 x1.0
+      - 越南 A/03 x1.0
+      - 越南 A/02 x1.0
+      - 日本 |Azure 隧道中转 001 |TroJan
+      - 日本 |Azure 隧道中转 002 |TroJan
+      - 日本 |Linode 隧道中转 005|TroJan
+      - 香港 HKT 隧道 02 |TroJan
+      - 日本 |Linode 隧道中转 004|TroJan
+      - 台灣 A/01 x1.0
+      - 日本 |GMO 隧道中转001|TroJan
+      - 台湾 Hinet|动态VDS 01
+      - 日本 |Linode 隧道中转 003|TroJan
+      - 新加坡 隧道 AWS 01|Trijan
+      - 新加坡B
+      - 新加坡W2-直连
+      - 新加坡W2-直连 2
+      - 新加坡 AWS 001 | V2ray
+      - 香港1 🎬
+      - 限时节点1·日本 | x0
+      - 英国A
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 大萝卜鸡台湾3
-      - 大萝卜鸡台湾2
-      - 大萝卜鸡台湾1
-      - 大萝卜鸡日本1
-      - 大萝卜鸡日本2
-      - 大萝卜鸡新加坡
-      - 台湾03|原生解锁|中華電信
-      - 香港09|原生解锁|CMIHK
-      - 台湾01|原生解锁|中華電信
-      - 台湾05|原生解锁|中華電信
-      - 台湾02|原生解锁|中華電信
-      - 日本02{移动①}
-      - 日本05{移动①}
-      - 大萝卜鸡澳大利亚
-      - 印度03|内网专线|भारत गणराज्य
-      - 大萝卜鸡德国
-      - 大萝卜鸡印度
-      - 韩国01|内网专线|한국
-      - 大萝卜鸡英国
-      - 菲律宾03|内网专线|Manila
-      - 大萝卜鸡柬埔寨
-      - 666
-      - 菲律宾01|内网专线|Manila
-      - US SJC 01-V2(vmess)
-      - 大萝卜鸡菲律宾
+      - 泰國 A/01 x1.0
+      - 香港 A/03 x1.0
+      - 香港 B/05 x1.0
+      - 香港 B/01 x1.0
+      - 日本 A/02 x1.0
+      - 香港 A/02 x1.0
+      - 新加坡W1-直连
+      - 越南 A/01 x1.0
+      - 越南 A/03 x1.0
+      - 越南 A/02 x1.0
+      - 日本 |Azure 隧道中转 001 |TroJan
+      - 日本 |Azure 隧道中转 002 |TroJan
+      - 日本 |Linode 隧道中转 005|TroJan
+      - 香港 HKT 隧道 02 |TroJan
+      - 日本 |Linode 隧道中转 004|TroJan
+      - 台灣 A/01 x1.0
+      - 日本 |GMO 隧道中转001|TroJan
+      - 台湾 Hinet|动态VDS 01
+      - 日本 |Linode 隧道中转 003|TroJan
+      - 新加坡 隧道 AWS 01|Trijan
+      - 新加坡B
+      - 新加坡W2-直连
+      - 新加坡W2-直连 2
+      - 新加坡 AWS 001 | V2ray
+      - 香港1 🎬
+      - 限时节点1·日本 | x0
+      - 英国A
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 大萝卜鸡台湾3
-      - 大萝卜鸡台湾2
-      - 大萝卜鸡台湾1
-      - 大萝卜鸡日本1
-      - 大萝卜鸡日本2
-      - 大萝卜鸡新加坡
-      - 台湾03|原生解锁|中華電信
-      - 香港09|原生解锁|CMIHK
-      - 台湾01|原生解锁|中華電信
-      - 台湾05|原生解锁|中華電信
-      - 台湾02|原生解锁|中華電信
-      - 日本02{移动①}
-      - 日本05{移动①}
-      - 大萝卜鸡澳大利亚
-      - 印度03|内网专线|भारत गणराज्य
-      - 大萝卜鸡德国
-      - 大萝卜鸡印度
-      - 韩国01|内网专线|한국
-      - 大萝卜鸡英国
-      - 菲律宾03|内网专线|Manila
-      - 大萝卜鸡柬埔寨
-      - 666
-      - 菲律宾01|内网专线|Manila
-      - US SJC 01-V2(vmess)
-      - 大萝卜鸡菲律宾
+      - 泰國 A/01 x1.0
+      - 香港 A/03 x1.0
+      - 香港 B/05 x1.0
+      - 香港 B/01 x1.0
+      - 日本 A/02 x1.0
+      - 香港 A/02 x1.0
+      - 新加坡W1-直连
+      - 越南 A/01 x1.0
+      - 越南 A/03 x1.0
+      - 越南 A/02 x1.0
+      - 日本 |Azure 隧道中转 001 |TroJan
+      - 日本 |Azure 隧道中转 002 |TroJan
+      - 日本 |Linode 隧道中转 005|TroJan
+      - 香港 HKT 隧道 02 |TroJan
+      - 日本 |Linode 隧道中转 004|TroJan
+      - 台灣 A/01 x1.0
+      - 日本 |GMO 隧道中转001|TroJan
+      - 台湾 Hinet|动态VDS 01
+      - 日本 |Linode 隧道中转 003|TroJan
+      - 新加坡 隧道 AWS 01|Trijan
+      - 新加坡B
+      - 新加坡W2-直连
+      - 新加坡W2-直连 2
+      - 新加坡 AWS 001 | V2ray
+      - 香港1 🎬
+      - 限时节点1·日本 | x0
+      - 英国A
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -140,135 +148,143 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 大萝卜鸡台湾3
-      - 大萝卜鸡台湾2
-      - 大萝卜鸡台湾1
-      - 大萝卜鸡日本1
-      - 大萝卜鸡日本2
-      - 大萝卜鸡新加坡
-      - 台湾03|原生解锁|中華電信
-      - 香港09|原生解锁|CMIHK
-      - 台湾01|原生解锁|中華電信
-      - 台湾05|原生解锁|中華電信
-      - 台湾02|原生解锁|中華電信
-      - 日本02{移动①}
-      - 日本05{移动①}
-      - 大萝卜鸡澳大利亚
-      - 印度03|内网专线|भारत गणराज्य
-      - 大萝卜鸡德国
-      - 大萝卜鸡印度
-      - 韩国01|内网专线|한국
-      - 大萝卜鸡英国
-      - 菲律宾03|内网专线|Manila
-      - 大萝卜鸡柬埔寨
-      - 666
-      - 菲律宾01|内网专线|Manila
-      - US SJC 01-V2(vmess)
-      - 大萝卜鸡菲律宾
+      - 泰國 A/01 x1.0
+      - 香港 A/03 x1.0
+      - 香港 B/05 x1.0
+      - 香港 B/01 x1.0
+      - 日本 A/02 x1.0
+      - 香港 A/02 x1.0
+      - 新加坡W1-直连
+      - 越南 A/01 x1.0
+      - 越南 A/03 x1.0
+      - 越南 A/02 x1.0
+      - 日本 |Azure 隧道中转 001 |TroJan
+      - 日本 |Azure 隧道中转 002 |TroJan
+      - 日本 |Linode 隧道中转 005|TroJan
+      - 香港 HKT 隧道 02 |TroJan
+      - 日本 |Linode 隧道中转 004|TroJan
+      - 台灣 A/01 x1.0
+      - 日本 |GMO 隧道中转001|TroJan
+      - 台湾 Hinet|动态VDS 01
+      - 日本 |Linode 隧道中转 003|TroJan
+      - 新加坡 隧道 AWS 01|Trijan
+      - 新加坡B
+      - 新加坡W2-直连
+      - 新加坡W2-直连 2
+      - 新加坡 AWS 001 | V2ray
+      - 香港1 🎬
+      - 限时节点1·日本 | x0
+      - 英国A
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 大萝卜鸡台湾3
-      - 大萝卜鸡台湾2
-      - 大萝卜鸡台湾1
-      - 台湾03|原生解锁|中華電信
-      - 香港09|原生解锁|CMIHK
-      - 台湾01|原生解锁|中華電信
-      - 台湾05|原生解锁|中華電信
-      - 台湾02|原生解锁|中華電信
+      - 香港 A/03 x1.0
+      - 香港 B/05 x1.0
+      - 香港 B/01 x1.0
+      - 香港 A/02 x1.0
+      - 香港 HKT 隧道 02 |TroJan
+      - 台灣 A/01 x1.0
+      - 台湾 Hinet|动态VDS 01
+      - 香港1 🎬
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 大萝卜鸡台湾3
-      - 大萝卜鸡台湾2
-      - 大萝卜鸡台湾1
-      - 大萝卜鸡日本1
-      - 大萝卜鸡日本2
-      - 大萝卜鸡新加坡
-      - 台湾03|原生解锁|中華電信
-      - 香港09|原生解锁|CMIHK
-      - 台湾01|原生解锁|中華電信
-      - 台湾05|原生解锁|中華電信
-      - 台湾02|原生解锁|中華電信
-      - 日本02{移动①}
-      - 日本05{移动①}
-      - 大萝卜鸡澳大利亚
-      - 印度03|内网专线|भारत गणराज्य
-      - 大萝卜鸡德国
-      - 大萝卜鸡印度
-      - 韩国01|内网专线|한국
-      - 大萝卜鸡英国
-      - 菲律宾03|内网专线|Manila
-      - 大萝卜鸡柬埔寨
-      - 666
-      - 菲律宾01|内网专线|Manila
-      - US SJC 01-V2(vmess)
-      - 大萝卜鸡菲律宾
+      - 泰國 A/01 x1.0
+      - 香港 A/03 x1.0
+      - 香港 B/05 x1.0
+      - 香港 B/01 x1.0
+      - 日本 A/02 x1.0
+      - 香港 A/02 x1.0
+      - 新加坡W1-直连
+      - 越南 A/01 x1.0
+      - 越南 A/03 x1.0
+      - 越南 A/02 x1.0
+      - 日本 |Azure 隧道中转 001 |TroJan
+      - 日本 |Azure 隧道中转 002 |TroJan
+      - 日本 |Linode 隧道中转 005|TroJan
+      - 香港 HKT 隧道 02 |TroJan
+      - 日本 |Linode 隧道中转 004|TroJan
+      - 台灣 A/01 x1.0
+      - 日本 |GMO 隧道中转001|TroJan
+      - 台湾 Hinet|动态VDS 01
+      - 日本 |Linode 隧道中转 003|TroJan
+      - 新加坡 隧道 AWS 01|Trijan
+      - 新加坡B
+      - 新加坡W2-直连
+      - 新加坡W2-直连 2
+      - 新加坡 AWS 001 | V2ray
+      - 香港1 🎬
+      - 限时节点1·日本 | x0
+      - 英国A
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 大萝卜鸡台湾3
-      - 大萝卜鸡台湾2
-      - 大萝卜鸡台湾1
-      - 大萝卜鸡日本1
-      - 大萝卜鸡日本2
-      - 大萝卜鸡新加坡
-      - 台湾03|原生解锁|中華電信
-      - 香港09|原生解锁|CMIHK
-      - 台湾01|原生解锁|中華電信
-      - 台湾05|原生解锁|中華電信
-      - 台湾02|原生解锁|中華電信
-      - 日本02{移动①}
-      - 日本05{移动①}
-      - 大萝卜鸡澳大利亚
-      - 印度03|内网专线|भारत गणराज्य
-      - 大萝卜鸡德国
-      - 大萝卜鸡印度
-      - 韩国01|内网专线|한국
-      - 大萝卜鸡英国
-      - 菲律宾03|内网专线|Manila
-      - 大萝卜鸡柬埔寨
-      - 666
-      - 菲律宾01|内网专线|Manila
-      - US SJC 01-V2(vmess)
-      - 大萝卜鸡菲律宾
+      - 泰國 A/01 x1.0
+      - 香港 A/03 x1.0
+      - 香港 B/05 x1.0
+      - 香港 B/01 x1.0
+      - 日本 A/02 x1.0
+      - 香港 A/02 x1.0
+      - 新加坡W1-直连
+      - 越南 A/01 x1.0
+      - 越南 A/03 x1.0
+      - 越南 A/02 x1.0
+      - 日本 |Azure 隧道中转 001 |TroJan
+      - 日本 |Azure 隧道中转 002 |TroJan
+      - 日本 |Linode 隧道中转 005|TroJan
+      - 香港 HKT 隧道 02 |TroJan
+      - 日本 |Linode 隧道中转 004|TroJan
+      - 台灣 A/01 x1.0
+      - 日本 |GMO 隧道中转001|TroJan
+      - 台湾 Hinet|动态VDS 01
+      - 日本 |Linode 隧道中转 003|TroJan
+      - 新加坡 隧道 AWS 01|Trijan
+      - 新加坡B
+      - 新加坡W2-直连
+      - 新加坡W2-直连 2
+      - 新加坡 AWS 001 | V2ray
+      - 香港1 🎬
+      - 限时节点1·日本 | x0
+      - 英国A
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 大萝卜鸡台湾3
-      - 大萝卜鸡台湾2
-      - 大萝卜鸡台湾1
-      - 大萝卜鸡日本1
-      - 大萝卜鸡日本2
-      - 大萝卜鸡新加坡
-      - 台湾03|原生解锁|中華電信
-      - 香港09|原生解锁|CMIHK
-      - 台湾01|原生解锁|中華電信
-      - 台湾05|原生解锁|中華電信
-      - 台湾02|原生解锁|中華電信
-      - 日本02{移动①}
-      - 日本05{移动①}
-      - 大萝卜鸡澳大利亚
-      - 印度03|内网专线|भारत गणराज्य
-      - 大萝卜鸡德国
-      - 大萝卜鸡印度
-      - 韩国01|内网专线|한국
-      - 大萝卜鸡英国
-      - 菲律宾03|内网专线|Manila
-      - 大萝卜鸡柬埔寨
-      - 666
-      - 菲律宾01|内网专线|Manila
-      - US SJC 01-V2(vmess)
-      - 大萝卜鸡菲律宾
+      - 泰國 A/01 x1.0
+      - 香港 A/03 x1.0
+      - 香港 B/05 x1.0
+      - 香港 B/01 x1.0
+      - 日本 A/02 x1.0
+      - 香港 A/02 x1.0
+      - 新加坡W1-直连
+      - 越南 A/01 x1.0
+      - 越南 A/03 x1.0
+      - 越南 A/02 x1.0
+      - 日本 |Azure 隧道中转 001 |TroJan
+      - 日本 |Azure 隧道中转 002 |TroJan
+      - 日本 |Linode 隧道中转 005|TroJan
+      - 香港 HKT 隧道 02 |TroJan
+      - 日本 |Linode 隧道中转 004|TroJan
+      - 台灣 A/01 x1.0
+      - 日本 |GMO 隧道中转001|TroJan
+      - 台湾 Hinet|动态VDS 01
+      - 日本 |Linode 隧道中转 003|TroJan
+      - 新加坡 隧道 AWS 01|Trijan
+      - 新加坡B
+      - 新加坡W2-直连
+      - 新加坡W2-直连 2
+      - 新加坡 AWS 001 | V2ray
+      - 香港1 🎬
+      - 限时节点1·日本 | x0
+      - 英国A
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -284,31 +300,33 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 大萝卜鸡台湾3
-      - 大萝卜鸡台湾2
-      - 大萝卜鸡台湾1
-      - 大萝卜鸡日本1
-      - 大萝卜鸡日本2
-      - 大萝卜鸡新加坡
-      - 台湾03|原生解锁|中華電信
-      - 香港09|原生解锁|CMIHK
-      - 台湾01|原生解锁|中華電信
-      - 台湾05|原生解锁|中華電信
-      - 台湾02|原生解锁|中華電信
-      - 日本02{移动①}
-      - 日本05{移动①}
-      - 大萝卜鸡澳大利亚
-      - 印度03|内网专线|भारत गणराज्य
-      - 大萝卜鸡德国
-      - 大萝卜鸡印度
-      - 韩国01|内网专线|한국
-      - 大萝卜鸡英国
-      - 菲律宾03|内网专线|Manila
-      - 大萝卜鸡柬埔寨
-      - 666
-      - 菲律宾01|内网专线|Manila
-      - US SJC 01-V2(vmess)
-      - 大萝卜鸡菲律宾
+      - 泰國 A/01 x1.0
+      - 香港 A/03 x1.0
+      - 香港 B/05 x1.0
+      - 香港 B/01 x1.0
+      - 日本 A/02 x1.0
+      - 香港 A/02 x1.0
+      - 新加坡W1-直连
+      - 越南 A/01 x1.0
+      - 越南 A/03 x1.0
+      - 越南 A/02 x1.0
+      - 日本 |Azure 隧道中转 001 |TroJan
+      - 日本 |Azure 隧道中转 002 |TroJan
+      - 日本 |Linode 隧道中转 005|TroJan
+      - 香港 HKT 隧道 02 |TroJan
+      - 日本 |Linode 隧道中转 004|TroJan
+      - 台灣 A/01 x1.0
+      - 日本 |GMO 隧道中转001|TroJan
+      - 台湾 Hinet|动态VDS 01
+      - 日本 |Linode 隧道中转 003|TroJan
+      - 新加坡 隧道 AWS 01|Trijan
+      - 新加坡B
+      - 新加坡W2-直连
+      - 新加坡W2-直连 2
+      - 新加坡 AWS 001 | V2ray
+      - 香港1 🎬
+      - 限时节点1·日本 | x0
+      - 英国A
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
