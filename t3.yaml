@@ -5,27 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港-ms-001, server: mshk1.369boy.com, port: 23511, type: trojan, password: 76271048-e056-47f2-9980-ded314153197, sni: mshk1.369boy.com, skip-cert-verify: true, udp: true}
+  - {name: 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA, server: lux.justu.ml, port: 80, type: vmess, uuid: 74758f06-f4b9-4ef1-a86c-f0a0cc82109f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aries, ws-headers: {Host: lux.justu.ml}, udp: true}
+  - {name: 大家庭, server: 204.15.75.99, port: 58290, type: vmess, uuid: d5cc3148-2e88-439a-cb17-e363e7dbe43c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 204.15.75.99}, udp: true}
+  - {name: 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA 2, server: lux.justu.ml, port: 443, type: vmess, uuid: 74758f06-f4b9-4ef1-a86c-f0a0cc82109f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /aries, ws-headers: {Host: lux.justu.ml}, udp: true}
+  - {name: 大家庭 2, server: 144.24.68.100, port: 50601, type: vmess, uuid: e44f6640-32e1-4867-fece-91cdf1739b71, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 144.24.68.100}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-ms-001
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA
+      - 大家庭
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA 2
+      - 大家庭 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港-ms-001
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA
+      - 大家庭
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA 2
+      - 大家庭 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-ms-001
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA
+      - 大家庭
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA 2
+      - 大家庭 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -44,32 +56,43 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-ms-001
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA
+      - 大家庭
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA 2
+      - 大家庭 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港-ms-001
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港-ms-001
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA
+      - 大家庭
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA 2
+      - 大家庭 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港-ms-001
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA
+      - 大家庭
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA 2
+      - 大家庭 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港-ms-001
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA
+      - 大家庭
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA 2
+      - 大家庭 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -85,7 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港-ms-001
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA
+      - 大家庭
+      - 卢森堡-BuyVM-无限流量-可刷流量/BT/抗DMCA 2
+      - 大家庭 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
