@@ -5,67 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡, server: sg-zf.jiashumao.net, port: 29465, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b, sni: sg-zf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 澳门, server: ma-zf.jiashumao.net, port: 22983, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b, sni: ma-zf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 香港D, server: hkd-zf.jiashumao.net, port: 28481, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b, sni: hkd-zf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 韩国, server: hg.jiashumao.net, port: 34210, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b, sni: hg.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 美国B, server: usb-zf.jiashumao.net, port: 43001, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b, sni: usb-zf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 马来西亚, server: mlxy-zf.jiashumao.net, port: 27171, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b, sni: mlxy-zf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 土耳其, server: trq-zf.jiashumao.net, port: 30606, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b, sni: trq-zf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 越南, server: yn-zf.jiashumao.net, port: 40375, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b, sni: yn-zf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 西班牙, server: xby-zf.jiashumao.net, port: 48501, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b, sni: xby-zf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 美国A, server: usa-zf.jiashumao.net, port: 42001, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b, sni: usa-zf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 印度, server: yd.jiashumao.net, port: 29957, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b, sni: yd.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: VPN-For-China-->milkcat.net, server: seoul.napsternetv.com, port: 443, type: vmess, uuid: C8FF3A76-3148-66F8-F196-74350A69FC27, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: seoul.napsternetv.com}, udp: true}
+  - {name: GetAFreeNode-Frankfurt, server: 213.226.71.174, port: 40443, type: vmess, uuid: C8FF3A76-3148-66F8-F196-74350A69FC27, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡
-      - 澳门
-      - 香港D
-      - 韩国
-      - 美国B
-      - 马来西亚
-      - 土耳其
-      - 越南
-      - 西班牙
-      - 美国A
-      - 印度
+      - VPN-For-China-->milkcat.net
+      - GetAFreeNode-Frankfurt
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡
-      - 澳门
-      - 香港D
-      - 韩国
-      - 美国B
-      - 马来西亚
-      - 土耳其
-      - 越南
-      - 西班牙
-      - 美国A
-      - 印度
+      - VPN-For-China-->milkcat.net
+      - GetAFreeNode-Frankfurt
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡
-      - 澳门
-      - 香港D
-      - 韩国
-      - 美国B
-      - 马来西亚
-      - 土耳其
-      - 越南
-      - 西班牙
-      - 美国A
-      - 印度
+      - VPN-For-China-->milkcat.net
+      - GetAFreeNode-Frankfurt
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,72 +48,35 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡
-      - 澳门
-      - 香港D
-      - 韩国
-      - 美国B
-      - 马来西亚
-      - 土耳其
-      - 越南
-      - 西班牙
-      - 美国A
-      - 印度
+      - VPN-For-China-->milkcat.net
+      - GetAFreeNode-Frankfurt
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港D
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡
-      - 澳门
-      - 香港D
-      - 韩国
-      - 美国B
-      - 马来西亚
-      - 土耳其
-      - 越南
-      - 西班牙
-      - 美国A
-      - 印度
+      - VPN-For-China-->milkcat.net
+      - GetAFreeNode-Frankfurt
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡
-      - 澳门
-      - 香港D
-      - 韩国
-      - 美国B
-      - 马来西亚
-      - 土耳其
-      - 越南
-      - 西班牙
-      - 美国A
-      - 印度
+      - VPN-For-China-->milkcat.net
+      - GetAFreeNode-Frankfurt
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡
-      - 澳门
-      - 香港D
-      - 韩国
-      - 美国B
-      - 马来西亚
-      - 土耳其
-      - 越南
-      - 西班牙
-      - 美国A
-      - 印度
+      - VPN-For-China-->milkcat.net
+      - GetAFreeNode-Frankfurt
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -165,17 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡
-      - 澳门
-      - 香港D
-      - 韩国
-      - 美国B
-      - 马来西亚
-      - 土耳其
-      - 越南
-      - 西班牙
-      - 美国A
-      - 印度
+      - VPN-For-China-->milkcat.net
+      - GetAFreeNode-Frankfurt
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
