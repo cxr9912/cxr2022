@@ -5,51 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: V1-香港02-05丨Trojan丨NETFLIX丨迪士尼, server: hk02.xniuniu888.xyz, port: 30205, type: trojan, password: cd0c924b-1862-3e80-86c5-a8c7898e83a0, sni: hk02.xniuniu888.xyz, skip-cert-verify: true, udp: true}
-  - {name: V1-韩国02-60丨Trojan丨NETFLIX丨迪士尼, server: kr02.xniuniu888.xyz, port: 30260, type: trojan, password: cd0c924b-1862-3e80-86c5-a8c7898e83a0, sni: kr02.xniuniu888.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | F2 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |, server: azgy001.xibai6.top, port: 20789, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E3 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |, server: azgy001.xibai6.top, port: 20786, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: V1-台湾03-41丨Trojan丨NETFLIX丨迪士尼, server: tw03.xniuniu888.xyz, port: 30341, type: trojan, password: cd0c924b-1862-3e80-86c5-a8c7898e83a0, sni: tw03.xniuniu888.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E4 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |, server: azgy001.xibai6.top, port: 20787, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E5 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |, server: azgy001.xibai6.top, port: 20788, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 距离下次重置剩余：23 天, server: hkt2.sfsa.icu, port: 11007, type: ss, cipher: chacha20-ietf-poly1305, password: eac16743-d235-4901-9549-9539850631ab, udp: true}
+  - {name: 美国-直连-公益节点-倍率0.01, server: us-dallas.sfsa.icu, port: 9888, type: ss, cipher: chacha20-ietf-poly1305, password: eac16743-d235-4901-9549-9539850631ab, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V1-香港02-05丨Trojan丨NETFLIX丨迪士尼
-      - V1-韩国02-60丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | F2 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E3 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - V1-台湾03-41丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E4 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E5 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+      - 距离下次重置剩余：23 天
+      - 美国-直连-公益节点-倍率0.01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - V1-香港02-05丨Trojan丨NETFLIX丨迪士尼
-      - V1-韩国02-60丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | F2 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E3 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - V1-台湾03-41丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E4 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E5 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+      - 距离下次重置剩余：23 天
+      - 美国-直连-公益节点-倍率0.01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V1-香港02-05丨Trojan丨NETFLIX丨迪士尼
-      - V1-韩国02-60丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | F2 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E3 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - V1-台湾03-41丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E4 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E5 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+      - 距离下次重置剩余：23 天
+      - 美国-直连-公益节点-倍率0.01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,57 +48,35 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V1-香港02-05丨Trojan丨NETFLIX丨迪士尼
-      - V1-韩国02-60丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | F2 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E3 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - V1-台湾03-41丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E4 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E5 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+      - 距离下次重置剩余：23 天
+      - 美国-直连-公益节点-倍率0.01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - V1-香港02-05丨Trojan丨NETFLIX丨迪士尼
-      - V1-台湾03-41丨Trojan丨NETFLIX丨迪士尼
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - V1-香港02-05丨Trojan丨NETFLIX丨迪士尼
-      - V1-韩国02-60丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | F2 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E3 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - V1-台湾03-41丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E4 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E5 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+      - 距离下次重置剩余：23 天
+      - 美国-直连-公益节点-倍率0.01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - V1-香港02-05丨Trojan丨NETFLIX丨迪士尼
-      - V1-韩国02-60丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | F2 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E3 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - V1-台湾03-41丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E4 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E5 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+      - 距离下次重置剩余：23 天
+      - 美国-直连-公益节点-倍率0.01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V1-香港02-05丨Trojan丨NETFLIX丨迪士尼
-      - V1-韩国02-60丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | F2 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E3 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - V1-台湾03-41丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E4 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E5 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+      - 距离下次重置剩余：23 天
+      - 美国-直连-公益节点-倍率0.01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -134,13 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V1-香港02-05丨Trojan丨NETFLIX丨迪士尼
-      - V1-韩国02-60丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | F2 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E3 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - V1-台湾03-41丨Trojan丨NETFLIX丨迪士尼
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E4 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
-      - 美国 | 2.5x | 簽到可免費使用 | 體驗節點 | E5 | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+      - 距离下次重置剩余：23 天
+      - 美国-直连-公益节点-倍率0.01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
