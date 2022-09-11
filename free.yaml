@@ -5,99 +5,111 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本 A/02 x1.0, server: 117.164.185.220, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
-  - {name: 越南 A/03 x1.0, server: 117.164.185.220, port: 61027, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
-  - {name: 香港 實驗性/01 x0.5, server: 36.138.100.57, port: 21001, type: trojan, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, skip-cert-verify: true, udp: true}
-  - {name: 香港 實驗性/02 x0.5, server: 36.138.100.57, port: 21002, type: trojan, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, skip-cert-verify: true, udp: true}
-  - {name: 越南 A/01 x1.0, server: 117.164.185.220, port: 61025, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
-  - {name: 香港 B/05 x1.0, server: 183.245.146.20, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
-  - {name: 日本 A/01 x1.0, server: 117.164.185.220, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
-  - {name: 香港 B/03 x1.0, server: 183.245.146.20, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
-  - {name: 越南 A/02 x1.0, server: 117.164.185.220, port: 61026, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
-  - {name: 新加坡 實驗性/01 x0.5, server: 36.138.100.57, port: 61001, type: trojan, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 實驗性/02 x0.5, server: 36.138.100.57, port: 61002, type: trojan, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, skip-cert-verify: true, udp: true}
-  - {name: 香港 實驗性/03 x0.5, server: 36.138.100.57, port: 21003, type: trojan, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, skip-cert-verify: true, udp: true}
-  - {name: 泰國 A/01 x1.0, server: 117.164.185.220, port: 61022, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
-  - {name: 美國 IEPL/02 x3.0, server: 117.164.185.222, port: 31002, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
-  - {name: 台灣 A/01 x1.0, server: 117.164.185.220, port: 41001, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
-  - {name: 美國 IEPL/01 x3.0, server: 117.164.185.222, port: 31001, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
-  - {name: 美國 IEPL/03 x3.0, server: 117.164.185.222, port: 31003, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
-  - {name: 美國 B/03 x1.0, server: 183.245.146.20, port: 31003, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
-  - {name: 香港 A/02 x1.0, server: 117.164.185.220, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, udp: true}
+  - {name: v2ray-gz-tw04(台湾Netflix), server: gz.yd01.paopaocloud.cyou, port: 10035, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.tw04.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-gz-hk08(hgc香港Netflix), server: gz.yd01.paopaocloud.cyou, port: 10037, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.hk08.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-gz-hk06(hkt香港Netflix), server: gz.yd01.paopaocloud.cyou, port: 10009, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.hk06.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-gz-hk04(香港Netflix), server: gz.yd01.paopaocloud.cyou, port: 10002, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: paopao.v2.hk04.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-1az-sgp01(新加坡Netflix), server: az.hk01.paopaocloud.cyou, port: 10014, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.sgp01.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-gz-jp02(日本), server: gz.yd01.paopaocloud.cyou, port: 10015, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.jp02.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-1az-tw04(台湾Netflix), server: az.hk01.paopaocloud.cyou, port: 10035, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.tw04.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-gz-jp01(日本Netflix|Abema|...), server: gz.yd01.paopaocloud.cyou, port: 10007, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ssru.v2.jp01.2yun.win}, udp: true}
+  - {name: v2ray-2ah-jp05(日本Netflix|Abema|...), server: ah.yd01.paopaocloud.cyou, port: 10004, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.jp05.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-2ah-tw04(台湾Netflix), server: ah.yd01.paopaocloud.cyou, port: 10035, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.tw04.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-gz-az02(香港), server: gz.yd01.paopaocloud.cyou, port: 10010, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.az01.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-2ah-sgp01(新加坡), server: ah.yd01.paopaocloud.cyou, port: 10014, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.sgp01.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-2ah-jp02(日本Netflix|Abema|...), server: ah.yd01.paopaocloud.cyou, port: 10015, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.jp02.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-1az-az02(香港), server: az.hk01.paopaocloud.cyou, port: 10010, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.az01.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-1az-ru02(俄罗斯netflix), server: az.hk01.paopaocloud.cyou, port: 10031, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ssru.v2.ru02.2yun.win}, udp: true}
+  - {name: v2ray-gz-jp03(日本|新加坡Netflix), server: gz.yd01.paopaocloud.cyou, port: 10033, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ssru.v2.jp03.2yun.win}, udp: true}
+  - {name: v2ray-1az-us06(美国), server: az.hk01.paopaocloud.cyou, port: 10026, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.us06.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-1az-hk03(香港Netflix), server: az.hk01.paopaocloud.cyou, port: 10001, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.hk03.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-1az-jp02(日本Netflix|Abema|...), server: az.hk01.paopaocloud.cyou, port: 10015, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.jp02.paopaocloud.cyou}, udp: true}
+  - {name: v2ray-2ah-jp01(日本), server: ah.yd01.paopaocloud.cyou, port: 10007, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ssru.v2.jp01.2yun.win}, udp: true}
+  - {name: v2ray-1az-jp03(日本|新加坡Netflix), server: az.hk01.paopaocloud.cyou, port: 10033, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ssru.v2.jp03.2yun.win}, udp: true}
+  - {name: v2ray-1az-jp05(日本Netflix|Abema|...), server: az.hk01.paopaocloud.cyou, port: 10004, type: vmess, uuid: 6813034d-284b-36bd-8b7f-bccb9aa5ad25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.jp05.paopaocloud.cyou}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 A/02 x1.0
-      - 越南 A/03 x1.0
-      - 香港 實驗性/01 x0.5
-      - 香港 實驗性/02 x0.5
-      - 越南 A/01 x1.0
-      - 香港 B/05 x1.0
-      - 日本 A/01 x1.0
-      - 香港 B/03 x1.0
-      - 越南 A/02 x1.0
-      - 新加坡 實驗性/01 x0.5
-      - 新加坡 實驗性/02 x0.5
-      - 香港 實驗性/03 x0.5
-      - 泰國 A/01 x1.0
-      - 美國 IEPL/02 x3.0
-      - 台灣 A/01 x1.0
-      - 美國 IEPL/01 x3.0
-      - 美國 IEPL/03 x3.0
-      - 美國 B/03 x1.0
-      - 香港 A/02 x1.0
+      - v2ray-gz-tw04(台湾Netflix)
+      - v2ray-gz-hk08(hgc香港Netflix)
+      - v2ray-gz-hk06(hkt香港Netflix)
+      - v2ray-gz-hk04(香港Netflix)
+      - v2ray-1az-sgp01(新加坡Netflix)
+      - v2ray-gz-jp02(日本)
+      - v2ray-1az-tw04(台湾Netflix)
+      - v2ray-gz-jp01(日本Netflix|Abema|...)
+      - v2ray-2ah-jp05(日本Netflix|Abema|...)
+      - v2ray-2ah-tw04(台湾Netflix)
+      - v2ray-gz-az02(香港)
+      - v2ray-2ah-sgp01(新加坡)
+      - v2ray-2ah-jp02(日本Netflix|Abema|...)
+      - v2ray-1az-az02(香港)
+      - v2ray-1az-ru02(俄罗斯netflix)
+      - v2ray-gz-jp03(日本|新加坡Netflix)
+      - v2ray-1az-us06(美国)
+      - v2ray-1az-hk03(香港Netflix)
+      - v2ray-1az-jp02(日本Netflix|Abema|...)
+      - v2ray-2ah-jp01(日本)
+      - v2ray-1az-jp03(日本|新加坡Netflix)
+      - v2ray-1az-jp05(日本Netflix|Abema|...)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本 A/02 x1.0
-      - 越南 A/03 x1.0
-      - 香港 實驗性/01 x0.5
-      - 香港 實驗性/02 x0.5
-      - 越南 A/01 x1.0
-      - 香港 B/05 x1.0
-      - 日本 A/01 x1.0
-      - 香港 B/03 x1.0
-      - 越南 A/02 x1.0
-      - 新加坡 實驗性/01 x0.5
-      - 新加坡 實驗性/02 x0.5
-      - 香港 實驗性/03 x0.5
-      - 泰國 A/01 x1.0
-      - 美國 IEPL/02 x3.0
-      - 台灣 A/01 x1.0
-      - 美國 IEPL/01 x3.0
-      - 美國 IEPL/03 x3.0
-      - 美國 B/03 x1.0
-      - 香港 A/02 x1.0
+      - v2ray-gz-tw04(台湾Netflix)
+      - v2ray-gz-hk08(hgc香港Netflix)
+      - v2ray-gz-hk06(hkt香港Netflix)
+      - v2ray-gz-hk04(香港Netflix)
+      - v2ray-1az-sgp01(新加坡Netflix)
+      - v2ray-gz-jp02(日本)
+      - v2ray-1az-tw04(台湾Netflix)
+      - v2ray-gz-jp01(日本Netflix|Abema|...)
+      - v2ray-2ah-jp05(日本Netflix|Abema|...)
+      - v2ray-2ah-tw04(台湾Netflix)
+      - v2ray-gz-az02(香港)
+      - v2ray-2ah-sgp01(新加坡)
+      - v2ray-2ah-jp02(日本Netflix|Abema|...)
+      - v2ray-1az-az02(香港)
+      - v2ray-1az-ru02(俄罗斯netflix)
+      - v2ray-gz-jp03(日本|新加坡Netflix)
+      - v2ray-1az-us06(美国)
+      - v2ray-1az-hk03(香港Netflix)
+      - v2ray-1az-jp02(日本Netflix|Abema|...)
+      - v2ray-2ah-jp01(日本)
+      - v2ray-1az-jp03(日本|新加坡Netflix)
+      - v2ray-1az-jp05(日本Netflix|Abema|...)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 A/02 x1.0
-      - 越南 A/03 x1.0
-      - 香港 實驗性/01 x0.5
-      - 香港 實驗性/02 x0.5
-      - 越南 A/01 x1.0
-      - 香港 B/05 x1.0
-      - 日本 A/01 x1.0
-      - 香港 B/03 x1.0
-      - 越南 A/02 x1.0
-      - 新加坡 實驗性/01 x0.5
-      - 新加坡 實驗性/02 x0.5
-      - 香港 實驗性/03 x0.5
-      - 泰國 A/01 x1.0
-      - 美國 IEPL/02 x3.0
-      - 台灣 A/01 x1.0
-      - 美國 IEPL/01 x3.0
-      - 美國 IEPL/03 x3.0
-      - 美國 B/03 x1.0
-      - 香港 A/02 x1.0
+      - v2ray-gz-tw04(台湾Netflix)
+      - v2ray-gz-hk08(hgc香港Netflix)
+      - v2ray-gz-hk06(hkt香港Netflix)
+      - v2ray-gz-hk04(香港Netflix)
+      - v2ray-1az-sgp01(新加坡Netflix)
+      - v2ray-gz-jp02(日本)
+      - v2ray-1az-tw04(台湾Netflix)
+      - v2ray-gz-jp01(日本Netflix|Abema|...)
+      - v2ray-2ah-jp05(日本Netflix|Abema|...)
+      - v2ray-2ah-tw04(台湾Netflix)
+      - v2ray-gz-az02(香港)
+      - v2ray-2ah-sgp01(新加坡)
+      - v2ray-2ah-jp02(日本Netflix|Abema|...)
+      - v2ray-1az-az02(香港)
+      - v2ray-1az-ru02(俄罗斯netflix)
+      - v2ray-gz-jp03(日本|新加坡Netflix)
+      - v2ray-1az-us06(美国)
+      - v2ray-1az-hk03(香港Netflix)
+      - v2ray-1az-jp02(日本Netflix|Abema|...)
+      - v2ray-2ah-jp01(日本)
+      - v2ray-1az-jp03(日本|新加坡Netflix)
+      - v2ray-1az-jp05(日本Netflix|Abema|...)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -116,110 +128,124 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 A/02 x1.0
-      - 越南 A/03 x1.0
-      - 香港 實驗性/01 x0.5
-      - 香港 實驗性/02 x0.5
-      - 越南 A/01 x1.0
-      - 香港 B/05 x1.0
-      - 日本 A/01 x1.0
-      - 香港 B/03 x1.0
-      - 越南 A/02 x1.0
-      - 新加坡 實驗性/01 x0.5
-      - 新加坡 實驗性/02 x0.5
-      - 香港 實驗性/03 x0.5
-      - 泰國 A/01 x1.0
-      - 美國 IEPL/02 x3.0
-      - 台灣 A/01 x1.0
-      - 美國 IEPL/01 x3.0
-      - 美國 IEPL/03 x3.0
-      - 美國 B/03 x1.0
-      - 香港 A/02 x1.0
+      - v2ray-gz-tw04(台湾Netflix)
+      - v2ray-gz-hk08(hgc香港Netflix)
+      - v2ray-gz-hk06(hkt香港Netflix)
+      - v2ray-gz-hk04(香港Netflix)
+      - v2ray-1az-sgp01(新加坡Netflix)
+      - v2ray-gz-jp02(日本)
+      - v2ray-1az-tw04(台湾Netflix)
+      - v2ray-gz-jp01(日本Netflix|Abema|...)
+      - v2ray-2ah-jp05(日本Netflix|Abema|...)
+      - v2ray-2ah-tw04(台湾Netflix)
+      - v2ray-gz-az02(香港)
+      - v2ray-2ah-sgp01(新加坡)
+      - v2ray-2ah-jp02(日本Netflix|Abema|...)
+      - v2ray-1az-az02(香港)
+      - v2ray-1az-ru02(俄罗斯netflix)
+      - v2ray-gz-jp03(日本|新加坡Netflix)
+      - v2ray-1az-us06(美国)
+      - v2ray-1az-hk03(香港Netflix)
+      - v2ray-1az-jp02(日本Netflix|Abema|...)
+      - v2ray-2ah-jp01(日本)
+      - v2ray-1az-jp03(日本|新加坡Netflix)
+      - v2ray-1az-jp05(日本Netflix|Abema|...)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 實驗性/01 x0.5
-      - 香港 實驗性/02 x0.5
-      - 香港 B/05 x1.0
-      - 香港 B/03 x1.0
-      - 香港 實驗性/03 x0.5
-      - 台灣 A/01 x1.0
-      - 香港 A/02 x1.0
+      - v2ray-gz-tw04(台湾Netflix)
+      - v2ray-gz-hk08(hgc香港Netflix)
+      - v2ray-gz-hk06(hkt香港Netflix)
+      - v2ray-gz-hk04(香港Netflix)
+      - v2ray-1az-tw04(台湾Netflix)
+      - v2ray-2ah-tw04(台湾Netflix)
+      - v2ray-gz-az02(香港)
+      - v2ray-1az-az02(香港)
+      - v2ray-1az-hk03(香港Netflix)
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本 A/02 x1.0
-      - 越南 A/03 x1.0
-      - 香港 實驗性/01 x0.5
-      - 香港 實驗性/02 x0.5
-      - 越南 A/01 x1.0
-      - 香港 B/05 x1.0
-      - 日本 A/01 x1.0
-      - 香港 B/03 x1.0
-      - 越南 A/02 x1.0
-      - 新加坡 實驗性/01 x0.5
-      - 新加坡 實驗性/02 x0.5
-      - 香港 實驗性/03 x0.5
-      - 泰國 A/01 x1.0
-      - 美國 IEPL/02 x3.0
-      - 台灣 A/01 x1.0
-      - 美國 IEPL/01 x3.0
-      - 美國 IEPL/03 x3.0
-      - 美國 B/03 x1.0
-      - 香港 A/02 x1.0
+      - v2ray-gz-tw04(台湾Netflix)
+      - v2ray-gz-hk08(hgc香港Netflix)
+      - v2ray-gz-hk06(hkt香港Netflix)
+      - v2ray-gz-hk04(香港Netflix)
+      - v2ray-1az-sgp01(新加坡Netflix)
+      - v2ray-gz-jp02(日本)
+      - v2ray-1az-tw04(台湾Netflix)
+      - v2ray-gz-jp01(日本Netflix|Abema|...)
+      - v2ray-2ah-jp05(日本Netflix|Abema|...)
+      - v2ray-2ah-tw04(台湾Netflix)
+      - v2ray-gz-az02(香港)
+      - v2ray-2ah-sgp01(新加坡)
+      - v2ray-2ah-jp02(日本Netflix|Abema|...)
+      - v2ray-1az-az02(香港)
+      - v2ray-1az-ru02(俄罗斯netflix)
+      - v2ray-gz-jp03(日本|新加坡Netflix)
+      - v2ray-1az-us06(美国)
+      - v2ray-1az-hk03(香港Netflix)
+      - v2ray-1az-jp02(日本Netflix|Abema|...)
+      - v2ray-2ah-jp01(日本)
+      - v2ray-1az-jp03(日本|新加坡Netflix)
+      - v2ray-1az-jp05(日本Netflix|Abema|...)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本 A/02 x1.0
-      - 越南 A/03 x1.0
-      - 香港 實驗性/01 x0.5
-      - 香港 實驗性/02 x0.5
-      - 越南 A/01 x1.0
-      - 香港 B/05 x1.0
-      - 日本 A/01 x1.0
-      - 香港 B/03 x1.0
-      - 越南 A/02 x1.0
-      - 新加坡 實驗性/01 x0.5
-      - 新加坡 實驗性/02 x0.5
-      - 香港 實驗性/03 x0.5
-      - 泰國 A/01 x1.0
-      - 美國 IEPL/02 x3.0
-      - 台灣 A/01 x1.0
-      - 美國 IEPL/01 x3.0
-      - 美國 IEPL/03 x3.0
-      - 美國 B/03 x1.0
-      - 香港 A/02 x1.0
+      - v2ray-gz-tw04(台湾Netflix)
+      - v2ray-gz-hk08(hgc香港Netflix)
+      - v2ray-gz-hk06(hkt香港Netflix)
+      - v2ray-gz-hk04(香港Netflix)
+      - v2ray-1az-sgp01(新加坡Netflix)
+      - v2ray-gz-jp02(日本)
+      - v2ray-1az-tw04(台湾Netflix)
+      - v2ray-gz-jp01(日本Netflix|Abema|...)
+      - v2ray-2ah-jp05(日本Netflix|Abema|...)
+      - v2ray-2ah-tw04(台湾Netflix)
+      - v2ray-gz-az02(香港)
+      - v2ray-2ah-sgp01(新加坡)
+      - v2ray-2ah-jp02(日本Netflix|Abema|...)
+      - v2ray-1az-az02(香港)
+      - v2ray-1az-ru02(俄罗斯netflix)
+      - v2ray-gz-jp03(日本|新加坡Netflix)
+      - v2ray-1az-us06(美国)
+      - v2ray-1az-hk03(香港Netflix)
+      - v2ray-1az-jp02(日本Netflix|Abema|...)
+      - v2ray-2ah-jp01(日本)
+      - v2ray-1az-jp03(日本|新加坡Netflix)
+      - v2ray-1az-jp05(日本Netflix|Abema|...)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 A/02 x1.0
-      - 越南 A/03 x1.0
-      - 香港 實驗性/01 x0.5
-      - 香港 實驗性/02 x0.5
-      - 越南 A/01 x1.0
-      - 香港 B/05 x1.0
-      - 日本 A/01 x1.0
-      - 香港 B/03 x1.0
-      - 越南 A/02 x1.0
-      - 新加坡 實驗性/01 x0.5
-      - 新加坡 實驗性/02 x0.5
-      - 香港 實驗性/03 x0.5
-      - 泰國 A/01 x1.0
-      - 美國 IEPL/02 x3.0
-      - 台灣 A/01 x1.0
-      - 美國 IEPL/01 x3.0
-      - 美國 IEPL/03 x3.0
-      - 美國 B/03 x1.0
-      - 香港 A/02 x1.0
+      - v2ray-gz-tw04(台湾Netflix)
+      - v2ray-gz-hk08(hgc香港Netflix)
+      - v2ray-gz-hk06(hkt香港Netflix)
+      - v2ray-gz-hk04(香港Netflix)
+      - v2ray-1az-sgp01(新加坡Netflix)
+      - v2ray-gz-jp02(日本)
+      - v2ray-1az-tw04(台湾Netflix)
+      - v2ray-gz-jp01(日本Netflix|Abema|...)
+      - v2ray-2ah-jp05(日本Netflix|Abema|...)
+      - v2ray-2ah-tw04(台湾Netflix)
+      - v2ray-gz-az02(香港)
+      - v2ray-2ah-sgp01(新加坡)
+      - v2ray-2ah-jp02(日本Netflix|Abema|...)
+      - v2ray-1az-az02(香港)
+      - v2ray-1az-ru02(俄罗斯netflix)
+      - v2ray-gz-jp03(日本|新加坡Netflix)
+      - v2ray-1az-us06(美国)
+      - v2ray-1az-hk03(香港Netflix)
+      - v2ray-1az-jp02(日本Netflix|Abema|...)
+      - v2ray-2ah-jp01(日本)
+      - v2ray-1az-jp03(日本|新加坡Netflix)
+      - v2ray-1az-jp05(日本Netflix|Abema|...)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -235,25 +261,28 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 A/02 x1.0
-      - 越南 A/03 x1.0
-      - 香港 實驗性/01 x0.5
-      - 香港 實驗性/02 x0.5
-      - 越南 A/01 x1.0
-      - 香港 B/05 x1.0
-      - 日本 A/01 x1.0
-      - 香港 B/03 x1.0
-      - 越南 A/02 x1.0
-      - 新加坡 實驗性/01 x0.5
-      - 新加坡 實驗性/02 x0.5
-      - 香港 實驗性/03 x0.5
-      - 泰國 A/01 x1.0
-      - 美國 IEPL/02 x3.0
-      - 台灣 A/01 x1.0
-      - 美國 IEPL/01 x3.0
-      - 美國 IEPL/03 x3.0
-      - 美國 B/03 x1.0
-      - 香港 A/02 x1.0
+      - v2ray-gz-tw04(台湾Netflix)
+      - v2ray-gz-hk08(hgc香港Netflix)
+      - v2ray-gz-hk06(hkt香港Netflix)
+      - v2ray-gz-hk04(香港Netflix)
+      - v2ray-1az-sgp01(新加坡Netflix)
+      - v2ray-gz-jp02(日本)
+      - v2ray-1az-tw04(台湾Netflix)
+      - v2ray-gz-jp01(日本Netflix|Abema|...)
+      - v2ray-2ah-jp05(日本Netflix|Abema|...)
+      - v2ray-2ah-tw04(台湾Netflix)
+      - v2ray-gz-az02(香港)
+      - v2ray-2ah-sgp01(新加坡)
+      - v2ray-2ah-jp02(日本Netflix|Abema|...)
+      - v2ray-1az-az02(香港)
+      - v2ray-1az-ru02(俄罗斯netflix)
+      - v2ray-gz-jp03(日本|新加坡Netflix)
+      - v2ray-1az-us06(美国)
+      - v2ray-1az-hk03(香港Netflix)
+      - v2ray-1az-jp02(日本Netflix|Abema|...)
+      - v2ray-2ah-jp01(日本)
+      - v2ray-1az-jp03(日本|新加坡Netflix)
+      - v2ray-1az-jp05(日本Netflix|Abema|...)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
