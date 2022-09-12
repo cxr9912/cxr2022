@@ -5,47 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "0.1x[IEPL]NT 🇺🇦 Ukraine Odessa[D ]", server: ie.ednovas.cloud, port: 22080, type: vmess, uuid: 0b7ec752-e180-4984-9b9e-8361cb7c8d35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国专线04, server: c90s1.jamjams3.net, port: 19623, type: ss, cipher: aes-256-gcm, password: wpfgqbrTF7aEyWq3, udp: true}
-  - {name: 美国专线02, server: c90s3.jamjams3.net, port: 19623, type: vmess, uuid: b03a1e7b-f1ad-4d0e-895d-639354e35ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国专线01, server: c90s4.jamjams3.net, port: 19623, type: vmess, uuid: b03a1e7b-f1ad-4d0e-895d-639354e35ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[测试-CT]美国•0x", server: 45.33.57.17, port: 443, type: trojan, password: a1e12464-9208-4583-bd21-ab6889fdd242, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 韩国专线01, server: c90s5.jamjams3.net, port: 19623, type: vmess, uuid: b03a1e7b-f1ad-4d0e-895d-639354e35ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 B/02 x1.0, server: 117.164.185.220, port: 61002, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 B/02 x1.0, server: 117.164.185.220, port: 11002, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 A/01 x1.0, server: 36.138.100.57, port: 61001, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 韩国-优化2, server: m.lwvzmdu.cn, port: 16619, type: vmess, uuid: 64727164-7bba-41e0-a6c2-32cbd6d3638f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
+  - {name: "日本04{联通}", server: cu.awslcn.cc, port: 25220, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: 新加坡 B/01 x1.0, server: 117.164.185.220, port: 61001, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: "马来01{移动}", server: cm.awslcn.cc, port: 25228, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: 香港 C/01 x1.0, server: 183.245.146.20, port: 21001, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 C/02 x1.0, server: 183.245.146.20, port: 21002, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: TG频道@jsnzk, server: pf.freev2r.xyz, port: 12222, type: trojan, password: e723d01e-130d-4e66-955b-9f964c9c9770, sni: nt3.freev2r.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 0.1x[IEPL]NT 🇺🇦 Ukraine Odessa[D ]
-      - 美国专线04
-      - 美国专线02
-      - 美国专线01
-      - "[测试-CT]美国•0x"
-      - 韩国专线01
+      - 新加坡 B/02 x1.0
+      - 日本 B/02 x1.0
+      - 新加坡 A/01 x1.0
+      - 韩国-优化2
+      - 日本04{联通}
+      - 新加坡 B/01 x1.0
+      - 马来01{移动}
+      - 香港 C/01 x1.0
+      - 香港 C/02 x1.0
+      - TG频道@jsnzk
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 0.1x[IEPL]NT 🇺🇦 Ukraine Odessa[D ]
-      - 美国专线04
-      - 美国专线02
-      - 美国专线01
-      - "[测试-CT]美国•0x"
-      - 韩国专线01
+      - 新加坡 B/02 x1.0
+      - 日本 B/02 x1.0
+      - 新加坡 A/01 x1.0
+      - 韩国-优化2
+      - 日本04{联通}
+      - 新加坡 B/01 x1.0
+      - 马来01{移动}
+      - 香港 C/01 x1.0
+      - 香港 C/02 x1.0
+      - TG频道@jsnzk
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 0.1x[IEPL]NT 🇺🇦 Ukraine Odessa[D ]
-      - 美国专线04
-      - 美国专线02
-      - 美国专线01
-      - "[测试-CT]美国•0x"
-      - 韩国专线01
+      - 新加坡 B/02 x1.0
+      - 日本 B/02 x1.0
+      - 新加坡 A/01 x1.0
+      - 韩国-优化2
+      - 日本04{联通}
+      - 新加坡 B/01 x1.0
+      - 马来01{移动}
+      - 香港 C/01 x1.0
+      - 香港 C/02 x1.0
+      - TG频道@jsnzk
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,51 +80,69 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 0.1x[IEPL]NT 🇺🇦 Ukraine Odessa[D ]
-      - 美国专线04
-      - 美国专线02
-      - 美国专线01
-      - "[测试-CT]美国•0x"
-      - 韩国专线01
+      - 新加坡 B/02 x1.0
+      - 日本 B/02 x1.0
+      - 新加坡 A/01 x1.0
+      - 韩国-优化2
+      - 日本04{联通}
+      - 新加坡 B/01 x1.0
+      - 马来01{移动}
+      - 香港 C/01 x1.0
+      - 香港 C/02 x1.0
+      - TG频道@jsnzk
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 C/01 x1.0
+      - 香港 C/02 x1.0
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 0.1x[IEPL]NT 🇺🇦 Ukraine Odessa[D ]
-      - 美国专线04
-      - 美国专线02
-      - 美国专线01
-      - "[测试-CT]美国•0x"
-      - 韩国专线01
+      - 新加坡 B/02 x1.0
+      - 日本 B/02 x1.0
+      - 新加坡 A/01 x1.0
+      - 韩国-优化2
+      - 日本04{联通}
+      - 新加坡 B/01 x1.0
+      - 马来01{移动}
+      - 香港 C/01 x1.0
+      - 香港 C/02 x1.0
+      - TG频道@jsnzk
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 0.1x[IEPL]NT 🇺🇦 Ukraine Odessa[D ]
-      - 美国专线04
-      - 美国专线02
-      - 美国专线01
-      - "[测试-CT]美国•0x"
-      - 韩国专线01
+      - 新加坡 B/02 x1.0
+      - 日本 B/02 x1.0
+      - 新加坡 A/01 x1.0
+      - 韩国-优化2
+      - 日本04{联通}
+      - 新加坡 B/01 x1.0
+      - 马来01{移动}
+      - 香港 C/01 x1.0
+      - 香港 C/02 x1.0
+      - TG频道@jsnzk
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 0.1x[IEPL]NT 🇺🇦 Ukraine Odessa[D ]
-      - 美国专线04
-      - 美国专线02
-      - 美国专线01
-      - "[测试-CT]美国•0x"
-      - 韩国专线01
+      - 新加坡 B/02 x1.0
+      - 日本 B/02 x1.0
+      - 新加坡 A/01 x1.0
+      - 韩国-优化2
+      - 日本04{联通}
+      - 新加坡 B/01 x1.0
+      - 马来01{移动}
+      - 香港 C/01 x1.0
+      - 香港 C/02 x1.0
+      - TG频道@jsnzk
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,12 +158,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 0.1x[IEPL]NT 🇺🇦 Ukraine Odessa[D ]
-      - 美国专线04
-      - 美国专线02
-      - 美国专线01
-      - "[测试-CT]美国•0x"
-      - 韩国专线01
+      - 新加坡 B/02 x1.0
+      - 日本 B/02 x1.0
+      - 新加坡 A/01 x1.0
+      - 韩国-优化2
+      - 日本04{联通}
+      - 新加坡 B/01 x1.0
+      - 马来01{移动}
+      - 香港 C/01 x1.0
+      - 香港 C/02 x1.0
+      - TG频道@jsnzk
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
