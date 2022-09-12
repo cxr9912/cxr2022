@@ -5,59 +5,151 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新竹Seedn, server: 36.139.166.76, port: 19212, type: trojan, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
-  - {name: 新竹Seednet-dip, server: 183.232.141.154, port: 19214, type: trojan, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
-  - {name: 新竹S, server: 36.139.166.76, port: 19214, type: trojan, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
-  - {name: 新竹Seednet-dip 2, server: 36.139.166.76, port: 19213, type: trojan, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
-  - {name: Alien, server: c90s4.jamjams3.net, port: 19623, type: vmess, uuid: b03a1e7b-f1ad-4d0e-895d-639354e35ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港dsg, server: 20.239.188.10, port: 20726, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, skip-cert-verify: true, udp: true}
-  - {name: Alien 2, server: ie.ednovas.cloud, port: 22080, type: vmess, uuid: 0b7ec752-e180-4984-9b9e-8361cb7c8d35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 3, server: c90s3.jamjams3.net, port: 19623, type: vmess, uuid: b03a1e7b-f1ad-4d0e-895d-639354e35ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 4, server: c90s5.jamjams3.net, port: 19623, type: vmess, uuid: b03a1e7b-f1ad-4d0e-895d-639354e35ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "香港05{移动}", server: cm.awslcn.cc, port: 25244, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "台湾①{移动}", server: cm.awslcn.cc, port: 25232, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "台湾01{移动}", server: cm.awslcn.cc, port: 25233, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "印度01{移动}", server: cm.awslcn.cc, port: 25216, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "日本02{移动}", server: cm.awslcn.cc, port: 25237, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "香港01{移动}", server: cm.awslcn.cc, port: 25242, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "日本03{移动}", server: cm.awslcn.cc, port: 25220, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "台湾②{联通}", server: cu.awslcn.cc, port: 25232, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: "香港02{联通}", server: cu.awslcn.cc, port: 25242, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: "马来01{移动}", server: cm.awslcn.cc, port: 25228, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "日本04{联通}", server: cu.awslcn.cc, port: 25220, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: "韩国02{联通}", server: cu.awslcn.cc, port: 25218, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: "新加坡06{移动}", server: cm.awslcn.cc, port: 25246, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "德国01{移动}", server: cm.awslcn.cc, port: 25241, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "日本05{移动}", server: cm.awslcn.cc, port: 25219, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "新加坡05{移动}", server: cm.awslcn.cc, port: 25221, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "德国02{联通}", server: cu.awslcn.cc, port: 25241, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: "美国01{移动}", server: cm.awslcn.cc, port: 25239, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "新加坡03{移动}", server: cm.awslcn.cc, port: 25245, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "美国04{联通}", server: cu.awslcn.cc, port: 25238, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: "台湾02{联通}", server: cu.awslcn.cc, port: 25233, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: "印度02{联通}", server: cu.awslcn.cc, port: 25216, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: "新加坡04{移动}", server: cm.awslcn.cc, port: 25243, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "新加坡02{联通}", server: cu.awslcn.cc, port: 25225, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: "新加坡01{移动}", server: cm.awslcn.cc, port: 25225, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "美国03{移动}", server: cm.awslcn.cc, port: 25238, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "俄罗斯①{移动}", server: cm.awslcn.cc, port: 25230, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "日本06{联通}", server: cu.awslcn.cc, port: 25219, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: "日本01{联通}", server: cu.awslcn.cc, port: 25237, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: "英国{联通}", server: cu.awslcn.cc, port: 25240, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: "美国02{联通}", server: cu.awslcn.cc, port: 25239, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: "马来02{联通}", server: cu.awslcn.cc, port: 25228, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新竹Seedn
-      - 新竹Seednet-dip
-      - 新竹S
-      - 新竹Seednet-dip 2
-      - Alien
-      - 香港dsg
-      - Alien 2
-      - Alien 3
-      - Alien 4
+      - 香港05{移动}
+      - 台湾①{移动}
+      - 台湾01{移动}
+      - 印度01{移动}
+      - 日本02{移动}
+      - 香港01{移动}
+      - 日本03{移动}
+      - 台湾②{联通}
+      - 香港02{联通}
+      - 马来01{移动}
+      - 日本04{联通}
+      - 韩国02{联通}
+      - 新加坡06{移动}
+      - 德国01{移动}
+      - 日本05{移动}
+      - 新加坡05{移动}
+      - 德国02{联通}
+      - 美国01{移动}
+      - 新加坡03{移动}
+      - 美国04{联通}
+      - 台湾02{联通}
+      - 印度02{联通}
+      - 新加坡04{移动}
+      - 新加坡02{联通}
+      - 新加坡01{移动}
+      - 美国03{移动}
+      - 俄罗斯①{移动}
+      - 日本06{联通}
+      - 日本01{联通}
+      - 英国{联通}
+      - 美国02{联通}
+      - 马来02{联通}
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新竹Seedn
-      - 新竹Seednet-dip
-      - 新竹S
-      - 新竹Seednet-dip 2
-      - Alien
-      - 香港dsg
-      - Alien 2
-      - Alien 3
-      - Alien 4
+      - 香港05{移动}
+      - 台湾①{移动}
+      - 台湾01{移动}
+      - 印度01{移动}
+      - 日本02{移动}
+      - 香港01{移动}
+      - 日本03{移动}
+      - 台湾②{联通}
+      - 香港02{联通}
+      - 马来01{移动}
+      - 日本04{联通}
+      - 韩国02{联通}
+      - 新加坡06{移动}
+      - 德国01{移动}
+      - 日本05{移动}
+      - 新加坡05{移动}
+      - 德国02{联通}
+      - 美国01{移动}
+      - 新加坡03{移动}
+      - 美国04{联通}
+      - 台湾02{联通}
+      - 印度02{联通}
+      - 新加坡04{移动}
+      - 新加坡02{联通}
+      - 新加坡01{移动}
+      - 美国03{移动}
+      - 俄罗斯①{移动}
+      - 日本06{联通}
+      - 日本01{联通}
+      - 英国{联通}
+      - 美国02{联通}
+      - 马来02{联通}
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新竹Seedn
-      - 新竹Seednet-dip
-      - 新竹S
-      - 新竹Seednet-dip 2
-      - Alien
-      - 香港dsg
-      - Alien 2
-      - Alien 3
-      - Alien 4
+      - 香港05{移动}
+      - 台湾①{移动}
+      - 台湾01{移动}
+      - 印度01{移动}
+      - 日本02{移动}
+      - 香港01{移动}
+      - 日本03{移动}
+      - 台湾②{联通}
+      - 香港02{联通}
+      - 马来01{移动}
+      - 日本04{联通}
+      - 韩国02{联通}
+      - 新加坡06{移动}
+      - 德国01{移动}
+      - 日本05{移动}
+      - 新加坡05{移动}
+      - 德国02{联通}
+      - 美国01{移动}
+      - 新加坡03{移动}
+      - 美国04{联通}
+      - 台湾02{联通}
+      - 印度02{联通}
+      - 新加坡04{移动}
+      - 新加坡02{联通}
+      - 新加坡01{移动}
+      - 美国03{移动}
+      - 俄罗斯①{移动}
+      - 日本06{联通}
+      - 日本01{联通}
+      - 英国{联通}
+      - 美国02{联通}
+      - 马来02{联通}
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,64 +168,162 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新竹Seedn
-      - 新竹Seednet-dip
-      - 新竹S
-      - 新竹Seednet-dip 2
-      - Alien
-      - 香港dsg
-      - Alien 2
-      - Alien 3
-      - Alien 4
+      - 香港05{移动}
+      - 台湾①{移动}
+      - 台湾01{移动}
+      - 印度01{移动}
+      - 日本02{移动}
+      - 香港01{移动}
+      - 日本03{移动}
+      - 台湾②{联通}
+      - 香港02{联通}
+      - 马来01{移动}
+      - 日本04{联通}
+      - 韩国02{联通}
+      - 新加坡06{移动}
+      - 德国01{移动}
+      - 日本05{移动}
+      - 新加坡05{移动}
+      - 德国02{联通}
+      - 美国01{移动}
+      - 新加坡03{移动}
+      - 美国04{联通}
+      - 台湾02{联通}
+      - 印度02{联通}
+      - 新加坡04{移动}
+      - 新加坡02{联通}
+      - 新加坡01{移动}
+      - 美国03{移动}
+      - 俄罗斯①{移动}
+      - 日本06{联通}
+      - 日本01{联通}
+      - 英国{联通}
+      - 美国02{联通}
+      - 马来02{联通}
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港dsg
+      - 香港05{移动}
+      - 台湾①{移动}
+      - 台湾01{移动}
+      - 香港01{移动}
+      - 台湾②{联通}
+      - 香港02{联通}
+      - 台湾02{联通}
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新竹Seedn
-      - 新竹Seednet-dip
-      - 新竹S
-      - 新竹Seednet-dip 2
-      - Alien
-      - 香港dsg
-      - Alien 2
-      - Alien 3
-      - Alien 4
+      - 香港05{移动}
+      - 台湾①{移动}
+      - 台湾01{移动}
+      - 印度01{移动}
+      - 日本02{移动}
+      - 香港01{移动}
+      - 日本03{移动}
+      - 台湾②{联通}
+      - 香港02{联通}
+      - 马来01{移动}
+      - 日本04{联通}
+      - 韩国02{联通}
+      - 新加坡06{移动}
+      - 德国01{移动}
+      - 日本05{移动}
+      - 新加坡05{移动}
+      - 德国02{联通}
+      - 美国01{移动}
+      - 新加坡03{移动}
+      - 美国04{联通}
+      - 台湾02{联通}
+      - 印度02{联通}
+      - 新加坡04{移动}
+      - 新加坡02{联通}
+      - 新加坡01{移动}
+      - 美国03{移动}
+      - 俄罗斯①{移动}
+      - 日本06{联通}
+      - 日本01{联通}
+      - 英国{联通}
+      - 美国02{联通}
+      - 马来02{联通}
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新竹Seedn
-      - 新竹Seednet-dip
-      - 新竹S
-      - 新竹Seednet-dip 2
-      - Alien
-      - 香港dsg
-      - Alien 2
-      - Alien 3
-      - Alien 4
+      - 香港05{移动}
+      - 台湾①{移动}
+      - 台湾01{移动}
+      - 印度01{移动}
+      - 日本02{移动}
+      - 香港01{移动}
+      - 日本03{移动}
+      - 台湾②{联通}
+      - 香港02{联通}
+      - 马来01{移动}
+      - 日本04{联通}
+      - 韩国02{联通}
+      - 新加坡06{移动}
+      - 德国01{移动}
+      - 日本05{移动}
+      - 新加坡05{移动}
+      - 德国02{联通}
+      - 美国01{移动}
+      - 新加坡03{移动}
+      - 美国04{联通}
+      - 台湾02{联通}
+      - 印度02{联通}
+      - 新加坡04{移动}
+      - 新加坡02{联通}
+      - 新加坡01{移动}
+      - 美国03{移动}
+      - 俄罗斯①{移动}
+      - 日本06{联通}
+      - 日本01{联通}
+      - 英国{联通}
+      - 美国02{联通}
+      - 马来02{联通}
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新竹Seedn
-      - 新竹Seednet-dip
-      - 新竹S
-      - 新竹Seednet-dip 2
-      - Alien
-      - 香港dsg
-      - Alien 2
-      - Alien 3
-      - Alien 4
+      - 香港05{移动}
+      - 台湾①{移动}
+      - 台湾01{移动}
+      - 印度01{移动}
+      - 日本02{移动}
+      - 香港01{移动}
+      - 日本03{移动}
+      - 台湾②{联通}
+      - 香港02{联通}
+      - 马来01{移动}
+      - 日本04{联通}
+      - 韩国02{联通}
+      - 新加坡06{移动}
+      - 德国01{移动}
+      - 日本05{移动}
+      - 新加坡05{移动}
+      - 德国02{联通}
+      - 美国01{移动}
+      - 新加坡03{移动}
+      - 美国04{联通}
+      - 台湾02{联通}
+      - 印度02{联通}
+      - 新加坡04{移动}
+      - 新加坡02{联通}
+      - 新加坡01{移动}
+      - 美国03{移动}
+      - 俄罗斯①{移动}
+      - 日本06{联通}
+      - 日本01{联通}
+      - 英国{联通}
+      - 美国02{联通}
+      - 马来02{联通}
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -149,15 +339,38 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新竹Seedn
-      - 新竹Seednet-dip
-      - 新竹S
-      - 新竹Seednet-dip 2
-      - Alien
-      - 香港dsg
-      - Alien 2
-      - Alien 3
-      - Alien 4
+      - 香港05{移动}
+      - 台湾①{移动}
+      - 台湾01{移动}
+      - 印度01{移动}
+      - 日本02{移动}
+      - 香港01{移动}
+      - 日本03{移动}
+      - 台湾②{联通}
+      - 香港02{联通}
+      - 马来01{移动}
+      - 日本04{联通}
+      - 韩国02{联通}
+      - 新加坡06{移动}
+      - 德国01{移动}
+      - 日本05{移动}
+      - 新加坡05{移动}
+      - 德国02{联通}
+      - 美国01{移动}
+      - 新加坡03{移动}
+      - 美国04{联通}
+      - 台湾02{联通}
+      - 印度02{联通}
+      - 新加坡04{移动}
+      - 新加坡02{联通}
+      - 新加坡01{移动}
+      - 美国03{移动}
+      - 俄罗斯①{移动}
+      - 日本06{联通}
+      - 日本01{联通}
+      - 英国{联通}
+      - 美国02{联通}
+      - 马来02{联通}
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
