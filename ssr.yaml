@@ -5,63 +5,171 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡 B/02 x1.0, server: 117.164.185.220, port: 61002, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 日本 B/02 x1.0, server: 117.164.185.220, port: 11002, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 A/01 x1.0, server: 36.138.100.57, port: 61001, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 韩国-优化2, server: m.lwvzmdu.cn, port: 16619, type: vmess, uuid: 64727164-7bba-41e0-a6c2-32cbd6d3638f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: "日本04{联通}", server: cu.awslcn.cc, port: 25220, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
-  - {name: 新加坡 B/01 x1.0, server: 117.164.185.220, port: 61001, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "马来01{移动}", server: cm.awslcn.cc, port: 25228, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
-  - {name: 香港 C/01 x1.0, server: 183.245.146.20, port: 21001, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 香港 C/02 x1.0, server: 183.245.146.20, port: 21002, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道@jsnzk, server: pf.freev2r.xyz, port: 12222, type: trojan, password: e723d01e-130d-4e66-955b-9f964c9c9770, sni: nt3.freev2r.xyz, skip-cert-verify: true, udp: true}
+  - {name: V358U-4x-BGP-SG-NF, server: qvfajoir.nodelist.xyz, port: 1358, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V359U-4x-BGP-SG-NF, server: qvfajoir.nodelist.xyz, port: 1359, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V451U-1x-BGP-SG-NF, server: wdimknog.nodelist.xyz, port: 1451, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V353U-1x-BGP-SG-NF, server: wdimknog.nodelist.xyz, port: 1353, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V302U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1302, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V305U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1305, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V356U-2x-BGP-SG-NF, server: afjxxchq.nodelist.xyz, port: 1356, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V355U-2x-BGP-SG-NF, server: afjxxchq.nodelist.xyz, port: 1355, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V357U-2x-BGP-SG-NF, server: afjxxchq.nodelist.xyz, port: 1357, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V407U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1407, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V301U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1301, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V350U-1x-BGP-SG-NF, server: wdimknog.nodelist.xyz, port: 1350, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V381U-1x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1381, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V450U-1x-BGP-SG-NF, server: wdimknog.nodelist.xyz, port: 1450, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V336U-2x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1336, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V320U-2x-BGP-HK-NF, server: afjxxchq.nodelist.xyz, port: 1320, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V338U-2x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1338, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V334U-1x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1334, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V332U-1x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1332, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V387U-2x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1387, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V382U-1x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1382, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V335U-1x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1335, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V337U-2x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1337, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V388U-2x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1388, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V354U-2x-BGP-SG-NF, server: afjxxchq.nodelist.xyz, port: 1354, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V409U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1409, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V333U-1x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1333, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: ️‍🌈 ️‍🌈 应急续费节点-10x, server: xf.nodelist.xyz, port: 1399, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V389U-2x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1389, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V405U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1405, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V473U-2x-BGP-TW-NF, server: afjxxchq.nodelist.xyz, port: 1473, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V390U-2x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1390, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V383U-1x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1383, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V386U-2x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1386, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V371U-2x-BGP-TW-NF, server: afjxxchq.nodelist.xyz, port: 1371, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V453U-1x-BGP-SG-NF, server: wdimknog.nodelist.xyz, port: 1453, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V304U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1304, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V358U-4x-BGP-SG-NF
+      - V359U-4x-BGP-SG-NF
+      - V451U-1x-BGP-SG-NF
+      - V353U-1x-BGP-SG-NF
+      - V302U-1x-BGP-HK-NF
+      - V305U-1x-BGP-HK-NF
+      - V356U-2x-BGP-SG-NF
+      - V355U-2x-BGP-SG-NF
+      - V357U-2x-BGP-SG-NF
+      - V407U-1x-BGP-HK-NF
+      - V301U-1x-BGP-HK-NF
+      - V350U-1x-BGP-SG-NF
+      - V381U-1x-BGP-US-NF
+      - V450U-1x-BGP-SG-NF
+      - V336U-2x-BGP-JP-NF
+      - V320U-2x-BGP-HK-NF
+      - V338U-2x-BGP-JP-NF
+      - V334U-1x-BGP-JP-NF
+      - V332U-1x-BGP-JP-NF
+      - V387U-2x-BGP-US-NF
+      - V382U-1x-BGP-US-NF
+      - V335U-1x-BGP-JP-NF
+      - V337U-2x-BGP-JP-NF
+      - V388U-2x-BGP-US-NF
+      - V354U-2x-BGP-SG-NF
+      - V409U-1x-BGP-HK-NF
+      - V333U-1x-BGP-JP-NF
+      - ️‍🌈 ️‍🌈 应急续费节点-10x
+      - V389U-2x-BGP-US-NF
+      - V405U-1x-BGP-HK-NF
+      - V473U-2x-BGP-TW-NF
+      - V390U-2x-BGP-US-NF
+      - V383U-1x-BGP-US-NF
+      - V386U-2x-BGP-US-NF
+      - V371U-2x-BGP-TW-NF
+      - V453U-1x-BGP-SG-NF
+      - V304U-1x-BGP-HK-NF
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V358U-4x-BGP-SG-NF
+      - V359U-4x-BGP-SG-NF
+      - V451U-1x-BGP-SG-NF
+      - V353U-1x-BGP-SG-NF
+      - V302U-1x-BGP-HK-NF
+      - V305U-1x-BGP-HK-NF
+      - V356U-2x-BGP-SG-NF
+      - V355U-2x-BGP-SG-NF
+      - V357U-2x-BGP-SG-NF
+      - V407U-1x-BGP-HK-NF
+      - V301U-1x-BGP-HK-NF
+      - V350U-1x-BGP-SG-NF
+      - V381U-1x-BGP-US-NF
+      - V450U-1x-BGP-SG-NF
+      - V336U-2x-BGP-JP-NF
+      - V320U-2x-BGP-HK-NF
+      - V338U-2x-BGP-JP-NF
+      - V334U-1x-BGP-JP-NF
+      - V332U-1x-BGP-JP-NF
+      - V387U-2x-BGP-US-NF
+      - V382U-1x-BGP-US-NF
+      - V335U-1x-BGP-JP-NF
+      - V337U-2x-BGP-JP-NF
+      - V388U-2x-BGP-US-NF
+      - V354U-2x-BGP-SG-NF
+      - V409U-1x-BGP-HK-NF
+      - V333U-1x-BGP-JP-NF
+      - ️‍🌈 ️‍🌈 应急续费节点-10x
+      - V389U-2x-BGP-US-NF
+      - V405U-1x-BGP-HK-NF
+      - V473U-2x-BGP-TW-NF
+      - V390U-2x-BGP-US-NF
+      - V383U-1x-BGP-US-NF
+      - V386U-2x-BGP-US-NF
+      - V371U-2x-BGP-TW-NF
+      - V453U-1x-BGP-SG-NF
+      - V304U-1x-BGP-HK-NF
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V358U-4x-BGP-SG-NF
+      - V359U-4x-BGP-SG-NF
+      - V451U-1x-BGP-SG-NF
+      - V353U-1x-BGP-SG-NF
+      - V302U-1x-BGP-HK-NF
+      - V305U-1x-BGP-HK-NF
+      - V356U-2x-BGP-SG-NF
+      - V355U-2x-BGP-SG-NF
+      - V357U-2x-BGP-SG-NF
+      - V407U-1x-BGP-HK-NF
+      - V301U-1x-BGP-HK-NF
+      - V350U-1x-BGP-SG-NF
+      - V381U-1x-BGP-US-NF
+      - V450U-1x-BGP-SG-NF
+      - V336U-2x-BGP-JP-NF
+      - V320U-2x-BGP-HK-NF
+      - V338U-2x-BGP-JP-NF
+      - V334U-1x-BGP-JP-NF
+      - V332U-1x-BGP-JP-NF
+      - V387U-2x-BGP-US-NF
+      - V382U-1x-BGP-US-NF
+      - V335U-1x-BGP-JP-NF
+      - V337U-2x-BGP-JP-NF
+      - V388U-2x-BGP-US-NF
+      - V354U-2x-BGP-SG-NF
+      - V409U-1x-BGP-HK-NF
+      - V333U-1x-BGP-JP-NF
+      - ️‍🌈 ️‍🌈 应急续费节点-10x
+      - V389U-2x-BGP-US-NF
+      - V405U-1x-BGP-HK-NF
+      - V473U-2x-BGP-TW-NF
+      - V390U-2x-BGP-US-NF
+      - V383U-1x-BGP-US-NF
+      - V386U-2x-BGP-US-NF
+      - V371U-2x-BGP-TW-NF
+      - V453U-1x-BGP-SG-NF
+      - V304U-1x-BGP-HK-NF
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,69 +188,175 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V358U-4x-BGP-SG-NF
+      - V359U-4x-BGP-SG-NF
+      - V451U-1x-BGP-SG-NF
+      - V353U-1x-BGP-SG-NF
+      - V302U-1x-BGP-HK-NF
+      - V305U-1x-BGP-HK-NF
+      - V356U-2x-BGP-SG-NF
+      - V355U-2x-BGP-SG-NF
+      - V357U-2x-BGP-SG-NF
+      - V407U-1x-BGP-HK-NF
+      - V301U-1x-BGP-HK-NF
+      - V350U-1x-BGP-SG-NF
+      - V381U-1x-BGP-US-NF
+      - V450U-1x-BGP-SG-NF
+      - V336U-2x-BGP-JP-NF
+      - V320U-2x-BGP-HK-NF
+      - V338U-2x-BGP-JP-NF
+      - V334U-1x-BGP-JP-NF
+      - V332U-1x-BGP-JP-NF
+      - V387U-2x-BGP-US-NF
+      - V382U-1x-BGP-US-NF
+      - V335U-1x-BGP-JP-NF
+      - V337U-2x-BGP-JP-NF
+      - V388U-2x-BGP-US-NF
+      - V354U-2x-BGP-SG-NF
+      - V409U-1x-BGP-HK-NF
+      - V333U-1x-BGP-JP-NF
+      - ️‍🌈 ️‍🌈 应急续费节点-10x
+      - V389U-2x-BGP-US-NF
+      - V405U-1x-BGP-HK-NF
+      - V473U-2x-BGP-TW-NF
+      - V390U-2x-BGP-US-NF
+      - V383U-1x-BGP-US-NF
+      - V386U-2x-BGP-US-NF
+      - V371U-2x-BGP-TW-NF
+      - V453U-1x-BGP-SG-NF
+      - V304U-1x-BGP-HK-NF
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V358U-4x-BGP-SG-NF
+      - V359U-4x-BGP-SG-NF
+      - V451U-1x-BGP-SG-NF
+      - V353U-1x-BGP-SG-NF
+      - V302U-1x-BGP-HK-NF
+      - V305U-1x-BGP-HK-NF
+      - V356U-2x-BGP-SG-NF
+      - V355U-2x-BGP-SG-NF
+      - V357U-2x-BGP-SG-NF
+      - V407U-1x-BGP-HK-NF
+      - V301U-1x-BGP-HK-NF
+      - V350U-1x-BGP-SG-NF
+      - V381U-1x-BGP-US-NF
+      - V450U-1x-BGP-SG-NF
+      - V336U-2x-BGP-JP-NF
+      - V320U-2x-BGP-HK-NF
+      - V338U-2x-BGP-JP-NF
+      - V334U-1x-BGP-JP-NF
+      - V332U-1x-BGP-JP-NF
+      - V387U-2x-BGP-US-NF
+      - V382U-1x-BGP-US-NF
+      - V335U-1x-BGP-JP-NF
+      - V337U-2x-BGP-JP-NF
+      - V388U-2x-BGP-US-NF
+      - V354U-2x-BGP-SG-NF
+      - V409U-1x-BGP-HK-NF
+      - V333U-1x-BGP-JP-NF
+      - ️‍🌈 ️‍🌈 应急续费节点-10x
+      - V389U-2x-BGP-US-NF
+      - V405U-1x-BGP-HK-NF
+      - V473U-2x-BGP-TW-NF
+      - V390U-2x-BGP-US-NF
+      - V383U-1x-BGP-US-NF
+      - V386U-2x-BGP-US-NF
+      - V371U-2x-BGP-TW-NF
+      - V453U-1x-BGP-SG-NF
+      - V304U-1x-BGP-HK-NF
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V358U-4x-BGP-SG-NF
+      - V359U-4x-BGP-SG-NF
+      - V451U-1x-BGP-SG-NF
+      - V353U-1x-BGP-SG-NF
+      - V302U-1x-BGP-HK-NF
+      - V305U-1x-BGP-HK-NF
+      - V356U-2x-BGP-SG-NF
+      - V355U-2x-BGP-SG-NF
+      - V357U-2x-BGP-SG-NF
+      - V407U-1x-BGP-HK-NF
+      - V301U-1x-BGP-HK-NF
+      - V350U-1x-BGP-SG-NF
+      - V381U-1x-BGP-US-NF
+      - V450U-1x-BGP-SG-NF
+      - V336U-2x-BGP-JP-NF
+      - V320U-2x-BGP-HK-NF
+      - V338U-2x-BGP-JP-NF
+      - V334U-1x-BGP-JP-NF
+      - V332U-1x-BGP-JP-NF
+      - V387U-2x-BGP-US-NF
+      - V382U-1x-BGP-US-NF
+      - V335U-1x-BGP-JP-NF
+      - V337U-2x-BGP-JP-NF
+      - V388U-2x-BGP-US-NF
+      - V354U-2x-BGP-SG-NF
+      - V409U-1x-BGP-HK-NF
+      - V333U-1x-BGP-JP-NF
+      - ️‍🌈 ️‍🌈 应急续费节点-10x
+      - V389U-2x-BGP-US-NF
+      - V405U-1x-BGP-HK-NF
+      - V473U-2x-BGP-TW-NF
+      - V390U-2x-BGP-US-NF
+      - V383U-1x-BGP-US-NF
+      - V386U-2x-BGP-US-NF
+      - V371U-2x-BGP-TW-NF
+      - V453U-1x-BGP-SG-NF
+      - V304U-1x-BGP-HK-NF
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V358U-4x-BGP-SG-NF
+      - V359U-4x-BGP-SG-NF
+      - V451U-1x-BGP-SG-NF
+      - V353U-1x-BGP-SG-NF
+      - V302U-1x-BGP-HK-NF
+      - V305U-1x-BGP-HK-NF
+      - V356U-2x-BGP-SG-NF
+      - V355U-2x-BGP-SG-NF
+      - V357U-2x-BGP-SG-NF
+      - V407U-1x-BGP-HK-NF
+      - V301U-1x-BGP-HK-NF
+      - V350U-1x-BGP-SG-NF
+      - V381U-1x-BGP-US-NF
+      - V450U-1x-BGP-SG-NF
+      - V336U-2x-BGP-JP-NF
+      - V320U-2x-BGP-HK-NF
+      - V338U-2x-BGP-JP-NF
+      - V334U-1x-BGP-JP-NF
+      - V332U-1x-BGP-JP-NF
+      - V387U-2x-BGP-US-NF
+      - V382U-1x-BGP-US-NF
+      - V335U-1x-BGP-JP-NF
+      - V337U-2x-BGP-JP-NF
+      - V388U-2x-BGP-US-NF
+      - V354U-2x-BGP-SG-NF
+      - V409U-1x-BGP-HK-NF
+      - V333U-1x-BGP-JP-NF
+      - ️‍🌈 ️‍🌈 应急续费节点-10x
+      - V389U-2x-BGP-US-NF
+      - V405U-1x-BGP-HK-NF
+      - V473U-2x-BGP-TW-NF
+      - V390U-2x-BGP-US-NF
+      - V383U-1x-BGP-US-NF
+      - V386U-2x-BGP-US-NF
+      - V371U-2x-BGP-TW-NF
+      - V453U-1x-BGP-SG-NF
+      - V304U-1x-BGP-HK-NF
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -158,16 +372,43 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V358U-4x-BGP-SG-NF
+      - V359U-4x-BGP-SG-NF
+      - V451U-1x-BGP-SG-NF
+      - V353U-1x-BGP-SG-NF
+      - V302U-1x-BGP-HK-NF
+      - V305U-1x-BGP-HK-NF
+      - V356U-2x-BGP-SG-NF
+      - V355U-2x-BGP-SG-NF
+      - V357U-2x-BGP-SG-NF
+      - V407U-1x-BGP-HK-NF
+      - V301U-1x-BGP-HK-NF
+      - V350U-1x-BGP-SG-NF
+      - V381U-1x-BGP-US-NF
+      - V450U-1x-BGP-SG-NF
+      - V336U-2x-BGP-JP-NF
+      - V320U-2x-BGP-HK-NF
+      - V338U-2x-BGP-JP-NF
+      - V334U-1x-BGP-JP-NF
+      - V332U-1x-BGP-JP-NF
+      - V387U-2x-BGP-US-NF
+      - V382U-1x-BGP-US-NF
+      - V335U-1x-BGP-JP-NF
+      - V337U-2x-BGP-JP-NF
+      - V388U-2x-BGP-US-NF
+      - V354U-2x-BGP-SG-NF
+      - V409U-1x-BGP-HK-NF
+      - V333U-1x-BGP-JP-NF
+      - ️‍🌈 ️‍🌈 应急续费节点-10x
+      - V389U-2x-BGP-US-NF
+      - V405U-1x-BGP-HK-NF
+      - V473U-2x-BGP-TW-NF
+      - V390U-2x-BGP-US-NF
+      - V383U-1x-BGP-US-NF
+      - V386U-2x-BGP-US-NF
+      - V371U-2x-BGP-TW-NF
+      - V453U-1x-BGP-SG-NF
+      - V304U-1x-BGP-HK-NF
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
