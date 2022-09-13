@@ -6,6 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: Japan 02, server: 910.48x.cc, port: 19374, type: ss, cipher: chacha20-ietf-poly1305, password: 90574f4f-9533-4fb1-afb1-2e48e57e1f0b, udp: true}
+  - {name: 【F】香港  VIP 9 - Nearoute, server: n60.boom.skin, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 442816:xeq6bk, obfs-param: download.windowsupdate.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -13,12 +14,14 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Japan 02
+      - 【F】香港  VIP 9 - Nearoute
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - Japan 02
+      - 【F】香港  VIP 9 - Nearoute
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -26,6 +29,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Japan 02
+      - 【F】香港  VIP 9 - Nearoute
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -45,10 +49,12 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Japan 02
+      - 【F】香港  VIP 9 - Nearoute
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 【F】香港  VIP 9 - Nearoute
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -56,12 +62,14 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - Japan 02
+      - 【F】香港  VIP 9 - Nearoute
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - Japan 02
+      - 【F】香港  VIP 9 - Nearoute
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -69,6 +77,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - Japan 02
+      - 【F】香港  VIP 9 - Nearoute
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -85,6 +94,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - Japan 02
+      - 【F】香港  VIP 9 - Nearoute
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
