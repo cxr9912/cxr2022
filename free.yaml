@@ -5,63 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡 B/02 x1.0, server: 117.164.185.220, port: 61002, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 日本 B/02 x1.0, server: 117.164.185.220, port: 11002, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 A/01 x1.0, server: 36.138.100.57, port: 61001, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 韩国-优化2, server: m.lwvzmdu.cn, port: 16619, type: vmess, uuid: 64727164-7bba-41e0-a6c2-32cbd6d3638f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: "日本04{联通}", server: cu.awslcn.cc, port: 25220, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
-  - {name: 新加坡 B/01 x1.0, server: 117.164.185.220, port: 61001, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "马来01{移动}", server: cm.awslcn.cc, port: 25228, type: vmess, uuid: d175f44b-c0e0-445f-aaa9-999ea25b3ca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
-  - {name: 香港 C/01 x1.0, server: 183.245.146.20, port: 21001, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 香港 C/02 x1.0, server: 183.245.146.20, port: 21002, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道@jsnzk, server: pf.freev2r.xyz, port: 12222, type: trojan, password: e723d01e-130d-4e66-955b-9f964c9c9770, sni: nt3.freev2r.xyz, skip-cert-verify: true, udp: true}
+  - {name: V329U-4x-BGP-HK-NF, server: qvfajoir.nodelist.xyz, port: 1329, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V327U-4x-BGP-HK-NF, server: qvfajoir.nodelist.xyz, port: 1327, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V328U-4x-BGP-HK-NF, server: qvfajoir.nodelist.xyz, port: 1328, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V326U-4x-BGP-HK-NF, server: qvfajoir.nodelist.xyz, port: 1326, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: V303U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1303, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V329U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V326U-4x-BGP-HK-NF
+      - V303U-1x-BGP-HK-NF
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V329U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V326U-4x-BGP-HK-NF
+      - V303U-1x-BGP-HK-NF
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V329U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V326U-4x-BGP-HK-NF
+      - V303U-1x-BGP-HK-NF
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,69 +60,47 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V329U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V326U-4x-BGP-HK-NF
+      - V303U-1x-BGP-HK-NF
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V329U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V326U-4x-BGP-HK-NF
+      - V303U-1x-BGP-HK-NF
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V329U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V326U-4x-BGP-HK-NF
+      - V303U-1x-BGP-HK-NF
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V329U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V326U-4x-BGP-HK-NF
+      - V303U-1x-BGP-HK-NF
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -158,16 +116,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 B/02 x1.0
-      - 日本 B/02 x1.0
-      - 新加坡 A/01 x1.0
-      - 韩国-优化2
-      - 日本04{联通}
-      - 新加坡 B/01 x1.0
-      - 马来01{移动}
-      - 香港 C/01 x1.0
-      - 香港 C/02 x1.0
-      - TG频道@jsnzk
+      - V329U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V326U-4x-BGP-HK-NF
+      - V303U-1x-BGP-HK-NF
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
