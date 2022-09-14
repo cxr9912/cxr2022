@@ -5,16 +5,9 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 辽宁-香港 HKG丨全解锁丨A1, server: liaoningddns.xyz, port: 11421, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
-  - {name: 辽宁-新加坡 M247丨全解锁丨A1, server: liaoningddns.xyz, port: 11422, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
-  - {name: 湖南-美国 KirinoNET丨全解锁丨A1, server: guangzhouddns.xyz, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
-  - {name: 湖南-美国 DMIT丨全解锁丨A1, server: guangzhouddns.xyz, port: 11805, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
   - {name: 湖南-香港 HKG丨全解锁丨A1, server: guangzhouddns.xyz, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
-  - {name: 辽宁-新加坡 M247丨全解锁丨A2, server: liaoningddns.xyz, port: 11429, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
   - {name: 湖南-新加坡 M247丨全解锁丨A2, server: guangzhouddns.xyz, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
-  - {name: 湖南-新加坡 M247丨全解锁丨A3, server: guangzhouddns.xyz, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
-  - {name: 辽宁-美国 DMIT丨全解锁丨A1, server: liaoningddns.xyz, port: 11423, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
-  - {name: 湖南-香港 HKG丨全解锁丨A3, server: guangzhouddns.xyz, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
+  - {name: 湖南-美国 DMIT丨全解锁丨A1, server: guangzhouddns.xyz, port: 11805, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
   - {name: 湖南-新加坡 Virtual丨全解锁丨A1, server: guangzhouddns.xyz, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -22,32 +15,18 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 辽宁-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A1
-      - 湖南-美国 KirinoNET丨全解锁丨A1
-      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A2
       - 湖南-新加坡 M247丨全解锁丨A2
-      - 湖南-新加坡 M247丨全解锁丨A3
-      - 辽宁-美国 DMIT丨全解锁丨A1
-      - 湖南-香港 HKG丨全解锁丨A3
+      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-新加坡 Virtual丨全解锁丨A1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 辽宁-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A1
-      - 湖南-美国 KirinoNET丨全解锁丨A1
-      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A2
       - 湖南-新加坡 M247丨全解锁丨A2
-      - 湖南-新加坡 M247丨全解锁丨A3
-      - 辽宁-美国 DMIT丨全解锁丨A1
-      - 湖南-香港 HKG丨全解锁丨A3
+      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-新加坡 Virtual丨全解锁丨A1
   - name: 🎥 NETFLIX
     type: select
@@ -55,16 +34,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 辽宁-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A1
-      - 湖南-美国 KirinoNET丨全解锁丨A1
-      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A2
       - 湖南-新加坡 M247丨全解锁丨A2
-      - 湖南-新加坡 M247丨全解锁丨A3
-      - 辽宁-美国 DMIT丨全解锁丨A1
-      - 湖南-香港 HKG丨全解锁丨A3
+      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-新加坡 Virtual丨全解锁丨A1
   - name: ⛔️ 广告拦截
     type: select
@@ -84,56 +56,33 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 辽宁-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A1
-      - 湖南-美国 KirinoNET丨全解锁丨A1
-      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A2
       - 湖南-新加坡 M247丨全解锁丨A2
-      - 湖南-新加坡 M247丨全解锁丨A3
-      - 辽宁-美国 DMIT丨全解锁丨A1
-      - 湖南-香港 HKG丨全解锁丨A3
+      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-新加坡 Virtual丨全解锁丨A1
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 辽宁-香港 HKG丨全解锁丨A1
       - 湖南-香港 HKG丨全解锁丨A1
-      - 湖南-香港 HKG丨全解锁丨A3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 辽宁-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A1
-      - 湖南-美国 KirinoNET丨全解锁丨A1
-      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A2
       - 湖南-新加坡 M247丨全解锁丨A2
-      - 湖南-新加坡 M247丨全解锁丨A3
-      - 辽宁-美国 DMIT丨全解锁丨A1
-      - 湖南-香港 HKG丨全解锁丨A3
+      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-新加坡 Virtual丨全解锁丨A1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 辽宁-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A1
-      - 湖南-美国 KirinoNET丨全解锁丨A1
-      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A2
       - 湖南-新加坡 M247丨全解锁丨A2
-      - 湖南-新加坡 M247丨全解锁丨A3
-      - 辽宁-美国 DMIT丨全解锁丨A1
-      - 湖南-香港 HKG丨全解锁丨A3
+      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-新加坡 Virtual丨全解锁丨A1
   - name: 🍎 苹果服务
     type: select
@@ -141,16 +90,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 辽宁-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A1
-      - 湖南-美国 KirinoNET丨全解锁丨A1
-      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A2
       - 湖南-新加坡 M247丨全解锁丨A2
-      - 湖南-新加坡 M247丨全解锁丨A3
-      - 辽宁-美国 DMIT丨全解锁丨A1
-      - 湖南-香港 HKG丨全解锁丨A3
+      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-新加坡 Virtual丨全解锁丨A1
   - name: 🎯 全球直连
     type: select
@@ -167,16 +109,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 辽宁-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A1
-      - 湖南-美国 KirinoNET丨全解锁丨A1
-      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-香港 HKG丨全解锁丨A1
-      - 辽宁-新加坡 M247丨全解锁丨A2
       - 湖南-新加坡 M247丨全解锁丨A2
-      - 湖南-新加坡 M247丨全解锁丨A3
-      - 辽宁-美国 DMIT丨全解锁丨A1
-      - 湖南-香港 HKG丨全解锁丨A3
+      - 湖南-美国 DMIT丨全解锁丨A1
       - 湖南-新加坡 Virtual丨全解锁丨A1
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
