@@ -5,39 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 湖南-香港 HKG丨全解锁丨A1, server: guangzhouddns.xyz, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
   - {name: 湖南-新加坡 M247丨全解锁丨A2, server: guangzhouddns.xyz, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
+  - {name: 香港 Free, server: freehk.ydnode.us, port: 80, type: trojan, password: d6ed263c-3f14-44db-bfee-cfcc26b234d1, sni: freehk.ydnode.us, skip-cert-verify: true, udp: true}
   - {name: 湖南-美国 DMIT丨全解锁丨A1, server: guangzhouddns.xyz, port: 11805, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
-  - {name: 湖南-新加坡 Virtual丨全解锁丨A1, server: guangzhouddns.xyz, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: 018ab12023.microsoft.com, udp: true}
+  - {name: 圣何塞 Trojan, server: san.ydnode.us, port: 443, type: trojan, password: d6ed263c-3f14-44db-bfee-cfcc26b234d1, sni: san.ydnode.us, skip-cert-verify: true, udp: true}
+  - {name: 圣何塞 v2ray, server: san.ydnode.us, port: 80, type: vmess, uuid: d6ed263c-3f14-44db-bfee-cfcc26b234d1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: san.ydnode.us, grpc-opts: {grpc-service-name: san.ydnode.us}, udp: true}
+  - {name: 洛杉矶 Trojan, server: los.ydnode.us, port: 90, type: trojan, password: d6ed263c-3f14-44db-bfee-cfcc26b234d1, sni: los.ydnode.us, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 湖南-香港 HKG丨全解锁丨A1
       - 湖南-新加坡 M247丨全解锁丨A2
+      - 香港 Free
       - 湖南-美国 DMIT丨全解锁丨A1
-      - 湖南-新加坡 Virtual丨全解锁丨A1
+      - 圣何塞 Trojan
+      - 圣何塞 v2ray
+      - 洛杉矶 Trojan
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 湖南-香港 HKG丨全解锁丨A1
       - 湖南-新加坡 M247丨全解锁丨A2
+      - 香港 Free
       - 湖南-美国 DMIT丨全解锁丨A1
-      - 湖南-新加坡 Virtual丨全解锁丨A1
+      - 圣何塞 Trojan
+      - 圣何塞 v2ray
+      - 洛杉矶 Trojan
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 湖南-香港 HKG丨全解锁丨A1
       - 湖南-新加坡 M247丨全解锁丨A2
+      - 香港 Free
       - 湖南-美国 DMIT丨全解锁丨A1
-      - 湖南-新加坡 Virtual丨全解锁丨A1
+      - 圣何塞 Trojan
+      - 圣何塞 v2ray
+      - 洛杉矶 Trojan
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,44 +64,52 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 湖南-香港 HKG丨全解锁丨A1
       - 湖南-新加坡 M247丨全解锁丨A2
+      - 香港 Free
       - 湖南-美国 DMIT丨全解锁丨A1
-      - 湖南-新加坡 Virtual丨全解锁丨A1
+      - 圣何塞 Trojan
+      - 圣何塞 v2ray
+      - 洛杉矶 Trojan
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 湖南-香港 HKG丨全解锁丨A1
+      - 香港 Free
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 湖南-香港 HKG丨全解锁丨A1
       - 湖南-新加坡 M247丨全解锁丨A2
+      - 香港 Free
       - 湖南-美国 DMIT丨全解锁丨A1
-      - 湖南-新加坡 Virtual丨全解锁丨A1
+      - 圣何塞 Trojan
+      - 圣何塞 v2ray
+      - 洛杉矶 Trojan
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 湖南-香港 HKG丨全解锁丨A1
       - 湖南-新加坡 M247丨全解锁丨A2
+      - 香港 Free
       - 湖南-美国 DMIT丨全解锁丨A1
-      - 湖南-新加坡 Virtual丨全解锁丨A1
+      - 圣何塞 Trojan
+      - 圣何塞 v2ray
+      - 洛杉矶 Trojan
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 湖南-香港 HKG丨全解锁丨A1
       - 湖南-新加坡 M247丨全解锁丨A2
+      - 香港 Free
       - 湖南-美国 DMIT丨全解锁丨A1
-      - 湖南-新加坡 Virtual丨全解锁丨A1
+      - 圣何塞 Trojan
+      - 圣何塞 v2ray
+      - 洛杉矶 Trojan
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -109,10 +125,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 湖南-香港 HKG丨全解锁丨A1
       - 湖南-新加坡 M247丨全解锁丨A2
+      - 香港 Free
       - 湖南-美国 DMIT丨全解锁丨A1
-      - 湖南-新加坡 Virtual丨全解锁丨A1
+      - 圣何塞 Trojan
+      - 圣何塞 v2ray
+      - 洛杉矶 Trojan
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
