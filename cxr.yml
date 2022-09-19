@@ -5,31 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: VPN-For-China-->milkcat.net, server: seoul.napsternetv.com, port: 443, type: vmess, uuid: C8FF3A76-3148-66F8-F196-74350A69FC27, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: seoul.napsternetv.com}, udp: true}
-  - {name: GetAFreeNode-Frankfurt, server: 213.226.71.174, port: 40443, type: vmess, uuid: C8FF3A76-3148-66F8-F196-74350A69FC27, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|腾讯云|1x, server: txgsp.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: txgsp.102498.eu.org}, udp: true}
+  - {name: 日本02|1x, server: vir.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: vir.102498.eu.org}, udp: true}
+  - {name: 越南|1.5x, server: vn.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: vn.102498.eu.org}, udp: true}
+  - {name: 阿联酋阿布扎比|电信优化|1x, server: uae.102498.eu.org, port: 2052, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: uae.102498.eu.org}, udp: true}
+  - {name: 美国08|CF优选中转|免费, server: rn.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: rn.102498.eu.org}, udp: true}
+  - {name: 美国06|流媒体解锁|1x, server: sausa.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /micosoft, ws-headers: {Host: sausa.102498.eu.org}, udp: true}
+  - {name: 美国节点04|亚洲优化线路|1x, server: usa1.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mirocsoft, ws-headers: {Host: usa1.102498.eu.org}, udp: true}
+  - {name: 美国05|联通友好|1x, server: sp.102498.eu.org, port: 2052, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: sp.102498.eu.org}, udp: true}
+  - {name: 荷兰双栈|1x, server: nl.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: nl.102498.eu.org}, udp: true}
+  - {name: 俄罗斯02|CF优选|1x, server: ru2.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: ru2.102498.eu.org}, udp: true}
+  - {name: 阿联酋迪拜|电信优化|1x, server: di.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: di.102498.eu.org}, udp: true}
+  - {name: 韩国01|1x, server: korarm.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: korarm.102498.eu.org}, udp: true}
+  - {name: 俄罗斯01|CF优选|1x, server: ru.102498.eu.org, port: 443, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: ru.102498.eu.org}, udp: true}
+  - {name: 美国10|1x, server: lindeusa2.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: lindeusa2.102498.eu.org}, udp: true}
+  - {name: 美国03|1x, server: usa.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: usa.102498.eu.org}, udp: true}
+  - {name: 美国09|1x, server: lindeusa.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: lindeusa.102498.eu.org}, udp: true}
+  - {name: 韩国02|1x, server: kor.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: kor.102498.eu.org}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VPN-For-China-->milkcat.net
-      - GetAFreeNode-Frankfurt
+      - 新加坡|腾讯云|1x
+      - 日本02|1x
+      - 越南|1.5x
+      - 阿联酋阿布扎比|电信优化|1x
+      - 美国08|CF优选中转|免费
+      - 美国06|流媒体解锁|1x
+      - 美国节点04|亚洲优化线路|1x
+      - 美国05|联通友好|1x
+      - 荷兰双栈|1x
+      - 俄罗斯02|CF优选|1x
+      - 阿联酋迪拜|电信优化|1x
+      - 韩国01|1x
+      - 俄罗斯01|CF优选|1x
+      - 美国10|1x
+      - 美国03|1x
+      - 美国09|1x
+      - 韩国02|1x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - VPN-For-China-->milkcat.net
-      - GetAFreeNode-Frankfurt
+      - 新加坡|腾讯云|1x
+      - 日本02|1x
+      - 越南|1.5x
+      - 阿联酋阿布扎比|电信优化|1x
+      - 美国08|CF优选中转|免费
+      - 美国06|流媒体解锁|1x
+      - 美国节点04|亚洲优化线路|1x
+      - 美国05|联通友好|1x
+      - 荷兰双栈|1x
+      - 俄罗斯02|CF优选|1x
+      - 阿联酋迪拜|电信优化|1x
+      - 韩国01|1x
+      - 俄罗斯01|CF优选|1x
+      - 美国10|1x
+      - 美国03|1x
+      - 美国09|1x
+      - 韩国02|1x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VPN-For-China-->milkcat.net
-      - GetAFreeNode-Frankfurt
+      - 新加坡|腾讯云|1x
+      - 日本02|1x
+      - 越南|1.5x
+      - 阿联酋阿布扎比|电信优化|1x
+      - 美国08|CF优选中转|免费
+      - 美国06|流媒体解锁|1x
+      - 美国节点04|亚洲优化线路|1x
+      - 美国05|联通友好|1x
+      - 荷兰双栈|1x
+      - 俄罗斯02|CF优选|1x
+      - 阿联酋迪拜|电信优化|1x
+      - 韩国01|1x
+      - 俄罗斯01|CF优选|1x
+      - 美国10|1x
+      - 美国03|1x
+      - 美国09|1x
+      - 韩国02|1x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,8 +108,23 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VPN-For-China-->milkcat.net
-      - GetAFreeNode-Frankfurt
+      - 新加坡|腾讯云|1x
+      - 日本02|1x
+      - 越南|1.5x
+      - 阿联酋阿布扎比|电信优化|1x
+      - 美国08|CF优选中转|免费
+      - 美国06|流媒体解锁|1x
+      - 美国节点04|亚洲优化线路|1x
+      - 美国05|联通友好|1x
+      - 荷兰双栈|1x
+      - 俄罗斯02|CF优选|1x
+      - 阿联酋迪拜|电信优化|1x
+      - 韩国01|1x
+      - 俄罗斯01|CF优选|1x
+      - 美国10|1x
+      - 美国03|1x
+      - 美国09|1x
+      - 韩国02|1x
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -60,23 +135,68 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - VPN-For-China-->milkcat.net
-      - GetAFreeNode-Frankfurt
+      - 新加坡|腾讯云|1x
+      - 日本02|1x
+      - 越南|1.5x
+      - 阿联酋阿布扎比|电信优化|1x
+      - 美国08|CF优选中转|免费
+      - 美国06|流媒体解锁|1x
+      - 美国节点04|亚洲优化线路|1x
+      - 美国05|联通友好|1x
+      - 荷兰双栈|1x
+      - 俄罗斯02|CF优选|1x
+      - 阿联酋迪拜|电信优化|1x
+      - 韩国01|1x
+      - 俄罗斯01|CF优选|1x
+      - 美国10|1x
+      - 美国03|1x
+      - 美国09|1x
+      - 韩国02|1x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - VPN-For-China-->milkcat.net
-      - GetAFreeNode-Frankfurt
+      - 新加坡|腾讯云|1x
+      - 日本02|1x
+      - 越南|1.5x
+      - 阿联酋阿布扎比|电信优化|1x
+      - 美国08|CF优选中转|免费
+      - 美国06|流媒体解锁|1x
+      - 美国节点04|亚洲优化线路|1x
+      - 美国05|联通友好|1x
+      - 荷兰双栈|1x
+      - 俄罗斯02|CF优选|1x
+      - 阿联酋迪拜|电信优化|1x
+      - 韩国01|1x
+      - 俄罗斯01|CF优选|1x
+      - 美国10|1x
+      - 美国03|1x
+      - 美国09|1x
+      - 韩国02|1x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VPN-For-China-->milkcat.net
-      - GetAFreeNode-Frankfurt
+      - 新加坡|腾讯云|1x
+      - 日本02|1x
+      - 越南|1.5x
+      - 阿联酋阿布扎比|电信优化|1x
+      - 美国08|CF优选中转|免费
+      - 美国06|流媒体解锁|1x
+      - 美国节点04|亚洲优化线路|1x
+      - 美国05|联通友好|1x
+      - 荷兰双栈|1x
+      - 俄罗斯02|CF优选|1x
+      - 阿联酋迪拜|电信优化|1x
+      - 韩国01|1x
+      - 俄罗斯01|CF优选|1x
+      - 美国10|1x
+      - 美国03|1x
+      - 美国09|1x
+      - 韩国02|1x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +212,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VPN-For-China-->milkcat.net
-      - GetAFreeNode-Frankfurt
+      - 新加坡|腾讯云|1x
+      - 日本02|1x
+      - 越南|1.5x
+      - 阿联酋阿布扎比|电信优化|1x
+      - 美国08|CF优选中转|免费
+      - 美国06|流媒体解锁|1x
+      - 美国节点04|亚洲优化线路|1x
+      - 美国05|联通友好|1x
+      - 荷兰双栈|1x
+      - 俄罗斯02|CF优选|1x
+      - 阿联酋迪拜|电信优化|1x
+      - 韩国01|1x
+      - 俄罗斯01|CF优选|1x
+      - 美国10|1x
+      - 美国03|1x
+      - 美国09|1x
+      - 韩国02|1x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
