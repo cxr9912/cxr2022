@@ -5,171 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: V358U-4x-BGP-SG-NF, server: qvfajoir.nodelist.xyz, port: 1358, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V359U-4x-BGP-SG-NF, server: qvfajoir.nodelist.xyz, port: 1359, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V451U-1x-BGP-SG-NF, server: wdimknog.nodelist.xyz, port: 1451, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V353U-1x-BGP-SG-NF, server: wdimknog.nodelist.xyz, port: 1353, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V302U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1302, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V305U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1305, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V356U-2x-BGP-SG-NF, server: afjxxchq.nodelist.xyz, port: 1356, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V355U-2x-BGP-SG-NF, server: afjxxchq.nodelist.xyz, port: 1355, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V357U-2x-BGP-SG-NF, server: afjxxchq.nodelist.xyz, port: 1357, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V407U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1407, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V301U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1301, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V350U-1x-BGP-SG-NF, server: wdimknog.nodelist.xyz, port: 1350, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V381U-1x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1381, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V450U-1x-BGP-SG-NF, server: wdimknog.nodelist.xyz, port: 1450, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V336U-2x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1336, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V320U-2x-BGP-HK-NF, server: afjxxchq.nodelist.xyz, port: 1320, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V338U-2x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1338, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V334U-1x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1334, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V332U-1x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1332, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V387U-2x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1387, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V382U-1x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1382, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V335U-1x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1335, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V337U-2x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1337, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V388U-2x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1388, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V354U-2x-BGP-SG-NF, server: afjxxchq.nodelist.xyz, port: 1354, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V409U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1409, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V333U-1x-BGP-JP-NF, server: fzoakbin.nodelist.xyz, port: 1333, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: ️‍🌈 ️‍🌈 应急续费节点-10x, server: xf.nodelist.xyz, port: 1399, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V389U-2x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1389, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V405U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1405, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V473U-2x-BGP-TW-NF, server: afjxxchq.nodelist.xyz, port: 1473, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V390U-2x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1390, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V383U-1x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1383, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V386U-2x-BGP-US-NF, server: fzoakbin.nodelist.xyz, port: 1386, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V371U-2x-BGP-TW-NF, server: afjxxchq.nodelist.xyz, port: 1371, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V453U-1x-BGP-SG-NF, server: wdimknog.nodelist.xyz, port: 1453, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
-  - {name: V304U-1x-BGP-HK-NF, server: pxyygxtq.nodelist.xyz, port: 1304, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 14121:tsPb85, obfs-param: "", udp: true}
+  - {name: 马来西亚❤️MA2, server: cmjm.julvab.com, port: 30223, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 德国❤DE➤03, server: cmjm.julvab.com, port: 22018, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 香港❤HK➤02, server: cmjm.julvab.com, port: 20112, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: IEPL廣新03专线×5x, server: ifanrlpiecm.julvab.com, port: 59908, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 台湾❤HiNet01, server: cmjm.julvab.com, port: 20598, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 台湾❤HiNet03, server: cmjm.julvab.com, port: 20706, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 香港❤HK➤08, server: cmjm.julvab.com, port: 30718, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 日本❤JP➤01, server: cmjm.julvab.com, port: 30629, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: IEPL廣港05专线×5x, server: ifanrlpiecm.julvab.com, port: 59903, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 香港❤HK➤03, server: cmjm.julvab.com, port: 20536, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 香港❤HK➤05, server: cunicom.julvab.com, port: 30009, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 菲律宾❤️PH, server: specialcunicom.jjrlrn.com, port: 20515, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 美国❤CN2➤02, server: cmjm.julvab.com, port: 20539, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 澳大利亚❤AU, server: shared.sev7en.cc, port: 30514, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 美国❤CN2➤03, server: ifarocunicom.jjrlrn.com, port: 50707, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 越南❤️VN, server: mzqlpieszcm.julvab.com, port: 30915, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 阿联酋杜拜❤DuBai, server: mzqlpieszcm.julvab.com, port: 20401, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 俄罗斯❤RU, server: cmjm.julvab.com, port: 20111, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10649:4miZdg, obfs-param: OWM2OTAxMDY0OS5kb3dubG9hZC5taWNyb3NvZnQuY29t, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V358U-4x-BGP-SG-NF
-      - V359U-4x-BGP-SG-NF
-      - V451U-1x-BGP-SG-NF
-      - V353U-1x-BGP-SG-NF
-      - V302U-1x-BGP-HK-NF
-      - V305U-1x-BGP-HK-NF
-      - V356U-2x-BGP-SG-NF
-      - V355U-2x-BGP-SG-NF
-      - V357U-2x-BGP-SG-NF
-      - V407U-1x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V350U-1x-BGP-SG-NF
-      - V381U-1x-BGP-US-NF
-      - V450U-1x-BGP-SG-NF
-      - V336U-2x-BGP-JP-NF
-      - V320U-2x-BGP-HK-NF
-      - V338U-2x-BGP-JP-NF
-      - V334U-1x-BGP-JP-NF
-      - V332U-1x-BGP-JP-NF
-      - V387U-2x-BGP-US-NF
-      - V382U-1x-BGP-US-NF
-      - V335U-1x-BGP-JP-NF
-      - V337U-2x-BGP-JP-NF
-      - V388U-2x-BGP-US-NF
-      - V354U-2x-BGP-SG-NF
-      - V409U-1x-BGP-HK-NF
-      - V333U-1x-BGP-JP-NF
-      - ️‍🌈 ️‍🌈 应急续费节点-10x
-      - V389U-2x-BGP-US-NF
-      - V405U-1x-BGP-HK-NF
-      - V473U-2x-BGP-TW-NF
-      - V390U-2x-BGP-US-NF
-      - V383U-1x-BGP-US-NF
-      - V386U-2x-BGP-US-NF
-      - V371U-2x-BGP-TW-NF
-      - V453U-1x-BGP-SG-NF
-      - V304U-1x-BGP-HK-NF
+      - 马来西亚❤️MA2
+      - 德国❤DE➤03
+      - 香港❤HK➤02
+      - IEPL廣新03专线×5x
+      - 台湾❤HiNet01
+      - 台湾❤HiNet03
+      - 香港❤HK➤08
+      - 日本❤JP➤01
+      - IEPL廣港05专线×5x
+      - 香港❤HK➤03
+      - 香港❤HK➤05
+      - 菲律宾❤️PH
+      - 美国❤CN2➤02
+      - 澳大利亚❤AU
+      - 美国❤CN2➤03
+      - 越南❤️VN
+      - 阿联酋杜拜❤DuBai
+      - 俄罗斯❤RU
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - V358U-4x-BGP-SG-NF
-      - V359U-4x-BGP-SG-NF
-      - V451U-1x-BGP-SG-NF
-      - V353U-1x-BGP-SG-NF
-      - V302U-1x-BGP-HK-NF
-      - V305U-1x-BGP-HK-NF
-      - V356U-2x-BGP-SG-NF
-      - V355U-2x-BGP-SG-NF
-      - V357U-2x-BGP-SG-NF
-      - V407U-1x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V350U-1x-BGP-SG-NF
-      - V381U-1x-BGP-US-NF
-      - V450U-1x-BGP-SG-NF
-      - V336U-2x-BGP-JP-NF
-      - V320U-2x-BGP-HK-NF
-      - V338U-2x-BGP-JP-NF
-      - V334U-1x-BGP-JP-NF
-      - V332U-1x-BGP-JP-NF
-      - V387U-2x-BGP-US-NF
-      - V382U-1x-BGP-US-NF
-      - V335U-1x-BGP-JP-NF
-      - V337U-2x-BGP-JP-NF
-      - V388U-2x-BGP-US-NF
-      - V354U-2x-BGP-SG-NF
-      - V409U-1x-BGP-HK-NF
-      - V333U-1x-BGP-JP-NF
-      - ️‍🌈 ️‍🌈 应急续费节点-10x
-      - V389U-2x-BGP-US-NF
-      - V405U-1x-BGP-HK-NF
-      - V473U-2x-BGP-TW-NF
-      - V390U-2x-BGP-US-NF
-      - V383U-1x-BGP-US-NF
-      - V386U-2x-BGP-US-NF
-      - V371U-2x-BGP-TW-NF
-      - V453U-1x-BGP-SG-NF
-      - V304U-1x-BGP-HK-NF
+      - 马来西亚❤️MA2
+      - 德国❤DE➤03
+      - 香港❤HK➤02
+      - IEPL廣新03专线×5x
+      - 台湾❤HiNet01
+      - 台湾❤HiNet03
+      - 香港❤HK➤08
+      - 日本❤JP➤01
+      - IEPL廣港05专线×5x
+      - 香港❤HK➤03
+      - 香港❤HK➤05
+      - 菲律宾❤️PH
+      - 美国❤CN2➤02
+      - 澳大利亚❤AU
+      - 美国❤CN2➤03
+      - 越南❤️VN
+      - 阿联酋杜拜❤DuBai
+      - 俄罗斯❤RU
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V358U-4x-BGP-SG-NF
-      - V359U-4x-BGP-SG-NF
-      - V451U-1x-BGP-SG-NF
-      - V353U-1x-BGP-SG-NF
-      - V302U-1x-BGP-HK-NF
-      - V305U-1x-BGP-HK-NF
-      - V356U-2x-BGP-SG-NF
-      - V355U-2x-BGP-SG-NF
-      - V357U-2x-BGP-SG-NF
-      - V407U-1x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V350U-1x-BGP-SG-NF
-      - V381U-1x-BGP-US-NF
-      - V450U-1x-BGP-SG-NF
-      - V336U-2x-BGP-JP-NF
-      - V320U-2x-BGP-HK-NF
-      - V338U-2x-BGP-JP-NF
-      - V334U-1x-BGP-JP-NF
-      - V332U-1x-BGP-JP-NF
-      - V387U-2x-BGP-US-NF
-      - V382U-1x-BGP-US-NF
-      - V335U-1x-BGP-JP-NF
-      - V337U-2x-BGP-JP-NF
-      - V388U-2x-BGP-US-NF
-      - V354U-2x-BGP-SG-NF
-      - V409U-1x-BGP-HK-NF
-      - V333U-1x-BGP-JP-NF
-      - ️‍🌈 ️‍🌈 应急续费节点-10x
-      - V389U-2x-BGP-US-NF
-      - V405U-1x-BGP-HK-NF
-      - V473U-2x-BGP-TW-NF
-      - V390U-2x-BGP-US-NF
-      - V383U-1x-BGP-US-NF
-      - V386U-2x-BGP-US-NF
-      - V371U-2x-BGP-TW-NF
-      - V453U-1x-BGP-SG-NF
-      - V304U-1x-BGP-HK-NF
+      - 马来西亚❤️MA2
+      - 德国❤DE➤03
+      - 香港❤HK➤02
+      - IEPL廣新03专线×5x
+      - 台湾❤HiNet01
+      - 台湾❤HiNet03
+      - 香港❤HK➤08
+      - 日本❤JP➤01
+      - IEPL廣港05专线×5x
+      - 香港❤HK➤03
+      - 香港❤HK➤05
+      - 菲律宾❤️PH
+      - 美国❤CN2➤02
+      - 澳大利亚❤AU
+      - 美国❤CN2➤03
+      - 越南❤️VN
+      - 阿联酋杜拜❤DuBai
+      - 俄罗斯❤RU
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -188,175 +112,106 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V358U-4x-BGP-SG-NF
-      - V359U-4x-BGP-SG-NF
-      - V451U-1x-BGP-SG-NF
-      - V353U-1x-BGP-SG-NF
-      - V302U-1x-BGP-HK-NF
-      - V305U-1x-BGP-HK-NF
-      - V356U-2x-BGP-SG-NF
-      - V355U-2x-BGP-SG-NF
-      - V357U-2x-BGP-SG-NF
-      - V407U-1x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V350U-1x-BGP-SG-NF
-      - V381U-1x-BGP-US-NF
-      - V450U-1x-BGP-SG-NF
-      - V336U-2x-BGP-JP-NF
-      - V320U-2x-BGP-HK-NF
-      - V338U-2x-BGP-JP-NF
-      - V334U-1x-BGP-JP-NF
-      - V332U-1x-BGP-JP-NF
-      - V387U-2x-BGP-US-NF
-      - V382U-1x-BGP-US-NF
-      - V335U-1x-BGP-JP-NF
-      - V337U-2x-BGP-JP-NF
-      - V388U-2x-BGP-US-NF
-      - V354U-2x-BGP-SG-NF
-      - V409U-1x-BGP-HK-NF
-      - V333U-1x-BGP-JP-NF
-      - ️‍🌈 ️‍🌈 应急续费节点-10x
-      - V389U-2x-BGP-US-NF
-      - V405U-1x-BGP-HK-NF
-      - V473U-2x-BGP-TW-NF
-      - V390U-2x-BGP-US-NF
-      - V383U-1x-BGP-US-NF
-      - V386U-2x-BGP-US-NF
-      - V371U-2x-BGP-TW-NF
-      - V453U-1x-BGP-SG-NF
-      - V304U-1x-BGP-HK-NF
+      - 马来西亚❤️MA2
+      - 德国❤DE➤03
+      - 香港❤HK➤02
+      - IEPL廣新03专线×5x
+      - 台湾❤HiNet01
+      - 台湾❤HiNet03
+      - 香港❤HK➤08
+      - 日本❤JP➤01
+      - IEPL廣港05专线×5x
+      - 香港❤HK➤03
+      - 香港❤HK➤05
+      - 菲律宾❤️PH
+      - 美国❤CN2➤02
+      - 澳大利亚❤AU
+      - 美国❤CN2➤03
+      - 越南❤️VN
+      - 阿联酋杜拜❤DuBai
+      - 俄罗斯❤RU
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港❤HK➤02
+      - 台湾❤HiNet01
+      - 台湾❤HiNet03
+      - 香港❤HK➤08
+      - IEPL廣港05专线×5x
+      - 香港❤HK➤03
+      - 香港❤HK➤05
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - V358U-4x-BGP-SG-NF
-      - V359U-4x-BGP-SG-NF
-      - V451U-1x-BGP-SG-NF
-      - V353U-1x-BGP-SG-NF
-      - V302U-1x-BGP-HK-NF
-      - V305U-1x-BGP-HK-NF
-      - V356U-2x-BGP-SG-NF
-      - V355U-2x-BGP-SG-NF
-      - V357U-2x-BGP-SG-NF
-      - V407U-1x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V350U-1x-BGP-SG-NF
-      - V381U-1x-BGP-US-NF
-      - V450U-1x-BGP-SG-NF
-      - V336U-2x-BGP-JP-NF
-      - V320U-2x-BGP-HK-NF
-      - V338U-2x-BGP-JP-NF
-      - V334U-1x-BGP-JP-NF
-      - V332U-1x-BGP-JP-NF
-      - V387U-2x-BGP-US-NF
-      - V382U-1x-BGP-US-NF
-      - V335U-1x-BGP-JP-NF
-      - V337U-2x-BGP-JP-NF
-      - V388U-2x-BGP-US-NF
-      - V354U-2x-BGP-SG-NF
-      - V409U-1x-BGP-HK-NF
-      - V333U-1x-BGP-JP-NF
-      - ️‍🌈 ️‍🌈 应急续费节点-10x
-      - V389U-2x-BGP-US-NF
-      - V405U-1x-BGP-HK-NF
-      - V473U-2x-BGP-TW-NF
-      - V390U-2x-BGP-US-NF
-      - V383U-1x-BGP-US-NF
-      - V386U-2x-BGP-US-NF
-      - V371U-2x-BGP-TW-NF
-      - V453U-1x-BGP-SG-NF
-      - V304U-1x-BGP-HK-NF
+      - 马来西亚❤️MA2
+      - 德国❤DE➤03
+      - 香港❤HK➤02
+      - IEPL廣新03专线×5x
+      - 台湾❤HiNet01
+      - 台湾❤HiNet03
+      - 香港❤HK➤08
+      - 日本❤JP➤01
+      - IEPL廣港05专线×5x
+      - 香港❤HK➤03
+      - 香港❤HK➤05
+      - 菲律宾❤️PH
+      - 美国❤CN2➤02
+      - 澳大利亚❤AU
+      - 美国❤CN2➤03
+      - 越南❤️VN
+      - 阿联酋杜拜❤DuBai
+      - 俄罗斯❤RU
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - V358U-4x-BGP-SG-NF
-      - V359U-4x-BGP-SG-NF
-      - V451U-1x-BGP-SG-NF
-      - V353U-1x-BGP-SG-NF
-      - V302U-1x-BGP-HK-NF
-      - V305U-1x-BGP-HK-NF
-      - V356U-2x-BGP-SG-NF
-      - V355U-2x-BGP-SG-NF
-      - V357U-2x-BGP-SG-NF
-      - V407U-1x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V350U-1x-BGP-SG-NF
-      - V381U-1x-BGP-US-NF
-      - V450U-1x-BGP-SG-NF
-      - V336U-2x-BGP-JP-NF
-      - V320U-2x-BGP-HK-NF
-      - V338U-2x-BGP-JP-NF
-      - V334U-1x-BGP-JP-NF
-      - V332U-1x-BGP-JP-NF
-      - V387U-2x-BGP-US-NF
-      - V382U-1x-BGP-US-NF
-      - V335U-1x-BGP-JP-NF
-      - V337U-2x-BGP-JP-NF
-      - V388U-2x-BGP-US-NF
-      - V354U-2x-BGP-SG-NF
-      - V409U-1x-BGP-HK-NF
-      - V333U-1x-BGP-JP-NF
-      - ️‍🌈 ️‍🌈 应急续费节点-10x
-      - V389U-2x-BGP-US-NF
-      - V405U-1x-BGP-HK-NF
-      - V473U-2x-BGP-TW-NF
-      - V390U-2x-BGP-US-NF
-      - V383U-1x-BGP-US-NF
-      - V386U-2x-BGP-US-NF
-      - V371U-2x-BGP-TW-NF
-      - V453U-1x-BGP-SG-NF
-      - V304U-1x-BGP-HK-NF
+      - 马来西亚❤️MA2
+      - 德国❤DE➤03
+      - 香港❤HK➤02
+      - IEPL廣新03专线×5x
+      - 台湾❤HiNet01
+      - 台湾❤HiNet03
+      - 香港❤HK➤08
+      - 日本❤JP➤01
+      - IEPL廣港05专线×5x
+      - 香港❤HK➤03
+      - 香港❤HK➤05
+      - 菲律宾❤️PH
+      - 美国❤CN2➤02
+      - 澳大利亚❤AU
+      - 美国❤CN2➤03
+      - 越南❤️VN
+      - 阿联酋杜拜❤DuBai
+      - 俄罗斯❤RU
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V358U-4x-BGP-SG-NF
-      - V359U-4x-BGP-SG-NF
-      - V451U-1x-BGP-SG-NF
-      - V353U-1x-BGP-SG-NF
-      - V302U-1x-BGP-HK-NF
-      - V305U-1x-BGP-HK-NF
-      - V356U-2x-BGP-SG-NF
-      - V355U-2x-BGP-SG-NF
-      - V357U-2x-BGP-SG-NF
-      - V407U-1x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V350U-1x-BGP-SG-NF
-      - V381U-1x-BGP-US-NF
-      - V450U-1x-BGP-SG-NF
-      - V336U-2x-BGP-JP-NF
-      - V320U-2x-BGP-HK-NF
-      - V338U-2x-BGP-JP-NF
-      - V334U-1x-BGP-JP-NF
-      - V332U-1x-BGP-JP-NF
-      - V387U-2x-BGP-US-NF
-      - V382U-1x-BGP-US-NF
-      - V335U-1x-BGP-JP-NF
-      - V337U-2x-BGP-JP-NF
-      - V388U-2x-BGP-US-NF
-      - V354U-2x-BGP-SG-NF
-      - V409U-1x-BGP-HK-NF
-      - V333U-1x-BGP-JP-NF
-      - ️‍🌈 ️‍🌈 应急续费节点-10x
-      - V389U-2x-BGP-US-NF
-      - V405U-1x-BGP-HK-NF
-      - V473U-2x-BGP-TW-NF
-      - V390U-2x-BGP-US-NF
-      - V383U-1x-BGP-US-NF
-      - V386U-2x-BGP-US-NF
-      - V371U-2x-BGP-TW-NF
-      - V453U-1x-BGP-SG-NF
-      - V304U-1x-BGP-HK-NF
+      - 马来西亚❤️MA2
+      - 德国❤DE➤03
+      - 香港❤HK➤02
+      - IEPL廣新03专线×5x
+      - 台湾❤HiNet01
+      - 台湾❤HiNet03
+      - 香港❤HK➤08
+      - 日本❤JP➤01
+      - IEPL廣港05专线×5x
+      - 香港❤HK➤03
+      - 香港❤HK➤05
+      - 菲律宾❤️PH
+      - 美国❤CN2➤02
+      - 澳大利亚❤AU
+      - 美国❤CN2➤03
+      - 越南❤️VN
+      - 阿联酋杜拜❤DuBai
+      - 俄罗斯❤RU
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -372,43 +227,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V358U-4x-BGP-SG-NF
-      - V359U-4x-BGP-SG-NF
-      - V451U-1x-BGP-SG-NF
-      - V353U-1x-BGP-SG-NF
-      - V302U-1x-BGP-HK-NF
-      - V305U-1x-BGP-HK-NF
-      - V356U-2x-BGP-SG-NF
-      - V355U-2x-BGP-SG-NF
-      - V357U-2x-BGP-SG-NF
-      - V407U-1x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V350U-1x-BGP-SG-NF
-      - V381U-1x-BGP-US-NF
-      - V450U-1x-BGP-SG-NF
-      - V336U-2x-BGP-JP-NF
-      - V320U-2x-BGP-HK-NF
-      - V338U-2x-BGP-JP-NF
-      - V334U-1x-BGP-JP-NF
-      - V332U-1x-BGP-JP-NF
-      - V387U-2x-BGP-US-NF
-      - V382U-1x-BGP-US-NF
-      - V335U-1x-BGP-JP-NF
-      - V337U-2x-BGP-JP-NF
-      - V388U-2x-BGP-US-NF
-      - V354U-2x-BGP-SG-NF
-      - V409U-1x-BGP-HK-NF
-      - V333U-1x-BGP-JP-NF
-      - ️‍🌈 ️‍🌈 应急续费节点-10x
-      - V389U-2x-BGP-US-NF
-      - V405U-1x-BGP-HK-NF
-      - V473U-2x-BGP-TW-NF
-      - V390U-2x-BGP-US-NF
-      - V383U-1x-BGP-US-NF
-      - V386U-2x-BGP-US-NF
-      - V371U-2x-BGP-TW-NF
-      - V453U-1x-BGP-SG-NF
-      - V304U-1x-BGP-HK-NF
+      - 马来西亚❤️MA2
+      - 德国❤DE➤03
+      - 香港❤HK➤02
+      - IEPL廣新03专线×5x
+      - 台湾❤HiNet01
+      - 台湾❤HiNet03
+      - 香港❤HK➤08
+      - 日本❤JP➤01
+      - IEPL廣港05专线×5x
+      - 香港❤HK➤03
+      - 香港❤HK➤05
+      - 菲律宾❤️PH
+      - 美国❤CN2➤02
+      - 澳大利亚❤AU
+      - 美国❤CN2➤03
+      - 越南❤️VN
+      - 阿联酋杜拜❤DuBai
+      - 俄罗斯❤RU
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -9365,8 +9201,6 @@ rules:
  - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,idmchina.net,🛑 全球拦截
- - DOMAIN-SUFFIX,imazingchina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,jihehuaban.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,keyshot.cc,🛑 全球拦截
@@ -9436,8 +9270,6 @@ rules:
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
- - DOMAIN,radio.itunes.apple.com,🌍 国外媒体
- - DOMAIN,tv.applemusic.com,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
@@ -9482,7 +9314,6 @@ rules:
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
  - DOMAIN,linear.tv.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
- - DOMAIN,uts-api.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -9569,7 +9400,6 @@ rules:
  - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
- - IP-CIDR,210.71.227.200/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
@@ -9670,14 +9500,15 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
- - DOMAIN-SUFFIX,bilibili.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
  - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,biligame.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,biligame.net,🌏 国内媒体
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
- - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
- - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
@@ -9695,7 +9526,6 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
- - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
@@ -9709,14 +9539,11 @@ rules:
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
- - IP-CIDR,91.105.192.0/23,📲 电报信息,no-resolve
+ - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
- - IP-CIDR,185.76.151.0/24,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
  - DOMAIN,payments-jp.amazon.com,🔰 节点选择
@@ -9725,36 +9552,16 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
- - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
- - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
- - DOMAIN,clubhouse.pubnubapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
  - DOMAIN-SUFFIX,binance.com,🔰 节点选择
- - DOMAIN-SUFFIX,binance.us,🔰 节点选择
  - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
  - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bithumb.com,🔰 节点选择
  - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bitstamp.net,🔰 节点选择
- - DOMAIN-SUFFIX,bittrex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bybit.com,🔰 节点选择
- - DOMAIN-SUFFIX,coinbase.com,🔰 节点选择
- - DOMAIN-SUFFIX,coincheck.com,🔰 节点选择
- - DOMAIN-SUFFIX,coingecko.com,🔰 节点选择
- - DOMAIN-SUFFIX,coinmarketcap.com,🔰 节点选择
- - DOMAIN-SUFFIX,coinone.co.kr,🔰 节点选择
- - DOMAIN-SUFFIX,ftx.com,🔰 节点选择
  - DOMAIN-SUFFIX,gate.io,🔰 节点选择
- - DOMAIN-SUFFIX,gemini.com,🔰 节点选择
  - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
- - DOMAIN-SUFFIX,korbit.co.kr,🔰 节点选择
- - DOMAIN-SUFFIX,kraken.com,🔰 节点选择
- - DOMAIN-SUFFIX,kucoin.com,🔰 节点选择
- - DOMAIN-SUFFIX,liquid.com,🔰 节点选择
  - DOMAIN-SUFFIX,okex.com,🔰 节点选择
- - DOMAIN-SUFFIX,poloniex.com,🔰 节点选择
  - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
  - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,discord.com,🔰 节点选择
@@ -9787,7 +9594,6 @@ rules:
  - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
  - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
  - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
- - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
  - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
@@ -9838,14 +9644,11 @@ rules:
  - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,91.105.192.0/23,🔰 节点选择,no-resolve
+ - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
- - IP-CIDR,185.76.151.0/24,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
- - IP-CIDR6,2001:b28:f23c::/48,🔰 节点选择,no-resolve
- - IP-CIDR6,2a0a:f280::/32,🔰 节点选择,no-resolve
  - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
  - DOMAIN-SUFFIX,t.co,🔰 节点选择
@@ -9914,6 +9717,7 @@ rules:
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -10007,6 +9811,7 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
@@ -10032,7 +9837,6 @@ rules:
  - DOMAIN-SUFFIX,marc.info,🔰 节点选择
  - DOMAIN-SUFFIX,matters.news,🔰 节点选择
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
- - DOMAIN-SUFFIX,medibang.com,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
  - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
@@ -10122,7 +9926,6 @@ rules:
  - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
  - DOMAIN-SUFFIX,substack.com,🔰 节点选择
- - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -10138,7 +9941,6 @@ rules:
  - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
  - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
- - DOMAIN-SUFFIX,tradingview.com,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
  - DOMAIN-SUFFIX,tutanota.com,🔰 节点选择
@@ -10255,33 +10057,20 @@ rules:
  - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
  - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
  - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
  - DOMAIN,beta.music.apple.com,🔰 节点选择
- - DOMAIN,lookup-api.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,books.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
  - DOMAIN,tv.apple.com,🔰 节点选择
- - DOMAIN,amp-api.podcasts.apple.com,🔰 节点选择
- - DOMAIN,bookkeeper.itunes.apple.com,🔰 节点选择
- - DOMAIN,gateway.icloud.com,🔰 节点选择
- - DOMAIN-SUFFIX,apple.news,🔰 节点选择
- - DOMAIN,news-assets.apple.com,🔰 节点选择
- - DOMAIN,news-client.apple.com,🔰 节点选择
- - DOMAIN,news-client-search.apple.com,🔰 节点选择
- - DOMAIN,news-edge.apple.com,🔰 节点选择
- - DOMAIN,news-events.apple.com,🔰 节点选择
- - DOMAIN,apple.comscoreresearch.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,lookup-api.apple.com,🔰 节点选择
  - DOMAIN-SUFFIX,go.dev,🔰 节点选择
  - DOMAIN-SUFFIX,golang.org,🔰 节点选择
- - DOMAIN-SUFFIX,aicoin.com,🔰 节点选择
- - DOMAIN-SUFFIX,aimoon.com,🔰 节点选择
  - DOMAIN-SUFFIX,bing.com,🔰 节点选择
  - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
  - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
  - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
- - DOMAIN-SUFFIX,linkedin.com,🔰 节点选择
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
@@ -10289,10 +10078,12 @@ rules:
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
  - DOMAIN,ocsp.apple.com,🔰 节点选择
+ - DOMAIN,xp.apple.com,🔰 节点选择
  - DOMAIN,cacerts.digicert.com,🔰 节点选择
  - DOMAIN,crl3.digicert.com,🔰 节点选择
  - DOMAIN,crl4.digicert.com,🔰 节点选择
  - DOMAIN,ocsp.digicert.com,🔰 节点选择
+ - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
  - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
  - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
  - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
@@ -10448,11 +10239,19 @@ rules:
  - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
- - DOMAIN-SUFFIX,tencent-cloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
+ - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
+ - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
+ - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
@@ -10532,7 +10331,6 @@ rules:
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
- - DOMAIN-SUFFIX,cibntv.net,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
@@ -10577,6 +10375,8 @@ rules:
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
+ - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
+ - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
@@ -10599,7 +10399,6 @@ rules:
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
- - DOMAIN-SUFFIX,shouqianba.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
