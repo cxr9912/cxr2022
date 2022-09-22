@@ -5,63 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 台湾1, server: tw1.teacat2.xyz, port: 50003, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
-  - {name: 日本2, server: jp2.teacat2.xyz, port: 50061, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
-  - {name: 新加坡1, server: sg1.teacat2.xyz, port: 50065, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
-  - {name: 日本1, server: jp1.teacat2.xyz, port: 50060, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
-  - {name: 韩国1, server: kr1.teacat2.xyz, port: 50058, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
-  - {name: 美国2, server: us2.teacat2.xyz, port: 50066, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
-  - {name: 台湾2, server: tw2.teacat2.xyz, port: 50068, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
-  - {name: 美国1, server: us1.teacat2.xyz, port: 50066, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
-  - {name: 香港-CMHK, server: hk3.teacat2.xyz, port: 50001, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
-  - {name: 土耳其, server: gy.teacat2.xyz, port: 50069, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
+  - {name: 香港01, server: 20.239.167.145, port: 44300, type: vmess, uuid: 005d5cbc-8ac7-3e56-8819-eef424600582, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: 20.239.167.145}, udp: true}
+  - {name: 香港02, server: 20.247.89.150, port: 44300, type: vmess, uuid: 005d5cbc-8ac7-3e56-8819-eef424600582, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: 20.247.89.150}, udp: true}
+  - {name: 香港04, server: 18.166.56.217, port: 44300, type: vmess, uuid: 005d5cbc-8ac7-3e56-8819-eef424600582, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: 18.166.56.217}, udp: true}
+  - {name: 香港03, server: 18.162.126.13, port: 44300, type: vmess, uuid: 005d5cbc-8ac7-3e56-8819-eef424600582, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: 18.162.126.13}, udp: true}
+  - {name: 美国, server: 20.239.162.0, port: 48003, type: vmess, uuid: 005d5cbc-8ac7-3e56-8819-eef424600582, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: 20.239.162.0}, udp: true}
+  - {name: 新加坡, server: 20.239.162.0, port: 48001, type: vmess, uuid: 005d5cbc-8ac7-3e56-8819-eef424600582, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: 20.239.162.0}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾1
-      - 日本2
-      - 新加坡1
-      - 日本1
-      - 韩国1
-      - 美国2
-      - 台湾2
-      - 美国1
-      - 香港-CMHK
-      - 土耳其
+      - 香港01
+      - 香港02
+      - 香港04
+      - 香港03
+      - 美国
+      - 新加坡
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 台湾1
-      - 日本2
-      - 新加坡1
-      - 日本1
-      - 韩国1
-      - 美国2
-      - 台湾2
-      - 美国1
-      - 香港-CMHK
-      - 土耳其
+      - 香港01
+      - 香港02
+      - 香港04
+      - 香港03
+      - 美国
+      - 新加坡
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾1
-      - 日本2
-      - 新加坡1
-      - 日本1
-      - 韩国1
-      - 美国2
-      - 台湾2
-      - 美国1
-      - 香港-CMHK
-      - 土耳其
+      - 香港01
+      - 香港02
+      - 香港04
+      - 香港03
+      - 美国
+      - 新加坡
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,70 +64,55 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾1
-      - 日本2
-      - 新加坡1
-      - 日本1
-      - 韩国1
-      - 美国2
-      - 台湾2
-      - 美国1
-      - 香港-CMHK
-      - 土耳其
+      - 香港01
+      - 香港02
+      - 香港04
+      - 香港03
+      - 美国
+      - 新加坡
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾1
-      - 台湾2
-      - 香港-CMHK
+      - 香港01
+      - 香港02
+      - 香港04
+      - 香港03
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台湾1
-      - 日本2
-      - 新加坡1
-      - 日本1
-      - 韩国1
-      - 美国2
-      - 台湾2
-      - 美国1
-      - 香港-CMHK
-      - 土耳其
+      - 香港01
+      - 香港02
+      - 香港04
+      - 香港03
+      - 美国
+      - 新加坡
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台湾1
-      - 日本2
-      - 新加坡1
-      - 日本1
-      - 韩国1
-      - 美国2
-      - 台湾2
-      - 美国1
-      - 香港-CMHK
-      - 土耳其
+      - 香港01
+      - 香港02
+      - 香港04
+      - 香港03
+      - 美国
+      - 新加坡
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾1
-      - 日本2
-      - 新加坡1
-      - 日本1
-      - 韩国1
-      - 美国2
-      - 台湾2
-      - 美国1
-      - 香港-CMHK
-      - 土耳其
+      - 香港01
+      - 香港02
+      - 香港04
+      - 香港03
+      - 美国
+      - 新加坡
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -159,16 +128,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾1
-      - 日本2
-      - 新加坡1
-      - 日本1
-      - 韩国1
-      - 美国2
-      - 台湾2
-      - 美国1
-      - 香港-CMHK
-      - 土耳其
+      - 香港01
+      - 香港02
+      - 香港04
+      - 香港03
+      - 美国
+      - 新加坡
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
