@@ -5,31 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 【直连】洛杉矶DE, server: tr02.kczz2038.online, port: 443, type: trojan, password: f90a8346-a166-462b-9e74-27e102471158, sni: tr02.kczz2038.online, skip-cert-verify: true, udp: true}
-  - {name: GetAFreeNode-Tokyo, server: 103.173.178.110, port: 40443, type: vmess, uuid: B2560548-5F75-3015-82F9-1C3DF8628009, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 香港 04 | 直连, server: hk4.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, port: 443, type: trojan, password: 3207b9dd-5967-4f2d-ba6f-2daa7d4b62b2, sni: hk4.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 02 | 直连, server: hk2.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, port: 443, type: trojan, password: 3207b9dd-5967-4f2d-ba6f-2daa7d4b62b2, sni: hk2.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 03 | 直连, server: hk3.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, port: 443, type: trojan, password: 3207b9dd-5967-4f2d-ba6f-2daa7d4b62b2, sni: hk3.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 无法使用重新导入订阅，邀请60%返利, server: sg2.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, port: 443, type: trojan, password: 3207b9dd-5967-4f2d-ba6f-2daa7d4b62b2, sni: sg2.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 | 直连, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 3207b9dd-5967-4f2d-ba6f-2daa7d4b62b2, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 美国 01 | 直连, server: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, port: 443, type: trojan, password: 3207b9dd-5967-4f2d-ba6f-2daa7d4b62b2, sni: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【直连】洛杉矶DE
-      - GetAFreeNode-Tokyo
+      - 香港 04 | 直连
+      - 香港 02 | 直连
+      - 香港 03 | 直连
+      - 无法使用重新导入订阅，邀请60%返利
+      - 日本 01 | 直连
+      - 美国 01 | 直连
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 【直连】洛杉矶DE
-      - GetAFreeNode-Tokyo
+      - 香港 04 | 直连
+      - 香港 02 | 直连
+      - 香港 03 | 直连
+      - 无法使用重新导入订阅，邀请60%返利
+      - 日本 01 | 直连
+      - 美国 01 | 直连
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【直连】洛杉矶DE
-      - GetAFreeNode-Tokyo
+      - 香港 04 | 直连
+      - 香港 02 | 直连
+      - 香港 03 | 直连
+      - 无法使用重新导入订阅，邀请60%返利
+      - 日本 01 | 直连
+      - 美国 01 | 直连
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,35 +64,54 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【直连】洛杉矶DE
-      - GetAFreeNode-Tokyo
+      - 香港 04 | 直连
+      - 香港 02 | 直连
+      - 香港 03 | 直连
+      - 无法使用重新导入订阅，邀请60%返利
+      - 日本 01 | 直连
+      - 美国 01 | 直连
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 04 | 直连
+      - 香港 02 | 直连
+      - 香港 03 | 直连
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 【直连】洛杉矶DE
-      - GetAFreeNode-Tokyo
+      - 香港 04 | 直连
+      - 香港 02 | 直连
+      - 香港 03 | 直连
+      - 无法使用重新导入订阅，邀请60%返利
+      - 日本 01 | 直连
+      - 美国 01 | 直连
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 【直连】洛杉矶DE
-      - GetAFreeNode-Tokyo
+      - 香港 04 | 直连
+      - 香港 02 | 直连
+      - 香港 03 | 直连
+      - 无法使用重新导入订阅，邀请60%返利
+      - 日本 01 | 直连
+      - 美国 01 | 直连
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 【直连】洛杉矶DE
-      - GetAFreeNode-Tokyo
+      - 香港 04 | 直连
+      - 香港 02 | 直连
+      - 香港 03 | 直连
+      - 无法使用重新导入订阅，邀请60%返利
+      - 日本 01 | 直连
+      - 美国 01 | 直连
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +127,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 【直连】洛杉矶DE
-      - GetAFreeNode-Tokyo
+      - 香港 04 | 直连
+      - 香港 02 | 直连
+      - 香港 03 | 直连
+      - 无法使用重新导入订阅，邀请60%返利
+      - 日本 01 | 直连
+      - 美国 01 | 直连
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
