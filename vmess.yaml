@@ -5,59 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK-02 | 2x, server: 104.208.80.111, port: 45678, type: vmess, uuid: 2c042731-b7cb-4211-b43c-d5e6d5190842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK-01 | 2x, server: 20.205.109.89, port: 50000, type: vmess, uuid: 2c042731-b7cb-4211-b43c-d5e6d5190842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR-01 | 1.5x, server: 20.214.171.188, port: 8080, type: vmess, uuid: 2c042731-b7cb-4211-b43c-d5e6d5190842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IN-01 | 1.5x, server: 40.80.94.91, port: 8080, type: vmess, uuid: 2c042731-b7cb-4211-b43c-d5e6d5190842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US-02 | 2x, server: 104.42.49.47, port: 45678, type: vmess, uuid: 2c042731-b7cb-4211-b43c-d5e6d5190842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP-04 | 1x, server: 150.230.101.181, port: 45678, type: vmess, uuid: 2c042731-b7cb-4211-b43c-d5e6d5190842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP-02 | 1x, server: 150.230.196.132, port: 45679, type: vmess, uuid: 2c042731-b7cb-4211-b43c-d5e6d5190842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP-01 | 1x, server: 168.138.194.222, port: 50000, type: vmess, uuid: 2c042731-b7cb-4211-b43c-d5e6d5190842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP-03 | 1x, server: 150.230.200.146, port: 45678, type: vmess, uuid: 2c042731-b7cb-4211-b43c-d5e6d5190842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾 | Trojan | A | 0.1x | 黄金 | 原生動態IP |, server: azhj001.xibai6.top, port: 20767, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xibai6.top, skip-cert-verify: true, udp: true}
+  - {name: "俄罗斯 | Trojan | A | 0.0x | 黃金 | 官網 | ninihao.cc | \t", server: azhj001.xibai6.top, port: 20762, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xibai6.top, skip-cert-verify: true, udp: true}
+  - {name: 美国 | Trojan | A | 0.8x | 黃金 |, server: azhj001.xibai6.top, port: 20714, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xibai6.top, skip-cert-verify: true, udp: true}
+  - {name: 美国 | Trojan | B | 0.8x | 黃金, server: azhj001.xibai6.top, port: 20715, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xibai6.top, skip-cert-verify: true, udp: true}
+  - {name: 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |, server: azhj001.xibai6.top, port: 20716, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xibai6.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-02 | 2x
-      - HK-01 | 2x
-      - KR-01 | 1.5x
-      - IN-01 | 1.5x
-      - US-02 | 2x
-      - JP-04 | 1x
-      - JP-02 | 1x
-      - JP-01 | 1x
-      - JP-03 | 1x
+      - 台湾 | Trojan | A | 0.1x | 黄金 | 原生動態IP |
+      - "俄罗斯 | Trojan | A | 0.0x | 黃金 | 官網 | ninihao.cc | \t"
+      - 美国 | Trojan | A | 0.8x | 黃金 |
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK-02 | 2x
-      - HK-01 | 2x
-      - KR-01 | 1.5x
-      - IN-01 | 1.5x
-      - US-02 | 2x
-      - JP-04 | 1x
-      - JP-02 | 1x
-      - JP-01 | 1x
-      - JP-03 | 1x
+      - 台湾 | Trojan | A | 0.1x | 黄金 | 原生動態IP |
+      - "俄罗斯 | Trojan | A | 0.0x | 黃金 | 官網 | ninihao.cc | \t"
+      - 美国 | Trojan | A | 0.8x | 黃金 |
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-02 | 2x
-      - HK-01 | 2x
-      - KR-01 | 1.5x
-      - IN-01 | 1.5x
-      - US-02 | 2x
-      - JP-04 | 1x
-      - JP-02 | 1x
-      - JP-01 | 1x
-      - JP-03 | 1x
+      - 台湾 | Trojan | A | 0.1x | 黄金 | 原生動態IP |
+      - "俄罗斯 | Trojan | A | 0.0x | 黃金 | 官網 | ninihao.cc | \t"
+      - 美国 | Trojan | A | 0.8x | 黃金 |
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,63 +60,48 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-02 | 2x
-      - HK-01 | 2x
-      - KR-01 | 1.5x
-      - IN-01 | 1.5x
-      - US-02 | 2x
-      - JP-04 | 1x
-      - JP-02 | 1x
-      - JP-01 | 1x
-      - JP-03 | 1x
+      - 台湾 | Trojan | A | 0.1x | 黄金 | 原生動態IP |
+      - "俄罗斯 | Trojan | A | 0.0x | 黃金 | 官網 | ninihao.cc | \t"
+      - 美国 | Trojan | A | 0.8x | 黃金 |
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾 | Trojan | A | 0.1x | 黄金 | 原生動態IP |
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK-02 | 2x
-      - HK-01 | 2x
-      - KR-01 | 1.5x
-      - IN-01 | 1.5x
-      - US-02 | 2x
-      - JP-04 | 1x
-      - JP-02 | 1x
-      - JP-01 | 1x
-      - JP-03 | 1x
+      - 台湾 | Trojan | A | 0.1x | 黄金 | 原生動態IP |
+      - "俄罗斯 | Trojan | A | 0.0x | 黃金 | 官網 | ninihao.cc | \t"
+      - 美国 | Trojan | A | 0.8x | 黃金 |
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK-02 | 2x
-      - HK-01 | 2x
-      - KR-01 | 1.5x
-      - IN-01 | 1.5x
-      - US-02 | 2x
-      - JP-04 | 1x
-      - JP-02 | 1x
-      - JP-01 | 1x
-      - JP-03 | 1x
+      - 台湾 | Trojan | A | 0.1x | 黄金 | 原生動態IP |
+      - "俄罗斯 | Trojan | A | 0.0x | 黃金 | 官網 | ninihao.cc | \t"
+      - 美国 | Trojan | A | 0.8x | 黃金 |
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK-02 | 2x
-      - HK-01 | 2x
-      - KR-01 | 1.5x
-      - IN-01 | 1.5x
-      - US-02 | 2x
-      - JP-04 | 1x
-      - JP-02 | 1x
-      - JP-01 | 1x
-      - JP-03 | 1x
+      - 台湾 | Trojan | A | 0.1x | 黄金 | 原生動態IP |
+      - "俄罗斯 | Trojan | A | 0.0x | 黃金 | 官網 | ninihao.cc | \t"
+      - 美国 | Trojan | A | 0.8x | 黃金 |
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,15 +117,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK-02 | 2x
-      - HK-01 | 2x
-      - KR-01 | 1.5x
-      - IN-01 | 1.5x
-      - US-02 | 2x
-      - JP-04 | 1x
-      - JP-02 | 1x
-      - JP-01 | 1x
-      - JP-03 | 1x
+      - 台湾 | Trojan | A | 0.1x | 黄金 | 原生動態IP |
+      - "俄罗斯 | Trojan | A | 0.0x | 黃金 | 官網 | ninihao.cc | \t"
+      - 美国 | Trojan | A | 0.8x | 黃金 |
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
