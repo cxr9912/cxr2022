@@ -5,127 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡专线 C, server: iepl3.nnooddee.pro, port: 7041, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 香港专线 C, server: iepl3.nnooddee.pro, port: 7012, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 韩国专线 C, server: iepl3.nnooddee.pro, port: 7061, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 新加坡中继 B, server: in03.nnooddee.pro, port: 7041, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 新加坡专线 B, server: iepl2.nnooddee.pro, port: 7041, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 日本专线 B, server: iepl2.nnooddee.pro, port: 7021, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 香港专线 B, server: iepl2.nnooddee.pro, port: 7011, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 台湾中继 C, server: in03.nnooddee.pro, port: 7051, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 香港中继 C, server: in03.nnooddee.pro, port: 7011, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 新加坡中继 A, server: in02.nnooddee.pro, port: 7041, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 香港中继 B, server: in02.nnooddee.pro, port: 7011, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 台湾中继 B, server: in02.nnooddee.pro, port: 7051, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 香港中继 A, server: in01.nnooddee.pro, port: 7011, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 新加坡中继 C, server: in01.nnooddee.pro, port: 7041, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 台湾中继 A, server: in01.nnooddee.pro, port: 7051, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 日本中继 C, server: in02.nnooddee.pro, port: 7021, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 香港专线 A, server: iepl1.nnooddee.pro, port: 7011, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 韩国专线 A, server: iepl1.nnooddee.pro, port: 7061, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 美国专线 C, server: iepl3.nnooddee.pro, port: 7031, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 日本专线 A, server: iepl1.nnooddee.pro, port: 7021, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 台湾专线 A, server: iepl1.nnooddee.pro, port: 7051, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 台湾专线 B, server: iepl2.nnooddee.pro, port: 7051, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 美国专线 A, server: iepl1.nnooddee.pro, port: 7031, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 新加坡专线 A, server: iepl1.nnooddee.pro, port: 7041, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 韩国专线 B, server: iepl2.nnooddee.pro, port: 7061, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
-  - {name: 日本中继 B, server: in03.nnooddee.pro, port: 7021, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 97095:f964C0QL8vQTaAZU, obfs-param: 00f0197095.microsoft.com, udp: true}
+  - {name: V426U-4x-BGP-HK-NF, server: wcjihipm.nodelist.xyz, port: 1426, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8207:EqSdog, obfs-param: "", udp: true}
+  - {name: V308U-1x-BGP-HK-NF, server: fmpnschx.nodelist.xyz, port: 1308, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8207:EqSdog, obfs-param: "", udp: true}
+  - {name: V458U-4x-BGP-SG-NF, server: wcjihipm.nodelist.xyz, port: 1458, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8207:EqSdog, obfs-param: "", udp: true}
+  - {name: V309U-1x-BGP-HK-NF, server: fmpnschx.nodelist.xyz, port: 1309, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8207:EqSdog, obfs-param: "", udp: true}
+  - {name: V328U-4x-BGP-HK-NF, server: wcjihipm.nodelist.xyz, port: 1328, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8207:EqSdog, obfs-param: "", udp: true}
+  - {name: V427U-4x-BGP-HK-NF, server: wcjihipm.nodelist.xyz, port: 1427, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8207:EqSdog, obfs-param: "", udp: true}
+  - {name: V327U-4x-BGP-HK-NF, server: wcjihipm.nodelist.xyz, port: 1327, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8207:EqSdog, obfs-param: "", udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡专线 C
-      - 香港专线 C
-      - 韩国专线 C
-      - 新加坡中继 B
-      - 新加坡专线 B
-      - 日本专线 B
-      - 香港专线 B
-      - 台湾中继 C
-      - 香港中继 C
-      - 新加坡中继 A
-      - 香港中继 B
-      - 台湾中继 B
-      - 香港中继 A
-      - 新加坡中继 C
-      - 台湾中继 A
-      - 日本中继 C
-      - 香港专线 A
-      - 韩国专线 A
-      - 美国专线 C
-      - 日本专线 A
-      - 台湾专线 A
-      - 台湾专线 B
-      - 美国专线 A
-      - 新加坡专线 A
-      - 韩国专线 B
-      - 日本中继 B
+      - V426U-4x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
+      - V458U-4x-BGP-SG-NF
+      - V309U-1x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V427U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡专线 C
-      - 香港专线 C
-      - 韩国专线 C
-      - 新加坡中继 B
-      - 新加坡专线 B
-      - 日本专线 B
-      - 香港专线 B
-      - 台湾中继 C
-      - 香港中继 C
-      - 新加坡中继 A
-      - 香港中继 B
-      - 台湾中继 B
-      - 香港中继 A
-      - 新加坡中继 C
-      - 台湾中继 A
-      - 日本中继 C
-      - 香港专线 A
-      - 韩国专线 A
-      - 美国专线 C
-      - 日本专线 A
-      - 台湾专线 A
-      - 台湾专线 B
-      - 美国专线 A
-      - 新加坡专线 A
-      - 韩国专线 B
-      - 日本中继 B
+      - V426U-4x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
+      - V458U-4x-BGP-SG-NF
+      - V309U-1x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V427U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡专线 C
-      - 香港专线 C
-      - 韩国专线 C
-      - 新加坡中继 B
-      - 新加坡专线 B
-      - 日本专线 B
-      - 香港专线 B
-      - 台湾中继 C
-      - 香港中继 C
-      - 新加坡中继 A
-      - 香港中继 B
-      - 台湾中继 B
-      - 香港中继 A
-      - 新加坡中继 C
-      - 台湾中继 A
-      - 日本中继 C
-      - 香港专线 A
-      - 韩国专线 A
-      - 美国专线 C
-      - 日本专线 A
-      - 台湾专线 A
-      - 台湾专线 B
-      - 美国专线 A
-      - 新加坡专线 A
-      - 韩国专线 B
-      - 日本中继 B
+      - V426U-4x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
+      - V458U-4x-BGP-SG-NF
+      - V309U-1x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V427U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -144,142 +68,55 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡专线 C
-      - 香港专线 C
-      - 韩国专线 C
-      - 新加坡中继 B
-      - 新加坡专线 B
-      - 日本专线 B
-      - 香港专线 B
-      - 台湾中继 C
-      - 香港中继 C
-      - 新加坡中继 A
-      - 香港中继 B
-      - 台湾中继 B
-      - 香港中继 A
-      - 新加坡中继 C
-      - 台湾中继 A
-      - 日本中继 C
-      - 香港专线 A
-      - 韩国专线 A
-      - 美国专线 C
-      - 日本专线 A
-      - 台湾专线 A
-      - 台湾专线 B
-      - 美国专线 A
-      - 新加坡专线 A
-      - 韩国专线 B
-      - 日本中继 B
+      - V426U-4x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
+      - V458U-4x-BGP-SG-NF
+      - V309U-1x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V427U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港专线 C
-      - 香港专线 B
-      - 台湾中继 C
-      - 香港中继 C
-      - 香港中继 B
-      - 台湾中继 B
-      - 香港中继 A
-      - 台湾中继 A
-      - 香港专线 A
-      - 台湾专线 A
-      - 台湾专线 B
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡专线 C
-      - 香港专线 C
-      - 韩国专线 C
-      - 新加坡中继 B
-      - 新加坡专线 B
-      - 日本专线 B
-      - 香港专线 B
-      - 台湾中继 C
-      - 香港中继 C
-      - 新加坡中继 A
-      - 香港中继 B
-      - 台湾中继 B
-      - 香港中继 A
-      - 新加坡中继 C
-      - 台湾中继 A
-      - 日本中继 C
-      - 香港专线 A
-      - 韩国专线 A
-      - 美国专线 C
-      - 日本专线 A
-      - 台湾专线 A
-      - 台湾专线 B
-      - 美国专线 A
-      - 新加坡专线 A
-      - 韩国专线 B
-      - 日本中继 B
+      - V426U-4x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
+      - V458U-4x-BGP-SG-NF
+      - V309U-1x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V427U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡专线 C
-      - 香港专线 C
-      - 韩国专线 C
-      - 新加坡中继 B
-      - 新加坡专线 B
-      - 日本专线 B
-      - 香港专线 B
-      - 台湾中继 C
-      - 香港中继 C
-      - 新加坡中继 A
-      - 香港中继 B
-      - 台湾中继 B
-      - 香港中继 A
-      - 新加坡中继 C
-      - 台湾中继 A
-      - 日本中继 C
-      - 香港专线 A
-      - 韩国专线 A
-      - 美国专线 C
-      - 日本专线 A
-      - 台湾专线 A
-      - 台湾专线 B
-      - 美国专线 A
-      - 新加坡专线 A
-      - 韩国专线 B
-      - 日本中继 B
+      - V426U-4x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
+      - V458U-4x-BGP-SG-NF
+      - V309U-1x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V427U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡专线 C
-      - 香港专线 C
-      - 韩国专线 C
-      - 新加坡中继 B
-      - 新加坡专线 B
-      - 日本专线 B
-      - 香港专线 B
-      - 台湾中继 C
-      - 香港中继 C
-      - 新加坡中继 A
-      - 香港中继 B
-      - 台湾中继 B
-      - 香港中继 A
-      - 新加坡中继 C
-      - 台湾中继 A
-      - 日本中继 C
-      - 香港专线 A
-      - 韩国专线 A
-      - 美国专线 C
-      - 日本专线 A
-      - 台湾专线 A
-      - 台湾专线 B
-      - 美国专线 A
-      - 新加坡专线 A
-      - 韩国专线 B
-      - 日本中继 B
+      - V426U-4x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
+      - V458U-4x-BGP-SG-NF
+      - V309U-1x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V427U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -295,32 +132,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡专线 C
-      - 香港专线 C
-      - 韩国专线 C
-      - 新加坡中继 B
-      - 新加坡专线 B
-      - 日本专线 B
-      - 香港专线 B
-      - 台湾中继 C
-      - 香港中继 C
-      - 新加坡中继 A
-      - 香港中继 B
-      - 台湾中继 B
-      - 香港中继 A
-      - 新加坡中继 C
-      - 台湾中继 A
-      - 日本中继 C
-      - 香港专线 A
-      - 韩国专线 A
-      - 美国专线 C
-      - 日本专线 A
-      - 台湾专线 A
-      - 台湾专线 B
-      - 美国专线 A
-      - 新加坡专线 A
-      - 韩国专线 B
-      - 日本中继 B
+      - V426U-4x-BGP-HK-NF
+      - V308U-1x-BGP-HK-NF
+      - V458U-4x-BGP-SG-NF
+      - V309U-1x-BGP-HK-NF
+      - V328U-4x-BGP-HK-NF
+      - V427U-4x-BGP-HK-NF
+      - V327U-4x-BGP-HK-NF
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
