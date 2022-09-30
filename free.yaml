@@ -5,39 +5,443 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本JP-T, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: c5809dd1-e1fb-4523-9833-190b09ac7128, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡SG-T, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: c5809dd1-e1fb-4523-9833-190b09ac7128, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 柬埔寨KH-T, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: c5809dd1-e1fb-4523-9833-190b09ac7128, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 美国USLA-T, server: usla.iamnotagoodman.com, port: 443, type: trojan, password: c5809dd1-e1fb-4523-9833-190b09ac7128, sni: usla.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: V2-中转3439|广东C-新加坡|x2.0, server: ngs9.cdn.node.a.ddns-ounk.com, port: 13439, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3582|广东C-新加坡|x2.0, server: wegm63.cdn.node.a.ddns-ounk.com, port: 13582, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3445|广东W-香港HGC|解锁|x1.5, server: x321.cdn.node.a.ddns-ounk.com, port: 13445, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3682|广东D-香港|解锁|x1.2, server: z5sa6is.cdn.node.a.ddns-ounk.com, port: 13682, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3580|广东C-新加坡|x2.0, server: wegm63.cdn.node.a.ddns-ounk.com, port: 13580, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3044|广东C-新加坡|x1.0, server: ngs9.cdn.node.a.ddns-ounk.com, port: 13044, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3440|广东C-新加坡|x2.0, server: ngs9.cdn.node.a.ddns-ounk.com, port: 13440, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3543|广东-香港M|解锁|x1.5, server: x321.cdn.node.a.ddns-ounk.com, port: 13543, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3316|广东U-台湾|解锁|x1.5, server: lld9k6.cdn.node.a.ddns-ounk.com, port: 13316, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3644|广东-香港M|x1.5, server: x321.cdn.node.a.ddns-ounk.com, port: 13644, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3303|广东H-台湾|解锁|x1.0, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13303, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3301|广东H-台湾|解锁|x1.0, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13301, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3299|广东H-台湾|解锁|x1.0, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13299, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3304|广东H-台湾|解锁|x1.0, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13304, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转777|广东U-台湾|解锁|x1.0, server: z65d.cdn.node.a.ddns-ounk.com, port: 10777, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3305|广东H-台湾|解锁|x1.0, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13305, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3300|广东H-台湾|解锁|x1.0, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13300, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3318|广东U-台湾|解锁|x1.5, server: lld9k6.cdn.node.a.ddns-ounk.com, port: 13318, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转2948|广东U-台湾|解锁|x1.2, server: lld9k6.cdn.node.a.ddns-ounk.com, port: 12948, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3184|广东D-香港|解锁|x1.5, server: z5is.cdn.node.a.ddns-ounk.com, port: 13184, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3441|广东C-新加坡|x2.0, server: ngs9.cdn.node.a.ddns-ounk.com, port: 13441, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3495|上海移动-香港x1.2, server: meq886.cdn.node.a.ddns-ounk.com, port: 13495, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3183|广东D-香港|解锁|x1.5, server: z5is.cdn.node.a.ddns-ounk.com, port: 13183, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3593|上海-日本M|解锁|x1.5, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13593, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3171|广东D-香港|解锁|x1.5, server: z5is.cdn.node.a.ddns-ounk.com, port: 13171, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3181|广东D-香港|解锁|x1.5, server: z5is.cdn.node.a.ddns-ounk.com, port: 13181, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3592|上海-日本M|解锁|x1.5, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13592, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3185|广东D-香港|解锁|x1.5, server: z5is.cdn.node.a.ddns-ounk.com, port: 13185, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3438|广东C-新加坡|x2.0, server: ngs9.cdn.node.a.ddns-ounk.com, port: 13438, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3422|上海CN2-香港HKT|x2.0, server: aaf8.cdn.node.a.ddns-ounk.com, port: 13422, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3534|上海CN2-香港HKT|x2.0, server: aaf8.cdn.node.a.ddns-ounk.com, port: 13534, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3069|上海-日本M|解锁|x1.5, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13069, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3591|上海-日本M|解锁|x1.5, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13591, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3594|上海-日本M|解锁|x1.5, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13594, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3451|上海移动-香港x1.5, server: meq886.cdn.node.a.ddns-ounk.com, port: 13451, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3589|上海-日本M|解锁|x1.5, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13589, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3373|广东K-新加坡|x1.5, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13373, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3590|上海-日本M|解锁|x1.5, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13590, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3043|广东C-新加坡|x1.0, server: ngs9.cdn.node.a.ddns-ounk.com, port: 13043, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3263|上海CN2-香港HKT|x2.0, server: aaf8.cdn.node.a.ddns-ounk.com, port: 13263, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3050|广东K-新加坡|x1.3, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13050, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3576|广东K-新加坡|x2.0, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13576, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3261|上海移动-香港x1.2, server: bbq886.cdn.node.a.ddns-ounk.com, port: 13261, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3370|广东K-新加坡|x1.5, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13370, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转2938|广东K-新加坡|x1.5, server: gf6s.cdn.node.a.ddns-ounk.com, port: 12938, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3054|广东K-新加坡|x1.3, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13054, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转2939|广东K-新加坡|x1.5, server: gf6s.cdn.node.a.ddns-ounk.com, port: 12939, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3052|广东K-新加坡|x1.3, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13052, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3578|广东K-新加坡|x2.0, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13578, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3572|广东K-新加坡|x2.0, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13572, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3570|广东K-新加坡|x2.0, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13570, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3051|广东K-新加坡|x1.3, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13051, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3574|广东K-新加坡|x2.0, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13574, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3186|广东D-香港|解锁|x1.5, server: z5is.cdn.node.a.ddns-ounk.com, port: 13186, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3374|广东K-新加坡|x1.5, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13374, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3053|广东K-新加坡|x1.3, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13053, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3371|广东K-新加坡|x1.5, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13371, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3372|广东K-新加坡|x1.5, server: gf6s.cdn.node.a.ddns-ounk.com, port: 13372, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3494|上海移动-香港x1.5, server: meq886.cdn.node.a.ddns-ounk.com, port: 13494, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3497|上海移动-香港x1.5, server: meq886.cdn.node.a.ddns-ounk.com, port: 13497, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3450|上海移动-香港x1.5, server: meq886.cdn.node.a.ddns-ounk.com, port: 13450, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3442|广东C-新加坡|x2.0, server: ngs9.cdn.node.a.ddns-ounk.com, port: 13442, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3681|广东D-香港|解锁|x1.2, server: z5sa6is.cdn.node.a.ddns-ounk.com, port: 13681, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3490|广东X-香港HKT|解锁|x1.0, server: cd69.cdn.node.a.ddns-ounk.com, port: 13490, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3643|广东X-香港HKT|x1.5, server: cd69.cdn.node.a.ddns-ounk.com, port: 13643, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3042|广东C-新加坡|x1.0, server: ngs9.cdn.node.a.ddns-ounk.com, port: 13042, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转2984|广东G-新加坡|x2.0, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 12984, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3556|广东G-新加坡|x2.0, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 13556, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3631|上海CN2-台湾|解锁|x1.5, server: dr64.cdn.node.a.ddns-ounk.com, port: 13631, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3357|广东G-新加坡|x2.5, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 13357, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转2983|广东G-新加坡|x2.0, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 12983, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3351|广东G-新加坡|x2.5, server: r97q.cdn.node.a.ddns-ounk.com, port: 13351, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3558|广东G-新加坡|x2.0, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 13558, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3568|广东G-新加坡|x2.0, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 13568, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转2985|广东G-新加坡|x2.0, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 12985, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3358|广东G-新加坡|x2.5, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 13358, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3560|广东G-新加坡|x2.0, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 13560, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转2982|广东G-新加坡|x2.0, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 12982, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3350|广东G-新加坡|x2.5, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 13350, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转2980|广东G-新加坡|x2.0, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 12980, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3564|广东G-新加坡|x2.0, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 13564, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转2981|广东G-新加坡|x2.0, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 12981, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3352|广东G-新加坡|x2.5, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 13352, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3566|广东G-新加坡|x2.0, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 13566, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3355|广东G-新加坡|x2.5, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 13355, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3638|广东M-美国|解锁|x2.5, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13638, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3中转3545|广东W-香港HKT|解锁|x1.5, server: tata12.cdn.node.a.ddns-ounk.com, port: 13545, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3354|广东G-新加坡|x2.5, server: eqwr51.cdn.node.a.ddns-ounk.com, port: 13354, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3488|广东W-香港HKT|解锁|x1.5, server: tata12.cdn.node.a.ddns-ounk.com, port: 13488, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3642|广东W-香港HKT|x1.5, server: tata12.cdn.node.a.ddns-ounk.com, port: 13642, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3501|上海CN2-香港HKT|解锁|x2.0, server: tata12.cdn.node.a.ddns-ounk.com, port: 13501, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3267|广东W-香港HKT|解锁|x1.5, server: tata12.cdn.node.a.ddns-ounk.com, port: 13267, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3636|广东M-美国|解锁|x2.5, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13636, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3489|广东X-香港HKT|解锁|x1.5, server: cd69.cdn.node.a.ddns-ounk.com, port: 13489, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3629|广东M-美国|解锁|x1.5, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13629, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3630|广东M-美国|解锁|x1.5, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13630, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3584|广东C-新加坡|x2.0, server: wegm63.cdn.node.a.ddns-ounk.com, port: 13584, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3528|广东C-新加坡|x2.0, server: wegm63.cdn.node.a.ddns-ounk.com, port: 13528, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3633|广东M-美国|解锁|x2.5, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13633, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3640|广东X-香港HKT|x1.5, server: cd69.cdn.node.a.ddns-ounk.com, port: 13640, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3628|广东M-美国|解锁|x1.5, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13628, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3634|广东M-美国|解锁|x2.5, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13634, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V2-中转3680|广东D-香港|解锁|x1.2, server: z5sa6is.cdn.node.a.ddns-ounk.com, port: 13680, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V3-中转3547|广东X-香港HKT|解锁|x1.5, server: cd69.cdn.node.a.ddns-ounk.com, port: 13547, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
+  - {name: V4-中转3639|广东X-香港HKT|x1.5, server: cd69.cdn.node.a.ddns-ounk.com, port: 13639, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 205889:AHjsJP, obfs-param: 7436f205889.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本JP-T
-      - 新加坡SG-T
-      - 柬埔寨KH-T
-      - 美国USLA-T
+      - V2-中转3439|广东C-新加坡|x2.0
+      - V2-中转3582|广东C-新加坡|x2.0
+      - V2-中转3445|广东W-香港HGC|解锁|x1.5
+      - V2-中转3682|广东D-香港|解锁|x1.2
+      - V2-中转3580|广东C-新加坡|x2.0
+      - V2-中转3044|广东C-新加坡|x1.0
+      - V2-中转3440|广东C-新加坡|x2.0
+      - V2-中转3543|广东-香港M|解锁|x1.5
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - V2-中转3644|广东-香港M|x1.5
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3304|广东H-台湾|解锁|x1.0
+      - V2-中转777|广东U-台湾|解锁|x1.0
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3300|广东H-台湾|解锁|x1.0
+      - V3-中转3318|广东U-台湾|解锁|x1.5
+      - V3-中转2948|广东U-台湾|解锁|x1.2
+      - V3-中转3184|广东D-香港|解锁|x1.5
+      - V2-中转3441|广东C-新加坡|x2.0
+      - V2-中转3495|上海移动-香港x1.2
+      - V3-中转3183|广东D-香港|解锁|x1.5
+      - V3-中转3593|上海-日本M|解锁|x1.5
+      - V3-中转3171|广东D-香港|解锁|x1.5
+      - V3-中转3181|广东D-香港|解锁|x1.5
+      - V3-中转3592|上海-日本M|解锁|x1.5
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - V2-中转3438|广东C-新加坡|x2.0
+      - V2-中转3422|上海CN2-香港HKT|x2.0
+      - V2-中转3534|上海CN2-香港HKT|x2.0
+      - V3-中转3069|上海-日本M|解锁|x1.5
+      - V3-中转3591|上海-日本M|解锁|x1.5
+      - V3-中转3594|上海-日本M|解锁|x1.5
+      - V3-中转3451|上海移动-香港x1.5
+      - V3-中转3589|上海-日本M|解锁|x1.5
+      - V3-中转3373|广东K-新加坡|x1.5
+      - V3-中转3590|上海-日本M|解锁|x1.5
+      - V2-中转3043|广东C-新加坡|x1.0
+      - V2-中转3263|上海CN2-香港HKT|x2.0
+      - V3-中转3050|广东K-新加坡|x1.3
+      - V3-中转3576|广东K-新加坡|x2.0
+      - V2-中转3261|上海移动-香港x1.2
+      - V3-中转3370|广东K-新加坡|x1.5
+      - V3-中转2938|广东K-新加坡|x1.5
+      - V3-中转3054|广东K-新加坡|x1.3
+      - V3-中转2939|广东K-新加坡|x1.5
+      - V3-中转3052|广东K-新加坡|x1.3
+      - V3-中转3578|广东K-新加坡|x2.0
+      - V3-中转3572|广东K-新加坡|x2.0
+      - V3-中转3570|广东K-新加坡|x2.0
+      - V3-中转3051|广东K-新加坡|x1.3
+      - V3-中转3574|广东K-新加坡|x2.0
+      - V3-中转3186|广东D-香港|解锁|x1.5
+      - V3-中转3374|广东K-新加坡|x1.5
+      - V3-中转3053|广东K-新加坡|x1.3
+      - V3-中转3371|广东K-新加坡|x1.5
+      - V3-中转3372|广东K-新加坡|x1.5
+      - V3-中转3494|上海移动-香港x1.5
+      - V3-中转3497|上海移动-香港x1.5
+      - V3-中转3450|上海移动-香港x1.5
+      - V2-中转3442|广东C-新加坡|x2.0
+      - V2-中转3681|广东D-香港|解锁|x1.2
+      - V3-中转3490|广东X-香港HKT|解锁|x1.0
+      - V4-中转3643|广东X-香港HKT|x1.5
+      - V2-中转3042|广东C-新加坡|x1.0
+      - V4-中转2984|广东G-新加坡|x2.0
+      - V4-中转3556|广东G-新加坡|x2.0
+      - V2-中转3631|上海CN2-台湾|解锁|x1.5
+      - V4-中转3357|广东G-新加坡|x2.5
+      - V4-中转2983|广东G-新加坡|x2.0
+      - V4-中转3351|广东G-新加坡|x2.5
+      - V4-中转3558|广东G-新加坡|x2.0
+      - V4-中转3568|广东G-新加坡|x2.0
+      - V4-中转2985|广东G-新加坡|x2.0
+      - V4-中转3358|广东G-新加坡|x2.5
+      - V4-中转3560|广东G-新加坡|x2.0
+      - V4-中转2982|广东G-新加坡|x2.0
+      - V4-中转3350|广东G-新加坡|x2.5
+      - V4-中转2980|广东G-新加坡|x2.0
+      - V4-中转3564|广东G-新加坡|x2.0
+      - V4-中转2981|广东G-新加坡|x2.0
+      - V4-中转3352|广东G-新加坡|x2.5
+      - V4-中转3566|广东G-新加坡|x2.0
+      - V4-中转3355|广东G-新加坡|x2.5
+      - V3-中转3638|广东M-美国|解锁|x2.5
+      - V3中转3545|广东W-香港HKT|解锁|x1.5
+      - V4-中转3354|广东G-新加坡|x2.5
+      - V4-中转3488|广东W-香港HKT|解锁|x1.5
+      - V4-中转3642|广东W-香港HKT|x1.5
+      - V2-中转3501|上海CN2-香港HKT|解锁|x2.0
+      - V3-中转3267|广东W-香港HKT|解锁|x1.5
+      - V3-中转3636|广东M-美国|解锁|x2.5
+      - V4-中转3489|广东X-香港HKT|解锁|x1.5
+      - V2-中转3629|广东M-美国|解锁|x1.5
+      - V2-中转3630|广东M-美国|解锁|x1.5
+      - V2-中转3584|广东C-新加坡|x2.0
+      - V2-中转3528|广东C-新加坡|x2.0
+      - V3-中转3633|广东M-美国|解锁|x2.5
+      - V4-中转3640|广东X-香港HKT|x1.5
+      - V2-中转3628|广东M-美国|解锁|x1.5
+      - V3-中转3634|广东M-美国|解锁|x2.5
+      - V2-中转3680|广东D-香港|解锁|x1.2
+      - V3-中转3547|广东X-香港HKT|解锁|x1.5
+      - V4-中转3639|广东X-香港HKT|x1.5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本JP-T
-      - 新加坡SG-T
-      - 柬埔寨KH-T
-      - 美国USLA-T
+      - V2-中转3439|广东C-新加坡|x2.0
+      - V2-中转3582|广东C-新加坡|x2.0
+      - V2-中转3445|广东W-香港HGC|解锁|x1.5
+      - V2-中转3682|广东D-香港|解锁|x1.2
+      - V2-中转3580|广东C-新加坡|x2.0
+      - V2-中转3044|广东C-新加坡|x1.0
+      - V2-中转3440|广东C-新加坡|x2.0
+      - V2-中转3543|广东-香港M|解锁|x1.5
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - V2-中转3644|广东-香港M|x1.5
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3304|广东H-台湾|解锁|x1.0
+      - V2-中转777|广东U-台湾|解锁|x1.0
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3300|广东H-台湾|解锁|x1.0
+      - V3-中转3318|广东U-台湾|解锁|x1.5
+      - V3-中转2948|广东U-台湾|解锁|x1.2
+      - V3-中转3184|广东D-香港|解锁|x1.5
+      - V2-中转3441|广东C-新加坡|x2.0
+      - V2-中转3495|上海移动-香港x1.2
+      - V3-中转3183|广东D-香港|解锁|x1.5
+      - V3-中转3593|上海-日本M|解锁|x1.5
+      - V3-中转3171|广东D-香港|解锁|x1.5
+      - V3-中转3181|广东D-香港|解锁|x1.5
+      - V3-中转3592|上海-日本M|解锁|x1.5
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - V2-中转3438|广东C-新加坡|x2.0
+      - V2-中转3422|上海CN2-香港HKT|x2.0
+      - V2-中转3534|上海CN2-香港HKT|x2.0
+      - V3-中转3069|上海-日本M|解锁|x1.5
+      - V3-中转3591|上海-日本M|解锁|x1.5
+      - V3-中转3594|上海-日本M|解锁|x1.5
+      - V3-中转3451|上海移动-香港x1.5
+      - V3-中转3589|上海-日本M|解锁|x1.5
+      - V3-中转3373|广东K-新加坡|x1.5
+      - V3-中转3590|上海-日本M|解锁|x1.5
+      - V2-中转3043|广东C-新加坡|x1.0
+      - V2-中转3263|上海CN2-香港HKT|x2.0
+      - V3-中转3050|广东K-新加坡|x1.3
+      - V3-中转3576|广东K-新加坡|x2.0
+      - V2-中转3261|上海移动-香港x1.2
+      - V3-中转3370|广东K-新加坡|x1.5
+      - V3-中转2938|广东K-新加坡|x1.5
+      - V3-中转3054|广东K-新加坡|x1.3
+      - V3-中转2939|广东K-新加坡|x1.5
+      - V3-中转3052|广东K-新加坡|x1.3
+      - V3-中转3578|广东K-新加坡|x2.0
+      - V3-中转3572|广东K-新加坡|x2.0
+      - V3-中转3570|广东K-新加坡|x2.0
+      - V3-中转3051|广东K-新加坡|x1.3
+      - V3-中转3574|广东K-新加坡|x2.0
+      - V3-中转3186|广东D-香港|解锁|x1.5
+      - V3-中转3374|广东K-新加坡|x1.5
+      - V3-中转3053|广东K-新加坡|x1.3
+      - V3-中转3371|广东K-新加坡|x1.5
+      - V3-中转3372|广东K-新加坡|x1.5
+      - V3-中转3494|上海移动-香港x1.5
+      - V3-中转3497|上海移动-香港x1.5
+      - V3-中转3450|上海移动-香港x1.5
+      - V2-中转3442|广东C-新加坡|x2.0
+      - V2-中转3681|广东D-香港|解锁|x1.2
+      - V3-中转3490|广东X-香港HKT|解锁|x1.0
+      - V4-中转3643|广东X-香港HKT|x1.5
+      - V2-中转3042|广东C-新加坡|x1.0
+      - V4-中转2984|广东G-新加坡|x2.0
+      - V4-中转3556|广东G-新加坡|x2.0
+      - V2-中转3631|上海CN2-台湾|解锁|x1.5
+      - V4-中转3357|广东G-新加坡|x2.5
+      - V4-中转2983|广东G-新加坡|x2.0
+      - V4-中转3351|广东G-新加坡|x2.5
+      - V4-中转3558|广东G-新加坡|x2.0
+      - V4-中转3568|广东G-新加坡|x2.0
+      - V4-中转2985|广东G-新加坡|x2.0
+      - V4-中转3358|广东G-新加坡|x2.5
+      - V4-中转3560|广东G-新加坡|x2.0
+      - V4-中转2982|广东G-新加坡|x2.0
+      - V4-中转3350|广东G-新加坡|x2.5
+      - V4-中转2980|广东G-新加坡|x2.0
+      - V4-中转3564|广东G-新加坡|x2.0
+      - V4-中转2981|广东G-新加坡|x2.0
+      - V4-中转3352|广东G-新加坡|x2.5
+      - V4-中转3566|广东G-新加坡|x2.0
+      - V4-中转3355|广东G-新加坡|x2.5
+      - V3-中转3638|广东M-美国|解锁|x2.5
+      - V3中转3545|广东W-香港HKT|解锁|x1.5
+      - V4-中转3354|广东G-新加坡|x2.5
+      - V4-中转3488|广东W-香港HKT|解锁|x1.5
+      - V4-中转3642|广东W-香港HKT|x1.5
+      - V2-中转3501|上海CN2-香港HKT|解锁|x2.0
+      - V3-中转3267|广东W-香港HKT|解锁|x1.5
+      - V3-中转3636|广东M-美国|解锁|x2.5
+      - V4-中转3489|广东X-香港HKT|解锁|x1.5
+      - V2-中转3629|广东M-美国|解锁|x1.5
+      - V2-中转3630|广东M-美国|解锁|x1.5
+      - V2-中转3584|广东C-新加坡|x2.0
+      - V2-中转3528|广东C-新加坡|x2.0
+      - V3-中转3633|广东M-美国|解锁|x2.5
+      - V4-中转3640|广东X-香港HKT|x1.5
+      - V2-中转3628|广东M-美国|解锁|x1.5
+      - V3-中转3634|广东M-美国|解锁|x2.5
+      - V2-中转3680|广东D-香港|解锁|x1.2
+      - V3-中转3547|广东X-香港HKT|解锁|x1.5
+      - V4-中转3639|广东X-香港HKT|x1.5
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本JP-T
-      - 新加坡SG-T
-      - 柬埔寨KH-T
-      - 美国USLA-T
+      - V2-中转3439|广东C-新加坡|x2.0
+      - V2-中转3582|广东C-新加坡|x2.0
+      - V2-中转3445|广东W-香港HGC|解锁|x1.5
+      - V2-中转3682|广东D-香港|解锁|x1.2
+      - V2-中转3580|广东C-新加坡|x2.0
+      - V2-中转3044|广东C-新加坡|x1.0
+      - V2-中转3440|广东C-新加坡|x2.0
+      - V2-中转3543|广东-香港M|解锁|x1.5
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - V2-中转3644|广东-香港M|x1.5
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3304|广东H-台湾|解锁|x1.0
+      - V2-中转777|广东U-台湾|解锁|x1.0
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3300|广东H-台湾|解锁|x1.0
+      - V3-中转3318|广东U-台湾|解锁|x1.5
+      - V3-中转2948|广东U-台湾|解锁|x1.2
+      - V3-中转3184|广东D-香港|解锁|x1.5
+      - V2-中转3441|广东C-新加坡|x2.0
+      - V2-中转3495|上海移动-香港x1.2
+      - V3-中转3183|广东D-香港|解锁|x1.5
+      - V3-中转3593|上海-日本M|解锁|x1.5
+      - V3-中转3171|广东D-香港|解锁|x1.5
+      - V3-中转3181|广东D-香港|解锁|x1.5
+      - V3-中转3592|上海-日本M|解锁|x1.5
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - V2-中转3438|广东C-新加坡|x2.0
+      - V2-中转3422|上海CN2-香港HKT|x2.0
+      - V2-中转3534|上海CN2-香港HKT|x2.0
+      - V3-中转3069|上海-日本M|解锁|x1.5
+      - V3-中转3591|上海-日本M|解锁|x1.5
+      - V3-中转3594|上海-日本M|解锁|x1.5
+      - V3-中转3451|上海移动-香港x1.5
+      - V3-中转3589|上海-日本M|解锁|x1.5
+      - V3-中转3373|广东K-新加坡|x1.5
+      - V3-中转3590|上海-日本M|解锁|x1.5
+      - V2-中转3043|广东C-新加坡|x1.0
+      - V2-中转3263|上海CN2-香港HKT|x2.0
+      - V3-中转3050|广东K-新加坡|x1.3
+      - V3-中转3576|广东K-新加坡|x2.0
+      - V2-中转3261|上海移动-香港x1.2
+      - V3-中转3370|广东K-新加坡|x1.5
+      - V3-中转2938|广东K-新加坡|x1.5
+      - V3-中转3054|广东K-新加坡|x1.3
+      - V3-中转2939|广东K-新加坡|x1.5
+      - V3-中转3052|广东K-新加坡|x1.3
+      - V3-中转3578|广东K-新加坡|x2.0
+      - V3-中转3572|广东K-新加坡|x2.0
+      - V3-中转3570|广东K-新加坡|x2.0
+      - V3-中转3051|广东K-新加坡|x1.3
+      - V3-中转3574|广东K-新加坡|x2.0
+      - V3-中转3186|广东D-香港|解锁|x1.5
+      - V3-中转3374|广东K-新加坡|x1.5
+      - V3-中转3053|广东K-新加坡|x1.3
+      - V3-中转3371|广东K-新加坡|x1.5
+      - V3-中转3372|广东K-新加坡|x1.5
+      - V3-中转3494|上海移动-香港x1.5
+      - V3-中转3497|上海移动-香港x1.5
+      - V3-中转3450|上海移动-香港x1.5
+      - V2-中转3442|广东C-新加坡|x2.0
+      - V2-中转3681|广东D-香港|解锁|x1.2
+      - V3-中转3490|广东X-香港HKT|解锁|x1.0
+      - V4-中转3643|广东X-香港HKT|x1.5
+      - V2-中转3042|广东C-新加坡|x1.0
+      - V4-中转2984|广东G-新加坡|x2.0
+      - V4-中转3556|广东G-新加坡|x2.0
+      - V2-中转3631|上海CN2-台湾|解锁|x1.5
+      - V4-中转3357|广东G-新加坡|x2.5
+      - V4-中转2983|广东G-新加坡|x2.0
+      - V4-中转3351|广东G-新加坡|x2.5
+      - V4-中转3558|广东G-新加坡|x2.0
+      - V4-中转3568|广东G-新加坡|x2.0
+      - V4-中转2985|广东G-新加坡|x2.0
+      - V4-中转3358|广东G-新加坡|x2.5
+      - V4-中转3560|广东G-新加坡|x2.0
+      - V4-中转2982|广东G-新加坡|x2.0
+      - V4-中转3350|广东G-新加坡|x2.5
+      - V4-中转2980|广东G-新加坡|x2.0
+      - V4-中转3564|广东G-新加坡|x2.0
+      - V4-中转2981|广东G-新加坡|x2.0
+      - V4-中转3352|广东G-新加坡|x2.5
+      - V4-中转3566|广东G-新加坡|x2.0
+      - V4-中转3355|广东G-新加坡|x2.5
+      - V3-中转3638|广东M-美国|解锁|x2.5
+      - V3中转3545|广东W-香港HKT|解锁|x1.5
+      - V4-中转3354|广东G-新加坡|x2.5
+      - V4-中转3488|广东W-香港HKT|解锁|x1.5
+      - V4-中转3642|广东W-香港HKT|x1.5
+      - V2-中转3501|上海CN2-香港HKT|解锁|x2.0
+      - V3-中转3267|广东W-香港HKT|解锁|x1.5
+      - V3-中转3636|广东M-美国|解锁|x2.5
+      - V4-中转3489|广东X-香港HKT|解锁|x1.5
+      - V2-中转3629|广东M-美国|解锁|x1.5
+      - V2-中转3630|广东M-美国|解锁|x1.5
+      - V2-中转3584|广东C-新加坡|x2.0
+      - V2-中转3528|广东C-新加坡|x2.0
+      - V3-中转3633|广东M-美国|解锁|x2.5
+      - V4-中转3640|广东X-香港HKT|x1.5
+      - V2-中转3628|广东M-美国|解锁|x1.5
+      - V3-中转3634|广东M-美国|解锁|x2.5
+      - V2-中转3680|广东D-香港|解锁|x1.2
+      - V3-中转3547|广东X-香港HKT|解锁|x1.5
+      - V4-中转3639|广东X-香港HKT|x1.5
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,43 +460,490 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本JP-T
-      - 新加坡SG-T
-      - 柬埔寨KH-T
-      - 美国USLA-T
+      - V2-中转3439|广东C-新加坡|x2.0
+      - V2-中转3582|广东C-新加坡|x2.0
+      - V2-中转3445|广东W-香港HGC|解锁|x1.5
+      - V2-中转3682|广东D-香港|解锁|x1.2
+      - V2-中转3580|广东C-新加坡|x2.0
+      - V2-中转3044|广东C-新加坡|x1.0
+      - V2-中转3440|广东C-新加坡|x2.0
+      - V2-中转3543|广东-香港M|解锁|x1.5
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - V2-中转3644|广东-香港M|x1.5
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3304|广东H-台湾|解锁|x1.0
+      - V2-中转777|广东U-台湾|解锁|x1.0
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3300|广东H-台湾|解锁|x1.0
+      - V3-中转3318|广东U-台湾|解锁|x1.5
+      - V3-中转2948|广东U-台湾|解锁|x1.2
+      - V3-中转3184|广东D-香港|解锁|x1.5
+      - V2-中转3441|广东C-新加坡|x2.0
+      - V2-中转3495|上海移动-香港x1.2
+      - V3-中转3183|广东D-香港|解锁|x1.5
+      - V3-中转3593|上海-日本M|解锁|x1.5
+      - V3-中转3171|广东D-香港|解锁|x1.5
+      - V3-中转3181|广东D-香港|解锁|x1.5
+      - V3-中转3592|上海-日本M|解锁|x1.5
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - V2-中转3438|广东C-新加坡|x2.0
+      - V2-中转3422|上海CN2-香港HKT|x2.0
+      - V2-中转3534|上海CN2-香港HKT|x2.0
+      - V3-中转3069|上海-日本M|解锁|x1.5
+      - V3-中转3591|上海-日本M|解锁|x1.5
+      - V3-中转3594|上海-日本M|解锁|x1.5
+      - V3-中转3451|上海移动-香港x1.5
+      - V3-中转3589|上海-日本M|解锁|x1.5
+      - V3-中转3373|广东K-新加坡|x1.5
+      - V3-中转3590|上海-日本M|解锁|x1.5
+      - V2-中转3043|广东C-新加坡|x1.0
+      - V2-中转3263|上海CN2-香港HKT|x2.0
+      - V3-中转3050|广东K-新加坡|x1.3
+      - V3-中转3576|广东K-新加坡|x2.0
+      - V2-中转3261|上海移动-香港x1.2
+      - V3-中转3370|广东K-新加坡|x1.5
+      - V3-中转2938|广东K-新加坡|x1.5
+      - V3-中转3054|广东K-新加坡|x1.3
+      - V3-中转2939|广东K-新加坡|x1.5
+      - V3-中转3052|广东K-新加坡|x1.3
+      - V3-中转3578|广东K-新加坡|x2.0
+      - V3-中转3572|广东K-新加坡|x2.0
+      - V3-中转3570|广东K-新加坡|x2.0
+      - V3-中转3051|广东K-新加坡|x1.3
+      - V3-中转3574|广东K-新加坡|x2.0
+      - V3-中转3186|广东D-香港|解锁|x1.5
+      - V3-中转3374|广东K-新加坡|x1.5
+      - V3-中转3053|广东K-新加坡|x1.3
+      - V3-中转3371|广东K-新加坡|x1.5
+      - V3-中转3372|广东K-新加坡|x1.5
+      - V3-中转3494|上海移动-香港x1.5
+      - V3-中转3497|上海移动-香港x1.5
+      - V3-中转3450|上海移动-香港x1.5
+      - V2-中转3442|广东C-新加坡|x2.0
+      - V2-中转3681|广东D-香港|解锁|x1.2
+      - V3-中转3490|广东X-香港HKT|解锁|x1.0
+      - V4-中转3643|广东X-香港HKT|x1.5
+      - V2-中转3042|广东C-新加坡|x1.0
+      - V4-中转2984|广东G-新加坡|x2.0
+      - V4-中转3556|广东G-新加坡|x2.0
+      - V2-中转3631|上海CN2-台湾|解锁|x1.5
+      - V4-中转3357|广东G-新加坡|x2.5
+      - V4-中转2983|广东G-新加坡|x2.0
+      - V4-中转3351|广东G-新加坡|x2.5
+      - V4-中转3558|广东G-新加坡|x2.0
+      - V4-中转3568|广东G-新加坡|x2.0
+      - V4-中转2985|广东G-新加坡|x2.0
+      - V4-中转3358|广东G-新加坡|x2.5
+      - V4-中转3560|广东G-新加坡|x2.0
+      - V4-中转2982|广东G-新加坡|x2.0
+      - V4-中转3350|广东G-新加坡|x2.5
+      - V4-中转2980|广东G-新加坡|x2.0
+      - V4-中转3564|广东G-新加坡|x2.0
+      - V4-中转2981|广东G-新加坡|x2.0
+      - V4-中转3352|广东G-新加坡|x2.5
+      - V4-中转3566|广东G-新加坡|x2.0
+      - V4-中转3355|广东G-新加坡|x2.5
+      - V3-中转3638|广东M-美国|解锁|x2.5
+      - V3中转3545|广东W-香港HKT|解锁|x1.5
+      - V4-中转3354|广东G-新加坡|x2.5
+      - V4-中转3488|广东W-香港HKT|解锁|x1.5
+      - V4-中转3642|广东W-香港HKT|x1.5
+      - V2-中转3501|上海CN2-香港HKT|解锁|x2.0
+      - V3-中转3267|广东W-香港HKT|解锁|x1.5
+      - V3-中转3636|广东M-美国|解锁|x2.5
+      - V4-中转3489|广东X-香港HKT|解锁|x1.5
+      - V2-中转3629|广东M-美国|解锁|x1.5
+      - V2-中转3630|广东M-美国|解锁|x1.5
+      - V2-中转3584|广东C-新加坡|x2.0
+      - V2-中转3528|广东C-新加坡|x2.0
+      - V3-中转3633|广东M-美国|解锁|x2.5
+      - V4-中转3640|广东X-香港HKT|x1.5
+      - V2-中转3628|广东M-美国|解锁|x1.5
+      - V3-中转3634|广东M-美国|解锁|x2.5
+      - V2-中转3680|广东D-香港|解锁|x1.2
+      - V3-中转3547|广东X-香港HKT|解锁|x1.5
+      - V4-中转3639|广东X-香港HKT|x1.5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - V2-中转3445|广东W-香港HGC|解锁|x1.5
+      - V2-中转3682|广东D-香港|解锁|x1.2
+      - V2-中转3543|广东-香港M|解锁|x1.5
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - V2-中转3644|广东-香港M|x1.5
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3304|广东H-台湾|解锁|x1.0
+      - V2-中转777|广东U-台湾|解锁|x1.0
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3300|广东H-台湾|解锁|x1.0
+      - V3-中转3318|广东U-台湾|解锁|x1.5
+      - V3-中转2948|广东U-台湾|解锁|x1.2
+      - V3-中转3184|广东D-香港|解锁|x1.5
+      - V2-中转3495|上海移动-香港x1.2
+      - V3-中转3183|广东D-香港|解锁|x1.5
+      - V3-中转3171|广东D-香港|解锁|x1.5
+      - V3-中转3181|广东D-香港|解锁|x1.5
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - V2-中转3422|上海CN2-香港HKT|x2.0
+      - V2-中转3534|上海CN2-香港HKT|x2.0
+      - V3-中转3451|上海移动-香港x1.5
+      - V2-中转3263|上海CN2-香港HKT|x2.0
+      - V2-中转3261|上海移动-香港x1.2
+      - V3-中转3186|广东D-香港|解锁|x1.5
+      - V3-中转3494|上海移动-香港x1.5
+      - V3-中转3497|上海移动-香港x1.5
+      - V3-中转3450|上海移动-香港x1.5
+      - V2-中转3681|广东D-香港|解锁|x1.2
+      - V3-中转3490|广东X-香港HKT|解锁|x1.0
+      - V4-中转3643|广东X-香港HKT|x1.5
+      - V2-中转3631|上海CN2-台湾|解锁|x1.5
+      - V3中转3545|广东W-香港HKT|解锁|x1.5
+      - V4-中转3488|广东W-香港HKT|解锁|x1.5
+      - V4-中转3642|广东W-香港HKT|x1.5
+      - V2-中转3501|上海CN2-香港HKT|解锁|x2.0
+      - V3-中转3267|广东W-香港HKT|解锁|x1.5
+      - V4-中转3489|广东X-香港HKT|解锁|x1.5
+      - V4-中转3640|广东X-香港HKT|x1.5
+      - V2-中转3680|广东D-香港|解锁|x1.2
+      - V3-中转3547|广东X-香港HKT|解锁|x1.5
+      - V4-中转3639|广东X-香港HKT|x1.5
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本JP-T
-      - 新加坡SG-T
-      - 柬埔寨KH-T
-      - 美国USLA-T
+      - V2-中转3439|广东C-新加坡|x2.0
+      - V2-中转3582|广东C-新加坡|x2.0
+      - V2-中转3445|广东W-香港HGC|解锁|x1.5
+      - V2-中转3682|广东D-香港|解锁|x1.2
+      - V2-中转3580|广东C-新加坡|x2.0
+      - V2-中转3044|广东C-新加坡|x1.0
+      - V2-中转3440|广东C-新加坡|x2.0
+      - V2-中转3543|广东-香港M|解锁|x1.5
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - V2-中转3644|广东-香港M|x1.5
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3304|广东H-台湾|解锁|x1.0
+      - V2-中转777|广东U-台湾|解锁|x1.0
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3300|广东H-台湾|解锁|x1.0
+      - V3-中转3318|广东U-台湾|解锁|x1.5
+      - V3-中转2948|广东U-台湾|解锁|x1.2
+      - V3-中转3184|广东D-香港|解锁|x1.5
+      - V2-中转3441|广东C-新加坡|x2.0
+      - V2-中转3495|上海移动-香港x1.2
+      - V3-中转3183|广东D-香港|解锁|x1.5
+      - V3-中转3593|上海-日本M|解锁|x1.5
+      - V3-中转3171|广东D-香港|解锁|x1.5
+      - V3-中转3181|广东D-香港|解锁|x1.5
+      - V3-中转3592|上海-日本M|解锁|x1.5
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - V2-中转3438|广东C-新加坡|x2.0
+      - V2-中转3422|上海CN2-香港HKT|x2.0
+      - V2-中转3534|上海CN2-香港HKT|x2.0
+      - V3-中转3069|上海-日本M|解锁|x1.5
+      - V3-中转3591|上海-日本M|解锁|x1.5
+      - V3-中转3594|上海-日本M|解锁|x1.5
+      - V3-中转3451|上海移动-香港x1.5
+      - V3-中转3589|上海-日本M|解锁|x1.5
+      - V3-中转3373|广东K-新加坡|x1.5
+      - V3-中转3590|上海-日本M|解锁|x1.5
+      - V2-中转3043|广东C-新加坡|x1.0
+      - V2-中转3263|上海CN2-香港HKT|x2.0
+      - V3-中转3050|广东K-新加坡|x1.3
+      - V3-中转3576|广东K-新加坡|x2.0
+      - V2-中转3261|上海移动-香港x1.2
+      - V3-中转3370|广东K-新加坡|x1.5
+      - V3-中转2938|广东K-新加坡|x1.5
+      - V3-中转3054|广东K-新加坡|x1.3
+      - V3-中转2939|广东K-新加坡|x1.5
+      - V3-中转3052|广东K-新加坡|x1.3
+      - V3-中转3578|广东K-新加坡|x2.0
+      - V3-中转3572|广东K-新加坡|x2.0
+      - V3-中转3570|广东K-新加坡|x2.0
+      - V3-中转3051|广东K-新加坡|x1.3
+      - V3-中转3574|广东K-新加坡|x2.0
+      - V3-中转3186|广东D-香港|解锁|x1.5
+      - V3-中转3374|广东K-新加坡|x1.5
+      - V3-中转3053|广东K-新加坡|x1.3
+      - V3-中转3371|广东K-新加坡|x1.5
+      - V3-中转3372|广东K-新加坡|x1.5
+      - V3-中转3494|上海移动-香港x1.5
+      - V3-中转3497|上海移动-香港x1.5
+      - V3-中转3450|上海移动-香港x1.5
+      - V2-中转3442|广东C-新加坡|x2.0
+      - V2-中转3681|广东D-香港|解锁|x1.2
+      - V3-中转3490|广东X-香港HKT|解锁|x1.0
+      - V4-中转3643|广东X-香港HKT|x1.5
+      - V2-中转3042|广东C-新加坡|x1.0
+      - V4-中转2984|广东G-新加坡|x2.0
+      - V4-中转3556|广东G-新加坡|x2.0
+      - V2-中转3631|上海CN2-台湾|解锁|x1.5
+      - V4-中转3357|广东G-新加坡|x2.5
+      - V4-中转2983|广东G-新加坡|x2.0
+      - V4-中转3351|广东G-新加坡|x2.5
+      - V4-中转3558|广东G-新加坡|x2.0
+      - V4-中转3568|广东G-新加坡|x2.0
+      - V4-中转2985|广东G-新加坡|x2.0
+      - V4-中转3358|广东G-新加坡|x2.5
+      - V4-中转3560|广东G-新加坡|x2.0
+      - V4-中转2982|广东G-新加坡|x2.0
+      - V4-中转3350|广东G-新加坡|x2.5
+      - V4-中转2980|广东G-新加坡|x2.0
+      - V4-中转3564|广东G-新加坡|x2.0
+      - V4-中转2981|广东G-新加坡|x2.0
+      - V4-中转3352|广东G-新加坡|x2.5
+      - V4-中转3566|广东G-新加坡|x2.0
+      - V4-中转3355|广东G-新加坡|x2.5
+      - V3-中转3638|广东M-美国|解锁|x2.5
+      - V3中转3545|广东W-香港HKT|解锁|x1.5
+      - V4-中转3354|广东G-新加坡|x2.5
+      - V4-中转3488|广东W-香港HKT|解锁|x1.5
+      - V4-中转3642|广东W-香港HKT|x1.5
+      - V2-中转3501|上海CN2-香港HKT|解锁|x2.0
+      - V3-中转3267|广东W-香港HKT|解锁|x1.5
+      - V3-中转3636|广东M-美国|解锁|x2.5
+      - V4-中转3489|广东X-香港HKT|解锁|x1.5
+      - V2-中转3629|广东M-美国|解锁|x1.5
+      - V2-中转3630|广东M-美国|解锁|x1.5
+      - V2-中转3584|广东C-新加坡|x2.0
+      - V2-中转3528|广东C-新加坡|x2.0
+      - V3-中转3633|广东M-美国|解锁|x2.5
+      - V4-中转3640|广东X-香港HKT|x1.5
+      - V2-中转3628|广东M-美国|解锁|x1.5
+      - V3-中转3634|广东M-美国|解锁|x2.5
+      - V2-中转3680|广东D-香港|解锁|x1.2
+      - V3-中转3547|广东X-香港HKT|解锁|x1.5
+      - V4-中转3639|广东X-香港HKT|x1.5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本JP-T
-      - 新加坡SG-T
-      - 柬埔寨KH-T
-      - 美国USLA-T
+      - V2-中转3439|广东C-新加坡|x2.0
+      - V2-中转3582|广东C-新加坡|x2.0
+      - V2-中转3445|广东W-香港HGC|解锁|x1.5
+      - V2-中转3682|广东D-香港|解锁|x1.2
+      - V2-中转3580|广东C-新加坡|x2.0
+      - V2-中转3044|广东C-新加坡|x1.0
+      - V2-中转3440|广东C-新加坡|x2.0
+      - V2-中转3543|广东-香港M|解锁|x1.5
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - V2-中转3644|广东-香港M|x1.5
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3304|广东H-台湾|解锁|x1.0
+      - V2-中转777|广东U-台湾|解锁|x1.0
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3300|广东H-台湾|解锁|x1.0
+      - V3-中转3318|广东U-台湾|解锁|x1.5
+      - V3-中转2948|广东U-台湾|解锁|x1.2
+      - V3-中转3184|广东D-香港|解锁|x1.5
+      - V2-中转3441|广东C-新加坡|x2.0
+      - V2-中转3495|上海移动-香港x1.2
+      - V3-中转3183|广东D-香港|解锁|x1.5
+      - V3-中转3593|上海-日本M|解锁|x1.5
+      - V3-中转3171|广东D-香港|解锁|x1.5
+      - V3-中转3181|广东D-香港|解锁|x1.5
+      - V3-中转3592|上海-日本M|解锁|x1.5
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - V2-中转3438|广东C-新加坡|x2.0
+      - V2-中转3422|上海CN2-香港HKT|x2.0
+      - V2-中转3534|上海CN2-香港HKT|x2.0
+      - V3-中转3069|上海-日本M|解锁|x1.5
+      - V3-中转3591|上海-日本M|解锁|x1.5
+      - V3-中转3594|上海-日本M|解锁|x1.5
+      - V3-中转3451|上海移动-香港x1.5
+      - V3-中转3589|上海-日本M|解锁|x1.5
+      - V3-中转3373|广东K-新加坡|x1.5
+      - V3-中转3590|上海-日本M|解锁|x1.5
+      - V2-中转3043|广东C-新加坡|x1.0
+      - V2-中转3263|上海CN2-香港HKT|x2.0
+      - V3-中转3050|广东K-新加坡|x1.3
+      - V3-中转3576|广东K-新加坡|x2.0
+      - V2-中转3261|上海移动-香港x1.2
+      - V3-中转3370|广东K-新加坡|x1.5
+      - V3-中转2938|广东K-新加坡|x1.5
+      - V3-中转3054|广东K-新加坡|x1.3
+      - V3-中转2939|广东K-新加坡|x1.5
+      - V3-中转3052|广东K-新加坡|x1.3
+      - V3-中转3578|广东K-新加坡|x2.0
+      - V3-中转3572|广东K-新加坡|x2.0
+      - V3-中转3570|广东K-新加坡|x2.0
+      - V3-中转3051|广东K-新加坡|x1.3
+      - V3-中转3574|广东K-新加坡|x2.0
+      - V3-中转3186|广东D-香港|解锁|x1.5
+      - V3-中转3374|广东K-新加坡|x1.5
+      - V3-中转3053|广东K-新加坡|x1.3
+      - V3-中转3371|广东K-新加坡|x1.5
+      - V3-中转3372|广东K-新加坡|x1.5
+      - V3-中转3494|上海移动-香港x1.5
+      - V3-中转3497|上海移动-香港x1.5
+      - V3-中转3450|上海移动-香港x1.5
+      - V2-中转3442|广东C-新加坡|x2.0
+      - V2-中转3681|广东D-香港|解锁|x1.2
+      - V3-中转3490|广东X-香港HKT|解锁|x1.0
+      - V4-中转3643|广东X-香港HKT|x1.5
+      - V2-中转3042|广东C-新加坡|x1.0
+      - V4-中转2984|广东G-新加坡|x2.0
+      - V4-中转3556|广东G-新加坡|x2.0
+      - V2-中转3631|上海CN2-台湾|解锁|x1.5
+      - V4-中转3357|广东G-新加坡|x2.5
+      - V4-中转2983|广东G-新加坡|x2.0
+      - V4-中转3351|广东G-新加坡|x2.5
+      - V4-中转3558|广东G-新加坡|x2.0
+      - V4-中转3568|广东G-新加坡|x2.0
+      - V4-中转2985|广东G-新加坡|x2.0
+      - V4-中转3358|广东G-新加坡|x2.5
+      - V4-中转3560|广东G-新加坡|x2.0
+      - V4-中转2982|广东G-新加坡|x2.0
+      - V4-中转3350|广东G-新加坡|x2.5
+      - V4-中转2980|广东G-新加坡|x2.0
+      - V4-中转3564|广东G-新加坡|x2.0
+      - V4-中转2981|广东G-新加坡|x2.0
+      - V4-中转3352|广东G-新加坡|x2.5
+      - V4-中转3566|广东G-新加坡|x2.0
+      - V4-中转3355|广东G-新加坡|x2.5
+      - V3-中转3638|广东M-美国|解锁|x2.5
+      - V3中转3545|广东W-香港HKT|解锁|x1.5
+      - V4-中转3354|广东G-新加坡|x2.5
+      - V4-中转3488|广东W-香港HKT|解锁|x1.5
+      - V4-中转3642|广东W-香港HKT|x1.5
+      - V2-中转3501|上海CN2-香港HKT|解锁|x2.0
+      - V3-中转3267|广东W-香港HKT|解锁|x1.5
+      - V3-中转3636|广东M-美国|解锁|x2.5
+      - V4-中转3489|广东X-香港HKT|解锁|x1.5
+      - V2-中转3629|广东M-美国|解锁|x1.5
+      - V2-中转3630|广东M-美国|解锁|x1.5
+      - V2-中转3584|广东C-新加坡|x2.0
+      - V2-中转3528|广东C-新加坡|x2.0
+      - V3-中转3633|广东M-美国|解锁|x2.5
+      - V4-中转3640|广东X-香港HKT|x1.5
+      - V2-中转3628|广东M-美国|解锁|x1.5
+      - V3-中转3634|广东M-美国|解锁|x2.5
+      - V2-中转3680|广东D-香港|解锁|x1.2
+      - V3-中转3547|广东X-香港HKT|解锁|x1.5
+      - V4-中转3639|广东X-香港HKT|x1.5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本JP-T
-      - 新加坡SG-T
-      - 柬埔寨KH-T
-      - 美国USLA-T
+      - V2-中转3439|广东C-新加坡|x2.0
+      - V2-中转3582|广东C-新加坡|x2.0
+      - V2-中转3445|广东W-香港HGC|解锁|x1.5
+      - V2-中转3682|广东D-香港|解锁|x1.2
+      - V2-中转3580|广东C-新加坡|x2.0
+      - V2-中转3044|广东C-新加坡|x1.0
+      - V2-中转3440|广东C-新加坡|x2.0
+      - V2-中转3543|广东-香港M|解锁|x1.5
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - V2-中转3644|广东-香港M|x1.5
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3304|广东H-台湾|解锁|x1.0
+      - V2-中转777|广东U-台湾|解锁|x1.0
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3300|广东H-台湾|解锁|x1.0
+      - V3-中转3318|广东U-台湾|解锁|x1.5
+      - V3-中转2948|广东U-台湾|解锁|x1.2
+      - V3-中转3184|广东D-香港|解锁|x1.5
+      - V2-中转3441|广东C-新加坡|x2.0
+      - V2-中转3495|上海移动-香港x1.2
+      - V3-中转3183|广东D-香港|解锁|x1.5
+      - V3-中转3593|上海-日本M|解锁|x1.5
+      - V3-中转3171|广东D-香港|解锁|x1.5
+      - V3-中转3181|广东D-香港|解锁|x1.5
+      - V3-中转3592|上海-日本M|解锁|x1.5
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - V2-中转3438|广东C-新加坡|x2.0
+      - V2-中转3422|上海CN2-香港HKT|x2.0
+      - V2-中转3534|上海CN2-香港HKT|x2.0
+      - V3-中转3069|上海-日本M|解锁|x1.5
+      - V3-中转3591|上海-日本M|解锁|x1.5
+      - V3-中转3594|上海-日本M|解锁|x1.5
+      - V3-中转3451|上海移动-香港x1.5
+      - V3-中转3589|上海-日本M|解锁|x1.5
+      - V3-中转3373|广东K-新加坡|x1.5
+      - V3-中转3590|上海-日本M|解锁|x1.5
+      - V2-中转3043|广东C-新加坡|x1.0
+      - V2-中转3263|上海CN2-香港HKT|x2.0
+      - V3-中转3050|广东K-新加坡|x1.3
+      - V3-中转3576|广东K-新加坡|x2.0
+      - V2-中转3261|上海移动-香港x1.2
+      - V3-中转3370|广东K-新加坡|x1.5
+      - V3-中转2938|广东K-新加坡|x1.5
+      - V3-中转3054|广东K-新加坡|x1.3
+      - V3-中转2939|广东K-新加坡|x1.5
+      - V3-中转3052|广东K-新加坡|x1.3
+      - V3-中转3578|广东K-新加坡|x2.0
+      - V3-中转3572|广东K-新加坡|x2.0
+      - V3-中转3570|广东K-新加坡|x2.0
+      - V3-中转3051|广东K-新加坡|x1.3
+      - V3-中转3574|广东K-新加坡|x2.0
+      - V3-中转3186|广东D-香港|解锁|x1.5
+      - V3-中转3374|广东K-新加坡|x1.5
+      - V3-中转3053|广东K-新加坡|x1.3
+      - V3-中转3371|广东K-新加坡|x1.5
+      - V3-中转3372|广东K-新加坡|x1.5
+      - V3-中转3494|上海移动-香港x1.5
+      - V3-中转3497|上海移动-香港x1.5
+      - V3-中转3450|上海移动-香港x1.5
+      - V2-中转3442|广东C-新加坡|x2.0
+      - V2-中转3681|广东D-香港|解锁|x1.2
+      - V3-中转3490|广东X-香港HKT|解锁|x1.0
+      - V4-中转3643|广东X-香港HKT|x1.5
+      - V2-中转3042|广东C-新加坡|x1.0
+      - V4-中转2984|广东G-新加坡|x2.0
+      - V4-中转3556|广东G-新加坡|x2.0
+      - V2-中转3631|上海CN2-台湾|解锁|x1.5
+      - V4-中转3357|广东G-新加坡|x2.5
+      - V4-中转2983|广东G-新加坡|x2.0
+      - V4-中转3351|广东G-新加坡|x2.5
+      - V4-中转3558|广东G-新加坡|x2.0
+      - V4-中转3568|广东G-新加坡|x2.0
+      - V4-中转2985|广东G-新加坡|x2.0
+      - V4-中转3358|广东G-新加坡|x2.5
+      - V4-中转3560|广东G-新加坡|x2.0
+      - V4-中转2982|广东G-新加坡|x2.0
+      - V4-中转3350|广东G-新加坡|x2.5
+      - V4-中转2980|广东G-新加坡|x2.0
+      - V4-中转3564|广东G-新加坡|x2.0
+      - V4-中转2981|广东G-新加坡|x2.0
+      - V4-中转3352|广东G-新加坡|x2.5
+      - V4-中转3566|广东G-新加坡|x2.0
+      - V4-中转3355|广东G-新加坡|x2.5
+      - V3-中转3638|广东M-美国|解锁|x2.5
+      - V3中转3545|广东W-香港HKT|解锁|x1.5
+      - V4-中转3354|广东G-新加坡|x2.5
+      - V4-中转3488|广东W-香港HKT|解锁|x1.5
+      - V4-中转3642|广东W-香港HKT|x1.5
+      - V2-中转3501|上海CN2-香港HKT|解锁|x2.0
+      - V3-中转3267|广东W-香港HKT|解锁|x1.5
+      - V3-中转3636|广东M-美国|解锁|x2.5
+      - V4-中转3489|广东X-香港HKT|解锁|x1.5
+      - V2-中转3629|广东M-美国|解锁|x1.5
+      - V2-中转3630|广东M-美国|解锁|x1.5
+      - V2-中转3584|广东C-新加坡|x2.0
+      - V2-中转3528|广东C-新加坡|x2.0
+      - V3-中转3633|广东M-美国|解锁|x2.5
+      - V4-中转3640|广东X-香港HKT|x1.5
+      - V2-中转3628|广东M-美国|解锁|x1.5
+      - V3-中转3634|广东M-美国|解锁|x2.5
+      - V2-中转3680|广东D-香港|解锁|x1.2
+      - V3-中转3547|广东X-香港HKT|解锁|x1.5
+      - V4-中转3639|广东X-香港HKT|x1.5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +959,111 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本JP-T
-      - 新加坡SG-T
-      - 柬埔寨KH-T
-      - 美国USLA-T
+      - V2-中转3439|广东C-新加坡|x2.0
+      - V2-中转3582|广东C-新加坡|x2.0
+      - V2-中转3445|广东W-香港HGC|解锁|x1.5
+      - V2-中转3682|广东D-香港|解锁|x1.2
+      - V2-中转3580|广东C-新加坡|x2.0
+      - V2-中转3044|广东C-新加坡|x1.0
+      - V2-中转3440|广东C-新加坡|x2.0
+      - V2-中转3543|广东-香港M|解锁|x1.5
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - V2-中转3644|广东-香港M|x1.5
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3304|广东H-台湾|解锁|x1.0
+      - V2-中转777|广东U-台湾|解锁|x1.0
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3300|广东H-台湾|解锁|x1.0
+      - V3-中转3318|广东U-台湾|解锁|x1.5
+      - V3-中转2948|广东U-台湾|解锁|x1.2
+      - V3-中转3184|广东D-香港|解锁|x1.5
+      - V2-中转3441|广东C-新加坡|x2.0
+      - V2-中转3495|上海移动-香港x1.2
+      - V3-中转3183|广东D-香港|解锁|x1.5
+      - V3-中转3593|上海-日本M|解锁|x1.5
+      - V3-中转3171|广东D-香港|解锁|x1.5
+      - V3-中转3181|广东D-香港|解锁|x1.5
+      - V3-中转3592|上海-日本M|解锁|x1.5
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - V2-中转3438|广东C-新加坡|x2.0
+      - V2-中转3422|上海CN2-香港HKT|x2.0
+      - V2-中转3534|上海CN2-香港HKT|x2.0
+      - V3-中转3069|上海-日本M|解锁|x1.5
+      - V3-中转3591|上海-日本M|解锁|x1.5
+      - V3-中转3594|上海-日本M|解锁|x1.5
+      - V3-中转3451|上海移动-香港x1.5
+      - V3-中转3589|上海-日本M|解锁|x1.5
+      - V3-中转3373|广东K-新加坡|x1.5
+      - V3-中转3590|上海-日本M|解锁|x1.5
+      - V2-中转3043|广东C-新加坡|x1.0
+      - V2-中转3263|上海CN2-香港HKT|x2.0
+      - V3-中转3050|广东K-新加坡|x1.3
+      - V3-中转3576|广东K-新加坡|x2.0
+      - V2-中转3261|上海移动-香港x1.2
+      - V3-中转3370|广东K-新加坡|x1.5
+      - V3-中转2938|广东K-新加坡|x1.5
+      - V3-中转3054|广东K-新加坡|x1.3
+      - V3-中转2939|广东K-新加坡|x1.5
+      - V3-中转3052|广东K-新加坡|x1.3
+      - V3-中转3578|广东K-新加坡|x2.0
+      - V3-中转3572|广东K-新加坡|x2.0
+      - V3-中转3570|广东K-新加坡|x2.0
+      - V3-中转3051|广东K-新加坡|x1.3
+      - V3-中转3574|广东K-新加坡|x2.0
+      - V3-中转3186|广东D-香港|解锁|x1.5
+      - V3-中转3374|广东K-新加坡|x1.5
+      - V3-中转3053|广东K-新加坡|x1.3
+      - V3-中转3371|广东K-新加坡|x1.5
+      - V3-中转3372|广东K-新加坡|x1.5
+      - V3-中转3494|上海移动-香港x1.5
+      - V3-中转3497|上海移动-香港x1.5
+      - V3-中转3450|上海移动-香港x1.5
+      - V2-中转3442|广东C-新加坡|x2.0
+      - V2-中转3681|广东D-香港|解锁|x1.2
+      - V3-中转3490|广东X-香港HKT|解锁|x1.0
+      - V4-中转3643|广东X-香港HKT|x1.5
+      - V2-中转3042|广东C-新加坡|x1.0
+      - V4-中转2984|广东G-新加坡|x2.0
+      - V4-中转3556|广东G-新加坡|x2.0
+      - V2-中转3631|上海CN2-台湾|解锁|x1.5
+      - V4-中转3357|广东G-新加坡|x2.5
+      - V4-中转2983|广东G-新加坡|x2.0
+      - V4-中转3351|广东G-新加坡|x2.5
+      - V4-中转3558|广东G-新加坡|x2.0
+      - V4-中转3568|广东G-新加坡|x2.0
+      - V4-中转2985|广东G-新加坡|x2.0
+      - V4-中转3358|广东G-新加坡|x2.5
+      - V4-中转3560|广东G-新加坡|x2.0
+      - V4-中转2982|广东G-新加坡|x2.0
+      - V4-中转3350|广东G-新加坡|x2.5
+      - V4-中转2980|广东G-新加坡|x2.0
+      - V4-中转3564|广东G-新加坡|x2.0
+      - V4-中转2981|广东G-新加坡|x2.0
+      - V4-中转3352|广东G-新加坡|x2.5
+      - V4-中转3566|广东G-新加坡|x2.0
+      - V4-中转3355|广东G-新加坡|x2.5
+      - V3-中转3638|广东M-美国|解锁|x2.5
+      - V3中转3545|广东W-香港HKT|解锁|x1.5
+      - V4-中转3354|广东G-新加坡|x2.5
+      - V4-中转3488|广东W-香港HKT|解锁|x1.5
+      - V4-中转3642|广东W-香港HKT|x1.5
+      - V2-中转3501|上海CN2-香港HKT|解锁|x2.0
+      - V3-中转3267|广东W-香港HKT|解锁|x1.5
+      - V3-中转3636|广东M-美国|解锁|x2.5
+      - V4-中转3489|广东X-香港HKT|解锁|x1.5
+      - V2-中转3629|广东M-美国|解锁|x1.5
+      - V2-中转3630|广东M-美国|解锁|x1.5
+      - V2-中转3584|广东C-新加坡|x2.0
+      - V2-中转3528|广东C-新加坡|x2.0
+      - V3-中转3633|广东M-美国|解锁|x2.5
+      - V4-中转3640|广东X-香港HKT|x1.5
+      - V2-中转3628|广东M-美国|解锁|x1.5
+      - V3-中转3634|广东M-美国|解锁|x2.5
+      - V2-中转3680|广东D-香港|解锁|x1.2
+      - V3-中转3547|广东X-香港HKT|解锁|x1.5
+      - V4-中转3639|广东X-香港HKT|x1.5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
