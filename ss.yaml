@@ -5,67 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "_中国_[晴园的宝藏库]_22", server: 183.232.141.154, port: 19203, type: trojan, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
-  - {name: "_台湾_[晴园的宝藏库]_13", server: dx15.jicojs.com, port: 443, type: ss, cipher: aes-256-gcm, password: 46c027d028b4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx15.jicojs.com, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: "_荷兰_[晴园的宝藏库]_765", server: 185.239.68.201, port: 65446, type: vmess, uuid: 5be36837-eb59-4378-a1b0-1a835ccc8559, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_美国_[晴园的宝藏库]_109", server: 202.144.192.27, port: 51134, type: vmess, uuid: 54a9bd0e-bc83-431f-933c-c0cc614236b1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_韩国_[晴园的宝藏库]_101", server: in03.dns2333.xyz, port: 64086, type: vmess, uuid: 51f79218-4c27-3a41-9c4f-bda3462a9b27, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /biteb, ws-headers: {Host: in03.dns2333.xyz}, udp: true}
-  - {name: "_韩国_[晴园的宝藏库]_66", server: 132.226.235.85, port: 62634, type: ss, cipher: aes-256-gcm, password: 233blog.com, udp: true}
-  - {name: "_中国_[晴园的宝藏库]_4", server: v2hk6.fdhsujj.xyz, port: 23546, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: WkdKbE9UWXlPRFkyTlRJdWJXbGpjbTl6YjJaMExtTnZiUQ, udp: true}
-  - {name: "_韩国_[晴园的宝藏库]_92", server: clash6-1.ssrfree6.xyz, port: 44001, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: "_韩国_[晴园的宝藏库]_91", server: 121.0.97.25, port: 44002, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: "_中国_[晴园的宝藏库]_6", server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_中国_[晴园的宝藏库]_26", server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Singapore 01, server: sg-01.leco.ml, port: 56132, type: ss, cipher: aes-256-gcm, password: 896c287a-b80b-4410-bc21-9b6726194187, udp: true}
+  - {name: Hong Kong 01, server: hk-01.leco.ml, port: 21650, type: ss, cipher: aes-256-gcm, password: 896c287a-b80b-4410-bc21-9b6726194187, udp: true}
+  - {name: Singapore 02, server: sg-02.leco.ml, port: 36616, type: ss, cipher: aes-256-gcm, password: 896c287a-b80b-4410-bc21-9b6726194187, udp: true}
+  - {name: Hong Kong 02, server: hk-02.leco.ml, port: 60847, type: ss, cipher: aes-256-gcm, password: 896c287a-b80b-4410-bc21-9b6726194187, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _中国_[晴园的宝藏库]_22
-      - _台湾_[晴园的宝藏库]_13
-      - _荷兰_[晴园的宝藏库]_765
-      - _美国_[晴园的宝藏库]_109
-      - _韩国_[晴园的宝藏库]_101
-      - _韩国_[晴园的宝藏库]_66
-      - _中国_[晴园的宝藏库]_4
-      - _韩国_[晴园的宝藏库]_92
-      - _韩国_[晴园的宝藏库]_91
-      - _中国_[晴园的宝藏库]_6
-      - _中国_[晴园的宝藏库]_26
+      - Singapore 01
+      - Hong Kong 01
+      - Singapore 02
+      - Hong Kong 02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _中国_[晴园的宝藏库]_22
-      - _台湾_[晴园的宝藏库]_13
-      - _荷兰_[晴园的宝藏库]_765
-      - _美国_[晴园的宝藏库]_109
-      - _韩国_[晴园的宝藏库]_101
-      - _韩国_[晴园的宝藏库]_66
-      - _中国_[晴园的宝藏库]_4
-      - _韩国_[晴园的宝藏库]_92
-      - _韩国_[晴园的宝藏库]_91
-      - _中国_[晴园的宝藏库]_6
-      - _中国_[晴园的宝藏库]_26
+      - Singapore 01
+      - Hong Kong 01
+      - Singapore 02
+      - Hong Kong 02
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _中国_[晴园的宝藏库]_22
-      - _台湾_[晴园的宝藏库]_13
-      - _荷兰_[晴园的宝藏库]_765
-      - _美国_[晴园的宝藏库]_109
-      - _韩国_[晴园的宝藏库]_101
-      - _韩国_[晴园的宝藏库]_66
-      - _中国_[晴园的宝藏库]_4
-      - _韩国_[晴园的宝藏库]_92
-      - _韩国_[晴园的宝藏库]_91
-      - _中国_[晴园的宝藏库]_6
-      - _中国_[晴园的宝藏库]_26
+      - Singapore 01
+      - Hong Kong 01
+      - Singapore 02
+      - Hong Kong 02
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,72 +56,43 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _中国_[晴园的宝藏库]_22
-      - _台湾_[晴园的宝藏库]_13
-      - _荷兰_[晴园的宝藏库]_765
-      - _美国_[晴园的宝藏库]_109
-      - _韩国_[晴园的宝藏库]_101
-      - _韩国_[晴园的宝藏库]_66
-      - _中国_[晴园的宝藏库]_4
-      - _韩国_[晴园的宝藏库]_92
-      - _韩国_[晴园的宝藏库]_91
-      - _中国_[晴园的宝藏库]_6
-      - _中国_[晴园的宝藏库]_26
+      - Singapore 01
+      - Hong Kong 01
+      - Singapore 02
+      - Hong Kong 02
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _台湾_[晴园的宝藏库]_13
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _中国_[晴园的宝藏库]_22
-      - _台湾_[晴园的宝藏库]_13
-      - _荷兰_[晴园的宝藏库]_765
-      - _美国_[晴园的宝藏库]_109
-      - _韩国_[晴园的宝藏库]_101
-      - _韩国_[晴园的宝藏库]_66
-      - _中国_[晴园的宝藏库]_4
-      - _韩国_[晴园的宝藏库]_92
-      - _韩国_[晴园的宝藏库]_91
-      - _中国_[晴园的宝藏库]_6
-      - _中国_[晴园的宝藏库]_26
+      - Singapore 01
+      - Hong Kong 01
+      - Singapore 02
+      - Hong Kong 02
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _中国_[晴园的宝藏库]_22
-      - _台湾_[晴园的宝藏库]_13
-      - _荷兰_[晴园的宝藏库]_765
-      - _美国_[晴园的宝藏库]_109
-      - _韩国_[晴园的宝藏库]_101
-      - _韩国_[晴园的宝藏库]_66
-      - _中国_[晴园的宝藏库]_4
-      - _韩国_[晴园的宝藏库]_92
-      - _韩国_[晴园的宝藏库]_91
-      - _中国_[晴园的宝藏库]_6
-      - _中国_[晴园的宝藏库]_26
+      - Singapore 01
+      - Hong Kong 01
+      - Singapore 02
+      - Hong Kong 02
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _中国_[晴园的宝藏库]_22
-      - _台湾_[晴园的宝藏库]_13
-      - _荷兰_[晴园的宝藏库]_765
-      - _美国_[晴园的宝藏库]_109
-      - _韩国_[晴园的宝藏库]_101
-      - _韩国_[晴园的宝藏库]_66
-      - _中国_[晴园的宝藏库]_4
-      - _韩国_[晴园的宝藏库]_92
-      - _韩国_[晴园的宝藏库]_91
-      - _中国_[晴园的宝藏库]_6
-      - _中国_[晴园的宝藏库]_26
+      - Singapore 01
+      - Hong Kong 01
+      - Singapore 02
+      - Hong Kong 02
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -165,17 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _中国_[晴园的宝藏库]_22
-      - _台湾_[晴园的宝藏库]_13
-      - _荷兰_[晴园的宝藏库]_765
-      - _美国_[晴园的宝藏库]_109
-      - _韩国_[晴园的宝藏库]_101
-      - _韩国_[晴园的宝藏库]_66
-      - _中国_[晴园的宝藏库]_4
-      - _韩国_[晴园的宝藏库]_92
-      - _韩国_[晴园的宝藏库]_91
-      - _中国_[晴园的宝藏库]_6
-      - _中国_[晴园的宝藏库]_26
+      - Singapore 01
+      - Hong Kong 01
+      - Singapore 02
+      - Hong Kong 02
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
