@@ -5,87 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[CT/CM]香港 10", server: zgrefgd03.standurl.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 01", server: cnrefhk01.standurl.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 12", server: cnrefhk2.standurl.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: 美国 优化-8, server: usstartus2.eucdurl.me, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: 美国 优化-10, server: usstartus2.eucdurl.me, port: 569, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: 韩国高速接入A, server: cnallaz.eucdurl.me, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: 美国 优化-5, server: usstartus2.eucdurl.me, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 11", server: cucshk4.debugex.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: 美国 优化-6, server: usstartus2.eucdurl.me, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: 美国 优化-7, server: usstartus2.eucdurl.me, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 03", server: cnrefhk2.standurl.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: 美国 优化-9, server: usstartus2.eucdurl.me, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 14", server: cucshk4.debugex.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: 俄罗斯a RT, server: eduall.buzzline.org, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: 俄罗斯c RT, server: eduall.buzzline.org, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
-  - {name: 土耳其, server: eduall.buzzline.org, port: 620, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
+  - {name: 亚太地区 003, server: 103.159.133.166, port: 31372, type: vmess, uuid: 912864fc-41c2-44e2-dcdf-0b01ef96237e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 006, server: c6s4.jamjams3.net, port: 8937, type: vmess, uuid: 656a08a0-482e-403a-8228-2f27def97b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 011, server: 146.56.176.239, port: 443, type: trojan, password: a153fb4e-6d1b-4db0-b03d-acb4012b7198, skip-cert-verify: true, udp: true}
+  - {name: 亚太地区 002, server: 103.177.33.146, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fc568c325d09, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 美国 001, server: 152.70.241.18, port: 26676, type: vmess, uuid: ecd274c0-175d-45f7-8276-a3da93786632, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 046, server: 172.64.153.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg5.zhujicn2.com}, udp: true}
+  - {name: 美国 009, server: c6s3.jamjams3.net, port: 8937, type: vmess, uuid: 656a08a0-482e-403a-8228-2f27def97b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 010, server: c6s801.jamjams3.net, port: 8937, type: vmess, uuid: 656a08a0-482e-403a-8228-2f27def97b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 12"
-      - 美国 优化-8
-      - 美国 优化-10
-      - 韩国高速接入A
-      - 美国 优化-5
-      - "[CT/CM]香港 11"
-      - 美国 优化-6
-      - 美国 优化-7
-      - "[CT/CM]香港 03"
-      - 美国 优化-9
-      - "[CT/CM]香港 14"
-      - 俄罗斯a RT
-      - 俄罗斯c RT
-      - 土耳其
+      - 亚太地区 003
+      - 美国 006
+      - 日本 011
+      - 亚太地区 002
+      - 美国 001
+      - 美国 046
+      - 美国 009
+      - 美国 010
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 12"
-      - 美国 优化-8
-      - 美国 优化-10
-      - 韩国高速接入A
-      - 美国 优化-5
-      - "[CT/CM]香港 11"
-      - 美国 优化-6
-      - 美国 优化-7
-      - "[CT/CM]香港 03"
-      - 美国 优化-9
-      - "[CT/CM]香港 14"
-      - 俄罗斯a RT
-      - 俄罗斯c RT
-      - 土耳其
+      - 亚太地区 003
+      - 美国 006
+      - 日本 011
+      - 亚太地区 002
+      - 美国 001
+      - 美国 046
+      - 美国 009
+      - 美国 010
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 12"
-      - 美国 优化-8
-      - 美国 优化-10
-      - 韩国高速接入A
-      - 美国 优化-5
-      - "[CT/CM]香港 11"
-      - 美国 优化-6
-      - 美国 优化-7
-      - "[CT/CM]香港 03"
-      - 美国 优化-9
-      - "[CT/CM]香港 14"
-      - 俄罗斯a RT
-      - 俄罗斯c RT
-      - 土耳其
+      - 亚太地区 003
+      - 美国 006
+      - 日本 011
+      - 亚太地区 002
+      - 美国 001
+      - 美国 046
+      - 美国 009
+      - 美国 010
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -104,97 +72,59 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 12"
-      - 美国 优化-8
-      - 美国 优化-10
-      - 韩国高速接入A
-      - 美国 优化-5
-      - "[CT/CM]香港 11"
-      - 美国 优化-6
-      - 美国 优化-7
-      - "[CT/CM]香港 03"
-      - 美国 优化-9
-      - "[CT/CM]香港 14"
-      - 俄罗斯a RT
-      - 俄罗斯c RT
-      - 土耳其
+      - 亚太地区 003
+      - 美国 006
+      - 日本 011
+      - 亚太地区 002
+      - 美国 001
+      - 美国 046
+      - 美国 009
+      - 美国 010
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 12"
-      - "[CT/CM]香港 11"
-      - "[CT/CM]香港 03"
-      - "[CT/CM]香港 14"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 12"
-      - 美国 优化-8
-      - 美国 优化-10
-      - 韩国高速接入A
-      - 美国 优化-5
-      - "[CT/CM]香港 11"
-      - 美国 优化-6
-      - 美国 优化-7
-      - "[CT/CM]香港 03"
-      - 美国 优化-9
-      - "[CT/CM]香港 14"
-      - 俄罗斯a RT
-      - 俄罗斯c RT
-      - 土耳其
+      - 亚太地区 003
+      - 美国 006
+      - 日本 011
+      - 亚太地区 002
+      - 美国 001
+      - 美国 046
+      - 美国 009
+      - 美国 010
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 12"
-      - 美国 优化-8
-      - 美国 优化-10
-      - 韩国高速接入A
-      - 美国 优化-5
-      - "[CT/CM]香港 11"
-      - 美国 优化-6
-      - 美国 优化-7
-      - "[CT/CM]香港 03"
-      - 美国 优化-9
-      - "[CT/CM]香港 14"
-      - 俄罗斯a RT
-      - 俄罗斯c RT
-      - 土耳其
+      - 亚太地区 003
+      - 美国 006
+      - 日本 011
+      - 亚太地区 002
+      - 美国 001
+      - 美国 046
+      - 美国 009
+      - 美国 010
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 12"
-      - 美国 优化-8
-      - 美国 优化-10
-      - 韩国高速接入A
-      - 美国 优化-5
-      - "[CT/CM]香港 11"
-      - 美国 优化-6
-      - 美国 优化-7
-      - "[CT/CM]香港 03"
-      - 美国 优化-9
-      - "[CT/CM]香港 14"
-      - 俄罗斯a RT
-      - 俄罗斯c RT
-      - 土耳其
+      - 亚太地区 003
+      - 美国 006
+      - 日本 011
+      - 亚太地区 002
+      - 美国 001
+      - 美国 046
+      - 美国 009
+      - 美国 010
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -210,22 +140,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 12"
-      - 美国 优化-8
-      - 美国 优化-10
-      - 韩国高速接入A
-      - 美国 优化-5
-      - "[CT/CM]香港 11"
-      - 美国 优化-6
-      - 美国 优化-7
-      - "[CT/CM]香港 03"
-      - 美国 优化-9
-      - "[CT/CM]香港 14"
-      - 俄罗斯a RT
-      - 俄罗斯c RT
-      - 土耳其
+      - 亚太地区 003
+      - 美国 006
+      - 日本 011
+      - 亚太地区 002
+      - 美国 001
+      - 美国 046
+      - 美国 009
+      - 美国 010
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
