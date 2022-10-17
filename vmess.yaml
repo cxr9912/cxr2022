@@ -5,151 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "_中国_[晴园的宝藏库]_834", server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_中国_[晴园的宝藏库]_31", server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_韩国_[晴园的宝藏库]_929", server: in03.dns2333.xyz, port: 64069, type: vmess, uuid: 51f79218-4c27-3a41-9c4f-bda3462a9b27, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: in03.dns2333.xyz}, udp: true}
-  - {name: "_中国_[晴园的宝藏库]_596", server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_美国_[晴园的宝藏库]_930", server: 152.69.195.171, port: 55555, type: vmess, uuid: b86d95da-b843-4804-8443-d849d3207076, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_日本_[晴园的宝藏库]_782", server: www.letter4u.net, port: 12363, type: vmess, uuid: 8ee75e76-9d9d-4f37-bd62-7f7733f49458, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_美国_[晴园的宝藏库]_974", server: 152.69.195.171, port: 55555, type: vmess, uuid: b86d95da-b843-4804-8443-d849d3207076, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_日本_[晴园的宝藏库]_319", server: www.letter4u.net, port: 12363, type: vmess, uuid: 8ee75e76-9d9d-4f37-bd62-7f7733f49458, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[晴园的宝藏库]_2", server: 103.173.178.110, port: 41443, type: vmess, uuid: E10DA3F9-6DFF-7956-9E05-1E8C4AEF1571, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "_美国_[晴园的宝藏库]_46", server: www.yiandxu.buzz, port: 11348, type: vmess, uuid: 7462e489-c152-4473-e729-0646a1913443, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sdf26, ws-headers: {Host: www.yiandxu.buzz}, udp: true}
-  - {name: "_日本_[晴园的宝藏库]_764", server: www.letter4u.net, port: 12363, type: vmess, uuid: 8ee75e76-9d9d-4f37-bd62-7f7733f49458, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[晴园的宝藏库]_877", server: 103.173.178.110, port: 41443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "[晴园的宝藏库]_961", server: 103.173.178.110, port: 41443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "_日本_[晴园的宝藏库]_122", server: www.letter4u.net, port: 12363, type: vmess, uuid: 8ee75e76-9d9d-4f37-bd62-7f7733f49458, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_日本_[晴园的宝藏库]_937", server: 140.83.81.87, port: 55555, type: vmess, uuid: a709aa18-357b-46bf-a1b5-ac6d68ffb820, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_美国_[晴园的宝藏库]_1051", server: 152.69.195.171, port: 55555, type: vmess, uuid: b86d95da-b843-4804-8443-d849d3207076, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_日本_[晴园的宝藏库]_102", server: 140.83.81.87, port: 55555, type: vmess, uuid: a709aa18-357b-46bf-a1b5-ac6d68ffb820, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_日本_[晴园的宝藏库]_323", server: 140.83.81.87, port: 55555, type: vmess, uuid: a709aa18-357b-46bf-a1b5-ac6d68ffb820, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_美国_[晴园的宝藏库]_1057", server: 152.69.195.171, port: 55555, type: vmess, uuid: b86d95da-b843-4804-8443-d849d3207076, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_日本_[晴园的宝藏库]_93", server: 140.83.81.87, port: 55555, type: vmess, uuid: a709aa18-357b-46bf-a1b5-ac6d68ffb820, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_美国_[晴园的宝藏库]_55", server: 204.15.75.99, port: 58290, type: vmess, uuid: d5cc3148-2e88-439a-cb17-e363e7dbe43c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 204.15.75.99}, udp: true}
-  - {name: "_美国_[晴园的宝藏库]_58", server: ion.vnklwwv.com, port: 443, type: vmess, uuid: 36583320-4c2e-4671-b08b-c358fce74316, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vazbvws?ed=2048", ws-headers: {Host: ion.vnklwwv.com}, udp: true}
-  - {name: "_日本_[晴园的宝藏库]_843", server: 140.83.81.87, port: 55555, type: vmess, uuid: a709aa18-357b-46bf-a1b5-ac6d68ffb820, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_日本_[晴园的宝藏库]_1048", server: 140.83.81.87, port: 55555, type: vmess, uuid: a709aa18-357b-46bf-a1b5-ac6d68ffb820, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_英国_[晴园的宝藏库]_52", server: xyz.swey.wgetgg.icu, port: 24658, type: vmess, uuid: d5bf74ab-fdb2-4522-f386-965c7d47122b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /2022, ws-headers: {Host: xyz.swey.wgetgg.icu}, udp: true}
-  - {name: "_美国_[晴园的宝藏库]_44", server: 138.2.45.243, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, skip-cert-verify: true, udp: true}
-  - {name: "_日本_[晴园的宝藏库]_838", server: www.letter4u.net, port: 12363, type: vmess, uuid: 8ee75e76-9d9d-4f37-bd62-7f7733f49458, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_美国_[晴园的宝藏库]_25", server: aa.houdinix.space, port: 56656, type: vmess, uuid: fdb1740c-f246-4f5d-d1ff-87c5b29ae22c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wis, ws-headers: {Host: aa.houdinix.space}, udp: true}
-  - {name: "_美国_[晴园的宝藏库]_322", server: 108.61.216.5, port: 443, type: vmess, uuid: b248c699-cfb3-436d-a9ff-76d740d1096b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /M66KuUC9, ws-headers: {Host: 108.61.216.5}, udp: true}
-  - {name: "_韩国_[晴园的宝藏库]_43", server: kr.vnklwwv.com, port: 443, type: vmess, uuid: d9883c4d-2bc2-4737-be75-a65c2e63d61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/nuzfvws?ed=2048", ws-headers: {Host: kr.vnklwwv.com}, udp: true}
-  - {name: "_美国_[晴园的宝藏库]_68", server: 96.43.84.213, port: 4396, type: vmess, uuid: cd762ef7-1d04-44a5-bb94-86f006d5ef19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 96.43.84.213}, udp: true}
-  - {name: "_德国_[晴园的宝藏库]_82", server: 213.226.71.174, port: 41443, type: vmess, uuid: E10DA3F9-6DFF-7956-9E05-1E8C4AEF1571, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇭🇰 HK 8 TG:@airproxies, server: t.cccao.cyou, port: 16627, type: vmess, uuid: 47bcbe05-fd72-446c-980c-63ee18c49376, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
+  - {name: 中转 🇺🇸 US 1 TG:@nodpai, server: 119.36.161.40, port: 443, type: vmess, uuid: 946ba5df-5771-4873-a3cb-892378526147, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/120306182525, ws-headers: {Host: www.99136853.xyz}, udp: true}
+  - {name: 中转 🇭🇰 HK 21 TG:@airproxies, server: v7_3.liulisusunode.online, port: 51003, type: vmess, uuid: b39468bd-1563-41c0-bf52-7434742130a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /liulisuansuan, ws-headers: {Host: v7_3.liulisusunode.online}, udp: true}
+  - {name: US 5 TG:@airproxies, server: dsk4hbkrzpitv.cloudfront.net, port: 443, type: vmess, uuid: cfcd8ac9-5f5b-4763-e911-f498fa595d2b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dsk4hbkrzpitv.cloudfront.net}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _中国_[晴园的宝藏库]_834
-      - _中国_[晴园的宝藏库]_31
-      - _韩国_[晴园的宝藏库]_929
-      - _中国_[晴园的宝藏库]_596
-      - _美国_[晴园的宝藏库]_930
-      - _日本_[晴园的宝藏库]_782
-      - _美国_[晴园的宝藏库]_974
-      - _日本_[晴园的宝藏库]_319
-      - "[晴园的宝藏库]_2"
-      - _美国_[晴园的宝藏库]_46
-      - _日本_[晴园的宝藏库]_764
-      - "[晴园的宝藏库]_877"
-      - "[晴园的宝藏库]_961"
-      - _日本_[晴园的宝藏库]_122
-      - _日本_[晴园的宝藏库]_937
-      - _美国_[晴园的宝藏库]_1051
-      - _日本_[晴园的宝藏库]_102
-      - _日本_[晴园的宝藏库]_323
-      - _美国_[晴园的宝藏库]_1057
-      - _日本_[晴园的宝藏库]_93
-      - _美国_[晴园的宝藏库]_55
-      - _美国_[晴园的宝藏库]_58
-      - _日本_[晴园的宝藏库]_843
-      - _日本_[晴园的宝藏库]_1048
-      - _英国_[晴园的宝藏库]_52
-      - _美国_[晴园的宝藏库]_44
-      - _日本_[晴园的宝藏库]_838
-      - _美国_[晴园的宝藏库]_25
-      - _美国_[晴园的宝藏库]_322
-      - _韩国_[晴园的宝藏库]_43
-      - _美国_[晴园的宝藏库]_68
-      - _德国_[晴园的宝藏库]_82
+      - 中转 🇭🇰 HK 8 TG:@airproxies
+      - 中转 🇺🇸 US 1 TG:@nodpai
+      - 中转 🇭🇰 HK 21 TG:@airproxies
+      - US 5 TG:@airproxies
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _中国_[晴园的宝藏库]_834
-      - _中国_[晴园的宝藏库]_31
-      - _韩国_[晴园的宝藏库]_929
-      - _中国_[晴园的宝藏库]_596
-      - _美国_[晴园的宝藏库]_930
-      - _日本_[晴园的宝藏库]_782
-      - _美国_[晴园的宝藏库]_974
-      - _日本_[晴园的宝藏库]_319
-      - "[晴园的宝藏库]_2"
-      - _美国_[晴园的宝藏库]_46
-      - _日本_[晴园的宝藏库]_764
-      - "[晴园的宝藏库]_877"
-      - "[晴园的宝藏库]_961"
-      - _日本_[晴园的宝藏库]_122
-      - _日本_[晴园的宝藏库]_937
-      - _美国_[晴园的宝藏库]_1051
-      - _日本_[晴园的宝藏库]_102
-      - _日本_[晴园的宝藏库]_323
-      - _美国_[晴园的宝藏库]_1057
-      - _日本_[晴园的宝藏库]_93
-      - _美国_[晴园的宝藏库]_55
-      - _美国_[晴园的宝藏库]_58
-      - _日本_[晴园的宝藏库]_843
-      - _日本_[晴园的宝藏库]_1048
-      - _英国_[晴园的宝藏库]_52
-      - _美国_[晴园的宝藏库]_44
-      - _日本_[晴园的宝藏库]_838
-      - _美国_[晴园的宝藏库]_25
-      - _美国_[晴园的宝藏库]_322
-      - _韩国_[晴园的宝藏库]_43
-      - _美国_[晴园的宝藏库]_68
-      - _德国_[晴园的宝藏库]_82
+      - 中转 🇭🇰 HK 8 TG:@airproxies
+      - 中转 🇺🇸 US 1 TG:@nodpai
+      - 中转 🇭🇰 HK 21 TG:@airproxies
+      - US 5 TG:@airproxies
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _中国_[晴园的宝藏库]_834
-      - _中国_[晴园的宝藏库]_31
-      - _韩国_[晴园的宝藏库]_929
-      - _中国_[晴园的宝藏库]_596
-      - _美国_[晴园的宝藏库]_930
-      - _日本_[晴园的宝藏库]_782
-      - _美国_[晴园的宝藏库]_974
-      - _日本_[晴园的宝藏库]_319
-      - "[晴园的宝藏库]_2"
-      - _美国_[晴园的宝藏库]_46
-      - _日本_[晴园的宝藏库]_764
-      - "[晴园的宝藏库]_877"
-      - "[晴园的宝藏库]_961"
-      - _日本_[晴园的宝藏库]_122
-      - _日本_[晴园的宝藏库]_937
-      - _美国_[晴园的宝藏库]_1051
-      - _日本_[晴园的宝藏库]_102
-      - _日本_[晴园的宝藏库]_323
-      - _美国_[晴园的宝藏库]_1057
-      - _日本_[晴园的宝藏库]_93
-      - _美国_[晴园的宝藏库]_55
-      - _美国_[晴园的宝藏库]_58
-      - _日本_[晴园的宝藏库]_843
-      - _日本_[晴园的宝藏库]_1048
-      - _英国_[晴园的宝藏库]_52
-      - _美国_[晴园的宝藏库]_44
-      - _日本_[晴园的宝藏库]_838
-      - _美国_[晴园的宝藏库]_25
-      - _美国_[晴园的宝藏库]_322
-      - _韩国_[晴园的宝藏库]_43
-      - _美国_[晴园的宝藏库]_68
-      - _德国_[晴园的宝藏库]_82
+      - 中转 🇭🇰 HK 8 TG:@airproxies
+      - 中转 🇺🇸 US 1 TG:@nodpai
+      - 中转 🇭🇰 HK 21 TG:@airproxies
+      - US 5 TG:@airproxies
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -168,38 +56,10 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _中国_[晴园的宝藏库]_834
-      - _中国_[晴园的宝藏库]_31
-      - _韩国_[晴园的宝藏库]_929
-      - _中国_[晴园的宝藏库]_596
-      - _美国_[晴园的宝藏库]_930
-      - _日本_[晴园的宝藏库]_782
-      - _美国_[晴园的宝藏库]_974
-      - _日本_[晴园的宝藏库]_319
-      - "[晴园的宝藏库]_2"
-      - _美国_[晴园的宝藏库]_46
-      - _日本_[晴园的宝藏库]_764
-      - "[晴园的宝藏库]_877"
-      - "[晴园的宝藏库]_961"
-      - _日本_[晴园的宝藏库]_122
-      - _日本_[晴园的宝藏库]_937
-      - _美国_[晴园的宝藏库]_1051
-      - _日本_[晴园的宝藏库]_102
-      - _日本_[晴园的宝藏库]_323
-      - _美国_[晴园的宝藏库]_1057
-      - _日本_[晴园的宝藏库]_93
-      - _美国_[晴园的宝藏库]_55
-      - _美国_[晴园的宝藏库]_58
-      - _日本_[晴园的宝藏库]_843
-      - _日本_[晴园的宝藏库]_1048
-      - _英国_[晴园的宝藏库]_52
-      - _美国_[晴园的宝藏库]_44
-      - _日本_[晴园的宝藏库]_838
-      - _美国_[晴园的宝藏库]_25
-      - _美国_[晴园的宝藏库]_322
-      - _韩国_[晴园的宝藏库]_43
-      - _美国_[晴园的宝藏库]_68
-      - _德国_[晴园的宝藏库]_82
+      - 中转 🇭🇰 HK 8 TG:@airproxies
+      - 中转 🇺🇸 US 1 TG:@nodpai
+      - 中转 🇭🇰 HK 21 TG:@airproxies
+      - US 5 TG:@airproxies
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -210,113 +70,29 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _中国_[晴园的宝藏库]_834
-      - _中国_[晴园的宝藏库]_31
-      - _韩国_[晴园的宝藏库]_929
-      - _中国_[晴园的宝藏库]_596
-      - _美国_[晴园的宝藏库]_930
-      - _日本_[晴园的宝藏库]_782
-      - _美国_[晴园的宝藏库]_974
-      - _日本_[晴园的宝藏库]_319
-      - "[晴园的宝藏库]_2"
-      - _美国_[晴园的宝藏库]_46
-      - _日本_[晴园的宝藏库]_764
-      - "[晴园的宝藏库]_877"
-      - "[晴园的宝藏库]_961"
-      - _日本_[晴园的宝藏库]_122
-      - _日本_[晴园的宝藏库]_937
-      - _美国_[晴园的宝藏库]_1051
-      - _日本_[晴园的宝藏库]_102
-      - _日本_[晴园的宝藏库]_323
-      - _美国_[晴园的宝藏库]_1057
-      - _日本_[晴园的宝藏库]_93
-      - _美国_[晴园的宝藏库]_55
-      - _美国_[晴园的宝藏库]_58
-      - _日本_[晴园的宝藏库]_843
-      - _日本_[晴园的宝藏库]_1048
-      - _英国_[晴园的宝藏库]_52
-      - _美国_[晴园的宝藏库]_44
-      - _日本_[晴园的宝藏库]_838
-      - _美国_[晴园的宝藏库]_25
-      - _美国_[晴园的宝藏库]_322
-      - _韩国_[晴园的宝藏库]_43
-      - _美国_[晴园的宝藏库]_68
-      - _德国_[晴园的宝藏库]_82
+      - 中转 🇭🇰 HK 8 TG:@airproxies
+      - 中转 🇺🇸 US 1 TG:@nodpai
+      - 中转 🇭🇰 HK 21 TG:@airproxies
+      - US 5 TG:@airproxies
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _中国_[晴园的宝藏库]_834
-      - _中国_[晴园的宝藏库]_31
-      - _韩国_[晴园的宝藏库]_929
-      - _中国_[晴园的宝藏库]_596
-      - _美国_[晴园的宝藏库]_930
-      - _日本_[晴园的宝藏库]_782
-      - _美国_[晴园的宝藏库]_974
-      - _日本_[晴园的宝藏库]_319
-      - "[晴园的宝藏库]_2"
-      - _美国_[晴园的宝藏库]_46
-      - _日本_[晴园的宝藏库]_764
-      - "[晴园的宝藏库]_877"
-      - "[晴园的宝藏库]_961"
-      - _日本_[晴园的宝藏库]_122
-      - _日本_[晴园的宝藏库]_937
-      - _美国_[晴园的宝藏库]_1051
-      - _日本_[晴园的宝藏库]_102
-      - _日本_[晴园的宝藏库]_323
-      - _美国_[晴园的宝藏库]_1057
-      - _日本_[晴园的宝藏库]_93
-      - _美国_[晴园的宝藏库]_55
-      - _美国_[晴园的宝藏库]_58
-      - _日本_[晴园的宝藏库]_843
-      - _日本_[晴园的宝藏库]_1048
-      - _英国_[晴园的宝藏库]_52
-      - _美国_[晴园的宝藏库]_44
-      - _日本_[晴园的宝藏库]_838
-      - _美国_[晴园的宝藏库]_25
-      - _美国_[晴园的宝藏库]_322
-      - _韩国_[晴园的宝藏库]_43
-      - _美国_[晴园的宝藏库]_68
-      - _德国_[晴园的宝藏库]_82
+      - 中转 🇭🇰 HK 8 TG:@airproxies
+      - 中转 🇺🇸 US 1 TG:@nodpai
+      - 中转 🇭🇰 HK 21 TG:@airproxies
+      - US 5 TG:@airproxies
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _中国_[晴园的宝藏库]_834
-      - _中国_[晴园的宝藏库]_31
-      - _韩国_[晴园的宝藏库]_929
-      - _中国_[晴园的宝藏库]_596
-      - _美国_[晴园的宝藏库]_930
-      - _日本_[晴园的宝藏库]_782
-      - _美国_[晴园的宝藏库]_974
-      - _日本_[晴园的宝藏库]_319
-      - "[晴园的宝藏库]_2"
-      - _美国_[晴园的宝藏库]_46
-      - _日本_[晴园的宝藏库]_764
-      - "[晴园的宝藏库]_877"
-      - "[晴园的宝藏库]_961"
-      - _日本_[晴园的宝藏库]_122
-      - _日本_[晴园的宝藏库]_937
-      - _美国_[晴园的宝藏库]_1051
-      - _日本_[晴园的宝藏库]_102
-      - _日本_[晴园的宝藏库]_323
-      - _美国_[晴园的宝藏库]_1057
-      - _日本_[晴园的宝藏库]_93
-      - _美国_[晴园的宝藏库]_55
-      - _美国_[晴园的宝藏库]_58
-      - _日本_[晴园的宝藏库]_843
-      - _日本_[晴园的宝藏库]_1048
-      - _英国_[晴园的宝藏库]_52
-      - _美国_[晴园的宝藏库]_44
-      - _日本_[晴园的宝藏库]_838
-      - _美国_[晴园的宝藏库]_25
-      - _美国_[晴园的宝藏库]_322
-      - _韩国_[晴园的宝藏库]_43
-      - _美国_[晴园的宝藏库]_68
-      - _德国_[晴园的宝藏库]_82
+      - 中转 🇭🇰 HK 8 TG:@airproxies
+      - 中转 🇺🇸 US 1 TG:@nodpai
+      - 中转 🇭🇰 HK 21 TG:@airproxies
+      - US 5 TG:@airproxies
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -332,38 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _中国_[晴园的宝藏库]_834
-      - _中国_[晴园的宝藏库]_31
-      - _韩国_[晴园的宝藏库]_929
-      - _中国_[晴园的宝藏库]_596
-      - _美国_[晴园的宝藏库]_930
-      - _日本_[晴园的宝藏库]_782
-      - _美国_[晴园的宝藏库]_974
-      - _日本_[晴园的宝藏库]_319
-      - "[晴园的宝藏库]_2"
-      - _美国_[晴园的宝藏库]_46
-      - _日本_[晴园的宝藏库]_764
-      - "[晴园的宝藏库]_877"
-      - "[晴园的宝藏库]_961"
-      - _日本_[晴园的宝藏库]_122
-      - _日本_[晴园的宝藏库]_937
-      - _美国_[晴园的宝藏库]_1051
-      - _日本_[晴园的宝藏库]_102
-      - _日本_[晴园的宝藏库]_323
-      - _美国_[晴园的宝藏库]_1057
-      - _日本_[晴园的宝藏库]_93
-      - _美国_[晴园的宝藏库]_55
-      - _美国_[晴园的宝藏库]_58
-      - _日本_[晴园的宝藏库]_843
-      - _日本_[晴园的宝藏库]_1048
-      - _英国_[晴园的宝藏库]_52
-      - _美国_[晴园的宝藏库]_44
-      - _日本_[晴园的宝藏库]_838
-      - _美国_[晴园的宝藏库]_25
-      - _美国_[晴园的宝藏库]_322
-      - _韩国_[晴园的宝藏库]_43
-      - _美国_[晴园的宝藏库]_68
-      - _德国_[晴园的宝藏库]_82
+      - 中转 🇭🇰 HK 8 TG:@airproxies
+      - 中转 🇺🇸 US 1 TG:@nodpai
+      - 中转 🇭🇰 HK 21 TG:@airproxies
+      - US 5 TG:@airproxies
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
