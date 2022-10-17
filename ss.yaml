@@ -5,67 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK03, server: hk03.wbsts.xyz, port: 1928, type: trojan, password: 6aca183b-8829-43b6-afd2-351ebe7c44de, sni: hk03.wbsts.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK06, server: hk06.wbsts.xyz, port: 1928, type: trojan, password: 6aca183b-8829-43b6-afd2-351ebe7c44de, sni: hk06.wbsts.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK01, server: hk01.wbsts.xyz, port: 1928, type: trojan, password: 6aca183b-8829-43b6-afd2-351ebe7c44de, sni: hk01.wbsts.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK01V2ray, server: hk01.wbsts.top, port: 9659, type: vmess, uuid: 6aca183b-8829-43b6-afd2-351ebe7c44de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: husw/ccow/3uis, ws-headers: {Host: hk01.wbsts.top}, udp: true}
-  - {name: HK04, server: hk04.wbsts.xyz, port: 1928, type: trojan, password: 6aca183b-8829-43b6-afd2-351ebe7c44de, sni: hk04.wbsts.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK02V2ray, server: hk02.wbsts.top, port: 9659, type: vmess, uuid: 6aca183b-8829-43b6-afd2-351ebe7c44de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: husw/ccow/3uis, ws-headers: {Host: hk02.wbsts.top}, udp: true}
-  - {name: HK05V2ray, server: hk05.wbsts.top, port: 9659, type: vmess, uuid: 6aca183b-8829-43b6-afd2-351ebe7c44de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: husw/ccow/3uis, ws-headers: {Host: hk05.wbsts.top}, udp: true}
-  - {name: HK07, server: hk07.wbsts.xyz, port: 1928, type: trojan, password: 6aca183b-8829-43b6-afd2-351ebe7c44de, sni: hk07.wbsts.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK05, server: hk05.wbsts.xyz, port: 1928, type: trojan, password: 6aca183b-8829-43b6-afd2-351ebe7c44de, sni: hk05.wbsts.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK04V2ray, server: hk04.wbsts.top, port: 9659, type: vmess, uuid: 6aca183b-8829-43b6-afd2-351ebe7c44de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: husw/ccow/3uis, ws-headers: {Host: hk04.wbsts.top}, udp: true}
-  - {name: HK03V2ray, server: hk03.wbsts.top, port: 9659, type: vmess, uuid: 6aca183b-8829-43b6-afd2-351ebe7c44de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: husw/ccow/3uis, ws-headers: {Host: hk03.wbsts.top}, udp: true}
+  - {name: Super 香港06  | IEPL | 倍率:2.5, server: oracle.accessconnect.cc, port: 7006, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
+  - {name: Super 香港02  | MIEPL | 倍率:2.5, server: oracle.accessconnect.cc, port: 7002, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
+  - {name: Super 香港01  | MIEPL | 倍率:2.8, server: oracle.accessconnect.cc, port: 7001, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
+  - {name: Super 香港05  | IEPL | 倍率:2.5, server: oracle.accessconnect.cc, port: 7005, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
+  - {name: Super 香港07  | IEPL | 倍率:2.3, server: oracle.accessconnect.cc, port: 7007, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
+  - {name: Super 香港08  | IEPL | 倍率:2.3, server: oracle.accessconnect.cc, port: 7008, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
+  - {name: Super 香港04  | MIEPL | 倍率:2.5, server: oracle.accessconnect.cc, port: 7004, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
+  - {name: Super 新加坡01  | MIEPL | 倍率:2, server: oracle.accessconnect.cc, port: 1125, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
+  - {name: Super 日本01  | MIEPL | 倍率:2, server: oracle.accessconnect.cc, port: 1126, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
+  - {name: Super 日本02  | IEPL | 倍率:2, server: oracle.accessconnect.cc, port: 1129, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK03
-      - HK06
-      - HK01
-      - HK01V2ray
-      - HK04
-      - HK02V2ray
-      - HK05V2ray
-      - HK07
-      - HK05
-      - HK04V2ray
-      - HK03V2ray
+      - Super 香港06  | IEPL | 倍率:2.5
+      - Super 香港02  | MIEPL | 倍率:2.5
+      - Super 香港01  | MIEPL | 倍率:2.8
+      - Super 香港05  | IEPL | 倍率:2.5
+      - Super 香港07  | IEPL | 倍率:2.3
+      - Super 香港08  | IEPL | 倍率:2.3
+      - Super 香港04  | MIEPL | 倍率:2.5
+      - Super 新加坡01  | MIEPL | 倍率:2
+      - Super 日本01  | MIEPL | 倍率:2
+      - Super 日本02  | IEPL | 倍率:2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK03
-      - HK06
-      - HK01
-      - HK01V2ray
-      - HK04
-      - HK02V2ray
-      - HK05V2ray
-      - HK07
-      - HK05
-      - HK04V2ray
-      - HK03V2ray
+      - Super 香港06  | IEPL | 倍率:2.5
+      - Super 香港02  | MIEPL | 倍率:2.5
+      - Super 香港01  | MIEPL | 倍率:2.8
+      - Super 香港05  | IEPL | 倍率:2.5
+      - Super 香港07  | IEPL | 倍率:2.3
+      - Super 香港08  | IEPL | 倍率:2.3
+      - Super 香港04  | MIEPL | 倍率:2.5
+      - Super 新加坡01  | MIEPL | 倍率:2
+      - Super 日本01  | MIEPL | 倍率:2
+      - Super 日本02  | IEPL | 倍率:2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK03
-      - HK06
-      - HK01
-      - HK01V2ray
-      - HK04
-      - HK02V2ray
-      - HK05V2ray
-      - HK07
-      - HK05
-      - HK04V2ray
-      - HK03V2ray
+      - Super 香港06  | IEPL | 倍率:2.5
+      - Super 香港02  | MIEPL | 倍率:2.5
+      - Super 香港01  | MIEPL | 倍率:2.8
+      - Super 香港05  | IEPL | 倍率:2.5
+      - Super 香港07  | IEPL | 倍率:2.3
+      - Super 香港08  | IEPL | 倍率:2.3
+      - Super 香港04  | MIEPL | 倍率:2.5
+      - Super 新加坡01  | MIEPL | 倍率:2
+      - Super 日本01  | MIEPL | 倍率:2
+      - Super 日本02  | IEPL | 倍率:2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,71 +80,74 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK03
-      - HK06
-      - HK01
-      - HK01V2ray
-      - HK04
-      - HK02V2ray
-      - HK05V2ray
-      - HK07
-      - HK05
-      - HK04V2ray
-      - HK03V2ray
+      - Super 香港06  | IEPL | 倍率:2.5
+      - Super 香港02  | MIEPL | 倍率:2.5
+      - Super 香港01  | MIEPL | 倍率:2.8
+      - Super 香港05  | IEPL | 倍率:2.5
+      - Super 香港07  | IEPL | 倍率:2.3
+      - Super 香港08  | IEPL | 倍率:2.3
+      - Super 香港04  | MIEPL | 倍率:2.5
+      - Super 新加坡01  | MIEPL | 倍率:2
+      - Super 日本01  | MIEPL | 倍率:2
+      - Super 日本02  | IEPL | 倍率:2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - Super 香港06  | IEPL | 倍率:2.5
+      - Super 香港02  | MIEPL | 倍率:2.5
+      - Super 香港01  | MIEPL | 倍率:2.8
+      - Super 香港05  | IEPL | 倍率:2.5
+      - Super 香港07  | IEPL | 倍率:2.3
+      - Super 香港08  | IEPL | 倍率:2.3
+      - Super 香港04  | MIEPL | 倍率:2.5
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK03
-      - HK06
-      - HK01
-      - HK01V2ray
-      - HK04
-      - HK02V2ray
-      - HK05V2ray
-      - HK07
-      - HK05
-      - HK04V2ray
-      - HK03V2ray
+      - Super 香港06  | IEPL | 倍率:2.5
+      - Super 香港02  | MIEPL | 倍率:2.5
+      - Super 香港01  | MIEPL | 倍率:2.8
+      - Super 香港05  | IEPL | 倍率:2.5
+      - Super 香港07  | IEPL | 倍率:2.3
+      - Super 香港08  | IEPL | 倍率:2.3
+      - Super 香港04  | MIEPL | 倍率:2.5
+      - Super 新加坡01  | MIEPL | 倍率:2
+      - Super 日本01  | MIEPL | 倍率:2
+      - Super 日本02  | IEPL | 倍率:2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK03
-      - HK06
-      - HK01
-      - HK01V2ray
-      - HK04
-      - HK02V2ray
-      - HK05V2ray
-      - HK07
-      - HK05
-      - HK04V2ray
-      - HK03V2ray
+      - Super 香港06  | IEPL | 倍率:2.5
+      - Super 香港02  | MIEPL | 倍率:2.5
+      - Super 香港01  | MIEPL | 倍率:2.8
+      - Super 香港05  | IEPL | 倍率:2.5
+      - Super 香港07  | IEPL | 倍率:2.3
+      - Super 香港08  | IEPL | 倍率:2.3
+      - Super 香港04  | MIEPL | 倍率:2.5
+      - Super 新加坡01  | MIEPL | 倍率:2
+      - Super 日本01  | MIEPL | 倍率:2
+      - Super 日本02  | IEPL | 倍率:2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK03
-      - HK06
-      - HK01
-      - HK01V2ray
-      - HK04
-      - HK02V2ray
-      - HK05V2ray
-      - HK07
-      - HK05
-      - HK04V2ray
-      - HK03V2ray
+      - Super 香港06  | IEPL | 倍率:2.5
+      - Super 香港02  | MIEPL | 倍率:2.5
+      - Super 香港01  | MIEPL | 倍率:2.8
+      - Super 香港05  | IEPL | 倍率:2.5
+      - Super 香港07  | IEPL | 倍率:2.3
+      - Super 香港08  | IEPL | 倍率:2.3
+      - Super 香港04  | MIEPL | 倍率:2.5
+      - Super 新加坡01  | MIEPL | 倍率:2
+      - Super 日本01  | MIEPL | 倍率:2
+      - Super 日本02  | IEPL | 倍率:2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,17 +163,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK03
-      - HK06
-      - HK01
-      - HK01V2ray
-      - HK04
-      - HK02V2ray
-      - HK05V2ray
-      - HK07
-      - HK05
-      - HK04V2ray
-      - HK03V2ray
+      - Super 香港06  | IEPL | 倍率:2.5
+      - Super 香港02  | MIEPL | 倍率:2.5
+      - Super 香港01  | MIEPL | 倍率:2.8
+      - Super 香港05  | IEPL | 倍率:2.5
+      - Super 香港07  | IEPL | 倍率:2.3
+      - Super 香港08  | IEPL | 倍率:2.3
+      - Super 香港04  | MIEPL | 倍率:2.5
+      - Super 新加坡01  | MIEPL | 倍率:2
+      - Super 日本01  | MIEPL | 倍率:2
+      - Super 日本02  | IEPL | 倍率:2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
