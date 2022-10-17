@@ -5,55 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 亚太地区 003, server: 103.159.133.166, port: 31372, type: vmess, uuid: 912864fc-41c2-44e2-dcdf-0b01ef96237e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 006, server: c6s4.jamjams3.net, port: 8937, type: vmess, uuid: 656a08a0-482e-403a-8228-2f27def97b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 011, server: 146.56.176.239, port: 443, type: trojan, password: a153fb4e-6d1b-4db0-b03d-acb4012b7198, skip-cert-verify: true, udp: true}
-  - {name: 亚太地区 002, server: 103.177.33.146, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fc568c325d09, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 美国 001, server: 152.70.241.18, port: 26676, type: vmess, uuid: ecd274c0-175d-45f7-8276-a3da93786632, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 046, server: 172.64.153.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg5.zhujicn2.com}, udp: true}
-  - {name: 美国 009, server: c6s3.jamjams3.net, port: 8937, type: vmess, uuid: 656a08a0-482e-403a-8228-2f27def97b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 010, server: c6s801.jamjams3.net, port: 8937, type: vmess, uuid: 656a08a0-482e-403a-8228-2f27def97b44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK03, server: hk03.wbsts.xyz, port: 1928, type: trojan, password: 6aca183b-8829-43b6-afd2-351ebe7c44de, sni: hk03.wbsts.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK06, server: hk06.wbsts.xyz, port: 1928, type: trojan, password: 6aca183b-8829-43b6-afd2-351ebe7c44de, sni: hk06.wbsts.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK01, server: hk01.wbsts.xyz, port: 1928, type: trojan, password: 6aca183b-8829-43b6-afd2-351ebe7c44de, sni: hk01.wbsts.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK01V2ray, server: hk01.wbsts.top, port: 9659, type: vmess, uuid: 6aca183b-8829-43b6-afd2-351ebe7c44de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: husw/ccow/3uis, ws-headers: {Host: hk01.wbsts.top}, udp: true}
+  - {name: HK04, server: hk04.wbsts.xyz, port: 1928, type: trojan, password: 6aca183b-8829-43b6-afd2-351ebe7c44de, sni: hk04.wbsts.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK02V2ray, server: hk02.wbsts.top, port: 9659, type: vmess, uuid: 6aca183b-8829-43b6-afd2-351ebe7c44de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: husw/ccow/3uis, ws-headers: {Host: hk02.wbsts.top}, udp: true}
+  - {name: HK05V2ray, server: hk05.wbsts.top, port: 9659, type: vmess, uuid: 6aca183b-8829-43b6-afd2-351ebe7c44de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: husw/ccow/3uis, ws-headers: {Host: hk05.wbsts.top}, udp: true}
+  - {name: HK07, server: hk07.wbsts.xyz, port: 1928, type: trojan, password: 6aca183b-8829-43b6-afd2-351ebe7c44de, sni: hk07.wbsts.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK05, server: hk05.wbsts.xyz, port: 1928, type: trojan, password: 6aca183b-8829-43b6-afd2-351ebe7c44de, sni: hk05.wbsts.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK04V2ray, server: hk04.wbsts.top, port: 9659, type: vmess, uuid: 6aca183b-8829-43b6-afd2-351ebe7c44de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: husw/ccow/3uis, ws-headers: {Host: hk04.wbsts.top}, udp: true}
+  - {name: HK03V2ray, server: hk03.wbsts.top, port: 9659, type: vmess, uuid: 6aca183b-8829-43b6-afd2-351ebe7c44de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: husw/ccow/3uis, ws-headers: {Host: hk03.wbsts.top}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚太地区 003
-      - 美国 006
-      - 日本 011
-      - 亚太地区 002
-      - 美国 001
-      - 美国 046
-      - 美国 009
-      - 美国 010
+      - HK03
+      - HK06
+      - HK01
+      - HK01V2ray
+      - HK04
+      - HK02V2ray
+      - HK05V2ray
+      - HK07
+      - HK05
+      - HK04V2ray
+      - HK03V2ray
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 亚太地区 003
-      - 美国 006
-      - 日本 011
-      - 亚太地区 002
-      - 美国 001
-      - 美国 046
-      - 美国 009
-      - 美国 010
+      - HK03
+      - HK06
+      - HK01
+      - HK01V2ray
+      - HK04
+      - HK02V2ray
+      - HK05V2ray
+      - HK07
+      - HK05
+      - HK04V2ray
+      - HK03V2ray
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚太地区 003
-      - 美国 006
-      - 日本 011
-      - 亚太地区 002
-      - 美国 001
-      - 美国 046
-      - 美国 009
-      - 美国 010
+      - HK03
+      - HK06
+      - HK01
+      - HK01V2ray
+      - HK04
+      - HK02V2ray
+      - HK05V2ray
+      - HK07
+      - HK05
+      - HK04V2ray
+      - HK03V2ray
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,14 +84,17 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚太地区 003
-      - 美国 006
-      - 日本 011
-      - 亚太地区 002
-      - 美国 001
-      - 美国 046
-      - 美国 009
-      - 美国 010
+      - HK03
+      - HK06
+      - HK01
+      - HK01V2ray
+      - HK04
+      - HK02V2ray
+      - HK05V2ray
+      - HK07
+      - HK05
+      - HK04V2ray
+      - HK03V2ray
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -90,41 +105,50 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 亚太地区 003
-      - 美国 006
-      - 日本 011
-      - 亚太地区 002
-      - 美国 001
-      - 美国 046
-      - 美国 009
-      - 美国 010
+      - HK03
+      - HK06
+      - HK01
+      - HK01V2ray
+      - HK04
+      - HK02V2ray
+      - HK05V2ray
+      - HK07
+      - HK05
+      - HK04V2ray
+      - HK03V2ray
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 亚太地区 003
-      - 美国 006
-      - 日本 011
-      - 亚太地区 002
-      - 美国 001
-      - 美国 046
-      - 美国 009
-      - 美国 010
+      - HK03
+      - HK06
+      - HK01
+      - HK01V2ray
+      - HK04
+      - HK02V2ray
+      - HK05V2ray
+      - HK07
+      - HK05
+      - HK04V2ray
+      - HK03V2ray
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚太地区 003
-      - 美国 006
-      - 日本 011
-      - 亚太地区 002
-      - 美国 001
-      - 美国 046
-      - 美国 009
-      - 美国 010
+      - HK03
+      - HK06
+      - HK01
+      - HK01V2ray
+      - HK04
+      - HK02V2ray
+      - HK05V2ray
+      - HK07
+      - HK05
+      - HK04V2ray
+      - HK03V2ray
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,14 +164,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚太地区 003
-      - 美国 006
-      - 日本 011
-      - 亚太地区 002
-      - 美国 001
-      - 美国 046
-      - 美国 009
-      - 美国 010
+      - HK03
+      - HK06
+      - HK01
+      - HK01V2ray
+      - HK04
+      - HK02V2ray
+      - HK05V2ray
+      - HK07
+      - HK05
+      - HK04V2ray
+      - HK03V2ray
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
