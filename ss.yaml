@@ -5,63 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Super 香港06  | IEPL | 倍率:2.5, server: oracle.accessconnect.cc, port: 7006, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
-  - {name: Super 香港02  | MIEPL | 倍率:2.5, server: oracle.accessconnect.cc, port: 7002, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
-  - {name: Super 香港01  | MIEPL | 倍率:2.8, server: oracle.accessconnect.cc, port: 7001, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
-  - {name: Super 香港05  | IEPL | 倍率:2.5, server: oracle.accessconnect.cc, port: 7005, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
-  - {name: Super 香港07  | IEPL | 倍率:2.3, server: oracle.accessconnect.cc, port: 7007, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
-  - {name: Super 香港08  | IEPL | 倍率:2.3, server: oracle.accessconnect.cc, port: 7008, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
-  - {name: Super 香港04  | MIEPL | 倍率:2.5, server: oracle.accessconnect.cc, port: 7004, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
-  - {name: Super 新加坡01  | MIEPL | 倍率:2, server: oracle.accessconnect.cc, port: 1125, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
-  - {name: Super 日本01  | MIEPL | 倍率:2, server: oracle.accessconnect.cc, port: 1126, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
-  - {name: Super 日本02  | IEPL | 倍率:2, server: oracle.accessconnect.cc, port: 1129, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244236:kRRY5x, obfs-param: 50bb5244236.www.gov.hk, udp: true}
+  - {name: Trojan-首尔4|公益, server: hg4.leifengkeji.live, port: 6666, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: hg4.leifengkeji.live, skip-cert-verify: true, udp: true}
+  - {name: Trojan-东京18|公益, server: xg18.leifengkeji.live, port: 6666, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: xg18.leifengkeji.live, skip-cert-verify: true, udp: true}
+  - {name: Trojan-首尔5|公益, server: hg5.leifengkeji.live, port: 6666, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: hg5.leifengkeji.live, skip-cert-verify: true, udp: true}
+  - {name: Trojan-首尔15|公益, server: hg15.leifengkeji.live, port: 6666, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: hg15.leifengkeji.live, skip-cert-verify: true, udp: true}
+  - {name: Trojan-俄罗斯03|公益, server: tr7.leifengkeji.live, port: 44241, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: tr7.leifengkeji.live, skip-cert-verify: true, udp: true}
+  - {name: Trojan-俄罗斯02|公益, server: tr6.leifengkeji.live, port: 6666, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: tr6.leifengkeji.live, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港05  | IEPL | 倍率:2.5
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港08  | IEPL | 倍率:2.3
-      - Super 香港04  | MIEPL | 倍率:2.5
-      - Super 新加坡01  | MIEPL | 倍率:2
-      - Super 日本01  | MIEPL | 倍率:2
-      - Super 日本02  | IEPL | 倍率:2
+      - Trojan-首尔4|公益
+      - Trojan-东京18|公益
+      - Trojan-首尔5|公益
+      - Trojan-首尔15|公益
+      - Trojan-俄罗斯03|公益
+      - Trojan-俄罗斯02|公益
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港05  | IEPL | 倍率:2.5
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港08  | IEPL | 倍率:2.3
-      - Super 香港04  | MIEPL | 倍率:2.5
-      - Super 新加坡01  | MIEPL | 倍率:2
-      - Super 日本01  | MIEPL | 倍率:2
-      - Super 日本02  | IEPL | 倍率:2
+      - Trojan-首尔4|公益
+      - Trojan-东京18|公益
+      - Trojan-首尔5|公益
+      - Trojan-首尔15|公益
+      - Trojan-俄罗斯03|公益
+      - Trojan-俄罗斯02|公益
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港05  | IEPL | 倍率:2.5
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港08  | IEPL | 倍率:2.3
-      - Super 香港04  | MIEPL | 倍率:2.5
-      - Super 新加坡01  | MIEPL | 倍率:2
-      - Super 日本01  | MIEPL | 倍率:2
-      - Super 日本02  | IEPL | 倍率:2
+      - Trojan-首尔4|公益
+      - Trojan-东京18|公益
+      - Trojan-首尔5|公益
+      - Trojan-首尔15|公益
+      - Trojan-俄罗斯03|公益
+      - Trojan-俄罗斯02|公益
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,74 +64,51 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港05  | IEPL | 倍率:2.5
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港08  | IEPL | 倍率:2.3
-      - Super 香港04  | MIEPL | 倍率:2.5
-      - Super 新加坡01  | MIEPL | 倍率:2
-      - Super 日本01  | MIEPL | 倍率:2
-      - Super 日本02  | IEPL | 倍率:2
+      - Trojan-首尔4|公益
+      - Trojan-东京18|公益
+      - Trojan-首尔5|公益
+      - Trojan-首尔15|公益
+      - Trojan-俄罗斯03|公益
+      - Trojan-俄罗斯02|公益
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港05  | IEPL | 倍率:2.5
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港08  | IEPL | 倍率:2.3
-      - Super 香港04  | MIEPL | 倍率:2.5
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港05  | IEPL | 倍率:2.5
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港08  | IEPL | 倍率:2.3
-      - Super 香港04  | MIEPL | 倍率:2.5
-      - Super 新加坡01  | MIEPL | 倍率:2
-      - Super 日本01  | MIEPL | 倍率:2
-      - Super 日本02  | IEPL | 倍率:2
+      - Trojan-首尔4|公益
+      - Trojan-东京18|公益
+      - Trojan-首尔5|公益
+      - Trojan-首尔15|公益
+      - Trojan-俄罗斯03|公益
+      - Trojan-俄罗斯02|公益
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港05  | IEPL | 倍率:2.5
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港08  | IEPL | 倍率:2.3
-      - Super 香港04  | MIEPL | 倍率:2.5
-      - Super 新加坡01  | MIEPL | 倍率:2
-      - Super 日本01  | MIEPL | 倍率:2
-      - Super 日本02  | IEPL | 倍率:2
+      - Trojan-首尔4|公益
+      - Trojan-东京18|公益
+      - Trojan-首尔5|公益
+      - Trojan-首尔15|公益
+      - Trojan-俄罗斯03|公益
+      - Trojan-俄罗斯02|公益
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港05  | IEPL | 倍率:2.5
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港08  | IEPL | 倍率:2.3
-      - Super 香港04  | MIEPL | 倍率:2.5
-      - Super 新加坡01  | MIEPL | 倍率:2
-      - Super 日本01  | MIEPL | 倍率:2
-      - Super 日本02  | IEPL | 倍率:2
+      - Trojan-首尔4|公益
+      - Trojan-东京18|公益
+      - Trojan-首尔5|公益
+      - Trojan-首尔15|公益
+      - Trojan-俄罗斯03|公益
+      - Trojan-俄罗斯02|公益
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -163,16 +124,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Super 香港06  | IEPL | 倍率:2.5
-      - Super 香港02  | MIEPL | 倍率:2.5
-      - Super 香港01  | MIEPL | 倍率:2.8
-      - Super 香港05  | IEPL | 倍率:2.5
-      - Super 香港07  | IEPL | 倍率:2.3
-      - Super 香港08  | IEPL | 倍率:2.3
-      - Super 香港04  | MIEPL | 倍率:2.5
-      - Super 新加坡01  | MIEPL | 倍率:2
-      - Super 日本01  | MIEPL | 倍率:2
-      - Super 日本02  | IEPL | 倍率:2
+      - Trojan-首尔4|公益
+      - Trojan-东京18|公益
+      - Trojan-首尔5|公益
+      - Trojan-首尔15|公益
+      - Trojan-俄罗斯03|公益
+      - Trojan-俄罗斯02|公益
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
