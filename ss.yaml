@@ -5,47 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Trojan-首尔4|公益, server: hg4.leifengkeji.live, port: 6666, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: hg4.leifengkeji.live, skip-cert-verify: true, udp: true}
-  - {name: Trojan-东京18|公益, server: xg18.leifengkeji.live, port: 6666, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: xg18.leifengkeji.live, skip-cert-verify: true, udp: true}
-  - {name: Trojan-首尔5|公益, server: hg5.leifengkeji.live, port: 6666, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: hg5.leifengkeji.live, skip-cert-verify: true, udp: true}
-  - {name: Trojan-首尔15|公益, server: hg15.leifengkeji.live, port: 6666, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: hg15.leifengkeji.live, skip-cert-verify: true, udp: true}
-  - {name: Trojan-俄罗斯03|公益, server: tr7.leifengkeji.live, port: 44241, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: tr7.leifengkeji.live, skip-cert-verify: true, udp: true}
-  - {name: Trojan-俄罗斯02|公益, server: tr6.leifengkeji.live, port: 6666, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: tr6.leifengkeji.live, skip-cert-verify: true, udp: true}
+  - {name: 中转丨United States 01, server: cn-east-1c.ens3.buzz, port: 34521, type: ss, cipher: aes-256-gcm, password: 75856990-c369-46ea-96a5-37f3d4ff9607, udp: true}
+  - {name: 香港 A03^, server: relay_cm1.flyxxl.xyz, port: 46082, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
+  - {name: 香港 A02^, server: relay_cm1.flyxxl.xyz, port: 46081, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
+  - {name: 台湾 A01^, server: relay_cm1.flyxxl.xyz, port: 46096, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
+  - {name: 香港 B03^, server: relaybgp_pro.flyxxl.xyz, port: 45601, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
+  - {name: 台湾 B01^, server: relaybgp_pro.flyxxl.xyz, port: 45491, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
+  - {name: 香港 B02^, server: relaybgp_pro.flyxxl.xyz, port: 45550, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
+  - {name: 美国 测试01, server: azus01.flyxxl.xyz, port: 29994, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Trojan-首尔4|公益
-      - Trojan-东京18|公益
-      - Trojan-首尔5|公益
-      - Trojan-首尔15|公益
-      - Trojan-俄罗斯03|公益
-      - Trojan-俄罗斯02|公益
+      - 中转丨United States 01
+      - 香港 A03^
+      - 香港 A02^
+      - 台湾 A01^
+      - 香港 B03^
+      - 台湾 B01^
+      - 香港 B02^
+      - 美国 测试01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Trojan-首尔4|公益
-      - Trojan-东京18|公益
-      - Trojan-首尔5|公益
-      - Trojan-首尔15|公益
-      - Trojan-俄罗斯03|公益
-      - Trojan-俄罗斯02|公益
+      - 中转丨United States 01
+      - 香港 A03^
+      - 香港 A02^
+      - 台湾 A01^
+      - 香港 B03^
+      - 台湾 B01^
+      - 香港 B02^
+      - 美国 测试01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Trojan-首尔4|公益
-      - Trojan-东京18|公益
-      - Trojan-首尔5|公益
-      - Trojan-首尔15|公益
-      - Trojan-俄罗斯03|公益
-      - Trojan-俄罗斯02|公益
+      - 中转丨United States 01
+      - 香港 A03^
+      - 香港 A02^
+      - 台湾 A01^
+      - 香港 B03^
+      - 台湾 B01^
+      - 香港 B02^
+      - 美国 测试01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,51 +72,65 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Trojan-首尔4|公益
-      - Trojan-东京18|公益
-      - Trojan-首尔5|公益
-      - Trojan-首尔15|公益
-      - Trojan-俄罗斯03|公益
-      - Trojan-俄罗斯02|公益
+      - 中转丨United States 01
+      - 香港 A03^
+      - 香港 A02^
+      - 台湾 A01^
+      - 香港 B03^
+      - 台湾 B01^
+      - 香港 B02^
+      - 美国 测试01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 A03^
+      - 香港 A02^
+      - 台湾 A01^
+      - 香港 B03^
+      - 台湾 B01^
+      - 香港 B02^
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Trojan-首尔4|公益
-      - Trojan-东京18|公益
-      - Trojan-首尔5|公益
-      - Trojan-首尔15|公益
-      - Trojan-俄罗斯03|公益
-      - Trojan-俄罗斯02|公益
+      - 中转丨United States 01
+      - 香港 A03^
+      - 香港 A02^
+      - 台湾 A01^
+      - 香港 B03^
+      - 台湾 B01^
+      - 香港 B02^
+      - 美国 测试01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Trojan-首尔4|公益
-      - Trojan-东京18|公益
-      - Trojan-首尔5|公益
-      - Trojan-首尔15|公益
-      - Trojan-俄罗斯03|公益
-      - Trojan-俄罗斯02|公益
+      - 中转丨United States 01
+      - 香港 A03^
+      - 香港 A02^
+      - 台湾 A01^
+      - 香港 B03^
+      - 台湾 B01^
+      - 香港 B02^
+      - 美国 测试01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Trojan-首尔4|公益
-      - Trojan-东京18|公益
-      - Trojan-首尔5|公益
-      - Trojan-首尔15|公益
-      - Trojan-俄罗斯03|公益
-      - Trojan-俄罗斯02|公益
+      - 中转丨United States 01
+      - 香港 A03^
+      - 香港 A02^
+      - 台湾 A01^
+      - 香港 B03^
+      - 台湾 B01^
+      - 香港 B02^
+      - 美国 测试01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,12 +146,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Trojan-首尔4|公益
-      - Trojan-东京18|公益
-      - Trojan-首尔5|公益
-      - Trojan-首尔15|公益
-      - Trojan-俄罗斯03|公益
-      - Trojan-俄罗斯02|公益
+      - 中转丨United States 01
+      - 香港 A03^
+      - 香港 A02^
+      - 台湾 A01^
+      - 香港 B03^
+      - 台湾 B01^
+      - 香港 B02^
+      - 美国 测试01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
