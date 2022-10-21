@@ -5,39 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: V328U-4x-BGP-HK-NF, server: wcjihipm.nodelist.xyz, port: 1328, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8207:EqSdog, obfs-param: "", udp: true}
-  - {name: V327U-4x-BGP-HK-NF, server: wcjihipm.nodelist.xyz, port: 1327, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8207:EqSdog, obfs-param: "", udp: true}
-  - {name: V301U-1x-BGP-HK-NF, server: fmpnschx.nodelist.xyz, port: 1301, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8207:EqSdog, obfs-param: "", udp: true}
-  - {name: V329U-4x-BGP-HK-NF, server: wcjihipm.nodelist.xyz, port: 1329, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8207:EqSdog, obfs-param: "", udp: true}
+  - {name: CN 25, server: hr04.clashcloud.tech, port: 55261, type: ssr, cipher: rc4-md5, password: bLWIPj, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: CN 26, server: hr11.clashcloud.tech, port: 55261, type: ssr, cipher: rc4-md5, password: bLWIPj, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V328U-4x-BGP-HK-NF
-      - V327U-4x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V329U-4x-BGP-HK-NF
+      - CN 25
+      - CN 26
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - V328U-4x-BGP-HK-NF
-      - V327U-4x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V329U-4x-BGP-HK-NF
+      - CN 25
+      - CN 26
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V328U-4x-BGP-HK-NF
-      - V327U-4x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V329U-4x-BGP-HK-NF
+      - CN 25
+      - CN 26
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,10 +48,8 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V328U-4x-BGP-HK-NF
-      - V327U-4x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V329U-4x-BGP-HK-NF
+      - CN 25
+      - CN 26
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -70,29 +60,23 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - V328U-4x-BGP-HK-NF
-      - V327U-4x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V329U-4x-BGP-HK-NF
+      - CN 25
+      - CN 26
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - V328U-4x-BGP-HK-NF
-      - V327U-4x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V329U-4x-BGP-HK-NF
+      - CN 25
+      - CN 26
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V328U-4x-BGP-HK-NF
-      - V327U-4x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V329U-4x-BGP-HK-NF
+      - CN 25
+      - CN 26
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V328U-4x-BGP-HK-NF
-      - V327U-4x-BGP-HK-NF
-      - V301U-1x-BGP-HK-NF
-      - V329U-4x-BGP-HK-NF
+      - CN 25
+      - CN 26
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
