@@ -5,39 +5,171 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: SG 新加坡, server: 20.239.93.117, port: 48002, type: vmess, uuid: 41e85cd3-fdad-32e6-93f7-de8ee308bcb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fm, ws-headers: {Host: 20.239.93.117}, udp: true}
-  - {name: Asia 香港01 | 电信优化 | 解锁奈飞, server: 20.247.116.79, port: 44300, type: vmess, uuid: 41e85cd3-fdad-32e6-93f7-de8ee308bcb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fm, ws-headers: {Host: 20.247.116.79}, udp: true}
-  - {name: Asia 香港02 | 电信优化 | 解锁奈飞, server: 20.205.14.39, port: 44300, type: vmess, uuid: 41e85cd3-fdad-32e6-93f7-de8ee308bcb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fm, ws-headers: {Host: 20.205.14.39}, udp: true}
-  - {name: JP 日本, server: 20.239.93.117, port: 48000, type: vmess, uuid: 41e85cd3-fdad-32e6-93f7-de8ee308bcb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fm, ws-headers: {Host: 20.239.93.117}, udp: true}
+  - {name: 新加坡-Trojan, server: sg01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: sg01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: "香港05{优化1|V2ray}", server: hk1.awslcn.cc, port: 25244, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.awslcn.cc}, udp: true}
+  - {name: 印度-Trojan, server: in01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: in01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: "新加坡04{优化1|V2ray}", server: sg1.awslcn.cc, port: 25243, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.awslcn.cc}, udp: true}
+  - {name: "台湾01{移动|V2ray}", server: cm.awslcn.cc, port: 25233, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: 马来-Trojan, server: my01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: my01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: "新加坡03{优化2|V2ray}", server: sg2.awslcn.cc, port: 25245, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg2.awslcn.cc}, udp: true}
+  - {name: "香港02{优化2|V2ray}", server: hk2.awslcn.cc, port: 25242, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk2.awslcn.cc}, udp: true}
+  - {name: "台湾②{联通|V2ray}", server: cu.awslcn.cc, port: 25232, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: "香港01{优化1|V2ray}", server: hk1.awslcn.cc, port: 25242, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.awslcn.cc}, udp: true}
+  - {name: "新加坡02{优化1|V2ray}", server: sg1.awslcn.cc, port: 25245, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.awslcn.cc}, udp: true}
+  - {name: "新加坡06{优化2|V2ray}", server: sg2.awslcn.cc, port: 25246, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg2.awslcn.cc}, udp: true}
+  - {name: "日本04{优化2|V2ray}", server: jp2.awslcn.cc, port: 25220, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp2.awslcn.cc}, udp: true}
+  - {name: "韩国01{移动|V2ray}", server: cm.awslcn.cc, port: 25218, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: "日本03{优化1|V2ray}", server: jp1.awslcn.cc, port: 25220, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp1.awslcn.cc}, udp: true}
+  - {name: "新加坡05{优化2|V2ray}", server: sg2.awslcn.cc, port: 25221, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg2.awslcn.cc}, udp: true}
+  - {name: "日本06{优化2|V2ray}", server: jp2.awslcn.cc, port: 25219, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp2.awslcn.cc}, udp: true}
+  - {name: "日本05{优化1|V2ray}", server: jp1.awslcn.cc, port: 25219, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp1.awslcn.cc}, udp: true}
+  - {name: "台湾①{移动|V2ray}", server: cm.awslcn.cc, port: 25232, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: "印度01{移动|V2ray}", server: cm.awslcn.cc, port: 25216, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: "马来02{联通|V2ray}", server: cu.awslcn.cc, port: 25228, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: 俄罗斯-Trojan, server: ru01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: ru01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: 英国-Trojan, server: uk01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: uk01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: 韩国-Trojan, server: sk01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: sk01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: 德国-Trojan, server: de01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: de01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: "印度02{联通|V2ray}", server: cu.awslcn.cc, port: 25216, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: "德国01{移动|V2ray}", server: cm.awslcn.cc, port: 25241, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: 美国-Trojan, server: us01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: us01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: "韩国02{联通|V2ray}", server: cu.awslcn.cc, port: 25218, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: "英国{联通|V2ray}", server: cu.awslcn.cc, port: 25240, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: "美国04{优化2|V2ray}", server: us2.awslcn.cc, port: 25238, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us2.awslcn.cc}, udp: true}
+  - {name: "俄罗斯①{移动|V2ray}", server: cm.awslcn.cc, port: 25230, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
+  - {name: "美国03{优化1|V2ray}", server: us1.awslcn.cc, port: 25238, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us1.awslcn.cc}, udp: true}
+  - {name: "美国02{优化2|V2ray}", server: us2.awslcn.cc, port: 25239, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us2.awslcn.cc}, udp: true}
+  - {name: "美国01{优化1|V2ray}", server: us1.awslcn.cc, port: 25239, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us1.awslcn.cc}, udp: true}
+  - {name: "台湾02{联通|V2ray}", server: cu.awslcn.cc, port: 25233, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: "德国02{联通|V2ray}", server: cu.awslcn.cc, port: 25241, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG 新加坡
-      - Asia 香港01 | 电信优化 | 解锁奈飞
-      - Asia 香港02 | 电信优化 | 解锁奈飞
-      - JP 日本
+      - 新加坡-Trojan
+      - 香港05{优化1|V2ray}
+      - 印度-Trojan
+      - 新加坡04{优化1|V2ray}
+      - 台湾01{移动|V2ray}
+      - 马来-Trojan
+      - 新加坡03{优化2|V2ray}
+      - 香港02{优化2|V2ray}
+      - 台湾②{联通|V2ray}
+      - 香港01{优化1|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 新加坡06{优化2|V2ray}
+      - 日本04{优化2|V2ray}
+      - 韩国01{移动|V2ray}
+      - 日本03{优化1|V2ray}
+      - 新加坡05{优化2|V2ray}
+      - 日本06{优化2|V2ray}
+      - 日本05{优化1|V2ray}
+      - 台湾①{移动|V2ray}
+      - 印度01{移动|V2ray}
+      - 马来02{联通|V2ray}
+      - 俄罗斯-Trojan
+      - 英国-Trojan
+      - 韩国-Trojan
+      - 德国-Trojan
+      - 印度02{联通|V2ray}
+      - 德国01{移动|V2ray}
+      - 美国-Trojan
+      - 韩国02{联通|V2ray}
+      - 英国{联通|V2ray}
+      - 美国04{优化2|V2ray}
+      - 俄罗斯①{移动|V2ray}
+      - 美国03{优化1|V2ray}
+      - 美国02{优化2|V2ray}
+      - 美国01{优化1|V2ray}
+      - 台湾02{联通|V2ray}
+      - 德国02{联通|V2ray}
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - SG 新加坡
-      - Asia 香港01 | 电信优化 | 解锁奈飞
-      - Asia 香港02 | 电信优化 | 解锁奈飞
-      - JP 日本
+      - 新加坡-Trojan
+      - 香港05{优化1|V2ray}
+      - 印度-Trojan
+      - 新加坡04{优化1|V2ray}
+      - 台湾01{移动|V2ray}
+      - 马来-Trojan
+      - 新加坡03{优化2|V2ray}
+      - 香港02{优化2|V2ray}
+      - 台湾②{联通|V2ray}
+      - 香港01{优化1|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 新加坡06{优化2|V2ray}
+      - 日本04{优化2|V2ray}
+      - 韩国01{移动|V2ray}
+      - 日本03{优化1|V2ray}
+      - 新加坡05{优化2|V2ray}
+      - 日本06{优化2|V2ray}
+      - 日本05{优化1|V2ray}
+      - 台湾①{移动|V2ray}
+      - 印度01{移动|V2ray}
+      - 马来02{联通|V2ray}
+      - 俄罗斯-Trojan
+      - 英国-Trojan
+      - 韩国-Trojan
+      - 德国-Trojan
+      - 印度02{联通|V2ray}
+      - 德国01{移动|V2ray}
+      - 美国-Trojan
+      - 韩国02{联通|V2ray}
+      - 英国{联通|V2ray}
+      - 美国04{优化2|V2ray}
+      - 俄罗斯①{移动|V2ray}
+      - 美国03{优化1|V2ray}
+      - 美国02{优化2|V2ray}
+      - 美国01{优化1|V2ray}
+      - 台湾02{联通|V2ray}
+      - 德国02{联通|V2ray}
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG 新加坡
-      - Asia 香港01 | 电信优化 | 解锁奈飞
-      - Asia 香港02 | 电信优化 | 解锁奈飞
-      - JP 日本
+      - 新加坡-Trojan
+      - 香港05{优化1|V2ray}
+      - 印度-Trojan
+      - 新加坡04{优化1|V2ray}
+      - 台湾01{移动|V2ray}
+      - 马来-Trojan
+      - 新加坡03{优化2|V2ray}
+      - 香港02{优化2|V2ray}
+      - 台湾②{联通|V2ray}
+      - 香港01{优化1|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 新加坡06{优化2|V2ray}
+      - 日本04{优化2|V2ray}
+      - 韩国01{移动|V2ray}
+      - 日本03{优化1|V2ray}
+      - 新加坡05{优化2|V2ray}
+      - 日本06{优化2|V2ray}
+      - 日本05{优化1|V2ray}
+      - 台湾①{移动|V2ray}
+      - 印度01{移动|V2ray}
+      - 马来02{联通|V2ray}
+      - 俄罗斯-Trojan
+      - 英国-Trojan
+      - 韩国-Trojan
+      - 德国-Trojan
+      - 印度02{联通|V2ray}
+      - 德国01{移动|V2ray}
+      - 美国-Trojan
+      - 韩国02{联通|V2ray}
+      - 英国{联通|V2ray}
+      - 美国04{优化2|V2ray}
+      - 俄罗斯①{移动|V2ray}
+      - 美国03{优化1|V2ray}
+      - 美国02{优化2|V2ray}
+      - 美国01{优化1|V2ray}
+      - 台湾02{联通|V2ray}
+      - 德国02{联通|V2ray}
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,45 +188,182 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG 新加坡
-      - Asia 香港01 | 电信优化 | 解锁奈飞
-      - Asia 香港02 | 电信优化 | 解锁奈飞
-      - JP 日本
+      - 新加坡-Trojan
+      - 香港05{优化1|V2ray}
+      - 印度-Trojan
+      - 新加坡04{优化1|V2ray}
+      - 台湾01{移动|V2ray}
+      - 马来-Trojan
+      - 新加坡03{优化2|V2ray}
+      - 香港02{优化2|V2ray}
+      - 台湾②{联通|V2ray}
+      - 香港01{优化1|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 新加坡06{优化2|V2ray}
+      - 日本04{优化2|V2ray}
+      - 韩国01{移动|V2ray}
+      - 日本03{优化1|V2ray}
+      - 新加坡05{优化2|V2ray}
+      - 日本06{优化2|V2ray}
+      - 日本05{优化1|V2ray}
+      - 台湾①{移动|V2ray}
+      - 印度01{移动|V2ray}
+      - 马来02{联通|V2ray}
+      - 俄罗斯-Trojan
+      - 英国-Trojan
+      - 韩国-Trojan
+      - 德国-Trojan
+      - 印度02{联通|V2ray}
+      - 德国01{移动|V2ray}
+      - 美国-Trojan
+      - 韩国02{联通|V2ray}
+      - 英国{联通|V2ray}
+      - 美国04{优化2|V2ray}
+      - 俄罗斯①{移动|V2ray}
+      - 美国03{优化1|V2ray}
+      - 美国02{优化2|V2ray}
+      - 美国01{优化1|V2ray}
+      - 台湾02{联通|V2ray}
+      - 德国02{联通|V2ray}
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Asia 香港01 | 电信优化 | 解锁奈飞
-      - Asia 香港02 | 电信优化 | 解锁奈飞
+      - 香港05{优化1|V2ray}
+      - 台湾01{移动|V2ray}
+      - 香港02{优化2|V2ray}
+      - 台湾②{联通|V2ray}
+      - 香港01{优化1|V2ray}
+      - 台湾①{移动|V2ray}
+      - 台湾02{联通|V2ray}
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - SG 新加坡
-      - Asia 香港01 | 电信优化 | 解锁奈飞
-      - Asia 香港02 | 电信优化 | 解锁奈飞
-      - JP 日本
+      - 新加坡-Trojan
+      - 香港05{优化1|V2ray}
+      - 印度-Trojan
+      - 新加坡04{优化1|V2ray}
+      - 台湾01{移动|V2ray}
+      - 马来-Trojan
+      - 新加坡03{优化2|V2ray}
+      - 香港02{优化2|V2ray}
+      - 台湾②{联通|V2ray}
+      - 香港01{优化1|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 新加坡06{优化2|V2ray}
+      - 日本04{优化2|V2ray}
+      - 韩国01{移动|V2ray}
+      - 日本03{优化1|V2ray}
+      - 新加坡05{优化2|V2ray}
+      - 日本06{优化2|V2ray}
+      - 日本05{优化1|V2ray}
+      - 台湾①{移动|V2ray}
+      - 印度01{移动|V2ray}
+      - 马来02{联通|V2ray}
+      - 俄罗斯-Trojan
+      - 英国-Trojan
+      - 韩国-Trojan
+      - 德国-Trojan
+      - 印度02{联通|V2ray}
+      - 德国01{移动|V2ray}
+      - 美国-Trojan
+      - 韩国02{联通|V2ray}
+      - 英国{联通|V2ray}
+      - 美国04{优化2|V2ray}
+      - 俄罗斯①{移动|V2ray}
+      - 美国03{优化1|V2ray}
+      - 美国02{优化2|V2ray}
+      - 美国01{优化1|V2ray}
+      - 台湾02{联通|V2ray}
+      - 德国02{联通|V2ray}
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - SG 新加坡
-      - Asia 香港01 | 电信优化 | 解锁奈飞
-      - Asia 香港02 | 电信优化 | 解锁奈飞
-      - JP 日本
+      - 新加坡-Trojan
+      - 香港05{优化1|V2ray}
+      - 印度-Trojan
+      - 新加坡04{优化1|V2ray}
+      - 台湾01{移动|V2ray}
+      - 马来-Trojan
+      - 新加坡03{优化2|V2ray}
+      - 香港02{优化2|V2ray}
+      - 台湾②{联通|V2ray}
+      - 香港01{优化1|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 新加坡06{优化2|V2ray}
+      - 日本04{优化2|V2ray}
+      - 韩国01{移动|V2ray}
+      - 日本03{优化1|V2ray}
+      - 新加坡05{优化2|V2ray}
+      - 日本06{优化2|V2ray}
+      - 日本05{优化1|V2ray}
+      - 台湾①{移动|V2ray}
+      - 印度01{移动|V2ray}
+      - 马来02{联通|V2ray}
+      - 俄罗斯-Trojan
+      - 英国-Trojan
+      - 韩国-Trojan
+      - 德国-Trojan
+      - 印度02{联通|V2ray}
+      - 德国01{移动|V2ray}
+      - 美国-Trojan
+      - 韩国02{联通|V2ray}
+      - 英国{联通|V2ray}
+      - 美国04{优化2|V2ray}
+      - 俄罗斯①{移动|V2ray}
+      - 美国03{优化1|V2ray}
+      - 美国02{优化2|V2ray}
+      - 美国01{优化1|V2ray}
+      - 台湾02{联通|V2ray}
+      - 德国02{联通|V2ray}
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG 新加坡
-      - Asia 香港01 | 电信优化 | 解锁奈飞
-      - Asia 香港02 | 电信优化 | 解锁奈飞
-      - JP 日本
+      - 新加坡-Trojan
+      - 香港05{优化1|V2ray}
+      - 印度-Trojan
+      - 新加坡04{优化1|V2ray}
+      - 台湾01{移动|V2ray}
+      - 马来-Trojan
+      - 新加坡03{优化2|V2ray}
+      - 香港02{优化2|V2ray}
+      - 台湾②{联通|V2ray}
+      - 香港01{优化1|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 新加坡06{优化2|V2ray}
+      - 日本04{优化2|V2ray}
+      - 韩国01{移动|V2ray}
+      - 日本03{优化1|V2ray}
+      - 新加坡05{优化2|V2ray}
+      - 日本06{优化2|V2ray}
+      - 日本05{优化1|V2ray}
+      - 台湾①{移动|V2ray}
+      - 印度01{移动|V2ray}
+      - 马来02{联通|V2ray}
+      - 俄罗斯-Trojan
+      - 英国-Trojan
+      - 韩国-Trojan
+      - 德国-Trojan
+      - 印度02{联通|V2ray}
+      - 德国01{移动|V2ray}
+      - 美国-Trojan
+      - 韩国02{联通|V2ray}
+      - 英国{联通|V2ray}
+      - 美国04{优化2|V2ray}
+      - 俄罗斯①{移动|V2ray}
+      - 美国03{优化1|V2ray}
+      - 美国02{优化2|V2ray}
+      - 美国01{优化1|V2ray}
+      - 台湾02{联通|V2ray}
+      - 德国02{联通|V2ray}
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -110,10 +379,43 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG 新加坡
-      - Asia 香港01 | 电信优化 | 解锁奈飞
-      - Asia 香港02 | 电信优化 | 解锁奈飞
-      - JP 日本
+      - 新加坡-Trojan
+      - 香港05{优化1|V2ray}
+      - 印度-Trojan
+      - 新加坡04{优化1|V2ray}
+      - 台湾01{移动|V2ray}
+      - 马来-Trojan
+      - 新加坡03{优化2|V2ray}
+      - 香港02{优化2|V2ray}
+      - 台湾②{联通|V2ray}
+      - 香港01{优化1|V2ray}
+      - 新加坡02{优化1|V2ray}
+      - 新加坡06{优化2|V2ray}
+      - 日本04{优化2|V2ray}
+      - 韩国01{移动|V2ray}
+      - 日本03{优化1|V2ray}
+      - 新加坡05{优化2|V2ray}
+      - 日本06{优化2|V2ray}
+      - 日本05{优化1|V2ray}
+      - 台湾①{移动|V2ray}
+      - 印度01{移动|V2ray}
+      - 马来02{联通|V2ray}
+      - 俄罗斯-Trojan
+      - 英国-Trojan
+      - 韩国-Trojan
+      - 德国-Trojan
+      - 印度02{联通|V2ray}
+      - 德国01{移动|V2ray}
+      - 美国-Trojan
+      - 韩国02{联通|V2ray}
+      - 英国{联通|V2ray}
+      - 美国04{优化2|V2ray}
+      - 俄罗斯①{移动|V2ray}
+      - 美国03{优化1|V2ray}
+      - 美国02{优化2|V2ray}
+      - 美国01{优化1|V2ray}
+      - 台湾02{联通|V2ray}
+      - 德国02{联通|V2ray}
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
