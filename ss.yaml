@@ -5,75 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: YouTube梦歌|BGP|Netflix|2, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/hkhgc, ws-headers: {Host: i0.hdslb.com}, udp: true}
-  - {name: YouTube梦歌|BGP|Netflix|35, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/us1, ws-headers: {Host: i0.hdslb.com}, udp: true}
-  - {name: YouTube梦歌|BGP|Netflix|32, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/us2, ws-headers: {Host: i0.hdslb.com}, udp: true}
-  - {name: YouTube梦歌|BGP|Netflix|41, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/us3, ws-headers: {Host: i0.hdslb.com}, udp: true}
-  - {name: YouTube梦歌|BGP|Netflix|50, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/hinet, ws-headers: {Host: i0.hdslb.com}, udp: true}
-  - {name: YouTube梦歌|BGP|Netflix|55, server: 198.41.209.68, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/us3?ed=2048", ws-headers: {Host: us3.meizhiyuanya.xyz}, udp: true}
-  - {name: YouTube梦歌|BGP|Netflix|73, server: 141.101.115.158, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/hinet?ed=2048", ws-headers: {Host: hinet.meizhiyuanya.xyz}, udp: true}
-  - {name: YouTube梦歌|BGP|Netflix|47, server: 198.41.208.175, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/us2?ed=2048", ws-headers: {Host: us2.meizhiyuanya.xyz}, udp: true}
-  - {name: YouTube梦歌|BGP|Netflix|91, server: 198.41.208.216, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/hkhgc?ed=2048", ws-headers: {Host: hkhgc.meizhiyuanya.xyz}, udp: true}
-  - {name: YouTube梦歌|BGP|Netflix|65, server: 141.101.115.116, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/us1?ed=2048", ws-headers: {Host: us1.meizhiyuanya.xyz}, udp: true}
-  - {name: YouTube梦歌|BGP|Netflix|92, server: 172.64.153.102, port: 443, type: vmess, uuid: bed3d876-2d26-4d4d-b789-3063438ee774, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash2.trump2023.us}, udp: true}
-  - {name: YouTube梦歌|BGP|Netflix|46, server: 141.101.114.199, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/hinet?ed=2048", ws-headers: {Host: hinet.meizhiyuanya.xyz}, udp: true}
-  - {name: YouTube梦歌|BGP|Netflix|76, server: 198.41.209.214, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/hinet?ed=2048", ws-headers: {Host: hinet.meizhiyuanya.xyz}, udp: true}
+  - {name: 香港=tg频道:@bpjzx2=2, server: 183.232.141.121, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=28, server: 183.232.141.119, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=6, server: 183.232.141.107, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=7, server: 119.237.195.230, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=34, server: 116.162.120.33, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=30, server: 223.167.159.34, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 西雅图=tg频道:@bpjzx2=19, server: 223.166.145.12, port: 569, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 西雅图=tg频道:@bpjzx2=20, server: 223.166.145.12, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 西雅图=tg频道:@bpjzx2=21, server: 223.166.145.12, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 西雅图=tg频道:@bpjzx2=17, server: 223.166.145.12, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 西雅图=tg频道:@bpjzx2=18, server: 223.166.145.12, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=14, server: 116.162.120.24, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 韩国=tg频道:@bpjzx2=1, server: 183.232.141.120, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 韩国=tg频道:@bpjzx2=26, server: 183.232.141.120, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=11, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=4, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌|BGP|Netflix|2
-      - YouTube梦歌|BGP|Netflix|35
-      - YouTube梦歌|BGP|Netflix|32
-      - YouTube梦歌|BGP|Netflix|41
-      - YouTube梦歌|BGP|Netflix|50
-      - YouTube梦歌|BGP|Netflix|55
-      - YouTube梦歌|BGP|Netflix|73
-      - YouTube梦歌|BGP|Netflix|47
-      - YouTube梦歌|BGP|Netflix|91
-      - YouTube梦歌|BGP|Netflix|65
-      - YouTube梦歌|BGP|Netflix|92
-      - YouTube梦歌|BGP|Netflix|46
-      - YouTube梦歌|BGP|Netflix|76
+      - 香港=tg频道:@bpjzx2=2
+      - 香港=tg频道:@bpjzx2=28
+      - 香港=tg频道:@bpjzx2=6
+      - 香港=tg频道:@bpjzx2=7
+      - 香港=tg频道:@bpjzx2=34
+      - 香港=tg频道:@bpjzx2=30
+      - 西雅图=tg频道:@bpjzx2=19
+      - 西雅图=tg频道:@bpjzx2=20
+      - 西雅图=tg频道:@bpjzx2=21
+      - 西雅图=tg频道:@bpjzx2=17
+      - 西雅图=tg频道:@bpjzx2=18
+      - 香港=tg频道:@bpjzx2=14
+      - 韩国=tg频道:@bpjzx2=1
+      - 韩国=tg频道:@bpjzx2=26
+      - 香港=tg频道:@bpjzx2=11
+      - 香港=tg频道:@bpjzx2=4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - YouTube梦歌|BGP|Netflix|2
-      - YouTube梦歌|BGP|Netflix|35
-      - YouTube梦歌|BGP|Netflix|32
-      - YouTube梦歌|BGP|Netflix|41
-      - YouTube梦歌|BGP|Netflix|50
-      - YouTube梦歌|BGP|Netflix|55
-      - YouTube梦歌|BGP|Netflix|73
-      - YouTube梦歌|BGP|Netflix|47
-      - YouTube梦歌|BGP|Netflix|91
-      - YouTube梦歌|BGP|Netflix|65
-      - YouTube梦歌|BGP|Netflix|92
-      - YouTube梦歌|BGP|Netflix|46
-      - YouTube梦歌|BGP|Netflix|76
+      - 香港=tg频道:@bpjzx2=2
+      - 香港=tg频道:@bpjzx2=28
+      - 香港=tg频道:@bpjzx2=6
+      - 香港=tg频道:@bpjzx2=7
+      - 香港=tg频道:@bpjzx2=34
+      - 香港=tg频道:@bpjzx2=30
+      - 西雅图=tg频道:@bpjzx2=19
+      - 西雅图=tg频道:@bpjzx2=20
+      - 西雅图=tg频道:@bpjzx2=21
+      - 西雅图=tg频道:@bpjzx2=17
+      - 西雅图=tg频道:@bpjzx2=18
+      - 香港=tg频道:@bpjzx2=14
+      - 韩国=tg频道:@bpjzx2=1
+      - 韩国=tg频道:@bpjzx2=26
+      - 香港=tg频道:@bpjzx2=11
+      - 香港=tg频道:@bpjzx2=4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌|BGP|Netflix|2
-      - YouTube梦歌|BGP|Netflix|35
-      - YouTube梦歌|BGP|Netflix|32
-      - YouTube梦歌|BGP|Netflix|41
-      - YouTube梦歌|BGP|Netflix|50
-      - YouTube梦歌|BGP|Netflix|55
-      - YouTube梦歌|BGP|Netflix|73
-      - YouTube梦歌|BGP|Netflix|47
-      - YouTube梦歌|BGP|Netflix|91
-      - YouTube梦歌|BGP|Netflix|65
-      - YouTube梦歌|BGP|Netflix|92
-      - YouTube梦歌|BGP|Netflix|46
-      - YouTube梦歌|BGP|Netflix|76
+      - 香港=tg频道:@bpjzx2=2
+      - 香港=tg频道:@bpjzx2=28
+      - 香港=tg频道:@bpjzx2=6
+      - 香港=tg频道:@bpjzx2=7
+      - 香港=tg频道:@bpjzx2=34
+      - 香港=tg频道:@bpjzx2=30
+      - 西雅图=tg频道:@bpjzx2=19
+      - 西雅图=tg频道:@bpjzx2=20
+      - 西雅图=tg频道:@bpjzx2=21
+      - 西雅图=tg频道:@bpjzx2=17
+      - 西雅图=tg频道:@bpjzx2=18
+      - 香港=tg频道:@bpjzx2=14
+      - 韩国=tg频道:@bpjzx2=1
+      - 韩国=tg频道:@bpjzx2=26
+      - 香港=tg频道:@bpjzx2=11
+      - 香港=tg频道:@bpjzx2=4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,79 +104,100 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌|BGP|Netflix|2
-      - YouTube梦歌|BGP|Netflix|35
-      - YouTube梦歌|BGP|Netflix|32
-      - YouTube梦歌|BGP|Netflix|41
-      - YouTube梦歌|BGP|Netflix|50
-      - YouTube梦歌|BGP|Netflix|55
-      - YouTube梦歌|BGP|Netflix|73
-      - YouTube梦歌|BGP|Netflix|47
-      - YouTube梦歌|BGP|Netflix|91
-      - YouTube梦歌|BGP|Netflix|65
-      - YouTube梦歌|BGP|Netflix|92
-      - YouTube梦歌|BGP|Netflix|46
-      - YouTube梦歌|BGP|Netflix|76
+      - 香港=tg频道:@bpjzx2=2
+      - 香港=tg频道:@bpjzx2=28
+      - 香港=tg频道:@bpjzx2=6
+      - 香港=tg频道:@bpjzx2=7
+      - 香港=tg频道:@bpjzx2=34
+      - 香港=tg频道:@bpjzx2=30
+      - 西雅图=tg频道:@bpjzx2=19
+      - 西雅图=tg频道:@bpjzx2=20
+      - 西雅图=tg频道:@bpjzx2=21
+      - 西雅图=tg频道:@bpjzx2=17
+      - 西雅图=tg频道:@bpjzx2=18
+      - 香港=tg频道:@bpjzx2=14
+      - 韩国=tg频道:@bpjzx2=1
+      - 韩国=tg频道:@bpjzx2=26
+      - 香港=tg频道:@bpjzx2=11
+      - 香港=tg频道:@bpjzx2=4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港=tg频道:@bpjzx2=2
+      - 香港=tg频道:@bpjzx2=28
+      - 香港=tg频道:@bpjzx2=6
+      - 香港=tg频道:@bpjzx2=7
+      - 香港=tg频道:@bpjzx2=34
+      - 香港=tg频道:@bpjzx2=30
+      - 香港=tg频道:@bpjzx2=14
+      - 香港=tg频道:@bpjzx2=11
+      - 香港=tg频道:@bpjzx2=4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - YouTube梦歌|BGP|Netflix|2
-      - YouTube梦歌|BGP|Netflix|35
-      - YouTube梦歌|BGP|Netflix|32
-      - YouTube梦歌|BGP|Netflix|41
-      - YouTube梦歌|BGP|Netflix|50
-      - YouTube梦歌|BGP|Netflix|55
-      - YouTube梦歌|BGP|Netflix|73
-      - YouTube梦歌|BGP|Netflix|47
-      - YouTube梦歌|BGP|Netflix|91
-      - YouTube梦歌|BGP|Netflix|65
-      - YouTube梦歌|BGP|Netflix|92
-      - YouTube梦歌|BGP|Netflix|46
-      - YouTube梦歌|BGP|Netflix|76
+      - 香港=tg频道:@bpjzx2=2
+      - 香港=tg频道:@bpjzx2=28
+      - 香港=tg频道:@bpjzx2=6
+      - 香港=tg频道:@bpjzx2=7
+      - 香港=tg频道:@bpjzx2=34
+      - 香港=tg频道:@bpjzx2=30
+      - 西雅图=tg频道:@bpjzx2=19
+      - 西雅图=tg频道:@bpjzx2=20
+      - 西雅图=tg频道:@bpjzx2=21
+      - 西雅图=tg频道:@bpjzx2=17
+      - 西雅图=tg频道:@bpjzx2=18
+      - 香港=tg频道:@bpjzx2=14
+      - 韩国=tg频道:@bpjzx2=1
+      - 韩国=tg频道:@bpjzx2=26
+      - 香港=tg频道:@bpjzx2=11
+      - 香港=tg频道:@bpjzx2=4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - YouTube梦歌|BGP|Netflix|2
-      - YouTube梦歌|BGP|Netflix|35
-      - YouTube梦歌|BGP|Netflix|32
-      - YouTube梦歌|BGP|Netflix|41
-      - YouTube梦歌|BGP|Netflix|50
-      - YouTube梦歌|BGP|Netflix|55
-      - YouTube梦歌|BGP|Netflix|73
-      - YouTube梦歌|BGP|Netflix|47
-      - YouTube梦歌|BGP|Netflix|91
-      - YouTube梦歌|BGP|Netflix|65
-      - YouTube梦歌|BGP|Netflix|92
-      - YouTube梦歌|BGP|Netflix|46
-      - YouTube梦歌|BGP|Netflix|76
+      - 香港=tg频道:@bpjzx2=2
+      - 香港=tg频道:@bpjzx2=28
+      - 香港=tg频道:@bpjzx2=6
+      - 香港=tg频道:@bpjzx2=7
+      - 香港=tg频道:@bpjzx2=34
+      - 香港=tg频道:@bpjzx2=30
+      - 西雅图=tg频道:@bpjzx2=19
+      - 西雅图=tg频道:@bpjzx2=20
+      - 西雅图=tg频道:@bpjzx2=21
+      - 西雅图=tg频道:@bpjzx2=17
+      - 西雅图=tg频道:@bpjzx2=18
+      - 香港=tg频道:@bpjzx2=14
+      - 韩国=tg频道:@bpjzx2=1
+      - 韩国=tg频道:@bpjzx2=26
+      - 香港=tg频道:@bpjzx2=11
+      - 香港=tg频道:@bpjzx2=4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube梦歌|BGP|Netflix|2
-      - YouTube梦歌|BGP|Netflix|35
-      - YouTube梦歌|BGP|Netflix|32
-      - YouTube梦歌|BGP|Netflix|41
-      - YouTube梦歌|BGP|Netflix|50
-      - YouTube梦歌|BGP|Netflix|55
-      - YouTube梦歌|BGP|Netflix|73
-      - YouTube梦歌|BGP|Netflix|47
-      - YouTube梦歌|BGP|Netflix|91
-      - YouTube梦歌|BGP|Netflix|65
-      - YouTube梦歌|BGP|Netflix|92
-      - YouTube梦歌|BGP|Netflix|46
-      - YouTube梦歌|BGP|Netflix|76
+      - 香港=tg频道:@bpjzx2=2
+      - 香港=tg频道:@bpjzx2=28
+      - 香港=tg频道:@bpjzx2=6
+      - 香港=tg频道:@bpjzx2=7
+      - 香港=tg频道:@bpjzx2=34
+      - 香港=tg频道:@bpjzx2=30
+      - 西雅图=tg频道:@bpjzx2=19
+      - 西雅图=tg频道:@bpjzx2=20
+      - 西雅图=tg频道:@bpjzx2=21
+      - 西雅图=tg频道:@bpjzx2=17
+      - 西雅图=tg频道:@bpjzx2=18
+      - 香港=tg频道:@bpjzx2=14
+      - 韩国=tg频道:@bpjzx2=1
+      - 韩国=tg频道:@bpjzx2=26
+      - 香港=tg频道:@bpjzx2=11
+      - 香港=tg频道:@bpjzx2=4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -180,19 +213,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube梦歌|BGP|Netflix|2
-      - YouTube梦歌|BGP|Netflix|35
-      - YouTube梦歌|BGP|Netflix|32
-      - YouTube梦歌|BGP|Netflix|41
-      - YouTube梦歌|BGP|Netflix|50
-      - YouTube梦歌|BGP|Netflix|55
-      - YouTube梦歌|BGP|Netflix|73
-      - YouTube梦歌|BGP|Netflix|47
-      - YouTube梦歌|BGP|Netflix|91
-      - YouTube梦歌|BGP|Netflix|65
-      - YouTube梦歌|BGP|Netflix|92
-      - YouTube梦歌|BGP|Netflix|46
-      - YouTube梦歌|BGP|Netflix|76
+      - 香港=tg频道:@bpjzx2=2
+      - 香港=tg频道:@bpjzx2=28
+      - 香港=tg频道:@bpjzx2=6
+      - 香港=tg频道:@bpjzx2=7
+      - 香港=tg频道:@bpjzx2=34
+      - 香港=tg频道:@bpjzx2=30
+      - 西雅图=tg频道:@bpjzx2=19
+      - 西雅图=tg频道:@bpjzx2=20
+      - 西雅图=tg频道:@bpjzx2=21
+      - 西雅图=tg频道:@bpjzx2=17
+      - 西雅图=tg频道:@bpjzx2=18
+      - 香港=tg频道:@bpjzx2=14
+      - 韩国=tg频道:@bpjzx2=1
+      - 韩国=tg频道:@bpjzx2=26
+      - 香港=tg频道:@bpjzx2=11
+      - 香港=tg频道:@bpjzx2=4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
