@@ -5,55 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中转丨United States 01, server: cn-east-1c.ens3.buzz, port: 34521, type: ss, cipher: aes-256-gcm, password: 75856990-c369-46ea-96a5-37f3d4ff9607, udp: true}
-  - {name: 香港 A03^, server: relay_cm1.flyxxl.xyz, port: 46082, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
-  - {name: 香港 A02^, server: relay_cm1.flyxxl.xyz, port: 46081, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
-  - {name: 台湾 A01^, server: relay_cm1.flyxxl.xyz, port: 46096, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
-  - {name: 香港 B03^, server: relaybgp_pro.flyxxl.xyz, port: 45601, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
-  - {name: 台湾 B01^, server: relaybgp_pro.flyxxl.xyz, port: 45491, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
-  - {name: 香港 B02^, server: relaybgp_pro.flyxxl.xyz, port: 45550, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
-  - {name: 美国 测试01, server: azus01.flyxxl.xyz, port: 29994, type: vmess, uuid: 75bac4bc-4e03-415c-831e-78b9447091ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
+  - {name: YouTube梦歌|BGP|Netflix|2, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/hkhgc, ws-headers: {Host: i0.hdslb.com}, udp: true}
+  - {name: YouTube梦歌|BGP|Netflix|35, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/us1, ws-headers: {Host: i0.hdslb.com}, udp: true}
+  - {name: YouTube梦歌|BGP|Netflix|32, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/us2, ws-headers: {Host: i0.hdslb.com}, udp: true}
+  - {name: YouTube梦歌|BGP|Netflix|41, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/us3, ws-headers: {Host: i0.hdslb.com}, udp: true}
+  - {name: YouTube梦歌|BGP|Netflix|50, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/hinet, ws-headers: {Host: i0.hdslb.com}, udp: true}
+  - {name: YouTube梦歌|BGP|Netflix|55, server: 198.41.209.68, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/us3?ed=2048", ws-headers: {Host: us3.meizhiyuanya.xyz}, udp: true}
+  - {name: YouTube梦歌|BGP|Netflix|73, server: 141.101.115.158, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/hinet?ed=2048", ws-headers: {Host: hinet.meizhiyuanya.xyz}, udp: true}
+  - {name: YouTube梦歌|BGP|Netflix|47, server: 198.41.208.175, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/us2?ed=2048", ws-headers: {Host: us2.meizhiyuanya.xyz}, udp: true}
+  - {name: YouTube梦歌|BGP|Netflix|91, server: 198.41.208.216, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/hkhgc?ed=2048", ws-headers: {Host: hkhgc.meizhiyuanya.xyz}, udp: true}
+  - {name: YouTube梦歌|BGP|Netflix|65, server: 141.101.115.116, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/us1?ed=2048", ws-headers: {Host: us1.meizhiyuanya.xyz}, udp: true}
+  - {name: YouTube梦歌|BGP|Netflix|92, server: 172.64.153.102, port: 443, type: vmess, uuid: bed3d876-2d26-4d4d-b789-3063438ee774, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash2.trump2023.us}, udp: true}
+  - {name: YouTube梦歌|BGP|Netflix|46, server: 141.101.114.199, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/hinet?ed=2048", ws-headers: {Host: hinet.meizhiyuanya.xyz}, udp: true}
+  - {name: YouTube梦歌|BGP|Netflix|76, server: 198.41.209.214, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/hinet?ed=2048", ws-headers: {Host: hinet.meizhiyuanya.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转丨United States 01
-      - 香港 A03^
-      - 香港 A02^
-      - 台湾 A01^
-      - 香港 B03^
-      - 台湾 B01^
-      - 香港 B02^
-      - 美国 测试01
+      - YouTube梦歌|BGP|Netflix|2
+      - YouTube梦歌|BGP|Netflix|35
+      - YouTube梦歌|BGP|Netflix|32
+      - YouTube梦歌|BGP|Netflix|41
+      - YouTube梦歌|BGP|Netflix|50
+      - YouTube梦歌|BGP|Netflix|55
+      - YouTube梦歌|BGP|Netflix|73
+      - YouTube梦歌|BGP|Netflix|47
+      - YouTube梦歌|BGP|Netflix|91
+      - YouTube梦歌|BGP|Netflix|65
+      - YouTube梦歌|BGP|Netflix|92
+      - YouTube梦歌|BGP|Netflix|46
+      - YouTube梦歌|BGP|Netflix|76
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中转丨United States 01
-      - 香港 A03^
-      - 香港 A02^
-      - 台湾 A01^
-      - 香港 B03^
-      - 台湾 B01^
-      - 香港 B02^
-      - 美国 测试01
+      - YouTube梦歌|BGP|Netflix|2
+      - YouTube梦歌|BGP|Netflix|35
+      - YouTube梦歌|BGP|Netflix|32
+      - YouTube梦歌|BGP|Netflix|41
+      - YouTube梦歌|BGP|Netflix|50
+      - YouTube梦歌|BGP|Netflix|55
+      - YouTube梦歌|BGP|Netflix|73
+      - YouTube梦歌|BGP|Netflix|47
+      - YouTube梦歌|BGP|Netflix|91
+      - YouTube梦歌|BGP|Netflix|65
+      - YouTube梦歌|BGP|Netflix|92
+      - YouTube梦歌|BGP|Netflix|46
+      - YouTube梦歌|BGP|Netflix|76
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转丨United States 01
-      - 香港 A03^
-      - 香港 A02^
-      - 台湾 A01^
-      - 香港 B03^
-      - 台湾 B01^
-      - 香港 B02^
-      - 美国 测试01
+      - YouTube梦歌|BGP|Netflix|2
+      - YouTube梦歌|BGP|Netflix|35
+      - YouTube梦歌|BGP|Netflix|32
+      - YouTube梦歌|BGP|Netflix|41
+      - YouTube梦歌|BGP|Netflix|50
+      - YouTube梦歌|BGP|Netflix|55
+      - YouTube梦歌|BGP|Netflix|73
+      - YouTube梦歌|BGP|Netflix|47
+      - YouTube梦歌|BGP|Netflix|91
+      - YouTube梦歌|BGP|Netflix|65
+      - YouTube梦歌|BGP|Netflix|92
+      - YouTube梦歌|BGP|Netflix|46
+      - YouTube梦歌|BGP|Netflix|76
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,65 +92,79 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转丨United States 01
-      - 香港 A03^
-      - 香港 A02^
-      - 台湾 A01^
-      - 香港 B03^
-      - 台湾 B01^
-      - 香港 B02^
-      - 美国 测试01
+      - YouTube梦歌|BGP|Netflix|2
+      - YouTube梦歌|BGP|Netflix|35
+      - YouTube梦歌|BGP|Netflix|32
+      - YouTube梦歌|BGP|Netflix|41
+      - YouTube梦歌|BGP|Netflix|50
+      - YouTube梦歌|BGP|Netflix|55
+      - YouTube梦歌|BGP|Netflix|73
+      - YouTube梦歌|BGP|Netflix|47
+      - YouTube梦歌|BGP|Netflix|91
+      - YouTube梦歌|BGP|Netflix|65
+      - YouTube梦歌|BGP|Netflix|92
+      - YouTube梦歌|BGP|Netflix|46
+      - YouTube梦歌|BGP|Netflix|76
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 A03^
-      - 香港 A02^
-      - 台湾 A01^
-      - 香港 B03^
-      - 台湾 B01^
-      - 香港 B02^
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中转丨United States 01
-      - 香港 A03^
-      - 香港 A02^
-      - 台湾 A01^
-      - 香港 B03^
-      - 台湾 B01^
-      - 香港 B02^
-      - 美国 测试01
+      - YouTube梦歌|BGP|Netflix|2
+      - YouTube梦歌|BGP|Netflix|35
+      - YouTube梦歌|BGP|Netflix|32
+      - YouTube梦歌|BGP|Netflix|41
+      - YouTube梦歌|BGP|Netflix|50
+      - YouTube梦歌|BGP|Netflix|55
+      - YouTube梦歌|BGP|Netflix|73
+      - YouTube梦歌|BGP|Netflix|47
+      - YouTube梦歌|BGP|Netflix|91
+      - YouTube梦歌|BGP|Netflix|65
+      - YouTube梦歌|BGP|Netflix|92
+      - YouTube梦歌|BGP|Netflix|46
+      - YouTube梦歌|BGP|Netflix|76
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中转丨United States 01
-      - 香港 A03^
-      - 香港 A02^
-      - 台湾 A01^
-      - 香港 B03^
-      - 台湾 B01^
-      - 香港 B02^
-      - 美国 测试01
+      - YouTube梦歌|BGP|Netflix|2
+      - YouTube梦歌|BGP|Netflix|35
+      - YouTube梦歌|BGP|Netflix|32
+      - YouTube梦歌|BGP|Netflix|41
+      - YouTube梦歌|BGP|Netflix|50
+      - YouTube梦歌|BGP|Netflix|55
+      - YouTube梦歌|BGP|Netflix|73
+      - YouTube梦歌|BGP|Netflix|47
+      - YouTube梦歌|BGP|Netflix|91
+      - YouTube梦歌|BGP|Netflix|65
+      - YouTube梦歌|BGP|Netflix|92
+      - YouTube梦歌|BGP|Netflix|46
+      - YouTube梦歌|BGP|Netflix|76
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转丨United States 01
-      - 香港 A03^
-      - 香港 A02^
-      - 台湾 A01^
-      - 香港 B03^
-      - 台湾 B01^
-      - 香港 B02^
-      - 美国 测试01
+      - YouTube梦歌|BGP|Netflix|2
+      - YouTube梦歌|BGP|Netflix|35
+      - YouTube梦歌|BGP|Netflix|32
+      - YouTube梦歌|BGP|Netflix|41
+      - YouTube梦歌|BGP|Netflix|50
+      - YouTube梦歌|BGP|Netflix|55
+      - YouTube梦歌|BGP|Netflix|73
+      - YouTube梦歌|BGP|Netflix|47
+      - YouTube梦歌|BGP|Netflix|91
+      - YouTube梦歌|BGP|Netflix|65
+      - YouTube梦歌|BGP|Netflix|92
+      - YouTube梦歌|BGP|Netflix|46
+      - YouTube梦歌|BGP|Netflix|76
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -146,14 +180,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转丨United States 01
-      - 香港 A03^
-      - 香港 A02^
-      - 台湾 A01^
-      - 香港 B03^
-      - 台湾 B01^
-      - 香港 B02^
-      - 美国 测试01
+      - YouTube梦歌|BGP|Netflix|2
+      - YouTube梦歌|BGP|Netflix|35
+      - YouTube梦歌|BGP|Netflix|32
+      - YouTube梦歌|BGP|Netflix|41
+      - YouTube梦歌|BGP|Netflix|50
+      - YouTube梦歌|BGP|Netflix|55
+      - YouTube梦歌|BGP|Netflix|73
+      - YouTube梦歌|BGP|Netflix|47
+      - YouTube梦歌|BGP|Netflix|91
+      - YouTube梦歌|BGP|Netflix|65
+      - YouTube梦歌|BGP|Netflix|92
+      - YouTube梦歌|BGP|Netflix|46
+      - YouTube梦歌|BGP|Netflix|76
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
