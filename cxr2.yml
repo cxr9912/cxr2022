@@ -5,91 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡|腾讯云|1x, server: txgsp.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: txgsp.102498.eu.org}, udp: true}
-  - {name: 日本02|1x, server: vir.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: vir.102498.eu.org}, udp: true}
-  - {name: 越南|1.5x, server: vn.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: vn.102498.eu.org}, udp: true}
-  - {name: 阿联酋阿布扎比|电信优化|1x, server: uae.102498.eu.org, port: 2052, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: uae.102498.eu.org}, udp: true}
-  - {name: 美国08|CF优选中转|免费, server: rn.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: rn.102498.eu.org}, udp: true}
-  - {name: 美国06|流媒体解锁|1x, server: sausa.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /micosoft, ws-headers: {Host: sausa.102498.eu.org}, udp: true}
-  - {name: 美国节点04|亚洲优化线路|1x, server: usa1.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mirocsoft, ws-headers: {Host: usa1.102498.eu.org}, udp: true}
-  - {name: 美国05|联通友好|1x, server: sp.102498.eu.org, port: 2052, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: sp.102498.eu.org}, udp: true}
-  - {name: 荷兰双栈|1x, server: nl.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: nl.102498.eu.org}, udp: true}
-  - {name: 俄罗斯02|CF优选|1x, server: ru2.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: ru2.102498.eu.org}, udp: true}
-  - {name: 阿联酋迪拜|电信优化|1x, server: di.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: di.102498.eu.org}, udp: true}
-  - {name: 韩国01|1x, server: korarm.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: korarm.102498.eu.org}, udp: true}
-  - {name: 俄罗斯01|CF优选|1x, server: ru.102498.eu.org, port: 443, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: ru.102498.eu.org}, udp: true}
-  - {name: 美国10|1x, server: lindeusa2.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: lindeusa2.102498.eu.org}, udp: true}
-  - {name: 美国03|1x, server: usa.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: usa.102498.eu.org}, udp: true}
-  - {name: 美国09|1x, server: lindeusa.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: lindeusa.102498.eu.org}, udp: true}
-  - {name: 韩国02|1x, server: kor.102498.eu.org, port: 2053, type: vmess, uuid: 5ccc3543-f0be-3e3b-8760-e0c168a1100e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /microsoft, ws-headers: {Host: kor.102498.eu.org}, udp: true}
+  - {name: 香港Ⅰ-V2ray, server: hk-01.proxyvip.top, port: 22001, type: vmess, uuid: 66ab1fb2-48c4-4587-978f-a44d1cfd68de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: hk-01.proxyvip.top}, udp: true}
+  - {name: 香港Ⅱ-Trojan, server: hk-02.proxyvip.top, port: 23002, type: trojan, password: 66ab1fb2-48c4-4587-978f-a44d1cfd68de, sni: hk-02.proxyvip.top, skip-cert-verify: true, udp: true}
+  - {name: 日本中继Ⅰ-Trojan, server: video.proxyvip.top, port: 31013, type: trojan, password: 66ab1fb2-48c4-4587-978f-a44d1cfd68de, sni: video.proxyvip.top, skip-cert-verify: true, udp: true}
+  - {name: 日本中继Ⅱ-Trojan, server: video.proxyvip.top, port: 31014, type: trojan, password: 66ab1fb2-48c4-4587-978f-a44d1cfd68de, sni: video.proxyvip.top, skip-cert-verify: true, udp: true}
+  - {name: 香港Ⅱ-V2ray, server: hk-02.proxyvip.top, port: 22002, type: vmess, uuid: 66ab1fb2-48c4-4587-978f-a44d1cfd68de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: hk-02.proxyvip.top}, udp: true}
+  - {name: 香港Ⅳ-V2ray, server: hk-04.proxyvip.top, port: 22004, type: vmess, uuid: 66ab1fb2-48c4-4587-978f-a44d1cfd68de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: hk-04.proxyvip.top}, udp: true}
+  - {name: 香港Ⅳ-Trojan, server: hk-04.proxyvip.top, port: 23004, type: trojan, password: 66ab1fb2-48c4-4587-978f-a44d1cfd68de, sni: hk-04.proxyvip.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡|腾讯云|1x
-      - 日本02|1x
-      - 越南|1.5x
-      - 阿联酋阿布扎比|电信优化|1x
-      - 美国08|CF优选中转|免费
-      - 美国06|流媒体解锁|1x
-      - 美国节点04|亚洲优化线路|1x
-      - 美国05|联通友好|1x
-      - 荷兰双栈|1x
-      - 俄罗斯02|CF优选|1x
-      - 阿联酋迪拜|电信优化|1x
-      - 韩国01|1x
-      - 俄罗斯01|CF优选|1x
-      - 美国10|1x
-      - 美国03|1x
-      - 美国09|1x
-      - 韩国02|1x
+      - 香港Ⅰ-V2ray
+      - 香港Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 香港Ⅱ-V2ray
+      - 香港Ⅳ-V2ray
+      - 香港Ⅳ-Trojan
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡|腾讯云|1x
-      - 日本02|1x
-      - 越南|1.5x
-      - 阿联酋阿布扎比|电信优化|1x
-      - 美国08|CF优选中转|免费
-      - 美国06|流媒体解锁|1x
-      - 美国节点04|亚洲优化线路|1x
-      - 美国05|联通友好|1x
-      - 荷兰双栈|1x
-      - 俄罗斯02|CF优选|1x
-      - 阿联酋迪拜|电信优化|1x
-      - 韩国01|1x
-      - 俄罗斯01|CF优选|1x
-      - 美国10|1x
-      - 美国03|1x
-      - 美国09|1x
-      - 韩国02|1x
+      - 香港Ⅰ-V2ray
+      - 香港Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 香港Ⅱ-V2ray
+      - 香港Ⅳ-V2ray
+      - 香港Ⅳ-Trojan
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡|腾讯云|1x
-      - 日本02|1x
-      - 越南|1.5x
-      - 阿联酋阿布扎比|电信优化|1x
-      - 美国08|CF优选中转|免费
-      - 美国06|流媒体解锁|1x
-      - 美国节点04|亚洲优化线路|1x
-      - 美国05|联通友好|1x
-      - 荷兰双栈|1x
-      - 俄罗斯02|CF优选|1x
-      - 阿联酋迪拜|电信优化|1x
-      - 韩国01|1x
-      - 俄罗斯01|CF优选|1x
-      - 美国10|1x
-      - 美国03|1x
-      - 美国09|1x
-      - 韩国02|1x
+      - 香港Ⅰ-V2ray
+      - 香港Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 香港Ⅱ-V2ray
+      - 香港Ⅳ-V2ray
+      - 香港Ⅳ-Trojan
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -108,95 +68,60 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡|腾讯云|1x
-      - 日本02|1x
-      - 越南|1.5x
-      - 阿联酋阿布扎比|电信优化|1x
-      - 美国08|CF优选中转|免费
-      - 美国06|流媒体解锁|1x
-      - 美国节点04|亚洲优化线路|1x
-      - 美国05|联通友好|1x
-      - 荷兰双栈|1x
-      - 俄罗斯02|CF优选|1x
-      - 阿联酋迪拜|电信优化|1x
-      - 韩国01|1x
-      - 俄罗斯01|CF优选|1x
-      - 美国10|1x
-      - 美国03|1x
-      - 美国09|1x
-      - 韩国02|1x
+      - 香港Ⅰ-V2ray
+      - 香港Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 香港Ⅱ-V2ray
+      - 香港Ⅳ-V2ray
+      - 香港Ⅳ-Trojan
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港Ⅰ-V2ray
+      - 香港Ⅱ-Trojan
+      - 香港Ⅱ-V2ray
+      - 香港Ⅳ-V2ray
+      - 香港Ⅳ-Trojan
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡|腾讯云|1x
-      - 日本02|1x
-      - 越南|1.5x
-      - 阿联酋阿布扎比|电信优化|1x
-      - 美国08|CF优选中转|免费
-      - 美国06|流媒体解锁|1x
-      - 美国节点04|亚洲优化线路|1x
-      - 美国05|联通友好|1x
-      - 荷兰双栈|1x
-      - 俄罗斯02|CF优选|1x
-      - 阿联酋迪拜|电信优化|1x
-      - 韩国01|1x
-      - 俄罗斯01|CF优选|1x
-      - 美国10|1x
-      - 美国03|1x
-      - 美国09|1x
-      - 韩国02|1x
+      - 香港Ⅰ-V2ray
+      - 香港Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 香港Ⅱ-V2ray
+      - 香港Ⅳ-V2ray
+      - 香港Ⅳ-Trojan
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡|腾讯云|1x
-      - 日本02|1x
-      - 越南|1.5x
-      - 阿联酋阿布扎比|电信优化|1x
-      - 美国08|CF优选中转|免费
-      - 美国06|流媒体解锁|1x
-      - 美国节点04|亚洲优化线路|1x
-      - 美国05|联通友好|1x
-      - 荷兰双栈|1x
-      - 俄罗斯02|CF优选|1x
-      - 阿联酋迪拜|电信优化|1x
-      - 韩国01|1x
-      - 俄罗斯01|CF优选|1x
-      - 美国10|1x
-      - 美国03|1x
-      - 美国09|1x
-      - 韩国02|1x
+      - 香港Ⅰ-V2ray
+      - 香港Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 香港Ⅱ-V2ray
+      - 香港Ⅳ-V2ray
+      - 香港Ⅳ-Trojan
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡|腾讯云|1x
-      - 日本02|1x
-      - 越南|1.5x
-      - 阿联酋阿布扎比|电信优化|1x
-      - 美国08|CF优选中转|免费
-      - 美国06|流媒体解锁|1x
-      - 美国节点04|亚洲优化线路|1x
-      - 美国05|联通友好|1x
-      - 荷兰双栈|1x
-      - 俄罗斯02|CF优选|1x
-      - 阿联酋迪拜|电信优化|1x
-      - 韩国01|1x
-      - 俄罗斯01|CF优选|1x
-      - 美国10|1x
-      - 美国03|1x
-      - 美国09|1x
-      - 韩国02|1x
+      - 香港Ⅰ-V2ray
+      - 香港Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 香港Ⅱ-V2ray
+      - 香港Ⅳ-V2ray
+      - 香港Ⅳ-Trojan
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -212,23 +137,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡|腾讯云|1x
-      - 日本02|1x
-      - 越南|1.5x
-      - 阿联酋阿布扎比|电信优化|1x
-      - 美国08|CF优选中转|免费
-      - 美国06|流媒体解锁|1x
-      - 美国节点04|亚洲优化线路|1x
-      - 美国05|联通友好|1x
-      - 荷兰双栈|1x
-      - 俄罗斯02|CF优选|1x
-      - 阿联酋迪拜|电信优化|1x
-      - 韩国01|1x
-      - 俄罗斯01|CF优选|1x
-      - 美国10|1x
-      - 美国03|1x
-      - 美国09|1x
-      - 韩国02|1x
+      - 香港Ⅰ-V2ray
+      - 香港Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 香港Ⅱ-V2ray
+      - 香港Ⅳ-V2ray
+      - 香港Ⅳ-Trojan
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
