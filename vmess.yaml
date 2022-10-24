@@ -5,31 +5,219 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP日本001, server: jp.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: USA美国001, server: usa.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: 菲律宾PH-T, server: ph.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: ph.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡-优化3, server: t.cccao.cyou, port: 16618, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
+  - {name: 日本-优化3, server: t.cccao.cyou, port: 16617, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
+  - {name: 日本-优化, server: yes.iamagoodman.net, port: 16617, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 柬埔寨KH-T, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT-优化, server: yes.iamagoodman.net, port: 16620, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 新加坡-优化, server: yes.iamagoodman.net, port: 16618, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 香港Az-优化3, server: t.cccao.cyou, port: 16627, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
+  - {name: 美国USSJ-T, server: ussj.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: ussj.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 卢森堡LUX-T, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 日本-优化2, server: m.lwvzmdu.cn, port: 16617, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
+  - {name: 英国-优化, server: yes.iamagoodman.net, port: 16644, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 美国USLA-T, server: usla.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: usla.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡-优化2, server: m.lwvzmdu.cn, port: 16618, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
+  - {name: 法国-优化, server: yes.iamagoodman.net, port: 16645, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 土耳其TR-T, server: tr.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: tr.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 美国D-优化, server: yes.iamagoodman.net, port: 16650, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 香港HKT-优化3, server: t.cccao.cyou, port: 16620, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
+  - {name: 荷兰-优化, server: yes.iamagoodman.net, port: 16642, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 美国D-优化3, server: t.cccao.cyou, port: 16650, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
+  - {name: 德国DE-T, server: de.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: de.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 墨西哥-优化1, server: yes.iamagoodman.net, port: 16636, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 香港Az-优化, server: yes.iamagoodman.net, port: 16627, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 波兰-优化, server: yes.iamagoodman.net, port: 16646, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 乌克兰-优化, server: yes.iamagoodman.net, port: 16637, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 印度-优化, server: yes.iamagoodman.net, port: 16626, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 澳大利亚-优化, server: yes.iamagoodman.net, port: 16638, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mjp, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
+  - {name: 香港HKT-优化2, server: m.lwvzmdu.cn, port: 16620, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
+  - {name: 俄罗斯RU-T, server: ru.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: ru.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 葡萄牙-优化3, server: t.cccao.cyou, port: 16624, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
+  - {name: 葡萄牙-优化, server: yes.iamagoodman.net, port: 16624, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 哈萨克斯坦KZ-T, server: kz.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: kz.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 美国D-优化2, server: m.lwvzmdu.cn, port: 16650, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
+  - {name: 香港Az-优化2, server: m.lwvzmdu.cn, port: 16627, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
+  - {name: 加拿大-优化3, server: t.cccao.cyou, port: 16641, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
+  - {name: 尼日利亚-优化, server: yes.iamagoodman.net, port: 16639, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 新加坡SG-T, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT-T, server: hkt.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: hkt.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 日本JP-T, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 阿根廷AR-T, server: ar.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: ar.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 英国-优化3, server: t.cccao.cyou, port: 16644, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
+  - {name: 南非-优化, server: yes.iamagoodman.net, port: 16640, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 瑞士-优化, server: yes.iamagoodman.net, port: 16633, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 加拿大-优化, server: yes.iamagoodman.net, port: 16641, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: 荷兰-优化3, server: t.cccao.cyou, port: 16642, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
+  - {name: 香港HGC-T, server: hgc.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: hgc.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 英国-优化2, server: m.lwvzmdu.cn, port: 16644, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
+  - {name: 波兰-优化2, server: m.lwvzmdu.cn, port: 16646, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
+  - {name: 美国LA-优化2, server: m.lwvzmdu.cn, port: 16648, type: vmess, uuid: 28bccca2-43d2-47f8-bd63-b1361ce7d362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP日本001
-      - USA美国001
+      - 菲律宾PH-T
+      - 新加坡-优化3
+      - 日本-优化3
+      - 日本-优化
+      - 柬埔寨KH-T
+      - 香港HKT-优化
+      - 新加坡-优化
+      - 香港Az-优化3
+      - 美国USSJ-T
+      - 卢森堡LUX-T
+      - 日本-优化2
+      - 英国-优化
+      - 美国USLA-T
+      - 新加坡-优化2
+      - 法国-优化
+      - 土耳其TR-T
+      - 美国D-优化
+      - 香港HKT-优化3
+      - 荷兰-优化
+      - 美国D-优化3
+      - 德国DE-T
+      - 墨西哥-优化1
+      - 香港Az-优化
+      - 波兰-优化
+      - 乌克兰-优化
+      - 印度-优化
+      - 澳大利亚-优化
+      - 香港HKT-优化2
+      - 俄罗斯RU-T
+      - 葡萄牙-优化3
+      - 葡萄牙-优化
+      - 哈萨克斯坦KZ-T
+      - 美国D-优化2
+      - 香港Az-优化2
+      - 加拿大-优化3
+      - 尼日利亚-优化
+      - 新加坡SG-T
+      - 香港HKT-T
+      - 日本JP-T
+      - 阿根廷AR-T
+      - 英国-优化3
+      - 南非-优化
+      - 瑞士-优化
+      - 加拿大-优化
+      - 荷兰-优化3
+      - 香港HGC-T
+      - 英国-优化2
+      - 波兰-优化2
+      - 美国LA-优化2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP日本001
-      - USA美国001
+      - 菲律宾PH-T
+      - 新加坡-优化3
+      - 日本-优化3
+      - 日本-优化
+      - 柬埔寨KH-T
+      - 香港HKT-优化
+      - 新加坡-优化
+      - 香港Az-优化3
+      - 美国USSJ-T
+      - 卢森堡LUX-T
+      - 日本-优化2
+      - 英国-优化
+      - 美国USLA-T
+      - 新加坡-优化2
+      - 法国-优化
+      - 土耳其TR-T
+      - 美国D-优化
+      - 香港HKT-优化3
+      - 荷兰-优化
+      - 美国D-优化3
+      - 德国DE-T
+      - 墨西哥-优化1
+      - 香港Az-优化
+      - 波兰-优化
+      - 乌克兰-优化
+      - 印度-优化
+      - 澳大利亚-优化
+      - 香港HKT-优化2
+      - 俄罗斯RU-T
+      - 葡萄牙-优化3
+      - 葡萄牙-优化
+      - 哈萨克斯坦KZ-T
+      - 美国D-优化2
+      - 香港Az-优化2
+      - 加拿大-优化3
+      - 尼日利亚-优化
+      - 新加坡SG-T
+      - 香港HKT-T
+      - 日本JP-T
+      - 阿根廷AR-T
+      - 英国-优化3
+      - 南非-优化
+      - 瑞士-优化
+      - 加拿大-优化
+      - 荷兰-优化3
+      - 香港HGC-T
+      - 英国-优化2
+      - 波兰-优化2
+      - 美国LA-优化2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP日本001
-      - USA美国001
+      - 菲律宾PH-T
+      - 新加坡-优化3
+      - 日本-优化3
+      - 日本-优化
+      - 柬埔寨KH-T
+      - 香港HKT-优化
+      - 新加坡-优化
+      - 香港Az-优化3
+      - 美国USSJ-T
+      - 卢森堡LUX-T
+      - 日本-优化2
+      - 英国-优化
+      - 美国USLA-T
+      - 新加坡-优化2
+      - 法国-优化
+      - 土耳其TR-T
+      - 美国D-优化
+      - 香港HKT-优化3
+      - 荷兰-优化
+      - 美国D-优化3
+      - 德国DE-T
+      - 墨西哥-优化1
+      - 香港Az-优化
+      - 波兰-优化
+      - 乌克兰-优化
+      - 印度-优化
+      - 澳大利亚-优化
+      - 香港HKT-优化2
+      - 俄罗斯RU-T
+      - 葡萄牙-优化3
+      - 葡萄牙-优化
+      - 哈萨克斯坦KZ-T
+      - 美国D-优化2
+      - 香港Az-优化2
+      - 加拿大-优化3
+      - 尼日利亚-优化
+      - 新加坡SG-T
+      - 香港HKT-T
+      - 日本JP-T
+      - 阿根廷AR-T
+      - 英国-优化3
+      - 南非-优化
+      - 瑞士-优化
+      - 加拿大-优化
+      - 荷兰-优化3
+      - 香港HGC-T
+      - 英国-优化2
+      - 波兰-优化2
+      - 美国LA-优化2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,35 +236,231 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP日本001
-      - USA美国001
+      - 菲律宾PH-T
+      - 新加坡-优化3
+      - 日本-优化3
+      - 日本-优化
+      - 柬埔寨KH-T
+      - 香港HKT-优化
+      - 新加坡-优化
+      - 香港Az-优化3
+      - 美国USSJ-T
+      - 卢森堡LUX-T
+      - 日本-优化2
+      - 英国-优化
+      - 美国USLA-T
+      - 新加坡-优化2
+      - 法国-优化
+      - 土耳其TR-T
+      - 美国D-优化
+      - 香港HKT-优化3
+      - 荷兰-优化
+      - 美国D-优化3
+      - 德国DE-T
+      - 墨西哥-优化1
+      - 香港Az-优化
+      - 波兰-优化
+      - 乌克兰-优化
+      - 印度-优化
+      - 澳大利亚-优化
+      - 香港HKT-优化2
+      - 俄罗斯RU-T
+      - 葡萄牙-优化3
+      - 葡萄牙-优化
+      - 哈萨克斯坦KZ-T
+      - 美国D-优化2
+      - 香港Az-优化2
+      - 加拿大-优化3
+      - 尼日利亚-优化
+      - 新加坡SG-T
+      - 香港HKT-T
+      - 日本JP-T
+      - 阿根廷AR-T
+      - 英国-优化3
+      - 南非-优化
+      - 瑞士-优化
+      - 加拿大-优化
+      - 荷兰-优化3
+      - 香港HGC-T
+      - 英国-优化2
+      - 波兰-优化2
+      - 美国LA-优化2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港HKT-优化
+      - 香港Az-优化3
+      - 香港HKT-优化3
+      - 香港Az-优化
+      - 香港HKT-优化2
+      - 香港Az-优化2
+      - 香港HKT-T
+      - 香港HGC-T
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP日本001
-      - USA美国001
+      - 菲律宾PH-T
+      - 新加坡-优化3
+      - 日本-优化3
+      - 日本-优化
+      - 柬埔寨KH-T
+      - 香港HKT-优化
+      - 新加坡-优化
+      - 香港Az-优化3
+      - 美国USSJ-T
+      - 卢森堡LUX-T
+      - 日本-优化2
+      - 英国-优化
+      - 美国USLA-T
+      - 新加坡-优化2
+      - 法国-优化
+      - 土耳其TR-T
+      - 美国D-优化
+      - 香港HKT-优化3
+      - 荷兰-优化
+      - 美国D-优化3
+      - 德国DE-T
+      - 墨西哥-优化1
+      - 香港Az-优化
+      - 波兰-优化
+      - 乌克兰-优化
+      - 印度-优化
+      - 澳大利亚-优化
+      - 香港HKT-优化2
+      - 俄罗斯RU-T
+      - 葡萄牙-优化3
+      - 葡萄牙-优化
+      - 哈萨克斯坦KZ-T
+      - 美国D-优化2
+      - 香港Az-优化2
+      - 加拿大-优化3
+      - 尼日利亚-优化
+      - 新加坡SG-T
+      - 香港HKT-T
+      - 日本JP-T
+      - 阿根廷AR-T
+      - 英国-优化3
+      - 南非-优化
+      - 瑞士-优化
+      - 加拿大-优化
+      - 荷兰-优化3
+      - 香港HGC-T
+      - 英国-优化2
+      - 波兰-优化2
+      - 美国LA-优化2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP日本001
-      - USA美国001
+      - 菲律宾PH-T
+      - 新加坡-优化3
+      - 日本-优化3
+      - 日本-优化
+      - 柬埔寨KH-T
+      - 香港HKT-优化
+      - 新加坡-优化
+      - 香港Az-优化3
+      - 美国USSJ-T
+      - 卢森堡LUX-T
+      - 日本-优化2
+      - 英国-优化
+      - 美国USLA-T
+      - 新加坡-优化2
+      - 法国-优化
+      - 土耳其TR-T
+      - 美国D-优化
+      - 香港HKT-优化3
+      - 荷兰-优化
+      - 美国D-优化3
+      - 德国DE-T
+      - 墨西哥-优化1
+      - 香港Az-优化
+      - 波兰-优化
+      - 乌克兰-优化
+      - 印度-优化
+      - 澳大利亚-优化
+      - 香港HKT-优化2
+      - 俄罗斯RU-T
+      - 葡萄牙-优化3
+      - 葡萄牙-优化
+      - 哈萨克斯坦KZ-T
+      - 美国D-优化2
+      - 香港Az-优化2
+      - 加拿大-优化3
+      - 尼日利亚-优化
+      - 新加坡SG-T
+      - 香港HKT-T
+      - 日本JP-T
+      - 阿根廷AR-T
+      - 英国-优化3
+      - 南非-优化
+      - 瑞士-优化
+      - 加拿大-优化
+      - 荷兰-优化3
+      - 香港HGC-T
+      - 英国-优化2
+      - 波兰-优化2
+      - 美国LA-优化2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP日本001
-      - USA美国001
+      - 菲律宾PH-T
+      - 新加坡-优化3
+      - 日本-优化3
+      - 日本-优化
+      - 柬埔寨KH-T
+      - 香港HKT-优化
+      - 新加坡-优化
+      - 香港Az-优化3
+      - 美国USSJ-T
+      - 卢森堡LUX-T
+      - 日本-优化2
+      - 英国-优化
+      - 美国USLA-T
+      - 新加坡-优化2
+      - 法国-优化
+      - 土耳其TR-T
+      - 美国D-优化
+      - 香港HKT-优化3
+      - 荷兰-优化
+      - 美国D-优化3
+      - 德国DE-T
+      - 墨西哥-优化1
+      - 香港Az-优化
+      - 波兰-优化
+      - 乌克兰-优化
+      - 印度-优化
+      - 澳大利亚-优化
+      - 香港HKT-优化2
+      - 俄罗斯RU-T
+      - 葡萄牙-优化3
+      - 葡萄牙-优化
+      - 哈萨克斯坦KZ-T
+      - 美国D-优化2
+      - 香港Az-优化2
+      - 加拿大-优化3
+      - 尼日利亚-优化
+      - 新加坡SG-T
+      - 香港HKT-T
+      - 日本JP-T
+      - 阿根廷AR-T
+      - 英国-优化3
+      - 南非-优化
+      - 瑞士-优化
+      - 加拿大-优化
+      - 荷兰-优化3
+      - 香港HGC-T
+      - 英国-优化2
+      - 波兰-优化2
+      - 美国LA-优化2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +476,55 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP日本001
-      - USA美国001
+      - 菲律宾PH-T
+      - 新加坡-优化3
+      - 日本-优化3
+      - 日本-优化
+      - 柬埔寨KH-T
+      - 香港HKT-优化
+      - 新加坡-优化
+      - 香港Az-优化3
+      - 美国USSJ-T
+      - 卢森堡LUX-T
+      - 日本-优化2
+      - 英国-优化
+      - 美国USLA-T
+      - 新加坡-优化2
+      - 法国-优化
+      - 土耳其TR-T
+      - 美国D-优化
+      - 香港HKT-优化3
+      - 荷兰-优化
+      - 美国D-优化3
+      - 德国DE-T
+      - 墨西哥-优化1
+      - 香港Az-优化
+      - 波兰-优化
+      - 乌克兰-优化
+      - 印度-优化
+      - 澳大利亚-优化
+      - 香港HKT-优化2
+      - 俄罗斯RU-T
+      - 葡萄牙-优化3
+      - 葡萄牙-优化
+      - 哈萨克斯坦KZ-T
+      - 美国D-优化2
+      - 香港Az-优化2
+      - 加拿大-优化3
+      - 尼日利亚-优化
+      - 新加坡SG-T
+      - 香港HKT-T
+      - 日本JP-T
+      - 阿根廷AR-T
+      - 英国-优化3
+      - 南非-优化
+      - 瑞士-优化
+      - 加拿大-优化
+      - 荷兰-优化3
+      - 香港HGC-T
+      - 英国-优化2
+      - 波兰-优化2
+      - 美国LA-优化2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
