@@ -5,87 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港=tg频道:@bpjzx2=2, server: 183.232.141.121, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 香港=tg频道:@bpjzx2=28, server: 183.232.141.119, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 香港=tg频道:@bpjzx2=6, server: 183.232.141.107, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 香港=tg频道:@bpjzx2=7, server: 119.237.195.230, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 香港=tg频道:@bpjzx2=34, server: 116.162.120.33, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 香港=tg频道:@bpjzx2=30, server: 223.167.159.34, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 西雅图=tg频道:@bpjzx2=19, server: 223.166.145.12, port: 569, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 西雅图=tg频道:@bpjzx2=20, server: 223.166.145.12, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 西雅图=tg频道:@bpjzx2=21, server: 223.166.145.12, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 西雅图=tg频道:@bpjzx2=17, server: 223.166.145.12, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 西雅图=tg频道:@bpjzx2=18, server: 223.166.145.12, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 香港=tg频道:@bpjzx2=14, server: 116.162.120.24, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 韩国=tg频道:@bpjzx2=1, server: 183.232.141.120, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 韩国=tg频道:@bpjzx2=26, server: 183.232.141.120, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 香港=tg频道:@bpjzx2=11, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
-  - {name: 香港=tg频道:@bpjzx2=4, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: "", udp: true}
+  - {name: 美国 | Trojan | B | 0.8x | 黃金, server: azhj001.xibai6.top, port: 20715, type: trojan, password: e039da7a-6b13-352f-a476-9f72985b76ac, sni: azhj001.xibai6.top, skip-cert-verify: true, udp: true}
+  - {name: 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |, server: azhj001.xibai6.top, port: 20716, type: trojan, password: e039da7a-6b13-352f-a476-9f72985b76ac, sni: azhj001.xibai6.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港=tg频道:@bpjzx2=2
-      - 香港=tg频道:@bpjzx2=28
-      - 香港=tg频道:@bpjzx2=6
-      - 香港=tg频道:@bpjzx2=7
-      - 香港=tg频道:@bpjzx2=34
-      - 香港=tg频道:@bpjzx2=30
-      - 西雅图=tg频道:@bpjzx2=19
-      - 西雅图=tg频道:@bpjzx2=20
-      - 西雅图=tg频道:@bpjzx2=21
-      - 西雅图=tg频道:@bpjzx2=17
-      - 西雅图=tg频道:@bpjzx2=18
-      - 香港=tg频道:@bpjzx2=14
-      - 韩国=tg频道:@bpjzx2=1
-      - 韩国=tg频道:@bpjzx2=26
-      - 香港=tg频道:@bpjzx2=11
-      - 香港=tg频道:@bpjzx2=4
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港=tg频道:@bpjzx2=2
-      - 香港=tg频道:@bpjzx2=28
-      - 香港=tg频道:@bpjzx2=6
-      - 香港=tg频道:@bpjzx2=7
-      - 香港=tg频道:@bpjzx2=34
-      - 香港=tg频道:@bpjzx2=30
-      - 西雅图=tg频道:@bpjzx2=19
-      - 西雅图=tg频道:@bpjzx2=20
-      - 西雅图=tg频道:@bpjzx2=21
-      - 西雅图=tg频道:@bpjzx2=17
-      - 西雅图=tg频道:@bpjzx2=18
-      - 香港=tg频道:@bpjzx2=14
-      - 韩国=tg频道:@bpjzx2=1
-      - 韩国=tg频道:@bpjzx2=26
-      - 香港=tg频道:@bpjzx2=11
-      - 香港=tg频道:@bpjzx2=4
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港=tg频道:@bpjzx2=2
-      - 香港=tg频道:@bpjzx2=28
-      - 香港=tg频道:@bpjzx2=6
-      - 香港=tg频道:@bpjzx2=7
-      - 香港=tg频道:@bpjzx2=34
-      - 香港=tg频道:@bpjzx2=30
-      - 西雅图=tg频道:@bpjzx2=19
-      - 西雅图=tg频道:@bpjzx2=20
-      - 西雅图=tg频道:@bpjzx2=21
-      - 西雅图=tg频道:@bpjzx2=17
-      - 西雅图=tg频道:@bpjzx2=18
-      - 香港=tg频道:@bpjzx2=14
-      - 韩国=tg频道:@bpjzx2=1
-      - 韩国=tg频道:@bpjzx2=26
-      - 香港=tg频道:@bpjzx2=11
-      - 香港=tg频道:@bpjzx2=4
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -104,100 +48,35 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港=tg频道:@bpjzx2=2
-      - 香港=tg频道:@bpjzx2=28
-      - 香港=tg频道:@bpjzx2=6
-      - 香港=tg频道:@bpjzx2=7
-      - 香港=tg频道:@bpjzx2=34
-      - 香港=tg频道:@bpjzx2=30
-      - 西雅图=tg频道:@bpjzx2=19
-      - 西雅图=tg频道:@bpjzx2=20
-      - 西雅图=tg频道:@bpjzx2=21
-      - 西雅图=tg频道:@bpjzx2=17
-      - 西雅图=tg频道:@bpjzx2=18
-      - 香港=tg频道:@bpjzx2=14
-      - 韩国=tg频道:@bpjzx2=1
-      - 韩国=tg频道:@bpjzx2=26
-      - 香港=tg频道:@bpjzx2=11
-      - 香港=tg频道:@bpjzx2=4
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港=tg频道:@bpjzx2=2
-      - 香港=tg频道:@bpjzx2=28
-      - 香港=tg频道:@bpjzx2=6
-      - 香港=tg频道:@bpjzx2=7
-      - 香港=tg频道:@bpjzx2=34
-      - 香港=tg频道:@bpjzx2=30
-      - 香港=tg频道:@bpjzx2=14
-      - 香港=tg频道:@bpjzx2=11
-      - 香港=tg频道:@bpjzx2=4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港=tg频道:@bpjzx2=2
-      - 香港=tg频道:@bpjzx2=28
-      - 香港=tg频道:@bpjzx2=6
-      - 香港=tg频道:@bpjzx2=7
-      - 香港=tg频道:@bpjzx2=34
-      - 香港=tg频道:@bpjzx2=30
-      - 西雅图=tg频道:@bpjzx2=19
-      - 西雅图=tg频道:@bpjzx2=20
-      - 西雅图=tg频道:@bpjzx2=21
-      - 西雅图=tg频道:@bpjzx2=17
-      - 西雅图=tg频道:@bpjzx2=18
-      - 香港=tg频道:@bpjzx2=14
-      - 韩国=tg频道:@bpjzx2=1
-      - 韩国=tg频道:@bpjzx2=26
-      - 香港=tg频道:@bpjzx2=11
-      - 香港=tg频道:@bpjzx2=4
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港=tg频道:@bpjzx2=2
-      - 香港=tg频道:@bpjzx2=28
-      - 香港=tg频道:@bpjzx2=6
-      - 香港=tg频道:@bpjzx2=7
-      - 香港=tg频道:@bpjzx2=34
-      - 香港=tg频道:@bpjzx2=30
-      - 西雅图=tg频道:@bpjzx2=19
-      - 西雅图=tg频道:@bpjzx2=20
-      - 西雅图=tg频道:@bpjzx2=21
-      - 西雅图=tg频道:@bpjzx2=17
-      - 西雅图=tg频道:@bpjzx2=18
-      - 香港=tg频道:@bpjzx2=14
-      - 韩国=tg频道:@bpjzx2=1
-      - 韩国=tg频道:@bpjzx2=26
-      - 香港=tg频道:@bpjzx2=11
-      - 香港=tg频道:@bpjzx2=4
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港=tg频道:@bpjzx2=2
-      - 香港=tg频道:@bpjzx2=28
-      - 香港=tg频道:@bpjzx2=6
-      - 香港=tg频道:@bpjzx2=7
-      - 香港=tg频道:@bpjzx2=34
-      - 香港=tg频道:@bpjzx2=30
-      - 西雅图=tg频道:@bpjzx2=19
-      - 西雅图=tg频道:@bpjzx2=20
-      - 西雅图=tg频道:@bpjzx2=21
-      - 西雅图=tg频道:@bpjzx2=17
-      - 西雅图=tg频道:@bpjzx2=18
-      - 香港=tg频道:@bpjzx2=14
-      - 韩国=tg频道:@bpjzx2=1
-      - 韩国=tg频道:@bpjzx2=26
-      - 香港=tg频道:@bpjzx2=11
-      - 香港=tg频道:@bpjzx2=4
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -213,22 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港=tg频道:@bpjzx2=2
-      - 香港=tg频道:@bpjzx2=28
-      - 香港=tg频道:@bpjzx2=6
-      - 香港=tg频道:@bpjzx2=7
-      - 香港=tg频道:@bpjzx2=34
-      - 香港=tg频道:@bpjzx2=30
-      - 西雅图=tg频道:@bpjzx2=19
-      - 西雅图=tg频道:@bpjzx2=20
-      - 西雅图=tg频道:@bpjzx2=21
-      - 西雅图=tg频道:@bpjzx2=17
-      - 西雅图=tg频道:@bpjzx2=18
-      - 香港=tg频道:@bpjzx2=14
-      - 韩国=tg频道:@bpjzx2=1
-      - 韩国=tg频道:@bpjzx2=26
-      - 香港=tg频道:@bpjzx2=11
-      - 香港=tg频道:@bpjzx2=4
+      - 美国 | Trojan | B | 0.8x | 黃金
+      - 美国 |  Trojan | C | 0.8x | 黃金 | 官網 | ninihao.cc |
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
