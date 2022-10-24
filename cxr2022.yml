@@ -5,7 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港D1, server: yyds.pepsicola.cc, port: 50000, type: trojan, password: 59fc9e3d-fd6d-447e-9aaf-c405f7dc1ca9, sni: yyds.pepsicola.cc, skip-cert-verify: true, udp: true}
+  - {name: Asia 香港01 | 电信优化 | 解锁奈飞, server: 20.24.102.90, port: 48200, type: vmess, uuid: 12d3f3fa-bc75-3630-b376-a65a9f55a08c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tianmao, ws-headers: {Host: 20.24.102.90}, udp: true}
+  - {name: JP 日本, server: 20.187.119.10, port: 48000, type: vmess, uuid: 12d3f3fa-bc75-3630-b376-a65a9f55a08c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fm, ws-headers: {Host: 20.187.119.10}, udp: true}
+  - {name: SG 新加坡, server: 20.187.119.10, port: 48002, type: vmess, uuid: 12d3f3fa-bc75-3630-b376-a65a9f55a08c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fm, ws-headers: {Host: 20.187.119.10}, udp: true}
+  - {name: Asia 香港02 | 电信优化 | 解锁奈飞, server: 20.187.118.226, port: 15785, type: vmess, uuid: 12d3f3fa-bc75-3630-b376-a65a9f55a08c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /taobao, ws-headers: {Host: 20.187.118.226}, udp: true}
+  - {name: US 美国, server: 20.187.119.10, port: 48001, type: vmess, uuid: 12d3f3fa-bc75-3630-b376-a65a9f55a08c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fm, ws-headers: {Host: 20.187.119.10}, udp: true}
   - {name: 美国D1, server: 143.110.154.61, port: 50000, type: trojan, password: 59fc9e3d-fd6d-447e-9aaf-c405f7dc1ca9, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -13,14 +17,22 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港D1
+      - Asia 香港01 | 电信优化 | 解锁奈飞
+      - JP 日本
+      - SG 新加坡
+      - Asia 香港02 | 电信优化 | 解锁奈飞
+      - US 美国
       - 美国D1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港D1
+      - Asia 香港01 | 电信优化 | 解锁奈飞
+      - JP 日本
+      - SG 新加坡
+      - Asia 香港02 | 电信优化 | 解锁奈飞
+      - US 美国
       - 美国D1
   - name: 🎥 NETFLIX
     type: select
@@ -28,7 +40,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港D1
+      - Asia 香港01 | 电信优化 | 解锁奈飞
+      - JP 日本
+      - SG 新加坡
+      - Asia 香港02 | 电信优化 | 解锁奈飞
+      - US 美国
       - 美国D1
   - name: ⛔️ 广告拦截
     type: select
@@ -48,27 +64,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港D1
+      - Asia 香港01 | 电信优化 | 解锁奈飞
+      - JP 日本
+      - SG 新加坡
+      - Asia 香港02 | 电信优化 | 解锁奈飞
+      - US 美国
       - 美国D1
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港D1
+      - Asia 香港01 | 电信优化 | 解锁奈飞
+      - Asia 香港02 | 电信优化 | 解锁奈飞
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港D1
+      - Asia 香港01 | 电信优化 | 解锁奈飞
+      - JP 日本
+      - SG 新加坡
+      - Asia 香港02 | 电信优化 | 解锁奈飞
+      - US 美国
       - 美国D1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港D1
+      - Asia 香港01 | 电信优化 | 解锁奈飞
+      - JP 日本
+      - SG 新加坡
+      - Asia 香港02 | 电信优化 | 解锁奈飞
+      - US 美国
       - 美国D1
   - name: 🍎 苹果服务
     type: select
@@ -76,7 +105,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港D1
+      - Asia 香港01 | 电信优化 | 解锁奈飞
+      - JP 日本
+      - SG 新加坡
+      - Asia 香港02 | 电信优化 | 解锁奈飞
+      - US 美国
       - 美国D1
   - name: 🎯 全球直连
     type: select
@@ -93,7 +126,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港D1
+      - Asia 香港01 | 电信优化 | 解锁奈飞
+      - JP 日本
+      - SG 新加坡
+      - Asia 香港02 | 电信优化 | 解锁奈飞
+      - US 美国
       - 美国D1
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
