@@ -5,31 +5,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TG频道:@kxswa|Tykyo🌅, server: tykyo.alisa.buzz, port: 61111, type: vmess, uuid: 660a139f-2602-4e9c-9b81-32a297a8d1e1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|HongKong🚤, server: hk.alisa.buzz, port: 80, type: vmess, uuid: 660a139f-2602-4e9c-9b81-32a297a8d1e1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 80丨aws日本丨1Gbps, server: awsjp.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: CF丨香港3丨不免流, server: myhk3.brucean.cn, port: 443, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /1, ws-headers: {Host: myhk3.brucean.cn}, udp: true}
+  - {name: 80丨aws新加坡丨1Gbps, server: awssp.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 80丨aws韩国丨1Gbps, server: awskr.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 80丨aws韩国2丨1Gbps, server: awskr2.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: CF丨韩国丨不免流, server: mykr.brucean.cn, port: 443, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mykr.brucean.cn}, udp: true}
+  - {name: 80丨aws香港2丨1Gbps, server: awshk2.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 80丨新加坡2丨500Mbps, server: zfsp1.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: CF丨日本丨不免流, server: myjp.brucean.cn, port: 443, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: myjp.brucean.cn}, udp: true}
+  - {name: 80丨aws日本2丨1Gbps, server: awsjp2.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: CF丨加拿大丨不免流, server: myca.brucean.cn, port: 443, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: myca.brucean.cn}, udp: true}
+  - {name: 80丨aws印度丨1Gbps, server: awsyd.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 80丨台湾丨1Gbps, server: tw.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 80丨aws香港丨1Gbps, server: awshk.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 80丨美国洛杉矶丨, server: usa.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 80丨日本丨50Mbps丨2, server: jp4.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 80丨aws悉尼丨1Gbps, server: awsxn.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 80丨韩国丨500Mbps丨2, server: kr1.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 80丨美国洛杉矶2丨, server: dpusa.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 80丨韩国1Gbps, server: kr.mayiyun.shop, port: 80, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道:@kxswa|Tykyo🌅
-      - TG频道:@kxswa|HongKong🚤
+      - 80丨aws日本丨1Gbps
+      - CF丨香港3丨不免流
+      - 80丨aws新加坡丨1Gbps
+      - 80丨aws韩国丨1Gbps
+      - 80丨aws韩国2丨1Gbps
+      - CF丨韩国丨不免流
+      - 80丨aws香港2丨1Gbps
+      - 80丨新加坡2丨500Mbps
+      - CF丨日本丨不免流
+      - 80丨aws日本2丨1Gbps
+      - CF丨加拿大丨不免流
+      - 80丨aws印度丨1Gbps
+      - 80丨台湾丨1Gbps
+      - 80丨aws香港丨1Gbps
+      - 80丨美国洛杉矶丨
+      - 80丨日本丨50Mbps丨2
+      - 80丨aws悉尼丨1Gbps
+      - 80丨韩国丨500Mbps丨2
+      - 80丨美国洛杉矶2丨
+      - 80丨韩国1Gbps
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TG频道:@kxswa|Tykyo🌅
-      - TG频道:@kxswa|HongKong🚤
+      - 80丨aws日本丨1Gbps
+      - CF丨香港3丨不免流
+      - 80丨aws新加坡丨1Gbps
+      - 80丨aws韩国丨1Gbps
+      - 80丨aws韩国2丨1Gbps
+      - CF丨韩国丨不免流
+      - 80丨aws香港2丨1Gbps
+      - 80丨新加坡2丨500Mbps
+      - CF丨日本丨不免流
+      - 80丨aws日本2丨1Gbps
+      - CF丨加拿大丨不免流
+      - 80丨aws印度丨1Gbps
+      - 80丨台湾丨1Gbps
+      - 80丨aws香港丨1Gbps
+      - 80丨美国洛杉矶丨
+      - 80丨日本丨50Mbps丨2
+      - 80丨aws悉尼丨1Gbps
+      - 80丨韩国丨500Mbps丨2
+      - 80丨美国洛杉矶2丨
+      - 80丨韩国1Gbps
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道:@kxswa|Tykyo🌅
-      - TG频道:@kxswa|HongKong🚤
+      - 80丨aws日本丨1Gbps
+      - CF丨香港3丨不免流
+      - 80丨aws新加坡丨1Gbps
+      - 80丨aws韩国丨1Gbps
+      - 80丨aws韩国2丨1Gbps
+      - CF丨韩国丨不免流
+      - 80丨aws香港2丨1Gbps
+      - 80丨新加坡2丨500Mbps
+      - CF丨日本丨不免流
+      - 80丨aws日本2丨1Gbps
+      - CF丨加拿大丨不免流
+      - 80丨aws印度丨1Gbps
+      - 80丨台湾丨1Gbps
+      - 80丨aws香港丨1Gbps
+      - 80丨美国洛杉矶丨
+      - 80丨日本丨50Mbps丨2
+      - 80丨aws悉尼丨1Gbps
+      - 80丨韩国丨500Mbps丨2
+      - 80丨美国洛杉矶2丨
+      - 80丨韩国1Gbps
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,35 +120,111 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道:@kxswa|Tykyo🌅
-      - TG频道:@kxswa|HongKong🚤
+      - 80丨aws日本丨1Gbps
+      - CF丨香港3丨不免流
+      - 80丨aws新加坡丨1Gbps
+      - 80丨aws韩国丨1Gbps
+      - 80丨aws韩国2丨1Gbps
+      - CF丨韩国丨不免流
+      - 80丨aws香港2丨1Gbps
+      - 80丨新加坡2丨500Mbps
+      - CF丨日本丨不免流
+      - 80丨aws日本2丨1Gbps
+      - CF丨加拿大丨不免流
+      - 80丨aws印度丨1Gbps
+      - 80丨台湾丨1Gbps
+      - 80丨aws香港丨1Gbps
+      - 80丨美国洛杉矶丨
+      - 80丨日本丨50Mbps丨2
+      - 80丨aws悉尼丨1Gbps
+      - 80丨韩国丨500Mbps丨2
+      - 80丨美国洛杉矶2丨
+      - 80丨韩国1Gbps
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - CF丨香港3丨不免流
+      - 80丨aws香港2丨1Gbps
+      - 80丨台湾丨1Gbps
+      - 80丨aws香港丨1Gbps
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TG频道:@kxswa|Tykyo🌅
-      - TG频道:@kxswa|HongKong🚤
+      - 80丨aws日本丨1Gbps
+      - CF丨香港3丨不免流
+      - 80丨aws新加坡丨1Gbps
+      - 80丨aws韩国丨1Gbps
+      - 80丨aws韩国2丨1Gbps
+      - CF丨韩国丨不免流
+      - 80丨aws香港2丨1Gbps
+      - 80丨新加坡2丨500Mbps
+      - CF丨日本丨不免流
+      - 80丨aws日本2丨1Gbps
+      - CF丨加拿大丨不免流
+      - 80丨aws印度丨1Gbps
+      - 80丨台湾丨1Gbps
+      - 80丨aws香港丨1Gbps
+      - 80丨美国洛杉矶丨
+      - 80丨日本丨50Mbps丨2
+      - 80丨aws悉尼丨1Gbps
+      - 80丨韩国丨500Mbps丨2
+      - 80丨美国洛杉矶2丨
+      - 80丨韩国1Gbps
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TG频道:@kxswa|Tykyo🌅
-      - TG频道:@kxswa|HongKong🚤
+      - 80丨aws日本丨1Gbps
+      - CF丨香港3丨不免流
+      - 80丨aws新加坡丨1Gbps
+      - 80丨aws韩国丨1Gbps
+      - 80丨aws韩国2丨1Gbps
+      - CF丨韩国丨不免流
+      - 80丨aws香港2丨1Gbps
+      - 80丨新加坡2丨500Mbps
+      - CF丨日本丨不免流
+      - 80丨aws日本2丨1Gbps
+      - CF丨加拿大丨不免流
+      - 80丨aws印度丨1Gbps
+      - 80丨台湾丨1Gbps
+      - 80丨aws香港丨1Gbps
+      - 80丨美国洛杉矶丨
+      - 80丨日本丨50Mbps丨2
+      - 80丨aws悉尼丨1Gbps
+      - 80丨韩国丨500Mbps丨2
+      - 80丨美国洛杉矶2丨
+      - 80丨韩国1Gbps
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道:@kxswa|Tykyo🌅
-      - TG频道:@kxswa|HongKong🚤
+      - 80丨aws日本丨1Gbps
+      - CF丨香港3丨不免流
+      - 80丨aws新加坡丨1Gbps
+      - 80丨aws韩国丨1Gbps
+      - 80丨aws韩国2丨1Gbps
+      - CF丨韩国丨不免流
+      - 80丨aws香港2丨1Gbps
+      - 80丨新加坡2丨500Mbps
+      - CF丨日本丨不免流
+      - 80丨aws日本2丨1Gbps
+      - CF丨加拿大丨不免流
+      - 80丨aws印度丨1Gbps
+      - 80丨台湾丨1Gbps
+      - 80丨aws香港丨1Gbps
+      - 80丨美国洛杉矶丨
+      - 80丨日本丨50Mbps丨2
+      - 80丨aws悉尼丨1Gbps
+      - 80丨韩国丨500Mbps丨2
+      - 80丨美国洛杉矶2丨
+      - 80丨韩国1Gbps
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +240,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道:@kxswa|Tykyo🌅
-      - TG频道:@kxswa|HongKong🚤
+      - 80丨aws日本丨1Gbps
+      - CF丨香港3丨不免流
+      - 80丨aws新加坡丨1Gbps
+      - 80丨aws韩国丨1Gbps
+      - 80丨aws韩国2丨1Gbps
+      - CF丨韩国丨不免流
+      - 80丨aws香港2丨1Gbps
+      - 80丨新加坡2丨500Mbps
+      - CF丨日本丨不免流
+      - 80丨aws日本2丨1Gbps
+      - CF丨加拿大丨不免流
+      - 80丨aws印度丨1Gbps
+      - 80丨台湾丨1Gbps
+      - 80丨aws香港丨1Gbps
+      - 80丨美国洛杉矶丨
+      - 80丨日本丨50Mbps丨2
+      - 80丨aws悉尼丨1Gbps
+      - 80丨韩国丨500Mbps丨2
+      - 80丨美国洛杉矶2丨
+      - 80丨韩国1Gbps
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
