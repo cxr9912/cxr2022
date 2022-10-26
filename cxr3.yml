@@ -5,71 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Tr, server: 36.139.9.191, port: 46531, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK, server: 223.252.173.84, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK 2, server: 47.242.239.113, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Tr 2, server: 36.139.9.191, port: 46740, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Tr 3, server: 36.139.9.191, port: 46530, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US, server: 143.198.231.172, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP, server: 167.179.98.62, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 2, server: 165.3.122.163, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: MX, server: 216.238.79.208, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR, server: 158.247.239.243, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 3, server: 149.28.123.123, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CA, server: 155.138.140.189, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 鬼子, server: 18.183.227.120, port: 34100, type: ss, cipher: aes-256-gcm, password: cVFVNW9RMVNxd0xtbUxaRG5EY1kwcGZRQmhJaXNPTEVnWUlTWHlxR2M5RDc3d09idExENWZBR3ZCZFl0TGE4Ng==, udp: true}
+  - {name: 德国-江移 | 解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/de, ws-headers: {Host: i0.hdslb.com}, udp: true}
+  - {name: 台湾Hinet | 解锁流媒体, server: download1tw.windowsupdate.lol, port: 443, type: trojan, password: 8498bfc8-c030-40df-80e8-69f9e06fe16a, sni: download1tw.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 美国圣何塞-江移 | 解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/us2, ws-headers: {Host: www.189.cn}, udp: true}
+  - {name: 美国西雅图-江移 | 解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/us3, ws-headers: {Host: www.189.cn}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Tr
-      - HK
-      - HK 2
-      - Tr 2
-      - Tr 3
-      - US
-      - JP
-      - US 2
-      - MX
-      - KR
-      - US 3
-      - CA
+      - 鬼子
+      - 德国-江移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Tr
-      - HK
-      - HK 2
-      - Tr 2
-      - Tr 3
-      - US
-      - JP
-      - US 2
-      - MX
-      - KR
-      - US 3
-      - CA
+      - 鬼子
+      - 德国-江移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Tr
-      - HK
-      - HK 2
-      - Tr 2
-      - Tr 3
-      - US
-      - JP
-      - US 2
-      - MX
-      - KR
-      - US 3
-      - CA
+      - 鬼子
+      - 德国-江移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,75 +60,48 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Tr
-      - HK
-      - HK 2
-      - Tr 2
-      - Tr 3
-      - US
-      - JP
-      - US 2
-      - MX
-      - KR
-      - US 3
-      - CA
+      - 鬼子
+      - 德国-江移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾Hinet | 解锁流媒体
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Tr
-      - HK
-      - HK 2
-      - Tr 2
-      - Tr 3
-      - US
-      - JP
-      - US 2
-      - MX
-      - KR
-      - US 3
-      - CA
+      - 鬼子
+      - 德国-江移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Tr
-      - HK
-      - HK 2
-      - Tr 2
-      - Tr 3
-      - US
-      - JP
-      - US 2
-      - MX
-      - KR
-      - US 3
-      - CA
+      - 鬼子
+      - 德国-江移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Tr
-      - HK
-      - HK 2
-      - Tr 2
-      - Tr 3
-      - US
-      - JP
-      - US 2
-      - MX
-      - KR
-      - US 3
-      - CA
+      - 鬼子
+      - 德国-江移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -172,18 +117,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Tr
-      - HK
-      - HK 2
-      - Tr 2
-      - Tr 3
-      - US
-      - JP
-      - US 2
-      - MX
-      - KR
-      - US 3
-      - CA
+      - 鬼子
+      - 德国-江移 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
