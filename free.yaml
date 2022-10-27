@@ -5,163 +5,187 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "香港01{优化1|V2ray}", server: hk1.awslcn.cc, port: 25242, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.awslcn.cc}, udp: true}
-  - {name: "香港05{优化1|V2ray}", server: hk1.awslcn.cc, port: 25244, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.awslcn.cc}, udp: true}
-  - {name: "台湾①{移动|V2ray}", server: cm.awslcn.cc, port: 25232, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
-  - {name: "马来01{移动|V2ray}", server: cm.awslcn.cc, port: 25228, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
-  - {name: "日本04{优化2|V2ray}", server: jp2.awslcn.cc, port: 25220, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp2.awslcn.cc}, udp: true}
-  - {name: "日本03{优化1|V2ray}", server: jp1.awslcn.cc, port: 25220, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp1.awslcn.cc}, udp: true}
-  - {name: "香港02{优化2|V2ray}", server: hk2.awslcn.cc, port: 25242, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk2.awslcn.cc}, udp: true}
-  - {name: "香港07{优化1|V2ray}", server: hk1.awslcn.cc, port: 25251, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.awslcn.cc}, udp: true}
-  - {name: "台湾01{移动|V2ray}", server: cm.awslcn.cc, port: 25233, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
-  - {name: "香港03{优化1|V2ray}", server: hk1.awslcn.cc, port: 25248, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.awslcn.cc}, udp: true}
-  - {name: "韩国02{联通|V2ray}", server: cu.awslcn.cc, port: 25218, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
-  - {name: "新加坡06{优化2|V2ray}", server: sg2.awslcn.cc, port: 25246, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg2.awslcn.cc}, udp: true}
-  - {name: "印度02{联通|V2ray}", server: cu.awslcn.cc, port: 25216, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
-  - {name: "新加坡04{优化1|V2ray}", server: sg1.awslcn.cc, port: 25243, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.awslcn.cc}, udp: true}
-  - {name: "新加坡05{优化2|V2ray}", server: sg2.awslcn.cc, port: 25221, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg2.awslcn.cc}, udp: true}
-  - {name: "台湾02{联通|V2ray}", server: cu.awslcn.cc, port: 25233, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
-  - {name: "新加坡03{优化2|V2ray}", server: sg2.awslcn.cc, port: 25245, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg2.awslcn.cc}, udp: true}
-  - {name: "印度01{移动|V2ray}", server: cm.awslcn.cc, port: 25216, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
-  - {name: 新加坡-Trojan, server: sg01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: sg01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: 日本-Trojan, server: jp01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: jp01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: "新加坡02{优化1|V2ray}", server: sg1.awslcn.cc, port: 25245, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.awslcn.cc}, udp: true}
-  - {name: 印度-Trojan, server: in01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: in01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: 马来-Trojan, server: my01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: my01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: "美国01{优化1|V2ray}", server: us1.awslcn.cc, port: 25239, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us1.awslcn.cc}, udp: true}
-  - {name: "德国02{联通|V2ray}", server: cu.awslcn.cc, port: 25241, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
-  - {name: 德国-Trojan, server: de01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: de01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯-Trojan, server: ru01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: ru01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: 英国-Trojan, server: uk01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: uk01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: "英国{联通|V2ray}", server: cu.awslcn.cc, port: 25240, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
-  - {name: "德国01{移动|V2ray}", server: cm.awslcn.cc, port: 25241, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cc}, udp: true}
-  - {name: "美国03{优化1|V2ray}", server: us1.awslcn.cc, port: 25238, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us1.awslcn.cc}, udp: true}
-  - {name: "美国04{优化2|V2ray}", server: us2.awslcn.cc, port: 25238, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us2.awslcn.cc}, udp: true}
-  - {name: "马来02{联通|V2ray}", server: cu.awslcn.cc, port: 25228, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
-  - {name: 韩国-Trojan, server: sk01.awcloud.top, port: 443, type: trojan, password: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, sni: sk01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: "台湾②{联通|V2ray}", server: cu.awslcn.cc, port: 25232, type: vmess, uuid: 0f253dfd-ab4c-414e-84c0-cb0c5a279899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cc}, udp: true}
+  - {name: Vietnam | 01, server: cos-ap-guangzhou.westdatacloud.top, port: 20069, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Singapore | 01, server: cos-ap-guangzhou.westdatacloud.top, port: 20021, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 07, server: cos-ap-guangzhou.westdatacloud.top, port: 20017, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 06, server: cos-ap-guangzhou.westdatacloud.top, port: 20016, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Korea | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20065, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 08, server: cos-ap-guangzhou.westdatacloud.top, port: 20018, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Singapore | 02, server: cos-ap-guangzhou.westdatacloud.top, port: 20022, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 04, server: cos-ap-guangzhou.westdatacloud.top, port: 20014, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Singapore | 06, server: cos-ap-guangzhou.westdatacloud.top, port: 20026, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 05, server: cos-ap-guangzhou.westdatacloud.top, port: 20015, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Singapore | 04, server: cos-ap-guangzhou.westdatacloud.top, port: 20024, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 03, server: cos-ap-guangzhou.westdatacloud.top, port: 20013, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 01, server: cos-ap-guangzhou.westdatacloud.top, port: 20011, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Hong Kong | 02, server: cos-ap-guangzhou.westdatacloud.top, port: 20002, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Hong Kong | 05, server: cos-ap-guangzhou.westdatacloud.top, port: 20005, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Singapore | 07, server: cos-ap-guangzhou.westdatacloud.top, port: 20027, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Spain | 01, server: cos-ap-beijing.westdatacloud.top, port: 20059, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: "Traffic: 123.71 GB | 200 GB", server: cos-ap-guangzhou.westdatacloud.top, port: 20001, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Argentina | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20062, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Brazil | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20063, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Japan | 02, server: oss-cn-shanghai.westdatacloud.top, port: 20032, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Japan | 03, server: oss-cn-shanghai.westdatacloud.top, port: 20033, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Japan | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20031, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Canada | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20051, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: United States | 08, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Hong Kong | 07, server: cos-ap-guangzhou.westdatacloud.top, port: 20007, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Japan | 04, server: oss-cn-shanghai.westdatacloud.top, port: 20034, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Japan | 08, server: oss-cn-shanghai.westdatacloud.top, port: 20038, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Japan | 06, server: oss-cn-shanghai.westdatacloud.top, port: 20036, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Japan | 07, server: oss-cn-shanghai.westdatacloud.top, port: 20037, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: United States | 07, server: oss-cn-shanghai.westdatacloud.top, port: 20047, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Japan | 05, server: oss-cn-shanghai.westdatacloud.top, port: 20035, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: United States | 05, server: oss-cn-shanghai.westdatacloud.top, port: 20045, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: United States | 06, server: oss-cn-shanghai.westdatacloud.top, port: 20046, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: United States | 04, server: oss-cn-shanghai.westdatacloud.top, port: 20044, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: United States | 02, server: oss-cn-shanghai.westdatacloud.top, port: 20042, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: United States | 03, server: oss-cn-shanghai.westdatacloud.top, port: 20043, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 02, server: cos-ap-guangzhou.westdatacloud.top, port: 20012, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: United States | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20041, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Chile | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20064, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Singapore | 05, server: cos-ap-guangzhou.westdatacloud.top, port: 20025, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01{优化1|V2ray}
-      - 香港05{优化1|V2ray}
-      - 台湾①{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 日本04{优化2|V2ray}
-      - 日本03{优化1|V2ray}
-      - 香港02{优化2|V2ray}
-      - 香港07{优化1|V2ray}
-      - 台湾01{移动|V2ray}
-      - 香港03{优化1|V2ray}
-      - 韩国02{联通|V2ray}
-      - 新加坡06{优化2|V2ray}
-      - 印度02{联通|V2ray}
-      - 新加坡04{优化1|V2ray}
-      - 新加坡05{优化2|V2ray}
-      - 台湾02{联通|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 印度01{移动|V2ray}
-      - 新加坡-Trojan
-      - 日本-Trojan
-      - 新加坡02{优化1|V2ray}
-      - 印度-Trojan
-      - 马来-Trojan
-      - 美国01{优化1|V2ray}
-      - 德国02{联通|V2ray}
-      - 德国-Trojan
-      - 俄罗斯-Trojan
-      - 英国-Trojan
-      - 英国{联通|V2ray}
-      - 德国01{移动|V2ray}
-      - 美国03{优化1|V2ray}
-      - 美国04{优化2|V2ray}
-      - 马来02{联通|V2ray}
-      - 韩国-Trojan
-      - 台湾②{联通|V2ray}
+      - Vietnam | 01
+      - Singapore | 01
+      - Taiwan | 07
+      - Taiwan | 06
+      - Korea | 01
+      - Taiwan | 08
+      - Singapore | 02
+      - Taiwan | 04
+      - Singapore | 06
+      - Taiwan | 05
+      - Singapore | 04
+      - Taiwan | 03
+      - Taiwan | 01
+      - Hong Kong | 02
+      - Hong Kong | 05
+      - Singapore | 07
+      - Spain | 01
+      - "Traffic: 123.71 GB | 200 GB"
+      - Argentina | 01
+      - Brazil | 01
+      - Japan | 02
+      - Japan | 03
+      - Japan | 01
+      - Canada | 01
+      - United States | 08
+      - Hong Kong | 07
+      - Japan | 04
+      - Japan | 08
+      - Japan | 06
+      - Japan | 07
+      - United States | 07
+      - Japan | 05
+      - United States | 05
+      - United States | 06
+      - United States | 04
+      - United States | 02
+      - United States | 03
+      - Taiwan | 02
+      - United States | 01
+      - Chile | 01
+      - Singapore | 05
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港01{优化1|V2ray}
-      - 香港05{优化1|V2ray}
-      - 台湾①{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 日本04{优化2|V2ray}
-      - 日本03{优化1|V2ray}
-      - 香港02{优化2|V2ray}
-      - 香港07{优化1|V2ray}
-      - 台湾01{移动|V2ray}
-      - 香港03{优化1|V2ray}
-      - 韩国02{联通|V2ray}
-      - 新加坡06{优化2|V2ray}
-      - 印度02{联通|V2ray}
-      - 新加坡04{优化1|V2ray}
-      - 新加坡05{优化2|V2ray}
-      - 台湾02{联通|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 印度01{移动|V2ray}
-      - 新加坡-Trojan
-      - 日本-Trojan
-      - 新加坡02{优化1|V2ray}
-      - 印度-Trojan
-      - 马来-Trojan
-      - 美国01{优化1|V2ray}
-      - 德国02{联通|V2ray}
-      - 德国-Trojan
-      - 俄罗斯-Trojan
-      - 英国-Trojan
-      - 英国{联通|V2ray}
-      - 德国01{移动|V2ray}
-      - 美国03{优化1|V2ray}
-      - 美国04{优化2|V2ray}
-      - 马来02{联通|V2ray}
-      - 韩国-Trojan
-      - 台湾②{联通|V2ray}
+      - Vietnam | 01
+      - Singapore | 01
+      - Taiwan | 07
+      - Taiwan | 06
+      - Korea | 01
+      - Taiwan | 08
+      - Singapore | 02
+      - Taiwan | 04
+      - Singapore | 06
+      - Taiwan | 05
+      - Singapore | 04
+      - Taiwan | 03
+      - Taiwan | 01
+      - Hong Kong | 02
+      - Hong Kong | 05
+      - Singapore | 07
+      - Spain | 01
+      - "Traffic: 123.71 GB | 200 GB"
+      - Argentina | 01
+      - Brazil | 01
+      - Japan | 02
+      - Japan | 03
+      - Japan | 01
+      - Canada | 01
+      - United States | 08
+      - Hong Kong | 07
+      - Japan | 04
+      - Japan | 08
+      - Japan | 06
+      - Japan | 07
+      - United States | 07
+      - Japan | 05
+      - United States | 05
+      - United States | 06
+      - United States | 04
+      - United States | 02
+      - United States | 03
+      - Taiwan | 02
+      - United States | 01
+      - Chile | 01
+      - Singapore | 05
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01{优化1|V2ray}
-      - 香港05{优化1|V2ray}
-      - 台湾①{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 日本04{优化2|V2ray}
-      - 日本03{优化1|V2ray}
-      - 香港02{优化2|V2ray}
-      - 香港07{优化1|V2ray}
-      - 台湾01{移动|V2ray}
-      - 香港03{优化1|V2ray}
-      - 韩国02{联通|V2ray}
-      - 新加坡06{优化2|V2ray}
-      - 印度02{联通|V2ray}
-      - 新加坡04{优化1|V2ray}
-      - 新加坡05{优化2|V2ray}
-      - 台湾02{联通|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 印度01{移动|V2ray}
-      - 新加坡-Trojan
-      - 日本-Trojan
-      - 新加坡02{优化1|V2ray}
-      - 印度-Trojan
-      - 马来-Trojan
-      - 美国01{优化1|V2ray}
-      - 德国02{联通|V2ray}
-      - 德国-Trojan
-      - 俄罗斯-Trojan
-      - 英国-Trojan
-      - 英国{联通|V2ray}
-      - 德国01{移动|V2ray}
-      - 美国03{优化1|V2ray}
-      - 美国04{优化2|V2ray}
-      - 马来02{联通|V2ray}
-      - 韩国-Trojan
-      - 台湾②{联通|V2ray}
+      - Vietnam | 01
+      - Singapore | 01
+      - Taiwan | 07
+      - Taiwan | 06
+      - Korea | 01
+      - Taiwan | 08
+      - Singapore | 02
+      - Taiwan | 04
+      - Singapore | 06
+      - Taiwan | 05
+      - Singapore | 04
+      - Taiwan | 03
+      - Taiwan | 01
+      - Hong Kong | 02
+      - Hong Kong | 05
+      - Singapore | 07
+      - Spain | 01
+      - "Traffic: 123.71 GB | 200 GB"
+      - Argentina | 01
+      - Brazil | 01
+      - Japan | 02
+      - Japan | 03
+      - Japan | 01
+      - Canada | 01
+      - United States | 08
+      - Hong Kong | 07
+      - Japan | 04
+      - Japan | 08
+      - Japan | 06
+      - Japan | 07
+      - United States | 07
+      - Japan | 05
+      - United States | 05
+      - United States | 06
+      - United States | 04
+      - United States | 02
+      - United States | 03
+      - Taiwan | 02
+      - United States | 01
+      - Chile | 01
+      - Singapore | 05
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -180,176 +204,191 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01{优化1|V2ray}
-      - 香港05{优化1|V2ray}
-      - 台湾①{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 日本04{优化2|V2ray}
-      - 日本03{优化1|V2ray}
-      - 香港02{优化2|V2ray}
-      - 香港07{优化1|V2ray}
-      - 台湾01{移动|V2ray}
-      - 香港03{优化1|V2ray}
-      - 韩国02{联通|V2ray}
-      - 新加坡06{优化2|V2ray}
-      - 印度02{联通|V2ray}
-      - 新加坡04{优化1|V2ray}
-      - 新加坡05{优化2|V2ray}
-      - 台湾02{联通|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 印度01{移动|V2ray}
-      - 新加坡-Trojan
-      - 日本-Trojan
-      - 新加坡02{优化1|V2ray}
-      - 印度-Trojan
-      - 马来-Trojan
-      - 美国01{优化1|V2ray}
-      - 德国02{联通|V2ray}
-      - 德国-Trojan
-      - 俄罗斯-Trojan
-      - 英国-Trojan
-      - 英国{联通|V2ray}
-      - 德国01{移动|V2ray}
-      - 美国03{优化1|V2ray}
-      - 美国04{优化2|V2ray}
-      - 马来02{联通|V2ray}
-      - 韩国-Trojan
-      - 台湾②{联通|V2ray}
+      - Vietnam | 01
+      - Singapore | 01
+      - Taiwan | 07
+      - Taiwan | 06
+      - Korea | 01
+      - Taiwan | 08
+      - Singapore | 02
+      - Taiwan | 04
+      - Singapore | 06
+      - Taiwan | 05
+      - Singapore | 04
+      - Taiwan | 03
+      - Taiwan | 01
+      - Hong Kong | 02
+      - Hong Kong | 05
+      - Singapore | 07
+      - Spain | 01
+      - "Traffic: 123.71 GB | 200 GB"
+      - Argentina | 01
+      - Brazil | 01
+      - Japan | 02
+      - Japan | 03
+      - Japan | 01
+      - Canada | 01
+      - United States | 08
+      - Hong Kong | 07
+      - Japan | 04
+      - Japan | 08
+      - Japan | 06
+      - Japan | 07
+      - United States | 07
+      - Japan | 05
+      - United States | 05
+      - United States | 06
+      - United States | 04
+      - United States | 02
+      - United States | 03
+      - Taiwan | 02
+      - United States | 01
+      - Chile | 01
+      - Singapore | 05
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港01{优化1|V2ray}
-      - 香港05{优化1|V2ray}
-      - 台湾①{移动|V2ray}
-      - 香港02{优化2|V2ray}
-      - 香港07{优化1|V2ray}
-      - 台湾01{移动|V2ray}
-      - 香港03{优化1|V2ray}
-      - 台湾02{联通|V2ray}
-      - 台湾②{联通|V2ray}
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港01{优化1|V2ray}
-      - 香港05{优化1|V2ray}
-      - 台湾①{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 日本04{优化2|V2ray}
-      - 日本03{优化1|V2ray}
-      - 香港02{优化2|V2ray}
-      - 香港07{优化1|V2ray}
-      - 台湾01{移动|V2ray}
-      - 香港03{优化1|V2ray}
-      - 韩国02{联通|V2ray}
-      - 新加坡06{优化2|V2ray}
-      - 印度02{联通|V2ray}
-      - 新加坡04{优化1|V2ray}
-      - 新加坡05{优化2|V2ray}
-      - 台湾02{联通|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 印度01{移动|V2ray}
-      - 新加坡-Trojan
-      - 日本-Trojan
-      - 新加坡02{优化1|V2ray}
-      - 印度-Trojan
-      - 马来-Trojan
-      - 美国01{优化1|V2ray}
-      - 德国02{联通|V2ray}
-      - 德国-Trojan
-      - 俄罗斯-Trojan
-      - 英国-Trojan
-      - 英国{联通|V2ray}
-      - 德国01{移动|V2ray}
-      - 美国03{优化1|V2ray}
-      - 美国04{优化2|V2ray}
-      - 马来02{联通|V2ray}
-      - 韩国-Trojan
-      - 台湾②{联通|V2ray}
+      - Vietnam | 01
+      - Singapore | 01
+      - Taiwan | 07
+      - Taiwan | 06
+      - Korea | 01
+      - Taiwan | 08
+      - Singapore | 02
+      - Taiwan | 04
+      - Singapore | 06
+      - Taiwan | 05
+      - Singapore | 04
+      - Taiwan | 03
+      - Taiwan | 01
+      - Hong Kong | 02
+      - Hong Kong | 05
+      - Singapore | 07
+      - Spain | 01
+      - "Traffic: 123.71 GB | 200 GB"
+      - Argentina | 01
+      - Brazil | 01
+      - Japan | 02
+      - Japan | 03
+      - Japan | 01
+      - Canada | 01
+      - United States | 08
+      - Hong Kong | 07
+      - Japan | 04
+      - Japan | 08
+      - Japan | 06
+      - Japan | 07
+      - United States | 07
+      - Japan | 05
+      - United States | 05
+      - United States | 06
+      - United States | 04
+      - United States | 02
+      - United States | 03
+      - Taiwan | 02
+      - United States | 01
+      - Chile | 01
+      - Singapore | 05
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港01{优化1|V2ray}
-      - 香港05{优化1|V2ray}
-      - 台湾①{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 日本04{优化2|V2ray}
-      - 日本03{优化1|V2ray}
-      - 香港02{优化2|V2ray}
-      - 香港07{优化1|V2ray}
-      - 台湾01{移动|V2ray}
-      - 香港03{优化1|V2ray}
-      - 韩国02{联通|V2ray}
-      - 新加坡06{优化2|V2ray}
-      - 印度02{联通|V2ray}
-      - 新加坡04{优化1|V2ray}
-      - 新加坡05{优化2|V2ray}
-      - 台湾02{联通|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 印度01{移动|V2ray}
-      - 新加坡-Trojan
-      - 日本-Trojan
-      - 新加坡02{优化1|V2ray}
-      - 印度-Trojan
-      - 马来-Trojan
-      - 美国01{优化1|V2ray}
-      - 德国02{联通|V2ray}
-      - 德国-Trojan
-      - 俄罗斯-Trojan
-      - 英国-Trojan
-      - 英国{联通|V2ray}
-      - 德国01{移动|V2ray}
-      - 美国03{优化1|V2ray}
-      - 美国04{优化2|V2ray}
-      - 马来02{联通|V2ray}
-      - 韩国-Trojan
-      - 台湾②{联通|V2ray}
+      - Vietnam | 01
+      - Singapore | 01
+      - Taiwan | 07
+      - Taiwan | 06
+      - Korea | 01
+      - Taiwan | 08
+      - Singapore | 02
+      - Taiwan | 04
+      - Singapore | 06
+      - Taiwan | 05
+      - Singapore | 04
+      - Taiwan | 03
+      - Taiwan | 01
+      - Hong Kong | 02
+      - Hong Kong | 05
+      - Singapore | 07
+      - Spain | 01
+      - "Traffic: 123.71 GB | 200 GB"
+      - Argentina | 01
+      - Brazil | 01
+      - Japan | 02
+      - Japan | 03
+      - Japan | 01
+      - Canada | 01
+      - United States | 08
+      - Hong Kong | 07
+      - Japan | 04
+      - Japan | 08
+      - Japan | 06
+      - Japan | 07
+      - United States | 07
+      - Japan | 05
+      - United States | 05
+      - United States | 06
+      - United States | 04
+      - United States | 02
+      - United States | 03
+      - Taiwan | 02
+      - United States | 01
+      - Chile | 01
+      - Singapore | 05
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港01{优化1|V2ray}
-      - 香港05{优化1|V2ray}
-      - 台湾①{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 日本04{优化2|V2ray}
-      - 日本03{优化1|V2ray}
-      - 香港02{优化2|V2ray}
-      - 香港07{优化1|V2ray}
-      - 台湾01{移动|V2ray}
-      - 香港03{优化1|V2ray}
-      - 韩国02{联通|V2ray}
-      - 新加坡06{优化2|V2ray}
-      - 印度02{联通|V2ray}
-      - 新加坡04{优化1|V2ray}
-      - 新加坡05{优化2|V2ray}
-      - 台湾02{联通|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 印度01{移动|V2ray}
-      - 新加坡-Trojan
-      - 日本-Trojan
-      - 新加坡02{优化1|V2ray}
-      - 印度-Trojan
-      - 马来-Trojan
-      - 美国01{优化1|V2ray}
-      - 德国02{联通|V2ray}
-      - 德国-Trojan
-      - 俄罗斯-Trojan
-      - 英国-Trojan
-      - 英国{联通|V2ray}
-      - 德国01{移动|V2ray}
-      - 美国03{优化1|V2ray}
-      - 美国04{优化2|V2ray}
-      - 马来02{联通|V2ray}
-      - 韩国-Trojan
-      - 台湾②{联通|V2ray}
+      - Vietnam | 01
+      - Singapore | 01
+      - Taiwan | 07
+      - Taiwan | 06
+      - Korea | 01
+      - Taiwan | 08
+      - Singapore | 02
+      - Taiwan | 04
+      - Singapore | 06
+      - Taiwan | 05
+      - Singapore | 04
+      - Taiwan | 03
+      - Taiwan | 01
+      - Hong Kong | 02
+      - Hong Kong | 05
+      - Singapore | 07
+      - Spain | 01
+      - "Traffic: 123.71 GB | 200 GB"
+      - Argentina | 01
+      - Brazil | 01
+      - Japan | 02
+      - Japan | 03
+      - Japan | 01
+      - Canada | 01
+      - United States | 08
+      - Hong Kong | 07
+      - Japan | 04
+      - Japan | 08
+      - Japan | 06
+      - Japan | 07
+      - United States | 07
+      - Japan | 05
+      - United States | 05
+      - United States | 06
+      - United States | 04
+      - United States | 02
+      - United States | 03
+      - Taiwan | 02
+      - United States | 01
+      - Chile | 01
+      - Singapore | 05
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -365,41 +404,47 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港01{优化1|V2ray}
-      - 香港05{优化1|V2ray}
-      - 台湾①{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 日本04{优化2|V2ray}
-      - 日本03{优化1|V2ray}
-      - 香港02{优化2|V2ray}
-      - 香港07{优化1|V2ray}
-      - 台湾01{移动|V2ray}
-      - 香港03{优化1|V2ray}
-      - 韩国02{联通|V2ray}
-      - 新加坡06{优化2|V2ray}
-      - 印度02{联通|V2ray}
-      - 新加坡04{优化1|V2ray}
-      - 新加坡05{优化2|V2ray}
-      - 台湾02{联通|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 印度01{移动|V2ray}
-      - 新加坡-Trojan
-      - 日本-Trojan
-      - 新加坡02{优化1|V2ray}
-      - 印度-Trojan
-      - 马来-Trojan
-      - 美国01{优化1|V2ray}
-      - 德国02{联通|V2ray}
-      - 德国-Trojan
-      - 俄罗斯-Trojan
-      - 英国-Trojan
-      - 英国{联通|V2ray}
-      - 德国01{移动|V2ray}
-      - 美国03{优化1|V2ray}
-      - 美国04{优化2|V2ray}
-      - 马来02{联通|V2ray}
-      - 韩国-Trojan
-      - 台湾②{联通|V2ray}
+      - Vietnam | 01
+      - Singapore | 01
+      - Taiwan | 07
+      - Taiwan | 06
+      - Korea | 01
+      - Taiwan | 08
+      - Singapore | 02
+      - Taiwan | 04
+      - Singapore | 06
+      - Taiwan | 05
+      - Singapore | 04
+      - Taiwan | 03
+      - Taiwan | 01
+      - Hong Kong | 02
+      - Hong Kong | 05
+      - Singapore | 07
+      - Spain | 01
+      - "Traffic: 123.71 GB | 200 GB"
+      - Argentina | 01
+      - Brazil | 01
+      - Japan | 02
+      - Japan | 03
+      - Japan | 01
+      - Canada | 01
+      - United States | 08
+      - Hong Kong | 07
+      - Japan | 04
+      - Japan | 08
+      - Japan | 06
+      - Japan | 07
+      - United States | 07
+      - Japan | 05
+      - United States | 05
+      - United States | 06
+      - United States | 04
+      - United States | 02
+      - United States | 03
+      - Taiwan | 02
+      - United States | 01
+      - Chile | 01
+      - Singapore | 05
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
