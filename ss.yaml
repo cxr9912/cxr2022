@@ -5,35 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: cf, server: 47.242.164.3, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: arm1dj.qiancheng.ml}, udp: true}
-  - {name: cf 2, server: 8.219.172.204, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: arm1dj.qiancheng.ml}, udp: true}
-  - {name: cf 3, server: 8.219.165.71, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: arm1dj.qiancheng.ml}, udp: true}
+  - {name: CN_124 | 4.63Mb, server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_127 | 7.61Mb, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_136 | 4.89Mb, server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_148 | 7.60Mb, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_117 | 6.77Mb, server: 112.132.215.13, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - cf
-      - cf 2
-      - cf 3
+      - CN_124 | 4.63Mb
+      - CN_127 | 7.61Mb
+      - CN_136 | 4.89Mb
+      - CN_148 | 7.60Mb
+      - CN_117 | 6.77Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - cf
-      - cf 2
-      - cf 3
+      - CN_124 | 4.63Mb
+      - CN_127 | 7.61Mb
+      - CN_136 | 4.89Mb
+      - CN_148 | 7.60Mb
+      - CN_117 | 6.77Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - cf
-      - cf 2
-      - cf 3
+      - CN_124 | 4.63Mb
+      - CN_127 | 7.61Mb
+      - CN_136 | 4.89Mb
+      - CN_148 | 7.60Mb
+      - CN_117 | 6.77Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,9 +60,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - cf
-      - cf 2
-      - cf 3
+      - CN_124 | 4.63Mb
+      - CN_127 | 7.61Mb
+      - CN_136 | 4.89Mb
+      - CN_148 | 7.60Mb
+      - CN_117 | 6.77Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -65,26 +75,32 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - cf
-      - cf 2
-      - cf 3
+      - CN_124 | 4.63Mb
+      - CN_127 | 7.61Mb
+      - CN_136 | 4.89Mb
+      - CN_148 | 7.60Mb
+      - CN_117 | 6.77Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - cf
-      - cf 2
-      - cf 3
+      - CN_124 | 4.63Mb
+      - CN_127 | 7.61Mb
+      - CN_136 | 4.89Mb
+      - CN_148 | 7.60Mb
+      - CN_117 | 6.77Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - cf
-      - cf 2
-      - cf 3
+      - CN_124 | 4.63Mb
+      - CN_127 | 7.61Mb
+      - CN_136 | 4.89Mb
+      - CN_148 | 7.60Mb
+      - CN_117 | 6.77Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +116,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - cf
-      - cf 2
-      - cf 3
+      - CN_124 | 4.63Mb
+      - CN_127 | 7.61Mb
+      - CN_136 | 4.89Mb
+      - CN_148 | 7.60Mb
+      - CN_117 | 6.77Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
