@@ -5,43 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_124 | 4.63Mb, server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_127 | 7.61Mb, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_136 | 4.89Mb, server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_148 | 7.60Mb, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_117 | 6.77Mb, server: 112.132.215.13, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ⌈千兆⌋DO旧金山 02, server: do-2.heicloud.cf, port: 443, type: vmess, uuid: 2757fd62-fcf0-4946-9b46-1b697741575b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /m2, ws-headers: {Host: do-2.heicloud.cf}, udp: true}
+  - {name: ⌈千兆⌋DO旧金山 01, server: do-1.heicloud.cf, port: 443, type: vmess, uuid: 2757fd62-fcf0-4946-9b46-1b697741575b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /m1, ws-headers: {Host: do-1.heicloud.cf}, udp: true}
+  - {name: ⌈千兆⌋DO旧金山 03, server: do-3.heicloud.cf, port: 443, type: vmess, uuid: 2757fd62-fcf0-4946-9b46-1b697741575b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /m3, ws-headers: {Host: do-3.heicloud.cf}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_124 | 4.63Mb
-      - CN_127 | 7.61Mb
-      - CN_136 | 4.89Mb
-      - CN_148 | 7.60Mb
-      - CN_117 | 6.77Mb
+      - ⌈千兆⌋DO旧金山 02
+      - ⌈千兆⌋DO旧金山 01
+      - ⌈千兆⌋DO旧金山 03
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_124 | 4.63Mb
-      - CN_127 | 7.61Mb
-      - CN_136 | 4.89Mb
-      - CN_148 | 7.60Mb
-      - CN_117 | 6.77Mb
+      - ⌈千兆⌋DO旧金山 02
+      - ⌈千兆⌋DO旧金山 01
+      - ⌈千兆⌋DO旧金山 03
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_124 | 4.63Mb
-      - CN_127 | 7.61Mb
-      - CN_136 | 4.89Mb
-      - CN_148 | 7.60Mb
-      - CN_117 | 6.77Mb
+      - ⌈千兆⌋DO旧金山 02
+      - ⌈千兆⌋DO旧金山 01
+      - ⌈千兆⌋DO旧金山 03
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,11 +52,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_124 | 4.63Mb
-      - CN_127 | 7.61Mb
-      - CN_136 | 4.89Mb
-      - CN_148 | 7.60Mb
-      - CN_117 | 6.77Mb
+      - ⌈千兆⌋DO旧金山 02
+      - ⌈千兆⌋DO旧金山 01
+      - ⌈千兆⌋DO旧金山 03
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -75,32 +65,26 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_124 | 4.63Mb
-      - CN_127 | 7.61Mb
-      - CN_136 | 4.89Mb
-      - CN_148 | 7.60Mb
-      - CN_117 | 6.77Mb
+      - ⌈千兆⌋DO旧金山 02
+      - ⌈千兆⌋DO旧金山 01
+      - ⌈千兆⌋DO旧金山 03
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_124 | 4.63Mb
-      - CN_127 | 7.61Mb
-      - CN_136 | 4.89Mb
-      - CN_148 | 7.60Mb
-      - CN_117 | 6.77Mb
+      - ⌈千兆⌋DO旧金山 02
+      - ⌈千兆⌋DO旧金山 01
+      - ⌈千兆⌋DO旧金山 03
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_124 | 4.63Mb
-      - CN_127 | 7.61Mb
-      - CN_136 | 4.89Mb
-      - CN_148 | 7.60Mb
-      - CN_117 | 6.77Mb
+      - ⌈千兆⌋DO旧金山 02
+      - ⌈千兆⌋DO旧金山 01
+      - ⌈千兆⌋DO旧金山 03
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +100,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_124 | 4.63Mb
-      - CN_127 | 7.61Mb
-      - CN_136 | 4.89Mb
-      - CN_148 | 7.60Mb
-      - CN_117 | 6.77Mb
+      - ⌈千兆⌋DO旧金山 02
+      - ⌈千兆⌋DO旧金山 01
+      - ⌈千兆⌋DO旧金山 03
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
