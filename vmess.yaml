@@ -5,71 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TG频道:@kxswa|GLaDOS-TW-01, server: ffbf920.t1.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/ffbf920.fm.apple.com:68447, ws-headers: {Host: tls.apple.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-JP-02, server: ffbf920.j2.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/ffbf920.fm.apple.com:68447, ws-headers: {Host: tls.apple.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-JP-01, server: ffbf920.j1.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/ffbf920.fm.apple.com:68447, ws-headers: {Host: tls.apple.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-JP-03, server: ffbf920.j3.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/ffbf920.fm.apple.com:68447, ws-headers: {Host: tls.apple.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-TW-2-Netflix, server: ffbf920.f2.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/ffbf920.fm.apple.com:68447, ws-headers: {Host: tls.apple.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-Portalgun-02, server: ffbf920.v2.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/ffbf920.fm.apple.com:68447, ws-headers: {Host: api.qq.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-TW-02, server: ffbf920.t2.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/ffbf920.fm.apple.com:68447, ws-headers: {Host: tls.apple.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-Portalgun-01, server: ffbf920.v1.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/ffbf920.fm.apple.com:68447, ws-headers: {Host: api.apple.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-TW-03, server: ffbf920.t3.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/ffbf920.fm.apple.com:68447, ws-headers: {Host: tls.apple.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-US-03, server: ffbf920.u3.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/ffbf920.fm.apple.com:68447, ws-headers: {Host: tls.apple.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-TW-3-Netflix, server: ffbf920.f3.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/ffbf920.fm.apple.com:68447, ws-headers: {Host: tls.apple.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-US-01, server: ffbf920.u1.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/ffbf920.fm.apple.com:68447, ws-headers: {Host: tls.apple.com}, udp: true}
+  - {name: 香港-80端口(自行修改host), server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/download, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 香港高速接入点-03, server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 距离下次重置剩余：18 天, server: hk1.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 新加坡高速接入点-01, server: sg1.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 香港高速接入点-02, server: hk2.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 香港高速接入点-04, server: hk4.sanfen001.pics, port: 443, type: trojan, password: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, sni: hk4.sanfen001.pics, skip-cert-verify: true, udp: true}
+  - {name: 日本高速接入点-02, server: jp2.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 美国高速接入点-01, server: us1.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道:@kxswa|GLaDOS-TW-01
-      - TG频道:@kxswa|GLaDOS-JP-02
-      - TG频道:@kxswa|GLaDOS-JP-01
-      - TG频道:@kxswa|GLaDOS-JP-03
-      - TG频道:@kxswa|GLaDOS-TW-2-Netflix
-      - TG频道:@kxswa|GLaDOS-Portalgun-02
-      - TG频道:@kxswa|GLaDOS-TW-02
-      - TG频道:@kxswa|GLaDOS-Portalgun-01
-      - TG频道:@kxswa|GLaDOS-TW-03
-      - TG频道:@kxswa|GLaDOS-US-03
-      - TG频道:@kxswa|GLaDOS-TW-3-Netflix
-      - TG频道:@kxswa|GLaDOS-US-01
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TG频道:@kxswa|GLaDOS-TW-01
-      - TG频道:@kxswa|GLaDOS-JP-02
-      - TG频道:@kxswa|GLaDOS-JP-01
-      - TG频道:@kxswa|GLaDOS-JP-03
-      - TG频道:@kxswa|GLaDOS-TW-2-Netflix
-      - TG频道:@kxswa|GLaDOS-Portalgun-02
-      - TG频道:@kxswa|GLaDOS-TW-02
-      - TG频道:@kxswa|GLaDOS-Portalgun-01
-      - TG频道:@kxswa|GLaDOS-TW-03
-      - TG频道:@kxswa|GLaDOS-US-03
-      - TG频道:@kxswa|GLaDOS-TW-3-Netflix
-      - TG频道:@kxswa|GLaDOS-US-01
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道:@kxswa|GLaDOS-TW-01
-      - TG频道:@kxswa|GLaDOS-JP-02
-      - TG频道:@kxswa|GLaDOS-JP-01
-      - TG频道:@kxswa|GLaDOS-JP-03
-      - TG频道:@kxswa|GLaDOS-TW-2-Netflix
-      - TG频道:@kxswa|GLaDOS-Portalgun-02
-      - TG频道:@kxswa|GLaDOS-TW-02
-      - TG频道:@kxswa|GLaDOS-Portalgun-01
-      - TG频道:@kxswa|GLaDOS-TW-03
-      - TG频道:@kxswa|GLaDOS-US-03
-      - TG频道:@kxswa|GLaDOS-TW-3-Netflix
-      - TG频道:@kxswa|GLaDOS-US-01
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,75 +72,63 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道:@kxswa|GLaDOS-TW-01
-      - TG频道:@kxswa|GLaDOS-JP-02
-      - TG频道:@kxswa|GLaDOS-JP-01
-      - TG频道:@kxswa|GLaDOS-JP-03
-      - TG频道:@kxswa|GLaDOS-TW-2-Netflix
-      - TG频道:@kxswa|GLaDOS-Portalgun-02
-      - TG频道:@kxswa|GLaDOS-TW-02
-      - TG频道:@kxswa|GLaDOS-Portalgun-01
-      - TG频道:@kxswa|GLaDOS-TW-03
-      - TG频道:@kxswa|GLaDOS-US-03
-      - TG频道:@kxswa|GLaDOS-TW-3-Netflix
-      - TG频道:@kxswa|GLaDOS-US-01
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 香港高速接入点-02
+      - 香港高速接入点-04
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TG频道:@kxswa|GLaDOS-TW-01
-      - TG频道:@kxswa|GLaDOS-JP-02
-      - TG频道:@kxswa|GLaDOS-JP-01
-      - TG频道:@kxswa|GLaDOS-JP-03
-      - TG频道:@kxswa|GLaDOS-TW-2-Netflix
-      - TG频道:@kxswa|GLaDOS-Portalgun-02
-      - TG频道:@kxswa|GLaDOS-TW-02
-      - TG频道:@kxswa|GLaDOS-Portalgun-01
-      - TG频道:@kxswa|GLaDOS-TW-03
-      - TG频道:@kxswa|GLaDOS-US-03
-      - TG频道:@kxswa|GLaDOS-TW-3-Netflix
-      - TG频道:@kxswa|GLaDOS-US-01
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TG频道:@kxswa|GLaDOS-TW-01
-      - TG频道:@kxswa|GLaDOS-JP-02
-      - TG频道:@kxswa|GLaDOS-JP-01
-      - TG频道:@kxswa|GLaDOS-JP-03
-      - TG频道:@kxswa|GLaDOS-TW-2-Netflix
-      - TG频道:@kxswa|GLaDOS-Portalgun-02
-      - TG频道:@kxswa|GLaDOS-TW-02
-      - TG频道:@kxswa|GLaDOS-Portalgun-01
-      - TG频道:@kxswa|GLaDOS-TW-03
-      - TG频道:@kxswa|GLaDOS-US-03
-      - TG频道:@kxswa|GLaDOS-TW-3-Netflix
-      - TG频道:@kxswa|GLaDOS-US-01
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道:@kxswa|GLaDOS-TW-01
-      - TG频道:@kxswa|GLaDOS-JP-02
-      - TG频道:@kxswa|GLaDOS-JP-01
-      - TG频道:@kxswa|GLaDOS-JP-03
-      - TG频道:@kxswa|GLaDOS-TW-2-Netflix
-      - TG频道:@kxswa|GLaDOS-Portalgun-02
-      - TG频道:@kxswa|GLaDOS-TW-02
-      - TG频道:@kxswa|GLaDOS-Portalgun-01
-      - TG频道:@kxswa|GLaDOS-TW-03
-      - TG频道:@kxswa|GLaDOS-US-03
-      - TG频道:@kxswa|GLaDOS-TW-3-Netflix
-      - TG频道:@kxswa|GLaDOS-US-01
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -172,18 +144,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道:@kxswa|GLaDOS-TW-01
-      - TG频道:@kxswa|GLaDOS-JP-02
-      - TG频道:@kxswa|GLaDOS-JP-01
-      - TG频道:@kxswa|GLaDOS-JP-03
-      - TG频道:@kxswa|GLaDOS-TW-2-Netflix
-      - TG频道:@kxswa|GLaDOS-Portalgun-02
-      - TG频道:@kxswa|GLaDOS-TW-02
-      - TG频道:@kxswa|GLaDOS-Portalgun-01
-      - TG频道:@kxswa|GLaDOS-TW-03
-      - TG频道:@kxswa|GLaDOS-US-03
-      - TG频道:@kxswa|GLaDOS-TW-3-Netflix
-      - TG频道:@kxswa|GLaDOS-US-01
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
