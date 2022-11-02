@@ -5,187 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Vietnam | 01, server: cos-ap-guangzhou.westdatacloud.top, port: 20069, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Singapore | 01, server: cos-ap-guangzhou.westdatacloud.top, port: 20021, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 07, server: cos-ap-guangzhou.westdatacloud.top, port: 20017, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 06, server: cos-ap-guangzhou.westdatacloud.top, port: 20016, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Korea | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20065, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 08, server: cos-ap-guangzhou.westdatacloud.top, port: 20018, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Singapore | 02, server: cos-ap-guangzhou.westdatacloud.top, port: 20022, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 04, server: cos-ap-guangzhou.westdatacloud.top, port: 20014, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Singapore | 06, server: cos-ap-guangzhou.westdatacloud.top, port: 20026, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 05, server: cos-ap-guangzhou.westdatacloud.top, port: 20015, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Singapore | 04, server: cos-ap-guangzhou.westdatacloud.top, port: 20024, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 03, server: cos-ap-guangzhou.westdatacloud.top, port: 20013, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 01, server: cos-ap-guangzhou.westdatacloud.top, port: 20011, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Hong Kong | 02, server: cos-ap-guangzhou.westdatacloud.top, port: 20002, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Hong Kong | 05, server: cos-ap-guangzhou.westdatacloud.top, port: 20005, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Singapore | 07, server: cos-ap-guangzhou.westdatacloud.top, port: 20027, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Spain | 01, server: cos-ap-beijing.westdatacloud.top, port: 20059, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: "Traffic: 123.71 GB | 200 GB", server: cos-ap-guangzhou.westdatacloud.top, port: 20001, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Argentina | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20062, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Brazil | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20063, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Japan | 02, server: oss-cn-shanghai.westdatacloud.top, port: 20032, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Japan | 03, server: oss-cn-shanghai.westdatacloud.top, port: 20033, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Japan | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20031, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Canada | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20051, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: United States | 08, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Hong Kong | 07, server: cos-ap-guangzhou.westdatacloud.top, port: 20007, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Japan | 04, server: oss-cn-shanghai.westdatacloud.top, port: 20034, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Japan | 08, server: oss-cn-shanghai.westdatacloud.top, port: 20038, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Japan | 06, server: oss-cn-shanghai.westdatacloud.top, port: 20036, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Japan | 07, server: oss-cn-shanghai.westdatacloud.top, port: 20037, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: United States | 07, server: oss-cn-shanghai.westdatacloud.top, port: 20047, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Japan | 05, server: oss-cn-shanghai.westdatacloud.top, port: 20035, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: United States | 05, server: oss-cn-shanghai.westdatacloud.top, port: 20045, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: United States | 06, server: oss-cn-shanghai.westdatacloud.top, port: 20046, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: United States | 04, server: oss-cn-shanghai.westdatacloud.top, port: 20044, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: United States | 02, server: oss-cn-shanghai.westdatacloud.top, port: 20042, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: United States | 03, server: oss-cn-shanghai.westdatacloud.top, port: 20043, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 02, server: cos-ap-guangzhou.westdatacloud.top, port: 20012, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: United States | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20041, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Chile | 01, server: oss-cn-shanghai.westdatacloud.top, port: 20064, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Singapore | 05, server: cos-ap-guangzhou.westdatacloud.top, port: 20025, type: trojan, password: 42654F00-539E-5C58-4B33-27BD8CE1F4EE, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 香港-80端口(自行修改host), server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/download, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 香港高速接入点-03, server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 距离下次重置剩余：18 天, server: hk1.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 新加坡高速接入点-01, server: sg1.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 香港高速接入点-02, server: hk2.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 香港高速接入点-04, server: hk4.sanfen001.pics, port: 443, type: trojan, password: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, sni: hk4.sanfen001.pics, skip-cert-verify: true, udp: true}
+  - {name: 日本高速接入点-02, server: jp2.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 美国高速接入点-01, server: us1.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Vietnam | 01
-      - Singapore | 01
-      - Taiwan | 07
-      - Taiwan | 06
-      - Korea | 01
-      - Taiwan | 08
-      - Singapore | 02
-      - Taiwan | 04
-      - Singapore | 06
-      - Taiwan | 05
-      - Singapore | 04
-      - Taiwan | 03
-      - Taiwan | 01
-      - Hong Kong | 02
-      - Hong Kong | 05
-      - Singapore | 07
-      - Spain | 01
-      - "Traffic: 123.71 GB | 200 GB"
-      - Argentina | 01
-      - Brazil | 01
-      - Japan | 02
-      - Japan | 03
-      - Japan | 01
-      - Canada | 01
-      - United States | 08
-      - Hong Kong | 07
-      - Japan | 04
-      - Japan | 08
-      - Japan | 06
-      - Japan | 07
-      - United States | 07
-      - Japan | 05
-      - United States | 05
-      - United States | 06
-      - United States | 04
-      - United States | 02
-      - United States | 03
-      - Taiwan | 02
-      - United States | 01
-      - Chile | 01
-      - Singapore | 05
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Vietnam | 01
-      - Singapore | 01
-      - Taiwan | 07
-      - Taiwan | 06
-      - Korea | 01
-      - Taiwan | 08
-      - Singapore | 02
-      - Taiwan | 04
-      - Singapore | 06
-      - Taiwan | 05
-      - Singapore | 04
-      - Taiwan | 03
-      - Taiwan | 01
-      - Hong Kong | 02
-      - Hong Kong | 05
-      - Singapore | 07
-      - Spain | 01
-      - "Traffic: 123.71 GB | 200 GB"
-      - Argentina | 01
-      - Brazil | 01
-      - Japan | 02
-      - Japan | 03
-      - Japan | 01
-      - Canada | 01
-      - United States | 08
-      - Hong Kong | 07
-      - Japan | 04
-      - Japan | 08
-      - Japan | 06
-      - Japan | 07
-      - United States | 07
-      - Japan | 05
-      - United States | 05
-      - United States | 06
-      - United States | 04
-      - United States | 02
-      - United States | 03
-      - Taiwan | 02
-      - United States | 01
-      - Chile | 01
-      - Singapore | 05
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Vietnam | 01
-      - Singapore | 01
-      - Taiwan | 07
-      - Taiwan | 06
-      - Korea | 01
-      - Taiwan | 08
-      - Singapore | 02
-      - Taiwan | 04
-      - Singapore | 06
-      - Taiwan | 05
-      - Singapore | 04
-      - Taiwan | 03
-      - Taiwan | 01
-      - Hong Kong | 02
-      - Hong Kong | 05
-      - Singapore | 07
-      - Spain | 01
-      - "Traffic: 123.71 GB | 200 GB"
-      - Argentina | 01
-      - Brazil | 01
-      - Japan | 02
-      - Japan | 03
-      - Japan | 01
-      - Canada | 01
-      - United States | 08
-      - Hong Kong | 07
-      - Japan | 04
-      - Japan | 08
-      - Japan | 06
-      - Japan | 07
-      - United States | 07
-      - Japan | 05
-      - United States | 05
-      - United States | 06
-      - United States | 04
-      - United States | 02
-      - United States | 03
-      - Taiwan | 02
-      - United States | 01
-      - Chile | 01
-      - Singapore | 05
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -204,191 +72,63 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Vietnam | 01
-      - Singapore | 01
-      - Taiwan | 07
-      - Taiwan | 06
-      - Korea | 01
-      - Taiwan | 08
-      - Singapore | 02
-      - Taiwan | 04
-      - Singapore | 06
-      - Taiwan | 05
-      - Singapore | 04
-      - Taiwan | 03
-      - Taiwan | 01
-      - Hong Kong | 02
-      - Hong Kong | 05
-      - Singapore | 07
-      - Spain | 01
-      - "Traffic: 123.71 GB | 200 GB"
-      - Argentina | 01
-      - Brazil | 01
-      - Japan | 02
-      - Japan | 03
-      - Japan | 01
-      - Canada | 01
-      - United States | 08
-      - Hong Kong | 07
-      - Japan | 04
-      - Japan | 08
-      - Japan | 06
-      - Japan | 07
-      - United States | 07
-      - Japan | 05
-      - United States | 05
-      - United States | 06
-      - United States | 04
-      - United States | 02
-      - United States | 03
-      - Taiwan | 02
-      - United States | 01
-      - Chile | 01
-      - Singapore | 05
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 香港高速接入点-02
+      - 香港高速接入点-04
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Vietnam | 01
-      - Singapore | 01
-      - Taiwan | 07
-      - Taiwan | 06
-      - Korea | 01
-      - Taiwan | 08
-      - Singapore | 02
-      - Taiwan | 04
-      - Singapore | 06
-      - Taiwan | 05
-      - Singapore | 04
-      - Taiwan | 03
-      - Taiwan | 01
-      - Hong Kong | 02
-      - Hong Kong | 05
-      - Singapore | 07
-      - Spain | 01
-      - "Traffic: 123.71 GB | 200 GB"
-      - Argentina | 01
-      - Brazil | 01
-      - Japan | 02
-      - Japan | 03
-      - Japan | 01
-      - Canada | 01
-      - United States | 08
-      - Hong Kong | 07
-      - Japan | 04
-      - Japan | 08
-      - Japan | 06
-      - Japan | 07
-      - United States | 07
-      - Japan | 05
-      - United States | 05
-      - United States | 06
-      - United States | 04
-      - United States | 02
-      - United States | 03
-      - Taiwan | 02
-      - United States | 01
-      - Chile | 01
-      - Singapore | 05
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Vietnam | 01
-      - Singapore | 01
-      - Taiwan | 07
-      - Taiwan | 06
-      - Korea | 01
-      - Taiwan | 08
-      - Singapore | 02
-      - Taiwan | 04
-      - Singapore | 06
-      - Taiwan | 05
-      - Singapore | 04
-      - Taiwan | 03
-      - Taiwan | 01
-      - Hong Kong | 02
-      - Hong Kong | 05
-      - Singapore | 07
-      - Spain | 01
-      - "Traffic: 123.71 GB | 200 GB"
-      - Argentina | 01
-      - Brazil | 01
-      - Japan | 02
-      - Japan | 03
-      - Japan | 01
-      - Canada | 01
-      - United States | 08
-      - Hong Kong | 07
-      - Japan | 04
-      - Japan | 08
-      - Japan | 06
-      - Japan | 07
-      - United States | 07
-      - Japan | 05
-      - United States | 05
-      - United States | 06
-      - United States | 04
-      - United States | 02
-      - United States | 03
-      - Taiwan | 02
-      - United States | 01
-      - Chile | 01
-      - Singapore | 05
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Vietnam | 01
-      - Singapore | 01
-      - Taiwan | 07
-      - Taiwan | 06
-      - Korea | 01
-      - Taiwan | 08
-      - Singapore | 02
-      - Taiwan | 04
-      - Singapore | 06
-      - Taiwan | 05
-      - Singapore | 04
-      - Taiwan | 03
-      - Taiwan | 01
-      - Hong Kong | 02
-      - Hong Kong | 05
-      - Singapore | 07
-      - Spain | 01
-      - "Traffic: 123.71 GB | 200 GB"
-      - Argentina | 01
-      - Brazil | 01
-      - Japan | 02
-      - Japan | 03
-      - Japan | 01
-      - Canada | 01
-      - United States | 08
-      - Hong Kong | 07
-      - Japan | 04
-      - Japan | 08
-      - Japan | 06
-      - Japan | 07
-      - United States | 07
-      - Japan | 05
-      - United States | 05
-      - United States | 06
-      - United States | 04
-      - United States | 02
-      - United States | 03
-      - Taiwan | 02
-      - United States | 01
-      - Chile | 01
-      - Singapore | 05
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -404,47 +144,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Vietnam | 01
-      - Singapore | 01
-      - Taiwan | 07
-      - Taiwan | 06
-      - Korea | 01
-      - Taiwan | 08
-      - Singapore | 02
-      - Taiwan | 04
-      - Singapore | 06
-      - Taiwan | 05
-      - Singapore | 04
-      - Taiwan | 03
-      - Taiwan | 01
-      - Hong Kong | 02
-      - Hong Kong | 05
-      - Singapore | 07
-      - Spain | 01
-      - "Traffic: 123.71 GB | 200 GB"
-      - Argentina | 01
-      - Brazil | 01
-      - Japan | 02
-      - Japan | 03
-      - Japan | 01
-      - Canada | 01
-      - United States | 08
-      - Hong Kong | 07
-      - Japan | 04
-      - Japan | 08
-      - Japan | 06
-      - Japan | 07
-      - United States | 07
-      - Japan | 05
-      - United States | 05
-      - United States | 06
-      - United States | 04
-      - United States | 02
-      - United States | 03
-      - Taiwan | 02
-      - United States | 01
-      - Chile | 01
-      - Singapore | 05
+      - 香港-80端口(自行修改host)
+      - 香港高速接入点-03
+      - 距离下次重置剩余：18 天
+      - 新加坡高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-04
+      - 日本高速接入点-02
+      - 美国高速接入点-01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
