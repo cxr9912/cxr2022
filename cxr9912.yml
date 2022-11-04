@@ -5,59 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港骨干网🇭🇰4, server: hk4.wumaojichang.ml, port: 35768, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk4.wumaojichang.ml}, udp: true}
-  - {name: 香港骨干网🇭🇰5, server: hk5.wumaojichang.ml, port: 35788, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk4.wumaojichang.ml, ws-headers: {Host: hk5.wumaojichang.ml}, udp: true}
-  - {name: 香港骨干网🇭🇰1, server: hk.wumaojichang.ml, port: 35781, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk.wumaojichang.ml, ws-headers: {Host: hk.wumaojichang.ml}, udp: true}
-  - {name: 香港骨干网🇭🇰6, server: hk6.wumaojichang.ml, port: 35769, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk6.wumaojichang.ml}, udp: true}
-  - {name: 台湾原生中转, server: zz.wumaojichang.ml, port: 35768, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tw.wumaojichang.ml, ws-headers: {Host: zz.wumaojichang.ml}, udp: true}
-  - {name: 日本骨干网🇯🇵1, server: jp1.wumaojichang.ml, port: 35775, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: baidu.com}, udp: true}
-  - {name: 美国旧金山, server: jjs.loc-m.xyz, port: 56742, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: baidu.com}, udp: true}
-  - {name: 美国, server: mg.wumaojichang.ml, port: 36501, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mg.wumaojichang.ml}, udp: true}
-  - {name: 日本骨干网🇯🇵3, server: jp3.wumaojichang.ml, port: 35774, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zz-1.wumaojichang.ml, ws-headers: {Host: jp3.wumaojichang.ml}, udp: true}
+  - {name: 俄罗斯, server: 20.239.137.69, port: 48017, type: vmess, uuid: 6a88aef5-08cc-32a8-a745-abcdadd2e61f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: 20.239.137.69}, udp: true}
+  - {name: 新加坡--奈飞解锁-2.0x, server: 20.239.137.69, port: 48001, type: vmess, uuid: 6a88aef5-08cc-32a8-a745-abcdadd2e61f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: 20.239.137.69}, udp: true}
+  - {name: 香港06, server: 20.24.77.24, port: 44300, type: vmess, uuid: 6a88aef5-08cc-32a8-a745-abcdadd2e61f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: 20.24.77.24}, udp: true}
+  - {name: 韩国, server: 20.239.137.69, port: 48004, type: vmess, uuid: 6a88aef5-08cc-32a8-a745-abcdadd2e61f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: 20.239.137.69}, udp: true}
+  - {name: 印度, server: 20.239.137.69, port: 48014, type: vmess, uuid: 6a88aef5-08cc-32a8-a745-abcdadd2e61f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: 20.239.137.69}, udp: true}
+  - {name: 日本03, server: 20.239.137.69, port: 48009, type: vmess, uuid: 6a88aef5-08cc-32a8-a745-abcdadd2e61f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: 20.239.137.69}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港骨干网🇭🇰4
-      - 香港骨干网🇭🇰5
-      - 香港骨干网🇭🇰1
-      - 香港骨干网🇭🇰6
-      - 台湾原生中转
-      - 日本骨干网🇯🇵1
-      - 美国旧金山
-      - 美国
-      - 日本骨干网🇯🇵3
+      - 俄罗斯
+      - 新加坡--奈飞解锁-2.0x
+      - 香港06
+      - 韩国
+      - 印度
+      - 日本03
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港骨干网🇭🇰4
-      - 香港骨干网🇭🇰5
-      - 香港骨干网🇭🇰1
-      - 香港骨干网🇭🇰6
-      - 台湾原生中转
-      - 日本骨干网🇯🇵1
-      - 美国旧金山
-      - 美国
-      - 日本骨干网🇯🇵3
+      - 俄罗斯
+      - 新加坡--奈飞解锁-2.0x
+      - 香港06
+      - 韩国
+      - 印度
+      - 日本03
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港骨干网🇭🇰4
-      - 香港骨干网🇭🇰5
-      - 香港骨干网🇭🇰1
-      - 香港骨干网🇭🇰6
-      - 台湾原生中转
-      - 日本骨干网🇯🇵1
-      - 美国旧金山
-      - 美国
-      - 日本骨干网🇯🇵3
+      - 俄罗斯
+      - 新加坡--奈飞解锁-2.0x
+      - 香港06
+      - 韩国
+      - 印度
+      - 日本03
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,68 +64,52 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港骨干网🇭🇰4
-      - 香港骨干网🇭🇰5
-      - 香港骨干网🇭🇰1
-      - 香港骨干网🇭🇰6
-      - 台湾原生中转
-      - 日本骨干网🇯🇵1
-      - 美国旧金山
-      - 美国
-      - 日本骨干网🇯🇵3
+      - 俄罗斯
+      - 新加坡--奈飞解锁-2.0x
+      - 香港06
+      - 韩国
+      - 印度
+      - 日本03
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港骨干网🇭🇰4
-      - 香港骨干网🇭🇰5
-      - 香港骨干网🇭🇰1
-      - 香港骨干网🇭🇰6
-      - 台湾原生中转
+      - 香港06
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港骨干网🇭🇰4
-      - 香港骨干网🇭🇰5
-      - 香港骨干网🇭🇰1
-      - 香港骨干网🇭🇰6
-      - 台湾原生中转
-      - 日本骨干网🇯🇵1
-      - 美国旧金山
-      - 美国
-      - 日本骨干网🇯🇵3
+      - 俄罗斯
+      - 新加坡--奈飞解锁-2.0x
+      - 香港06
+      - 韩国
+      - 印度
+      - 日本03
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港骨干网🇭🇰4
-      - 香港骨干网🇭🇰5
-      - 香港骨干网🇭🇰1
-      - 香港骨干网🇭🇰6
-      - 台湾原生中转
-      - 日本骨干网🇯🇵1
-      - 美国旧金山
-      - 美国
-      - 日本骨干网🇯🇵3
+      - 俄罗斯
+      - 新加坡--奈飞解锁-2.0x
+      - 香港06
+      - 韩国
+      - 印度
+      - 日本03
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港骨干网🇭🇰4
-      - 香港骨干网🇭🇰5
-      - 香港骨干网🇭🇰1
-      - 香港骨干网🇭🇰6
-      - 台湾原生中转
-      - 日本骨干网🇯🇵1
-      - 美国旧金山
-      - 美国
-      - 日本骨干网🇯🇵3
+      - 俄罗斯
+      - 新加坡--奈飞解锁-2.0x
+      - 香港06
+      - 韩国
+      - 印度
+      - 日本03
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -153,15 +125,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港骨干网🇭🇰4
-      - 香港骨干网🇭🇰5
-      - 香港骨干网🇭🇰1
-      - 香港骨干网🇭🇰6
-      - 台湾原生中转
-      - 日本骨干网🇯🇵1
-      - 美国旧金山
-      - 美国
-      - 日本骨干网🇯🇵3
+      - 俄罗斯
+      - 新加坡--奈飞解锁-2.0x
+      - 香港06
+      - 韩国
+      - 印度
+      - 日本03
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
