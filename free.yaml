@@ -5,55 +5,147 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港-80端口(自行修改host), server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/download, ws-headers: {Host: a.189.cn}, udp: true}
-  - {name: 香港高速接入点-03, server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 距离下次重置剩余：18 天, server: hk1.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 新加坡高速接入点-01, server: sg1.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 香港高速接入点-02, server: hk2.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 香港高速接入点-04, server: hk4.sanfen001.pics, port: 443, type: trojan, password: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, sni: hk4.sanfen001.pics, skip-cert-verify: true, udp: true}
-  - {name: 日本高速接入点-02, server: jp2.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 美国高速接入点-01, server: us1.sanfen001.pics, port: 443, type: vmess, uuid: 3a9a4584-b778-45d2-b4b9-fe84c4e93266, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: _081, server: 116.129.253.191, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0275, server: 116.129.253.134, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _014, server: 116.129.254.47, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0244, server: 211.72.35.155, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0102, server: 116.129.253.245, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0234, server: 211.72.35.156, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _011, server: 211.72.35.152, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0219, server: 211.72.35.157, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _013, server: 116.129.254.29, port: 3381, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0188, server: 116.129.253.227, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _098, server: 42.240.131.142, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0118, server: 42.240.132.83, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _048, server: 120.132.12.22, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0212, server: 106.75.168.104, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0163, server: 42.240.132.42, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _046, server: 113.31.155.165, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _044, server: 113.31.109.30, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _075, server: 106.75.173.173, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _021, server: 211.72.35.158, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0113, server: 123.59.69.54, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0138, server: 117.50.106.86, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0264, server: 211.72.35.153, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0140, server: 117.50.98.45, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0149, server: 123.59.87.29, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0144, server: 120.132.50.158, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _020, server: 116.129.254.29, port: 3383, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0251, server: 60.249.3.231, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _056, server: 120.132.21.219, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _068, server: 116.129.253.201, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _022, server: 134.195.101.32, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _0256, server: 60.249.3.125, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-80端口(自行修改host)
-      - 香港高速接入点-03
-      - 距离下次重置剩余：18 天
-      - 新加坡高速接入点-01
-      - 香港高速接入点-02
-      - 香港高速接入点-04
-      - 日本高速接入点-02
-      - 美国高速接入点-01
+      - _081
+      - _0275
+      - _014
+      - _0244
+      - _0102
+      - _0234
+      - _011
+      - _0219
+      - _013
+      - _0188
+      - _098
+      - _0118
+      - _048
+      - _0212
+      - _0163
+      - _046
+      - _044
+      - _075
+      - _021
+      - _0113
+      - _0138
+      - _0264
+      - _0140
+      - _0149
+      - _0144
+      - _020
+      - _0251
+      - _056
+      - _068
+      - _022
+      - _0256
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港-80端口(自行修改host)
-      - 香港高速接入点-03
-      - 距离下次重置剩余：18 天
-      - 新加坡高速接入点-01
-      - 香港高速接入点-02
-      - 香港高速接入点-04
-      - 日本高速接入点-02
-      - 美国高速接入点-01
+      - _081
+      - _0275
+      - _014
+      - _0244
+      - _0102
+      - _0234
+      - _011
+      - _0219
+      - _013
+      - _0188
+      - _098
+      - _0118
+      - _048
+      - _0212
+      - _0163
+      - _046
+      - _044
+      - _075
+      - _021
+      - _0113
+      - _0138
+      - _0264
+      - _0140
+      - _0149
+      - _0144
+      - _020
+      - _0251
+      - _056
+      - _068
+      - _022
+      - _0256
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-80端口(自行修改host)
-      - 香港高速接入点-03
-      - 距离下次重置剩余：18 天
-      - 新加坡高速接入点-01
-      - 香港高速接入点-02
-      - 香港高速接入点-04
-      - 日本高速接入点-02
-      - 美国高速接入点-01
+      - _081
+      - _0275
+      - _014
+      - _0244
+      - _0102
+      - _0234
+      - _011
+      - _0219
+      - _013
+      - _0188
+      - _098
+      - _0118
+      - _048
+      - _0212
+      - _0163
+      - _046
+      - _044
+      - _075
+      - _021
+      - _0113
+      - _0138
+      - _0264
+      - _0140
+      - _0149
+      - _0144
+      - _020
+      - _0251
+      - _056
+      - _068
+      - _022
+      - _0256
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,63 +164,151 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-80端口(自行修改host)
-      - 香港高速接入点-03
-      - 距离下次重置剩余：18 天
-      - 新加坡高速接入点-01
-      - 香港高速接入点-02
-      - 香港高速接入点-04
-      - 日本高速接入点-02
-      - 美国高速接入点-01
+      - _081
+      - _0275
+      - _014
+      - _0244
+      - _0102
+      - _0234
+      - _011
+      - _0219
+      - _013
+      - _0188
+      - _098
+      - _0118
+      - _048
+      - _0212
+      - _0163
+      - _046
+      - _044
+      - _075
+      - _021
+      - _0113
+      - _0138
+      - _0264
+      - _0140
+      - _0149
+      - _0144
+      - _020
+      - _0251
+      - _056
+      - _068
+      - _022
+      - _0256
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港-80端口(自行修改host)
-      - 香港高速接入点-03
-      - 香港高速接入点-02
-      - 香港高速接入点-04
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港-80端口(自行修改host)
-      - 香港高速接入点-03
-      - 距离下次重置剩余：18 天
-      - 新加坡高速接入点-01
-      - 香港高速接入点-02
-      - 香港高速接入点-04
-      - 日本高速接入点-02
-      - 美国高速接入点-01
+      - _081
+      - _0275
+      - _014
+      - _0244
+      - _0102
+      - _0234
+      - _011
+      - _0219
+      - _013
+      - _0188
+      - _098
+      - _0118
+      - _048
+      - _0212
+      - _0163
+      - _046
+      - _044
+      - _075
+      - _021
+      - _0113
+      - _0138
+      - _0264
+      - _0140
+      - _0149
+      - _0144
+      - _020
+      - _0251
+      - _056
+      - _068
+      - _022
+      - _0256
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港-80端口(自行修改host)
-      - 香港高速接入点-03
-      - 距离下次重置剩余：18 天
-      - 新加坡高速接入点-01
-      - 香港高速接入点-02
-      - 香港高速接入点-04
-      - 日本高速接入点-02
-      - 美国高速接入点-01
+      - _081
+      - _0275
+      - _014
+      - _0244
+      - _0102
+      - _0234
+      - _011
+      - _0219
+      - _013
+      - _0188
+      - _098
+      - _0118
+      - _048
+      - _0212
+      - _0163
+      - _046
+      - _044
+      - _075
+      - _021
+      - _0113
+      - _0138
+      - _0264
+      - _0140
+      - _0149
+      - _0144
+      - _020
+      - _0251
+      - _056
+      - _068
+      - _022
+      - _0256
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港-80端口(自行修改host)
-      - 香港高速接入点-03
-      - 距离下次重置剩余：18 天
-      - 新加坡高速接入点-01
-      - 香港高速接入点-02
-      - 香港高速接入点-04
-      - 日本高速接入点-02
-      - 美国高速接入点-01
+      - _081
+      - _0275
+      - _014
+      - _0244
+      - _0102
+      - _0234
+      - _011
+      - _0219
+      - _013
+      - _0188
+      - _098
+      - _0118
+      - _048
+      - _0212
+      - _0163
+      - _046
+      - _044
+      - _075
+      - _021
+      - _0113
+      - _0138
+      - _0264
+      - _0140
+      - _0149
+      - _0144
+      - _020
+      - _0251
+      - _056
+      - _068
+      - _022
+      - _0256
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -144,14 +324,37 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港-80端口(自行修改host)
-      - 香港高速接入点-03
-      - 距离下次重置剩余：18 天
-      - 新加坡高速接入点-01
-      - 香港高速接入点-02
-      - 香港高速接入点-04
-      - 日本高速接入点-02
-      - 美国高速接入点-01
+      - _081
+      - _0275
+      - _014
+      - _0244
+      - _0102
+      - _0234
+      - _011
+      - _0219
+      - _013
+      - _0188
+      - _098
+      - _0118
+      - _048
+      - _0212
+      - _0163
+      - _046
+      - _044
+      - _075
+      - _021
+      - _0113
+      - _0138
+      - _0264
+      - _0140
+      - _0149
+      - _0144
+      - _020
+      - _0251
+      - _056
+      - _068
+      - _022
+      - _0256
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
