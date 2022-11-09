@@ -5,63 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港-4|1G|80端口, server: hk-4.pannode.top, port: 80, type: vmess, uuid: 20ef9965-3733-44b3-8fe5-b5447c6d9c9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/wroot?ed=2048", ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 香港-5|1G|80端口, server: hk-5.pannode.top, port: 80, type: vmess, uuid: 20ef9965-3733-44b3-8fe5-b5447c6d9c9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/wroot?ed=2048", ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 香港-IV|10G|80端口, server: hk-iv.pannode.top, port: 80, type: vmess, uuid: 20ef9965-3733-44b3-8fe5-b5447c6d9c9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/wroot?ed=2048", ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 香港-测试|1G|80端口, server: hk-test.pannode.top, port: 80, type: vmess, uuid: 20ef9965-3733-44b3-8fe5-b5447c6d9c9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/wroot?ed=2048", ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 香港-1|1G|80端口, server: hk-1.pannode.top, port: 80, type: vmess, uuid: 20ef9965-3733-44b3-8fe5-b5447c6d9c9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/wroot?ed=2048", ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 香港-6|1G|80端口, server: hk-6.pannode.top, port: 80, type: vmess, uuid: 20ef9965-3733-44b3-8fe5-b5447c6d9c9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/wroot?ed=2048", ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 香港-2|1G|80端口, server: hk-2.pannode.top, port: 80, type: vmess, uuid: 20ef9965-3733-44b3-8fe5-b5447c6d9c9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/wroot?ed=2048", ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 香港-3|1G|80端口, server: hk-3.pannode.top, port: 80, type: vmess, uuid: 20ef9965-3733-44b3-8fe5-b5447c6d9c9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/wroot?ed=2048", ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: TG群组:xxmym, server: hk-i.pannode.top, port: 80, type: vmess, uuid: 20ef9965-3733-44b3-8fe5-b5447c6d9c9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/wroot?ed=2048", ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 香港-III|10G|80端口, server: hk-iii.pannode.top, port: 80, type: vmess, uuid: 20ef9965-3733-44b3-8fe5-b5447c6d9c9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/wroot?ed=2048", ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: "|16.70Mb", server: 119.45.28.201, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "|14.29Mb", server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "| 4.35Mb", server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "| 7.68Mb", server: 112.132.215.13, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-4|1G|80端口
-      - 香港-5|1G|80端口
-      - 香港-IV|10G|80端口
-      - 香港-测试|1G|80端口
-      - 香港-1|1G|80端口
-      - 香港-6|1G|80端口
-      - 香港-2|1G|80端口
-      - 香港-3|1G|80端口
-      - TG群组:xxmym
-      - 香港-III|10G|80端口
+      - "|16.70Mb"
+      - "|14.29Mb"
+      - "| 4.35Mb"
+      - "| 7.68Mb"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港-4|1G|80端口
-      - 香港-5|1G|80端口
-      - 香港-IV|10G|80端口
-      - 香港-测试|1G|80端口
-      - 香港-1|1G|80端口
-      - 香港-6|1G|80端口
-      - 香港-2|1G|80端口
-      - 香港-3|1G|80端口
-      - TG群组:xxmym
-      - 香港-III|10G|80端口
+      - "|16.70Mb"
+      - "|14.29Mb"
+      - "| 4.35Mb"
+      - "| 7.68Mb"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-4|1G|80端口
-      - 香港-5|1G|80端口
-      - 香港-IV|10G|80端口
-      - 香港-测试|1G|80端口
-      - 香港-1|1G|80端口
-      - 香港-6|1G|80端口
-      - 香港-2|1G|80端口
-      - 香港-3|1G|80端口
-      - TG群组:xxmym
-      - 香港-III|10G|80端口
+      - "|16.70Mb"
+      - "|14.29Mb"
+      - "| 4.35Mb"
+      - "| 7.68Mb"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,76 +56,43 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-4|1G|80端口
-      - 香港-5|1G|80端口
-      - 香港-IV|10G|80端口
-      - 香港-测试|1G|80端口
-      - 香港-1|1G|80端口
-      - 香港-6|1G|80端口
-      - 香港-2|1G|80端口
-      - 香港-3|1G|80端口
-      - TG群组:xxmym
-      - 香港-III|10G|80端口
+      - "|16.70Mb"
+      - "|14.29Mb"
+      - "| 4.35Mb"
+      - "| 7.68Mb"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港-4|1G|80端口
-      - 香港-5|1G|80端口
-      - 香港-IV|10G|80端口
-      - 香港-测试|1G|80端口
-      - 香港-1|1G|80端口
-      - 香港-6|1G|80端口
-      - 香港-2|1G|80端口
-      - 香港-3|1G|80端口
-      - 香港-III|10G|80端口
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港-4|1G|80端口
-      - 香港-5|1G|80端口
-      - 香港-IV|10G|80端口
-      - 香港-测试|1G|80端口
-      - 香港-1|1G|80端口
-      - 香港-6|1G|80端口
-      - 香港-2|1G|80端口
-      - 香港-3|1G|80端口
-      - TG群组:xxmym
-      - 香港-III|10G|80端口
+      - "|16.70Mb"
+      - "|14.29Mb"
+      - "| 4.35Mb"
+      - "| 7.68Mb"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港-4|1G|80端口
-      - 香港-5|1G|80端口
-      - 香港-IV|10G|80端口
-      - 香港-测试|1G|80端口
-      - 香港-1|1G|80端口
-      - 香港-6|1G|80端口
-      - 香港-2|1G|80端口
-      - 香港-3|1G|80端口
-      - TG群组:xxmym
-      - 香港-III|10G|80端口
+      - "|16.70Mb"
+      - "|14.29Mb"
+      - "| 4.35Mb"
+      - "| 7.68Mb"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港-4|1G|80端口
-      - 香港-5|1G|80端口
-      - 香港-IV|10G|80端口
-      - 香港-测试|1G|80端口
-      - 香港-1|1G|80端口
-      - 香港-6|1G|80端口
-      - 香港-2|1G|80端口
-      - 香港-3|1G|80端口
-      - TG群组:xxmym
-      - 香港-III|10G|80端口
+      - "|16.70Mb"
+      - "|14.29Mb"
+      - "| 4.35Mb"
+      - "| 7.68Mb"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -165,16 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港-4|1G|80端口
-      - 香港-5|1G|80端口
-      - 香港-IV|10G|80端口
-      - 香港-测试|1G|80端口
-      - 香港-1|1G|80端口
-      - 香港-6|1G|80端口
-      - 香港-2|1G|80端口
-      - 香港-3|1G|80端口
-      - TG群组:xxmym
-      - 香港-III|10G|80端口
+      - "|16.70Mb"
+      - "|14.29Mb"
+      - "| 4.35Mb"
+      - "| 7.68Mb"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
