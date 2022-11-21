@@ -5,31 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: Japan-日本, server: frontend.yijianlian.app, port: 54530, type: trojan, password: d0025bab-eee4-4b2b-970f-9a8e05bafd30, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: Australia-澳大利亚, server: frontend.yijianlian.app, port: 54590, type: trojan, password: d0025bab-eee4-4b2b-970f-9a8e05bafd30, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: Korea1-韩国一, server: frontend.yijianlian.app, port: 54580, type: trojan, password: d0025bab-eee4-4b2b-970f-9a8e05bafd30, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
   - {name: Singapore-新加坡, server: frontend.yijianlian.app, port: 54420, type: trojan, password: d0025bab-eee4-4b2b-970f-9a8e05bafd30, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: "IPLC-EU-UK-2[ran-out](ss)", server: h217022.waihuizhibiaowang.com, port: 15143, type: ss, cipher: chacha20-ietf-poly1305, password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Japan-日本
+      - Australia-澳大利亚
+      - Korea1-韩国一
       - Singapore-新加坡
-      - IPLC-EU-UK-2[ran-out](ss)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - Japan-日本
+      - Australia-澳大利亚
+      - Korea1-韩国一
       - Singapore-新加坡
-      - IPLC-EU-UK-2[ran-out](ss)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Japan-日本
+      - Australia-澳大利亚
+      - Korea1-韩国一
       - Singapore-新加坡
-      - IPLC-EU-UK-2[ran-out](ss)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,8 +56,10 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Japan-日本
+      - Australia-澳大利亚
+      - Korea1-韩国一
       - Singapore-新加坡
-      - IPLC-EU-UK-2[ran-out](ss)
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -60,23 +70,29 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - Japan-日本
+      - Australia-澳大利亚
+      - Korea1-韩国一
       - Singapore-新加坡
-      - IPLC-EU-UK-2[ran-out](ss)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - Japan-日本
+      - Australia-澳大利亚
+      - Korea1-韩国一
       - Singapore-新加坡
-      - IPLC-EU-UK-2[ran-out](ss)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Japan-日本
+      - Australia-澳大利亚
+      - Korea1-韩国一
       - Singapore-新加坡
-      - IPLC-EU-UK-2[ran-out](ss)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Japan-日本
+      - Australia-澳大利亚
+      - Korea1-韩国一
       - Singapore-新加坡
-      - IPLC-EU-UK-2[ran-out](ss)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
