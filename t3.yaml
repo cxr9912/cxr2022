@@ -5,39 +5,199 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Japan-日本, server: frontend.yijianlian.app, port: 54530, type: trojan, password: d0025bab-eee4-4b2b-970f-9a8e05bafd30, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: Australia-澳大利亚, server: frontend.yijianlian.app, port: 54590, type: trojan, password: d0025bab-eee4-4b2b-970f-9a8e05bafd30, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: Korea1-韩国一, server: frontend.yijianlian.app, port: 54580, type: trojan, password: d0025bab-eee4-4b2b-970f-9a8e05bafd30, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: Singapore-新加坡, server: frontend.yijianlian.app, port: 54420, type: trojan, password: d0025bab-eee4-4b2b-970f-9a8e05bafd30, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇹🇼 TW 18 Kirino LLC TG:@airproxies, server: cos-ap-guangzhou.westdatacloud.top, port: 20014, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇸🇬 SG 14 Kirino LLC TG:@nodpai, server: cos-ap-guangzhou.westdatacloud.top, port: 20023, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇦🇺 AU 3 Oracle Corporation TG:@nodpai, server: cos-ap-guangzhou.westdatacloud.top, port: 20061, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇸🇬 SG 12 Kirino LLC TG:@nodpai, server: cos-ap-guangzhou.westdatacloud.top, port: 20021, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇯🇵 JP 32 Kirino LLC TG:@nodpai, server: oss-cn-shanghai.westdatacloud.top, port: 20031, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇯🇵 JP 24 Kirino LLC TG:@nodpai, server: oss-cn-shanghai.westdatacloud.top, port: 20032, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇭🇰 HK 15 Kirino LLC TG:@nodpai, server: cos-ap-guangzhou.westdatacloud.top, port: 20008, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇯🇵 JP 11 Kirino LLC TG:@airproxies, server: oss-cn-shanghai.westdatacloud.xyz, port: 20036, type: trojan, password: 1BC2AF70-7052-CAE1-D253-D643788FFCF5, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: GB 5 Linode  LLC TG:@airproxies, server: uk.liangyuandian.top, port: 443, type: trojan, password: cc55e294-b76f-425a-9301-c18afbecaa22, sni: uk.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇯🇵 JP 23 Kirino LLC TG:@nodpai, server: oss-cn-shanghai.westdatacloud.top, port: 20034, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇬🇧 GB 3 Daniel Jackson TG:@nodpai, server: cos-ap-beijing.westdatacloud.top, port: 20053, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇯🇵 JP 22 Kirino LLC TG:@nodpai, server: oss-cn-shanghai.westdatacloud.top, port: 20033, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇪🇸 ES 1 Propelin Consulting S.L. TG:@airproxies, server: cos-ap-beijing.westdatacloud.top, port: 20059, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇯🇵 JP 13 Kirino LLC TG:@airproxies, server: oss-cn-shanghai.westdatacloud.top, port: 20038, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇯🇵 JP 16 Kirino LLC TG:@airproxies, server: oss-cn-shanghai.westdatacloud.top, port: 20037, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇭🇰 HK 22 Kirino LLC TG:@airproxies, server: cos-ap-guangzhou.westdatacloud.top, port: 20002, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇨🇦 CA 1 Aptum Technologies TG:@nodpai, server: oss-cn-shanghai.westdatacloud.top, port: 20051, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: DE 12 Linode  LLC TG:@airproxies, server: de.liangyuandian.top, port: 443, type: trojan, password: cc55e294-b76f-425a-9301-c18afbecaa22, sni: de.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 10 Kirino LLC TG:@airproxies, server: oss-cn-shanghai.westdatacloud.top, port: 20044, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 9 Kirino LLC TG:@airproxies, server: oss-cn-shanghai.westdatacloud.top, port: 20042, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇭🇰 HK 12 Kirino LLC TG:@nodpai, server: cos-ap-guangzhou.westdatacloud.top, port: 20006, type: trojan, password: DD8562FE-16E5-F31F-E43F-645CDAA5A53C, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 6 Kirino LLC TG:@nodpai, server: oss-cn-shanghai.westdatacloud.top, port: 20043, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 8 Kirino LLC TG:@airproxies, server: oss-cn-shanghai.westdatacloud.top, port: 20047, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: US 12 Linode  LLC TG:@nodpai, server: usa.liangyuandian.top, port: 443, type: trojan, password: cc55e294-b76f-425a-9301-c18afbecaa22, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 1 Kirino LLC TG:@airproxies, server: 117.149.247.11, port: 20048, type: trojan, password: 6CF89406-B124-EF62-C121-E1189081F0DF, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 7 Kirino LLC TG:@nodpai, server: oss-cn-shanghai.westdatacloud.top, port: 20045, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇺🇸 US 11 Kirino LLC TG:@airproxies, server: oss-cn-shanghai.westdatacloud.top, port: 20046, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇭🇰 HK 10 Kirino LLC TG:@airproxies, server: cos-ap-guangzhou.westdatacloud.top, port: 20007, type: trojan, password: DD8562FE-16E5-F31F-E43F-645CDAA5A53C, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇯🇵 JP 14 Kirino LLC TG:@nodpai, server: oss-cn-shanghai.westdatacloud.top, port: 20035, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇦🇷 AR 1 Sondatech S.A.S. TG:@nodpai, server: oss-cn-shanghai.westdatacloud.top, port: 20062, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇧🇷 BR 1 Eivus Data Center E Telecom TG:@airproxies, server: oss-cn-shanghai.westdatacloud.top, port: 20063, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇨🇱 CL 1 Grupo ZGH SPA TG:@airproxies, server: oss-cn-shanghai.westdatacloud.top, port: 20064, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇹🇼 TW 2 Kirino LLC TG:@nodpai, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20013, type: trojan, password: 1BC2AF70-7052-CAE1-D253-D643788FFCF5, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇸🇬 SG 7 Kirino LLC TG:@nodpai, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20026, type: trojan, password: 7D886417-7ACE-010A-6B08-81BF7931552B, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇹🇼 TW 1 Kirino LLC TG:@airproxies, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20012, type: trojan, password: 7D886417-7ACE-010A-6B08-81BF7931552B, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇹🇼 TW 4 Kirino LLC TG:@airproxies, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20011, type: trojan, password: 1BC2AF70-7052-CAE1-D253-D643788FFCF5, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇸🇬 SG 18 Kirino LLC TG:@airproxies, server: cos-ap-guangzhou.westdatacloud.top, port: 20024, type: trojan, password: BEE55383-1FEE-699B-EB56-7F42BB5FD13F, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇸🇬 SG 9 DigitalOcean  LLC TG:@nodpai, server: cos-ap-guangzhou.westdatacloud.top, port: 20028, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇸🇬 SG 13 DigitalOcean  LLC TG:@nodpai, server: cos-ap-guangzhou.westdatacloud.top, port: 20027, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇻🇳 VN 3 FPT Telecom Company TG:@airproxies, server: cos-ap-guangzhou.westdatacloud.top, port: 20069, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: JP 15 Linode  LLC TG:@airproxies, server: jp.liangyuandian.top, port: 443, type: trojan, password: cc55e294-b76f-425a-9301-c18afbecaa22, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: VN 7 ICTMEDIATECH TG:@nodpai, server: yn.xbywwcp.us, port: 25025, type: vmess, uuid: 8effdbce-8e1d-4a3c-a97d-d07ac31993be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /qingzhuanduoyun, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies, server: oss-cn-shanghai.westdatacloud.top, port: 20065, type: trojan, password: 606D730F-67C5-D63B-6661-F6CF5CB23DF5, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇭🇰 HK 4 Kirino LLC TG:@nodpai, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20004, type: trojan, password: 7D886417-7ACE-010A-6B08-81BF7931552B, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan-日本
-      - Australia-澳大利亚
-      - Korea1-韩国一
-      - Singapore-新加坡
+      - 中转 🇹🇼 TW 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇺 AU 3 Oracle Corporation TG:@nodpai
+      - 中转 🇸🇬 SG 12 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 32 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 24 Kirino LLC TG:@nodpai
+      - 中转 🇭🇰 HK 15 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 11 Kirino LLC TG:@airproxies
+      - GB 5 Linode  LLC TG:@airproxies
+      - 中转 🇯🇵 JP 23 Kirino LLC TG:@nodpai
+      - 中转 🇬🇧 GB 3 Daniel Jackson TG:@nodpai
+      - 中转 🇯🇵 JP 22 Kirino LLC TG:@nodpai
+      - 中转 🇪🇸 ES 1 Propelin Consulting S.L. TG:@airproxies
+      - 中转 🇯🇵 JP 13 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 16 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 22 Kirino LLC TG:@airproxies
+      - 中转 🇨🇦 CA 1 Aptum Technologies TG:@nodpai
+      - DE 12 Linode  LLC TG:@airproxies
+      - 中转 🇺🇸 US 10 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 9 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 12 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 6 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 8 Kirino LLC TG:@airproxies
+      - US 12 Linode  LLC TG:@nodpai
+      - 中转 🇺🇸 US 1 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 7 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 11 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 10 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇷 AR 1 Sondatech S.A.S. TG:@nodpai
+      - 中转 🇧🇷 BR 1 Eivus Data Center E Telecom TG:@airproxies
+      - 中转 🇨🇱 CL 1 Grupo ZGH SPA TG:@airproxies
+      - 中转 🇹🇼 TW 2 Kirino LLC TG:@nodpai
+      - 中转 🇸🇬 SG 7 Kirino LLC TG:@nodpai
+      - 中转 🇹🇼 TW 1 Kirino LLC TG:@airproxies
+      - 中转 🇹🇼 TW 4 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 9 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇸🇬 SG 13 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇻🇳 VN 3 FPT Telecom Company TG:@airproxies
+      - JP 15 Linode  LLC TG:@airproxies
+      - VN 7 ICTMEDIATECH TG:@nodpai
+      - 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 中转 🇭🇰 HK 4 Kirino LLC TG:@nodpai
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Japan-日本
-      - Australia-澳大利亚
-      - Korea1-韩国一
-      - Singapore-新加坡
+      - 中转 🇹🇼 TW 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇺 AU 3 Oracle Corporation TG:@nodpai
+      - 中转 🇸🇬 SG 12 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 32 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 24 Kirino LLC TG:@nodpai
+      - 中转 🇭🇰 HK 15 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 11 Kirino LLC TG:@airproxies
+      - GB 5 Linode  LLC TG:@airproxies
+      - 中转 🇯🇵 JP 23 Kirino LLC TG:@nodpai
+      - 中转 🇬🇧 GB 3 Daniel Jackson TG:@nodpai
+      - 中转 🇯🇵 JP 22 Kirino LLC TG:@nodpai
+      - 中转 🇪🇸 ES 1 Propelin Consulting S.L. TG:@airproxies
+      - 中转 🇯🇵 JP 13 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 16 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 22 Kirino LLC TG:@airproxies
+      - 中转 🇨🇦 CA 1 Aptum Technologies TG:@nodpai
+      - DE 12 Linode  LLC TG:@airproxies
+      - 中转 🇺🇸 US 10 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 9 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 12 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 6 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 8 Kirino LLC TG:@airproxies
+      - US 12 Linode  LLC TG:@nodpai
+      - 中转 🇺🇸 US 1 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 7 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 11 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 10 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇷 AR 1 Sondatech S.A.S. TG:@nodpai
+      - 中转 🇧🇷 BR 1 Eivus Data Center E Telecom TG:@airproxies
+      - 中转 🇨🇱 CL 1 Grupo ZGH SPA TG:@airproxies
+      - 中转 🇹🇼 TW 2 Kirino LLC TG:@nodpai
+      - 中转 🇸🇬 SG 7 Kirino LLC TG:@nodpai
+      - 中转 🇹🇼 TW 1 Kirino LLC TG:@airproxies
+      - 中转 🇹🇼 TW 4 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 9 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇸🇬 SG 13 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇻🇳 VN 3 FPT Telecom Company TG:@airproxies
+      - JP 15 Linode  LLC TG:@airproxies
+      - VN 7 ICTMEDIATECH TG:@nodpai
+      - 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 中转 🇭🇰 HK 4 Kirino LLC TG:@nodpai
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan-日本
-      - Australia-澳大利亚
-      - Korea1-韩国一
-      - Singapore-新加坡
+      - 中转 🇹🇼 TW 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇺 AU 3 Oracle Corporation TG:@nodpai
+      - 中转 🇸🇬 SG 12 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 32 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 24 Kirino LLC TG:@nodpai
+      - 中转 🇭🇰 HK 15 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 11 Kirino LLC TG:@airproxies
+      - GB 5 Linode  LLC TG:@airproxies
+      - 中转 🇯🇵 JP 23 Kirino LLC TG:@nodpai
+      - 中转 🇬🇧 GB 3 Daniel Jackson TG:@nodpai
+      - 中转 🇯🇵 JP 22 Kirino LLC TG:@nodpai
+      - 中转 🇪🇸 ES 1 Propelin Consulting S.L. TG:@airproxies
+      - 中转 🇯🇵 JP 13 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 16 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 22 Kirino LLC TG:@airproxies
+      - 中转 🇨🇦 CA 1 Aptum Technologies TG:@nodpai
+      - DE 12 Linode  LLC TG:@airproxies
+      - 中转 🇺🇸 US 10 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 9 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 12 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 6 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 8 Kirino LLC TG:@airproxies
+      - US 12 Linode  LLC TG:@nodpai
+      - 中转 🇺🇸 US 1 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 7 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 11 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 10 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇷 AR 1 Sondatech S.A.S. TG:@nodpai
+      - 中转 🇧🇷 BR 1 Eivus Data Center E Telecom TG:@airproxies
+      - 中转 🇨🇱 CL 1 Grupo ZGH SPA TG:@airproxies
+      - 中转 🇹🇼 TW 2 Kirino LLC TG:@nodpai
+      - 中转 🇸🇬 SG 7 Kirino LLC TG:@nodpai
+      - 中转 🇹🇼 TW 1 Kirino LLC TG:@airproxies
+      - 中转 🇹🇼 TW 4 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 9 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇸🇬 SG 13 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇻🇳 VN 3 FPT Telecom Company TG:@airproxies
+      - JP 15 Linode  LLC TG:@airproxies
+      - VN 7 ICTMEDIATECH TG:@nodpai
+      - 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 中转 🇭🇰 HK 4 Kirino LLC TG:@nodpai
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,10 +216,50 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan-日本
-      - Australia-澳大利亚
-      - Korea1-韩国一
-      - Singapore-新加坡
+      - 中转 🇹🇼 TW 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇺 AU 3 Oracle Corporation TG:@nodpai
+      - 中转 🇸🇬 SG 12 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 32 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 24 Kirino LLC TG:@nodpai
+      - 中转 🇭🇰 HK 15 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 11 Kirino LLC TG:@airproxies
+      - GB 5 Linode  LLC TG:@airproxies
+      - 中转 🇯🇵 JP 23 Kirino LLC TG:@nodpai
+      - 中转 🇬🇧 GB 3 Daniel Jackson TG:@nodpai
+      - 中转 🇯🇵 JP 22 Kirino LLC TG:@nodpai
+      - 中转 🇪🇸 ES 1 Propelin Consulting S.L. TG:@airproxies
+      - 中转 🇯🇵 JP 13 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 16 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 22 Kirino LLC TG:@airproxies
+      - 中转 🇨🇦 CA 1 Aptum Technologies TG:@nodpai
+      - DE 12 Linode  LLC TG:@airproxies
+      - 中转 🇺🇸 US 10 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 9 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 12 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 6 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 8 Kirino LLC TG:@airproxies
+      - US 12 Linode  LLC TG:@nodpai
+      - 中转 🇺🇸 US 1 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 7 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 11 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 10 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇷 AR 1 Sondatech S.A.S. TG:@nodpai
+      - 中转 🇧🇷 BR 1 Eivus Data Center E Telecom TG:@airproxies
+      - 中转 🇨🇱 CL 1 Grupo ZGH SPA TG:@airproxies
+      - 中转 🇹🇼 TW 2 Kirino LLC TG:@nodpai
+      - 中转 🇸🇬 SG 7 Kirino LLC TG:@nodpai
+      - 中转 🇹🇼 TW 1 Kirino LLC TG:@airproxies
+      - 中转 🇹🇼 TW 4 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 9 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇸🇬 SG 13 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇻🇳 VN 3 FPT Telecom Company TG:@airproxies
+      - JP 15 Linode  LLC TG:@airproxies
+      - VN 7 ICTMEDIATECH TG:@nodpai
+      - 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 中转 🇭🇰 HK 4 Kirino LLC TG:@nodpai
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -70,29 +270,149 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Japan-日本
-      - Australia-澳大利亚
-      - Korea1-韩国一
-      - Singapore-新加坡
+      - 中转 🇹🇼 TW 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇺 AU 3 Oracle Corporation TG:@nodpai
+      - 中转 🇸🇬 SG 12 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 32 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 24 Kirino LLC TG:@nodpai
+      - 中转 🇭🇰 HK 15 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 11 Kirino LLC TG:@airproxies
+      - GB 5 Linode  LLC TG:@airproxies
+      - 中转 🇯🇵 JP 23 Kirino LLC TG:@nodpai
+      - 中转 🇬🇧 GB 3 Daniel Jackson TG:@nodpai
+      - 中转 🇯🇵 JP 22 Kirino LLC TG:@nodpai
+      - 中转 🇪🇸 ES 1 Propelin Consulting S.L. TG:@airproxies
+      - 中转 🇯🇵 JP 13 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 16 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 22 Kirino LLC TG:@airproxies
+      - 中转 🇨🇦 CA 1 Aptum Technologies TG:@nodpai
+      - DE 12 Linode  LLC TG:@airproxies
+      - 中转 🇺🇸 US 10 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 9 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 12 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 6 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 8 Kirino LLC TG:@airproxies
+      - US 12 Linode  LLC TG:@nodpai
+      - 中转 🇺🇸 US 1 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 7 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 11 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 10 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇷 AR 1 Sondatech S.A.S. TG:@nodpai
+      - 中转 🇧🇷 BR 1 Eivus Data Center E Telecom TG:@airproxies
+      - 中转 🇨🇱 CL 1 Grupo ZGH SPA TG:@airproxies
+      - 中转 🇹🇼 TW 2 Kirino LLC TG:@nodpai
+      - 中转 🇸🇬 SG 7 Kirino LLC TG:@nodpai
+      - 中转 🇹🇼 TW 1 Kirino LLC TG:@airproxies
+      - 中转 🇹🇼 TW 4 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 9 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇸🇬 SG 13 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇻🇳 VN 3 FPT Telecom Company TG:@airproxies
+      - JP 15 Linode  LLC TG:@airproxies
+      - VN 7 ICTMEDIATECH TG:@nodpai
+      - 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 中转 🇭🇰 HK 4 Kirino LLC TG:@nodpai
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Japan-日本
-      - Australia-澳大利亚
-      - Korea1-韩国一
-      - Singapore-新加坡
+      - 中转 🇹🇼 TW 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇺 AU 3 Oracle Corporation TG:@nodpai
+      - 中转 🇸🇬 SG 12 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 32 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 24 Kirino LLC TG:@nodpai
+      - 中转 🇭🇰 HK 15 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 11 Kirino LLC TG:@airproxies
+      - GB 5 Linode  LLC TG:@airproxies
+      - 中转 🇯🇵 JP 23 Kirino LLC TG:@nodpai
+      - 中转 🇬🇧 GB 3 Daniel Jackson TG:@nodpai
+      - 中转 🇯🇵 JP 22 Kirino LLC TG:@nodpai
+      - 中转 🇪🇸 ES 1 Propelin Consulting S.L. TG:@airproxies
+      - 中转 🇯🇵 JP 13 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 16 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 22 Kirino LLC TG:@airproxies
+      - 中转 🇨🇦 CA 1 Aptum Technologies TG:@nodpai
+      - DE 12 Linode  LLC TG:@airproxies
+      - 中转 🇺🇸 US 10 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 9 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 12 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 6 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 8 Kirino LLC TG:@airproxies
+      - US 12 Linode  LLC TG:@nodpai
+      - 中转 🇺🇸 US 1 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 7 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 11 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 10 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇷 AR 1 Sondatech S.A.S. TG:@nodpai
+      - 中转 🇧🇷 BR 1 Eivus Data Center E Telecom TG:@airproxies
+      - 中转 🇨🇱 CL 1 Grupo ZGH SPA TG:@airproxies
+      - 中转 🇹🇼 TW 2 Kirino LLC TG:@nodpai
+      - 中转 🇸🇬 SG 7 Kirino LLC TG:@nodpai
+      - 中转 🇹🇼 TW 1 Kirino LLC TG:@airproxies
+      - 中转 🇹🇼 TW 4 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 9 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇸🇬 SG 13 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇻🇳 VN 3 FPT Telecom Company TG:@airproxies
+      - JP 15 Linode  LLC TG:@airproxies
+      - VN 7 ICTMEDIATECH TG:@nodpai
+      - 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 中转 🇭🇰 HK 4 Kirino LLC TG:@nodpai
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Japan-日本
-      - Australia-澳大利亚
-      - Korea1-韩国一
-      - Singapore-新加坡
+      - 中转 🇹🇼 TW 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇺 AU 3 Oracle Corporation TG:@nodpai
+      - 中转 🇸🇬 SG 12 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 32 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 24 Kirino LLC TG:@nodpai
+      - 中转 🇭🇰 HK 15 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 11 Kirino LLC TG:@airproxies
+      - GB 5 Linode  LLC TG:@airproxies
+      - 中转 🇯🇵 JP 23 Kirino LLC TG:@nodpai
+      - 中转 🇬🇧 GB 3 Daniel Jackson TG:@nodpai
+      - 中转 🇯🇵 JP 22 Kirino LLC TG:@nodpai
+      - 中转 🇪🇸 ES 1 Propelin Consulting S.L. TG:@airproxies
+      - 中转 🇯🇵 JP 13 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 16 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 22 Kirino LLC TG:@airproxies
+      - 中转 🇨🇦 CA 1 Aptum Technologies TG:@nodpai
+      - DE 12 Linode  LLC TG:@airproxies
+      - 中转 🇺🇸 US 10 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 9 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 12 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 6 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 8 Kirino LLC TG:@airproxies
+      - US 12 Linode  LLC TG:@nodpai
+      - 中转 🇺🇸 US 1 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 7 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 11 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 10 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇷 AR 1 Sondatech S.A.S. TG:@nodpai
+      - 中转 🇧🇷 BR 1 Eivus Data Center E Telecom TG:@airproxies
+      - 中转 🇨🇱 CL 1 Grupo ZGH SPA TG:@airproxies
+      - 中转 🇹🇼 TW 2 Kirino LLC TG:@nodpai
+      - 中转 🇸🇬 SG 7 Kirino LLC TG:@nodpai
+      - 中转 🇹🇼 TW 1 Kirino LLC TG:@airproxies
+      - 中转 🇹🇼 TW 4 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 9 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇸🇬 SG 13 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇻🇳 VN 3 FPT Telecom Company TG:@airproxies
+      - JP 15 Linode  LLC TG:@airproxies
+      - VN 7 ICTMEDIATECH TG:@nodpai
+      - 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 中转 🇭🇰 HK 4 Kirino LLC TG:@nodpai
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +428,50 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Japan-日本
-      - Australia-澳大利亚
-      - Korea1-韩国一
-      - Singapore-新加坡
+      - 中转 🇹🇼 TW 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇺 AU 3 Oracle Corporation TG:@nodpai
+      - 中转 🇸🇬 SG 12 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 32 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 24 Kirino LLC TG:@nodpai
+      - 中转 🇭🇰 HK 15 Kirino LLC TG:@nodpai
+      - 中转 🇯🇵 JP 11 Kirino LLC TG:@airproxies
+      - GB 5 Linode  LLC TG:@airproxies
+      - 中转 🇯🇵 JP 23 Kirino LLC TG:@nodpai
+      - 中转 🇬🇧 GB 3 Daniel Jackson TG:@nodpai
+      - 中转 🇯🇵 JP 22 Kirino LLC TG:@nodpai
+      - 中转 🇪🇸 ES 1 Propelin Consulting S.L. TG:@airproxies
+      - 中转 🇯🇵 JP 13 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 16 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 22 Kirino LLC TG:@airproxies
+      - 中转 🇨🇦 CA 1 Aptum Technologies TG:@nodpai
+      - DE 12 Linode  LLC TG:@airproxies
+      - 中转 🇺🇸 US 10 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 9 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 12 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 6 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 8 Kirino LLC TG:@airproxies
+      - US 12 Linode  LLC TG:@nodpai
+      - 中转 🇺🇸 US 1 Kirino LLC TG:@airproxies
+      - 中转 🇺🇸 US 7 Kirino LLC TG:@nodpai
+      - 中转 🇺🇸 US 11 Kirino LLC TG:@airproxies
+      - 中转 🇭🇰 HK 10 Kirino LLC TG:@airproxies
+      - 中转 🇯🇵 JP 14 Kirino LLC TG:@nodpai
+      - 中转 🇦🇷 AR 1 Sondatech S.A.S. TG:@nodpai
+      - 中转 🇧🇷 BR 1 Eivus Data Center E Telecom TG:@airproxies
+      - 中转 🇨🇱 CL 1 Grupo ZGH SPA TG:@airproxies
+      - 中转 🇹🇼 TW 2 Kirino LLC TG:@nodpai
+      - 中转 🇸🇬 SG 7 Kirino LLC TG:@nodpai
+      - 中转 🇹🇼 TW 1 Kirino LLC TG:@airproxies
+      - 中转 🇹🇼 TW 4 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 18 Kirino LLC TG:@airproxies
+      - 中转 🇸🇬 SG 9 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇸🇬 SG 13 DigitalOcean  LLC TG:@nodpai
+      - 中转 🇻🇳 VN 3 FPT Telecom Company TG:@airproxies
+      - JP 15 Linode  LLC TG:@airproxies
+      - VN 7 ICTMEDIATECH TG:@nodpai
+      - 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 中转 🇭🇰 HK 4 Kirino LLC TG:@nodpai
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
