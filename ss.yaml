@@ -5,47 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "| 7.68Mb", server: 112.132.215.13, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|20.24Mb", server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|74.69Mb", server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|20.24Mb 2", server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "| 9.11Mb", server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "| 7.68Mb 2", server: 112.132.215.13, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 03 2, server: cos-ap-guangzhou.westdatacloud.top, port: 20013, type: trojan, password: FDD7BFCC-4176-4C39-6CA8-0DCCD72B72B5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 03 3, server: cos-ap-guangzhou.westdatacloud.top, port: 20013, type: trojan, password: F5AFF76C-8C28-878F-3A1A-241A467736F5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|叻沙, server: xin.mooooobai.top, port: 5122, type: vmess, uuid: 9627c468-64f1-31ac-8f88-bd39e1748aa8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usr, ws-headers: {Host: xin.mooooobai.top}, udp: true}
+  - {name: 韩国|韩式拌饭, server: hkg.mooooobai.top, port: 51222, type: vmess, uuid: 9627c468-64f1-31ac-8f88-bd39e1748aa8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港|咖喱鱼丸, server: hjm.mooooobai.top, port: 51222, type: vmess, uuid: 9627c468-64f1-31ac-8f88-bd39e1748aa8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "Traffic: 42.36 GB | 200 GB", server: oss-cn-guangzhou.westdatacloud.xyz, port: 20001, type: trojan, password: 79864638-4679-241F-5ACE-5DD17E505503, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 05, server: cos-ap-guangzhou.westdatacloud.top, port: 20015, type: trojan, password: F5AFF76C-8C28-878F-3A1A-241A467736F5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 01, server: cos-ap-guangzhou.westdatacloud.top, port: 20011, type: trojan, password: F5AFF76C-8C28-878F-3A1A-241A467736F5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 02 2, server: cos-ap-guangzhou.westdatacloud.top, port: 20012, type: trojan, password: FDD7BFCC-4176-4C39-6CA8-0DCCD72B72B5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Hong Kong | 06, server: cos-ap-guangzhou.westdatacloud.top, port: 20006, type: trojan, password: F5AFF76C-8C28-878F-3A1A-241A467736F5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: "Traffic: 9.34 GB | 200 GB", server: cos-ap-guangzhou.westdatacloud.top, port: 20001, type: trojan, password: FDD7BFCC-4176-4C39-6CA8-0DCCD72B72B5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: Taiwan | 02, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20012, type: trojan, password: 79864638-4679-241F-5ACE-5DD17E505503, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "| 7.68Mb"
-      - "|20.24Mb"
-      - "|74.69Mb"
-      - "|20.24Mb 2"
-      - "| 9.11Mb"
-      - "| 7.68Mb 2"
+      - Taiwan | 03 2
+      - Taiwan | 03 3
+      - 新加坡|叻沙
+      - 韩国|韩式拌饭
+      - 香港|咖喱鱼丸
+      - "Traffic: 42.36 GB | 200 GB"
+      - Taiwan | 05
+      - Taiwan | 01
+      - Taiwan | 02 2
+      - Hong Kong | 06
+      - "Traffic: 9.34 GB | 200 GB"
+      - Taiwan | 02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "| 7.68Mb"
-      - "|20.24Mb"
-      - "|74.69Mb"
-      - "|20.24Mb 2"
-      - "| 9.11Mb"
-      - "| 7.68Mb 2"
+      - Taiwan | 03 2
+      - Taiwan | 03 3
+      - 新加坡|叻沙
+      - 韩国|韩式拌饭
+      - 香港|咖喱鱼丸
+      - "Traffic: 42.36 GB | 200 GB"
+      - Taiwan | 05
+      - Taiwan | 01
+      - Taiwan | 02 2
+      - Hong Kong | 06
+      - "Traffic: 9.34 GB | 200 GB"
+      - Taiwan | 02
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "| 7.68Mb"
-      - "|20.24Mb"
-      - "|74.69Mb"
-      - "|20.24Mb 2"
-      - "| 9.11Mb"
-      - "| 7.68Mb 2"
+      - Taiwan | 03 2
+      - Taiwan | 03 3
+      - 新加坡|叻沙
+      - 韩国|韩式拌饭
+      - 香港|咖喱鱼丸
+      - "Traffic: 42.36 GB | 200 GB"
+      - Taiwan | 05
+      - Taiwan | 01
+      - Taiwan | 02 2
+      - Hong Kong | 06
+      - "Traffic: 9.34 GB | 200 GB"
+      - Taiwan | 02
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,51 +88,76 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "| 7.68Mb"
-      - "|20.24Mb"
-      - "|74.69Mb"
-      - "|20.24Mb 2"
-      - "| 9.11Mb"
-      - "| 7.68Mb 2"
+      - Taiwan | 03 2
+      - Taiwan | 03 3
+      - 新加坡|叻沙
+      - 韩国|韩式拌饭
+      - 香港|咖喱鱼丸
+      - "Traffic: 42.36 GB | 200 GB"
+      - Taiwan | 05
+      - Taiwan | 01
+      - Taiwan | 02 2
+      - Hong Kong | 06
+      - "Traffic: 9.34 GB | 200 GB"
+      - Taiwan | 02
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港|咖喱鱼丸
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "| 7.68Mb"
-      - "|20.24Mb"
-      - "|74.69Mb"
-      - "|20.24Mb 2"
-      - "| 9.11Mb"
-      - "| 7.68Mb 2"
+      - Taiwan | 03 2
+      - Taiwan | 03 3
+      - 新加坡|叻沙
+      - 韩国|韩式拌饭
+      - 香港|咖喱鱼丸
+      - "Traffic: 42.36 GB | 200 GB"
+      - Taiwan | 05
+      - Taiwan | 01
+      - Taiwan | 02 2
+      - Hong Kong | 06
+      - "Traffic: 9.34 GB | 200 GB"
+      - Taiwan | 02
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "| 7.68Mb"
-      - "|20.24Mb"
-      - "|74.69Mb"
-      - "|20.24Mb 2"
-      - "| 9.11Mb"
-      - "| 7.68Mb 2"
+      - Taiwan | 03 2
+      - Taiwan | 03 3
+      - 新加坡|叻沙
+      - 韩国|韩式拌饭
+      - 香港|咖喱鱼丸
+      - "Traffic: 42.36 GB | 200 GB"
+      - Taiwan | 05
+      - Taiwan | 01
+      - Taiwan | 02 2
+      - Hong Kong | 06
+      - "Traffic: 9.34 GB | 200 GB"
+      - Taiwan | 02
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "| 7.68Mb"
-      - "|20.24Mb"
-      - "|74.69Mb"
-      - "|20.24Mb 2"
-      - "| 9.11Mb"
-      - "| 7.68Mb 2"
+      - Taiwan | 03 2
+      - Taiwan | 03 3
+      - 新加坡|叻沙
+      - 韩国|韩式拌饭
+      - 香港|咖喱鱼丸
+      - "Traffic: 42.36 GB | 200 GB"
+      - Taiwan | 05
+      - Taiwan | 01
+      - Taiwan | 02 2
+      - Hong Kong | 06
+      - "Traffic: 9.34 GB | 200 GB"
+      - Taiwan | 02
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,12 +173,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "| 7.68Mb"
-      - "|20.24Mb"
-      - "|74.69Mb"
-      - "|20.24Mb 2"
-      - "| 9.11Mb"
-      - "| 7.68Mb 2"
+      - Taiwan | 03 2
+      - Taiwan | 03 3
+      - 新加坡|叻沙
+      - 韩国|韩式拌饭
+      - 香港|咖喱鱼丸
+      - "Traffic: 42.36 GB | 200 GB"
+      - Taiwan | 05
+      - Taiwan | 01
+      - Taiwan | 02 2
+      - Hong Kong | 06
+      - "Traffic: 9.34 GB | 200 GB"
+      - Taiwan | 02
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
