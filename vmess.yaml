@@ -5,63 +5,79 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 A/01 x1.0, server: 183.245.146.6, port: 21001, type: trojan, password: 78d8a627-9e08-4be9-bcb4-30643cb96b62, skip-cert-verify: true, udp: true}
-  - {name: 香港 A/02 x1.0, server: 183.245.146.6, port: 21002, type: trojan, password: 78d8a627-9e08-4be9-bcb4-30643cb96b62, skip-cert-verify: true, udp: true}
-  - {name: 越南 A/02 x1.0, server: 183.245.146.6, port: 61005, type: trojan, password: 78d8a627-9e08-4be9-bcb4-30643cb96b62, skip-cert-verify: true, udp: true}
-  - {name: 日本 A/02 x1.0, server: 183.245.146.6, port: 11002, type: trojan, password: 78d8a627-9e08-4be9-bcb4-30643cb96b62, skip-cert-verify: true, udp: true}
-  - {name: 泰國 A/01 x1.0, server: 183.245.146.6, port: 61003, type: trojan, password: 78d8a627-9e08-4be9-bcb4-30643cb96b62, skip-cert-verify: true, udp: true}
-  - {name: 台灣 A/01 x1.0, server: 183.245.146.6, port: 41001, type: trojan, password: 78d8a627-9e08-4be9-bcb4-30643cb96b62, skip-cert-verify: true, udp: true}
-  - {name: 越南 A/01 x1.0, server: 183.245.146.6, port: 61004, type: trojan, password: 78d8a627-9e08-4be9-bcb4-30643cb96b62, skip-cert-verify: true, udp: true}
-  - {name: 香港 A/03 x1.0, server: 183.245.146.6, port: 21003, type: trojan, password: 78d8a627-9e08-4be9-bcb4-30643cb96b62, skip-cert-verify: true, udp: true}
-  - {name: 越南 A/03 x1.0, server: 183.245.146.6, port: 61006, type: trojan, password: 78d8a627-9e08-4be9-bcb4-30643cb96b62, skip-cert-verify: true, udp: true}
-  - {name: 美國 A/01 x1.0, server: 183.245.146.6, port: 31001, type: trojan, password: 78d8a627-9e08-4be9-bcb4-30643cb96b62, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-Portalgun-02, server: f1f3227.v2.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.qq.com}, udp: true}
+  - {name: GLaDOS-Portalgun-01, server: f1f3227.v1.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.apple.com}, udp: true}
+  - {name: GLaDOS-Portalgun-03, server: f1f3227.v3.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.skype.com}, udp: true}
+  - {name: GLaDOS-Portalgun-04, server: f1f3227.v4.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.apple.com}, udp: true}
+  - {name: GLaDOS-TW-1-Netflix, server: f1f3227.f1.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: tls.apple.com}, udp: true}
+  - {name: GLaDOS-Portalgun-08, server: f1f3227.v8.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.icloud.com}, udp: true}
+  - {name: GLaDOS-Portalgun-09, server: f1f3227.v9.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.icloud.com}, udp: true}
+  - {name: GLaDOS-TW-2-Netflix, server: f1f3227.f2.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: tls.apple.com}, udp: true}
+  - {name: GLaDOS-Portalgun-05, server: f1f3227.v5.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: stmp.163.com}, udp: true}
+  - {name: GLaDOS-TW-3-Netflix, server: f1f3227.f3.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: tls.apple.com}, udp: true}
+  - {name: GLaDOS-Portalgun-06, server: f1f3227.v6.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.icloud.com}, udp: true}
+  - {name: GLaDOS-Portalgun-07, server: f1f3227.v7.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.icloud.com}, udp: true}
+  - {name: GLaDOS-US-01, server: f1f3227.u1.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: tls.apple.com}, udp: true}
+  - {name: GLaDOS-US-03, server: f1f3227.u3.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: tls.apple.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 A/01 x1.0
-      - 香港 A/02 x1.0
-      - 越南 A/02 x1.0
-      - 日本 A/02 x1.0
-      - 泰國 A/01 x1.0
-      - 台灣 A/01 x1.0
-      - 越南 A/01 x1.0
-      - 香港 A/03 x1.0
-      - 越南 A/03 x1.0
-      - 美國 A/01 x1.0
+      - GLaDOS-Portalgun-02
+      - GLaDOS-Portalgun-01
+      - GLaDOS-Portalgun-03
+      - GLaDOS-Portalgun-04
+      - GLaDOS-TW-1-Netflix
+      - GLaDOS-Portalgun-08
+      - GLaDOS-Portalgun-09
+      - GLaDOS-TW-2-Netflix
+      - GLaDOS-Portalgun-05
+      - GLaDOS-TW-3-Netflix
+      - GLaDOS-Portalgun-06
+      - GLaDOS-Portalgun-07
+      - GLaDOS-US-01
+      - GLaDOS-US-03
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 A/01 x1.0
-      - 香港 A/02 x1.0
-      - 越南 A/02 x1.0
-      - 日本 A/02 x1.0
-      - 泰國 A/01 x1.0
-      - 台灣 A/01 x1.0
-      - 越南 A/01 x1.0
-      - 香港 A/03 x1.0
-      - 越南 A/03 x1.0
-      - 美國 A/01 x1.0
+      - GLaDOS-Portalgun-02
+      - GLaDOS-Portalgun-01
+      - GLaDOS-Portalgun-03
+      - GLaDOS-Portalgun-04
+      - GLaDOS-TW-1-Netflix
+      - GLaDOS-Portalgun-08
+      - GLaDOS-Portalgun-09
+      - GLaDOS-TW-2-Netflix
+      - GLaDOS-Portalgun-05
+      - GLaDOS-TW-3-Netflix
+      - GLaDOS-Portalgun-06
+      - GLaDOS-Portalgun-07
+      - GLaDOS-US-01
+      - GLaDOS-US-03
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 A/01 x1.0
-      - 香港 A/02 x1.0
-      - 越南 A/02 x1.0
-      - 日本 A/02 x1.0
-      - 泰國 A/01 x1.0
-      - 台灣 A/01 x1.0
-      - 越南 A/01 x1.0
-      - 香港 A/03 x1.0
-      - 越南 A/03 x1.0
-      - 美國 A/01 x1.0
+      - GLaDOS-Portalgun-02
+      - GLaDOS-Portalgun-01
+      - GLaDOS-Portalgun-03
+      - GLaDOS-Portalgun-04
+      - GLaDOS-TW-1-Netflix
+      - GLaDOS-Portalgun-08
+      - GLaDOS-Portalgun-09
+      - GLaDOS-TW-2-Netflix
+      - GLaDOS-Portalgun-05
+      - GLaDOS-TW-3-Netflix
+      - GLaDOS-Portalgun-06
+      - GLaDOS-Portalgun-07
+      - GLaDOS-US-01
+      - GLaDOS-US-03
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,71 +96,83 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 A/01 x1.0
-      - 香港 A/02 x1.0
-      - 越南 A/02 x1.0
-      - 日本 A/02 x1.0
-      - 泰國 A/01 x1.0
-      - 台灣 A/01 x1.0
-      - 越南 A/01 x1.0
-      - 香港 A/03 x1.0
-      - 越南 A/03 x1.0
-      - 美國 A/01 x1.0
+      - GLaDOS-Portalgun-02
+      - GLaDOS-Portalgun-01
+      - GLaDOS-Portalgun-03
+      - GLaDOS-Portalgun-04
+      - GLaDOS-TW-1-Netflix
+      - GLaDOS-Portalgun-08
+      - GLaDOS-Portalgun-09
+      - GLaDOS-TW-2-Netflix
+      - GLaDOS-Portalgun-05
+      - GLaDOS-TW-3-Netflix
+      - GLaDOS-Portalgun-06
+      - GLaDOS-Portalgun-07
+      - GLaDOS-US-01
+      - GLaDOS-US-03
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 A/01 x1.0
-      - 香港 A/02 x1.0
-      - 台灣 A/01 x1.0
-      - 香港 A/03 x1.0
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 A/01 x1.0
-      - 香港 A/02 x1.0
-      - 越南 A/02 x1.0
-      - 日本 A/02 x1.0
-      - 泰國 A/01 x1.0
-      - 台灣 A/01 x1.0
-      - 越南 A/01 x1.0
-      - 香港 A/03 x1.0
-      - 越南 A/03 x1.0
-      - 美國 A/01 x1.0
+      - GLaDOS-Portalgun-02
+      - GLaDOS-Portalgun-01
+      - GLaDOS-Portalgun-03
+      - GLaDOS-Portalgun-04
+      - GLaDOS-TW-1-Netflix
+      - GLaDOS-Portalgun-08
+      - GLaDOS-Portalgun-09
+      - GLaDOS-TW-2-Netflix
+      - GLaDOS-Portalgun-05
+      - GLaDOS-TW-3-Netflix
+      - GLaDOS-Portalgun-06
+      - GLaDOS-Portalgun-07
+      - GLaDOS-US-01
+      - GLaDOS-US-03
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 A/01 x1.0
-      - 香港 A/02 x1.0
-      - 越南 A/02 x1.0
-      - 日本 A/02 x1.0
-      - 泰國 A/01 x1.0
-      - 台灣 A/01 x1.0
-      - 越南 A/01 x1.0
-      - 香港 A/03 x1.0
-      - 越南 A/03 x1.0
-      - 美國 A/01 x1.0
+      - GLaDOS-Portalgun-02
+      - GLaDOS-Portalgun-01
+      - GLaDOS-Portalgun-03
+      - GLaDOS-Portalgun-04
+      - GLaDOS-TW-1-Netflix
+      - GLaDOS-Portalgun-08
+      - GLaDOS-Portalgun-09
+      - GLaDOS-TW-2-Netflix
+      - GLaDOS-Portalgun-05
+      - GLaDOS-TW-3-Netflix
+      - GLaDOS-Portalgun-06
+      - GLaDOS-Portalgun-07
+      - GLaDOS-US-01
+      - GLaDOS-US-03
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 A/01 x1.0
-      - 香港 A/02 x1.0
-      - 越南 A/02 x1.0
-      - 日本 A/02 x1.0
-      - 泰國 A/01 x1.0
-      - 台灣 A/01 x1.0
-      - 越南 A/01 x1.0
-      - 香港 A/03 x1.0
-      - 越南 A/03 x1.0
-      - 美國 A/01 x1.0
+      - GLaDOS-Portalgun-02
+      - GLaDOS-Portalgun-01
+      - GLaDOS-Portalgun-03
+      - GLaDOS-Portalgun-04
+      - GLaDOS-TW-1-Netflix
+      - GLaDOS-Portalgun-08
+      - GLaDOS-Portalgun-09
+      - GLaDOS-TW-2-Netflix
+      - GLaDOS-Portalgun-05
+      - GLaDOS-TW-3-Netflix
+      - GLaDOS-Portalgun-06
+      - GLaDOS-Portalgun-07
+      - GLaDOS-US-01
+      - GLaDOS-US-03
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -160,16 +188,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 A/01 x1.0
-      - 香港 A/02 x1.0
-      - 越南 A/02 x1.0
-      - 日本 A/02 x1.0
-      - 泰國 A/01 x1.0
-      - 台灣 A/01 x1.0
-      - 越南 A/01 x1.0
-      - 香港 A/03 x1.0
-      - 越南 A/03 x1.0
-      - 美國 A/01 x1.0
+      - GLaDOS-Portalgun-02
+      - GLaDOS-Portalgun-01
+      - GLaDOS-Portalgun-03
+      - GLaDOS-Portalgun-04
+      - GLaDOS-TW-1-Netflix
+      - GLaDOS-Portalgun-08
+      - GLaDOS-Portalgun-09
+      - GLaDOS-TW-2-Netflix
+      - GLaDOS-Portalgun-05
+      - GLaDOS-TW-3-Netflix
+      - GLaDOS-Portalgun-06
+      - GLaDOS-Portalgun-07
+      - GLaDOS-US-01
+      - GLaDOS-US-03
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
