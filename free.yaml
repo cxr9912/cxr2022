@@ -5,71 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港HGC-江移-ws | 解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: fbb2230b-37d7-4da6-894d-f3cd2aff0cc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /meizhiyuan/hkhgc, ws-headers: {Host: i0.hdslb.com}, udp: true}
-  - {name: 香港HKT-江移 | 解锁流媒体, server: 223.111.202.148, port: 30100, type: trojan, password: fbb2230b-37d7-4da6-894d-f3cd2aff0cc6, skip-cert-verify: true, udp: true}
-  - {name: 香港HGC-江移 | 解锁流媒体, server: 223.111.202.148, port: 30060, type: trojan, password: fbb2230b-37d7-4da6-894d-f3cd2aff0cc6, skip-cert-verify: true, udp: true}
-  - {name: 美国洛杉矶-江移-ws | 解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: fbb2230b-37d7-4da6-894d-f3cd2aff0cc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /meizhiyuan/us1, ws-headers: {Host: i0.hdslb.com}, udp: true}
-  - {name: 法国-江移 | 解锁流媒体, server: 223.111.202.148, port: 30080, type: trojan, password: fbb2230b-37d7-4da6-894d-f3cd2aff0cc6, skip-cert-verify: true, udp: true}
-  - {name: 美国洛杉矶-江移 | 解锁流媒体, server: 223.111.202.148, port: 30010, type: trojan, password: fbb2230b-37d7-4da6-894d-f3cd2aff0cc6, skip-cert-verify: true, udp: true}
-  - {name: 德国-江移-ws | 解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: fbb2230b-37d7-4da6-894d-f3cd2aff0cc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /meizhiyuan/de, ws-headers: {Host: i0.hdslb.com}, udp: true}
-  - {name: 台湾Hinet-江苏移动-ws | 解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: fbb2230b-37d7-4da6-894d-f3cd2aff0cc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /meizhiyuan/hinet, ws-headers: {Host: i0.hdslb.com}, udp: true}
-  - {name: 德国-江移 | 解锁流媒体, server: 223.111.202.148, port: 30070, type: trojan, password: fbb2230b-37d7-4da6-894d-f3cd2aff0cc6, skip-cert-verify: true, udp: true}
-  - {name: 法国-江移-ws | 解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: fbb2230b-37d7-4da6-894d-f3cd2aff0cc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /meizhiyuan/fr, ws-headers: {Host: i0.hdslb.com}, udp: true}
-  - {name: 距离下次重置剩余：4 天, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: fbb2230b-37d7-4da6-894d-f3cd2aff0cc6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/meizhiyuan/hinet?ed=2048", ws-headers: {Host: hinet.guolicheng.cyou}, udp: true}
-  - {name: 美国圣何塞 | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: fbb2230b-37d7-4da6-894d-f3cd2aff0cc6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/meizhiyuan/us2?ed=2048", ws-headers: {Host: us2.guolicheng.cyou}, udp: true}
+  - {name: 香港, server: hk11.sanfen001.pics, port: 443, type: vmess, uuid: e7e73e1d-2418-4766-8831-d1b3b83cc877, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 香港 2, server: hk12.sanfen001.pics, port: 443, type: vmess, uuid: e7e73e1d-2418-4766-8831-d1b3b83cc877, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 公众号:研考百科, server: sg2.sanfen001.pics, port: 443, type: vmess, uuid: e7e73e1d-2418-4766-8831-d1b3b83cc877, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 香港 3, server: hk1.sanfen001.pics, port: 443, type: vmess, uuid: e7e73e1d-2418-4766-8831-d1b3b83cc877, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 美国, server: us2.sanfen001.pics, port: 443, type: vmess, uuid: e7e73e1d-2418-4766-8831-d1b3b83cc877, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港HGC-江移-ws | 解锁流媒体
-      - 香港HKT-江移 | 解锁流媒体
-      - 香港HGC-江移 | 解锁流媒体
-      - 美国洛杉矶-江移-ws | 解锁流媒体
-      - 法国-江移 | 解锁流媒体
-      - 美国洛杉矶-江移 | 解锁流媒体
-      - 德国-江移-ws | 解锁流媒体
-      - 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 德国-江移 | 解锁流媒体
-      - 法国-江移-ws | 解锁流媒体
-      - 距离下次重置剩余：4 天
-      - 美国圣何塞 | 解锁流媒体
+      - 香港
+      - 香港 2
+      - 公众号:研考百科
+      - 香港 3
+      - 美国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港HGC-江移-ws | 解锁流媒体
-      - 香港HKT-江移 | 解锁流媒体
-      - 香港HGC-江移 | 解锁流媒体
-      - 美国洛杉矶-江移-ws | 解锁流媒体
-      - 法国-江移 | 解锁流媒体
-      - 美国洛杉矶-江移 | 解锁流媒体
-      - 德国-江移-ws | 解锁流媒体
-      - 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 德国-江移 | 解锁流媒体
-      - 法国-江移-ws | 解锁流媒体
-      - 距离下次重置剩余：4 天
-      - 美国圣何塞 | 解锁流媒体
+      - 香港
+      - 香港 2
+      - 公众号:研考百科
+      - 香港 3
+      - 美国
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港HGC-江移-ws | 解锁流媒体
-      - 香港HKT-江移 | 解锁流媒体
-      - 香港HGC-江移 | 解锁流媒体
-      - 美国洛杉矶-江移-ws | 解锁流媒体
-      - 法国-江移 | 解锁流媒体
-      - 美国洛杉矶-江移 | 解锁流媒体
-      - 德国-江移-ws | 解锁流媒体
-      - 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 德国-江移 | 解锁流媒体
-      - 法国-江移-ws | 解锁流媒体
-      - 距离下次重置剩余：4 天
-      - 美国圣何塞 | 解锁流媒体
+      - 香港
+      - 香港 2
+      - 公众号:研考百科
+      - 香港 3
+      - 美国
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,79 +60,50 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港HGC-江移-ws | 解锁流媒体
-      - 香港HKT-江移 | 解锁流媒体
-      - 香港HGC-江移 | 解锁流媒体
-      - 美国洛杉矶-江移-ws | 解锁流媒体
-      - 法国-江移 | 解锁流媒体
-      - 美国洛杉矶-江移 | 解锁流媒体
-      - 德国-江移-ws | 解锁流媒体
-      - 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 德国-江移 | 解锁流媒体
-      - 法国-江移-ws | 解锁流媒体
-      - 距离下次重置剩余：4 天
-      - 美国圣何塞 | 解锁流媒体
+      - 香港
+      - 香港 2
+      - 公众号:研考百科
+      - 香港 3
+      - 美国
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港HGC-江移-ws | 解锁流媒体
-      - 香港HKT-江移 | 解锁流媒体
-      - 香港HGC-江移 | 解锁流媒体
-      - 台湾Hinet-江苏移动-ws | 解锁流媒体
+      - 香港
+      - 香港 2
+      - 香港 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港HGC-江移-ws | 解锁流媒体
-      - 香港HKT-江移 | 解锁流媒体
-      - 香港HGC-江移 | 解锁流媒体
-      - 美国洛杉矶-江移-ws | 解锁流媒体
-      - 法国-江移 | 解锁流媒体
-      - 美国洛杉矶-江移 | 解锁流媒体
-      - 德国-江移-ws | 解锁流媒体
-      - 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 德国-江移 | 解锁流媒体
-      - 法国-江移-ws | 解锁流媒体
-      - 距离下次重置剩余：4 天
-      - 美国圣何塞 | 解锁流媒体
+      - 香港
+      - 香港 2
+      - 公众号:研考百科
+      - 香港 3
+      - 美国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港HGC-江移-ws | 解锁流媒体
-      - 香港HKT-江移 | 解锁流媒体
-      - 香港HGC-江移 | 解锁流媒体
-      - 美国洛杉矶-江移-ws | 解锁流媒体
-      - 法国-江移 | 解锁流媒体
-      - 美国洛杉矶-江移 | 解锁流媒体
-      - 德国-江移-ws | 解锁流媒体
-      - 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 德国-江移 | 解锁流媒体
-      - 法国-江移-ws | 解锁流媒体
-      - 距离下次重置剩余：4 天
-      - 美国圣何塞 | 解锁流媒体
+      - 香港
+      - 香港 2
+      - 公众号:研考百科
+      - 香港 3
+      - 美国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港HGC-江移-ws | 解锁流媒体
-      - 香港HKT-江移 | 解锁流媒体
-      - 香港HGC-江移 | 解锁流媒体
-      - 美国洛杉矶-江移-ws | 解锁流媒体
-      - 法国-江移 | 解锁流媒体
-      - 美国洛杉矶-江移 | 解锁流媒体
-      - 德国-江移-ws | 解锁流媒体
-      - 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 德国-江移 | 解锁流媒体
-      - 法国-江移-ws | 解锁流媒体
-      - 距离下次重置剩余：4 天
-      - 美国圣何塞 | 解锁流媒体
+      - 香港
+      - 香港 2
+      - 公众号:研考百科
+      - 香港 3
+      - 美国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -176,18 +119,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港HGC-江移-ws | 解锁流媒体
-      - 香港HKT-江移 | 解锁流媒体
-      - 香港HGC-江移 | 解锁流媒体
-      - 美国洛杉矶-江移-ws | 解锁流媒体
-      - 法国-江移 | 解锁流媒体
-      - 美国洛杉矶-江移 | 解锁流媒体
-      - 德国-江移-ws | 解锁流媒体
-      - 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 德国-江移 | 解锁流媒体
-      - 法国-江移-ws | 解锁流媒体
-      - 距离下次重置剩余：4 天
-      - 美国圣何塞 | 解锁流媒体
+      - 香港
+      - 香港 2
+      - 公众号:研考百科
+      - 香港 3
+      - 美国
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
