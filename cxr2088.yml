@@ -5,39 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港HGC-江移 | 解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/hkhgc, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: 台湾Hinet | 解锁流媒体, server: download1tw.windowsupdate.lol, port: 443, type: trojan, password: 8498bfc8-c030-40df-80e8-69f9e06fe16a, sni: download1tw.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 美国圣何塞-江移 | 解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/us2, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: 韩国亚马逊-2号 | 解锁流媒体, server: 13.125.204.239, port: 443, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/kr?ed=2048", ws-headers: {Host: dc1-download.windowsupdate1.com}, udp: true}
+  - {name: HK 香港「镇站二号」, server: cmi.hk.xlkjjs.top, port: 27017, type: vmess, uuid: 1ca0535e-3fb9-33cd-aa23-835cde4eb8f6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cmi.hk.xlkjjs.top}, udp: true}
+  - {name: CA 加拿大「豫加隧道」, server: 111.6.86.241, port: 18729, type: vmess, uuid: 1ca0535e-3fb9-33cd-aa23-835cde4eb8f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA 加拿大「用前更新订阅」, server: tun.ca.xlkjjs.top, port: 16272, type: vmess, uuid: 1ca0535e-3fb9-33cd-aa23-835cde4eb8f6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ca.xlkjjs.top}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港HGC-江移 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 美国圣何塞-江移 | 解锁流媒体
-      - 韩国亚马逊-2号 | 解锁流媒体
+      - HK 香港「镇站二号」
+      - CA 加拿大「豫加隧道」
+      - CA 加拿大「用前更新订阅」
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港HGC-江移 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 美国圣何塞-江移 | 解锁流媒体
-      - 韩国亚马逊-2号 | 解锁流媒体
+      - HK 香港「镇站二号」
+      - CA 加拿大「豫加隧道」
+      - CA 加拿大「用前更新订阅」
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港HGC-江移 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 美国圣何塞-江移 | 解锁流媒体
-      - 韩国亚马逊-2号 | 解锁流媒体
+      - HK 香港「镇站二号」
+      - CA 加拿大「豫加隧道」
+      - CA 加拿大「用前更新订阅」
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,45 +52,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港HGC-江移 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 美国圣何塞-江移 | 解锁流媒体
-      - 韩国亚马逊-2号 | 解锁流媒体
+      - HK 香港「镇站二号」
+      - CA 加拿大「豫加隧道」
+      - CA 加拿大「用前更新订阅」
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港HGC-江移 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
+      - HK 香港「镇站二号」
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港HGC-江移 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 美国圣何塞-江移 | 解锁流媒体
-      - 韩国亚马逊-2号 | 解锁流媒体
+      - HK 香港「镇站二号」
+      - CA 加拿大「豫加隧道」
+      - CA 加拿大「用前更新订阅」
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港HGC-江移 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 美国圣何塞-江移 | 解锁流媒体
-      - 韩国亚马逊-2号 | 解锁流媒体
+      - HK 香港「镇站二号」
+      - CA 加拿大「豫加隧道」
+      - CA 加拿大「用前更新订阅」
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港HGC-江移 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 美国圣何塞-江移 | 解锁流媒体
-      - 韩国亚马逊-2号 | 解锁流媒体
+      - HK 香港「镇站二号」
+      - CA 加拿大「豫加隧道」
+      - CA 加拿大「用前更新订阅」
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -110,10 +101,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港HGC-江移 | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 美国圣何塞-江移 | 解锁流媒体
-      - 韩国亚马逊-2号 | 解锁流媒体
+      - HK 香港「镇站二号」
+      - CA 加拿大「豫加隧道」
+      - CA 加拿大「用前更新订阅」
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
