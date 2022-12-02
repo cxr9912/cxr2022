@@ -5,79 +5,159 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: GLaDOS-Portalgun-02, server: f1f3227.v2.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.qq.com}, udp: true}
-  - {name: GLaDOS-Portalgun-01, server: f1f3227.v1.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.apple.com}, udp: true}
-  - {name: GLaDOS-Portalgun-03, server: f1f3227.v3.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.skype.com}, udp: true}
-  - {name: GLaDOS-Portalgun-04, server: f1f3227.v4.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.apple.com}, udp: true}
-  - {name: GLaDOS-TW-1-Netflix, server: f1f3227.f1.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: tls.apple.com}, udp: true}
-  - {name: GLaDOS-Portalgun-08, server: f1f3227.v8.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.icloud.com}, udp: true}
-  - {name: GLaDOS-Portalgun-09, server: f1f3227.v9.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.icloud.com}, udp: true}
-  - {name: GLaDOS-TW-2-Netflix, server: f1f3227.f2.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: tls.apple.com}, udp: true}
-  - {name: GLaDOS-Portalgun-05, server: f1f3227.v5.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: stmp.163.com}, udp: true}
-  - {name: GLaDOS-TW-3-Netflix, server: f1f3227.f3.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: tls.apple.com}, udp: true}
-  - {name: GLaDOS-Portalgun-06, server: f1f3227.v6.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.icloud.com}, udp: true}
-  - {name: GLaDOS-Portalgun-07, server: f1f3227.v7.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: api.icloud.com}, udp: true}
-  - {name: GLaDOS-US-01, server: f1f3227.u1.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: tls.apple.com}, udp: true}
-  - {name: GLaDOS-US-03, server: f1f3227.u3.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/f1f3227.fm.apple.com:111548, ws-headers: {Host: tls.apple.com}, udp: true}
+  - {name: "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12333, type: trojan, password: 494d6fc2-5985-3f1d-a262-b4696185c948, sni: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12350, type: trojan, password: 494d6fc2-5985-3f1d-a262-b4696185c948, sni: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12336, type: trojan, password: 494d6fc2-5985-3f1d-a262-b4696185c948, sni: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12337, type: trojan, password: 494d6fc2-5985-3f1d-a262-b4696185c948, sni: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12335, type: trojan, password: 494d6fc2-5985-3f1d-a262-b4696185c948, sni: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12352, type: trojan, password: 494d6fc2-5985-3f1d-a262-b4696185c948, sni: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 12355, type: trojan, password: 494d6fc2-5985-3f1d-a262-b4696185c948, sni: lv2iwahxwawhooiixzawxc.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 12356, type: trojan, password: 494d6fc2-5985-3f1d-a262-b4696185c948, sni: lv2iwahxwawhooiixzawxc.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 12354, type: trojan, password: 494d6fc2-5985-3f1d-a262-b4696185c948, sni: lv2iwahxwawhooiixzawxc.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12351, type: trojan, password: 494d6fc2-5985-3f1d-a262-b4696185c948, sni: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12349, type: trojan, password: 494d6fc2-5985-3f1d-a262-b4696185c948, sni: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 12353, type: trojan, password: 494d6fc2-5985-3f1d-a262-b4696185c948, sni: lv2iwahxwawhooiixzawxc.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Lv3·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33336, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-tw1, ws-headers: {Host: baidu1.vzwzasc.cn}, udp: true}
+  - {name: "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33336, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsxjp1, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}, udp: true}
+  - {name: "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-hk1, ws-headers: {Host: hksdwasd.vzwzasc.cn}, udp: true}
+  - {name: "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33336, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsrb1, ws-headers: {Host: jpshdwanlx.vzwzasc.cn}, udp: true}
+  - {name: "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33336, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsxjp3, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}, udp: true}
+  - {name: "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33336, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsxjp5, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}, udp: true}
+  - {name: "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33336, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsxjp2, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}, udp: true}
+  - {name: "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33336, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsxjp4, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}, udp: true}
+  - {name: "[Lv3·1.5x] 台湾02|IP均衡优化|CTN加速|1000Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33336, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-tw2, ws-headers: {Host: baidu2.vzwzasc.cn}, udp: true}
+  - {name: "[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33336, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-tw3, ws-headers: {Host: baidu3.vzwzasc.cn}, udp: true}
+  - {name: "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12334, type: trojan, password: 494d6fc2-5985-3f1d-a262-b4696185c948, sni: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Lv2·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-tw3, ws-headers: {Host: baidu6.vzwzasc.cn}, udp: true}
+  - {name: "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsxjp2, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}, udp: true}
+  - {name: "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsxjp3, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}, udp: true}
+  - {name: "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsxjp4, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}, udp: true}
+  - {name: "[Lv2·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-tw1, ws-headers: {Host: baidu4.vzwzasc.cn}, udp: true}
+  - {name: "[Lv3·1.0x] 美国原生04|IP均衡优化|混合负载|500Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33336, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-us4, ws-headers: {Host: ushksw888x.vzwzasc.cn}, udp: true}
+  - {name: "[Lv3·1.0x] 韩国02|IP均衡优化|混合负载|800Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33332, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tnt-kr2, ws-headers: {Host: baidu.com}, udp: true}
+  - {name: "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-us1, ws-headers: {Host: ushksw888x.vzwzasc.cn}, udp: true}
+  - {name: "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-us2, ws-headers: {Host: ushksw888x.vzwzasc.cn}, udp: true}
+  - {name: "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-us3, ws-headers: {Host: ushksw888x.vzwzasc.cn}, udp: true}
+  - {name: "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33331, type: vmess, uuid: 494d6fc2-5985-3f1d-a262-b4696185c948, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tnt-kr1, ws-headers: {Host: baidu.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - GLaDOS-Portalgun-02
-      - GLaDOS-Portalgun-01
-      - GLaDOS-Portalgun-03
-      - GLaDOS-Portalgun-04
-      - GLaDOS-TW-1-Netflix
-      - GLaDOS-Portalgun-08
-      - GLaDOS-Portalgun-09
-      - GLaDOS-TW-2-Netflix
-      - GLaDOS-Portalgun-05
-      - GLaDOS-TW-3-Netflix
-      - GLaDOS-Portalgun-06
-      - GLaDOS-Portalgun-07
-      - GLaDOS-US-01
-      - GLaDOS-US-03
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
+      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.5x] 台湾02|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv2·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 美国原生04|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 韩国02|IP均衡优化|混合负载|800Mbps共享"
+      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - GLaDOS-Portalgun-02
-      - GLaDOS-Portalgun-01
-      - GLaDOS-Portalgun-03
-      - GLaDOS-Portalgun-04
-      - GLaDOS-TW-1-Netflix
-      - GLaDOS-Portalgun-08
-      - GLaDOS-Portalgun-09
-      - GLaDOS-TW-2-Netflix
-      - GLaDOS-Portalgun-05
-      - GLaDOS-TW-3-Netflix
-      - GLaDOS-Portalgun-06
-      - GLaDOS-Portalgun-07
-      - GLaDOS-US-01
-      - GLaDOS-US-03
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
+      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.5x] 台湾02|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv2·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 美国原生04|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 韩国02|IP均衡优化|混合负载|800Mbps共享"
+      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - GLaDOS-Portalgun-02
-      - GLaDOS-Portalgun-01
-      - GLaDOS-Portalgun-03
-      - GLaDOS-Portalgun-04
-      - GLaDOS-TW-1-Netflix
-      - GLaDOS-Portalgun-08
-      - GLaDOS-Portalgun-09
-      - GLaDOS-TW-2-Netflix
-      - GLaDOS-Portalgun-05
-      - GLaDOS-TW-3-Netflix
-      - GLaDOS-Portalgun-06
-      - GLaDOS-Portalgun-07
-      - GLaDOS-US-01
-      - GLaDOS-US-03
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
+      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.5x] 台湾02|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv2·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 美国原生04|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 韩国02|IP均衡优化|混合负载|800Mbps共享"
+      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,83 +176,177 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - GLaDOS-Portalgun-02
-      - GLaDOS-Portalgun-01
-      - GLaDOS-Portalgun-03
-      - GLaDOS-Portalgun-04
-      - GLaDOS-TW-1-Netflix
-      - GLaDOS-Portalgun-08
-      - GLaDOS-Portalgun-09
-      - GLaDOS-TW-2-Netflix
-      - GLaDOS-Portalgun-05
-      - GLaDOS-TW-3-Netflix
-      - GLaDOS-Portalgun-06
-      - GLaDOS-Portalgun-07
-      - GLaDOS-US-01
-      - GLaDOS-US-03
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
+      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.5x] 台湾02|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv2·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 美国原生04|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 韩国02|IP均衡优化|混合负载|800Mbps共享"
+      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
+      - "[Lv3·1.5x] 台湾02|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv2·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv2·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - GLaDOS-Portalgun-02
-      - GLaDOS-Portalgun-01
-      - GLaDOS-Portalgun-03
-      - GLaDOS-Portalgun-04
-      - GLaDOS-TW-1-Netflix
-      - GLaDOS-Portalgun-08
-      - GLaDOS-Portalgun-09
-      - GLaDOS-TW-2-Netflix
-      - GLaDOS-Portalgun-05
-      - GLaDOS-TW-3-Netflix
-      - GLaDOS-Portalgun-06
-      - GLaDOS-Portalgun-07
-      - GLaDOS-US-01
-      - GLaDOS-US-03
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
+      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.5x] 台湾02|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv2·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 美国原生04|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 韩国02|IP均衡优化|混合负载|800Mbps共享"
+      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - GLaDOS-Portalgun-02
-      - GLaDOS-Portalgun-01
-      - GLaDOS-Portalgun-03
-      - GLaDOS-Portalgun-04
-      - GLaDOS-TW-1-Netflix
-      - GLaDOS-Portalgun-08
-      - GLaDOS-Portalgun-09
-      - GLaDOS-TW-2-Netflix
-      - GLaDOS-Portalgun-05
-      - GLaDOS-TW-3-Netflix
-      - GLaDOS-Portalgun-06
-      - GLaDOS-Portalgun-07
-      - GLaDOS-US-01
-      - GLaDOS-US-03
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
+      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.5x] 台湾02|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv2·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 美国原生04|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 韩国02|IP均衡优化|混合负载|800Mbps共享"
+      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - GLaDOS-Portalgun-02
-      - GLaDOS-Portalgun-01
-      - GLaDOS-Portalgun-03
-      - GLaDOS-Portalgun-04
-      - GLaDOS-TW-1-Netflix
-      - GLaDOS-Portalgun-08
-      - GLaDOS-Portalgun-09
-      - GLaDOS-TW-2-Netflix
-      - GLaDOS-Portalgun-05
-      - GLaDOS-TW-3-Netflix
-      - GLaDOS-Portalgun-06
-      - GLaDOS-Portalgun-07
-      - GLaDOS-US-01
-      - GLaDOS-US-03
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
+      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.5x] 台湾02|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv2·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 美国原生04|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 韩国02|IP均衡优化|混合负载|800Mbps共享"
+      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -188,20 +362,40 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - GLaDOS-Portalgun-02
-      - GLaDOS-Portalgun-01
-      - GLaDOS-Portalgun-03
-      - GLaDOS-Portalgun-04
-      - GLaDOS-TW-1-Netflix
-      - GLaDOS-Portalgun-08
-      - GLaDOS-Portalgun-09
-      - GLaDOS-TW-2-Netflix
-      - GLaDOS-Portalgun-05
-      - GLaDOS-TW-3-Netflix
-      - GLaDOS-Portalgun-06
-      - GLaDOS-Portalgun-07
-      - GLaDOS-US-01
-      - GLaDOS-US-03
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv3·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾04|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾02|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾03|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv2·1.0x]台湾01|SCLOUD|300Mbps|单点IP"
+      - "[Lv3·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·2.0x] 香港001|IP均衡优化|混合负载|1000Mbps共享"
+      - "[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡05|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv3·1.5x] 台湾02|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv3·1.0x] 新加坡02|IP均衡优化|混合负载|奈飞解锁"
+      - "[Lv2·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享"
+      - "[Lv2·1.0x] 新加坡02|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡03|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.0x] 新加坡04|IP均衡优化|CTN加速|500Mbps共享"
+      - "[Lv2·1.5x] 台湾01|IP均衡优化|CTN加速|1000Mbps共享"
+      - "[Lv3·1.0x] 美国原生04|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv3·1.0x] 韩国02|IP均衡优化|混合负载|800Mbps共享"
+      - "[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享"
+      - "[Lv2·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
