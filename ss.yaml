@@ -5,75 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 27 新加坡, server: 27xjp.mealstream.xyz, port: 15027, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 19 新加坡, server: 19xjp.mealstream.xyz, port: 15019, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 05 新加坡, server: 05xjp.mealstream.xyz, port: 15105, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 06 新加坡, server: 06xjp.mealstream.xyz, port: 15306, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 07 印度, server: 07yd.mealstream.xyz, port: 443, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 28 澳大利亚, server: 28adly.mealstream.xyz, port: 443, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 18 日本, server: 18rb.mealstream.xyz, port: 15018, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 03 日本, server: 03rb.mealstream.xyz, port: 15203, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 17 韩国, server: 17hg.mealstream.xyz, port: 443, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 02 韩国, server: 02hg.mealstream.xyz, port: 443, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 15 韩国, server: 15hg.mealstream.xyz, port: 15415, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 16 韩国, server: 16hg.mealstream.xyz, port: 443, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 22 德国, server: 22dg.mealstream.xyz, port: 15022, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: V210 日本<->East, server: V210.bgynd.xyz, port: 26210, type: vmess, uuid: 2509bac4-e641-3ff4-9082-c1595f8d0252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V313 美国<->East, server: V313.bgynd.xyz, port: 26313, type: vmess, uuid: 2509bac4-e641-3ff4-9082-c1595f8d0252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V309 日本<->East, server: V309.bgynd.xyz, port: 26309, type: vmess, uuid: 2509bac4-e641-3ff4-9082-c1595f8d0252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 27 新加坡
-      - 19 新加坡
-      - 05 新加坡
-      - 06 新加坡
-      - 07 印度
-      - 28 澳大利亚
-      - 18 日本
-      - 03 日本
-      - 17 韩国
-      - 02 韩国
-      - 15 韩国
-      - 16 韩国
-      - 22 德国
+      - V210 日本<->East
+      - V313 美国<->East
+      - V309 日本<->East
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 27 新加坡
-      - 19 新加坡
-      - 05 新加坡
-      - 06 新加坡
-      - 07 印度
-      - 28 澳大利亚
-      - 18 日本
-      - 03 日本
-      - 17 韩国
-      - 02 韩国
-      - 15 韩国
-      - 16 韩国
-      - 22 德国
+      - V210 日本<->East
+      - V313 美国<->East
+      - V309 日本<->East
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 27 新加坡
-      - 19 新加坡
-      - 05 新加坡
-      - 06 新加坡
-      - 07 印度
-      - 28 澳大利亚
-      - 18 日本
-      - 03 日本
-      - 17 韩国
-      - 02 韩国
-      - 15 韩国
-      - 16 韩国
-      - 22 德国
+      - V210 日本<->East
+      - V313 美国<->East
+      - V309 日本<->East
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,19 +52,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 27 新加坡
-      - 19 新加坡
-      - 05 新加坡
-      - 06 新加坡
-      - 07 印度
-      - 28 澳大利亚
-      - 18 日本
-      - 03 日本
-      - 17 韩国
-      - 02 韩国
-      - 15 韩国
-      - 16 韩国
-      - 22 德国
+      - V210 日本<->East
+      - V313 美国<->East
+      - V309 日本<->East
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -115,56 +65,26 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 27 新加坡
-      - 19 新加坡
-      - 05 新加坡
-      - 06 新加坡
-      - 07 印度
-      - 28 澳大利亚
-      - 18 日本
-      - 03 日本
-      - 17 韩国
-      - 02 韩国
-      - 15 韩国
-      - 16 韩国
-      - 22 德国
+      - V210 日本<->East
+      - V313 美国<->East
+      - V309 日本<->East
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 27 新加坡
-      - 19 新加坡
-      - 05 新加坡
-      - 06 新加坡
-      - 07 印度
-      - 28 澳大利亚
-      - 18 日本
-      - 03 日本
-      - 17 韩国
-      - 02 韩国
-      - 15 韩国
-      - 16 韩国
-      - 22 德国
+      - V210 日本<->East
+      - V313 美国<->East
+      - V309 日本<->East
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 27 新加坡
-      - 19 新加坡
-      - 05 新加坡
-      - 06 新加坡
-      - 07 印度
-      - 28 澳大利亚
-      - 18 日本
-      - 03 日本
-      - 17 韩国
-      - 02 韩国
-      - 15 韩国
-      - 16 韩国
-      - 22 德国
+      - V210 日本<->East
+      - V313 美国<->East
+      - V309 日本<->East
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -180,19 +100,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 27 新加坡
-      - 19 新加坡
-      - 05 新加坡
-      - 06 新加坡
-      - 07 印度
-      - 28 澳大利亚
-      - 18 日本
-      - 03 日本
-      - 17 韩国
-      - 02 韩国
-      - 15 韩国
-      - 16 韩国
-      - 22 德国
+      - V210 日本<->East
+      - V313 美国<->East
+      - V309 日本<->East
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
