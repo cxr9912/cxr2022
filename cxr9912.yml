@@ -5,115 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港-奈飞-1, server: xqxa_gzdx.xiaoxinyun.ink, port: 11203, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港-奈飞-4, server: xqxa_gzdx.xiaoxinyun.ink, port: 11213, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港-奈飞-2, server: xqxa_gzdx.xiaoxinyun.ink, port: 11204, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾-奈飞-1, server: gzdx.xiaoxinyun.ink, port: 11202, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾-奈飞-2, server: gzdx.xiaoxinyun.ink, port: 11225, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-4, server: gzdx.xiaoxinyun.ink, port: 11215, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本-东京-3, server: xqxa_gzdx.xiaoxinyun.ink, port: 11210, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国-首尔-4, server: gzdx.xiaoxinyun.ink, port: 11224, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本-东京-4, server: xqxa_gzdx.xiaoxinyun.ink, port: 11209, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-1, server: zjdx.xiaoxinyun.ink, port: 11218, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本-东京-2, server: zjdx.xiaoxinyun.ink, port: 11211, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 距离下次重置剩余：5 天, server: zjdx.xiaoxinyun.ink, port: 11212, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-2, server: zjdx.xiaoxinyun.ink, port: 11217, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-1, server: zjdx.xiaoxinyun.ink, port: 11222, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国-首尔-3, server: gzdx.xiaoxinyun.ink, port: 11223, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国-首尔-2, server: zjdx.xiaoxinyun.ink, port: 11205, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国-首尔-1, server: zjdx.xiaoxinyun.ink, port: 11206, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国-伦敦-2, server: zjdx.xiaoxinyun.ink, port: 11207, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-3, server: zjdx.xiaoxinyun.ink, port: 11220, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-4, server: zjdx.xiaoxinyun.ink, port: 11219, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港-奈飞-3, server: xqxa_gzdx.xiaoxinyun.ink, port: 12214, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-3, server: gzdx.xiaoxinyun.ink, port: 11216, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-2, server: zjdx.xiaoxinyun.ink, port: 11221, type: vmess, uuid: e531818b-8312-49fd-88d9-03d2e34a029a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港中继Ⅳ-Trojan, server: video.proxyvip.link, port: 31004, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 德国中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31017, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 距离下次重置剩余：30 天, server: video.proxyvip.link, port: 31001, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 日本中继Ⅱ-Trojan, server: video.proxyvip.link, port: 31014, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-奈飞-1
-      - 香港-奈飞-4
-      - 香港-奈飞-2
-      - 台湾-奈飞-1
-      - 台湾-奈飞-2
-      - 新加坡-4
-      - 日本-东京-3
-      - 韩国-首尔-4
-      - 日本-东京-4
-      - 新加坡-1
-      - 日本-东京-2
-      - 距离下次重置剩余：5 天
-      - 新加坡-2
-      - 美国-1
-      - 韩国-首尔-3
-      - 韩国-首尔-2
-      - 韩国-首尔-1
-      - 英国-伦敦-2
-      - 美国-3
-      - 美国-4
-      - 香港-奈飞-3
-      - 新加坡-3
-      - 美国-2
+      - 香港中继Ⅳ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 日本中继Ⅱ-Trojan
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港-奈飞-1
-      - 香港-奈飞-4
-      - 香港-奈飞-2
-      - 台湾-奈飞-1
-      - 台湾-奈飞-2
-      - 新加坡-4
-      - 日本-东京-3
-      - 韩国-首尔-4
-      - 日本-东京-4
-      - 新加坡-1
-      - 日本-东京-2
-      - 距离下次重置剩余：5 天
-      - 新加坡-2
-      - 美国-1
-      - 韩国-首尔-3
-      - 韩国-首尔-2
-      - 韩国-首尔-1
-      - 英国-伦敦-2
-      - 美国-3
-      - 美国-4
-      - 香港-奈飞-3
-      - 新加坡-3
-      - 美国-2
+      - 香港中继Ⅳ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 日本中继Ⅱ-Trojan
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-奈飞-1
-      - 香港-奈飞-4
-      - 香港-奈飞-2
-      - 台湾-奈飞-1
-      - 台湾-奈飞-2
-      - 新加坡-4
-      - 日本-东京-3
-      - 韩国-首尔-4
-      - 日本-东京-4
-      - 新加坡-1
-      - 日本-东京-2
-      - 距离下次重置剩余：5 天
-      - 新加坡-2
-      - 美国-1
-      - 韩国-首尔-3
-      - 韩国-首尔-2
-      - 韩国-首尔-1
-      - 英国-伦敦-2
-      - 美国-3
-      - 美国-4
-      - 香港-奈飞-3
-      - 新加坡-3
-      - 美国-2
+      - 香港中继Ⅳ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 日本中继Ⅱ-Trojan
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -132,125 +56,44 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-奈飞-1
-      - 香港-奈飞-4
-      - 香港-奈飞-2
-      - 台湾-奈飞-1
-      - 台湾-奈飞-2
-      - 新加坡-4
-      - 日本-东京-3
-      - 韩国-首尔-4
-      - 日本-东京-4
-      - 新加坡-1
-      - 日本-东京-2
-      - 距离下次重置剩余：5 天
-      - 新加坡-2
-      - 美国-1
-      - 韩国-首尔-3
-      - 韩国-首尔-2
-      - 韩国-首尔-1
-      - 英国-伦敦-2
-      - 美国-3
-      - 美国-4
-      - 香港-奈飞-3
-      - 新加坡-3
-      - 美国-2
+      - 香港中继Ⅳ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 日本中继Ⅱ-Trojan
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港-奈飞-1
-      - 香港-奈飞-4
-      - 香港-奈飞-2
-      - 台湾-奈飞-1
-      - 台湾-奈飞-2
-      - 香港-奈飞-3
+      - 香港中继Ⅳ-Trojan
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港-奈飞-1
-      - 香港-奈飞-4
-      - 香港-奈飞-2
-      - 台湾-奈飞-1
-      - 台湾-奈飞-2
-      - 新加坡-4
-      - 日本-东京-3
-      - 韩国-首尔-4
-      - 日本-东京-4
-      - 新加坡-1
-      - 日本-东京-2
-      - 距离下次重置剩余：5 天
-      - 新加坡-2
-      - 美国-1
-      - 韩国-首尔-3
-      - 韩国-首尔-2
-      - 韩国-首尔-1
-      - 英国-伦敦-2
-      - 美国-3
-      - 美国-4
-      - 香港-奈飞-3
-      - 新加坡-3
-      - 美国-2
+      - 香港中继Ⅳ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 日本中继Ⅱ-Trojan
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港-奈飞-1
-      - 香港-奈飞-4
-      - 香港-奈飞-2
-      - 台湾-奈飞-1
-      - 台湾-奈飞-2
-      - 新加坡-4
-      - 日本-东京-3
-      - 韩国-首尔-4
-      - 日本-东京-4
-      - 新加坡-1
-      - 日本-东京-2
-      - 距离下次重置剩余：5 天
-      - 新加坡-2
-      - 美国-1
-      - 韩国-首尔-3
-      - 韩国-首尔-2
-      - 韩国-首尔-1
-      - 英国-伦敦-2
-      - 美国-3
-      - 美国-4
-      - 香港-奈飞-3
-      - 新加坡-3
-      - 美国-2
+      - 香港中继Ⅳ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 日本中继Ⅱ-Trojan
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港-奈飞-1
-      - 香港-奈飞-4
-      - 香港-奈飞-2
-      - 台湾-奈飞-1
-      - 台湾-奈飞-2
-      - 新加坡-4
-      - 日本-东京-3
-      - 韩国-首尔-4
-      - 日本-东京-4
-      - 新加坡-1
-      - 日本-东京-2
-      - 距离下次重置剩余：5 天
-      - 新加坡-2
-      - 美国-1
-      - 韩国-首尔-3
-      - 韩国-首尔-2
-      - 韩国-首尔-1
-      - 英国-伦敦-2
-      - 美国-3
-      - 美国-4
-      - 香港-奈飞-3
-      - 新加坡-3
-      - 美国-2
+      - 香港中继Ⅳ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 日本中继Ⅱ-Trojan
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -266,29 +109,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港-奈飞-1
-      - 香港-奈飞-4
-      - 香港-奈飞-2
-      - 台湾-奈飞-1
-      - 台湾-奈飞-2
-      - 新加坡-4
-      - 日本-东京-3
-      - 韩国-首尔-4
-      - 日本-东京-4
-      - 新加坡-1
-      - 日本-东京-2
-      - 距离下次重置剩余：5 天
-      - 新加坡-2
-      - 美国-1
-      - 韩国-首尔-3
-      - 韩国-首尔-2
-      - 韩国-首尔-1
-      - 英国-伦敦-2
-      - 美国-3
-      - 美国-4
-      - 香港-奈飞-3
-      - 新加坡-3
-      - 美国-2
+      - 香港中继Ⅳ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 日本中继Ⅱ-Trojan
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
