@@ -5,67 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡 02, server: sg02.diwaleifast.com, port: 30009, type: ss, cipher: aes-128-gcm, password: 7a325f7d-79ad-4294-87e9-25c8f4051880, udp: true}
-  - {name: 中转 🇰🇷 KR 1 TG:@nodpai, server: b1.thesixshadow.com, port: 58034, type: trojan, password: 6774c61a-4ffc-4437-b23b-c479dc1daa4a, sni: b1.thesixshadow.com, skip-cert-verify: true, udp: true}
-  - {name: PL 1 TG:@airproxies, server: hk-core.pvpgames.net, port: 63077, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pl01x.myn1des.com}, udp: true}
-  - {name: 中转 🇹🇼 TW 3 TG:@nodpai, server: in01.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: US 2 TG:@airproxies, server: 211.72.35.152, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
-  - {name: US 1 TG:@airproxies, server: 211.72.35.157, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
-  - {name: US 14 TG:@airproxies, server: 211.72.35.157, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇹🇼 TW 2 TG:@airproxies, server: in06.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: 中转 🇹🇼 TW 4 TG:@nodpai, server: in03.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: US 4 TG:@nodpai, server: 211.72.35.155, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇭🇰 HK 10 TG:@nodpai, server: in03.my1188.org, port: 63078, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-balancer.airport-v2.com}, udp: true}
+  - {name: 印度中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31018, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 距离下次重置剩余：30 天, server: video.proxyvip.link, port: 31001, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 香港中继Ⅱ-Trojan, server: video.proxyvip.link, port: 31002, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 新加坡中继Ⅱ-Trojan, server: video.proxyvip.link, port: 31012, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 日本中继Ⅱ-Trojan, server: video.proxyvip.link, port: 31014, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 日本中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31013, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 香港中继Ⅲ-Trojan, server: video.proxyvip.link, port: 31003, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 香港中继Ⅳ-Trojan, server: video.proxyvip.link, port: 31004, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 美国中继Ⅲ-Trojan, server: video.proxyvip.link, port: 31008, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 德国中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31017, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 加拿大中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31015, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 美国中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31006, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31019, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 02
-      - 中转 🇰🇷 KR 1 TG:@nodpai
-      - PL 1 TG:@airproxies
-      - 中转 🇹🇼 TW 3 TG:@nodpai
-      - US 2 TG:@airproxies
-      - US 1 TG:@airproxies
-      - US 14 TG:@airproxies
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - US 4 TG:@nodpai
-      - 中转 🇭🇰 HK 10 TG:@nodpai
+      - 印度中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 香港中继Ⅱ-Trojan
+      - 新加坡中继Ⅱ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 香港中继Ⅲ-Trojan
+      - 香港中继Ⅳ-Trojan
+      - 美国中继Ⅲ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 加拿大中继Ⅰ-Trojan
+      - 美国中继Ⅰ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 02
-      - 中转 🇰🇷 KR 1 TG:@nodpai
-      - PL 1 TG:@airproxies
-      - 中转 🇹🇼 TW 3 TG:@nodpai
-      - US 2 TG:@airproxies
-      - US 1 TG:@airproxies
-      - US 14 TG:@airproxies
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - US 4 TG:@nodpai
-      - 中转 🇭🇰 HK 10 TG:@nodpai
+      - 印度中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 香港中继Ⅱ-Trojan
+      - 新加坡中继Ⅱ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 香港中继Ⅲ-Trojan
+      - 香港中继Ⅳ-Trojan
+      - 美国中继Ⅲ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 加拿大中继Ⅰ-Trojan
+      - 美国中继Ⅰ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 02
-      - 中转 🇰🇷 KR 1 TG:@nodpai
-      - PL 1 TG:@airproxies
-      - 中转 🇹🇼 TW 3 TG:@nodpai
-      - US 2 TG:@airproxies
-      - US 1 TG:@airproxies
-      - US 14 TG:@airproxies
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - US 4 TG:@nodpai
-      - 中转 🇭🇰 HK 10 TG:@nodpai
+      - 印度中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 香港中继Ⅱ-Trojan
+      - 新加坡中继Ⅱ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 香港中继Ⅲ-Trojan
+      - 香港中继Ⅳ-Trojan
+      - 美国中继Ⅲ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 加拿大中继Ⅰ-Trojan
+      - 美国中继Ⅰ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,71 +92,82 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 02
-      - 中转 🇰🇷 KR 1 TG:@nodpai
-      - PL 1 TG:@airproxies
-      - 中转 🇹🇼 TW 3 TG:@nodpai
-      - US 2 TG:@airproxies
-      - US 1 TG:@airproxies
-      - US 14 TG:@airproxies
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - US 4 TG:@nodpai
-      - 中转 🇭🇰 HK 10 TG:@nodpai
+      - 印度中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 香港中继Ⅱ-Trojan
+      - 新加坡中继Ⅱ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 香港中继Ⅲ-Trojan
+      - 香港中继Ⅳ-Trojan
+      - 美国中继Ⅲ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 加拿大中继Ⅰ-Trojan
+      - 美国中继Ⅰ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港中继Ⅱ-Trojan
+      - 香港中继Ⅲ-Trojan
+      - 香港中继Ⅳ-Trojan
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 02
-      - 中转 🇰🇷 KR 1 TG:@nodpai
-      - PL 1 TG:@airproxies
-      - 中转 🇹🇼 TW 3 TG:@nodpai
-      - US 2 TG:@airproxies
-      - US 1 TG:@airproxies
-      - US 14 TG:@airproxies
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - US 4 TG:@nodpai
-      - 中转 🇭🇰 HK 10 TG:@nodpai
+      - 印度中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 香港中继Ⅱ-Trojan
+      - 新加坡中继Ⅱ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 香港中继Ⅲ-Trojan
+      - 香港中继Ⅳ-Trojan
+      - 美国中继Ⅲ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 加拿大中继Ⅰ-Trojan
+      - 美国中继Ⅰ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 02
-      - 中转 🇰🇷 KR 1 TG:@nodpai
-      - PL 1 TG:@airproxies
-      - 中转 🇹🇼 TW 3 TG:@nodpai
-      - US 2 TG:@airproxies
-      - US 1 TG:@airproxies
-      - US 14 TG:@airproxies
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - US 4 TG:@nodpai
-      - 中转 🇭🇰 HK 10 TG:@nodpai
+      - 印度中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 香港中继Ⅱ-Trojan
+      - 新加坡中继Ⅱ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 香港中继Ⅲ-Trojan
+      - 香港中继Ⅳ-Trojan
+      - 美国中继Ⅲ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 加拿大中继Ⅰ-Trojan
+      - 美国中继Ⅰ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 02
-      - 中转 🇰🇷 KR 1 TG:@nodpai
-      - PL 1 TG:@airproxies
-      - 中转 🇹🇼 TW 3 TG:@nodpai
-      - US 2 TG:@airproxies
-      - US 1 TG:@airproxies
-      - US 14 TG:@airproxies
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - US 4 TG:@nodpai
-      - 中转 🇭🇰 HK 10 TG:@nodpai
+      - 印度中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 香港中继Ⅱ-Trojan
+      - 新加坡中继Ⅱ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 香港中继Ⅲ-Trojan
+      - 香港中继Ⅳ-Trojan
+      - 美国中继Ⅲ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 加拿大中继Ⅰ-Trojan
+      - 美国中继Ⅰ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,17 +183,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 02
-      - 中转 🇰🇷 KR 1 TG:@nodpai
-      - PL 1 TG:@airproxies
-      - 中转 🇹🇼 TW 3 TG:@nodpai
-      - US 2 TG:@airproxies
-      - US 1 TG:@airproxies
-      - US 14 TG:@airproxies
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - US 4 TG:@nodpai
-      - 中转 🇭🇰 HK 10 TG:@nodpai
+      - 印度中继Ⅰ-Trojan
+      - 距离下次重置剩余：30 天
+      - 香港中继Ⅱ-Trojan
+      - 新加坡中继Ⅱ-Trojan
+      - 日本中继Ⅱ-Trojan
+      - 日本中继Ⅰ-Trojan
+      - 香港中继Ⅲ-Trojan
+      - 香港中继Ⅳ-Trojan
+      - 美国中继Ⅲ-Trojan
+      - 德国中继Ⅰ-Trojan
+      - 加拿大中继Ⅰ-Trojan
+      - 美国中继Ⅰ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
