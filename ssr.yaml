@@ -5,179 +5,251 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Premium|广台|IEPL|03, server: pr4.jymzffbquawl.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广台|IEPL|02, server: pr3.jymzffbquawl.com, port: 3035, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广新|IEPL|02, server: pr3.jymzffbquawl.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广港|IEPL|20, server: bs2.jymzffbquawl.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广港|IEPL|12, server: bs2.jymzffbquawl.com, port: 3501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广港|IEPL|15, server: bs2.jymzffbquawl.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广新|IEPL|01, server: pr3.jymzffbquawl.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广港|IEPL|03, server: bs1.jymzffbquawl.com, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广港|IEPL|11, server: bs2.jymzffbquawl.com, port: 3500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广港|IEPL|10, server: bs1.jymzffbquawl.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广新|IEPL|04, server: bs3.jymzffbquawl.com, port: 6503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广港|IEPL|15, server: pr2.jymzffbquawl.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广新|IEPL|07, server: bs4.jymzffbquawl.com, port: 6502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广港|IEPL|09, server: pr1.jymzffbquawl.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广新|IEPL|03, server: bs3.jymzffbquawl.com, port: 6502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广港|IEPL|01, server: pr1.jymzffbquawl.com, port: 3500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广港|IEPL|07, server: pr1.jymzffbquawl.com, port: 3506, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广台|IEPL|03, server: bs3.jymzffbquawl.com, port: 3045, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广港|IEPL|20, server: pr2.jymzffbquawl.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广美|IEPL|04, server: pr4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广台|IEPL|02, server: bs3.jymzffbquawl.com, port: 3035, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广港|IEPL|05, server: pr1.jymzffbquawl.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广新|IEPL|08, server: bs4.jymzffbquawl.com, port: 6503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广新|IEPL|02, server: bs3.jymzffbquawl.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广台|IEPL|06, server: bs4.jymzffbquawl.com, port: 3045, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广美|IEPL|03, server: pr4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广美|IEPL|01, server: pr3.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广美|IEPL|02, server: pr3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广美|IEPL|03, server: bs3.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广台|IEPL|04, server: bs4.jymzffbquawl.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广美|IEPL|04, server: bs3.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广美|IEPL|05, server: bs4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广新|IEPL|05, server: bs4.jymzffbquawl.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广新|IEPL|01, server: bs3.jymzffbquawl.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广日|IEPL|04, server: bs3.jymzffbquawl.com, port: 4503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广美|IEPL|08, server: bs4.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广新|IEPL|06, server: bs4.jymzffbquawl.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Premium|广港|IEPL|19, server: pr2.jymzffbquawl.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
-  - {name: Standard|广港|IEPL|04, server: bs1.jymzffbquawl.com, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 47023:CzOvFg, obfs-param: 1ebc447023.microsoft.com, udp: true}
+  - {name: Premium|广台|IEPL|02, server: pr3.jymzffbquawl.com, port: 3035, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广日|IEPL|02, server: pr3.jymzffbquawl.com, port: 4501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广台|IEPL|01, server: pr3.jymzffbquawl.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广新|IEPL|02, server: pr3.jymzffbquawl.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广新|IEPL|03, server: pr4.jymzffbquawl.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广台|IEPL|05, server: bs4.jymzffbquawl.com, port: 3035, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广新|IEPL|01, server: bs3.jymzffbquawl.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广新|IEPL|03, server: bs3.jymzffbquawl.com, port: 6502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广新|IEPL|06, server: bs4.jymzffbquawl.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广新|IEPL|08, server: bs4.jymzffbquawl.com, port: 6503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广台|IEPL|03, server: bs3.jymzffbquawl.com, port: 3045, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广日|IEPL|03, server: bs3.jymzffbquawl.com, port: 4502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广日|IEPL|05, server: bs4.jymzffbquawl.com, port: 4500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广台|IEPL|02, server: bs3.jymzffbquawl.com, port: 3035, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广日|IEPL|06, server: bs4.jymzffbquawl.com, port: 4501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广日|IEPL|01, server: bs3.jymzffbquawl.com, port: 4500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广新|IEPL|05, server: bs4.jymzffbquawl.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广日|IEPL|04, server: pr4.jymzffbquawl.com, port: 4501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广新|IEPL|04, server: bs3.jymzffbquawl.com, port: 6503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广新|IEPL|07, server: bs4.jymzffbquawl.com, port: 6502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广台|IEPL|04, server: bs4.jymzffbquawl.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广日|IEPL|02, server: bs3.jymzffbquawl.com, port: 4501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广台|IEPL|04, server: pr4.jymzffbquawl.com, port: 3035, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广台|IEPL|06, server: bs4.jymzffbquawl.com, port: 3045, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广台|IEPL|01, server: bs3.jymzffbquawl.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广新|IEPL|02, server: bs3.jymzffbquawl.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广日|IEPL|04, server: bs3.jymzffbquawl.com, port: 4503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广美|IEPL|02, server: pr3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广美|IEPL|03, server: pr4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广日|IEPL|07, server: bs4.jymzffbquawl.com, port: 4502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广日|IEPL|01, server: pr3.jymzffbquawl.com, port: 4500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|03, server: pr1.jymzffbquawl.com, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|10, server: pr1.jymzffbquawl.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|17, server: pr2.jymzffbquawl.com, port: 3506, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广美|IEPL|05, server: bs4.jymzffbquawl.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|05, server: pr1.jymzffbquawl.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|04, server: pr1.jymzffbquawl.com, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广美|IEPL|07, server: bs4.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|19, server: pr2.jymzffbquawl.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|13, server: pr2.jymzffbquawl.com, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|16, server: pr2.jymzffbquawl.com, port: 3505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广美|IEPL|02, server: bs3.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广美|IEPL|08, server: bs4.jymzffbquawl.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|02, server: pr1.jymzffbquawl.com, port: 3501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|01, server: pr1.jymzffbquawl.com, port: 3500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|20, server: pr2.jymzffbquawl.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|18, server: pr2.jymzffbquawl.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|12, server: pr2.jymzffbquawl.com, port: 3501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|11, server: pr2.jymzffbquawl.com, port: 3500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|06, server: pr1.jymzffbquawl.com, port: 3505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|09, server: pr1.jymzffbquawl.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|14, server: pr2.jymzffbquawl.com, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|07, server: pr1.jymzffbquawl.com, port: 3506, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|08, server: pr1.jymzffbquawl.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广美|IEPL|03, server: bs3.jymzffbquawl.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Premium|广港|IEPL|15, server: pr2.jymzffbquawl.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
+  - {name: Standard|广美|IEPL|06, server: bs4.jymzffbquawl.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Premium|广台|IEPL|03
       - Premium|广台|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广台|IEPL|01
       - Premium|广新|IEPL|02
-      - Standard|广港|IEPL|20
-      - Standard|广港|IEPL|12
-      - Standard|广港|IEPL|15
-      - Premium|广新|IEPL|01
-      - Standard|广港|IEPL|03
-      - Standard|广港|IEPL|11
-      - Standard|广港|IEPL|10
-      - Standard|广新|IEPL|04
-      - Premium|广港|IEPL|15
-      - Standard|广新|IEPL|07
-      - Premium|广港|IEPL|09
-      - Standard|广新|IEPL|03
-      - Premium|广港|IEPL|01
-      - Premium|广港|IEPL|07
-      - Standard|广台|IEPL|03
-      - Premium|广港|IEPL|20
-      - Premium|广美|IEPL|04
-      - Standard|广台|IEPL|02
-      - Premium|广港|IEPL|05
-      - Standard|广新|IEPL|08
-      - Standard|广新|IEPL|02
-      - Standard|广台|IEPL|06
-      - Premium|广美|IEPL|03
-      - Premium|广美|IEPL|01
-      - Premium|广美|IEPL|02
-      - Standard|广美|IEPL|03
-      - Standard|广台|IEPL|04
-      - Standard|广美|IEPL|04
-      - Standard|广美|IEPL|05
-      - Standard|广新|IEPL|05
+      - Premium|广新|IEPL|03
+      - Standard|广台|IEPL|05
       - Standard|广新|IEPL|01
-      - Standard|广日|IEPL|04
-      - Standard|广美|IEPL|08
+      - Standard|广新|IEPL|03
       - Standard|广新|IEPL|06
+      - Standard|广新|IEPL|08
+      - Standard|广台|IEPL|03
+      - Standard|广日|IEPL|03
+      - Standard|广日|IEPL|05
+      - Standard|广台|IEPL|02
+      - Standard|广日|IEPL|06
+      - Standard|广日|IEPL|01
+      - Standard|广新|IEPL|05
+      - Premium|广日|IEPL|04
+      - Standard|广新|IEPL|04
+      - Standard|广新|IEPL|07
+      - Standard|广台|IEPL|04
+      - Standard|广日|IEPL|02
+      - Premium|广台|IEPL|04
+      - Standard|广台|IEPL|06
+      - Standard|广台|IEPL|01
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|04
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|03
+      - Standard|广日|IEPL|07
+      - Premium|广日|IEPL|01
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|17
+      - Standard|广美|IEPL|05
+      - Premium|广港|IEPL|05
+      - Premium|广港|IEPL|04
+      - Standard|广美|IEPL|07
       - Premium|广港|IEPL|19
-      - Standard|广港|IEPL|04
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|16
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|08
+      - Premium|广港|IEPL|02
+      - Premium|广港|IEPL|01
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|18
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|06
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|07
+      - Premium|广港|IEPL|08
+      - Standard|广美|IEPL|03
+      - Premium|广港|IEPL|15
+      - Standard|广美|IEPL|06
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Premium|广台|IEPL|03
       - Premium|广台|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广台|IEPL|01
       - Premium|广新|IEPL|02
-      - Standard|广港|IEPL|20
-      - Standard|广港|IEPL|12
-      - Standard|广港|IEPL|15
-      - Premium|广新|IEPL|01
-      - Standard|广港|IEPL|03
-      - Standard|广港|IEPL|11
-      - Standard|广港|IEPL|10
-      - Standard|广新|IEPL|04
-      - Premium|广港|IEPL|15
-      - Standard|广新|IEPL|07
-      - Premium|广港|IEPL|09
-      - Standard|广新|IEPL|03
-      - Premium|广港|IEPL|01
-      - Premium|广港|IEPL|07
-      - Standard|广台|IEPL|03
-      - Premium|广港|IEPL|20
-      - Premium|广美|IEPL|04
-      - Standard|广台|IEPL|02
-      - Premium|广港|IEPL|05
-      - Standard|广新|IEPL|08
-      - Standard|广新|IEPL|02
-      - Standard|广台|IEPL|06
-      - Premium|广美|IEPL|03
-      - Premium|广美|IEPL|01
-      - Premium|广美|IEPL|02
-      - Standard|广美|IEPL|03
-      - Standard|广台|IEPL|04
-      - Standard|广美|IEPL|04
-      - Standard|广美|IEPL|05
-      - Standard|广新|IEPL|05
+      - Premium|广新|IEPL|03
+      - Standard|广台|IEPL|05
       - Standard|广新|IEPL|01
-      - Standard|广日|IEPL|04
-      - Standard|广美|IEPL|08
+      - Standard|广新|IEPL|03
       - Standard|广新|IEPL|06
+      - Standard|广新|IEPL|08
+      - Standard|广台|IEPL|03
+      - Standard|广日|IEPL|03
+      - Standard|广日|IEPL|05
+      - Standard|广台|IEPL|02
+      - Standard|广日|IEPL|06
+      - Standard|广日|IEPL|01
+      - Standard|广新|IEPL|05
+      - Premium|广日|IEPL|04
+      - Standard|广新|IEPL|04
+      - Standard|广新|IEPL|07
+      - Standard|广台|IEPL|04
+      - Standard|广日|IEPL|02
+      - Premium|广台|IEPL|04
+      - Standard|广台|IEPL|06
+      - Standard|广台|IEPL|01
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|04
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|03
+      - Standard|广日|IEPL|07
+      - Premium|广日|IEPL|01
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|17
+      - Standard|广美|IEPL|05
+      - Premium|广港|IEPL|05
+      - Premium|广港|IEPL|04
+      - Standard|广美|IEPL|07
       - Premium|广港|IEPL|19
-      - Standard|广港|IEPL|04
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|16
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|08
+      - Premium|广港|IEPL|02
+      - Premium|广港|IEPL|01
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|18
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|06
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|07
+      - Premium|广港|IEPL|08
+      - Standard|广美|IEPL|03
+      - Premium|广港|IEPL|15
+      - Standard|广美|IEPL|06
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Premium|广台|IEPL|03
       - Premium|广台|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广台|IEPL|01
       - Premium|广新|IEPL|02
-      - Standard|广港|IEPL|20
-      - Standard|广港|IEPL|12
-      - Standard|广港|IEPL|15
-      - Premium|广新|IEPL|01
-      - Standard|广港|IEPL|03
-      - Standard|广港|IEPL|11
-      - Standard|广港|IEPL|10
-      - Standard|广新|IEPL|04
-      - Premium|广港|IEPL|15
-      - Standard|广新|IEPL|07
-      - Premium|广港|IEPL|09
-      - Standard|广新|IEPL|03
-      - Premium|广港|IEPL|01
-      - Premium|广港|IEPL|07
-      - Standard|广台|IEPL|03
-      - Premium|广港|IEPL|20
-      - Premium|广美|IEPL|04
-      - Standard|广台|IEPL|02
-      - Premium|广港|IEPL|05
-      - Standard|广新|IEPL|08
-      - Standard|广新|IEPL|02
-      - Standard|广台|IEPL|06
-      - Premium|广美|IEPL|03
-      - Premium|广美|IEPL|01
-      - Premium|广美|IEPL|02
-      - Standard|广美|IEPL|03
-      - Standard|广台|IEPL|04
-      - Standard|广美|IEPL|04
-      - Standard|广美|IEPL|05
-      - Standard|广新|IEPL|05
+      - Premium|广新|IEPL|03
+      - Standard|广台|IEPL|05
       - Standard|广新|IEPL|01
-      - Standard|广日|IEPL|04
-      - Standard|广美|IEPL|08
+      - Standard|广新|IEPL|03
       - Standard|广新|IEPL|06
+      - Standard|广新|IEPL|08
+      - Standard|广台|IEPL|03
+      - Standard|广日|IEPL|03
+      - Standard|广日|IEPL|05
+      - Standard|广台|IEPL|02
+      - Standard|广日|IEPL|06
+      - Standard|广日|IEPL|01
+      - Standard|广新|IEPL|05
+      - Premium|广日|IEPL|04
+      - Standard|广新|IEPL|04
+      - Standard|广新|IEPL|07
+      - Standard|广台|IEPL|04
+      - Standard|广日|IEPL|02
+      - Premium|广台|IEPL|04
+      - Standard|广台|IEPL|06
+      - Standard|广台|IEPL|01
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|04
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|03
+      - Standard|广日|IEPL|07
+      - Premium|广日|IEPL|01
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|17
+      - Standard|广美|IEPL|05
+      - Premium|广港|IEPL|05
+      - Premium|广港|IEPL|04
+      - Standard|广美|IEPL|07
       - Premium|广港|IEPL|19
-      - Standard|广港|IEPL|04
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|16
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|08
+      - Premium|广港|IEPL|02
+      - Premium|广港|IEPL|01
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|18
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|06
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|07
+      - Premium|广港|IEPL|08
+      - Standard|广美|IEPL|03
+      - Premium|广港|IEPL|15
+      - Standard|广美|IEPL|06
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -196,203 +268,284 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Premium|广台|IEPL|03
       - Premium|广台|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广台|IEPL|01
       - Premium|广新|IEPL|02
-      - Standard|广港|IEPL|20
-      - Standard|广港|IEPL|12
-      - Standard|广港|IEPL|15
-      - Premium|广新|IEPL|01
-      - Standard|广港|IEPL|03
-      - Standard|广港|IEPL|11
-      - Standard|广港|IEPL|10
-      - Standard|广新|IEPL|04
-      - Premium|广港|IEPL|15
-      - Standard|广新|IEPL|07
-      - Premium|广港|IEPL|09
-      - Standard|广新|IEPL|03
-      - Premium|广港|IEPL|01
-      - Premium|广港|IEPL|07
-      - Standard|广台|IEPL|03
-      - Premium|广港|IEPL|20
-      - Premium|广美|IEPL|04
-      - Standard|广台|IEPL|02
-      - Premium|广港|IEPL|05
-      - Standard|广新|IEPL|08
-      - Standard|广新|IEPL|02
-      - Standard|广台|IEPL|06
-      - Premium|广美|IEPL|03
-      - Premium|广美|IEPL|01
-      - Premium|广美|IEPL|02
-      - Standard|广美|IEPL|03
-      - Standard|广台|IEPL|04
-      - Standard|广美|IEPL|04
-      - Standard|广美|IEPL|05
-      - Standard|广新|IEPL|05
+      - Premium|广新|IEPL|03
+      - Standard|广台|IEPL|05
       - Standard|广新|IEPL|01
-      - Standard|广日|IEPL|04
-      - Standard|广美|IEPL|08
+      - Standard|广新|IEPL|03
       - Standard|广新|IEPL|06
+      - Standard|广新|IEPL|08
+      - Standard|广台|IEPL|03
+      - Standard|广日|IEPL|03
+      - Standard|广日|IEPL|05
+      - Standard|广台|IEPL|02
+      - Standard|广日|IEPL|06
+      - Standard|广日|IEPL|01
+      - Standard|广新|IEPL|05
+      - Premium|广日|IEPL|04
+      - Standard|广新|IEPL|04
+      - Standard|广新|IEPL|07
+      - Standard|广台|IEPL|04
+      - Standard|广日|IEPL|02
+      - Premium|广台|IEPL|04
+      - Standard|广台|IEPL|06
+      - Standard|广台|IEPL|01
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|04
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|03
+      - Standard|广日|IEPL|07
+      - Premium|广日|IEPL|01
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|17
+      - Standard|广美|IEPL|05
+      - Premium|广港|IEPL|05
+      - Premium|广港|IEPL|04
+      - Standard|广美|IEPL|07
       - Premium|广港|IEPL|19
-      - Standard|广港|IEPL|04
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|16
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|08
+      - Premium|广港|IEPL|02
+      - Premium|广港|IEPL|01
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|18
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|06
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|07
+      - Premium|广港|IEPL|08
+      - Standard|广美|IEPL|03
+      - Premium|广港|IEPL|15
+      - Standard|广美|IEPL|06
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Premium|广台|IEPL|03
       - Premium|广台|IEPL|02
-      - Standard|广港|IEPL|20
-      - Standard|广港|IEPL|12
-      - Standard|广港|IEPL|15
-      - Standard|广港|IEPL|03
-      - Standard|广港|IEPL|11
-      - Standard|广港|IEPL|10
-      - Premium|广港|IEPL|15
-      - Premium|广港|IEPL|09
-      - Premium|广港|IEPL|01
-      - Premium|广港|IEPL|07
+      - Premium|广台|IEPL|01
+      - Standard|广台|IEPL|05
       - Standard|广台|IEPL|03
-      - Premium|广港|IEPL|20
       - Standard|广台|IEPL|02
-      - Premium|广港|IEPL|05
-      - Standard|广台|IEPL|06
       - Standard|广台|IEPL|04
+      - Premium|广台|IEPL|04
+      - Standard|广台|IEPL|06
+      - Standard|广台|IEPL|01
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|17
+      - Premium|广港|IEPL|05
+      - Premium|广港|IEPL|04
       - Premium|广港|IEPL|19
-      - Standard|广港|IEPL|04
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|16
+      - Premium|广港|IEPL|02
+      - Premium|广港|IEPL|01
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|18
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|06
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|07
+      - Premium|广港|IEPL|08
+      - Premium|广港|IEPL|15
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Premium|广台|IEPL|03
       - Premium|广台|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广台|IEPL|01
       - Premium|广新|IEPL|02
-      - Standard|广港|IEPL|20
-      - Standard|广港|IEPL|12
-      - Standard|广港|IEPL|15
-      - Premium|广新|IEPL|01
-      - Standard|广港|IEPL|03
-      - Standard|广港|IEPL|11
-      - Standard|广港|IEPL|10
-      - Standard|广新|IEPL|04
-      - Premium|广港|IEPL|15
-      - Standard|广新|IEPL|07
-      - Premium|广港|IEPL|09
-      - Standard|广新|IEPL|03
-      - Premium|广港|IEPL|01
-      - Premium|广港|IEPL|07
-      - Standard|广台|IEPL|03
-      - Premium|广港|IEPL|20
-      - Premium|广美|IEPL|04
-      - Standard|广台|IEPL|02
-      - Premium|广港|IEPL|05
-      - Standard|广新|IEPL|08
-      - Standard|广新|IEPL|02
-      - Standard|广台|IEPL|06
-      - Premium|广美|IEPL|03
-      - Premium|广美|IEPL|01
-      - Premium|广美|IEPL|02
-      - Standard|广美|IEPL|03
-      - Standard|广台|IEPL|04
-      - Standard|广美|IEPL|04
-      - Standard|广美|IEPL|05
-      - Standard|广新|IEPL|05
+      - Premium|广新|IEPL|03
+      - Standard|广台|IEPL|05
       - Standard|广新|IEPL|01
-      - Standard|广日|IEPL|04
-      - Standard|广美|IEPL|08
+      - Standard|广新|IEPL|03
       - Standard|广新|IEPL|06
+      - Standard|广新|IEPL|08
+      - Standard|广台|IEPL|03
+      - Standard|广日|IEPL|03
+      - Standard|广日|IEPL|05
+      - Standard|广台|IEPL|02
+      - Standard|广日|IEPL|06
+      - Standard|广日|IEPL|01
+      - Standard|广新|IEPL|05
+      - Premium|广日|IEPL|04
+      - Standard|广新|IEPL|04
+      - Standard|广新|IEPL|07
+      - Standard|广台|IEPL|04
+      - Standard|广日|IEPL|02
+      - Premium|广台|IEPL|04
+      - Standard|广台|IEPL|06
+      - Standard|广台|IEPL|01
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|04
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|03
+      - Standard|广日|IEPL|07
+      - Premium|广日|IEPL|01
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|17
+      - Standard|广美|IEPL|05
+      - Premium|广港|IEPL|05
+      - Premium|广港|IEPL|04
+      - Standard|广美|IEPL|07
       - Premium|广港|IEPL|19
-      - Standard|广港|IEPL|04
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|16
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|08
+      - Premium|广港|IEPL|02
+      - Premium|广港|IEPL|01
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|18
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|06
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|07
+      - Premium|广港|IEPL|08
+      - Standard|广美|IEPL|03
+      - Premium|广港|IEPL|15
+      - Standard|广美|IEPL|06
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Premium|广台|IEPL|03
       - Premium|广台|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广台|IEPL|01
       - Premium|广新|IEPL|02
-      - Standard|广港|IEPL|20
-      - Standard|广港|IEPL|12
-      - Standard|广港|IEPL|15
-      - Premium|广新|IEPL|01
-      - Standard|广港|IEPL|03
-      - Standard|广港|IEPL|11
-      - Standard|广港|IEPL|10
-      - Standard|广新|IEPL|04
-      - Premium|广港|IEPL|15
-      - Standard|广新|IEPL|07
-      - Premium|广港|IEPL|09
-      - Standard|广新|IEPL|03
-      - Premium|广港|IEPL|01
-      - Premium|广港|IEPL|07
-      - Standard|广台|IEPL|03
-      - Premium|广港|IEPL|20
-      - Premium|广美|IEPL|04
-      - Standard|广台|IEPL|02
-      - Premium|广港|IEPL|05
-      - Standard|广新|IEPL|08
-      - Standard|广新|IEPL|02
-      - Standard|广台|IEPL|06
-      - Premium|广美|IEPL|03
-      - Premium|广美|IEPL|01
-      - Premium|广美|IEPL|02
-      - Standard|广美|IEPL|03
-      - Standard|广台|IEPL|04
-      - Standard|广美|IEPL|04
-      - Standard|广美|IEPL|05
-      - Standard|广新|IEPL|05
+      - Premium|广新|IEPL|03
+      - Standard|广台|IEPL|05
       - Standard|广新|IEPL|01
-      - Standard|广日|IEPL|04
-      - Standard|广美|IEPL|08
+      - Standard|广新|IEPL|03
       - Standard|广新|IEPL|06
+      - Standard|广新|IEPL|08
+      - Standard|广台|IEPL|03
+      - Standard|广日|IEPL|03
+      - Standard|广日|IEPL|05
+      - Standard|广台|IEPL|02
+      - Standard|广日|IEPL|06
+      - Standard|广日|IEPL|01
+      - Standard|广新|IEPL|05
+      - Premium|广日|IEPL|04
+      - Standard|广新|IEPL|04
+      - Standard|广新|IEPL|07
+      - Standard|广台|IEPL|04
+      - Standard|广日|IEPL|02
+      - Premium|广台|IEPL|04
+      - Standard|广台|IEPL|06
+      - Standard|广台|IEPL|01
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|04
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|03
+      - Standard|广日|IEPL|07
+      - Premium|广日|IEPL|01
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|17
+      - Standard|广美|IEPL|05
+      - Premium|广港|IEPL|05
+      - Premium|广港|IEPL|04
+      - Standard|广美|IEPL|07
       - Premium|广港|IEPL|19
-      - Standard|广港|IEPL|04
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|16
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|08
+      - Premium|广港|IEPL|02
+      - Premium|广港|IEPL|01
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|18
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|06
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|07
+      - Premium|广港|IEPL|08
+      - Standard|广美|IEPL|03
+      - Premium|广港|IEPL|15
+      - Standard|广美|IEPL|06
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Premium|广台|IEPL|03
       - Premium|广台|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广台|IEPL|01
       - Premium|广新|IEPL|02
-      - Standard|广港|IEPL|20
-      - Standard|广港|IEPL|12
-      - Standard|广港|IEPL|15
-      - Premium|广新|IEPL|01
-      - Standard|广港|IEPL|03
-      - Standard|广港|IEPL|11
-      - Standard|广港|IEPL|10
-      - Standard|广新|IEPL|04
-      - Premium|广港|IEPL|15
-      - Standard|广新|IEPL|07
-      - Premium|广港|IEPL|09
-      - Standard|广新|IEPL|03
-      - Premium|广港|IEPL|01
-      - Premium|广港|IEPL|07
-      - Standard|广台|IEPL|03
-      - Premium|广港|IEPL|20
-      - Premium|广美|IEPL|04
-      - Standard|广台|IEPL|02
-      - Premium|广港|IEPL|05
-      - Standard|广新|IEPL|08
-      - Standard|广新|IEPL|02
-      - Standard|广台|IEPL|06
-      - Premium|广美|IEPL|03
-      - Premium|广美|IEPL|01
-      - Premium|广美|IEPL|02
-      - Standard|广美|IEPL|03
-      - Standard|广台|IEPL|04
-      - Standard|广美|IEPL|04
-      - Standard|广美|IEPL|05
-      - Standard|广新|IEPL|05
+      - Premium|广新|IEPL|03
+      - Standard|广台|IEPL|05
       - Standard|广新|IEPL|01
-      - Standard|广日|IEPL|04
-      - Standard|广美|IEPL|08
+      - Standard|广新|IEPL|03
       - Standard|广新|IEPL|06
+      - Standard|广新|IEPL|08
+      - Standard|广台|IEPL|03
+      - Standard|广日|IEPL|03
+      - Standard|广日|IEPL|05
+      - Standard|广台|IEPL|02
+      - Standard|广日|IEPL|06
+      - Standard|广日|IEPL|01
+      - Standard|广新|IEPL|05
+      - Premium|广日|IEPL|04
+      - Standard|广新|IEPL|04
+      - Standard|广新|IEPL|07
+      - Standard|广台|IEPL|04
+      - Standard|广日|IEPL|02
+      - Premium|广台|IEPL|04
+      - Standard|广台|IEPL|06
+      - Standard|广台|IEPL|01
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|04
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|03
+      - Standard|广日|IEPL|07
+      - Premium|广日|IEPL|01
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|17
+      - Standard|广美|IEPL|05
+      - Premium|广港|IEPL|05
+      - Premium|广港|IEPL|04
+      - Standard|广美|IEPL|07
       - Premium|广港|IEPL|19
-      - Standard|广港|IEPL|04
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|16
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|08
+      - Premium|广港|IEPL|02
+      - Premium|广港|IEPL|01
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|18
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|06
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|07
+      - Premium|广港|IEPL|08
+      - Standard|广美|IEPL|03
+      - Premium|广港|IEPL|15
+      - Standard|广美|IEPL|06
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -408,45 +561,63 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Premium|广台|IEPL|03
       - Premium|广台|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广台|IEPL|01
       - Premium|广新|IEPL|02
-      - Standard|广港|IEPL|20
-      - Standard|广港|IEPL|12
-      - Standard|广港|IEPL|15
-      - Premium|广新|IEPL|01
-      - Standard|广港|IEPL|03
-      - Standard|广港|IEPL|11
-      - Standard|广港|IEPL|10
-      - Standard|广新|IEPL|04
-      - Premium|广港|IEPL|15
-      - Standard|广新|IEPL|07
-      - Premium|广港|IEPL|09
-      - Standard|广新|IEPL|03
-      - Premium|广港|IEPL|01
-      - Premium|广港|IEPL|07
-      - Standard|广台|IEPL|03
-      - Premium|广港|IEPL|20
-      - Premium|广美|IEPL|04
-      - Standard|广台|IEPL|02
-      - Premium|广港|IEPL|05
-      - Standard|广新|IEPL|08
-      - Standard|广新|IEPL|02
-      - Standard|广台|IEPL|06
-      - Premium|广美|IEPL|03
-      - Premium|广美|IEPL|01
-      - Premium|广美|IEPL|02
-      - Standard|广美|IEPL|03
-      - Standard|广台|IEPL|04
-      - Standard|广美|IEPL|04
-      - Standard|广美|IEPL|05
-      - Standard|广新|IEPL|05
+      - Premium|广新|IEPL|03
+      - Standard|广台|IEPL|05
       - Standard|广新|IEPL|01
-      - Standard|广日|IEPL|04
-      - Standard|广美|IEPL|08
+      - Standard|广新|IEPL|03
       - Standard|广新|IEPL|06
+      - Standard|广新|IEPL|08
+      - Standard|广台|IEPL|03
+      - Standard|广日|IEPL|03
+      - Standard|广日|IEPL|05
+      - Standard|广台|IEPL|02
+      - Standard|广日|IEPL|06
+      - Standard|广日|IEPL|01
+      - Standard|广新|IEPL|05
+      - Premium|广日|IEPL|04
+      - Standard|广新|IEPL|04
+      - Standard|广新|IEPL|07
+      - Standard|广台|IEPL|04
+      - Standard|广日|IEPL|02
+      - Premium|广台|IEPL|04
+      - Standard|广台|IEPL|06
+      - Standard|广台|IEPL|01
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|04
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|03
+      - Standard|广日|IEPL|07
+      - Premium|广日|IEPL|01
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|17
+      - Standard|广美|IEPL|05
+      - Premium|广港|IEPL|05
+      - Premium|广港|IEPL|04
+      - Standard|广美|IEPL|07
       - Premium|广港|IEPL|19
-      - Standard|广港|IEPL|04
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|16
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|08
+      - Premium|广港|IEPL|02
+      - Premium|广港|IEPL|01
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|18
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|06
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|07
+      - Premium|广港|IEPL|08
+      - Standard|广美|IEPL|03
+      - Premium|广港|IEPL|15
+      - Standard|广美|IEPL|06
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
