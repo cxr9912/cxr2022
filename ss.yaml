@@ -5,35 +5,155 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: V210 日本<->East, server: V210.bgynd.xyz, port: 26210, type: vmess, uuid: 2509bac4-e641-3ff4-9082-c1595f8d0252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V313 美国<->East, server: V313.bgynd.xyz, port: 26313, type: vmess, uuid: 2509bac4-e641-3ff4-9082-c1595f8d0252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V309 日本<->East, server: V309.bgynd.xyz, port: 26309, type: vmess, uuid: 2509bac4-e641-3ff4-9082-c1595f8d0252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Standard|广港|IEPL|11, server: bs2.jymzffbquawl.com, port: 3600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|15, server: bs2.jymzffbquawl.com, port: 3604, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|06, server: bs1.jymzffbquawl.com, port: 3605, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|03, server: bs1.jymzffbquawl.com, port: 3602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广新|IEPL|01, server: bs3.jymzffbquawl.com, port: 6600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广新|IEPL|03, server: bs3.jymzffbquawl.com, port: 6602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|02, server: bs1.jymzffbquawl.com, port: 3601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广新|IEPL|05, server: bs4.jymzffbquawl.com, port: 6600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|13, server: bs2.jymzffbquawl.com, port: 3602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|20, server: bs2.jymzffbquawl.com, port: 3609, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|16, server: bs2.jymzffbquawl.com, port: 3605, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|05, server: bs1.jymzffbquawl.com, port: 3604, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|01, server: bs1.jymzffbquawl.com, port: 3600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广日|IEPL|02, server: bs3.jymzffbquawl.com, port: 4601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|17, server: bs2.jymzffbquawl.com, port: 3606, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|12, server: bs2.jymzffbquawl.com, port: 3601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广新|IEPL|06, server: bs4.jymzffbquawl.com, port: 6601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广日|IEPL|05, server: bs4.jymzffbquawl.com, port: 4600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|19, server: bs2.jymzffbquawl.com, port: 3608, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|09, server: bs1.jymzffbquawl.com, port: 3608, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|14, server: bs2.jymzffbquawl.com, port: 3603, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|10, server: bs1.jymzffbquawl.com, port: 3609, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广港|IEPL|08, server: bs1.jymzffbquawl.com, port: 3607, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广新|IEPL|02, server: bs3.jymzffbquawl.com, port: 6601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广日|IEPL|01, server: bs3.jymzffbquawl.com, port: 4600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广日|IEPL|07, server: bs4.jymzffbquawl.com, port: 4602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广美|IEPL|06, server: bs4.jymzffbquawl.com, port: 5601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广美|IEPL|02, server: bs3.jymzffbquawl.com, port: 5601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广美|IEPL|05, server: bs4.jymzffbquawl.com, port: 5600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广台|IEPL|06, server: bs4.jymzffbquawl.com, port: 3046, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广美|IEPL|04, server: bs3.jymzffbquawl.com, port: 5603, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广日|IEPL|03, server: bs3.jymzffbquawl.com, port: 4602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
+  - {name: Standard|广美|IEPL|07, server: bs4.jymzffbquawl.com, port: 5602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: fc3a8203910.microsoft.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V210 日本<->East
-      - V313 美国<->East
-      - V309 日本<->East
+      - Standard|广港|IEPL|11
+      - Standard|广港|IEPL|15
+      - Standard|广港|IEPL|06
+      - Standard|广港|IEPL|03
+      - Standard|广新|IEPL|01
+      - Standard|广新|IEPL|03
+      - Standard|广港|IEPL|02
+      - Standard|广新|IEPL|05
+      - Standard|广港|IEPL|13
+      - Standard|广港|IEPL|20
+      - Standard|广港|IEPL|16
+      - Standard|广港|IEPL|05
+      - Standard|广港|IEPL|01
+      - Standard|广日|IEPL|02
+      - Standard|广港|IEPL|17
+      - Standard|广港|IEPL|12
+      - Standard|广新|IEPL|06
+      - Standard|广日|IEPL|05
+      - Standard|广港|IEPL|19
+      - Standard|广港|IEPL|09
+      - Standard|广港|IEPL|14
+      - Standard|广港|IEPL|10
+      - Standard|广港|IEPL|08
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|01
+      - Standard|广日|IEPL|07
+      - Standard|广美|IEPL|06
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|05
+      - Standard|广台|IEPL|06
+      - Standard|广美|IEPL|04
+      - Standard|广日|IEPL|03
+      - Standard|广美|IEPL|07
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - V210 日本<->East
-      - V313 美国<->East
-      - V309 日本<->East
+      - Standard|广港|IEPL|11
+      - Standard|广港|IEPL|15
+      - Standard|广港|IEPL|06
+      - Standard|广港|IEPL|03
+      - Standard|广新|IEPL|01
+      - Standard|广新|IEPL|03
+      - Standard|广港|IEPL|02
+      - Standard|广新|IEPL|05
+      - Standard|广港|IEPL|13
+      - Standard|广港|IEPL|20
+      - Standard|广港|IEPL|16
+      - Standard|广港|IEPL|05
+      - Standard|广港|IEPL|01
+      - Standard|广日|IEPL|02
+      - Standard|广港|IEPL|17
+      - Standard|广港|IEPL|12
+      - Standard|广新|IEPL|06
+      - Standard|广日|IEPL|05
+      - Standard|广港|IEPL|19
+      - Standard|广港|IEPL|09
+      - Standard|广港|IEPL|14
+      - Standard|广港|IEPL|10
+      - Standard|广港|IEPL|08
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|01
+      - Standard|广日|IEPL|07
+      - Standard|广美|IEPL|06
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|05
+      - Standard|广台|IEPL|06
+      - Standard|广美|IEPL|04
+      - Standard|广日|IEPL|03
+      - Standard|广美|IEPL|07
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V210 日本<->East
-      - V313 美国<->East
-      - V309 日本<->East
+      - Standard|广港|IEPL|11
+      - Standard|广港|IEPL|15
+      - Standard|广港|IEPL|06
+      - Standard|广港|IEPL|03
+      - Standard|广新|IEPL|01
+      - Standard|广新|IEPL|03
+      - Standard|广港|IEPL|02
+      - Standard|广新|IEPL|05
+      - Standard|广港|IEPL|13
+      - Standard|广港|IEPL|20
+      - Standard|广港|IEPL|16
+      - Standard|广港|IEPL|05
+      - Standard|广港|IEPL|01
+      - Standard|广日|IEPL|02
+      - Standard|广港|IEPL|17
+      - Standard|广港|IEPL|12
+      - Standard|广新|IEPL|06
+      - Standard|广日|IEPL|05
+      - Standard|广港|IEPL|19
+      - Standard|广港|IEPL|09
+      - Standard|广港|IEPL|14
+      - Standard|广港|IEPL|10
+      - Standard|广港|IEPL|08
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|01
+      - Standard|广日|IEPL|07
+      - Standard|广美|IEPL|06
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|05
+      - Standard|广台|IEPL|06
+      - Standard|广美|IEPL|04
+      - Standard|广日|IEPL|03
+      - Standard|广美|IEPL|07
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,39 +172,177 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V210 日本<->East
-      - V313 美国<->East
-      - V309 日本<->East
+      - Standard|广港|IEPL|11
+      - Standard|广港|IEPL|15
+      - Standard|广港|IEPL|06
+      - Standard|广港|IEPL|03
+      - Standard|广新|IEPL|01
+      - Standard|广新|IEPL|03
+      - Standard|广港|IEPL|02
+      - Standard|广新|IEPL|05
+      - Standard|广港|IEPL|13
+      - Standard|广港|IEPL|20
+      - Standard|广港|IEPL|16
+      - Standard|广港|IEPL|05
+      - Standard|广港|IEPL|01
+      - Standard|广日|IEPL|02
+      - Standard|广港|IEPL|17
+      - Standard|广港|IEPL|12
+      - Standard|广新|IEPL|06
+      - Standard|广日|IEPL|05
+      - Standard|广港|IEPL|19
+      - Standard|广港|IEPL|09
+      - Standard|广港|IEPL|14
+      - Standard|广港|IEPL|10
+      - Standard|广港|IEPL|08
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|01
+      - Standard|广日|IEPL|07
+      - Standard|广美|IEPL|06
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|05
+      - Standard|广台|IEPL|06
+      - Standard|广美|IEPL|04
+      - Standard|广日|IEPL|03
+      - Standard|广美|IEPL|07
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - Standard|广港|IEPL|11
+      - Standard|广港|IEPL|15
+      - Standard|广港|IEPL|06
+      - Standard|广港|IEPL|03
+      - Standard|广港|IEPL|02
+      - Standard|广港|IEPL|13
+      - Standard|广港|IEPL|20
+      - Standard|广港|IEPL|16
+      - Standard|广港|IEPL|05
+      - Standard|广港|IEPL|01
+      - Standard|广港|IEPL|17
+      - Standard|广港|IEPL|12
+      - Standard|广港|IEPL|19
+      - Standard|广港|IEPL|09
+      - Standard|广港|IEPL|14
+      - Standard|广港|IEPL|10
+      - Standard|广港|IEPL|08
+      - Standard|广台|IEPL|06
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - V210 日本<->East
-      - V313 美国<->East
-      - V309 日本<->East
+      - Standard|广港|IEPL|11
+      - Standard|广港|IEPL|15
+      - Standard|广港|IEPL|06
+      - Standard|广港|IEPL|03
+      - Standard|广新|IEPL|01
+      - Standard|广新|IEPL|03
+      - Standard|广港|IEPL|02
+      - Standard|广新|IEPL|05
+      - Standard|广港|IEPL|13
+      - Standard|广港|IEPL|20
+      - Standard|广港|IEPL|16
+      - Standard|广港|IEPL|05
+      - Standard|广港|IEPL|01
+      - Standard|广日|IEPL|02
+      - Standard|广港|IEPL|17
+      - Standard|广港|IEPL|12
+      - Standard|广新|IEPL|06
+      - Standard|广日|IEPL|05
+      - Standard|广港|IEPL|19
+      - Standard|广港|IEPL|09
+      - Standard|广港|IEPL|14
+      - Standard|广港|IEPL|10
+      - Standard|广港|IEPL|08
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|01
+      - Standard|广日|IEPL|07
+      - Standard|广美|IEPL|06
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|05
+      - Standard|广台|IEPL|06
+      - Standard|广美|IEPL|04
+      - Standard|广日|IEPL|03
+      - Standard|广美|IEPL|07
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - V210 日本<->East
-      - V313 美国<->East
-      - V309 日本<->East
+      - Standard|广港|IEPL|11
+      - Standard|广港|IEPL|15
+      - Standard|广港|IEPL|06
+      - Standard|广港|IEPL|03
+      - Standard|广新|IEPL|01
+      - Standard|广新|IEPL|03
+      - Standard|广港|IEPL|02
+      - Standard|广新|IEPL|05
+      - Standard|广港|IEPL|13
+      - Standard|广港|IEPL|20
+      - Standard|广港|IEPL|16
+      - Standard|广港|IEPL|05
+      - Standard|广港|IEPL|01
+      - Standard|广日|IEPL|02
+      - Standard|广港|IEPL|17
+      - Standard|广港|IEPL|12
+      - Standard|广新|IEPL|06
+      - Standard|广日|IEPL|05
+      - Standard|广港|IEPL|19
+      - Standard|广港|IEPL|09
+      - Standard|广港|IEPL|14
+      - Standard|广港|IEPL|10
+      - Standard|广港|IEPL|08
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|01
+      - Standard|广日|IEPL|07
+      - Standard|广美|IEPL|06
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|05
+      - Standard|广台|IEPL|06
+      - Standard|广美|IEPL|04
+      - Standard|广日|IEPL|03
+      - Standard|广美|IEPL|07
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V210 日本<->East
-      - V313 美国<->East
-      - V309 日本<->East
+      - Standard|广港|IEPL|11
+      - Standard|广港|IEPL|15
+      - Standard|广港|IEPL|06
+      - Standard|广港|IEPL|03
+      - Standard|广新|IEPL|01
+      - Standard|广新|IEPL|03
+      - Standard|广港|IEPL|02
+      - Standard|广新|IEPL|05
+      - Standard|广港|IEPL|13
+      - Standard|广港|IEPL|20
+      - Standard|广港|IEPL|16
+      - Standard|广港|IEPL|05
+      - Standard|广港|IEPL|01
+      - Standard|广日|IEPL|02
+      - Standard|广港|IEPL|17
+      - Standard|广港|IEPL|12
+      - Standard|广新|IEPL|06
+      - Standard|广日|IEPL|05
+      - Standard|广港|IEPL|19
+      - Standard|广港|IEPL|09
+      - Standard|广港|IEPL|14
+      - Standard|广港|IEPL|10
+      - Standard|广港|IEPL|08
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|01
+      - Standard|广日|IEPL|07
+      - Standard|广美|IEPL|06
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|05
+      - Standard|广台|IEPL|06
+      - Standard|广美|IEPL|04
+      - Standard|广日|IEPL|03
+      - Standard|广美|IEPL|07
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +358,39 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V210 日本<->East
-      - V313 美国<->East
-      - V309 日本<->East
+      - Standard|广港|IEPL|11
+      - Standard|广港|IEPL|15
+      - Standard|广港|IEPL|06
+      - Standard|广港|IEPL|03
+      - Standard|广新|IEPL|01
+      - Standard|广新|IEPL|03
+      - Standard|广港|IEPL|02
+      - Standard|广新|IEPL|05
+      - Standard|广港|IEPL|13
+      - Standard|广港|IEPL|20
+      - Standard|广港|IEPL|16
+      - Standard|广港|IEPL|05
+      - Standard|广港|IEPL|01
+      - Standard|广日|IEPL|02
+      - Standard|广港|IEPL|17
+      - Standard|广港|IEPL|12
+      - Standard|广新|IEPL|06
+      - Standard|广日|IEPL|05
+      - Standard|广港|IEPL|19
+      - Standard|广港|IEPL|09
+      - Standard|广港|IEPL|14
+      - Standard|广港|IEPL|10
+      - Standard|广港|IEPL|08
+      - Standard|广新|IEPL|02
+      - Standard|广日|IEPL|01
+      - Standard|广日|IEPL|07
+      - Standard|广美|IEPL|06
+      - Standard|广美|IEPL|02
+      - Standard|广美|IEPL|05
+      - Standard|广台|IEPL|06
+      - Standard|广美|IEPL|04
+      - Standard|广日|IEPL|03
+      - Standard|广美|IEPL|07
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
