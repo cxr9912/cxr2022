@@ -5,35 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本东京, server: jp1-cn.52daishu.life, port: 2053, type: vmess, uuid: 2d24372b-b1ad-4962-b9a0-a766c593ab43, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: jp1-cn.52daishu.life}, udp: true}
-  - {name: 越南|全解Netflix, server: vn1-cn.52daishu.life, port: 3306, type: vmess, uuid: 2d24372b-b1ad-4962-b9a0-a766c593ab43, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: vn1-cn.52daishu.life}, udp: true}
-  - {name: 德国|云节点, server: eu1.daishujiasunode.uk, port: 8443, type: vmess, uuid: 2d24372b-b1ad-4962-b9a0-a766c593ab43, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: eu1.daishujiasunode.uk}, udp: true}
+  - {name: 新加坡-林叔铁粉专享, server: cmaisallin.debugspace.work, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 46818:yui369ghj, obfs-param: "", udp: true}
+  - {name: 香港2-林叔铁粉专享, server: cnhkall.debugex.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 46818:yui369ghj, obfs-param: "", udp: true}
+  - {name: 香港3-林叔铁粉专享, server: inlayer7.standurls.co, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 46818:yui369ghj, obfs-param: "", udp: true}
+  - {name: 韩国-林叔铁粉专享, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 46818:yui369ghj, obfs-param: "", udp: true}
+  - {name: 香港1-林叔铁粉专享, server: shgez3.eucdurl.me, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 46818:yui369ghj, obfs-param: "", udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本东京
-      - 越南|全解Netflix
-      - 德国|云节点
+      - 新加坡-林叔铁粉专享
+      - 香港2-林叔铁粉专享
+      - 香港3-林叔铁粉专享
+      - 韩国-林叔铁粉专享
+      - 香港1-林叔铁粉专享
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本东京
-      - 越南|全解Netflix
-      - 德国|云节点
+      - 新加坡-林叔铁粉专享
+      - 香港2-林叔铁粉专享
+      - 香港3-林叔铁粉专享
+      - 韩国-林叔铁粉专享
+      - 香港1-林叔铁粉专享
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本东京
-      - 越南|全解Netflix
-      - 德国|云节点
+      - 新加坡-林叔铁粉专享
+      - 香港2-林叔铁粉专享
+      - 香港3-林叔铁粉专享
+      - 韩国-林叔铁粉专享
+      - 香港1-林叔铁粉专享
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,39 +60,50 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本东京
-      - 越南|全解Netflix
-      - 德国|云节点
+      - 新加坡-林叔铁粉专享
+      - 香港2-林叔铁粉专享
+      - 香港3-林叔铁粉专享
+      - 韩国-林叔铁粉专享
+      - 香港1-林叔铁粉专享
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港2-林叔铁粉专享
+      - 香港3-林叔铁粉专享
+      - 香港1-林叔铁粉专享
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本东京
-      - 越南|全解Netflix
-      - 德国|云节点
+      - 新加坡-林叔铁粉专享
+      - 香港2-林叔铁粉专享
+      - 香港3-林叔铁粉专享
+      - 韩国-林叔铁粉专享
+      - 香港1-林叔铁粉专享
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本东京
-      - 越南|全解Netflix
-      - 德国|云节点
+      - 新加坡-林叔铁粉专享
+      - 香港2-林叔铁粉专享
+      - 香港3-林叔铁粉专享
+      - 韩国-林叔铁粉专享
+      - 香港1-林叔铁粉专享
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本东京
-      - 越南|全解Netflix
-      - 德国|云节点
+      - 新加坡-林叔铁粉专享
+      - 香港2-林叔铁粉专享
+      - 香港3-林叔铁粉专享
+      - 韩国-林叔铁粉专享
+      - 香港1-林叔铁粉专享
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +119,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本东京
-      - 越南|全解Netflix
-      - 德国|云节点
+      - 新加坡-林叔铁粉专享
+      - 香港2-林叔铁粉专享
+      - 香港3-林叔铁粉专享
+      - 韩国-林叔铁粉专享
+      - 香港1-林叔铁粉专享
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
