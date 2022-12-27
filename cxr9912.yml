@@ -5,39 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港中继Ⅳ-Trojan, server: video.proxyvip.link, port: 31004, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 德国中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31017, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 距离下次重置剩余：30 天, server: video.proxyvip.link, port: 31001, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 日本中继Ⅱ-Trojan, server: video.proxyvip.link, port: 31014, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: "[VIP2]-香港05", server: 20.187.77.55, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.77.55}, udp: true}
+  - {name: "[VIP2]-香港03", server: 20.255.58.34, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.255.58.34}, udp: true}
+  - {name: "[VIP2]-香港04", server: 20.255.63.48, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.255.63.48}, udp: true}
+  - {name: "[VIP3]-日本01-宁夏电信", server: 161.189.87.111, port: 15000, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 161.189.87.111}, udp: true}
+  - {name: "[VIP2]-新加坡02", server: 54.169.89.218, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 54.169.89.218}, udp: true}
+  - {name: "[VIP3]-香港02-专线", server: 38.6.224.86, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 38.6.224.86}, udp: true}
+  - {name: "[VIP3]-香港01-专线", server: hk.hxlgaozhong.xyz, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk.hxlgaozhong.xyz}, udp: true}
+  - {name: "[VIP3]-瑞典01-宁夏电信", server: 161.189.87.111, port: 15004, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 161.189.87.111}, udp: true}
+  - {name: "[VIP2]-韩国01", server: 20.196.196.106, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.196.196.106}, udp: true}
+  - {name: "[VIP3]-澳大利亚01-宁夏电信", server: 161.189.87.111, port: 15003, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 161.189.87.111}, udp: true}
+  - {name: "[VIP2]-美国01-解锁流媒体", server: 38.150.1.125, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 38.150.1.125}, udp: true}
+  - {name: "[VIP2]-澳大利亚01", server: 13.210.139.80, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.210.139.80}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港中继Ⅳ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 日本中继Ⅱ-Trojan
+      - "[VIP2]-香港05"
+      - "[VIP2]-香港03"
+      - "[VIP2]-香港04"
+      - "[VIP3]-日本01-宁夏电信"
+      - "[VIP2]-新加坡02"
+      - "[VIP3]-香港02-专线"
+      - "[VIP3]-香港01-专线"
+      - "[VIP3]-瑞典01-宁夏电信"
+      - "[VIP2]-韩国01"
+      - "[VIP3]-澳大利亚01-宁夏电信"
+      - "[VIP2]-美国01-解锁流媒体"
+      - "[VIP2]-澳大利亚01"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港中继Ⅳ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 日本中继Ⅱ-Trojan
+      - "[VIP2]-香港05"
+      - "[VIP2]-香港03"
+      - "[VIP2]-香港04"
+      - "[VIP3]-日本01-宁夏电信"
+      - "[VIP2]-新加坡02"
+      - "[VIP3]-香港02-专线"
+      - "[VIP3]-香港01-专线"
+      - "[VIP3]-瑞典01-宁夏电信"
+      - "[VIP2]-韩国01"
+      - "[VIP3]-澳大利亚01-宁夏电信"
+      - "[VIP2]-美国01-解锁流媒体"
+      - "[VIP2]-澳大利亚01"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港中继Ⅳ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 日本中继Ⅱ-Trojan
+      - "[VIP2]-香港05"
+      - "[VIP2]-香港03"
+      - "[VIP2]-香港04"
+      - "[VIP3]-日本01-宁夏电信"
+      - "[VIP2]-新加坡02"
+      - "[VIP3]-香港02-专线"
+      - "[VIP3]-香港01-专线"
+      - "[VIP3]-瑞典01-宁夏电信"
+      - "[VIP2]-韩国01"
+      - "[VIP3]-澳大利亚01-宁夏电信"
+      - "[VIP2]-美国01-解锁流媒体"
+      - "[VIP2]-澳大利亚01"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,44 +88,80 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港中继Ⅳ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 日本中继Ⅱ-Trojan
+      - "[VIP2]-香港05"
+      - "[VIP2]-香港03"
+      - "[VIP2]-香港04"
+      - "[VIP3]-日本01-宁夏电信"
+      - "[VIP2]-新加坡02"
+      - "[VIP3]-香港02-专线"
+      - "[VIP3]-香港01-专线"
+      - "[VIP3]-瑞典01-宁夏电信"
+      - "[VIP2]-韩国01"
+      - "[VIP3]-澳大利亚01-宁夏电信"
+      - "[VIP2]-美国01-解锁流媒体"
+      - "[VIP2]-澳大利亚01"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港中继Ⅳ-Trojan
+      - "[VIP2]-香港05"
+      - "[VIP2]-香港03"
+      - "[VIP2]-香港04"
+      - "[VIP3]-香港02-专线"
+      - "[VIP3]-香港01-专线"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港中继Ⅳ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 日本中继Ⅱ-Trojan
+      - "[VIP2]-香港05"
+      - "[VIP2]-香港03"
+      - "[VIP2]-香港04"
+      - "[VIP3]-日本01-宁夏电信"
+      - "[VIP2]-新加坡02"
+      - "[VIP3]-香港02-专线"
+      - "[VIP3]-香港01-专线"
+      - "[VIP3]-瑞典01-宁夏电信"
+      - "[VIP2]-韩国01"
+      - "[VIP3]-澳大利亚01-宁夏电信"
+      - "[VIP2]-美国01-解锁流媒体"
+      - "[VIP2]-澳大利亚01"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港中继Ⅳ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 日本中继Ⅱ-Trojan
+      - "[VIP2]-香港05"
+      - "[VIP2]-香港03"
+      - "[VIP2]-香港04"
+      - "[VIP3]-日本01-宁夏电信"
+      - "[VIP2]-新加坡02"
+      - "[VIP3]-香港02-专线"
+      - "[VIP3]-香港01-专线"
+      - "[VIP3]-瑞典01-宁夏电信"
+      - "[VIP2]-韩国01"
+      - "[VIP3]-澳大利亚01-宁夏电信"
+      - "[VIP2]-美国01-解锁流媒体"
+      - "[VIP2]-澳大利亚01"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港中继Ⅳ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 日本中继Ⅱ-Trojan
+      - "[VIP2]-香港05"
+      - "[VIP2]-香港03"
+      - "[VIP2]-香港04"
+      - "[VIP3]-日本01-宁夏电信"
+      - "[VIP2]-新加坡02"
+      - "[VIP3]-香港02-专线"
+      - "[VIP3]-香港01-专线"
+      - "[VIP3]-瑞典01-宁夏电信"
+      - "[VIP2]-韩国01"
+      - "[VIP3]-澳大利亚01-宁夏电信"
+      - "[VIP2]-美国01-解锁流媒体"
+      - "[VIP2]-澳大利亚01"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -109,10 +177,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港中继Ⅳ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 日本中继Ⅱ-Trojan
+      - "[VIP2]-香港05"
+      - "[VIP2]-香港03"
+      - "[VIP2]-香港04"
+      - "[VIP3]-日本01-宁夏电信"
+      - "[VIP2]-新加坡02"
+      - "[VIP3]-香港02-专线"
+      - "[VIP3]-香港01-专线"
+      - "[VIP3]-瑞典01-宁夏电信"
+      - "[VIP2]-韩国01"
+      - "[VIP3]-澳大利亚01-宁夏电信"
+      - "[VIP2]-美国01-解锁流媒体"
+      - "[VIP2]-澳大利亚01"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
