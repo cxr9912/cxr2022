@@ -5,63 +5,83 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡 IEPL 移动云 03 3.0x, server: iepl.suke.wiki, port: 20235, type: ss, cipher: chacha20-ietf-poly1305, password: fa337b21-b80c-4add-8235-a9d0996d371d, udp: true}
-  - {name: 中国香港 IEPL 移动云 02 3.0x, server: iepl.suke.wiki, port: 20402, type: ss, cipher: chacha20-ietf-poly1305, password: fa337b21-b80c-4add-8235-a9d0996d371d, udp: true}
-  - {name: 新加坡 IEPL 移动云 02 3.0x, server: iepl.suke.wiki, port: 20233, type: ss, cipher: chacha20-ietf-poly1305, password: fa337b21-b80c-4add-8235-a9d0996d371d, udp: true}
-  - {name: 中国台湾 IEPL 移动云 03 3.0x, server: iepl.suke.wiki, port: 20245, type: ss, cipher: chacha20-ietf-poly1305, password: fa337b21-b80c-4add-8235-a9d0996d371d, udp: true}
-  - {name: 中国台湾 IEPL 移动云 02 3.0x, server: iepl.suke.wiki, port: 20243, type: ss, cipher: chacha20-ietf-poly1305, password: fa337b21-b80c-4add-8235-a9d0996d371d, udp: true}
-  - {name: 中国台湾 华南 1.0x, server: sukev-hainans.cndns.shop, port: 20255, type: ss, cipher: chacha20-ietf-poly1305, password: fa337b21-b80c-4add-8235-a9d0996d371d, udp: true}
-  - {name: 中国香港 IEPL 移动云 01 3.0x, server: iepl.suke.wiki, port: 20401, type: ss, cipher: chacha20-ietf-poly1305, password: fa337b21-b80c-4add-8235-a9d0996d371d, udp: true}
-  - {name: 中国台湾 IEPL 移动云 01 3.0x, server: iepl.suke.wiki, port: 20241, type: ss, cipher: chacha20-ietf-poly1305, password: fa337b21-b80c-4add-8235-a9d0996d371d, udp: true}
-  - {name: ⌈三网⌋首尔 02, server: v-aws-sel-2.heima-bot.tech, port: 7772, type: vmess, uuid: 41fcac4f-948d-42da-bdf9-9f1bd77f5b1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /m2, ws-headers: {Host: v-aws-sel-2.heima-bot.tech}, udp: true}
-  - {name: 日本大阪 华南 1.0x, server: sukev-hainans.cndns.shop, port: 20773, type: ss, cipher: chacha20-ietf-poly1305, password: fa337b21-b80c-4add-8235-a9d0996d371d, udp: true}
+  - {name: 「SCP」US-BuyVM, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: lvryzenkvm1gb.sharecentre.online}, udp: true}
+  - {name: 【CF】日本月抛1, server: dnss.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42awsjpyanode, ws-headers: {Host: awsjpya.sylu.cyou}, udp: true}
+  - {name: 「SCP」SG-Gcore, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: sg-gcore.sharecentre.online}, udp: true}
+  - {name: 「SCP」SG-Gcore+, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: sg-gcore-2.sharecentre.online}, udp: true}
+  - {name: 【移动CF】香港G5, server: cm.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42gcsshkkknode, ws-headers: {Host: gcsshkkk.sylu.cyou}, udp: true}
+  - {name: 【移动CF】香港G2, server: cm.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42gcorehkknode, ws-headers: {Host: gcorehkk.sylu.cyou}, udp: true}
+  - {name: 【移动CF】香港G4, server: cm.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42gcsshkknode, ws-headers: {Host: gcsshkk.sylu.cyou}, udp: true}
+  - {name: 【CF】波兰1, server: cm.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42gcoreplnode, ws-headers: {Host: gcorepl.sylu.cyou}, udp: true}
+  - {name: 【移动CF】AWS加拿大, server: cm.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42awsypcanode, ws-headers: {Host: awsypca.sylu.cyou}, udp: true}
+  - {name: 【移动CF】新加坡G2, server: cm.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42gcoresggnode, ws-headers: {Host: gcoresgg.sylu.cyou}, udp: true}
+  - {name: 【移动CF】新加坡G4, server: cm.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42gcssgnode, ws-headers: {Host: gcssg.sylu.cyou}, udp: true}
+  - {name: 「SCP」HK-CF-Gcore2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: hk-gcore.sharecentre.online}, udp: true}
+  - {name: 【移动CF】德国G, server: cm.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42gcsdenode, ws-headers: {Host: gcsde.sylu.cyou}, udp: true}
+  - {name: 【移动CF】香港G1, server: cm.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42gcorehknode, ws-headers: {Host: gcorehk.sylu.cyou}, udp: true}
+  - {name: 【移动CF】香港G3, server: cm.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Falling42gcsshknode, ws-headers: {Host: gcsshk.sylu.cyou}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 IEPL 移动云 03 3.0x
-      - 中国香港 IEPL 移动云 02 3.0x
-      - 新加坡 IEPL 移动云 02 3.0x
-      - 中国台湾 IEPL 移动云 03 3.0x
-      - 中国台湾 IEPL 移动云 02 3.0x
-      - 中国台湾 华南 1.0x
-      - 中国香港 IEPL 移动云 01 3.0x
-      - 中国台湾 IEPL 移动云 01 3.0x
-      - ⌈三网⌋首尔 02
-      - 日本大阪 华南 1.0x
+      - 「SCP」US-BuyVM
+      - 【CF】日本月抛1
+      - 「SCP」SG-Gcore
+      - 「SCP」SG-Gcore+
+      - 【移动CF】香港G5
+      - 【移动CF】香港G2
+      - 【移动CF】香港G4
+      - 【CF】波兰1
+      - 【移动CF】AWS加拿大
+      - 【移动CF】新加坡G2
+      - 【移动CF】新加坡G4
+      - 「SCP」HK-CF-Gcore2
+      - 【移动CF】德国G
+      - 【移动CF】香港G1
+      - 【移动CF】香港G3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 IEPL 移动云 03 3.0x
-      - 中国香港 IEPL 移动云 02 3.0x
-      - 新加坡 IEPL 移动云 02 3.0x
-      - 中国台湾 IEPL 移动云 03 3.0x
-      - 中国台湾 IEPL 移动云 02 3.0x
-      - 中国台湾 华南 1.0x
-      - 中国香港 IEPL 移动云 01 3.0x
-      - 中国台湾 IEPL 移动云 01 3.0x
-      - ⌈三网⌋首尔 02
-      - 日本大阪 华南 1.0x
+      - 「SCP」US-BuyVM
+      - 【CF】日本月抛1
+      - 「SCP」SG-Gcore
+      - 「SCP」SG-Gcore+
+      - 【移动CF】香港G5
+      - 【移动CF】香港G2
+      - 【移动CF】香港G4
+      - 【CF】波兰1
+      - 【移动CF】AWS加拿大
+      - 【移动CF】新加坡G2
+      - 【移动CF】新加坡G4
+      - 「SCP」HK-CF-Gcore2
+      - 【移动CF】德国G
+      - 【移动CF】香港G1
+      - 【移动CF】香港G3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 IEPL 移动云 03 3.0x
-      - 中国香港 IEPL 移动云 02 3.0x
-      - 新加坡 IEPL 移动云 02 3.0x
-      - 中国台湾 IEPL 移动云 03 3.0x
-      - 中国台湾 IEPL 移动云 02 3.0x
-      - 中国台湾 华南 1.0x
-      - 中国香港 IEPL 移动云 01 3.0x
-      - 中国台湾 IEPL 移动云 01 3.0x
-      - ⌈三网⌋首尔 02
-      - 日本大阪 华南 1.0x
+      - 「SCP」US-BuyVM
+      - 【CF】日本月抛1
+      - 「SCP」SG-Gcore
+      - 「SCP」SG-Gcore+
+      - 【移动CF】香港G5
+      - 【移动CF】香港G2
+      - 【移动CF】香港G4
+      - 【CF】波兰1
+      - 【移动CF】AWS加拿大
+      - 【移动CF】新加坡G2
+      - 【移动CF】新加坡G4
+      - 「SCP」HK-CF-Gcore2
+      - 【移动CF】德国G
+      - 【移动CF】香港G1
+      - 【移动CF】香港G3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,73 +100,92 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 IEPL 移动云 03 3.0x
-      - 中国香港 IEPL 移动云 02 3.0x
-      - 新加坡 IEPL 移动云 02 3.0x
-      - 中国台湾 IEPL 移动云 03 3.0x
-      - 中国台湾 IEPL 移动云 02 3.0x
-      - 中国台湾 华南 1.0x
-      - 中国香港 IEPL 移动云 01 3.0x
-      - 中国台湾 IEPL 移动云 01 3.0x
-      - ⌈三网⌋首尔 02
-      - 日本大阪 华南 1.0x
+      - 「SCP」US-BuyVM
+      - 【CF】日本月抛1
+      - 「SCP」SG-Gcore
+      - 「SCP」SG-Gcore+
+      - 【移动CF】香港G5
+      - 【移动CF】香港G2
+      - 【移动CF】香港G4
+      - 【CF】波兰1
+      - 【移动CF】AWS加拿大
+      - 【移动CF】新加坡G2
+      - 【移动CF】新加坡G4
+      - 「SCP」HK-CF-Gcore2
+      - 【移动CF】德国G
+      - 【移动CF】香港G1
+      - 【移动CF】香港G3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 中国香港 IEPL 移动云 02 3.0x
-      - 中国台湾 IEPL 移动云 03 3.0x
-      - 中国台湾 IEPL 移动云 02 3.0x
-      - 中国台湾 华南 1.0x
-      - 中国香港 IEPL 移动云 01 3.0x
-      - 中国台湾 IEPL 移动云 01 3.0x
+      - 【移动CF】香港G5
+      - 【移动CF】香港G2
+      - 【移动CF】香港G4
+      - 【移动CF】香港G1
+      - 【移动CF】香港G3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 IEPL 移动云 03 3.0x
-      - 中国香港 IEPL 移动云 02 3.0x
-      - 新加坡 IEPL 移动云 02 3.0x
-      - 中国台湾 IEPL 移动云 03 3.0x
-      - 中国台湾 IEPL 移动云 02 3.0x
-      - 中国台湾 华南 1.0x
-      - 中国香港 IEPL 移动云 01 3.0x
-      - 中国台湾 IEPL 移动云 01 3.0x
-      - ⌈三网⌋首尔 02
-      - 日本大阪 华南 1.0x
+      - 「SCP」US-BuyVM
+      - 【CF】日本月抛1
+      - 「SCP」SG-Gcore
+      - 「SCP」SG-Gcore+
+      - 【移动CF】香港G5
+      - 【移动CF】香港G2
+      - 【移动CF】香港G4
+      - 【CF】波兰1
+      - 【移动CF】AWS加拿大
+      - 【移动CF】新加坡G2
+      - 【移动CF】新加坡G4
+      - 「SCP」HK-CF-Gcore2
+      - 【移动CF】德国G
+      - 【移动CF】香港G1
+      - 【移动CF】香港G3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 IEPL 移动云 03 3.0x
-      - 中国香港 IEPL 移动云 02 3.0x
-      - 新加坡 IEPL 移动云 02 3.0x
-      - 中国台湾 IEPL 移动云 03 3.0x
-      - 中国台湾 IEPL 移动云 02 3.0x
-      - 中国台湾 华南 1.0x
-      - 中国香港 IEPL 移动云 01 3.0x
-      - 中国台湾 IEPL 移动云 01 3.0x
-      - ⌈三网⌋首尔 02
-      - 日本大阪 华南 1.0x
+      - 「SCP」US-BuyVM
+      - 【CF】日本月抛1
+      - 「SCP」SG-Gcore
+      - 「SCP」SG-Gcore+
+      - 【移动CF】香港G5
+      - 【移动CF】香港G2
+      - 【移动CF】香港G4
+      - 【CF】波兰1
+      - 【移动CF】AWS加拿大
+      - 【移动CF】新加坡G2
+      - 【移动CF】新加坡G4
+      - 「SCP」HK-CF-Gcore2
+      - 【移动CF】德国G
+      - 【移动CF】香港G1
+      - 【移动CF】香港G3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 IEPL 移动云 03 3.0x
-      - 中国香港 IEPL 移动云 02 3.0x
-      - 新加坡 IEPL 移动云 02 3.0x
-      - 中国台湾 IEPL 移动云 03 3.0x
-      - 中国台湾 IEPL 移动云 02 3.0x
-      - 中国台湾 华南 1.0x
-      - 中国香港 IEPL 移动云 01 3.0x
-      - 中国台湾 IEPL 移动云 01 3.0x
-      - ⌈三网⌋首尔 02
-      - 日本大阪 华南 1.0x
+      - 「SCP」US-BuyVM
+      - 【CF】日本月抛1
+      - 「SCP」SG-Gcore
+      - 「SCP」SG-Gcore+
+      - 【移动CF】香港G5
+      - 【移动CF】香港G2
+      - 【移动CF】香港G4
+      - 【CF】波兰1
+      - 【移动CF】AWS加拿大
+      - 【移动CF】新加坡G2
+      - 【移动CF】新加坡G4
+      - 「SCP」HK-CF-Gcore2
+      - 【移动CF】德国G
+      - 【移动CF】香港G1
+      - 【移动CF】香港G3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,16 +201,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 IEPL 移动云 03 3.0x
-      - 中国香港 IEPL 移动云 02 3.0x
-      - 新加坡 IEPL 移动云 02 3.0x
-      - 中国台湾 IEPL 移动云 03 3.0x
-      - 中国台湾 IEPL 移动云 02 3.0x
-      - 中国台湾 华南 1.0x
-      - 中国香港 IEPL 移动云 01 3.0x
-      - 中国台湾 IEPL 移动云 01 3.0x
-      - ⌈三网⌋首尔 02
-      - 日本大阪 华南 1.0x
+      - 「SCP」US-BuyVM
+      - 【CF】日本月抛1
+      - 「SCP」SG-Gcore
+      - 「SCP」SG-Gcore+
+      - 【移动CF】香港G5
+      - 【移动CF】香港G2
+      - 【移动CF】香港G4
+      - 【CF】波兰1
+      - 【移动CF】AWS加拿大
+      - 【移动CF】新加坡G2
+      - 【移动CF】新加坡G4
+      - 「SCP」HK-CF-Gcore2
+      - 【移动CF】德国G
+      - 【移动CF】香港G1
+      - 【移动CF】香港G3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
