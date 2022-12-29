@@ -5,267 +5,79 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: V3-610|香港|x1.5, server: 65a9.cdn.node.a.tddns-ounk.com, port: 20610, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /acaaaad0-54f5-4e10-94bb-1e6ab04649e1.y.live02.m3u8, headers: {Host: 65a9.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-489|香港|x2.0, server: t9e6.cdn.node.a.tddns-ounk.com, port: 20489, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: t9e6.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-641|新加坡|x4.0, server: vd69c79.cdn.node.a.tddns-ounk.com, port: 20641, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: vd69c79.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V3-373|香港|x1.5, server: d59q.cdn.node.a.tddns-ounk.com, port: 20373, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /acaaaad0-54f5-4e10-94bb-1e6ab04649e1.y.live02.m3u8, headers: {Host: d59q.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-329|新加坡|x2.0, server: af6ga1.cdn.node.a.tddns-ounk.com, port: 20329, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /197c2808-5cda-4362-b137-e82cd56d87cc.y.live03.m3u8, headers: {Host: af6ga1.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-577|香港|x4.0, server: bff6.cdn.node.a.tddns-ounk.com, port: 20577, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /e7af9ddf-6180-4767-89f0-ed53b6d8271b.y.live.m3u8, headers: {Host: bff6.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-600|香港|x2.0, server: t9e6.cdn.node.a.tddns-ounk.com, port: 20600, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: t9e6.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-328|新加坡|x2.0, server: af6ga1.cdn.node.a.tddns-ounk.com, port: 20328, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /197c2808-5cda-4362-b137-e82cd56d87cc.y.live03.m3u8, headers: {Host: af6ga1.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-642|新加坡|x4.0, server: vd69c79.cdn.node.a.tddns-ounk.com, port: 20642, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: vd69c79.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-617|新加坡|x2.0, server: af6ga1.cdn.node.a.tddns-ounk.com, port: 20617, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /197c2808-5cda-4362-b137-e82cd56d87cc.y.live03.m3u8, headers: {Host: af6ga1.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-473|新加坡|x4.0, server: vd69c79.cdn.node.a.tddns-ounk.com, port: 20473, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /e7af9ddf-6180-4767-89f0-ed53b6d8271b.y.live.m3u8, headers: {Host: vd69c79.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-585|香港|x4.0, server: bff6.cdn.node.a.tddns-ounk.com, port: 20585, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /e7af9ddf-6180-4767-89f0-ed53b6d8271b.y.live.m3u8, headers: {Host: bff6.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-568|香港|x1.5, server: tf54wa6.cdn.node.a.tddns-ounk.com, port: 20568, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /197c2808-5cda-4362-b137-e82cd56d87cc.y.live03.m3u8, headers: {Host: tf54wa6.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-597|广东-香港|x2.0, server: t9e6.cdn.node.a.tddns-ounk.com, port: 20597, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: t9e6.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-615|香港|x1.2, server: 6fa684.cdn.node.a.tddns-ounk.com, port: 20615, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /197c2808-5cda-4362-b137-e82cd56d87cc.y.live03.m3u8, headers: {Host: 6fa684.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-485|新加坡|x1.0, server: af6ga1.cdn.node.a.tddns-ounk.com, port: 20485, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /3c675bf1-d618-42de-a358-498396d49cc6.y.live04.m3u8, headers: {Host: af6ga1.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-377|香港|x4.0, server: tssda15.cdn.node.a.tddns-ounk.com, port: 20377, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /e7af9ddf-6180-4767-89f0-ed53b6d8271b.y.live.m3u8, headers: {Host: tssda15.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-450|香港|x4.0, server: bff6.cdn.node.a.tddns-ounk.com, port: 20450, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /e7af9ddf-6180-4767-89f0-ed53b6d8271b.y.live.m3u8, headers: {Host: bff6.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-477|香港|x1.5, server: tf54wa6.cdn.node.a.tddns-ounk.com, port: 20477, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /197c2808-5cda-4362-b137-e82cd56d87cc.y.live03.m3u8, headers: {Host: tf54wa6.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-470|香港|x2.0, server: 6fa684.cdn.node.a.tddns-ounk.com, port: 20470, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /3c675bf1-d618-42de-a358-498396d49cc6.y.live04.m3u8, headers: {Host: 6fa684.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-614|香港|x1.5, server: 6fa684.cdn.node.a.tddns-ounk.com, port: 20614, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /197c2808-5cda-4362-b137-e82cd56d87cc.y.live03.m3u8, headers: {Host: 6fa684.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-519|香港|x2.0, server: 6fa684.cdn.node.a.tddns-ounk.com, port: 20519, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /197c2808-5cda-4362-b137-e82cd56d87cc.y.live03.m3u8, headers: {Host: 6fa684.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-629|台湾|x1.2, server: 6a9f4.cdn.node.a.tddns-ounk.com, port: 20629, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: 6a9f4.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-621|台湾|x2.0, server: 6a9f4.cdn.node.a.tddns-ounk.com, port: 20621, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: 6a9f4.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-627|台湾|x2.0, server: 6a9f4.cdn.node.a.tddns-ounk.com, port: 20627, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: 6a9f4.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V3-646|台湾|x2.0, server: 78gb1.cdn.node.a.tddns-ounk.com, port: 20646, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: 78gb1.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-645|台湾|x2.0, server: d59q.cdn.node.a.tddns-ounk.com, port: 20645, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: d59q.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-487|台湾|x2.0, server: d59q.cdn.node.a.tddns-ounk.com, port: 20487, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /3c675bf1-d618-42de-a358-498396d49cc6.y.live04.m3u8, headers: {Host: d59q.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-630|台湾|x1.5, server: d59q.cdn.node.a.tddns-ounk.com, port: 20630, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: d59q.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-631|台湾|x1.5, server: d59q.cdn.node.a.tddns-ounk.com, port: 20631, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: d59q.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-632|台湾|x1.5, server: d59q.cdn.node.a.tddns-ounk.com, port: 20632, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: d59q.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-643|台湾|x4.0, server: fg6bc.cdn.node.a.tddns-ounk.com, port: 20643, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: fg6bc.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V3-436|台湾|x1.5, server: 78gb1.cdn.node.a.tddns-ounk.com, port: 20436, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /acaaaad0-54f5-4e10-94bb-1e6ab04649e1.y.live02.m3u8, headers: {Host: 78gb1.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V3-434|台湾|x1.5, server: 78gb1.cdn.node.a.tddns-ounk.com, port: 20434, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /acaaaad0-54f5-4e10-94bb-1e6ab04649e1.y.live02.m3u8, headers: {Host: 78gb1.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-623|台湾|x2.0, server: 6a9f4.cdn.node.a.tddns-ounk.com, port: 20623, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: 6a9f4.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-644|台湾|x4.0, server: fg6bc.cdn.node.a.tddns-ounk.com, port: 20644, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: fg6bc.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-437|台湾|x2.0, server: d59q.cdn.node.a.tddns-ounk.com, port: 20437, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /197c2808-5cda-4362-b137-e82cd56d87cc.y.live03.m3u8, headers: {Host: d59q.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-511|新加坡|x2.0, server: af6ga1.cdn.node.a.tddns-ounk.com, port: 20511, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /197c2808-5cda-4362-b137-e82cd56d87cc.y.live03.m3u8, headers: {Host: af6ga1.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-440|台湾|x4.0, server: hmaa66.cdn.node.a.tddns-ounk.com, port: 20440, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /e7af9ddf-6180-4767-89f0-ed53b6d8271b.y.live.m3u8, headers: {Host: hmaa66.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-515|日本|x0.6, server: 6a9jh.cdn.node.a.tddns-ounk.com, port: 20515, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /3c675bf1-d618-42de-a358-498396d49cc6.y.live04.m3u8, headers: {Host: 6a9jh.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-491|日本|x0.6, server: 6a9jh.cdn.node.a.tddns-ounk.com, port: 20491, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /3c675bf1-d618-42de-a358-498396d49cc6.y.live04.m3u8, headers: {Host: 6a9jh.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-469|香港|x2.0, server: f15q.cdn.node.a.tddns-ounk.com, port: 20469, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /3c675bf1-d618-42de-a358-498396d49cc6.y.live04.m3u8, headers: {Host: f15q.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-552|美国|x4.0, server: weeds58.cdn.node.a.tddns-ounk.com, port: 20552, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /e7af9ddf-6180-4767-89f0-ed53b6d8271b.y.live.m3u8, headers: {Host: weeds58.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V3-435|台湾|x1.5, server: 78gb1.cdn.node.a.tddns-ounk.com, port: 20435, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /acaaaad0-54f5-4e10-94bb-1e6ab04649e1.y.live02.m3u8, headers: {Host: 78gb1.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-556|美国|x1.5, server: a2ht.cdn.node.a.tddns-ounk.com, port: 20556, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /197c2808-5cda-4362-b137-e82cd56d87cc.y.live03.m3u8, headers: {Host: a2ht.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-554|美国|x1.5, server: a2ht.cdn.node.a.tddns-ounk.com, port: 20554, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /197c2808-5cda-4362-b137-e82cd56d87cc.y.live03.m3u8, headers: {Host: a2ht.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V1-551|美国|x4.0, server: weeds58.cdn.node.a.tddns-ounk.com, port: 20551, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /e7af9ddf-6180-4767-89f0-ed53b6d8271b.y.live.m3u8, headers: {Host: weeds58.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V3-558|美国|x2.5, server: a2ht.cdn.node.a.tddns-ounk.com, port: 20558, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /acaaaad0-54f5-4e10-94bb-1e6ab04649e1.y.live02.m3u8, headers: {Host: a2ht.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V3-557|美国|x2.5, server: a2ht.cdn.node.a.tddns-ounk.com, port: 20557, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /acaaaad0-54f5-4e10-94bb-1e6ab04649e1.y.live02.m3u8, headers: {Host: a2ht.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V2-595|香港|x1.2, server: tf54wa6.cdn.node.a.tddns-ounk.com, port: 20595, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /197c2808-5cda-4362-b137-e82cd56d87cc.y.live03.m3u8, headers: {Host: tf54wa6.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V3-570|-香港|x1.5, server: w96y.cdn.node.a.tddns-ounk.com, port: 20570, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /acaaaad0-54f5-4e10-94bb-1e6ab04649e1.y.live02.m3u8, headers: {Host: w96y.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-649|新加坡|x2.5, server: ap15ad.cdn.node.a.tddns-ounk.com, port: 20649, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: ap15ad.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-265|新加坡|x2.5, server: ap15ad.cdn.node.a.tddns-ounk.com, port: 20265, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: ap15ad.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V3-330|新加坡|x1.3, server: a8hm3.cdn.node.a.tddns-ounk.com, port: 20330, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /acaaaad0-54f5-4e10-94bb-1e6ab04649e1.y.live02.m3u8, headers: {Host: a8hm3.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-650|新加坡|x2.0, server: ap15ad.cdn.node.a.tddns-ounk.com, port: 20650, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: ap15ad.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V3-509|新加坡|x2.0, server: a8hm3.cdn.node.a.tddns-ounk.com, port: 20509, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /acaaaad0-54f5-4e10-94bb-1e6ab04649e1.y.live02.m3u8, headers: {Host: a8hm3.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-503|新加坡|x2.0, server: a9ht.cdn.node.a.tddns-ounk.com, port: 20503, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: a9ht.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V3-289|新加坡|x1.5, server: a8hm3.cdn.node.a.tddns-ounk.com, port: 20289, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /acaaaad0-54f5-4e10-94bb-1e6ab04649e1.y.live02.m3u8, headers: {Host: a8hm3.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-578|新加坡|x2.5, server: a9ht.cdn.node.a.tddns-ounk.com, port: 20578, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: a9ht.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-292|新加坡|x2.0, server: ap15ad.cdn.node.a.tddns-ounk.com, port: 20292, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: ap15ad.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: V4-505|新加坡|x2.0, server: a9ht.cdn.node.a.tddns-ounk.com, port: 20505, type: vmess, uuid: 5b561da8-af02-32e2-8e1a-81157e962cd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: a9ht.cdn.node.a.tddns-ounk.com}}, udp: true}
+  - {name: 香港03, server: bj.zhuanfa.tk, port: 29102, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
+  - {name: 日本08, server: bj.zhuanfa.tk, port: 54655, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
+  - {name: 新加坡02, server: dxhefei01.baipiaozf.com, port: 23236, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
+  - {name: 日本10, server: bj.zhuanfa.tk, port: 51561, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
+  - {name: 日本5丨福利, server: bj.zhuanfa.tk, port: 14569, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
+  - {name: 日本3丨福利, server: bj.zhuanfa.tk, port: 14567, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
+  - {name: 日本07, server: bj.zhuanfa.tk, port: 18468, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
+  - {name: 日本2丨福利, server: bj.zhuanfa.tk, port: 14566, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
+  - {name: 日本4丨福利, server: bj.zhuanfa.tk, port: 14568, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
+  - {name: 日本6丨福利, server: gdzf.zhuanfa.tk, port: 14789, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
+  - {name: 日本09, server: bj.zhuanfa.tk, port: 58465, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
+  - {name: 新加坡01, server: dxhefei01.baipiaozf.com, port: 30412, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
+  - {name: 美国01, server: hainan.sfjsq001.info, port: 33208, type: vmess, uuid: 18d452c7-81ae-3dfd-a764-ae7cef0c887e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本1丨福利, server: bj.zhuanfa.tk, port: 14565, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V3-610|香港|x1.5
-      - V4-489|香港|x2.0
-      - V1-641|新加坡|x4.0
-      - V3-373|香港|x1.5
-      - V2-329|新加坡|x2.0
-      - V1-577|香港|x4.0
-      - V4-600|香港|x2.0
-      - V2-328|新加坡|x2.0
-      - V1-642|新加坡|x4.0
-      - V2-617|新加坡|x2.0
-      - V1-473|新加坡|x4.0
-      - V1-585|香港|x4.0
-      - V2-568|香港|x1.5
-      - V4-597|广东-香港|x2.0
-      - V2-615|香港|x1.2
-      - V1-485|新加坡|x1.0
-      - V1-377|香港|x4.0
-      - V1-450|香港|x4.0
-      - V2-477|香港|x1.5
-      - V1-470|香港|x2.0
-      - V2-614|香港|x1.5
-      - V2-519|香港|x2.0
-      - V4-629|台湾|x1.2
-      - V4-621|台湾|x2.0
-      - V4-627|台湾|x2.0
-      - V3-646|台湾|x2.0
-      - V1-645|台湾|x2.0
-      - V1-487|台湾|x2.0
-      - V2-630|台湾|x1.5
-      - V2-631|台湾|x1.5
-      - V2-632|台湾|x1.5
-      - V1-643|台湾|x4.0
-      - V3-436|台湾|x1.5
-      - V3-434|台湾|x1.5
-      - V4-623|台湾|x2.0
-      - V1-644|台湾|x4.0
-      - V2-437|台湾|x2.0
-      - V2-511|新加坡|x2.0
-      - V1-440|台湾|x4.0
-      - V1-515|日本|x0.6
-      - V1-491|日本|x0.6
-      - V1-469|香港|x2.0
-      - V1-552|美国|x4.0
-      - V3-435|台湾|x1.5
-      - V2-556|美国|x1.5
-      - V2-554|美国|x1.5
-      - V1-551|美国|x4.0
-      - V3-558|美国|x2.5
-      - V3-557|美国|x2.5
-      - V2-595|香港|x1.2
-      - V3-570|-香港|x1.5
-      - V4-649|新加坡|x2.5
-      - V4-265|新加坡|x2.5
-      - V3-330|新加坡|x1.3
-      - V4-650|新加坡|x2.0
-      - V3-509|新加坡|x2.0
-      - V4-503|新加坡|x2.0
-      - V3-289|新加坡|x1.5
-      - V4-578|新加坡|x2.5
-      - V4-292|新加坡|x2.0
-      - V4-505|新加坡|x2.0
+      - 香港03
+      - 日本08
+      - 新加坡02
+      - 日本10
+      - 日本5丨福利
+      - 日本3丨福利
+      - 日本07
+      - 日本2丨福利
+      - 日本4丨福利
+      - 日本6丨福利
+      - 日本09
+      - 新加坡01
+      - 美国01
+      - 日本1丨福利
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - V3-610|香港|x1.5
-      - V4-489|香港|x2.0
-      - V1-641|新加坡|x4.0
-      - V3-373|香港|x1.5
-      - V2-329|新加坡|x2.0
-      - V1-577|香港|x4.0
-      - V4-600|香港|x2.0
-      - V2-328|新加坡|x2.0
-      - V1-642|新加坡|x4.0
-      - V2-617|新加坡|x2.0
-      - V1-473|新加坡|x4.0
-      - V1-585|香港|x4.0
-      - V2-568|香港|x1.5
-      - V4-597|广东-香港|x2.0
-      - V2-615|香港|x1.2
-      - V1-485|新加坡|x1.0
-      - V1-377|香港|x4.0
-      - V1-450|香港|x4.0
-      - V2-477|香港|x1.5
-      - V1-470|香港|x2.0
-      - V2-614|香港|x1.5
-      - V2-519|香港|x2.0
-      - V4-629|台湾|x1.2
-      - V4-621|台湾|x2.0
-      - V4-627|台湾|x2.0
-      - V3-646|台湾|x2.0
-      - V1-645|台湾|x2.0
-      - V1-487|台湾|x2.0
-      - V2-630|台湾|x1.5
-      - V2-631|台湾|x1.5
-      - V2-632|台湾|x1.5
-      - V1-643|台湾|x4.0
-      - V3-436|台湾|x1.5
-      - V3-434|台湾|x1.5
-      - V4-623|台湾|x2.0
-      - V1-644|台湾|x4.0
-      - V2-437|台湾|x2.0
-      - V2-511|新加坡|x2.0
-      - V1-440|台湾|x4.0
-      - V1-515|日本|x0.6
-      - V1-491|日本|x0.6
-      - V1-469|香港|x2.0
-      - V1-552|美国|x4.0
-      - V3-435|台湾|x1.5
-      - V2-556|美国|x1.5
-      - V2-554|美国|x1.5
-      - V1-551|美国|x4.0
-      - V3-558|美国|x2.5
-      - V3-557|美国|x2.5
-      - V2-595|香港|x1.2
-      - V3-570|-香港|x1.5
-      - V4-649|新加坡|x2.5
-      - V4-265|新加坡|x2.5
-      - V3-330|新加坡|x1.3
-      - V4-650|新加坡|x2.0
-      - V3-509|新加坡|x2.0
-      - V4-503|新加坡|x2.0
-      - V3-289|新加坡|x1.5
-      - V4-578|新加坡|x2.5
-      - V4-292|新加坡|x2.0
-      - V4-505|新加坡|x2.0
+      - 香港03
+      - 日本08
+      - 新加坡02
+      - 日本10
+      - 日本5丨福利
+      - 日本3丨福利
+      - 日本07
+      - 日本2丨福利
+      - 日本4丨福利
+      - 日本6丨福利
+      - 日本09
+      - 新加坡01
+      - 美国01
+      - 日本1丨福利
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V3-610|香港|x1.5
-      - V4-489|香港|x2.0
-      - V1-641|新加坡|x4.0
-      - V3-373|香港|x1.5
-      - V2-329|新加坡|x2.0
-      - V1-577|香港|x4.0
-      - V4-600|香港|x2.0
-      - V2-328|新加坡|x2.0
-      - V1-642|新加坡|x4.0
-      - V2-617|新加坡|x2.0
-      - V1-473|新加坡|x4.0
-      - V1-585|香港|x4.0
-      - V2-568|香港|x1.5
-      - V4-597|广东-香港|x2.0
-      - V2-615|香港|x1.2
-      - V1-485|新加坡|x1.0
-      - V1-377|香港|x4.0
-      - V1-450|香港|x4.0
-      - V2-477|香港|x1.5
-      - V1-470|香港|x2.0
-      - V2-614|香港|x1.5
-      - V2-519|香港|x2.0
-      - V4-629|台湾|x1.2
-      - V4-621|台湾|x2.0
-      - V4-627|台湾|x2.0
-      - V3-646|台湾|x2.0
-      - V1-645|台湾|x2.0
-      - V1-487|台湾|x2.0
-      - V2-630|台湾|x1.5
-      - V2-631|台湾|x1.5
-      - V2-632|台湾|x1.5
-      - V1-643|台湾|x4.0
-      - V3-436|台湾|x1.5
-      - V3-434|台湾|x1.5
-      - V4-623|台湾|x2.0
-      - V1-644|台湾|x4.0
-      - V2-437|台湾|x2.0
-      - V2-511|新加坡|x2.0
-      - V1-440|台湾|x4.0
-      - V1-515|日本|x0.6
-      - V1-491|日本|x0.6
-      - V1-469|香港|x2.0
-      - V1-552|美国|x4.0
-      - V3-435|台湾|x1.5
-      - V2-556|美国|x1.5
-      - V2-554|美国|x1.5
-      - V1-551|美国|x4.0
-      - V3-558|美国|x2.5
-      - V3-557|美国|x2.5
-      - V2-595|香港|x1.2
-      - V3-570|-香港|x1.5
-      - V4-649|新加坡|x2.5
-      - V4-265|新加坡|x2.5
-      - V3-330|新加坡|x1.3
-      - V4-650|新加坡|x2.0
-      - V3-509|新加坡|x2.0
-      - V4-503|新加坡|x2.0
-      - V3-289|新加坡|x1.5
-      - V4-578|新加坡|x2.5
-      - V4-292|新加坡|x2.0
-      - V4-505|新加坡|x2.0
+      - 香港03
+      - 日本08
+      - 新加坡02
+      - 日本10
+      - 日本5丨福利
+      - 日本3丨福利
+      - 日本07
+      - 日本2丨福利
+      - 日本4丨福利
+      - 日本6丨福利
+      - 日本09
+      - 新加坡01
+      - 美国01
+      - 日本1丨福利
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -284,306 +96,84 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V3-610|香港|x1.5
-      - V4-489|香港|x2.0
-      - V1-641|新加坡|x4.0
-      - V3-373|香港|x1.5
-      - V2-329|新加坡|x2.0
-      - V1-577|香港|x4.0
-      - V4-600|香港|x2.0
-      - V2-328|新加坡|x2.0
-      - V1-642|新加坡|x4.0
-      - V2-617|新加坡|x2.0
-      - V1-473|新加坡|x4.0
-      - V1-585|香港|x4.0
-      - V2-568|香港|x1.5
-      - V4-597|广东-香港|x2.0
-      - V2-615|香港|x1.2
-      - V1-485|新加坡|x1.0
-      - V1-377|香港|x4.0
-      - V1-450|香港|x4.0
-      - V2-477|香港|x1.5
-      - V1-470|香港|x2.0
-      - V2-614|香港|x1.5
-      - V2-519|香港|x2.0
-      - V4-629|台湾|x1.2
-      - V4-621|台湾|x2.0
-      - V4-627|台湾|x2.0
-      - V3-646|台湾|x2.0
-      - V1-645|台湾|x2.0
-      - V1-487|台湾|x2.0
-      - V2-630|台湾|x1.5
-      - V2-631|台湾|x1.5
-      - V2-632|台湾|x1.5
-      - V1-643|台湾|x4.0
-      - V3-436|台湾|x1.5
-      - V3-434|台湾|x1.5
-      - V4-623|台湾|x2.0
-      - V1-644|台湾|x4.0
-      - V2-437|台湾|x2.0
-      - V2-511|新加坡|x2.0
-      - V1-440|台湾|x4.0
-      - V1-515|日本|x0.6
-      - V1-491|日本|x0.6
-      - V1-469|香港|x2.0
-      - V1-552|美国|x4.0
-      - V3-435|台湾|x1.5
-      - V2-556|美国|x1.5
-      - V2-554|美国|x1.5
-      - V1-551|美国|x4.0
-      - V3-558|美国|x2.5
-      - V3-557|美国|x2.5
-      - V2-595|香港|x1.2
-      - V3-570|-香港|x1.5
-      - V4-649|新加坡|x2.5
-      - V4-265|新加坡|x2.5
-      - V3-330|新加坡|x1.3
-      - V4-650|新加坡|x2.0
-      - V3-509|新加坡|x2.0
-      - V4-503|新加坡|x2.0
-      - V3-289|新加坡|x1.5
-      - V4-578|新加坡|x2.5
-      - V4-292|新加坡|x2.0
-      - V4-505|新加坡|x2.0
+      - 香港03
+      - 日本08
+      - 新加坡02
+      - 日本10
+      - 日本5丨福利
+      - 日本3丨福利
+      - 日本07
+      - 日本2丨福利
+      - 日本4丨福利
+      - 日本6丨福利
+      - 日本09
+      - 新加坡01
+      - 美国01
+      - 日本1丨福利
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - V3-610|香港|x1.5
-      - V4-489|香港|x2.0
-      - V3-373|香港|x1.5
-      - V1-577|香港|x4.0
-      - V4-600|香港|x2.0
-      - V1-585|香港|x4.0
-      - V2-568|香港|x1.5
-      - V4-597|广东-香港|x2.0
-      - V2-615|香港|x1.2
-      - V1-377|香港|x4.0
-      - V1-450|香港|x4.0
-      - V2-477|香港|x1.5
-      - V1-470|香港|x2.0
-      - V2-614|香港|x1.5
-      - V2-519|香港|x2.0
-      - V4-629|台湾|x1.2
-      - V4-621|台湾|x2.0
-      - V4-627|台湾|x2.0
-      - V3-646|台湾|x2.0
-      - V1-645|台湾|x2.0
-      - V1-487|台湾|x2.0
-      - V2-630|台湾|x1.5
-      - V2-631|台湾|x1.5
-      - V2-632|台湾|x1.5
-      - V1-643|台湾|x4.0
-      - V3-436|台湾|x1.5
-      - V3-434|台湾|x1.5
-      - V4-623|台湾|x2.0
-      - V1-644|台湾|x4.0
-      - V2-437|台湾|x2.0
-      - V1-440|台湾|x4.0
-      - V1-469|香港|x2.0
-      - V3-435|台湾|x1.5
-      - V2-595|香港|x1.2
-      - V3-570|-香港|x1.5
+      - 香港03
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - V3-610|香港|x1.5
-      - V4-489|香港|x2.0
-      - V1-641|新加坡|x4.0
-      - V3-373|香港|x1.5
-      - V2-329|新加坡|x2.0
-      - V1-577|香港|x4.0
-      - V4-600|香港|x2.0
-      - V2-328|新加坡|x2.0
-      - V1-642|新加坡|x4.0
-      - V2-617|新加坡|x2.0
-      - V1-473|新加坡|x4.0
-      - V1-585|香港|x4.0
-      - V2-568|香港|x1.5
-      - V4-597|广东-香港|x2.0
-      - V2-615|香港|x1.2
-      - V1-485|新加坡|x1.0
-      - V1-377|香港|x4.0
-      - V1-450|香港|x4.0
-      - V2-477|香港|x1.5
-      - V1-470|香港|x2.0
-      - V2-614|香港|x1.5
-      - V2-519|香港|x2.0
-      - V4-629|台湾|x1.2
-      - V4-621|台湾|x2.0
-      - V4-627|台湾|x2.0
-      - V3-646|台湾|x2.0
-      - V1-645|台湾|x2.0
-      - V1-487|台湾|x2.0
-      - V2-630|台湾|x1.5
-      - V2-631|台湾|x1.5
-      - V2-632|台湾|x1.5
-      - V1-643|台湾|x4.0
-      - V3-436|台湾|x1.5
-      - V3-434|台湾|x1.5
-      - V4-623|台湾|x2.0
-      - V1-644|台湾|x4.0
-      - V2-437|台湾|x2.0
-      - V2-511|新加坡|x2.0
-      - V1-440|台湾|x4.0
-      - V1-515|日本|x0.6
-      - V1-491|日本|x0.6
-      - V1-469|香港|x2.0
-      - V1-552|美国|x4.0
-      - V3-435|台湾|x1.5
-      - V2-556|美国|x1.5
-      - V2-554|美国|x1.5
-      - V1-551|美国|x4.0
-      - V3-558|美国|x2.5
-      - V3-557|美国|x2.5
-      - V2-595|香港|x1.2
-      - V3-570|-香港|x1.5
-      - V4-649|新加坡|x2.5
-      - V4-265|新加坡|x2.5
-      - V3-330|新加坡|x1.3
-      - V4-650|新加坡|x2.0
-      - V3-509|新加坡|x2.0
-      - V4-503|新加坡|x2.0
-      - V3-289|新加坡|x1.5
-      - V4-578|新加坡|x2.5
-      - V4-292|新加坡|x2.0
-      - V4-505|新加坡|x2.0
+      - 香港03
+      - 日本08
+      - 新加坡02
+      - 日本10
+      - 日本5丨福利
+      - 日本3丨福利
+      - 日本07
+      - 日本2丨福利
+      - 日本4丨福利
+      - 日本6丨福利
+      - 日本09
+      - 新加坡01
+      - 美国01
+      - 日本1丨福利
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - V3-610|香港|x1.5
-      - V4-489|香港|x2.0
-      - V1-641|新加坡|x4.0
-      - V3-373|香港|x1.5
-      - V2-329|新加坡|x2.0
-      - V1-577|香港|x4.0
-      - V4-600|香港|x2.0
-      - V2-328|新加坡|x2.0
-      - V1-642|新加坡|x4.0
-      - V2-617|新加坡|x2.0
-      - V1-473|新加坡|x4.0
-      - V1-585|香港|x4.0
-      - V2-568|香港|x1.5
-      - V4-597|广东-香港|x2.0
-      - V2-615|香港|x1.2
-      - V1-485|新加坡|x1.0
-      - V1-377|香港|x4.0
-      - V1-450|香港|x4.0
-      - V2-477|香港|x1.5
-      - V1-470|香港|x2.0
-      - V2-614|香港|x1.5
-      - V2-519|香港|x2.0
-      - V4-629|台湾|x1.2
-      - V4-621|台湾|x2.0
-      - V4-627|台湾|x2.0
-      - V3-646|台湾|x2.0
-      - V1-645|台湾|x2.0
-      - V1-487|台湾|x2.0
-      - V2-630|台湾|x1.5
-      - V2-631|台湾|x1.5
-      - V2-632|台湾|x1.5
-      - V1-643|台湾|x4.0
-      - V3-436|台湾|x1.5
-      - V3-434|台湾|x1.5
-      - V4-623|台湾|x2.0
-      - V1-644|台湾|x4.0
-      - V2-437|台湾|x2.0
-      - V2-511|新加坡|x2.0
-      - V1-440|台湾|x4.0
-      - V1-515|日本|x0.6
-      - V1-491|日本|x0.6
-      - V1-469|香港|x2.0
-      - V1-552|美国|x4.0
-      - V3-435|台湾|x1.5
-      - V2-556|美国|x1.5
-      - V2-554|美国|x1.5
-      - V1-551|美国|x4.0
-      - V3-558|美国|x2.5
-      - V3-557|美国|x2.5
-      - V2-595|香港|x1.2
-      - V3-570|-香港|x1.5
-      - V4-649|新加坡|x2.5
-      - V4-265|新加坡|x2.5
-      - V3-330|新加坡|x1.3
-      - V4-650|新加坡|x2.0
-      - V3-509|新加坡|x2.0
-      - V4-503|新加坡|x2.0
-      - V3-289|新加坡|x1.5
-      - V4-578|新加坡|x2.5
-      - V4-292|新加坡|x2.0
-      - V4-505|新加坡|x2.0
+      - 香港03
+      - 日本08
+      - 新加坡02
+      - 日本10
+      - 日本5丨福利
+      - 日本3丨福利
+      - 日本07
+      - 日本2丨福利
+      - 日本4丨福利
+      - 日本6丨福利
+      - 日本09
+      - 新加坡01
+      - 美国01
+      - 日本1丨福利
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V3-610|香港|x1.5
-      - V4-489|香港|x2.0
-      - V1-641|新加坡|x4.0
-      - V3-373|香港|x1.5
-      - V2-329|新加坡|x2.0
-      - V1-577|香港|x4.0
-      - V4-600|香港|x2.0
-      - V2-328|新加坡|x2.0
-      - V1-642|新加坡|x4.0
-      - V2-617|新加坡|x2.0
-      - V1-473|新加坡|x4.0
-      - V1-585|香港|x4.0
-      - V2-568|香港|x1.5
-      - V4-597|广东-香港|x2.0
-      - V2-615|香港|x1.2
-      - V1-485|新加坡|x1.0
-      - V1-377|香港|x4.0
-      - V1-450|香港|x4.0
-      - V2-477|香港|x1.5
-      - V1-470|香港|x2.0
-      - V2-614|香港|x1.5
-      - V2-519|香港|x2.0
-      - V4-629|台湾|x1.2
-      - V4-621|台湾|x2.0
-      - V4-627|台湾|x2.0
-      - V3-646|台湾|x2.0
-      - V1-645|台湾|x2.0
-      - V1-487|台湾|x2.0
-      - V2-630|台湾|x1.5
-      - V2-631|台湾|x1.5
-      - V2-632|台湾|x1.5
-      - V1-643|台湾|x4.0
-      - V3-436|台湾|x1.5
-      - V3-434|台湾|x1.5
-      - V4-623|台湾|x2.0
-      - V1-644|台湾|x4.0
-      - V2-437|台湾|x2.0
-      - V2-511|新加坡|x2.0
-      - V1-440|台湾|x4.0
-      - V1-515|日本|x0.6
-      - V1-491|日本|x0.6
-      - V1-469|香港|x2.0
-      - V1-552|美国|x4.0
-      - V3-435|台湾|x1.5
-      - V2-556|美国|x1.5
-      - V2-554|美国|x1.5
-      - V1-551|美国|x4.0
-      - V3-558|美国|x2.5
-      - V3-557|美国|x2.5
-      - V2-595|香港|x1.2
-      - V3-570|-香港|x1.5
-      - V4-649|新加坡|x2.5
-      - V4-265|新加坡|x2.5
-      - V3-330|新加坡|x1.3
-      - V4-650|新加坡|x2.0
-      - V3-509|新加坡|x2.0
-      - V4-503|新加坡|x2.0
-      - V3-289|新加坡|x1.5
-      - V4-578|新加坡|x2.5
-      - V4-292|新加坡|x2.0
-      - V4-505|新加坡|x2.0
+      - 香港03
+      - 日本08
+      - 新加坡02
+      - 日本10
+      - 日本5丨福利
+      - 日本3丨福利
+      - 日本07
+      - 日本2丨福利
+      - 日本4丨福利
+      - 日本6丨福利
+      - 日本09
+      - 新加坡01
+      - 美国01
+      - 日本1丨福利
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -599,67 +189,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V3-610|香港|x1.5
-      - V4-489|香港|x2.0
-      - V1-641|新加坡|x4.0
-      - V3-373|香港|x1.5
-      - V2-329|新加坡|x2.0
-      - V1-577|香港|x4.0
-      - V4-600|香港|x2.0
-      - V2-328|新加坡|x2.0
-      - V1-642|新加坡|x4.0
-      - V2-617|新加坡|x2.0
-      - V1-473|新加坡|x4.0
-      - V1-585|香港|x4.0
-      - V2-568|香港|x1.5
-      - V4-597|广东-香港|x2.0
-      - V2-615|香港|x1.2
-      - V1-485|新加坡|x1.0
-      - V1-377|香港|x4.0
-      - V1-450|香港|x4.0
-      - V2-477|香港|x1.5
-      - V1-470|香港|x2.0
-      - V2-614|香港|x1.5
-      - V2-519|香港|x2.0
-      - V4-629|台湾|x1.2
-      - V4-621|台湾|x2.0
-      - V4-627|台湾|x2.0
-      - V3-646|台湾|x2.0
-      - V1-645|台湾|x2.0
-      - V1-487|台湾|x2.0
-      - V2-630|台湾|x1.5
-      - V2-631|台湾|x1.5
-      - V2-632|台湾|x1.5
-      - V1-643|台湾|x4.0
-      - V3-436|台湾|x1.5
-      - V3-434|台湾|x1.5
-      - V4-623|台湾|x2.0
-      - V1-644|台湾|x4.0
-      - V2-437|台湾|x2.0
-      - V2-511|新加坡|x2.0
-      - V1-440|台湾|x4.0
-      - V1-515|日本|x0.6
-      - V1-491|日本|x0.6
-      - V1-469|香港|x2.0
-      - V1-552|美国|x4.0
-      - V3-435|台湾|x1.5
-      - V2-556|美国|x1.5
-      - V2-554|美国|x1.5
-      - V1-551|美国|x4.0
-      - V3-558|美国|x2.5
-      - V3-557|美国|x2.5
-      - V2-595|香港|x1.2
-      - V3-570|-香港|x1.5
-      - V4-649|新加坡|x2.5
-      - V4-265|新加坡|x2.5
-      - V3-330|新加坡|x1.3
-      - V4-650|新加坡|x2.0
-      - V3-509|新加坡|x2.0
-      - V4-503|新加坡|x2.0
-      - V3-289|新加坡|x1.5
-      - V4-578|新加坡|x2.5
-      - V4-292|新加坡|x2.0
-      - V4-505|新加坡|x2.0
+      - 香港03
+      - 日本08
+      - 新加坡02
+      - 日本10
+      - 日本5丨福利
+      - 日本3丨福利
+      - 日本07
+      - 日本2丨福利
+      - 日本4丨福利
+      - 日本6丨福利
+      - 日本09
+      - 新加坡01
+      - 美国01
+      - 日本1丨福利
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -9616,8 +9159,6 @@ rules:
  - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,idmchina.net,🛑 全球拦截
- - DOMAIN-SUFFIX,imazingchina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,jihehuaban.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,keyshot.cc,🛑 全球拦截
@@ -9687,8 +9228,6 @@ rules:
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
- - DOMAIN,radio.itunes.apple.com,🌍 国外媒体
- - DOMAIN,tv.applemusic.com,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
@@ -9733,7 +9272,6 @@ rules:
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
  - DOMAIN,linear.tv.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
- - DOMAIN,uts-api.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -9820,7 +9358,6 @@ rules:
  - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
- - IP-CIDR,210.71.227.200/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
@@ -9921,14 +9458,15 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
- - DOMAIN-SUFFIX,bilibili.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
  - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,biligame.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,biligame.net,🌏 国内媒体
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
- - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
- - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
@@ -9946,7 +9484,6 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
- - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
@@ -9960,14 +9497,11 @@ rules:
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
- - IP-CIDR,91.105.192.0/23,📲 电报信息,no-resolve
+ - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
- - IP-CIDR,185.76.151.0/24,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
  - DOMAIN,payments-jp.amazon.com,🔰 节点选择
@@ -9976,36 +9510,16 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
- - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
- - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
- - DOMAIN,clubhouse.pubnubapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
  - DOMAIN-SUFFIX,binance.com,🔰 节点选择
- - DOMAIN-SUFFIX,binance.us,🔰 节点选择
  - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
  - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bithumb.com,🔰 节点选择
  - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bitstamp.net,🔰 节点选择
- - DOMAIN-SUFFIX,bittrex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bybit.com,🔰 节点选择
- - DOMAIN-SUFFIX,coinbase.com,🔰 节点选择
- - DOMAIN-SUFFIX,coincheck.com,🔰 节点选择
- - DOMAIN-SUFFIX,coingecko.com,🔰 节点选择
- - DOMAIN-SUFFIX,coinmarketcap.com,🔰 节点选择
- - DOMAIN-SUFFIX,coinone.co.kr,🔰 节点选择
- - DOMAIN-SUFFIX,ftx.com,🔰 节点选择
  - DOMAIN-SUFFIX,gate.io,🔰 节点选择
- - DOMAIN-SUFFIX,gemini.com,🔰 节点选择
  - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
- - DOMAIN-SUFFIX,korbit.co.kr,🔰 节点选择
- - DOMAIN-SUFFIX,kraken.com,🔰 节点选择
- - DOMAIN-SUFFIX,kucoin.com,🔰 节点选择
- - DOMAIN-SUFFIX,liquid.com,🔰 节点选择
  - DOMAIN-SUFFIX,okex.com,🔰 节点选择
- - DOMAIN-SUFFIX,poloniex.com,🔰 节点选择
  - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
  - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,discord.com,🔰 节点选择
@@ -10038,7 +9552,6 @@ rules:
  - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
  - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
  - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
- - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
  - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
@@ -10089,14 +9602,11 @@ rules:
  - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,91.105.192.0/23,🔰 节点选择,no-resolve
+ - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
- - IP-CIDR,185.76.151.0/24,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
- - IP-CIDR6,2001:b28:f23c::/48,🔰 节点选择,no-resolve
- - IP-CIDR6,2a0a:f280::/32,🔰 节点选择,no-resolve
  - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
  - DOMAIN-SUFFIX,t.co,🔰 节点选择
@@ -10165,6 +9675,7 @@ rules:
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -10258,6 +9769,7 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
@@ -10283,7 +9795,6 @@ rules:
  - DOMAIN-SUFFIX,marc.info,🔰 节点选择
  - DOMAIN-SUFFIX,matters.news,🔰 节点选择
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
- - DOMAIN-SUFFIX,medibang.com,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
  - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
@@ -10373,7 +9884,6 @@ rules:
  - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
  - DOMAIN-SUFFIX,substack.com,🔰 节点选择
- - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -10389,7 +9899,6 @@ rules:
  - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
  - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
- - DOMAIN-SUFFIX,tradingview.com,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
  - DOMAIN-SUFFIX,tutanota.com,🔰 节点选择
@@ -10506,33 +10015,20 @@ rules:
  - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
  - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
  - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
  - DOMAIN,beta.music.apple.com,🔰 节点选择
- - DOMAIN,lookup-api.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,books.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
  - DOMAIN,tv.apple.com,🔰 节点选择
- - DOMAIN,amp-api.podcasts.apple.com,🔰 节点选择
- - DOMAIN,bookkeeper.itunes.apple.com,🔰 节点选择
- - DOMAIN,gateway.icloud.com,🔰 节点选择
- - DOMAIN-SUFFIX,apple.news,🔰 节点选择
- - DOMAIN,news-assets.apple.com,🔰 节点选择
- - DOMAIN,news-client.apple.com,🔰 节点选择
- - DOMAIN,news-client-search.apple.com,🔰 节点选择
- - DOMAIN,news-edge.apple.com,🔰 节点选择
- - DOMAIN,news-events.apple.com,🔰 节点选择
- - DOMAIN,apple.comscoreresearch.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,lookup-api.apple.com,🔰 节点选择
  - DOMAIN-SUFFIX,go.dev,🔰 节点选择
  - DOMAIN-SUFFIX,golang.org,🔰 节点选择
- - DOMAIN-SUFFIX,aicoin.com,🔰 节点选择
- - DOMAIN-SUFFIX,aimoon.com,🔰 节点选择
  - DOMAIN-SUFFIX,bing.com,🔰 节点选择
  - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
  - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
  - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
- - DOMAIN-SUFFIX,linkedin.com,🔰 节点选择
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
@@ -10540,10 +10036,12 @@ rules:
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
  - DOMAIN,ocsp.apple.com,🔰 节点选择
+ - DOMAIN,xp.apple.com,🔰 节点选择
  - DOMAIN,cacerts.digicert.com,🔰 节点选择
  - DOMAIN,crl3.digicert.com,🔰 节点选择
  - DOMAIN,crl4.digicert.com,🔰 节点选择
  - DOMAIN,ocsp.digicert.com,🔰 节点选择
+ - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
  - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
  - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
  - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
@@ -10699,11 +10197,19 @@ rules:
  - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
- - DOMAIN-SUFFIX,tencent-cloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
+ - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
+ - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
+ - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
@@ -10783,7 +10289,6 @@ rules:
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
- - DOMAIN-SUFFIX,cibntv.net,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
@@ -10828,6 +10333,8 @@ rules:
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
+ - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
+ - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
@@ -10850,7 +10357,6 @@ rules:
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
- - DOMAIN-SUFFIX,shouqianba.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
