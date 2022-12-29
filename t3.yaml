@@ -5,75 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 印度中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31018, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 距离下次重置剩余：30 天, server: video.proxyvip.link, port: 31001, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 香港中继Ⅱ-Trojan, server: video.proxyvip.link, port: 31002, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 新加坡中继Ⅱ-Trojan, server: video.proxyvip.link, port: 31012, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 日本中继Ⅱ-Trojan, server: video.proxyvip.link, port: 31014, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 日本中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31013, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 香港中继Ⅲ-Trojan, server: video.proxyvip.link, port: 31003, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 香港中继Ⅳ-Trojan, server: video.proxyvip.link, port: 31004, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 美国中继Ⅲ-Trojan, server: video.proxyvip.link, port: 31008, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 德国中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31017, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 加拿大中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31015, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 美国中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31006, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31019, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 飘出新高度-香港EDCL, server: 116.162.120.60, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 飘出新高度-香港HKT-dip_5, server: 116.162.120.29, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 飘出新高度-香港HKT-dip_4, server: 116.162.120.31, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 飘出新高度-香港HKBN-dip_2, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 飘出新高度-香港HKT-dip_6, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港HKT-dip_2, server: 119.237.195.230, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 飘出新高度-香港HKBN-dip_1, server: 116.162.120.28, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 飘出新高度_0049, server: 43.206.241.153, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 飘出新高度_0230, server: 54.169.211.238, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 飘出新高度_0059, server: 54.169.62.50, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 香港HKT-dip_1, server: 168.70.92.12, port: 443, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 飘出新高度_0235, server: 8.218.16.156, port: 28730, type: vmess, uuid: 596d10b4-ce14-4be9-b37b-53c95b9220de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.218.16.156]}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印度中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 香港中继Ⅱ-Trojan
-      - 新加坡中继Ⅱ-Trojan
-      - 日本中继Ⅱ-Trojan
-      - 日本中继Ⅰ-Trojan
-      - 香港中继Ⅲ-Trojan
-      - 香港中继Ⅳ-Trojan
-      - 美国中继Ⅲ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 加拿大中继Ⅰ-Trojan
-      - 美国中继Ⅰ-Trojan
-      - 澳大利亚中继Ⅰ-Trojan
+      - 飘出新高度-香港EDCL
+      - 飘出新高度-香港HKT-dip_5
+      - 飘出新高度-香港HKT-dip_4
+      - 飘出新高度-香港HKBN-dip_2
+      - 飘出新高度-香港HKT-dip_6
+      - 香港HKT-dip_2
+      - 飘出新高度-香港HKBN-dip_1
+      - 飘出新高度_0049
+      - 飘出新高度_0230
+      - 飘出新高度_0059
+      - 香港HKT-dip_1
+      - 飘出新高度_0235
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 印度中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 香港中继Ⅱ-Trojan
-      - 新加坡中继Ⅱ-Trojan
-      - 日本中继Ⅱ-Trojan
-      - 日本中继Ⅰ-Trojan
-      - 香港中继Ⅲ-Trojan
-      - 香港中继Ⅳ-Trojan
-      - 美国中继Ⅲ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 加拿大中继Ⅰ-Trojan
-      - 美国中继Ⅰ-Trojan
-      - 澳大利亚中继Ⅰ-Trojan
+      - 飘出新高度-香港EDCL
+      - 飘出新高度-香港HKT-dip_5
+      - 飘出新高度-香港HKT-dip_4
+      - 飘出新高度-香港HKBN-dip_2
+      - 飘出新高度-香港HKT-dip_6
+      - 香港HKT-dip_2
+      - 飘出新高度-香港HKBN-dip_1
+      - 飘出新高度_0049
+      - 飘出新高度_0230
+      - 飘出新高度_0059
+      - 香港HKT-dip_1
+      - 飘出新高度_0235
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印度中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 香港中继Ⅱ-Trojan
-      - 新加坡中继Ⅱ-Trojan
-      - 日本中继Ⅱ-Trojan
-      - 日本中继Ⅰ-Trojan
-      - 香港中继Ⅲ-Trojan
-      - 香港中继Ⅳ-Trojan
-      - 美国中继Ⅲ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 加拿大中继Ⅰ-Trojan
-      - 美国中继Ⅰ-Trojan
-      - 澳大利亚中继Ⅰ-Trojan
+      - 飘出新高度-香港EDCL
+      - 飘出新高度-香港HKT-dip_5
+      - 飘出新高度-香港HKT-dip_4
+      - 飘出新高度-香港HKBN-dip_2
+      - 飘出新高度-香港HKT-dip_6
+      - 香港HKT-dip_2
+      - 飘出新高度-香港HKBN-dip_1
+      - 飘出新高度_0049
+      - 飘出新高度_0230
+      - 飘出新高度_0059
+      - 香港HKT-dip_1
+      - 飘出新高度_0235
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,82 +88,83 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印度中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 香港中继Ⅱ-Trojan
-      - 新加坡中继Ⅱ-Trojan
-      - 日本中继Ⅱ-Trojan
-      - 日本中继Ⅰ-Trojan
-      - 香港中继Ⅲ-Trojan
-      - 香港中继Ⅳ-Trojan
-      - 美国中继Ⅲ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 加拿大中继Ⅰ-Trojan
-      - 美国中继Ⅰ-Trojan
-      - 澳大利亚中继Ⅰ-Trojan
+      - 飘出新高度-香港EDCL
+      - 飘出新高度-香港HKT-dip_5
+      - 飘出新高度-香港HKT-dip_4
+      - 飘出新高度-香港HKBN-dip_2
+      - 飘出新高度-香港HKT-dip_6
+      - 香港HKT-dip_2
+      - 飘出新高度-香港HKBN-dip_1
+      - 飘出新高度_0049
+      - 飘出新高度_0230
+      - 飘出新高度_0059
+      - 香港HKT-dip_1
+      - 飘出新高度_0235
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港中继Ⅱ-Trojan
-      - 香港中继Ⅲ-Trojan
-      - 香港中继Ⅳ-Trojan
+      - 飘出新高度-香港EDCL
+      - 飘出新高度-香港HKT-dip_5
+      - 飘出新高度-香港HKT-dip_4
+      - 飘出新高度-香港HKBN-dip_2
+      - 飘出新高度-香港HKT-dip_6
+      - 香港HKT-dip_2
+      - 飘出新高度-香港HKBN-dip_1
+      - 香港HKT-dip_1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 印度中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 香港中继Ⅱ-Trojan
-      - 新加坡中继Ⅱ-Trojan
-      - 日本中继Ⅱ-Trojan
-      - 日本中继Ⅰ-Trojan
-      - 香港中继Ⅲ-Trojan
-      - 香港中继Ⅳ-Trojan
-      - 美国中继Ⅲ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 加拿大中继Ⅰ-Trojan
-      - 美国中继Ⅰ-Trojan
-      - 澳大利亚中继Ⅰ-Trojan
+      - 飘出新高度-香港EDCL
+      - 飘出新高度-香港HKT-dip_5
+      - 飘出新高度-香港HKT-dip_4
+      - 飘出新高度-香港HKBN-dip_2
+      - 飘出新高度-香港HKT-dip_6
+      - 香港HKT-dip_2
+      - 飘出新高度-香港HKBN-dip_1
+      - 飘出新高度_0049
+      - 飘出新高度_0230
+      - 飘出新高度_0059
+      - 香港HKT-dip_1
+      - 飘出新高度_0235
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 印度中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 香港中继Ⅱ-Trojan
-      - 新加坡中继Ⅱ-Trojan
-      - 日本中继Ⅱ-Trojan
-      - 日本中继Ⅰ-Trojan
-      - 香港中继Ⅲ-Trojan
-      - 香港中继Ⅳ-Trojan
-      - 美国中继Ⅲ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 加拿大中继Ⅰ-Trojan
-      - 美国中继Ⅰ-Trojan
-      - 澳大利亚中继Ⅰ-Trojan
+      - 飘出新高度-香港EDCL
+      - 飘出新高度-香港HKT-dip_5
+      - 飘出新高度-香港HKT-dip_4
+      - 飘出新高度-香港HKBN-dip_2
+      - 飘出新高度-香港HKT-dip_6
+      - 香港HKT-dip_2
+      - 飘出新高度-香港HKBN-dip_1
+      - 飘出新高度_0049
+      - 飘出新高度_0230
+      - 飘出新高度_0059
+      - 香港HKT-dip_1
+      - 飘出新高度_0235
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 印度中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 香港中继Ⅱ-Trojan
-      - 新加坡中继Ⅱ-Trojan
-      - 日本中继Ⅱ-Trojan
-      - 日本中继Ⅰ-Trojan
-      - 香港中继Ⅲ-Trojan
-      - 香港中继Ⅳ-Trojan
-      - 美国中继Ⅲ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 加拿大中继Ⅰ-Trojan
-      - 美国中继Ⅰ-Trojan
-      - 澳大利亚中继Ⅰ-Trojan
+      - 飘出新高度-香港EDCL
+      - 飘出新高度-香港HKT-dip_5
+      - 飘出新高度-香港HKT-dip_4
+      - 飘出新高度-香港HKBN-dip_2
+      - 飘出新高度-香港HKT-dip_6
+      - 香港HKT-dip_2
+      - 飘出新高度-香港HKBN-dip_1
+      - 飘出新高度_0049
+      - 飘出新高度_0230
+      - 飘出新高度_0059
+      - 香港HKT-dip_1
+      - 飘出新高度_0235
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -183,19 +180,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 印度中继Ⅰ-Trojan
-      - 距离下次重置剩余：30 天
-      - 香港中继Ⅱ-Trojan
-      - 新加坡中继Ⅱ-Trojan
-      - 日本中继Ⅱ-Trojan
-      - 日本中继Ⅰ-Trojan
-      - 香港中继Ⅲ-Trojan
-      - 香港中继Ⅳ-Trojan
-      - 美国中继Ⅲ-Trojan
-      - 德国中继Ⅰ-Trojan
-      - 加拿大中继Ⅰ-Trojan
-      - 美国中继Ⅰ-Trojan
-      - 澳大利亚中继Ⅰ-Trojan
+      - 飘出新高度-香港EDCL
+      - 飘出新高度-香港HKT-dip_5
+      - 飘出新高度-香港HKT-dip_4
+      - 飘出新高度-香港HKBN-dip_2
+      - 飘出新高度-香港HKT-dip_6
+      - 香港HKT-dip_2
+      - 飘出新高度-香港HKBN-dip_1
+      - 飘出新高度_0049
+      - 飘出新高度_0230
+      - 飘出新高度_0059
+      - 香港HKT-dip_1
+      - 飘出新高度_0235
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
