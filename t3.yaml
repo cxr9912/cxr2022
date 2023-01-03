@@ -5,71 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 飘出新高度-香港EDCL, server: 116.162.120.60, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 飘出新高度-香港HKT-dip_5, server: 116.162.120.29, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 飘出新高度-香港HKT-dip_4, server: 116.162.120.31, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 飘出新高度-香港HKBN-dip_2, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 飘出新高度-香港HKT-dip_6, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港HKT-dip_2, server: 119.237.195.230, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 飘出新高度-香港HKBN-dip_1, server: 116.162.120.28, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 飘出新高度_0049, server: 43.206.241.153, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 飘出新高度_0230, server: 54.169.211.238, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 飘出新高度_0059, server: 54.169.62.50, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 香港HKT-dip_1, server: 168.70.92.12, port: 443, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15194:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 飘出新高度_0235, server: 8.218.16.156, port: 28730, type: vmess, uuid: 596d10b4-ce14-4be9-b37b-53c95b9220de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.218.16.156]}}, udp: true}
+  - {name: "India 01 [Azure]", server: 20-193-225-174.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, sni: 20-193-225-174.ipv4.rush.ml, skip-cert-verify: true, udp: true}
+  - {name: "HongKong 03 [Azure]", server: 20-189-113-101.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, sni: 20-189-113-101.ipv4.rush.ml, skip-cert-verify: true, udp: true}
+  - {name: "India 01 [AWS]", server: 13-235-242-248.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, sni: 13-235-242-248.ipv4.rush.ml, skip-cert-verify: true, udp: true}
+  - {name: "HongKong 02 [Tencent]", server: 43-154-61-247.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, sni: 43-154-61-247.ipv4.rush.ml, skip-cert-verify: true, udp: true}
+  - {name: "Qatar 02 [Azure]", server: 20-173-104-169.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, sni: 20-173-104-169.ipv4.rush.ml, skip-cert-verify: true, udp: true}
+  - {name: "Qatar 01 [Azure]", server: 20-21-121-146.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, sni: 20-21-121-146.ipv4.rush.ml, skip-cert-verify: true, udp: true}
+  - {name: "France 01 [Azure]", server: 20-199-90-150.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, sni: 20-199-90-150.ipv4.rush.ml, skip-cert-verify: true, udp: true}
+  - {name: "Netherlands 01 [Azure]", server: 20-123-144-130.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, sni: 20-123-144-130.ipv4.rush.ml, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 飘出新高度-香港EDCL
-      - 飘出新高度-香港HKT-dip_5
-      - 飘出新高度-香港HKT-dip_4
-      - 飘出新高度-香港HKBN-dip_2
-      - 飘出新高度-香港HKT-dip_6
-      - 香港HKT-dip_2
-      - 飘出新高度-香港HKBN-dip_1
-      - 飘出新高度_0049
-      - 飘出新高度_0230
-      - 飘出新高度_0059
-      - 香港HKT-dip_1
-      - 飘出新高度_0235
+      - India 01 [Azure]
+      - HongKong 03 [Azure]
+      - India 01 [AWS]
+      - HongKong 02 [Tencent]
+      - Qatar 02 [Azure]
+      - Qatar 01 [Azure]
+      - France 01 [Azure]
+      - Netherlands 01 [Azure]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 飘出新高度-香港EDCL
-      - 飘出新高度-香港HKT-dip_5
-      - 飘出新高度-香港HKT-dip_4
-      - 飘出新高度-香港HKBN-dip_2
-      - 飘出新高度-香港HKT-dip_6
-      - 香港HKT-dip_2
-      - 飘出新高度-香港HKBN-dip_1
-      - 飘出新高度_0049
-      - 飘出新高度_0230
-      - 飘出新高度_0059
-      - 香港HKT-dip_1
-      - 飘出新高度_0235
+      - India 01 [Azure]
+      - HongKong 03 [Azure]
+      - India 01 [AWS]
+      - HongKong 02 [Tencent]
+      - Qatar 02 [Azure]
+      - Qatar 01 [Azure]
+      - France 01 [Azure]
+      - Netherlands 01 [Azure]
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 飘出新高度-香港EDCL
-      - 飘出新高度-香港HKT-dip_5
-      - 飘出新高度-香港HKT-dip_4
-      - 飘出新高度-香港HKBN-dip_2
-      - 飘出新高度-香港HKT-dip_6
-      - 香港HKT-dip_2
-      - 飘出新高度-香港HKBN-dip_1
-      - 飘出新高度_0049
-      - 飘出新高度_0230
-      - 飘出新高度_0059
-      - 香港HKT-dip_1
-      - 飘出新高度_0235
+      - India 01 [Azure]
+      - HongKong 03 [Azure]
+      - India 01 [AWS]
+      - HongKong 02 [Tencent]
+      - Qatar 02 [Azure]
+      - Qatar 01 [Azure]
+      - France 01 [Azure]
+      - Netherlands 01 [Azure]
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,83 +72,59 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 飘出新高度-香港EDCL
-      - 飘出新高度-香港HKT-dip_5
-      - 飘出新高度-香港HKT-dip_4
-      - 飘出新高度-香港HKBN-dip_2
-      - 飘出新高度-香港HKT-dip_6
-      - 香港HKT-dip_2
-      - 飘出新高度-香港HKBN-dip_1
-      - 飘出新高度_0049
-      - 飘出新高度_0230
-      - 飘出新高度_0059
-      - 香港HKT-dip_1
-      - 飘出新高度_0235
+      - India 01 [Azure]
+      - HongKong 03 [Azure]
+      - India 01 [AWS]
+      - HongKong 02 [Tencent]
+      - Qatar 02 [Azure]
+      - Qatar 01 [Azure]
+      - France 01 [Azure]
+      - Netherlands 01 [Azure]
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 飘出新高度-香港EDCL
-      - 飘出新高度-香港HKT-dip_5
-      - 飘出新高度-香港HKT-dip_4
-      - 飘出新高度-香港HKBN-dip_2
-      - 飘出新高度-香港HKT-dip_6
-      - 香港HKT-dip_2
-      - 飘出新高度-香港HKBN-dip_1
-      - 香港HKT-dip_1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 飘出新高度-香港EDCL
-      - 飘出新高度-香港HKT-dip_5
-      - 飘出新高度-香港HKT-dip_4
-      - 飘出新高度-香港HKBN-dip_2
-      - 飘出新高度-香港HKT-dip_6
-      - 香港HKT-dip_2
-      - 飘出新高度-香港HKBN-dip_1
-      - 飘出新高度_0049
-      - 飘出新高度_0230
-      - 飘出新高度_0059
-      - 香港HKT-dip_1
-      - 飘出新高度_0235
+      - India 01 [Azure]
+      - HongKong 03 [Azure]
+      - India 01 [AWS]
+      - HongKong 02 [Tencent]
+      - Qatar 02 [Azure]
+      - Qatar 01 [Azure]
+      - France 01 [Azure]
+      - Netherlands 01 [Azure]
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 飘出新高度-香港EDCL
-      - 飘出新高度-香港HKT-dip_5
-      - 飘出新高度-香港HKT-dip_4
-      - 飘出新高度-香港HKBN-dip_2
-      - 飘出新高度-香港HKT-dip_6
-      - 香港HKT-dip_2
-      - 飘出新高度-香港HKBN-dip_1
-      - 飘出新高度_0049
-      - 飘出新高度_0230
-      - 飘出新高度_0059
-      - 香港HKT-dip_1
-      - 飘出新高度_0235
+      - India 01 [Azure]
+      - HongKong 03 [Azure]
+      - India 01 [AWS]
+      - HongKong 02 [Tencent]
+      - Qatar 02 [Azure]
+      - Qatar 01 [Azure]
+      - France 01 [Azure]
+      - Netherlands 01 [Azure]
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 飘出新高度-香港EDCL
-      - 飘出新高度-香港HKT-dip_5
-      - 飘出新高度-香港HKT-dip_4
-      - 飘出新高度-香港HKBN-dip_2
-      - 飘出新高度-香港HKT-dip_6
-      - 香港HKT-dip_2
-      - 飘出新高度-香港HKBN-dip_1
-      - 飘出新高度_0049
-      - 飘出新高度_0230
-      - 飘出新高度_0059
-      - 香港HKT-dip_1
-      - 飘出新高度_0235
+      - India 01 [Azure]
+      - HongKong 03 [Azure]
+      - India 01 [AWS]
+      - HongKong 02 [Tencent]
+      - Qatar 02 [Azure]
+      - Qatar 01 [Azure]
+      - France 01 [Azure]
+      - Netherlands 01 [Azure]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -180,18 +140,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 飘出新高度-香港EDCL
-      - 飘出新高度-香港HKT-dip_5
-      - 飘出新高度-香港HKT-dip_4
-      - 飘出新高度-香港HKBN-dip_2
-      - 飘出新高度-香港HKT-dip_6
-      - 香港HKT-dip_2
-      - 飘出新高度-香港HKBN-dip_1
-      - 飘出新高度_0049
-      - 飘出新高度_0230
-      - 飘出新高度_0059
-      - 香港HKT-dip_1
-      - 飘出新高度_0235
+      - India 01 [Azure]
+      - HongKong 03 [Azure]
+      - India 01 [AWS]
+      - HongKong 02 [Tencent]
+      - Qatar 02 [Azure]
+      - Qatar 01 [Azure]
+      - France 01 [Azure]
+      - Netherlands 01 [Azure]
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
