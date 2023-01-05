@@ -5,79 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港03, server: bj.zhuanfa.tk, port: 29102, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
-  - {name: 日本08, server: bj.zhuanfa.tk, port: 54655, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
-  - {name: 新加坡02, server: dxhefei01.baipiaozf.com, port: 23236, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
-  - {name: 日本10, server: bj.zhuanfa.tk, port: 51561, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
-  - {name: 日本5丨福利, server: bj.zhuanfa.tk, port: 14569, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
-  - {name: 日本3丨福利, server: bj.zhuanfa.tk, port: 14567, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
-  - {name: 日本07, server: bj.zhuanfa.tk, port: 18468, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
-  - {name: 日本2丨福利, server: bj.zhuanfa.tk, port: 14566, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
-  - {name: 日本4丨福利, server: bj.zhuanfa.tk, port: 14568, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
-  - {name: 日本6丨福利, server: gdzf.zhuanfa.tk, port: 14789, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
-  - {name: 日本09, server: bj.zhuanfa.tk, port: 58465, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
-  - {name: 新加坡01, server: dxhefei01.baipiaozf.com, port: 30412, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
-  - {name: 美国01, server: hainan.sfjsq001.info, port: 33208, type: vmess, uuid: 18d452c7-81ae-3dfd-a764-ae7cef0c887e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本1丨福利, server: bj.zhuanfa.tk, port: 14565, type: ss, cipher: chacha20-ietf-poly1305, password: b3f4351a-91ee-4584-bb2f-8bfd64a03922, udp: true}
+  - {name: 香港, server: hk4.sanfen001.pics, port: 443, type: vmess, uuid: e16267f6-e652-4a10-9c61-69787cd03c73, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 新加坡, server: 9bdc7f3764a60fb0.sanfen001.pics, port: 17525, type: ss, cipher: chacha20-ietf-poly1305, password: e16267f6-e652-4a10-9c61-69787cd03c73, udp: true}
+  - {name: 香港 2, server: hk2.sanfen001.pics, port: 443, type: vmess, uuid: e16267f6-e652-4a10-9c61-69787cd03c73, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港03
-      - 日本08
-      - 新加坡02
-      - 日本10
-      - 日本5丨福利
-      - 日本3丨福利
-      - 日本07
-      - 日本2丨福利
-      - 日本4丨福利
-      - 日本6丨福利
-      - 日本09
-      - 新加坡01
-      - 美国01
-      - 日本1丨福利
+      - 香港
+      - 新加坡
+      - 香港 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港03
-      - 日本08
-      - 新加坡02
-      - 日本10
-      - 日本5丨福利
-      - 日本3丨福利
-      - 日本07
-      - 日本2丨福利
-      - 日本4丨福利
-      - 日本6丨福利
-      - 日本09
-      - 新加坡01
-      - 美国01
-      - 日本1丨福利
+      - 香港
+      - 新加坡
+      - 香港 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港03
-      - 日本08
-      - 新加坡02
-      - 日本10
-      - 日本5丨福利
-      - 日本3丨福利
-      - 日本07
-      - 日本2丨福利
-      - 日本4丨福利
-      - 日本6丨福利
-      - 日本09
-      - 新加坡01
-      - 美国01
-      - 日本1丨福利
+      - 香港
+      - 新加坡
+      - 香港 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,84 +52,41 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港03
-      - 日本08
-      - 新加坡02
-      - 日本10
-      - 日本5丨福利
-      - 日本3丨福利
-      - 日本07
-      - 日本2丨福利
-      - 日本4丨福利
-      - 日本6丨福利
-      - 日本09
-      - 新加坡01
-      - 美国01
-      - 日本1丨福利
+      - 香港
+      - 新加坡
+      - 香港 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港03
+      - 香港
+      - 香港 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港03
-      - 日本08
-      - 新加坡02
-      - 日本10
-      - 日本5丨福利
-      - 日本3丨福利
-      - 日本07
-      - 日本2丨福利
-      - 日本4丨福利
-      - 日本6丨福利
-      - 日本09
-      - 新加坡01
-      - 美国01
-      - 日本1丨福利
+      - 香港
+      - 新加坡
+      - 香港 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港03
-      - 日本08
-      - 新加坡02
-      - 日本10
-      - 日本5丨福利
-      - 日本3丨福利
-      - 日本07
-      - 日本2丨福利
-      - 日本4丨福利
-      - 日本6丨福利
-      - 日本09
-      - 新加坡01
-      - 美国01
-      - 日本1丨福利
+      - 香港
+      - 新加坡
+      - 香港 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港03
-      - 日本08
-      - 新加坡02
-      - 日本10
-      - 日本5丨福利
-      - 日本3丨福利
-      - 日本07
-      - 日本2丨福利
-      - 日本4丨福利
-      - 日本6丨福利
-      - 日本09
-      - 新加坡01
-      - 美国01
-      - 日本1丨福利
+      - 香港
+      - 新加坡
+      - 香港 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -189,20 +102,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港03
-      - 日本08
-      - 新加坡02
-      - 日本10
-      - 日本5丨福利
-      - 日本3丨福利
-      - 日本07
-      - 日本2丨福利
-      - 日本4丨福利
-      - 日本6丨福利
-      - 日本09
-      - 新加坡01
-      - 美国01
-      - 日本1丨福利
+      - 香港
+      - 新加坡
+      - 香港 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
