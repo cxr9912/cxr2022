@@ -5,35 +5,111 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港, server: hk4.sanfen001.pics, port: 443, type: vmess, uuid: e16267f6-e652-4a10-9c61-69787cd03c73, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 新加坡, server: 9bdc7f3764a60fb0.sanfen001.pics, port: 17525, type: ss, cipher: chacha20-ietf-poly1305, password: e16267f6-e652-4a10-9c61-69787cd03c73, udp: true}
-  - {name: 香港 2, server: hk2.sanfen001.pics, port: 443, type: vmess, uuid: e16267f6-e652-4a10-9c61-69787cd03c73, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 香港中继Ⅴ-V2ray, server: download.proxyvip.link, port: 33005, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 香港中继Ⅱ-Trojan, server: video.proxyvip.link, port: 31002, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 日本中继Ⅰ-V2ray, server: download.proxyvip.link, port: 33013, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 新加坡中继Ⅰ-V2ray, server: download.proxyvip.link, port: 33011, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 新加坡中继Ⅱ-V2ray, server: download.proxyvip.link, port: 33012, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 距离下次重置剩余：2 天, server: video.proxyvip.link, port: 31001, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚中继Ⅰ-V2ray, server: download.proxyvip.link, port: 33019, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 日本中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31013, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 美国中继Ⅳ-Trojan, server: video.proxyvip.link, port: 31009, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚中继Ⅰ-Trojan, server: video.proxyvip.link, port: 31019, type: trojan, password: a4081756-8482-4037-9ed9-d7599a254f0c, sni: video.proxyvip.link, skip-cert-verify: true, udp: true}
+  - {name: 香港中继Ⅳ-V2ray, server: download.proxyvip.link, port: 33004, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 美国中继Ⅴ-V2ray, server: download.proxyvip.link, port: 33010, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 美国中继Ⅰ-V2ray, server: download.proxyvip.link, port: 33006, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 日本中继Ⅱ-V2ray, server: download.proxyvip.link, port: 33014, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 印度中继Ⅰ-V2ray, server: download.proxyvip.link, port: 33018, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 德国中继Ⅰ-V2ray, server: download.proxyvip.link, port: 33017, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 美国中继Ⅲ-V2ray, server: download.proxyvip.link, port: 33008, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 英国中继Ⅰ-V2ray, server: download.proxyvip.link, port: 33016, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 美国中继Ⅱ-V2ray, server: download.proxyvip.link, port: 33007, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 美国中继Ⅳ-V2ray, server: download.proxyvip.link, port: 33009, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 香港中继Ⅰ-V2ray, server: download.proxyvip.link, port: 33001, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
+  - {name: 加拿大中继Ⅰ-V2ray, server: download.proxyvip.link, port: 33015, type: vmess, uuid: a4081756-8482-4037-9ed9-d7599a254f0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: download.proxyvip.link}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港
-      - 新加坡
-      - 香港 2
+      - 香港中继Ⅴ-V2ray
+      - 香港中继Ⅱ-Trojan
+      - 日本中继Ⅰ-V2ray
+      - 新加坡中继Ⅰ-V2ray
+      - 新加坡中继Ⅱ-V2ray
+      - 距离下次重置剩余：2 天
+      - 澳大利亚中继Ⅰ-V2ray
+      - 日本中继Ⅰ-Trojan
+      - 美国中继Ⅳ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
+      - 香港中继Ⅳ-V2ray
+      - 美国中继Ⅴ-V2ray
+      - 美国中继Ⅰ-V2ray
+      - 日本中继Ⅱ-V2ray
+      - 印度中继Ⅰ-V2ray
+      - 德国中继Ⅰ-V2ray
+      - 美国中继Ⅲ-V2ray
+      - 英国中继Ⅰ-V2ray
+      - 美国中继Ⅱ-V2ray
+      - 美国中继Ⅳ-V2ray
+      - 香港中继Ⅰ-V2ray
+      - 加拿大中继Ⅰ-V2ray
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港
-      - 新加坡
-      - 香港 2
+      - 香港中继Ⅴ-V2ray
+      - 香港中继Ⅱ-Trojan
+      - 日本中继Ⅰ-V2ray
+      - 新加坡中继Ⅰ-V2ray
+      - 新加坡中继Ⅱ-V2ray
+      - 距离下次重置剩余：2 天
+      - 澳大利亚中继Ⅰ-V2ray
+      - 日本中继Ⅰ-Trojan
+      - 美国中继Ⅳ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
+      - 香港中继Ⅳ-V2ray
+      - 美国中继Ⅴ-V2ray
+      - 美国中继Ⅰ-V2ray
+      - 日本中继Ⅱ-V2ray
+      - 印度中继Ⅰ-V2ray
+      - 德国中继Ⅰ-V2ray
+      - 美国中继Ⅲ-V2ray
+      - 英国中继Ⅰ-V2ray
+      - 美国中继Ⅱ-V2ray
+      - 美国中继Ⅳ-V2ray
+      - 香港中继Ⅰ-V2ray
+      - 加拿大中继Ⅰ-V2ray
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港
-      - 新加坡
-      - 香港 2
+      - 香港中继Ⅴ-V2ray
+      - 香港中继Ⅱ-Trojan
+      - 日本中继Ⅰ-V2ray
+      - 新加坡中继Ⅰ-V2ray
+      - 新加坡中继Ⅱ-V2ray
+      - 距离下次重置剩余：2 天
+      - 澳大利亚中继Ⅰ-V2ray
+      - 日本中继Ⅰ-Trojan
+      - 美国中继Ⅳ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
+      - 香港中继Ⅳ-V2ray
+      - 美国中继Ⅴ-V2ray
+      - 美国中继Ⅰ-V2ray
+      - 日本中继Ⅱ-V2ray
+      - 印度中继Ⅰ-V2ray
+      - 德国中继Ⅰ-V2ray
+      - 美国中继Ⅲ-V2ray
+      - 英国中继Ⅰ-V2ray
+      - 美国中继Ⅱ-V2ray
+      - 美国中继Ⅳ-V2ray
+      - 香港中继Ⅰ-V2ray
+      - 加拿大中继Ⅰ-V2ray
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,41 +128,119 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港
-      - 新加坡
-      - 香港 2
+      - 香港中继Ⅴ-V2ray
+      - 香港中继Ⅱ-Trojan
+      - 日本中继Ⅰ-V2ray
+      - 新加坡中继Ⅰ-V2ray
+      - 新加坡中继Ⅱ-V2ray
+      - 距离下次重置剩余：2 天
+      - 澳大利亚中继Ⅰ-V2ray
+      - 日本中继Ⅰ-Trojan
+      - 美国中继Ⅳ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
+      - 香港中继Ⅳ-V2ray
+      - 美国中继Ⅴ-V2ray
+      - 美国中继Ⅰ-V2ray
+      - 日本中继Ⅱ-V2ray
+      - 印度中继Ⅰ-V2ray
+      - 德国中继Ⅰ-V2ray
+      - 美国中继Ⅲ-V2ray
+      - 英国中继Ⅰ-V2ray
+      - 美国中继Ⅱ-V2ray
+      - 美国中继Ⅳ-V2ray
+      - 香港中继Ⅰ-V2ray
+      - 加拿大中继Ⅰ-V2ray
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港
-      - 香港 2
+      - 香港中继Ⅴ-V2ray
+      - 香港中继Ⅱ-Trojan
+      - 香港中继Ⅳ-V2ray
+      - 香港中继Ⅰ-V2ray
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港
-      - 新加坡
-      - 香港 2
+      - 香港中继Ⅴ-V2ray
+      - 香港中继Ⅱ-Trojan
+      - 日本中继Ⅰ-V2ray
+      - 新加坡中继Ⅰ-V2ray
+      - 新加坡中继Ⅱ-V2ray
+      - 距离下次重置剩余：2 天
+      - 澳大利亚中继Ⅰ-V2ray
+      - 日本中继Ⅰ-Trojan
+      - 美国中继Ⅳ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
+      - 香港中继Ⅳ-V2ray
+      - 美国中继Ⅴ-V2ray
+      - 美国中继Ⅰ-V2ray
+      - 日本中继Ⅱ-V2ray
+      - 印度中继Ⅰ-V2ray
+      - 德国中继Ⅰ-V2ray
+      - 美国中继Ⅲ-V2ray
+      - 英国中继Ⅰ-V2ray
+      - 美国中继Ⅱ-V2ray
+      - 美国中继Ⅳ-V2ray
+      - 香港中继Ⅰ-V2ray
+      - 加拿大中继Ⅰ-V2ray
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港
-      - 新加坡
-      - 香港 2
+      - 香港中继Ⅴ-V2ray
+      - 香港中继Ⅱ-Trojan
+      - 日本中继Ⅰ-V2ray
+      - 新加坡中继Ⅰ-V2ray
+      - 新加坡中继Ⅱ-V2ray
+      - 距离下次重置剩余：2 天
+      - 澳大利亚中继Ⅰ-V2ray
+      - 日本中继Ⅰ-Trojan
+      - 美国中继Ⅳ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
+      - 香港中继Ⅳ-V2ray
+      - 美国中继Ⅴ-V2ray
+      - 美国中继Ⅰ-V2ray
+      - 日本中继Ⅱ-V2ray
+      - 印度中继Ⅰ-V2ray
+      - 德国中继Ⅰ-V2ray
+      - 美国中继Ⅲ-V2ray
+      - 英国中继Ⅰ-V2ray
+      - 美国中继Ⅱ-V2ray
+      - 美国中继Ⅳ-V2ray
+      - 香港中继Ⅰ-V2ray
+      - 加拿大中继Ⅰ-V2ray
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港
-      - 新加坡
-      - 香港 2
+      - 香港中继Ⅴ-V2ray
+      - 香港中继Ⅱ-Trojan
+      - 日本中继Ⅰ-V2ray
+      - 新加坡中继Ⅰ-V2ray
+      - 新加坡中继Ⅱ-V2ray
+      - 距离下次重置剩余：2 天
+      - 澳大利亚中继Ⅰ-V2ray
+      - 日本中继Ⅰ-Trojan
+      - 美国中继Ⅳ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
+      - 香港中继Ⅳ-V2ray
+      - 美国中继Ⅴ-V2ray
+      - 美国中继Ⅰ-V2ray
+      - 日本中继Ⅱ-V2ray
+      - 印度中继Ⅰ-V2ray
+      - 德国中继Ⅰ-V2ray
+      - 美国中继Ⅲ-V2ray
+      - 英国中继Ⅰ-V2ray
+      - 美国中继Ⅱ-V2ray
+      - 美国中继Ⅳ-V2ray
+      - 香港中继Ⅰ-V2ray
+      - 加拿大中继Ⅰ-V2ray
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -102,9 +256,28 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港
-      - 新加坡
-      - 香港 2
+      - 香港中继Ⅴ-V2ray
+      - 香港中继Ⅱ-Trojan
+      - 日本中继Ⅰ-V2ray
+      - 新加坡中继Ⅰ-V2ray
+      - 新加坡中继Ⅱ-V2ray
+      - 距离下次重置剩余：2 天
+      - 澳大利亚中继Ⅰ-V2ray
+      - 日本中继Ⅰ-Trojan
+      - 美国中继Ⅳ-Trojan
+      - 澳大利亚中继Ⅰ-Trojan
+      - 香港中继Ⅳ-V2ray
+      - 美国中继Ⅴ-V2ray
+      - 美国中继Ⅰ-V2ray
+      - 日本中继Ⅱ-V2ray
+      - 印度中继Ⅰ-V2ray
+      - 德国中继Ⅰ-V2ray
+      - 美国中继Ⅲ-V2ray
+      - 英国中继Ⅰ-V2ray
+      - 美国中继Ⅱ-V2ray
+      - 美国中继Ⅳ-V2ray
+      - 香港中继Ⅰ-V2ray
+      - 加拿大中继Ⅰ-V2ray
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
