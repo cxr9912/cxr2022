@@ -5,59 +5,355 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 台湾02客服网址xund8.com, server: tw.xund8.xyz, port: 42006, type: ssr, cipher: aes-256-cfb, password: dD32Hz, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 5940:GAeGt1, obfs-param: f30aa5940.microsoft.com, udp: true}
-  - {name: 台湾01客服网址xund8.com, server: tw.xund8.xyz, port: 42007, type: ssr, cipher: aes-256-cfb, password: dD32Hz, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 5940:GAeGt1, obfs-param: f30aa5940.microsoft.com, udp: true}
-  - {name: 台湾04客服网址xund8.com, server: tw.xund8.xyz, port: 42001, type: ssr, cipher: aes-256-cfb, password: dD32Hz, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 5940:GAeGt1, obfs-param: f30aa5940.microsoft.com, udp: true}
-  - {name: 日本03客服网址xund8.com, server: jp.xund8.xyz, port: 42009, type: ssr, cipher: aes-256-cfb, password: dD32Hz, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 5940:GAeGt1, obfs-param: f30aa5940.microsoft.com, udp: true}
-  - {name: 美国02客服网址xund8.com, server: us.xund8.xyz, port: 42015, type: ssr, cipher: aes-256-cfb, password: dD32Hz, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 5940:GAeGt1, obfs-param: f30aa5940.microsoft.com, udp: true}
-  - {name: 日本01客服网址xund8.com, server: jp.xund8.xyz, port: 42010, type: ssr, cipher: aes-256-cfb, password: dD32Hz, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 5940:GAeGt1, obfs-param: f30aa5940.microsoft.com, udp: true}
-  - {name: 香港02客服网址xund8.com, server: hk.xund8.xyz, port: 42012, type: ssr, cipher: aes-256-cfb, password: dD32Hz, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 5940:GAeGt1, obfs-param: f30aa5940.microsoft.com, udp: true}
-  - {name: 美国01客服网址xund8.com, server: us.xund8.xyz, port: 42016, type: ssr, cipher: aes-256-cfb, password: dD32Hz, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 5940:GAeGt1, obfs-param: f30aa5940.microsoft.com, udp: true}
-  - {name: 新加坡01客服网址xund8.com, server: sg.xund8.xyz, port: 42004, type: ssr, cipher: aes-256-cfb, password: dD32Hz, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 5940:GAeGt1, obfs-param: f30aa5940.microsoft.com, udp: true}
+  - {name: 标准-香港HGC03-广州中转|V2ray-解锁, server: x.v3.2.kiki789.com, port: 23142, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-hgc08.kiki789.com}, udp: true}
+  - {name: 标准-香港HGC02-广州中转|V2ray-解锁, server: x.v3.2.kiki789.com, port: 23139, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-hgc05.kiki789.com}, udp: true}
+  - {name: 标准-香港HGC02-广州中转-解锁, server: x.v3.2.kiki789.com, port: 10608, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-台湾hinet02-广州中转|V2ray, server: g.j.v4.1.kiki789.com, port: 23157, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-newhinet02.kiki789.com}, udp: true}
+  - {name: 标准-香港HGC03-广州中转-解锁, server: x.v3.2.kiki789.com, port: 10614, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-台湾hinet02-广州中转|V2ray, server: g.j.v4.1.kiki789.com, port: 23156, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: xixi-newhinet01.kiki789.com}, udp: true}
+  - {name: 标准-新加坡GIA02-广州中转|V2ray-解锁, server: ovhsg.v4.kiki789.com, port: 23154, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-giasg02.kiki789.com}, udp: true}
+  - {name: 入门-新加坡GIA01-上海中转-解锁, server: ovhsg.v4.kiki789.com, port: 10990, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 旗舰-香港HGC02-IPLC中转-解锁, server: 4e36nodev1.jcdn1.kiki789.com, port: 10610, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-新加坡解锁01-广东中转, server: ovhsg.v4.kiki789.com, port: 10291, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-新加坡linode02-广东中转, server: ovhsg.v4.kiki789.com, port: 19237, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-美国GIA01-广东中转|V2ray-解锁, server: jp.j.v4.2.kiki789.com, port: 23144, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-us01.kiki789.com}, udp: true}
+  - {name: 标准-新加坡OVH01-广州中转|V2ray, server: ovhsg.v4.kiki789.com, port: 10444, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-sgovh02.kiki789.com}, udp: true}
+  - {name: 标准-新加坡解锁01-广东中转|v2ray, server: ovhsg.v4.kiki789.com, port: 23014, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: azure-new03.kiki789.com}, udp: true}
+  - {name: 入门-新加坡解锁01-广东|v2ray, server: ovhsg.v4.kiki789.com, port: 23912, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: azure-new01.kiki789.com}, udp: true}
+  - {name: 标准-台湾hinet02-广州中转, server: g.j.v4.1.kiki789.com, port: 10413, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-新加坡GIA01-上海中转|V2ray-解锁, server: ovhsg.v4.kiki789.com, port: 23153, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: xixi-giasg01.kiki789.com}, udp: true}
+  - {name: 入门-台湾hinet01-广州中转|V2ray, server: g.j.v4.1.kiki789.com, port: 23038, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: xixi-hinet01.kiki789.com}, udp: true}
+  - {name: 入门-台湾hinet02-广州中转, server: g.j.v4.1.kiki789.com, port: 10411, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-新加坡GIA02-广州中转-解锁, server: ovhsg.v4.kiki789.com, port: 10992, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-新加坡linode02-广东中转|v2ray, server: ovhsg.v4.kiki789.com, port: 23022, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: eqiu-sg04.kiki789.com}, udp: true}
+  - {name: 标准-新加坡解锁01-广东中转, server: ovhsg.v4.kiki789.com, port: 18255, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 旗舰-新加坡linode03-IPLC中转-解锁, server: 4e36nodev1.jcdn1.kiki789.com, port: 10429, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-台湾hinet01-广州中转|V2ray, server: g.j.v4.1.kiki789.com, port: 23939, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-hinet02.kiki789.com}, udp: true}
+  - {name: 旗舰-香港BGP01-IPLC中转, server: 4e36nodev1.jcdn1.kiki789.com, port: 10552, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 旗舰-新加坡linode02-IPLC中转, server: 4e36nodev1.jcdn1.kiki789.com, port: 10241, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-新加坡linode04-广州中转|V2ray-解锁, server: ovhsg.v4.kiki789.com, port: 23044, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-linode04.kiki789.com}, udp: true}
+  - {name: 旗舰-香港HGC01-IPLC中转-解锁, server: 4e36nodev1.jcdn1.kiki789.com, port: 10604, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 旗舰-新加坡GIA01-真IPLC中转-解锁, server: 4e36nodev1.jcdn1.kiki789.com, port: 10904, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-新加坡OVH01-广州中转, server: ovhsg.v4.kiki789.com, port: 10441, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-新加坡linode04-广州中转-解锁, server: ovhsg.v4.kiki789.com, port: 10423, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 旗舰-新加坡解锁02-真IPLC中转, server: 4e36nodev1.jcdn1.kiki789.com, port: 10261, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 旗舰-新加坡linode04-IPLC中转-解锁, server: 4e36nodev1.jcdn1.kiki789.com, port: 10431, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-香港HGC01-江门中转|V2ray-解锁, server: x.v3.1.kiki789.com, port: 23036, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-hgc02.kiki789.com}, udp: true}
+  - {name: 标准-新加坡解锁02-湖南中转, server: ovhsg.v4.kiki789.com, port: 10257, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 旗舰-台湾hinet02-IPLC中转, server: 4e36nodev1.jcdn1.kiki789.com, port: 10417, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-新加坡linode01-湖南中转, server: ovhsg.v4.kiki789.com, port: 10235, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 旗舰-新加坡解锁01-上海高级中转, server: 4e36nodev1.jcdn1.kiki789.com, port: 10259, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-新加坡解锁02-广东中转, server: ovhsg.v4.kiki789.com, port: 10253, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-新加坡linode01-湖南中转, server: ovhsg.v4.kiki789.com, port: 18231, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-新加坡linode02-湖南中转, server: ovhsg.v4.kiki789.com, port: 19233, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-日本SAKURA01-江门中转-解锁, server: jp.x.v4.2.kiki789.com, port: 10502, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-新加坡linode03-湖南中转|V2ray-解锁, server: ovhsg.v4.kiki789.com, port: 29041, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: xixi-linode01.kiki789.com}, udp: true}
+  - {name: 旗舰-台湾hinet01-IPLC中转, server: 4e36nodev1.jcdn1.kiki789.com, port: 10407, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-新加坡linode04-广州中转|V2ray-解锁, server: ovhsg.v4.kiki789.com, port: 28042, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: xixi-linode02.kiki789.com}, udp: true}
+  - {name: 标准-新加坡linode03-广州中转-解锁, server: ovhsg.v4.kiki789.com, port: 10425, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-新加坡解锁02-广东中转|v2ray, server: ovhsg.v4.kiki789.com, port: 23013, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: azure-new02.kiki789.com}, udp: true}
+  - {name: 标准-日本SAKURA01-江门中转|V2ray-解锁, server: jp.x.v4.2.kiki789.com, port: 23049, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-softbank03.kiki789.com}, udp: true}
+  - {name: 入门-日本SAKURA01-江门中转|V2ray-解锁, server: jp.x.v4.2.kiki789.com, port: 23048, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: xixi-softbank02.kiki789.com}, udp: true}
+  - {name: 标准-日本SAKURA01-江门中转-解锁, server: jp.x.v4.2.kiki789.com, port: 19504, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-香港联通02, server: x.v4.2.kiki789.com, port: 10600, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-香港联通02, server: x.v4.1.kiki789.com, port: 10612, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-香港联通01|V2ray, server: x.v4.1.kiki789.com, port: 23032, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: xixi-xglt.kiki789.com}, udp: true}
+  - {name: 旗舰-日本SAKURA01-IPLC中转-解锁, server: jp.3.x.v4.2.kiki789.com, port: 10500, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-香港联通01, server: x.v4.2.kiki789.com, port: 10606, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-香港联通01|V2ray, server: x.v4.2.kiki789.com, port: 23138, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: xixi-xglt.kiki789.com}, udp: true}
+  - {name: 入门-新加坡linode02-湖南中转|v2ray, server: ovhsg.v4.kiki789.com, port: 29020, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: eqiu-sg02.kiki789.com}, udp: true}
+  - {name: 标准-新加坡OVH01-广州中转, server: ovhsg.v4.kiki789.com, port: 10443, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 旗舰-香港联通01|V2ray, server: x.v4.2.kiki789.com, port: 23150, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: xixi-xglt.kiki789.com}, udp: true}
+  - {name: 标准-新加坡linode04-广州中转-解锁, server: ovhsg.v4.kiki789.com, port: 10427, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 旗舰-香港联通01, server: x.v4.2.kiki789.com, port: 10800, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-香港联通02|V2ray, server: x.v4.2.kiki789.com, port: 23035, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: xixi-xglt.kiki789.com}, udp: true}
+  - {name: 入门-新加坡linode03-广州中转-解锁, server: ovhsg.v4.kiki789.com, port: 10421, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-香港联通02|V2ray, server: x.v4.1.kiki789.com, port: 23141, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: xixi-xglt.kiki789.com}, udp: true}
+  - {name: 入门-香港联通01, server: x.v4.1.kiki789.com, port: 10550, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-美国GIA02-上海中转-解锁, server: jp.j.v4.2.kiki789.com, port: 10102, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-台湾hinet01-广州中转, server: g.j.v4.1.kiki789.com, port: 10401, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-新加坡OVH01-广州中转|V2ray, server: ovhsg.v4.kiki789.com, port: 10442, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: xixi-sgovh01.kiki789.com}, udp: true}
+  - {name: 标准-德国GIA02-广州中转|V2ray-解锁, server: x.v3.2.kiki789.com, port: 23151, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-de02.kiki789.com}, udp: true}
+  - {name: 标准-新加坡解锁02-湖南中转|v2ray, server: ovhsg.v4.kiki789.com, port: 29015, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: azure-new04.kiki789.com}, udp: true}
+  - {name: 标准-德国GIA02-广州中转-解锁, server: x.v3.2.kiki789.com, port: 10802, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-香港HGC01-江门中转-解锁, server: x.v3.1.kiki789.com, port: 10602, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-新加坡linode03-广州中转|V2ray-解锁, server: ovhsg.v4.kiki789.com, port: 23043, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-linode03.kiki789.com}, udp: true}
+  - {name: 标准-美国GIA02-上海中转|V2ray-解锁, server: jp.j.v4.2.kiki789.com, port: 23145, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-us02.kiki789.com}, udp: true}
+  - {name: 旗舰-新加坡linode01-湖南中转, server: 4e36nodev1.jcdn1.kiki789.com, port: 10239, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 标准-美国GIA01-广东中转-解锁, server: jp.j.v4.2.kiki789.com, port: 10100, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 旗舰-俄罗斯01-IPLC中转|V2ray, server: ovhsg.v4.kiki789.com, port: 23149, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /87751ff2-222a-477b-8bec-60a13527f24c.live238.m3u8, ws-headers: {Host: xixi-ru03.kiki789.com}, udp: true}
+  - {name: 标准-俄罗斯01-广州中转, server: ovhsg.v4.kiki789.com, port: 10702, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-俄罗斯01-广州中转|V2ray, server: ovhsg.v4.kiki789.com, port: 23147, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /81bddc1d8-8404-44b1-9c76-25029f9bf429.live238.m3u8, ws-headers: {Host: xixi-ru01.kiki789.com}, udp: true}
+  - {name: 标准-俄罗斯01-广州中转|V2ray, server: ovhsg.v4.kiki789.com, port: 23148, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-ru02.kiki789.com}, udp: true}
+  - {name: 标准-香港BGP01-广州中转|V2ray, server: x.v3.1.kiki789.com, port: 23034, type: vmess, uuid: 07da79a2-75ff-349c-8ded-0af6a9735ab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /736e65e6-b0ee-4f84-8285-9e3df85fff5c.live238.m3u8, ws-headers: {Host: xixi-azhk23.kiki789.com}, udp: true}
+  - {name: 旗舰-俄罗斯01-IPLC中转, server: ovhsg.v4.kiki789.com, port: 10704, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
+  - {name: 入门-俄罗斯01-广州中转, server: ovhsg.v4.kiki789.com, port: 10700, type: ssr, cipher: rc4-md5, password: wz5jrlp7j2l, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 498049:mrd8z2, obfs-param: 2215d498049.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾02客服网址xund8.com
-      - 台湾01客服网址xund8.com
-      - 台湾04客服网址xund8.com
-      - 日本03客服网址xund8.com
-      - 美国02客服网址xund8.com
-      - 日本01客服网址xund8.com
-      - 香港02客服网址xund8.com
-      - 美国01客服网址xund8.com
-      - 新加坡01客服网址xund8.com
+      - 标准-香港HGC03-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转-解锁
+      - 标准-台湾hinet02-广州中转|V2ray
+      - 标准-香港HGC03-广州中转-解锁
+      - 入门-台湾hinet02-广州中转|V2ray
+      - 标准-新加坡GIA02-广州中转|V2ray-解锁
+      - 入门-新加坡GIA01-上海中转-解锁
+      - 旗舰-香港HGC02-IPLC中转-解锁
+      - 入门-新加坡解锁01-广东中转
+      - 标准-新加坡linode02-广东中转
+      - 标准-美国GIA01-广东中转|V2ray-解锁
+      - 标准-新加坡OVH01-广州中转|V2ray
+      - 标准-新加坡解锁01-广东中转|v2ray
+      - 入门-新加坡解锁01-广东|v2ray
+      - 标准-台湾hinet02-广州中转
+      - 入门-新加坡GIA01-上海中转|V2ray-解锁
+      - 入门-台湾hinet01-广州中转|V2ray
+      - 入门-台湾hinet02-广州中转
+      - 标准-新加坡GIA02-广州中转-解锁
+      - 标准-新加坡linode02-广东中转|v2ray
+      - 标准-新加坡解锁01-广东中转
+      - 旗舰-新加坡linode03-IPLC中转-解锁
+      - 标准-台湾hinet01-广州中转|V2ray
+      - 旗舰-香港BGP01-IPLC中转
+      - 旗舰-新加坡linode02-IPLC中转
+      - 标准-新加坡linode04-广州中转|V2ray-解锁
+      - 旗舰-香港HGC01-IPLC中转-解锁
+      - 旗舰-新加坡GIA01-真IPLC中转-解锁
+      - 入门-新加坡OVH01-广州中转
+      - 入门-新加坡linode04-广州中转-解锁
+      - 旗舰-新加坡解锁02-真IPLC中转
+      - 旗舰-新加坡linode04-IPLC中转-解锁
+      - 标准-香港HGC01-江门中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转
+      - 旗舰-台湾hinet02-IPLC中转
+      - 标准-新加坡linode01-湖南中转
+      - 旗舰-新加坡解锁01-上海高级中转
+      - 入门-新加坡解锁02-广东中转
+      - 入门-新加坡linode01-湖南中转
+      - 入门-新加坡linode02-湖南中转
+      - 入门-日本SAKURA01-江门中转-解锁
+      - 入门-新加坡linode03-湖南中转|V2ray-解锁
+      - 旗舰-台湾hinet01-IPLC中转
+      - 入门-新加坡linode04-广州中转|V2ray-解锁
+      - 标准-新加坡linode03-广州中转-解锁
+      - 入门-新加坡解锁02-广东中转|v2ray
+      - 标准-日本SAKURA01-江门中转|V2ray-解锁
+      - 入门-日本SAKURA01-江门中转|V2ray-解锁
+      - 标准-日本SAKURA01-江门中转-解锁
+      - 入门-香港联通02
+      - 标准-香港联通02
+      - 入门-香港联通01|V2ray
+      - 旗舰-日本SAKURA01-IPLC中转-解锁
+      - 标准-香港联通01
+      - 标准-香港联通01|V2ray
+      - 入门-新加坡linode02-湖南中转|v2ray
+      - 标准-新加坡OVH01-广州中转
+      - 旗舰-香港联通01|V2ray
+      - 标准-新加坡linode04-广州中转-解锁
+      - 旗舰-香港联通01
+      - 入门-香港联通02|V2ray
+      - 入门-新加坡linode03-广州中转-解锁
+      - 标准-香港联通02|V2ray
+      - 入门-香港联通01
+      - 标准-美国GIA02-上海中转-解锁
+      - 入门-台湾hinet01-广州中转
+      - 入门-新加坡OVH01-广州中转|V2ray
+      - 标准-德国GIA02-广州中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转|v2ray
+      - 标准-德国GIA02-广州中转-解锁
+      - 标准-香港HGC01-江门中转-解锁
+      - 标准-新加坡linode03-广州中转|V2ray-解锁
+      - 标准-美国GIA02-上海中转|V2ray-解锁
+      - 旗舰-新加坡linode01-湖南中转
+      - 标准-美国GIA01-广东中转-解锁
+      - 旗舰-俄罗斯01-IPLC中转|V2ray
+      - 标准-俄罗斯01-广州中转
+      - 入门-俄罗斯01-广州中转|V2ray
+      - 标准-俄罗斯01-广州中转|V2ray
+      - 标准-香港BGP01-广州中转|V2ray
+      - 旗舰-俄罗斯01-IPLC中转
+      - 入门-俄罗斯01-广州中转
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 台湾02客服网址xund8.com
-      - 台湾01客服网址xund8.com
-      - 台湾04客服网址xund8.com
-      - 日本03客服网址xund8.com
-      - 美国02客服网址xund8.com
-      - 日本01客服网址xund8.com
-      - 香港02客服网址xund8.com
-      - 美国01客服网址xund8.com
-      - 新加坡01客服网址xund8.com
+      - 标准-香港HGC03-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转-解锁
+      - 标准-台湾hinet02-广州中转|V2ray
+      - 标准-香港HGC03-广州中转-解锁
+      - 入门-台湾hinet02-广州中转|V2ray
+      - 标准-新加坡GIA02-广州中转|V2ray-解锁
+      - 入门-新加坡GIA01-上海中转-解锁
+      - 旗舰-香港HGC02-IPLC中转-解锁
+      - 入门-新加坡解锁01-广东中转
+      - 标准-新加坡linode02-广东中转
+      - 标准-美国GIA01-广东中转|V2ray-解锁
+      - 标准-新加坡OVH01-广州中转|V2ray
+      - 标准-新加坡解锁01-广东中转|v2ray
+      - 入门-新加坡解锁01-广东|v2ray
+      - 标准-台湾hinet02-广州中转
+      - 入门-新加坡GIA01-上海中转|V2ray-解锁
+      - 入门-台湾hinet01-广州中转|V2ray
+      - 入门-台湾hinet02-广州中转
+      - 标准-新加坡GIA02-广州中转-解锁
+      - 标准-新加坡linode02-广东中转|v2ray
+      - 标准-新加坡解锁01-广东中转
+      - 旗舰-新加坡linode03-IPLC中转-解锁
+      - 标准-台湾hinet01-广州中转|V2ray
+      - 旗舰-香港BGP01-IPLC中转
+      - 旗舰-新加坡linode02-IPLC中转
+      - 标准-新加坡linode04-广州中转|V2ray-解锁
+      - 旗舰-香港HGC01-IPLC中转-解锁
+      - 旗舰-新加坡GIA01-真IPLC中转-解锁
+      - 入门-新加坡OVH01-广州中转
+      - 入门-新加坡linode04-广州中转-解锁
+      - 旗舰-新加坡解锁02-真IPLC中转
+      - 旗舰-新加坡linode04-IPLC中转-解锁
+      - 标准-香港HGC01-江门中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转
+      - 旗舰-台湾hinet02-IPLC中转
+      - 标准-新加坡linode01-湖南中转
+      - 旗舰-新加坡解锁01-上海高级中转
+      - 入门-新加坡解锁02-广东中转
+      - 入门-新加坡linode01-湖南中转
+      - 入门-新加坡linode02-湖南中转
+      - 入门-日本SAKURA01-江门中转-解锁
+      - 入门-新加坡linode03-湖南中转|V2ray-解锁
+      - 旗舰-台湾hinet01-IPLC中转
+      - 入门-新加坡linode04-广州中转|V2ray-解锁
+      - 标准-新加坡linode03-广州中转-解锁
+      - 入门-新加坡解锁02-广东中转|v2ray
+      - 标准-日本SAKURA01-江门中转|V2ray-解锁
+      - 入门-日本SAKURA01-江门中转|V2ray-解锁
+      - 标准-日本SAKURA01-江门中转-解锁
+      - 入门-香港联通02
+      - 标准-香港联通02
+      - 入门-香港联通01|V2ray
+      - 旗舰-日本SAKURA01-IPLC中转-解锁
+      - 标准-香港联通01
+      - 标准-香港联通01|V2ray
+      - 入门-新加坡linode02-湖南中转|v2ray
+      - 标准-新加坡OVH01-广州中转
+      - 旗舰-香港联通01|V2ray
+      - 标准-新加坡linode04-广州中转-解锁
+      - 旗舰-香港联通01
+      - 入门-香港联通02|V2ray
+      - 入门-新加坡linode03-广州中转-解锁
+      - 标准-香港联通02|V2ray
+      - 入门-香港联通01
+      - 标准-美国GIA02-上海中转-解锁
+      - 入门-台湾hinet01-广州中转
+      - 入门-新加坡OVH01-广州中转|V2ray
+      - 标准-德国GIA02-广州中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转|v2ray
+      - 标准-德国GIA02-广州中转-解锁
+      - 标准-香港HGC01-江门中转-解锁
+      - 标准-新加坡linode03-广州中转|V2ray-解锁
+      - 标准-美国GIA02-上海中转|V2ray-解锁
+      - 旗舰-新加坡linode01-湖南中转
+      - 标准-美国GIA01-广东中转-解锁
+      - 旗舰-俄罗斯01-IPLC中转|V2ray
+      - 标准-俄罗斯01-广州中转
+      - 入门-俄罗斯01-广州中转|V2ray
+      - 标准-俄罗斯01-广州中转|V2ray
+      - 标准-香港BGP01-广州中转|V2ray
+      - 旗舰-俄罗斯01-IPLC中转
+      - 入门-俄罗斯01-广州中转
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾02客服网址xund8.com
-      - 台湾01客服网址xund8.com
-      - 台湾04客服网址xund8.com
-      - 日本03客服网址xund8.com
-      - 美国02客服网址xund8.com
-      - 日本01客服网址xund8.com
-      - 香港02客服网址xund8.com
-      - 美国01客服网址xund8.com
-      - 新加坡01客服网址xund8.com
+      - 标准-香港HGC03-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转-解锁
+      - 标准-台湾hinet02-广州中转|V2ray
+      - 标准-香港HGC03-广州中转-解锁
+      - 入门-台湾hinet02-广州中转|V2ray
+      - 标准-新加坡GIA02-广州中转|V2ray-解锁
+      - 入门-新加坡GIA01-上海中转-解锁
+      - 旗舰-香港HGC02-IPLC中转-解锁
+      - 入门-新加坡解锁01-广东中转
+      - 标准-新加坡linode02-广东中转
+      - 标准-美国GIA01-广东中转|V2ray-解锁
+      - 标准-新加坡OVH01-广州中转|V2ray
+      - 标准-新加坡解锁01-广东中转|v2ray
+      - 入门-新加坡解锁01-广东|v2ray
+      - 标准-台湾hinet02-广州中转
+      - 入门-新加坡GIA01-上海中转|V2ray-解锁
+      - 入门-台湾hinet01-广州中转|V2ray
+      - 入门-台湾hinet02-广州中转
+      - 标准-新加坡GIA02-广州中转-解锁
+      - 标准-新加坡linode02-广东中转|v2ray
+      - 标准-新加坡解锁01-广东中转
+      - 旗舰-新加坡linode03-IPLC中转-解锁
+      - 标准-台湾hinet01-广州中转|V2ray
+      - 旗舰-香港BGP01-IPLC中转
+      - 旗舰-新加坡linode02-IPLC中转
+      - 标准-新加坡linode04-广州中转|V2ray-解锁
+      - 旗舰-香港HGC01-IPLC中转-解锁
+      - 旗舰-新加坡GIA01-真IPLC中转-解锁
+      - 入门-新加坡OVH01-广州中转
+      - 入门-新加坡linode04-广州中转-解锁
+      - 旗舰-新加坡解锁02-真IPLC中转
+      - 旗舰-新加坡linode04-IPLC中转-解锁
+      - 标准-香港HGC01-江门中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转
+      - 旗舰-台湾hinet02-IPLC中转
+      - 标准-新加坡linode01-湖南中转
+      - 旗舰-新加坡解锁01-上海高级中转
+      - 入门-新加坡解锁02-广东中转
+      - 入门-新加坡linode01-湖南中转
+      - 入门-新加坡linode02-湖南中转
+      - 入门-日本SAKURA01-江门中转-解锁
+      - 入门-新加坡linode03-湖南中转|V2ray-解锁
+      - 旗舰-台湾hinet01-IPLC中转
+      - 入门-新加坡linode04-广州中转|V2ray-解锁
+      - 标准-新加坡linode03-广州中转-解锁
+      - 入门-新加坡解锁02-广东中转|v2ray
+      - 标准-日本SAKURA01-江门中转|V2ray-解锁
+      - 入门-日本SAKURA01-江门中转|V2ray-解锁
+      - 标准-日本SAKURA01-江门中转-解锁
+      - 入门-香港联通02
+      - 标准-香港联通02
+      - 入门-香港联通01|V2ray
+      - 旗舰-日本SAKURA01-IPLC中转-解锁
+      - 标准-香港联通01
+      - 标准-香港联通01|V2ray
+      - 入门-新加坡linode02-湖南中转|v2ray
+      - 标准-新加坡OVH01-广州中转
+      - 旗舰-香港联通01|V2ray
+      - 标准-新加坡linode04-广州中转-解锁
+      - 旗舰-香港联通01
+      - 入门-香港联通02|V2ray
+      - 入门-新加坡linode03-广州中转-解锁
+      - 标准-香港联通02|V2ray
+      - 入门-香港联通01
+      - 标准-美国GIA02-上海中转-解锁
+      - 入门-台湾hinet01-广州中转
+      - 入门-新加坡OVH01-广州中转|V2ray
+      - 标准-德国GIA02-广州中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转|v2ray
+      - 标准-德国GIA02-广州中转-解锁
+      - 标准-香港HGC01-江门中转-解锁
+      - 标准-新加坡linode03-广州中转|V2ray-解锁
+      - 标准-美国GIA02-上海中转|V2ray-解锁
+      - 旗舰-新加坡linode01-湖南中转
+      - 标准-美国GIA01-广东中转-解锁
+      - 旗舰-俄罗斯01-IPLC中转|V2ray
+      - 标准-俄罗斯01-广州中转
+      - 入门-俄罗斯01-广州中转|V2ray
+      - 标准-俄罗斯01-广州中转|V2ray
+      - 标准-香港BGP01-广州中转|V2ray
+      - 旗舰-俄罗斯01-IPLC中转
+      - 入门-俄罗斯01-广州中转
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,67 +372,388 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾02客服网址xund8.com
-      - 台湾01客服网址xund8.com
-      - 台湾04客服网址xund8.com
-      - 日本03客服网址xund8.com
-      - 美国02客服网址xund8.com
-      - 日本01客服网址xund8.com
-      - 香港02客服网址xund8.com
-      - 美国01客服网址xund8.com
-      - 新加坡01客服网址xund8.com
+      - 标准-香港HGC03-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转-解锁
+      - 标准-台湾hinet02-广州中转|V2ray
+      - 标准-香港HGC03-广州中转-解锁
+      - 入门-台湾hinet02-广州中转|V2ray
+      - 标准-新加坡GIA02-广州中转|V2ray-解锁
+      - 入门-新加坡GIA01-上海中转-解锁
+      - 旗舰-香港HGC02-IPLC中转-解锁
+      - 入门-新加坡解锁01-广东中转
+      - 标准-新加坡linode02-广东中转
+      - 标准-美国GIA01-广东中转|V2ray-解锁
+      - 标准-新加坡OVH01-广州中转|V2ray
+      - 标准-新加坡解锁01-广东中转|v2ray
+      - 入门-新加坡解锁01-广东|v2ray
+      - 标准-台湾hinet02-广州中转
+      - 入门-新加坡GIA01-上海中转|V2ray-解锁
+      - 入门-台湾hinet01-广州中转|V2ray
+      - 入门-台湾hinet02-广州中转
+      - 标准-新加坡GIA02-广州中转-解锁
+      - 标准-新加坡linode02-广东中转|v2ray
+      - 标准-新加坡解锁01-广东中转
+      - 旗舰-新加坡linode03-IPLC中转-解锁
+      - 标准-台湾hinet01-广州中转|V2ray
+      - 旗舰-香港BGP01-IPLC中转
+      - 旗舰-新加坡linode02-IPLC中转
+      - 标准-新加坡linode04-广州中转|V2ray-解锁
+      - 旗舰-香港HGC01-IPLC中转-解锁
+      - 旗舰-新加坡GIA01-真IPLC中转-解锁
+      - 入门-新加坡OVH01-广州中转
+      - 入门-新加坡linode04-广州中转-解锁
+      - 旗舰-新加坡解锁02-真IPLC中转
+      - 旗舰-新加坡linode04-IPLC中转-解锁
+      - 标准-香港HGC01-江门中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转
+      - 旗舰-台湾hinet02-IPLC中转
+      - 标准-新加坡linode01-湖南中转
+      - 旗舰-新加坡解锁01-上海高级中转
+      - 入门-新加坡解锁02-广东中转
+      - 入门-新加坡linode01-湖南中转
+      - 入门-新加坡linode02-湖南中转
+      - 入门-日本SAKURA01-江门中转-解锁
+      - 入门-新加坡linode03-湖南中转|V2ray-解锁
+      - 旗舰-台湾hinet01-IPLC中转
+      - 入门-新加坡linode04-广州中转|V2ray-解锁
+      - 标准-新加坡linode03-广州中转-解锁
+      - 入门-新加坡解锁02-广东中转|v2ray
+      - 标准-日本SAKURA01-江门中转|V2ray-解锁
+      - 入门-日本SAKURA01-江门中转|V2ray-解锁
+      - 标准-日本SAKURA01-江门中转-解锁
+      - 入门-香港联通02
+      - 标准-香港联通02
+      - 入门-香港联通01|V2ray
+      - 旗舰-日本SAKURA01-IPLC中转-解锁
+      - 标准-香港联通01
+      - 标准-香港联通01|V2ray
+      - 入门-新加坡linode02-湖南中转|v2ray
+      - 标准-新加坡OVH01-广州中转
+      - 旗舰-香港联通01|V2ray
+      - 标准-新加坡linode04-广州中转-解锁
+      - 旗舰-香港联通01
+      - 入门-香港联通02|V2ray
+      - 入门-新加坡linode03-广州中转-解锁
+      - 标准-香港联通02|V2ray
+      - 入门-香港联通01
+      - 标准-美国GIA02-上海中转-解锁
+      - 入门-台湾hinet01-广州中转
+      - 入门-新加坡OVH01-广州中转|V2ray
+      - 标准-德国GIA02-广州中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转|v2ray
+      - 标准-德国GIA02-广州中转-解锁
+      - 标准-香港HGC01-江门中转-解锁
+      - 标准-新加坡linode03-广州中转|V2ray-解锁
+      - 标准-美国GIA02-上海中转|V2ray-解锁
+      - 旗舰-新加坡linode01-湖南中转
+      - 标准-美国GIA01-广东中转-解锁
+      - 旗舰-俄罗斯01-IPLC中转|V2ray
+      - 标准-俄罗斯01-广州中转
+      - 入门-俄罗斯01-广州中转|V2ray
+      - 标准-俄罗斯01-广州中转|V2ray
+      - 标准-香港BGP01-广州中转|V2ray
+      - 旗舰-俄罗斯01-IPLC中转
+      - 入门-俄罗斯01-广州中转
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾02客服网址xund8.com
-      - 台湾01客服网址xund8.com
-      - 台湾04客服网址xund8.com
-      - 香港02客服网址xund8.com
+      - 标准-香港HGC03-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转-解锁
+      - 标准-台湾hinet02-广州中转|V2ray
+      - 标准-香港HGC03-广州中转-解锁
+      - 入门-台湾hinet02-广州中转|V2ray
+      - 旗舰-香港HGC02-IPLC中转-解锁
+      - 标准-台湾hinet02-广州中转
+      - 入门-台湾hinet01-广州中转|V2ray
+      - 入门-台湾hinet02-广州中转
+      - 标准-台湾hinet01-广州中转|V2ray
+      - 旗舰-香港BGP01-IPLC中转
+      - 旗舰-香港HGC01-IPLC中转-解锁
+      - 标准-香港HGC01-江门中转|V2ray-解锁
+      - 旗舰-台湾hinet02-IPLC中转
+      - 旗舰-台湾hinet01-IPLC中转
+      - 入门-香港联通02
+      - 标准-香港联通02
+      - 入门-香港联通01|V2ray
+      - 标准-香港联通01
+      - 标准-香港联通01|V2ray
+      - 旗舰-香港联通01|V2ray
+      - 旗舰-香港联通01
+      - 入门-香港联通02|V2ray
+      - 标准-香港联通02|V2ray
+      - 入门-香港联通01
+      - 入门-台湾hinet01-广州中转
+      - 标准-香港HGC01-江门中转-解锁
+      - 标准-香港BGP01-广州中转|V2ray
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台湾02客服网址xund8.com
-      - 台湾01客服网址xund8.com
-      - 台湾04客服网址xund8.com
-      - 日本03客服网址xund8.com
-      - 美国02客服网址xund8.com
-      - 日本01客服网址xund8.com
-      - 香港02客服网址xund8.com
-      - 美国01客服网址xund8.com
-      - 新加坡01客服网址xund8.com
+      - 标准-香港HGC03-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转-解锁
+      - 标准-台湾hinet02-广州中转|V2ray
+      - 标准-香港HGC03-广州中转-解锁
+      - 入门-台湾hinet02-广州中转|V2ray
+      - 标准-新加坡GIA02-广州中转|V2ray-解锁
+      - 入门-新加坡GIA01-上海中转-解锁
+      - 旗舰-香港HGC02-IPLC中转-解锁
+      - 入门-新加坡解锁01-广东中转
+      - 标准-新加坡linode02-广东中转
+      - 标准-美国GIA01-广东中转|V2ray-解锁
+      - 标准-新加坡OVH01-广州中转|V2ray
+      - 标准-新加坡解锁01-广东中转|v2ray
+      - 入门-新加坡解锁01-广东|v2ray
+      - 标准-台湾hinet02-广州中转
+      - 入门-新加坡GIA01-上海中转|V2ray-解锁
+      - 入门-台湾hinet01-广州中转|V2ray
+      - 入门-台湾hinet02-广州中转
+      - 标准-新加坡GIA02-广州中转-解锁
+      - 标准-新加坡linode02-广东中转|v2ray
+      - 标准-新加坡解锁01-广东中转
+      - 旗舰-新加坡linode03-IPLC中转-解锁
+      - 标准-台湾hinet01-广州中转|V2ray
+      - 旗舰-香港BGP01-IPLC中转
+      - 旗舰-新加坡linode02-IPLC中转
+      - 标准-新加坡linode04-广州中转|V2ray-解锁
+      - 旗舰-香港HGC01-IPLC中转-解锁
+      - 旗舰-新加坡GIA01-真IPLC中转-解锁
+      - 入门-新加坡OVH01-广州中转
+      - 入门-新加坡linode04-广州中转-解锁
+      - 旗舰-新加坡解锁02-真IPLC中转
+      - 旗舰-新加坡linode04-IPLC中转-解锁
+      - 标准-香港HGC01-江门中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转
+      - 旗舰-台湾hinet02-IPLC中转
+      - 标准-新加坡linode01-湖南中转
+      - 旗舰-新加坡解锁01-上海高级中转
+      - 入门-新加坡解锁02-广东中转
+      - 入门-新加坡linode01-湖南中转
+      - 入门-新加坡linode02-湖南中转
+      - 入门-日本SAKURA01-江门中转-解锁
+      - 入门-新加坡linode03-湖南中转|V2ray-解锁
+      - 旗舰-台湾hinet01-IPLC中转
+      - 入门-新加坡linode04-广州中转|V2ray-解锁
+      - 标准-新加坡linode03-广州中转-解锁
+      - 入门-新加坡解锁02-广东中转|v2ray
+      - 标准-日本SAKURA01-江门中转|V2ray-解锁
+      - 入门-日本SAKURA01-江门中转|V2ray-解锁
+      - 标准-日本SAKURA01-江门中转-解锁
+      - 入门-香港联通02
+      - 标准-香港联通02
+      - 入门-香港联通01|V2ray
+      - 旗舰-日本SAKURA01-IPLC中转-解锁
+      - 标准-香港联通01
+      - 标准-香港联通01|V2ray
+      - 入门-新加坡linode02-湖南中转|v2ray
+      - 标准-新加坡OVH01-广州中转
+      - 旗舰-香港联通01|V2ray
+      - 标准-新加坡linode04-广州中转-解锁
+      - 旗舰-香港联通01
+      - 入门-香港联通02|V2ray
+      - 入门-新加坡linode03-广州中转-解锁
+      - 标准-香港联通02|V2ray
+      - 入门-香港联通01
+      - 标准-美国GIA02-上海中转-解锁
+      - 入门-台湾hinet01-广州中转
+      - 入门-新加坡OVH01-广州中转|V2ray
+      - 标准-德国GIA02-广州中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转|v2ray
+      - 标准-德国GIA02-广州中转-解锁
+      - 标准-香港HGC01-江门中转-解锁
+      - 标准-新加坡linode03-广州中转|V2ray-解锁
+      - 标准-美国GIA02-上海中转|V2ray-解锁
+      - 旗舰-新加坡linode01-湖南中转
+      - 标准-美国GIA01-广东中转-解锁
+      - 旗舰-俄罗斯01-IPLC中转|V2ray
+      - 标准-俄罗斯01-广州中转
+      - 入门-俄罗斯01-广州中转|V2ray
+      - 标准-俄罗斯01-广州中转|V2ray
+      - 标准-香港BGP01-广州中转|V2ray
+      - 旗舰-俄罗斯01-IPLC中转
+      - 入门-俄罗斯01-广州中转
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台湾02客服网址xund8.com
-      - 台湾01客服网址xund8.com
-      - 台湾04客服网址xund8.com
-      - 日本03客服网址xund8.com
-      - 美国02客服网址xund8.com
-      - 日本01客服网址xund8.com
-      - 香港02客服网址xund8.com
-      - 美国01客服网址xund8.com
-      - 新加坡01客服网址xund8.com
+      - 标准-香港HGC03-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转-解锁
+      - 标准-台湾hinet02-广州中转|V2ray
+      - 标准-香港HGC03-广州中转-解锁
+      - 入门-台湾hinet02-广州中转|V2ray
+      - 标准-新加坡GIA02-广州中转|V2ray-解锁
+      - 入门-新加坡GIA01-上海中转-解锁
+      - 旗舰-香港HGC02-IPLC中转-解锁
+      - 入门-新加坡解锁01-广东中转
+      - 标准-新加坡linode02-广东中转
+      - 标准-美国GIA01-广东中转|V2ray-解锁
+      - 标准-新加坡OVH01-广州中转|V2ray
+      - 标准-新加坡解锁01-广东中转|v2ray
+      - 入门-新加坡解锁01-广东|v2ray
+      - 标准-台湾hinet02-广州中转
+      - 入门-新加坡GIA01-上海中转|V2ray-解锁
+      - 入门-台湾hinet01-广州中转|V2ray
+      - 入门-台湾hinet02-广州中转
+      - 标准-新加坡GIA02-广州中转-解锁
+      - 标准-新加坡linode02-广东中转|v2ray
+      - 标准-新加坡解锁01-广东中转
+      - 旗舰-新加坡linode03-IPLC中转-解锁
+      - 标准-台湾hinet01-广州中转|V2ray
+      - 旗舰-香港BGP01-IPLC中转
+      - 旗舰-新加坡linode02-IPLC中转
+      - 标准-新加坡linode04-广州中转|V2ray-解锁
+      - 旗舰-香港HGC01-IPLC中转-解锁
+      - 旗舰-新加坡GIA01-真IPLC中转-解锁
+      - 入门-新加坡OVH01-广州中转
+      - 入门-新加坡linode04-广州中转-解锁
+      - 旗舰-新加坡解锁02-真IPLC中转
+      - 旗舰-新加坡linode04-IPLC中转-解锁
+      - 标准-香港HGC01-江门中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转
+      - 旗舰-台湾hinet02-IPLC中转
+      - 标准-新加坡linode01-湖南中转
+      - 旗舰-新加坡解锁01-上海高级中转
+      - 入门-新加坡解锁02-广东中转
+      - 入门-新加坡linode01-湖南中转
+      - 入门-新加坡linode02-湖南中转
+      - 入门-日本SAKURA01-江门中转-解锁
+      - 入门-新加坡linode03-湖南中转|V2ray-解锁
+      - 旗舰-台湾hinet01-IPLC中转
+      - 入门-新加坡linode04-广州中转|V2ray-解锁
+      - 标准-新加坡linode03-广州中转-解锁
+      - 入门-新加坡解锁02-广东中转|v2ray
+      - 标准-日本SAKURA01-江门中转|V2ray-解锁
+      - 入门-日本SAKURA01-江门中转|V2ray-解锁
+      - 标准-日本SAKURA01-江门中转-解锁
+      - 入门-香港联通02
+      - 标准-香港联通02
+      - 入门-香港联通01|V2ray
+      - 旗舰-日本SAKURA01-IPLC中转-解锁
+      - 标准-香港联通01
+      - 标准-香港联通01|V2ray
+      - 入门-新加坡linode02-湖南中转|v2ray
+      - 标准-新加坡OVH01-广州中转
+      - 旗舰-香港联通01|V2ray
+      - 标准-新加坡linode04-广州中转-解锁
+      - 旗舰-香港联通01
+      - 入门-香港联通02|V2ray
+      - 入门-新加坡linode03-广州中转-解锁
+      - 标准-香港联通02|V2ray
+      - 入门-香港联通01
+      - 标准-美国GIA02-上海中转-解锁
+      - 入门-台湾hinet01-广州中转
+      - 入门-新加坡OVH01-广州中转|V2ray
+      - 标准-德国GIA02-广州中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转|v2ray
+      - 标准-德国GIA02-广州中转-解锁
+      - 标准-香港HGC01-江门中转-解锁
+      - 标准-新加坡linode03-广州中转|V2ray-解锁
+      - 标准-美国GIA02-上海中转|V2ray-解锁
+      - 旗舰-新加坡linode01-湖南中转
+      - 标准-美国GIA01-广东中转-解锁
+      - 旗舰-俄罗斯01-IPLC中转|V2ray
+      - 标准-俄罗斯01-广州中转
+      - 入门-俄罗斯01-广州中转|V2ray
+      - 标准-俄罗斯01-广州中转|V2ray
+      - 标准-香港BGP01-广州中转|V2ray
+      - 旗舰-俄罗斯01-IPLC中转
+      - 入门-俄罗斯01-广州中转
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾02客服网址xund8.com
-      - 台湾01客服网址xund8.com
-      - 台湾04客服网址xund8.com
-      - 日本03客服网址xund8.com
-      - 美国02客服网址xund8.com
-      - 日本01客服网址xund8.com
-      - 香港02客服网址xund8.com
-      - 美国01客服网址xund8.com
-      - 新加坡01客服网址xund8.com
+      - 标准-香港HGC03-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转-解锁
+      - 标准-台湾hinet02-广州中转|V2ray
+      - 标准-香港HGC03-广州中转-解锁
+      - 入门-台湾hinet02-广州中转|V2ray
+      - 标准-新加坡GIA02-广州中转|V2ray-解锁
+      - 入门-新加坡GIA01-上海中转-解锁
+      - 旗舰-香港HGC02-IPLC中转-解锁
+      - 入门-新加坡解锁01-广东中转
+      - 标准-新加坡linode02-广东中转
+      - 标准-美国GIA01-广东中转|V2ray-解锁
+      - 标准-新加坡OVH01-广州中转|V2ray
+      - 标准-新加坡解锁01-广东中转|v2ray
+      - 入门-新加坡解锁01-广东|v2ray
+      - 标准-台湾hinet02-广州中转
+      - 入门-新加坡GIA01-上海中转|V2ray-解锁
+      - 入门-台湾hinet01-广州中转|V2ray
+      - 入门-台湾hinet02-广州中转
+      - 标准-新加坡GIA02-广州中转-解锁
+      - 标准-新加坡linode02-广东中转|v2ray
+      - 标准-新加坡解锁01-广东中转
+      - 旗舰-新加坡linode03-IPLC中转-解锁
+      - 标准-台湾hinet01-广州中转|V2ray
+      - 旗舰-香港BGP01-IPLC中转
+      - 旗舰-新加坡linode02-IPLC中转
+      - 标准-新加坡linode04-广州中转|V2ray-解锁
+      - 旗舰-香港HGC01-IPLC中转-解锁
+      - 旗舰-新加坡GIA01-真IPLC中转-解锁
+      - 入门-新加坡OVH01-广州中转
+      - 入门-新加坡linode04-广州中转-解锁
+      - 旗舰-新加坡解锁02-真IPLC中转
+      - 旗舰-新加坡linode04-IPLC中转-解锁
+      - 标准-香港HGC01-江门中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转
+      - 旗舰-台湾hinet02-IPLC中转
+      - 标准-新加坡linode01-湖南中转
+      - 旗舰-新加坡解锁01-上海高级中转
+      - 入门-新加坡解锁02-广东中转
+      - 入门-新加坡linode01-湖南中转
+      - 入门-新加坡linode02-湖南中转
+      - 入门-日本SAKURA01-江门中转-解锁
+      - 入门-新加坡linode03-湖南中转|V2ray-解锁
+      - 旗舰-台湾hinet01-IPLC中转
+      - 入门-新加坡linode04-广州中转|V2ray-解锁
+      - 标准-新加坡linode03-广州中转-解锁
+      - 入门-新加坡解锁02-广东中转|v2ray
+      - 标准-日本SAKURA01-江门中转|V2ray-解锁
+      - 入门-日本SAKURA01-江门中转|V2ray-解锁
+      - 标准-日本SAKURA01-江门中转-解锁
+      - 入门-香港联通02
+      - 标准-香港联通02
+      - 入门-香港联通01|V2ray
+      - 旗舰-日本SAKURA01-IPLC中转-解锁
+      - 标准-香港联通01
+      - 标准-香港联通01|V2ray
+      - 入门-新加坡linode02-湖南中转|v2ray
+      - 标准-新加坡OVH01-广州中转
+      - 旗舰-香港联通01|V2ray
+      - 标准-新加坡linode04-广州中转-解锁
+      - 旗舰-香港联通01
+      - 入门-香港联通02|V2ray
+      - 入门-新加坡linode03-广州中转-解锁
+      - 标准-香港联通02|V2ray
+      - 入门-香港联通01
+      - 标准-美国GIA02-上海中转-解锁
+      - 入门-台湾hinet01-广州中转
+      - 入门-新加坡OVH01-广州中转|V2ray
+      - 标准-德国GIA02-广州中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转|v2ray
+      - 标准-德国GIA02-广州中转-解锁
+      - 标准-香港HGC01-江门中转-解锁
+      - 标准-新加坡linode03-广州中转|V2ray-解锁
+      - 标准-美国GIA02-上海中转|V2ray-解锁
+      - 旗舰-新加坡linode01-湖南中转
+      - 标准-美国GIA01-广东中转-解锁
+      - 旗舰-俄罗斯01-IPLC中转|V2ray
+      - 标准-俄罗斯01-广州中转
+      - 入门-俄罗斯01-广州中转|V2ray
+      - 标准-俄罗斯01-广州中转|V2ray
+      - 标准-香港BGP01-广州中转|V2ray
+      - 旗舰-俄罗斯01-IPLC中转
+      - 入门-俄罗斯01-广州中转
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -152,15 +769,89 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾02客服网址xund8.com
-      - 台湾01客服网址xund8.com
-      - 台湾04客服网址xund8.com
-      - 日本03客服网址xund8.com
-      - 美国02客服网址xund8.com
-      - 日本01客服网址xund8.com
-      - 香港02客服网址xund8.com
-      - 美国01客服网址xund8.com
-      - 新加坡01客服网址xund8.com
+      - 标准-香港HGC03-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转|V2ray-解锁
+      - 标准-香港HGC02-广州中转-解锁
+      - 标准-台湾hinet02-广州中转|V2ray
+      - 标准-香港HGC03-广州中转-解锁
+      - 入门-台湾hinet02-广州中转|V2ray
+      - 标准-新加坡GIA02-广州中转|V2ray-解锁
+      - 入门-新加坡GIA01-上海中转-解锁
+      - 旗舰-香港HGC02-IPLC中转-解锁
+      - 入门-新加坡解锁01-广东中转
+      - 标准-新加坡linode02-广东中转
+      - 标准-美国GIA01-广东中转|V2ray-解锁
+      - 标准-新加坡OVH01-广州中转|V2ray
+      - 标准-新加坡解锁01-广东中转|v2ray
+      - 入门-新加坡解锁01-广东|v2ray
+      - 标准-台湾hinet02-广州中转
+      - 入门-新加坡GIA01-上海中转|V2ray-解锁
+      - 入门-台湾hinet01-广州中转|V2ray
+      - 入门-台湾hinet02-广州中转
+      - 标准-新加坡GIA02-广州中转-解锁
+      - 标准-新加坡linode02-广东中转|v2ray
+      - 标准-新加坡解锁01-广东中转
+      - 旗舰-新加坡linode03-IPLC中转-解锁
+      - 标准-台湾hinet01-广州中转|V2ray
+      - 旗舰-香港BGP01-IPLC中转
+      - 旗舰-新加坡linode02-IPLC中转
+      - 标准-新加坡linode04-广州中转|V2ray-解锁
+      - 旗舰-香港HGC01-IPLC中转-解锁
+      - 旗舰-新加坡GIA01-真IPLC中转-解锁
+      - 入门-新加坡OVH01-广州中转
+      - 入门-新加坡linode04-广州中转-解锁
+      - 旗舰-新加坡解锁02-真IPLC中转
+      - 旗舰-新加坡linode04-IPLC中转-解锁
+      - 标准-香港HGC01-江门中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转
+      - 旗舰-台湾hinet02-IPLC中转
+      - 标准-新加坡linode01-湖南中转
+      - 旗舰-新加坡解锁01-上海高级中转
+      - 入门-新加坡解锁02-广东中转
+      - 入门-新加坡linode01-湖南中转
+      - 入门-新加坡linode02-湖南中转
+      - 入门-日本SAKURA01-江门中转-解锁
+      - 入门-新加坡linode03-湖南中转|V2ray-解锁
+      - 旗舰-台湾hinet01-IPLC中转
+      - 入门-新加坡linode04-广州中转|V2ray-解锁
+      - 标准-新加坡linode03-广州中转-解锁
+      - 入门-新加坡解锁02-广东中转|v2ray
+      - 标准-日本SAKURA01-江门中转|V2ray-解锁
+      - 入门-日本SAKURA01-江门中转|V2ray-解锁
+      - 标准-日本SAKURA01-江门中转-解锁
+      - 入门-香港联通02
+      - 标准-香港联通02
+      - 入门-香港联通01|V2ray
+      - 旗舰-日本SAKURA01-IPLC中转-解锁
+      - 标准-香港联通01
+      - 标准-香港联通01|V2ray
+      - 入门-新加坡linode02-湖南中转|v2ray
+      - 标准-新加坡OVH01-广州中转
+      - 旗舰-香港联通01|V2ray
+      - 标准-新加坡linode04-广州中转-解锁
+      - 旗舰-香港联通01
+      - 入门-香港联通02|V2ray
+      - 入门-新加坡linode03-广州中转-解锁
+      - 标准-香港联通02|V2ray
+      - 入门-香港联通01
+      - 标准-美国GIA02-上海中转-解锁
+      - 入门-台湾hinet01-广州中转
+      - 入门-新加坡OVH01-广州中转|V2ray
+      - 标准-德国GIA02-广州中转|V2ray-解锁
+      - 标准-新加坡解锁02-湖南中转|v2ray
+      - 标准-德国GIA02-广州中转-解锁
+      - 标准-香港HGC01-江门中转-解锁
+      - 标准-新加坡linode03-广州中转|V2ray-解锁
+      - 标准-美国GIA02-上海中转|V2ray-解锁
+      - 旗舰-新加坡linode01-湖南中转
+      - 标准-美国GIA01-广东中转-解锁
+      - 旗舰-俄罗斯01-IPLC中转|V2ray
+      - 标准-俄罗斯01-广州中转
+      - 入门-俄罗斯01-广州中转|V2ray
+      - 标准-俄罗斯01-广州中转|V2ray
+      - 标准-香港BGP01-广州中转|V2ray
+      - 旗舰-俄罗斯01-IPLC中转
+      - 入门-俄罗斯01-广州中转
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
