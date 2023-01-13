@@ -5,71 +5,111 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[VIP2]-香港05", server: 20.187.77.55, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.77.55}, udp: true}
-  - {name: "[VIP2]-香港03", server: 20.255.58.34, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.255.58.34}, udp: true}
-  - {name: "[VIP2]-香港04", server: 20.255.63.48, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.255.63.48}, udp: true}
-  - {name: "[VIP3]-日本01-宁夏电信", server: 161.189.87.111, port: 15000, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 161.189.87.111}, udp: true}
-  - {name: "[VIP2]-新加坡02", server: 54.169.89.218, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 54.169.89.218}, udp: true}
-  - {name: "[VIP3]-香港02-专线", server: 38.6.224.86, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 38.6.224.86}, udp: true}
-  - {name: "[VIP3]-香港01-专线", server: hk.hxlgaozhong.xyz, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk.hxlgaozhong.xyz}, udp: true}
-  - {name: "[VIP3]-瑞典01-宁夏电信", server: 161.189.87.111, port: 15004, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 161.189.87.111}, udp: true}
-  - {name: "[VIP2]-韩国01", server: 20.196.196.106, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.196.196.106}, udp: true}
-  - {name: "[VIP3]-澳大利亚01-宁夏电信", server: 161.189.87.111, port: 15003, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 161.189.87.111}, udp: true}
-  - {name: "[VIP2]-美国01-解锁流媒体", server: 38.150.1.125, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 38.150.1.125}, udp: true}
-  - {name: "[VIP2]-澳大利亚01", server: 13.210.139.80, port: 80, type: vmess, uuid: cf80a62b-a444-4c50-8e62-f320d4744787, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.210.139.80}, udp: true}
+  - {name: Relay 🇭🇰 Hong Kong 04 TG:@nodpai, server: cu.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: cu.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Viet Nam 03 TG:@nodpai, server: 103.166.183.226, port: 80, type: vmess, uuid: ef919c67-6638-4416-91af-9a13ffe5b9ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tandung288.click, ws-headers: {Host: dl.kgvn.garenanow.com}, udp: true}
+  - {name: Relay 🇭🇰 Hong Kong 06 TG:@nodpai, server: zz5.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: zz5.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇯🇵 Japan 07 TG:@nodpai, server: softbank.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: softbank.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇹🇼 Taiwan 02 TG:@nodpai, server: hinet.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: hinet.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇭🇰 Hong Kong 05 TG:@nodpai, server: zz2.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: zz2.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇹🇼 Taiwan 01 TG:@nodpai, server: zz6.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: zz6.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇹🇼 Taiwan 03 TG:@nodpai, server: cm.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: cm.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇰🇷 South Korea 05 TG:@nodpai, server: sk.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: sk.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇰🇷 South Korea 04 TG:@nodpai, server: kr2.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: kr2.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇺🇸 United States 12 TG:@nodpai, server: usa3.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: usa3.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇺🇸 United States 13 TG:@nodpai, server: usa1.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: usa1.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇯🇵 Japan 05 TG:@nodpai, server: jp2.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: jp2.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇸🇬 Singapore 13 TG:@nodpai, server: sgp.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: sgp.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇺🇸 United States 16 TG:@nodpai, server: usa2.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: usa2.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇬🇧 United Kingdom 03 TG:@nodpai, server: vnt.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: vnt.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇨🇦 Canada 03 TG:@nodpai, server: js-cm.alhttdw.cn, port: 64209, type: vmess, uuid: ebc08fe0-eb30-43af-8839-721e30ed1887, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ca-cdn.emoooo.cloud}, udp: true}
+  - {name: Japan 02 TG:@nodpai, server: 85.208.108.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Relay 🇦🇷 Argentina 01 TG:@nodpai, server: ar.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: ar.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: Singapore 09 TG:@nodpai, server: cf-dx-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: sg-gcore.sharecentre.online}, udp: true}
+  - {name: Relay 🇨🇦 Canada 04 TG:@nodpai, server: ca.suishihuigai.top, port: 10051, type: trojan, password: d0a7c867d11ea88e5691712f662ff36a, sni: ca.suishihuigai.top, skip-cert-verify: true, udp: true}
+  - {name: United States 22 TG:@nodpai, server: cf-dx-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: us-dp.sharecentre.online}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[VIP2]-香港05"
-      - "[VIP2]-香港03"
-      - "[VIP2]-香港04"
-      - "[VIP3]-日本01-宁夏电信"
-      - "[VIP2]-新加坡02"
-      - "[VIP3]-香港02-专线"
-      - "[VIP3]-香港01-专线"
-      - "[VIP3]-瑞典01-宁夏电信"
-      - "[VIP2]-韩国01"
-      - "[VIP3]-澳大利亚01-宁夏电信"
-      - "[VIP2]-美国01-解锁流媒体"
-      - "[VIP2]-澳大利亚01"
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Viet Nam 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 06 TG:@nodpai
+      - Relay 🇯🇵 Japan 07 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 03 TG:@nodpai
+      - Relay 🇰🇷 South Korea 05 TG:@nodpai
+      - Relay 🇰🇷 South Korea 04 TG:@nodpai
+      - Relay 🇺🇸 United States 12 TG:@nodpai
+      - Relay 🇺🇸 United States 13 TG:@nodpai
+      - Relay 🇯🇵 Japan 05 TG:@nodpai
+      - Relay 🇸🇬 Singapore 13 TG:@nodpai
+      - Relay 🇺🇸 United States 16 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
+      - Relay 🇨🇦 Canada 03 TG:@nodpai
+      - Japan 02 TG:@nodpai
+      - Relay 🇦🇷 Argentina 01 TG:@nodpai
+      - Singapore 09 TG:@nodpai
+      - Relay 🇨🇦 Canada 04 TG:@nodpai
+      - United States 22 TG:@nodpai
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[VIP2]-香港05"
-      - "[VIP2]-香港03"
-      - "[VIP2]-香港04"
-      - "[VIP3]-日本01-宁夏电信"
-      - "[VIP2]-新加坡02"
-      - "[VIP3]-香港02-专线"
-      - "[VIP3]-香港01-专线"
-      - "[VIP3]-瑞典01-宁夏电信"
-      - "[VIP2]-韩国01"
-      - "[VIP3]-澳大利亚01-宁夏电信"
-      - "[VIP2]-美国01-解锁流媒体"
-      - "[VIP2]-澳大利亚01"
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Viet Nam 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 06 TG:@nodpai
+      - Relay 🇯🇵 Japan 07 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 03 TG:@nodpai
+      - Relay 🇰🇷 South Korea 05 TG:@nodpai
+      - Relay 🇰🇷 South Korea 04 TG:@nodpai
+      - Relay 🇺🇸 United States 12 TG:@nodpai
+      - Relay 🇺🇸 United States 13 TG:@nodpai
+      - Relay 🇯🇵 Japan 05 TG:@nodpai
+      - Relay 🇸🇬 Singapore 13 TG:@nodpai
+      - Relay 🇺🇸 United States 16 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
+      - Relay 🇨🇦 Canada 03 TG:@nodpai
+      - Japan 02 TG:@nodpai
+      - Relay 🇦🇷 Argentina 01 TG:@nodpai
+      - Singapore 09 TG:@nodpai
+      - Relay 🇨🇦 Canada 04 TG:@nodpai
+      - United States 22 TG:@nodpai
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[VIP2]-香港05"
-      - "[VIP2]-香港03"
-      - "[VIP2]-香港04"
-      - "[VIP3]-日本01-宁夏电信"
-      - "[VIP2]-新加坡02"
-      - "[VIP3]-香港02-专线"
-      - "[VIP3]-香港01-专线"
-      - "[VIP3]-瑞典01-宁夏电信"
-      - "[VIP2]-韩国01"
-      - "[VIP3]-澳大利亚01-宁夏电信"
-      - "[VIP2]-美国01-解锁流媒体"
-      - "[VIP2]-澳大利亚01"
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Viet Nam 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 06 TG:@nodpai
+      - Relay 🇯🇵 Japan 07 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 03 TG:@nodpai
+      - Relay 🇰🇷 South Korea 05 TG:@nodpai
+      - Relay 🇰🇷 South Korea 04 TG:@nodpai
+      - Relay 🇺🇸 United States 12 TG:@nodpai
+      - Relay 🇺🇸 United States 13 TG:@nodpai
+      - Relay 🇯🇵 Japan 05 TG:@nodpai
+      - Relay 🇸🇬 Singapore 13 TG:@nodpai
+      - Relay 🇺🇸 United States 16 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
+      - Relay 🇨🇦 Canada 03 TG:@nodpai
+      - Japan 02 TG:@nodpai
+      - Relay 🇦🇷 Argentina 01 TG:@nodpai
+      - Singapore 09 TG:@nodpai
+      - Relay 🇨🇦 Canada 04 TG:@nodpai
+      - United States 22 TG:@nodpai
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,80 +128,115 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[VIP2]-香港05"
-      - "[VIP2]-香港03"
-      - "[VIP2]-香港04"
-      - "[VIP3]-日本01-宁夏电信"
-      - "[VIP2]-新加坡02"
-      - "[VIP3]-香港02-专线"
-      - "[VIP3]-香港01-专线"
-      - "[VIP3]-瑞典01-宁夏电信"
-      - "[VIP2]-韩国01"
-      - "[VIP3]-澳大利亚01-宁夏电信"
-      - "[VIP2]-美国01-解锁流媒体"
-      - "[VIP2]-澳大利亚01"
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Viet Nam 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 06 TG:@nodpai
+      - Relay 🇯🇵 Japan 07 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 03 TG:@nodpai
+      - Relay 🇰🇷 South Korea 05 TG:@nodpai
+      - Relay 🇰🇷 South Korea 04 TG:@nodpai
+      - Relay 🇺🇸 United States 12 TG:@nodpai
+      - Relay 🇺🇸 United States 13 TG:@nodpai
+      - Relay 🇯🇵 Japan 05 TG:@nodpai
+      - Relay 🇸🇬 Singapore 13 TG:@nodpai
+      - Relay 🇺🇸 United States 16 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
+      - Relay 🇨🇦 Canada 03 TG:@nodpai
+      - Japan 02 TG:@nodpai
+      - Relay 🇦🇷 Argentina 01 TG:@nodpai
+      - Singapore 09 TG:@nodpai
+      - Relay 🇨🇦 Canada 04 TG:@nodpai
+      - United States 22 TG:@nodpai
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[VIP2]-香港05"
-      - "[VIP2]-香港03"
-      - "[VIP2]-香港04"
-      - "[VIP3]-香港02-专线"
-      - "[VIP3]-香港01-专线"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[VIP2]-香港05"
-      - "[VIP2]-香港03"
-      - "[VIP2]-香港04"
-      - "[VIP3]-日本01-宁夏电信"
-      - "[VIP2]-新加坡02"
-      - "[VIP3]-香港02-专线"
-      - "[VIP3]-香港01-专线"
-      - "[VIP3]-瑞典01-宁夏电信"
-      - "[VIP2]-韩国01"
-      - "[VIP3]-澳大利亚01-宁夏电信"
-      - "[VIP2]-美国01-解锁流媒体"
-      - "[VIP2]-澳大利亚01"
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Viet Nam 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 06 TG:@nodpai
+      - Relay 🇯🇵 Japan 07 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 03 TG:@nodpai
+      - Relay 🇰🇷 South Korea 05 TG:@nodpai
+      - Relay 🇰🇷 South Korea 04 TG:@nodpai
+      - Relay 🇺🇸 United States 12 TG:@nodpai
+      - Relay 🇺🇸 United States 13 TG:@nodpai
+      - Relay 🇯🇵 Japan 05 TG:@nodpai
+      - Relay 🇸🇬 Singapore 13 TG:@nodpai
+      - Relay 🇺🇸 United States 16 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
+      - Relay 🇨🇦 Canada 03 TG:@nodpai
+      - Japan 02 TG:@nodpai
+      - Relay 🇦🇷 Argentina 01 TG:@nodpai
+      - Singapore 09 TG:@nodpai
+      - Relay 🇨🇦 Canada 04 TG:@nodpai
+      - United States 22 TG:@nodpai
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[VIP2]-香港05"
-      - "[VIP2]-香港03"
-      - "[VIP2]-香港04"
-      - "[VIP3]-日本01-宁夏电信"
-      - "[VIP2]-新加坡02"
-      - "[VIP3]-香港02-专线"
-      - "[VIP3]-香港01-专线"
-      - "[VIP3]-瑞典01-宁夏电信"
-      - "[VIP2]-韩国01"
-      - "[VIP3]-澳大利亚01-宁夏电信"
-      - "[VIP2]-美国01-解锁流媒体"
-      - "[VIP2]-澳大利亚01"
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Viet Nam 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 06 TG:@nodpai
+      - Relay 🇯🇵 Japan 07 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 03 TG:@nodpai
+      - Relay 🇰🇷 South Korea 05 TG:@nodpai
+      - Relay 🇰🇷 South Korea 04 TG:@nodpai
+      - Relay 🇺🇸 United States 12 TG:@nodpai
+      - Relay 🇺🇸 United States 13 TG:@nodpai
+      - Relay 🇯🇵 Japan 05 TG:@nodpai
+      - Relay 🇸🇬 Singapore 13 TG:@nodpai
+      - Relay 🇺🇸 United States 16 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
+      - Relay 🇨🇦 Canada 03 TG:@nodpai
+      - Japan 02 TG:@nodpai
+      - Relay 🇦🇷 Argentina 01 TG:@nodpai
+      - Singapore 09 TG:@nodpai
+      - Relay 🇨🇦 Canada 04 TG:@nodpai
+      - United States 22 TG:@nodpai
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[VIP2]-香港05"
-      - "[VIP2]-香港03"
-      - "[VIP2]-香港04"
-      - "[VIP3]-日本01-宁夏电信"
-      - "[VIP2]-新加坡02"
-      - "[VIP3]-香港02-专线"
-      - "[VIP3]-香港01-专线"
-      - "[VIP3]-瑞典01-宁夏电信"
-      - "[VIP2]-韩国01"
-      - "[VIP3]-澳大利亚01-宁夏电信"
-      - "[VIP2]-美国01-解锁流媒体"
-      - "[VIP2]-澳大利亚01"
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Viet Nam 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 06 TG:@nodpai
+      - Relay 🇯🇵 Japan 07 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 03 TG:@nodpai
+      - Relay 🇰🇷 South Korea 05 TG:@nodpai
+      - Relay 🇰🇷 South Korea 04 TG:@nodpai
+      - Relay 🇺🇸 United States 12 TG:@nodpai
+      - Relay 🇺🇸 United States 13 TG:@nodpai
+      - Relay 🇯🇵 Japan 05 TG:@nodpai
+      - Relay 🇸🇬 Singapore 13 TG:@nodpai
+      - Relay 🇺🇸 United States 16 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
+      - Relay 🇨🇦 Canada 03 TG:@nodpai
+      - Japan 02 TG:@nodpai
+      - Relay 🇦🇷 Argentina 01 TG:@nodpai
+      - Singapore 09 TG:@nodpai
+      - Relay 🇨🇦 Canada 04 TG:@nodpai
+      - United States 22 TG:@nodpai
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -177,18 +252,28 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[VIP2]-香港05"
-      - "[VIP2]-香港03"
-      - "[VIP2]-香港04"
-      - "[VIP3]-日本01-宁夏电信"
-      - "[VIP2]-新加坡02"
-      - "[VIP3]-香港02-专线"
-      - "[VIP3]-香港01-专线"
-      - "[VIP3]-瑞典01-宁夏电信"
-      - "[VIP2]-韩国01"
-      - "[VIP3]-澳大利亚01-宁夏电信"
-      - "[VIP2]-美国01-解锁流媒体"
-      - "[VIP2]-澳大利亚01"
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Viet Nam 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 06 TG:@nodpai
+      - Relay 🇯🇵 Japan 07 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan 03 TG:@nodpai
+      - Relay 🇰🇷 South Korea 05 TG:@nodpai
+      - Relay 🇰🇷 South Korea 04 TG:@nodpai
+      - Relay 🇺🇸 United States 12 TG:@nodpai
+      - Relay 🇺🇸 United States 13 TG:@nodpai
+      - Relay 🇯🇵 Japan 05 TG:@nodpai
+      - Relay 🇸🇬 Singapore 13 TG:@nodpai
+      - Relay 🇺🇸 United States 16 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
+      - Relay 🇨🇦 Canada 03 TG:@nodpai
+      - Japan 02 TG:@nodpai
+      - Relay 🇦🇷 Argentina 01 TG:@nodpai
+      - Singapore 09 TG:@nodpai
+      - Relay 🇨🇦 Canada 04 TG:@nodpai
+      - United States 22 TG:@nodpai
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
