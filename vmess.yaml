@@ -5,43 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: v1丨日本丨微软丨东京丨1丨1Gbps, server: rbwr01.yooo.one, port: 53981, type: trojan, password: 2d223dd1-fcee-3a52-be72-2ffa4870df30, sni: rbwr01.yooo.one, skip-cert-verify: true, udp: true}
-  - {name: v1丨台湾丨原生丨静态, server: zhuanfa01.suyun.live, port: 52993, type: trojan, password: 2d223dd1-fcee-3a52-be72-2ffa4870df30, sni: zhuanfa01.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨德国丨浙江移动丨Trojan, server: zhuanfa01.suyun.live, port: 23987, type: trojan, password: 2d223dd1-fcee-3a52-be72-2ffa4870df30, sni: zhuanfa01.suyun.live, skip-cert-verify: true, udp: true}
-  - {name: v1丨马来西亚丨原生丨广移中继, server: malaixiya.yooo.one, port: 21308, type: trojan, password: 2d223dd1-fcee-3a52-be72-2ffa4870df30, sni: malaixiya.yooo.one, skip-cert-verify: true, udp: true}
-  - {name: v1丨俄罗斯丨北京联通丨, server: taiguo1.yooo.one, port: 37261, type: trojan, password: 2d223dd1-fcee-3a52-be72-2ffa4870df30, sni: taiguo1.yooo.one, skip-cert-verify: true, udp: true}
+  - {name: Singapore-M3, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sgm3.targoocloud.live}, udp: true}
+  - {name: Japan-M2, server: xtom.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jpm2.targoocloud.live}, udp: true}
+  - {name: Singapore-M1, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sgm1.targoocloud.live}, udp: true}
+  - {name: Japan-M3, server: xtom.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jpm3.targoocloud.live}, udp: true}
+  - {name: South Korea-M1, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: krm1.targoocloud.live}, udp: true}
+  - {name: South Korea-M2, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: krm2.targoocloud.live}, udp: true}
+  - {name: United States-M1, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: usm1.targoocloud.live}, udp: true}
+  - {name: United States-M3, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: usm3.targoocloud.live}, udp: true}
+  - {name: United States-M4, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: usm4.targoocloud.live}, udp: true}
+  - {name: Turkey-M1, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tkm1.targoocloud.live}, udp: true}
+  - {name: Holland-M1, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: nlm1.targoocloud.live}, udp: true}
+  - {name: Germany-M3, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dem3.targoocloud.live}, udp: true}
+  - {name: Germany-M1, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dem1.targoocloud.live}, udp: true}
+  - {name: Ukraine-M1, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: uam1.targoocloud.live}, udp: true}
+  - {name: Hong Kong-M3, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkm3.targoocloud.live}, udp: true}
+  - {name: Hong Kong-M2, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: edd9f55f-2257-450f-80c7-1739b7716c51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkm2.targoocloud.live}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v1丨日本丨微软丨东京丨1丨1Gbps
-      - v1丨台湾丨原生丨静态
-      - v1丨德国丨浙江移动丨Trojan
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨俄罗斯丨北京联通丨
+      - Singapore-M3
+      - Japan-M2
+      - Singapore-M1
+      - Japan-M3
+      - South Korea-M1
+      - South Korea-M2
+      - United States-M1
+      - United States-M3
+      - United States-M4
+      - Turkey-M1
+      - Holland-M1
+      - Germany-M3
+      - Germany-M1
+      - Ukraine-M1
+      - Hong Kong-M3
+      - Hong Kong-M2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - v1丨日本丨微软丨东京丨1丨1Gbps
-      - v1丨台湾丨原生丨静态
-      - v1丨德国丨浙江移动丨Trojan
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨俄罗斯丨北京联通丨
+      - Singapore-M3
+      - Japan-M2
+      - Singapore-M1
+      - Japan-M3
+      - South Korea-M1
+      - South Korea-M2
+      - United States-M1
+      - United States-M3
+      - United States-M4
+      - Turkey-M1
+      - Holland-M1
+      - Germany-M3
+      - Germany-M1
+      - Ukraine-M1
+      - Hong Kong-M3
+      - Hong Kong-M2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v1丨日本丨微软丨东京丨1丨1Gbps
-      - v1丨台湾丨原生丨静态
-      - v1丨德国丨浙江移动丨Trojan
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨俄罗斯丨北京联通丨
+      - Singapore-M3
+      - Japan-M2
+      - Singapore-M1
+      - Japan-M3
+      - South Korea-M1
+      - South Korea-M2
+      - United States-M1
+      - United States-M3
+      - United States-M4
+      - Turkey-M1
+      - Holland-M1
+      - Germany-M3
+      - Germany-M1
+      - Ukraine-M1
+      - Hong Kong-M3
+      - Hong Kong-M2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,48 +104,91 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v1丨日本丨微软丨东京丨1丨1Gbps
-      - v1丨台湾丨原生丨静态
-      - v1丨德国丨浙江移动丨Trojan
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨俄罗斯丨北京联通丨
+      - Singapore-M3
+      - Japan-M2
+      - Singapore-M1
+      - Japan-M3
+      - South Korea-M1
+      - South Korea-M2
+      - United States-M1
+      - United States-M3
+      - United States-M4
+      - Turkey-M1
+      - Holland-M1
+      - Germany-M3
+      - Germany-M1
+      - Ukraine-M1
+      - Hong Kong-M3
+      - Hong Kong-M2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - v1丨台湾丨原生丨静态
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - v1丨日本丨微软丨东京丨1丨1Gbps
-      - v1丨台湾丨原生丨静态
-      - v1丨德国丨浙江移动丨Trojan
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨俄罗斯丨北京联通丨
+      - Singapore-M3
+      - Japan-M2
+      - Singapore-M1
+      - Japan-M3
+      - South Korea-M1
+      - South Korea-M2
+      - United States-M1
+      - United States-M3
+      - United States-M4
+      - Turkey-M1
+      - Holland-M1
+      - Germany-M3
+      - Germany-M1
+      - Ukraine-M1
+      - Hong Kong-M3
+      - Hong Kong-M2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - v1丨日本丨微软丨东京丨1丨1Gbps
-      - v1丨台湾丨原生丨静态
-      - v1丨德国丨浙江移动丨Trojan
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨俄罗斯丨北京联通丨
+      - Singapore-M3
+      - Japan-M2
+      - Singapore-M1
+      - Japan-M3
+      - South Korea-M1
+      - South Korea-M2
+      - United States-M1
+      - United States-M3
+      - United States-M4
+      - Turkey-M1
+      - Holland-M1
+      - Germany-M3
+      - Germany-M1
+      - Ukraine-M1
+      - Hong Kong-M3
+      - Hong Kong-M2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v1丨日本丨微软丨东京丨1丨1Gbps
-      - v1丨台湾丨原生丨静态
-      - v1丨德国丨浙江移动丨Trojan
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨俄罗斯丨北京联通丨
+      - Singapore-M3
+      - Japan-M2
+      - Singapore-M1
+      - Japan-M3
+      - South Korea-M1
+      - South Korea-M2
+      - United States-M1
+      - United States-M3
+      - United States-M4
+      - Turkey-M1
+      - Holland-M1
+      - Germany-M3
+      - Germany-M1
+      - Ukraine-M1
+      - Hong Kong-M3
+      - Hong Kong-M2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -117,11 +204,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v1丨日本丨微软丨东京丨1丨1Gbps
-      - v1丨台湾丨原生丨静态
-      - v1丨德国丨浙江移动丨Trojan
-      - v1丨马来西亚丨原生丨广移中继
-      - v1丨俄罗斯丨北京联通丨
+      - Singapore-M3
+      - Japan-M2
+      - Singapore-M1
+      - Japan-M3
+      - South Korea-M1
+      - South Korea-M2
+      - United States-M1
+      - United States-M3
+      - United States-M4
+      - Turkey-M1
+      - Holland-M1
+      - Germany-M3
+      - Germany-M1
+      - Ukraine-M1
+      - Hong Kong-M3
+      - Hong Kong-M2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
