@@ -5,31 +5,135 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay 🇭🇰 Hong Kong 04 TG:@nodpai, server: 112.33.52.65, port: 3201, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Australia 03 TG:@nodpai, server: au-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /clientarea, ws-headers: {Host: au-ls03.nb1.fr}, udp: true}
+  - {name: HK Misaka IEPL 3.0x, server: hkiepl.eton.club, port: 10302, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: HK AperNet IEPL 3.0x, server: hkiepl.eton.club, port: 10303, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: SG Nerocloud TNL 1.0x, server: hksd.eton.club, port: 18727, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: HK HKT IEPL 3.0x, server: hkiepl.eton.club, port: 10304, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: HK Neko IEPL 3.0x, server: hkiepl.eton.club, port: 10301, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: TW Hinet TNL 1.0x, server: hksd.eton.club, port: 10056, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: TW Neko TNL 1.0x, server: hksd.eton.club, port: 10057, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: JP Misaka TNL 1.5x, server: jpsd.eton.club, port: 40591, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: JP Neko TNL 1.0x, server: jpsd.eton.club, port: 39541, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: JP Catixs TNL 1.0x, server: jpsd.eton.club, port: 24268, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: US Catixs TNL 1.0x, server: jpsd.eton.club, port: 19824, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: US AperNet TNL 1.5x, server: jpsd.eton.club, port: 37271, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: AR AperNet TNL 1.0x, server: jpsd.eton.club, port: 29504, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: US Misaka TNL 1.5x, server: jpsd.eton.club, port: 44474, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: SG Neko IEPL 3.0x, server: hkiepl.eton.club, port: 10305, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: SG Misaka IEPL 3.0x, server: hkiepl.eton.club, port: 10306, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: SG Misaka TNL 1.5x, server: hksd.eton.club, port: 10047, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: HK HKT TNL 1.0x, server: hksd.eton.club, port: 30081, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: TW Neko IEPL 3.0x, server: hkiepl.eton.club, port: 10308, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: NL Misaka TNL 1.0x, server: desd.eton.club, port: 44850, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: 日本04|专线, server: azjp4-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 8f6cd16c-2028-43a4-a713-46c41b8ecf7e, sni: azjp4-tg-data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: HK AperNet TNL 1.5x, server: hksd.eton.club, port: 40789, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: 日本03|专线, server: azjp3-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 8f6cd16c-2028-43a4-a713-46c41b8ecf7e, sni: azjp3-tg-data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: TW Hinet IEPL 3.0x, server: hkiepl.eton.club, port: 10310, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: TR Teknofirst TNL 1.0x, server: desd.eton.club, port: 29811, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: TW Zenlayer IEPL 3.0x, server: hkiepl.eton.club, port: 10309, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
+  - {name: 日本05|专线, server: azjp5-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 8f6cd16c-2028-43a4-a713-46c41b8ecf7e, sni: azjp5-tg-data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: AU AperNet IEPL 3.0x, server: hkiepl.eton.club, port: 10311, type: ss, cipher: aes-128-gcm, password: f1762a8e-953f-4b8b-aa07-1a3f45c7b9c8, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Australia 03 TG:@nodpai
+      - HK Misaka IEPL 3.0x
+      - HK AperNet IEPL 3.0x
+      - SG Nerocloud TNL 1.0x
+      - HK HKT IEPL 3.0x
+      - HK Neko IEPL 3.0x
+      - TW Hinet TNL 1.0x
+      - TW Neko TNL 1.0x
+      - JP Misaka TNL 1.5x
+      - JP Neko TNL 1.0x
+      - JP Catixs TNL 1.0x
+      - US Catixs TNL 1.0x
+      - US AperNet TNL 1.5x
+      - AR AperNet TNL 1.0x
+      - US Misaka TNL 1.5x
+      - SG Neko IEPL 3.0x
+      - SG Misaka IEPL 3.0x
+      - SG Misaka TNL 1.5x
+      - HK HKT TNL 1.0x
+      - TW Neko IEPL 3.0x
+      - NL Misaka TNL 1.0x
+      - 日本04|专线
+      - HK AperNet TNL 1.5x
+      - 日本03|专线
+      - TW Hinet IEPL 3.0x
+      - TR Teknofirst TNL 1.0x
+      - TW Zenlayer IEPL 3.0x
+      - 日本05|专线
+      - AU AperNet IEPL 3.0x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Australia 03 TG:@nodpai
+      - HK Misaka IEPL 3.0x
+      - HK AperNet IEPL 3.0x
+      - SG Nerocloud TNL 1.0x
+      - HK HKT IEPL 3.0x
+      - HK Neko IEPL 3.0x
+      - TW Hinet TNL 1.0x
+      - TW Neko TNL 1.0x
+      - JP Misaka TNL 1.5x
+      - JP Neko TNL 1.0x
+      - JP Catixs TNL 1.0x
+      - US Catixs TNL 1.0x
+      - US AperNet TNL 1.5x
+      - AR AperNet TNL 1.0x
+      - US Misaka TNL 1.5x
+      - SG Neko IEPL 3.0x
+      - SG Misaka IEPL 3.0x
+      - SG Misaka TNL 1.5x
+      - HK HKT TNL 1.0x
+      - TW Neko IEPL 3.0x
+      - NL Misaka TNL 1.0x
+      - 日本04|专线
+      - HK AperNet TNL 1.5x
+      - 日本03|专线
+      - TW Hinet IEPL 3.0x
+      - TR Teknofirst TNL 1.0x
+      - TW Zenlayer IEPL 3.0x
+      - 日本05|专线
+      - AU AperNet IEPL 3.0x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Australia 03 TG:@nodpai
+      - HK Misaka IEPL 3.0x
+      - HK AperNet IEPL 3.0x
+      - SG Nerocloud TNL 1.0x
+      - HK HKT IEPL 3.0x
+      - HK Neko IEPL 3.0x
+      - TW Hinet TNL 1.0x
+      - TW Neko TNL 1.0x
+      - JP Misaka TNL 1.5x
+      - JP Neko TNL 1.0x
+      - JP Catixs TNL 1.0x
+      - US Catixs TNL 1.0x
+      - US AperNet TNL 1.5x
+      - AR AperNet TNL 1.0x
+      - US Misaka TNL 1.5x
+      - SG Neko IEPL 3.0x
+      - SG Misaka IEPL 3.0x
+      - SG Misaka TNL 1.5x
+      - HK HKT TNL 1.0x
+      - TW Neko IEPL 3.0x
+      - NL Misaka TNL 1.0x
+      - 日本04|专线
+      - HK AperNet TNL 1.5x
+      - 日本03|专线
+      - TW Hinet IEPL 3.0x
+      - TR Teknofirst TNL 1.0x
+      - TW Zenlayer IEPL 3.0x
+      - 日本05|专线
+      - AU AperNet IEPL 3.0x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,35 +152,141 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Australia 03 TG:@nodpai
+      - HK Misaka IEPL 3.0x
+      - HK AperNet IEPL 3.0x
+      - SG Nerocloud TNL 1.0x
+      - HK HKT IEPL 3.0x
+      - HK Neko IEPL 3.0x
+      - TW Hinet TNL 1.0x
+      - TW Neko TNL 1.0x
+      - JP Misaka TNL 1.5x
+      - JP Neko TNL 1.0x
+      - JP Catixs TNL 1.0x
+      - US Catixs TNL 1.0x
+      - US AperNet TNL 1.5x
+      - AR AperNet TNL 1.0x
+      - US Misaka TNL 1.5x
+      - SG Neko IEPL 3.0x
+      - SG Misaka IEPL 3.0x
+      - SG Misaka TNL 1.5x
+      - HK HKT TNL 1.0x
+      - TW Neko IEPL 3.0x
+      - NL Misaka TNL 1.0x
+      - 日本04|专线
+      - HK AperNet TNL 1.5x
+      - 日本03|专线
+      - TW Hinet IEPL 3.0x
+      - TR Teknofirst TNL 1.0x
+      - TW Zenlayer IEPL 3.0x
+      - 日本05|专线
+      - AU AperNet IEPL 3.0x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - HK HKT IEPL 3.0x
+      - HK HKT TNL 1.0x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Australia 03 TG:@nodpai
+      - HK Misaka IEPL 3.0x
+      - HK AperNet IEPL 3.0x
+      - SG Nerocloud TNL 1.0x
+      - HK HKT IEPL 3.0x
+      - HK Neko IEPL 3.0x
+      - TW Hinet TNL 1.0x
+      - TW Neko TNL 1.0x
+      - JP Misaka TNL 1.5x
+      - JP Neko TNL 1.0x
+      - JP Catixs TNL 1.0x
+      - US Catixs TNL 1.0x
+      - US AperNet TNL 1.5x
+      - AR AperNet TNL 1.0x
+      - US Misaka TNL 1.5x
+      - SG Neko IEPL 3.0x
+      - SG Misaka IEPL 3.0x
+      - SG Misaka TNL 1.5x
+      - HK HKT TNL 1.0x
+      - TW Neko IEPL 3.0x
+      - NL Misaka TNL 1.0x
+      - 日本04|专线
+      - HK AperNet TNL 1.5x
+      - 日本03|专线
+      - TW Hinet IEPL 3.0x
+      - TR Teknofirst TNL 1.0x
+      - TW Zenlayer IEPL 3.0x
+      - 日本05|专线
+      - AU AperNet IEPL 3.0x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Australia 03 TG:@nodpai
+      - HK Misaka IEPL 3.0x
+      - HK AperNet IEPL 3.0x
+      - SG Nerocloud TNL 1.0x
+      - HK HKT IEPL 3.0x
+      - HK Neko IEPL 3.0x
+      - TW Hinet TNL 1.0x
+      - TW Neko TNL 1.0x
+      - JP Misaka TNL 1.5x
+      - JP Neko TNL 1.0x
+      - JP Catixs TNL 1.0x
+      - US Catixs TNL 1.0x
+      - US AperNet TNL 1.5x
+      - AR AperNet TNL 1.0x
+      - US Misaka TNL 1.5x
+      - SG Neko IEPL 3.0x
+      - SG Misaka IEPL 3.0x
+      - SG Misaka TNL 1.5x
+      - HK HKT TNL 1.0x
+      - TW Neko IEPL 3.0x
+      - NL Misaka TNL 1.0x
+      - 日本04|专线
+      - HK AperNet TNL 1.5x
+      - 日本03|专线
+      - TW Hinet IEPL 3.0x
+      - TR Teknofirst TNL 1.0x
+      - TW Zenlayer IEPL 3.0x
+      - 日本05|专线
+      - AU AperNet IEPL 3.0x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Australia 03 TG:@nodpai
+      - HK Misaka IEPL 3.0x
+      - HK AperNet IEPL 3.0x
+      - SG Nerocloud TNL 1.0x
+      - HK HKT IEPL 3.0x
+      - HK Neko IEPL 3.0x
+      - TW Hinet TNL 1.0x
+      - TW Neko TNL 1.0x
+      - JP Misaka TNL 1.5x
+      - JP Neko TNL 1.0x
+      - JP Catixs TNL 1.0x
+      - US Catixs TNL 1.0x
+      - US AperNet TNL 1.5x
+      - AR AperNet TNL 1.0x
+      - US Misaka TNL 1.5x
+      - SG Neko IEPL 3.0x
+      - SG Misaka IEPL 3.0x
+      - SG Misaka TNL 1.5x
+      - HK HKT TNL 1.0x
+      - TW Neko IEPL 3.0x
+      - NL Misaka TNL 1.0x
+      - 日本04|专线
+      - HK AperNet TNL 1.5x
+      - 日本03|专线
+      - TW Hinet IEPL 3.0x
+      - TR Teknofirst TNL 1.0x
+      - TW Zenlayer IEPL 3.0x
+      - 日本05|专线
+      - AU AperNet IEPL 3.0x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +302,34 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Australia 03 TG:@nodpai
+      - HK Misaka IEPL 3.0x
+      - HK AperNet IEPL 3.0x
+      - SG Nerocloud TNL 1.0x
+      - HK HKT IEPL 3.0x
+      - HK Neko IEPL 3.0x
+      - TW Hinet TNL 1.0x
+      - TW Neko TNL 1.0x
+      - JP Misaka TNL 1.5x
+      - JP Neko TNL 1.0x
+      - JP Catixs TNL 1.0x
+      - US Catixs TNL 1.0x
+      - US AperNet TNL 1.5x
+      - AR AperNet TNL 1.0x
+      - US Misaka TNL 1.5x
+      - SG Neko IEPL 3.0x
+      - SG Misaka IEPL 3.0x
+      - SG Misaka TNL 1.5x
+      - HK HKT TNL 1.0x
+      - TW Neko IEPL 3.0x
+      - NL Misaka TNL 1.0x
+      - 日本04|专线
+      - HK AperNet TNL 1.5x
+      - 日本03|专线
+      - TW Hinet IEPL 3.0x
+      - TR Teknofirst TNL 1.0x
+      - TW Zenlayer IEPL 3.0x
+      - 日本05|专线
+      - AU AperNet IEPL 3.0x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
