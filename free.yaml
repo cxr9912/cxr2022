@@ -5,39 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay 🇭🇰 Hong Kong 13 TG:@nodpai, server: v2cm.nicecdns.com, port: 24628, type: ss, cipher: chacha20-ietf-poly1305, password: 04e45728-f656-47d0-a8fc-b385b1575e75, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 03 TG:@nodpai, server: gxct.xn--dlq110j6ul.cc, port: 10964, type: vmess, uuid: e91f1db0-7440-4eee-b1d2-ca12ab4de40d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gxct.xn--dlq110j6ul.cc}, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 04 TG:@nodpai, server: gxct.xn--dlq110j6ul.cc, port: 36140, type: vmess, uuid: e91f1db0-7440-4eee-b1d2-ca12ab4de40d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gxct.xn--dlq110j6ul.cc}, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 14 TG:@nodpai, server: v3.nicecdns.com, port: 30478, type: ss, cipher: chacha20-ietf-poly1305, password: 04e45728-f656-47d0-a8fc-b385b1575e75, udp: true}
+  - {name: 香港直连, server: vm.jiegebuyao.top, port: 25596, type: vmess, uuid: 65340174-1b7e-4b3a-d61b-5e0b8bc8edb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: vm.jiegebuyao.top}, udp: true}
+  - {name: 东京软银, server: wase.leiyingchuanmei.com, port: 45017, type: vmess, uuid: 45f9f91c-2389-483c-a3b2-6606397edb0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 软银直连, server: ry.jiegebuyao.top, port: 52406, type: vmess, uuid: d314d570-1570-4552-d54a-14d0b8c5fffc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ry.jiegebuyao.top}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
+      - 香港直连
+      - 东京软银
+      - 软银直连
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
+      - 香港直连
+      - 东京软银
+      - 软银直连
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
+      - 香港直连
+      - 东京软银
+      - 软银直连
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,43 +52,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
+      - 香港直连
+      - 东京软银
+      - 软银直连
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港直连
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
+      - 香港直连
+      - 东京软银
+      - 软银直连
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
+      - 香港直连
+      - 东京软银
+      - 软银直连
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
+      - 香港直连
+      - 东京软银
+      - 软银直连
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +101,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
+      - 香港直连
+      - 东京软银
+      - 软银直连
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
