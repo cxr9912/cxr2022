@@ -5,27 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _韩国_群：https://t.me/suyucom, server: kr-arm1.018999.xyz, port: 443, type: vmess, uuid: 5647df2e-bb0c-4c0c-ae03-2de1b494348d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5647df2e-bb0c-4c0c-ae03-2de1b494348d, ws-headers: {Host: kr-arm1.018999.xyz}, udp: true}
+  - {name: Relay 🇭🇰 Hong Kong 04 TG:@nodpai, server: 112.33.52.65, port: 3201, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Australia 03 TG:@nodpai, server: au-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /clientarea, ws-headers: {Host: au-ls03.nb1.fr}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _韩国_群：https://t.me/suyucom
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Australia 03 TG:@nodpai
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _韩国_群：https://t.me/suyucom
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Australia 03 TG:@nodpai
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _韩国_群：https://t.me/suyucom
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Australia 03 TG:@nodpai
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -44,7 +48,8 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _韩国_群：https://t.me/suyucom
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Australia 03 TG:@nodpai
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -55,20 +60,23 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _韩国_群：https://t.me/suyucom
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Australia 03 TG:@nodpai
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _韩国_群：https://t.me/suyucom
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Australia 03 TG:@nodpai
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _韩国_群：https://t.me/suyucom
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Australia 03 TG:@nodpai
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,7 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _韩国_群：https://t.me/suyucom
+      - Relay 🇭🇰 Hong Kong 04 TG:@nodpai
+      - Australia 03 TG:@nodpai
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
