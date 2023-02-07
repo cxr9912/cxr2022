@@ -5,63 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 02-BGP, server: hk02.internetsmartrouting.asia, port: 10267, type: vmess, uuid: 5ba9a8c4-eb03-48c9-8e52-8cb9a7b4d8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, ws-headers: {Host: apple.com}, udp: true}
-  - {name: 新加坡 02-BGP 流媒体, server: sgp02.internetsmartrouting.asia, port: 10184, type: vmess, uuid: 5ba9a8c4-eb03-48c9-8e52-8cb9a7b4d8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, ws-headers: {Host: apple.com}, udp: true}
-  - {name: 新加坡 03-BGP 流媒体, server: sgp03.internetsmartrouting.asia, port: 14691, type: vmess, uuid: 5ba9a8c4-eb03-48c9-8e52-8cb9a7b4d8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, ws-headers: {Host: apple.com}, udp: true}
-  - {name: 美国 01-BGP, server: us01.internetsmartrouting.asia, port: 10121, type: vmess, uuid: 5ba9a8c4-eb03-48c9-8e52-8cb9a7b4d8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, ws-headers: {Host: apple.com}, udp: true}
-  - {name: 新加坡 01-BGP 流媒体, server: sgp01.internetsmartrouting.asia, port: 10419, type: vmess, uuid: 5ba9a8c4-eb03-48c9-8e52-8cb9a7b4d8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, ws-headers: {Host: apple.com}, udp: true}
-  - {name: 日本 03-BGP 流媒体, server: jp03.internetsmartrouting.asia, port: 42008, type: vmess, uuid: 5ba9a8c4-eb03-48c9-8e52-8cb9a7b4d8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, ws-headers: {Host: apple.com}, udp: true}
-  - {name: 日本 01-BGP 流媒体, server: jp01.internetsmartrouting.asia, port: 10446, type: vmess, uuid: 5ba9a8c4-eb03-48c9-8e52-8cb9a7b4d8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, ws-headers: {Host: apple.com}, udp: true}
-  - {name: 香港 01-BGP, server: hk01.internetsmartrouting.asia, port: 10221, type: vmess, uuid: 5ba9a8c4-eb03-48c9-8e52-8cb9a7b4d8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, ws-headers: {Host: apple.com}, udp: true}
-  - {name: 日本 02-BGP 流媒体, server: jp02.internetsmartrouting.asia, port: 10323, type: vmess, uuid: 5ba9a8c4-eb03-48c9-8e52-8cb9a7b4d8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, ws-headers: {Host: apple.com}, udp: true}
-  - {name: 美国 02-BGP, server: us02.internetsmartrouting.asia, port: 10167, type: vmess, uuid: 5ba9a8c4-eb03-48c9-8e52-8cb9a7b4d8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, ws-headers: {Host: apple.com}, udp: true}
+  - {name: 海港隧道 | 1.5x | ws, server: 9a5ccc45-215e-3472-502c-1b1a055a609c.cnnic.rip, port: 80, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 德国 01 | ws, server: a3894e87-ba58-3101-112c-01938c0af70f.cnnic.rip, port: 20002, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 美国 01 | ws, server: ed364088-4fbd-8d59-c972-208ef941db86.cnnic.rip, port: 20000, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 广州电信 01 | ws | 非80, server: 183.56.219.136, port: 46794, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 南昌电信 01 | ws | 非80, server: 106.225.142.148, port: 46794, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 海新隧道 | 1.5x | ws, server: 51a3ebc4-e74c-51cb-ba8d-6862387eb9d3.cnnic.rip, port: 80, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 土耳其 01 | ws, server: 8d6acf2f-42dd-7cbf-3200-9a2db3f29f2c.cnnic.rip, port: 20003, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 沈阳联通 01 | ws, server: 586af704-07b1-5dee-700c-ec7f6b9c568c.cnnic.rip, port: 80, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 加拿大 01 | ws, server: 148e9178-8681-05de-7498-518779dceb98.cnnic.rip, port: 20001, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 杭州电信 01 | ws | 非80, server: 115.239.224.62, port: 46794, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 石家庄电信 01 | ws | 非80, server: 124.239.153.60, port: 46794, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 香港 02 | ws, server: 96cfae9d-7c6c-0722-5eb8-a2b8e9d53aee.cnnic.rip, port: 80, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 日本 01 | ws, server: ca0831a7-9d9b-a828-144e-1cb47eae7ff9.cnnic.rip, port: 80, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 阿根廷 01 | ws, server: f800877c-16b3-1059-5046-17e916c062d2.cnnic.rip, port: 20004, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 海南电信 01 | ws, server: e0b6dd8c-4d51-d5fe-830e-5497509ef465.cnnic.rip, port: 80, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 香港 01 | ws, server: 236ba16f-7989-71de-e510-1cad33923355.cnnic.rip, port: 80, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 新加坡 01 | ws, server: 24a51f02-f25c-87fa-7acf-eea632e63c7c.cnnic.rip, port: 80, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 福州电信 01 | ws | 非80, server: 121.204.166.9, port: 46794, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 02-BGP
-      - 新加坡 02-BGP 流媒体
-      - 新加坡 03-BGP 流媒体
-      - 美国 01-BGP
-      - 新加坡 01-BGP 流媒体
-      - 日本 03-BGP 流媒体
-      - 日本 01-BGP 流媒体
-      - 香港 01-BGP
-      - 日本 02-BGP 流媒体
-      - 美国 02-BGP
+      - 海港隧道 | 1.5x | ws
+      - 德国 01 | ws
+      - 美国 01 | ws
+      - 广州电信 01 | ws | 非80
+      - 南昌电信 01 | ws | 非80
+      - 海新隧道 | 1.5x | ws
+      - 土耳其 01 | ws
+      - 沈阳联通 01 | ws
+      - 加拿大 01 | ws
+      - 杭州电信 01 | ws | 非80
+      - 石家庄电信 01 | ws | 非80
+      - 香港 02 | ws
+      - 日本 01 | ws
+      - 阿根廷 01 | ws
+      - 海南电信 01 | ws
+      - 香港 01 | ws
+      - 新加坡 01 | ws
+      - 福州电信 01 | ws | 非80
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 02-BGP
-      - 新加坡 02-BGP 流媒体
-      - 新加坡 03-BGP 流媒体
-      - 美国 01-BGP
-      - 新加坡 01-BGP 流媒体
-      - 日本 03-BGP 流媒体
-      - 日本 01-BGP 流媒体
-      - 香港 01-BGP
-      - 日本 02-BGP 流媒体
-      - 美国 02-BGP
+      - 海港隧道 | 1.5x | ws
+      - 德国 01 | ws
+      - 美国 01 | ws
+      - 广州电信 01 | ws | 非80
+      - 南昌电信 01 | ws | 非80
+      - 海新隧道 | 1.5x | ws
+      - 土耳其 01 | ws
+      - 沈阳联通 01 | ws
+      - 加拿大 01 | ws
+      - 杭州电信 01 | ws | 非80
+      - 石家庄电信 01 | ws | 非80
+      - 香港 02 | ws
+      - 日本 01 | ws
+      - 阿根廷 01 | ws
+      - 海南电信 01 | ws
+      - 香港 01 | ws
+      - 新加坡 01 | ws
+      - 福州电信 01 | ws | 非80
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 02-BGP
-      - 新加坡 02-BGP 流媒体
-      - 新加坡 03-BGP 流媒体
-      - 美国 01-BGP
-      - 新加坡 01-BGP 流媒体
-      - 日本 03-BGP 流媒体
-      - 日本 01-BGP 流媒体
-      - 香港 01-BGP
-      - 日本 02-BGP 流媒体
-      - 美国 02-BGP
+      - 海港隧道 | 1.5x | ws
+      - 德国 01 | ws
+      - 美国 01 | ws
+      - 广州电信 01 | ws | 非80
+      - 南昌电信 01 | ws | 非80
+      - 海新隧道 | 1.5x | ws
+      - 土耳其 01 | ws
+      - 沈阳联通 01 | ws
+      - 加拿大 01 | ws
+      - 杭州电信 01 | ws | 非80
+      - 石家庄电信 01 | ws | 非80
+      - 香港 02 | ws
+      - 日本 01 | ws
+      - 阿根廷 01 | ws
+      - 海南电信 01 | ws
+      - 香港 01 | ws
+      - 新加坡 01 | ws
+      - 福州电信 01 | ws | 非80
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,69 +112,102 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 02-BGP
-      - 新加坡 02-BGP 流媒体
-      - 新加坡 03-BGP 流媒体
-      - 美国 01-BGP
-      - 新加坡 01-BGP 流媒体
-      - 日本 03-BGP 流媒体
-      - 日本 01-BGP 流媒体
-      - 香港 01-BGP
-      - 日本 02-BGP 流媒体
-      - 美国 02-BGP
+      - 海港隧道 | 1.5x | ws
+      - 德国 01 | ws
+      - 美国 01 | ws
+      - 广州电信 01 | ws | 非80
+      - 南昌电信 01 | ws | 非80
+      - 海新隧道 | 1.5x | ws
+      - 土耳其 01 | ws
+      - 沈阳联通 01 | ws
+      - 加拿大 01 | ws
+      - 杭州电信 01 | ws | 非80
+      - 石家庄电信 01 | ws | 非80
+      - 香港 02 | ws
+      - 日本 01 | ws
+      - 阿根廷 01 | ws
+      - 海南电信 01 | ws
+      - 香港 01 | ws
+      - 新加坡 01 | ws
+      - 福州电信 01 | ws | 非80
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 02-BGP
-      - 香港 01-BGP
+      - 海港隧道 | 1.5x | ws
+      - 香港 02 | ws
+      - 香港 01 | ws
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 02-BGP
-      - 新加坡 02-BGP 流媒体
-      - 新加坡 03-BGP 流媒体
-      - 美国 01-BGP
-      - 新加坡 01-BGP 流媒体
-      - 日本 03-BGP 流媒体
-      - 日本 01-BGP 流媒体
-      - 香港 01-BGP
-      - 日本 02-BGP 流媒体
-      - 美国 02-BGP
+      - 海港隧道 | 1.5x | ws
+      - 德国 01 | ws
+      - 美国 01 | ws
+      - 广州电信 01 | ws | 非80
+      - 南昌电信 01 | ws | 非80
+      - 海新隧道 | 1.5x | ws
+      - 土耳其 01 | ws
+      - 沈阳联通 01 | ws
+      - 加拿大 01 | ws
+      - 杭州电信 01 | ws | 非80
+      - 石家庄电信 01 | ws | 非80
+      - 香港 02 | ws
+      - 日本 01 | ws
+      - 阿根廷 01 | ws
+      - 海南电信 01 | ws
+      - 香港 01 | ws
+      - 新加坡 01 | ws
+      - 福州电信 01 | ws | 非80
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 02-BGP
-      - 新加坡 02-BGP 流媒体
-      - 新加坡 03-BGP 流媒体
-      - 美国 01-BGP
-      - 新加坡 01-BGP 流媒体
-      - 日本 03-BGP 流媒体
-      - 日本 01-BGP 流媒体
-      - 香港 01-BGP
-      - 日本 02-BGP 流媒体
-      - 美国 02-BGP
+      - 海港隧道 | 1.5x | ws
+      - 德国 01 | ws
+      - 美国 01 | ws
+      - 广州电信 01 | ws | 非80
+      - 南昌电信 01 | ws | 非80
+      - 海新隧道 | 1.5x | ws
+      - 土耳其 01 | ws
+      - 沈阳联通 01 | ws
+      - 加拿大 01 | ws
+      - 杭州电信 01 | ws | 非80
+      - 石家庄电信 01 | ws | 非80
+      - 香港 02 | ws
+      - 日本 01 | ws
+      - 阿根廷 01 | ws
+      - 海南电信 01 | ws
+      - 香港 01 | ws
+      - 新加坡 01 | ws
+      - 福州电信 01 | ws | 非80
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 02-BGP
-      - 新加坡 02-BGP 流媒体
-      - 新加坡 03-BGP 流媒体
-      - 美国 01-BGP
-      - 新加坡 01-BGP 流媒体
-      - 日本 03-BGP 流媒体
-      - 日本 01-BGP 流媒体
-      - 香港 01-BGP
-      - 日本 02-BGP 流媒体
-      - 美国 02-BGP
+      - 海港隧道 | 1.5x | ws
+      - 德国 01 | ws
+      - 美国 01 | ws
+      - 广州电信 01 | ws | 非80
+      - 南昌电信 01 | ws | 非80
+      - 海新隧道 | 1.5x | ws
+      - 土耳其 01 | ws
+      - 沈阳联通 01 | ws
+      - 加拿大 01 | ws
+      - 杭州电信 01 | ws | 非80
+      - 石家庄电信 01 | ws | 非80
+      - 香港 02 | ws
+      - 日本 01 | ws
+      - 阿根廷 01 | ws
+      - 海南电信 01 | ws
+      - 香港 01 | ws
+      - 新加坡 01 | ws
+      - 福州电信 01 | ws | 非80
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -158,16 +223,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 02-BGP
-      - 新加坡 02-BGP 流媒体
-      - 新加坡 03-BGP 流媒体
-      - 美国 01-BGP
-      - 新加坡 01-BGP 流媒体
-      - 日本 03-BGP 流媒体
-      - 日本 01-BGP 流媒体
-      - 香港 01-BGP
-      - 日本 02-BGP 流媒体
-      - 美国 02-BGP
+      - 海港隧道 | 1.5x | ws
+      - 德国 01 | ws
+      - 美国 01 | ws
+      - 广州电信 01 | ws | 非80
+      - 南昌电信 01 | ws | 非80
+      - 海新隧道 | 1.5x | ws
+      - 土耳其 01 | ws
+      - 沈阳联通 01 | ws
+      - 加拿大 01 | ws
+      - 杭州电信 01 | ws | 非80
+      - 石家庄电信 01 | ws | 非80
+      - 香港 02 | ws
+      - 日本 01 | ws
+      - 阿根廷 01 | ws
+      - 海南电信 01 | ws
+      - 香港 01 | ws
+      - 新加坡 01 | ws
+      - 福州电信 01 | ws | 非80
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
