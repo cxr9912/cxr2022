@@ -6,8 +6,8 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 香港直连, server: vm.jiegebuyao.top, port: 25596, type: vmess, uuid: 65340174-1b7e-4b3a-d61b-5e0b8bc8edb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: vm.jiegebuyao.top}, udp: true}
-  - {name: 东京软银, server: wase.leiyingchuanmei.com, port: 45017, type: vmess, uuid: 45f9f91c-2389-483c-a3b2-6606397edb0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 软银直连, server: ry.jiegebuyao.top, port: 52406, type: vmess, uuid: d314d570-1570-4552-d54a-14d0b8c5fffc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ry.jiegebuyao.top}, udp: true}
+  - {name: Hong+Kong+03, server: nleanrs.wqjbvw.lol, port: 40212, type: ss, cipher: aes-128-gcm, password: 82e056c036564283, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -15,16 +15,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港直连
-      - 东京软银
       - 软银直连
+      - Hong+Kong+03
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 香港直连
-      - 东京软银
       - 软银直连
+      - Hong+Kong+03
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -32,8 +32,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港直连
-      - 东京软银
       - 软银直连
+      - Hong+Kong+03
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -53,8 +53,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港直连
-      - 东京软银
       - 软银直连
+      - Hong+Kong+03
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -67,16 +67,16 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 香港直连
-      - 东京软银
       - 软银直连
+      - Hong+Kong+03
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 香港直连
-      - 东京软银
       - 软银直连
+      - Hong+Kong+03
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -84,8 +84,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 香港直连
-      - 东京软银
       - 软银直连
+      - Hong+Kong+03
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -102,8 +102,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 香港直连
-      - 东京软银
       - 软银直连
+      - Hong+Kong+03
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
