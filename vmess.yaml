@@ -5,43 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_中国->🇸🇬_SG_新加坡, server: m.lwvzmdu.cn, port: 16618, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: _CN_中国->🇫🇷_FR_法国, server: yes.iamagoodman.net, port: 16645, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: _CN_中国->🇳🇱_NL_荷兰, server: yes.iamagoodman.net, port: 16642, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: _CN_中国->🇫🇷_FR_法国 2, server: m.lwvzmdu.cn, port: 23309, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: _SG_新加坡, server: sg02.170203.xyz, port: 43543, type: vmess, uuid: 1f3f5b8a-be41-4a92-9b90-6473702aaa3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg02.170203.xyz}, udp: true}
+  - {name: 新加坡0629, server: jscm.1.xd.hela.lol, port: 28003, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
+  - {name: 新加坡0628, server: gzcm.1.xq.hela.lol, port: 28003, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
+  - {name: 香港0123, server: jscm.1.xd.hela.lol, port: 28001, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
+  - {name: 香港0226, server: jscm.1.xd.hela.lol, port: 28002, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
+  - {name: 香港0224, server: hncu.1.xd.hela.lol, port: 28002, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
+  - {name: 香港0225, server: hncu.1.xd.hela.lol, port: 28004, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
+  - {name: 新加坡0627, server: hncu.1.xd.hela.lol, port: 28003, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
+  - {name: 香港0122, server: jscm.1.xd.hela.lol, port: 28004, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
+  - {name: 香港0121, server: hncu.1.xd.hela.lol, port: 28001, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
+  - {name: 美国1130, server: jscm.1.xd.hela.lol, port: 28012, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇫🇷_FR_法国
-      - _CN_中国->🇳🇱_NL_荷兰
-      - _CN_中国->🇫🇷_FR_法国 2
-      - _SG_新加坡
+      - 新加坡0629
+      - 新加坡0628
+      - 香港0123
+      - 香港0226
+      - 香港0224
+      - 香港0225
+      - 新加坡0627
+      - 香港0122
+      - 香港0121
+      - 美国1130
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇫🇷_FR_法国
-      - _CN_中国->🇳🇱_NL_荷兰
-      - _CN_中国->🇫🇷_FR_法国 2
-      - _SG_新加坡
+      - 新加坡0629
+      - 新加坡0628
+      - 香港0123
+      - 香港0226
+      - 香港0224
+      - 香港0225
+      - 新加坡0627
+      - 香港0122
+      - 香港0121
+      - 美国1130
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇫🇷_FR_法国
-      - _CN_中国->🇳🇱_NL_荷兰
-      - _CN_中国->🇫🇷_FR_法国 2
-      - _SG_新加坡
+      - 新加坡0629
+      - 新加坡0628
+      - 香港0123
+      - 香港0226
+      - 香港0224
+      - 香港0225
+      - 新加坡0627
+      - 香港0122
+      - 香港0121
+      - 美国1130
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,47 +80,73 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇫🇷_FR_法国
-      - _CN_中国->🇳🇱_NL_荷兰
-      - _CN_中国->🇫🇷_FR_法国 2
-      - _SG_新加坡
+      - 新加坡0629
+      - 新加坡0628
+      - 香港0123
+      - 香港0226
+      - 香港0224
+      - 香港0225
+      - 新加坡0627
+      - 香港0122
+      - 香港0121
+      - 美国1130
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港0123
+      - 香港0226
+      - 香港0224
+      - 香港0225
+      - 香港0122
+      - 香港0121
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇫🇷_FR_法国
-      - _CN_中国->🇳🇱_NL_荷兰
-      - _CN_中国->🇫🇷_FR_法国 2
-      - _SG_新加坡
+      - 新加坡0629
+      - 新加坡0628
+      - 香港0123
+      - 香港0226
+      - 香港0224
+      - 香港0225
+      - 新加坡0627
+      - 香港0122
+      - 香港0121
+      - 美国1130
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇫🇷_FR_法国
-      - _CN_中国->🇳🇱_NL_荷兰
-      - _CN_中国->🇫🇷_FR_法国 2
-      - _SG_新加坡
+      - 新加坡0629
+      - 新加坡0628
+      - 香港0123
+      - 香港0226
+      - 香港0224
+      - 香港0225
+      - 新加坡0627
+      - 香港0122
+      - 香港0121
+      - 美国1130
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇫🇷_FR_法国
-      - _CN_中国->🇳🇱_NL_荷兰
-      - _CN_中国->🇫🇷_FR_法国 2
-      - _SG_新加坡
+      - 新加坡0629
+      - 新加坡0628
+      - 香港0123
+      - 香港0226
+      - 香港0224
+      - 香港0225
+      - 新加坡0627
+      - 香港0122
+      - 香港0121
+      - 美国1130
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +162,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇫🇷_FR_法国
-      - _CN_中国->🇳🇱_NL_荷兰
-      - _CN_中国->🇫🇷_FR_法国 2
-      - _SG_新加坡
+      - 新加坡0629
+      - 新加坡0628
+      - 香港0123
+      - 香港0226
+      - 香港0224
+      - 香港0225
+      - 新加坡0627
+      - 香港0122
+      - 香港0121
+      - 美国1130
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
