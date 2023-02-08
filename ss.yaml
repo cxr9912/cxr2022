@@ -5,39 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: Singapore 09, server: sz-sg.19991314.xyz, port: 16216, type: vmess, uuid: 4b1ddb97-51ce-44cc-84f2-0a6ae6eba50d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 日本1, server: download1hkt.windowsupdate.lol, port: 80, type: vmess, uuid: cbb98a13-d55d-4655-844b-5f62faf5edd4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /pq/jp2, ws-headers: {Host: download1hkt.windowsupdate.lol}, udp: true}
-  - {name: 美国 02, server: us-1.free.yuji2022.gq, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vAambj4DgXrs5sfCFptMk, ws-headers: {Host: us-1.free.yuji2022.gq}, udp: true}
-  - {name: 美国 03, server: us-2.free.yuji2022.gq, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /SRhXKZqggNrPMELA525Kw, ws-headers: {Host: us-2.free.yuji2022.gq}, udp: true}
-  - {name: 法国 01, server: vmess.woiden.yuji2022.gq, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /E86414F638E11, ws-headers: {Host: vmess.woiden.yuji2022.gq}, udp: true}
+  - {name: Singapore 02, server: gz-sg.19991314.xyz, port: 49227, type: vmess, uuid: 4b1ddb97-51ce-44cc-84f2-0a6ae6eba50d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Singapore 09
       - 日本1
-      - 美国 02
-      - 美国 03
-      - 法国 01
+      - Singapore 02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - Singapore 09
       - 日本1
-      - 美国 02
-      - 美国 03
-      - 法国 01
+      - Singapore 02
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Singapore 09
       - 日本1
-      - 美国 02
-      - 美国 03
-      - 法国 01
+      - Singapore 02
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,10 +52,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Singapore 09
       - 日本1
-      - 美国 02
-      - 美国 03
-      - 法国 01
+      - Singapore 02
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -70,29 +65,26 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - Singapore 09
       - 日本1
-      - 美国 02
-      - 美国 03
-      - 法国 01
+      - Singapore 02
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - Singapore 09
       - 日本1
-      - 美国 02
-      - 美国 03
-      - 法国 01
+      - Singapore 02
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Singapore 09
       - 日本1
-      - 美国 02
-      - 美国 03
-      - 法国 01
+      - Singapore 02
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +100,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Singapore 09
       - 日本1
-      - 美国 02
-      - 美国 03
-      - 法国 01
+      - Singapore 02
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
