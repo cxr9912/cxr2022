@@ -5,63 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡0629, server: jscm.1.xd.hela.lol, port: 28003, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
-  - {name: 新加坡0628, server: gzcm.1.xq.hela.lol, port: 28003, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
-  - {name: 香港0123, server: jscm.1.xd.hela.lol, port: 28001, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
-  - {name: 香港0226, server: jscm.1.xd.hela.lol, port: 28002, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
-  - {name: 香港0224, server: hncu.1.xd.hela.lol, port: 28002, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
-  - {name: 香港0225, server: hncu.1.xd.hela.lol, port: 28004, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
-  - {name: 新加坡0627, server: hncu.1.xd.hela.lol, port: 28003, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
-  - {name: 香港0122, server: jscm.1.xd.hela.lol, port: 28004, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
-  - {name: 香港0121, server: hncu.1.xd.hela.lol, port: 28001, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
-  - {name: 美国1130, server: jscm.1.xd.hela.lol, port: 28012, type: ss, cipher: chacha20-ietf-poly1305, password: 284247b8-3598-4cdd-8e10-cb63a38b1be1, udp: true}
+  - {name: SG-新广中转-极速-3|倍率:2, server: pop.china.xgp.gfwcaonimanmsl.ml, port: 17589, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: DO-沪德专线-极速|倍率:2, server: pop.de.1.1.gfwcaonimanmsl.cf, port: 51122, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG-新广中转-极速-1|倍率:2, server: pop.china.xgp.2.gfwcaonimanmsl.ml, port: 17585, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HU-匈牙利北京专线-1|倍率:2, server: xyk.cn.timeswath.uk, port: 47223, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG-新广中转-极速-4|倍率:2, server: pop.china.xgp.2.gfwcaonimanmsl.ml, port: 17544, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG-新广中转-极速-2|倍率:2, server: pop.china.xgp.2.gfwcaonimanmsl.ml, port: 17511, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG-SIN-新加坡-高速-2|倍率:2, server: pop.xgp.2.gfwcaonimanmsl.cf, port: 55881, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pop.xgp.2.gfwcaonimanmsl.cf}, udp: true}
+  - {name: US-电信优化-4|倍率:0.5, server: pop.usa.gfwcaonimanmsl.ml, port: 8967, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /name, ws-headers: {Host: pop.usa.gfwcaonimanmsl.ml}, udp: true}
+  - {name: US-电信优化-1|倍率:0.5, server: pop.usa.gfwcaonimanmsl.ml, port: 8964, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /name, ws-headers: {Host: pop.usa.gfwcaonimanmsl.ml}, udp: true}
+  - {name: US-电信优化-2|倍率:0.5, server: pop.usa.gfwcaonimanmsl.ml, port: 8965, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /name, ws-headers: {Host: pop.usa.gfwcaonimanmsl.ml}, udp: true}
+  - {name: US-电信优化-3|倍率:0.5, server: pop.usa.gfwcaonimanmsl.ml, port: 8966, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /name, ws-headers: {Host: pop.usa.gfwcaonimanmsl.ml}, udp: true}
+  - {name: JP-日本高速T-1|倍率:1, server: lop.janp2.gfwcaonimanmsl.ml, port: 80, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /name, ws-headers: {Host: lop.janp2.gfwcaonimanmsl.ml}, udp: true}
+  - {name: US-LAX-（专线）加利福尼亚-1|倍率:0.8, server: pop.lax.1.gfwcaonimanmsl.ml, port: 25111, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /n445e, ws-headers: {Host: pop.lax.1.gfwcaonimanmsl.ml}, udp: true}
+  - {name: DO-FRA-富兰克林-1|倍率:0.8, server: pop.fra.gfwcaonimanmsl.ml, port: 25411, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dwawwwa, ws-headers: {Host: pop.fra.gfwcaonimanmsl.ml}, udp: true}
+  - {name: US-FRU-玛纳斯-2|倍率:0.8, server: pop.fru.gfwcaonimanmsl.ml, port: 45611, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /name, ws-headers: {Host: pop.fru.gfwcaonimanmsl.ml}, udp: true}
+  - {name: NL-AMS-阿姆斯特丹|倍率:0.8, server: pop.ams.1.gfwcaonimanmsl.ml, port: 24414, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /n445e, ws-headers: {Host: pop.ams.1.gfwcaonimanmsl.ml}, udp: true}
+  - {name: US-LAX-加利福尼亚|倍率:0.8, server: pop.lax.2.gfwcaonimanmsl.ml, port: 25111, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /n445e, ws-headers: {Host: pop.lax.2.gfwcaonimanmsl.ml}, udp: true}
+  - {name: US-SFO-旧金山-1|倍率:0.8, server: pop.china.gfwcaonimanmsl.ml, port: 10010, type: vmess, uuid: 2539595c-71b5-47ec-9060-532b6264e20a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /144444225, ws-headers: {Host: pop.china.gfwcaonimanmsl.ml}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡0629
-      - 新加坡0628
-      - 香港0123
-      - 香港0226
-      - 香港0224
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 香港0121
-      - 美国1130
+      - SG-新广中转-极速-3|倍率:2
+      - DO-沪德专线-极速|倍率:2
+      - SG-新广中转-极速-1|倍率:2
+      - HU-匈牙利北京专线-1|倍率:2
+      - SG-新广中转-极速-4|倍率:2
+      - SG-新广中转-极速-2|倍率:2
+      - SG-SIN-新加坡-高速-2|倍率:2
+      - US-电信优化-4|倍率:0.5
+      - US-电信优化-1|倍率:0.5
+      - US-电信优化-2|倍率:0.5
+      - US-电信优化-3|倍率:0.5
+      - JP-日本高速T-1|倍率:1
+      - US-LAX-（专线）加利福尼亚-1|倍率:0.8
+      - DO-FRA-富兰克林-1|倍率:0.8
+      - US-FRU-玛纳斯-2|倍率:0.8
+      - NL-AMS-阿姆斯特丹|倍率:0.8
+      - US-LAX-加利福尼亚|倍率:0.8
+      - US-SFO-旧金山-1|倍率:0.8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡0629
-      - 新加坡0628
-      - 香港0123
-      - 香港0226
-      - 香港0224
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 香港0121
-      - 美国1130
+      - SG-新广中转-极速-3|倍率:2
+      - DO-沪德专线-极速|倍率:2
+      - SG-新广中转-极速-1|倍率:2
+      - HU-匈牙利北京专线-1|倍率:2
+      - SG-新广中转-极速-4|倍率:2
+      - SG-新广中转-极速-2|倍率:2
+      - SG-SIN-新加坡-高速-2|倍率:2
+      - US-电信优化-4|倍率:0.5
+      - US-电信优化-1|倍率:0.5
+      - US-电信优化-2|倍率:0.5
+      - US-电信优化-3|倍率:0.5
+      - JP-日本高速T-1|倍率:1
+      - US-LAX-（专线）加利福尼亚-1|倍率:0.8
+      - DO-FRA-富兰克林-1|倍率:0.8
+      - US-FRU-玛纳斯-2|倍率:0.8
+      - NL-AMS-阿姆斯特丹|倍率:0.8
+      - US-LAX-加利福尼亚|倍率:0.8
+      - US-SFO-旧金山-1|倍率:0.8
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡0629
-      - 新加坡0628
-      - 香港0123
-      - 香港0226
-      - 香港0224
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 香港0121
-      - 美国1130
+      - SG-新广中转-极速-3|倍率:2
+      - DO-沪德专线-极速|倍率:2
+      - SG-新广中转-极速-1|倍率:2
+      - HU-匈牙利北京专线-1|倍率:2
+      - SG-新广中转-极速-4|倍率:2
+      - SG-新广中转-极速-2|倍率:2
+      - SG-SIN-新加坡-高速-2|倍率:2
+      - US-电信优化-4|倍率:0.5
+      - US-电信优化-1|倍率:0.5
+      - US-电信优化-2|倍率:0.5
+      - US-电信优化-3|倍率:0.5
+      - JP-日本高速T-1|倍率:1
+      - US-LAX-（专线）加利福尼亚-1|倍率:0.8
+      - DO-FRA-富兰克林-1|倍率:0.8
+      - US-FRU-玛纳斯-2|倍率:0.8
+      - NL-AMS-阿姆斯特丹|倍率:0.8
+      - US-LAX-加利福尼亚|倍率:0.8
+      - US-SFO-旧金山-1|倍率:0.8
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,73 +112,99 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡0629
-      - 新加坡0628
-      - 香港0123
-      - 香港0226
-      - 香港0224
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 香港0121
-      - 美国1130
+      - SG-新广中转-极速-3|倍率:2
+      - DO-沪德专线-极速|倍率:2
+      - SG-新广中转-极速-1|倍率:2
+      - HU-匈牙利北京专线-1|倍率:2
+      - SG-新广中转-极速-4|倍率:2
+      - SG-新广中转-极速-2|倍率:2
+      - SG-SIN-新加坡-高速-2|倍率:2
+      - US-电信优化-4|倍率:0.5
+      - US-电信优化-1|倍率:0.5
+      - US-电信优化-2|倍率:0.5
+      - US-电信优化-3|倍率:0.5
+      - JP-日本高速T-1|倍率:1
+      - US-LAX-（专线）加利福尼亚-1|倍率:0.8
+      - DO-FRA-富兰克林-1|倍率:0.8
+      - US-FRU-玛纳斯-2|倍率:0.8
+      - NL-AMS-阿姆斯特丹|倍率:0.8
+      - US-LAX-加利福尼亚|倍率:0.8
+      - US-SFO-旧金山-1|倍率:0.8
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港0123
-      - 香港0226
-      - 香港0224
-      - 香港0225
-      - 香港0122
-      - 香港0121
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡0629
-      - 新加坡0628
-      - 香港0123
-      - 香港0226
-      - 香港0224
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 香港0121
-      - 美国1130
+      - SG-新广中转-极速-3|倍率:2
+      - DO-沪德专线-极速|倍率:2
+      - SG-新广中转-极速-1|倍率:2
+      - HU-匈牙利北京专线-1|倍率:2
+      - SG-新广中转-极速-4|倍率:2
+      - SG-新广中转-极速-2|倍率:2
+      - SG-SIN-新加坡-高速-2|倍率:2
+      - US-电信优化-4|倍率:0.5
+      - US-电信优化-1|倍率:0.5
+      - US-电信优化-2|倍率:0.5
+      - US-电信优化-3|倍率:0.5
+      - JP-日本高速T-1|倍率:1
+      - US-LAX-（专线）加利福尼亚-1|倍率:0.8
+      - DO-FRA-富兰克林-1|倍率:0.8
+      - US-FRU-玛纳斯-2|倍率:0.8
+      - NL-AMS-阿姆斯特丹|倍率:0.8
+      - US-LAX-加利福尼亚|倍率:0.8
+      - US-SFO-旧金山-1|倍率:0.8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡0629
-      - 新加坡0628
-      - 香港0123
-      - 香港0226
-      - 香港0224
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 香港0121
-      - 美国1130
+      - SG-新广中转-极速-3|倍率:2
+      - DO-沪德专线-极速|倍率:2
+      - SG-新广中转-极速-1|倍率:2
+      - HU-匈牙利北京专线-1|倍率:2
+      - SG-新广中转-极速-4|倍率:2
+      - SG-新广中转-极速-2|倍率:2
+      - SG-SIN-新加坡-高速-2|倍率:2
+      - US-电信优化-4|倍率:0.5
+      - US-电信优化-1|倍率:0.5
+      - US-电信优化-2|倍率:0.5
+      - US-电信优化-3|倍率:0.5
+      - JP-日本高速T-1|倍率:1
+      - US-LAX-（专线）加利福尼亚-1|倍率:0.8
+      - DO-FRA-富兰克林-1|倍率:0.8
+      - US-FRU-玛纳斯-2|倍率:0.8
+      - NL-AMS-阿姆斯特丹|倍率:0.8
+      - US-LAX-加利福尼亚|倍率:0.8
+      - US-SFO-旧金山-1|倍率:0.8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡0629
-      - 新加坡0628
-      - 香港0123
-      - 香港0226
-      - 香港0224
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 香港0121
-      - 美国1130
+      - SG-新广中转-极速-3|倍率:2
+      - DO-沪德专线-极速|倍率:2
+      - SG-新广中转-极速-1|倍率:2
+      - HU-匈牙利北京专线-1|倍率:2
+      - SG-新广中转-极速-4|倍率:2
+      - SG-新广中转-极速-2|倍率:2
+      - SG-SIN-新加坡-高速-2|倍率:2
+      - US-电信优化-4|倍率:0.5
+      - US-电信优化-1|倍率:0.5
+      - US-电信优化-2|倍率:0.5
+      - US-电信优化-3|倍率:0.5
+      - JP-日本高速T-1|倍率:1
+      - US-LAX-（专线）加利福尼亚-1|倍率:0.8
+      - DO-FRA-富兰克林-1|倍率:0.8
+      - US-FRU-玛纳斯-2|倍率:0.8
+      - NL-AMS-阿姆斯特丹|倍率:0.8
+      - US-LAX-加利福尼亚|倍率:0.8
+      - US-SFO-旧金山-1|倍率:0.8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,16 +220,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡0629
-      - 新加坡0628
-      - 香港0123
-      - 香港0226
-      - 香港0224
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 香港0121
-      - 美国1130
+      - SG-新广中转-极速-3|倍率:2
+      - DO-沪德专线-极速|倍率:2
+      - SG-新广中转-极速-1|倍率:2
+      - HU-匈牙利北京专线-1|倍率:2
+      - SG-新广中转-极速-4|倍率:2
+      - SG-新广中转-极速-2|倍率:2
+      - SG-SIN-新加坡-高速-2|倍率:2
+      - US-电信优化-4|倍率:0.5
+      - US-电信优化-1|倍率:0.5
+      - US-电信优化-2|倍率:0.5
+      - US-电信优化-3|倍率:0.5
+      - JP-日本高速T-1|倍率:1
+      - US-LAX-（专线）加利福尼亚-1|倍率:0.8
+      - DO-FRA-富兰克林-1|倍率:0.8
+      - US-FRU-玛纳斯-2|倍率:0.8
+      - NL-AMS-阿姆斯特丹|倍率:0.8
+      - US-LAX-加利福尼亚|倍率:0.8
+      - US-SFO-旧金山-1|倍率:0.8
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
