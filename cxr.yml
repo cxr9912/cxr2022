@@ -5,35 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 越南-1.48MB/s(Youtube:不良林), server: 103.82.24.79, port: 80, type: vmess, uuid: 8886bc65-e61d-41f3-922a-8f1b25b499bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tandung288.click, ws-headers: {Host: 103.82.24.79}, udp: true}
-  - {name: 越南-3.90MB/s(Youtube:不良林), server: 103.166.185.227, port: 80, type: vmess, uuid: 8886bc65-e61d-41f3-922a-8f1b25b499bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tandung288.click, ws-headers: {Host: 103.166.185.227}, udp: true}
+  - {name: _香港_YouTube：全网最强白嫖_3, server: hkt.52147.top, port: 80, type: vmess, uuid: f92cbc43-7f00-4ee0-bfab-1ea4f39c2de9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yfjc/jp1, ws-headers: {Host: hkt.52147.top}, udp: true}
   - {name: 中国-2.09MB/s(Youtube:不良林), server: xmct.xn--dlq110j6ul.cc, port: 20218, type: ss, cipher: chacha20-ietf-poly1305, password: b5a503a9-a3ad-42d9-af00-86f959d3454b, udp: true}
+  - {name: _日本_YouTube：全网最强白嫖_4, server: air-osaka24.900513.xyz, port: 7758, type: trojan, password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1, sni: air-osaka24.900513.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 越南-1.48MB/s(Youtube:不良林)
-      - 越南-3.90MB/s(Youtube:不良林)
+      - _香港_YouTube：全网最强白嫖_3
       - 中国-2.09MB/s(Youtube:不良林)
+      - _日本_YouTube：全网最强白嫖_4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 越南-1.48MB/s(Youtube:不良林)
-      - 越南-3.90MB/s(Youtube:不良林)
+      - _香港_YouTube：全网最强白嫖_3
       - 中国-2.09MB/s(Youtube:不良林)
+      - _日本_YouTube：全网最强白嫖_4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 越南-1.48MB/s(Youtube:不良林)
-      - 越南-3.90MB/s(Youtube:不良林)
+      - _香港_YouTube：全网最强白嫖_3
       - 中国-2.09MB/s(Youtube:不良林)
+      - _日本_YouTube：全网最强白嫖_4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,39 +52,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 越南-1.48MB/s(Youtube:不良林)
-      - 越南-3.90MB/s(Youtube:不良林)
+      - _香港_YouTube：全网最强白嫖_3
       - 中国-2.09MB/s(Youtube:不良林)
+      - _日本_YouTube：全网最强白嫖_4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - _香港_YouTube：全网最强白嫖_3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 越南-1.48MB/s(Youtube:不良林)
-      - 越南-3.90MB/s(Youtube:不良林)
+      - _香港_YouTube：全网最强白嫖_3
       - 中国-2.09MB/s(Youtube:不良林)
+      - _日本_YouTube：全网最强白嫖_4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 越南-1.48MB/s(Youtube:不良林)
-      - 越南-3.90MB/s(Youtube:不良林)
+      - _香港_YouTube：全网最强白嫖_3
       - 中国-2.09MB/s(Youtube:不良林)
+      - _日本_YouTube：全网最强白嫖_4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 越南-1.48MB/s(Youtube:不良林)
-      - 越南-3.90MB/s(Youtube:不良林)
+      - _香港_YouTube：全网最强白嫖_3
       - 中国-2.09MB/s(Youtube:不良林)
+      - _日本_YouTube：全网最强白嫖_4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +101,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 越南-1.48MB/s(Youtube:不良林)
-      - 越南-3.90MB/s(Youtube:不良林)
+      - _香港_YouTube：全网最强白嫖_3
       - 中国-2.09MB/s(Youtube:不良林)
+      - _日本_YouTube：全网最强白嫖_4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
