@@ -5,67 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港0123, server: jscm.1.xd.hela.lol, port: 28001, type: ss, cipher: chacha20-ietf-poly1305, password: 7efcb9cc-e794-4ad2-8d49-52e31b615f5c, udp: true}
-  - {name: 新加坡0629, server: jscm.1.xd.hela.lol, port: 28003, type: ss, cipher: chacha20-ietf-poly1305, password: 7efcb9cc-e794-4ad2-8d49-52e31b615f5c, udp: true}
-  - {name: 香港0224, server: hncu.1.xd.hela.lol, port: 28002, type: ss, cipher: chacha20-ietf-poly1305, password: 7efcb9cc-e794-4ad2-8d49-52e31b615f5c, udp: true}
-  - {name: 香港0121, server: hncu.1.xd.hela.lol, port: 28001, type: ss, cipher: chacha20-ietf-poly1305, password: 7efcb9cc-e794-4ad2-8d49-52e31b615f5c, udp: true}
-  - {name: 香港0226, server: jscm.1.xd.hela.lol, port: 28002, type: ss, cipher: chacha20-ietf-poly1305, password: 7efcb9cc-e794-4ad2-8d49-52e31b615f5c, udp: true}
-  - {name: 香港0225, server: hncu.1.xd.hela.lol, port: 28004, type: ss, cipher: chacha20-ietf-poly1305, password: 7efcb9cc-e794-4ad2-8d49-52e31b615f5c, udp: true}
-  - {name: 新加坡0627, server: hncu.1.xd.hela.lol, port: 28003, type: ss, cipher: chacha20-ietf-poly1305, password: 7efcb9cc-e794-4ad2-8d49-52e31b615f5c, udp: true}
-  - {name: 香港0122, server: jscm.1.xd.hela.lol, port: 28004, type: ss, cipher: chacha20-ietf-poly1305, password: 7efcb9cc-e794-4ad2-8d49-52e31b615f5c, udp: true}
-  - {name: 美国1130, server: jscm.1.xd.hela.lol, port: 28012, type: ss, cipher: chacha20-ietf-poly1305, password: 7efcb9cc-e794-4ad2-8d49-52e31b615f5c, udp: true}
-  - {name: 新加坡0628, server: gzcm.1.xq.hela.lol, port: 28003, type: ss, cipher: chacha20-ietf-poly1305, password: 7efcb9cc-e794-4ad2-8d49-52e31b615f5c, udp: true}
-  - {name: TG群:@WeoAirport_Group, server: weo-hk-test.laowufly.cf, port: 443, type: trojan, password: 5d1a7341-794c-4e17-981f-97058a94539a, sni: weo-hk-test.laowufly.cf, skip-cert-verify: true, udp: true}
+  - {name: 日本-8AE TG频道@v2ssfly, server: vipjp3-ws-tls.jsssline.top, port: 43105, type: vmess, uuid: f245ba15-aff5-7229-cdc6-6535303c2a75, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国-6E8 TG频道@v2ssfly, server: vip32-ws-tls.jsssline.top, port: 43305, type: vmess, uuid: f245ba15-aff5-7229-cdc6-6535303c2a75, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港-AEC TG频道@v2ssfly, server: hnm.xiaohouzi.club, port: 27482, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 美国-0C8 TG频道@v2ssfly, server: hn.xiaohouzi.club, port: 18463, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 加拿大-6C9 TG频道@v2ssfly, server: szf02.xiaohouzi.club, port: 36304, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: szf02.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 加拿大-09A TG频道@v2ssfly, server: hnm.xiaohouzi.club, port: 17104, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 美国-ZB9 TG频道@v2ssfly, server: 405352c5091918031.spbohk.com, port: 443, type: vmess, uuid: 65ee1606-6713-43af-a021-0edaac89ed5d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /0edaac89ed5d, ws-headers: {Host: 405352c5091918031.spbohk.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港0123
-      - 新加坡0629
-      - 香港0224
-      - 香港0121
-      - 香港0226
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 美国1130
-      - 新加坡0628
-      - TG群:@WeoAirport_Group
+      - 日本-8AE TG频道@v2ssfly
+      - 美国-6E8 TG频道@v2ssfly
+      - 香港-AEC TG频道@v2ssfly
+      - 美国-0C8 TG频道@v2ssfly
+      - 加拿大-6C9 TG频道@v2ssfly
+      - 加拿大-09A TG频道@v2ssfly
+      - 美国-ZB9 TG频道@v2ssfly
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港0123
-      - 新加坡0629
-      - 香港0224
-      - 香港0121
-      - 香港0226
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 美国1130
-      - 新加坡0628
-      - TG群:@WeoAirport_Group
+      - 日本-8AE TG频道@v2ssfly
+      - 美国-6E8 TG频道@v2ssfly
+      - 香港-AEC TG频道@v2ssfly
+      - 美国-0C8 TG频道@v2ssfly
+      - 加拿大-6C9 TG频道@v2ssfly
+      - 加拿大-09A TG频道@v2ssfly
+      - 美国-ZB9 TG频道@v2ssfly
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港0123
-      - 新加坡0629
-      - 香港0224
-      - 香港0121
-      - 香港0226
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 美国1130
-      - 新加坡0628
-      - TG群:@WeoAirport_Group
+      - 日本-8AE TG频道@v2ssfly
+      - 美国-6E8 TG频道@v2ssfly
+      - 香港-AEC TG频道@v2ssfly
+      - 美国-0C8 TG频道@v2ssfly
+      - 加拿大-6C9 TG频道@v2ssfly
+      - 加拿大-09A TG频道@v2ssfly
+      - 美国-ZB9 TG频道@v2ssfly
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,77 +68,56 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港0123
-      - 新加坡0629
-      - 香港0224
-      - 香港0121
-      - 香港0226
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 美国1130
-      - 新加坡0628
-      - TG群:@WeoAirport_Group
+      - 日本-8AE TG频道@v2ssfly
+      - 美国-6E8 TG频道@v2ssfly
+      - 香港-AEC TG频道@v2ssfly
+      - 美国-0C8 TG频道@v2ssfly
+      - 加拿大-6C9 TG频道@v2ssfly
+      - 加拿大-09A TG频道@v2ssfly
+      - 美国-ZB9 TG频道@v2ssfly
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港0123
-      - 香港0224
-      - 香港0121
-      - 香港0226
-      - 香港0225
-      - 香港0122
+      - 香港-AEC TG频道@v2ssfly
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港0123
-      - 新加坡0629
-      - 香港0224
-      - 香港0121
-      - 香港0226
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 美国1130
-      - 新加坡0628
-      - TG群:@WeoAirport_Group
+      - 日本-8AE TG频道@v2ssfly
+      - 美国-6E8 TG频道@v2ssfly
+      - 香港-AEC TG频道@v2ssfly
+      - 美国-0C8 TG频道@v2ssfly
+      - 加拿大-6C9 TG频道@v2ssfly
+      - 加拿大-09A TG频道@v2ssfly
+      - 美国-ZB9 TG频道@v2ssfly
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港0123
-      - 新加坡0629
-      - 香港0224
-      - 香港0121
-      - 香港0226
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 美国1130
-      - 新加坡0628
-      - TG群:@WeoAirport_Group
+      - 日本-8AE TG频道@v2ssfly
+      - 美国-6E8 TG频道@v2ssfly
+      - 香港-AEC TG频道@v2ssfly
+      - 美国-0C8 TG频道@v2ssfly
+      - 加拿大-6C9 TG频道@v2ssfly
+      - 加拿大-09A TG频道@v2ssfly
+      - 美国-ZB9 TG频道@v2ssfly
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港0123
-      - 新加坡0629
-      - 香港0224
-      - 香港0121
-      - 香港0226
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 美国1130
-      - 新加坡0628
-      - TG群:@WeoAirport_Group
+      - 日本-8AE TG频道@v2ssfly
+      - 美国-6E8 TG频道@v2ssfly
+      - 香港-AEC TG频道@v2ssfly
+      - 美国-0C8 TG频道@v2ssfly
+      - 加拿大-6C9 TG频道@v2ssfly
+      - 加拿大-09A TG频道@v2ssfly
+      - 美国-ZB9 TG频道@v2ssfly
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -170,17 +133,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港0123
-      - 新加坡0629
-      - 香港0224
-      - 香港0121
-      - 香港0226
-      - 香港0225
-      - 新加坡0627
-      - 香港0122
-      - 美国1130
-      - 新加坡0628
-      - TG群:@WeoAirport_Group
+      - 日本-8AE TG频道@v2ssfly
+      - 美国-6E8 TG频道@v2ssfly
+      - 香港-AEC TG频道@v2ssfly
+      - 美国-0C8 TG频道@v2ssfly
+      - 加拿大-6C9 TG频道@v2ssfly
+      - 加拿大-09A TG频道@v2ssfly
+      - 美国-ZB9 TG频道@v2ssfly
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
