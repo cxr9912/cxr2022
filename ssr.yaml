@@ -5,199 +5,315 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay 🇸🇬 Singapore 06 TG:@nodpai, server: sg2.newhua99.xyz, port: 21696, type: ss, cipher: aes-128-gcm, password: 0ab1276b-5796-4bd8-b4ca-f4d6119da2e7, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 15 TG:@nodpai, server: shlt.sub-nthu.com, port: 35002, type: trojan, password: 2fef4a25-813f-45e3-a76c-dcdcbabdffcf, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇸🇬 Singapore 13 TG:@nodpai, server: sg1.newhua99.xyz, port: 21698, type: ss, cipher: aes-128-gcm, password: 0ab1276b-5796-4bd8-b4ca-f4d6119da2e7, udp: true}
-  - {name: Relay 🇹🇼 Taiwan 08 TG:@nodpai, server: dryd.sub-nthu.com, port: 35005, type: trojan, password: 2fef4a25-813f-45e3-a76c-dcdcbabdffcf, sni: dryd.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇸🇬 Singapore 05 TG:@nodpai, server: sg1.newhua99.xyz, port: 21697, type: ss, cipher: aes-128-gcm, password: 0ab1276b-5796-4bd8-b4ca-f4d6119da2e7, udp: true}
-  - {name: Relay 🇯🇵 Japan 09 TG:@nodpai, server: cn2hn.sub-nthu.com, port: 35001, type: trojan, password: 2fef4a25-813f-45e3-a76c-dcdcbabdffcf, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇸🇬 Singapore 04 TG:@nodpai, server: sg2.newhua99.xyz, port: 21698, type: ss, cipher: aes-128-gcm, password: 0ab1276b-5796-4bd8-b4ca-f4d6119da2e7, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 11 TG:@nodpai, server: hk1.newhua99.xyz, port: 21610, type: ss, cipher: chacha20-ietf-poly1305, password: 0ab1276b-5796-4bd8-b4ca-f4d6119da2e7, udp: true}
-  - {name: Relay 🇯🇵 Japan 07 TG:@nodpai, server: jp1.newhua99.xyz, port: 21628, type: ss, cipher: chacha20-ietf-poly1305, password: 0ab1276b-5796-4bd8-b4ca-f4d6119da2e7, udp: true}
-  - {name: Relay 🇮🇳 India 01 TG:@nodpai, server: cm.buyrocket.xyz, port: 21682, type: ss, cipher: aes-128-gcm, password: 0ab1276b-5796-4bd8-b4ca-f4d6119da2e7, udp: true}
-  - {name: Relay 🇯🇵 Japan 04 TG:@nodpai, server: live04.suijiceshi.xyz, port: 2052, type: vmess, uuid: 4782d4a9-0aa2-4571-be82-a474f5d3b5c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xvod/7f42f1ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, ws-headers: {Host: live04.hlzuifv.cn}, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 38 TG:@nodpai, server: hn.xiaohouzi.club, port: 19357, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇰🇷 South Korea 04 TG:@nodpai, server: shlt.sub-nthu.com, port: 35007, type: trojan, password: 2fef4a25-813f-45e3-a76c-dcdcbabdffcf, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 18 TG:@nodpai, server: hnm.xiaohouzi.club, port: 17113, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇺🇸 United States 24 TG:@nodpai, server: hn.xiaohouzi.club, port: 18463, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇺🇸 United States 23 TG:@nodpai, server: sub.xiaohouzi.club, port: 37093, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: sub.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 32 TG:@nodpai, server: hn.xiaohouzi.club, port: 19359, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 30 TG:@nodpai, server: hn.xiaohouzi.club, port: 47223, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 12 TG:@nodpai, server: hk1.newhua99.xyz, port: 21611, type: ss, cipher: chacha20-ietf-poly1305, password: 0ab1276b-5796-4bd8-b4ca-f4d6119da2e7, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 13 TG:@nodpai, server: hk1.newhua99.xyz, port: 21612, type: ss, cipher: chacha20-ietf-poly1305, password: 0ab1276b-5796-4bd8-b4ca-f4d6119da2e7, udp: true}
-  - {name: Relay 🇯🇵 Japan 23 TG:@nodpai, server: hn.xiaohouzi.club, port: 16013, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇩🇪 Germany 03 TG:@nodpai, server: cu.buyrocket.xyz, port: 21685, type: ss, cipher: aes-128-gcm, password: 0ab1276b-5796-4bd8-b4ca-f4d6119da2e7, udp: true}
-  - {name: Relay 🇰🇷 South Korea 05 TG:@nodpai, server: hn.xiaohouzi.club, port: 16015, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 28 TG:@nodpai, server: hnm.xiaohouzi.club, port: 49353, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇸🇬 Singapore 15 TG:@nodpai, server: hn.xiaohouzi.club, port: 18440, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: South Korea 03 TG:@nodpai, server: 146.56.40.195, port: 21875, type: vmess, uuid: 3462409a-61c9-4fd2-ed4b-fa929217b282, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 146.56.40.195}, udp: true}
-  - {name: Relay 🇺🇸 United States 19 TG:@nodpai, server: us2.newhua99.xyz, port: 21690, type: ss, cipher: aes-128-gcm, password: 0ab1276b-5796-4bd8-b4ca-f4d6119da2e7, udp: true}
-  - {name: Relay 🇹🇼 Taiwan 07 TG:@nodpai, server: hnm.xiaohouzi.club, port: 16082, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: Singapore 01 TG:@nodpai, server: v42.gaowosiquanjia.top, port: 80, type: vmess, uuid: db8f8bbe-c589-4316-8063-49baaf0fd858, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇸🇬 Singapore 12 TG:@nodpai, server: dryd.sub-nthu.com, port: 35003, type: trojan, password: 2fef4a25-813f-45e3-a76c-dcdcbabdffcf, sni: dryd.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇬🇧 United Kingdom 03 TG:@nodpai, server: cu.buyrocket.xyz, port: 21684, type: ss, cipher: aes-128-gcm, password: 0ab1276b-5796-4bd8-b4ca-f4d6119da2e7, udp: true}
-  - {name: Relay 🇬🇧 United Kingdom 05 TG:@nodpai, server: hnm.xiaohouzi.club, port: 47552, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: United States 11 TG:@nodpai, server: cdn.hkhkbn.6641634715834932.me, port: 80, type: vmess, uuid: c9defc63-6646-4fff-b03d-acb20eac45cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aln/18, ws-headers: {Host: wangsu.com}, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 20 TG:@nodpai, server: hnm.xiaohouzi.club, port: 49361, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇹🇭 Thailand 01 TG:@nodpai, server: hnm.xiaohouzi.club, port: 47651, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: Hong Kong 01 TG:@nodpai, server: v23.gaowosiquanjia.top, port: 80, type: vmess, uuid: db8f8bbe-c589-4316-8063-49baaf0fd858, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇬🇧 United Kingdom 04 TG:@nodpai, server: v02.gutingting.com, port: 20227, type: trojan, password: b784d07a-5ed5-4b6b-861c-da63c8b365b0, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
-  - {name: United States 03 TG:@nodpai, server: sfo.wyatt.cf, port: 443, type: vmess, uuid: dc822f4e-cd60-4174-a93e-c1d3865976aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /us, ws-headers: {Host: sfo.wyatt.cf}, udp: true}
-  - {name: Japan 06 TG:@nodpai, server: jp09.wxfz.ml, port: 54673, type: vmess, uuid: a28a73ee-a5a3-4dce-a832-5c3f60841032, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Japan 02 TG:@nodpai, server: 152.70.109.16, port: 8080, type: vmess, uuid: b5a503a9-a3ad-42d9-af00-86f959d3454b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 152.70.109.16}, udp: true}
-  - {name: United States 07 TG:@nodpai, server: 23.94.240.81, port: 45511, type: vmess, uuid: 01e07f2e-fc00-45bb-bbf5-547f58316e18, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 23.94.240.81}, udp: true}
-  - {name: Germany 02 TG:@nodpai, server: de1.trojan-lite.com, port: 443, type: trojan, password: bs6KJkPBW9MP74uHEa, sni: de1.trojan-lite.com, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇺🇸 United States 14 TG:@nodpai, server: v02.gutingting.com, port: 20225, type: trojan, password: 94d3e401-f974-43d7-bc97-1c2a6969a5f2, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
-  - {name: Germany 01 TG:@nodpai, server: v56.gaowosiquanjia.top, port: 80, type: vmess, uuid: db8f8bbe-c589-4316-8063-49baaf0fd858, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: 新加坡 - IEPL   - 03, server: cm1-sg.hutaonode2.top, port: 12303, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 新加坡 - IEPL   - 06, server: cm1-sg.hutaonode2.top, port: 12306, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 新加坡 - IEPL   - 02, server: cm1-sg.hutaonode2.top, port: 12302, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 新加坡01-SG 01, server: cm01.newcome.xyz, port: 6700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 香港05 备用, server: cm02.wappapinkush.xyz, port: 1305, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 香港09 备用, server: cm02.wappapinkush.xyz, port: 1309, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 香港03-HK03, server: zx01.endhigh.xyz, port: 2402, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 香港02 备用, server: cm02.wappapinkush.xyz, port: 1302, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 香港04-HK04, server: zx01.endhigh.xyz, port: 2403, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 香港 - IEPL   - 06, server: cm1-hk.hutaonode2.top, port: 12406, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 新加坡01 备用, server: cm01.wappapinkush.xyz, port: 3601, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 香港 - IEPL   - 01, server: cm1-hk.hutaonode2.top, port: 12401, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 台湾04-TW 04, server: cm01.newcome.xyz, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 香港07-HK07, server: zx01.endhigh.xyz, port: 2406, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 香港03 备用, server: cm02.wappapinkush.xyz, port: 1303, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 香港09-HK09, server: zx01.endhigh.xyz, port: 2408, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 香港10-HK10, server: zx01.endhigh.xyz, port: 2409, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 香港04 备用, server: cm02.wappapinkush.xyz, port: 1304, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 新加坡06-SG 06, server: cm01.newcome.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 新加坡04 备用, server: cm01.wappapinkush.xyz, port: 3604, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 香港06-HK06, server: zx01.endhigh.xyz, port: 2405, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 新加坡04-SG 04, server: cm01.newcome.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 新加坡10-SG 10, server: cm01.newcome.xyz, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 香港 - IEPL   - 04, server: cm1-hk.hutaonode2.top, port: 12404, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 香港07 备用, server: cm02.wappapinkush.xyz, port: 1307, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 新加坡05 备用, server: cm01.wappapinkush.xyz, port: 3605, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 新加坡08-SG 08, server: cm01.newcome.xyz, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 香港05-HK05, server: zx01.endhigh.xyz, port: 2404, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 日本04-JP 04, server: cm01.newcome.xyz, port: 3703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 台湾01 备用, server: cm01.wappapinkush.xyz, port: 4301, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 日本03 备用, server: cm01.wappapinkush.xyz, port: 2303, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 日本04 备用, server: cm01.wappapinkush.xyz, port: 2304, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 香港06 备用, server: cm02.wappapinkush.xyz, port: 1306, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 香港01 备用, server: cm02.wappapinkush.xyz, port: 1301, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 台湾05 备用, server: cm01.wappapinkush.xyz, port: 4305, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 香港01-HK01, server: zx01.endhigh.xyz, port: 2400, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 日本08-JP 08, server: cm01.newcome.xyz, port: 3707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 新加坡02 备用, server: cm01.wappapinkush.xyz, port: 3602, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 香港 - IEPL   - 02, server: cm1-hk.hutaonode2.top, port: 12402, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 香港08 备用, server: cm02.wappapinkush.xyz, port: 1308, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 香港02-HK02, server: zx01.endhigh.xyz, port: 2401, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 新加坡05-SG 05, server: cm01.newcome.xyz, port: 6704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 新加坡03 备用, server: cm01.wappapinkush.xyz, port: 3603, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 香港 - IEPL   - 03, server: cm1-hk.hutaonode2.top, port: 12403, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 香港 - IEPL   - 05, server: cm1-hk.hutaonode2.top, port: 12405, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 新加坡02-SG 02, server: cm01.newcome.xyz, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 日本02 备用, server: cm01.wappapinkush.xyz, port: 2302, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 香港10 备用, server: cm02.wappapinkush.xyz, port: 1310, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 日本01-JP 01, server: cm01.newcome.xyz, port: 3700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 台湾02 备用, server: cm01.wappapinkush.xyz, port: 4302, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 新加坡07-SG 07, server: cm01.newcome.xyz, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 新加坡09-SG 09, server: cm01.newcome.xyz, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 美国05-USA05, server: cm01.newcome.xyz, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 美国03-USA03, server: cm01.newcome.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 美国 - IEPL   - 05, server: cm1-us.hutaonode2.top, port: 12205, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 美国04 备用, server: cm01.wappapinkush.xyz, port: 6304, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 美国07-USA07, server: cm01.newcome.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 美国08-USA08, server: cm01.newcome.xyz, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 美国09-USA09, server: cm01.newcome.xyz, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 美国03 备用, server: cm01.wappapinkush.xyz, port: 6303, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 美国02 备用, server: cm01.wappapinkush.xyz, port: 6302, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 美国06-USA06, server: cm01.newcome.xyz, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 美国 - IEPL   - 02, server: cm1-us.hutaonode2.top, port: 12202, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 美国 - IEPL   - 06, server: cm1-us.hutaonode2.top, port: 12206, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 美国 - IEPL   - 04, server: cm1-us.hutaonode2.top, port: 12204, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 美国 - IEPL   - 03, server: cm1-us.hutaonode2.top, port: 12203, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 美国04-USA04, server: cm01.newcome.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 美国02-USA02, server: cm01.newcome.xyz, port: 7701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 美国05 备用, server: cm01.wappapinkush.xyz, port: 6305, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 美国 - IEPL   - 01, server: cm1-us.hutaonode2.top, port: 12201, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 美国01 备用, server: cm01.wappapinkush.xyz, port: 6301, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
+  - {name: 美国10-USA10, server: cm01.newcome.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
+  - {name: 日本 - IEPL   - 05, server: cm1-jp.hutaonode2.top, port: 12005, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 13 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
-      - Relay 🇯🇵 Japan 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇯🇵 Japan 07 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 38 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 18 TG:@nodpai
-      - Relay 🇺🇸 United States 24 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 32 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 30 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 12 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇯🇵 Japan 23 TG:@nodpai
-      - Relay 🇩🇪 Germany 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 28 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - South Korea 03 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 07 TG:@nodpai
-      - Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 12 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - United States 11 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 20 TG:@nodpai
-      - Relay 🇹🇭 Thailand 01 TG:@nodpai
-      - Hong Kong 01 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 04 TG:@nodpai
-      - United States 03 TG:@nodpai
-      - Japan 06 TG:@nodpai
-      - Japan 02 TG:@nodpai
-      - United States 07 TG:@nodpai
-      - Germany 02 TG:@nodpai
-      - Relay 🇺🇸 United States 14 TG:@nodpai
-      - Germany 01 TG:@nodpai
+      - 新加坡 - IEPL   - 03
+      - 新加坡 - IEPL   - 06
+      - 新加坡 - IEPL   - 02
+      - 新加坡01-SG 01
+      - 香港05 备用
+      - 香港09 备用
+      - 香港03-HK03
+      - 香港02 备用
+      - 香港04-HK04
+      - 香港 - IEPL   - 06
+      - 新加坡01 备用
+      - 香港 - IEPL   - 01
+      - 台湾04-TW 04
+      - 香港07-HK07
+      - 香港03 备用
+      - 香港09-HK09
+      - 香港10-HK10
+      - 香港04 备用
+      - 新加坡06-SG 06
+      - 新加坡04 备用
+      - 香港06-HK06
+      - 新加坡04-SG 04
+      - 新加坡10-SG 10
+      - 香港 - IEPL   - 04
+      - 香港07 备用
+      - 新加坡05 备用
+      - 新加坡08-SG 08
+      - 香港05-HK05
+      - 日本04-JP 04
+      - 台湾01 备用
+      - 日本03 备用
+      - 日本04 备用
+      - 香港06 备用
+      - 香港01 备用
+      - 台湾05 备用
+      - 香港01-HK01
+      - 日本08-JP 08
+      - 新加坡02 备用
+      - 香港 - IEPL   - 02
+      - 香港08 备用
+      - 香港02-HK02
+      - 新加坡05-SG 05
+      - 新加坡03 备用
+      - 香港 - IEPL   - 03
+      - 香港 - IEPL   - 05
+      - 新加坡02-SG 02
+      - 日本02 备用
+      - 香港10 备用
+      - 日本01-JP 01
+      - 台湾02 备用
+      - 新加坡07-SG 07
+      - 新加坡09-SG 09
+      - 美国05-USA05
+      - 美国03-USA03
+      - 美国 - IEPL   - 05
+      - 美国04 备用
+      - 美国07-USA07
+      - 美国08-USA08
+      - 美国09-USA09
+      - 美国03 备用
+      - 美国02 备用
+      - 美国06-USA06
+      - 美国 - IEPL   - 02
+      - 美国 - IEPL   - 06
+      - 美国 - IEPL   - 04
+      - 美国 - IEPL   - 03
+      - 美国04-USA04
+      - 美国02-USA02
+      - 美国05 备用
+      - 美国 - IEPL   - 01
+      - 美国01 备用
+      - 美国10-USA10
+      - 日本 - IEPL   - 05
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 13 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
-      - Relay 🇯🇵 Japan 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇯🇵 Japan 07 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 38 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 18 TG:@nodpai
-      - Relay 🇺🇸 United States 24 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 32 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 30 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 12 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇯🇵 Japan 23 TG:@nodpai
-      - Relay 🇩🇪 Germany 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 28 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - South Korea 03 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 07 TG:@nodpai
-      - Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 12 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - United States 11 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 20 TG:@nodpai
-      - Relay 🇹🇭 Thailand 01 TG:@nodpai
-      - Hong Kong 01 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 04 TG:@nodpai
-      - United States 03 TG:@nodpai
-      - Japan 06 TG:@nodpai
-      - Japan 02 TG:@nodpai
-      - United States 07 TG:@nodpai
-      - Germany 02 TG:@nodpai
-      - Relay 🇺🇸 United States 14 TG:@nodpai
-      - Germany 01 TG:@nodpai
+      - 新加坡 - IEPL   - 03
+      - 新加坡 - IEPL   - 06
+      - 新加坡 - IEPL   - 02
+      - 新加坡01-SG 01
+      - 香港05 备用
+      - 香港09 备用
+      - 香港03-HK03
+      - 香港02 备用
+      - 香港04-HK04
+      - 香港 - IEPL   - 06
+      - 新加坡01 备用
+      - 香港 - IEPL   - 01
+      - 台湾04-TW 04
+      - 香港07-HK07
+      - 香港03 备用
+      - 香港09-HK09
+      - 香港10-HK10
+      - 香港04 备用
+      - 新加坡06-SG 06
+      - 新加坡04 备用
+      - 香港06-HK06
+      - 新加坡04-SG 04
+      - 新加坡10-SG 10
+      - 香港 - IEPL   - 04
+      - 香港07 备用
+      - 新加坡05 备用
+      - 新加坡08-SG 08
+      - 香港05-HK05
+      - 日本04-JP 04
+      - 台湾01 备用
+      - 日本03 备用
+      - 日本04 备用
+      - 香港06 备用
+      - 香港01 备用
+      - 台湾05 备用
+      - 香港01-HK01
+      - 日本08-JP 08
+      - 新加坡02 备用
+      - 香港 - IEPL   - 02
+      - 香港08 备用
+      - 香港02-HK02
+      - 新加坡05-SG 05
+      - 新加坡03 备用
+      - 香港 - IEPL   - 03
+      - 香港 - IEPL   - 05
+      - 新加坡02-SG 02
+      - 日本02 备用
+      - 香港10 备用
+      - 日本01-JP 01
+      - 台湾02 备用
+      - 新加坡07-SG 07
+      - 新加坡09-SG 09
+      - 美国05-USA05
+      - 美国03-USA03
+      - 美国 - IEPL   - 05
+      - 美国04 备用
+      - 美国07-USA07
+      - 美国08-USA08
+      - 美国09-USA09
+      - 美国03 备用
+      - 美国02 备用
+      - 美国06-USA06
+      - 美国 - IEPL   - 02
+      - 美国 - IEPL   - 06
+      - 美国 - IEPL   - 04
+      - 美国 - IEPL   - 03
+      - 美国04-USA04
+      - 美国02-USA02
+      - 美国05 备用
+      - 美国 - IEPL   - 01
+      - 美国01 备用
+      - 美国10-USA10
+      - 日本 - IEPL   - 05
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 13 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
-      - Relay 🇯🇵 Japan 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇯🇵 Japan 07 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 38 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 18 TG:@nodpai
-      - Relay 🇺🇸 United States 24 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 32 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 30 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 12 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇯🇵 Japan 23 TG:@nodpai
-      - Relay 🇩🇪 Germany 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 28 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - South Korea 03 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 07 TG:@nodpai
-      - Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 12 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - United States 11 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 20 TG:@nodpai
-      - Relay 🇹🇭 Thailand 01 TG:@nodpai
-      - Hong Kong 01 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 04 TG:@nodpai
-      - United States 03 TG:@nodpai
-      - Japan 06 TG:@nodpai
-      - Japan 02 TG:@nodpai
-      - United States 07 TG:@nodpai
-      - Germany 02 TG:@nodpai
-      - Relay 🇺🇸 United States 14 TG:@nodpai
-      - Germany 01 TG:@nodpai
+      - 新加坡 - IEPL   - 03
+      - 新加坡 - IEPL   - 06
+      - 新加坡 - IEPL   - 02
+      - 新加坡01-SG 01
+      - 香港05 备用
+      - 香港09 备用
+      - 香港03-HK03
+      - 香港02 备用
+      - 香港04-HK04
+      - 香港 - IEPL   - 06
+      - 新加坡01 备用
+      - 香港 - IEPL   - 01
+      - 台湾04-TW 04
+      - 香港07-HK07
+      - 香港03 备用
+      - 香港09-HK09
+      - 香港10-HK10
+      - 香港04 备用
+      - 新加坡06-SG 06
+      - 新加坡04 备用
+      - 香港06-HK06
+      - 新加坡04-SG 04
+      - 新加坡10-SG 10
+      - 香港 - IEPL   - 04
+      - 香港07 备用
+      - 新加坡05 备用
+      - 新加坡08-SG 08
+      - 香港05-HK05
+      - 日本04-JP 04
+      - 台湾01 备用
+      - 日本03 备用
+      - 日本04 备用
+      - 香港06 备用
+      - 香港01 备用
+      - 台湾05 备用
+      - 香港01-HK01
+      - 日本08-JP 08
+      - 新加坡02 备用
+      - 香港 - IEPL   - 02
+      - 香港08 备用
+      - 香港02-HK02
+      - 新加坡05-SG 05
+      - 新加坡03 备用
+      - 香港 - IEPL   - 03
+      - 香港 - IEPL   - 05
+      - 新加坡02-SG 02
+      - 日本02 备用
+      - 香港10 备用
+      - 日本01-JP 01
+      - 台湾02 备用
+      - 新加坡07-SG 07
+      - 新加坡09-SG 09
+      - 美国05-USA05
+      - 美国03-USA03
+      - 美国 - IEPL   - 05
+      - 美国04 备用
+      - 美国07-USA07
+      - 美国08-USA08
+      - 美国09-USA09
+      - 美国03 备用
+      - 美国02 备用
+      - 美国06-USA06
+      - 美国 - IEPL   - 02
+      - 美国 - IEPL   - 06
+      - 美国 - IEPL   - 04
+      - 美国 - IEPL   - 03
+      - 美国04-USA04
+      - 美国02-USA02
+      - 美国05 备用
+      - 美国 - IEPL   - 01
+      - 美国01 备用
+      - 美国10-USA10
+      - 日本 - IEPL   - 05
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -216,203 +332,348 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 13 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
-      - Relay 🇯🇵 Japan 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇯🇵 Japan 07 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 38 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 18 TG:@nodpai
-      - Relay 🇺🇸 United States 24 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 32 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 30 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 12 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇯🇵 Japan 23 TG:@nodpai
-      - Relay 🇩🇪 Germany 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 28 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - South Korea 03 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 07 TG:@nodpai
-      - Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 12 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - United States 11 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 20 TG:@nodpai
-      - Relay 🇹🇭 Thailand 01 TG:@nodpai
-      - Hong Kong 01 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 04 TG:@nodpai
-      - United States 03 TG:@nodpai
-      - Japan 06 TG:@nodpai
-      - Japan 02 TG:@nodpai
-      - United States 07 TG:@nodpai
-      - Germany 02 TG:@nodpai
-      - Relay 🇺🇸 United States 14 TG:@nodpai
-      - Germany 01 TG:@nodpai
+      - 新加坡 - IEPL   - 03
+      - 新加坡 - IEPL   - 06
+      - 新加坡 - IEPL   - 02
+      - 新加坡01-SG 01
+      - 香港05 备用
+      - 香港09 备用
+      - 香港03-HK03
+      - 香港02 备用
+      - 香港04-HK04
+      - 香港 - IEPL   - 06
+      - 新加坡01 备用
+      - 香港 - IEPL   - 01
+      - 台湾04-TW 04
+      - 香港07-HK07
+      - 香港03 备用
+      - 香港09-HK09
+      - 香港10-HK10
+      - 香港04 备用
+      - 新加坡06-SG 06
+      - 新加坡04 备用
+      - 香港06-HK06
+      - 新加坡04-SG 04
+      - 新加坡10-SG 10
+      - 香港 - IEPL   - 04
+      - 香港07 备用
+      - 新加坡05 备用
+      - 新加坡08-SG 08
+      - 香港05-HK05
+      - 日本04-JP 04
+      - 台湾01 备用
+      - 日本03 备用
+      - 日本04 备用
+      - 香港06 备用
+      - 香港01 备用
+      - 台湾05 备用
+      - 香港01-HK01
+      - 日本08-JP 08
+      - 新加坡02 备用
+      - 香港 - IEPL   - 02
+      - 香港08 备用
+      - 香港02-HK02
+      - 新加坡05-SG 05
+      - 新加坡03 备用
+      - 香港 - IEPL   - 03
+      - 香港 - IEPL   - 05
+      - 新加坡02-SG 02
+      - 日本02 备用
+      - 香港10 备用
+      - 日本01-JP 01
+      - 台湾02 备用
+      - 新加坡07-SG 07
+      - 新加坡09-SG 09
+      - 美国05-USA05
+      - 美国03-USA03
+      - 美国 - IEPL   - 05
+      - 美国04 备用
+      - 美国07-USA07
+      - 美国08-USA08
+      - 美国09-USA09
+      - 美国03 备用
+      - 美国02 备用
+      - 美国06-USA06
+      - 美国 - IEPL   - 02
+      - 美国 - IEPL   - 06
+      - 美国 - IEPL   - 04
+      - 美国 - IEPL   - 03
+      - 美国04-USA04
+      - 美国02-USA02
+      - 美国05 备用
+      - 美国 - IEPL   - 01
+      - 美国01 备用
+      - 美国10-USA10
+      - 日本 - IEPL   - 05
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港05 备用
+      - 香港09 备用
+      - 香港03-HK03
+      - 香港02 备用
+      - 香港04-HK04
+      - 香港 - IEPL   - 06
+      - 香港 - IEPL   - 01
+      - 台湾04-TW 04
+      - 香港07-HK07
+      - 香港03 备用
+      - 香港09-HK09
+      - 香港10-HK10
+      - 香港04 备用
+      - 香港06-HK06
+      - 香港 - IEPL   - 04
+      - 香港07 备用
+      - 香港05-HK05
+      - 台湾01 备用
+      - 香港06 备用
+      - 香港01 备用
+      - 台湾05 备用
+      - 香港01-HK01
+      - 香港 - IEPL   - 02
+      - 香港08 备用
+      - 香港02-HK02
+      - 香港 - IEPL   - 03
+      - 香港 - IEPL   - 05
+      - 香港10 备用
+      - 台湾02 备用
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 13 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
-      - Relay 🇯🇵 Japan 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇯🇵 Japan 07 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 38 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 18 TG:@nodpai
-      - Relay 🇺🇸 United States 24 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 32 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 30 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 12 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇯🇵 Japan 23 TG:@nodpai
-      - Relay 🇩🇪 Germany 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 28 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - South Korea 03 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 07 TG:@nodpai
-      - Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 12 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - United States 11 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 20 TG:@nodpai
-      - Relay 🇹🇭 Thailand 01 TG:@nodpai
-      - Hong Kong 01 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 04 TG:@nodpai
-      - United States 03 TG:@nodpai
-      - Japan 06 TG:@nodpai
-      - Japan 02 TG:@nodpai
-      - United States 07 TG:@nodpai
-      - Germany 02 TG:@nodpai
-      - Relay 🇺🇸 United States 14 TG:@nodpai
-      - Germany 01 TG:@nodpai
+      - 新加坡 - IEPL   - 03
+      - 新加坡 - IEPL   - 06
+      - 新加坡 - IEPL   - 02
+      - 新加坡01-SG 01
+      - 香港05 备用
+      - 香港09 备用
+      - 香港03-HK03
+      - 香港02 备用
+      - 香港04-HK04
+      - 香港 - IEPL   - 06
+      - 新加坡01 备用
+      - 香港 - IEPL   - 01
+      - 台湾04-TW 04
+      - 香港07-HK07
+      - 香港03 备用
+      - 香港09-HK09
+      - 香港10-HK10
+      - 香港04 备用
+      - 新加坡06-SG 06
+      - 新加坡04 备用
+      - 香港06-HK06
+      - 新加坡04-SG 04
+      - 新加坡10-SG 10
+      - 香港 - IEPL   - 04
+      - 香港07 备用
+      - 新加坡05 备用
+      - 新加坡08-SG 08
+      - 香港05-HK05
+      - 日本04-JP 04
+      - 台湾01 备用
+      - 日本03 备用
+      - 日本04 备用
+      - 香港06 备用
+      - 香港01 备用
+      - 台湾05 备用
+      - 香港01-HK01
+      - 日本08-JP 08
+      - 新加坡02 备用
+      - 香港 - IEPL   - 02
+      - 香港08 备用
+      - 香港02-HK02
+      - 新加坡05-SG 05
+      - 新加坡03 备用
+      - 香港 - IEPL   - 03
+      - 香港 - IEPL   - 05
+      - 新加坡02-SG 02
+      - 日本02 备用
+      - 香港10 备用
+      - 日本01-JP 01
+      - 台湾02 备用
+      - 新加坡07-SG 07
+      - 新加坡09-SG 09
+      - 美国05-USA05
+      - 美国03-USA03
+      - 美国 - IEPL   - 05
+      - 美国04 备用
+      - 美国07-USA07
+      - 美国08-USA08
+      - 美国09-USA09
+      - 美国03 备用
+      - 美国02 备用
+      - 美国06-USA06
+      - 美国 - IEPL   - 02
+      - 美国 - IEPL   - 06
+      - 美国 - IEPL   - 04
+      - 美国 - IEPL   - 03
+      - 美国04-USA04
+      - 美国02-USA02
+      - 美国05 备用
+      - 美国 - IEPL   - 01
+      - 美国01 备用
+      - 美国10-USA10
+      - 日本 - IEPL   - 05
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 13 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
-      - Relay 🇯🇵 Japan 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇯🇵 Japan 07 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 38 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 18 TG:@nodpai
-      - Relay 🇺🇸 United States 24 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 32 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 30 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 12 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇯🇵 Japan 23 TG:@nodpai
-      - Relay 🇩🇪 Germany 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 28 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - South Korea 03 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 07 TG:@nodpai
-      - Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 12 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - United States 11 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 20 TG:@nodpai
-      - Relay 🇹🇭 Thailand 01 TG:@nodpai
-      - Hong Kong 01 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 04 TG:@nodpai
-      - United States 03 TG:@nodpai
-      - Japan 06 TG:@nodpai
-      - Japan 02 TG:@nodpai
-      - United States 07 TG:@nodpai
-      - Germany 02 TG:@nodpai
-      - Relay 🇺🇸 United States 14 TG:@nodpai
-      - Germany 01 TG:@nodpai
+      - 新加坡 - IEPL   - 03
+      - 新加坡 - IEPL   - 06
+      - 新加坡 - IEPL   - 02
+      - 新加坡01-SG 01
+      - 香港05 备用
+      - 香港09 备用
+      - 香港03-HK03
+      - 香港02 备用
+      - 香港04-HK04
+      - 香港 - IEPL   - 06
+      - 新加坡01 备用
+      - 香港 - IEPL   - 01
+      - 台湾04-TW 04
+      - 香港07-HK07
+      - 香港03 备用
+      - 香港09-HK09
+      - 香港10-HK10
+      - 香港04 备用
+      - 新加坡06-SG 06
+      - 新加坡04 备用
+      - 香港06-HK06
+      - 新加坡04-SG 04
+      - 新加坡10-SG 10
+      - 香港 - IEPL   - 04
+      - 香港07 备用
+      - 新加坡05 备用
+      - 新加坡08-SG 08
+      - 香港05-HK05
+      - 日本04-JP 04
+      - 台湾01 备用
+      - 日本03 备用
+      - 日本04 备用
+      - 香港06 备用
+      - 香港01 备用
+      - 台湾05 备用
+      - 香港01-HK01
+      - 日本08-JP 08
+      - 新加坡02 备用
+      - 香港 - IEPL   - 02
+      - 香港08 备用
+      - 香港02-HK02
+      - 新加坡05-SG 05
+      - 新加坡03 备用
+      - 香港 - IEPL   - 03
+      - 香港 - IEPL   - 05
+      - 新加坡02-SG 02
+      - 日本02 备用
+      - 香港10 备用
+      - 日本01-JP 01
+      - 台湾02 备用
+      - 新加坡07-SG 07
+      - 新加坡09-SG 09
+      - 美国05-USA05
+      - 美国03-USA03
+      - 美国 - IEPL   - 05
+      - 美国04 备用
+      - 美国07-USA07
+      - 美国08-USA08
+      - 美国09-USA09
+      - 美国03 备用
+      - 美国02 备用
+      - 美国06-USA06
+      - 美国 - IEPL   - 02
+      - 美国 - IEPL   - 06
+      - 美国 - IEPL   - 04
+      - 美国 - IEPL   - 03
+      - 美国04-USA04
+      - 美国02-USA02
+      - 美国05 备用
+      - 美国 - IEPL   - 01
+      - 美国01 备用
+      - 美国10-USA10
+      - 日本 - IEPL   - 05
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 13 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
-      - Relay 🇯🇵 Japan 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇯🇵 Japan 07 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 38 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 18 TG:@nodpai
-      - Relay 🇺🇸 United States 24 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 32 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 30 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 12 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇯🇵 Japan 23 TG:@nodpai
-      - Relay 🇩🇪 Germany 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 28 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - South Korea 03 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 07 TG:@nodpai
-      - Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 12 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - United States 11 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 20 TG:@nodpai
-      - Relay 🇹🇭 Thailand 01 TG:@nodpai
-      - Hong Kong 01 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 04 TG:@nodpai
-      - United States 03 TG:@nodpai
-      - Japan 06 TG:@nodpai
-      - Japan 02 TG:@nodpai
-      - United States 07 TG:@nodpai
-      - Germany 02 TG:@nodpai
-      - Relay 🇺🇸 United States 14 TG:@nodpai
-      - Germany 01 TG:@nodpai
+      - 新加坡 - IEPL   - 03
+      - 新加坡 - IEPL   - 06
+      - 新加坡 - IEPL   - 02
+      - 新加坡01-SG 01
+      - 香港05 备用
+      - 香港09 备用
+      - 香港03-HK03
+      - 香港02 备用
+      - 香港04-HK04
+      - 香港 - IEPL   - 06
+      - 新加坡01 备用
+      - 香港 - IEPL   - 01
+      - 台湾04-TW 04
+      - 香港07-HK07
+      - 香港03 备用
+      - 香港09-HK09
+      - 香港10-HK10
+      - 香港04 备用
+      - 新加坡06-SG 06
+      - 新加坡04 备用
+      - 香港06-HK06
+      - 新加坡04-SG 04
+      - 新加坡10-SG 10
+      - 香港 - IEPL   - 04
+      - 香港07 备用
+      - 新加坡05 备用
+      - 新加坡08-SG 08
+      - 香港05-HK05
+      - 日本04-JP 04
+      - 台湾01 备用
+      - 日本03 备用
+      - 日本04 备用
+      - 香港06 备用
+      - 香港01 备用
+      - 台湾05 备用
+      - 香港01-HK01
+      - 日本08-JP 08
+      - 新加坡02 备用
+      - 香港 - IEPL   - 02
+      - 香港08 备用
+      - 香港02-HK02
+      - 新加坡05-SG 05
+      - 新加坡03 备用
+      - 香港 - IEPL   - 03
+      - 香港 - IEPL   - 05
+      - 新加坡02-SG 02
+      - 日本02 备用
+      - 香港10 备用
+      - 日本01-JP 01
+      - 台湾02 备用
+      - 新加坡07-SG 07
+      - 新加坡09-SG 09
+      - 美国05-USA05
+      - 美国03-USA03
+      - 美国 - IEPL   - 05
+      - 美国04 备用
+      - 美国07-USA07
+      - 美国08-USA08
+      - 美国09-USA09
+      - 美国03 备用
+      - 美国02 备用
+      - 美国06-USA06
+      - 美国 - IEPL   - 02
+      - 美国 - IEPL   - 06
+      - 美国 - IEPL   - 04
+      - 美国 - IEPL   - 03
+      - 美国04-USA04
+      - 美国02-USA02
+      - 美国05 备用
+      - 美国 - IEPL   - 01
+      - 美国01 备用
+      - 美国10-USA10
+      - 日本 - IEPL   - 05
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -428,50 +689,79 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 13 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
-      - Relay 🇯🇵 Japan 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇯🇵 Japan 07 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 38 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 18 TG:@nodpai
-      - Relay 🇺🇸 United States 24 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 32 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 30 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 12 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 13 TG:@nodpai
-      - Relay 🇯🇵 Japan 23 TG:@nodpai
-      - Relay 🇩🇪 Germany 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 28 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - South Korea 03 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 07 TG:@nodpai
-      - Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 12 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - United States 11 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 20 TG:@nodpai
-      - Relay 🇹🇭 Thailand 01 TG:@nodpai
-      - Hong Kong 01 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 04 TG:@nodpai
-      - United States 03 TG:@nodpai
-      - Japan 06 TG:@nodpai
-      - Japan 02 TG:@nodpai
-      - United States 07 TG:@nodpai
-      - Germany 02 TG:@nodpai
-      - Relay 🇺🇸 United States 14 TG:@nodpai
-      - Germany 01 TG:@nodpai
+      - 新加坡 - IEPL   - 03
+      - 新加坡 - IEPL   - 06
+      - 新加坡 - IEPL   - 02
+      - 新加坡01-SG 01
+      - 香港05 备用
+      - 香港09 备用
+      - 香港03-HK03
+      - 香港02 备用
+      - 香港04-HK04
+      - 香港 - IEPL   - 06
+      - 新加坡01 备用
+      - 香港 - IEPL   - 01
+      - 台湾04-TW 04
+      - 香港07-HK07
+      - 香港03 备用
+      - 香港09-HK09
+      - 香港10-HK10
+      - 香港04 备用
+      - 新加坡06-SG 06
+      - 新加坡04 备用
+      - 香港06-HK06
+      - 新加坡04-SG 04
+      - 新加坡10-SG 10
+      - 香港 - IEPL   - 04
+      - 香港07 备用
+      - 新加坡05 备用
+      - 新加坡08-SG 08
+      - 香港05-HK05
+      - 日本04-JP 04
+      - 台湾01 备用
+      - 日本03 备用
+      - 日本04 备用
+      - 香港06 备用
+      - 香港01 备用
+      - 台湾05 备用
+      - 香港01-HK01
+      - 日本08-JP 08
+      - 新加坡02 备用
+      - 香港 - IEPL   - 02
+      - 香港08 备用
+      - 香港02-HK02
+      - 新加坡05-SG 05
+      - 新加坡03 备用
+      - 香港 - IEPL   - 03
+      - 香港 - IEPL   - 05
+      - 新加坡02-SG 02
+      - 日本02 备用
+      - 香港10 备用
+      - 日本01-JP 01
+      - 台湾02 备用
+      - 新加坡07-SG 07
+      - 新加坡09-SG 09
+      - 美国05-USA05
+      - 美国03-USA03
+      - 美国 - IEPL   - 05
+      - 美国04 备用
+      - 美国07-USA07
+      - 美国08-USA08
+      - 美国09-USA09
+      - 美国03 备用
+      - 美国02 备用
+      - 美国06-USA06
+      - 美国 - IEPL   - 02
+      - 美国 - IEPL   - 06
+      - 美国 - IEPL   - 04
+      - 美国 - IEPL   - 03
+      - 美国04-USA04
+      - 美国02-USA02
+      - 美国05 备用
+      - 美国 - IEPL   - 01
+      - 美国01 备用
+      - 美国10-USA10
+      - 日本 - IEPL   - 05
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
