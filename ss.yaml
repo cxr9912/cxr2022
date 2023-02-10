@@ -5,35 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Singapore 09, server: sz-sg.19991314.xyz, port: 16216, type: vmess, uuid: 4b1ddb97-51ce-44cc-84f2-0a6ae6eba50d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本1, server: download1hkt.windowsupdate.lol, port: 80, type: vmess, uuid: cbb98a13-d55d-4655-844b-5f62faf5edd4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /pq/jp2, ws-headers: {Host: download1hkt.windowsupdate.lol}, udp: true}
-  - {name: Singapore 02, server: gz-sg.19991314.xyz, port: 49227, type: vmess, uuid: 4b1ddb97-51ce-44cc-84f2-0a6ae6eba50d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 3, server: in04.my1188.org, port: 63078, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-balancer.airport-v2.com}, udp: true}
+  - {name: 新加坡 3, server: in04.my1188.org, port: 63087, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
+  - {name: 日本 3, server: in04.my1188.org, port: 63086, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
+  - {name: 日本 4, server: in03.my1188.org, port: 63086, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
+  - {name: 新加坡 4, server: in03.my1188.org, port: 63087, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
+  - {name: 香港, server: in05.my1188.org, port: 63078, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-balancer.airport-v2.com}, udp: true}
+  - {name: 日本 2, server: in02.my1188.org, port: 63086, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
+  - {name: 日本 6, server: in05.my1188.org, port: 63086, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
+  - {name: 新加坡 2, server: in02.my1188.org, port: 63087, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
+  - {name: 台湾, server: in03.my1188.org, port: 63088, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
+  - {name: 韩国, server: in05.my1188.org, port: 63004, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 日本 5, server: in06.my1188.org, port: 63005, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 印度, server: in02.my1188.org, port: 63051, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 香港-AEC TG频道@v2ssfly, server: hnm.xiaohouzi.club, port: 27482, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 美国, server: in06.my1188.org, port: 62072, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 台湾 2, server: in02.my1188.org, port: 63088, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
+  - {name: 台湾 4, server: in04.my1188.org, port: 63088, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Singapore 09
-      - 日本1
-      - Singapore 02
+      - 香港 3
+      - 新加坡 3
+      - 日本 3
+      - 日本 4
+      - 新加坡 4
+      - 香港
+      - 日本 2
+      - 日本 6
+      - 新加坡 2
+      - 台湾
+      - 韩国
+      - 日本 5
+      - 印度
+      - 香港-AEC TG频道@v2ssfly
+      - 美国
+      - 台湾 2
+      - 台湾 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Singapore 09
-      - 日本1
-      - Singapore 02
+      - 香港 3
+      - 新加坡 3
+      - 日本 3
+      - 日本 4
+      - 新加坡 4
+      - 香港
+      - 日本 2
+      - 日本 6
+      - 新加坡 2
+      - 台湾
+      - 韩国
+      - 日本 5
+      - 印度
+      - 香港-AEC TG频道@v2ssfly
+      - 美国
+      - 台湾 2
+      - 台湾 4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Singapore 09
-      - 日本1
-      - Singapore 02
+      - 香港 3
+      - 新加坡 3
+      - 日本 3
+      - 日本 4
+      - 新加坡 4
+      - 香港
+      - 日本 2
+      - 日本 6
+      - 新加坡 2
+      - 台湾
+      - 韩国
+      - 日本 5
+      - 印度
+      - 香港-AEC TG频道@v2ssfly
+      - 美国
+      - 台湾 2
+      - 台湾 4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,39 +108,101 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Singapore 09
-      - 日本1
-      - Singapore 02
+      - 香港 3
+      - 新加坡 3
+      - 日本 3
+      - 日本 4
+      - 新加坡 4
+      - 香港
+      - 日本 2
+      - 日本 6
+      - 新加坡 2
+      - 台湾
+      - 韩国
+      - 日本 5
+      - 印度
+      - 香港-AEC TG频道@v2ssfly
+      - 美国
+      - 台湾 2
+      - 台湾 4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 3
+      - 香港
+      - 台湾
+      - 香港-AEC TG频道@v2ssfly
+      - 台湾 2
+      - 台湾 4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Singapore 09
-      - 日本1
-      - Singapore 02
+      - 香港 3
+      - 新加坡 3
+      - 日本 3
+      - 日本 4
+      - 新加坡 4
+      - 香港
+      - 日本 2
+      - 日本 6
+      - 新加坡 2
+      - 台湾
+      - 韩国
+      - 日本 5
+      - 印度
+      - 香港-AEC TG频道@v2ssfly
+      - 美国
+      - 台湾 2
+      - 台湾 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Singapore 09
-      - 日本1
-      - Singapore 02
+      - 香港 3
+      - 新加坡 3
+      - 日本 3
+      - 日本 4
+      - 新加坡 4
+      - 香港
+      - 日本 2
+      - 日本 6
+      - 新加坡 2
+      - 台湾
+      - 韩国
+      - 日本 5
+      - 印度
+      - 香港-AEC TG频道@v2ssfly
+      - 美国
+      - 台湾 2
+      - 台湾 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Singapore 09
-      - 日本1
-      - Singapore 02
+      - 香港 3
+      - 新加坡 3
+      - 日本 3
+      - 日本 4
+      - 新加坡 4
+      - 香港
+      - 日本 2
+      - 日本 6
+      - 新加坡 2
+      - 台湾
+      - 韩国
+      - 日本 5
+      - 印度
+      - 香港-AEC TG频道@v2ssfly
+      - 美国
+      - 台湾 2
+      - 台湾 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +218,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Singapore 09
-      - 日本1
-      - Singapore 02
+      - 香港 3
+      - 新加坡 3
+      - 日本 3
+      - 日本 4
+      - 新加坡 4
+      - 香港
+      - 日本 2
+      - 日本 6
+      - 新加坡 2
+      - 台湾
+      - 韩国
+      - 日本 5
+      - 印度
+      - 香港-AEC TG频道@v2ssfly
+      - 美国
+      - 台湾 2
+      - 台湾 4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
