@@ -5,35 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _香港_YouTube：全网最强白嫖_3, server: hkt.52147.top, port: 80, type: vmess, uuid: f92cbc43-7f00-4ee0-bfab-1ea4f39c2de9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yfjc/jp1, ws-headers: {Host: hkt.52147.top}, udp: true}
-  - {name: 中国-2.09MB/s(Youtube:不良林), server: xmct.xn--dlq110j6ul.cc, port: 20218, type: ss, cipher: chacha20-ietf-poly1305, password: b5a503a9-a3ad-42d9-af00-86f959d3454b, udp: true}
-  - {name: _日本_YouTube：全网最强白嫖_4, server: air-osaka24.900513.xyz, port: 7758, type: trojan, password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1, sni: air-osaka24.900513.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai, server: scloud53.jafiyun.world, port: 22053, type: trojan, password: ac301696-4102-3071-af4b-251302cb0c84, sni: scloud53.jafiyun.world, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇬🇧 United Kingdom(ChatGPT) 01 TG:@nodpai, server: scloud54.jafiyun.world, port: 22054, type: trojan, password: ac301696-4102-3071-af4b-251302cb0c84, sni: scloud54.jafiyun.world, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇯🇵 Japan(ChatGPT) 02 TG:@nodpai, server: scloud60.jafiyun.world, port: 22060, type: trojan, password: ac301696-4102-3071-af4b-251302cb0c84, sni: scloud60.jafiyun.world, skip-cert-verify: true, udp: true}
+  - {name: Hong Kong(ChatGPT) 03 TG:@nodpai, server: hk80-2.sanfen001.pics, port: 80, type: vmess, uuid: 3a97d3b0-54ee-47fc-a11a-f7091c7a0408, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: Hong Kong(ChatGPT) 02 TG:@nodpai, server: hk6.sanfen001.pics, port: 443, type: vmess, uuid: 3a97d3b0-54ee-47fc-a11a-f7091c7a0408, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: hk1.sanfen001.pics}, udp: true}
+  - {name: Relay 🇦🇪 United Arab Emirates(ChatGPT) 01 TG:@nodpai, server: scloud59.jafiyun.world, port: 22059, type: trojan, password: ac301696-4102-3071-af4b-251302cb0c84, sni: scloud59.jafiyun.world, skip-cert-verify: true, udp: true}
+  - {name: Japan(ChatGPT) 01 TG:@nodpai, server: jp80-4.sanfen001.pics, port: 80, type: vmess, uuid: 3a97d3b0-54ee-47fc-a11a-f7091c7a0408, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: jp80-4.sanfen001.pics}, udp: true}
+  - {name: Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai, server: scloud29.jafiyun.world, port: 22029, type: trojan, password: ac301696-4102-3071-af4b-251302cb0c84, sni: scloud29.jafiyun.world, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _香港_YouTube：全网最强白嫖_3
-      - 中国-2.09MB/s(Youtube:不良林)
-      - _日本_YouTube：全网最强白嫖_4
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 01 TG:@nodpai
+      - Relay 🇯🇵 Japan(ChatGPT) 02 TG:@nodpai
+      - Hong Kong(ChatGPT) 03 TG:@nodpai
+      - Hong Kong(ChatGPT) 02 TG:@nodpai
+      - Relay 🇦🇪 United Arab Emirates(ChatGPT) 01 TG:@nodpai
+      - Japan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _香港_YouTube：全网最强白嫖_3
-      - 中国-2.09MB/s(Youtube:不良林)
-      - _日本_YouTube：全网最强白嫖_4
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 01 TG:@nodpai
+      - Relay 🇯🇵 Japan(ChatGPT) 02 TG:@nodpai
+      - Hong Kong(ChatGPT) 03 TG:@nodpai
+      - Hong Kong(ChatGPT) 02 TG:@nodpai
+      - Relay 🇦🇪 United Arab Emirates(ChatGPT) 01 TG:@nodpai
+      - Japan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _香港_YouTube：全网最强白嫖_3
-      - 中国-2.09MB/s(Youtube:不良林)
-      - _日本_YouTube：全网最强白嫖_4
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 01 TG:@nodpai
+      - Relay 🇯🇵 Japan(ChatGPT) 02 TG:@nodpai
+      - Hong Kong(ChatGPT) 03 TG:@nodpai
+      - Hong Kong(ChatGPT) 02 TG:@nodpai
+      - Relay 🇦🇪 United Arab Emirates(ChatGPT) 01 TG:@nodpai
+      - Japan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,40 +72,59 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _香港_YouTube：全网最强白嫖_3
-      - 中国-2.09MB/s(Youtube:不良林)
-      - _日本_YouTube：全网最强白嫖_4
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 01 TG:@nodpai
+      - Relay 🇯🇵 Japan(ChatGPT) 02 TG:@nodpai
+      - Hong Kong(ChatGPT) 03 TG:@nodpai
+      - Hong Kong(ChatGPT) 02 TG:@nodpai
+      - Relay 🇦🇪 United Arab Emirates(ChatGPT) 01 TG:@nodpai
+      - Japan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _香港_YouTube：全网最强白嫖_3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _香港_YouTube：全网最强白嫖_3
-      - 中国-2.09MB/s(Youtube:不良林)
-      - _日本_YouTube：全网最强白嫖_4
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 01 TG:@nodpai
+      - Relay 🇯🇵 Japan(ChatGPT) 02 TG:@nodpai
+      - Hong Kong(ChatGPT) 03 TG:@nodpai
+      - Hong Kong(ChatGPT) 02 TG:@nodpai
+      - Relay 🇦🇪 United Arab Emirates(ChatGPT) 01 TG:@nodpai
+      - Japan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _香港_YouTube：全网最强白嫖_3
-      - 中国-2.09MB/s(Youtube:不良林)
-      - _日本_YouTube：全网最强白嫖_4
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 01 TG:@nodpai
+      - Relay 🇯🇵 Japan(ChatGPT) 02 TG:@nodpai
+      - Hong Kong(ChatGPT) 03 TG:@nodpai
+      - Hong Kong(ChatGPT) 02 TG:@nodpai
+      - Relay 🇦🇪 United Arab Emirates(ChatGPT) 01 TG:@nodpai
+      - Japan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _香港_YouTube：全网最强白嫖_3
-      - 中国-2.09MB/s(Youtube:不良林)
-      - _日本_YouTube：全网最强白嫖_4
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 01 TG:@nodpai
+      - Relay 🇯🇵 Japan(ChatGPT) 02 TG:@nodpai
+      - Hong Kong(ChatGPT) 03 TG:@nodpai
+      - Hong Kong(ChatGPT) 02 TG:@nodpai
+      - Relay 🇦🇪 United Arab Emirates(ChatGPT) 01 TG:@nodpai
+      - Japan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -101,9 +140,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _香港_YouTube：全网最强白嫖_3
-      - 中国-2.09MB/s(Youtube:不良林)
-      - _日本_YouTube：全网最强白嫖_4
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom(ChatGPT) 01 TG:@nodpai
+      - Relay 🇯🇵 Japan(ChatGPT) 02 TG:@nodpai
+      - Hong Kong(ChatGPT) 03 TG:@nodpai
+      - Hong Kong(ChatGPT) 02 TG:@nodpai
+      - Relay 🇦🇪 United Arab Emirates(ChatGPT) 01 TG:@nodpai
+      - Japan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
