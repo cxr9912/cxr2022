@@ -5,6 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: TG:@hkaa0|新加坡_1, server: 43.159.47.137, port: 9001, type: ss, cipher: aes-256-cfb, password: chanchanchan, udp: true}
+  - {name: TG:@hkaa0|韩国_4, server: kr12.cctvvip.ml, port: 10540, type: vmess, uuid: 1825df02-d587-41fc-a50a-82500d46c6f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG:@hkaa0|美国_6, server: sea21.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /clientarea, ws-headers: {Host: sea21.nb1.fr}, udp: true}
+  - {name: TG:@hkaa0|美国_9, server: eu1.hax.yuji2022.gq, port: 80, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /8kH8qnepjkprbsidLrLkmX, ws-headers: {Host: eu1.hax.yuji2022.gq}, udp: true}
+  - {name: TG:@hkaa0|美国_8, server: dd3.1808.cf, port: 443, type: vmess, uuid: 05e7d010-52b9-42aa-8a06-daf3e737f279, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nguevws, ws-headers: {Host: dd3.1808.cf}, udp: true}
+  - {name: TG:@hkaa0|美国_1, server: vmess.woiden.yuji2022.gq, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /E86414F638E11, ws-headers: {Host: vmess.woiden.yuji2022.gq}, udp: true}
   - {name: South Korea-M1, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: c07555c5-d3d1-465f-800f-7bd14d3b5d80, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: krm1.targoocloud.live}, udp: true}
   - {name: Hong Kong-M1, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: c07555c5-d3d1-465f-800f-7bd14d3b5d80, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: hkm1.targoocloud.live}, udp: true}
   - {name: South Korea-M2, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: c07555c5-d3d1-465f-800f-7bd14d3b5d80, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: krm2.targoocloud.live}, udp: true}
@@ -14,6 +20,12 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - TG:@hkaa0|新加坡_1
+      - TG:@hkaa0|韩国_4
+      - TG:@hkaa0|美国_6
+      - TG:@hkaa0|美国_9
+      - TG:@hkaa0|美国_8
+      - TG:@hkaa0|美国_1
       - South Korea-M1
       - Hong Kong-M1
       - South Korea-M2
@@ -22,6 +34,12 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - TG:@hkaa0|新加坡_1
+      - TG:@hkaa0|韩国_4
+      - TG:@hkaa0|美国_6
+      - TG:@hkaa0|美国_9
+      - TG:@hkaa0|美国_8
+      - TG:@hkaa0|美国_1
       - South Korea-M1
       - Hong Kong-M1
       - South Korea-M2
@@ -31,6 +49,12 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - TG:@hkaa0|新加坡_1
+      - TG:@hkaa0|韩国_4
+      - TG:@hkaa0|美国_6
+      - TG:@hkaa0|美国_9
+      - TG:@hkaa0|美国_8
+      - TG:@hkaa0|美国_1
       - South Korea-M1
       - Hong Kong-M1
       - South Korea-M2
@@ -52,6 +76,12 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - TG:@hkaa0|新加坡_1
+      - TG:@hkaa0|韩国_4
+      - TG:@hkaa0|美国_6
+      - TG:@hkaa0|美国_9
+      - TG:@hkaa0|美国_8
+      - TG:@hkaa0|美国_1
       - South Korea-M1
       - Hong Kong-M1
       - South Korea-M2
@@ -59,12 +89,24 @@ proxy-groups:
     type: select
     proxies:
       - 🎯 全球直连
+      - TG:@hkaa0|新加坡_1
+      - TG:@hkaa0|韩国_4
+      - TG:@hkaa0|美国_6
+      - TG:@hkaa0|美国_9
+      - TG:@hkaa0|美国_8
+      - TG:@hkaa0|美国_1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - TG:@hkaa0|新加坡_1
+      - TG:@hkaa0|韩国_4
+      - TG:@hkaa0|美国_6
+      - TG:@hkaa0|美国_9
+      - TG:@hkaa0|美国_8
+      - TG:@hkaa0|美国_1
       - South Korea-M1
       - Hong Kong-M1
       - South Korea-M2
@@ -73,6 +115,12 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - TG:@hkaa0|新加坡_1
+      - TG:@hkaa0|韩国_4
+      - TG:@hkaa0|美国_6
+      - TG:@hkaa0|美国_9
+      - TG:@hkaa0|美国_8
+      - TG:@hkaa0|美国_1
       - South Korea-M1
       - Hong Kong-M1
       - South Korea-M2
@@ -82,6 +130,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - TG:@hkaa0|新加坡_1
+      - TG:@hkaa0|韩国_4
+      - TG:@hkaa0|美国_6
+      - TG:@hkaa0|美国_9
+      - TG:@hkaa0|美国_8
+      - TG:@hkaa0|美国_1
       - South Korea-M1
       - Hong Kong-M1
       - South Korea-M2
@@ -100,6 +154,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - TG:@hkaa0|新加坡_1
+      - TG:@hkaa0|韩国_4
+      - TG:@hkaa0|美国_6
+      - TG:@hkaa0|美国_9
+      - TG:@hkaa0|美国_8
+      - TG:@hkaa0|美国_1
       - South Korea-M1
       - Hong Kong-M1
       - South Korea-M2
