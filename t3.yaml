@@ -5,43 +5,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: ⑥印度 | 公益节点, server: sz-sg.19991314.xyz, port: 23718, type: vmess, uuid: cb644c8e-495f-4a88-84d0-8014034356f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ①狮城 | 公益节点, server: sz-sg.19991314.xyz, port: 16216, type: vmess, uuid: cb644c8e-495f-4a88-84d0-8014034356f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ④东京 | 公益节点, server: sh-jp.19991314.xyz, port: 43629, type: vmess, uuid: cb644c8e-495f-4a88-84d0-8014034356f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ②狮城 | 公益节点, server: sh-jp.19991314.xyz, port: 55504, type: vmess, uuid: cb644c8e-495f-4a88-84d0-8014034356f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ⑤美国 | 公益节点, server: sh-jp.19991314.xyz, port: 28364, type: vmess, uuid: cb644c8e-495f-4a88-84d0-8014034356f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 【B】香港 普通 6 - Nearoute, server: ntemp06.boom.skin, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【B】香港 普通 8 - Nearoute, server: ntemp08.boom.skin, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【B】香港 普通 1 - Leaseweb, server: n06.boom.skin, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【A】香港 普通 1 - Nearoute, server: ntemp15.boom.skin, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【N】香港 普通 3 - Nearoute, server: nna.boom.skin, port: 49000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【B】香港 普通 5 - Nearoute, server: ntemp05.boom.skin, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【N】日本 普通 1 - Nerocloud, server: jp1.boom.skin, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【N】日本 普通 2 - Nerocloud, server: jp2.boom.skin, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【N】香港 普通 2 - Nearoute, server: nn9.boom.skin, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【N】日本 普通 5 - Nerocloud, server: jp5.boom.skin, port: 34000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【N】日本 普通 4 - Nerocloud, server: jp4.boom.skin, port: 33000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【N】日本 普通 3 - Nerocloud, server: jp3.boom.skin, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【K】新加坡 普通 1 - DO, server: nk8.boom.skin, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【N】香港 普通 4 - Leaseweb, server: nn11.boom.skin, port: 50000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【K】新加坡 普通 3 - DO, server: nka.boom.skin, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【K】新加坡 普通 4 - DO, server: nkb.boom.skin, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【C】美国 普通 2 - CC, server: us2.edge.boom.skin, port: 41000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【C】美国 普通 4 - CC, server: us4.edge.boom.skin, port: 43000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【C】美国 普通 1 - CC, server: us1.edge.boom.skin, port: 40000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【K】新加坡 普通 2 - DO, server: nk9.boom.skin, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ⑥印度 | 公益节点
-      - ①狮城 | 公益节点
-      - ④东京 | 公益节点
-      - ②狮城 | 公益节点
-      - ⑤美国 | 公益节点
+      - 【B】香港 普通 6 - Nearoute
+      - 【B】香港 普通 8 - Nearoute
+      - 【B】香港 普通 1 - Leaseweb
+      - 【A】香港 普通 1 - Nearoute
+      - 【N】香港 普通 3 - Nearoute
+      - 【B】香港 普通 5 - Nearoute
+      - 【N】日本 普通 1 - Nerocloud
+      - 【N】日本 普通 2 - Nerocloud
+      - 【N】香港 普通 2 - Nearoute
+      - 【N】日本 普通 5 - Nerocloud
+      - 【N】日本 普通 4 - Nerocloud
+      - 【N】日本 普通 3 - Nerocloud
+      - 【K】新加坡 普通 1 - DO
+      - 【N】香港 普通 4 - Leaseweb
+      - 【K】新加坡 普通 3 - DO
+      - 【K】新加坡 普通 4 - DO
+      - 【C】美国 普通 2 - CC
+      - 【C】美国 普通 4 - CC
+      - 【C】美国 普通 1 - CC
+      - 【K】新加坡 普通 2 - DO
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - ⑥印度 | 公益节点
-      - ①狮城 | 公益节点
-      - ④东京 | 公益节点
-      - ②狮城 | 公益节点
-      - ⑤美国 | 公益节点
+      - 【B】香港 普通 6 - Nearoute
+      - 【B】香港 普通 8 - Nearoute
+      - 【B】香港 普通 1 - Leaseweb
+      - 【A】香港 普通 1 - Nearoute
+      - 【N】香港 普通 3 - Nearoute
+      - 【B】香港 普通 5 - Nearoute
+      - 【N】日本 普通 1 - Nerocloud
+      - 【N】日本 普通 2 - Nerocloud
+      - 【N】香港 普通 2 - Nearoute
+      - 【N】日本 普通 5 - Nerocloud
+      - 【N】日本 普通 4 - Nerocloud
+      - 【N】日本 普通 3 - Nerocloud
+      - 【K】新加坡 普通 1 - DO
+      - 【N】香港 普通 4 - Leaseweb
+      - 【K】新加坡 普通 3 - DO
+      - 【K】新加坡 普通 4 - DO
+      - 【C】美国 普通 2 - CC
+      - 【C】美国 普通 4 - CC
+      - 【C】美国 普通 1 - CC
+      - 【K】新加坡 普通 2 - DO
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ⑥印度 | 公益节点
-      - ①狮城 | 公益节点
-      - ④东京 | 公益节点
-      - ②狮城 | 公益节点
-      - ⑤美国 | 公益节点
+      - 【B】香港 普通 6 - Nearoute
+      - 【B】香港 普通 8 - Nearoute
+      - 【B】香港 普通 1 - Leaseweb
+      - 【A】香港 普通 1 - Nearoute
+      - 【N】香港 普通 3 - Nearoute
+      - 【B】香港 普通 5 - Nearoute
+      - 【N】日本 普通 1 - Nerocloud
+      - 【N】日本 普通 2 - Nerocloud
+      - 【N】香港 普通 2 - Nearoute
+      - 【N】日本 普通 5 - Nerocloud
+      - 【N】日本 普通 4 - Nerocloud
+      - 【N】日本 普通 3 - Nerocloud
+      - 【K】新加坡 普通 1 - DO
+      - 【N】香港 普通 4 - Leaseweb
+      - 【K】新加坡 普通 3 - DO
+      - 【K】新加坡 普通 4 - DO
+      - 【C】美国 普通 2 - CC
+      - 【C】美国 普通 4 - CC
+      - 【C】美国 普通 1 - CC
+      - 【K】新加坡 普通 2 - DO
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,47 +120,115 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ⑥印度 | 公益节点
-      - ①狮城 | 公益节点
-      - ④东京 | 公益节点
-      - ②狮城 | 公益节点
-      - ⑤美国 | 公益节点
+      - 【B】香港 普通 6 - Nearoute
+      - 【B】香港 普通 8 - Nearoute
+      - 【B】香港 普通 1 - Leaseweb
+      - 【A】香港 普通 1 - Nearoute
+      - 【N】香港 普通 3 - Nearoute
+      - 【B】香港 普通 5 - Nearoute
+      - 【N】日本 普通 1 - Nerocloud
+      - 【N】日本 普通 2 - Nerocloud
+      - 【N】香港 普通 2 - Nearoute
+      - 【N】日本 普通 5 - Nerocloud
+      - 【N】日本 普通 4 - Nerocloud
+      - 【N】日本 普通 3 - Nerocloud
+      - 【K】新加坡 普通 1 - DO
+      - 【N】香港 普通 4 - Leaseweb
+      - 【K】新加坡 普通 3 - DO
+      - 【K】新加坡 普通 4 - DO
+      - 【C】美国 普通 2 - CC
+      - 【C】美国 普通 4 - CC
+      - 【C】美国 普通 1 - CC
+      - 【K】新加坡 普通 2 - DO
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 【B】香港 普通 6 - Nearoute
+      - 【B】香港 普通 8 - Nearoute
+      - 【B】香港 普通 1 - Leaseweb
+      - 【A】香港 普通 1 - Nearoute
+      - 【N】香港 普通 3 - Nearoute
+      - 【B】香港 普通 5 - Nearoute
+      - 【N】香港 普通 2 - Nearoute
+      - 【N】香港 普通 4 - Leaseweb
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - ⑥印度 | 公益节点
-      - ①狮城 | 公益节点
-      - ④东京 | 公益节点
-      - ②狮城 | 公益节点
-      - ⑤美国 | 公益节点
+      - 【B】香港 普通 6 - Nearoute
+      - 【B】香港 普通 8 - Nearoute
+      - 【B】香港 普通 1 - Leaseweb
+      - 【A】香港 普通 1 - Nearoute
+      - 【N】香港 普通 3 - Nearoute
+      - 【B】香港 普通 5 - Nearoute
+      - 【N】日本 普通 1 - Nerocloud
+      - 【N】日本 普通 2 - Nerocloud
+      - 【N】香港 普通 2 - Nearoute
+      - 【N】日本 普通 5 - Nerocloud
+      - 【N】日本 普通 4 - Nerocloud
+      - 【N】日本 普通 3 - Nerocloud
+      - 【K】新加坡 普通 1 - DO
+      - 【N】香港 普通 4 - Leaseweb
+      - 【K】新加坡 普通 3 - DO
+      - 【K】新加坡 普通 4 - DO
+      - 【C】美国 普通 2 - CC
+      - 【C】美国 普通 4 - CC
+      - 【C】美国 普通 1 - CC
+      - 【K】新加坡 普通 2 - DO
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - ⑥印度 | 公益节点
-      - ①狮城 | 公益节点
-      - ④东京 | 公益节点
-      - ②狮城 | 公益节点
-      - ⑤美国 | 公益节点
+      - 【B】香港 普通 6 - Nearoute
+      - 【B】香港 普通 8 - Nearoute
+      - 【B】香港 普通 1 - Leaseweb
+      - 【A】香港 普通 1 - Nearoute
+      - 【N】香港 普通 3 - Nearoute
+      - 【B】香港 普通 5 - Nearoute
+      - 【N】日本 普通 1 - Nerocloud
+      - 【N】日本 普通 2 - Nerocloud
+      - 【N】香港 普通 2 - Nearoute
+      - 【N】日本 普通 5 - Nerocloud
+      - 【N】日本 普通 4 - Nerocloud
+      - 【N】日本 普通 3 - Nerocloud
+      - 【K】新加坡 普通 1 - DO
+      - 【N】香港 普通 4 - Leaseweb
+      - 【K】新加坡 普通 3 - DO
+      - 【K】新加坡 普通 4 - DO
+      - 【C】美国 普通 2 - CC
+      - 【C】美国 普通 4 - CC
+      - 【C】美国 普通 1 - CC
+      - 【K】新加坡 普通 2 - DO
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ⑥印度 | 公益节点
-      - ①狮城 | 公益节点
-      - ④东京 | 公益节点
-      - ②狮城 | 公益节点
-      - ⑤美国 | 公益节点
+      - 【B】香港 普通 6 - Nearoute
+      - 【B】香港 普通 8 - Nearoute
+      - 【B】香港 普通 1 - Leaseweb
+      - 【A】香港 普通 1 - Nearoute
+      - 【N】香港 普通 3 - Nearoute
+      - 【B】香港 普通 5 - Nearoute
+      - 【N】日本 普通 1 - Nerocloud
+      - 【N】日本 普通 2 - Nerocloud
+      - 【N】香港 普通 2 - Nearoute
+      - 【N】日本 普通 5 - Nerocloud
+      - 【N】日本 普通 4 - Nerocloud
+      - 【N】日本 普通 3 - Nerocloud
+      - 【K】新加坡 普通 1 - DO
+      - 【N】香港 普通 4 - Leaseweb
+      - 【K】新加坡 普通 3 - DO
+      - 【K】新加坡 普通 4 - DO
+      - 【C】美国 普通 2 - CC
+      - 【C】美国 普通 4 - CC
+      - 【C】美国 普通 1 - CC
+      - 【K】新加坡 普通 2 - DO
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +244,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ⑥印度 | 公益节点
-      - ①狮城 | 公益节点
-      - ④东京 | 公益节点
-      - ②狮城 | 公益节点
-      - ⑤美国 | 公益节点
+      - 【B】香港 普通 6 - Nearoute
+      - 【B】香港 普通 8 - Nearoute
+      - 【B】香港 普通 1 - Leaseweb
+      - 【A】香港 普通 1 - Nearoute
+      - 【N】香港 普通 3 - Nearoute
+      - 【B】香港 普通 5 - Nearoute
+      - 【N】日本 普通 1 - Nerocloud
+      - 【N】日本 普通 2 - Nerocloud
+      - 【N】香港 普通 2 - Nearoute
+      - 【N】日本 普通 5 - Nerocloud
+      - 【N】日本 普通 4 - Nerocloud
+      - 【N】日本 普通 3 - Nerocloud
+      - 【K】新加坡 普通 1 - DO
+      - 【N】香港 普通 4 - Leaseweb
+      - 【K】新加坡 普通 3 - DO
+      - 【K】新加坡 普通 4 - DO
+      - 【C】美国 普通 2 - CC
+      - 【C】美国 普通 4 - CC
+      - 【C】美国 普通 1 - CC
+      - 【K】新加坡 普通 2 - DO
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
