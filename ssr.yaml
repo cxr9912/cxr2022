@@ -5,315 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡 - IEPL   - 03, server: cm1-sg.hutaonode2.top, port: 12303, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 新加坡 - IEPL   - 06, server: cm1-sg.hutaonode2.top, port: 12306, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 新加坡 - IEPL   - 02, server: cm1-sg.hutaonode2.top, port: 12302, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 新加坡01-SG 01, server: cm01.newcome.xyz, port: 6700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 香港05 备用, server: cm02.wappapinkush.xyz, port: 1305, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 香港09 备用, server: cm02.wappapinkush.xyz, port: 1309, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 香港03-HK03, server: zx01.endhigh.xyz, port: 2402, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 香港02 备用, server: cm02.wappapinkush.xyz, port: 1302, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 香港04-HK04, server: zx01.endhigh.xyz, port: 2403, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 香港 - IEPL   - 06, server: cm1-hk.hutaonode2.top, port: 12406, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 新加坡01 备用, server: cm01.wappapinkush.xyz, port: 3601, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 香港 - IEPL   - 01, server: cm1-hk.hutaonode2.top, port: 12401, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 台湾04-TW 04, server: cm01.newcome.xyz, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 香港07-HK07, server: zx01.endhigh.xyz, port: 2406, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 香港03 备用, server: cm02.wappapinkush.xyz, port: 1303, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 香港09-HK09, server: zx01.endhigh.xyz, port: 2408, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 香港10-HK10, server: zx01.endhigh.xyz, port: 2409, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 香港04 备用, server: cm02.wappapinkush.xyz, port: 1304, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 新加坡06-SG 06, server: cm01.newcome.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 新加坡04 备用, server: cm01.wappapinkush.xyz, port: 3604, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 香港06-HK06, server: zx01.endhigh.xyz, port: 2405, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 新加坡04-SG 04, server: cm01.newcome.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 新加坡10-SG 10, server: cm01.newcome.xyz, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 香港 - IEPL   - 04, server: cm1-hk.hutaonode2.top, port: 12404, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 香港07 备用, server: cm02.wappapinkush.xyz, port: 1307, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 新加坡05 备用, server: cm01.wappapinkush.xyz, port: 3605, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 新加坡08-SG 08, server: cm01.newcome.xyz, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 香港05-HK05, server: zx01.endhigh.xyz, port: 2404, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 日本04-JP 04, server: cm01.newcome.xyz, port: 3703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 台湾01 备用, server: cm01.wappapinkush.xyz, port: 4301, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 日本03 备用, server: cm01.wappapinkush.xyz, port: 2303, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 日本04 备用, server: cm01.wappapinkush.xyz, port: 2304, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 香港06 备用, server: cm02.wappapinkush.xyz, port: 1306, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 香港01 备用, server: cm02.wappapinkush.xyz, port: 1301, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 台湾05 备用, server: cm01.wappapinkush.xyz, port: 4305, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 香港01-HK01, server: zx01.endhigh.xyz, port: 2400, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 日本08-JP 08, server: cm01.newcome.xyz, port: 3707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 新加坡02 备用, server: cm01.wappapinkush.xyz, port: 3602, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 香港 - IEPL   - 02, server: cm1-hk.hutaonode2.top, port: 12402, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 香港08 备用, server: cm02.wappapinkush.xyz, port: 1308, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 香港02-HK02, server: zx01.endhigh.xyz, port: 2401, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 新加坡05-SG 05, server: cm01.newcome.xyz, port: 6704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 新加坡03 备用, server: cm01.wappapinkush.xyz, port: 3603, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 香港 - IEPL   - 03, server: cm1-hk.hutaonode2.top, port: 12403, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 香港 - IEPL   - 05, server: cm1-hk.hutaonode2.top, port: 12405, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 新加坡02-SG 02, server: cm01.newcome.xyz, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 日本02 备用, server: cm01.wappapinkush.xyz, port: 2302, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 香港10 备用, server: cm02.wappapinkush.xyz, port: 1310, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 日本01-JP 01, server: cm01.newcome.xyz, port: 3700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 台湾02 备用, server: cm01.wappapinkush.xyz, port: 4302, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 新加坡07-SG 07, server: cm01.newcome.xyz, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 新加坡09-SG 09, server: cm01.newcome.xyz, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 美国05-USA05, server: cm01.newcome.xyz, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 美国03-USA03, server: cm01.newcome.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 美国 - IEPL   - 05, server: cm1-us.hutaonode2.top, port: 12205, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 美国04 备用, server: cm01.wappapinkush.xyz, port: 6304, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 美国07-USA07, server: cm01.newcome.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 美国08-USA08, server: cm01.newcome.xyz, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 美国09-USA09, server: cm01.newcome.xyz, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 美国03 备用, server: cm01.wappapinkush.xyz, port: 6303, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 美国02 备用, server: cm01.wappapinkush.xyz, port: 6302, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 美国06-USA06, server: cm01.newcome.xyz, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 美国 - IEPL   - 02, server: cm1-us.hutaonode2.top, port: 12202, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 美国 - IEPL   - 06, server: cm1-us.hutaonode2.top, port: 12206, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 美国 - IEPL   - 04, server: cm1-us.hutaonode2.top, port: 12204, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 美国 - IEPL   - 03, server: cm1-us.hutaonode2.top, port: 12203, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 美国04-USA04, server: cm01.newcome.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 美国02-USA02, server: cm01.newcome.xyz, port: 7701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 美国05 备用, server: cm01.wappapinkush.xyz, port: 6305, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 美国 - IEPL   - 01, server: cm1-us.hutaonode2.top, port: 12201, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
-  - {name: 美国01 备用, server: cm01.wappapinkush.xyz, port: 6301, type: ssr, cipher: chacha20-ietf, password: jjx83UjLB5hKcC3p, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17596:zIoNvZEnipG3o22j, obfs-param: 765ed17596.microsoft.com, udp: true}
-  - {name: 美国10-USA10, server: cm01.newcome.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 77750:llG0105E, obfs-param: ff23b77750.microsoft.com, udp: true}
-  - {name: 日本 - IEPL   - 05, server: cm1-jp.hutaonode2.top, port: 12005, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 129:EqfXBiXQ8GMlL0Pu, obfs-param: 85a44129.microsoft.com, udp: true}
+  - {name: 【B】香港 普通 9 - Nearoute, server: ntemp09.boom.skin, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【A】香港 普通 F - Nearoute, server: ntemp20.boom.skin, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【B】香港 普通 1 - Nearoute, server: ntemp01.boom.skin, port: 10000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【B】香港  普通 3 - Nearoute, server: n62.boom.skin, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【B】香港 普通 2 - Nearoute, server: ntemp02.boom.skin, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【A】香港 普通 B - Nearoute, server: ntemp16.boom.skin, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【B】香港 普通 7 - Nearoute, server: ntemp07.boom.skin, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【A】香港 普通 C - Nearoute, server: ntemp17.boom.skin, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【B】香港 普通 4 -  Nearoute, server: ntemp04.boom.skin, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【B】香港 普通 3 - Nearoute, server: ntemp03.boom.skin, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 - IEPL   - 03
-      - 新加坡 - IEPL   - 06
-      - 新加坡 - IEPL   - 02
-      - 新加坡01-SG 01
-      - 香港05 备用
-      - 香港09 备用
-      - 香港03-HK03
-      - 香港02 备用
-      - 香港04-HK04
-      - 香港 - IEPL   - 06
-      - 新加坡01 备用
-      - 香港 - IEPL   - 01
-      - 台湾04-TW 04
-      - 香港07-HK07
-      - 香港03 备用
-      - 香港09-HK09
-      - 香港10-HK10
-      - 香港04 备用
-      - 新加坡06-SG 06
-      - 新加坡04 备用
-      - 香港06-HK06
-      - 新加坡04-SG 04
-      - 新加坡10-SG 10
-      - 香港 - IEPL   - 04
-      - 香港07 备用
-      - 新加坡05 备用
-      - 新加坡08-SG 08
-      - 香港05-HK05
-      - 日本04-JP 04
-      - 台湾01 备用
-      - 日本03 备用
-      - 日本04 备用
-      - 香港06 备用
-      - 香港01 备用
-      - 台湾05 备用
-      - 香港01-HK01
-      - 日本08-JP 08
-      - 新加坡02 备用
-      - 香港 - IEPL   - 02
-      - 香港08 备用
-      - 香港02-HK02
-      - 新加坡05-SG 05
-      - 新加坡03 备用
-      - 香港 - IEPL   - 03
-      - 香港 - IEPL   - 05
-      - 新加坡02-SG 02
-      - 日本02 备用
-      - 香港10 备用
-      - 日本01-JP 01
-      - 台湾02 备用
-      - 新加坡07-SG 07
-      - 新加坡09-SG 09
-      - 美国05-USA05
-      - 美国03-USA03
-      - 美国 - IEPL   - 05
-      - 美国04 备用
-      - 美国07-USA07
-      - 美国08-USA08
-      - 美国09-USA09
-      - 美国03 备用
-      - 美国02 备用
-      - 美国06-USA06
-      - 美国 - IEPL   - 02
-      - 美国 - IEPL   - 06
-      - 美国 - IEPL   - 04
-      - 美国 - IEPL   - 03
-      - 美国04-USA04
-      - 美国02-USA02
-      - 美国05 备用
-      - 美国 - IEPL   - 01
-      - 美国01 备用
-      - 美国10-USA10
-      - 日本 - IEPL   - 05
+      - 【B】香港 普通 9 - Nearoute
+      - 【A】香港 普通 F - Nearoute
+      - 【B】香港 普通 1 - Nearoute
+      - 【B】香港  普通 3 - Nearoute
+      - 【B】香港 普通 2 - Nearoute
+      - 【A】香港 普通 B - Nearoute
+      - 【B】香港 普通 7 - Nearoute
+      - 【A】香港 普通 C - Nearoute
+      - 【B】香港 普通 4 -  Nearoute
+      - 【B】香港 普通 3 - Nearoute
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 - IEPL   - 03
-      - 新加坡 - IEPL   - 06
-      - 新加坡 - IEPL   - 02
-      - 新加坡01-SG 01
-      - 香港05 备用
-      - 香港09 备用
-      - 香港03-HK03
-      - 香港02 备用
-      - 香港04-HK04
-      - 香港 - IEPL   - 06
-      - 新加坡01 备用
-      - 香港 - IEPL   - 01
-      - 台湾04-TW 04
-      - 香港07-HK07
-      - 香港03 备用
-      - 香港09-HK09
-      - 香港10-HK10
-      - 香港04 备用
-      - 新加坡06-SG 06
-      - 新加坡04 备用
-      - 香港06-HK06
-      - 新加坡04-SG 04
-      - 新加坡10-SG 10
-      - 香港 - IEPL   - 04
-      - 香港07 备用
-      - 新加坡05 备用
-      - 新加坡08-SG 08
-      - 香港05-HK05
-      - 日本04-JP 04
-      - 台湾01 备用
-      - 日本03 备用
-      - 日本04 备用
-      - 香港06 备用
-      - 香港01 备用
-      - 台湾05 备用
-      - 香港01-HK01
-      - 日本08-JP 08
-      - 新加坡02 备用
-      - 香港 - IEPL   - 02
-      - 香港08 备用
-      - 香港02-HK02
-      - 新加坡05-SG 05
-      - 新加坡03 备用
-      - 香港 - IEPL   - 03
-      - 香港 - IEPL   - 05
-      - 新加坡02-SG 02
-      - 日本02 备用
-      - 香港10 备用
-      - 日本01-JP 01
-      - 台湾02 备用
-      - 新加坡07-SG 07
-      - 新加坡09-SG 09
-      - 美国05-USA05
-      - 美国03-USA03
-      - 美国 - IEPL   - 05
-      - 美国04 备用
-      - 美国07-USA07
-      - 美国08-USA08
-      - 美国09-USA09
-      - 美国03 备用
-      - 美国02 备用
-      - 美国06-USA06
-      - 美国 - IEPL   - 02
-      - 美国 - IEPL   - 06
-      - 美国 - IEPL   - 04
-      - 美国 - IEPL   - 03
-      - 美国04-USA04
-      - 美国02-USA02
-      - 美国05 备用
-      - 美国 - IEPL   - 01
-      - 美国01 备用
-      - 美国10-USA10
-      - 日本 - IEPL   - 05
+      - 【B】香港 普通 9 - Nearoute
+      - 【A】香港 普通 F - Nearoute
+      - 【B】香港 普通 1 - Nearoute
+      - 【B】香港  普通 3 - Nearoute
+      - 【B】香港 普通 2 - Nearoute
+      - 【A】香港 普通 B - Nearoute
+      - 【B】香港 普通 7 - Nearoute
+      - 【A】香港 普通 C - Nearoute
+      - 【B】香港 普通 4 -  Nearoute
+      - 【B】香港 普通 3 - Nearoute
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 - IEPL   - 03
-      - 新加坡 - IEPL   - 06
-      - 新加坡 - IEPL   - 02
-      - 新加坡01-SG 01
-      - 香港05 备用
-      - 香港09 备用
-      - 香港03-HK03
-      - 香港02 备用
-      - 香港04-HK04
-      - 香港 - IEPL   - 06
-      - 新加坡01 备用
-      - 香港 - IEPL   - 01
-      - 台湾04-TW 04
-      - 香港07-HK07
-      - 香港03 备用
-      - 香港09-HK09
-      - 香港10-HK10
-      - 香港04 备用
-      - 新加坡06-SG 06
-      - 新加坡04 备用
-      - 香港06-HK06
-      - 新加坡04-SG 04
-      - 新加坡10-SG 10
-      - 香港 - IEPL   - 04
-      - 香港07 备用
-      - 新加坡05 备用
-      - 新加坡08-SG 08
-      - 香港05-HK05
-      - 日本04-JP 04
-      - 台湾01 备用
-      - 日本03 备用
-      - 日本04 备用
-      - 香港06 备用
-      - 香港01 备用
-      - 台湾05 备用
-      - 香港01-HK01
-      - 日本08-JP 08
-      - 新加坡02 备用
-      - 香港 - IEPL   - 02
-      - 香港08 备用
-      - 香港02-HK02
-      - 新加坡05-SG 05
-      - 新加坡03 备用
-      - 香港 - IEPL   - 03
-      - 香港 - IEPL   - 05
-      - 新加坡02-SG 02
-      - 日本02 备用
-      - 香港10 备用
-      - 日本01-JP 01
-      - 台湾02 备用
-      - 新加坡07-SG 07
-      - 新加坡09-SG 09
-      - 美国05-USA05
-      - 美国03-USA03
-      - 美国 - IEPL   - 05
-      - 美国04 备用
-      - 美国07-USA07
-      - 美国08-USA08
-      - 美国09-USA09
-      - 美国03 备用
-      - 美国02 备用
-      - 美国06-USA06
-      - 美国 - IEPL   - 02
-      - 美国 - IEPL   - 06
-      - 美国 - IEPL   - 04
-      - 美国 - IEPL   - 03
-      - 美国04-USA04
-      - 美国02-USA02
-      - 美国05 备用
-      - 美国 - IEPL   - 01
-      - 美国01 备用
-      - 美国10-USA10
-      - 日本 - IEPL   - 05
+      - 【B】香港 普通 9 - Nearoute
+      - 【A】香港 普通 F - Nearoute
+      - 【B】香港 普通 1 - Nearoute
+      - 【B】香港  普通 3 - Nearoute
+      - 【B】香港 普通 2 - Nearoute
+      - 【A】香港 普通 B - Nearoute
+      - 【B】香港 普通 7 - Nearoute
+      - 【A】香港 普通 C - Nearoute
+      - 【B】香港 普通 4 -  Nearoute
+      - 【B】香港 普通 3 - Nearoute
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -332,348 +80,77 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 - IEPL   - 03
-      - 新加坡 - IEPL   - 06
-      - 新加坡 - IEPL   - 02
-      - 新加坡01-SG 01
-      - 香港05 备用
-      - 香港09 备用
-      - 香港03-HK03
-      - 香港02 备用
-      - 香港04-HK04
-      - 香港 - IEPL   - 06
-      - 新加坡01 备用
-      - 香港 - IEPL   - 01
-      - 台湾04-TW 04
-      - 香港07-HK07
-      - 香港03 备用
-      - 香港09-HK09
-      - 香港10-HK10
-      - 香港04 备用
-      - 新加坡06-SG 06
-      - 新加坡04 备用
-      - 香港06-HK06
-      - 新加坡04-SG 04
-      - 新加坡10-SG 10
-      - 香港 - IEPL   - 04
-      - 香港07 备用
-      - 新加坡05 备用
-      - 新加坡08-SG 08
-      - 香港05-HK05
-      - 日本04-JP 04
-      - 台湾01 备用
-      - 日本03 备用
-      - 日本04 备用
-      - 香港06 备用
-      - 香港01 备用
-      - 台湾05 备用
-      - 香港01-HK01
-      - 日本08-JP 08
-      - 新加坡02 备用
-      - 香港 - IEPL   - 02
-      - 香港08 备用
-      - 香港02-HK02
-      - 新加坡05-SG 05
-      - 新加坡03 备用
-      - 香港 - IEPL   - 03
-      - 香港 - IEPL   - 05
-      - 新加坡02-SG 02
-      - 日本02 备用
-      - 香港10 备用
-      - 日本01-JP 01
-      - 台湾02 备用
-      - 新加坡07-SG 07
-      - 新加坡09-SG 09
-      - 美国05-USA05
-      - 美国03-USA03
-      - 美国 - IEPL   - 05
-      - 美国04 备用
-      - 美国07-USA07
-      - 美国08-USA08
-      - 美国09-USA09
-      - 美国03 备用
-      - 美国02 备用
-      - 美国06-USA06
-      - 美国 - IEPL   - 02
-      - 美国 - IEPL   - 06
-      - 美国 - IEPL   - 04
-      - 美国 - IEPL   - 03
-      - 美国04-USA04
-      - 美国02-USA02
-      - 美国05 备用
-      - 美国 - IEPL   - 01
-      - 美国01 备用
-      - 美国10-USA10
-      - 日本 - IEPL   - 05
+      - 【B】香港 普通 9 - Nearoute
+      - 【A】香港 普通 F - Nearoute
+      - 【B】香港 普通 1 - Nearoute
+      - 【B】香港  普通 3 - Nearoute
+      - 【B】香港 普通 2 - Nearoute
+      - 【A】香港 普通 B - Nearoute
+      - 【B】香港 普通 7 - Nearoute
+      - 【A】香港 普通 C - Nearoute
+      - 【B】香港 普通 4 -  Nearoute
+      - 【B】香港 普通 3 - Nearoute
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港05 备用
-      - 香港09 备用
-      - 香港03-HK03
-      - 香港02 备用
-      - 香港04-HK04
-      - 香港 - IEPL   - 06
-      - 香港 - IEPL   - 01
-      - 台湾04-TW 04
-      - 香港07-HK07
-      - 香港03 备用
-      - 香港09-HK09
-      - 香港10-HK10
-      - 香港04 备用
-      - 香港06-HK06
-      - 香港 - IEPL   - 04
-      - 香港07 备用
-      - 香港05-HK05
-      - 台湾01 备用
-      - 香港06 备用
-      - 香港01 备用
-      - 台湾05 备用
-      - 香港01-HK01
-      - 香港 - IEPL   - 02
-      - 香港08 备用
-      - 香港02-HK02
-      - 香港 - IEPL   - 03
-      - 香港 - IEPL   - 05
-      - 香港10 备用
-      - 台湾02 备用
+      - 【B】香港 普通 9 - Nearoute
+      - 【A】香港 普通 F - Nearoute
+      - 【B】香港 普通 1 - Nearoute
+      - 【B】香港  普通 3 - Nearoute
+      - 【B】香港 普通 2 - Nearoute
+      - 【A】香港 普通 B - Nearoute
+      - 【B】香港 普通 7 - Nearoute
+      - 【A】香港 普通 C - Nearoute
+      - 【B】香港 普通 4 -  Nearoute
+      - 【B】香港 普通 3 - Nearoute
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 - IEPL   - 03
-      - 新加坡 - IEPL   - 06
-      - 新加坡 - IEPL   - 02
-      - 新加坡01-SG 01
-      - 香港05 备用
-      - 香港09 备用
-      - 香港03-HK03
-      - 香港02 备用
-      - 香港04-HK04
-      - 香港 - IEPL   - 06
-      - 新加坡01 备用
-      - 香港 - IEPL   - 01
-      - 台湾04-TW 04
-      - 香港07-HK07
-      - 香港03 备用
-      - 香港09-HK09
-      - 香港10-HK10
-      - 香港04 备用
-      - 新加坡06-SG 06
-      - 新加坡04 备用
-      - 香港06-HK06
-      - 新加坡04-SG 04
-      - 新加坡10-SG 10
-      - 香港 - IEPL   - 04
-      - 香港07 备用
-      - 新加坡05 备用
-      - 新加坡08-SG 08
-      - 香港05-HK05
-      - 日本04-JP 04
-      - 台湾01 备用
-      - 日本03 备用
-      - 日本04 备用
-      - 香港06 备用
-      - 香港01 备用
-      - 台湾05 备用
-      - 香港01-HK01
-      - 日本08-JP 08
-      - 新加坡02 备用
-      - 香港 - IEPL   - 02
-      - 香港08 备用
-      - 香港02-HK02
-      - 新加坡05-SG 05
-      - 新加坡03 备用
-      - 香港 - IEPL   - 03
-      - 香港 - IEPL   - 05
-      - 新加坡02-SG 02
-      - 日本02 备用
-      - 香港10 备用
-      - 日本01-JP 01
-      - 台湾02 备用
-      - 新加坡07-SG 07
-      - 新加坡09-SG 09
-      - 美国05-USA05
-      - 美国03-USA03
-      - 美国 - IEPL   - 05
-      - 美国04 备用
-      - 美国07-USA07
-      - 美国08-USA08
-      - 美国09-USA09
-      - 美国03 备用
-      - 美国02 备用
-      - 美国06-USA06
-      - 美国 - IEPL   - 02
-      - 美国 - IEPL   - 06
-      - 美国 - IEPL   - 04
-      - 美国 - IEPL   - 03
-      - 美国04-USA04
-      - 美国02-USA02
-      - 美国05 备用
-      - 美国 - IEPL   - 01
-      - 美国01 备用
-      - 美国10-USA10
-      - 日本 - IEPL   - 05
+      - 【B】香港 普通 9 - Nearoute
+      - 【A】香港 普通 F - Nearoute
+      - 【B】香港 普通 1 - Nearoute
+      - 【B】香港  普通 3 - Nearoute
+      - 【B】香港 普通 2 - Nearoute
+      - 【A】香港 普通 B - Nearoute
+      - 【B】香港 普通 7 - Nearoute
+      - 【A】香港 普通 C - Nearoute
+      - 【B】香港 普通 4 -  Nearoute
+      - 【B】香港 普通 3 - Nearoute
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 - IEPL   - 03
-      - 新加坡 - IEPL   - 06
-      - 新加坡 - IEPL   - 02
-      - 新加坡01-SG 01
-      - 香港05 备用
-      - 香港09 备用
-      - 香港03-HK03
-      - 香港02 备用
-      - 香港04-HK04
-      - 香港 - IEPL   - 06
-      - 新加坡01 备用
-      - 香港 - IEPL   - 01
-      - 台湾04-TW 04
-      - 香港07-HK07
-      - 香港03 备用
-      - 香港09-HK09
-      - 香港10-HK10
-      - 香港04 备用
-      - 新加坡06-SG 06
-      - 新加坡04 备用
-      - 香港06-HK06
-      - 新加坡04-SG 04
-      - 新加坡10-SG 10
-      - 香港 - IEPL   - 04
-      - 香港07 备用
-      - 新加坡05 备用
-      - 新加坡08-SG 08
-      - 香港05-HK05
-      - 日本04-JP 04
-      - 台湾01 备用
-      - 日本03 备用
-      - 日本04 备用
-      - 香港06 备用
-      - 香港01 备用
-      - 台湾05 备用
-      - 香港01-HK01
-      - 日本08-JP 08
-      - 新加坡02 备用
-      - 香港 - IEPL   - 02
-      - 香港08 备用
-      - 香港02-HK02
-      - 新加坡05-SG 05
-      - 新加坡03 备用
-      - 香港 - IEPL   - 03
-      - 香港 - IEPL   - 05
-      - 新加坡02-SG 02
-      - 日本02 备用
-      - 香港10 备用
-      - 日本01-JP 01
-      - 台湾02 备用
-      - 新加坡07-SG 07
-      - 新加坡09-SG 09
-      - 美国05-USA05
-      - 美国03-USA03
-      - 美国 - IEPL   - 05
-      - 美国04 备用
-      - 美国07-USA07
-      - 美国08-USA08
-      - 美国09-USA09
-      - 美国03 备用
-      - 美国02 备用
-      - 美国06-USA06
-      - 美国 - IEPL   - 02
-      - 美国 - IEPL   - 06
-      - 美国 - IEPL   - 04
-      - 美国 - IEPL   - 03
-      - 美国04-USA04
-      - 美国02-USA02
-      - 美国05 备用
-      - 美国 - IEPL   - 01
-      - 美国01 备用
-      - 美国10-USA10
-      - 日本 - IEPL   - 05
+      - 【B】香港 普通 9 - Nearoute
+      - 【A】香港 普通 F - Nearoute
+      - 【B】香港 普通 1 - Nearoute
+      - 【B】香港  普通 3 - Nearoute
+      - 【B】香港 普通 2 - Nearoute
+      - 【A】香港 普通 B - Nearoute
+      - 【B】香港 普通 7 - Nearoute
+      - 【A】香港 普通 C - Nearoute
+      - 【B】香港 普通 4 -  Nearoute
+      - 【B】香港 普通 3 - Nearoute
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 - IEPL   - 03
-      - 新加坡 - IEPL   - 06
-      - 新加坡 - IEPL   - 02
-      - 新加坡01-SG 01
-      - 香港05 备用
-      - 香港09 备用
-      - 香港03-HK03
-      - 香港02 备用
-      - 香港04-HK04
-      - 香港 - IEPL   - 06
-      - 新加坡01 备用
-      - 香港 - IEPL   - 01
-      - 台湾04-TW 04
-      - 香港07-HK07
-      - 香港03 备用
-      - 香港09-HK09
-      - 香港10-HK10
-      - 香港04 备用
-      - 新加坡06-SG 06
-      - 新加坡04 备用
-      - 香港06-HK06
-      - 新加坡04-SG 04
-      - 新加坡10-SG 10
-      - 香港 - IEPL   - 04
-      - 香港07 备用
-      - 新加坡05 备用
-      - 新加坡08-SG 08
-      - 香港05-HK05
-      - 日本04-JP 04
-      - 台湾01 备用
-      - 日本03 备用
-      - 日本04 备用
-      - 香港06 备用
-      - 香港01 备用
-      - 台湾05 备用
-      - 香港01-HK01
-      - 日本08-JP 08
-      - 新加坡02 备用
-      - 香港 - IEPL   - 02
-      - 香港08 备用
-      - 香港02-HK02
-      - 新加坡05-SG 05
-      - 新加坡03 备用
-      - 香港 - IEPL   - 03
-      - 香港 - IEPL   - 05
-      - 新加坡02-SG 02
-      - 日本02 备用
-      - 香港10 备用
-      - 日本01-JP 01
-      - 台湾02 备用
-      - 新加坡07-SG 07
-      - 新加坡09-SG 09
-      - 美国05-USA05
-      - 美国03-USA03
-      - 美国 - IEPL   - 05
-      - 美国04 备用
-      - 美国07-USA07
-      - 美国08-USA08
-      - 美国09-USA09
-      - 美国03 备用
-      - 美国02 备用
-      - 美国06-USA06
-      - 美国 - IEPL   - 02
-      - 美国 - IEPL   - 06
-      - 美国 - IEPL   - 04
-      - 美国 - IEPL   - 03
-      - 美国04-USA04
-      - 美国02-USA02
-      - 美国05 备用
-      - 美国 - IEPL   - 01
-      - 美国01 备用
-      - 美国10-USA10
-      - 日本 - IEPL   - 05
+      - 【B】香港 普通 9 - Nearoute
+      - 【A】香港 普通 F - Nearoute
+      - 【B】香港 普通 1 - Nearoute
+      - 【B】香港  普通 3 - Nearoute
+      - 【B】香港 普通 2 - Nearoute
+      - 【A】香港 普通 B - Nearoute
+      - 【B】香港 普通 7 - Nearoute
+      - 【A】香港 普通 C - Nearoute
+      - 【B】香港 普通 4 -  Nearoute
+      - 【B】香港 普通 3 - Nearoute
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -689,79 +166,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 - IEPL   - 03
-      - 新加坡 - IEPL   - 06
-      - 新加坡 - IEPL   - 02
-      - 新加坡01-SG 01
-      - 香港05 备用
-      - 香港09 备用
-      - 香港03-HK03
-      - 香港02 备用
-      - 香港04-HK04
-      - 香港 - IEPL   - 06
-      - 新加坡01 备用
-      - 香港 - IEPL   - 01
-      - 台湾04-TW 04
-      - 香港07-HK07
-      - 香港03 备用
-      - 香港09-HK09
-      - 香港10-HK10
-      - 香港04 备用
-      - 新加坡06-SG 06
-      - 新加坡04 备用
-      - 香港06-HK06
-      - 新加坡04-SG 04
-      - 新加坡10-SG 10
-      - 香港 - IEPL   - 04
-      - 香港07 备用
-      - 新加坡05 备用
-      - 新加坡08-SG 08
-      - 香港05-HK05
-      - 日本04-JP 04
-      - 台湾01 备用
-      - 日本03 备用
-      - 日本04 备用
-      - 香港06 备用
-      - 香港01 备用
-      - 台湾05 备用
-      - 香港01-HK01
-      - 日本08-JP 08
-      - 新加坡02 备用
-      - 香港 - IEPL   - 02
-      - 香港08 备用
-      - 香港02-HK02
-      - 新加坡05-SG 05
-      - 新加坡03 备用
-      - 香港 - IEPL   - 03
-      - 香港 - IEPL   - 05
-      - 新加坡02-SG 02
-      - 日本02 备用
-      - 香港10 备用
-      - 日本01-JP 01
-      - 台湾02 备用
-      - 新加坡07-SG 07
-      - 新加坡09-SG 09
-      - 美国05-USA05
-      - 美国03-USA03
-      - 美国 - IEPL   - 05
-      - 美国04 备用
-      - 美国07-USA07
-      - 美国08-USA08
-      - 美国09-USA09
-      - 美国03 备用
-      - 美国02 备用
-      - 美国06-USA06
-      - 美国 - IEPL   - 02
-      - 美国 - IEPL   - 06
-      - 美国 - IEPL   - 04
-      - 美国 - IEPL   - 03
-      - 美国04-USA04
-      - 美国02-USA02
-      - 美国05 备用
-      - 美国 - IEPL   - 01
-      - 美国01 备用
-      - 美国10-USA10
-      - 日本 - IEPL   - 05
+      - 【B】香港 普通 9 - Nearoute
+      - 【A】香港 普通 F - Nearoute
+      - 【B】香港 普通 1 - Nearoute
+      - 【B】香港  普通 3 - Nearoute
+      - 【B】香港 普通 2 - Nearoute
+      - 【A】香港 普通 B - Nearoute
+      - 【B】香港 普通 7 - Nearoute
+      - 【A】香港 普通 C - Nearoute
+      - 【B】香港 普通 4 -  Nearoute
+      - 【B】香港 普通 3 - Nearoute
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
