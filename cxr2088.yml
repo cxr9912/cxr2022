@@ -5,55 +5,79 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国01, server: hainan.sfjsq001.info, port: 33208, type: vmess, uuid: 2068342d-3374-3c3c-bef3-8719f9945f0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港01, server: hainan.sfjsq001.info, port: 33203, type: vmess, uuid: 2068342d-3374-3c3c-bef3-8719f9945f0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /test, ws-headers: {Host: bing.com}, udp: true}
-  - {name: 香港03, server: hainan.sfjsq001.info, port: 33205, type: vmess, uuid: 2068342d-3374-3c3c-bef3-8719f9945f0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本01, server: hainan.sfjsq001.info, port: 33211, type: vmess, uuid: 2068342d-3374-3c3c-bef3-8719f9945f0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国02, server: hainan.sfjsq001.info, port: 33209, type: vmess, uuid: 2068342d-3374-3c3c-bef3-8719f9945f0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾01, server: hainan.sfjsq001.info, port: 33206, type: vmess, uuid: 2068342d-3374-3c3c-bef3-8719f9945f0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾02, server: hainan.sfjsq001.info, port: 33207, type: vmess, uuid: 2068342d-3374-3c3c-bef3-8719f9945f0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡02, server: hainan.sfjsq001.info, port: 33910, type: vmess, uuid: 2068342d-3374-3c3c-bef3-8719f9945f0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡4|免流|优化, server: sg4.microsoftjs.top, port: 443, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 香港01, server: hk01.012023.xyz, port: 30011, type: trojan, password: 203b60b4-91db-35bc-88c3-b0e42fb01643, sni: hk01.012023.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡3|免流|优化, server: sg3.microsoftjs.top, port: 80, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 韩国3|专线, server: kr3.microsoftjs.top, port: 10214, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 香港1|优化, server: hk1.microsoftjs.top, port: 443, type: trojan, password: bbac5e7a-b3b8-401a-8315-405b344c4036, sni: hk1.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 香港4|优化, server: hk4.microsoftjs.top, port: 443, type: trojan, password: bbac5e7a-b3b8-401a-8315-405b344c4036, sni: hk4.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 英国1|优化, server: kr3.microsoftjs.top, port: 50002, type: trojan, password: bbac5e7a-b3b8-401a-8315-405b344c4036, sni: kr3.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 土耳其1|优化|x3, server: kr3.microsoftjs.top, port: 50000, type: trojan, password: bbac5e7a-b3b8-401a-8315-405b344c4036, sni: kr3.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 新加坡5|免流|优化, server: sg5.microsoftjs.top, port: 443, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 台湾2, server: tw2.microsoftjs.top, port: 443, type: trojan, password: bbac5e7a-b3b8-401a-8315-405b344c4036, sni: tw2.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 日本1|免流|优化, server: jp1.microsoftjs.top, port: 80, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 日本4|免流|优化, server: jp4.microsoftjs.top, port: 443, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 日本3|免流|优化, server: jp3.microsoftjs.top, port: 443, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 韩国1|免流|优化, server: kr1.microsoftjs.top, port: 80, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国01
+      - 新加坡4|免流|优化
       - 香港01
-      - 香港03
-      - 日本01
-      - 美国02
-      - 台湾01
-      - 台湾02
-      - 新加坡02
+      - 新加坡3|免流|优化
+      - 韩国3|专线
+      - 香港1|优化
+      - 香港4|优化
+      - 英国1|优化
+      - 土耳其1|优化|x3
+      - 新加坡5|免流|优化
+      - 台湾2
+      - 日本1|免流|优化
+      - 日本4|免流|优化
+      - 日本3|免流|优化
+      - 韩国1|免流|优化
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国01
+      - 新加坡4|免流|优化
       - 香港01
-      - 香港03
-      - 日本01
-      - 美国02
-      - 台湾01
-      - 台湾02
-      - 新加坡02
+      - 新加坡3|免流|优化
+      - 韩国3|专线
+      - 香港1|优化
+      - 香港4|优化
+      - 英国1|优化
+      - 土耳其1|优化|x3
+      - 新加坡5|免流|优化
+      - 台湾2
+      - 日本1|免流|优化
+      - 日本4|免流|优化
+      - 日本3|免流|优化
+      - 韩国1|免流|优化
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国01
+      - 新加坡4|免流|优化
       - 香港01
-      - 香港03
-      - 日本01
-      - 美国02
-      - 台湾01
-      - 台湾02
-      - 新加坡02
+      - 新加坡3|免流|优化
+      - 韩国3|专线
+      - 香港1|优化
+      - 香港4|优化
+      - 英国1|优化
+      - 土耳其1|优化|x3
+      - 新加坡5|免流|优化
+      - 台湾2
+      - 日本1|免流|优化
+      - 日本4|免流|优化
+      - 日本3|免流|优化
+      - 韩国1|免流|优化
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,63 +96,87 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国01
+      - 新加坡4|免流|优化
       - 香港01
-      - 香港03
-      - 日本01
-      - 美国02
-      - 台湾01
-      - 台湾02
-      - 新加坡02
+      - 新加坡3|免流|优化
+      - 韩国3|专线
+      - 香港1|优化
+      - 香港4|优化
+      - 英国1|优化
+      - 土耳其1|优化|x3
+      - 新加坡5|免流|优化
+      - 台湾2
+      - 日本1|免流|优化
+      - 日本4|免流|优化
+      - 日本3|免流|优化
+      - 韩国1|免流|优化
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港01
-      - 香港03
-      - 台湾01
-      - 台湾02
+      - 香港1|优化
+      - 香港4|优化
+      - 台湾2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国01
+      - 新加坡4|免流|优化
       - 香港01
-      - 香港03
-      - 日本01
-      - 美国02
-      - 台湾01
-      - 台湾02
-      - 新加坡02
+      - 新加坡3|免流|优化
+      - 韩国3|专线
+      - 香港1|优化
+      - 香港4|优化
+      - 英国1|优化
+      - 土耳其1|优化|x3
+      - 新加坡5|免流|优化
+      - 台湾2
+      - 日本1|免流|优化
+      - 日本4|免流|优化
+      - 日本3|免流|优化
+      - 韩国1|免流|优化
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国01
+      - 新加坡4|免流|优化
       - 香港01
-      - 香港03
-      - 日本01
-      - 美国02
-      - 台湾01
-      - 台湾02
-      - 新加坡02
+      - 新加坡3|免流|优化
+      - 韩国3|专线
+      - 香港1|优化
+      - 香港4|优化
+      - 英国1|优化
+      - 土耳其1|优化|x3
+      - 新加坡5|免流|优化
+      - 台湾2
+      - 日本1|免流|优化
+      - 日本4|免流|优化
+      - 日本3|免流|优化
+      - 韩国1|免流|优化
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国01
+      - 新加坡4|免流|优化
       - 香港01
-      - 香港03
-      - 日本01
-      - 美国02
-      - 台湾01
-      - 台湾02
-      - 新加坡02
+      - 新加坡3|免流|优化
+      - 韩国3|专线
+      - 香港1|优化
+      - 香港4|优化
+      - 英国1|优化
+      - 土耳其1|优化|x3
+      - 新加坡5|免流|优化
+      - 台湾2
+      - 日本1|免流|优化
+      - 日本4|免流|优化
+      - 日本3|免流|优化
+      - 韩国1|免流|优化
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -144,14 +192,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国01
+      - 新加坡4|免流|优化
       - 香港01
-      - 香港03
-      - 日本01
-      - 美国02
-      - 台湾01
-      - 台湾02
-      - 新加坡02
+      - 新加坡3|免流|优化
+      - 韩国3|专线
+      - 香港1|优化
+      - 香港4|优化
+      - 英国1|优化
+      - 土耳其1|优化|x3
+      - 新加坡5|免流|优化
+      - 台湾2
+      - 日本1|免流|优化
+      - 日本4|免流|优化
+      - 日本3|免流|优化
+      - 韩国1|免流|优化
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
