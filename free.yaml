@@ -5,35 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN-四川, server: 112.18.159.131, port: 80, type: vmess, uuid: 90b37109-c270-45fa-ba14-476364e1f8aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: JP-日本3, server: jpc.ssml.site, port: 80, type: vmess, uuid: 90b37109-c270-45fa-ba14-476364e1f8aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: CN-上海 游戏, server: 49.234.143.183, port: 80, type: vmess, uuid: 90b37109-c270-45fa-ba14-476364e1f8aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 49.234.143.183}, udp: true}
+  - {name: 公益丨KuaiLian.org, server: 1a89b7f5-207b-d0ee-d79b-33a3353bd315.interface.buzz, port: 48152, type: ss, cipher: aes-256-gcm, password: 3b6a26f4-f999-4b35-92c0-990a91994cc7, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN-四川
-      - JP-日本3
-      - CN-上海 游戏
+      - 公益丨KuaiLian.org
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN-四川
-      - JP-日本3
-      - CN-上海 游戏
+      - 公益丨KuaiLian.org
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN-四川
-      - JP-日本3
-      - CN-上海 游戏
+      - 公益丨KuaiLian.org
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,9 +44,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN-四川
-      - JP-日本3
-      - CN-上海 游戏
+      - 公益丨KuaiLian.org
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -65,26 +55,20 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN-四川
-      - JP-日本3
-      - CN-上海 游戏
+      - 公益丨KuaiLian.org
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN-四川
-      - JP-日本3
-      - CN-上海 游戏
+      - 公益丨KuaiLian.org
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN-四川
-      - JP-日本3
-      - CN-上海 游戏
+      - 公益丨KuaiLian.org
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +84,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN-四川
-      - JP-日本3
-      - CN-上海 游戏
+      - 公益丨KuaiLian.org
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
