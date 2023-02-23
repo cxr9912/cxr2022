@@ -5,75 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 越南1, server: vn01.9527daishu.tk, port: 443, type: vmess, uuid: fbdec909-99d3-4978-9a1b-ed8860f28dae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: vn1.52daishu.life}, udp: true}
-  - {name: 越南2, server: vn02.9527daishu.tk, port: 443, type: vmess, uuid: fbdec909-99d3-4978-9a1b-ed8860f28dae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: vn2.52daishu.life}, udp: true}
-  - {name: 新加坡2, server: sg02.9527daishu.tk, port: 443, type: vmess, uuid: fbdec909-99d3-4978-9a1b-ed8860f28dae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: sg2.52daishu.life}, udp: true}
-  - {name: daishujiasu.com, server: sg01.9527daishu.tk, port: 443, type: vmess, uuid: fbdec909-99d3-4978-9a1b-ed8860f28dae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: sg1.52daishu.life}, udp: true}
-  - {name: 美国1, server: us01.9527daishu.tk, port: 443, type: vmess, uuid: fbdec909-99d3-4978-9a1b-ed8860f28dae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: us1.52daishu.life}, udp: true}
-  - {name: 美国2, server: us02.9527daishu.tk, port: 443, type: vmess, uuid: fbdec909-99d3-4978-9a1b-ed8860f28dae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: us2.52daishu.life}, udp: true}
-  - {name: 东京2|解锁Netflix&Disney+, server: jp02.9527daishu.tk, port: 443, type: vmess, uuid: fbdec909-99d3-4978-9a1b-ed8860f28dae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: jp2.52daishu.life}, udp: true}
-  - {name: 首尔2|解锁Netflix&Disney+, server: kr02.9527daishu.tk, port: 443, type: vmess, uuid: fbdec909-99d3-4978-9a1b-ed8860f28dae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: kr2.52daishu.life}, udp: true}
-  - {name: 越南|移动备用, server: yd.9527daishu.tk, port: 443, type: vmess, uuid: fbdec909-99d3-4978-9a1b-ed8860f28dae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: vn1.52daishu.life}, udp: true}
-  - {name: 香港|移动备用, server: yd.9527daishu.tk, port: 443, type: vmess, uuid: fbdec909-99d3-4978-9a1b-ed8860f28dae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: hk1.52daishu.life}, udp: true}
-  - {name: 首尔1|解锁Netflix&Disney+, server: kr01.9527daishu.tk, port: 443, type: vmess, uuid: fbdec909-99d3-4978-9a1b-ed8860f28dae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: kr1.52daishu.life}, udp: true}
-  - {name: 土耳其, server: tr01.9527daishu.tk, port: 443, type: vmess, uuid: fbdec909-99d3-4978-9a1b-ed8860f28dae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: tr1.52daishu.life}, udp: true}
-  - {name: 香港2, server: hk02.9527daishu.tk, port: 443, type: vmess, uuid: fbdec909-99d3-4978-9a1b-ed8860f28dae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tv, ws-headers: {Host: hk2.52daishu.life}, udp: true}
+  - {name: Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai, server: ns01.gutingting.com, port: 30009, type: vmess, uuid: 4653c56a-e62a-44da-bd70-a0c6a3d0fab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aceamedv, ws-headers: {Host: sh01.fastcloud.club}, udp: true}
+  - {name: United States(ChatGPT) 03 TG:@nodpai, server: cdn.hkhkbn.6641634715834932.me, port: 80, type: vmess, uuid: a4955acf-b475-47b5-8c63-8574fee2a2e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wel/18, ws-headers: {Host: wangsu.com}, udp: true}
+  - {name: France(ChatGPT) 01 TG:@nodpai, server: cdn.hkhkbn.6641634715834932.me, port: 80, type: vmess, uuid: a4955acf-b475-47b5-8c63-8574fee2a2e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wel/11, ws-headers: {Host: wangsu.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 越南1
-      - 越南2
-      - 新加坡2
-      - daishujiasu.com
-      - 美国1
-      - 美国2
-      - 东京2|解锁Netflix&Disney+
-      - 首尔2|解锁Netflix&Disney+
-      - 越南|移动备用
-      - 香港|移动备用
-      - 首尔1|解锁Netflix&Disney+
-      - 土耳其
-      - 香港2
+      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
+      - United States(ChatGPT) 03 TG:@nodpai
+      - France(ChatGPT) 01 TG:@nodpai
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 越南1
-      - 越南2
-      - 新加坡2
-      - daishujiasu.com
-      - 美国1
-      - 美国2
-      - 东京2|解锁Netflix&Disney+
-      - 首尔2|解锁Netflix&Disney+
-      - 越南|移动备用
-      - 香港|移动备用
-      - 首尔1|解锁Netflix&Disney+
-      - 土耳其
-      - 香港2
+      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
+      - United States(ChatGPT) 03 TG:@nodpai
+      - France(ChatGPT) 01 TG:@nodpai
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 越南1
-      - 越南2
-      - 新加坡2
-      - daishujiasu.com
-      - 美国1
-      - 美国2
-      - 东京2|解锁Netflix&Disney+
-      - 首尔2|解锁Netflix&Disney+
-      - 越南|移动备用
-      - 香港|移动备用
-      - 首尔1|解锁Netflix&Disney+
-      - 土耳其
-      - 香港2
+      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
+      - United States(ChatGPT) 03 TG:@nodpai
+      - France(ChatGPT) 01 TG:@nodpai
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,81 +52,39 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 越南1
-      - 越南2
-      - 新加坡2
-      - daishujiasu.com
-      - 美国1
-      - 美国2
-      - 东京2|解锁Netflix&Disney+
-      - 首尔2|解锁Netflix&Disney+
-      - 越南|移动备用
-      - 香港|移动备用
-      - 首尔1|解锁Netflix&Disney+
-      - 土耳其
-      - 香港2
+      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
+      - United States(ChatGPT) 03 TG:@nodpai
+      - France(ChatGPT) 01 TG:@nodpai
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港|移动备用
-      - 香港2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 越南1
-      - 越南2
-      - 新加坡2
-      - daishujiasu.com
-      - 美国1
-      - 美国2
-      - 东京2|解锁Netflix&Disney+
-      - 首尔2|解锁Netflix&Disney+
-      - 越南|移动备用
-      - 香港|移动备用
-      - 首尔1|解锁Netflix&Disney+
-      - 土耳其
-      - 香港2
+      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
+      - United States(ChatGPT) 03 TG:@nodpai
+      - France(ChatGPT) 01 TG:@nodpai
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 越南1
-      - 越南2
-      - 新加坡2
-      - daishujiasu.com
-      - 美国1
-      - 美国2
-      - 东京2|解锁Netflix&Disney+
-      - 首尔2|解锁Netflix&Disney+
-      - 越南|移动备用
-      - 香港|移动备用
-      - 首尔1|解锁Netflix&Disney+
-      - 土耳其
-      - 香港2
+      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
+      - United States(ChatGPT) 03 TG:@nodpai
+      - France(ChatGPT) 01 TG:@nodpai
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 越南1
-      - 越南2
-      - 新加坡2
-      - daishujiasu.com
-      - 美国1
-      - 美国2
-      - 东京2|解锁Netflix&Disney+
-      - 首尔2|解锁Netflix&Disney+
-      - 越南|移动备用
-      - 香港|移动备用
-      - 首尔1|解锁Netflix&Disney+
-      - 土耳其
-      - 香港2
+      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
+      - United States(ChatGPT) 03 TG:@nodpai
+      - France(ChatGPT) 01 TG:@nodpai
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -182,19 +100,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 越南1
-      - 越南2
-      - 新加坡2
-      - daishujiasu.com
-      - 美国1
-      - 美国2
-      - 东京2|解锁Netflix&Disney+
-      - 首尔2|解锁Netflix&Disney+
-      - 越南|移动备用
-      - 香港|移动备用
-      - 首尔1|解锁Netflix&Disney+
-      - 土耳其
-      - 香港2
+      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
+      - United States(ChatGPT) 03 TG:@nodpai
+      - France(ChatGPT) 01 TG:@nodpai
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
