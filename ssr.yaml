@@ -5,63 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 【B】香港 普通 9 - Nearoute, server: ntemp09.boom.skin, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【A】香港 普通 F - Nearoute, server: ntemp20.boom.skin, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【B】香港 普通 1 - Nearoute, server: ntemp01.boom.skin, port: 10000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【B】香港  普通 3 - Nearoute, server: n62.boom.skin, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【B】香港 普通 2 - Nearoute, server: ntemp02.boom.skin, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【A】香港 普通 B - Nearoute, server: ntemp16.boom.skin, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【B】香港 普通 7 - Nearoute, server: ntemp07.boom.skin, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【A】香港 普通 C - Nearoute, server: ntemp17.boom.skin, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【B】香港 普通 4 -  Nearoute, server: ntemp04.boom.skin, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【B】香港 普通 3 - Nearoute, server: ntemp03.boom.skin, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 614581:dbzl1b, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 日本高速接入点-01, server: jp1.sanfen001.pics, port: 2002, type: vmess, uuid: fa565976-c2bb-4ae3-93ba-ae4d85719699, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cn, ws-headers: {Host: aws.amazon.com}, udp: true}
+  - {name: 香港高速接入点-02, server: hk2.sanfen001.pics, port: 443, type: vmess, uuid: fa565976-c2bb-4ae3-93ba-ae4d85719699, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 香港高速接入点-06, server: hk6.sanfen001.pics, port: 443, type: vmess, uuid: fa565976-c2bb-4ae3-93ba-ae4d85719699, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 香港高速接入点-05, server: hk5.sanfen001.pics, port: 443, type: vmess, uuid: fa565976-c2bb-4ae3-93ba-ae4d85719699, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 香港高速接入点-04, server: hk4.sanfen001.pics, port: 443, type: vmess, uuid: fa565976-c2bb-4ae3-93ba-ae4d85719699, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 美国高速接入点-01, server: us2.sanfen001.pics, port: 443, type: vmess, uuid: fa565976-c2bb-4ae3-93ba-ae4d85719699, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: us1.sanfen001.pics}, udp: true}
+  - {name: 新加坡高速接入点-02, server: sg2.sanfen001.pics, port: 2005, type: vmess, uuid: fa565976-c2bb-4ae3-93ba-ae4d85719699, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cn, ws-headers: {Host: aws.amazon.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【B】香港 普通 9 - Nearoute
-      - 【A】香港 普通 F - Nearoute
-      - 【B】香港 普通 1 - Nearoute
-      - 【B】香港  普通 3 - Nearoute
-      - 【B】香港 普通 2 - Nearoute
-      - 【A】香港 普通 B - Nearoute
-      - 【B】香港 普通 7 - Nearoute
-      - 【A】香港 普通 C - Nearoute
-      - 【B】香港 普通 4 -  Nearoute
-      - 【B】香港 普通 3 - Nearoute
+      - 日本高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-06
+      - 香港高速接入点-05
+      - 香港高速接入点-04
+      - 美国高速接入点-01
+      - 新加坡高速接入点-02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 【B】香港 普通 9 - Nearoute
-      - 【A】香港 普通 F - Nearoute
-      - 【B】香港 普通 1 - Nearoute
-      - 【B】香港  普通 3 - Nearoute
-      - 【B】香港 普通 2 - Nearoute
-      - 【A】香港 普通 B - Nearoute
-      - 【B】香港 普通 7 - Nearoute
-      - 【A】香港 普通 C - Nearoute
-      - 【B】香港 普通 4 -  Nearoute
-      - 【B】香港 普通 3 - Nearoute
+      - 日本高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-06
+      - 香港高速接入点-05
+      - 香港高速接入点-04
+      - 美国高速接入点-01
+      - 新加坡高速接入点-02
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【B】香港 普通 9 - Nearoute
-      - 【A】香港 普通 F - Nearoute
-      - 【B】香港 普通 1 - Nearoute
-      - 【B】香港  普通 3 - Nearoute
-      - 【B】香港 普通 2 - Nearoute
-      - 【A】香港 普通 B - Nearoute
-      - 【B】香港 普通 7 - Nearoute
-      - 【A】香港 普通 C - Nearoute
-      - 【B】香港 普通 4 -  Nearoute
-      - 【B】香港 普通 3 - Nearoute
+      - 日本高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-06
+      - 香港高速接入点-05
+      - 香港高速接入点-04
+      - 美国高速接入点-01
+      - 新加坡高速接入点-02
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,77 +68,59 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【B】香港 普通 9 - Nearoute
-      - 【A】香港 普通 F - Nearoute
-      - 【B】香港 普通 1 - Nearoute
-      - 【B】香港  普通 3 - Nearoute
-      - 【B】香港 普通 2 - Nearoute
-      - 【A】香港 普通 B - Nearoute
-      - 【B】香港 普通 7 - Nearoute
-      - 【A】香港 普通 C - Nearoute
-      - 【B】香港 普通 4 -  Nearoute
-      - 【B】香港 普通 3 - Nearoute
+      - 日本高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-06
+      - 香港高速接入点-05
+      - 香港高速接入点-04
+      - 美国高速接入点-01
+      - 新加坡高速接入点-02
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 【B】香港 普通 9 - Nearoute
-      - 【A】香港 普通 F - Nearoute
-      - 【B】香港 普通 1 - Nearoute
-      - 【B】香港  普通 3 - Nearoute
-      - 【B】香港 普通 2 - Nearoute
-      - 【A】香港 普通 B - Nearoute
-      - 【B】香港 普通 7 - Nearoute
-      - 【A】香港 普通 C - Nearoute
-      - 【B】香港 普通 4 -  Nearoute
-      - 【B】香港 普通 3 - Nearoute
+      - 香港高速接入点-02
+      - 香港高速接入点-06
+      - 香港高速接入点-05
+      - 香港高速接入点-04
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 【B】香港 普通 9 - Nearoute
-      - 【A】香港 普通 F - Nearoute
-      - 【B】香港 普通 1 - Nearoute
-      - 【B】香港  普通 3 - Nearoute
-      - 【B】香港 普通 2 - Nearoute
-      - 【A】香港 普通 B - Nearoute
-      - 【B】香港 普通 7 - Nearoute
-      - 【A】香港 普通 C - Nearoute
-      - 【B】香港 普通 4 -  Nearoute
-      - 【B】香港 普通 3 - Nearoute
+      - 日本高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-06
+      - 香港高速接入点-05
+      - 香港高速接入点-04
+      - 美国高速接入点-01
+      - 新加坡高速接入点-02
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 【B】香港 普通 9 - Nearoute
-      - 【A】香港 普通 F - Nearoute
-      - 【B】香港 普通 1 - Nearoute
-      - 【B】香港  普通 3 - Nearoute
-      - 【B】香港 普通 2 - Nearoute
-      - 【A】香港 普通 B - Nearoute
-      - 【B】香港 普通 7 - Nearoute
-      - 【A】香港 普通 C - Nearoute
-      - 【B】香港 普通 4 -  Nearoute
-      - 【B】香港 普通 3 - Nearoute
+      - 日本高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-06
+      - 香港高速接入点-05
+      - 香港高速接入点-04
+      - 美国高速接入点-01
+      - 新加坡高速接入点-02
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 【B】香港 普通 9 - Nearoute
-      - 【A】香港 普通 F - Nearoute
-      - 【B】香港 普通 1 - Nearoute
-      - 【B】香港  普通 3 - Nearoute
-      - 【B】香港 普通 2 - Nearoute
-      - 【A】香港 普通 B - Nearoute
-      - 【B】香港 普通 7 - Nearoute
-      - 【A】香港 普通 C - Nearoute
-      - 【B】香港 普通 4 -  Nearoute
-      - 【B】香港 普通 3 - Nearoute
+      - 日本高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-06
+      - 香港高速接入点-05
+      - 香港高速接入点-04
+      - 美国高速接入点-01
+      - 新加坡高速接入点-02
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -166,16 +136,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 【B】香港 普通 9 - Nearoute
-      - 【A】香港 普通 F - Nearoute
-      - 【B】香港 普通 1 - Nearoute
-      - 【B】香港  普通 3 - Nearoute
-      - 【B】香港 普通 2 - Nearoute
-      - 【A】香港 普通 B - Nearoute
-      - 【B】香港 普通 7 - Nearoute
-      - 【A】香港 普通 C - Nearoute
-      - 【B】香港 普通 4 -  Nearoute
-      - 【B】香港 普通 3 - Nearoute
+      - 日本高速接入点-01
+      - 香港高速接入点-02
+      - 香港高速接入点-06
+      - 香港高速接入点-05
+      - 香港高速接入点-04
+      - 美国高速接入点-01
+      - 新加坡高速接入点-02
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
