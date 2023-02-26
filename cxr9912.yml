@@ -5,283 +5,83 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay 🇭🇰 Hong Kong 02 TG:@nodpai, server: in04.my1188.org, port: 63078, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-balancer.airport-v2.com}, udp: true}
-  - {name: Relay 🇰🇷 South Korea 18 TG:@nodpai, server: z4.810823.xyz, port: 13082, type: ss, cipher: chacha20-ietf-poly1305, password: 33e6a26a-c840-4387-80ff-7dab6deed1ef, udp: true}
-  - {name: Relay 🇰🇷 South Korea 19 TG:@nodpai, server: z1.810823.xyz, port: 13081, type: ss, cipher: chacha20-ietf-poly1305, password: 33e6a26a-c840-4387-80ff-7dab6deed1ef, udp: true}
-  - {name: Relay 🇸🇬 Singapore 15 TG:@nodpai, server: live12.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xbov/6f42f0ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, ws-headers: {Host: live12.hlzuifv.cn}, udp: true}
-  - {name: Relay 🇸🇬 Singapore 06 TG:@nodpai, server: live09.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xvod/1f42f0ef9d0257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_7893.ts, ws-headers: {Host: live09.hlzuifv.cn}, udp: true}
-  - {name: Relay 🇸🇬 Singapore 10 TG:@nodpai, server: live14.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xbov/6f42f0ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, ws-headers: {Host: live14.hlzuifv.cn}, udp: true}
-  - {name: Relay 🇰🇷 South Korea 04 TG:@nodpai, server: gzyd.dougou.me, port: 10003, type: vmess, uuid: 73d33469-ef28-428f-9779-28b5a98a7178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇸🇬 Singapore 09 TG:@nodpai, server: live02.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xvod/7f42f0ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, ws-headers: {Host: live02.hlzuifv.cn}, udp: true}
-  - {name: Relay 🇯🇵 Japan 15 TG:@nodpai, server: live05.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xvod/7f42f1ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, ws-headers: {Host: live05.hlzuifv.cn}, udp: true}
-  - {name: Relay 🇸🇬 Singapore 08 TG:@nodpai, server: live15.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xbov/6f42f0ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, ws-headers: {Host: live15.hlzuifv.cn}, udp: true}
-  - {name: Relay 🇸🇬 Singapore 26 TG:@nodpai, server: live13.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xvod/7f42f0ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, ws-headers: {Host: live13.hlzuifv.cn}, udp: true}
-  - {name: Relay 🇯🇵 Japan 11 TG:@nodpai, server: gzyd.dougou.me, port: 57368, type: vmess, uuid: 73d33469-ef28-428f-9779-28b5a98a7178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇸🇬 Singapore 14 TG:@nodpai, server: live06.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xvod/7f42f0ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, ws-headers: {Host: live06.hlzuifv.cn}, udp: true}
-  - {name: Relay 🇸🇬 Singapore 01 TG:@nodpai, server: in04.my1188.org, port: 63087, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
-  - {name: Relay 🇸🇬 Singapore 23 TG:@nodpai, server: gzyd.dougou.me, port: 10100, type: vmess, uuid: 73d33469-ef28-428f-9779-28b5a98a7178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 33 TG:@nodpai, server: gxct.xn--dlq110j6ul.cc, port: 27520, type: vmess, uuid: 9985c4f1-a472-4637-83eb-7022b9df8ba8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fly, ws-headers: {Host: gxct.xn--dlq110j6ul.cc}, udp: true}
-  - {name: Relay 🇯🇵 Japan 10 TG:@nodpai, server: live04.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xvod/7f42f1ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, ws-headers: {Host: live04.hlzuifv.cn}, udp: true}
-  - {name: Relay 🇯🇵 Japan 08 TG:@nodpai, server: gzyd.dougou.me, port: 10114, type: vmess, uuid: 73d33469-ef28-428f-9779-28b5a98a7178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇦🇪 United Arab Emirates 01 TG:@nodpai, server: gzyd.dougou.me, port: 10013, type: vmess, uuid: 73d33469-ef28-428f-9779-28b5a98a7178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇺🇸 United States 16 TG:@nodpai, server: v02.gutingting.com, port: 30024, type: vmess, uuid: c405aa06-92b8-473a-844b-e3e75b5b7d59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aceamedv, ws-headers: {Host: gz.fastcloud.club}, udp: true}
-  - {name: Singapore 22 TG:@nodpai, server: free-sg10210.tencent.cfd, port: 50328, type: vmess, uuid: d1860587-aa33-4b76-85cd-c191edecb338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: free-sg10210.tencent.cfd}, udp: true}
-  - {name: Relay 🇯🇵 Japan 25 TG:@nodpai, server: z3.810823.xyz, port: 13081, type: ss, cipher: chacha20-ietf-poly1305, password: 33e6a26a-c840-4387-80ff-7dab6deed1ef, udp: true}
-  - {name: Relay 🇹🇼 Taiwan 14 TG:@nodpai, server: gxct.xn--dlq110j6ul.cc, port: 48395, type: vmess, uuid: 9985c4f1-a472-4637-83eb-7022b9df8ba8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fly, ws-headers: {Host: gxct.xn--dlq110j6ul.cc}, udp: true}
-  - {name: Relay 🇸🇬 Singapore 35 TG:@nodpai, server: v01.gutingting.com, port: 30035, type: vmess, uuid: fd59e6b1-8787-4832-a368-ff394a8fa4be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aceamedv, ws-headers: {Host: sh01.fastcloud.club}, udp: true}
-  - {name: Singapore 44 TG:@nodpai, server: 24a51f02-f25c-87fa-7acf-eea632e63c7c.cnnic.rip, port: 80, type: vmess, uuid: 3ed486c9-f581-477f-85b8-f48c0095064a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 24a51f02-f25c-87fa-7acf-eea632e63c7c.cnnic.rip}, udp: true}
-  - {name: Relay 🇰🇷 South Korea 05 TG:@nodpai, server: gzyd.dougou.me, port: 10005, type: vmess, uuid: 73d33469-ef28-428f-9779-28b5a98a7178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇺🇸 United States 06 TG:@nodpai, server: gzyd.dougou.me, port: 10009, type: vmess, uuid: 73d33469-ef28-428f-9779-28b5a98a7178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇸🇬 Singapore 29 TG:@nodpai, server: gxct.xn--dlq110j6ul.cc, port: 26478, type: vmess, uuid: 9985c4f1-a472-4637-83eb-7022b9df8ba8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fly, ws-headers: {Host: gxct.xn--dlq110j6ul.cc}, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 40 TG:@nodpai, server: gzcm.xn--dlq110j6ul.cc, port: 20327, type: ss, cipher: chacha20-ietf-poly1305, password: 78ea32e1-0226-49e9-82b7-f01e6cd0e560, udp: true}
-  - {name: Relay 🇹🇼 Taiwan 06 TG:@nodpai, server: p1.bxy-fun3.com, port: 23106, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 39 TG:@nodpai, server: v02.gutingting.com, port: 30008, type: vmess, uuid: c405aa06-92b8-473a-844b-e3e75b5b7d59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aceamedv, ws-headers: {Host: sh02.fastcloud.club}, udp: true}
-  - {name: Relay 🇦🇪 United Arab Emirates 02 TG:@nodpai, server: z1.810823.xyz, port: 13971, type: ss, cipher: chacha20-ietf-poly1305, password: 33e6a26a-c840-4387-80ff-7dab6deed1ef, udp: true}
-  - {name: Relay 🇹🇼 Taiwan 11 TG:@nodpai, server: ydsichuan01.bpzhuanfa.com, port: 35100, type: ss, cipher: chacha20-ietf-poly1305, password: b98f6337-59f9-4fcd-bd6d-2a129ab82c9e, udp: true}
-  - {name: Relay 🇦🇪 United Arab Emirates 03 TG:@nodpai, server: z2.810823.xyz, port: 13971, type: ss, cipher: chacha20-ietf-poly1305, password: 33e6a26a-c840-4387-80ff-7dab6deed1ef, udp: true}
-  - {name: Relay 🇰🇷 South Korea 08 TG:@nodpai, server: live08.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xvod/7f42f1ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, ws-headers: {Host: live08.hlzuifv.cn}, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 03 TG:@nodpai, server: p1.bxy-fun3.com, port: 23100, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: Relay 🇺🇸 United States 01 TG:@nodpai, server: p1.bxy-fun3.com, port: 26106, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: Relay 🇺🇸 United States 15 TG:@nodpai, server: z5.810823.xyz, port: 13001, type: ss, cipher: chacha20-ietf-poly1305, password: 33e6a26a-c840-4387-80ff-7dab6deed1ef, udp: true}
-  - {name: Singapore 04 TG:@nodpai, server: awssg1.guojiang.site, port: 80, type: vmess, uuid: 73d33469-ef28-428f-9779-28b5a98a7178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇬🇧 United Kingdom 05 TG:@nodpai, server: gzct.xn--dlq110j6ul.cc, port: 46519, type: vmess, uuid: 331b201c-5e61-4dd2-83ae-116bb23cf157, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gzct.xn--dlq110j6ul.cc}, udp: true}
-  - {name: Relay 🇩🇪 Germany 04 TG:@nodpai, server: gzyd.dougou.me, port: 10111, type: vmess, uuid: 73d33469-ef28-428f-9779-28b5a98a7178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇬🇧 United Kingdom 07 TG:@nodpai, server: v01.gutingting.com, port: 30016, type: vmess, uuid: 5efc809d-7866-40f4-966a-272ed697e0b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aceamedv, ws-headers: {Host: sh01.fastcloud.club}, udp: true}
-  - {name: Relay 🇯🇵 Japan 29 TG:@nodpai, server: ydsichuan01.bpzhuanfa.com, port: 53590, type: vmess, uuid: 331b201c-5e61-4dd2-83ae-116bb23cf157, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ydsichuan01.bpzhuanfa.com}, udp: true}
-  - {name: Relay 🇹🇷 Turkey 06 TG:@nodpai, server: bjcu.xn--dlq110j6ul.cc, port: 48496, type: vmess, uuid: 331b201c-5e61-4dd2-83ae-116bb23cf157, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bjcu.xn--dlq110j6ul.cc}, udp: true}
-  - {name: Relay 🇮🇳 India 01 TG:@nodpai, server: live11.suijiceshi.xyz, port: 8080, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xbov/6f42f0ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, ws-headers: {Host: live11.hlzuifv.cn}, udp: true}
-  - {name: Relay 🇮🇳 India 05 TG:@nodpai, server: v01.gutingting.com, port: 30027, type: vmess, uuid: 0f70344a-a603-46a6-b3ba-1aad5de206bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aceamedv, ws-headers: {Host: sh01.fastcloud.club}, udp: true}
-  - {name: Relay 🇺🇸 United States 25 TG:@nodpai, server: v02.gutingting.com, port: 30000, type: vmess, uuid: 5efc809d-7866-40f4-966a-272ed697e0b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aceamedv, ws-headers: {Host: gz.fastcloud.club}, udp: true}
-  - {name: Relay 🇬🇧 United Kingdom 09 TG:@nodpai, server: v02.gutingting.com, port: 30041, type: vmess, uuid: c405aa06-92b8-473a-844b-e3e75b5b7d59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aceamedv, ws-headers: {Host: sh01.fastcloud.club}, udp: true}
-  - {name: Relay 🇬🇧 United Kingdom 01 TG:@nodpai, server: p1.bxy-fun3.com, port: 30472, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: South Korea 01 TG:@nodpai, server: 997946b4-2642-ea3f-7b88-bda61300c226.cnnic.rip, port: 80, type: vmess, uuid: 3ed486c9-f581-477f-85b8-f48c0095064a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 997946b4-2642-ea3f-7b88-bda61300c226.cnnic.rip}, udp: true}
-  - {name: Relay 🇺🇸 United States 23 TG:@nodpai, server: v01.gutingting.com, port: 30048, type: vmess, uuid: 0f70344a-a603-46a6-b3ba-1aad5de206bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aceamedv, ws-headers: {Host: sh02.fastcloud.club}, udp: true}
-  - {name: Hong Kong 24 TG:@nodpai, server: 96cfae9d-7c6c-0722-5eb8-a2b8e9d53aee.cnnic.rip, port: 80, type: vmess, uuid: 3ed486c9-f581-477f-85b8-f48c0095064a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 96cfae9d-7c6c-0722-5eb8-a2b8e9d53aee.cnnic.rip}, udp: true}
-  - {name: Relay 🇯🇵 Japan 04 TG:@nodpai, server: p1.bxy-fun3.com, port: 35127, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: Relay 🇧🇷 Brazil 02 TG:@nodpai, server: gzyd.dougou.me, port: 10015, type: vmess, uuid: 73d33469-ef28-428f-9779-28b5a98a7178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇺🇸 United States 13 TG:@nodpai, server: live07.suijiceshi.xyz, port: 8080, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xbov/6f42f0ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, ws-headers: {Host: live07.hlzuifv.cn}, udp: true}
-  - {name: Hong Kong 04 TG:@nodpai, server: awshk1.guojiang.site, port: 80, type: vmess, uuid: 73d33469-ef28-428f-9779-28b5a98a7178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇨🇦 Canada 02 TG:@nodpai, server: gzyd.dougou.me, port: 10011, type: vmess, uuid: 73d33469-ef28-428f-9779-28b5a98a7178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Relay 🇺🇸 United States 19 TG:@nodpai, server: gzdx.jcnode.top, port: 48001, type: vmess, uuid: 9985c4f1-a472-4637-83eb-7022b9df8ba8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fly, ws-headers: {Host: gzdx.jcnode.top}, udp: true}
-  - {name: India 02 TG:@nodpai, server: 103.21.244.82, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /8cda48b3, ws-headers: {Host: IN-92-99.shoptunnel.live}, udp: true}
-  - {name: Relay 🇺🇸 United States 21 TG:@nodpai, server: gzct.xn--dlq110j6ul.cc, port: 26644, type: vmess, uuid: 331b201c-5e61-4dd2-83ae-116bb23cf157, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gzct.xn--dlq110j6ul.cc}, udp: true}
-  - {name: United States 05 TG:@nodpai, server: free-us3.tencent.cfd, port: 53517, type: vmess, uuid: d1860587-aa33-4b76-85cd-c191edecb338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: free-us3.tencent.cfd}, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 31 TG:@nodpai, server: cmgd1.blackpink520.cyou, port: 18322, type: ss, cipher: chacha20-ietf-poly1305, password: 78ea32e1-0226-49e9-82b7-f01e6cd0e560, udp: true}
-  - {name: Japan 07 TG:@nodpai, server: awsjp2.guojiang.site, port: 68, type: vmess, uuid: 73d33469-ef28-428f-9779-28b5a98a7178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: Singapore 16 TG:@nodpai, server: 103.21.244.249, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /8cda48b3, ws-headers: {Host: sg-212-128.shoptunnel.live}, udp: true}
-  - {name: Germany 06 TG:@nodpai, server: de-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /clientarea, ws-headers: {Host: de-ls03.nb1.fr}, udp: true}
+  - {name: 日本02, server: hainan.sfjsq001.info, port: 33212, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国01-Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33216, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /app/dytv.m3u8, headers: {Host: douyu.tv}}, udp: true}
+  - {name: 新加坡01-Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33214, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港02-Neflix|Disney+|HBO, server: hainan.sfjsq001.info, port: 33204, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /app/dytv.m3u8, headers: {Host: douyu.tv}}, udp: true}
+  - {name: 日本03, server: hainan.sfjsq001.info, port: 33213, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾02, server: hainan.sfjsq001.info, port: 33207, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾03-G口|Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33221, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /app/dytv.m3u8, headers: {Host: douyu.tv}}, udp: true}
+  - {name: 新加坡02, server: hainan.sfjsq001.info, port: 33910, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本01-Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33211, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾01-Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33206, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国01-Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33208, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国02, server: hainan.sfjsq001.info, port: 33217, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /app/dytv.m3u8, headers: {Host: douyu.tv}}, udp: true}
+  - {name: 美国02, server: hainan.sfjsq001.info, port: 33209, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国03, server: hainan.sfjsq001.info, port: 33210, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港04-Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33218, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - Relay 🇰🇷 South Korea 18 TG:@nodpai
-      - Relay 🇰🇷 South Korea 19 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 10 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇸🇬 Singapore 09 TG:@nodpai
-      - Relay 🇯🇵 Japan 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 26 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇸🇬 Singapore 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 33 TG:@nodpai
-      - Relay 🇯🇵 Japan 10 TG:@nodpai
-      - Relay 🇯🇵 Japan 08 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 01 TG:@nodpai
-      - Relay 🇺🇸 United States 16 TG:@nodpai
-      - Singapore 22 TG:@nodpai
-      - Relay 🇯🇵 Japan 25 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 35 TG:@nodpai
-      - Singapore 44 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇺🇸 United States 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 29 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 40 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 39 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 02 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 11 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇺🇸 United States 01 TG:@nodpai
-      - Relay 🇺🇸 United States 15 TG:@nodpai
-      - Singapore 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - Relay 🇩🇪 Germany 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 07 TG:@nodpai
-      - Relay 🇯🇵 Japan 29 TG:@nodpai
-      - Relay 🇹🇷 Turkey 06 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇮🇳 India 05 TG:@nodpai
-      - Relay 🇺🇸 United States 25 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 09 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - South Korea 01 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Hong Kong 24 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇧🇷 Brazil 02 TG:@nodpai
-      - Relay 🇺🇸 United States 13 TG:@nodpai
-      - Hong Kong 04 TG:@nodpai
-      - Relay 🇨🇦 Canada 02 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - India 02 TG:@nodpai
-      - Relay 🇺🇸 United States 21 TG:@nodpai
-      - United States 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 31 TG:@nodpai
-      - Japan 07 TG:@nodpai
-      - Singapore 16 TG:@nodpai
-      - Germany 06 TG:@nodpai
+      - 日本02
+      - 韩国01-Netflix|Disney+|动画疯
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 日本03
+      - 台湾02
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡02
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾01-Netflix|Disney+|动画疯
+      - 美国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 美国02
+      - 美国03
+      - 香港04-Netflix|Disney+|动画疯
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - Relay 🇰🇷 South Korea 18 TG:@nodpai
-      - Relay 🇰🇷 South Korea 19 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 10 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇸🇬 Singapore 09 TG:@nodpai
-      - Relay 🇯🇵 Japan 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 26 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇸🇬 Singapore 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 33 TG:@nodpai
-      - Relay 🇯🇵 Japan 10 TG:@nodpai
-      - Relay 🇯🇵 Japan 08 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 01 TG:@nodpai
-      - Relay 🇺🇸 United States 16 TG:@nodpai
-      - Singapore 22 TG:@nodpai
-      - Relay 🇯🇵 Japan 25 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 35 TG:@nodpai
-      - Singapore 44 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇺🇸 United States 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 29 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 40 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 39 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 02 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 11 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇺🇸 United States 01 TG:@nodpai
-      - Relay 🇺🇸 United States 15 TG:@nodpai
-      - Singapore 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - Relay 🇩🇪 Germany 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 07 TG:@nodpai
-      - Relay 🇯🇵 Japan 29 TG:@nodpai
-      - Relay 🇹🇷 Turkey 06 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇮🇳 India 05 TG:@nodpai
-      - Relay 🇺🇸 United States 25 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 09 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - South Korea 01 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Hong Kong 24 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇧🇷 Brazil 02 TG:@nodpai
-      - Relay 🇺🇸 United States 13 TG:@nodpai
-      - Hong Kong 04 TG:@nodpai
-      - Relay 🇨🇦 Canada 02 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - India 02 TG:@nodpai
-      - Relay 🇺🇸 United States 21 TG:@nodpai
-      - United States 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 31 TG:@nodpai
-      - Japan 07 TG:@nodpai
-      - Singapore 16 TG:@nodpai
-      - Germany 06 TG:@nodpai
+      - 日本02
+      - 韩国01-Netflix|Disney+|动画疯
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 日本03
+      - 台湾02
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡02
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾01-Netflix|Disney+|动画疯
+      - 美国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 美国02
+      - 美国03
+      - 香港04-Netflix|Disney+|动画疯
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - Relay 🇰🇷 South Korea 18 TG:@nodpai
-      - Relay 🇰🇷 South Korea 19 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 10 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇸🇬 Singapore 09 TG:@nodpai
-      - Relay 🇯🇵 Japan 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 26 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇸🇬 Singapore 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 33 TG:@nodpai
-      - Relay 🇯🇵 Japan 10 TG:@nodpai
-      - Relay 🇯🇵 Japan 08 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 01 TG:@nodpai
-      - Relay 🇺🇸 United States 16 TG:@nodpai
-      - Singapore 22 TG:@nodpai
-      - Relay 🇯🇵 Japan 25 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 35 TG:@nodpai
-      - Singapore 44 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇺🇸 United States 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 29 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 40 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 39 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 02 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 11 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇺🇸 United States 01 TG:@nodpai
-      - Relay 🇺🇸 United States 15 TG:@nodpai
-      - Singapore 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - Relay 🇩🇪 Germany 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 07 TG:@nodpai
-      - Relay 🇯🇵 Japan 29 TG:@nodpai
-      - Relay 🇹🇷 Turkey 06 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇮🇳 India 05 TG:@nodpai
-      - Relay 🇺🇸 United States 25 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 09 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - South Korea 01 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Hong Kong 24 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇧🇷 Brazil 02 TG:@nodpai
-      - Relay 🇺🇸 United States 13 TG:@nodpai
-      - Hong Kong 04 TG:@nodpai
-      - Relay 🇨🇦 Canada 02 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - India 02 TG:@nodpai
-      - Relay 🇺🇸 United States 21 TG:@nodpai
-      - United States 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 31 TG:@nodpai
-      - Japan 07 TG:@nodpai
-      - Singapore 16 TG:@nodpai
-      - Germany 06 TG:@nodpai
+      - 日本02
+      - 韩国01-Netflix|Disney+|动画疯
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 日本03
+      - 台湾02
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡02
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾01-Netflix|Disney+|动画疯
+      - 美国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 美国02
+      - 美国03
+      - 香港04-Netflix|Disney+|动画疯
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -300,287 +100,92 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - Relay 🇰🇷 South Korea 18 TG:@nodpai
-      - Relay 🇰🇷 South Korea 19 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 10 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇸🇬 Singapore 09 TG:@nodpai
-      - Relay 🇯🇵 Japan 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 26 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇸🇬 Singapore 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 33 TG:@nodpai
-      - Relay 🇯🇵 Japan 10 TG:@nodpai
-      - Relay 🇯🇵 Japan 08 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 01 TG:@nodpai
-      - Relay 🇺🇸 United States 16 TG:@nodpai
-      - Singapore 22 TG:@nodpai
-      - Relay 🇯🇵 Japan 25 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 35 TG:@nodpai
-      - Singapore 44 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇺🇸 United States 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 29 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 40 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 39 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 02 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 11 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇺🇸 United States 01 TG:@nodpai
-      - Relay 🇺🇸 United States 15 TG:@nodpai
-      - Singapore 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - Relay 🇩🇪 Germany 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 07 TG:@nodpai
-      - Relay 🇯🇵 Japan 29 TG:@nodpai
-      - Relay 🇹🇷 Turkey 06 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇮🇳 India 05 TG:@nodpai
-      - Relay 🇺🇸 United States 25 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 09 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - South Korea 01 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Hong Kong 24 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇧🇷 Brazil 02 TG:@nodpai
-      - Relay 🇺🇸 United States 13 TG:@nodpai
-      - Hong Kong 04 TG:@nodpai
-      - Relay 🇨🇦 Canada 02 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - India 02 TG:@nodpai
-      - Relay 🇺🇸 United States 21 TG:@nodpai
-      - United States 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 31 TG:@nodpai
-      - Japan 07 TG:@nodpai
-      - Singapore 16 TG:@nodpai
-      - Germany 06 TG:@nodpai
+      - 日本02
+      - 韩国01-Netflix|Disney+|动画疯
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 日本03
+      - 台湾02
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡02
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾01-Netflix|Disney+|动画疯
+      - 美国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 美国02
+      - 美国03
+      - 香港04-Netflix|Disney+|动画疯
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港02-Neflix|Disney+|HBO
+      - 台湾02
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 台湾01-Netflix|Disney+|动画疯
+      - 香港04-Netflix|Disney+|动画疯
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - Relay 🇰🇷 South Korea 18 TG:@nodpai
-      - Relay 🇰🇷 South Korea 19 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 10 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇸🇬 Singapore 09 TG:@nodpai
-      - Relay 🇯🇵 Japan 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 26 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇸🇬 Singapore 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 33 TG:@nodpai
-      - Relay 🇯🇵 Japan 10 TG:@nodpai
-      - Relay 🇯🇵 Japan 08 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 01 TG:@nodpai
-      - Relay 🇺🇸 United States 16 TG:@nodpai
-      - Singapore 22 TG:@nodpai
-      - Relay 🇯🇵 Japan 25 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 35 TG:@nodpai
-      - Singapore 44 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇺🇸 United States 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 29 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 40 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 39 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 02 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 11 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇺🇸 United States 01 TG:@nodpai
-      - Relay 🇺🇸 United States 15 TG:@nodpai
-      - Singapore 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - Relay 🇩🇪 Germany 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 07 TG:@nodpai
-      - Relay 🇯🇵 Japan 29 TG:@nodpai
-      - Relay 🇹🇷 Turkey 06 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇮🇳 India 05 TG:@nodpai
-      - Relay 🇺🇸 United States 25 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 09 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - South Korea 01 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Hong Kong 24 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇧🇷 Brazil 02 TG:@nodpai
-      - Relay 🇺🇸 United States 13 TG:@nodpai
-      - Hong Kong 04 TG:@nodpai
-      - Relay 🇨🇦 Canada 02 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - India 02 TG:@nodpai
-      - Relay 🇺🇸 United States 21 TG:@nodpai
-      - United States 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 31 TG:@nodpai
-      - Japan 07 TG:@nodpai
-      - Singapore 16 TG:@nodpai
-      - Germany 06 TG:@nodpai
+      - 日本02
+      - 韩国01-Netflix|Disney+|动画疯
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 日本03
+      - 台湾02
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡02
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾01-Netflix|Disney+|动画疯
+      - 美国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 美国02
+      - 美国03
+      - 香港04-Netflix|Disney+|动画疯
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - Relay 🇰🇷 South Korea 18 TG:@nodpai
-      - Relay 🇰🇷 South Korea 19 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 10 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇸🇬 Singapore 09 TG:@nodpai
-      - Relay 🇯🇵 Japan 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 26 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇸🇬 Singapore 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 33 TG:@nodpai
-      - Relay 🇯🇵 Japan 10 TG:@nodpai
-      - Relay 🇯🇵 Japan 08 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 01 TG:@nodpai
-      - Relay 🇺🇸 United States 16 TG:@nodpai
-      - Singapore 22 TG:@nodpai
-      - Relay 🇯🇵 Japan 25 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 35 TG:@nodpai
-      - Singapore 44 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇺🇸 United States 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 29 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 40 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 39 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 02 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 11 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇺🇸 United States 01 TG:@nodpai
-      - Relay 🇺🇸 United States 15 TG:@nodpai
-      - Singapore 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - Relay 🇩🇪 Germany 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 07 TG:@nodpai
-      - Relay 🇯🇵 Japan 29 TG:@nodpai
-      - Relay 🇹🇷 Turkey 06 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇮🇳 India 05 TG:@nodpai
-      - Relay 🇺🇸 United States 25 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 09 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - South Korea 01 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Hong Kong 24 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇧🇷 Brazil 02 TG:@nodpai
-      - Relay 🇺🇸 United States 13 TG:@nodpai
-      - Hong Kong 04 TG:@nodpai
-      - Relay 🇨🇦 Canada 02 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - India 02 TG:@nodpai
-      - Relay 🇺🇸 United States 21 TG:@nodpai
-      - United States 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 31 TG:@nodpai
-      - Japan 07 TG:@nodpai
-      - Singapore 16 TG:@nodpai
-      - Germany 06 TG:@nodpai
+      - 日本02
+      - 韩国01-Netflix|Disney+|动画疯
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 日本03
+      - 台湾02
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡02
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾01-Netflix|Disney+|动画疯
+      - 美国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 美国02
+      - 美国03
+      - 香港04-Netflix|Disney+|动画疯
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - Relay 🇰🇷 South Korea 18 TG:@nodpai
-      - Relay 🇰🇷 South Korea 19 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 10 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇸🇬 Singapore 09 TG:@nodpai
-      - Relay 🇯🇵 Japan 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 26 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇸🇬 Singapore 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 33 TG:@nodpai
-      - Relay 🇯🇵 Japan 10 TG:@nodpai
-      - Relay 🇯🇵 Japan 08 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 01 TG:@nodpai
-      - Relay 🇺🇸 United States 16 TG:@nodpai
-      - Singapore 22 TG:@nodpai
-      - Relay 🇯🇵 Japan 25 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 35 TG:@nodpai
-      - Singapore 44 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇺🇸 United States 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 29 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 40 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 39 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 02 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 11 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇺🇸 United States 01 TG:@nodpai
-      - Relay 🇺🇸 United States 15 TG:@nodpai
-      - Singapore 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - Relay 🇩🇪 Germany 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 07 TG:@nodpai
-      - Relay 🇯🇵 Japan 29 TG:@nodpai
-      - Relay 🇹🇷 Turkey 06 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇮🇳 India 05 TG:@nodpai
-      - Relay 🇺🇸 United States 25 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 09 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - South Korea 01 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Hong Kong 24 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇧🇷 Brazil 02 TG:@nodpai
-      - Relay 🇺🇸 United States 13 TG:@nodpai
-      - Hong Kong 04 TG:@nodpai
-      - Relay 🇨🇦 Canada 02 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - India 02 TG:@nodpai
-      - Relay 🇺🇸 United States 21 TG:@nodpai
-      - United States 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 31 TG:@nodpai
-      - Japan 07 TG:@nodpai
-      - Singapore 16 TG:@nodpai
-      - Germany 06 TG:@nodpai
+      - 日本02
+      - 韩国01-Netflix|Disney+|动画疯
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 日本03
+      - 台湾02
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡02
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾01-Netflix|Disney+|动画疯
+      - 美国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 美国02
+      - 美国03
+      - 香港04-Netflix|Disney+|动画疯
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -596,71 +201,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - Relay 🇰🇷 South Korea 18 TG:@nodpai
-      - Relay 🇰🇷 South Korea 19 TG:@nodpai
-      - Relay 🇸🇬 Singapore 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 10 TG:@nodpai
-      - Relay 🇰🇷 South Korea 04 TG:@nodpai
-      - Relay 🇸🇬 Singapore 09 TG:@nodpai
-      - Relay 🇯🇵 Japan 15 TG:@nodpai
-      - Relay 🇸🇬 Singapore 08 TG:@nodpai
-      - Relay 🇸🇬 Singapore 26 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇸🇬 Singapore 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 01 TG:@nodpai
-      - Relay 🇸🇬 Singapore 23 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 33 TG:@nodpai
-      - Relay 🇯🇵 Japan 10 TG:@nodpai
-      - Relay 🇯🇵 Japan 08 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 01 TG:@nodpai
-      - Relay 🇺🇸 United States 16 TG:@nodpai
-      - Singapore 22 TG:@nodpai
-      - Relay 🇯🇵 Japan 25 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 14 TG:@nodpai
-      - Relay 🇸🇬 Singapore 35 TG:@nodpai
-      - Singapore 44 TG:@nodpai
-      - Relay 🇰🇷 South Korea 05 TG:@nodpai
-      - Relay 🇺🇸 United States 06 TG:@nodpai
-      - Relay 🇸🇬 Singapore 29 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 40 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 06 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 39 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 02 TG:@nodpai
-      - Relay 🇹🇼 Taiwan 11 TG:@nodpai
-      - Relay 🇦🇪 United Arab Emirates 03 TG:@nodpai
-      - Relay 🇰🇷 South Korea 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - Relay 🇺🇸 United States 01 TG:@nodpai
-      - Relay 🇺🇸 United States 15 TG:@nodpai
-      - Singapore 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 05 TG:@nodpai
-      - Relay 🇩🇪 Germany 04 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 07 TG:@nodpai
-      - Relay 🇯🇵 Japan 29 TG:@nodpai
-      - Relay 🇹🇷 Turkey 06 TG:@nodpai
-      - Relay 🇮🇳 India 01 TG:@nodpai
-      - Relay 🇮🇳 India 05 TG:@nodpai
-      - Relay 🇺🇸 United States 25 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 09 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - South Korea 01 TG:@nodpai
-      - Relay 🇺🇸 United States 23 TG:@nodpai
-      - Hong Kong 24 TG:@nodpai
-      - Relay 🇯🇵 Japan 04 TG:@nodpai
-      - Relay 🇧🇷 Brazil 02 TG:@nodpai
-      - Relay 🇺🇸 United States 13 TG:@nodpai
-      - Hong Kong 04 TG:@nodpai
-      - Relay 🇨🇦 Canada 02 TG:@nodpai
-      - Relay 🇺🇸 United States 19 TG:@nodpai
-      - India 02 TG:@nodpai
-      - Relay 🇺🇸 United States 21 TG:@nodpai
-      - United States 05 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 31 TG:@nodpai
-      - Japan 07 TG:@nodpai
-      - Singapore 16 TG:@nodpai
-      - Germany 06 TG:@nodpai
+      - 日本02
+      - 韩国01-Netflix|Disney+|动画疯
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 日本03
+      - 台湾02
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡02
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾01-Netflix|Disney+|动画疯
+      - 美国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 美国02
+      - 美国03
+      - 香港04-Netflix|Disney+|动画疯
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -9617,6 +9172,8 @@ rules:
  - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,idmchina.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,imazingchina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,jihehuaban.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,keyshot.cc,🛑 全球拦截
@@ -9686,6 +9243,8 @@ rules:
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+ - DOMAIN,radio.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,tv.applemusic.com,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
@@ -9730,6 +9289,7 @@ rules:
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
  - DOMAIN,linear.tv.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,uts-api.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -9816,6 +9376,7 @@ rules:
  - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,210.71.227.200/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
@@ -9916,15 +9477,14 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
  - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,bilibili.tv,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
- - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
- - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
+ - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
+ - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
@@ -9942,6 +9502,7 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
@@ -9955,11 +9516,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
- - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,91.105.192.0/23,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,185.76.151.0/24,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
  - DOMAIN,payments-jp.amazon.com,🔰 节点选择
@@ -9968,16 +9532,36 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
+ - DOMAIN,clubhouse.pubnubapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
  - DOMAIN-SUFFIX,binance.com,🔰 节点选择
+ - DOMAIN-SUFFIX,binance.us,🔰 节点选择
  - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
  - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bithumb.com,🔰 节点选择
  - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bitstamp.net,🔰 节点选择
+ - DOMAIN-SUFFIX,bittrex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bybit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinbase.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coincheck.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coingecko.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinmarketcap.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinone.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,ftx.com,🔰 节点选择
  - DOMAIN-SUFFIX,gate.io,🔰 节点选择
+ - DOMAIN-SUFFIX,gemini.com,🔰 节点选择
  - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,korbit.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,kraken.com,🔰 节点选择
+ - DOMAIN-SUFFIX,kucoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,liquid.com,🔰 节点选择
  - DOMAIN-SUFFIX,okex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,poloniex.com,🔰 节点选择
  - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
  - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,discord.com,🔰 节点选择
@@ -10010,6 +9594,7 @@ rules:
  - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
  - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
  - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
+ - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
  - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
@@ -10060,11 +9645,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,91.105.192.0/23,🔰 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,185.76.151.0/24,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,🔰 节点选择,no-resolve
  - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
  - DOMAIN-SUFFIX,t.co,🔰 节点选择
@@ -10133,7 +9721,6 @@ rules:
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
- - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -10227,7 +9814,6 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
- - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
@@ -10253,6 +9839,7 @@ rules:
  - DOMAIN-SUFFIX,marc.info,🔰 节点选择
  - DOMAIN-SUFFIX,matters.news,🔰 节点选择
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
+ - DOMAIN-SUFFIX,medibang.com,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
  - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
@@ -10342,6 +9929,7 @@ rules:
  - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
  - DOMAIN-SUFFIX,substack.com,🔰 节点选择
+ - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -10357,6 +9945,7 @@ rules:
  - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
  - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
+ - DOMAIN-SUFFIX,tradingview.com,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
  - DOMAIN-SUFFIX,tutanota.com,🔰 节点选择
@@ -10473,20 +10062,33 @@ rules:
  - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
  - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
  - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
- - DOMAIN,beta.music.apple.com,🔰 节点选择
- - DOMAIN,tv.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
  - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,beta.music.apple.com,🔰 节点选择
  - DOMAIN,lookup-api.apple.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,books.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN,tv.apple.com,🔰 节点选择
+ - DOMAIN,amp-api.podcasts.apple.com,🔰 节点选择
+ - DOMAIN,bookkeeper.itunes.apple.com,🔰 节点选择
+ - DOMAIN,gateway.icloud.com,🔰 节点选择
+ - DOMAIN-SUFFIX,apple.news,🔰 节点选择
+ - DOMAIN,news-assets.apple.com,🔰 节点选择
+ - DOMAIN,news-client.apple.com,🔰 节点选择
+ - DOMAIN,news-client-search.apple.com,🔰 节点选择
+ - DOMAIN,news-edge.apple.com,🔰 节点选择
+ - DOMAIN,news-events.apple.com,🔰 节点选择
+ - DOMAIN,apple.comscoreresearch.com,🔰 节点选择
  - DOMAIN-SUFFIX,go.dev,🔰 节点选择
  - DOMAIN-SUFFIX,golang.org,🔰 节点选择
+ - DOMAIN-SUFFIX,aicoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,aimoon.com,🔰 节点选择
  - DOMAIN-SUFFIX,bing.com,🔰 节点选择
  - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
  - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
  - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,linkedin.com,🔰 节点选择
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
@@ -10494,12 +10096,10 @@ rules:
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
  - DOMAIN,ocsp.apple.com,🔰 节点选择
- - DOMAIN,xp.apple.com,🔰 节点选择
  - DOMAIN,cacerts.digicert.com,🔰 节点选择
  - DOMAIN,crl3.digicert.com,🔰 节点选择
  - DOMAIN,crl4.digicert.com,🔰 节点选择
  - DOMAIN,ocsp.digicert.com,🔰 节点选择
- - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
  - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
  - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
  - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
@@ -10655,19 +10255,11 @@ rules:
  - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tencent-cloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
- - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
@@ -10747,6 +10339,7 @@ rules:
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
+ - DOMAIN-SUFFIX,cibntv.net,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
@@ -10791,8 +10384,6 @@ rules:
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
- - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
- - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
@@ -10815,6 +10406,7 @@ rules:
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
+ - DOMAIN-SUFFIX,shouqianba.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
