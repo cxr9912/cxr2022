@@ -5,35 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai, server: ns01.gutingting.com, port: 30009, type: vmess, uuid: 4653c56a-e62a-44da-bd70-a0c6a3d0fab0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aceamedv, ws-headers: {Host: sh01.fastcloud.club}, udp: true}
-  - {name: United States(ChatGPT) 03 TG:@nodpai, server: cdn.hkhkbn.6641634715834932.me, port: 80, type: vmess, uuid: a4955acf-b475-47b5-8c63-8574fee2a2e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wel/18, ws-headers: {Host: wangsu.com}, udp: true}
-  - {name: France(ChatGPT) 01 TG:@nodpai, server: cdn.hkhkbn.6641634715834932.me, port: 80, type: vmess, uuid: a4955acf-b475-47b5-8c63-8574fee2a2e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wel/11, ws-headers: {Host: wangsu.com}, udp: true}
+  - {name: Relay 🇭🇰 Hong Kong 03 TG:@nodpai, server: gzdx.jcnode.top, port: 20001, type: vmess, uuid: cf6f802d-9e5a-4b22-922e-df0c89c80a6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gzdx.jcnode.top}, udp: true}
+  - {name: Relay 🇭🇰 Hong Kong 09 TG:@nodpai, server: v02.gutingting.com, port: 30006, type: trojan, password: 82aac0fc-d493-44f0-acc8-a7e022b1d1c5, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - United States(ChatGPT) 03 TG:@nodpai
-      - France(ChatGPT) 01 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - United States(ChatGPT) 03 TG:@nodpai
-      - France(ChatGPT) 01 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - United States(ChatGPT) 03 TG:@nodpai
-      - France(ChatGPT) 01 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,9 +48,8 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - United States(ChatGPT) 03 TG:@nodpai
-      - France(ChatGPT) 01 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -65,26 +60,23 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - United States(ChatGPT) 03 TG:@nodpai
-      - France(ChatGPT) 01 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - United States(ChatGPT) 03 TG:@nodpai
-      - France(ChatGPT) 01 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - United States(ChatGPT) 03 TG:@nodpai
-      - France(ChatGPT) 01 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - United States(ChatGPT) 03 TG:@nodpai
-      - France(ChatGPT) 01 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
