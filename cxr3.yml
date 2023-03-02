@@ -5,35 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 韩国-713 TG频道@v2ssfly, server: kr09.wxfz.ga, port: 10000, type: vmess, uuid: 920b9fc4-5c3c-426c-fd1c-5e3bc0191965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国-EE3 TG频道@v2ssfly, server: kr01.wxfz.ga, port: 10000, type: vmess, uuid: ee55da1f-c54a-4f49-b4ee-715788f09b02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国-1D1 TG频道@v2ssfly, server: de-2.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: de-2.sharecentre.online}, udp: true}
+  - {name: 中国(TG频道@kxswa) 4, server: gdyd.aikun.online, port: 11698, type: ss, cipher: aes-128-gcm, password: c6d8be6f-cf07-4c2e-b1be-da5fd49868b0, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 韩国-713 TG频道@v2ssfly
-      - 韩国-EE3 TG频道@v2ssfly
-      - 德国-1D1 TG频道@v2ssfly
+      - 中国(TG频道@kxswa) 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 韩国-713 TG频道@v2ssfly
-      - 韩国-EE3 TG频道@v2ssfly
-      - 德国-1D1 TG频道@v2ssfly
+      - 中国(TG频道@kxswa) 4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 韩国-713 TG频道@v2ssfly
-      - 韩国-EE3 TG频道@v2ssfly
-      - 德国-1D1 TG频道@v2ssfly
+      - 中国(TG频道@kxswa) 4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,9 +44,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 韩国-713 TG频道@v2ssfly
-      - 韩国-EE3 TG频道@v2ssfly
-      - 德国-1D1 TG频道@v2ssfly
+      - 中国(TG频道@kxswa) 4
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -65,26 +55,20 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 韩国-713 TG频道@v2ssfly
-      - 韩国-EE3 TG频道@v2ssfly
-      - 德国-1D1 TG频道@v2ssfly
+      - 中国(TG频道@kxswa) 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 韩国-713 TG频道@v2ssfly
-      - 韩国-EE3 TG频道@v2ssfly
-      - 德国-1D1 TG频道@v2ssfly
+      - 中国(TG频道@kxswa) 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 韩国-713 TG频道@v2ssfly
-      - 韩国-EE3 TG频道@v2ssfly
-      - 德国-1D1 TG频道@v2ssfly
+      - 中国(TG频道@kxswa) 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +84,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 韩国-713 TG频道@v2ssfly
-      - 韩国-EE3 TG频道@v2ssfly
-      - 德国-1D1 TG频道@v2ssfly
+      - 中国(TG频道@kxswa) 4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
