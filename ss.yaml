@@ -5,39 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay 🇭🇰 Hong Kong 14 TG:@nodpai, server: 106.225.132.4, port: 19203, type: trojan, password: 0b86d368-f585-3c89-b8b5-30630f54cf15, skip-cert-verify: true, udp: true}
-  - {name: Hong Kong 19 TG:@nodpai, server: 103.103.245.125, port: 50350, type: trojan, password: 006bca8c-4e1f-44e0-9399-1cd4ff480a40, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇺🇸 United States(ChatGPT) 14 TG:@nodpai, server: yzyd.abc333444.com, port: 48631, type: trojan, password: 13dfafd7-492c-4d8e-ac06-764ad4944248, sni: yzyd.abc333444.com, skip-cert-verify: true, udp: true}
-  - {name: Japan(ChatGPT) 08 TG:@nodpai, server: 194.87.169.200, port: 80, type: vmess, uuid: a406b612-26f7-4bf0-8652-816970a1c122, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 194.87.169.200}, udp: true}
+  - {name: 新加坡1 -隧道, server: dongdedoudong-zz1.cutcloud.info, port: 50501, type: ss, cipher: chacha20-ietf-poly1305, password: fc3b2600-b0d1-4009-a8d7-ca7d42d70b1d, udp: true}
+  - {name: 日本1 -隧道, server: dongdedoudong-zz1.cutcloud.info, port: 50503, type: ss, cipher: chacha20-ietf-poly1305, password: fc3b2600-b0d1-4009-a8d7-ca7d42d70b1d, udp: true}
+  - {name: 新加坡2 -隧道, server: dongdedoudong-zz2.cutcloud.info, port: 50601, type: ss, cipher: chacha20-ietf-poly1305, password: fc3b2600-b0d1-4009-a8d7-ca7d42d70b1d, udp: true}
+  - {name: 法国1 -隧道, server: dongdedoudong-zz1.cutcloud.info, port: 50504, type: ss, cipher: chacha20-ietf-poly1305, password: fc3b2600-b0d1-4009-a8d7-ca7d42d70b1d, udp: true}
+  - {name: 日本2 -隧道, server: dongdedoudong-zz2.cutcloud.info, port: 50603, type: ss, cipher: chacha20-ietf-poly1305, password: fc3b2600-b0d1-4009-a8d7-ca7d42d70b1d, udp: true}
+  - {name: 香港2 -隧道, server: dongdedoudong-zz2.cutcloud.info, port: 50600, type: ss, cipher: chacha20-ietf-poly1305, password: fc3b2600-b0d1-4009-a8d7-ca7d42d70b1d, udp: true}
+  - {name: 香港1 -隧道, server: dongdedoudong-zz1.cutcloud.info, port: 50500, type: ss, cipher: chacha20-ietf-poly1305, password: fc3b2600-b0d1-4009-a8d7-ca7d42d70b1d, udp: true}
+  - {name: 香港3 -隧道, server: dongdedoudong-zz3.cutcloud.info, port: 50700, type: ss, cipher: chacha20-ietf-poly1305, password: fc3b2600-b0d1-4009-a8d7-ca7d42d70b1d, udp: true}
+  - {name: 法国2 -隧道, server: dongdedoudong-zz2.cutcloud.info, port: 50604, type: ss, cipher: chacha20-ietf-poly1305, password: fc3b2600-b0d1-4009-a8d7-ca7d42d70b1d, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
-      - Hong Kong 19 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 14 TG:@nodpai
-      - Japan(ChatGPT) 08 TG:@nodpai
+      - 新加坡1 -隧道
+      - 日本1 -隧道
+      - 新加坡2 -隧道
+      - 法国1 -隧道
+      - 日本2 -隧道
+      - 香港2 -隧道
+      - 香港1 -隧道
+      - 香港3 -隧道
+      - 法国2 -隧道
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
-      - Hong Kong 19 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 14 TG:@nodpai
-      - Japan(ChatGPT) 08 TG:@nodpai
+      - 新加坡1 -隧道
+      - 日本1 -隧道
+      - 新加坡2 -隧道
+      - 法国1 -隧道
+      - 日本2 -隧道
+      - 香港2 -隧道
+      - 香港1 -隧道
+      - 香港3 -隧道
+      - 法国2 -隧道
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
-      - Hong Kong 19 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 14 TG:@nodpai
-      - Japan(ChatGPT) 08 TG:@nodpai
+      - 新加坡1 -隧道
+      - 日本1 -隧道
+      - 新加坡2 -隧道
+      - 法国1 -隧道
+      - 日本2 -隧道
+      - 香港2 -隧道
+      - 香港1 -隧道
+      - 香港3 -隧道
+      - 法国2 -隧道
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,43 +76,66 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
-      - Hong Kong 19 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 14 TG:@nodpai
-      - Japan(ChatGPT) 08 TG:@nodpai
+      - 新加坡1 -隧道
+      - 日本1 -隧道
+      - 新加坡2 -隧道
+      - 法国1 -隧道
+      - 日本2 -隧道
+      - 香港2 -隧道
+      - 香港1 -隧道
+      - 香港3 -隧道
+      - 法国2 -隧道
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港2 -隧道
+      - 香港1 -隧道
+      - 香港3 -隧道
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
-      - Hong Kong 19 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 14 TG:@nodpai
-      - Japan(ChatGPT) 08 TG:@nodpai
+      - 新加坡1 -隧道
+      - 日本1 -隧道
+      - 新加坡2 -隧道
+      - 法国1 -隧道
+      - 日本2 -隧道
+      - 香港2 -隧道
+      - 香港1 -隧道
+      - 香港3 -隧道
+      - 法国2 -隧道
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
-      - Hong Kong 19 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 14 TG:@nodpai
-      - Japan(ChatGPT) 08 TG:@nodpai
+      - 新加坡1 -隧道
+      - 日本1 -隧道
+      - 新加坡2 -隧道
+      - 法国1 -隧道
+      - 日本2 -隧道
+      - 香港2 -隧道
+      - 香港1 -隧道
+      - 香港3 -隧道
+      - 法国2 -隧道
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
-      - Hong Kong 19 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 14 TG:@nodpai
-      - Japan(ChatGPT) 08 TG:@nodpai
+      - 新加坡1 -隧道
+      - 日本1 -隧道
+      - 新加坡2 -隧道
+      - 法国1 -隧道
+      - 日本2 -隧道
+      - 香港2 -隧道
+      - 香港1 -隧道
+      - 香港3 -隧道
+      - 法国2 -隧道
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +151,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇭🇰 Hong Kong 14 TG:@nodpai
-      - Hong Kong 19 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 14 TG:@nodpai
-      - Japan(ChatGPT) 08 TG:@nodpai
+      - 新加坡1 -隧道
+      - 日本1 -隧道
+      - 新加坡2 -隧道
+      - 法国1 -隧道
+      - 日本2 -隧道
+      - 香港2 -隧道
+      - 香港1 -隧道
+      - 香港3 -隧道
+      - 法国2 -隧道
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
