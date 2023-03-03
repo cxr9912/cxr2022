@@ -5,27 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国(TG频道@kxswa) 4, server: gdyd.aikun.online, port: 11698, type: ss, cipher: aes-128-gcm, password: c6d8be6f-cf07-4c2e-b1be-da5fd49868b0, udp: true}
+  - {name: 香港 Amazon 苏日, server: to.crushs.cc, port: 37215, type: trojan, password: cb27ba84-c678-47a1-bdb9-8f18e608bba5, sni: to.crushs.cc, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 苏日, server: to.crushs.cc, port: 37511, type: trojan, password: cb27ba84-c678-47a1-bdb9-8f18e608bba5, sni: to.crushs.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 苏日, server: to.crushs.cc, port: 37313, type: trojan, password: cb27ba84-c678-47a1-bdb9-8f18e608bba5, sni: to.crushs.cc, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 川新, server: cncm.crushs.cc, port: 37512, type: trojan, password: cb27ba84-c678-47a1-bdb9-8f18e608bba5, sni: cncm.crushs.cc, skip-cert-verify: true, udp: true}
+  - {name: 香港 Amazon 川新, server: cncm.crushs.cc, port: 37215, type: trojan, password: cb27ba84-c678-47a1-bdb9-8f18e608bba5, sni: cncm.crushs.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 川新, server: cncm.crushs.cc, port: 37313, type: trojan, password: cb27ba84-c678-47a1-bdb9-8f18e608bba5, sni: cncm.crushs.cc, skip-cert-verify: true, udp: true}
+  - {name: 英国 PoloCloud 苏日, server: to.crushs.cc, port: 37217, type: trojan, password: cb27ba84-c678-47a1-bdb9-8f18e608bba5, sni: to.crushs.cc, skip-cert-verify: true, udp: true}
+  - {name: 英国 PoloCloud 川新, server: cncm.crushs.cc, port: 37222, type: trojan, password: cb27ba84-c678-47a1-bdb9-8f18e608bba5, sni: cncm.crushs.cc, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国(TG频道@kxswa) 4
+      - 香港 Amazon 苏日
+      - 新加坡 苏日
+      - 美国 苏日
+      - 新加坡 川新
+      - 香港 Amazon 川新
+      - 美国 川新
+      - 英国 PoloCloud 苏日
+      - 英国 PoloCloud 川新
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国(TG频道@kxswa) 4
+      - 香港 Amazon 苏日
+      - 新加坡 苏日
+      - 美国 苏日
+      - 新加坡 川新
+      - 香港 Amazon 川新
+      - 美国 川新
+      - 英国 PoloCloud 苏日
+      - 英国 PoloCloud 川新
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国(TG频道@kxswa) 4
+      - 香港 Amazon 苏日
+      - 新加坡 苏日
+      - 美国 苏日
+      - 新加坡 川新
+      - 香港 Amazon 川新
+      - 美国 川新
+      - 英国 PoloCloud 苏日
+      - 英国 PoloCloud 川新
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -44,31 +72,61 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国(TG频道@kxswa) 4
+      - 香港 Amazon 苏日
+      - 新加坡 苏日
+      - 美国 苏日
+      - 新加坡 川新
+      - 香港 Amazon 川新
+      - 美国 川新
+      - 英国 PoloCloud 苏日
+      - 英国 PoloCloud 川新
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 Amazon 苏日
+      - 香港 Amazon 川新
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国(TG频道@kxswa) 4
+      - 香港 Amazon 苏日
+      - 新加坡 苏日
+      - 美国 苏日
+      - 新加坡 川新
+      - 香港 Amazon 川新
+      - 美国 川新
+      - 英国 PoloCloud 苏日
+      - 英国 PoloCloud 川新
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国(TG频道@kxswa) 4
+      - 香港 Amazon 苏日
+      - 新加坡 苏日
+      - 美国 苏日
+      - 新加坡 川新
+      - 香港 Amazon 川新
+      - 美国 川新
+      - 英国 PoloCloud 苏日
+      - 英国 PoloCloud 川新
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国(TG频道@kxswa) 4
+      - 香港 Amazon 苏日
+      - 新加坡 苏日
+      - 美国 苏日
+      - 新加坡 川新
+      - 香港 Amazon 川新
+      - 美国 川新
+      - 英国 PoloCloud 苏日
+      - 英国 PoloCloud 川新
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,7 +142,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国(TG频道@kxswa) 4
+      - 香港 Amazon 苏日
+      - 新加坡 苏日
+      - 美国 苏日
+      - 新加坡 川新
+      - 香港 Amazon 川新
+      - 美国 川新
+      - 英国 PoloCloud 苏日
+      - 英国 PoloCloud 川新
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
