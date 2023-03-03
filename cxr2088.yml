@@ -5,79 +5,115 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡4|免流|优化, server: sg4.microsoftjs.top, port: 443, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 香港01, server: hk01.012023.xyz, port: 30011, type: trojan, password: 203b60b4-91db-35bc-88c3-b0e42fb01643, sni: hk01.012023.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡3|免流|优化, server: sg3.microsoftjs.top, port: 80, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 韩国3|专线, server: kr3.microsoftjs.top, port: 10214, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 香港1|优化, server: hk1.microsoftjs.top, port: 443, type: trojan, password: bbac5e7a-b3b8-401a-8315-405b344c4036, sni: hk1.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 香港4|优化, server: hk4.microsoftjs.top, port: 443, type: trojan, password: bbac5e7a-b3b8-401a-8315-405b344c4036, sni: hk4.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 英国1|优化, server: kr3.microsoftjs.top, port: 50002, type: trojan, password: bbac5e7a-b3b8-401a-8315-405b344c4036, sni: kr3.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 土耳其1|优化|x3, server: kr3.microsoftjs.top, port: 50000, type: trojan, password: bbac5e7a-b3b8-401a-8315-405b344c4036, sni: kr3.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 新加坡5|免流|优化, server: sg5.microsoftjs.top, port: 443, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 台湾2, server: tw2.microsoftjs.top, port: 443, type: trojan, password: bbac5e7a-b3b8-401a-8315-405b344c4036, sni: tw2.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 日本1|免流|优化, server: jp1.microsoftjs.top, port: 80, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 日本4|免流|优化, server: jp4.microsoftjs.top, port: 443, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 日本3|免流|优化, server: jp3.microsoftjs.top, port: 443, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 韩国1|免流|优化, server: kr1.microsoftjs.top, port: 80, type: vmess, uuid: bbac5e7a-b3b8-401a-8315-405b344c4036, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 新加坡4|GPT|奈飞 | x3, server: sg4.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 香港1|优化| x2, server: hk1.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk1.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 新加坡9|流媒体|优化| x3, server: sg9.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: sg9.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 香港6|GPT|奈飞| x3, server: hk6.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk6.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 新加坡5|GPT|奈飞| x3, server: sg5.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 新加坡6|GPT|奈飞| x3, server: sg6.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 新加坡8|GPT|奈飞| x3, server: sg8.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 香港8|优化| x2, server: hk8.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk8.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 香港2|GPT|奈飞| x3, server: hk2.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk2.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 香港9|优化| x2, server: hk9.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk9.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 新加坡3|免流|优化| x3, server: sg3.microsoftjs.top, port: 80, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 香港5|GPT|奈飞| x3, server: hk5.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk5.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 香港3|流媒体|优化| x2, server: hk3.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk3.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 新加坡7|免流|优化| x1.5, server: sg7.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 新加坡1|流媒体|优化| x2, server: sg1.microsoftjs.top, port: 80, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.microsoftjs.top}, udp: true}
+  - {name: 日本5|免流|优化| x2, server: jp5.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: jp5.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 日本12|流媒体|优化| x2, server: jp12.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 日本10|GPT|奈飞| x3, server: jp10.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 美国4|免流|优化| x3, server: us4.microsoftjs.top, port: 80, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 日本1|流媒体|优化| x2, server: jp1.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: jp1.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 美国3|优化| x3, server: us3.microsoftjs.top, port: 80, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 韩国2|免流|优化| x2, server: kr2.microsoftjs.top, port: 80, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: kr2.microsoftjs.top}, udp: true}
+  - {name: 英国2|优化| x2, server: gb2.microsoftjs.top, port: 80, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡4|免流|优化
-      - 香港01
-      - 新加坡3|免流|优化
-      - 韩国3|专线
-      - 香港1|优化
-      - 香港4|优化
-      - 英国1|优化
-      - 土耳其1|优化|x3
-      - 新加坡5|免流|优化
-      - 台湾2
-      - 日本1|免流|优化
-      - 日本4|免流|优化
-      - 日本3|免流|优化
-      - 韩国1|免流|优化
+      - 新加坡4|GPT|奈飞 | x3
+      - 香港1|优化| x2
+      - 新加坡9|流媒体|优化| x3
+      - 香港6|GPT|奈飞| x3
+      - 新加坡5|GPT|奈飞| x3
+      - 新加坡6|GPT|奈飞| x3
+      - 新加坡8|GPT|奈飞| x3
+      - 香港8|优化| x2
+      - 香港2|GPT|奈飞| x3
+      - 香港9|优化| x2
+      - 新加坡3|免流|优化| x3
+      - 香港5|GPT|奈飞| x3
+      - 香港3|流媒体|优化| x2
+      - 新加坡7|免流|优化| x1.5
+      - 新加坡1|流媒体|优化| x2
+      - 日本5|免流|优化| x2
+      - 日本12|流媒体|优化| x2
+      - 日本10|GPT|奈飞| x3
+      - 美国4|免流|优化| x3
+      - 日本1|流媒体|优化| x2
+      - 美国3|优化| x3
+      - 韩国2|免流|优化| x2
+      - 英国2|优化| x2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡4|免流|优化
-      - 香港01
-      - 新加坡3|免流|优化
-      - 韩国3|专线
-      - 香港1|优化
-      - 香港4|优化
-      - 英国1|优化
-      - 土耳其1|优化|x3
-      - 新加坡5|免流|优化
-      - 台湾2
-      - 日本1|免流|优化
-      - 日本4|免流|优化
-      - 日本3|免流|优化
-      - 韩国1|免流|优化
+      - 新加坡4|GPT|奈飞 | x3
+      - 香港1|优化| x2
+      - 新加坡9|流媒体|优化| x3
+      - 香港6|GPT|奈飞| x3
+      - 新加坡5|GPT|奈飞| x3
+      - 新加坡6|GPT|奈飞| x3
+      - 新加坡8|GPT|奈飞| x3
+      - 香港8|优化| x2
+      - 香港2|GPT|奈飞| x3
+      - 香港9|优化| x2
+      - 新加坡3|免流|优化| x3
+      - 香港5|GPT|奈飞| x3
+      - 香港3|流媒体|优化| x2
+      - 新加坡7|免流|优化| x1.5
+      - 新加坡1|流媒体|优化| x2
+      - 日本5|免流|优化| x2
+      - 日本12|流媒体|优化| x2
+      - 日本10|GPT|奈飞| x3
+      - 美国4|免流|优化| x3
+      - 日本1|流媒体|优化| x2
+      - 美国3|优化| x3
+      - 韩国2|免流|优化| x2
+      - 英国2|优化| x2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡4|免流|优化
-      - 香港01
-      - 新加坡3|免流|优化
-      - 韩国3|专线
-      - 香港1|优化
-      - 香港4|优化
-      - 英国1|优化
-      - 土耳其1|优化|x3
-      - 新加坡5|免流|优化
-      - 台湾2
-      - 日本1|免流|优化
-      - 日本4|免流|优化
-      - 日本3|免流|优化
-      - 韩国1|免流|优化
+      - 新加坡4|GPT|奈飞 | x3
+      - 香港1|优化| x2
+      - 新加坡9|流媒体|优化| x3
+      - 香港6|GPT|奈飞| x3
+      - 新加坡5|GPT|奈飞| x3
+      - 新加坡6|GPT|奈飞| x3
+      - 新加坡8|GPT|奈飞| x3
+      - 香港8|优化| x2
+      - 香港2|GPT|奈飞| x3
+      - 香港9|优化| x2
+      - 新加坡3|免流|优化| x3
+      - 香港5|GPT|奈飞| x3
+      - 香港3|流媒体|优化| x2
+      - 新加坡7|免流|优化| x1.5
+      - 新加坡1|流媒体|优化| x2
+      - 日本5|免流|优化| x2
+      - 日本12|流媒体|优化| x2
+      - 日本10|GPT|奈飞| x3
+      - 美国4|免流|优化| x3
+      - 日本1|流媒体|优化| x2
+      - 美国3|优化| x3
+      - 韩国2|免流|优化| x2
+      - 英国2|优化| x2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,87 +132,126 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡4|免流|优化
-      - 香港01
-      - 新加坡3|免流|优化
-      - 韩国3|专线
-      - 香港1|优化
-      - 香港4|优化
-      - 英国1|优化
-      - 土耳其1|优化|x3
-      - 新加坡5|免流|优化
-      - 台湾2
-      - 日本1|免流|优化
-      - 日本4|免流|优化
-      - 日本3|免流|优化
-      - 韩国1|免流|优化
+      - 新加坡4|GPT|奈飞 | x3
+      - 香港1|优化| x2
+      - 新加坡9|流媒体|优化| x3
+      - 香港6|GPT|奈飞| x3
+      - 新加坡5|GPT|奈飞| x3
+      - 新加坡6|GPT|奈飞| x3
+      - 新加坡8|GPT|奈飞| x3
+      - 香港8|优化| x2
+      - 香港2|GPT|奈飞| x3
+      - 香港9|优化| x2
+      - 新加坡3|免流|优化| x3
+      - 香港5|GPT|奈飞| x3
+      - 香港3|流媒体|优化| x2
+      - 新加坡7|免流|优化| x1.5
+      - 新加坡1|流媒体|优化| x2
+      - 日本5|免流|优化| x2
+      - 日本12|流媒体|优化| x2
+      - 日本10|GPT|奈飞| x3
+      - 美国4|免流|优化| x3
+      - 日本1|流媒体|优化| x2
+      - 美国3|优化| x3
+      - 韩国2|免流|优化| x2
+      - 英国2|优化| x2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港01
-      - 香港1|优化
-      - 香港4|优化
-      - 台湾2
+      - 香港1|优化| x2
+      - 香港6|GPT|奈飞| x3
+      - 香港8|优化| x2
+      - 香港2|GPT|奈飞| x3
+      - 香港9|优化| x2
+      - 香港5|GPT|奈飞| x3
+      - 香港3|流媒体|优化| x2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡4|免流|优化
-      - 香港01
-      - 新加坡3|免流|优化
-      - 韩国3|专线
-      - 香港1|优化
-      - 香港4|优化
-      - 英国1|优化
-      - 土耳其1|优化|x3
-      - 新加坡5|免流|优化
-      - 台湾2
-      - 日本1|免流|优化
-      - 日本4|免流|优化
-      - 日本3|免流|优化
-      - 韩国1|免流|优化
+      - 新加坡4|GPT|奈飞 | x3
+      - 香港1|优化| x2
+      - 新加坡9|流媒体|优化| x3
+      - 香港6|GPT|奈飞| x3
+      - 新加坡5|GPT|奈飞| x3
+      - 新加坡6|GPT|奈飞| x3
+      - 新加坡8|GPT|奈飞| x3
+      - 香港8|优化| x2
+      - 香港2|GPT|奈飞| x3
+      - 香港9|优化| x2
+      - 新加坡3|免流|优化| x3
+      - 香港5|GPT|奈飞| x3
+      - 香港3|流媒体|优化| x2
+      - 新加坡7|免流|优化| x1.5
+      - 新加坡1|流媒体|优化| x2
+      - 日本5|免流|优化| x2
+      - 日本12|流媒体|优化| x2
+      - 日本10|GPT|奈飞| x3
+      - 美国4|免流|优化| x3
+      - 日本1|流媒体|优化| x2
+      - 美国3|优化| x3
+      - 韩国2|免流|优化| x2
+      - 英国2|优化| x2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡4|免流|优化
-      - 香港01
-      - 新加坡3|免流|优化
-      - 韩国3|专线
-      - 香港1|优化
-      - 香港4|优化
-      - 英国1|优化
-      - 土耳其1|优化|x3
-      - 新加坡5|免流|优化
-      - 台湾2
-      - 日本1|免流|优化
-      - 日本4|免流|优化
-      - 日本3|免流|优化
-      - 韩国1|免流|优化
+      - 新加坡4|GPT|奈飞 | x3
+      - 香港1|优化| x2
+      - 新加坡9|流媒体|优化| x3
+      - 香港6|GPT|奈飞| x3
+      - 新加坡5|GPT|奈飞| x3
+      - 新加坡6|GPT|奈飞| x3
+      - 新加坡8|GPT|奈飞| x3
+      - 香港8|优化| x2
+      - 香港2|GPT|奈飞| x3
+      - 香港9|优化| x2
+      - 新加坡3|免流|优化| x3
+      - 香港5|GPT|奈飞| x3
+      - 香港3|流媒体|优化| x2
+      - 新加坡7|免流|优化| x1.5
+      - 新加坡1|流媒体|优化| x2
+      - 日本5|免流|优化| x2
+      - 日本12|流媒体|优化| x2
+      - 日本10|GPT|奈飞| x3
+      - 美国4|免流|优化| x3
+      - 日本1|流媒体|优化| x2
+      - 美国3|优化| x3
+      - 韩国2|免流|优化| x2
+      - 英国2|优化| x2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡4|免流|优化
-      - 香港01
-      - 新加坡3|免流|优化
-      - 韩国3|专线
-      - 香港1|优化
-      - 香港4|优化
-      - 英国1|优化
-      - 土耳其1|优化|x3
-      - 新加坡5|免流|优化
-      - 台湾2
-      - 日本1|免流|优化
-      - 日本4|免流|优化
-      - 日本3|免流|优化
-      - 韩国1|免流|优化
+      - 新加坡4|GPT|奈飞 | x3
+      - 香港1|优化| x2
+      - 新加坡9|流媒体|优化| x3
+      - 香港6|GPT|奈飞| x3
+      - 新加坡5|GPT|奈飞| x3
+      - 新加坡6|GPT|奈飞| x3
+      - 新加坡8|GPT|奈飞| x3
+      - 香港8|优化| x2
+      - 香港2|GPT|奈飞| x3
+      - 香港9|优化| x2
+      - 新加坡3|免流|优化| x3
+      - 香港5|GPT|奈飞| x3
+      - 香港3|流媒体|优化| x2
+      - 新加坡7|免流|优化| x1.5
+      - 新加坡1|流媒体|优化| x2
+      - 日本5|免流|优化| x2
+      - 日本12|流媒体|优化| x2
+      - 日本10|GPT|奈飞| x3
+      - 美国4|免流|优化| x3
+      - 日本1|流媒体|优化| x2
+      - 美国3|优化| x3
+      - 韩国2|免流|优化| x2
+      - 英国2|优化| x2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -192,20 +267,29 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡4|免流|优化
-      - 香港01
-      - 新加坡3|免流|优化
-      - 韩国3|专线
-      - 香港1|优化
-      - 香港4|优化
-      - 英国1|优化
-      - 土耳其1|优化|x3
-      - 新加坡5|免流|优化
-      - 台湾2
-      - 日本1|免流|优化
-      - 日本4|免流|优化
-      - 日本3|免流|优化
-      - 韩国1|免流|优化
+      - 新加坡4|GPT|奈飞 | x3
+      - 香港1|优化| x2
+      - 新加坡9|流媒体|优化| x3
+      - 香港6|GPT|奈飞| x3
+      - 新加坡5|GPT|奈飞| x3
+      - 新加坡6|GPT|奈飞| x3
+      - 新加坡8|GPT|奈飞| x3
+      - 香港8|优化| x2
+      - 香港2|GPT|奈飞| x3
+      - 香港9|优化| x2
+      - 新加坡3|免流|优化| x3
+      - 香港5|GPT|奈飞| x3
+      - 香港3|流媒体|优化| x2
+      - 新加坡7|免流|优化| x1.5
+      - 新加坡1|流媒体|优化| x2
+      - 日本5|免流|优化| x2
+      - 日本12|流媒体|优化| x2
+      - 日本10|GPT|奈飞| x3
+      - 美国4|免流|优化| x3
+      - 日本1|流媒体|优化| x2
+      - 美国3|优化| x3
+      - 韩国2|免流|优化| x2
+      - 英国2|优化| x2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
