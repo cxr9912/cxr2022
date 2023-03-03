@@ -5,55 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港01, server: hainan.sfjsq001.info, port: 33203, type: vmess, uuid: 86b7378f-ad65-3bc0-9552-6943b7109871, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /app/dytv.m3u8, ws-headers: {Host: douyu.tv}, udp: true}
-  - {name: 日本01, server: hainan.sfjsq001.info, port: 33211, type: vmess, uuid: 86b7378f-ad65-3bc0-9552-6943b7109871, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡02, server: hainan.sfjsq001.info, port: 33910, type: vmess, uuid: 86b7378f-ad65-3bc0-9552-6943b7109871, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国02, server: hainan.sfjsq001.info, port: 33209, type: vmess, uuid: 86b7378f-ad65-3bc0-9552-6943b7109871, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡01, server: hainan.sfjsq001.info, port: 33214, type: vmess, uuid: 86b7378f-ad65-3bc0-9552-6943b7109871, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾02, server: hainan.sfjsq001.info, port: 33207, type: vmess, uuid: 86b7378f-ad65-3bc0-9552-6943b7109871, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国01, server: hainan.sfjsq001.info, port: 33208, type: vmess, uuid: 86b7378f-ad65-3bc0-9552-6943b7109871, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾01, server: hainan.sfjsq001.info, port: 33206, type: vmess, uuid: 86b7378f-ad65-3bc0-9552-6943b7109871, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡D-80, server: 13.213.8.83, port: 80, type: vmess, uuid: 9c5d1eb8-a7f0-4591-89a7-00a3a5000830, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡D, server: 13.213.8.83, port: 43632, type: vmess, uuid: 9c5d1eb8-a7f0-4591-89a7-00a3a5000830, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡F, server: 54.254.184.159, port: 80, type: vmess, uuid: 9c5d1eb8-a7f0-4591-89a7-00a3a5000830, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: I香港ZA(解锁奈飞), server: 54.254.184.159, port: 9001, type: vmess, uuid: 9c5d1eb8-a7f0-4591-89a7-00a3a5000830, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本F, server: 52.192.61.64, port: 43632, type: vmess, uuid: 9c5d1eb8-a7f0-4591-89a7-00a3a5000830, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 印度A, server: 65.1.130.49, port: 80, type: vmess, uuid: 9c5d1eb8-a7f0-4591-89a7-00a3a5000830, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国(无限制), server: 54.254.184.159, port: 9000, type: vmess, uuid: 9c5d1eb8-a7f0-4591-89a7-00a3a5000830, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01
-      - 日本01
-      - 新加坡02
-      - 美国02
-      - 新加坡01
-      - 台湾02
-      - 美国01
-      - 台湾01
+      - 新加坡D-80
+      - 新加坡D
+      - 新加坡F
+      - I香港ZA(解锁奈飞)
+      - 日本F
+      - 印度A
+      - 英国(无限制)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港01
-      - 日本01
-      - 新加坡02
-      - 美国02
-      - 新加坡01
-      - 台湾02
-      - 美国01
-      - 台湾01
+      - 新加坡D-80
+      - 新加坡D
+      - 新加坡F
+      - I香港ZA(解锁奈飞)
+      - 日本F
+      - 印度A
+      - 英国(无限制)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01
-      - 日本01
-      - 新加坡02
-      - 美国02
-      - 新加坡01
-      - 台湾02
-      - 美国01
-      - 台湾01
+      - 新加坡D-80
+      - 新加坡D
+      - 新加坡F
+      - I香港ZA(解锁奈飞)
+      - 日本F
+      - 印度A
+      - 英国(无限制)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,62 +68,56 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01
-      - 日本01
-      - 新加坡02
-      - 美国02
-      - 新加坡01
-      - 台湾02
-      - 美国01
-      - 台湾01
+      - 新加坡D-80
+      - 新加坡D
+      - 新加坡F
+      - I香港ZA(解锁奈飞)
+      - 日本F
+      - 印度A
+      - 英国(无限制)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港01
-      - 台湾02
-      - 台湾01
+      - I香港ZA(解锁奈飞)
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港01
-      - 日本01
-      - 新加坡02
-      - 美国02
-      - 新加坡01
-      - 台湾02
-      - 美国01
-      - 台湾01
+      - 新加坡D-80
+      - 新加坡D
+      - 新加坡F
+      - I香港ZA(解锁奈飞)
+      - 日本F
+      - 印度A
+      - 英国(无限制)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港01
-      - 日本01
-      - 新加坡02
-      - 美国02
-      - 新加坡01
-      - 台湾02
-      - 美国01
-      - 台湾01
+      - 新加坡D-80
+      - 新加坡D
+      - 新加坡F
+      - I香港ZA(解锁奈飞)
+      - 日本F
+      - 印度A
+      - 英国(无限制)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港01
-      - 日本01
-      - 新加坡02
-      - 美国02
-      - 新加坡01
-      - 台湾02
-      - 美国01
-      - 台湾01
+      - 新加坡D-80
+      - 新加坡D
+      - 新加坡F
+      - I香港ZA(解锁奈飞)
+      - 日本F
+      - 印度A
+      - 英国(无限制)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -143,14 +133,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港01
-      - 日本01
-      - 新加坡02
-      - 美国02
-      - 新加坡01
-      - 台湾02
-      - 美国01
-      - 台湾01
+      - 新加坡D-80
+      - 新加坡D
+      - 新加坡F
+      - I香港ZA(解锁奈飞)
+      - 日本F
+      - 印度A
+      - 英国(无限制)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
