@@ -5,39 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay 🇭🇰 Hong Kong 11 TG:@nodpai, server: 222.219.135.41, port: 19201, type: trojan, password: 0b86d368-f585-3c89-b8b5-30630f54cf15, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇹🇼 Taiwan(ChatGPT) 11 TG:@nodpai, server: 106.225.132.4, port: 19219, type: trojan, password: 0b86d368-f585-3c89-b8b5-30630f54cf15, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇺🇸 United States(ChatGPT) 18 TG:@nodpai, server: 182.151.15.29, port: 19232, type: trojan, password: 0b86d368-f585-3c89-b8b5-30630f54cf15, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇸🇬 Singapore 17 TG:@nodpai, server: v01.gutingting.com, port: 30035, type: vmess, uuid: ab3fc2c2-b12f-48ba-bc4e-202559557a09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aceamedv, ws-headers: {Host: sh01.fastcloud.club}, udp: true}
+  - {name: _CN 10, server: hy.guanguan.club, port: 11410, type: vmess, uuid: 5707bceb-1da9-41e1-bd03-1bb3d1c28a2c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nba, ws-headers: {Host: hy.guanguan.club}, udp: true}
+  - {name: _CN 40, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN 11, server: hy.guanguan.club, port: 11410, type: vmess, uuid: 5707bceb-1da9-41e1-bd03-1bb3d1c28a2c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nba, ws-headers: {Host: sg1.oraclec.pp.ua}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 18 TG:@nodpai
-      - Relay 🇸🇬 Singapore 17 TG:@nodpai
+      - _CN 10
+      - _CN 40
+      - _CN 11
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 18 TG:@nodpai
-      - Relay 🇸🇬 Singapore 17 TG:@nodpai
+      - _CN 10
+      - _CN 40
+      - _CN 11
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 18 TG:@nodpai
-      - Relay 🇸🇬 Singapore 17 TG:@nodpai
+      - _CN 10
+      - _CN 40
+      - _CN 11
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,10 +52,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 18 TG:@nodpai
-      - Relay 🇸🇬 Singapore 17 TG:@nodpai
+      - _CN 10
+      - _CN 40
+      - _CN 11
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -70,29 +65,26 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 18 TG:@nodpai
-      - Relay 🇸🇬 Singapore 17 TG:@nodpai
+      - _CN 10
+      - _CN 40
+      - _CN 11
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 18 TG:@nodpai
-      - Relay 🇸🇬 Singapore 17 TG:@nodpai
+      - _CN 10
+      - _CN 40
+      - _CN 11
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 18 TG:@nodpai
-      - Relay 🇸🇬 Singapore 17 TG:@nodpai
+      - _CN 10
+      - _CN 40
+      - _CN 11
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +100,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 18 TG:@nodpai
-      - Relay 🇸🇬 Singapore 17 TG:@nodpai
+      - _CN 10
+      - _CN 40
+      - _CN 11
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
