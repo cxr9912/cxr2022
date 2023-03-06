@@ -5,119 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡8|GPT|奈飞| x3, server: sg8.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 日本5|优化| x2, server: jp5.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 日本12|流媒体|优化| x2, server: jp12.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 日本3|GPT|奈飞| x3, server: jp3.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 日本11|GPT|奈飞| x3, server: jp11.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 日本10|GPT|奈飞| x3, server: jp10.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 日本4|GPT|奈飞| x3, server: jp4.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 新加坡3|优化| x3, server: sg3.microsoftjs.top, port: 80, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 新加坡9|流媒体|优化| x3, server: sg9.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: sg9.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 距离下次重置剩余：28 天, server: sg1.microsoftjs.top, port: 80, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.microsoftjs.top}, udp: true}
-  - {name: 韩国2|优化| x2, server: kr2.microsoftjs.top, port: 80, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: kr2.microsoftjs.top}, udp: true}
-  - {name: 香港10|优化| x2, server: hk10.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk10.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 香港9|优化| x2, server: hk9.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk9.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 香港5|GPT|奈飞| x3, server: hk5.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk5.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 香港8|优化| x2, server: hk8.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk8.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 韩国1|GPT|奈飞| x3, server: kr1.microsoftjs.top, port: 80, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 香港3|流媒体|优化| x2, server: hk3.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk3.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 香港1|优化| x2, server: hk1.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk1.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 新加坡7|优化| x1.5, server: sg7.microsoftjs.top, port: 443, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 香港7|优化| x2, server: hk7.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk7.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 印度2|优化| x3, server: in2.microsoftjs.top, port: 80, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 香港4|GPT|奈飞| x3, server: hk4.microsoftjs.top, port: 443, type: trojan, password: 549d3bb9-fda7-4568-a969-2e78829781be, sni: hk4.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 美国4|优化| x3, server: us4.microsoftjs.top, port: 80, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 美国1|优化| x2, server: us1.microsoftjs.top, port: 80, type: vmess, uuid: 549d3bb9-fda7-4568-a969-2e78829781be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: Japan(ChatGPT) 02 TG:@nodpai, server: tls.tls.tlz.lol, port: 7899, type: trojan, password: HtpRxtMEnm, sni: tls.tls.tlz.lol, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇯🇵 Japan 11 TG:@nodpai, server: 223.111.129.6, port: 54829, type: trojan, password: 74341a38-c634-492e-9385-50eb01dd59e4, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai, server: 17.kccic2pa.xyz, port: 50017, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Australia(ChatGPT) 01 TG:@nodpai, server: vmshk.unbounded.tk, port: 26671, type: trojan, password: 6nVzl-mgck26FqvBByHLF5lsCpRkvGDrhDpz3NkbGkizyH7O, sni: vmshk.unbounded.tk, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡8|GPT|奈飞| x3
-      - 日本5|优化| x2
-      - 日本12|流媒体|优化| x2
-      - 日本3|GPT|奈飞| x3
-      - 日本11|GPT|奈飞| x3
-      - 日本10|GPT|奈飞| x3
-      - 日本4|GPT|奈飞| x3
-      - 新加坡3|优化| x3
-      - 新加坡9|流媒体|优化| x3
-      - 距离下次重置剩余：28 天
-      - 韩国2|优化| x2
-      - 香港10|优化| x2
-      - 香港9|优化| x2
-      - 香港5|GPT|奈飞| x3
-      - 香港8|优化| x2
-      - 韩国1|GPT|奈飞| x3
-      - 香港3|流媒体|优化| x2
-      - 香港1|优化| x2
-      - 新加坡7|优化| x1.5
-      - 香港7|优化| x2
-      - 印度2|优化| x3
-      - 香港4|GPT|奈飞| x3
-      - 美国4|优化| x3
-      - 美国1|优化| x2
+      - Japan(ChatGPT) 02 TG:@nodpai
+      - Relay 🇯🇵 Japan 11 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - Australia(ChatGPT) 01 TG:@nodpai
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡8|GPT|奈飞| x3
-      - 日本5|优化| x2
-      - 日本12|流媒体|优化| x2
-      - 日本3|GPT|奈飞| x3
-      - 日本11|GPT|奈飞| x3
-      - 日本10|GPT|奈飞| x3
-      - 日本4|GPT|奈飞| x3
-      - 新加坡3|优化| x3
-      - 新加坡9|流媒体|优化| x3
-      - 距离下次重置剩余：28 天
-      - 韩国2|优化| x2
-      - 香港10|优化| x2
-      - 香港9|优化| x2
-      - 香港5|GPT|奈飞| x3
-      - 香港8|优化| x2
-      - 韩国1|GPT|奈飞| x3
-      - 香港3|流媒体|优化| x2
-      - 香港1|优化| x2
-      - 新加坡7|优化| x1.5
-      - 香港7|优化| x2
-      - 印度2|优化| x3
-      - 香港4|GPT|奈飞| x3
-      - 美国4|优化| x3
-      - 美国1|优化| x2
+      - Japan(ChatGPT) 02 TG:@nodpai
+      - Relay 🇯🇵 Japan 11 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - Australia(ChatGPT) 01 TG:@nodpai
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡8|GPT|奈飞| x3
-      - 日本5|优化| x2
-      - 日本12|流媒体|优化| x2
-      - 日本3|GPT|奈飞| x3
-      - 日本11|GPT|奈飞| x3
-      - 日本10|GPT|奈飞| x3
-      - 日本4|GPT|奈飞| x3
-      - 新加坡3|优化| x3
-      - 新加坡9|流媒体|优化| x3
-      - 距离下次重置剩余：28 天
-      - 韩国2|优化| x2
-      - 香港10|优化| x2
-      - 香港9|优化| x2
-      - 香港5|GPT|奈飞| x3
-      - 香港8|优化| x2
-      - 韩国1|GPT|奈飞| x3
-      - 香港3|流媒体|优化| x2
-      - 香港1|优化| x2
-      - 新加坡7|优化| x1.5
-      - 香港7|优化| x2
-      - 印度2|优化| x3
-      - 香港4|GPT|奈飞| x3
-      - 美国4|优化| x3
-      - 美国1|优化| x2
+      - Japan(ChatGPT) 02 TG:@nodpai
+      - Relay 🇯🇵 Japan 11 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - Australia(ChatGPT) 01 TG:@nodpai
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -136,131 +56,43 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡8|GPT|奈飞| x3
-      - 日本5|优化| x2
-      - 日本12|流媒体|优化| x2
-      - 日本3|GPT|奈飞| x3
-      - 日本11|GPT|奈飞| x3
-      - 日本10|GPT|奈飞| x3
-      - 日本4|GPT|奈飞| x3
-      - 新加坡3|优化| x3
-      - 新加坡9|流媒体|优化| x3
-      - 距离下次重置剩余：28 天
-      - 韩国2|优化| x2
-      - 香港10|优化| x2
-      - 香港9|优化| x2
-      - 香港5|GPT|奈飞| x3
-      - 香港8|优化| x2
-      - 韩国1|GPT|奈飞| x3
-      - 香港3|流媒体|优化| x2
-      - 香港1|优化| x2
-      - 新加坡7|优化| x1.5
-      - 香港7|优化| x2
-      - 印度2|优化| x3
-      - 香港4|GPT|奈飞| x3
-      - 美国4|优化| x3
-      - 美国1|优化| x2
+      - Japan(ChatGPT) 02 TG:@nodpai
+      - Relay 🇯🇵 Japan 11 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - Australia(ChatGPT) 01 TG:@nodpai
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港10|优化| x2
-      - 香港9|优化| x2
-      - 香港5|GPT|奈飞| x3
-      - 香港8|优化| x2
-      - 香港3|流媒体|优化| x2
-      - 香港1|优化| x2
-      - 香港7|优化| x2
-      - 香港4|GPT|奈飞| x3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡8|GPT|奈飞| x3
-      - 日本5|优化| x2
-      - 日本12|流媒体|优化| x2
-      - 日本3|GPT|奈飞| x3
-      - 日本11|GPT|奈飞| x3
-      - 日本10|GPT|奈飞| x3
-      - 日本4|GPT|奈飞| x3
-      - 新加坡3|优化| x3
-      - 新加坡9|流媒体|优化| x3
-      - 距离下次重置剩余：28 天
-      - 韩国2|优化| x2
-      - 香港10|优化| x2
-      - 香港9|优化| x2
-      - 香港5|GPT|奈飞| x3
-      - 香港8|优化| x2
-      - 韩国1|GPT|奈飞| x3
-      - 香港3|流媒体|优化| x2
-      - 香港1|优化| x2
-      - 新加坡7|优化| x1.5
-      - 香港7|优化| x2
-      - 印度2|优化| x3
-      - 香港4|GPT|奈飞| x3
-      - 美国4|优化| x3
-      - 美国1|优化| x2
+      - Japan(ChatGPT) 02 TG:@nodpai
+      - Relay 🇯🇵 Japan 11 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - Australia(ChatGPT) 01 TG:@nodpai
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡8|GPT|奈飞| x3
-      - 日本5|优化| x2
-      - 日本12|流媒体|优化| x2
-      - 日本3|GPT|奈飞| x3
-      - 日本11|GPT|奈飞| x3
-      - 日本10|GPT|奈飞| x3
-      - 日本4|GPT|奈飞| x3
-      - 新加坡3|优化| x3
-      - 新加坡9|流媒体|优化| x3
-      - 距离下次重置剩余：28 天
-      - 韩国2|优化| x2
-      - 香港10|优化| x2
-      - 香港9|优化| x2
-      - 香港5|GPT|奈飞| x3
-      - 香港8|优化| x2
-      - 韩国1|GPT|奈飞| x3
-      - 香港3|流媒体|优化| x2
-      - 香港1|优化| x2
-      - 新加坡7|优化| x1.5
-      - 香港7|优化| x2
-      - 印度2|优化| x3
-      - 香港4|GPT|奈飞| x3
-      - 美国4|优化| x3
-      - 美国1|优化| x2
+      - Japan(ChatGPT) 02 TG:@nodpai
+      - Relay 🇯🇵 Japan 11 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - Australia(ChatGPT) 01 TG:@nodpai
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡8|GPT|奈飞| x3
-      - 日本5|优化| x2
-      - 日本12|流媒体|优化| x2
-      - 日本3|GPT|奈飞| x3
-      - 日本11|GPT|奈飞| x3
-      - 日本10|GPT|奈飞| x3
-      - 日本4|GPT|奈飞| x3
-      - 新加坡3|优化| x3
-      - 新加坡9|流媒体|优化| x3
-      - 距离下次重置剩余：28 天
-      - 韩国2|优化| x2
-      - 香港10|优化| x2
-      - 香港9|优化| x2
-      - 香港5|GPT|奈飞| x3
-      - 香港8|优化| x2
-      - 韩国1|GPT|奈飞| x3
-      - 香港3|流媒体|优化| x2
-      - 香港1|优化| x2
-      - 新加坡7|优化| x1.5
-      - 香港7|优化| x2
-      - 印度2|优化| x3
-      - 香港4|GPT|奈飞| x3
-      - 美国4|优化| x3
-      - 美国1|优化| x2
+      - Japan(ChatGPT) 02 TG:@nodpai
+      - Relay 🇯🇵 Japan 11 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - Australia(ChatGPT) 01 TG:@nodpai
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -276,30 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡8|GPT|奈飞| x3
-      - 日本5|优化| x2
-      - 日本12|流媒体|优化| x2
-      - 日本3|GPT|奈飞| x3
-      - 日本11|GPT|奈飞| x3
-      - 日本10|GPT|奈飞| x3
-      - 日本4|GPT|奈飞| x3
-      - 新加坡3|优化| x3
-      - 新加坡9|流媒体|优化| x3
-      - 距离下次重置剩余：28 天
-      - 韩国2|优化| x2
-      - 香港10|优化| x2
-      - 香港9|优化| x2
-      - 香港5|GPT|奈飞| x3
-      - 香港8|优化| x2
-      - 韩国1|GPT|奈飞| x3
-      - 香港3|流媒体|优化| x2
-      - 香港1|优化| x2
-      - 新加坡7|优化| x1.5
-      - 香港7|优化| x2
-      - 印度2|优化| x3
-      - 香港4|GPT|奈飞| x3
-      - 美国4|优化| x3
-      - 美国1|优化| x2
+      - Japan(ChatGPT) 02 TG:@nodpai
+      - Relay 🇯🇵 Japan 11 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - Australia(ChatGPT) 01 TG:@nodpai
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
