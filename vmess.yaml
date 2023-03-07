@@ -5,83 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 印尼 B59B | 广港AWS、ChatGPT、闲时可见 | 2x, server: 183.240.221.215, port: 30180, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 泰国 B49 | 广港AWS、ChatGPT | 2x, server: 183.240.221.215, port: 30181, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 美国 G29A | 深美电信、ChatGPT | 3x, server: 14.29.246.177, port: 25237, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 德国 B16B | 广港AWS、ChatGPT、闲时可见 | 2x, server: 183.240.221.215, port: 30184, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 美国 G22B | 广港AWS、ChatGPT | 3x, server: 183.240.221.215, port: 30186, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 乌克兰 B11B | 广港AWS、ChatGPT、闲时可见 | 2x, server: 183.240.221.215, port: 30182, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 印尼 B59 | 沪美电信、ChatGPT | 2x, server: 14.29.246.177, port: 25252, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 泰国 B49A | 沪美电信、ChatGPT | 2x, server: 14.29.246.177, port: 25244, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 台湾 W43B | 广港AWS、ChatGPT、闲时可见 | 2x, server: 183.240.221.215, port: 30185, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 美国 G29B | 广港AWS、ChatGPT | 3x, server: 183.240.221.215, port: 30187, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 B75B | 广港AWS、闲时可见 | 2x, server: 183.240.221.215, port: 30183, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 美国 G22A | 深美电信、ChatGPT | 3x, server: 14.29.170.206, port: 25236, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 德国 B16A | 沪美电信、ChatGPT | 2x, server: 14.29.246.177, port: 25248, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 B75A | 沪美电信 | 2x, server: 14.29.170.206, port: 25247, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
-  - {name: 乌克兰 B11A | 沪日隧道、ChatGPT | 2x, server: 14.29.170.206, port: 25246, type: trojan, password: dOA5KykUb6, skip-cert-verify: true, udp: true}
+  - {name: _AWS 2, server: no.aries.ovh, port: 8080, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: awsusa.cloudflare.quest}, udp: true}
+  - {name: _Scaleway 2, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: france.cloudflare.quest}, udp: true}
+  - {name: _OVH-NAT, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: uk.cloudflare.quest}, udp: true}
+  - {name: _Scaleway 3, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: netherlands.cloudflare.quest}, udp: true}
+  - {name: _Scaleway-WARP 2, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: scw.cloudflare.quest}, udp: true}
+  - {name: 五叶节点分享 http://t.me/hkaa0_1, server: 172.64.132.83, port: 2095, type: vmess, uuid: d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TG:@hkaa0, ws-headers: {Host: lin.d.sg.wyhkaa0.gq}, udp: true}
+  - {name: _OVH-WARP, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: ovh.cloudflare.quest}, udp: true}
+  - {name: _Scaleway, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: waw.cloudflare.quest}, udp: true}
+  - {name: _CONTABO, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: contabo.cloudflare.quest}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印尼 B59B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 泰国 B49 | 广港AWS、ChatGPT | 2x
-      - 美国 G29A | 深美电信、ChatGPT | 3x
-      - 德国 B16B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G22B | 广港AWS、ChatGPT | 3x
-      - 乌克兰 B11B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 印尼 B59 | 沪美电信、ChatGPT | 2x
-      - 泰国 B49A | 沪美电信、ChatGPT | 2x
-      - 台湾 W43B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G29B | 广港AWS、ChatGPT | 3x
-      - 俄罗斯 B75B | 广港AWS、闲时可见 | 2x
-      - 美国 G22A | 深美电信、ChatGPT | 3x
-      - 德国 B16A | 沪美电信、ChatGPT | 2x
-      - 俄罗斯 B75A | 沪美电信 | 2x
-      - 乌克兰 B11A | 沪日隧道、ChatGPT | 2x
+      - _AWS 2
+      - _Scaleway 2
+      - _OVH-NAT
+      - _Scaleway 3
+      - _Scaleway-WARP 2
+      - 五叶节点分享 http://t.me/hkaa0_1
+      - _OVH-WARP
+      - _Scaleway
+      - _CONTABO
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 印尼 B59B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 泰国 B49 | 广港AWS、ChatGPT | 2x
-      - 美国 G29A | 深美电信、ChatGPT | 3x
-      - 德国 B16B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G22B | 广港AWS、ChatGPT | 3x
-      - 乌克兰 B11B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 印尼 B59 | 沪美电信、ChatGPT | 2x
-      - 泰国 B49A | 沪美电信、ChatGPT | 2x
-      - 台湾 W43B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G29B | 广港AWS、ChatGPT | 3x
-      - 俄罗斯 B75B | 广港AWS、闲时可见 | 2x
-      - 美国 G22A | 深美电信、ChatGPT | 3x
-      - 德国 B16A | 沪美电信、ChatGPT | 2x
-      - 俄罗斯 B75A | 沪美电信 | 2x
-      - 乌克兰 B11A | 沪日隧道、ChatGPT | 2x
+      - _AWS 2
+      - _Scaleway 2
+      - _OVH-NAT
+      - _Scaleway 3
+      - _Scaleway-WARP 2
+      - 五叶节点分享 http://t.me/hkaa0_1
+      - _OVH-WARP
+      - _Scaleway
+      - _CONTABO
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印尼 B59B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 泰国 B49 | 广港AWS、ChatGPT | 2x
-      - 美国 G29A | 深美电信、ChatGPT | 3x
-      - 德国 B16B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G22B | 广港AWS、ChatGPT | 3x
-      - 乌克兰 B11B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 印尼 B59 | 沪美电信、ChatGPT | 2x
-      - 泰国 B49A | 沪美电信、ChatGPT | 2x
-      - 台湾 W43B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G29B | 广港AWS、ChatGPT | 3x
-      - 俄罗斯 B75B | 广港AWS、闲时可见 | 2x
-      - 美国 G22A | 深美电信、ChatGPT | 3x
-      - 德国 B16A | 沪美电信、ChatGPT | 2x
-      - 俄罗斯 B75A | 沪美电信 | 2x
-      - 乌克兰 B11A | 沪日隧道、ChatGPT | 2x
+      - _AWS 2
+      - _Scaleway 2
+      - _OVH-NAT
+      - _Scaleway 3
+      - _Scaleway-WARP 2
+      - 五叶节点分享 http://t.me/hkaa0_1
+      - _OVH-WARP
+      - _Scaleway
+      - _CONTABO
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -100,95 +76,64 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印尼 B59B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 泰国 B49 | 广港AWS、ChatGPT | 2x
-      - 美国 G29A | 深美电信、ChatGPT | 3x
-      - 德国 B16B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G22B | 广港AWS、ChatGPT | 3x
-      - 乌克兰 B11B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 印尼 B59 | 沪美电信、ChatGPT | 2x
-      - 泰国 B49A | 沪美电信、ChatGPT | 2x
-      - 台湾 W43B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G29B | 广港AWS、ChatGPT | 3x
-      - 俄罗斯 B75B | 广港AWS、闲时可见 | 2x
-      - 美国 G22A | 深美电信、ChatGPT | 3x
-      - 德国 B16A | 沪美电信、ChatGPT | 2x
-      - 俄罗斯 B75A | 沪美电信 | 2x
-      - 乌克兰 B11A | 沪日隧道、ChatGPT | 2x
+      - _AWS 2
+      - _Scaleway 2
+      - _OVH-NAT
+      - _Scaleway 3
+      - _Scaleway-WARP 2
+      - 五叶节点分享 http://t.me/hkaa0_1
+      - _OVH-WARP
+      - _Scaleway
+      - _CONTABO
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 印尼 B59B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 泰国 B49 | 广港AWS、ChatGPT | 2x
-      - 德国 B16B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G22B | 广港AWS、ChatGPT | 3x
-      - 乌克兰 B11B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 台湾 W43B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G29B | 广港AWS、ChatGPT | 3x
-      - 俄罗斯 B75B | 广港AWS、闲时可见 | 2x
+      - 五叶节点分享 http://t.me/hkaa0_1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 印尼 B59B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 泰国 B49 | 广港AWS、ChatGPT | 2x
-      - 美国 G29A | 深美电信、ChatGPT | 3x
-      - 德国 B16B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G22B | 广港AWS、ChatGPT | 3x
-      - 乌克兰 B11B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 印尼 B59 | 沪美电信、ChatGPT | 2x
-      - 泰国 B49A | 沪美电信、ChatGPT | 2x
-      - 台湾 W43B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G29B | 广港AWS、ChatGPT | 3x
-      - 俄罗斯 B75B | 广港AWS、闲时可见 | 2x
-      - 美国 G22A | 深美电信、ChatGPT | 3x
-      - 德国 B16A | 沪美电信、ChatGPT | 2x
-      - 俄罗斯 B75A | 沪美电信 | 2x
-      - 乌克兰 B11A | 沪日隧道、ChatGPT | 2x
+      - _AWS 2
+      - _Scaleway 2
+      - _OVH-NAT
+      - _Scaleway 3
+      - _Scaleway-WARP 2
+      - 五叶节点分享 http://t.me/hkaa0_1
+      - _OVH-WARP
+      - _Scaleway
+      - _CONTABO
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 印尼 B59B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 泰国 B49 | 广港AWS、ChatGPT | 2x
-      - 美国 G29A | 深美电信、ChatGPT | 3x
-      - 德国 B16B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G22B | 广港AWS、ChatGPT | 3x
-      - 乌克兰 B11B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 印尼 B59 | 沪美电信、ChatGPT | 2x
-      - 泰国 B49A | 沪美电信、ChatGPT | 2x
-      - 台湾 W43B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G29B | 广港AWS、ChatGPT | 3x
-      - 俄罗斯 B75B | 广港AWS、闲时可见 | 2x
-      - 美国 G22A | 深美电信、ChatGPT | 3x
-      - 德国 B16A | 沪美电信、ChatGPT | 2x
-      - 俄罗斯 B75A | 沪美电信 | 2x
-      - 乌克兰 B11A | 沪日隧道、ChatGPT | 2x
+      - _AWS 2
+      - _Scaleway 2
+      - _OVH-NAT
+      - _Scaleway 3
+      - _Scaleway-WARP 2
+      - 五叶节点分享 http://t.me/hkaa0_1
+      - _OVH-WARP
+      - _Scaleway
+      - _CONTABO
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 印尼 B59B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 泰国 B49 | 广港AWS、ChatGPT | 2x
-      - 美国 G29A | 深美电信、ChatGPT | 3x
-      - 德国 B16B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G22B | 广港AWS、ChatGPT | 3x
-      - 乌克兰 B11B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 印尼 B59 | 沪美电信、ChatGPT | 2x
-      - 泰国 B49A | 沪美电信、ChatGPT | 2x
-      - 台湾 W43B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G29B | 广港AWS、ChatGPT | 3x
-      - 俄罗斯 B75B | 广港AWS、闲时可见 | 2x
-      - 美国 G22A | 深美电信、ChatGPT | 3x
-      - 德国 B16A | 沪美电信、ChatGPT | 2x
-      - 俄罗斯 B75A | 沪美电信 | 2x
-      - 乌克兰 B11A | 沪日隧道、ChatGPT | 2x
+      - _AWS 2
+      - _Scaleway 2
+      - _OVH-NAT
+      - _Scaleway 3
+      - _Scaleway-WARP 2
+      - 五叶节点分享 http://t.me/hkaa0_1
+      - _OVH-WARP
+      - _Scaleway
+      - _CONTABO
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -204,21 +149,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 印尼 B59B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 泰国 B49 | 广港AWS、ChatGPT | 2x
-      - 美国 G29A | 深美电信、ChatGPT | 3x
-      - 德国 B16B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G22B | 广港AWS、ChatGPT | 3x
-      - 乌克兰 B11B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 印尼 B59 | 沪美电信、ChatGPT | 2x
-      - 泰国 B49A | 沪美电信、ChatGPT | 2x
-      - 台湾 W43B | 广港AWS、ChatGPT、闲时可见 | 2x
-      - 美国 G29B | 广港AWS、ChatGPT | 3x
-      - 俄罗斯 B75B | 广港AWS、闲时可见 | 2x
-      - 美国 G22A | 深美电信、ChatGPT | 3x
-      - 德国 B16A | 沪美电信、ChatGPT | 2x
-      - 俄罗斯 B75A | 沪美电信 | 2x
-      - 乌克兰 B11A | 沪日隧道、ChatGPT | 2x
+      - _AWS 2
+      - _Scaleway 2
+      - _OVH-NAT
+      - _Scaleway 3
+      - _Scaleway-WARP 2
+      - 五叶节点分享 http://t.me/hkaa0_1
+      - _OVH-WARP
+      - _Scaleway
+      - _CONTABO
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
