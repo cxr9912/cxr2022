@@ -5,39 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Japan(ChatGPT) 02 TG:@nodpai, server: tls.tls.tlz.lol, port: 7899, type: trojan, password: HtpRxtMEnm, sni: tls.tls.tlz.lol, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇯🇵 Japan 11 TG:@nodpai, server: 223.111.129.6, port: 54829, type: trojan, password: 74341a38-c634-492e-9385-50eb01dd59e4, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai, server: 17.kccic2pa.xyz, port: 50017, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Australia(ChatGPT) 01 TG:@nodpai, server: vmshk.unbounded.tk, port: 26671, type: trojan, password: 6nVzl-mgck26FqvBByHLF5lsCpRkvGDrhDpz3NkbGkizyH7O, sni: vmshk.unbounded.tk, skip-cert-verify: true, udp: true}
+  - {name: 香港 03 | 专线, server: hk3.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 08f73e30-93d4-4e96-97eb-78e78b39c006, sni: hk3.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 01 | 专线, server: sg1.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 08f73e30-93d4-4e96-97eb-78e78b39c006, sni: sg1.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 06 | 专线, server: hk6.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 08f73e30-93d4-4e96-97eb-78e78b39c006, sni: hk6.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 03 | 专线, server: sg3.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 08f73e30-93d4-4e96-97eb-78e78b39c006, sni: sg3.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 04 | 专线, server: sg4.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 08f73e30-93d4-4e96-97eb-78e78b39c006, sni: sg4.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 美国 02 | 专线, server: us2.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 08f73e30-93d4-4e96-97eb-78e78b39c006, sni: us2.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 美国 03 | 专线, server: us3.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 08f73e30-93d4-4e96-97eb-78e78b39c006, sni: us3.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 美国 04 | 专线, server: us4.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 08f73e30-93d4-4e96-97eb-78e78b39c006, sni: us4.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - Australia(ChatGPT) 01 TG:@nodpai
+      - 香港 03 | 专线
+      - 新加坡 01 | 专线
+      - 香港 06 | 专线
+      - 新加坡 03 | 专线
+      - 新加坡 04 | 专线
+      - 美国 02 | 专线
+      - 美国 03 | 专线
+      - 美国 04 | 专线
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Japan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - Australia(ChatGPT) 01 TG:@nodpai
+      - 香港 03 | 专线
+      - 新加坡 01 | 专线
+      - 香港 06 | 专线
+      - 新加坡 03 | 专线
+      - 新加坡 04 | 专线
+      - 美国 02 | 专线
+      - 美国 03 | 专线
+      - 美国 04 | 专线
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - Australia(ChatGPT) 01 TG:@nodpai
+      - 香港 03 | 专线
+      - 新加坡 01 | 专线
+      - 香港 06 | 专线
+      - 新加坡 03 | 专线
+      - 新加坡 04 | 专线
+      - 美国 02 | 专线
+      - 美国 03 | 专线
+      - 美国 04 | 专线
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,43 +72,61 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - Australia(ChatGPT) 01 TG:@nodpai
+      - 香港 03 | 专线
+      - 新加坡 01 | 专线
+      - 香港 06 | 专线
+      - 新加坡 03 | 专线
+      - 新加坡 04 | 专线
+      - 美国 02 | 专线
+      - 美国 03 | 专线
+      - 美国 04 | 专线
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 03 | 专线
+      - 香港 06 | 专线
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Japan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - Australia(ChatGPT) 01 TG:@nodpai
+      - 香港 03 | 专线
+      - 新加坡 01 | 专线
+      - 香港 06 | 专线
+      - 新加坡 03 | 专线
+      - 新加坡 04 | 专线
+      - 美国 02 | 专线
+      - 美国 03 | 专线
+      - 美国 04 | 专线
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Japan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - Australia(ChatGPT) 01 TG:@nodpai
+      - 香港 03 | 专线
+      - 新加坡 01 | 专线
+      - 香港 06 | 专线
+      - 新加坡 03 | 专线
+      - 新加坡 04 | 专线
+      - 美国 02 | 专线
+      - 美国 03 | 专线
+      - 美国 04 | 专线
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Japan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - Australia(ChatGPT) 01 TG:@nodpai
+      - 香港 03 | 专线
+      - 新加坡 01 | 专线
+      - 香港 06 | 专线
+      - 新加坡 03 | 专线
+      - 新加坡 04 | 专线
+      - 美国 02 | 专线
+      - 美国 03 | 专线
+      - 美国 04 | 专线
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +142,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Japan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇯🇵 Japan 11 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - Australia(ChatGPT) 01 TG:@nodpai
+      - 香港 03 | 专线
+      - 新加坡 01 | 专线
+      - 香港 06 | 专线
+      - 新加坡 03 | 专线
+      - 新加坡 04 | 专线
+      - 美国 02 | 专线
+      - 美国 03 | 专线
+      - 美国 04 | 专线
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
