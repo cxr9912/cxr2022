@@ -5,35 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 首尔a2 | 5x倍率 | 流媒体 |, server: sra2.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6bbt.tk, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 美国a9, server: mga9.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6bbt.tk, ws-headers: {Host: 6bbt.tk}, udp: true}
-  - {name: 加拿大a3, server: jnda3.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6bbt.tk, ws-headers: {Host: 6bbt.tk}, udp: true}
+  - {name: V4-3642|香港|x1.5, server: ssyj.cdn.node.a.tddns-ounk.com, port: 13642, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3448|香港|x1.5, server: ssyj.cdn.node.a.tddns-ounk.com, port: 13448, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3617|香港|x4.0, server: ahq9.cdn.node.a.tddns-ounk.com, port: 13617, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4f0b20139350376867c2f59f.v1.live.m3u8, ws-headers: {Host: ahq9.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3488|香港|x1.5, server: ssyj.cdn.node.a.tddns-ounk.com, port: 13488, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3680|香港|x1.2, server: z5sa6is.cdn.node.a.tddns-ounk.com, port: 13680, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3019|香港|x4.0, server: ahq9.cdn.node.a.tddns-ounk.com, port: 13019, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /5534757c8f76f4deb8e17d1b.v1.live.m3u8, ws-headers: {Host: ahq9.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3616|香港|x4.0, server: ahq9.cdn.node.a.tddns-ounk.com, port: 13616, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3301|台湾|x1.0, server: mjk6.cdn.node.a.tddns-ounk.com, port: 13301, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-941|香港|x4.0, server: ahq9.cdn.node.a.tddns-ounk.com, port: 10941, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 首尔a2 | 5x倍率 | 流媒体 |
-      - 美国a9
-      - 加拿大a3
+      - V4-3642|香港|x1.5
+      - V4-3448|香港|x1.5
+      - V1-3617|香港|x4.0
+      - V4-3488|香港|x1.5
+      - V2-3680|香港|x1.2
+      - V1-3019|香港|x4.0
+      - V1-3616|香港|x4.0
+      - V4-3301|台湾|x1.0
+      - V1-941|香港|x4.0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 首尔a2 | 5x倍率 | 流媒体 |
-      - 美国a9
-      - 加拿大a3
+      - V4-3642|香港|x1.5
+      - V4-3448|香港|x1.5
+      - V1-3617|香港|x4.0
+      - V4-3488|香港|x1.5
+      - V2-3680|香港|x1.2
+      - V1-3019|香港|x4.0
+      - V1-3616|香港|x4.0
+      - V4-3301|台湾|x1.0
+      - V1-941|香港|x4.0
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 首尔a2 | 5x倍率 | 流媒体 |
-      - 美国a9
-      - 加拿大a3
+      - V4-3642|香港|x1.5
+      - V4-3448|香港|x1.5
+      - V1-3617|香港|x4.0
+      - V4-3488|香港|x1.5
+      - V2-3680|香港|x1.2
+      - V1-3019|香港|x4.0
+      - V1-3616|香港|x4.0
+      - V4-3301|台湾|x1.0
+      - V1-941|香港|x4.0
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,39 +76,72 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 首尔a2 | 5x倍率 | 流媒体 |
-      - 美国a9
-      - 加拿大a3
+      - V4-3642|香港|x1.5
+      - V4-3448|香港|x1.5
+      - V1-3617|香港|x4.0
+      - V4-3488|香港|x1.5
+      - V2-3680|香港|x1.2
+      - V1-3019|香港|x4.0
+      - V1-3616|香港|x4.0
+      - V4-3301|台湾|x1.0
+      - V1-941|香港|x4.0
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - V4-3642|香港|x1.5
+      - V4-3448|香港|x1.5
+      - V1-3617|香港|x4.0
+      - V4-3488|香港|x1.5
+      - V2-3680|香港|x1.2
+      - V1-3019|香港|x4.0
+      - V1-3616|香港|x4.0
+      - V4-3301|台湾|x1.0
+      - V1-941|香港|x4.0
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 首尔a2 | 5x倍率 | 流媒体 |
-      - 美国a9
-      - 加拿大a3
+      - V4-3642|香港|x1.5
+      - V4-3448|香港|x1.5
+      - V1-3617|香港|x4.0
+      - V4-3488|香港|x1.5
+      - V2-3680|香港|x1.2
+      - V1-3019|香港|x4.0
+      - V1-3616|香港|x4.0
+      - V4-3301|台湾|x1.0
+      - V1-941|香港|x4.0
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 首尔a2 | 5x倍率 | 流媒体 |
-      - 美国a9
-      - 加拿大a3
+      - V4-3642|香港|x1.5
+      - V4-3448|香港|x1.5
+      - V1-3617|香港|x4.0
+      - V4-3488|香港|x1.5
+      - V2-3680|香港|x1.2
+      - V1-3019|香港|x4.0
+      - V1-3616|香港|x4.0
+      - V4-3301|台湾|x1.0
+      - V1-941|香港|x4.0
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 首尔a2 | 5x倍率 | 流媒体 |
-      - 美国a9
-      - 加拿大a3
+      - V4-3642|香港|x1.5
+      - V4-3448|香港|x1.5
+      - V1-3617|香港|x4.0
+      - V4-3488|香港|x1.5
+      - V2-3680|香港|x1.2
+      - V1-3019|香港|x4.0
+      - V1-3616|香港|x4.0
+      - V4-3301|台湾|x1.0
+      - V1-941|香港|x4.0
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +157,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 首尔a2 | 5x倍率 | 流媒体 |
-      - 美国a9
-      - 加拿大a3
+      - V4-3642|香港|x1.5
+      - V4-3448|香港|x1.5
+      - V1-3617|香港|x4.0
+      - V4-3488|香港|x1.5
+      - V2-3680|香港|x1.2
+      - V1-3019|香港|x4.0
+      - V1-3616|香港|x4.0
+      - V4-3301|台湾|x1.0
+      - V1-941|香港|x4.0
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
