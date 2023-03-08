@@ -5,59 +5,635 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 亚洲 | 香港C, server: a-ct1.jsmmm.cyou, port: 39121, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 台湾D, server: a-ct1.jsmmm.cyou, port: 39222, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 新加坡C, server: a-ct1.jsmmm.cyou, port: 39421, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 台湾C, server: a-ct1.jsmmm.cyou, port: 39221, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲 | 俄罗斯, server: a-cm1.jsmmm.cyou, port: 39913, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 新加坡B, server: a-cm1.jsmmm.cyou, port: 39412, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 新加坡D, server: a-ct1.jsmmm.cyou, port: 39422, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 荷兰Eygelshoven | BT下载-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 3855b736-bf24-461f-b5b9-1d3f04484b37, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/nl3?ed=2048", ws-headers: {Host: nl3.yfjc.sbs}, udp: true}
-  - {name: 测试1, server: 172.66.45.122, port: 2053, type: vmess, uuid: 07043b94-3bdd-4481-ad5b-6b5b4c3bd533, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /10027, ws-headers: {Host: b.mgys.tk}, udp: true}
+  - {name: V3-3576|新加坡|x2.0, server: eqwr51.cdn.node.a.tddns-ounk.com, port: 13576, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3351|新加坡|x2.5, server: r97q.cdn.node.a.tddns-ounk.com, port: 13351, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3352|新加坡|x2.5, server: eqwr51.cdn.node.a.tddns-ounk.com, port: 13352, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3424|新加坡|x4.0, server: vvs1.cdn.node.a.tddns-ounk.com, port: 13424, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3456|新加坡|x4.0, server: vvs1.cdn.node.a.tddns-ounk.com, port: 13456, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: vvs1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3364|新加坡|x2.5, server: r97q.cdn.node.a.tddns-ounk.com, port: 13364, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V2-3509|香港|x2.0, server: x321.cdn.node.a.tddns-ounk.com, port: 13509, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: x321.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3562|新加坡|x2.0, server: aawdsc.cdn.node.a.tddns-ounk.com, port: 13562, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3445|香港|x1.5, server: x321.cdn.node.a.tddns-ounk.com, port: 13445, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3529|新加坡|x2.0, server: wegm63.cdn.node.a.tddns-ounk.com, port: 13529, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: wegm63.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3559|新加坡|x2.0, server: aawdsc.cdn.node.a.tddns-ounk.com, port: 13559, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: aawdsc.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3432|新加坡|x4.0, server: vvs1.cdn.node.a.tddns-ounk.com, port: 13432, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3191|香港|x2.0, server: x321.cdn.node.a.tddns-ounk.com, port: 13191, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3357|新加坡|x2.5, server: eqwr51.cdn.node.a.tddns-ounk.com, port: 13357, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3200|香港|x2.0, server: x321.cdn.node.a.tddns-ounk.com, port: 13200, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4f0b20139350376867c2f59f.v1.live.m3u8, ws-headers: {Host: x321.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3360|新加坡|x2.5, server: r97q.cdn.node.a.tddns-ounk.com, port: 13360, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3458|新加坡|x4.0, server: vvs1.cdn.node.a.tddns-ounk.com, port: 13458, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: vvs1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3427|新加坡|x4.0, server: vvs1.cdn.node.a.tddns-ounk.com, port: 13427, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: vvs1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3361|新加坡|x2.5, server: r97q.cdn.node.a.tddns-ounk.com, port: 13361, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3425|新加坡|x4.0, server: vvs1.cdn.node.a.tddns-ounk.com, port: 13425, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3575|新加坡|x2.0, server: aawdsc.cdn.node.a.tddns-ounk.com, port: 13575, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: aawdsc.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3355|新加坡|x2.5, server: eqwr51.cdn.node.a.tddns-ounk.com, port: 13355, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3431|新加坡|x4.0, server: vvs1.cdn.node.a.tddns-ounk.com, port: 13431, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3457|新加坡|x4.0, server: vvs1.cdn.node.a.tddns-ounk.com, port: 13457, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: vvs1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3577|-新加坡|x2.0, server: r97q.cdn.node.a.tddns-ounk.com, port: 13577, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: r97q.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3455|新加坡|x4.0, server: vvs1.cdn.node.a.tddns-ounk.com, port: 13455, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: vvs1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3310|台湾|x2.5, server: mjk6.cdn.node.a.tddns-ounk.com, port: 13310, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: mjk6.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3367|新加坡|x2.5, server: r97q.cdn.node.a.tddns-ounk.com, port: 13367, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3563|新加坡|x2.0, server: aawdsc.cdn.node.a.tddns-ounk.com, port: 13563, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: aawdsc.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3426|新加坡|x4.0, server: vvs1.cdn.node.a.tddns-ounk.com, port: 13426, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: vvs1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3573|新加坡|x2.0, server: r97q.cdn.node.a.tddns-ounk.com, port: 13573, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: r97q.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3302|台湾|x1.0, server: mjk6.cdn.node.a.tddns-ounk.com, port: 13302, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3682|香港|x1.2, server: z5is.cdn.node.a.tddns-ounk.com, port: 13682, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-2916|新加坡|x2.5, server: aawdsc.cdn.node.a.tddns-ounk.com, port: 12916, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3494|日本NFx2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13494, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3691|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13691, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3350|新加坡|x2.5, server: eqwr51.cdn.node.a.tddns-ounk.com, port: 13350, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3528|新加坡|x2.0, server: wegm63.cdn.node.a.tddns-ounk.com, port: 13528, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3428|新加坡|x4.0, server: vvs1.cdn.node.a.tddns-ounk.com, port: 13428, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3512|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13512, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3184|香港|x1.5, server: z5is.cdn.node.a.tddns-ounk.com, port: 13184, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3429|新加坡|x4.0, server: vvs1.cdn.node.a.tddns-ounk.com, port: 13429, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3704|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13704, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3696|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13696, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3694|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13694, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3303|台湾|x1.0, server: mjk6.cdn.node.a.tddns-ounk.com, port: 13303, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3290|香港|x4.0, server: ahq9.cdn.node.a.tddns-ounk.com, port: 13290, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: ahq9.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3221|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13221, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3497|日本NFx2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13497, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3703|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13703, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V2-3206|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13206, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3234|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13234, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3260|香港x1.2, server: bbq886.cdn.node.a.tddns-ounk.com, port: 13260, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3454|新加坡|x4.0, server: vvs1.cdn.node.a.tddns-ounk.com, port: 13454, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: vvs1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V2-3229|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13229, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3681|香港|x1.2, server: z5sa6is.cdn.node.a.tddns-ounk.com, port: 13681, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-889|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 10889, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3697|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13697, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3695|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13695, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3525|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13525, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3317|台湾|x1.5, server: lld9k6.cdn.node.a.tddns-ounk.com, port: 13317, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3339|台湾|x4.0, server: fpxs9.cdn.node.a.tddns-ounk.com, port: 13339, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /9974f731e8cb457b17143895.v1.live.m3u8, ws-headers: {Host: fpxs9.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3321|台湾|x1.5, server: lld9k6.cdn.node.a.tddns-ounk.com, port: 13321, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: lld9k6.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3279|香港|x4.0, server: ahq9.cdn.node.a.tddns-ounk.com, port: 13279, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3223|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13223, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3511|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13511, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3225|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13225, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3313|台湾|x2.0, server: mjk6.cdn.node.a.tddns-ounk.com, port: 13313, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: mjk6.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3698|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13698, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3668|香港|x1.5, server: ssyj.cdn.node.a.tddns-ounk.com, port: 13668, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: ssyj.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V2-3713|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13713, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3701|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13701, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3699|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13699, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3508|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13508, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3702|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13702, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3224|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13224, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3329|香港|x4.0, server: ahq9.cdn.node.a.tddns-ounk.com, port: 13329, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4f0b20139350376867c2f59f.v1.live.m3u8, ws-headers: {Host: ahq9.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3226|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13226, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3233|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13233, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3451|日本NFx2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13451, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3325|香港|x4.0, server: ahq9.cdn.node.a.tddns-ounk.com, port: 13325, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3227|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13227, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3262|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13262, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3523|香港|x2.0, server: aaf8.cdn.node.a.tddns-ounk.com, port: 13523, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3270|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13270, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3318|台湾|x1.5, server: lld9k6.cdn.node.a.tddns-ounk.com, port: 13318, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3526|台湾|x2.0, server: dr64.cdn.node.a.tddns-ounk.com, port: 13526, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3263|香港|x2.0, server: aaf8.cdn.node.a.tddns-ounk.com, port: 13263, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3387|台湾|x2.0, server: dr64.cdn.node.a.tddns-ounk.com, port: 13387, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3477|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13477, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: xrbsy1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3594|日本|x1.5, server: q8eq.cdn.node.a.tddns-ounk.com, port: 13594, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3631|台湾|x1.5, server: dr64.cdn.node.a.tddns-ounk.com, port: 13631, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3615|日本|x1.5, server: q8eq.cdn.node.a.tddns-ounk.com, port: 13615, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3305|台湾|x1.0, server: mjk6.cdn.node.a.tddns-ounk.com, port: 13305, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3309|台湾|x2.0, server: mjk6.cdn.node.a.tddns-ounk.com, port: 13309, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: mjk6.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3612|日本|x1.5, server: q8eq.cdn.node.a.tddns-ounk.com, port: 13612, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3074|日本|x1.5, server: q8eq.cdn.node.a.tddns-ounk.com, port: 13074, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3602|日本|x0.6, server: q8eq.cdn.node.a.tddns-ounk.com, port: 13602, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: q8eq.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3337|台湾|x4.0, server: fpxs9.cdn.node.a.tddns-ounk.com, port: 13337, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3592|日本|x1.5, server: q8eq.cdn.node.a.tddns-ounk.com, port: 13592, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-2999|日本|x1.0, server: q8eq.cdn.node.a.tddns-ounk.com, port: 12999, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: q8eq.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3020|日本NF|x2.0, server: xrbsy1.cdn.node.a.tddns-ounk.com, port: 13020, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V1-3338|台湾|x4.0, server: fpxs9.cdn.node.a.tddns-ounk.com, port: 13338, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /9974f731e8cb457b17143895.v1.live.m3u8, ws-headers: {Host: fpxs9.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V2-3610|日本|x1.5, server: q8eq.cdn.node.a.tddns-ounk.com, port: 13610, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3340|香港|x2.0, server: cd69.cdn.node.a.tddns-ounk.com, port: 13340, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3490|香港|x1.0, server: cd69.cdn.node.a.tddns-ounk.com, port: 13490, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3343|香港|x2.0, server: cd69.cdn.node.a.tddns-ounk.com, port: 13343, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: cd69.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3639|香港|x1.5, server: cd69.cdn.node.a.tddns-ounk.com, port: 13639, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3666|香港|x1.5, server: cd69.cdn.node.a.tddns-ounk.com, port: 13666, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3503|香港|x1.5, server: cd69.cdn.node.a.tddns-ounk.com, port: 13503, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3489|香港|x1.5, server: cd69.cdn.node.a.tddns-ounk.com, port: 13489, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3316|台湾|x1.5, server: lld9k6.cdn.node.a.tddns-ounk.com, port: 13316, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3601|日本|x1.5, server: q8eq.cdn.node.a.tddns-ounk.com, port: 13601, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3647|美国|x4.0, server: hfa1.cdn.node.a.tddns-ounk.com, port: 13647, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /9974f731e8cb457b17143895.v1.live.m3u8, ws-headers: {Host: hfa1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3504|香港|x1.0, server: cd69.cdn.node.a.tddns-ounk.com, port: 13504, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: cd69.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3542|香港|x2.0, server: cd69.cdn.node.a.tddns-ounk.com, port: 13542, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3640|香港|x1.5, server: cd69.cdn.node.a.tddns-ounk.com, port: 13640, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3663|美国|x2.5, server: bb29cs.cdn.node.a.tddns-ounk.com, port: 13663, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V2-3654|美国|x1.5, server: bb29cs.cdn.node.a.tddns-ounk.com, port: 13654, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3336|台湾|x4.0, server: fpxs9.cdn.node.a.tddns-ounk.com, port: 13336, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3655|美国|x1.5, server: bb29cs.cdn.node.a.tddns-ounk.com, port: 13655, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V2-3628|美国|x1.5, server: bb29cs.cdn.node.a.tddns-ounk.com, port: 13628, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3299|台湾|x1.0, server: mjk6.cdn.node.a.tddns-ounk.com, port: 13299, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3656|美国|x1.5, server: bb29cs.cdn.node.a.tddns-ounk.com, port: 13656, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V4-3541香港|x2.0, server: cd69.cdn.node.a.tddns-ounk.com, port: 13541, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3590|日本|x1.5, server: q8eq.cdn.node.a.tddns-ounk.com, port: 13590, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3645|香港|x1.5, server: cd69.cdn.node.a.tddns-ounk.com, port: 13645, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3638|美国|x2.5, server: bb29cs.cdn.node.a.tddns-ounk.com, port: 13638, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3637|美国|x2.5, server: bb29cs.cdn.node.a.tddns-ounk.com, port: 13637, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3664|美国|x2.5, server: bb29cs.cdn.node.a.tddns-ounk.com, port: 13664, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V2-3611|日本|x1.5, server: q8eq.cdn.node.a.tddns-ounk.com, port: 13611, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V2-3630|美国|x1.5, server: bb29cs.cdn.node.a.tddns-ounk.com, port: 13630, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3613|日本|x1.5|, server: q8eq.cdn.node.a.tddns-ounk.com, port: 13613, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3665|香港|x1.5, server: cd69.cdn.node.a.tddns-ounk.com, port: 13665, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3636|美国|x2.5, server: bb29cs.cdn.node.a.tddns-ounk.com, port: 13636, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3379|新加坡|x1.5, server: qgd6.cdn.node.a.tddns-ounk.com, port: 13379, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-2958|日本|x1.5, server: q8eq.cdn.node.a.tddns-ounk.com, port: 12958, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3372|新加坡|x1.5, server: gf6s.cdn.node.a.tddns-ounk.com, port: 13372, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3377|新加坡|x1.5, server: qgd6.cdn.node.a.tddns-ounk.com, port: 13377, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3373|新加坡|x1.5, server: gf6s.cdn.node.a.tddns-ounk.com, port: 13373, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3374|新加坡|x1.5, server: gf6s.cdn.node.a.tddns-ounk.com, port: 13374, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3671|香港|x1.5, server: cd69.cdn.node.a.tddns-ounk.com, port: 13671, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3370|新加坡|x1.5, server: gf6s.cdn.node.a.tddns-ounk.com, port: 13370, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3376|新加坡|x1.5, server: qgd6.cdn.node.a.tddns-ounk.com, port: 13376, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3450|香港x2.0, server: cd69.cdn.node.a.tddns-ounk.com, port: 13450, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3375|新加坡|x1.5, server: qgd6.cdn.node.a.tddns-ounk.com, port: 13375, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3597|日本|x1.5, server: q8eq.cdn.node.a.tddns-ounk.com, port: 13597, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-3371|新加坡|x1.5, server: gf6s.cdn.node.a.tddns-ounk.com, port: 13371, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V3-3476|香港|x2.0, server: cd69.cdn.node.a.tddns-ounk.com, port: 13476, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3646|美国|x4.0, server: hfa1.cdn.node.a.tddns-ounk.com, port: 13646, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /9974f731e8cb457b17143895.v1.live.m3u8, ws-headers: {Host: hfa1.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V1-3002|日本|x4.0, server: zdf1.cdn.node.a.tddns-ounk.com, port: 13002, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
+  - {name: V4-3531|香港|x2.0, server: cd69.cdn.node.a.tddns-ounk.com, port: 13531, type: vmess, uuid: 793070f9-cad7-3c50-9d0b-2beba59513ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: V3-2956|日本|x1.5, server: q8eq.cdn.node.a.tddns-ounk.com, port: 12956, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 343191:qfHQgm, obfs-param: 3fc3e343191.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚洲 | 香港C
-      - 亚洲 | 台湾D
-      - 亚洲 | 新加坡C
-      - 亚洲 | 台湾C
-      - 欧洲 | 俄罗斯
-      - 亚洲 | 新加坡B
-      - 亚洲 | 新加坡D
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 测试1
+      - V3-3576|新加坡|x2.0
+      - V4-3351|新加坡|x2.5
+      - V4-3352|新加坡|x2.5
+      - V1-3424|新加坡|x4.0
+      - V1-3456|新加坡|x4.0
+      - V4-3364|新加坡|x2.5
+      - V2-3509|香港|x2.0
+      - V4-3562|新加坡|x2.0
+      - V2-3445|香港|x1.5
+      - V2-3529|新加坡|x2.0
+      - V4-3559|新加坡|x2.0
+      - V1-3432|新加坡|x4.0
+      - V1-3191|香港|x2.0
+      - V4-3357|新加坡|x2.5
+      - V1-3200|香港|x2.0
+      - V4-3360|新加坡|x2.5
+      - V1-3458|新加坡|x4.0
+      - V1-3427|新加坡|x4.0
+      - V4-3361|新加坡|x2.5
+      - V1-3425|新加坡|x4.0
+      - V3-3575|新加坡|x2.0
+      - V4-3355|新加坡|x2.5
+      - V1-3431|新加坡|x4.0
+      - V1-3457|新加坡|x4.0
+      - V3-3577|-新加坡|x2.0
+      - V1-3455|新加坡|x4.0
+      - V4-3310|台湾|x2.5
+      - V4-3367|新加坡|x2.5
+      - V4-3563|新加坡|x2.0
+      - V1-3426|新加坡|x4.0
+      - V3-3573|新加坡|x2.0
+      - V4-3302|台湾|x1.0
+      - V2-3682|香港|x1.2
+      - V4-2916|新加坡|x2.5
+      - V4-3494|日本NFx2.0
+      - V2-3691|日本NF|x2.0
+      - V4-3350|新加坡|x2.5
+      - V2-3528|新加坡|x2.0
+      - V1-3428|新加坡|x4.0
+      - V4-3512|日本NF|x2.0
+      - V3-3184|香港|x1.5
+      - V1-3429|新加坡|x4.0
+      - V2-3704|日本NF|x2.0
+      - V3-3696|日本NF|x2.0
+      - V1-3694|日本NF|x2.0
+      - V4-3303|台湾|x1.0
+      - V1-3290|香港|x4.0
+      - V3-3221|日本NF|x2.0
+      - V4-3497|日本NFx2.0
+      - V2-3703|日本NF|x2.0
+      - V2-3206|日本NF|x2.0
+      - V2-3234|日本NF|x2.0
+      - V2-3260|香港x1.2
+      - V1-3454|新加坡|x4.0
+      - V2-3229|日本NF|x2.0
+      - V2-3681|香港|x1.2
+      - V2-889|日本NF|x2.0
+      - V3-3697|日本NF|x2.0
+      - V1-3695|日本NF|x2.0
+      - V1-3525|日本NF|x2.0
+      - V3-3317|台湾|x1.5
+      - V1-3339|台湾|x4.0
+      - V3-3321|台湾|x1.5
+      - V1-3279|香港|x4.0
+      - V3-3223|日本NF|x2.0
+      - V4-3511|日本NF|x2.0
+      - V3-3225|日本NF|x2.0
+      - V4-3313|台湾|x2.0
+      - V3-3698|日本NF|x2.0
+      - V4-3668|香港|x1.5
+      - V2-3713|日本NF|x2.0
+      - V3-3701|日本NF|x2.0
+      - V3-3699|日本NF|x2.0
+      - V4-3508|日本NF|x2.0
+      - V1-3702|日本NF|x2.0
+      - V3-3224|日本NF|x2.0
+      - V1-3329|香港|x4.0
+      - V3-3226|日本NF|x2.0
+      - V2-3233|日本NF|x2.0
+      - V4-3451|日本NFx2.0
+      - V1-3325|香港|x4.0
+      - V3-3227|日本NF|x2.0
+      - V4-3262|日本NF|x2.0
+      - V1-3523|香港|x2.0
+      - V4-3270|日本NF|x2.0
+      - V3-3318|台湾|x1.5
+      - V2-3526|台湾|x2.0
+      - V2-3263|香港|x2.0
+      - V2-3387|台湾|x2.0
+      - V4-3477|日本NF|x2.0
+      - V3-3594|日本|x1.5
+      - V2-3631|台湾|x1.5
+      - V4-3615|日本|x1.5
+      - V4-3305|台湾|x1.0
+      - V4-3309|台湾|x2.0
+      - V3-3612|日本|x1.5
+      - V3-3074|日本|x1.5
+      - V1-3602|日本|x0.6
+      - V1-3337|台湾|x4.0
+      - V3-3592|日本|x1.5
+      - V2-2999|日本|x1.0
+      - V4-3020|日本NF|x2.0
+      - V1-3338|台湾|x4.0
+      - V2-3610|日本|x1.5
+      - V3-3340|香港|x2.0
+      - V3-3490|香港|x1.0
+      - V3-3343|香港|x2.0
+      - V4-3639|香港|x1.5
+      - V4-3666|香港|x1.5
+      - V4-3503|香港|x1.5
+      - V4-3489|香港|x1.5
+      - V3-3316|台湾|x1.5
+      - V3-3601|日本|x1.5
+      - V1-3647|美国|x4.0
+      - V3-3504|香港|x1.0
+      - V4-3542|香港|x2.0
+      - V4-3640|香港|x1.5
+      - V3-3663|美国|x2.5
+      - V2-3654|美国|x1.5
+      - V1-3336|台湾|x4.0
+      - V2-3655|美国|x1.5
+      - V2-3628|美国|x1.5
+      - V4-3299|台湾|x1.0
+      - V2-3656|美国|x1.5
+      - V4-3541香港|x2.0
+      - V3-3590|日本|x1.5
+      - V3-3645|香港|x1.5
+      - V3-3638|美国|x2.5
+      - V3-3637|美国|x2.5
+      - V3-3664|美国|x2.5
+      - V2-3611|日本|x1.5
+      - V2-3630|美国|x1.5
+      - V4-3613|日本|x1.5|
+      - V4-3665|香港|x1.5
+      - V3-3636|美国|x2.5
+      - V3-3379|新加坡|x1.5
+      - V3-2958|日本|x1.5
+      - V3-3372|新加坡|x1.5
+      - V3-3377|新加坡|x1.5
+      - V3-3373|新加坡|x1.5
+      - V3-3374|新加坡|x1.5
+      - V3-3671|香港|x1.5
+      - V3-3370|新加坡|x1.5
+      - V3-3376|新加坡|x1.5
+      - V3-3450|香港x2.0
+      - V3-3375|新加坡|x1.5
+      - V3-3597|日本|x1.5
+      - V3-3371|新加坡|x1.5
+      - V3-3476|香港|x2.0
+      - V1-3646|美国|x4.0
+      - V1-3002|日本|x4.0
+      - V4-3531|香港|x2.0
+      - V3-2956|日本|x1.5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 亚洲 | 香港C
-      - 亚洲 | 台湾D
-      - 亚洲 | 新加坡C
-      - 亚洲 | 台湾C
-      - 欧洲 | 俄罗斯
-      - 亚洲 | 新加坡B
-      - 亚洲 | 新加坡D
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 测试1
+      - V3-3576|新加坡|x2.0
+      - V4-3351|新加坡|x2.5
+      - V4-3352|新加坡|x2.5
+      - V1-3424|新加坡|x4.0
+      - V1-3456|新加坡|x4.0
+      - V4-3364|新加坡|x2.5
+      - V2-3509|香港|x2.0
+      - V4-3562|新加坡|x2.0
+      - V2-3445|香港|x1.5
+      - V2-3529|新加坡|x2.0
+      - V4-3559|新加坡|x2.0
+      - V1-3432|新加坡|x4.0
+      - V1-3191|香港|x2.0
+      - V4-3357|新加坡|x2.5
+      - V1-3200|香港|x2.0
+      - V4-3360|新加坡|x2.5
+      - V1-3458|新加坡|x4.0
+      - V1-3427|新加坡|x4.0
+      - V4-3361|新加坡|x2.5
+      - V1-3425|新加坡|x4.0
+      - V3-3575|新加坡|x2.0
+      - V4-3355|新加坡|x2.5
+      - V1-3431|新加坡|x4.0
+      - V1-3457|新加坡|x4.0
+      - V3-3577|-新加坡|x2.0
+      - V1-3455|新加坡|x4.0
+      - V4-3310|台湾|x2.5
+      - V4-3367|新加坡|x2.5
+      - V4-3563|新加坡|x2.0
+      - V1-3426|新加坡|x4.0
+      - V3-3573|新加坡|x2.0
+      - V4-3302|台湾|x1.0
+      - V2-3682|香港|x1.2
+      - V4-2916|新加坡|x2.5
+      - V4-3494|日本NFx2.0
+      - V2-3691|日本NF|x2.0
+      - V4-3350|新加坡|x2.5
+      - V2-3528|新加坡|x2.0
+      - V1-3428|新加坡|x4.0
+      - V4-3512|日本NF|x2.0
+      - V3-3184|香港|x1.5
+      - V1-3429|新加坡|x4.0
+      - V2-3704|日本NF|x2.0
+      - V3-3696|日本NF|x2.0
+      - V1-3694|日本NF|x2.0
+      - V4-3303|台湾|x1.0
+      - V1-3290|香港|x4.0
+      - V3-3221|日本NF|x2.0
+      - V4-3497|日本NFx2.0
+      - V2-3703|日本NF|x2.0
+      - V2-3206|日本NF|x2.0
+      - V2-3234|日本NF|x2.0
+      - V2-3260|香港x1.2
+      - V1-3454|新加坡|x4.0
+      - V2-3229|日本NF|x2.0
+      - V2-3681|香港|x1.2
+      - V2-889|日本NF|x2.0
+      - V3-3697|日本NF|x2.0
+      - V1-3695|日本NF|x2.0
+      - V1-3525|日本NF|x2.0
+      - V3-3317|台湾|x1.5
+      - V1-3339|台湾|x4.0
+      - V3-3321|台湾|x1.5
+      - V1-3279|香港|x4.0
+      - V3-3223|日本NF|x2.0
+      - V4-3511|日本NF|x2.0
+      - V3-3225|日本NF|x2.0
+      - V4-3313|台湾|x2.0
+      - V3-3698|日本NF|x2.0
+      - V4-3668|香港|x1.5
+      - V2-3713|日本NF|x2.0
+      - V3-3701|日本NF|x2.0
+      - V3-3699|日本NF|x2.0
+      - V4-3508|日本NF|x2.0
+      - V1-3702|日本NF|x2.0
+      - V3-3224|日本NF|x2.0
+      - V1-3329|香港|x4.0
+      - V3-3226|日本NF|x2.0
+      - V2-3233|日本NF|x2.0
+      - V4-3451|日本NFx2.0
+      - V1-3325|香港|x4.0
+      - V3-3227|日本NF|x2.0
+      - V4-3262|日本NF|x2.0
+      - V1-3523|香港|x2.0
+      - V4-3270|日本NF|x2.0
+      - V3-3318|台湾|x1.5
+      - V2-3526|台湾|x2.0
+      - V2-3263|香港|x2.0
+      - V2-3387|台湾|x2.0
+      - V4-3477|日本NF|x2.0
+      - V3-3594|日本|x1.5
+      - V2-3631|台湾|x1.5
+      - V4-3615|日本|x1.5
+      - V4-3305|台湾|x1.0
+      - V4-3309|台湾|x2.0
+      - V3-3612|日本|x1.5
+      - V3-3074|日本|x1.5
+      - V1-3602|日本|x0.6
+      - V1-3337|台湾|x4.0
+      - V3-3592|日本|x1.5
+      - V2-2999|日本|x1.0
+      - V4-3020|日本NF|x2.0
+      - V1-3338|台湾|x4.0
+      - V2-3610|日本|x1.5
+      - V3-3340|香港|x2.0
+      - V3-3490|香港|x1.0
+      - V3-3343|香港|x2.0
+      - V4-3639|香港|x1.5
+      - V4-3666|香港|x1.5
+      - V4-3503|香港|x1.5
+      - V4-3489|香港|x1.5
+      - V3-3316|台湾|x1.5
+      - V3-3601|日本|x1.5
+      - V1-3647|美国|x4.0
+      - V3-3504|香港|x1.0
+      - V4-3542|香港|x2.0
+      - V4-3640|香港|x1.5
+      - V3-3663|美国|x2.5
+      - V2-3654|美国|x1.5
+      - V1-3336|台湾|x4.0
+      - V2-3655|美国|x1.5
+      - V2-3628|美国|x1.5
+      - V4-3299|台湾|x1.0
+      - V2-3656|美国|x1.5
+      - V4-3541香港|x2.0
+      - V3-3590|日本|x1.5
+      - V3-3645|香港|x1.5
+      - V3-3638|美国|x2.5
+      - V3-3637|美国|x2.5
+      - V3-3664|美国|x2.5
+      - V2-3611|日本|x1.5
+      - V2-3630|美国|x1.5
+      - V4-3613|日本|x1.5|
+      - V4-3665|香港|x1.5
+      - V3-3636|美国|x2.5
+      - V3-3379|新加坡|x1.5
+      - V3-2958|日本|x1.5
+      - V3-3372|新加坡|x1.5
+      - V3-3377|新加坡|x1.5
+      - V3-3373|新加坡|x1.5
+      - V3-3374|新加坡|x1.5
+      - V3-3671|香港|x1.5
+      - V3-3370|新加坡|x1.5
+      - V3-3376|新加坡|x1.5
+      - V3-3450|香港x2.0
+      - V3-3375|新加坡|x1.5
+      - V3-3597|日本|x1.5
+      - V3-3371|新加坡|x1.5
+      - V3-3476|香港|x2.0
+      - V1-3646|美国|x4.0
+      - V1-3002|日本|x4.0
+      - V4-3531|香港|x2.0
+      - V3-2956|日本|x1.5
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚洲 | 香港C
-      - 亚洲 | 台湾D
-      - 亚洲 | 新加坡C
-      - 亚洲 | 台湾C
-      - 欧洲 | 俄罗斯
-      - 亚洲 | 新加坡B
-      - 亚洲 | 新加坡D
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 测试1
+      - V3-3576|新加坡|x2.0
+      - V4-3351|新加坡|x2.5
+      - V4-3352|新加坡|x2.5
+      - V1-3424|新加坡|x4.0
+      - V1-3456|新加坡|x4.0
+      - V4-3364|新加坡|x2.5
+      - V2-3509|香港|x2.0
+      - V4-3562|新加坡|x2.0
+      - V2-3445|香港|x1.5
+      - V2-3529|新加坡|x2.0
+      - V4-3559|新加坡|x2.0
+      - V1-3432|新加坡|x4.0
+      - V1-3191|香港|x2.0
+      - V4-3357|新加坡|x2.5
+      - V1-3200|香港|x2.0
+      - V4-3360|新加坡|x2.5
+      - V1-3458|新加坡|x4.0
+      - V1-3427|新加坡|x4.0
+      - V4-3361|新加坡|x2.5
+      - V1-3425|新加坡|x4.0
+      - V3-3575|新加坡|x2.0
+      - V4-3355|新加坡|x2.5
+      - V1-3431|新加坡|x4.0
+      - V1-3457|新加坡|x4.0
+      - V3-3577|-新加坡|x2.0
+      - V1-3455|新加坡|x4.0
+      - V4-3310|台湾|x2.5
+      - V4-3367|新加坡|x2.5
+      - V4-3563|新加坡|x2.0
+      - V1-3426|新加坡|x4.0
+      - V3-3573|新加坡|x2.0
+      - V4-3302|台湾|x1.0
+      - V2-3682|香港|x1.2
+      - V4-2916|新加坡|x2.5
+      - V4-3494|日本NFx2.0
+      - V2-3691|日本NF|x2.0
+      - V4-3350|新加坡|x2.5
+      - V2-3528|新加坡|x2.0
+      - V1-3428|新加坡|x4.0
+      - V4-3512|日本NF|x2.0
+      - V3-3184|香港|x1.5
+      - V1-3429|新加坡|x4.0
+      - V2-3704|日本NF|x2.0
+      - V3-3696|日本NF|x2.0
+      - V1-3694|日本NF|x2.0
+      - V4-3303|台湾|x1.0
+      - V1-3290|香港|x4.0
+      - V3-3221|日本NF|x2.0
+      - V4-3497|日本NFx2.0
+      - V2-3703|日本NF|x2.0
+      - V2-3206|日本NF|x2.0
+      - V2-3234|日本NF|x2.0
+      - V2-3260|香港x1.2
+      - V1-3454|新加坡|x4.0
+      - V2-3229|日本NF|x2.0
+      - V2-3681|香港|x1.2
+      - V2-889|日本NF|x2.0
+      - V3-3697|日本NF|x2.0
+      - V1-3695|日本NF|x2.0
+      - V1-3525|日本NF|x2.0
+      - V3-3317|台湾|x1.5
+      - V1-3339|台湾|x4.0
+      - V3-3321|台湾|x1.5
+      - V1-3279|香港|x4.0
+      - V3-3223|日本NF|x2.0
+      - V4-3511|日本NF|x2.0
+      - V3-3225|日本NF|x2.0
+      - V4-3313|台湾|x2.0
+      - V3-3698|日本NF|x2.0
+      - V4-3668|香港|x1.5
+      - V2-3713|日本NF|x2.0
+      - V3-3701|日本NF|x2.0
+      - V3-3699|日本NF|x2.0
+      - V4-3508|日本NF|x2.0
+      - V1-3702|日本NF|x2.0
+      - V3-3224|日本NF|x2.0
+      - V1-3329|香港|x4.0
+      - V3-3226|日本NF|x2.0
+      - V2-3233|日本NF|x2.0
+      - V4-3451|日本NFx2.0
+      - V1-3325|香港|x4.0
+      - V3-3227|日本NF|x2.0
+      - V4-3262|日本NF|x2.0
+      - V1-3523|香港|x2.0
+      - V4-3270|日本NF|x2.0
+      - V3-3318|台湾|x1.5
+      - V2-3526|台湾|x2.0
+      - V2-3263|香港|x2.0
+      - V2-3387|台湾|x2.0
+      - V4-3477|日本NF|x2.0
+      - V3-3594|日本|x1.5
+      - V2-3631|台湾|x1.5
+      - V4-3615|日本|x1.5
+      - V4-3305|台湾|x1.0
+      - V4-3309|台湾|x2.0
+      - V3-3612|日本|x1.5
+      - V3-3074|日本|x1.5
+      - V1-3602|日本|x0.6
+      - V1-3337|台湾|x4.0
+      - V3-3592|日本|x1.5
+      - V2-2999|日本|x1.0
+      - V4-3020|日本NF|x2.0
+      - V1-3338|台湾|x4.0
+      - V2-3610|日本|x1.5
+      - V3-3340|香港|x2.0
+      - V3-3490|香港|x1.0
+      - V3-3343|香港|x2.0
+      - V4-3639|香港|x1.5
+      - V4-3666|香港|x1.5
+      - V4-3503|香港|x1.5
+      - V4-3489|香港|x1.5
+      - V3-3316|台湾|x1.5
+      - V3-3601|日本|x1.5
+      - V1-3647|美国|x4.0
+      - V3-3504|香港|x1.0
+      - V4-3542|香港|x2.0
+      - V4-3640|香港|x1.5
+      - V3-3663|美国|x2.5
+      - V2-3654|美国|x1.5
+      - V1-3336|台湾|x4.0
+      - V2-3655|美国|x1.5
+      - V2-3628|美国|x1.5
+      - V4-3299|台湾|x1.0
+      - V2-3656|美国|x1.5
+      - V4-3541香港|x2.0
+      - V3-3590|日本|x1.5
+      - V3-3645|香港|x1.5
+      - V3-3638|美国|x2.5
+      - V3-3637|美国|x2.5
+      - V3-3664|美国|x2.5
+      - V2-3611|日本|x1.5
+      - V2-3630|美国|x1.5
+      - V4-3613|日本|x1.5|
+      - V4-3665|香港|x1.5
+      - V3-3636|美国|x2.5
+      - V3-3379|新加坡|x1.5
+      - V3-2958|日本|x1.5
+      - V3-3372|新加坡|x1.5
+      - V3-3377|新加坡|x1.5
+      - V3-3373|新加坡|x1.5
+      - V3-3374|新加坡|x1.5
+      - V3-3671|香港|x1.5
+      - V3-3370|新加坡|x1.5
+      - V3-3376|新加坡|x1.5
+      - V3-3450|香港x2.0
+      - V3-3375|新加坡|x1.5
+      - V3-3597|日本|x1.5
+      - V3-3371|新加坡|x1.5
+      - V3-3476|香港|x2.0
+      - V1-3646|美国|x4.0
+      - V1-3002|日本|x4.0
+      - V4-3531|香港|x2.0
+      - V3-2956|日本|x1.5
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,66 +652,689 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚洲 | 香港C
-      - 亚洲 | 台湾D
-      - 亚洲 | 新加坡C
-      - 亚洲 | 台湾C
-      - 欧洲 | 俄罗斯
-      - 亚洲 | 新加坡B
-      - 亚洲 | 新加坡D
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 测试1
+      - V3-3576|新加坡|x2.0
+      - V4-3351|新加坡|x2.5
+      - V4-3352|新加坡|x2.5
+      - V1-3424|新加坡|x4.0
+      - V1-3456|新加坡|x4.0
+      - V4-3364|新加坡|x2.5
+      - V2-3509|香港|x2.0
+      - V4-3562|新加坡|x2.0
+      - V2-3445|香港|x1.5
+      - V2-3529|新加坡|x2.0
+      - V4-3559|新加坡|x2.0
+      - V1-3432|新加坡|x4.0
+      - V1-3191|香港|x2.0
+      - V4-3357|新加坡|x2.5
+      - V1-3200|香港|x2.0
+      - V4-3360|新加坡|x2.5
+      - V1-3458|新加坡|x4.0
+      - V1-3427|新加坡|x4.0
+      - V4-3361|新加坡|x2.5
+      - V1-3425|新加坡|x4.0
+      - V3-3575|新加坡|x2.0
+      - V4-3355|新加坡|x2.5
+      - V1-3431|新加坡|x4.0
+      - V1-3457|新加坡|x4.0
+      - V3-3577|-新加坡|x2.0
+      - V1-3455|新加坡|x4.0
+      - V4-3310|台湾|x2.5
+      - V4-3367|新加坡|x2.5
+      - V4-3563|新加坡|x2.0
+      - V1-3426|新加坡|x4.0
+      - V3-3573|新加坡|x2.0
+      - V4-3302|台湾|x1.0
+      - V2-3682|香港|x1.2
+      - V4-2916|新加坡|x2.5
+      - V4-3494|日本NFx2.0
+      - V2-3691|日本NF|x2.0
+      - V4-3350|新加坡|x2.5
+      - V2-3528|新加坡|x2.0
+      - V1-3428|新加坡|x4.0
+      - V4-3512|日本NF|x2.0
+      - V3-3184|香港|x1.5
+      - V1-3429|新加坡|x4.0
+      - V2-3704|日本NF|x2.0
+      - V3-3696|日本NF|x2.0
+      - V1-3694|日本NF|x2.0
+      - V4-3303|台湾|x1.0
+      - V1-3290|香港|x4.0
+      - V3-3221|日本NF|x2.0
+      - V4-3497|日本NFx2.0
+      - V2-3703|日本NF|x2.0
+      - V2-3206|日本NF|x2.0
+      - V2-3234|日本NF|x2.0
+      - V2-3260|香港x1.2
+      - V1-3454|新加坡|x4.0
+      - V2-3229|日本NF|x2.0
+      - V2-3681|香港|x1.2
+      - V2-889|日本NF|x2.0
+      - V3-3697|日本NF|x2.0
+      - V1-3695|日本NF|x2.0
+      - V1-3525|日本NF|x2.0
+      - V3-3317|台湾|x1.5
+      - V1-3339|台湾|x4.0
+      - V3-3321|台湾|x1.5
+      - V1-3279|香港|x4.0
+      - V3-3223|日本NF|x2.0
+      - V4-3511|日本NF|x2.0
+      - V3-3225|日本NF|x2.0
+      - V4-3313|台湾|x2.0
+      - V3-3698|日本NF|x2.0
+      - V4-3668|香港|x1.5
+      - V2-3713|日本NF|x2.0
+      - V3-3701|日本NF|x2.0
+      - V3-3699|日本NF|x2.0
+      - V4-3508|日本NF|x2.0
+      - V1-3702|日本NF|x2.0
+      - V3-3224|日本NF|x2.0
+      - V1-3329|香港|x4.0
+      - V3-3226|日本NF|x2.0
+      - V2-3233|日本NF|x2.0
+      - V4-3451|日本NFx2.0
+      - V1-3325|香港|x4.0
+      - V3-3227|日本NF|x2.0
+      - V4-3262|日本NF|x2.0
+      - V1-3523|香港|x2.0
+      - V4-3270|日本NF|x2.0
+      - V3-3318|台湾|x1.5
+      - V2-3526|台湾|x2.0
+      - V2-3263|香港|x2.0
+      - V2-3387|台湾|x2.0
+      - V4-3477|日本NF|x2.0
+      - V3-3594|日本|x1.5
+      - V2-3631|台湾|x1.5
+      - V4-3615|日本|x1.5
+      - V4-3305|台湾|x1.0
+      - V4-3309|台湾|x2.0
+      - V3-3612|日本|x1.5
+      - V3-3074|日本|x1.5
+      - V1-3602|日本|x0.6
+      - V1-3337|台湾|x4.0
+      - V3-3592|日本|x1.5
+      - V2-2999|日本|x1.0
+      - V4-3020|日本NF|x2.0
+      - V1-3338|台湾|x4.0
+      - V2-3610|日本|x1.5
+      - V3-3340|香港|x2.0
+      - V3-3490|香港|x1.0
+      - V3-3343|香港|x2.0
+      - V4-3639|香港|x1.5
+      - V4-3666|香港|x1.5
+      - V4-3503|香港|x1.5
+      - V4-3489|香港|x1.5
+      - V3-3316|台湾|x1.5
+      - V3-3601|日本|x1.5
+      - V1-3647|美国|x4.0
+      - V3-3504|香港|x1.0
+      - V4-3542|香港|x2.0
+      - V4-3640|香港|x1.5
+      - V3-3663|美国|x2.5
+      - V2-3654|美国|x1.5
+      - V1-3336|台湾|x4.0
+      - V2-3655|美国|x1.5
+      - V2-3628|美国|x1.5
+      - V4-3299|台湾|x1.0
+      - V2-3656|美国|x1.5
+      - V4-3541香港|x2.0
+      - V3-3590|日本|x1.5
+      - V3-3645|香港|x1.5
+      - V3-3638|美国|x2.5
+      - V3-3637|美国|x2.5
+      - V3-3664|美国|x2.5
+      - V2-3611|日本|x1.5
+      - V2-3630|美国|x1.5
+      - V4-3613|日本|x1.5|
+      - V4-3665|香港|x1.5
+      - V3-3636|美国|x2.5
+      - V3-3379|新加坡|x1.5
+      - V3-2958|日本|x1.5
+      - V3-3372|新加坡|x1.5
+      - V3-3377|新加坡|x1.5
+      - V3-3373|新加坡|x1.5
+      - V3-3374|新加坡|x1.5
+      - V3-3671|香港|x1.5
+      - V3-3370|新加坡|x1.5
+      - V3-3376|新加坡|x1.5
+      - V3-3450|香港x2.0
+      - V3-3375|新加坡|x1.5
+      - V3-3597|日本|x1.5
+      - V3-3371|新加坡|x1.5
+      - V3-3476|香港|x2.0
+      - V1-3646|美国|x4.0
+      - V1-3002|日本|x4.0
+      - V4-3531|香港|x2.0
+      - V3-2956|日本|x1.5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 亚洲 | 香港C
-      - 亚洲 | 台湾D
-      - 亚洲 | 台湾C
+      - V2-3509|香港|x2.0
+      - V2-3445|香港|x1.5
+      - V1-3191|香港|x2.0
+      - V1-3200|香港|x2.0
+      - V4-3310|台湾|x2.5
+      - V4-3302|台湾|x1.0
+      - V2-3682|香港|x1.2
+      - V3-3184|香港|x1.5
+      - V4-3303|台湾|x1.0
+      - V1-3290|香港|x4.0
+      - V2-3260|香港x1.2
+      - V2-3681|香港|x1.2
+      - V3-3317|台湾|x1.5
+      - V1-3339|台湾|x4.0
+      - V3-3321|台湾|x1.5
+      - V1-3279|香港|x4.0
+      - V4-3313|台湾|x2.0
+      - V4-3668|香港|x1.5
+      - V1-3329|香港|x4.0
+      - V1-3325|香港|x4.0
+      - V1-3523|香港|x2.0
+      - V3-3318|台湾|x1.5
+      - V2-3526|台湾|x2.0
+      - V2-3263|香港|x2.0
+      - V2-3387|台湾|x2.0
+      - V2-3631|台湾|x1.5
+      - V4-3305|台湾|x1.0
+      - V4-3309|台湾|x2.0
+      - V1-3337|台湾|x4.0
+      - V1-3338|台湾|x4.0
+      - V3-3340|香港|x2.0
+      - V3-3490|香港|x1.0
+      - V3-3343|香港|x2.0
+      - V4-3639|香港|x1.5
+      - V4-3666|香港|x1.5
+      - V4-3503|香港|x1.5
+      - V4-3489|香港|x1.5
+      - V3-3316|台湾|x1.5
+      - V3-3504|香港|x1.0
+      - V4-3542|香港|x2.0
+      - V4-3640|香港|x1.5
+      - V1-3336|台湾|x4.0
+      - V4-3299|台湾|x1.0
+      - V4-3541香港|x2.0
+      - V3-3645|香港|x1.5
+      - V4-3665|香港|x1.5
+      - V3-3671|香港|x1.5
+      - V3-3450|香港x2.0
+      - V3-3476|香港|x2.0
+      - V4-3531|香港|x2.0
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 亚洲 | 香港C
-      - 亚洲 | 台湾D
-      - 亚洲 | 新加坡C
-      - 亚洲 | 台湾C
-      - 欧洲 | 俄罗斯
-      - 亚洲 | 新加坡B
-      - 亚洲 | 新加坡D
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 测试1
+      - V3-3576|新加坡|x2.0
+      - V4-3351|新加坡|x2.5
+      - V4-3352|新加坡|x2.5
+      - V1-3424|新加坡|x4.0
+      - V1-3456|新加坡|x4.0
+      - V4-3364|新加坡|x2.5
+      - V2-3509|香港|x2.0
+      - V4-3562|新加坡|x2.0
+      - V2-3445|香港|x1.5
+      - V2-3529|新加坡|x2.0
+      - V4-3559|新加坡|x2.0
+      - V1-3432|新加坡|x4.0
+      - V1-3191|香港|x2.0
+      - V4-3357|新加坡|x2.5
+      - V1-3200|香港|x2.0
+      - V4-3360|新加坡|x2.5
+      - V1-3458|新加坡|x4.0
+      - V1-3427|新加坡|x4.0
+      - V4-3361|新加坡|x2.5
+      - V1-3425|新加坡|x4.0
+      - V3-3575|新加坡|x2.0
+      - V4-3355|新加坡|x2.5
+      - V1-3431|新加坡|x4.0
+      - V1-3457|新加坡|x4.0
+      - V3-3577|-新加坡|x2.0
+      - V1-3455|新加坡|x4.0
+      - V4-3310|台湾|x2.5
+      - V4-3367|新加坡|x2.5
+      - V4-3563|新加坡|x2.0
+      - V1-3426|新加坡|x4.0
+      - V3-3573|新加坡|x2.0
+      - V4-3302|台湾|x1.0
+      - V2-3682|香港|x1.2
+      - V4-2916|新加坡|x2.5
+      - V4-3494|日本NFx2.0
+      - V2-3691|日本NF|x2.0
+      - V4-3350|新加坡|x2.5
+      - V2-3528|新加坡|x2.0
+      - V1-3428|新加坡|x4.0
+      - V4-3512|日本NF|x2.0
+      - V3-3184|香港|x1.5
+      - V1-3429|新加坡|x4.0
+      - V2-3704|日本NF|x2.0
+      - V3-3696|日本NF|x2.0
+      - V1-3694|日本NF|x2.0
+      - V4-3303|台湾|x1.0
+      - V1-3290|香港|x4.0
+      - V3-3221|日本NF|x2.0
+      - V4-3497|日本NFx2.0
+      - V2-3703|日本NF|x2.0
+      - V2-3206|日本NF|x2.0
+      - V2-3234|日本NF|x2.0
+      - V2-3260|香港x1.2
+      - V1-3454|新加坡|x4.0
+      - V2-3229|日本NF|x2.0
+      - V2-3681|香港|x1.2
+      - V2-889|日本NF|x2.0
+      - V3-3697|日本NF|x2.0
+      - V1-3695|日本NF|x2.0
+      - V1-3525|日本NF|x2.0
+      - V3-3317|台湾|x1.5
+      - V1-3339|台湾|x4.0
+      - V3-3321|台湾|x1.5
+      - V1-3279|香港|x4.0
+      - V3-3223|日本NF|x2.0
+      - V4-3511|日本NF|x2.0
+      - V3-3225|日本NF|x2.0
+      - V4-3313|台湾|x2.0
+      - V3-3698|日本NF|x2.0
+      - V4-3668|香港|x1.5
+      - V2-3713|日本NF|x2.0
+      - V3-3701|日本NF|x2.0
+      - V3-3699|日本NF|x2.0
+      - V4-3508|日本NF|x2.0
+      - V1-3702|日本NF|x2.0
+      - V3-3224|日本NF|x2.0
+      - V1-3329|香港|x4.0
+      - V3-3226|日本NF|x2.0
+      - V2-3233|日本NF|x2.0
+      - V4-3451|日本NFx2.0
+      - V1-3325|香港|x4.0
+      - V3-3227|日本NF|x2.0
+      - V4-3262|日本NF|x2.0
+      - V1-3523|香港|x2.0
+      - V4-3270|日本NF|x2.0
+      - V3-3318|台湾|x1.5
+      - V2-3526|台湾|x2.0
+      - V2-3263|香港|x2.0
+      - V2-3387|台湾|x2.0
+      - V4-3477|日本NF|x2.0
+      - V3-3594|日本|x1.5
+      - V2-3631|台湾|x1.5
+      - V4-3615|日本|x1.5
+      - V4-3305|台湾|x1.0
+      - V4-3309|台湾|x2.0
+      - V3-3612|日本|x1.5
+      - V3-3074|日本|x1.5
+      - V1-3602|日本|x0.6
+      - V1-3337|台湾|x4.0
+      - V3-3592|日本|x1.5
+      - V2-2999|日本|x1.0
+      - V4-3020|日本NF|x2.0
+      - V1-3338|台湾|x4.0
+      - V2-3610|日本|x1.5
+      - V3-3340|香港|x2.0
+      - V3-3490|香港|x1.0
+      - V3-3343|香港|x2.0
+      - V4-3639|香港|x1.5
+      - V4-3666|香港|x1.5
+      - V4-3503|香港|x1.5
+      - V4-3489|香港|x1.5
+      - V3-3316|台湾|x1.5
+      - V3-3601|日本|x1.5
+      - V1-3647|美国|x4.0
+      - V3-3504|香港|x1.0
+      - V4-3542|香港|x2.0
+      - V4-3640|香港|x1.5
+      - V3-3663|美国|x2.5
+      - V2-3654|美国|x1.5
+      - V1-3336|台湾|x4.0
+      - V2-3655|美国|x1.5
+      - V2-3628|美国|x1.5
+      - V4-3299|台湾|x1.0
+      - V2-3656|美国|x1.5
+      - V4-3541香港|x2.0
+      - V3-3590|日本|x1.5
+      - V3-3645|香港|x1.5
+      - V3-3638|美国|x2.5
+      - V3-3637|美国|x2.5
+      - V3-3664|美国|x2.5
+      - V2-3611|日本|x1.5
+      - V2-3630|美国|x1.5
+      - V4-3613|日本|x1.5|
+      - V4-3665|香港|x1.5
+      - V3-3636|美国|x2.5
+      - V3-3379|新加坡|x1.5
+      - V3-2958|日本|x1.5
+      - V3-3372|新加坡|x1.5
+      - V3-3377|新加坡|x1.5
+      - V3-3373|新加坡|x1.5
+      - V3-3374|新加坡|x1.5
+      - V3-3671|香港|x1.5
+      - V3-3370|新加坡|x1.5
+      - V3-3376|新加坡|x1.5
+      - V3-3450|香港x2.0
+      - V3-3375|新加坡|x1.5
+      - V3-3597|日本|x1.5
+      - V3-3371|新加坡|x1.5
+      - V3-3476|香港|x2.0
+      - V1-3646|美国|x4.0
+      - V1-3002|日本|x4.0
+      - V4-3531|香港|x2.0
+      - V3-2956|日本|x1.5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 亚洲 | 香港C
-      - 亚洲 | 台湾D
-      - 亚洲 | 新加坡C
-      - 亚洲 | 台湾C
-      - 欧洲 | 俄罗斯
-      - 亚洲 | 新加坡B
-      - 亚洲 | 新加坡D
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 测试1
+      - V3-3576|新加坡|x2.0
+      - V4-3351|新加坡|x2.5
+      - V4-3352|新加坡|x2.5
+      - V1-3424|新加坡|x4.0
+      - V1-3456|新加坡|x4.0
+      - V4-3364|新加坡|x2.5
+      - V2-3509|香港|x2.0
+      - V4-3562|新加坡|x2.0
+      - V2-3445|香港|x1.5
+      - V2-3529|新加坡|x2.0
+      - V4-3559|新加坡|x2.0
+      - V1-3432|新加坡|x4.0
+      - V1-3191|香港|x2.0
+      - V4-3357|新加坡|x2.5
+      - V1-3200|香港|x2.0
+      - V4-3360|新加坡|x2.5
+      - V1-3458|新加坡|x4.0
+      - V1-3427|新加坡|x4.0
+      - V4-3361|新加坡|x2.5
+      - V1-3425|新加坡|x4.0
+      - V3-3575|新加坡|x2.0
+      - V4-3355|新加坡|x2.5
+      - V1-3431|新加坡|x4.0
+      - V1-3457|新加坡|x4.0
+      - V3-3577|-新加坡|x2.0
+      - V1-3455|新加坡|x4.0
+      - V4-3310|台湾|x2.5
+      - V4-3367|新加坡|x2.5
+      - V4-3563|新加坡|x2.0
+      - V1-3426|新加坡|x4.0
+      - V3-3573|新加坡|x2.0
+      - V4-3302|台湾|x1.0
+      - V2-3682|香港|x1.2
+      - V4-2916|新加坡|x2.5
+      - V4-3494|日本NFx2.0
+      - V2-3691|日本NF|x2.0
+      - V4-3350|新加坡|x2.5
+      - V2-3528|新加坡|x2.0
+      - V1-3428|新加坡|x4.0
+      - V4-3512|日本NF|x2.0
+      - V3-3184|香港|x1.5
+      - V1-3429|新加坡|x4.0
+      - V2-3704|日本NF|x2.0
+      - V3-3696|日本NF|x2.0
+      - V1-3694|日本NF|x2.0
+      - V4-3303|台湾|x1.0
+      - V1-3290|香港|x4.0
+      - V3-3221|日本NF|x2.0
+      - V4-3497|日本NFx2.0
+      - V2-3703|日本NF|x2.0
+      - V2-3206|日本NF|x2.0
+      - V2-3234|日本NF|x2.0
+      - V2-3260|香港x1.2
+      - V1-3454|新加坡|x4.0
+      - V2-3229|日本NF|x2.0
+      - V2-3681|香港|x1.2
+      - V2-889|日本NF|x2.0
+      - V3-3697|日本NF|x2.0
+      - V1-3695|日本NF|x2.0
+      - V1-3525|日本NF|x2.0
+      - V3-3317|台湾|x1.5
+      - V1-3339|台湾|x4.0
+      - V3-3321|台湾|x1.5
+      - V1-3279|香港|x4.0
+      - V3-3223|日本NF|x2.0
+      - V4-3511|日本NF|x2.0
+      - V3-3225|日本NF|x2.0
+      - V4-3313|台湾|x2.0
+      - V3-3698|日本NF|x2.0
+      - V4-3668|香港|x1.5
+      - V2-3713|日本NF|x2.0
+      - V3-3701|日本NF|x2.0
+      - V3-3699|日本NF|x2.0
+      - V4-3508|日本NF|x2.0
+      - V1-3702|日本NF|x2.0
+      - V3-3224|日本NF|x2.0
+      - V1-3329|香港|x4.0
+      - V3-3226|日本NF|x2.0
+      - V2-3233|日本NF|x2.0
+      - V4-3451|日本NFx2.0
+      - V1-3325|香港|x4.0
+      - V3-3227|日本NF|x2.0
+      - V4-3262|日本NF|x2.0
+      - V1-3523|香港|x2.0
+      - V4-3270|日本NF|x2.0
+      - V3-3318|台湾|x1.5
+      - V2-3526|台湾|x2.0
+      - V2-3263|香港|x2.0
+      - V2-3387|台湾|x2.0
+      - V4-3477|日本NF|x2.0
+      - V3-3594|日本|x1.5
+      - V2-3631|台湾|x1.5
+      - V4-3615|日本|x1.5
+      - V4-3305|台湾|x1.0
+      - V4-3309|台湾|x2.0
+      - V3-3612|日本|x1.5
+      - V3-3074|日本|x1.5
+      - V1-3602|日本|x0.6
+      - V1-3337|台湾|x4.0
+      - V3-3592|日本|x1.5
+      - V2-2999|日本|x1.0
+      - V4-3020|日本NF|x2.0
+      - V1-3338|台湾|x4.0
+      - V2-3610|日本|x1.5
+      - V3-3340|香港|x2.0
+      - V3-3490|香港|x1.0
+      - V3-3343|香港|x2.0
+      - V4-3639|香港|x1.5
+      - V4-3666|香港|x1.5
+      - V4-3503|香港|x1.5
+      - V4-3489|香港|x1.5
+      - V3-3316|台湾|x1.5
+      - V3-3601|日本|x1.5
+      - V1-3647|美国|x4.0
+      - V3-3504|香港|x1.0
+      - V4-3542|香港|x2.0
+      - V4-3640|香港|x1.5
+      - V3-3663|美国|x2.5
+      - V2-3654|美国|x1.5
+      - V1-3336|台湾|x4.0
+      - V2-3655|美国|x1.5
+      - V2-3628|美国|x1.5
+      - V4-3299|台湾|x1.0
+      - V2-3656|美国|x1.5
+      - V4-3541香港|x2.0
+      - V3-3590|日本|x1.5
+      - V3-3645|香港|x1.5
+      - V3-3638|美国|x2.5
+      - V3-3637|美国|x2.5
+      - V3-3664|美国|x2.5
+      - V2-3611|日本|x1.5
+      - V2-3630|美国|x1.5
+      - V4-3613|日本|x1.5|
+      - V4-3665|香港|x1.5
+      - V3-3636|美国|x2.5
+      - V3-3379|新加坡|x1.5
+      - V3-2958|日本|x1.5
+      - V3-3372|新加坡|x1.5
+      - V3-3377|新加坡|x1.5
+      - V3-3373|新加坡|x1.5
+      - V3-3374|新加坡|x1.5
+      - V3-3671|香港|x1.5
+      - V3-3370|新加坡|x1.5
+      - V3-3376|新加坡|x1.5
+      - V3-3450|香港x2.0
+      - V3-3375|新加坡|x1.5
+      - V3-3597|日本|x1.5
+      - V3-3371|新加坡|x1.5
+      - V3-3476|香港|x2.0
+      - V1-3646|美国|x4.0
+      - V1-3002|日本|x4.0
+      - V4-3531|香港|x2.0
+      - V3-2956|日本|x1.5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚洲 | 香港C
-      - 亚洲 | 台湾D
-      - 亚洲 | 新加坡C
-      - 亚洲 | 台湾C
-      - 欧洲 | 俄罗斯
-      - 亚洲 | 新加坡B
-      - 亚洲 | 新加坡D
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 测试1
+      - V3-3576|新加坡|x2.0
+      - V4-3351|新加坡|x2.5
+      - V4-3352|新加坡|x2.5
+      - V1-3424|新加坡|x4.0
+      - V1-3456|新加坡|x4.0
+      - V4-3364|新加坡|x2.5
+      - V2-3509|香港|x2.0
+      - V4-3562|新加坡|x2.0
+      - V2-3445|香港|x1.5
+      - V2-3529|新加坡|x2.0
+      - V4-3559|新加坡|x2.0
+      - V1-3432|新加坡|x4.0
+      - V1-3191|香港|x2.0
+      - V4-3357|新加坡|x2.5
+      - V1-3200|香港|x2.0
+      - V4-3360|新加坡|x2.5
+      - V1-3458|新加坡|x4.0
+      - V1-3427|新加坡|x4.0
+      - V4-3361|新加坡|x2.5
+      - V1-3425|新加坡|x4.0
+      - V3-3575|新加坡|x2.0
+      - V4-3355|新加坡|x2.5
+      - V1-3431|新加坡|x4.0
+      - V1-3457|新加坡|x4.0
+      - V3-3577|-新加坡|x2.0
+      - V1-3455|新加坡|x4.0
+      - V4-3310|台湾|x2.5
+      - V4-3367|新加坡|x2.5
+      - V4-3563|新加坡|x2.0
+      - V1-3426|新加坡|x4.0
+      - V3-3573|新加坡|x2.0
+      - V4-3302|台湾|x1.0
+      - V2-3682|香港|x1.2
+      - V4-2916|新加坡|x2.5
+      - V4-3494|日本NFx2.0
+      - V2-3691|日本NF|x2.0
+      - V4-3350|新加坡|x2.5
+      - V2-3528|新加坡|x2.0
+      - V1-3428|新加坡|x4.0
+      - V4-3512|日本NF|x2.0
+      - V3-3184|香港|x1.5
+      - V1-3429|新加坡|x4.0
+      - V2-3704|日本NF|x2.0
+      - V3-3696|日本NF|x2.0
+      - V1-3694|日本NF|x2.0
+      - V4-3303|台湾|x1.0
+      - V1-3290|香港|x4.0
+      - V3-3221|日本NF|x2.0
+      - V4-3497|日本NFx2.0
+      - V2-3703|日本NF|x2.0
+      - V2-3206|日本NF|x2.0
+      - V2-3234|日本NF|x2.0
+      - V2-3260|香港x1.2
+      - V1-3454|新加坡|x4.0
+      - V2-3229|日本NF|x2.0
+      - V2-3681|香港|x1.2
+      - V2-889|日本NF|x2.0
+      - V3-3697|日本NF|x2.0
+      - V1-3695|日本NF|x2.0
+      - V1-3525|日本NF|x2.0
+      - V3-3317|台湾|x1.5
+      - V1-3339|台湾|x4.0
+      - V3-3321|台湾|x1.5
+      - V1-3279|香港|x4.0
+      - V3-3223|日本NF|x2.0
+      - V4-3511|日本NF|x2.0
+      - V3-3225|日本NF|x2.0
+      - V4-3313|台湾|x2.0
+      - V3-3698|日本NF|x2.0
+      - V4-3668|香港|x1.5
+      - V2-3713|日本NF|x2.0
+      - V3-3701|日本NF|x2.0
+      - V3-3699|日本NF|x2.0
+      - V4-3508|日本NF|x2.0
+      - V1-3702|日本NF|x2.0
+      - V3-3224|日本NF|x2.0
+      - V1-3329|香港|x4.0
+      - V3-3226|日本NF|x2.0
+      - V2-3233|日本NF|x2.0
+      - V4-3451|日本NFx2.0
+      - V1-3325|香港|x4.0
+      - V3-3227|日本NF|x2.0
+      - V4-3262|日本NF|x2.0
+      - V1-3523|香港|x2.0
+      - V4-3270|日本NF|x2.0
+      - V3-3318|台湾|x1.5
+      - V2-3526|台湾|x2.0
+      - V2-3263|香港|x2.0
+      - V2-3387|台湾|x2.0
+      - V4-3477|日本NF|x2.0
+      - V3-3594|日本|x1.5
+      - V2-3631|台湾|x1.5
+      - V4-3615|日本|x1.5
+      - V4-3305|台湾|x1.0
+      - V4-3309|台湾|x2.0
+      - V3-3612|日本|x1.5
+      - V3-3074|日本|x1.5
+      - V1-3602|日本|x0.6
+      - V1-3337|台湾|x4.0
+      - V3-3592|日本|x1.5
+      - V2-2999|日本|x1.0
+      - V4-3020|日本NF|x2.0
+      - V1-3338|台湾|x4.0
+      - V2-3610|日本|x1.5
+      - V3-3340|香港|x2.0
+      - V3-3490|香港|x1.0
+      - V3-3343|香港|x2.0
+      - V4-3639|香港|x1.5
+      - V4-3666|香港|x1.5
+      - V4-3503|香港|x1.5
+      - V4-3489|香港|x1.5
+      - V3-3316|台湾|x1.5
+      - V3-3601|日本|x1.5
+      - V1-3647|美国|x4.0
+      - V3-3504|香港|x1.0
+      - V4-3542|香港|x2.0
+      - V4-3640|香港|x1.5
+      - V3-3663|美国|x2.5
+      - V2-3654|美国|x1.5
+      - V1-3336|台湾|x4.0
+      - V2-3655|美国|x1.5
+      - V2-3628|美国|x1.5
+      - V4-3299|台湾|x1.0
+      - V2-3656|美国|x1.5
+      - V4-3541香港|x2.0
+      - V3-3590|日本|x1.5
+      - V3-3645|香港|x1.5
+      - V3-3638|美国|x2.5
+      - V3-3637|美国|x2.5
+      - V3-3664|美国|x2.5
+      - V2-3611|日本|x1.5
+      - V2-3630|美国|x1.5
+      - V4-3613|日本|x1.5|
+      - V4-3665|香港|x1.5
+      - V3-3636|美国|x2.5
+      - V3-3379|新加坡|x1.5
+      - V3-2958|日本|x1.5
+      - V3-3372|新加坡|x1.5
+      - V3-3377|新加坡|x1.5
+      - V3-3373|新加坡|x1.5
+      - V3-3374|新加坡|x1.5
+      - V3-3671|香港|x1.5
+      - V3-3370|新加坡|x1.5
+      - V3-3376|新加坡|x1.5
+      - V3-3450|香港x2.0
+      - V3-3375|新加坡|x1.5
+      - V3-3597|日本|x1.5
+      - V3-3371|新加坡|x1.5
+      - V3-3476|香港|x2.0
+      - V1-3646|美国|x4.0
+      - V1-3002|日本|x4.0
+      - V4-3531|香港|x2.0
+      - V3-2956|日本|x1.5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -151,15 +1350,159 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚洲 | 香港C
-      - 亚洲 | 台湾D
-      - 亚洲 | 新加坡C
-      - 亚洲 | 台湾C
-      - 欧洲 | 俄罗斯
-      - 亚洲 | 新加坡B
-      - 亚洲 | 新加坡D
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 测试1
+      - V3-3576|新加坡|x2.0
+      - V4-3351|新加坡|x2.5
+      - V4-3352|新加坡|x2.5
+      - V1-3424|新加坡|x4.0
+      - V1-3456|新加坡|x4.0
+      - V4-3364|新加坡|x2.5
+      - V2-3509|香港|x2.0
+      - V4-3562|新加坡|x2.0
+      - V2-3445|香港|x1.5
+      - V2-3529|新加坡|x2.0
+      - V4-3559|新加坡|x2.0
+      - V1-3432|新加坡|x4.0
+      - V1-3191|香港|x2.0
+      - V4-3357|新加坡|x2.5
+      - V1-3200|香港|x2.0
+      - V4-3360|新加坡|x2.5
+      - V1-3458|新加坡|x4.0
+      - V1-3427|新加坡|x4.0
+      - V4-3361|新加坡|x2.5
+      - V1-3425|新加坡|x4.0
+      - V3-3575|新加坡|x2.0
+      - V4-3355|新加坡|x2.5
+      - V1-3431|新加坡|x4.0
+      - V1-3457|新加坡|x4.0
+      - V3-3577|-新加坡|x2.0
+      - V1-3455|新加坡|x4.0
+      - V4-3310|台湾|x2.5
+      - V4-3367|新加坡|x2.5
+      - V4-3563|新加坡|x2.0
+      - V1-3426|新加坡|x4.0
+      - V3-3573|新加坡|x2.0
+      - V4-3302|台湾|x1.0
+      - V2-3682|香港|x1.2
+      - V4-2916|新加坡|x2.5
+      - V4-3494|日本NFx2.0
+      - V2-3691|日本NF|x2.0
+      - V4-3350|新加坡|x2.5
+      - V2-3528|新加坡|x2.0
+      - V1-3428|新加坡|x4.0
+      - V4-3512|日本NF|x2.0
+      - V3-3184|香港|x1.5
+      - V1-3429|新加坡|x4.0
+      - V2-3704|日本NF|x2.0
+      - V3-3696|日本NF|x2.0
+      - V1-3694|日本NF|x2.0
+      - V4-3303|台湾|x1.0
+      - V1-3290|香港|x4.0
+      - V3-3221|日本NF|x2.0
+      - V4-3497|日本NFx2.0
+      - V2-3703|日本NF|x2.0
+      - V2-3206|日本NF|x2.0
+      - V2-3234|日本NF|x2.0
+      - V2-3260|香港x1.2
+      - V1-3454|新加坡|x4.0
+      - V2-3229|日本NF|x2.0
+      - V2-3681|香港|x1.2
+      - V2-889|日本NF|x2.0
+      - V3-3697|日本NF|x2.0
+      - V1-3695|日本NF|x2.0
+      - V1-3525|日本NF|x2.0
+      - V3-3317|台湾|x1.5
+      - V1-3339|台湾|x4.0
+      - V3-3321|台湾|x1.5
+      - V1-3279|香港|x4.0
+      - V3-3223|日本NF|x2.0
+      - V4-3511|日本NF|x2.0
+      - V3-3225|日本NF|x2.0
+      - V4-3313|台湾|x2.0
+      - V3-3698|日本NF|x2.0
+      - V4-3668|香港|x1.5
+      - V2-3713|日本NF|x2.0
+      - V3-3701|日本NF|x2.0
+      - V3-3699|日本NF|x2.0
+      - V4-3508|日本NF|x2.0
+      - V1-3702|日本NF|x2.0
+      - V3-3224|日本NF|x2.0
+      - V1-3329|香港|x4.0
+      - V3-3226|日本NF|x2.0
+      - V2-3233|日本NF|x2.0
+      - V4-3451|日本NFx2.0
+      - V1-3325|香港|x4.0
+      - V3-3227|日本NF|x2.0
+      - V4-3262|日本NF|x2.0
+      - V1-3523|香港|x2.0
+      - V4-3270|日本NF|x2.0
+      - V3-3318|台湾|x1.5
+      - V2-3526|台湾|x2.0
+      - V2-3263|香港|x2.0
+      - V2-3387|台湾|x2.0
+      - V4-3477|日本NF|x2.0
+      - V3-3594|日本|x1.5
+      - V2-3631|台湾|x1.5
+      - V4-3615|日本|x1.5
+      - V4-3305|台湾|x1.0
+      - V4-3309|台湾|x2.0
+      - V3-3612|日本|x1.5
+      - V3-3074|日本|x1.5
+      - V1-3602|日本|x0.6
+      - V1-3337|台湾|x4.0
+      - V3-3592|日本|x1.5
+      - V2-2999|日本|x1.0
+      - V4-3020|日本NF|x2.0
+      - V1-3338|台湾|x4.0
+      - V2-3610|日本|x1.5
+      - V3-3340|香港|x2.0
+      - V3-3490|香港|x1.0
+      - V3-3343|香港|x2.0
+      - V4-3639|香港|x1.5
+      - V4-3666|香港|x1.5
+      - V4-3503|香港|x1.5
+      - V4-3489|香港|x1.5
+      - V3-3316|台湾|x1.5
+      - V3-3601|日本|x1.5
+      - V1-3647|美国|x4.0
+      - V3-3504|香港|x1.0
+      - V4-3542|香港|x2.0
+      - V4-3640|香港|x1.5
+      - V3-3663|美国|x2.5
+      - V2-3654|美国|x1.5
+      - V1-3336|台湾|x4.0
+      - V2-3655|美国|x1.5
+      - V2-3628|美国|x1.5
+      - V4-3299|台湾|x1.0
+      - V2-3656|美国|x1.5
+      - V4-3541香港|x2.0
+      - V3-3590|日本|x1.5
+      - V3-3645|香港|x1.5
+      - V3-3638|美国|x2.5
+      - V3-3637|美国|x2.5
+      - V3-3664|美国|x2.5
+      - V2-3611|日本|x1.5
+      - V2-3630|美国|x1.5
+      - V4-3613|日本|x1.5|
+      - V4-3665|香港|x1.5
+      - V3-3636|美国|x2.5
+      - V3-3379|新加坡|x1.5
+      - V3-2958|日本|x1.5
+      - V3-3372|新加坡|x1.5
+      - V3-3377|新加坡|x1.5
+      - V3-3373|新加坡|x1.5
+      - V3-3374|新加坡|x1.5
+      - V3-3671|香港|x1.5
+      - V3-3370|新加坡|x1.5
+      - V3-3376|新加坡|x1.5
+      - V3-3450|香港x2.0
+      - V3-3375|新加坡|x1.5
+      - V3-3597|日本|x1.5
+      - V3-3371|新加坡|x1.5
+      - V3-3476|香港|x2.0
+      - V1-3646|美国|x4.0
+      - V1-3002|日本|x4.0
+      - V4-3531|香港|x2.0
+      - V3-2956|日本|x1.5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
