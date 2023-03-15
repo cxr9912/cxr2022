@@ -5,35 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay 🇭🇰 Hong Kong 09 TG:@nodpai, server: v02.gutingting.com, port: 30006, type: trojan, password: c9817b1d-f351-449a-ab9f-432df7a7a51c, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai, server: v02.gutingting.com, port: 30003, type: trojan, password: c9817b1d-f351-449a-ab9f-432df7a7a51c, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 05 TG:@nodpai, server: hncu.donghui.tech, port: 42486, type: trojan, password: 1ce7d4dc-39d7-4ac1-b71d-494590fa5577, sni: hncu.donghui.tech, skip-cert-verify: true, udp: true}
+  - {name: 亚洲 | 台湾C, server: a-ct1.jsmmm.cyou, port: 39221, type: vmess, uuid: 8b6d17ac-8094-3783-a2ee-92e0b92e96bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - 亚洲 | 台湾C
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - 亚洲 | 台湾C
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - 亚洲 | 台湾C
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,39 +44,32 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - 亚洲 | 台湾C
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 亚洲 | 台湾C
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - 亚洲 | 台湾C
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - 亚洲 | 台湾C
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - 亚洲 | 台湾C
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +85,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 05 TG:@nodpai
+      - 亚洲 | 台湾C
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
