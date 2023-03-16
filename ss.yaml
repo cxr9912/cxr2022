@@ -5,35 +5,99 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TG频道:@hkaa0|香港, server: 116.49.242.93, port: 443, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51025:o0159ww, obfs-param: t.me/vpnhat, udp: true}
-  - {name: TG频道:@hkaa0|美国, server: 1807516e-rr0tc0-1cwfu.hk.tcpbbr.net, port: 8388, type: vmess, uuid: 6550ed3c-f4de-11eb-a0fc-f23c913c8d2b, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: TG:@hkaa0|中国, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "台湾05⚡[1.0x]-IEPL", server: 120.232.41.75, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/t15j7q35ftd5lt0uin2rsfho01cqcfph/media_5303.ts, ws-headers: {Host: 9.day.hi.cn}, udp: true}
+  - {name: "日本05⚡[1.0x]-IEPL", server: 120.232.41.69, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/fqphv1cbdilds3342gxw3nziuxsc4tdn/media_6303.ts, ws-headers: {Host: 10.day.hi.cn}, udp: true}
+  - {name: "日本03⚡[1.0x]-IEPL", server: 120.232.41.67, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/fqphv1cbdilds3342gxw3nziuxsc4tdn/media_6303.ts, ws-headers: {Host: 10.day.hi.cn}, udp: true}
+  - {name: "日本01⚡[1.0x]-IEPL", server: 120.232.41.74, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/fqphv1cbdilds3342gxw3nziuxsc4tdn/media_6303.ts, ws-headers: {Host: 10.day.hi.cn}, udp: true}
+  - {name: "狮城02⚡[1.0x]-IEPL", server: 120.232.41.80, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/sblk3g87iw3upbmu3n8d3b1tsoqc350d/media_3003.ts, ws-headers: {Host: 7.day.hi.cn}, udp: true}
+  - {name: "狮城05⚡[1.0x]-IEPL", server: 120.232.41.76, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/sblk3g87iw3upbmu3n8d3b1tsoqc350d/media_3003.ts, ws-headers: {Host: 7.day.hi.cn}, udp: true}
+  - {name: "日本02⚡[1.0x]-IEPL", server: 120.232.41.66, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/fqphv1cbdilds3342gxw3nziuxsc4tdn/media_6303.ts, ws-headers: {Host: 10.day.hi.cn}, udp: true}
+  - {name: "台湾01⚡[1.0x]-IEPL", server: 120.232.41.83, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/t15j7q35ftd5lt0uin2rsfho01cqcfph/media_5303.ts, ws-headers: {Host: 9.day.hi.cn}, udp: true}
+  - {name: "日本04⚡[1.0x]-IEPL", server: 120.232.41.68, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/fqphv1cbdilds3342gxw3nziuxsc4tdn/media_6303.ts, ws-headers: {Host: 10.day.hi.cn}, udp: true}
+  - {name: "狮城04⚡[1.0x]-IEPL", server: 120.232.41.77, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/sblk3g87iw3upbmu3n8d3b1tsoqc350d/media_3003.ts, ws-headers: {Host: 7.day.hi.cn}, udp: true}
+  - {name: "狮城01⚡[1.0x]-IEPL", server: 120.232.41.82, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/sblk3g87iw3upbmu3n8d3b1tsoqc350d/media_3003.ts, ws-headers: {Host: 7.day.hi.cn}, udp: true}
+  - {name: "狮城03⚡[1.0x]-IEPL", server: 120.232.41.78, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/sblk3g87iw3upbmu3n8d3b1tsoqc350d/media_3003.ts, ws-headers: {Host: 7.day.hi.cn}, udp: true}
+  - {name: "香港03⚡[1.0x]-IEPL", server: 120.232.41.80, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/5lhn0uilsv0j704tott2u0vwj3slxbju/media_5003.ts, ws-headers: {Host: 8.day.hi.cn}, udp: true}
+  - {name: 购买链接：十元店.org, server: 120.232.41.83, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/sblk3g87iw3upbmu3n8d3b1tsoqc350d/media_3003.ts, ws-headers: {Host: 7.day.hi.cn}, udp: true}
+  - {name: "香港04⚡[1.0x]-IEPL", server: 120.232.41.78, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/5lhn0uilsv0j704tott2u0vwj3slxbju/media_5003.ts, ws-headers: {Host: 8.day.hi.cn}, udp: true}
+  - {name: "台湾02⚡[1.0x]-IEPL", server: 120.232.41.82, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/t15j7q35ftd5lt0uin2rsfho01cqcfph/media_5303.ts, ws-headers: {Host: 9.day.hi.cn}, udp: true}
+  - {name: "台湾03⚡[1.0x]-IEPL", server: 120.232.41.80, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/t15j7q35ftd5lt0uin2rsfho01cqcfph/media_5303.ts, ws-headers: {Host: 9.day.hi.cn}, udp: true}
+  - {name: "香港02⚡[1.0x]-IEPL", server: 120.232.41.82, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/5lhn0uilsv0j704tott2u0vwj3slxbju/media_5003.ts, ws-headers: {Host: 8.day.hi.cn}, udp: true}
+  - {name: "香港01⚡[1.0x]-IEPL", server: 120.232.41.83, port: 2053, type: vmess, uuid: 536fb20d-f862-491a-abcc-9fc8307b7388, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xvod/5lhn0uilsv0j704tott2u0vwj3slxbju/media_5003.ts, ws-headers: {Host: 8.day.hi.cn}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道:@hkaa0|香港
-      - TG频道:@hkaa0|美国
-      - TG:@hkaa0|中国
+      - 台湾05⚡[1.0x]-IEPL
+      - 日本05⚡[1.0x]-IEPL
+      - 日本03⚡[1.0x]-IEPL
+      - 日本01⚡[1.0x]-IEPL
+      - 狮城02⚡[1.0x]-IEPL
+      - 狮城05⚡[1.0x]-IEPL
+      - 日本02⚡[1.0x]-IEPL
+      - 台湾01⚡[1.0x]-IEPL
+      - 日本04⚡[1.0x]-IEPL
+      - 狮城04⚡[1.0x]-IEPL
+      - 狮城01⚡[1.0x]-IEPL
+      - 狮城03⚡[1.0x]-IEPL
+      - 香港03⚡[1.0x]-IEPL
+      - 购买链接：十元店.org
+      - 香港04⚡[1.0x]-IEPL
+      - 台湾02⚡[1.0x]-IEPL
+      - 台湾03⚡[1.0x]-IEPL
+      - 香港02⚡[1.0x]-IEPL
+      - 香港01⚡[1.0x]-IEPL
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TG频道:@hkaa0|香港
-      - TG频道:@hkaa0|美国
-      - TG:@hkaa0|中国
+      - 台湾05⚡[1.0x]-IEPL
+      - 日本05⚡[1.0x]-IEPL
+      - 日本03⚡[1.0x]-IEPL
+      - 日本01⚡[1.0x]-IEPL
+      - 狮城02⚡[1.0x]-IEPL
+      - 狮城05⚡[1.0x]-IEPL
+      - 日本02⚡[1.0x]-IEPL
+      - 台湾01⚡[1.0x]-IEPL
+      - 日本04⚡[1.0x]-IEPL
+      - 狮城04⚡[1.0x]-IEPL
+      - 狮城01⚡[1.0x]-IEPL
+      - 狮城03⚡[1.0x]-IEPL
+      - 香港03⚡[1.0x]-IEPL
+      - 购买链接：十元店.org
+      - 香港04⚡[1.0x]-IEPL
+      - 台湾02⚡[1.0x]-IEPL
+      - 台湾03⚡[1.0x]-IEPL
+      - 香港02⚡[1.0x]-IEPL
+      - 香港01⚡[1.0x]-IEPL
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道:@hkaa0|香港
-      - TG频道:@hkaa0|美国
-      - TG:@hkaa0|中国
+      - 台湾05⚡[1.0x]-IEPL
+      - 日本05⚡[1.0x]-IEPL
+      - 日本03⚡[1.0x]-IEPL
+      - 日本01⚡[1.0x]-IEPL
+      - 狮城02⚡[1.0x]-IEPL
+      - 狮城05⚡[1.0x]-IEPL
+      - 日本02⚡[1.0x]-IEPL
+      - 台湾01⚡[1.0x]-IEPL
+      - 日本04⚡[1.0x]-IEPL
+      - 狮城04⚡[1.0x]-IEPL
+      - 狮城01⚡[1.0x]-IEPL
+      - 狮城03⚡[1.0x]-IEPL
+      - 香港03⚡[1.0x]-IEPL
+      - 购买链接：十元店.org
+      - 香港04⚡[1.0x]-IEPL
+      - 台湾02⚡[1.0x]-IEPL
+      - 台湾03⚡[1.0x]-IEPL
+      - 香港02⚡[1.0x]-IEPL
+      - 香港01⚡[1.0x]-IEPL
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,42 +116,111 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道:@hkaa0|香港
-      - TG频道:@hkaa0|美国
-      - TG:@hkaa0|中国
+      - 台湾05⚡[1.0x]-IEPL
+      - 日本05⚡[1.0x]-IEPL
+      - 日本03⚡[1.0x]-IEPL
+      - 日本01⚡[1.0x]-IEPL
+      - 狮城02⚡[1.0x]-IEPL
+      - 狮城05⚡[1.0x]-IEPL
+      - 日本02⚡[1.0x]-IEPL
+      - 台湾01⚡[1.0x]-IEPL
+      - 日本04⚡[1.0x]-IEPL
+      - 狮城04⚡[1.0x]-IEPL
+      - 狮城01⚡[1.0x]-IEPL
+      - 狮城03⚡[1.0x]-IEPL
+      - 香港03⚡[1.0x]-IEPL
+      - 购买链接：十元店.org
+      - 香港04⚡[1.0x]-IEPL
+      - 台湾02⚡[1.0x]-IEPL
+      - 台湾03⚡[1.0x]-IEPL
+      - 香港02⚡[1.0x]-IEPL
+      - 香港01⚡[1.0x]-IEPL
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - TG频道:@hkaa0|香港
-      - TG频道:@hkaa0|美国
-      - TG:@hkaa0|中国
+      - 台湾05⚡[1.0x]-IEPL
+      - 台湾01⚡[1.0x]-IEPL
+      - 香港03⚡[1.0x]-IEPL
+      - 香港04⚡[1.0x]-IEPL
+      - 台湾02⚡[1.0x]-IEPL
+      - 台湾03⚡[1.0x]-IEPL
+      - 香港02⚡[1.0x]-IEPL
+      - 香港01⚡[1.0x]-IEPL
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TG频道:@hkaa0|香港
-      - TG频道:@hkaa0|美国
-      - TG:@hkaa0|中国
+      - 台湾05⚡[1.0x]-IEPL
+      - 日本05⚡[1.0x]-IEPL
+      - 日本03⚡[1.0x]-IEPL
+      - 日本01⚡[1.0x]-IEPL
+      - 狮城02⚡[1.0x]-IEPL
+      - 狮城05⚡[1.0x]-IEPL
+      - 日本02⚡[1.0x]-IEPL
+      - 台湾01⚡[1.0x]-IEPL
+      - 日本04⚡[1.0x]-IEPL
+      - 狮城04⚡[1.0x]-IEPL
+      - 狮城01⚡[1.0x]-IEPL
+      - 狮城03⚡[1.0x]-IEPL
+      - 香港03⚡[1.0x]-IEPL
+      - 购买链接：十元店.org
+      - 香港04⚡[1.0x]-IEPL
+      - 台湾02⚡[1.0x]-IEPL
+      - 台湾03⚡[1.0x]-IEPL
+      - 香港02⚡[1.0x]-IEPL
+      - 香港01⚡[1.0x]-IEPL
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TG频道:@hkaa0|香港
-      - TG频道:@hkaa0|美国
-      - TG:@hkaa0|中国
+      - 台湾05⚡[1.0x]-IEPL
+      - 日本05⚡[1.0x]-IEPL
+      - 日本03⚡[1.0x]-IEPL
+      - 日本01⚡[1.0x]-IEPL
+      - 狮城02⚡[1.0x]-IEPL
+      - 狮城05⚡[1.0x]-IEPL
+      - 日本02⚡[1.0x]-IEPL
+      - 台湾01⚡[1.0x]-IEPL
+      - 日本04⚡[1.0x]-IEPL
+      - 狮城04⚡[1.0x]-IEPL
+      - 狮城01⚡[1.0x]-IEPL
+      - 狮城03⚡[1.0x]-IEPL
+      - 香港03⚡[1.0x]-IEPL
+      - 购买链接：十元店.org
+      - 香港04⚡[1.0x]-IEPL
+      - 台湾02⚡[1.0x]-IEPL
+      - 台湾03⚡[1.0x]-IEPL
+      - 香港02⚡[1.0x]-IEPL
+      - 香港01⚡[1.0x]-IEPL
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道:@hkaa0|香港
-      - TG频道:@hkaa0|美国
-      - TG:@hkaa0|中国
+      - 台湾05⚡[1.0x]-IEPL
+      - 日本05⚡[1.0x]-IEPL
+      - 日本03⚡[1.0x]-IEPL
+      - 日本01⚡[1.0x]-IEPL
+      - 狮城02⚡[1.0x]-IEPL
+      - 狮城05⚡[1.0x]-IEPL
+      - 日本02⚡[1.0x]-IEPL
+      - 台湾01⚡[1.0x]-IEPL
+      - 日本04⚡[1.0x]-IEPL
+      - 狮城04⚡[1.0x]-IEPL
+      - 狮城01⚡[1.0x]-IEPL
+      - 狮城03⚡[1.0x]-IEPL
+      - 香港03⚡[1.0x]-IEPL
+      - 购买链接：十元店.org
+      - 香港04⚡[1.0x]-IEPL
+      - 台湾02⚡[1.0x]-IEPL
+      - 台湾03⚡[1.0x]-IEPL
+      - 香港02⚡[1.0x]-IEPL
+      - 香港01⚡[1.0x]-IEPL
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -103,9 +236,25 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道:@hkaa0|香港
-      - TG频道:@hkaa0|美国
-      - TG:@hkaa0|中国
+      - 台湾05⚡[1.0x]-IEPL
+      - 日本05⚡[1.0x]-IEPL
+      - 日本03⚡[1.0x]-IEPL
+      - 日本01⚡[1.0x]-IEPL
+      - 狮城02⚡[1.0x]-IEPL
+      - 狮城05⚡[1.0x]-IEPL
+      - 日本02⚡[1.0x]-IEPL
+      - 台湾01⚡[1.0x]-IEPL
+      - 日本04⚡[1.0x]-IEPL
+      - 狮城04⚡[1.0x]-IEPL
+      - 狮城01⚡[1.0x]-IEPL
+      - 狮城03⚡[1.0x]-IEPL
+      - 香港03⚡[1.0x]-IEPL
+      - 购买链接：十元店.org
+      - 香港04⚡[1.0x]-IEPL
+      - 台湾02⚡[1.0x]-IEPL
+      - 台湾03⚡[1.0x]-IEPL
+      - 香港02⚡[1.0x]-IEPL
+      - 香港01⚡[1.0x]-IEPL
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
