@@ -5,83 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡 3, server: as.steamdownload.top, port: 36643, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 4, server: as.steamdownload.top, port: 36644, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 1, server: as.steamdownload.top, port: 36611, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 1, server: sa.steamdownload.top, port: 36651, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 2, server: as.steamdownload.top, port: 36612, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 4, server: sa.steamdownload.top, port: 36654, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 3, server: as.steamdownload.top, port: 36613, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 3, server: sa.steamdownload.top, port: 36653, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 2, server: sa.steamdownload.top, port: 36652, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 3, server: sa.steamdownload.top, port: 36633, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 4, server: sa.steamdownload.top, port: 36634, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 1, server: as.steamdownload.top, port: 36641, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 1, server: sa.steamdownload.top, port: 36631, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 4, server: as.steamdownload.top, port: 36614, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 2, server: sa.steamdownload.top, port: 36632, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG:@hkaa0|中国, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG:@hkaa0|中国 2, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG:@hkaa0|中国 3, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: 626351FA-3CA6-8118-FADF-CCDBCD620871, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 3
-      - 新加坡 4
-      - 香港 1
-      - 美国 1
-      - 香港 2
-      - 美国 4
-      - 香港 3
-      - 美国 3
-      - 美国 2
-      - 日本 3
-      - 日本 4
-      - 新加坡 1
-      - 日本 1
-      - 香港 4
-      - 日本 2
+      - TG:@hkaa0|中国
+      - TG:@hkaa0|中国 2
+      - TG:@hkaa0|中国 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 3
-      - 新加坡 4
-      - 香港 1
-      - 美国 1
-      - 香港 2
-      - 美国 4
-      - 香港 3
-      - 美国 3
-      - 美国 2
-      - 日本 3
-      - 日本 4
-      - 新加坡 1
-      - 日本 1
-      - 香港 4
-      - 日本 2
+      - TG:@hkaa0|中国
+      - TG:@hkaa0|中国 2
+      - TG:@hkaa0|中国 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 3
-      - 新加坡 4
-      - 香港 1
-      - 美国 1
-      - 香港 2
-      - 美国 4
-      - 香港 3
-      - 美国 3
-      - 美国 2
-      - 日本 3
-      - 日本 4
-      - 新加坡 1
-      - 日本 1
-      - 香港 4
-      - 日本 2
+      - TG:@hkaa0|中国
+      - TG:@hkaa0|中国 2
+      - TG:@hkaa0|中国 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -100,91 +52,42 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 3
-      - 新加坡 4
-      - 香港 1
-      - 美国 1
-      - 香港 2
-      - 美国 4
-      - 香港 3
-      - 美国 3
-      - 美国 2
-      - 日本 3
-      - 日本 4
-      - 新加坡 1
-      - 日本 1
-      - 香港 4
-      - 日本 2
+      - TG:@hkaa0|中国
+      - TG:@hkaa0|中国 2
+      - TG:@hkaa0|中国 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 1
-      - 香港 2
-      - 香港 3
-      - 香港 4
+      - TG:@hkaa0|中国
+      - TG:@hkaa0|中国 2
+      - TG:@hkaa0|中国 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 3
-      - 新加坡 4
-      - 香港 1
-      - 美国 1
-      - 香港 2
-      - 美国 4
-      - 香港 3
-      - 美国 3
-      - 美国 2
-      - 日本 3
-      - 日本 4
-      - 新加坡 1
-      - 日本 1
-      - 香港 4
-      - 日本 2
+      - TG:@hkaa0|中国
+      - TG:@hkaa0|中国 2
+      - TG:@hkaa0|中国 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 3
-      - 新加坡 4
-      - 香港 1
-      - 美国 1
-      - 香港 2
-      - 美国 4
-      - 香港 3
-      - 美国 3
-      - 美国 2
-      - 日本 3
-      - 日本 4
-      - 新加坡 1
-      - 日本 1
-      - 香港 4
-      - 日本 2
+      - TG:@hkaa0|中国
+      - TG:@hkaa0|中国 2
+      - TG:@hkaa0|中国 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 3
-      - 新加坡 4
-      - 香港 1
-      - 美国 1
-      - 香港 2
-      - 美国 4
-      - 香港 3
-      - 美国 3
-      - 美国 2
-      - 日本 3
-      - 日本 4
-      - 新加坡 1
-      - 日本 1
-      - 香港 4
-      - 日本 2
+      - TG:@hkaa0|中国
+      - TG:@hkaa0|中国 2
+      - TG:@hkaa0|中国 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -200,21 +103,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 3
-      - 新加坡 4
-      - 香港 1
-      - 美国 1
-      - 香港 2
-      - 美国 4
-      - 香港 3
-      - 美国 3
-      - 美国 2
-      - 日本 3
-      - 日本 4
-      - 新加坡 1
-      - 日本 1
-      - 香港 4
-      - 日本 2
+      - TG:@hkaa0|中国
+      - TG:@hkaa0|中国 2
+      - TG:@hkaa0|中国 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
