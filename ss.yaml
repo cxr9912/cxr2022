@@ -5,163 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: A03 香港65 GCP, server: rk1.mrlizhuanfa.com, port: 12541, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: A04 香港41 AZ, server: rk1.mrlizhuanfa.com, port: 10105, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡48, server: rk1.mrlizhuanfa.com, port: 52221, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: A09 香港58 GCP, server: rk1.mrlizhuanfa.com, port: 10006, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港22 HKT 动态IP SSR 奈飞, server: rk1.mrlizhuanfa.com, port: 10048, type: ssr, cipher: aes-128-ctr, password: aD7kWU, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5776:mDjVmHIhTXG3gt1X, obfs-param: 5b2135776.microsoft.com, udp: true}
-  - {name: A06 香港32 GCP, server: rk1.mrlizhuanfa.com, port: 12441, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: A05 香港69 AZ, server: rk1.mrlizhuanfa.com, port: 10145, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: A07 香港71 GCP, server: rk1.mrlizhuanfa.com, port: 20011, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: A01 香港52 CMI, server: rk1.mrlizhuanfa.com, port: 33333, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: A12 台湾13, server: rk1.mrlizhuanfa.com, port: 3123, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾34 动态IP 奈飞, server: rk1.mrlizhuanfa.com, port: 20000, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本36 SSR, server: rk1.mrlizhuanfa.com, port: 10082, type: ssr, cipher: aes-128-ctr, password: aD7kWU, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5776:mDjVmHIhTXG3gt1X, obfs-param: 5b2135776.microsoft.com, udp: true}
-  - {name: 越南68, server: rk1.mrlizhuanfa.com, port: 14214, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国06, server: rk1.mrlizhuanfa.com, port: 42153, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡47, server: rk1.mrlizhuanfa.com, port: 62222, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 印度05, server: rk1.mrlizhuanfa.com, port: 33222, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚24, server: rk1.mrlizhuanfa.com, port: 46510, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 菲律宾67, server: rk1.mrlizhuanfa.com, port: 14751, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国11 SSR, server: rk1.mrlizhuanfa.com, port: 10081, type: ssr, cipher: aes-128-ctr, password: aD7kWU, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5776:mDjVmHIhTXG3gt1X, obfs-param: 5b2135776.microsoft.com, udp: true}
-  - {name: A11 日本51, server: rk1.mrlizhuanfa.com, port: 10000, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: A10 香港26 AZ, server: rk1.mrlizhuanfa.com, port: 28261, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国17, server: rk1.mrlizhuanfa.com, port: 30114, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 泰国57, server: rk1.mrlizhuanfa.com, port: 12356, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡25 Chatgpt, server: rk1.mrlizhuanfa.com, port: 11386, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯16, server: rk1.mrlizhuanfa.com, port: 30113, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 墨西哥15, server: rk1.mrlizhuanfa.com, port: 15423, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 土耳其59, server: rk1.mrlizhuanfa.com, port: 10007, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 西班牙44, server: rk1.mrlizhuanfa.com, port: 12040, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 加拿大30, server: rk1.mrlizhuanfa.com, port: 12454, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 丹麦12, server: rk1.mrlizhuanfa.com, port: 17987, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 荷兰35, server: rk1.mrlizhuanfa.com, port: 55558, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 马来西亚03, server: rk1.mrlizhuanfa.com, port: 20156, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 阿根廷23, server: rk1.mrlizhuanfa.com, port: 55656, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: A02 香港63 CMI, server: rk1.mrlizhuanfa.com, port: 11122, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 迪拜55, server: rk1.mrlizhuanfa.com, port: 10225, type: vmess, uuid: 5eb2b53b-27bb-3646-ba44-948ca20d6e1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(TG@kxswa), server: quranweb6.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quranweb6.xyz}, udp: true}
+  - {name: 美国(TG@kxswa) 2, server: quranweb16.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quranweb16.xyz}, udp: true}
+  - {name: 美国(TG@kxswa) 3, server: quranweb12.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quranweb12.xyz}, udp: true}
+  - {name: 美国(TG@kxswa) 4, server: quranweb3.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quranweb3.xyz}, udp: true}
+  - {name: 美国(TG@kxswa) 5, server: 1st.starvskii2world.top, port: 443, type: vmess, uuid: 3c530a57-f1f0-4fe0-92c3-7287a5251f97, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cf01, ws-headers: {Host: 1st.starvskii2world.top}, udp: true}
+  - {name: 美国(TG@kxswa) 6, server: holyquran10.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: holyquran10.store}, udp: true}
+  - {name: 美国(TG@kxswa) 7, server: quranweb26.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quranweb26.xyz}, udp: true}
+  - {name: 美国(TG@kxswa) 8, server: quranweb34.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quranweb34.xyz}, udp: true}
+  - {name: 美国(TG@kxswa) 9, server: 172.67.194.139, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: cf-topspeedoneplus.uk}, udp: true}
+  - {name: 美国(TG@kxswa) 10, server: quran-audio2.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quran-audio2.xyz}, udp: true}
+  - {name: 美国(TG@kxswa) 11, server: quran-audio5.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quran-audio5.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - A03 香港65 GCP
-      - A04 香港41 AZ
-      - 新加坡48
-      - A09 香港58 GCP
-      - 香港22 HKT 动态IP SSR 奈飞
-      - A06 香港32 GCP
-      - A05 香港69 AZ
-      - A07 香港71 GCP
-      - A01 香港52 CMI
-      - A12 台湾13
-      - 台湾34 动态IP 奈飞
-      - 日本36 SSR
-      - 越南68
-      - 韩国06
-      - 新加坡47
-      - 印度05
-      - 澳大利亚24
-      - 菲律宾67
-      - 美国11 SSR
-      - A11 日本51
-      - A10 香港26 AZ
-      - 美国17
-      - 泰国57
-      - 新加坡25 Chatgpt
-      - 俄罗斯16
-      - 墨西哥15
-      - 土耳其59
-      - 西班牙44
-      - 加拿大30
-      - 丹麦12
-      - 荷兰35
-      - 马来西亚03
-      - 阿根廷23
-      - A02 香港63 CMI
-      - 迪拜55
+      - 美国(TG@kxswa)
+      - 美国(TG@kxswa) 2
+      - 美国(TG@kxswa) 3
+      - 美国(TG@kxswa) 4
+      - 美国(TG@kxswa) 5
+      - 美国(TG@kxswa) 6
+      - 美国(TG@kxswa) 7
+      - 美国(TG@kxswa) 8
+      - 美国(TG@kxswa) 9
+      - 美国(TG@kxswa) 10
+      - 美国(TG@kxswa) 11
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - A03 香港65 GCP
-      - A04 香港41 AZ
-      - 新加坡48
-      - A09 香港58 GCP
-      - 香港22 HKT 动态IP SSR 奈飞
-      - A06 香港32 GCP
-      - A05 香港69 AZ
-      - A07 香港71 GCP
-      - A01 香港52 CMI
-      - A12 台湾13
-      - 台湾34 动态IP 奈飞
-      - 日本36 SSR
-      - 越南68
-      - 韩国06
-      - 新加坡47
-      - 印度05
-      - 澳大利亚24
-      - 菲律宾67
-      - 美国11 SSR
-      - A11 日本51
-      - A10 香港26 AZ
-      - 美国17
-      - 泰国57
-      - 新加坡25 Chatgpt
-      - 俄罗斯16
-      - 墨西哥15
-      - 土耳其59
-      - 西班牙44
-      - 加拿大30
-      - 丹麦12
-      - 荷兰35
-      - 马来西亚03
-      - 阿根廷23
-      - A02 香港63 CMI
-      - 迪拜55
+      - 美国(TG@kxswa)
+      - 美国(TG@kxswa) 2
+      - 美国(TG@kxswa) 3
+      - 美国(TG@kxswa) 4
+      - 美国(TG@kxswa) 5
+      - 美国(TG@kxswa) 6
+      - 美国(TG@kxswa) 7
+      - 美国(TG@kxswa) 8
+      - 美国(TG@kxswa) 9
+      - 美国(TG@kxswa) 10
+      - 美国(TG@kxswa) 11
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - A03 香港65 GCP
-      - A04 香港41 AZ
-      - 新加坡48
-      - A09 香港58 GCP
-      - 香港22 HKT 动态IP SSR 奈飞
-      - A06 香港32 GCP
-      - A05 香港69 AZ
-      - A07 香港71 GCP
-      - A01 香港52 CMI
-      - A12 台湾13
-      - 台湾34 动态IP 奈飞
-      - 日本36 SSR
-      - 越南68
-      - 韩国06
-      - 新加坡47
-      - 印度05
-      - 澳大利亚24
-      - 菲律宾67
-      - 美国11 SSR
-      - A11 日本51
-      - A10 香港26 AZ
-      - 美国17
-      - 泰国57
-      - 新加坡25 Chatgpt
-      - 俄罗斯16
-      - 墨西哥15
-      - 土耳其59
-      - 西班牙44
-      - 加拿大30
-      - 丹麦12
-      - 荷兰35
-      - 马来西亚03
-      - 阿根廷23
-      - A02 香港63 CMI
-      - 迪拜55
+      - 美国(TG@kxswa)
+      - 美国(TG@kxswa) 2
+      - 美国(TG@kxswa) 3
+      - 美国(TG@kxswa) 4
+      - 美国(TG@kxswa) 5
+      - 美国(TG@kxswa) 6
+      - 美国(TG@kxswa) 7
+      - 美国(TG@kxswa) 8
+      - 美国(TG@kxswa) 9
+      - 美国(TG@kxswa) 10
+      - 美国(TG@kxswa) 11
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -180,179 +84,71 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - A03 香港65 GCP
-      - A04 香港41 AZ
-      - 新加坡48
-      - A09 香港58 GCP
-      - 香港22 HKT 动态IP SSR 奈飞
-      - A06 香港32 GCP
-      - A05 香港69 AZ
-      - A07 香港71 GCP
-      - A01 香港52 CMI
-      - A12 台湾13
-      - 台湾34 动态IP 奈飞
-      - 日本36 SSR
-      - 越南68
-      - 韩国06
-      - 新加坡47
-      - 印度05
-      - 澳大利亚24
-      - 菲律宾67
-      - 美国11 SSR
-      - A11 日本51
-      - A10 香港26 AZ
-      - 美国17
-      - 泰国57
-      - 新加坡25 Chatgpt
-      - 俄罗斯16
-      - 墨西哥15
-      - 土耳其59
-      - 西班牙44
-      - 加拿大30
-      - 丹麦12
-      - 荷兰35
-      - 马来西亚03
-      - 阿根廷23
-      - A02 香港63 CMI
-      - 迪拜55
+      - 美国(TG@kxswa)
+      - 美国(TG@kxswa) 2
+      - 美国(TG@kxswa) 3
+      - 美国(TG@kxswa) 4
+      - 美国(TG@kxswa) 5
+      - 美国(TG@kxswa) 6
+      - 美国(TG@kxswa) 7
+      - 美国(TG@kxswa) 8
+      - 美国(TG@kxswa) 9
+      - 美国(TG@kxswa) 10
+      - 美国(TG@kxswa) 11
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - A03 香港65 GCP
-      - A04 香港41 AZ
-      - A09 香港58 GCP
-      - 香港22 HKT 动态IP SSR 奈飞
-      - A06 香港32 GCP
-      - A05 香港69 AZ
-      - A07 香港71 GCP
-      - A01 香港52 CMI
-      - A12 台湾13
-      - 台湾34 动态IP 奈飞
-      - A10 香港26 AZ
-      - A02 香港63 CMI
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - A03 香港65 GCP
-      - A04 香港41 AZ
-      - 新加坡48
-      - A09 香港58 GCP
-      - 香港22 HKT 动态IP SSR 奈飞
-      - A06 香港32 GCP
-      - A05 香港69 AZ
-      - A07 香港71 GCP
-      - A01 香港52 CMI
-      - A12 台湾13
-      - 台湾34 动态IP 奈飞
-      - 日本36 SSR
-      - 越南68
-      - 韩国06
-      - 新加坡47
-      - 印度05
-      - 澳大利亚24
-      - 菲律宾67
-      - 美国11 SSR
-      - A11 日本51
-      - A10 香港26 AZ
-      - 美国17
-      - 泰国57
-      - 新加坡25 Chatgpt
-      - 俄罗斯16
-      - 墨西哥15
-      - 土耳其59
-      - 西班牙44
-      - 加拿大30
-      - 丹麦12
-      - 荷兰35
-      - 马来西亚03
-      - 阿根廷23
-      - A02 香港63 CMI
-      - 迪拜55
+      - 美国(TG@kxswa)
+      - 美国(TG@kxswa) 2
+      - 美国(TG@kxswa) 3
+      - 美国(TG@kxswa) 4
+      - 美国(TG@kxswa) 5
+      - 美国(TG@kxswa) 6
+      - 美国(TG@kxswa) 7
+      - 美国(TG@kxswa) 8
+      - 美国(TG@kxswa) 9
+      - 美国(TG@kxswa) 10
+      - 美国(TG@kxswa) 11
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - A03 香港65 GCP
-      - A04 香港41 AZ
-      - 新加坡48
-      - A09 香港58 GCP
-      - 香港22 HKT 动态IP SSR 奈飞
-      - A06 香港32 GCP
-      - A05 香港69 AZ
-      - A07 香港71 GCP
-      - A01 香港52 CMI
-      - A12 台湾13
-      - 台湾34 动态IP 奈飞
-      - 日本36 SSR
-      - 越南68
-      - 韩国06
-      - 新加坡47
-      - 印度05
-      - 澳大利亚24
-      - 菲律宾67
-      - 美国11 SSR
-      - A11 日本51
-      - A10 香港26 AZ
-      - 美国17
-      - 泰国57
-      - 新加坡25 Chatgpt
-      - 俄罗斯16
-      - 墨西哥15
-      - 土耳其59
-      - 西班牙44
-      - 加拿大30
-      - 丹麦12
-      - 荷兰35
-      - 马来西亚03
-      - 阿根廷23
-      - A02 香港63 CMI
-      - 迪拜55
+      - 美国(TG@kxswa)
+      - 美国(TG@kxswa) 2
+      - 美国(TG@kxswa) 3
+      - 美国(TG@kxswa) 4
+      - 美国(TG@kxswa) 5
+      - 美国(TG@kxswa) 6
+      - 美国(TG@kxswa) 7
+      - 美国(TG@kxswa) 8
+      - 美国(TG@kxswa) 9
+      - 美国(TG@kxswa) 10
+      - 美国(TG@kxswa) 11
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - A03 香港65 GCP
-      - A04 香港41 AZ
-      - 新加坡48
-      - A09 香港58 GCP
-      - 香港22 HKT 动态IP SSR 奈飞
-      - A06 香港32 GCP
-      - A05 香港69 AZ
-      - A07 香港71 GCP
-      - A01 香港52 CMI
-      - A12 台湾13
-      - 台湾34 动态IP 奈飞
-      - 日本36 SSR
-      - 越南68
-      - 韩国06
-      - 新加坡47
-      - 印度05
-      - 澳大利亚24
-      - 菲律宾67
-      - 美国11 SSR
-      - A11 日本51
-      - A10 香港26 AZ
-      - 美国17
-      - 泰国57
-      - 新加坡25 Chatgpt
-      - 俄罗斯16
-      - 墨西哥15
-      - 土耳其59
-      - 西班牙44
-      - 加拿大30
-      - 丹麦12
-      - 荷兰35
-      - 马来西亚03
-      - 阿根廷23
-      - A02 香港63 CMI
-      - 迪拜55
+      - 美国(TG@kxswa)
+      - 美国(TG@kxswa) 2
+      - 美国(TG@kxswa) 3
+      - 美国(TG@kxswa) 4
+      - 美国(TG@kxswa) 5
+      - 美国(TG@kxswa) 6
+      - 美国(TG@kxswa) 7
+      - 美国(TG@kxswa) 8
+      - 美国(TG@kxswa) 9
+      - 美国(TG@kxswa) 10
+      - 美国(TG@kxswa) 11
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -368,41 +164,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - A03 香港65 GCP
-      - A04 香港41 AZ
-      - 新加坡48
-      - A09 香港58 GCP
-      - 香港22 HKT 动态IP SSR 奈飞
-      - A06 香港32 GCP
-      - A05 香港69 AZ
-      - A07 香港71 GCP
-      - A01 香港52 CMI
-      - A12 台湾13
-      - 台湾34 动态IP 奈飞
-      - 日本36 SSR
-      - 越南68
-      - 韩国06
-      - 新加坡47
-      - 印度05
-      - 澳大利亚24
-      - 菲律宾67
-      - 美国11 SSR
-      - A11 日本51
-      - A10 香港26 AZ
-      - 美国17
-      - 泰国57
-      - 新加坡25 Chatgpt
-      - 俄罗斯16
-      - 墨西哥15
-      - 土耳其59
-      - 西班牙44
-      - 加拿大30
-      - 丹麦12
-      - 荷兰35
-      - 马来西亚03
-      - 阿根廷23
-      - A02 香港63 CMI
-      - 迪拜55
+      - 美国(TG@kxswa)
+      - 美国(TG@kxswa) 2
+      - 美国(TG@kxswa) 3
+      - 美国(TG@kxswa) 4
+      - 美国(TG@kxswa) 5
+      - 美国(TG@kxswa) 6
+      - 美国(TG@kxswa) 7
+      - 美国(TG@kxswa) 8
+      - 美国(TG@kxswa) 9
+      - 美国(TG@kxswa) 10
+      - 美国(TG@kxswa) 11
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
