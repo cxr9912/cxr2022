@@ -5,83 +5,83 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本02, server: hainan.sfjsq001.info, port: 33212, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国01-Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33216, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /app/dytv.m3u8, headers: {Host: douyu.tv}}, udp: true}
-  - {name: 新加坡01-Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33214, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港02-Neflix|Disney+|HBO, server: hainan.sfjsq001.info, port: 33204, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /app/dytv.m3u8, headers: {Host: douyu.tv}}, udp: true}
-  - {name: 日本03, server: hainan.sfjsq001.info, port: 33213, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾02, server: hainan.sfjsq001.info, port: 33207, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾03-G口|Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33221, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /app/dytv.m3u8, headers: {Host: douyu.tv}}, udp: true}
-  - {name: 新加坡02, server: hainan.sfjsq001.info, port: 33910, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本01-Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33211, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾01-Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33206, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国01-Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33208, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国02, server: hainan.sfjsq001.info, port: 33217, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /app/dytv.m3u8, headers: {Host: douyu.tv}}, udp: true}
-  - {name: 美国02, server: hainan.sfjsq001.info, port: 33209, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国03, server: hainan.sfjsq001.info, port: 33210, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港04-Netflix|Disney+|动画疯, server: hainan.sfjsq001.info, port: 33218, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港01-Neflix|Disney+|HBO, server: hk.nodegroups.ink, port: 33203, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港03-Netflix|Disney+|动画疯, server: hk.nodegroups.ink, port: 33205, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港02-Neflix|Disney+|HBO, server: hk.nodegroups.ink, port: 33204, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港04-Netflix|Disney+|动画疯, server: hk.nodegroups.ink, port: 33218, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本02, server: jp.nodegroups.ink, port: 33212, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国01-Netflix|Disney+|动画疯, server: kr.nodegroups.ink, port: 33216, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾02, server: tw.nodegroups.ink, port: 33207, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国03, server: us.nodegroups.ink, port: 33210, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本03, server: jp.nodegroups.ink, port: 33213, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本01-Netflix|Disney+|动画疯, server: jp.nodegroups.ink, port: 33211, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾03-G口|Netflix|Disney+|动画疯, server: tw.nodegroups.ink, port: 33221, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡03, server: sg.nodegroups.ink, port: 33215, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国02, server: us.nodegroups.ink, port: 33209, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国02, server: kr.nodegroups.ink, port: 33217, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾01-Netflix|Disney+|动画疯, server: tw.nodegroups.ink, port: 33206, type: vmess, uuid: 9cce3fc0-42f8-3a03-a5d1-733c57e4c487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港01-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|动画疯
       - 日本02
       - 韩国01-Netflix|Disney+|动画疯
-      - 新加坡01-Netflix|Disney+|动画疯
-      - 香港02-Neflix|Disney+|HBO
-      - 日本03
       - 台湾02
-      - 台湾03-G口|Netflix|Disney+|动画疯
-      - 新加坡02
-      - 日本01-Netflix|Disney+|动画疯
-      - 台湾01-Netflix|Disney+|动画疯
-      - 美国01-Netflix|Disney+|动画疯
-      - 韩国02
-      - 美国02
       - 美国03
-      - 香港04-Netflix|Disney+|动画疯
+      - 日本03
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡03
+      - 美国02
+      - 韩国02
+      - 台湾01-Netflix|Disney+|动画疯
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 香港01-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|动画疯
       - 日本02
       - 韩国01-Netflix|Disney+|动画疯
-      - 新加坡01-Netflix|Disney+|动画疯
-      - 香港02-Neflix|Disney+|HBO
-      - 日本03
       - 台湾02
-      - 台湾03-G口|Netflix|Disney+|动画疯
-      - 新加坡02
-      - 日本01-Netflix|Disney+|动画疯
-      - 台湾01-Netflix|Disney+|动画疯
-      - 美国01-Netflix|Disney+|动画疯
-      - 韩国02
-      - 美国02
       - 美国03
-      - 香港04-Netflix|Disney+|动画疯
+      - 日本03
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡03
+      - 美国02
+      - 韩国02
+      - 台湾01-Netflix|Disney+|动画疯
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港01-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|动画疯
       - 日本02
       - 韩国01-Netflix|Disney+|动画疯
-      - 新加坡01-Netflix|Disney+|动画疯
-      - 香港02-Neflix|Disney+|HBO
-      - 日本03
       - 台湾02
-      - 台湾03-G口|Netflix|Disney+|动画疯
-      - 新加坡02
-      - 日本01-Netflix|Disney+|动画疯
-      - 台湾01-Netflix|Disney+|动画疯
-      - 美国01-Netflix|Disney+|动画疯
-      - 韩国02
-      - 美国02
       - 美国03
-      - 香港04-Netflix|Disney+|动画疯
+      - 日本03
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡03
+      - 美国02
+      - 韩国02
+      - 台湾01-Netflix|Disney+|动画疯
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -100,92 +100,94 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港01-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|动画疯
       - 日本02
       - 韩国01-Netflix|Disney+|动画疯
-      - 新加坡01-Netflix|Disney+|动画疯
-      - 香港02-Neflix|Disney+|HBO
-      - 日本03
       - 台湾02
-      - 台湾03-G口|Netflix|Disney+|动画疯
-      - 新加坡02
-      - 日本01-Netflix|Disney+|动画疯
-      - 台湾01-Netflix|Disney+|动画疯
-      - 美国01-Netflix|Disney+|动画疯
-      - 韩国02
-      - 美国02
       - 美国03
-      - 香港04-Netflix|Disney+|动画疯
+      - 日本03
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡03
+      - 美国02
+      - 韩国02
+      - 台湾01-Netflix|Disney+|动画疯
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港01-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|动画疯
       - 香港02-Neflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|动画疯
       - 台湾02
       - 台湾03-G口|Netflix|Disney+|动画疯
       - 台湾01-Netflix|Disney+|动画疯
-      - 香港04-Netflix|Disney+|动画疯
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 香港01-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|动画疯
       - 日本02
       - 韩国01-Netflix|Disney+|动画疯
-      - 新加坡01-Netflix|Disney+|动画疯
-      - 香港02-Neflix|Disney+|HBO
-      - 日本03
       - 台湾02
-      - 台湾03-G口|Netflix|Disney+|动画疯
-      - 新加坡02
-      - 日本01-Netflix|Disney+|动画疯
-      - 台湾01-Netflix|Disney+|动画疯
-      - 美国01-Netflix|Disney+|动画疯
-      - 韩国02
-      - 美国02
       - 美国03
-      - 香港04-Netflix|Disney+|动画疯
+      - 日本03
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡03
+      - 美国02
+      - 韩国02
+      - 台湾01-Netflix|Disney+|动画疯
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 香港01-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|动画疯
       - 日本02
       - 韩国01-Netflix|Disney+|动画疯
-      - 新加坡01-Netflix|Disney+|动画疯
-      - 香港02-Neflix|Disney+|HBO
-      - 日本03
       - 台湾02
-      - 台湾03-G口|Netflix|Disney+|动画疯
-      - 新加坡02
-      - 日本01-Netflix|Disney+|动画疯
-      - 台湾01-Netflix|Disney+|动画疯
-      - 美国01-Netflix|Disney+|动画疯
-      - 韩国02
-      - 美国02
       - 美国03
-      - 香港04-Netflix|Disney+|动画疯
+      - 日本03
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡03
+      - 美国02
+      - 韩国02
+      - 台湾01-Netflix|Disney+|动画疯
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 香港01-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|动画疯
       - 日本02
       - 韩国01-Netflix|Disney+|动画疯
-      - 新加坡01-Netflix|Disney+|动画疯
-      - 香港02-Neflix|Disney+|HBO
-      - 日本03
       - 台湾02
-      - 台湾03-G口|Netflix|Disney+|动画疯
-      - 新加坡02
-      - 日本01-Netflix|Disney+|动画疯
-      - 台湾01-Netflix|Disney+|动画疯
-      - 美国01-Netflix|Disney+|动画疯
-      - 韩国02
-      - 美国02
       - 美国03
-      - 香港04-Netflix|Disney+|动画疯
+      - 日本03
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡03
+      - 美国02
+      - 韩国02
+      - 台湾01-Netflix|Disney+|动画疯
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -201,21 +203,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 香港01-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|动画疯
+      - 香港02-Neflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|动画疯
       - 日本02
       - 韩国01-Netflix|Disney+|动画疯
-      - 新加坡01-Netflix|Disney+|动画疯
-      - 香港02-Neflix|Disney+|HBO
-      - 日本03
       - 台湾02
-      - 台湾03-G口|Netflix|Disney+|动画疯
-      - 新加坡02
-      - 日本01-Netflix|Disney+|动画疯
-      - 台湾01-Netflix|Disney+|动画疯
-      - 美国01-Netflix|Disney+|动画疯
-      - 韩国02
-      - 美国02
       - 美国03
-      - 香港04-Netflix|Disney+|动画疯
+      - 日本03
+      - 日本01-Netflix|Disney+|动画疯
+      - 台湾03-G口|Netflix|Disney+|动画疯
+      - 新加坡03
+      - 美国02
+      - 韩国02
+      - 台湾01-Netflix|Disney+|动画疯
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
