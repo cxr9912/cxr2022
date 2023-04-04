@@ -5,67 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国(TG@kxswa), server: quranweb6.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quranweb6.xyz}, udp: true}
-  - {name: 美国(TG@kxswa) 2, server: quranweb16.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quranweb16.xyz}, udp: true}
-  - {name: 美国(TG@kxswa) 3, server: quranweb12.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quranweb12.xyz}, udp: true}
-  - {name: 美国(TG@kxswa) 4, server: quranweb3.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quranweb3.xyz}, udp: true}
-  - {name: 美国(TG@kxswa) 5, server: 1st.starvskii2world.top, port: 443, type: vmess, uuid: 3c530a57-f1f0-4fe0-92c3-7287a5251f97, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cf01, ws-headers: {Host: 1st.starvskii2world.top}, udp: true}
-  - {name: 美国(TG@kxswa) 6, server: holyquran10.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: holyquran10.store}, udp: true}
-  - {name: 美国(TG@kxswa) 7, server: quranweb26.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quranweb26.xyz}, udp: true}
-  - {name: 美国(TG@kxswa) 8, server: quranweb34.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quranweb34.xyz}, udp: true}
-  - {name: 美国(TG@kxswa) 9, server: 172.67.194.139, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: cf-topspeedoneplus.uk}, udp: true}
-  - {name: 美国(TG@kxswa) 10, server: quran-audio2.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quran-audio2.xyz}, udp: true}
-  - {name: 美国(TG@kxswa) 11, server: quran-audio5.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /current_time, ws-headers: {Host: quran-audio5.xyz}, udp: true}
+  - {name: 新加坡02, server: 54.151.166.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 美国1号-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: b79a9be5-0fc7-426c-9741-602ba021db36, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/us1?ed=2048", ws-headers: {Host: us1.yfjc.sbs}, udp: true}
+  - {name: "_[无审计]BuyVM", server: cf.noaries.de, port: 8080, type: vmess, uuid: 01d07cdf-aa5e-4889-8cbd-bd2b88179a85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: buyvm.cloudflare.quest}, udp: true}
+  - {name: "_[WARP]Scaleway", server: cf.noaries.de, port: 2052, type: vmess, uuid: 01d07cdf-aa5e-4889-8cbd-bd2b88179a85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: fr.cloudflare.quest}, udp: true}
+  - {name: 荷兰Eygelshoven | BT下载-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: b79a9be5-0fc7-426c-9741-602ba021db36, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/nl3?ed=2048", ws-headers: {Host: nl3.yfjc.sbs}, udp: true}
+  - {name: 美国2号-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: b79a9be5-0fc7-426c-9741-602ba021db36, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/us2?ed=2048", ws-headers: {Host: us2.yfjc.sbs}, udp: true}
+  - {name: _Scaleway, server: cf.noaries.de, port: 8080, type: vmess, uuid: 01d07cdf-aa5e-4889-8cbd-bd2b88179a85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: nls.cloudflare.quest}, udp: true}
+  - {name: 荷兰2 | BT下载-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: b79a9be5-0fc7-426c-9741-602ba021db36, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/nl2?ed=2048", ws-headers: {Host: nl2.yfjc.sbs}, udp: true}
+  - {name: 土耳其-ws, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: b79a9be5-0fc7-426c-9741-602ba021db36, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/tr1?ed=2048", ws-headers: {Host: tr1.yfjc.sbs}, udp: true}
+  - {name: "_[原生]pilw", server: cf.noaries.de, port: 2052, type: vmess, uuid: 01d07cdf-aa5e-4889-8cbd-bd2b88179a85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: ee.cloudflare.quest}, udp: true}
+  - {name: "_[PF][数据网络]Scaleway-圣卢西亚Digicel", server: cf.noaries.de, port: 2052, type: vmess, uuid: 01d07cdf-aa5e-4889-8cbd-bd2b88179a85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: nls.cloudflare.quest}, udp: true}
+  - {name: 日本02, server: 52.69.182.30, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国(TG@kxswa)
-      - 美国(TG@kxswa) 2
-      - 美国(TG@kxswa) 3
-      - 美国(TG@kxswa) 4
-      - 美国(TG@kxswa) 5
-      - 美国(TG@kxswa) 6
-      - 美国(TG@kxswa) 7
-      - 美国(TG@kxswa) 8
-      - 美国(TG@kxswa) 9
-      - 美国(TG@kxswa) 10
-      - 美国(TG@kxswa) 11
+      - 新加坡02
+      - 美国1号-0.1x
+      - _[无审计]BuyVM
+      - _[WARP]Scaleway
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - 美国2号-0.1x
+      - _Scaleway
+      - 荷兰2 | BT下载-0.1x
+      - 土耳其-ws
+      - _[原生]pilw
+      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
+      - 日本02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国(TG@kxswa)
-      - 美国(TG@kxswa) 2
-      - 美国(TG@kxswa) 3
-      - 美国(TG@kxswa) 4
-      - 美国(TG@kxswa) 5
-      - 美国(TG@kxswa) 6
-      - 美国(TG@kxswa) 7
-      - 美国(TG@kxswa) 8
-      - 美国(TG@kxswa) 9
-      - 美国(TG@kxswa) 10
-      - 美国(TG@kxswa) 11
+      - 新加坡02
+      - 美国1号-0.1x
+      - _[无审计]BuyVM
+      - _[WARP]Scaleway
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - 美国2号-0.1x
+      - _Scaleway
+      - 荷兰2 | BT下载-0.1x
+      - 土耳其-ws
+      - _[原生]pilw
+      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
+      - 日本02
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国(TG@kxswa)
-      - 美国(TG@kxswa) 2
-      - 美国(TG@kxswa) 3
-      - 美国(TG@kxswa) 4
-      - 美国(TG@kxswa) 5
-      - 美国(TG@kxswa) 6
-      - 美国(TG@kxswa) 7
-      - 美国(TG@kxswa) 8
-      - 美国(TG@kxswa) 9
-      - 美国(TG@kxswa) 10
-      - 美国(TG@kxswa) 11
+      - 新加坡02
+      - 美国1号-0.1x
+      - _[无审计]BuyVM
+      - _[WARP]Scaleway
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - 美国2号-0.1x
+      - _Scaleway
+      - 荷兰2 | BT下载-0.1x
+      - 土耳其-ws
+      - _[原生]pilw
+      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
+      - 日本02
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,17 +88,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国(TG@kxswa)
-      - 美国(TG@kxswa) 2
-      - 美国(TG@kxswa) 3
-      - 美国(TG@kxswa) 4
-      - 美国(TG@kxswa) 5
-      - 美国(TG@kxswa) 6
-      - 美国(TG@kxswa) 7
-      - 美国(TG@kxswa) 8
-      - 美国(TG@kxswa) 9
-      - 美国(TG@kxswa) 10
-      - 美国(TG@kxswa) 11
+      - 新加坡02
+      - 美国1号-0.1x
+      - _[无审计]BuyVM
+      - _[WARP]Scaleway
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - 美国2号-0.1x
+      - _Scaleway
+      - 荷兰2 | BT下载-0.1x
+      - 土耳其-ws
+      - _[原生]pilw
+      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
+      - 日本02
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -105,50 +110,53 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国(TG@kxswa)
-      - 美国(TG@kxswa) 2
-      - 美国(TG@kxswa) 3
-      - 美国(TG@kxswa) 4
-      - 美国(TG@kxswa) 5
-      - 美国(TG@kxswa) 6
-      - 美国(TG@kxswa) 7
-      - 美国(TG@kxswa) 8
-      - 美国(TG@kxswa) 9
-      - 美国(TG@kxswa) 10
-      - 美国(TG@kxswa) 11
+      - 新加坡02
+      - 美国1号-0.1x
+      - _[无审计]BuyVM
+      - _[WARP]Scaleway
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - 美国2号-0.1x
+      - _Scaleway
+      - 荷兰2 | BT下载-0.1x
+      - 土耳其-ws
+      - _[原生]pilw
+      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
+      - 日本02
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国(TG@kxswa)
-      - 美国(TG@kxswa) 2
-      - 美国(TG@kxswa) 3
-      - 美国(TG@kxswa) 4
-      - 美国(TG@kxswa) 5
-      - 美国(TG@kxswa) 6
-      - 美国(TG@kxswa) 7
-      - 美国(TG@kxswa) 8
-      - 美国(TG@kxswa) 9
-      - 美国(TG@kxswa) 10
-      - 美国(TG@kxswa) 11
+      - 新加坡02
+      - 美国1号-0.1x
+      - _[无审计]BuyVM
+      - _[WARP]Scaleway
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - 美国2号-0.1x
+      - _Scaleway
+      - 荷兰2 | BT下载-0.1x
+      - 土耳其-ws
+      - _[原生]pilw
+      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
+      - 日本02
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国(TG@kxswa)
-      - 美国(TG@kxswa) 2
-      - 美国(TG@kxswa) 3
-      - 美国(TG@kxswa) 4
-      - 美国(TG@kxswa) 5
-      - 美国(TG@kxswa) 6
-      - 美国(TG@kxswa) 7
-      - 美国(TG@kxswa) 8
-      - 美国(TG@kxswa) 9
-      - 美国(TG@kxswa) 10
-      - 美国(TG@kxswa) 11
+      - 新加坡02
+      - 美国1号-0.1x
+      - _[无审计]BuyVM
+      - _[WARP]Scaleway
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - 美国2号-0.1x
+      - _Scaleway
+      - 荷兰2 | BT下载-0.1x
+      - 土耳其-ws
+      - _[原生]pilw
+      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
+      - 日本02
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,17 +172,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国(TG@kxswa)
-      - 美国(TG@kxswa) 2
-      - 美国(TG@kxswa) 3
-      - 美国(TG@kxswa) 4
-      - 美国(TG@kxswa) 5
-      - 美国(TG@kxswa) 6
-      - 美国(TG@kxswa) 7
-      - 美国(TG@kxswa) 8
-      - 美国(TG@kxswa) 9
-      - 美国(TG@kxswa) 10
-      - 美国(TG@kxswa) 11
+      - 新加坡02
+      - 美国1号-0.1x
+      - _[无审计]BuyVM
+      - _[WARP]Scaleway
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - 美国2号-0.1x
+      - _Scaleway
+      - 荷兰2 | BT下载-0.1x
+      - 土耳其-ws
+      - _[原生]pilw
+      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
+      - 日本02
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
