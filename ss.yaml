@@ -5,71 +5,127 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡02, server: 54.151.166.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 美国1号-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: b79a9be5-0fc7-426c-9741-602ba021db36, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/us1?ed=2048", ws-headers: {Host: us1.yfjc.sbs}, udp: true}
-  - {name: "_[无审计]BuyVM", server: cf.noaries.de, port: 8080, type: vmess, uuid: 01d07cdf-aa5e-4889-8cbd-bd2b88179a85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: buyvm.cloudflare.quest}, udp: true}
-  - {name: "_[WARP]Scaleway", server: cf.noaries.de, port: 2052, type: vmess, uuid: 01d07cdf-aa5e-4889-8cbd-bd2b88179a85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: fr.cloudflare.quest}, udp: true}
-  - {name: 荷兰Eygelshoven | BT下载-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: b79a9be5-0fc7-426c-9741-602ba021db36, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/nl3?ed=2048", ws-headers: {Host: nl3.yfjc.sbs}, udp: true}
-  - {name: 美国2号-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: b79a9be5-0fc7-426c-9741-602ba021db36, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/us2?ed=2048", ws-headers: {Host: us2.yfjc.sbs}, udp: true}
-  - {name: _Scaleway, server: cf.noaries.de, port: 8080, type: vmess, uuid: 01d07cdf-aa5e-4889-8cbd-bd2b88179a85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: nls.cloudflare.quest}, udp: true}
-  - {name: 荷兰2 | BT下载-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: b79a9be5-0fc7-426c-9741-602ba021db36, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/nl2?ed=2048", ws-headers: {Host: nl2.yfjc.sbs}, udp: true}
-  - {name: 土耳其-ws, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: b79a9be5-0fc7-426c-9741-602ba021db36, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/tr1?ed=2048", ws-headers: {Host: tr1.yfjc.sbs}, udp: true}
-  - {name: "_[原生]pilw", server: cf.noaries.de, port: 2052, type: vmess, uuid: 01d07cdf-aa5e-4889-8cbd-bd2b88179a85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: ee.cloudflare.quest}, udp: true}
-  - {name: "_[PF][数据网络]Scaleway-圣卢西亚Digicel", server: cf.noaries.de, port: 2052, type: vmess, uuid: 01d07cdf-aa5e-4889-8cbd-bd2b88179a85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: nls.cloudflare.quest}, udp: true}
-  - {name: 日本02, server: 52.69.182.30, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 新加坡01丨IEPL 2.0x, server: gyie.51vv.top, port: 55304, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 日本01丨IEPL 2.0x, server: gyie.51vv.top, port: 55302, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 美国03丨优化 1.5x, server: gy.51vv.top, port: 31009, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 美国01丨中转 1.0x, server: gy.51vv.top, port: 31005, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 美国02丨中转 1.0x, server: gy.51vv.top, port: 31006, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 韩国01丨IEPL 2.0x, server: gyie.51vv.top, port: 55305, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 台湾02丨中转 1.0x, server: gy.51vv.top, port: 32011, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 日本03丨优化 1.5x, server: gy.51vv.top, port: 31008, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 香港01丨中转 1.0x, server: gy.51vv.top, port: 31001, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 韩国02丨中转 1.0x, server: gy.51vv.top, port: 32008, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 香港03丨中转 1.0x, server: gy.51vv.top, port: 31003, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 日本01丨中转 1.0x, server: gy.51vv.top, port: 32003, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 台湾03丨优化1.5x, server: gy.51vv.top, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 日本02丨中转 1.0x, server: gy.51vv.top, port: 32004, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 香港04丨中转 1.0x, server: gy.51vv.top, port: 31004, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 新加坡02丨中转 1.0x, server: gy.51vv.top, port: 31011, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 香港02丨中转 1.0x, server: gy.51vv.top, port: 31002, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 新加坡01丨中转 1.0x, server: gy.51vv.top, port: 31012, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 台湾01丨IEPL 2.0x, server: gyie.51vv.top, port: 55303, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 台湾01丨中转 1.0x, server: gy.51vv.top, port: 32010, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 土耳其丨中转 1.5x, server: gy.51vv.top, port: 32012, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 香港01丨IEPL 2.0x, server: gyie.51vv.top, port: 55301, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 香港04丨免流 1.0x, server: 16.163.128.120, port: 80, type: vmess, uuid: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zasasdsmkhjn, ws-headers: {Host: 16.163.128.120}, udp: true}
+  - {name: 香港02丨免流 1.0x, server: 18.167.207.59, port: 80, type: vmess, uuid: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zasasdsmkhjn, ws-headers: {Host: 18.167.207.59}, udp: true}
+  - {name: 新加坡03丨优化 1.5x, server: gy.51vv.top, port: 31007, type: ss, cipher: chacha20-ietf-poly1305, password: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, udp: true}
+  - {name: 香港01丨免流 1.0x, server: 18.162.55.183, port: 80, type: vmess, uuid: 6ba2173f-7262-4db2-b41d-b3e4f38efd0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zasasdsmkhjn, ws-headers: {Host: 18.162.55.183}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡02
-      - 美国1号-0.1x
-      - _[无审计]BuyVM
-      - _[WARP]Scaleway
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 美国2号-0.1x
-      - _Scaleway
-      - 荷兰2 | BT下载-0.1x
-      - 土耳其-ws
-      - _[原生]pilw
-      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
-      - 日本02
+      - 新加坡01丨IEPL 2.0x
+      - 日本01丨IEPL 2.0x
+      - 美国03丨优化 1.5x
+      - 美国01丨中转 1.0x
+      - 美国02丨中转 1.0x
+      - 韩国01丨IEPL 2.0x
+      - 台湾02丨中转 1.0x
+      - 日本03丨优化 1.5x
+      - 香港01丨中转 1.0x
+      - 韩国02丨中转 1.0x
+      - 香港03丨中转 1.0x
+      - 日本01丨中转 1.0x
+      - 台湾03丨优化1.5x
+      - 日本02丨中转 1.0x
+      - 香港04丨中转 1.0x
+      - 新加坡02丨中转 1.0x
+      - 香港02丨中转 1.0x
+      - 新加坡01丨中转 1.0x
+      - 台湾01丨IEPL 2.0x
+      - 台湾01丨中转 1.0x
+      - 土耳其丨中转 1.5x
+      - 香港01丨IEPL 2.0x
+      - 香港04丨免流 1.0x
+      - 香港02丨免流 1.0x
+      - 新加坡03丨优化 1.5x
+      - 香港01丨免流 1.0x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡02
-      - 美国1号-0.1x
-      - _[无审计]BuyVM
-      - _[WARP]Scaleway
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 美国2号-0.1x
-      - _Scaleway
-      - 荷兰2 | BT下载-0.1x
-      - 土耳其-ws
-      - _[原生]pilw
-      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
-      - 日本02
+      - 新加坡01丨IEPL 2.0x
+      - 日本01丨IEPL 2.0x
+      - 美国03丨优化 1.5x
+      - 美国01丨中转 1.0x
+      - 美国02丨中转 1.0x
+      - 韩国01丨IEPL 2.0x
+      - 台湾02丨中转 1.0x
+      - 日本03丨优化 1.5x
+      - 香港01丨中转 1.0x
+      - 韩国02丨中转 1.0x
+      - 香港03丨中转 1.0x
+      - 日本01丨中转 1.0x
+      - 台湾03丨优化1.5x
+      - 日本02丨中转 1.0x
+      - 香港04丨中转 1.0x
+      - 新加坡02丨中转 1.0x
+      - 香港02丨中转 1.0x
+      - 新加坡01丨中转 1.0x
+      - 台湾01丨IEPL 2.0x
+      - 台湾01丨中转 1.0x
+      - 土耳其丨中转 1.5x
+      - 香港01丨IEPL 2.0x
+      - 香港04丨免流 1.0x
+      - 香港02丨免流 1.0x
+      - 新加坡03丨优化 1.5x
+      - 香港01丨免流 1.0x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡02
-      - 美国1号-0.1x
-      - _[无审计]BuyVM
-      - _[WARP]Scaleway
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 美国2号-0.1x
-      - _Scaleway
-      - 荷兰2 | BT下载-0.1x
-      - 土耳其-ws
-      - _[原生]pilw
-      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
-      - 日本02
+      - 新加坡01丨IEPL 2.0x
+      - 日本01丨IEPL 2.0x
+      - 美国03丨优化 1.5x
+      - 美国01丨中转 1.0x
+      - 美国02丨中转 1.0x
+      - 韩国01丨IEPL 2.0x
+      - 台湾02丨中转 1.0x
+      - 日本03丨优化 1.5x
+      - 香港01丨中转 1.0x
+      - 韩国02丨中转 1.0x
+      - 香港03丨中转 1.0x
+      - 日本01丨中转 1.0x
+      - 台湾03丨优化1.5x
+      - 日本02丨中转 1.0x
+      - 香港04丨中转 1.0x
+      - 新加坡02丨中转 1.0x
+      - 香港02丨中转 1.0x
+      - 新加坡01丨中转 1.0x
+      - 台湾01丨IEPL 2.0x
+      - 台湾01丨中转 1.0x
+      - 土耳其丨中转 1.5x
+      - 香港01丨IEPL 2.0x
+      - 香港04丨免流 1.0x
+      - 香港02丨免流 1.0x
+      - 新加坡03丨优化 1.5x
+      - 香港01丨免流 1.0x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,75 +144,143 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡02
-      - 美国1号-0.1x
-      - _[无审计]BuyVM
-      - _[WARP]Scaleway
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 美国2号-0.1x
-      - _Scaleway
-      - 荷兰2 | BT下载-0.1x
-      - 土耳其-ws
-      - _[原生]pilw
-      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
-      - 日本02
+      - 新加坡01丨IEPL 2.0x
+      - 日本01丨IEPL 2.0x
+      - 美国03丨优化 1.5x
+      - 美国01丨中转 1.0x
+      - 美国02丨中转 1.0x
+      - 韩国01丨IEPL 2.0x
+      - 台湾02丨中转 1.0x
+      - 日本03丨优化 1.5x
+      - 香港01丨中转 1.0x
+      - 韩国02丨中转 1.0x
+      - 香港03丨中转 1.0x
+      - 日本01丨中转 1.0x
+      - 台湾03丨优化1.5x
+      - 日本02丨中转 1.0x
+      - 香港04丨中转 1.0x
+      - 新加坡02丨中转 1.0x
+      - 香港02丨中转 1.0x
+      - 新加坡01丨中转 1.0x
+      - 台湾01丨IEPL 2.0x
+      - 台湾01丨中转 1.0x
+      - 土耳其丨中转 1.5x
+      - 香港01丨IEPL 2.0x
+      - 香港04丨免流 1.0x
+      - 香港02丨免流 1.0x
+      - 新加坡03丨优化 1.5x
+      - 香港01丨免流 1.0x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾02丨中转 1.0x
+      - 香港01丨中转 1.0x
+      - 香港03丨中转 1.0x
+      - 台湾03丨优化1.5x
+      - 香港04丨中转 1.0x
+      - 香港02丨中转 1.0x
+      - 台湾01丨IEPL 2.0x
+      - 台湾01丨中转 1.0x
+      - 香港01丨IEPL 2.0x
+      - 香港04丨免流 1.0x
+      - 香港02丨免流 1.0x
+      - 香港01丨免流 1.0x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡02
-      - 美国1号-0.1x
-      - _[无审计]BuyVM
-      - _[WARP]Scaleway
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 美国2号-0.1x
-      - _Scaleway
-      - 荷兰2 | BT下载-0.1x
-      - 土耳其-ws
-      - _[原生]pilw
-      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
-      - 日本02
+      - 新加坡01丨IEPL 2.0x
+      - 日本01丨IEPL 2.0x
+      - 美国03丨优化 1.5x
+      - 美国01丨中转 1.0x
+      - 美国02丨中转 1.0x
+      - 韩国01丨IEPL 2.0x
+      - 台湾02丨中转 1.0x
+      - 日本03丨优化 1.5x
+      - 香港01丨中转 1.0x
+      - 韩国02丨中转 1.0x
+      - 香港03丨中转 1.0x
+      - 日本01丨中转 1.0x
+      - 台湾03丨优化1.5x
+      - 日本02丨中转 1.0x
+      - 香港04丨中转 1.0x
+      - 新加坡02丨中转 1.0x
+      - 香港02丨中转 1.0x
+      - 新加坡01丨中转 1.0x
+      - 台湾01丨IEPL 2.0x
+      - 台湾01丨中转 1.0x
+      - 土耳其丨中转 1.5x
+      - 香港01丨IEPL 2.0x
+      - 香港04丨免流 1.0x
+      - 香港02丨免流 1.0x
+      - 新加坡03丨优化 1.5x
+      - 香港01丨免流 1.0x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡02
-      - 美国1号-0.1x
-      - _[无审计]BuyVM
-      - _[WARP]Scaleway
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 美国2号-0.1x
-      - _Scaleway
-      - 荷兰2 | BT下载-0.1x
-      - 土耳其-ws
-      - _[原生]pilw
-      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
-      - 日本02
+      - 新加坡01丨IEPL 2.0x
+      - 日本01丨IEPL 2.0x
+      - 美国03丨优化 1.5x
+      - 美国01丨中转 1.0x
+      - 美国02丨中转 1.0x
+      - 韩国01丨IEPL 2.0x
+      - 台湾02丨中转 1.0x
+      - 日本03丨优化 1.5x
+      - 香港01丨中转 1.0x
+      - 韩国02丨中转 1.0x
+      - 香港03丨中转 1.0x
+      - 日本01丨中转 1.0x
+      - 台湾03丨优化1.5x
+      - 日本02丨中转 1.0x
+      - 香港04丨中转 1.0x
+      - 新加坡02丨中转 1.0x
+      - 香港02丨中转 1.0x
+      - 新加坡01丨中转 1.0x
+      - 台湾01丨IEPL 2.0x
+      - 台湾01丨中转 1.0x
+      - 土耳其丨中转 1.5x
+      - 香港01丨IEPL 2.0x
+      - 香港04丨免流 1.0x
+      - 香港02丨免流 1.0x
+      - 新加坡03丨优化 1.5x
+      - 香港01丨免流 1.0x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡02
-      - 美国1号-0.1x
-      - _[无审计]BuyVM
-      - _[WARP]Scaleway
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 美国2号-0.1x
-      - _Scaleway
-      - 荷兰2 | BT下载-0.1x
-      - 土耳其-ws
-      - _[原生]pilw
-      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
-      - 日本02
+      - 新加坡01丨IEPL 2.0x
+      - 日本01丨IEPL 2.0x
+      - 美国03丨优化 1.5x
+      - 美国01丨中转 1.0x
+      - 美国02丨中转 1.0x
+      - 韩国01丨IEPL 2.0x
+      - 台湾02丨中转 1.0x
+      - 日本03丨优化 1.5x
+      - 香港01丨中转 1.0x
+      - 韩国02丨中转 1.0x
+      - 香港03丨中转 1.0x
+      - 日本01丨中转 1.0x
+      - 台湾03丨优化1.5x
+      - 日本02丨中转 1.0x
+      - 香港04丨中转 1.0x
+      - 新加坡02丨中转 1.0x
+      - 香港02丨中转 1.0x
+      - 新加坡01丨中转 1.0x
+      - 台湾01丨IEPL 2.0x
+      - 台湾01丨中转 1.0x
+      - 土耳其丨中转 1.5x
+      - 香港01丨IEPL 2.0x
+      - 香港04丨免流 1.0x
+      - 香港02丨免流 1.0x
+      - 新加坡03丨优化 1.5x
+      - 香港01丨免流 1.0x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -172,18 +296,32 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡02
-      - 美国1号-0.1x
-      - _[无审计]BuyVM
-      - _[WARP]Scaleway
-      - 荷兰Eygelshoven | BT下载-0.1x
-      - 美国2号-0.1x
-      - _Scaleway
-      - 荷兰2 | BT下载-0.1x
-      - 土耳其-ws
-      - _[原生]pilw
-      - _[PF][数据网络]Scaleway-圣卢西亚Digicel
-      - 日本02
+      - 新加坡01丨IEPL 2.0x
+      - 日本01丨IEPL 2.0x
+      - 美国03丨优化 1.5x
+      - 美国01丨中转 1.0x
+      - 美国02丨中转 1.0x
+      - 韩国01丨IEPL 2.0x
+      - 台湾02丨中转 1.0x
+      - 日本03丨优化 1.5x
+      - 香港01丨中转 1.0x
+      - 韩国02丨中转 1.0x
+      - 香港03丨中转 1.0x
+      - 日本01丨中转 1.0x
+      - 台湾03丨优化1.5x
+      - 日本02丨中转 1.0x
+      - 香港04丨中转 1.0x
+      - 新加坡02丨中转 1.0x
+      - 香港02丨中转 1.0x
+      - 新加坡01丨中转 1.0x
+      - 台湾01丨IEPL 2.0x
+      - 台湾01丨中转 1.0x
+      - 土耳其丨中转 1.5x
+      - 香港01丨IEPL 2.0x
+      - 香港04丨免流 1.0x
+      - 香港02丨免流 1.0x
+      - 新加坡03丨优化 1.5x
+      - 香港01丨免流 1.0x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
