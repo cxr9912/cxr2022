@@ -5,211 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 20 → openitsub.com, server: v02.gutingting.com, port: 30005, type: trojan, password: 420e288b-f206-4787-ad92-922a335a4d15, sni: v2hgc01.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: CN 19 → openitsub.com, server: v02.gutingting.com, port: 30038, type: trojan, password: d6d98478-0966-4f50-b83a-86510c6ab9e7, sni: v2hgc02.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: CN 41 → openitsub.com, server: v02.gutingting.com, port: 30049, type: trojan, password: 6a38177b-1cf2-4007-8df9-60a42851a35b, sni: v2sg02.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: CN 94 → openitsub.com, server: v02.gutingting.com, port: 30057, type: trojan, password: d6d98478-0966-4f50-b83a-86510c6ab9e7, sni: v1kr02.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: CN 54 → openitsub.com, server: v01.gutingting.com, port: 20221, type: trojan, password: 029da275-75a6-4970-8f36-95e77534f3f5, sni: v2jp01.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: CN 53 → openitsub.com, server: ns01.gutingting.com, port: 30044, type: vmess, uuid: 420e288b-f206-4787-ad92-922a335a4d15, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: CN 58 → openitsub.com, server: ns02.gutingting.com, port: 30021, type: vmess, uuid: 029da275-75a6-4970-8f36-95e77534f3f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: CN 103 → openitsub.com, server: v02.gutingting.com, port: 30052, type: trojan, password: 420e288b-f206-4787-ad92-922a335a4d15, sni: v2th01.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: CN 52 → openitsub.com, server: v02.gutingting.com, port: 30055, type: trojan, password: d6d98478-0966-4f50-b83a-86510c6ab9e7, sni: v1jp02.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: CN 57 → openitsub.com, server: ns01.gutingting.com, port: 30009, type: vmess, uuid: 6a38177b-1cf2-4007-8df9-60a42851a35b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: CN 55 → openitsub.com, server: ns02.gutingting.com, port: 30021, type: vmess, uuid: 420e288b-f206-4787-ad92-922a335a4d15, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: CN 31 → openitsub.com, server: v01.gutingting.com, port: 30002, type: trojan, password: 6a38177b-1cf2-4007-8df9-60a42851a35b, sni: v2tw01.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: CN 56 → openitsub.com, server: ns02.gutingting.com, port: 30021, type: vmess, uuid: 6a38177b-1cf2-4007-8df9-60a42851a35b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: CN 93 → openitsub.com, server: v01.gutingting.com, port: 30056, type: trojan, password: 420e288b-f206-4787-ad92-922a335a4d15, sni: v1kr01.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: CN 44 → openitsub.com, server: v02.gutingting.com, port: 30059, type: trojan, password: 029da275-75a6-4970-8f36-95e77534f3f5, sni: v2sggpt01.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: CN 43 → openitsub.com, server: v01.gutingting.com, port: 30035, type: vmess, uuid: 029da275-75a6-4970-8f36-95e77534f3f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: v01.gutingting.com}}, udp: true}
+  - {name: CN 101 → openitsub.com, server: 14.29.169.53, port: 40002, type: vmess, uuid: 09d40745-d455-4945-8bc1-80af1682ffc8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 102 → openitsub.com, server: sz.cny.page, port: 31614, type: vmess, uuid: 88c6d12b-614f-485f-83fc-fb0cc57c4801, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sz.cny.page}}, udp: true}
   - {name: CN 88 → openitsub.com, server: 14.29.169.53, port: 40002, type: vmess, uuid: 09d40745-d455-4945-8bc1-80af1682ffc8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 40 → openitsub.com, server: cm3.naichald.xyz, port: 38878, type: ss, cipher: chacha20-ietf-poly1305, password: 1529dad3-c7ff-4873-a95c-ab219a72e5de, udp: true}
-  - {name: CN 49 → openitsub.com, server: 115.223.28.253, port: 36007, type: vmess, uuid: 3d88a049-0143-374d-bec7-48115402608f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 68 → openitsub.com, server: gg.xn--gmqa02ag57d.com, port: 20139, type: trojan, password: ca097c60-4fc1-3334-bcd7-6a497ffcfb32, sni: z139.hongkongnode.top, skip-cert-verify: true, udp: true}
-  - {name: CN 38 → openitsub.com, server: cmxuzhou.netflix6.com, port: 36020, type: vmess, uuid: 3d88a049-0143-374d-bec7-48115402608f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 42 → openitsub.com, server: v02.gutingting.com, port: 20223, type: trojan, password: 029da275-75a6-4970-8f36-95e77534f3f5, sni: v2sg01.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: CN 69 → openitsub.com, server: gg.xn--gmqa02ag57d.com, port: 20140, type: trojan, password: ca097c60-4fc1-3334-bcd7-6a497ffcfb32, sni: z140.hongkongnode.top, skip-cert-verify: true, udp: true}
-  - {name: CN 05 → openitsub.com, server: cs.ttkcloud.xyz, port: 59021, type: trojan, password: 15dbd831-1b8b-4bec-aaef-a3e59fc1f5b0, sni: 74.120.175.243, skip-cert-verify: true, udp: true}
-  - {name: CN 01 → openitsub.com, server: v01.gutingting.com, port: 30048, type: vmess, uuid: d6d98478-0966-4f50-b83a-86510c6ab9e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}, udp: true}
-  - {name: CN 67 → openitsub.com, server: gg.xn--gmqa02ag57d.com, port: 20059, type: trojan, password: ca097c60-4fc1-3334-bcd7-6a497ffcfb32, sni: x59.flybar.work, skip-cert-verify: true, udp: true}
-  - {name: CN 91 → openitsub.com, server: v01.gutingting.com, port: 30027, type: vmess, uuid: d6d98478-0966-4f50-b83a-86510c6ab9e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: CN 70 → openitsub.com, server: gg.xn--gmqa02ag57d.com, port: 20142, type: trojan, password: ca097c60-4fc1-3334-bcd7-6a497ffcfb32, sni: z142.hongkongnode.top, skip-cert-verify: true, udp: true}
-  - {name: CN 37 → openitsub.com, server: cmxuzhou.netflix6.com, port: 36019, type: vmess, uuid: 3d88a049-0143-374d-bec7-48115402608f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 90 → openitsub.com, server: v02.gutingting.com, port: 30028, type: vmess, uuid: 420e288b-f206-4787-ad92-922a335a4d15, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: CN 71 → openitsub.com, server: 42.7.24.12, port: 36011, type: vmess, uuid: 3d88a049-0143-374d-bec7-48115402608f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 06 → openitsub.com, server: gg.xn--gmqa02ag57d.com, port: 20295, type: trojan, password: ca097c60-4fc1-3334-bcd7-6a497ffcfb32, sni: z295.hongkongnode.top, skip-cert-verify: true, udp: true}
-  - {name: CN 04 → openitsub.com, server: lv2.ttkcloud.xyz, port: 59021, type: trojan, password: 15dbd831-1b8b-4bec-aaef-a3e59fc1f5b0, sni: 74.120.175.243, skip-cert-verify: true, udp: true}
-  - {name: CN 59 → openitsub.com, server: sa.steamdownload.top, port: 36632, type: trojan, password: 987fb87b-fc03-426a-bc9a-a5c065535d05, sni: data.xn--vur082k.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 73 → openitsub.com, server: 42.7.24.12, port: 36013, type: vmess, uuid: 3d88a049-0143-374d-bec7-48115402608f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 72 → openitsub.com, server: 42.7.24.12, port: 36012, type: vmess, uuid: 3d88a049-0143-374d-bec7-48115402608f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 02 → openitsub.com, server: v02.gutingting.com, port: 20225, type: trojan, password: 6a38177b-1cf2-4007-8df9-60a42851a35b, sni: v2usa01.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: CN 81 → openitsub.com, server: v01.gutingting.com, port: 30016, type: vmess, uuid: 6a38177b-1cf2-4007-8df9-60a42851a35b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: CN 12 → openitsub.com, server: 42.7.24.12, port: 36015, type: vmess, uuid: 3d88a049-0143-374d-bec7-48115402608f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 36 → openitsub.com, server: cmxuzhou.netflix6.com, port: 36018, type: vmess, uuid: 3d88a049-0143-374d-bec7-48115402608f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 11 → openitsub.com, server: 42.7.24.12, port: 36014, type: vmess, uuid: 3d88a049-0143-374d-bec7-48115402608f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 78 → openitsub.com, server: 42.7.24.12, port: 36016, type: vmess, uuid: 3d88a049-0143-374d-bec7-48115402608f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK 01 → openitsub.com, server: cn-hk-51.fnhffffe4.cc, port: 50014, type: trojan, password: 73658d71-be45-4495-bc3e-e69d36ce73b5, sni: cn-hk-51.fnhffffe4.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 86 → openitsub.com, server: 42.7.24.12, port: 36017, type: vmess, uuid: 3d88a049-0143-374d-bec7-48115402608f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 03 → openitsub.com, server: v02.gutingting.com, port: 30000, type: vmess, uuid: 029da275-75a6-4970-8f36-95e77534f3f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: gz.fastcloud.club}}, udp: true}
-  - {name: CN 48 → openitsub.com, server: 115.223.28.253, port: 36008, type: vmess, uuid: 3d88a049-0143-374d-bec7-48115402608f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 106 → openitsub.com, server: v02.gutingting.com, port: 30051, type: trojan, password: 420e288b-f206-4787-ad92-922a335a4d15, sni: v2vn01.fuqiangren.com, skip-cert-verify: true, udp: true}
+  - {name: CN 39 → openitsub.com, server: cmxuzhou.netflix6.com, port: 36020, type: vmess, uuid: 0b291b09-3cbc-3bd9-854d-c3a5922bc371, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 71 → openitsub.com, server: 42.7.24.12, port: 36011, type: vmess, uuid: 0b291b09-3cbc-3bd9-854d-c3a5922bc371, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 40 → openitsub.com, server: cmxuzhou.netflix6.com, port: 36018, type: vmess, uuid: 0b291b09-3cbc-3bd9-854d-c3a5922bc371, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 72 → openitsub.com, server: 42.7.24.12, port: 36012, type: vmess, uuid: 0b291b09-3cbc-3bd9-854d-c3a5922bc371, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 73 → openitsub.com, server: 42.7.24.12, port: 36013, type: vmess, uuid: 0b291b09-3cbc-3bd9-854d-c3a5922bc371, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 41 → openitsub.com, server: cmxuzhou.netflix6.com, port: 36019, type: vmess, uuid: 0b291b09-3cbc-3bd9-854d-c3a5922bc371, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 06 → openitsub.com, server: 42.7.24.12, port: 36015, type: vmess, uuid: 0b291b09-3cbc-3bd9-854d-c3a5922bc371, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 55 → openitsub.com, server: 115.223.28.253, port: 36007, type: vmess, uuid: 0b291b09-3cbc-3bd9-854d-c3a5922bc371, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 44 → openitsub.com, server: gg.xn--gmqa02ag57d.com, port: 59021, type: trojan, password: 7e33d8bc-1101-3fc1-b6df-f7f0568e7af0, sni: x100.flybar.work, skip-cert-verify: true, udp: true}
+  - {name: CN 88 → openitsub.com 2, server: 42.7.24.12, port: 36016, type: vmess, uuid: 0b291b09-3cbc-3bd9-854d-c3a5922bc371, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 64 → openitsub.com, server: sa.steamdownload.top, port: 36632, type: trojan, password: 987fb87b-fc03-426a-bc9a-a5c065535d05, sni: data.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: CN 94 → openitsub.com, server: 42.7.24.12, port: 36017, type: vmess, uuid: 0b291b09-3cbc-3bd9-854d-c3a5922bc371, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: unknown 01 → openitsub.com, server: us226.ljydw.top, port: 443, type: trojan, password: 4769e1ed-d795-49a7-ab86-cfe785c6783d, sni: us226.ljydw.top, skip-cert-verify: true, udp: true}
+  - {name: CN 07 → openitsub.com, server: 42.7.24.12, port: 36014, type: vmess, uuid: 0b291b09-3cbc-3bd9-854d-c3a5922bc371, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 20 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 94 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 53 → openitsub.com
-      - CN 58 → openitsub.com
-      - CN 103 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 57 → openitsub.com
-      - CN 55 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 56 → openitsub.com
-      - CN 93 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 43 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 102 → openitsub.com
       - CN 88 → openitsub.com
-      - CN 40 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 05 → openitsub.com
-      - CN 01 → openitsub.com
-      - CN 67 → openitsub.com
-      - CN 91 → openitsub.com
-      - CN 70 → openitsub.com
-      - CN 37 → openitsub.com
-      - CN 90 → openitsub.com
+      - CN 39 → openitsub.com
       - CN 71 → openitsub.com
-      - CN 06 → openitsub.com
-      - CN 04 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 73 → openitsub.com
+      - CN 40 → openitsub.com
       - CN 72 → openitsub.com
-      - CN 02 → openitsub.com
-      - CN 81 → openitsub.com
-      - CN 12 → openitsub.com
-      - CN 36 → openitsub.com
-      - CN 11 → openitsub.com
-      - CN 78 → openitsub.com
-      - HK 01 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 03 → openitsub.com
-      - CN 48 → openitsub.com
-      - CN 106 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 41 → openitsub.com
+      - CN 06 → openitsub.com
+      - CN 55 → openitsub.com
+      - CN 44 → openitsub.com
+      - CN 88 → openitsub.com 2
+      - CN 64 → openitsub.com
+      - CN 94 → openitsub.com
+      - unknown 01 → openitsub.com
+      - CN 07 → openitsub.com
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 20 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 94 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 53 → openitsub.com
-      - CN 58 → openitsub.com
-      - CN 103 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 57 → openitsub.com
-      - CN 55 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 56 → openitsub.com
-      - CN 93 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 43 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 102 → openitsub.com
       - CN 88 → openitsub.com
-      - CN 40 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 05 → openitsub.com
-      - CN 01 → openitsub.com
-      - CN 67 → openitsub.com
-      - CN 91 → openitsub.com
-      - CN 70 → openitsub.com
-      - CN 37 → openitsub.com
-      - CN 90 → openitsub.com
+      - CN 39 → openitsub.com
       - CN 71 → openitsub.com
-      - CN 06 → openitsub.com
-      - CN 04 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 73 → openitsub.com
+      - CN 40 → openitsub.com
       - CN 72 → openitsub.com
-      - CN 02 → openitsub.com
-      - CN 81 → openitsub.com
-      - CN 12 → openitsub.com
-      - CN 36 → openitsub.com
-      - CN 11 → openitsub.com
-      - CN 78 → openitsub.com
-      - HK 01 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 03 → openitsub.com
-      - CN 48 → openitsub.com
-      - CN 106 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 41 → openitsub.com
+      - CN 06 → openitsub.com
+      - CN 55 → openitsub.com
+      - CN 44 → openitsub.com
+      - CN 88 → openitsub.com 2
+      - CN 64 → openitsub.com
+      - CN 94 → openitsub.com
+      - unknown 01 → openitsub.com
+      - CN 07 → openitsub.com
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 20 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 94 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 53 → openitsub.com
-      - CN 58 → openitsub.com
-      - CN 103 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 57 → openitsub.com
-      - CN 55 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 56 → openitsub.com
-      - CN 93 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 43 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 102 → openitsub.com
       - CN 88 → openitsub.com
-      - CN 40 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 05 → openitsub.com
-      - CN 01 → openitsub.com
-      - CN 67 → openitsub.com
-      - CN 91 → openitsub.com
-      - CN 70 → openitsub.com
-      - CN 37 → openitsub.com
-      - CN 90 → openitsub.com
+      - CN 39 → openitsub.com
       - CN 71 → openitsub.com
-      - CN 06 → openitsub.com
-      - CN 04 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 73 → openitsub.com
+      - CN 40 → openitsub.com
       - CN 72 → openitsub.com
-      - CN 02 → openitsub.com
-      - CN 81 → openitsub.com
-      - CN 12 → openitsub.com
-      - CN 36 → openitsub.com
-      - CN 11 → openitsub.com
-      - CN 78 → openitsub.com
-      - HK 01 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 03 → openitsub.com
-      - CN 48 → openitsub.com
-      - CN 106 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 41 → openitsub.com
+      - CN 06 → openitsub.com
+      - CN 55 → openitsub.com
+      - CN 44 → openitsub.com
+      - CN 88 → openitsub.com 2
+      - CN 64 → openitsub.com
+      - CN 94 → openitsub.com
+      - unknown 01 → openitsub.com
+      - CN 07 → openitsub.com
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -228,53 +108,23 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 20 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 94 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 53 → openitsub.com
-      - CN 58 → openitsub.com
-      - CN 103 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 57 → openitsub.com
-      - CN 55 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 56 → openitsub.com
-      - CN 93 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 43 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 102 → openitsub.com
       - CN 88 → openitsub.com
-      - CN 40 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 05 → openitsub.com
-      - CN 01 → openitsub.com
-      - CN 67 → openitsub.com
-      - CN 91 → openitsub.com
-      - CN 70 → openitsub.com
-      - CN 37 → openitsub.com
-      - CN 90 → openitsub.com
+      - CN 39 → openitsub.com
       - CN 71 → openitsub.com
-      - CN 06 → openitsub.com
-      - CN 04 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 73 → openitsub.com
+      - CN 40 → openitsub.com
       - CN 72 → openitsub.com
-      - CN 02 → openitsub.com
-      - CN 81 → openitsub.com
-      - CN 12 → openitsub.com
-      - CN 36 → openitsub.com
-      - CN 11 → openitsub.com
-      - CN 78 → openitsub.com
-      - HK 01 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 03 → openitsub.com
-      - CN 48 → openitsub.com
-      - CN 106 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 41 → openitsub.com
+      - CN 06 → openitsub.com
+      - CN 55 → openitsub.com
+      - CN 44 → openitsub.com
+      - CN 88 → openitsub.com 2
+      - CN 64 → openitsub.com
+      - CN 94 → openitsub.com
+      - unknown 01 → openitsub.com
+      - CN 07 → openitsub.com
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -285,158 +135,68 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 20 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 94 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 53 → openitsub.com
-      - CN 58 → openitsub.com
-      - CN 103 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 57 → openitsub.com
-      - CN 55 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 56 → openitsub.com
-      - CN 93 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 43 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 102 → openitsub.com
       - CN 88 → openitsub.com
-      - CN 40 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 05 → openitsub.com
-      - CN 01 → openitsub.com
-      - CN 67 → openitsub.com
-      - CN 91 → openitsub.com
-      - CN 70 → openitsub.com
-      - CN 37 → openitsub.com
-      - CN 90 → openitsub.com
+      - CN 39 → openitsub.com
       - CN 71 → openitsub.com
-      - CN 06 → openitsub.com
-      - CN 04 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 73 → openitsub.com
+      - CN 40 → openitsub.com
       - CN 72 → openitsub.com
-      - CN 02 → openitsub.com
-      - CN 81 → openitsub.com
-      - CN 12 → openitsub.com
-      - CN 36 → openitsub.com
-      - CN 11 → openitsub.com
-      - CN 78 → openitsub.com
-      - HK 01 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 03 → openitsub.com
-      - CN 48 → openitsub.com
-      - CN 106 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 41 → openitsub.com
+      - CN 06 → openitsub.com
+      - CN 55 → openitsub.com
+      - CN 44 → openitsub.com
+      - CN 88 → openitsub.com 2
+      - CN 64 → openitsub.com
+      - CN 94 → openitsub.com
+      - unknown 01 → openitsub.com
+      - CN 07 → openitsub.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 20 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 94 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 53 → openitsub.com
-      - CN 58 → openitsub.com
-      - CN 103 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 57 → openitsub.com
-      - CN 55 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 56 → openitsub.com
-      - CN 93 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 43 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 102 → openitsub.com
       - CN 88 → openitsub.com
-      - CN 40 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 05 → openitsub.com
-      - CN 01 → openitsub.com
-      - CN 67 → openitsub.com
-      - CN 91 → openitsub.com
-      - CN 70 → openitsub.com
-      - CN 37 → openitsub.com
-      - CN 90 → openitsub.com
+      - CN 39 → openitsub.com
       - CN 71 → openitsub.com
-      - CN 06 → openitsub.com
-      - CN 04 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 73 → openitsub.com
+      - CN 40 → openitsub.com
       - CN 72 → openitsub.com
-      - CN 02 → openitsub.com
-      - CN 81 → openitsub.com
-      - CN 12 → openitsub.com
-      - CN 36 → openitsub.com
-      - CN 11 → openitsub.com
-      - CN 78 → openitsub.com
-      - HK 01 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 03 → openitsub.com
-      - CN 48 → openitsub.com
-      - CN 106 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 41 → openitsub.com
+      - CN 06 → openitsub.com
+      - CN 55 → openitsub.com
+      - CN 44 → openitsub.com
+      - CN 88 → openitsub.com 2
+      - CN 64 → openitsub.com
+      - CN 94 → openitsub.com
+      - unknown 01 → openitsub.com
+      - CN 07 → openitsub.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 20 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 94 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 53 → openitsub.com
-      - CN 58 → openitsub.com
-      - CN 103 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 57 → openitsub.com
-      - CN 55 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 56 → openitsub.com
-      - CN 93 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 43 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 102 → openitsub.com
       - CN 88 → openitsub.com
-      - CN 40 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 05 → openitsub.com
-      - CN 01 → openitsub.com
-      - CN 67 → openitsub.com
-      - CN 91 → openitsub.com
-      - CN 70 → openitsub.com
-      - CN 37 → openitsub.com
-      - CN 90 → openitsub.com
+      - CN 39 → openitsub.com
       - CN 71 → openitsub.com
-      - CN 06 → openitsub.com
-      - CN 04 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 73 → openitsub.com
+      - CN 40 → openitsub.com
       - CN 72 → openitsub.com
-      - CN 02 → openitsub.com
-      - CN 81 → openitsub.com
-      - CN 12 → openitsub.com
-      - CN 36 → openitsub.com
-      - CN 11 → openitsub.com
-      - CN 78 → openitsub.com
-      - HK 01 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 03 → openitsub.com
-      - CN 48 → openitsub.com
-      - CN 106 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 41 → openitsub.com
+      - CN 06 → openitsub.com
+      - CN 55 → openitsub.com
+      - CN 44 → openitsub.com
+      - CN 88 → openitsub.com 2
+      - CN 64 → openitsub.com
+      - CN 94 → openitsub.com
+      - unknown 01 → openitsub.com
+      - CN 07 → openitsub.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -452,53 +212,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 20 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 94 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 53 → openitsub.com
-      - CN 58 → openitsub.com
-      - CN 103 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 57 → openitsub.com
-      - CN 55 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 56 → openitsub.com
-      - CN 93 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 43 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 102 → openitsub.com
       - CN 88 → openitsub.com
-      - CN 40 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 05 → openitsub.com
-      - CN 01 → openitsub.com
-      - CN 67 → openitsub.com
-      - CN 91 → openitsub.com
-      - CN 70 → openitsub.com
-      - CN 37 → openitsub.com
-      - CN 90 → openitsub.com
+      - CN 39 → openitsub.com
       - CN 71 → openitsub.com
-      - CN 06 → openitsub.com
-      - CN 04 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 73 → openitsub.com
+      - CN 40 → openitsub.com
       - CN 72 → openitsub.com
-      - CN 02 → openitsub.com
-      - CN 81 → openitsub.com
-      - CN 12 → openitsub.com
-      - CN 36 → openitsub.com
-      - CN 11 → openitsub.com
-      - CN 78 → openitsub.com
-      - HK 01 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 03 → openitsub.com
-      - CN 48 → openitsub.com
-      - CN 106 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 41 → openitsub.com
+      - CN 06 → openitsub.com
+      - CN 55 → openitsub.com
+      - CN 44 → openitsub.com
+      - CN 88 → openitsub.com 2
+      - CN 64 → openitsub.com
+      - CN 94 → openitsub.com
+      - unknown 01 → openitsub.com
+      - CN 07 → openitsub.com
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
