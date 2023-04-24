@@ -5,75 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡 05, server: microsoft-si05.syjd.xyz, port: 30005, type: trojan, password: 08c27adb-5263-47e6-90a8-508d819ce1af, sni: microsoft-si05.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 04, server: microsoft-si04.syjd.xyz, port: 30004, type: trojan, password: 08c27adb-5263-47e6-90a8-508d819ce1af, sni: microsoft-si04.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 03, server: microsoft-si03.syjd.xyz, port: 30003, type: trojan, password: 08c27adb-5263-47e6-90a8-508d819ce1af, sni: microsoft-si03.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本 02, server: microsoft-jp02.syjd.xyz, port: 30002, type: trojan, password: 08c27adb-5263-47e6-90a8-508d819ce1af, sni: microsoft-jp02.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国 01, server: microsoft-jp01.syjd.xyz, port: 30006, type: trojan, password: 08c27adb-5263-47e6-90a8-508d819ce1af, sni: microsoft-jp01.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 01, server: microsoft-hk01.syjd.xyz, port: 443, type: trojan, password: 08c27adb-5263-47e6-90a8-508d819ce1af, sni: microsoft-hk01.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 02, server: microsoft-hk02.syjd.xyz, port: 443, type: trojan, password: 08c27adb-5263-47e6-90a8-508d819ce1af, sni: microsoft-hk02.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本 04, server: microsoft-jp04.syjd.xyz, port: 30004, type: trojan, password: 08c27adb-5263-47e6-90a8-508d819ce1af, sni: microsoft-jp04.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 01, server: microsoft-si01.syjd.xyz, port: 30001, type: trojan, password: 08c27adb-5263-47e6-90a8-508d819ce1af, sni: microsoft-si01.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国 01, server: microsoft-kr01.syjd.xyz, port: 30001, type: trojan, password: 08c27adb-5263-47e6-90a8-508d819ce1af, sni: microsoft-kr01.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 02, server: microsoft-si02.syjd.xyz, port: 30002, type: trojan, password: 08c27adb-5263-47e6-90a8-508d819ce1af, sni: microsoft-si02.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 03, server: microsoft-hk03.syjd.xyz, port: 443, type: trojan, password: 08c27adb-5263-47e6-90a8-508d819ce1af, sni: microsoft-hk03.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本 03, server: microsoft-jp03.syjd.xyz, port: 30003, type: trojan, password: 08c27adb-5263-47e6-90a8-508d819ce1af, sni: microsoft-jp03.syjd.xyz, skip-cert-verify: true, udp: true}
+  - {name: 迪拜04-2TG@zwtg88888, server: ae4.zwtg888.com, port: 59411, type: vmess, uuid: f0d92a04-c0b6-4458-8413-8e8ec3df6a03, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: ae4.zwtg888.com, grpc-opts: {grpc-service-name: ae4}, udp: true}
+  - {name: 迪拜01-2TG@zwtg88888, server: ae1.zwtg888.com, port: 59411, type: vmess, uuid: f0d92a04-c0b6-4458-8413-8e8ec3df6a03, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: ae1.zwtg888.com, grpc-opts: {grpc-service-name: ae1}, udp: true}
+  - {name: 迪拜03-2TG@zwtg88888, server: ae3.zwtg888.com, port: 59411, type: vmess, uuid: f0d92a04-c0b6-4458-8413-8e8ec3df6a03, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: ae3.zwtg888.com, grpc-opts: {grpc-service-name: ae3}, udp: true}
+  - {name: 日本 操小日本嫩B, server: 138.2.56.64, port: 443, type: vmess, uuid: f0d92a04-c0b6-4458-8413-8e8ec3df6a03, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: jp1.zwtg888.com, grpc-opts: {grpc-service-name: jp1}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 05
-      - 新加坡 04
-      - 新加坡 03
-      - 日本 02
-      - 美国 01
-      - 香港 01
-      - 香港 02
-      - 日本 04
-      - 新加坡 01
-      - 韩国 01
-      - 新加坡 02
-      - 香港 03
-      - 日本 03
+      - 迪拜04-2TG@zwtg88888
+      - 迪拜01-2TG@zwtg88888
+      - 迪拜03-2TG@zwtg88888
+      - 日本 操小日本嫩B
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 05
-      - 新加坡 04
-      - 新加坡 03
-      - 日本 02
-      - 美国 01
-      - 香港 01
-      - 香港 02
-      - 日本 04
-      - 新加坡 01
-      - 韩国 01
-      - 新加坡 02
-      - 香港 03
-      - 日本 03
+      - 迪拜04-2TG@zwtg88888
+      - 迪拜01-2TG@zwtg88888
+      - 迪拜03-2TG@zwtg88888
+      - 日本 操小日本嫩B
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 05
-      - 新加坡 04
-      - 新加坡 03
-      - 日本 02
-      - 美国 01
-      - 香港 01
-      - 香港 02
-      - 日本 04
-      - 新加坡 01
-      - 韩国 01
-      - 新加坡 02
-      - 香港 03
-      - 日本 03
+      - 迪拜04-2TG@zwtg88888
+      - 迪拜01-2TG@zwtg88888
+      - 迪拜03-2TG@zwtg88888
+      - 日本 操小日本嫩B
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,82 +56,43 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 05
-      - 新加坡 04
-      - 新加坡 03
-      - 日本 02
-      - 美国 01
-      - 香港 01
-      - 香港 02
-      - 日本 04
-      - 新加坡 01
-      - 韩国 01
-      - 新加坡 02
-      - 香港 03
-      - 日本 03
+      - 迪拜04-2TG@zwtg88888
+      - 迪拜01-2TG@zwtg88888
+      - 迪拜03-2TG@zwtg88888
+      - 日本 操小日本嫩B
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 01
-      - 香港 02
-      - 香港 03
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 05
-      - 新加坡 04
-      - 新加坡 03
-      - 日本 02
-      - 美国 01
-      - 香港 01
-      - 香港 02
-      - 日本 04
-      - 新加坡 01
-      - 韩国 01
-      - 新加坡 02
-      - 香港 03
-      - 日本 03
+      - 迪拜04-2TG@zwtg88888
+      - 迪拜01-2TG@zwtg88888
+      - 迪拜03-2TG@zwtg88888
+      - 日本 操小日本嫩B
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 05
-      - 新加坡 04
-      - 新加坡 03
-      - 日本 02
-      - 美国 01
-      - 香港 01
-      - 香港 02
-      - 日本 04
-      - 新加坡 01
-      - 韩国 01
-      - 新加坡 02
-      - 香港 03
-      - 日本 03
+      - 迪拜04-2TG@zwtg88888
+      - 迪拜01-2TG@zwtg88888
+      - 迪拜03-2TG@zwtg88888
+      - 日本 操小日本嫩B
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 05
-      - 新加坡 04
-      - 新加坡 03
-      - 日本 02
-      - 美国 01
-      - 香港 01
-      - 香港 02
-      - 日本 04
-      - 新加坡 01
-      - 韩国 01
-      - 新加坡 02
-      - 香港 03
-      - 日本 03
+      - 迪拜04-2TG@zwtg88888
+      - 迪拜01-2TG@zwtg88888
+      - 迪拜03-2TG@zwtg88888
+      - 日本 操小日本嫩B
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -183,19 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 05
-      - 新加坡 04
-      - 新加坡 03
-      - 日本 02
-      - 美国 01
-      - 香港 01
-      - 香港 02
-      - 日本 04
-      - 新加坡 01
-      - 韩国 01
-      - 新加坡 02
-      - 香港 03
-      - 日本 03
+      - 迪拜04-2TG@zwtg88888
+      - 迪拜01-2TG@zwtg88888
+      - 迪拜03-2TG@zwtg88888
+      - 日本 操小日本嫩B
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
