@@ -5,59 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US-电信-2|1x, server: pop.usa.gfwcaonimanmsl.ml, port: 8965, type: vmess, uuid: c23c45f2-bc68-4479-93b5-d4173a2f2650, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /name, ws-headers: {Host: pop.usa.gfwcaonimanmsl.ml}, udp: true}
-  - {name: DO-FRA-1|倍率:0.8, server: pop.fra.gfwcaonimanmsl.ml, port: 25411, type: vmess, uuid: c23c45f2-bc68-4479-93b5-d4173a2f2650, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dwawwwa, ws-headers: {Host: pop.fra.gfwcaonimanmsl.ml}, udp: true}
-  - {name: US-高速游戏电信-1|1x, server: pop.usa.gfwcaonimanmsl.ml, port: 8964, type: vmess, uuid: c23c45f2-bc68-4479-93b5-d4173a2f2650, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /name, ws-headers: {Host: pop.usa.gfwcaonimanmsl.ml}, udp: true}
-  - {name: AUS-SNY-1|倍率:0.8, server: pop.xini.gfwcaonimanmsl.ml, port: 25511, type: vmess, uuid: c23c45f2-bc68-4479-93b5-d4173a2f2650, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /34342me, ws-headers: {Host: pop.xini.gfwcaonimanmsl.ml}, udp: true}
-  - {name: US-电信-3|1x, server: pop.usa.gfwcaonimanmsl.ml, port: 8966, type: vmess, uuid: c23c45f2-bc68-4479-93b5-d4173a2f2650, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /name, ws-headers: {Host: pop.usa.gfwcaonimanmsl.ml}, udp: true}
-  - {name: US-电信-4|1x, server: pop.usa.gfwcaonimanmsl.ml, port: 8967, type: vmess, uuid: c23c45f2-bc68-4479-93b5-d4173a2f2650, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /name, ws-headers: {Host: pop.usa.gfwcaonimanmsl.ml}, udp: true}
-  - {name: US-FRU|倍率:0.8, server: pop.china.free1.gfwcaonimanmsl.ml, port: 15645, type: vmess, uuid: c23c45f2-bc68-4479-93b5-d4173a2f2650, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /n445e, ws-headers: {Host: pop.china.free1.gfwcaonimanmsl.ml}, udp: true}
-  - {name: US-FRU-2|倍率:0.8, server: pop.fru.gfwcaonimanmsl.ml, port: 45611, type: vmess, uuid: c23c45f2-bc68-4479-93b5-d4173a2f2650, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /name, ws-headers: {Host: pop.fru.gfwcaonimanmsl.ml}, udp: true}
-  - {name: DE-联通-4|倍率0.7, server: pop.dew.gfwcaonimanmsl.ml, port: 8967, type: vmess, uuid: c23c45f2-bc68-4479-93b5-d4173a2f2650, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 5x-临时-香港-高级节点2 2, server: d0cd89648587.sanfen004.me, port: 16610, type: vmess, uuid: dd8314cc-3754-416d-9456-0991f2e74753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 5x-临时-香港-高级节点2, server: d0cd89648587.sanfen004.me, port: 16610, type: vmess, uuid: dd8314cc-3754-416d-9456-0991f2e74753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡高速接入点-03, server: sg3.af49c4e4c2ef.sanfen004.me, port: 443, type: vmess, uuid: dd8314cc-3754-416d-9456-0991f2e74753, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 距离下次重置剩余：26 天, server: hk1.c.e8bb3fc45ae6.sanfen004.me, port: 443, type: vmess, uuid: dd8314cc-3754-416d-9456-0991f2e74753, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 「SCP」NL-CF, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: nl.sharecentrepro.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US-电信-2|1x
-      - DO-FRA-1|倍率:0.8
-      - US-高速游戏电信-1|1x
-      - AUS-SNY-1|倍率:0.8
-      - US-电信-3|1x
-      - US-电信-4|1x
-      - US-FRU|倍率:0.8
-      - US-FRU-2|倍率:0.8
-      - DE-联通-4|倍率0.7
+      - 5x-临时-香港-高级节点2 2
+      - 5x-临时-香港-高级节点2
+      - 新加坡高速接入点-03
+      - 距离下次重置剩余：26 天
+      - 「SCP」NL-CF
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US-电信-2|1x
-      - DO-FRA-1|倍率:0.8
-      - US-高速游戏电信-1|1x
-      - AUS-SNY-1|倍率:0.8
-      - US-电信-3|1x
-      - US-电信-4|1x
-      - US-FRU|倍率:0.8
-      - US-FRU-2|倍率:0.8
-      - DE-联通-4|倍率0.7
+      - 5x-临时-香港-高级节点2 2
+      - 5x-临时-香港-高级节点2
+      - 新加坡高速接入点-03
+      - 距离下次重置剩余：26 天
+      - 「SCP」NL-CF
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US-电信-2|1x
-      - DO-FRA-1|倍率:0.8
-      - US-高速游戏电信-1|1x
-      - AUS-SNY-1|倍率:0.8
-      - US-电信-3|1x
-      - US-电信-4|1x
-      - US-FRU|倍率:0.8
-      - US-FRU-2|倍率:0.8
-      - DE-联通-4|倍率0.7
+      - 5x-临时-香港-高级节点2 2
+      - 5x-临时-香港-高级节点2
+      - 新加坡高速接入点-03
+      - 距离下次重置剩余：26 天
+      - 「SCP」NL-CF
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,63 +60,49 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US-电信-2|1x
-      - DO-FRA-1|倍率:0.8
-      - US-高速游戏电信-1|1x
-      - AUS-SNY-1|倍率:0.8
-      - US-电信-3|1x
-      - US-电信-4|1x
-      - US-FRU|倍率:0.8
-      - US-FRU-2|倍率:0.8
-      - DE-联通-4|倍率0.7
+      - 5x-临时-香港-高级节点2 2
+      - 5x-临时-香港-高级节点2
+      - 新加坡高速接入点-03
+      - 距离下次重置剩余：26 天
+      - 「SCP」NL-CF
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 5x-临时-香港-高级节点2 2
+      - 5x-临时-香港-高级节点2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US-电信-2|1x
-      - DO-FRA-1|倍率:0.8
-      - US-高速游戏电信-1|1x
-      - AUS-SNY-1|倍率:0.8
-      - US-电信-3|1x
-      - US-电信-4|1x
-      - US-FRU|倍率:0.8
-      - US-FRU-2|倍率:0.8
-      - DE-联通-4|倍率0.7
+      - 5x-临时-香港-高级节点2 2
+      - 5x-临时-香港-高级节点2
+      - 新加坡高速接入点-03
+      - 距离下次重置剩余：26 天
+      - 「SCP」NL-CF
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US-电信-2|1x
-      - DO-FRA-1|倍率:0.8
-      - US-高速游戏电信-1|1x
-      - AUS-SNY-1|倍率:0.8
-      - US-电信-3|1x
-      - US-电信-4|1x
-      - US-FRU|倍率:0.8
-      - US-FRU-2|倍率:0.8
-      - DE-联通-4|倍率0.7
+      - 5x-临时-香港-高级节点2 2
+      - 5x-临时-香港-高级节点2
+      - 新加坡高速接入点-03
+      - 距离下次重置剩余：26 天
+      - 「SCP」NL-CF
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US-电信-2|1x
-      - DO-FRA-1|倍率:0.8
-      - US-高速游戏电信-1|1x
-      - AUS-SNY-1|倍率:0.8
-      - US-电信-3|1x
-      - US-电信-4|1x
-      - US-FRU|倍率:0.8
-      - US-FRU-2|倍率:0.8
-      - DE-联通-4|倍率0.7
+      - 5x-临时-香港-高级节点2 2
+      - 5x-临时-香港-高级节点2
+      - 新加坡高速接入点-03
+      - 距离下次重置剩余：26 天
+      - 「SCP」NL-CF
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,15 +118,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US-电信-2|1x
-      - DO-FRA-1|倍率:0.8
-      - US-高速游戏电信-1|1x
-      - AUS-SNY-1|倍率:0.8
-      - US-电信-3|1x
-      - US-电信-4|1x
-      - US-FRU|倍率:0.8
-      - US-FRU-2|倍率:0.8
-      - DE-联通-4|倍率0.7
+      - 5x-临时-香港-高级节点2 2
+      - 5x-临时-香港-高级节点2
+      - 新加坡高速接入点-03
+      - 距离下次重置剩余：26 天
+      - 「SCP」NL-CF
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
