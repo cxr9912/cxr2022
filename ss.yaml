@@ -5,43 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 5x-临时-香港-高级节点2 2, server: d0cd89648587.sanfen004.me, port: 16610, type: vmess, uuid: dd8314cc-3754-416d-9456-0991f2e74753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 5x-临时-香港-高级节点2, server: d0cd89648587.sanfen004.me, port: 16610, type: vmess, uuid: dd8314cc-3754-416d-9456-0991f2e74753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡高速接入点-03, server: sg3.af49c4e4c2ef.sanfen004.me, port: 443, type: vmess, uuid: dd8314cc-3754-416d-9456-0991f2e74753, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 距离下次重置剩余：26 天, server: hk1.c.e8bb3fc45ae6.sanfen004.me, port: 443, type: vmess, uuid: dd8314cc-3754-416d-9456-0991f2e74753, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 「SCP」NL-CF, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: nl.sharecentrepro.com}, udp: true}
+  - {name: 免费机场 dash.kuailian.org, server: 9318b552-3ec8-4ae0-a57f-71b46e20b671.interface.buzz, port: 41581, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
+  - {name: 高级丨Taiwan, server: 6121cc89-6c33-02d0-15bf-2db6e6c115ef.interface.buzz, port: 15130, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
+  - {name: 高级丨Singapore, server: 154db23a-6333-441b-8e5b-b5bf95dba2fb.interface.buzz, port: 21511, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
+  - {name: 高级丨United States, server: 73a69ef1-5c16-4eef-86ea-f289396a755f.interface.buzz, port: 52798, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
+  - {name: 高级丨Hong Kong, server: 505c2160-3dcd-44c8-90b0-0516381e0a77.interface.buzz, port: 64541, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 5x-临时-香港-高级节点2 2
-      - 5x-临时-香港-高级节点2
-      - 新加坡高速接入点-03
-      - 距离下次重置剩余：26 天
-      - 「SCP」NL-CF
+      - 免费机场 dash.kuailian.org
+      - 高级丨Taiwan
+      - 高级丨Singapore
+      - 高级丨United States
+      - 高级丨Hong Kong
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 5x-临时-香港-高级节点2 2
-      - 5x-临时-香港-高级节点2
-      - 新加坡高速接入点-03
-      - 距离下次重置剩余：26 天
-      - 「SCP」NL-CF
+      - 免费机场 dash.kuailian.org
+      - 高级丨Taiwan
+      - 高级丨Singapore
+      - 高级丨United States
+      - 高级丨Hong Kong
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 5x-临时-香港-高级节点2 2
-      - 5x-临时-香港-高级节点2
-      - 新加坡高速接入点-03
-      - 距离下次重置剩余：26 天
-      - 「SCP」NL-CF
+      - 免费机场 dash.kuailian.org
+      - 高级丨Taiwan
+      - 高级丨Singapore
+      - 高级丨United States
+      - 高级丨Hong Kong
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,49 +60,47 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 5x-临时-香港-高级节点2 2
-      - 5x-临时-香港-高级节点2
-      - 新加坡高速接入点-03
-      - 距离下次重置剩余：26 天
-      - 「SCP」NL-CF
+      - 免费机场 dash.kuailian.org
+      - 高级丨Taiwan
+      - 高级丨Singapore
+      - 高级丨United States
+      - 高级丨Hong Kong
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 5x-临时-香港-高级节点2 2
-      - 5x-临时-香港-高级节点2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 5x-临时-香港-高级节点2 2
-      - 5x-临时-香港-高级节点2
-      - 新加坡高速接入点-03
-      - 距离下次重置剩余：26 天
-      - 「SCP」NL-CF
+      - 免费机场 dash.kuailian.org
+      - 高级丨Taiwan
+      - 高级丨Singapore
+      - 高级丨United States
+      - 高级丨Hong Kong
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 5x-临时-香港-高级节点2 2
-      - 5x-临时-香港-高级节点2
-      - 新加坡高速接入点-03
-      - 距离下次重置剩余：26 天
-      - 「SCP」NL-CF
+      - 免费机场 dash.kuailian.org
+      - 高级丨Taiwan
+      - 高级丨Singapore
+      - 高级丨United States
+      - 高级丨Hong Kong
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 5x-临时-香港-高级节点2 2
-      - 5x-临时-香港-高级节点2
-      - 新加坡高速接入点-03
-      - 距离下次重置剩余：26 天
-      - 「SCP」NL-CF
+      - 免费机场 dash.kuailian.org
+      - 高级丨Taiwan
+      - 高级丨Singapore
+      - 高级丨United States
+      - 高级丨Hong Kong
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -118,11 +116,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 5x-临时-香港-高级节点2 2
-      - 5x-临时-香港-高级节点2
-      - 新加坡高速接入点-03
-      - 距离下次重置剩余：26 天
-      - 「SCP」NL-CF
+      - 免费机场 dash.kuailian.org
+      - 高级丨Taiwan
+      - 高级丨Singapore
+      - 高级丨United States
+      - 高级丨Hong Kong
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
