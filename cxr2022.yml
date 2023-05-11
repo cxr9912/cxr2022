@@ -5,27 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CL智利, server: yidong.liulangdiqiu.cyou, port: 10724, type: ss, cipher: chacha20-ietf-poly1305, password: 3fa7e639-c5a2-4040-b2c1-99096a895818, udp: true}
+  - {name: 专线|香港3, server: hk3.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: hk3.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|新加坡5, server: sg5.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: sg5.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港1, server: hk1.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: hk1.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|新加坡2, server: sg2.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: sg2.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国1, server: us1.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: us1.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|新加坡4, server: sg4.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: sg4.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港4, server: hk4.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: hk4.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港2, server: hk2.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: hk2.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|印度1, server: in1.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: in1.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港5, server: hk5.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: hk5.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|新加坡1, server: sg1.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: sg1.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|日本3, server: jp3.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: jp3.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|日本1, server: jp1.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: jp1.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|日本4, server: jp4.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: jp4.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|新加坡3, server: sg3.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: sg3.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|日本2, server: jp2.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: jp2.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 专线|日本5, server: jp5.cnamazon.sbs, port: 443, type: trojan, password: 74c0122d-955c-4170-933d-f1365e4b1097, sni: jp5.cnamazon.sbs, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CL智利
+      - 专线|香港3
+      - 专线|新加坡5
+      - 专线|香港1
+      - 专线|新加坡2
+      - 专线|美国1
+      - 专线|新加坡4
+      - 专线|香港4
+      - 专线|香港2
+      - 专线|印度1
+      - 专线|香港5
+      - 专线|新加坡1
+      - 专线|日本3
+      - 专线|日本1
+      - 专线|日本4
+      - 专线|新加坡3
+      - 专线|日本2
+      - 专线|日本5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CL智利
+      - 专线|香港3
+      - 专线|新加坡5
+      - 专线|香港1
+      - 专线|新加坡2
+      - 专线|美国1
+      - 专线|新加坡4
+      - 专线|香港4
+      - 专线|香港2
+      - 专线|印度1
+      - 专线|香港5
+      - 专线|新加坡1
+      - 专线|日本3
+      - 专线|日本1
+      - 专线|日本4
+      - 专线|新加坡3
+      - 专线|日本2
+      - 专线|日本5
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CL智利
+      - 专线|香港3
+      - 专线|新加坡5
+      - 专线|香港1
+      - 专线|新加坡2
+      - 专线|美国1
+      - 专线|新加坡4
+      - 专线|香港4
+      - 专线|香港2
+      - 专线|印度1
+      - 专线|香港5
+      - 专线|新加坡1
+      - 专线|日本3
+      - 专线|日本1
+      - 专线|日本4
+      - 专线|新加坡3
+      - 专线|日本2
+      - 专线|日本5
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -44,31 +108,100 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CL智利
+      - 专线|香港3
+      - 专线|新加坡5
+      - 专线|香港1
+      - 专线|新加坡2
+      - 专线|美国1
+      - 专线|新加坡4
+      - 专线|香港4
+      - 专线|香港2
+      - 专线|印度1
+      - 专线|香港5
+      - 专线|新加坡1
+      - 专线|日本3
+      - 专线|日本1
+      - 专线|日本4
+      - 专线|新加坡3
+      - 专线|日本2
+      - 专线|日本5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 专线|香港3
+      - 专线|香港1
+      - 专线|香港4
+      - 专线|香港2
+      - 专线|香港5
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CL智利
+      - 专线|香港3
+      - 专线|新加坡5
+      - 专线|香港1
+      - 专线|新加坡2
+      - 专线|美国1
+      - 专线|新加坡4
+      - 专线|香港4
+      - 专线|香港2
+      - 专线|印度1
+      - 专线|香港5
+      - 专线|新加坡1
+      - 专线|日本3
+      - 专线|日本1
+      - 专线|日本4
+      - 专线|新加坡3
+      - 专线|日本2
+      - 专线|日本5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CL智利
+      - 专线|香港3
+      - 专线|新加坡5
+      - 专线|香港1
+      - 专线|新加坡2
+      - 专线|美国1
+      - 专线|新加坡4
+      - 专线|香港4
+      - 专线|香港2
+      - 专线|印度1
+      - 专线|香港5
+      - 专线|新加坡1
+      - 专线|日本3
+      - 专线|日本1
+      - 专线|日本4
+      - 专线|新加坡3
+      - 专线|日本2
+      - 专线|日本5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CL智利
+      - 专线|香港3
+      - 专线|新加坡5
+      - 专线|香港1
+      - 专线|新加坡2
+      - 专线|美国1
+      - 专线|新加坡4
+      - 专线|香港4
+      - 专线|香港2
+      - 专线|印度1
+      - 专线|香港5
+      - 专线|新加坡1
+      - 专线|日本3
+      - 专线|日本1
+      - 专线|日本4
+      - 专线|新加坡3
+      - 专线|日本2
+      - 专线|日本5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,7 +217,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CL智利
+      - 专线|香港3
+      - 专线|新加坡5
+      - 专线|香港1
+      - 专线|新加坡2
+      - 专线|美国1
+      - 专线|新加坡4
+      - 专线|香港4
+      - 专线|香港2
+      - 专线|印度1
+      - 专线|香港5
+      - 专线|新加坡1
+      - 专线|日本3
+      - 专线|日本1
+      - 专线|日本4
+      - 专线|新加坡3
+      - 专线|日本2
+      - 专线|日本5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
