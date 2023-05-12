@@ -5,43 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 免费机场 dash.kuailian.org, server: 9318b552-3ec8-4ae0-a57f-71b46e20b671.interface.buzz, port: 41581, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
-  - {name: 高级丨Taiwan, server: 6121cc89-6c33-02d0-15bf-2db6e6c115ef.interface.buzz, port: 15130, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
-  - {name: 高级丨Singapore, server: 154db23a-6333-441b-8e5b-b5bf95dba2fb.interface.buzz, port: 21511, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
-  - {name: 高级丨United States, server: 73a69ef1-5c16-4eef-86ea-f289396a755f.interface.buzz, port: 52798, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
-  - {name: 高级丨Hong Kong, server: 505c2160-3dcd-44c8-90b0-0516381e0a77.interface.buzz, port: 64541, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
+  - {name: 日本-80端口, server: hkt.52147.top, port: 80, type: vmess, uuid: 2264a9f0-e902-4d08-9fb3-8f759267e374, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yfjc/jp1, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 美国2号-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 2264a9f0-e902-4d08-9fb3-8f759267e374, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/us2?ed=2048", ws-headers: {Host: us2.yfjc.sbs}, udp: true}
+  - {name: 日本, server: 162.159.152.5, port: 443, type: vmess, uuid: 2264a9f0-e902-4d08-9fb3-8f759267e374, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/jp1?ed=2048", ws-headers: {Host: jp1.yfjc.sbs}, udp: true}
+  - {name: 荷兰2 | BT下载-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 2264a9f0-e902-4d08-9fb3-8f759267e374, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/nl2?ed=2048", ws-headers: {Host: nl2.yfjc.sbs}, udp: true}
+  - {name: 荷兰 | BT下载-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 2264a9f0-e902-4d08-9fb3-8f759267e374, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/nl?ed=2048", ws-headers: {Host: nl.yfjc.sbs}, udp: true}
+  - {name: 日本2号, server: 162.159.153.13, port: 443, type: vmess, uuid: 2264a9f0-e902-4d08-9fb3-8f759267e374, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/jp2?ed=2048", ws-headers: {Host: jp2.yfjc.sbs}, udp: true}
+  - {name: 美国3号-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 2264a9f0-e902-4d08-9fb3-8f759267e374, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/yfjc/us3?ed=2048", ws-headers: {Host: us3.yfjc.sbs}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Singapore
-      - 高级丨United States
-      - 高级丨Hong Kong
+      - 日本-80端口
+      - 美国2号-0.1x
+      - 日本
+      - 荷兰2 | BT下载-0.1x
+      - 荷兰 | BT下载-0.1x
+      - 日本2号
+      - 美国3号-0.1x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Singapore
-      - 高级丨United States
-      - 高级丨Hong Kong
+      - 日本-80端口
+      - 美国2号-0.1x
+      - 日本
+      - 荷兰2 | BT下载-0.1x
+      - 荷兰 | BT下载-0.1x
+      - 日本2号
+      - 美国3号-0.1x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Singapore
-      - 高级丨United States
-      - 高级丨Hong Kong
+      - 日本-80端口
+      - 美国2号-0.1x
+      - 日本
+      - 荷兰2 | BT下载-0.1x
+      - 荷兰 | BT下载-0.1x
+      - 日本2号
+      - 美国3号-0.1x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,11 +68,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Singapore
-      - 高级丨United States
-      - 高级丨Hong Kong
+      - 日本-80端口
+      - 美国2号-0.1x
+      - 日本
+      - 荷兰2 | BT下载-0.1x
+      - 荷兰 | BT下载-0.1x
+      - 日本2号
+      - 美国3号-0.1x
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -75,32 +85,38 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Singapore
-      - 高级丨United States
-      - 高级丨Hong Kong
+      - 日本-80端口
+      - 美国2号-0.1x
+      - 日本
+      - 荷兰2 | BT下载-0.1x
+      - 荷兰 | BT下载-0.1x
+      - 日本2号
+      - 美国3号-0.1x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Singapore
-      - 高级丨United States
-      - 高级丨Hong Kong
+      - 日本-80端口
+      - 美国2号-0.1x
+      - 日本
+      - 荷兰2 | BT下载-0.1x
+      - 荷兰 | BT下载-0.1x
+      - 日本2号
+      - 美国3号-0.1x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Singapore
-      - 高级丨United States
-      - 高级丨Hong Kong
+      - 日本-80端口
+      - 美国2号-0.1x
+      - 日本
+      - 荷兰2 | BT下载-0.1x
+      - 荷兰 | BT下载-0.1x
+      - 日本2号
+      - 美国3号-0.1x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +132,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Singapore
-      - 高级丨United States
-      - 高级丨Hong Kong
+      - 日本-80端口
+      - 美国2号-0.1x
+      - 日本
+      - 荷兰2 | BT下载-0.1x
+      - 荷兰 | BT下载-0.1x
+      - 日本2号
+      - 美国3号-0.1x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
