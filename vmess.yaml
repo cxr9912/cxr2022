@@ -5,51 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 免费机场 dash.kuailian.org, server: 9318b552-3ec8-4ae0-a57f-71b46e20b671.interface.buzz, port: 41581, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
-  - {name: 高级丨Taiwan, server: 6121cc89-6c33-02d0-15bf-2db6e6c115ef.interface.buzz, port: 15130, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
-  - {name: 高级丨Hong Kong, server: 505c2160-3dcd-44c8-90b0-0516381e0a77.interface.buzz, port: 64541, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
-  - {name: 高级丨Singapore, server: 154db23a-6333-441b-8e5b-b5bf95dba2fb.interface.buzz, port: 21511, type: ss, cipher: aes-256-gcm, password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc, udp: true}
-  - {name: Relay 🇯🇵 Japan 35 TG:@SSRSUB, server: assets.flareai.site, port: 15443, type: ss, cipher: chacha20-ietf-poly1305, password: d5dd371c-11db-4cfb-b458-072f0fbd0e18, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 04 TG:@SSRSUB, server: assets.flareai.site, port: 15543, type: ss, cipher: chacha20-ietf-poly1305, password: d5dd371c-11db-4cfb-b458-072f0fbd0e18, udp: true}
-  - {name: Relay 🇹🇼 Taiwan(ChatGPT) 04 TG:@SSRSUB, server: assets.flareai.site, port: 15343, type: ss, cipher: chacha20-ietf-poly1305, password: d5dd371c-11db-4cfb-b458-072f0fbd0e18, udp: true}
+  - {name: 新加坡4, server: sgp.piaole.me, port: 26911, type: trojan, password: 16e25fcc-a895-45a7-a64e-1bdca76cb551, sni: sgp.piaole.me, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Hong Kong
-      - 高级丨Singapore
-      - Relay 🇯🇵 Japan 35 TG:@SSRSUB
-      - Relay 🇭🇰 Hong Kong 04 TG:@SSRSUB
-      - Relay 🇹🇼 Taiwan(ChatGPT) 04 TG:@SSRSUB
+      - 新加坡4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Hong Kong
-      - 高级丨Singapore
-      - Relay 🇯🇵 Japan 35 TG:@SSRSUB
-      - Relay 🇭🇰 Hong Kong 04 TG:@SSRSUB
-      - Relay 🇹🇼 Taiwan(ChatGPT) 04 TG:@SSRSUB
+      - 新加坡4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Hong Kong
-      - 高级丨Singapore
-      - Relay 🇯🇵 Japan 35 TG:@SSRSUB
-      - Relay 🇭🇰 Hong Kong 04 TG:@SSRSUB
-      - Relay 🇹🇼 Taiwan(ChatGPT) 04 TG:@SSRSUB
+      - 新加坡4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,13 +44,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Hong Kong
-      - 高级丨Singapore
-      - Relay 🇯🇵 Japan 35 TG:@SSRSUB
-      - Relay 🇭🇰 Hong Kong 04 TG:@SSRSUB
-      - Relay 🇹🇼 Taiwan(ChatGPT) 04 TG:@SSRSUB
+      - 新加坡4
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -85,38 +55,20 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Hong Kong
-      - 高级丨Singapore
-      - Relay 🇯🇵 Japan 35 TG:@SSRSUB
-      - Relay 🇭🇰 Hong Kong 04 TG:@SSRSUB
-      - Relay 🇹🇼 Taiwan(ChatGPT) 04 TG:@SSRSUB
+      - 新加坡4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Hong Kong
-      - 高级丨Singapore
-      - Relay 🇯🇵 Japan 35 TG:@SSRSUB
-      - Relay 🇭🇰 Hong Kong 04 TG:@SSRSUB
-      - Relay 🇹🇼 Taiwan(ChatGPT) 04 TG:@SSRSUB
+      - 新加坡4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Hong Kong
-      - 高级丨Singapore
-      - Relay 🇯🇵 Japan 35 TG:@SSRSUB
-      - Relay 🇭🇰 Hong Kong 04 TG:@SSRSUB
-      - Relay 🇹🇼 Taiwan(ChatGPT) 04 TG:@SSRSUB
+      - 新加坡4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +84,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 免费机场 dash.kuailian.org
-      - 高级丨Taiwan
-      - 高级丨Hong Kong
-      - 高级丨Singapore
-      - Relay 🇯🇵 Japan 35 TG:@SSRSUB
-      - Relay 🇭🇰 Hong Kong 04 TG:@SSRSUB
-      - Relay 🇹🇼 Taiwan(ChatGPT) 04 TG:@SSRSUB
+      - 新加坡4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
