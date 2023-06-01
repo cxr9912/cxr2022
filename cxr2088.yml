@@ -5,175 +5,131 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡12, server: sg12.microsoft-orgwly.vip, port: 16789, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg12.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 日本01|流媒体GPT, server: jp1.microsoft-orgwly.vip, port: 24661, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: jp1.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 新加坡|推荐1|流媒体GPT, server: sg6.microsoft-orgwly.vip, port: 10053, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg6.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 日本08, server: jp8.microsoft-orgwly.vip, port: 34622, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: jp8.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 新加坡03|流媒体GPT, server: sg3.microsoft-orgwly.vip, port: 10027, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg3.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 日本09, server: jp9.microsoft-orgwly.vip, port: 80, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: jp9.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 日本|推荐1|流媒体, server: jp11.microsoft-orgwly.vip, port: 23819, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: jp11.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 新加坡|推荐|流媒体V2, server: sg13.microsoft-orgwly.vip, port: 10051, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg13.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 新加坡04|流媒体GPT, server: sg4.microsoft-orgwly.vip, port: 12040, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg4.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 日本|推荐2|流媒体, server: jp12.microsoft-orgwly.vip, port: 23519, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: jp12.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 新加坡|推荐2|流媒体GPT, server: sg11.microsoft-orgwly.vip, port: 10187, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg11.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 韩国02, server: kr2.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: kr2.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 香港03|流媒体GPT, server: hk3.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk3.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 韩国05, server: kr5.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: kr5.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 韩国01, server: kr1.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: kr1.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 新加坡05|流媒体GPT, server: sg5.microsoft-orgwly.vip, port: 11040, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg5.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 新加坡07, server: sg7.microsoft-orgwly.vip, port: 11038, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg7.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 香港04|流媒体GPT, server: hk4.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk4.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 香港02|流媒体GPT, server: hk2.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk2.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 香港10, server: hk10.microsoft-orgwly.vip, port: 12074, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk10.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 越南02|原生, server: vn2.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: vn2.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 香港07, server: hk7.microsoft-orgwly.vip, port: 80, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk7.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 新加坡10, server: sg10.microsoft-orgwly.vip, port: 23407, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg10.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 新加坡12, server: sg12.microsoft-orgwly.vip, port: 16790, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg12.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 新加坡03|流媒体GPT, server: sg3.microsoft-orgwly.vip, port: 10030, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg3.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|推荐|流媒体V2, server: sg13.microsoft-orgwly.vip, port: 10054, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg13.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 新加坡07, server: sg7.microsoft-orgwly.vip, port: 11041, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg7.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
   - {name: 香港14, server: hk14.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk14.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 印度01, server: in1.microsoft-orgwly.vip, port: 32533, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: in1.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 香港06|流媒体GPT, server: hk6.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk6.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 印度03, server: in3.microsoft-orgwly.vip, port: 32535, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: in3.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 新加坡01|流媒体GPT, server: sg1.microsoft-orgwly.vip, port: 35401, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg1.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 香港05|流媒体GPT, server: hk5.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk5.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 香港02|流媒体GPT, server: hk2.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk2.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 新加坡01|流媒体GPT, server: sg1.microsoft-orgwly.vip, port: 35404, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg1.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 新加坡08, server: sg8.microsoft-orgwly.vip, port: 11044, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg8.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 香港|推荐3|流媒体, server: hk12.microsoft-orgwly.vip, port: 23521, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk12.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 香港03|流媒体GPT, server: hk3.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk3.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
   - {name: 香港08, server: hk8.microsoft-orgwly.vip, port: 80, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk8.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 日本05|流媒体GPT, server: jp5.microsoft-orgwly.vip, port: 30954, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: jp5.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 距离下次重置剩余：5 天, server: hk13.microsoft-orgwly.vip, port: 46513, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk13.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 香港|推荐3|流媒体, server: hk12.microsoft-orgwly.vip, port: 23518, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk12.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 日本03, server: jp3.microsoft-orgwly.vip, port: 35751, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: jp3.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 美国01|GPT, server: us1.microsoft-orgwly.vip, port: 80, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: us1.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 美国05, server: us5.microsoft-orgwly.vip, port: 12088, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: us5.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 新加坡02|流媒体GPT, server: sg2.microsoft-orgwly.vip, port: 16239, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg2.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 香港09, server: hk9.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk9.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 韩国04, server: kr4.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: kr4.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 英国03, server: gb3.microsoft-orgwly.vip, port: 35625, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: gb3.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 香港10, server: hk10.microsoft-orgwly.vip, port: 12077, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk10.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 香港|推荐2|流媒体GPT, server: hk11.microsoft-orgwly.vip, port: 16004, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk11.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 新加坡05|流媒体GPT, server: sg5.microsoft-orgwly.vip, port: 11043, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg5.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 香港06|流媒体GPT, server: hk6.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk6.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 越南02|原生, server: vn2.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: vn2.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 香港04|流媒体GPT, server: hk4.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk4.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 香港07, server: hk7.microsoft-orgwly.vip, port: 80, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk7.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 香港|推荐1|流媒体GPT, server: hk1.microsoft-orgwly.vip, port: 35453, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: hk1.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 新加坡09, server: sg9.microsoft-orgwly.vip, port: 24603, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg9.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 美国04, server: us4.microsoft-orgwly.vip, port: 12076, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: us4.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|推荐1|流媒体GPT, server: sg6.microsoft-orgwly.vip, port: 10056, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg6.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 日本02|流媒体GPT, server: jp2.microsoft-orgwly.vip, port: 25713, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: jp2.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 新加坡02|流媒体GPT, server: sg2.microsoft-orgwly.vip, port: 16242, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: sg2.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 美国01|GPT, server: us1.microsoft-orgwly.vip, port: 443, type: trojan, password: 77b6e256-5767-4cac-8d6e-069fea0dc2ae, sni: us1.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 新加坡10
       - 新加坡12
-      - 日本01|流媒体GPT
-      - 新加坡|推荐1|流媒体GPT
-      - 日本08
       - 新加坡03|流媒体GPT
-      - 日本09
-      - 日本|推荐1|流媒体
       - 新加坡|推荐|流媒体V2
-      - 新加坡04|流媒体GPT
-      - 日本|推荐2|流媒体
-      - 新加坡|推荐2|流媒体GPT
-      - 韩国02
-      - 香港03|流媒体GPT
-      - 韩国05
-      - 韩国01
-      - 新加坡05|流媒体GPT
       - 新加坡07
-      - 香港04|流媒体GPT
-      - 香港02|流媒体GPT
-      - 香港10
-      - 越南02|原生
-      - 香港07
       - 香港14
-      - 印度01
-      - 香港06|流媒体GPT
-      - 印度03
+      - 香港05|流媒体GPT
+      - 香港02|流媒体GPT
       - 新加坡01|流媒体GPT
-      - 香港08
-      - 日本05|流媒体GPT
-      - 距离下次重置剩余：5 天
+      - 新加坡08
       - 香港|推荐3|流媒体
-      - 日本03
-      - 美国01|GPT
-      - 美国05
+      - 香港03|流媒体GPT
+      - 香港08
+      - 香港10
+      - 香港|推荐2|流媒体GPT
+      - 新加坡05|流媒体GPT
+      - 香港06|流媒体GPT
+      - 越南02|原生
+      - 香港04|流媒体GPT
+      - 香港07
+      - 香港|推荐1|流媒体GPT
+      - 新加坡09
+      - 美国04
+      - 新加坡|推荐1|流媒体GPT
+      - 日本02|流媒体GPT
       - 新加坡02|流媒体GPT
-      - 香港09
-      - 韩国04
-      - 英国03
+      - 美国01|GPT
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 新加坡10
       - 新加坡12
-      - 日本01|流媒体GPT
-      - 新加坡|推荐1|流媒体GPT
-      - 日本08
       - 新加坡03|流媒体GPT
-      - 日本09
-      - 日本|推荐1|流媒体
       - 新加坡|推荐|流媒体V2
-      - 新加坡04|流媒体GPT
-      - 日本|推荐2|流媒体
-      - 新加坡|推荐2|流媒体GPT
-      - 韩国02
-      - 香港03|流媒体GPT
-      - 韩国05
-      - 韩国01
-      - 新加坡05|流媒体GPT
       - 新加坡07
-      - 香港04|流媒体GPT
-      - 香港02|流媒体GPT
-      - 香港10
-      - 越南02|原生
-      - 香港07
       - 香港14
-      - 印度01
-      - 香港06|流媒体GPT
-      - 印度03
+      - 香港05|流媒体GPT
+      - 香港02|流媒体GPT
       - 新加坡01|流媒体GPT
-      - 香港08
-      - 日本05|流媒体GPT
-      - 距离下次重置剩余：5 天
+      - 新加坡08
       - 香港|推荐3|流媒体
-      - 日本03
-      - 美国01|GPT
-      - 美国05
+      - 香港03|流媒体GPT
+      - 香港08
+      - 香港10
+      - 香港|推荐2|流媒体GPT
+      - 新加坡05|流媒体GPT
+      - 香港06|流媒体GPT
+      - 越南02|原生
+      - 香港04|流媒体GPT
+      - 香港07
+      - 香港|推荐1|流媒体GPT
+      - 新加坡09
+      - 美国04
+      - 新加坡|推荐1|流媒体GPT
+      - 日本02|流媒体GPT
       - 新加坡02|流媒体GPT
-      - 香港09
-      - 韩国04
-      - 英国03
+      - 美国01|GPT
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 新加坡10
       - 新加坡12
-      - 日本01|流媒体GPT
-      - 新加坡|推荐1|流媒体GPT
-      - 日本08
       - 新加坡03|流媒体GPT
-      - 日本09
-      - 日本|推荐1|流媒体
       - 新加坡|推荐|流媒体V2
-      - 新加坡04|流媒体GPT
-      - 日本|推荐2|流媒体
-      - 新加坡|推荐2|流媒体GPT
-      - 韩国02
-      - 香港03|流媒体GPT
-      - 韩国05
-      - 韩国01
-      - 新加坡05|流媒体GPT
       - 新加坡07
-      - 香港04|流媒体GPT
-      - 香港02|流媒体GPT
-      - 香港10
-      - 越南02|原生
-      - 香港07
       - 香港14
-      - 印度01
-      - 香港06|流媒体GPT
-      - 印度03
+      - 香港05|流媒体GPT
+      - 香港02|流媒体GPT
       - 新加坡01|流媒体GPT
-      - 香港08
-      - 日本05|流媒体GPT
-      - 距离下次重置剩余：5 天
+      - 新加坡08
       - 香港|推荐3|流媒体
-      - 日本03
-      - 美国01|GPT
-      - 美国05
+      - 香港03|流媒体GPT
+      - 香港08
+      - 香港10
+      - 香港|推荐2|流媒体GPT
+      - 新加坡05|流媒体GPT
+      - 香港06|流媒体GPT
+      - 越南02|原生
+      - 香港04|流媒体GPT
+      - 香港07
+      - 香港|推荐1|流媒体GPT
+      - 新加坡09
+      - 美国04
+      - 新加坡|推荐1|流媒体GPT
+      - 日本02|流媒体GPT
       - 新加坡02|流媒体GPT
-      - 香港09
-      - 韩国04
-      - 英国03
+      - 美国01|GPT
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -192,189 +148,147 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 新加坡10
       - 新加坡12
-      - 日本01|流媒体GPT
-      - 新加坡|推荐1|流媒体GPT
-      - 日本08
       - 新加坡03|流媒体GPT
-      - 日本09
-      - 日本|推荐1|流媒体
       - 新加坡|推荐|流媒体V2
-      - 新加坡04|流媒体GPT
-      - 日本|推荐2|流媒体
-      - 新加坡|推荐2|流媒体GPT
-      - 韩国02
-      - 香港03|流媒体GPT
-      - 韩国05
-      - 韩国01
-      - 新加坡05|流媒体GPT
       - 新加坡07
-      - 香港04|流媒体GPT
-      - 香港02|流媒体GPT
-      - 香港10
-      - 越南02|原生
-      - 香港07
       - 香港14
-      - 印度01
-      - 香港06|流媒体GPT
-      - 印度03
+      - 香港05|流媒体GPT
+      - 香港02|流媒体GPT
       - 新加坡01|流媒体GPT
-      - 香港08
-      - 日本05|流媒体GPT
-      - 距离下次重置剩余：5 天
+      - 新加坡08
       - 香港|推荐3|流媒体
-      - 日本03
-      - 美国01|GPT
-      - 美国05
+      - 香港03|流媒体GPT
+      - 香港08
+      - 香港10
+      - 香港|推荐2|流媒体GPT
+      - 新加坡05|流媒体GPT
+      - 香港06|流媒体GPT
+      - 越南02|原生
+      - 香港04|流媒体GPT
+      - 香港07
+      - 香港|推荐1|流媒体GPT
+      - 新加坡09
+      - 美国04
+      - 新加坡|推荐1|流媒体GPT
+      - 日本02|流媒体GPT
       - 新加坡02|流媒体GPT
-      - 香港09
-      - 韩国04
-      - 英国03
+      - 美国01|GPT
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港03|流媒体GPT
-      - 香港04|流媒体GPT
-      - 香港02|流媒体GPT
-      - 香港10
-      - 香港07
       - 香港14
-      - 香港06|流媒体GPT
-      - 香港08
+      - 香港05|流媒体GPT
+      - 香港02|流媒体GPT
       - 香港|推荐3|流媒体
-      - 香港09
+      - 香港03|流媒体GPT
+      - 香港08
+      - 香港10
+      - 香港|推荐2|流媒体GPT
+      - 香港06|流媒体GPT
+      - 香港04|流媒体GPT
+      - 香港07
+      - 香港|推荐1|流媒体GPT
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 新加坡10
       - 新加坡12
-      - 日本01|流媒体GPT
-      - 新加坡|推荐1|流媒体GPT
-      - 日本08
       - 新加坡03|流媒体GPT
-      - 日本09
-      - 日本|推荐1|流媒体
       - 新加坡|推荐|流媒体V2
-      - 新加坡04|流媒体GPT
-      - 日本|推荐2|流媒体
-      - 新加坡|推荐2|流媒体GPT
-      - 韩国02
-      - 香港03|流媒体GPT
-      - 韩国05
-      - 韩国01
-      - 新加坡05|流媒体GPT
       - 新加坡07
-      - 香港04|流媒体GPT
-      - 香港02|流媒体GPT
-      - 香港10
-      - 越南02|原生
-      - 香港07
       - 香港14
-      - 印度01
-      - 香港06|流媒体GPT
-      - 印度03
+      - 香港05|流媒体GPT
+      - 香港02|流媒体GPT
       - 新加坡01|流媒体GPT
-      - 香港08
-      - 日本05|流媒体GPT
-      - 距离下次重置剩余：5 天
+      - 新加坡08
       - 香港|推荐3|流媒体
-      - 日本03
-      - 美国01|GPT
-      - 美国05
+      - 香港03|流媒体GPT
+      - 香港08
+      - 香港10
+      - 香港|推荐2|流媒体GPT
+      - 新加坡05|流媒体GPT
+      - 香港06|流媒体GPT
+      - 越南02|原生
+      - 香港04|流媒体GPT
+      - 香港07
+      - 香港|推荐1|流媒体GPT
+      - 新加坡09
+      - 美国04
+      - 新加坡|推荐1|流媒体GPT
+      - 日本02|流媒体GPT
       - 新加坡02|流媒体GPT
-      - 香港09
-      - 韩国04
-      - 英国03
+      - 美国01|GPT
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 新加坡10
       - 新加坡12
-      - 日本01|流媒体GPT
-      - 新加坡|推荐1|流媒体GPT
-      - 日本08
       - 新加坡03|流媒体GPT
-      - 日本09
-      - 日本|推荐1|流媒体
       - 新加坡|推荐|流媒体V2
-      - 新加坡04|流媒体GPT
-      - 日本|推荐2|流媒体
-      - 新加坡|推荐2|流媒体GPT
-      - 韩国02
-      - 香港03|流媒体GPT
-      - 韩国05
-      - 韩国01
-      - 新加坡05|流媒体GPT
       - 新加坡07
-      - 香港04|流媒体GPT
-      - 香港02|流媒体GPT
-      - 香港10
-      - 越南02|原生
-      - 香港07
       - 香港14
-      - 印度01
-      - 香港06|流媒体GPT
-      - 印度03
+      - 香港05|流媒体GPT
+      - 香港02|流媒体GPT
       - 新加坡01|流媒体GPT
-      - 香港08
-      - 日本05|流媒体GPT
-      - 距离下次重置剩余：5 天
+      - 新加坡08
       - 香港|推荐3|流媒体
-      - 日本03
-      - 美国01|GPT
-      - 美国05
+      - 香港03|流媒体GPT
+      - 香港08
+      - 香港10
+      - 香港|推荐2|流媒体GPT
+      - 新加坡05|流媒体GPT
+      - 香港06|流媒体GPT
+      - 越南02|原生
+      - 香港04|流媒体GPT
+      - 香港07
+      - 香港|推荐1|流媒体GPT
+      - 新加坡09
+      - 美国04
+      - 新加坡|推荐1|流媒体GPT
+      - 日本02|流媒体GPT
       - 新加坡02|流媒体GPT
-      - 香港09
-      - 韩国04
-      - 英国03
+      - 美国01|GPT
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 新加坡10
       - 新加坡12
-      - 日本01|流媒体GPT
-      - 新加坡|推荐1|流媒体GPT
-      - 日本08
       - 新加坡03|流媒体GPT
-      - 日本09
-      - 日本|推荐1|流媒体
       - 新加坡|推荐|流媒体V2
-      - 新加坡04|流媒体GPT
-      - 日本|推荐2|流媒体
-      - 新加坡|推荐2|流媒体GPT
-      - 韩国02
-      - 香港03|流媒体GPT
-      - 韩国05
-      - 韩国01
-      - 新加坡05|流媒体GPT
       - 新加坡07
-      - 香港04|流媒体GPT
-      - 香港02|流媒体GPT
-      - 香港10
-      - 越南02|原生
-      - 香港07
       - 香港14
-      - 印度01
-      - 香港06|流媒体GPT
-      - 印度03
+      - 香港05|流媒体GPT
+      - 香港02|流媒体GPT
       - 新加坡01|流媒体GPT
-      - 香港08
-      - 日本05|流媒体GPT
-      - 距离下次重置剩余：5 天
+      - 新加坡08
       - 香港|推荐3|流媒体
-      - 日本03
-      - 美国01|GPT
-      - 美国05
+      - 香港03|流媒体GPT
+      - 香港08
+      - 香港10
+      - 香港|推荐2|流媒体GPT
+      - 新加坡05|流媒体GPT
+      - 香港06|流媒体GPT
+      - 越南02|原生
+      - 香港04|流媒体GPT
+      - 香港07
+      - 香港|推荐1|流媒体GPT
+      - 新加坡09
+      - 美国04
+      - 新加坡|推荐1|流媒体GPT
+      - 日本02|流媒体GPT
       - 新加坡02|流媒体GPT
-      - 香港09
-      - 韩国04
-      - 英国03
+      - 美国01|GPT
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -390,44 +304,33 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 新加坡10
       - 新加坡12
-      - 日本01|流媒体GPT
-      - 新加坡|推荐1|流媒体GPT
-      - 日本08
       - 新加坡03|流媒体GPT
-      - 日本09
-      - 日本|推荐1|流媒体
       - 新加坡|推荐|流媒体V2
-      - 新加坡04|流媒体GPT
-      - 日本|推荐2|流媒体
-      - 新加坡|推荐2|流媒体GPT
-      - 韩国02
-      - 香港03|流媒体GPT
-      - 韩国05
-      - 韩国01
-      - 新加坡05|流媒体GPT
       - 新加坡07
-      - 香港04|流媒体GPT
-      - 香港02|流媒体GPT
-      - 香港10
-      - 越南02|原生
-      - 香港07
       - 香港14
-      - 印度01
-      - 香港06|流媒体GPT
-      - 印度03
+      - 香港05|流媒体GPT
+      - 香港02|流媒体GPT
       - 新加坡01|流媒体GPT
-      - 香港08
-      - 日本05|流媒体GPT
-      - 距离下次重置剩余：5 天
+      - 新加坡08
       - 香港|推荐3|流媒体
-      - 日本03
-      - 美国01|GPT
-      - 美国05
+      - 香港03|流媒体GPT
+      - 香港08
+      - 香港10
+      - 香港|推荐2|流媒体GPT
+      - 新加坡05|流媒体GPT
+      - 香港06|流媒体GPT
+      - 越南02|原生
+      - 香港04|流媒体GPT
+      - 香港07
+      - 香港|推荐1|流媒体GPT
+      - 新加坡09
+      - 美国04
+      - 新加坡|推荐1|流媒体GPT
+      - 日本02|流媒体GPT
       - 新加坡02|流媒体GPT
-      - 香港09
-      - 韩国04
-      - 英国03
+      - 美国01|GPT
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
