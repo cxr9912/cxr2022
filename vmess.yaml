@@ -5,51 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 | Misaka | 游戏🎮专属, server: gd.ooww.pw, port: 10053, type: ss, cipher: chacha20-ietf-poly1305, password: 8ebffe6a-b31d-476c-a73a-62b84dc2a529, udp: true}
-  - {name: 新加坡 | BGP | 防失联, server: 42ec.interface.buzz, port: 15224, type: ss, cipher: aes-128-gcm, password: fda601f5-b07a-4964-9c89-b69d9f9d4e49, udp: true}
-  - {name: 香港 | 超级-BGP | 如临恶魔, server: sz.oracleyyds.com, port: 32559, type: ss, cipher: aes-256-gcm, password: a913f655-0690-4bed-94e4-a9230b8cfd8c, udp: true}
-  - {name: 香港 | 责任, server: hk8.microsoft-orgwly.vip, port: 80, type: trojan, password: 7b44fc1f-fd16-4417-a14f-3a883ffa6368, sni: hk8.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 香港 | 自由之都, server: hk7.microsoft-orgwly.vip, port: 80, type: trojan, password: 7b44fc1f-fd16-4417-a14f-3a883ffa6368, sni: hk7.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 香港 | 普通-铁剑, server: hk9.microsoft-orgwly.vip, port: 443, type: trojan, password: 7b44fc1f-fd16-4417-a14f-3a883ffa6368, sni: hk9.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 香港 | 仙丹, server: hk11.microsoft-orgwly.vip, port: 80, type: trojan, password: 7b44fc1f-fd16-4417-a14f-3a883ffa6368, sni: hk11.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 普通-V107-1x-台湾-NF&Disney&动画疯*, server: rnumbalic.gsdfgj.xyz, port: 20011, type: vmess, uuid: 883c1b61-135f-35f6-9713-3cb029c9f718, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 普通-V106-1x-台湾-NF&Disney&动画疯*, server: rnumbalic.gsdfgj.xyz, port: 20006, type: vmess, uuid: 883c1b61-135f-35f6-9713-3cb029c9f718, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 普通-V101-1x-新加坡, server: omortiner.gstaxic.xyz, port: 12003, type: vmess, uuid: 883c1b61-135f-35f6-9713-3cb029c9f718, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 普通-V104-1x-日本, server: omortiner.gstaxic.xyz, port: 21566, type: vmess, uuid: 883c1b61-135f-35f6-9713-3cb029c9f718, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 普通-V108-1x-美国-NF, server: omortiner.gstaxic.xyz, port: 558, type: vmess, uuid: 883c1b61-135f-35f6-9713-3cb029c9f718, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 普通-V103-1x-香港, server: rnumbalic.gsdfgj.xyz, port: 559, type: vmess, uuid: 883c1b61-135f-35f6-9713-3cb029c9f718, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 | Misaka | 游戏🎮专属
-      - 新加坡 | BGP | 防失联
-      - 香港 | 超级-BGP | 如临恶魔
-      - 香港 | 责任
-      - 香港 | 自由之都
-      - 香港 | 普通-铁剑
-      - 香港 | 仙丹
+      - 普通-V107-1x-台湾-NF&Disney&动画疯*
+      - 普通-V106-1x-台湾-NF&Disney&动画疯*
+      - 普通-V101-1x-新加坡
+      - 普通-V104-1x-日本
+      - 普通-V108-1x-美国-NF
+      - 普通-V103-1x-香港
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 | Misaka | 游戏🎮专属
-      - 新加坡 | BGP | 防失联
-      - 香港 | 超级-BGP | 如临恶魔
-      - 香港 | 责任
-      - 香港 | 自由之都
-      - 香港 | 普通-铁剑
-      - 香港 | 仙丹
+      - 普通-V107-1x-台湾-NF&Disney&动画疯*
+      - 普通-V106-1x-台湾-NF&Disney&动画疯*
+      - 普通-V101-1x-新加坡
+      - 普通-V104-1x-日本
+      - 普通-V108-1x-美国-NF
+      - 普通-V103-1x-香港
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 | Misaka | 游戏🎮专属
-      - 新加坡 | BGP | 防失联
-      - 香港 | 超级-BGP | 如临恶魔
-      - 香港 | 责任
-      - 香港 | 自由之都
-      - 香港 | 普通-铁剑
-      - 香港 | 仙丹
+      - 普通-V107-1x-台湾-NF&Disney&动画疯*
+      - 普通-V106-1x-台湾-NF&Disney&动画疯*
+      - 普通-V101-1x-新加坡
+      - 普通-V104-1x-日本
+      - 普通-V108-1x-美国-NF
+      - 普通-V103-1x-香港
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,61 +64,54 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 | Misaka | 游戏🎮专属
-      - 新加坡 | BGP | 防失联
-      - 香港 | 超级-BGP | 如临恶魔
-      - 香港 | 责任
-      - 香港 | 自由之都
-      - 香港 | 普通-铁剑
-      - 香港 | 仙丹
+      - 普通-V107-1x-台湾-NF&Disney&动画疯*
+      - 普通-V106-1x-台湾-NF&Disney&动画疯*
+      - 普通-V101-1x-新加坡
+      - 普通-V104-1x-日本
+      - 普通-V108-1x-美国-NF
+      - 普通-V103-1x-香港
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 | Misaka | 游戏🎮专属
-      - 香港 | 超级-BGP | 如临恶魔
-      - 香港 | 责任
-      - 香港 | 自由之都
-      - 香港 | 普通-铁剑
-      - 香港 | 仙丹
+      - 普通-V107-1x-台湾-NF&Disney&动画疯*
+      - 普通-V106-1x-台湾-NF&Disney&动画疯*
+      - 普通-V103-1x-香港
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 | Misaka | 游戏🎮专属
-      - 新加坡 | BGP | 防失联
-      - 香港 | 超级-BGP | 如临恶魔
-      - 香港 | 责任
-      - 香港 | 自由之都
-      - 香港 | 普通-铁剑
-      - 香港 | 仙丹
+      - 普通-V107-1x-台湾-NF&Disney&动画疯*
+      - 普通-V106-1x-台湾-NF&Disney&动画疯*
+      - 普通-V101-1x-新加坡
+      - 普通-V104-1x-日本
+      - 普通-V108-1x-美国-NF
+      - 普通-V103-1x-香港
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 | Misaka | 游戏🎮专属
-      - 新加坡 | BGP | 防失联
-      - 香港 | 超级-BGP | 如临恶魔
-      - 香港 | 责任
-      - 香港 | 自由之都
-      - 香港 | 普通-铁剑
-      - 香港 | 仙丹
+      - 普通-V107-1x-台湾-NF&Disney&动画疯*
+      - 普通-V106-1x-台湾-NF&Disney&动画疯*
+      - 普通-V101-1x-新加坡
+      - 普通-V104-1x-日本
+      - 普通-V108-1x-美国-NF
+      - 普通-V103-1x-香港
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 | Misaka | 游戏🎮专属
-      - 新加坡 | BGP | 防失联
-      - 香港 | 超级-BGP | 如临恶魔
-      - 香港 | 责任
-      - 香港 | 自由之都
-      - 香港 | 普通-铁剑
-      - 香港 | 仙丹
+      - 普通-V107-1x-台湾-NF&Disney&动画疯*
+      - 普通-V106-1x-台湾-NF&Disney&动画疯*
+      - 普通-V101-1x-新加坡
+      - 普通-V104-1x-日本
+      - 普通-V108-1x-美国-NF
+      - 普通-V103-1x-香港
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -138,13 +127,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 | Misaka | 游戏🎮专属
-      - 新加坡 | BGP | 防失联
-      - 香港 | 超级-BGP | 如临恶魔
-      - 香港 | 责任
-      - 香港 | 自由之都
-      - 香港 | 普通-铁剑
-      - 香港 | 仙丹
+      - 普通-V107-1x-台湾-NF&Disney&动画疯*
+      - 普通-V106-1x-台湾-NF&Disney&动画疯*
+      - 普通-V101-1x-新加坡
+      - 普通-V104-1x-日本
+      - 普通-V108-1x-美国-NF
+      - 普通-V103-1x-香港
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
