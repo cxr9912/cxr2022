@@ -5,55 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[vip①]香港|Netflix解锁", server: 12.uuuyun.click, port: 26912, type: vmess, uuid: a1cd4cbd-3278-3f61-8a8f-b19b802c418a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 12.uuuyun.click}, udp: true}
-  - {name: "[vip①]韩国2|100M", server: 16.uuuyun.click, port: 26916, type: vmess, uuid: a1cd4cbd-3278-3f61-8a8f-b19b802c418a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 16.uuuyun.click}, udp: true}
-  - {name: "[vip①]韩国1|100M", server: 13.uuuyun.click, port: 26913, type: vmess, uuid: a1cd4cbd-3278-3f61-8a8f-b19b802c418a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.uuuyun.click}, udp: true}
-  - {name: "[vip①]新加坡1|100M", server: 11.uuuyun.click, port: 26911, type: vmess, uuid: a1cd4cbd-3278-3f61-8a8f-b19b802c418a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 11.uuuyun.click}, udp: true}
-  - {name: "[vip①]美国2|100M", server: 15.uuuyun.click, port: 26915, type: vmess, uuid: a1cd4cbd-3278-3f61-8a8f-b19b802c418a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vip①]美国1|100M", server: 14.uuuyun.click, port: 26914, type: vmess, uuid: a1cd4cbd-3278-3f61-8a8f-b19b802c418a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vip①]英国1|100M", server: 8.uuuyun.click, port: 26908, type: vmess, uuid: a1cd4cbd-3278-3f61-8a8f-b19b802c418a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 8.uuuyun.click}, udp: true}
-  - {name: "[vip①]日本1|100M", server: 4.uuuyun.click, port: 26904, type: vmess, uuid: a1cd4cbd-3278-3f61-8a8f-b19b802c418a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 4.uuuyun.click}, udp: true}
+  - {name: ️‍🌈 无限流量04, server: free.themars.top, port: 32101, type: ss, cipher: chacha20-ietf-poly1305, password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[vip①]香港|Netflix解锁"
-      - "[vip①]韩国2|100M"
-      - "[vip①]韩国1|100M"
-      - "[vip①]新加坡1|100M"
-      - "[vip①]美国2|100M"
-      - "[vip①]美国1|100M"
-      - "[vip①]英国1|100M"
-      - "[vip①]日本1|100M"
+      - ️‍🌈 无限流量04
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[vip①]香港|Netflix解锁"
-      - "[vip①]韩国2|100M"
-      - "[vip①]韩国1|100M"
-      - "[vip①]新加坡1|100M"
-      - "[vip①]美国2|100M"
-      - "[vip①]美国1|100M"
-      - "[vip①]英国1|100M"
-      - "[vip①]日本1|100M"
+      - ️‍🌈 无限流量04
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[vip①]香港|Netflix解锁"
-      - "[vip①]韩国2|100M"
-      - "[vip①]韩国1|100M"
-      - "[vip①]新加坡1|100M"
-      - "[vip①]美国2|100M"
-      - "[vip①]美国1|100M"
-      - "[vip①]英国1|100M"
-      - "[vip①]日本1|100M"
+      - ️‍🌈 无限流量04
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,60 +44,31 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[vip①]香港|Netflix解锁"
-      - "[vip①]韩国2|100M"
-      - "[vip①]韩国1|100M"
-      - "[vip①]新加坡1|100M"
-      - "[vip①]美国2|100M"
-      - "[vip①]美国1|100M"
-      - "[vip①]英国1|100M"
-      - "[vip①]日本1|100M"
+      - ️‍🌈 无限流量04
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[vip①]香港|Netflix解锁"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[vip①]香港|Netflix解锁"
-      - "[vip①]韩国2|100M"
-      - "[vip①]韩国1|100M"
-      - "[vip①]新加坡1|100M"
-      - "[vip①]美国2|100M"
-      - "[vip①]美国1|100M"
-      - "[vip①]英国1|100M"
-      - "[vip①]日本1|100M"
+      - ️‍🌈 无限流量04
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[vip①]香港|Netflix解锁"
-      - "[vip①]韩国2|100M"
-      - "[vip①]韩国1|100M"
-      - "[vip①]新加坡1|100M"
-      - "[vip①]美国2|100M"
-      - "[vip①]美国1|100M"
-      - "[vip①]英国1|100M"
-      - "[vip①]日本1|100M"
+      - ️‍🌈 无限流量04
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[vip①]香港|Netflix解锁"
-      - "[vip①]韩国2|100M"
-      - "[vip①]韩国1|100M"
-      - "[vip①]新加坡1|100M"
-      - "[vip①]美国2|100M"
-      - "[vip①]美国1|100M"
-      - "[vip①]英国1|100M"
-      - "[vip①]日本1|100M"
+      - ️‍🌈 无限流量04
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -141,14 +84,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[vip①]香港|Netflix解锁"
-      - "[vip①]韩国2|100M"
-      - "[vip①]韩国1|100M"
-      - "[vip①]新加坡1|100M"
-      - "[vip①]美国2|100M"
-      - "[vip①]美国1|100M"
-      - "[vip①]英国1|100M"
-      - "[vip①]日本1|100M"
+      - ️‍🌈 无限流量04
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
