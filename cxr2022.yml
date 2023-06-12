@@ -5,27 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: ️‍🌈 无限流量04, server: free.themars.top, port: 32101, type: ss, cipher: chacha20-ietf-poly1305, password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2, udp: true}
+  - {name: "JP, Tokyo 2", server: 18.139.163.228, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "JP, Tokyo", server: 54.151.179.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "SG, Singapore", server: 13.213.66.163, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "US, Dallas 2", server: 54.190.212.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ️‍🌈 无限流量04
+      - JP, Tokyo 2
+      - JP, Tokyo
+      - SG, Singapore
+      - US, Dallas 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - ️‍🌈 无限流量04
+      - JP, Tokyo 2
+      - JP, Tokyo
+      - SG, Singapore
+      - US, Dallas 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ️‍🌈 无限流量04
+      - JP, Tokyo 2
+      - JP, Tokyo
+      - SG, Singapore
+      - US, Dallas 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -44,7 +56,10 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ️‍🌈 无限流量04
+      - JP, Tokyo 2
+      - JP, Tokyo
+      - SG, Singapore
+      - US, Dallas 2
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -55,20 +70,29 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - ️‍🌈 无限流量04
+      - JP, Tokyo 2
+      - JP, Tokyo
+      - SG, Singapore
+      - US, Dallas 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - ️‍🌈 无限流量04
+      - JP, Tokyo 2
+      - JP, Tokyo
+      - SG, Singapore
+      - US, Dallas 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ️‍🌈 无限流量04
+      - JP, Tokyo 2
+      - JP, Tokyo
+      - SG, Singapore
+      - US, Dallas 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,7 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ️‍🌈 无限流量04
+      - JP, Tokyo 2
+      - JP, Tokyo
+      - SG, Singapore
+      - US, Dallas 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
