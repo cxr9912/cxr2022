@@ -5,167 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本1-linode, server: cu.awslcn.cyou, port: 25280, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cyou}, udp: true}
-  - {name: 日本4-linode, server: cu.awslcn.cyou, port: 25277, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cyou}, udp: true}
-  - {name: 日本2-linode, server: cu.awslcn.cyou, port: 25281, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cyou}, udp: true}
-  - {name: "台湾02{移动|V2ray}", server: cm.awslcn.cyou, port: 25233, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cyou}, udp: true}
-  - {name: 日本3-linode, server: cu.awslcn.cyou, port: 25276, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cyou}, udp: true}
-  - {name: "香港03{优化1|V2ray}", server: hk1.awslcn.cyou, port: 25248, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.awslcn.cyou}, udp: true}
-  - {name: "香港04{优化1|V2ray}", server: hk1.awslcn.cyou, port: 25250, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.awslcn.cyou}, udp: true}
-  - {name: "美国04{优化1|V2ray}", server: us1.awslcn.cyou, port: 25255, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us1.awslcn.cyou}, udp: true}
-  - {name: 新加坡7-DO, server: sg1.awslcn.cyou, port: 25283, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.awslcn.cyou}, udp: true}
-  - {name: "香港05{优化1|V2ray}", server: hk1.awslcn.cyou, port: 25244, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.awslcn.cyou}, udp: true}
-  - {name: "美国02{优化2|V2ray}", server: us1.awslcn.cyou, port: 25239, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us1.awslcn.cyou}, udp: true}
-  - {name: 日本5-NTT, server: cu.awslcn.cyou, port: 25278, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cyou}, udp: true}
-  - {name: 日本6-NTT, server: cu.awslcn.cyou, port: 25279, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.awslcn.cyou}, udp: true}
-  - {name: 新加坡6-DO, server: sg1.awslcn.cyou, port: 25282, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.awslcn.cyou}, udp: true}
-  - {name: "台湾01{移动|V2ray}", server: cm1.awslcn.cyou, port: 25233, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm1.awslcn.cyou}, udp: true}
-  - {name: "新加坡01{优化2|V2ray}", server: sg1.awslcn.cyou, port: 25245, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.awslcn.cyou}, udp: true}
-  - {name: "新加坡04{优化2|V2ray}", server: sg1.awslcn.cyou, port: 25246, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.awslcn.cyou}, udp: true}
-  - {name: "新加坡02{优化1|V2ray}", server: sg1.awslcn.cyou, port: 25243, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.awslcn.cyou}, udp: true}
-  - {name: "新加坡03{优化2|V2ray}", server: sg1.awslcn.cyou, port: 25221, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.awslcn.cyou}, udp: true}
-  - {name: 新加坡5-DO, server: sg1.awslcn.cyou, port: 25270, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.awslcn.cyou}, udp: true}
-  - {name: "美国06{优化1|V2ray}", server: us2.awslcn.cyou, port: 25257, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us2.awslcn.cyou}, udp: true}
-  - {name: "印度02{移动|V2ray}", server: cm.awslcn.cyou, port: 25216, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cyou}, udp: true}
-  - {name: "印度01{移动|V2ray}", server: cm1.awslcn.cyou, port: 25216, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm1.awslcn.cyou}, udp: true}
-  - {name: "德国01{移动|V2ray}", server: cm1.awslcn.cyou, port: 25241, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm1.awslcn.cyou}, udp: true}
-  - {name: "德国02{移动|V2ray}", server: cm.awslcn.cyou, port: 25241, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cyou}, udp: true}
-  - {name: "巴基斯坦02{移动|V2ray}", server: cm1.awslcn.cyou, port: 25275, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm1.awslcn.cyou}, udp: true}
-  - {name: "巴基斯坦01{移动|V2ray}", server: cm.awslcn.cyou, port: 25275, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cyou}, udp: true}
-  - {name: "俄罗斯①{移动|V2ray}", server: cm1.awslcn.cyou, port: 25230, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm1.awslcn.cyou}, udp: true}
-  - {name: "英国01{移动|V2ray}", server: cm.awslcn.cyou, port: 25240, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cyou}, udp: true}
-  - {name: "马来01{移动|V2ray}", server: cm.awslcn.cyou, port: 25228, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cyou}, udp: true}
-  - {name: "英国02{移动|V2ray}", server: cm1.awslcn.cyou, port: 25240, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm1.awslcn.cyou}, udp: true}
-  - {name: "美国05{优化2|V2ray}", server: us1.awslcn.cyou, port: 25256, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us1.awslcn.cyou}, udp: true}
-  - {name: "马来02{移动|V2ray}", server: cm1.awslcn.cyou, port: 25258, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm1.awslcn.cyou}, udp: true}
-  - {name: 印度-Trojan, server: in01.trojanyyds.xyz, port: 443, type: trojan, password: 36d48ba9-7445-4b41-b210-58f4e07a627a, sni: in01.trojanyyds.xyz, skip-cert-verify: true, udp: true}
-  - {name: "马来04{联通|V2ray}", server: cm.awslcn.cyou, port: 25258, type: vmess, uuid: 36d48ba9-7445-4b41-b210-58f4e07a627a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.awslcn.cyou}, udp: true}
-  - {name: 马来-Trojan②, server: my02.trojanyyds.xyz, port: 443, type: trojan, password: 36d48ba9-7445-4b41-b210-58f4e07a627a, sni: my02.trojanyyds.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾|推荐07, server: tw7.microsoft-orgwly.vip, port: 10024, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: tw7.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 越南01|原生, server: vn2.microsoft-orgwly.vip, port: 444, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: vn2.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 美国06, server: us6.microsoft-orgwly.vip, port: 10068, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: us6.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 美国05, server: us5.microsoft-orgwly.vip, port: 10094, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: us5.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 美国01|GPT, server: us1.microsoft-orgwly.vip, port: 10022, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: us1.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 日本02|流媒体GPT, server: jp2.microsoft-orgwly.vip, port: 10060, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: jp2.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 日本04, server: jp4.microsoft-orgwly.vip, port: 10078, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: jp4.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本1-linode
-      - 日本4-linode
-      - 日本2-linode
-      - 台湾02{移动|V2ray}
-      - 日本3-linode
-      - 香港03{优化1|V2ray}
-      - 香港04{优化1|V2ray}
-      - 美国04{优化1|V2ray}
-      - 新加坡7-DO
-      - 香港05{优化1|V2ray}
-      - 美国02{优化2|V2ray}
-      - 日本5-NTT
-      - 日本6-NTT
-      - 新加坡6-DO
-      - 台湾01{移动|V2ray}
-      - 新加坡01{优化2|V2ray}
-      - 新加坡04{优化2|V2ray}
-      - 新加坡02{优化1|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 新加坡5-DO
-      - 美国06{优化1|V2ray}
-      - 印度02{移动|V2ray}
-      - 印度01{移动|V2ray}
-      - 德国01{移动|V2ray}
-      - 德国02{移动|V2ray}
-      - 巴基斯坦02{移动|V2ray}
-      - 巴基斯坦01{移动|V2ray}
-      - 俄罗斯①{移动|V2ray}
-      - 英国01{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 英国02{移动|V2ray}
-      - 美国05{优化2|V2ray}
-      - 马来02{移动|V2ray}
-      - 印度-Trojan
-      - 马来04{联通|V2ray}
-      - 马来-Trojan②
+      - 台湾|推荐07
+      - 越南01|原生
+      - 美国06
+      - 美国05
+      - 美国01|GPT
+      - 日本02|流媒体GPT
+      - 日本04
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本1-linode
-      - 日本4-linode
-      - 日本2-linode
-      - 台湾02{移动|V2ray}
-      - 日本3-linode
-      - 香港03{优化1|V2ray}
-      - 香港04{优化1|V2ray}
-      - 美国04{优化1|V2ray}
-      - 新加坡7-DO
-      - 香港05{优化1|V2ray}
-      - 美国02{优化2|V2ray}
-      - 日本5-NTT
-      - 日本6-NTT
-      - 新加坡6-DO
-      - 台湾01{移动|V2ray}
-      - 新加坡01{优化2|V2ray}
-      - 新加坡04{优化2|V2ray}
-      - 新加坡02{优化1|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 新加坡5-DO
-      - 美国06{优化1|V2ray}
-      - 印度02{移动|V2ray}
-      - 印度01{移动|V2ray}
-      - 德国01{移动|V2ray}
-      - 德国02{移动|V2ray}
-      - 巴基斯坦02{移动|V2ray}
-      - 巴基斯坦01{移动|V2ray}
-      - 俄罗斯①{移动|V2ray}
-      - 英国01{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 英国02{移动|V2ray}
-      - 美国05{优化2|V2ray}
-      - 马来02{移动|V2ray}
-      - 印度-Trojan
-      - 马来04{联通|V2ray}
-      - 马来-Trojan②
+      - 台湾|推荐07
+      - 越南01|原生
+      - 美国06
+      - 美国05
+      - 美国01|GPT
+      - 日本02|流媒体GPT
+      - 日本04
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本1-linode
-      - 日本4-linode
-      - 日本2-linode
-      - 台湾02{移动|V2ray}
-      - 日本3-linode
-      - 香港03{优化1|V2ray}
-      - 香港04{优化1|V2ray}
-      - 美国04{优化1|V2ray}
-      - 新加坡7-DO
-      - 香港05{优化1|V2ray}
-      - 美国02{优化2|V2ray}
-      - 日本5-NTT
-      - 日本6-NTT
-      - 新加坡6-DO
-      - 台湾01{移动|V2ray}
-      - 新加坡01{优化2|V2ray}
-      - 新加坡04{优化2|V2ray}
-      - 新加坡02{优化1|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 新加坡5-DO
-      - 美国06{优化1|V2ray}
-      - 印度02{移动|V2ray}
-      - 印度01{移动|V2ray}
-      - 德国01{移动|V2ray}
-      - 德国02{移动|V2ray}
-      - 巴基斯坦02{移动|V2ray}
-      - 巴基斯坦01{移动|V2ray}
-      - 俄罗斯①{移动|V2ray}
-      - 英国01{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 英国02{移动|V2ray}
-      - 美国05{优化2|V2ray}
-      - 马来02{移动|V2ray}
-      - 印度-Trojan
-      - 马来04{联通|V2ray}
-      - 马来-Trojan②
+      - 台湾|推荐07
+      - 越南01|原生
+      - 美国06
+      - 美国05
+      - 美国01|GPT
+      - 日本02|流媒体GPT
+      - 日本04
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -184,176 +68,56 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本1-linode
-      - 日本4-linode
-      - 日本2-linode
-      - 台湾02{移动|V2ray}
-      - 日本3-linode
-      - 香港03{优化1|V2ray}
-      - 香港04{优化1|V2ray}
-      - 美国04{优化1|V2ray}
-      - 新加坡7-DO
-      - 香港05{优化1|V2ray}
-      - 美国02{优化2|V2ray}
-      - 日本5-NTT
-      - 日本6-NTT
-      - 新加坡6-DO
-      - 台湾01{移动|V2ray}
-      - 新加坡01{优化2|V2ray}
-      - 新加坡04{优化2|V2ray}
-      - 新加坡02{优化1|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 新加坡5-DO
-      - 美国06{优化1|V2ray}
-      - 印度02{移动|V2ray}
-      - 印度01{移动|V2ray}
-      - 德国01{移动|V2ray}
-      - 德国02{移动|V2ray}
-      - 巴基斯坦02{移动|V2ray}
-      - 巴基斯坦01{移动|V2ray}
-      - 俄罗斯①{移动|V2ray}
-      - 英国01{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 英国02{移动|V2ray}
-      - 美国05{优化2|V2ray}
-      - 马来02{移动|V2ray}
-      - 印度-Trojan
-      - 马来04{联通|V2ray}
-      - 马来-Trojan②
+      - 台湾|推荐07
+      - 越南01|原生
+      - 美国06
+      - 美国05
+      - 美国01|GPT
+      - 日本02|流媒体GPT
+      - 日本04
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾02{移动|V2ray}
-      - 香港03{优化1|V2ray}
-      - 香港04{优化1|V2ray}
-      - 香港05{优化1|V2ray}
-      - 台湾01{移动|V2ray}
+      - 台湾|推荐07
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本1-linode
-      - 日本4-linode
-      - 日本2-linode
-      - 台湾02{移动|V2ray}
-      - 日本3-linode
-      - 香港03{优化1|V2ray}
-      - 香港04{优化1|V2ray}
-      - 美国04{优化1|V2ray}
-      - 新加坡7-DO
-      - 香港05{优化1|V2ray}
-      - 美国02{优化2|V2ray}
-      - 日本5-NTT
-      - 日本6-NTT
-      - 新加坡6-DO
-      - 台湾01{移动|V2ray}
-      - 新加坡01{优化2|V2ray}
-      - 新加坡04{优化2|V2ray}
-      - 新加坡02{优化1|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 新加坡5-DO
-      - 美国06{优化1|V2ray}
-      - 印度02{移动|V2ray}
-      - 印度01{移动|V2ray}
-      - 德国01{移动|V2ray}
-      - 德国02{移动|V2ray}
-      - 巴基斯坦02{移动|V2ray}
-      - 巴基斯坦01{移动|V2ray}
-      - 俄罗斯①{移动|V2ray}
-      - 英国01{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 英国02{移动|V2ray}
-      - 美国05{优化2|V2ray}
-      - 马来02{移动|V2ray}
-      - 印度-Trojan
-      - 马来04{联通|V2ray}
-      - 马来-Trojan②
+      - 台湾|推荐07
+      - 越南01|原生
+      - 美国06
+      - 美国05
+      - 美国01|GPT
+      - 日本02|流媒体GPT
+      - 日本04
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本1-linode
-      - 日本4-linode
-      - 日本2-linode
-      - 台湾02{移动|V2ray}
-      - 日本3-linode
-      - 香港03{优化1|V2ray}
-      - 香港04{优化1|V2ray}
-      - 美国04{优化1|V2ray}
-      - 新加坡7-DO
-      - 香港05{优化1|V2ray}
-      - 美国02{优化2|V2ray}
-      - 日本5-NTT
-      - 日本6-NTT
-      - 新加坡6-DO
-      - 台湾01{移动|V2ray}
-      - 新加坡01{优化2|V2ray}
-      - 新加坡04{优化2|V2ray}
-      - 新加坡02{优化1|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 新加坡5-DO
-      - 美国06{优化1|V2ray}
-      - 印度02{移动|V2ray}
-      - 印度01{移动|V2ray}
-      - 德国01{移动|V2ray}
-      - 德国02{移动|V2ray}
-      - 巴基斯坦02{移动|V2ray}
-      - 巴基斯坦01{移动|V2ray}
-      - 俄罗斯①{移动|V2ray}
-      - 英国01{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 英国02{移动|V2ray}
-      - 美国05{优化2|V2ray}
-      - 马来02{移动|V2ray}
-      - 印度-Trojan
-      - 马来04{联通|V2ray}
-      - 马来-Trojan②
+      - 台湾|推荐07
+      - 越南01|原生
+      - 美国06
+      - 美国05
+      - 美国01|GPT
+      - 日本02|流媒体GPT
+      - 日本04
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本1-linode
-      - 日本4-linode
-      - 日本2-linode
-      - 台湾02{移动|V2ray}
-      - 日本3-linode
-      - 香港03{优化1|V2ray}
-      - 香港04{优化1|V2ray}
-      - 美国04{优化1|V2ray}
-      - 新加坡7-DO
-      - 香港05{优化1|V2ray}
-      - 美国02{优化2|V2ray}
-      - 日本5-NTT
-      - 日本6-NTT
-      - 新加坡6-DO
-      - 台湾01{移动|V2ray}
-      - 新加坡01{优化2|V2ray}
-      - 新加坡04{优化2|V2ray}
-      - 新加坡02{优化1|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 新加坡5-DO
-      - 美国06{优化1|V2ray}
-      - 印度02{移动|V2ray}
-      - 印度01{移动|V2ray}
-      - 德国01{移动|V2ray}
-      - 德国02{移动|V2ray}
-      - 巴基斯坦02{移动|V2ray}
-      - 巴基斯坦01{移动|V2ray}
-      - 俄罗斯①{移动|V2ray}
-      - 英国01{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 英国02{移动|V2ray}
-      - 美国05{优化2|V2ray}
-      - 马来02{移动|V2ray}
-      - 印度-Trojan
-      - 马来04{联通|V2ray}
-      - 马来-Trojan②
+      - 台湾|推荐07
+      - 越南01|原生
+      - 美国06
+      - 美国05
+      - 美国01|GPT
+      - 日本02|流媒体GPT
+      - 日本04
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -369,42 +133,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本1-linode
-      - 日本4-linode
-      - 日本2-linode
-      - 台湾02{移动|V2ray}
-      - 日本3-linode
-      - 香港03{优化1|V2ray}
-      - 香港04{优化1|V2ray}
-      - 美国04{优化1|V2ray}
-      - 新加坡7-DO
-      - 香港05{优化1|V2ray}
-      - 美国02{优化2|V2ray}
-      - 日本5-NTT
-      - 日本6-NTT
-      - 新加坡6-DO
-      - 台湾01{移动|V2ray}
-      - 新加坡01{优化2|V2ray}
-      - 新加坡04{优化2|V2ray}
-      - 新加坡02{优化1|V2ray}
-      - 新加坡03{优化2|V2ray}
-      - 新加坡5-DO
-      - 美国06{优化1|V2ray}
-      - 印度02{移动|V2ray}
-      - 印度01{移动|V2ray}
-      - 德国01{移动|V2ray}
-      - 德国02{移动|V2ray}
-      - 巴基斯坦02{移动|V2ray}
-      - 巴基斯坦01{移动|V2ray}
-      - 俄罗斯①{移动|V2ray}
-      - 英国01{移动|V2ray}
-      - 马来01{移动|V2ray}
-      - 英国02{移动|V2ray}
-      - 美国05{优化2|V2ray}
-      - 马来02{移动|V2ray}
-      - 印度-Trojan
-      - 马来04{联通|V2ray}
-      - 马来-Trojan②
+      - 台湾|推荐07
+      - 越南01|原生
+      - 美国06
+      - 美国05
+      - 美国01|GPT
+      - 日本02|流媒体GPT
+      - 日本04
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
