@@ -5,91 +5,119 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai, server: fae1.interface.buzz, port: 31766, type: ss, cipher: aes-128-gcm, password: c7a1f42c-c79a-3c31-9544-89aff988379c, udp: true}
-  - {name: Singapore(ChatGPT) 13 TG:@nodpai, server: fscsg.fscloud123456789.com, port: 443, type: trojan, password: 17f9a10a-3ff9-4cbe-ac15-108b585b1a39, sni: fscsg.fscloud123456789.com, skip-cert-verify: true, udp: true}
-  - {name: South Korea 12 TG:@nodpai, server: 43.201.47.15, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: South Korea 11 TG:@nodpai, server: 43.202.40.246, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: South Korea(ChatGPT) 03 TG:@nodpai, server: kr3.microsoft-orgwly.vip, port: 443, type: trojan, password: bb59547d-0ea9-4af0-97c7-169bcb15f961, sni: kr3.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: South Korea(ChatGPT) 05 TG:@nodpai, server: kr5.microsoft-orgwly.vip, port: 443, type: trojan, password: bb59547d-0ea9-4af0-97c7-169bcb15f961, sni: kr5.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: South Korea(ChatGPT) 06 TG:@nodpai, server: ko1.lianpi.xyz, port: 51256, type: trojan, password: ab204b2d-dac8-4cf4-8239-d46d49d9cad5, sni: ko1.lianpi.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States(ChatGPT) 75 TG:@nodpai, server: downloadvip.cfd, port: 443, type: vmess, uuid: 7351ae6b-3da3-4263-a725-8ac5d9dd2b49, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /jsjc/us3, ws-headers: {Host: us3.jsjc.sbs}, udp: true}
-  - {name: United States(ChatGPT) 29 TG:@nodpai, server: downloadvip.cfd, port: 443, type: vmess, uuid: 9fb3183e-8d93-46d4-aba0-4c1769b6c079, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /djjc/us3, ws-headers: {Host: us3.djjc.sbs}, udp: true}
-  - {name: United States(ChatGPT) 56 TG:@nodpai, server: USG.fljsm.com, port: 443, type: vmess, uuid: e5543efd-5400-3760-9bb6-02767728e888, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: USG.fljsm.com}, udp: true}
-  - {name: Taiwan(ChatGPT) 04 TG:@nodpai, server: 165.154.246.207, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
-  - {name: Japan(ChatGPT) 04 TG:@nodpai, server: oracle01.jiting.space, port: 38829, type: vmess, uuid: 590e49c2-dd24-41ff-91b8-cc792d0cfeab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: BuyVM2@yxjnode, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yxzbp, ws-headers: {Host: buyvm2.yxjnode.com}, udp: true}
-  - {name: Taiwan(ChatGPT) 14 TG:@nodpai, server: 165.154.246.229, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
-  - {name: United States(ChatGPT) 45 TG:@nodpai, server: 167.160.91.118, port: 22006, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: DP4@yxjnode, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yxzbp, ws-headers: {Host: dp4.yxjnode.com}, udp: true}
-  - {name: Relay 🇹🇼 Taiwan(ChatGPT) 08 TG:@nodpai, server: iplctw1.bnnodeservice.com, port: 34003, type: trojan, password: 1b49f21b-b997-41f3-95ed-6e3dbc85ec5e, sni: iplctw1.bnnodeservice.com, skip-cert-verify: true, udp: true}
+  - {name: 香港pro隧道—1.5x, server: gz.daxun.cyou, port: 26031, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡02|三网优化|1x, server: gz.daxun.cyou, port: 38019, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡04|三网优化|1x, server: gz.daxun.cyou, port: 26038, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾hinet01|优选原生IP|1x, server: gz.daxun.cyou, port: 38015, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 东京|优选原生IP|1x, server: gz.daxun.cyou, port: 26045, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SJP—新加坡03|优选原生IP|1x, server: gz.daxun.cyou, port: 38017, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡03|三网优化|1x, server: gz.daxun.cyou, port: 38023, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SJP—新加坡05|优选原生IP|1x, server: gz.daxun.cyou, port: 26036, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: S-新加坡1号|2x, server: gz.daxun.cyou, port: 26037, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SJP—新加坡02|优选原生IP|1x, server: gz.daxun.cyou, port: 26033, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 马来西亚|优选原生IP|1x, server: gz.daxun.cyou, port: 38003, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 加拿大|三网优化|1x, server: gz.daxun.cyou, port: 26042, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本|三网优化|1x, server: gz.daxun.cyou, port: 26044, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: S-新加坡2号|2x, server: gz.daxun.cyou, port: 38025, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: USpro—解锁流媒体|2x, server: gz.daxun.cyou, port: 38027, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Gcore新加坡—1x, server: gz.daxun.cyou, port: 26039, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国|三网优化|1x, server: gz.daxun.cyou, port: 38007, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: UK英国—lite|解锁流媒体|1x, server: gz.daxun.cyou, port: 38005, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡01|三网优化|1x, server: gz.daxun.cyou, port: 26035, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SJP—新加坡04|优选原生IP|1x, server: gz.daxun.cyou, port: 27034, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国|三网优化|1x, server: gz.daxun.cyou, port: 38066, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰|三网优化|1x, server: gz.daxun.cyou, port: 38068, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 印度|三网优化|注册游戏|1x, server: gz.daxun.cyou, port: 26043, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港BGPpro|深港隧道|15x, server: iepl.daxun.cyou, port: 38026, type: vmess, uuid: f3d31eae-0744-4cd4-9f58-55f8a6d701cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - Singapore(ChatGPT) 13 TG:@nodpai
-      - South Korea 12 TG:@nodpai
-      - South Korea 11 TG:@nodpai
-      - South Korea(ChatGPT) 03 TG:@nodpai
-      - South Korea(ChatGPT) 05 TG:@nodpai
-      - South Korea(ChatGPT) 06 TG:@nodpai
-      - United States(ChatGPT) 75 TG:@nodpai
-      - United States(ChatGPT) 29 TG:@nodpai
-      - United States(ChatGPT) 56 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai
-      - Japan(ChatGPT) 04 TG:@nodpai
-      - BuyVM2@yxjnode
-      - Taiwan(ChatGPT) 14 TG:@nodpai
-      - United States(ChatGPT) 45 TG:@nodpai
-      - DP4@yxjnode
-      - Relay 🇹🇼 Taiwan(ChatGPT) 08 TG:@nodpai
+      - 香港pro隧道—1.5x
+      - 新加坡02|三网优化|1x
+      - 新加坡04|三网优化|1x
+      - 台湾hinet01|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - SJP—新加坡03|优选原生IP|1x
+      - 新加坡03|三网优化|1x
+      - SJP—新加坡05|优选原生IP|1x
+      - S-新加坡1号|2x
+      - SJP—新加坡02|优选原生IP|1x
+      - 马来西亚|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 日本|三网优化|1x
+      - S-新加坡2号|2x
+      - USpro—解锁流媒体|2x
+      - Gcore新加坡—1x
+      - 德国|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
+      - 新加坡01|三网优化|1x
+      - SJP—新加坡04|优选原生IP|1x
+      - 英国|三网优化|1x
+      - 荷兰|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
+      - 香港BGPpro|深港隧道|15x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - Singapore(ChatGPT) 13 TG:@nodpai
-      - South Korea 12 TG:@nodpai
-      - South Korea 11 TG:@nodpai
-      - South Korea(ChatGPT) 03 TG:@nodpai
-      - South Korea(ChatGPT) 05 TG:@nodpai
-      - South Korea(ChatGPT) 06 TG:@nodpai
-      - United States(ChatGPT) 75 TG:@nodpai
-      - United States(ChatGPT) 29 TG:@nodpai
-      - United States(ChatGPT) 56 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai
-      - Japan(ChatGPT) 04 TG:@nodpai
-      - BuyVM2@yxjnode
-      - Taiwan(ChatGPT) 14 TG:@nodpai
-      - United States(ChatGPT) 45 TG:@nodpai
-      - DP4@yxjnode
-      - Relay 🇹🇼 Taiwan(ChatGPT) 08 TG:@nodpai
+      - 香港pro隧道—1.5x
+      - 新加坡02|三网优化|1x
+      - 新加坡04|三网优化|1x
+      - 台湾hinet01|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - SJP—新加坡03|优选原生IP|1x
+      - 新加坡03|三网优化|1x
+      - SJP—新加坡05|优选原生IP|1x
+      - S-新加坡1号|2x
+      - SJP—新加坡02|优选原生IP|1x
+      - 马来西亚|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 日本|三网优化|1x
+      - S-新加坡2号|2x
+      - USpro—解锁流媒体|2x
+      - Gcore新加坡—1x
+      - 德国|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
+      - 新加坡01|三网优化|1x
+      - SJP—新加坡04|优选原生IP|1x
+      - 英国|三网优化|1x
+      - 荷兰|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
+      - 香港BGPpro|深港隧道|15x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - Singapore(ChatGPT) 13 TG:@nodpai
-      - South Korea 12 TG:@nodpai
-      - South Korea 11 TG:@nodpai
-      - South Korea(ChatGPT) 03 TG:@nodpai
-      - South Korea(ChatGPT) 05 TG:@nodpai
-      - South Korea(ChatGPT) 06 TG:@nodpai
-      - United States(ChatGPT) 75 TG:@nodpai
-      - United States(ChatGPT) 29 TG:@nodpai
-      - United States(ChatGPT) 56 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai
-      - Japan(ChatGPT) 04 TG:@nodpai
-      - BuyVM2@yxjnode
-      - Taiwan(ChatGPT) 14 TG:@nodpai
-      - United States(ChatGPT) 45 TG:@nodpai
-      - DP4@yxjnode
-      - Relay 🇹🇼 Taiwan(ChatGPT) 08 TG:@nodpai
+      - 香港pro隧道—1.5x
+      - 新加坡02|三网优化|1x
+      - 新加坡04|三网优化|1x
+      - 台湾hinet01|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - SJP—新加坡03|优选原生IP|1x
+      - 新加坡03|三网优化|1x
+      - SJP—新加坡05|优选原生IP|1x
+      - S-新加坡1号|2x
+      - SJP—新加坡02|优选原生IP|1x
+      - 马来西亚|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 日本|三网优化|1x
+      - S-新加坡2号|2x
+      - USpro—解锁流媒体|2x
+      - Gcore新加坡—1x
+      - 德国|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
+      - 新加坡01|三网优化|1x
+      - SJP—新加坡04|优选原生IP|1x
+      - 英国|三网优化|1x
+      - 荷兰|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
+      - 香港BGPpro|深港隧道|15x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -108,95 +136,126 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - Singapore(ChatGPT) 13 TG:@nodpai
-      - South Korea 12 TG:@nodpai
-      - South Korea 11 TG:@nodpai
-      - South Korea(ChatGPT) 03 TG:@nodpai
-      - South Korea(ChatGPT) 05 TG:@nodpai
-      - South Korea(ChatGPT) 06 TG:@nodpai
-      - United States(ChatGPT) 75 TG:@nodpai
-      - United States(ChatGPT) 29 TG:@nodpai
-      - United States(ChatGPT) 56 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai
-      - Japan(ChatGPT) 04 TG:@nodpai
-      - BuyVM2@yxjnode
-      - Taiwan(ChatGPT) 14 TG:@nodpai
-      - United States(ChatGPT) 45 TG:@nodpai
-      - DP4@yxjnode
-      - Relay 🇹🇼 Taiwan(ChatGPT) 08 TG:@nodpai
+      - 香港pro隧道—1.5x
+      - 新加坡02|三网优化|1x
+      - 新加坡04|三网优化|1x
+      - 台湾hinet01|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - SJP—新加坡03|优选原生IP|1x
+      - 新加坡03|三网优化|1x
+      - SJP—新加坡05|优选原生IP|1x
+      - S-新加坡1号|2x
+      - SJP—新加坡02|优选原生IP|1x
+      - 马来西亚|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 日本|三网优化|1x
+      - S-新加坡2号|2x
+      - USpro—解锁流媒体|2x
+      - Gcore新加坡—1x
+      - 德国|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
+      - 新加坡01|三网优化|1x
+      - SJP—新加坡04|优选原生IP|1x
+      - 英国|三网优化|1x
+      - 荷兰|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
+      - 香港BGPpro|深港隧道|15x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港pro隧道—1.5x
+      - 台湾hinet01|优选原生IP|1x
+      - 香港BGPpro|深港隧道|15x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - Singapore(ChatGPT) 13 TG:@nodpai
-      - South Korea 12 TG:@nodpai
-      - South Korea 11 TG:@nodpai
-      - South Korea(ChatGPT) 03 TG:@nodpai
-      - South Korea(ChatGPT) 05 TG:@nodpai
-      - South Korea(ChatGPT) 06 TG:@nodpai
-      - United States(ChatGPT) 75 TG:@nodpai
-      - United States(ChatGPT) 29 TG:@nodpai
-      - United States(ChatGPT) 56 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai
-      - Japan(ChatGPT) 04 TG:@nodpai
-      - BuyVM2@yxjnode
-      - Taiwan(ChatGPT) 14 TG:@nodpai
-      - United States(ChatGPT) 45 TG:@nodpai
-      - DP4@yxjnode
-      - Relay 🇹🇼 Taiwan(ChatGPT) 08 TG:@nodpai
+      - 香港pro隧道—1.5x
+      - 新加坡02|三网优化|1x
+      - 新加坡04|三网优化|1x
+      - 台湾hinet01|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - SJP—新加坡03|优选原生IP|1x
+      - 新加坡03|三网优化|1x
+      - SJP—新加坡05|优选原生IP|1x
+      - S-新加坡1号|2x
+      - SJP—新加坡02|优选原生IP|1x
+      - 马来西亚|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 日本|三网优化|1x
+      - S-新加坡2号|2x
+      - USpro—解锁流媒体|2x
+      - Gcore新加坡—1x
+      - 德国|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
+      - 新加坡01|三网优化|1x
+      - SJP—新加坡04|优选原生IP|1x
+      - 英国|三网优化|1x
+      - 荷兰|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
+      - 香港BGPpro|深港隧道|15x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - Singapore(ChatGPT) 13 TG:@nodpai
-      - South Korea 12 TG:@nodpai
-      - South Korea 11 TG:@nodpai
-      - South Korea(ChatGPT) 03 TG:@nodpai
-      - South Korea(ChatGPT) 05 TG:@nodpai
-      - South Korea(ChatGPT) 06 TG:@nodpai
-      - United States(ChatGPT) 75 TG:@nodpai
-      - United States(ChatGPT) 29 TG:@nodpai
-      - United States(ChatGPT) 56 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai
-      - Japan(ChatGPT) 04 TG:@nodpai
-      - BuyVM2@yxjnode
-      - Taiwan(ChatGPT) 14 TG:@nodpai
-      - United States(ChatGPT) 45 TG:@nodpai
-      - DP4@yxjnode
-      - Relay 🇹🇼 Taiwan(ChatGPT) 08 TG:@nodpai
+      - 香港pro隧道—1.5x
+      - 新加坡02|三网优化|1x
+      - 新加坡04|三网优化|1x
+      - 台湾hinet01|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - SJP—新加坡03|优选原生IP|1x
+      - 新加坡03|三网优化|1x
+      - SJP—新加坡05|优选原生IP|1x
+      - S-新加坡1号|2x
+      - SJP—新加坡02|优选原生IP|1x
+      - 马来西亚|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 日本|三网优化|1x
+      - S-新加坡2号|2x
+      - USpro—解锁流媒体|2x
+      - Gcore新加坡—1x
+      - 德国|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
+      - 新加坡01|三网优化|1x
+      - SJP—新加坡04|优选原生IP|1x
+      - 英国|三网优化|1x
+      - 荷兰|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
+      - 香港BGPpro|深港隧道|15x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - Singapore(ChatGPT) 13 TG:@nodpai
-      - South Korea 12 TG:@nodpai
-      - South Korea 11 TG:@nodpai
-      - South Korea(ChatGPT) 03 TG:@nodpai
-      - South Korea(ChatGPT) 05 TG:@nodpai
-      - South Korea(ChatGPT) 06 TG:@nodpai
-      - United States(ChatGPT) 75 TG:@nodpai
-      - United States(ChatGPT) 29 TG:@nodpai
-      - United States(ChatGPT) 56 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai
-      - Japan(ChatGPT) 04 TG:@nodpai
-      - BuyVM2@yxjnode
-      - Taiwan(ChatGPT) 14 TG:@nodpai
-      - United States(ChatGPT) 45 TG:@nodpai
-      - DP4@yxjnode
-      - Relay 🇹🇼 Taiwan(ChatGPT) 08 TG:@nodpai
+      - 香港pro隧道—1.5x
+      - 新加坡02|三网优化|1x
+      - 新加坡04|三网优化|1x
+      - 台湾hinet01|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - SJP—新加坡03|优选原生IP|1x
+      - 新加坡03|三网优化|1x
+      - SJP—新加坡05|优选原生IP|1x
+      - S-新加坡1号|2x
+      - SJP—新加坡02|优选原生IP|1x
+      - 马来西亚|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 日本|三网优化|1x
+      - S-新加坡2号|2x
+      - USpro—解锁流媒体|2x
+      - Gcore新加坡—1x
+      - 德国|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
+      - 新加坡01|三网优化|1x
+      - SJP—新加坡04|优选原生IP|1x
+      - 英国|三网优化|1x
+      - 荷兰|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
+      - 香港BGPpro|深港隧道|15x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -212,23 +271,30 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
-      - Singapore(ChatGPT) 13 TG:@nodpai
-      - South Korea 12 TG:@nodpai
-      - South Korea 11 TG:@nodpai
-      - South Korea(ChatGPT) 03 TG:@nodpai
-      - South Korea(ChatGPT) 05 TG:@nodpai
-      - South Korea(ChatGPT) 06 TG:@nodpai
-      - United States(ChatGPT) 75 TG:@nodpai
-      - United States(ChatGPT) 29 TG:@nodpai
-      - United States(ChatGPT) 56 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai
-      - Japan(ChatGPT) 04 TG:@nodpai
-      - BuyVM2@yxjnode
-      - Taiwan(ChatGPT) 14 TG:@nodpai
-      - United States(ChatGPT) 45 TG:@nodpai
-      - DP4@yxjnode
-      - Relay 🇹🇼 Taiwan(ChatGPT) 08 TG:@nodpai
+      - 香港pro隧道—1.5x
+      - 新加坡02|三网优化|1x
+      - 新加坡04|三网优化|1x
+      - 台湾hinet01|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - SJP—新加坡03|优选原生IP|1x
+      - 新加坡03|三网优化|1x
+      - SJP—新加坡05|优选原生IP|1x
+      - S-新加坡1号|2x
+      - SJP—新加坡02|优选原生IP|1x
+      - 马来西亚|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 日本|三网优化|1x
+      - S-新加坡2号|2x
+      - USpro—解锁流媒体|2x
+      - Gcore新加坡—1x
+      - 德国|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
+      - 新加坡01|三网优化|1x
+      - SJP—新加坡04|优选原生IP|1x
+      - 英国|三网优化|1x
+      - 荷兰|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
+      - 香港BGPpro|深港隧道|15x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
