@@ -5,55 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 12购买地址：254254.xyz, server: cf3.992688.xyz, port: 8080, type: vmess, uuid: 6b056a2c-b821-44b2-cf66-59a1126f6c95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: o1.992688.xyz}, udp: true}
-  - {name: 付费地址：254254.xyz, server: cf1.992688.xyz, port: 8080, type: vmess, uuid: 6b056a2c-b821-44b2-cf66-59a1126f6c95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: o1.992688.xyz}, udp: true}
-  - {name: 梯子地址：254254.xyz, server: cf3.992688.xyz, port: 8080, type: vmess, uuid: 7fdddb2a-1403-40e1-9466-e82dd338f0a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: o2.992688.xyz}, udp: true}
-  - {name: 13购买地址：254254.xyz, server: cf2.992688.xyz, port: 8080, type: vmess, uuid: 6b056a2c-b821-44b2-cf66-59a1126f6c95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: o1.992688.xyz}, udp: true}
-  - {name: 14购买地址：254254.xyz, server: cf2.992688.xyz, port: 8080, type: vmess, uuid: 7fdddb2a-1403-40e1-9466-e82dd338f0a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: o2.992688.xyz}, udp: true}
-  - {name: 网站地址：254254.xyz, server: cf5.vpn66.eu.org, port: 8080, type: vmess, uuid: c3b11744-2b20-46af-f0d4-69122be36e74, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: vcus.vpn66.eu.org}, udp: true}
-  - {name: 节点地址：254254.xyz, server: cf5.vpn66.eu.org, port: 8080, type: vmess, uuid: fda2c765-ed35-4e97-ba13-ed64b1c4c460, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hax.vpn66.eu.org}, udp: true}
-  - {name: 9购买地址：254254.xyz, server: ccarm.wasanbi.tk, port: 58678, type: trojan, password: z3NtLA8ocb, sni: ccarm.wasanbi.tk, skip-cert-verify: true, udp: true}
+  - {name: TG@kxswa|https://t.me/kxswa, server: jsyd.aikun.online, port: 20817, type: ss, cipher: aes-128-gcm, password: a505d3af-d1b4-41c2-8c8f-41acf552c113, udp: true}
+  - {name: TG@kxswa|https://t.me/kxswa 2, server: sh.aikun.online, port: 33580, type: ss, cipher: aes-128-gcm, password: a505d3af-d1b4-41c2-8c8f-41acf552c113, udp: true}
+  - {name: TG@kxswa|https://t.me/kxswa 3, server: aws-hk01.aikun.online, port: 443, type: trojan, password: a505d3af-d1b4-41c2-8c8f-41acf552c113, sni: aws-hk01.aikun.online, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 12购买地址：254254.xyz
-      - 付费地址：254254.xyz
-      - 梯子地址：254254.xyz
-      - 13购买地址：254254.xyz
-      - 14购买地址：254254.xyz
-      - 网站地址：254254.xyz
-      - 节点地址：254254.xyz
-      - 9购买地址：254254.xyz
+      - TG@kxswa|https://t.me/kxswa
+      - TG@kxswa|https://t.me/kxswa 2
+      - TG@kxswa|https://t.me/kxswa 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 12购买地址：254254.xyz
-      - 付费地址：254254.xyz
-      - 梯子地址：254254.xyz
-      - 13购买地址：254254.xyz
-      - 14购买地址：254254.xyz
-      - 网站地址：254254.xyz
-      - 节点地址：254254.xyz
-      - 9购买地址：254254.xyz
+      - TG@kxswa|https://t.me/kxswa
+      - TG@kxswa|https://t.me/kxswa 2
+      - TG@kxswa|https://t.me/kxswa 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 12购买地址：254254.xyz
-      - 付费地址：254254.xyz
-      - 梯子地址：254254.xyz
-      - 13购买地址：254254.xyz
-      - 14购买地址：254254.xyz
-      - 网站地址：254254.xyz
-      - 节点地址：254254.xyz
-      - 9购买地址：254254.xyz
+      - TG@kxswa|https://t.me/kxswa
+      - TG@kxswa|https://t.me/kxswa 2
+      - TG@kxswa|https://t.me/kxswa 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,14 +52,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 12购买地址：254254.xyz
-      - 付费地址：254254.xyz
-      - 梯子地址：254254.xyz
-      - 13购买地址：254254.xyz
-      - 14购买地址：254254.xyz
-      - 网站地址：254254.xyz
-      - 节点地址：254254.xyz
-      - 9购买地址：254254.xyz
+      - TG@kxswa|https://t.me/kxswa
+      - TG@kxswa|https://t.me/kxswa 2
+      - TG@kxswa|https://t.me/kxswa 3
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -90,41 +65,26 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 12购买地址：254254.xyz
-      - 付费地址：254254.xyz
-      - 梯子地址：254254.xyz
-      - 13购买地址：254254.xyz
-      - 14购买地址：254254.xyz
-      - 网站地址：254254.xyz
-      - 节点地址：254254.xyz
-      - 9购买地址：254254.xyz
+      - TG@kxswa|https://t.me/kxswa
+      - TG@kxswa|https://t.me/kxswa 2
+      - TG@kxswa|https://t.me/kxswa 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 12购买地址：254254.xyz
-      - 付费地址：254254.xyz
-      - 梯子地址：254254.xyz
-      - 13购买地址：254254.xyz
-      - 14购买地址：254254.xyz
-      - 网站地址：254254.xyz
-      - 节点地址：254254.xyz
-      - 9购买地址：254254.xyz
+      - TG@kxswa|https://t.me/kxswa
+      - TG@kxswa|https://t.me/kxswa 2
+      - TG@kxswa|https://t.me/kxswa 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 12购买地址：254254.xyz
-      - 付费地址：254254.xyz
-      - 梯子地址：254254.xyz
-      - 13购买地址：254254.xyz
-      - 14购买地址：254254.xyz
-      - 网站地址：254254.xyz
-      - 节点地址：254254.xyz
-      - 9购买地址：254254.xyz
+      - TG@kxswa|https://t.me/kxswa
+      - TG@kxswa|https://t.me/kxswa 2
+      - TG@kxswa|https://t.me/kxswa 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,14 +100,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 12购买地址：254254.xyz
-      - 付费地址：254254.xyz
-      - 梯子地址：254254.xyz
-      - 13购买地址：254254.xyz
-      - 14购买地址：254254.xyz
-      - 网站地址：254254.xyz
-      - 节点地址：254254.xyz
-      - 9购买地址：254254.xyz
+      - TG@kxswa|https://t.me/kxswa
+      - TG@kxswa|https://t.me/kxswa 2
+      - TG@kxswa|https://t.me/kxswa 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
