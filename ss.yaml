@@ -5,35 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TG@kxswa|https://t.me/kxswa, server: jsyd.aikun.online, port: 20817, type: ss, cipher: aes-128-gcm, password: a505d3af-d1b4-41c2-8c8f-41acf552c113, udp: true}
-  - {name: TG@kxswa|https://t.me/kxswa 2, server: sh.aikun.online, port: 33580, type: ss, cipher: aes-128-gcm, password: a505d3af-d1b4-41c2-8c8f-41acf552c113, udp: true}
-  - {name: TG@kxswa|https://t.me/kxswa 3, server: aws-hk01.aikun.online, port: 443, type: trojan, password: a505d3af-d1b4-41c2-8c8f-41acf552c113, sni: aws-hk01.aikun.online, skip-cert-verify: true, udp: true}
+  - {name: 「奶云稳定流媒体中转机场 milk.acow.wtf」HK-CF-HTTP, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: hk-hytron.ilovescp.com}, udp: true}
+  - {name: 「SCP」US-DP3-HTTP, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: dp3.scproxy.top}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG@kxswa|https://t.me/kxswa
-      - TG@kxswa|https://t.me/kxswa 2
-      - TG@kxswa|https://t.me/kxswa 3
+      - 「奶云稳定流媒体中转机场 milk.acow.wtf」HK-CF-HTTP
+      - 「SCP」US-DP3-HTTP
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TG@kxswa|https://t.me/kxswa
-      - TG@kxswa|https://t.me/kxswa 2
-      - TG@kxswa|https://t.me/kxswa 3
+      - 「奶云稳定流媒体中转机场 milk.acow.wtf」HK-CF-HTTP
+      - 「SCP」US-DP3-HTTP
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG@kxswa|https://t.me/kxswa
-      - TG@kxswa|https://t.me/kxswa 2
-      - TG@kxswa|https://t.me/kxswa 3
+      - 「奶云稳定流媒体中转机场 milk.acow.wtf」HK-CF-HTTP
+      - 「SCP」US-DP3-HTTP
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,9 +48,8 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG@kxswa|https://t.me/kxswa
-      - TG@kxswa|https://t.me/kxswa 2
-      - TG@kxswa|https://t.me/kxswa 3
+      - 「奶云稳定流媒体中转机场 milk.acow.wtf」HK-CF-HTTP
+      - 「SCP」US-DP3-HTTP
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -65,26 +60,23 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TG@kxswa|https://t.me/kxswa
-      - TG@kxswa|https://t.me/kxswa 2
-      - TG@kxswa|https://t.me/kxswa 3
+      - 「奶云稳定流媒体中转机场 milk.acow.wtf」HK-CF-HTTP
+      - 「SCP」US-DP3-HTTP
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TG@kxswa|https://t.me/kxswa
-      - TG@kxswa|https://t.me/kxswa 2
-      - TG@kxswa|https://t.me/kxswa 3
+      - 「奶云稳定流媒体中转机场 milk.acow.wtf」HK-CF-HTTP
+      - 「SCP」US-DP3-HTTP
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG@kxswa|https://t.me/kxswa
-      - TG@kxswa|https://t.me/kxswa 2
-      - TG@kxswa|https://t.me/kxswa 3
+      - 「奶云稳定流媒体中转机场 milk.acow.wtf」HK-CF-HTTP
+      - 「SCP」US-DP3-HTTP
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG@kxswa|https://t.me/kxswa
-      - TG@kxswa|https://t.me/kxswa 2
-      - TG@kxswa|https://t.me/kxswa 3
+      - 「奶云稳定流媒体中转机场 milk.acow.wtf」HK-CF-HTTP
+      - 「SCP」US-DP3-HTTP
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
