@@ -5,187 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_-🇹🇼TW_356 |46.08Mb, server: hinet.lxjc.app, port: 443, type: trojan, password: e62db6f7-88ea-425d-90de-a9ba7770b1d6, sni: hinet.lxjc.app, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇸🇬SG-🇺🇸US_581, server: gsawssg1.aiopen.cfd, port: 443, type: trojan, password: 3ddbffcb-bdbb-49c0-a7fe-5c3b0c58e9be, sni: gsawssg1.aiopen.cfd, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_114 |17.59Mb, server: 120.241.47.99, port: 58002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇸🇬SG-🇺🇸US_250 |73.79Mb, server: pqawssg1.aiopen.cfd, port: 443, type: trojan, password: 3ddbffcb-bdbb-49c0-a7fe-5c3b0c58e9be, sni: pqawssg1.aiopen.cfd, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_129 |97.95Mb, server: wwe5g.cdn.node.a.tddns-ounk.com, port: 40267, type: vmess, uuid: b5247d82-9f56-3978-a202-80fae30331c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /d1af668b-cff6-464a-9415-a7782ead72d5.j.live003.m3u8, ws-headers: {Host: wwe5g.cdn.node.a.tddns-ounk.com}, udp: true}
-  - {name: Relay_🇭🇰HK-🇦🇺AU_291, server: hk01.vipnode.online, port: 80, type: vmess, uuid: 95d58891-4ff4-403b-b120-e656169621cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk01.vipnode.online}, udp: true}
-  - {name: Relay_🇭🇰 HK-🇭🇰HK_149 |44.47Mb, server: hk02.vipnode.online, port: 80, type: vmess, uuid: 95d58891-4ff4-403b-b120-e656169621cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk02.vipnode.online}, udp: true}
-  - {name: Relay_🇨🇳 TW-🇹🇼TW_62 |46.24Mb, server: iplc-enter-tw-xe.fib-sys.xyz, port: 11451, type: trojan, password: 11a4e5be-3c87-37d2-aac8-00b85ef0fcdc, sni: iplc-enter-tw-xe.fib-sys.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_126 |54.50Mb, server: nn2a.tntbooms.com, port: 51002, type: vmess, uuid: 62a91cb0-2185-3cba-9f44-b6e8cce1c920, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ttf, ws-headers: {Host: nn2a.tntbooms.com}, udp: true}
-  - {name: Relay_🇯🇵JP-🇺🇸US_214 | 8.14Mb, server: pqawsjp3.aiopen.cfd, port: 443, type: trojan, password: 3ddbffcb-bdbb-49c0-a7fe-5c3b0c58e9be, sni: pqawsjp3.aiopen.cfd, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_711, server: jp2.lxjc.app, port: 443, type: trojan, password: a00330bc-7f67-4bad-a59b-481cd2d67456, sni: jp2.lxjc.app, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_693, server: jp2.lxjc.app, port: 443, type: trojan, password: e62db6f7-88ea-425d-90de-a9ba7770b1d6, sni: jp2.lxjc.app, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_210 |74.09Mb, server: jp01.vipnode.online, port: 80, type: vmess, uuid: 95d58891-4ff4-403b-b120-e656169621cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp01.vipnode.online}, udp: true}
-  - {name: Relay_🇨🇳CN-🏁ZZ_127 |64.07Mb, server: nn2a.tntbooms.com, port: 51022, type: vmess, uuid: 62a91cb0-2185-3cba-9f44-b6e8cce1c920, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ttf, ws-headers: {Host: nn2a.tntbooms.com}, udp: true}
-  - {name: Relay_🇯🇵JP-🇺🇸US_215 |91.04Mb, server: gsawshk2.aiopen.cfd, port: 443, type: trojan, password: 3ddbffcb-bdbb-49c0-a7fe-5c3b0c58e9be, sni: gsawshk2.aiopen.cfd, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵 JP-🇺🇸US_187 | 8.24Mb, server: jp1.lxjc.app, port: 443, type: trojan, password: a00330bc-7f67-4bad-a59b-481cd2d67456, sni: jp1.lxjc.app, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇸🇬SG-🇺🇸US_252 |66.83Mb, server: pqawsjp4.aiopen.cfd, port: 443, type: trojan, password: 3ddbffcb-bdbb-49c0-a7fe-5c3b0c58e9be, sni: pqawsjp4.aiopen.cfd, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_107 |30.16Mb, server: hfa1.cdn.node.a.tddns-ounk.com, port: 13454, type: vmess, uuid: 912d2e2c-c4d1-3668-b2d5-afd668a32b81, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: hfa1.cdn.node.a.tddns-ounk.com}, udp: true}
-  - {name: Relay_🇯🇵JP-🇺🇸US_211 |59.28Mb, server: gsawsjp2.aiopen.cfd, port: 443, type: trojan, password: 3ddbffcb-bdbb-49c0-a7fe-5c3b0c58e9be, sni: gsawsjp2.aiopen.cfd, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵 JP-🇺🇸US_190 |94.37Mb, server: jp1.lxjc.app, port: 443, type: trojan, password: e62db6f7-88ea-425d-90de-a9ba7770b1d6, sni: jp1.lxjc.app, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇺🇸US_378, server: gsawsjp1.aiopen.cfd, port: 443, type: trojan, password: 3ddbffcb-bdbb-49c0-a7fe-5c3b0c58e9be, sni: gsawsjp1.aiopen.cfd, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_123 |71.55Mb, server: nn2a.tntbooms.com, port: 51001, type: vmess, uuid: 62a91cb0-2185-3cba-9f44-b6e8cce1c920, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ttf, ws-headers: {Host: nn2a.tntbooms.com}, udp: true}
-  - {name: Relay_🇫🇷 FR-🇫🇷FR_139, server: fr-01.cloudlion.me, port: 2082, type: vmess, uuid: 476165e4-8862-4c50-a0f3-6a544017df09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fr-01.cloudlion.me}, udp: true}
-  - {name: KR_218 |30.53Mb, server: 13.125.129.64, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: Relay_🇺🇸US-🇰🇷KR_92 |40.36Mb, server: hr04.vipnode.online, port: 80, type: vmess, uuid: 95d58891-4ff4-403b-b120-e656169621cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hr04.vipnode.online}, udp: true}
-  - {name: Relay_🇨🇳 CN-🇸🇬SG_60 |23.16Mb, server: free.node.kk-proxy.pro, port: 54087, type: ss, cipher: chacha20-ietf-poly1305, password: a863473a-78be-403b-a69e-addee3fc6e28, udp: true}
-  - {name: Relay_🇺🇸US-🇸🇬SG_310 | 8.38Mb, server: sg-01.cloudlion.me, port: 2082, type: vmess, uuid: 476165e4-8862-4c50-a0f3-6a544017df09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg-01.cloudlion.me}, udp: true}
-  - {name: Relay_🇨🇦 CA-🇯🇵JP_44 |30.32Mb, server: ca-01.cloudlion.me, port: 2082, type: vmess, uuid: 476165e4-8862-4c50-a0f3-6a544017df09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ca-01.cloudlion.me}, udp: true}
-  - {name: Relay_🇭🇰 HK-🏁ZZ_148 | 2.17Mb, server: am.rainplay.cn, port: 7903, type: ss, cipher: aes-256-gcm, password: ce757f0b-1ecb-4657-b52e-27d4183f23c0, udp: true}
-  - {name: Relay_🇨🇳 CN-🇺🇸US_59 |23.71Mb, server: free.node.kk-proxy.pro, port: 55928, type: ss, cipher: chacha20-ietf-poly1305, password: a863473a-78be-403b-a69e-addee3fc6e28, udp: true}
-  - {name: Relay_🇸🇬SG-🇸🇬SG_1046, server: sg1.lxjc.app, port: 443, type: trojan, password: a00330bc-7f67-4bad-a59b-481cd2d67456, sni: sg1.lxjc.app, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇯🇵JP_80 | 7.06Mb (1), server: vfly3.win, port: 443, type: vmess, uuid: 9681f99e-d251-477a-d777-1d01ee550481, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /myblog, ws-headers: {Host: vfly3.win}, udp: true}
-  - {name: Relay_🇸🇬SG-🇺🇸US_251 |81.19Mb, server: gsawssg2.aiopen.cfd, port: 443, type: trojan, password: 3ddbffcb-bdbb-49c0-a7fe-5c3b0c58e9be, sni: gsawssg2.aiopen.cfd, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇹🇼TW_01 |11.29Mb, server: video.tiktokuu.xyz, port: 12013, type: ss, cipher: aes-128-gcm, password: c3fb8ad7-2dd6-4985-8249-92e479a78eab, udp: true}
-  - {name: Relay_-🇹🇼TW_357 |52.03Mb, server: hinet.lxjc.app, port: 443, type: trojan, password: a00330bc-7f67-4bad-a59b-481cd2d67456, sni: hinet.lxjc.app, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰 HK-🇺🇸US_153 |16.25Mb, server: iplc-enter-hk-xe.fib-sys.xyz, port: 11451, type: trojan, password: 11a4e5be-3c87-37d2-aac8-00b85ef0fcdc, sni: iplc-enter-hk-xe.fib-sys.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇸🇬SG_332 | 7.35Mb, server: wxxjp.e5outllok.me, port: 80, type: vmess, uuid: c44ec7ca-fd87-4c44-b68c-1e8c4d7855ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: wxxjp.e5outllok.me}, udp: true}
-  - {name: JP_197 |100.43Mb, server: 18.183.232.107, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: GB_265, server: 51.142.106.58, port: 62654, type: ss, cipher: chacha20-ietf-poly1305, password: YqPKEoUO1E75Y1GZYyWIWu, udp: true}
-  - {name: Relay_🇯🇵JP-🇺🇸US_212 |67.34Mb, server: gsawshk1.aiopen.cfd, port: 443, type: trojan, password: 3ddbffcb-bdbb-49c0-a7fe-5c3b0c58e9be, sni: gsawshk1.aiopen.cfd, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇬🇧GB_113 |11.44Mb, server: 120.226.50.91, port: 47009, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港A|@ripaojiedian, server: 114.216.2.24, port: 14406, type: trojan, password: 8EF817EE-3221-8C6C-8EDB-A9A5A1AE7202, skip-cert-verify: true, udp: true}
+  - {name: 美国优选|@ripaojiedian, server: dongtaiwang3.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: d.freeh1.xyz}, udp: true}
+  - {name: 狮城特殊2|@ripaojiedian, server: 18.142.55.157, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_-🇹🇼TW_356 |46.08Mb
-      - Relay_🇸🇬SG-🇺🇸US_581
-      - Relay_🇨🇳CN-🇺🇸US_114 |17.59Mb
-      - Relay_🇸🇬SG-🇺🇸US_250 |73.79Mb
-      - Relay_🇨🇳CN-🇭🇰HK_129 |97.95Mb
-      - Relay_🇭🇰HK-🇦🇺AU_291
-      - Relay_🇭🇰 HK-🇭🇰HK_149 |44.47Mb
-      - Relay_🇨🇳 TW-🇹🇼TW_62 |46.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |54.50Mb
-      - Relay_🇯🇵JP-🇺🇸US_214 | 8.14Mb
-      - Relay_🇯🇵JP-🇯🇵JP_711
-      - Relay_🇯🇵JP-🇯🇵JP_693
-      - Relay_🇯🇵JP-🇯🇵JP_210 |74.09Mb
-      - Relay_🇨🇳CN-🏁ZZ_127 |64.07Mb
-      - Relay_🇯🇵JP-🇺🇸US_215 |91.04Mb
-      - Relay_🇯🇵 JP-🇺🇸US_187 | 8.24Mb
-      - Relay_🇸🇬SG-🇺🇸US_252 |66.83Mb
-      - Relay_🇨🇳CN-🇺🇸US_107 |30.16Mb
-      - Relay_🇯🇵JP-🇺🇸US_211 |59.28Mb
-      - Relay_🇯🇵 JP-🇺🇸US_190 |94.37Mb
-      - Relay_🇯🇵JP-🇺🇸US_378
-      - Relay_🇨🇳CN-🇭🇰HK_123 |71.55Mb
-      - Relay_🇫🇷 FR-🇫🇷FR_139
-      - KR_218 |30.53Mb
-      - Relay_🇺🇸US-🇰🇷KR_92 |40.36Mb
-      - Relay_🇨🇳 CN-🇸🇬SG_60 |23.16Mb
-      - Relay_🇺🇸US-🇸🇬SG_310 | 8.38Mb
-      - Relay_🇨🇦 CA-🇯🇵JP_44 |30.32Mb
-      - Relay_🇭🇰 HK-🏁ZZ_148 | 2.17Mb
-      - Relay_🇨🇳 CN-🇺🇸US_59 |23.71Mb
-      - Relay_🇸🇬SG-🇸🇬SG_1046
-      - Relay_🇺🇸US-🇯🇵JP_80 | 7.06Mb (1)
-      - Relay_🇸🇬SG-🇺🇸US_251 |81.19Mb
-      - Relay_-🇹🇼TW_01 |11.29Mb
-      - Relay_-🇹🇼TW_357 |52.03Mb
-      - Relay_🇭🇰 HK-🇺🇸US_153 |16.25Mb
-      - Relay_🇺🇸US-🇸🇬SG_332 | 7.35Mb
-      - JP_197 |100.43Mb
-      - GB_265
-      - Relay_🇯🇵JP-🇺🇸US_212 |67.34Mb
-      - Relay_🇨🇳CN-🇬🇧GB_113 |11.44Mb
+      - 香港A|@ripaojiedian
+      - 美国优选|@ripaojiedian
+      - 狮城特殊2|@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_-🇹🇼TW_356 |46.08Mb
-      - Relay_🇸🇬SG-🇺🇸US_581
-      - Relay_🇨🇳CN-🇺🇸US_114 |17.59Mb
-      - Relay_🇸🇬SG-🇺🇸US_250 |73.79Mb
-      - Relay_🇨🇳CN-🇭🇰HK_129 |97.95Mb
-      - Relay_🇭🇰HK-🇦🇺AU_291
-      - Relay_🇭🇰 HK-🇭🇰HK_149 |44.47Mb
-      - Relay_🇨🇳 TW-🇹🇼TW_62 |46.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |54.50Mb
-      - Relay_🇯🇵JP-🇺🇸US_214 | 8.14Mb
-      - Relay_🇯🇵JP-🇯🇵JP_711
-      - Relay_🇯🇵JP-🇯🇵JP_693
-      - Relay_🇯🇵JP-🇯🇵JP_210 |74.09Mb
-      - Relay_🇨🇳CN-🏁ZZ_127 |64.07Mb
-      - Relay_🇯🇵JP-🇺🇸US_215 |91.04Mb
-      - Relay_🇯🇵 JP-🇺🇸US_187 | 8.24Mb
-      - Relay_🇸🇬SG-🇺🇸US_252 |66.83Mb
-      - Relay_🇨🇳CN-🇺🇸US_107 |30.16Mb
-      - Relay_🇯🇵JP-🇺🇸US_211 |59.28Mb
-      - Relay_🇯🇵 JP-🇺🇸US_190 |94.37Mb
-      - Relay_🇯🇵JP-🇺🇸US_378
-      - Relay_🇨🇳CN-🇭🇰HK_123 |71.55Mb
-      - Relay_🇫🇷 FR-🇫🇷FR_139
-      - KR_218 |30.53Mb
-      - Relay_🇺🇸US-🇰🇷KR_92 |40.36Mb
-      - Relay_🇨🇳 CN-🇸🇬SG_60 |23.16Mb
-      - Relay_🇺🇸US-🇸🇬SG_310 | 8.38Mb
-      - Relay_🇨🇦 CA-🇯🇵JP_44 |30.32Mb
-      - Relay_🇭🇰 HK-🏁ZZ_148 | 2.17Mb
-      - Relay_🇨🇳 CN-🇺🇸US_59 |23.71Mb
-      - Relay_🇸🇬SG-🇸🇬SG_1046
-      - Relay_🇺🇸US-🇯🇵JP_80 | 7.06Mb (1)
-      - Relay_🇸🇬SG-🇺🇸US_251 |81.19Mb
-      - Relay_-🇹🇼TW_01 |11.29Mb
-      - Relay_-🇹🇼TW_357 |52.03Mb
-      - Relay_🇭🇰 HK-🇺🇸US_153 |16.25Mb
-      - Relay_🇺🇸US-🇸🇬SG_332 | 7.35Mb
-      - JP_197 |100.43Mb
-      - GB_265
-      - Relay_🇯🇵JP-🇺🇸US_212 |67.34Mb
-      - Relay_🇨🇳CN-🇬🇧GB_113 |11.44Mb
+      - 香港A|@ripaojiedian
+      - 美国优选|@ripaojiedian
+      - 狮城特殊2|@ripaojiedian
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_-🇹🇼TW_356 |46.08Mb
-      - Relay_🇸🇬SG-🇺🇸US_581
-      - Relay_🇨🇳CN-🇺🇸US_114 |17.59Mb
-      - Relay_🇸🇬SG-🇺🇸US_250 |73.79Mb
-      - Relay_🇨🇳CN-🇭🇰HK_129 |97.95Mb
-      - Relay_🇭🇰HK-🇦🇺AU_291
-      - Relay_🇭🇰 HK-🇭🇰HK_149 |44.47Mb
-      - Relay_🇨🇳 TW-🇹🇼TW_62 |46.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |54.50Mb
-      - Relay_🇯🇵JP-🇺🇸US_214 | 8.14Mb
-      - Relay_🇯🇵JP-🇯🇵JP_711
-      - Relay_🇯🇵JP-🇯🇵JP_693
-      - Relay_🇯🇵JP-🇯🇵JP_210 |74.09Mb
-      - Relay_🇨🇳CN-🏁ZZ_127 |64.07Mb
-      - Relay_🇯🇵JP-🇺🇸US_215 |91.04Mb
-      - Relay_🇯🇵 JP-🇺🇸US_187 | 8.24Mb
-      - Relay_🇸🇬SG-🇺🇸US_252 |66.83Mb
-      - Relay_🇨🇳CN-🇺🇸US_107 |30.16Mb
-      - Relay_🇯🇵JP-🇺🇸US_211 |59.28Mb
-      - Relay_🇯🇵 JP-🇺🇸US_190 |94.37Mb
-      - Relay_🇯🇵JP-🇺🇸US_378
-      - Relay_🇨🇳CN-🇭🇰HK_123 |71.55Mb
-      - Relay_🇫🇷 FR-🇫🇷FR_139
-      - KR_218 |30.53Mb
-      - Relay_🇺🇸US-🇰🇷KR_92 |40.36Mb
-      - Relay_🇨🇳 CN-🇸🇬SG_60 |23.16Mb
-      - Relay_🇺🇸US-🇸🇬SG_310 | 8.38Mb
-      - Relay_🇨🇦 CA-🇯🇵JP_44 |30.32Mb
-      - Relay_🇭🇰 HK-🏁ZZ_148 | 2.17Mb
-      - Relay_🇨🇳 CN-🇺🇸US_59 |23.71Mb
-      - Relay_🇸🇬SG-🇸🇬SG_1046
-      - Relay_🇺🇸US-🇯🇵JP_80 | 7.06Mb (1)
-      - Relay_🇸🇬SG-🇺🇸US_251 |81.19Mb
-      - Relay_-🇹🇼TW_01 |11.29Mb
-      - Relay_-🇹🇼TW_357 |52.03Mb
-      - Relay_🇭🇰 HK-🇺🇸US_153 |16.25Mb
-      - Relay_🇺🇸US-🇸🇬SG_332 | 7.35Mb
-      - JP_197 |100.43Mb
-      - GB_265
-      - Relay_🇯🇵JP-🇺🇸US_212 |67.34Mb
-      - Relay_🇨🇳CN-🇬🇧GB_113 |11.44Mb
+      - 香港A|@ripaojiedian
+      - 美国优选|@ripaojiedian
+      - 狮城特殊2|@ripaojiedian
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -204,191 +52,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_-🇹🇼TW_356 |46.08Mb
-      - Relay_🇸🇬SG-🇺🇸US_581
-      - Relay_🇨🇳CN-🇺🇸US_114 |17.59Mb
-      - Relay_🇸🇬SG-🇺🇸US_250 |73.79Mb
-      - Relay_🇨🇳CN-🇭🇰HK_129 |97.95Mb
-      - Relay_🇭🇰HK-🇦🇺AU_291
-      - Relay_🇭🇰 HK-🇭🇰HK_149 |44.47Mb
-      - Relay_🇨🇳 TW-🇹🇼TW_62 |46.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |54.50Mb
-      - Relay_🇯🇵JP-🇺🇸US_214 | 8.14Mb
-      - Relay_🇯🇵JP-🇯🇵JP_711
-      - Relay_🇯🇵JP-🇯🇵JP_693
-      - Relay_🇯🇵JP-🇯🇵JP_210 |74.09Mb
-      - Relay_🇨🇳CN-🏁ZZ_127 |64.07Mb
-      - Relay_🇯🇵JP-🇺🇸US_215 |91.04Mb
-      - Relay_🇯🇵 JP-🇺🇸US_187 | 8.24Mb
-      - Relay_🇸🇬SG-🇺🇸US_252 |66.83Mb
-      - Relay_🇨🇳CN-🇺🇸US_107 |30.16Mb
-      - Relay_🇯🇵JP-🇺🇸US_211 |59.28Mb
-      - Relay_🇯🇵 JP-🇺🇸US_190 |94.37Mb
-      - Relay_🇯🇵JP-🇺🇸US_378
-      - Relay_🇨🇳CN-🇭🇰HK_123 |71.55Mb
-      - Relay_🇫🇷 FR-🇫🇷FR_139
-      - KR_218 |30.53Mb
-      - Relay_🇺🇸US-🇰🇷KR_92 |40.36Mb
-      - Relay_🇨🇳 CN-🇸🇬SG_60 |23.16Mb
-      - Relay_🇺🇸US-🇸🇬SG_310 | 8.38Mb
-      - Relay_🇨🇦 CA-🇯🇵JP_44 |30.32Mb
-      - Relay_🇭🇰 HK-🏁ZZ_148 | 2.17Mb
-      - Relay_🇨🇳 CN-🇺🇸US_59 |23.71Mb
-      - Relay_🇸🇬SG-🇸🇬SG_1046
-      - Relay_🇺🇸US-🇯🇵JP_80 | 7.06Mb (1)
-      - Relay_🇸🇬SG-🇺🇸US_251 |81.19Mb
-      - Relay_-🇹🇼TW_01 |11.29Mb
-      - Relay_-🇹🇼TW_357 |52.03Mb
-      - Relay_🇭🇰 HK-🇺🇸US_153 |16.25Mb
-      - Relay_🇺🇸US-🇸🇬SG_332 | 7.35Mb
-      - JP_197 |100.43Mb
-      - GB_265
-      - Relay_🇯🇵JP-🇺🇸US_212 |67.34Mb
-      - Relay_🇨🇳CN-🇬🇧GB_113 |11.44Mb
+      - 香港A|@ripaojiedian
+      - 美国优选|@ripaojiedian
+      - 狮城特殊2|@ripaojiedian
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港A|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_-🇹🇼TW_356 |46.08Mb
-      - Relay_🇸🇬SG-🇺🇸US_581
-      - Relay_🇨🇳CN-🇺🇸US_114 |17.59Mb
-      - Relay_🇸🇬SG-🇺🇸US_250 |73.79Mb
-      - Relay_🇨🇳CN-🇭🇰HK_129 |97.95Mb
-      - Relay_🇭🇰HK-🇦🇺AU_291
-      - Relay_🇭🇰 HK-🇭🇰HK_149 |44.47Mb
-      - Relay_🇨🇳 TW-🇹🇼TW_62 |46.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |54.50Mb
-      - Relay_🇯🇵JP-🇺🇸US_214 | 8.14Mb
-      - Relay_🇯🇵JP-🇯🇵JP_711
-      - Relay_🇯🇵JP-🇯🇵JP_693
-      - Relay_🇯🇵JP-🇯🇵JP_210 |74.09Mb
-      - Relay_🇨🇳CN-🏁ZZ_127 |64.07Mb
-      - Relay_🇯🇵JP-🇺🇸US_215 |91.04Mb
-      - Relay_🇯🇵 JP-🇺🇸US_187 | 8.24Mb
-      - Relay_🇸🇬SG-🇺🇸US_252 |66.83Mb
-      - Relay_🇨🇳CN-🇺🇸US_107 |30.16Mb
-      - Relay_🇯🇵JP-🇺🇸US_211 |59.28Mb
-      - Relay_🇯🇵 JP-🇺🇸US_190 |94.37Mb
-      - Relay_🇯🇵JP-🇺🇸US_378
-      - Relay_🇨🇳CN-🇭🇰HK_123 |71.55Mb
-      - Relay_🇫🇷 FR-🇫🇷FR_139
-      - KR_218 |30.53Mb
-      - Relay_🇺🇸US-🇰🇷KR_92 |40.36Mb
-      - Relay_🇨🇳 CN-🇸🇬SG_60 |23.16Mb
-      - Relay_🇺🇸US-🇸🇬SG_310 | 8.38Mb
-      - Relay_🇨🇦 CA-🇯🇵JP_44 |30.32Mb
-      - Relay_🇭🇰 HK-🏁ZZ_148 | 2.17Mb
-      - Relay_🇨🇳 CN-🇺🇸US_59 |23.71Mb
-      - Relay_🇸🇬SG-🇸🇬SG_1046
-      - Relay_🇺🇸US-🇯🇵JP_80 | 7.06Mb (1)
-      - Relay_🇸🇬SG-🇺🇸US_251 |81.19Mb
-      - Relay_-🇹🇼TW_01 |11.29Mb
-      - Relay_-🇹🇼TW_357 |52.03Mb
-      - Relay_🇭🇰 HK-🇺🇸US_153 |16.25Mb
-      - Relay_🇺🇸US-🇸🇬SG_332 | 7.35Mb
-      - JP_197 |100.43Mb
-      - GB_265
-      - Relay_🇯🇵JP-🇺🇸US_212 |67.34Mb
-      - Relay_🇨🇳CN-🇬🇧GB_113 |11.44Mb
+      - 香港A|@ripaojiedian
+      - 美国优选|@ripaojiedian
+      - 狮城特殊2|@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_-🇹🇼TW_356 |46.08Mb
-      - Relay_🇸🇬SG-🇺🇸US_581
-      - Relay_🇨🇳CN-🇺🇸US_114 |17.59Mb
-      - Relay_🇸🇬SG-🇺🇸US_250 |73.79Mb
-      - Relay_🇨🇳CN-🇭🇰HK_129 |97.95Mb
-      - Relay_🇭🇰HK-🇦🇺AU_291
-      - Relay_🇭🇰 HK-🇭🇰HK_149 |44.47Mb
-      - Relay_🇨🇳 TW-🇹🇼TW_62 |46.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |54.50Mb
-      - Relay_🇯🇵JP-🇺🇸US_214 | 8.14Mb
-      - Relay_🇯🇵JP-🇯🇵JP_711
-      - Relay_🇯🇵JP-🇯🇵JP_693
-      - Relay_🇯🇵JP-🇯🇵JP_210 |74.09Mb
-      - Relay_🇨🇳CN-🏁ZZ_127 |64.07Mb
-      - Relay_🇯🇵JP-🇺🇸US_215 |91.04Mb
-      - Relay_🇯🇵 JP-🇺🇸US_187 | 8.24Mb
-      - Relay_🇸🇬SG-🇺🇸US_252 |66.83Mb
-      - Relay_🇨🇳CN-🇺🇸US_107 |30.16Mb
-      - Relay_🇯🇵JP-🇺🇸US_211 |59.28Mb
-      - Relay_🇯🇵 JP-🇺🇸US_190 |94.37Mb
-      - Relay_🇯🇵JP-🇺🇸US_378
-      - Relay_🇨🇳CN-🇭🇰HK_123 |71.55Mb
-      - Relay_🇫🇷 FR-🇫🇷FR_139
-      - KR_218 |30.53Mb
-      - Relay_🇺🇸US-🇰🇷KR_92 |40.36Mb
-      - Relay_🇨🇳 CN-🇸🇬SG_60 |23.16Mb
-      - Relay_🇺🇸US-🇸🇬SG_310 | 8.38Mb
-      - Relay_🇨🇦 CA-🇯🇵JP_44 |30.32Mb
-      - Relay_🇭🇰 HK-🏁ZZ_148 | 2.17Mb
-      - Relay_🇨🇳 CN-🇺🇸US_59 |23.71Mb
-      - Relay_🇸🇬SG-🇸🇬SG_1046
-      - Relay_🇺🇸US-🇯🇵JP_80 | 7.06Mb (1)
-      - Relay_🇸🇬SG-🇺🇸US_251 |81.19Mb
-      - Relay_-🇹🇼TW_01 |11.29Mb
-      - Relay_-🇹🇼TW_357 |52.03Mb
-      - Relay_🇭🇰 HK-🇺🇸US_153 |16.25Mb
-      - Relay_🇺🇸US-🇸🇬SG_332 | 7.35Mb
-      - JP_197 |100.43Mb
-      - GB_265
-      - Relay_🇯🇵JP-🇺🇸US_212 |67.34Mb
-      - Relay_🇨🇳CN-🇬🇧GB_113 |11.44Mb
+      - 香港A|@ripaojiedian
+      - 美国优选|@ripaojiedian
+      - 狮城特殊2|@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_-🇹🇼TW_356 |46.08Mb
-      - Relay_🇸🇬SG-🇺🇸US_581
-      - Relay_🇨🇳CN-🇺🇸US_114 |17.59Mb
-      - Relay_🇸🇬SG-🇺🇸US_250 |73.79Mb
-      - Relay_🇨🇳CN-🇭🇰HK_129 |97.95Mb
-      - Relay_🇭🇰HK-🇦🇺AU_291
-      - Relay_🇭🇰 HK-🇭🇰HK_149 |44.47Mb
-      - Relay_🇨🇳 TW-🇹🇼TW_62 |46.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |54.50Mb
-      - Relay_🇯🇵JP-🇺🇸US_214 | 8.14Mb
-      - Relay_🇯🇵JP-🇯🇵JP_711
-      - Relay_🇯🇵JP-🇯🇵JP_693
-      - Relay_🇯🇵JP-🇯🇵JP_210 |74.09Mb
-      - Relay_🇨🇳CN-🏁ZZ_127 |64.07Mb
-      - Relay_🇯🇵JP-🇺🇸US_215 |91.04Mb
-      - Relay_🇯🇵 JP-🇺🇸US_187 | 8.24Mb
-      - Relay_🇸🇬SG-🇺🇸US_252 |66.83Mb
-      - Relay_🇨🇳CN-🇺🇸US_107 |30.16Mb
-      - Relay_🇯🇵JP-🇺🇸US_211 |59.28Mb
-      - Relay_🇯🇵 JP-🇺🇸US_190 |94.37Mb
-      - Relay_🇯🇵JP-🇺🇸US_378
-      - Relay_🇨🇳CN-🇭🇰HK_123 |71.55Mb
-      - Relay_🇫🇷 FR-🇫🇷FR_139
-      - KR_218 |30.53Mb
-      - Relay_🇺🇸US-🇰🇷KR_92 |40.36Mb
-      - Relay_🇨🇳 CN-🇸🇬SG_60 |23.16Mb
-      - Relay_🇺🇸US-🇸🇬SG_310 | 8.38Mb
-      - Relay_🇨🇦 CA-🇯🇵JP_44 |30.32Mb
-      - Relay_🇭🇰 HK-🏁ZZ_148 | 2.17Mb
-      - Relay_🇨🇳 CN-🇺🇸US_59 |23.71Mb
-      - Relay_🇸🇬SG-🇸🇬SG_1046
-      - Relay_🇺🇸US-🇯🇵JP_80 | 7.06Mb (1)
-      - Relay_🇸🇬SG-🇺🇸US_251 |81.19Mb
-      - Relay_-🇹🇼TW_01 |11.29Mb
-      - Relay_-🇹🇼TW_357 |52.03Mb
-      - Relay_🇭🇰 HK-🇺🇸US_153 |16.25Mb
-      - Relay_🇺🇸US-🇸🇬SG_332 | 7.35Mb
-      - JP_197 |100.43Mb
-      - GB_265
-      - Relay_🇯🇵JP-🇺🇸US_212 |67.34Mb
-      - Relay_🇨🇳CN-🇬🇧GB_113 |11.44Mb
+      - 香港A|@ripaojiedian
+      - 美国优选|@ripaojiedian
+      - 狮城特殊2|@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -404,47 +101,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_-🇹🇼TW_356 |46.08Mb
-      - Relay_🇸🇬SG-🇺🇸US_581
-      - Relay_🇨🇳CN-🇺🇸US_114 |17.59Mb
-      - Relay_🇸🇬SG-🇺🇸US_250 |73.79Mb
-      - Relay_🇨🇳CN-🇭🇰HK_129 |97.95Mb
-      - Relay_🇭🇰HK-🇦🇺AU_291
-      - Relay_🇭🇰 HK-🇭🇰HK_149 |44.47Mb
-      - Relay_🇨🇳 TW-🇹🇼TW_62 |46.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |54.50Mb
-      - Relay_🇯🇵JP-🇺🇸US_214 | 8.14Mb
-      - Relay_🇯🇵JP-🇯🇵JP_711
-      - Relay_🇯🇵JP-🇯🇵JP_693
-      - Relay_🇯🇵JP-🇯🇵JP_210 |74.09Mb
-      - Relay_🇨🇳CN-🏁ZZ_127 |64.07Mb
-      - Relay_🇯🇵JP-🇺🇸US_215 |91.04Mb
-      - Relay_🇯🇵 JP-🇺🇸US_187 | 8.24Mb
-      - Relay_🇸🇬SG-🇺🇸US_252 |66.83Mb
-      - Relay_🇨🇳CN-🇺🇸US_107 |30.16Mb
-      - Relay_🇯🇵JP-🇺🇸US_211 |59.28Mb
-      - Relay_🇯🇵 JP-🇺🇸US_190 |94.37Mb
-      - Relay_🇯🇵JP-🇺🇸US_378
-      - Relay_🇨🇳CN-🇭🇰HK_123 |71.55Mb
-      - Relay_🇫🇷 FR-🇫🇷FR_139
-      - KR_218 |30.53Mb
-      - Relay_🇺🇸US-🇰🇷KR_92 |40.36Mb
-      - Relay_🇨🇳 CN-🇸🇬SG_60 |23.16Mb
-      - Relay_🇺🇸US-🇸🇬SG_310 | 8.38Mb
-      - Relay_🇨🇦 CA-🇯🇵JP_44 |30.32Mb
-      - Relay_🇭🇰 HK-🏁ZZ_148 | 2.17Mb
-      - Relay_🇨🇳 CN-🇺🇸US_59 |23.71Mb
-      - Relay_🇸🇬SG-🇸🇬SG_1046
-      - Relay_🇺🇸US-🇯🇵JP_80 | 7.06Mb (1)
-      - Relay_🇸🇬SG-🇺🇸US_251 |81.19Mb
-      - Relay_-🇹🇼TW_01 |11.29Mb
-      - Relay_-🇹🇼TW_357 |52.03Mb
-      - Relay_🇭🇰 HK-🇺🇸US_153 |16.25Mb
-      - Relay_🇺🇸US-🇸🇬SG_332 | 7.35Mb
-      - JP_197 |100.43Mb
-      - GB_265
-      - Relay_🇯🇵JP-🇺🇸US_212 |67.34Mb
-      - Relay_🇨🇳CN-🇬🇧GB_113 |11.44Mb
+      - 香港A|@ripaojiedian
+      - 美国优选|@ripaojiedian
+      - 狮城特殊2|@ripaojiedian
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
