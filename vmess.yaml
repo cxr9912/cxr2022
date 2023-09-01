@@ -5,119 +5,99 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 亚洲 | 新加坡C, server: a-ct1.jsmmm.cyou, port: 39421, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 泰国, server: a-cm1.jsmmm.cyou, port: 39812, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 马来西亚, server: a-cm1.jsmmm.cyou, port: 39814, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 日本A, server: a-cm1.jsmmm.cyou, port: 39311, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 新加坡A, server: a-cm1.jsmmm.cyou, port: 39411, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 新加坡B, server: a-cm1.jsmmm.cyou, port: 39412, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 韩国A, server: a-cm1.jsmmm.cyou, port: 39511, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 新加坡D, server: a-ct1.jsmmm.cyou, port: 39422, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 日本C, server: a-ct1.jsmmm.cyou, port: 39321, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 韩国B, server: a-ct1.jsmmm.cyou, port: 39521, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 香港D, server: a-ct1.jsmmm.cyou, port: 39122, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 日本D, server: a-ct1.jsmmm.cyou, port: 39322, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 日本B, server: a-cm1.jsmmm.cyou, port: 39312, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲 | 俄罗斯, server: a-cm1.jsmmm.cyou, port: 39913, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美洲 | 美国C, server: a-ct1.jsmmm.cyou, port: 39621, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美洲 | 美国B, server: a-cm1.jsmmm.cyou, port: 39612, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美洲 | 美国A, server: a-cm1.jsmmm.cyou, port: 39611, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲 | 法国, server: a-cm1.jsmmm.cyou, port: 39911, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 台湾A, server: a-cm1.jsmmm.cyou, port: 39211, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美洲 | 美国D, server: a-ct1.jsmmm.cyou, port: 39622, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美洲 | 阿根廷, server: a-cm1.jsmmm.cyou, port: 39711, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 台湾C, server: a-ct1.jsmmm.cyou, port: 39221, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 台湾D, server: a-ct1.jsmmm.cyou, port: 39222, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲 | 台湾B, server: a-cm1.jsmmm.cyou, port: 39212, type: vmess, uuid: 37ecad18-3653-3c3b-82eb-51363a3f57d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 印度|三网优化|注册游戏|1x, server: gz.daxun.cyou, port: 26043, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 东京|优选原生IP|1x, server: gz.daxun.cyou, port: 26045, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡01|三网优化|1x, server: gz.daxun.cyou, port: 26035, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 马来西亚|优选原生IP|1x, server: gz.daxun.cyou, port: 38003, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SJP—新加坡02|优选原生IP|1x, server: gz.daxun.cyou, port: 26033, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 加拿大|三网优化|1x, server: gz.daxun.cyou, port: 26042, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡03|三网优化|1x, server: gz.daxun.cyou, port: 38023, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本原生|优选IP|1x, server: gz.daxun.cyou, port: 38013, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国洛杉矶-中转|1x, server: aws.daxun.cyou, port: 38888, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /daxun/us1, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 美国凤凰城-高速中转|1x, server: aws.daxun.cyou, port: 38887, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /daxun/us3, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 美国圣何塞-中转|1x, server: aws.daxun.cyou, port: 38889, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /daxun/us2, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 加拿大02|三网优化|1x, server: gz.daxun.cyou, port: 26048, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡02|三网优化|1x, server: gz.daxun.cyou, port: 38019, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国|三网优化|1x, server: gz.daxun.cyou, port: 38067, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国02|三网优化|1x, server: gz.daxun.cyou, port: 26050, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT|防失联直连|1x, server: download2hkt.windowsupdatea.com, port: 443, type: trojan, password: 73741a1c-1f14-413c-a2a0-7957f1069dc7, sni: download2hkt.windowsupdatea.com, skip-cert-verify: true, udp: true}
+  - {name: 香港pro隧道—1.5x, server: gz.daxun.cyou, port: 26031, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本|三网优化|1x, server: gz.daxun.cyou, port: 26044, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: UK英国—lite|解锁流媒体|1x, server: gz.daxun.cyou, port: 38005, type: vmess, uuid: 73741a1c-1f14-413c-a2a0-7957f1069dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚洲 | 新加坡C
-      - 亚洲 | 泰国
-      - 亚洲 | 马来西亚
-      - 亚洲 | 日本A
-      - 亚洲 | 新加坡A
-      - 亚洲 | 新加坡B
-      - 亚洲 | 韩国A
-      - 亚洲 | 新加坡D
-      - 亚洲 | 日本C
-      - 亚洲 | 韩国B
-      - 亚洲 | 香港D
-      - 亚洲 | 日本D
-      - 亚洲 | 日本B
-      - 欧洲 | 俄罗斯
-      - 美洲 | 美国C
-      - 美洲 | 美国B
-      - 美洲 | 美国A
-      - 欧洲 | 法国
-      - 亚洲 | 台湾A
-      - 美洲 | 美国D
-      - 美洲 | 阿根廷
-      - 亚洲 | 台湾C
-      - 亚洲 | 台湾D
-      - 亚洲 | 台湾B
+      - 印度|三网优化|注册游戏|1x
+      - 东京|优选原生IP|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|优选原生IP|1x
+      - SJP—新加坡02|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 新加坡03|三网优化|1x
+      - 日本原生|优选IP|1x
+      - 美国洛杉矶-中转|1x
+      - 美国凤凰城-高速中转|1x
+      - 美国圣何塞-中转|1x
+      - 加拿大02|三网优化|1x
+      - 新加坡02|三网优化|1x
+      - 英国|三网优化|1x
+      - 德国02|三网优化|1x
+      - 香港HKT|防失联直连|1x
+      - 香港pro隧道—1.5x
+      - 日本|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 亚洲 | 新加坡C
-      - 亚洲 | 泰国
-      - 亚洲 | 马来西亚
-      - 亚洲 | 日本A
-      - 亚洲 | 新加坡A
-      - 亚洲 | 新加坡B
-      - 亚洲 | 韩国A
-      - 亚洲 | 新加坡D
-      - 亚洲 | 日本C
-      - 亚洲 | 韩国B
-      - 亚洲 | 香港D
-      - 亚洲 | 日本D
-      - 亚洲 | 日本B
-      - 欧洲 | 俄罗斯
-      - 美洲 | 美国C
-      - 美洲 | 美国B
-      - 美洲 | 美国A
-      - 欧洲 | 法国
-      - 亚洲 | 台湾A
-      - 美洲 | 美国D
-      - 美洲 | 阿根廷
-      - 亚洲 | 台湾C
-      - 亚洲 | 台湾D
-      - 亚洲 | 台湾B
+      - 印度|三网优化|注册游戏|1x
+      - 东京|优选原生IP|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|优选原生IP|1x
+      - SJP—新加坡02|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 新加坡03|三网优化|1x
+      - 日本原生|优选IP|1x
+      - 美国洛杉矶-中转|1x
+      - 美国凤凰城-高速中转|1x
+      - 美国圣何塞-中转|1x
+      - 加拿大02|三网优化|1x
+      - 新加坡02|三网优化|1x
+      - 英国|三网优化|1x
+      - 德国02|三网优化|1x
+      - 香港HKT|防失联直连|1x
+      - 香港pro隧道—1.5x
+      - 日本|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚洲 | 新加坡C
-      - 亚洲 | 泰国
-      - 亚洲 | 马来西亚
-      - 亚洲 | 日本A
-      - 亚洲 | 新加坡A
-      - 亚洲 | 新加坡B
-      - 亚洲 | 韩国A
-      - 亚洲 | 新加坡D
-      - 亚洲 | 日本C
-      - 亚洲 | 韩国B
-      - 亚洲 | 香港D
-      - 亚洲 | 日本D
-      - 亚洲 | 日本B
-      - 欧洲 | 俄罗斯
-      - 美洲 | 美国C
-      - 美洲 | 美国B
-      - 美洲 | 美国A
-      - 欧洲 | 法国
-      - 亚洲 | 台湾A
-      - 美洲 | 美国D
-      - 美洲 | 阿根廷
-      - 亚洲 | 台湾C
-      - 亚洲 | 台湾D
-      - 亚洲 | 台湾B
+      - 印度|三网优化|注册游戏|1x
+      - 东京|优选原生IP|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|优选原生IP|1x
+      - SJP—新加坡02|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 新加坡03|三网优化|1x
+      - 日本原生|优选IP|1x
+      - 美国洛杉矶-中转|1x
+      - 美国凤凰城-高速中转|1x
+      - 美国圣何塞-中转|1x
+      - 加拿大02|三网优化|1x
+      - 新加坡02|三网优化|1x
+      - 英国|三网优化|1x
+      - 德国02|三网优化|1x
+      - 香港HKT|防失联直连|1x
+      - 香港pro隧道—1.5x
+      - 日本|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -136,128 +116,105 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚洲 | 新加坡C
-      - 亚洲 | 泰国
-      - 亚洲 | 马来西亚
-      - 亚洲 | 日本A
-      - 亚洲 | 新加坡A
-      - 亚洲 | 新加坡B
-      - 亚洲 | 韩国A
-      - 亚洲 | 新加坡D
-      - 亚洲 | 日本C
-      - 亚洲 | 韩国B
-      - 亚洲 | 香港D
-      - 亚洲 | 日本D
-      - 亚洲 | 日本B
-      - 欧洲 | 俄罗斯
-      - 美洲 | 美国C
-      - 美洲 | 美国B
-      - 美洲 | 美国A
-      - 欧洲 | 法国
-      - 亚洲 | 台湾A
-      - 美洲 | 美国D
-      - 美洲 | 阿根廷
-      - 亚洲 | 台湾C
-      - 亚洲 | 台湾D
-      - 亚洲 | 台湾B
+      - 印度|三网优化|注册游戏|1x
+      - 东京|优选原生IP|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|优选原生IP|1x
+      - SJP—新加坡02|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 新加坡03|三网优化|1x
+      - 日本原生|优选IP|1x
+      - 美国洛杉矶-中转|1x
+      - 美国凤凰城-高速中转|1x
+      - 美国圣何塞-中转|1x
+      - 加拿大02|三网优化|1x
+      - 新加坡02|三网优化|1x
+      - 英国|三网优化|1x
+      - 德国02|三网优化|1x
+      - 香港HKT|防失联直连|1x
+      - 香港pro隧道—1.5x
+      - 日本|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 亚洲 | 香港D
-      - 亚洲 | 台湾A
-      - 亚洲 | 台湾C
-      - 亚洲 | 台湾D
-      - 亚洲 | 台湾B
+      - 香港HKT|防失联直连|1x
+      - 香港pro隧道—1.5x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 亚洲 | 新加坡C
-      - 亚洲 | 泰国
-      - 亚洲 | 马来西亚
-      - 亚洲 | 日本A
-      - 亚洲 | 新加坡A
-      - 亚洲 | 新加坡B
-      - 亚洲 | 韩国A
-      - 亚洲 | 新加坡D
-      - 亚洲 | 日本C
-      - 亚洲 | 韩国B
-      - 亚洲 | 香港D
-      - 亚洲 | 日本D
-      - 亚洲 | 日本B
-      - 欧洲 | 俄罗斯
-      - 美洲 | 美国C
-      - 美洲 | 美国B
-      - 美洲 | 美国A
-      - 欧洲 | 法国
-      - 亚洲 | 台湾A
-      - 美洲 | 美国D
-      - 美洲 | 阿根廷
-      - 亚洲 | 台湾C
-      - 亚洲 | 台湾D
-      - 亚洲 | 台湾B
+      - 印度|三网优化|注册游戏|1x
+      - 东京|优选原生IP|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|优选原生IP|1x
+      - SJP—新加坡02|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 新加坡03|三网优化|1x
+      - 日本原生|优选IP|1x
+      - 美国洛杉矶-中转|1x
+      - 美国凤凰城-高速中转|1x
+      - 美国圣何塞-中转|1x
+      - 加拿大02|三网优化|1x
+      - 新加坡02|三网优化|1x
+      - 英国|三网优化|1x
+      - 德国02|三网优化|1x
+      - 香港HKT|防失联直连|1x
+      - 香港pro隧道—1.5x
+      - 日本|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 亚洲 | 新加坡C
-      - 亚洲 | 泰国
-      - 亚洲 | 马来西亚
-      - 亚洲 | 日本A
-      - 亚洲 | 新加坡A
-      - 亚洲 | 新加坡B
-      - 亚洲 | 韩国A
-      - 亚洲 | 新加坡D
-      - 亚洲 | 日本C
-      - 亚洲 | 韩国B
-      - 亚洲 | 香港D
-      - 亚洲 | 日本D
-      - 亚洲 | 日本B
-      - 欧洲 | 俄罗斯
-      - 美洲 | 美国C
-      - 美洲 | 美国B
-      - 美洲 | 美国A
-      - 欧洲 | 法国
-      - 亚洲 | 台湾A
-      - 美洲 | 美国D
-      - 美洲 | 阿根廷
-      - 亚洲 | 台湾C
-      - 亚洲 | 台湾D
-      - 亚洲 | 台湾B
+      - 印度|三网优化|注册游戏|1x
+      - 东京|优选原生IP|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|优选原生IP|1x
+      - SJP—新加坡02|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 新加坡03|三网优化|1x
+      - 日本原生|优选IP|1x
+      - 美国洛杉矶-中转|1x
+      - 美国凤凰城-高速中转|1x
+      - 美国圣何塞-中转|1x
+      - 加拿大02|三网优化|1x
+      - 新加坡02|三网优化|1x
+      - 英国|三网优化|1x
+      - 德国02|三网优化|1x
+      - 香港HKT|防失联直连|1x
+      - 香港pro隧道—1.5x
+      - 日本|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚洲 | 新加坡C
-      - 亚洲 | 泰国
-      - 亚洲 | 马来西亚
-      - 亚洲 | 日本A
-      - 亚洲 | 新加坡A
-      - 亚洲 | 新加坡B
-      - 亚洲 | 韩国A
-      - 亚洲 | 新加坡D
-      - 亚洲 | 日本C
-      - 亚洲 | 韩国B
-      - 亚洲 | 香港D
-      - 亚洲 | 日本D
-      - 亚洲 | 日本B
-      - 欧洲 | 俄罗斯
-      - 美洲 | 美国C
-      - 美洲 | 美国B
-      - 美洲 | 美国A
-      - 欧洲 | 法国
-      - 亚洲 | 台湾A
-      - 美洲 | 美国D
-      - 美洲 | 阿根廷
-      - 亚洲 | 台湾C
-      - 亚洲 | 台湾D
-      - 亚洲 | 台湾B
+      - 印度|三网优化|注册游戏|1x
+      - 东京|优选原生IP|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|优选原生IP|1x
+      - SJP—新加坡02|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 新加坡03|三网优化|1x
+      - 日本原生|优选IP|1x
+      - 美国洛杉矶-中转|1x
+      - 美国凤凰城-高速中转|1x
+      - 美国圣何塞-中转|1x
+      - 加拿大02|三网优化|1x
+      - 新加坡02|三网优化|1x
+      - 英国|三网优化|1x
+      - 德国02|三网优化|1x
+      - 香港HKT|防失联直连|1x
+      - 香港pro隧道—1.5x
+      - 日本|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -273,30 +230,25 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚洲 | 新加坡C
-      - 亚洲 | 泰国
-      - 亚洲 | 马来西亚
-      - 亚洲 | 日本A
-      - 亚洲 | 新加坡A
-      - 亚洲 | 新加坡B
-      - 亚洲 | 韩国A
-      - 亚洲 | 新加坡D
-      - 亚洲 | 日本C
-      - 亚洲 | 韩国B
-      - 亚洲 | 香港D
-      - 亚洲 | 日本D
-      - 亚洲 | 日本B
-      - 欧洲 | 俄罗斯
-      - 美洲 | 美国C
-      - 美洲 | 美国B
-      - 美洲 | 美国A
-      - 欧洲 | 法国
-      - 亚洲 | 台湾A
-      - 美洲 | 美国D
-      - 美洲 | 阿根廷
-      - 亚洲 | 台湾C
-      - 亚洲 | 台湾D
-      - 亚洲 | 台湾B
+      - 印度|三网优化|注册游戏|1x
+      - 东京|优选原生IP|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|优选原生IP|1x
+      - SJP—新加坡02|优选原生IP|1x
+      - 加拿大|三网优化|1x
+      - 新加坡03|三网优化|1x
+      - 日本原生|优选IP|1x
+      - 美国洛杉矶-中转|1x
+      - 美国凤凰城-高速中转|1x
+      - 美国圣何塞-中转|1x
+      - 加拿大02|三网优化|1x
+      - 新加坡02|三网优化|1x
+      - 英国|三网优化|1x
+      - 德国02|三网优化|1x
+      - 香港HKT|防失联直连|1x
+      - 香港pro隧道—1.5x
+      - 日本|三网优化|1x
+      - UK英国—lite|解锁流媒体|1x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
