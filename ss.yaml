@@ -5,35 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港A|@ripaojiedian, server: 114.216.2.24, port: 14406, type: trojan, password: 8EF817EE-3221-8C6C-8EDB-A9A5A1AE7202, skip-cert-verify: true, udp: true}
-  - {name: 美国优选|@ripaojiedian, server: dongtaiwang3.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: d.freeh1.xyz}, udp: true}
-  - {name: 狮城特殊2|@ripaojiedian, server: 18.142.55.157, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 03", server: cnmbdcm01.kczz2038.online, port: 28039, type: ss, cipher: chacha20-ietf-poly1305, password: 3c1ea5a3-1050-4429-98d1-f860a4971dd9, udp: true}
+  - {name: "@ZDYZ2-🇸🇬 Singapore 01", server: cnmbdcm01.kczz2038.online, port: 42213, type: ss, cipher: chacha20-ietf-poly1305, password: 3c1ea5a3-1050-4429-98d1-f860a4971dd9, udp: true}
+  - {name: "@ZDYZ2-🇬🇧 United Kingdom 01", server: cnmbdcm01.kczz2038.online, port: 36521, type: ss, cipher: chacha20-ietf-poly1305, password: 3c1ea5a3-1050-4429-98d1-f860a4971dd9, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 02", server: cnmbdcm01.kczz2038.online, port: 48004, type: ss, cipher: chacha20-ietf-poly1305, password: 3c1ea5a3-1050-4429-98d1-f860a4971dd9, udp: true}
+  - {name: "@ZDYZ2-🇮🇳 India 01", server: cnmbdcm01.kczz2038.online, port: 15474, type: ss, cipher: chacha20-ietf-poly1305, password: 3c1ea5a3-1050-4429-98d1-f860a4971dd9, udp: true}
+  - {name: "@ZDYZ2-🇩🇪 Germany 01", server: cnmbdcm01.kczz2038.online, port: 40172, type: ss, cipher: chacha20-ietf-poly1305, password: 3c1ea5a3-1050-4429-98d1-f860a4971dd9, udp: true}
+  - {name: "@ZDYZ2-🇦🇺 Australia 01", server: cnmbdcm01.kczz2038.online, port: 42142, type: ss, cipher: chacha20-ietf-poly1305, password: 3c1ea5a3-1050-4429-98d1-f860a4971dd9, udp: true}
+  - {name: "@ZDYZ2-🇯🇵 Japan 01", server: cnmbdcm01.kczz2038.online, port: 40102, type: ss, cipher: chacha20-ietf-poly1305, password: 3c1ea5a3-1050-4429-98d1-f860a4971dd9, udp: true}
+  - {name: "@ZDYZ2-🇹🇼 Taiwan 01", server: cnmbdcm01.kczz2038.online, port: 45379, type: ss, cipher: chacha20-ietf-poly1305, password: 3c1ea5a3-1050-4429-98d1-f860a4971dd9, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 01", server: cnmbdcm01.kczz2038.online, port: 48003, type: ss, cipher: chacha20-ietf-poly1305, password: 3c1ea5a3-1050-4429-98d1-f860a4971dd9, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 01", server: cnmbdcm01.kczz2038.online, port: 36698, type: ss, cipher: chacha20-ietf-poly1305, password: 3c1ea5a3-1050-4429-98d1-f860a4971dd9, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港A|@ripaojiedian
-      - 美国优选|@ripaojiedian
-      - 狮城特殊2|@ripaojiedian
+      - "@ZDYZ2-🇺🇸 United States 03"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇩🇪 Germany 01"
+      - "@ZDYZ2-🇦🇺 Australia 01"
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇹🇼 Taiwan 01"
+      - "@ZDYZ2-🇺🇸 United States 01"
+      - "@ZDYZ2-🇫🇷 France 01"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港A|@ripaojiedian
-      - 美国优选|@ripaojiedian
-      - 狮城特殊2|@ripaojiedian
+      - "@ZDYZ2-🇺🇸 United States 03"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇩🇪 Germany 01"
+      - "@ZDYZ2-🇦🇺 Australia 01"
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇹🇼 Taiwan 01"
+      - "@ZDYZ2-🇺🇸 United States 01"
+      - "@ZDYZ2-🇫🇷 France 01"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港A|@ripaojiedian
-      - 美国优选|@ripaojiedian
-      - 狮城特殊2|@ripaojiedian
+      - "@ZDYZ2-🇺🇸 United States 03"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇩🇪 Germany 01"
+      - "@ZDYZ2-🇦🇺 Australia 01"
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇹🇼 Taiwan 01"
+      - "@ZDYZ2-🇺🇸 United States 01"
+      - "@ZDYZ2-🇫🇷 France 01"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,40 +84,71 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港A|@ripaojiedian
-      - 美国优选|@ripaojiedian
-      - 狮城特殊2|@ripaojiedian
+      - "@ZDYZ2-🇺🇸 United States 03"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇩🇪 Germany 01"
+      - "@ZDYZ2-🇦🇺 Australia 01"
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇹🇼 Taiwan 01"
+      - "@ZDYZ2-🇺🇸 United States 01"
+      - "@ZDYZ2-🇫🇷 France 01"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港A|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港A|@ripaojiedian
-      - 美国优选|@ripaojiedian
-      - 狮城特殊2|@ripaojiedian
+      - "@ZDYZ2-🇺🇸 United States 03"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇩🇪 Germany 01"
+      - "@ZDYZ2-🇦🇺 Australia 01"
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇹🇼 Taiwan 01"
+      - "@ZDYZ2-🇺🇸 United States 01"
+      - "@ZDYZ2-🇫🇷 France 01"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港A|@ripaojiedian
-      - 美国优选|@ripaojiedian
-      - 狮城特殊2|@ripaojiedian
+      - "@ZDYZ2-🇺🇸 United States 03"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇩🇪 Germany 01"
+      - "@ZDYZ2-🇦🇺 Australia 01"
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇹🇼 Taiwan 01"
+      - "@ZDYZ2-🇺🇸 United States 01"
+      - "@ZDYZ2-🇫🇷 France 01"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港A|@ripaojiedian
-      - 美国优选|@ripaojiedian
-      - 狮城特殊2|@ripaojiedian
+      - "@ZDYZ2-🇺🇸 United States 03"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇩🇪 Germany 01"
+      - "@ZDYZ2-🇦🇺 Australia 01"
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇹🇼 Taiwan 01"
+      - "@ZDYZ2-🇺🇸 United States 01"
+      - "@ZDYZ2-🇫🇷 France 01"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -101,9 +164,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港A|@ripaojiedian
-      - 美国优选|@ripaojiedian
-      - 狮城特殊2|@ripaojiedian
+      - "@ZDYZ2-🇺🇸 United States 03"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇩🇪 Germany 01"
+      - "@ZDYZ2-🇦🇺 Australia 01"
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇹🇼 Taiwan 01"
+      - "@ZDYZ2-🇺🇸 United States 01"
+      - "@ZDYZ2-🇫🇷 France 01"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
