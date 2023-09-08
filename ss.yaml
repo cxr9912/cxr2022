@@ -5,31 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 韩国|@ripaojiedian, server: 02-1.qqingca.cc, port: 20354, type: ss, cipher: chacha20-ietf-poly1305, password: 14dd3830-4ead-4c84-b7d4-796525d4f10a, udp: true}
+  - {name: JP HVC-AS s11, server: gd.leiyingchuanmei.com, port: 29234, type: ss, cipher: aes-256-gcm, password: b6561dc0-8376-4a71-b182-8cac64cf99c8, udp: true}
   - {name: 日本B|@ripaojiedian, server: zjxc.pmxu.link, port: 15052, type: vmess, uuid: 67febe58-6831-3c16-93dd-34706ef61a63, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP HVC-AS s12, server: gd-cm.jr-3h.xyz, port: 28518, type: ss, cipher: aes-256-gcm, password: b6561dc0-8376-4a71-b182-8cac64cf99c8, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 韩国|@ripaojiedian
+      - JP HVC-AS s11
       - 日本B|@ripaojiedian
+      - JP HVC-AS s12
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 韩国|@ripaojiedian
+      - JP HVC-AS s11
       - 日本B|@ripaojiedian
+      - JP HVC-AS s12
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 韩国|@ripaojiedian
+      - JP HVC-AS s11
       - 日本B|@ripaojiedian
+      - JP HVC-AS s12
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,8 +52,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 韩国|@ripaojiedian
+      - JP HVC-AS s11
       - 日本B|@ripaojiedian
+      - JP HVC-AS s12
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -60,23 +65,26 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 韩国|@ripaojiedian
+      - JP HVC-AS s11
       - 日本B|@ripaojiedian
+      - JP HVC-AS s12
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 韩国|@ripaojiedian
+      - JP HVC-AS s11
       - 日本B|@ripaojiedian
+      - JP HVC-AS s12
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 韩国|@ripaojiedian
+      - JP HVC-AS s11
       - 日本B|@ripaojiedian
+      - JP HVC-AS s12
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +100,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 韩国|@ripaojiedian
+      - JP HVC-AS s11
       - 日本B|@ripaojiedian
+      - JP HVC-AS s12
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
