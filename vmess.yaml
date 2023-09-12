@@ -5,51 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡 3|隧道, server: zjxc.pmxu.link, port: 39037, type: vmess, uuid: d05ae6c3-f066-3739-a30e-f0d02ea674b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 4|隧道, server: zjxc.pmxu.link, port: 43576, type: vmess, uuid: d05ae6c3-f066-3739-a30e-f0d02ea674b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 1|隧道, server: zjxc.pmxu.link, port: 12318, type: vmess, uuid: d05ae6c3-f066-3739-a30e-f0d02ea674b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 4|隧道, server: zjxc.pmxu.link, port: 15052, type: vmess, uuid: d05ae6c3-f066-3739-a30e-f0d02ea674b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 越南 1|隧道, server: zjxc.pmxu.link, port: 40270, type: vmess, uuid: d05ae6c3-f066-3739-a30e-f0d02ea674b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 2|隧道, server: zjxc.pmxu.link, port: 34322, type: vmess, uuid: d05ae6c3-f066-3739-a30e-f0d02ea674b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ef4b3f71-610c-af79-2b97-34f1632b8f59, ws-headers: {Host: zjxc.pmxu.link}, udp: true}
-  - {name: 加拿大 1|隧道, server: zjxc.pmxu.link, port: 30839, type: vmess, uuid: d05ae6c3-f066-3739-a30e-f0d02ea674b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_687 | 6.81Mb, server: 43.200.245.221, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: SG_592 |76.38Mb, server: 13.215.175.74, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: Relay_-🇺🇸US_34 |23.91Mb, server: 8.222.162.31, port: 2082, type: vmess, uuid: 0917a3e2-9883-42aa-9b91-38049d9a6d12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hostodo, ws-headers: {Host: hostodo.galenet.online}, udp: true}
+  - {name: Relay_🏁ZZ-🏁ZZ_835 |28.27Mb, server: 103.239.67.2, port: 80, type: vmess, uuid: 89159225-9acc-419c-aa39-1940f8b792ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4gspeed.me, ws-headers: {Host: vn4.4gspeed.me}, udp: true}
+  - {name: HK_404 |62.38Mb, server: 42.3.68.39, port: 55455, type: vmess, uuid: d2ce45e6-9f22-492d-d81d-d639067a7583, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkt.123ddns.xyz}, udp: true}
+  - {name: _03 | 3.82Mb, server: 51.15.27.48, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: disney_netflix_IL (2), server: 77.91.69.236, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: bhldXbB67HGqwR120AW5ZP, udp: true}
+  - {name: SG_596 |62.23Mb, server: 54.255.190.166, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US_1027, server: 74.121.191.98, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RO_869, server: 194.14.217.115, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: IM_671, server: 192.71.211.161, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 3|隧道
-      - 新加坡 4|隧道
-      - 新加坡 1|隧道
-      - 日本 4|隧道
-      - 越南 1|隧道
-      - 新加坡 2|隧道
-      - 加拿大 1|隧道
+      - US_687 | 6.81Mb
+      - SG_592 |76.38Mb
+      - Relay_-🇺🇸US_34 |23.91Mb
+      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
+      - HK_404 |62.38Mb
+      - _03 | 3.82Mb
+      - disney_netflix_IL (2)
+      - SG_596 |62.23Mb
+      - US_1027
+      - RO_869
+      - IM_671
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 3|隧道
-      - 新加坡 4|隧道
-      - 新加坡 1|隧道
-      - 日本 4|隧道
-      - 越南 1|隧道
-      - 新加坡 2|隧道
-      - 加拿大 1|隧道
+      - US_687 | 6.81Mb
+      - SG_592 |76.38Mb
+      - Relay_-🇺🇸US_34 |23.91Mb
+      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
+      - HK_404 |62.38Mb
+      - _03 | 3.82Mb
+      - disney_netflix_IL (2)
+      - SG_596 |62.23Mb
+      - US_1027
+      - RO_869
+      - IM_671
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 3|隧道
-      - 新加坡 4|隧道
-      - 新加坡 1|隧道
-      - 日本 4|隧道
-      - 越南 1|隧道
-      - 新加坡 2|隧道
-      - 加拿大 1|隧道
+      - US_687 | 6.81Mb
+      - SG_592 |76.38Mb
+      - Relay_-🇺🇸US_34 |23.91Mb
+      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
+      - HK_404 |62.38Mb
+      - _03 | 3.82Mb
+      - disney_netflix_IL (2)
+      - SG_596 |62.23Mb
+      - US_1027
+      - RO_869
+      - IM_671
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,13 +84,17 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 3|隧道
-      - 新加坡 4|隧道
-      - 新加坡 1|隧道
-      - 日本 4|隧道
-      - 越南 1|隧道
-      - 新加坡 2|隧道
-      - 加拿大 1|隧道
+      - US_687 | 6.81Mb
+      - SG_592 |76.38Mb
+      - Relay_-🇺🇸US_34 |23.91Mb
+      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
+      - HK_404 |62.38Mb
+      - _03 | 3.82Mb
+      - disney_netflix_IL (2)
+      - SG_596 |62.23Mb
+      - US_1027
+      - RO_869
+      - IM_671
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -85,38 +105,50 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 3|隧道
-      - 新加坡 4|隧道
-      - 新加坡 1|隧道
-      - 日本 4|隧道
-      - 越南 1|隧道
-      - 新加坡 2|隧道
-      - 加拿大 1|隧道
+      - US_687 | 6.81Mb
+      - SG_592 |76.38Mb
+      - Relay_-🇺🇸US_34 |23.91Mb
+      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
+      - HK_404 |62.38Mb
+      - _03 | 3.82Mb
+      - disney_netflix_IL (2)
+      - SG_596 |62.23Mb
+      - US_1027
+      - RO_869
+      - IM_671
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 3|隧道
-      - 新加坡 4|隧道
-      - 新加坡 1|隧道
-      - 日本 4|隧道
-      - 越南 1|隧道
-      - 新加坡 2|隧道
-      - 加拿大 1|隧道
+      - US_687 | 6.81Mb
+      - SG_592 |76.38Mb
+      - Relay_-🇺🇸US_34 |23.91Mb
+      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
+      - HK_404 |62.38Mb
+      - _03 | 3.82Mb
+      - disney_netflix_IL (2)
+      - SG_596 |62.23Mb
+      - US_1027
+      - RO_869
+      - IM_671
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 3|隧道
-      - 新加坡 4|隧道
-      - 新加坡 1|隧道
-      - 日本 4|隧道
-      - 越南 1|隧道
-      - 新加坡 2|隧道
-      - 加拿大 1|隧道
+      - US_687 | 6.81Mb
+      - SG_592 |76.38Mb
+      - Relay_-🇺🇸US_34 |23.91Mb
+      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
+      - HK_404 |62.38Mb
+      - _03 | 3.82Mb
+      - disney_netflix_IL (2)
+      - SG_596 |62.23Mb
+      - US_1027
+      - RO_869
+      - IM_671
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +164,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 3|隧道
-      - 新加坡 4|隧道
-      - 新加坡 1|隧道
-      - 日本 4|隧道
-      - 越南 1|隧道
-      - 新加坡 2|隧道
-      - 加拿大 1|隧道
+      - US_687 | 6.81Mb
+      - SG_592 |76.38Mb
+      - Relay_-🇺🇸US_34 |23.91Mb
+      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
+      - HK_404 |62.38Mb
+      - _03 | 3.82Mb
+      - disney_netflix_IL (2)
+      - SG_596 |62.23Mb
+      - US_1027
+      - RO_869
+      - IM_671
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
