@@ -5,51 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 台湾|推荐07, server: tw7.microsoft-orgwly.vip, port: 10024, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: tw7.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 越南01|原生, server: vn2.microsoft-orgwly.vip, port: 444, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: vn2.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 美国06, server: us6.microsoft-orgwly.vip, port: 10068, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: us6.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 美国05, server: us5.microsoft-orgwly.vip, port: 10094, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: us5.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 美国01|GPT, server: us1.microsoft-orgwly.vip, port: 10022, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: us1.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 日本02|流媒体GPT, server: jp2.microsoft-orgwly.vip, port: 10060, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: jp2.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
-  - {name: 日本04, server: jp4.microsoft-orgwly.vip, port: 10078, type: trojan, password: cbf531ab-4ecb-488f-bf94-7bba8fd52175, sni: jp4.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 香港 / HK丨广港-03, server: hk03.ilpc.saobiwang.top, port: 45077, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
+  - {name: 距离下次重置剩余：3 天, server: 183.240.117.62, port: 45204, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
+  - {name: 日本 / JP丨广港-01, server: rb01.ilpc.saobiwang.top, port: 45061, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
+  - {name: 日本 / JP丨广港-02, server: rb02.ilpc.saobiwang.top, port: 45064, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
+  - {name: 日本 / JP丨广港-03, server: rb03.ilpc.saobiwang.top, port: 45063, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
+  - {name: 新加坡 / SG丨广港-02, server: xjp02.ilpc.saobiwang.top, port: 45055, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
+  - {name: 新加坡 / SG丨广港-01, server: xjp01.ilpc.saobiwang.top, port: 45051, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
+  - {name: 香港 / HK丨广港-01, server: hk01.ilpc.saobiwang.top, port: 45075, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
+  - {name: 新加坡 / SG丨广港-03, server: xjp03.ilpc.saobiwang.top, port: 45053, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
+  - {name: 香港 / HK丨广港-02, server: hk02.ilpc.saobiwang.top, port: 45079, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾|推荐07
-      - 越南01|原生
-      - 美国06
-      - 美国05
-      - 美国01|GPT
-      - 日本02|流媒体GPT
-      - 日本04
+      - 香港 / HK丨广港-03
+      - 距离下次重置剩余：3 天
+      - 日本 / JP丨广港-01
+      - 日本 / JP丨广港-02
+      - 日本 / JP丨广港-03
+      - 新加坡 / SG丨广港-02
+      - 新加坡 / SG丨广港-01
+      - 香港 / HK丨广港-01
+      - 新加坡 / SG丨广港-03
+      - 香港 / HK丨广港-02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 台湾|推荐07
-      - 越南01|原生
-      - 美国06
-      - 美国05
-      - 美国01|GPT
-      - 日本02|流媒体GPT
-      - 日本04
+      - 香港 / HK丨广港-03
+      - 距离下次重置剩余：3 天
+      - 日本 / JP丨广港-01
+      - 日本 / JP丨广港-02
+      - 日本 / JP丨广港-03
+      - 新加坡 / SG丨广港-02
+      - 新加坡 / SG丨广港-01
+      - 香港 / HK丨广港-01
+      - 新加坡 / SG丨广港-03
+      - 香港 / HK丨广港-02
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾|推荐07
-      - 越南01|原生
-      - 美国06
-      - 美国05
-      - 美国01|GPT
-      - 日本02|流媒体GPT
-      - 日本04
+      - 香港 / HK丨广港-03
+      - 距离下次重置剩余：3 天
+      - 日本 / JP丨广港-01
+      - 日本 / JP丨广港-02
+      - 日本 / JP丨广港-03
+      - 新加坡 / SG丨广港-02
+      - 新加坡 / SG丨广港-01
+      - 香港 / HK丨广港-01
+      - 新加坡 / SG丨广港-03
+      - 香港 / HK丨广港-02
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,56 +80,76 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾|推荐07
-      - 越南01|原生
-      - 美国06
-      - 美国05
-      - 美国01|GPT
-      - 日本02|流媒体GPT
-      - 日本04
+      - 香港 / HK丨广港-03
+      - 距离下次重置剩余：3 天
+      - 日本 / JP丨广港-01
+      - 日本 / JP丨广港-02
+      - 日本 / JP丨广港-03
+      - 新加坡 / SG丨广港-02
+      - 新加坡 / SG丨广港-01
+      - 香港 / HK丨广港-01
+      - 新加坡 / SG丨广港-03
+      - 香港 / HK丨广港-02
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾|推荐07
+      - 香港 / HK丨广港-03
+      - 日本 / JP丨广港-01
+      - 日本 / JP丨广港-02
+      - 日本 / JP丨广港-03
+      - 新加坡 / SG丨广港-02
+      - 新加坡 / SG丨广港-01
+      - 香港 / HK丨广港-01
+      - 新加坡 / SG丨广港-03
+      - 香港 / HK丨广港-02
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台湾|推荐07
-      - 越南01|原生
-      - 美国06
-      - 美国05
-      - 美国01|GPT
-      - 日本02|流媒体GPT
-      - 日本04
+      - 香港 / HK丨广港-03
+      - 距离下次重置剩余：3 天
+      - 日本 / JP丨广港-01
+      - 日本 / JP丨广港-02
+      - 日本 / JP丨广港-03
+      - 新加坡 / SG丨广港-02
+      - 新加坡 / SG丨广港-01
+      - 香港 / HK丨广港-01
+      - 新加坡 / SG丨广港-03
+      - 香港 / HK丨广港-02
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台湾|推荐07
-      - 越南01|原生
-      - 美国06
-      - 美国05
-      - 美国01|GPT
-      - 日本02|流媒体GPT
-      - 日本04
+      - 香港 / HK丨广港-03
+      - 距离下次重置剩余：3 天
+      - 日本 / JP丨广港-01
+      - 日本 / JP丨广港-02
+      - 日本 / JP丨广港-03
+      - 新加坡 / SG丨广港-02
+      - 新加坡 / SG丨广港-01
+      - 香港 / HK丨广港-01
+      - 新加坡 / SG丨广港-03
+      - 香港 / HK丨广港-02
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾|推荐07
-      - 越南01|原生
-      - 美国06
-      - 美国05
-      - 美国01|GPT
-      - 日本02|流媒体GPT
-      - 日本04
+      - 香港 / HK丨广港-03
+      - 距离下次重置剩余：3 天
+      - 日本 / JP丨广港-01
+      - 日本 / JP丨广港-02
+      - 日本 / JP丨广港-03
+      - 新加坡 / SG丨广港-02
+      - 新加坡 / SG丨广港-01
+      - 香港 / HK丨广港-01
+      - 新加坡 / SG丨广港-03
+      - 香港 / HK丨广港-02
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -133,13 +165,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾|推荐07
-      - 越南01|原生
-      - 美国06
-      - 美国05
-      - 美国01|GPT
-      - 日本02|流媒体GPT
-      - 日本04
+      - 香港 / HK丨广港-03
+      - 距离下次重置剩余：3 天
+      - 日本 / JP丨广港-01
+      - 日本 / JP丨广港-02
+      - 日本 / JP丨广港-03
+      - 新加坡 / SG丨广港-02
+      - 新加坡 / SG丨广港-01
+      - 香港 / HK丨广港-01
+      - 新加坡 / SG丨广港-03
+      - 香港 / HK丨广港-02
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
