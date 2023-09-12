@@ -5,39 +5,115 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "JP, Tokyo 2", server: 18.139.163.228, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "JP, Tokyo", server: 54.151.179.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "SG, Singapore", server: 13.213.66.163, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "US, Dallas 2", server: 54.190.212.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: AU澳大利亚-移动优化, server: yd.ktmwan.top, port: 27254, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: AU澳大利亚-联通优化, server: lt.ktmwan.top, port: 27254, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: 距离下次重置剩余：1 天, server: yd.ktmwan.top, port: 27250, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: UK英国-移动优化, server: yd.ktmwan.top, port: 27255, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: FR法国-电信优化, server: dx.ktmwan.top, port: 27258, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: FR法国-移动优化, server: yd.ktmwan.top, port: 27258, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: UK英国-电信优化, server: dx.ktmwan.top, port: 27255, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: FR法国-联通优化, server: lt.ktmwan.top, port: 27258, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: CA加拿大-移动优化, server: yd.ktmwan.top, port: 27256, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: UK英国-联通优化, server: lt.ktmwan.top, port: 27255, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: IN印度-联通优化, server: lt.ktmwan.top, port: 27252, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: IN印度-电信优化, server: dx.ktmwan.top, port: 27252, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: SG新加坡-联通优化, server: lt.ktmwan.top, port: 27250, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: SG新加坡-电信优化, server: dx.ktmwan.top, port: 27250, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: IN印度-移动优化, server: yd.ktmwan.top, port: 27252, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: DE德国-移动优化, server: yd.ktmwan.top, port: 27257, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: DE德国-联通优化, server: lt.ktmwan.top, port: 27257, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: CA加拿大-联通优化, server: lt.ktmwan.top, port: 27256, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: USA美国-移动优化, server: yd.ktmwan.top, port: 27253, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: USA美国-电信优化, server: dx.ktmwan.top, port: 27253, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: DE德国-电信优化, server: dx.ktmwan.top, port: 27257, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: USA美国-联通优化, server: lt.ktmwan.top, port: 27253, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
+  - {name: CA加拿大-电信优化, server: dx.ktmwan.top, port: 27256, type: ss, cipher: chacha20-ietf-poly1305, password: 79366946-4ab3-4b21-9207-29a31fdd3303, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP, Tokyo 2
-      - JP, Tokyo
-      - SG, Singapore
-      - US, Dallas 2
+      - AU澳大利亚-移动优化
+      - AU澳大利亚-联通优化
+      - 距离下次重置剩余：1 天
+      - UK英国-移动优化
+      - FR法国-电信优化
+      - FR法国-移动优化
+      - UK英国-电信优化
+      - FR法国-联通优化
+      - CA加拿大-移动优化
+      - UK英国-联通优化
+      - IN印度-联通优化
+      - IN印度-电信优化
+      - SG新加坡-联通优化
+      - SG新加坡-电信优化
+      - IN印度-移动优化
+      - DE德国-移动优化
+      - DE德国-联通优化
+      - CA加拿大-联通优化
+      - USA美国-移动优化
+      - USA美国-电信优化
+      - DE德国-电信优化
+      - USA美国-联通优化
+      - CA加拿大-电信优化
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP, Tokyo 2
-      - JP, Tokyo
-      - SG, Singapore
-      - US, Dallas 2
+      - AU澳大利亚-移动优化
+      - AU澳大利亚-联通优化
+      - 距离下次重置剩余：1 天
+      - UK英国-移动优化
+      - FR法国-电信优化
+      - FR法国-移动优化
+      - UK英国-电信优化
+      - FR法国-联通优化
+      - CA加拿大-移动优化
+      - UK英国-联通优化
+      - IN印度-联通优化
+      - IN印度-电信优化
+      - SG新加坡-联通优化
+      - SG新加坡-电信优化
+      - IN印度-移动优化
+      - DE德国-移动优化
+      - DE德国-联通优化
+      - CA加拿大-联通优化
+      - USA美国-移动优化
+      - USA美国-电信优化
+      - DE德国-电信优化
+      - USA美国-联通优化
+      - CA加拿大-电信优化
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP, Tokyo 2
-      - JP, Tokyo
-      - SG, Singapore
-      - US, Dallas 2
+      - AU澳大利亚-移动优化
+      - AU澳大利亚-联通优化
+      - 距离下次重置剩余：1 天
+      - UK英国-移动优化
+      - FR法国-电信优化
+      - FR法国-移动优化
+      - UK英国-电信优化
+      - FR法国-联通优化
+      - CA加拿大-移动优化
+      - UK英国-联通优化
+      - IN印度-联通优化
+      - IN印度-电信优化
+      - SG新加坡-联通优化
+      - SG新加坡-电信优化
+      - IN印度-移动优化
+      - DE德国-移动优化
+      - DE德国-联通优化
+      - CA加拿大-联通优化
+      - USA美国-移动优化
+      - USA美国-电信优化
+      - DE德国-电信优化
+      - USA美国-联通优化
+      - CA加拿大-电信优化
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,10 +132,29 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP, Tokyo 2
-      - JP, Tokyo
-      - SG, Singapore
-      - US, Dallas 2
+      - AU澳大利亚-移动优化
+      - AU澳大利亚-联通优化
+      - 距离下次重置剩余：1 天
+      - UK英国-移动优化
+      - FR法国-电信优化
+      - FR法国-移动优化
+      - UK英国-电信优化
+      - FR法国-联通优化
+      - CA加拿大-移动优化
+      - UK英国-联通优化
+      - IN印度-联通优化
+      - IN印度-电信优化
+      - SG新加坡-联通优化
+      - SG新加坡-电信优化
+      - IN印度-移动优化
+      - DE德国-移动优化
+      - DE德国-联通优化
+      - CA加拿大-联通优化
+      - USA美国-移动优化
+      - USA美国-电信优化
+      - DE德国-电信优化
+      - USA美国-联通优化
+      - CA加拿大-电信优化
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -70,29 +165,86 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP, Tokyo 2
-      - JP, Tokyo
-      - SG, Singapore
-      - US, Dallas 2
+      - AU澳大利亚-移动优化
+      - AU澳大利亚-联通优化
+      - 距离下次重置剩余：1 天
+      - UK英国-移动优化
+      - FR法国-电信优化
+      - FR法国-移动优化
+      - UK英国-电信优化
+      - FR法国-联通优化
+      - CA加拿大-移动优化
+      - UK英国-联通优化
+      - IN印度-联通优化
+      - IN印度-电信优化
+      - SG新加坡-联通优化
+      - SG新加坡-电信优化
+      - IN印度-移动优化
+      - DE德国-移动优化
+      - DE德国-联通优化
+      - CA加拿大-联通优化
+      - USA美国-移动优化
+      - USA美国-电信优化
+      - DE德国-电信优化
+      - USA美国-联通优化
+      - CA加拿大-电信优化
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP, Tokyo 2
-      - JP, Tokyo
-      - SG, Singapore
-      - US, Dallas 2
+      - AU澳大利亚-移动优化
+      - AU澳大利亚-联通优化
+      - 距离下次重置剩余：1 天
+      - UK英国-移动优化
+      - FR法国-电信优化
+      - FR法国-移动优化
+      - UK英国-电信优化
+      - FR法国-联通优化
+      - CA加拿大-移动优化
+      - UK英国-联通优化
+      - IN印度-联通优化
+      - IN印度-电信优化
+      - SG新加坡-联通优化
+      - SG新加坡-电信优化
+      - IN印度-移动优化
+      - DE德国-移动优化
+      - DE德国-联通优化
+      - CA加拿大-联通优化
+      - USA美国-移动优化
+      - USA美国-电信优化
+      - DE德国-电信优化
+      - USA美国-联通优化
+      - CA加拿大-电信优化
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP, Tokyo 2
-      - JP, Tokyo
-      - SG, Singapore
-      - US, Dallas 2
+      - AU澳大利亚-移动优化
+      - AU澳大利亚-联通优化
+      - 距离下次重置剩余：1 天
+      - UK英国-移动优化
+      - FR法国-电信优化
+      - FR法国-移动优化
+      - UK英国-电信优化
+      - FR法国-联通优化
+      - CA加拿大-移动优化
+      - UK英国-联通优化
+      - IN印度-联通优化
+      - IN印度-电信优化
+      - SG新加坡-联通优化
+      - SG新加坡-电信优化
+      - IN印度-移动优化
+      - DE德国-移动优化
+      - DE德国-联通优化
+      - CA加拿大-联通优化
+      - USA美国-移动优化
+      - USA美国-电信优化
+      - DE德国-电信优化
+      - USA美国-联通优化
+      - CA加拿大-电信优化
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +260,29 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP, Tokyo 2
-      - JP, Tokyo
-      - SG, Singapore
-      - US, Dallas 2
+      - AU澳大利亚-移动优化
+      - AU澳大利亚-联通优化
+      - 距离下次重置剩余：1 天
+      - UK英国-移动优化
+      - FR法国-电信优化
+      - FR法国-移动优化
+      - UK英国-电信优化
+      - FR法国-联通优化
+      - CA加拿大-移动优化
+      - UK英国-联通优化
+      - IN印度-联通优化
+      - IN印度-电信优化
+      - SG新加坡-联通优化
+      - SG新加坡-电信优化
+      - IN印度-移动优化
+      - DE德国-移动优化
+      - DE德国-联通优化
+      - CA加拿大-联通优化
+      - USA美国-移动优化
+      - USA美国-电信优化
+      - DE德国-电信优化
+      - USA美国-联通优化
+      - CA加拿大-电信优化
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
