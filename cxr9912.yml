@@ -5,51 +5,111 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "@SSRSUB-V02-付费推荐:dlj.tf/ssrsub", server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V001--US-付费推荐:dlj.tf/ssrsub, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: d16c31a2-93a3-4f1a-954c-e383b14a4d26, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: ssrsub.v01.ssrsub.com}, udp: true}
-  - {name: "@SSRSUB-V24-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: dp4.scproxy.top}, udp: true}
-  - {name: "@SSRSUB-V12-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: ca-do.sharecentrepro.org}, udp: true}
-  - {name: "@SSRSUB-V21-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: lv2.sharecentrepro.org}, udp: true}
-  - {name: "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: ca.ilovescp.com}, udp: true}
-  - {name: "@SSRSUB-V23-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: dp1.scproxy.top}, udp: true}
+  - {name: 香港-05 | 中转, server: gz-zz-xx.newbluecloud.top, port: 41095, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 新加坡-04 | 中转, server: gz-zz-xx.newbluecloud.top, port: 34546, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 香港-06 | 中转, server: gz-zz-xx.newbluecloud.top, port: 44345, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 香港-08 | 中转, server: gz-zz-xx.newbluecloud.top, port: 43932, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 新加坡-07 | 中转, server: gz-zz-xx.newbluecloud.top, port: 37863, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 新加坡-05 | 中转, server: gz-zz-xx.newbluecloud.top, port: 49899, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 新加坡-06 | 中转, server: gz-zz-xx.newbluecloud.top, port: 33249, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 俄罗斯-03, server: ru-33.feitucloud.com, port: 20233, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 俄罗斯-06, server: ru-66.feitucloud.com, port: 10276, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 美国-06, server: us-06.feitucloud.com, port: 10116, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 日本-03 | 中转, server: gz-zz-xx.newbluecloud.top, port: 45589, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 荷兰-02, server: nl-02.feitucloud.com, port: 20132, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 香港-07 | 中转, server: sh-zz-xx.newbluecloud.top, port: 13118, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 俄罗斯-02, server: ru-02.feitucloud.com, port: 10112, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 俄罗斯-09, server: ru-06.feitucloud.com, port: 10109, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 俄罗斯-01, server: ru-01.feitucloud.com, port: 10111, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 新加坡-08 | 中转, server: sh-zz-xx.newbluecloud.top, port: 59676, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 荷兰-01, server: nl-01.feitucloud.com, port: 20131, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 俄罗斯-08, server: ru-05.feitucloud.com, port: 10108, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 俄罗斯-07, server: ru-04.feitucloud.com, port: 10107, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 香港-01 | 中转, server: gz-zz-xx.newbluecloud.top, port: 11651, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
+  - {name: 香港-03 | 中转, server: gz-zz-xx.newbluecloud.top, port: 20820, type: ss, cipher: chacha20-ietf-poly1305, password: a796d449-57bb-43e7-8e64-c79adb189a12, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "@SSRSUB-V02-付费推荐:dlj.tf/ssrsub"
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - "@SSRSUB-V24-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V12-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V21-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V23-付费推荐:dlj.tf/ssrsub"
+      - 香港-05 | 中转
+      - 新加坡-04 | 中转
+      - 香港-06 | 中转
+      - 香港-08 | 中转
+      - 新加坡-07 | 中转
+      - 新加坡-05 | 中转
+      - 新加坡-06 | 中转
+      - 俄罗斯-03
+      - 俄罗斯-06
+      - 美国-06
+      - 日本-03 | 中转
+      - 荷兰-02
+      - 香港-07 | 中转
+      - 俄罗斯-02
+      - 俄罗斯-09
+      - 俄罗斯-01
+      - 新加坡-08 | 中转
+      - 荷兰-01
+      - 俄罗斯-08
+      - 俄罗斯-07
+      - 香港-01 | 中转
+      - 香港-03 | 中转
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "@SSRSUB-V02-付费推荐:dlj.tf/ssrsub"
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - "@SSRSUB-V24-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V12-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V21-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V23-付费推荐:dlj.tf/ssrsub"
+      - 香港-05 | 中转
+      - 新加坡-04 | 中转
+      - 香港-06 | 中转
+      - 香港-08 | 中转
+      - 新加坡-07 | 中转
+      - 新加坡-05 | 中转
+      - 新加坡-06 | 中转
+      - 俄罗斯-03
+      - 俄罗斯-06
+      - 美国-06
+      - 日本-03 | 中转
+      - 荷兰-02
+      - 香港-07 | 中转
+      - 俄罗斯-02
+      - 俄罗斯-09
+      - 俄罗斯-01
+      - 新加坡-08 | 中转
+      - 荷兰-01
+      - 俄罗斯-08
+      - 俄罗斯-07
+      - 香港-01 | 中转
+      - 香港-03 | 中转
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "@SSRSUB-V02-付费推荐:dlj.tf/ssrsub"
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - "@SSRSUB-V24-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V12-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V21-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V23-付费推荐:dlj.tf/ssrsub"
+      - 香港-05 | 中转
+      - 新加坡-04 | 中转
+      - 香港-06 | 中转
+      - 香港-08 | 中转
+      - 新加坡-07 | 中转
+      - 新加坡-05 | 中转
+      - 新加坡-06 | 中转
+      - 俄罗斯-03
+      - 俄罗斯-06
+      - 美国-06
+      - 日本-03 | 中转
+      - 荷兰-02
+      - 香港-07 | 中转
+      - 俄罗斯-02
+      - 俄罗斯-09
+      - 俄罗斯-01
+      - 新加坡-08 | 中转
+      - 荷兰-01
+      - 俄罗斯-08
+      - 俄罗斯-07
+      - 香港-01 | 中转
+      - 香港-03 | 中转
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,55 +128,121 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "@SSRSUB-V02-付费推荐:dlj.tf/ssrsub"
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - "@SSRSUB-V24-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V12-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V21-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V23-付费推荐:dlj.tf/ssrsub"
+      - 香港-05 | 中转
+      - 新加坡-04 | 中转
+      - 香港-06 | 中转
+      - 香港-08 | 中转
+      - 新加坡-07 | 中转
+      - 新加坡-05 | 中转
+      - 新加坡-06 | 中转
+      - 俄罗斯-03
+      - 俄罗斯-06
+      - 美国-06
+      - 日本-03 | 中转
+      - 荷兰-02
+      - 香港-07 | 中转
+      - 俄罗斯-02
+      - 俄罗斯-09
+      - 俄罗斯-01
+      - 新加坡-08 | 中转
+      - 荷兰-01
+      - 俄罗斯-08
+      - 俄罗斯-07
+      - 香港-01 | 中转
+      - 香港-03 | 中转
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港-05 | 中转
+      - 香港-06 | 中转
+      - 香港-08 | 中转
+      - 香港-07 | 中转
+      - 香港-01 | 中转
+      - 香港-03 | 中转
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "@SSRSUB-V02-付费推荐:dlj.tf/ssrsub"
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - "@SSRSUB-V24-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V12-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V21-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V23-付费推荐:dlj.tf/ssrsub"
+      - 香港-05 | 中转
+      - 新加坡-04 | 中转
+      - 香港-06 | 中转
+      - 香港-08 | 中转
+      - 新加坡-07 | 中转
+      - 新加坡-05 | 中转
+      - 新加坡-06 | 中转
+      - 俄罗斯-03
+      - 俄罗斯-06
+      - 美国-06
+      - 日本-03 | 中转
+      - 荷兰-02
+      - 香港-07 | 中转
+      - 俄罗斯-02
+      - 俄罗斯-09
+      - 俄罗斯-01
+      - 新加坡-08 | 中转
+      - 荷兰-01
+      - 俄罗斯-08
+      - 俄罗斯-07
+      - 香港-01 | 中转
+      - 香港-03 | 中转
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "@SSRSUB-V02-付费推荐:dlj.tf/ssrsub"
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - "@SSRSUB-V24-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V12-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V21-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V23-付费推荐:dlj.tf/ssrsub"
+      - 香港-05 | 中转
+      - 新加坡-04 | 中转
+      - 香港-06 | 中转
+      - 香港-08 | 中转
+      - 新加坡-07 | 中转
+      - 新加坡-05 | 中转
+      - 新加坡-06 | 中转
+      - 俄罗斯-03
+      - 俄罗斯-06
+      - 美国-06
+      - 日本-03 | 中转
+      - 荷兰-02
+      - 香港-07 | 中转
+      - 俄罗斯-02
+      - 俄罗斯-09
+      - 俄罗斯-01
+      - 新加坡-08 | 中转
+      - 荷兰-01
+      - 俄罗斯-08
+      - 俄罗斯-07
+      - 香港-01 | 中转
+      - 香港-03 | 中转
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "@SSRSUB-V02-付费推荐:dlj.tf/ssrsub"
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - "@SSRSUB-V24-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V12-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V21-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V23-付费推荐:dlj.tf/ssrsub"
+      - 香港-05 | 中转
+      - 新加坡-04 | 中转
+      - 香港-06 | 中转
+      - 香港-08 | 中转
+      - 新加坡-07 | 中转
+      - 新加坡-05 | 中转
+      - 新加坡-06 | 中转
+      - 俄罗斯-03
+      - 俄罗斯-06
+      - 美国-06
+      - 日本-03 | 中转
+      - 荷兰-02
+      - 香港-07 | 中转
+      - 俄罗斯-02
+      - 俄罗斯-09
+      - 俄罗斯-01
+      - 新加坡-08 | 中转
+      - 荷兰-01
+      - 俄罗斯-08
+      - 俄罗斯-07
+      - 香港-01 | 中转
+      - 香港-03 | 中转
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +258,28 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "@SSRSUB-V02-付费推荐:dlj.tf/ssrsub"
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - "@SSRSUB-V24-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V12-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V21-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
-      - "@SSRSUB-V23-付费推荐:dlj.tf/ssrsub"
+      - 香港-05 | 中转
+      - 新加坡-04 | 中转
+      - 香港-06 | 中转
+      - 香港-08 | 中转
+      - 新加坡-07 | 中转
+      - 新加坡-05 | 中转
+      - 新加坡-06 | 中转
+      - 俄罗斯-03
+      - 俄罗斯-06
+      - 美国-06
+      - 日本-03 | 中转
+      - 荷兰-02
+      - 香港-07 | 中转
+      - 俄罗斯-02
+      - 俄罗斯-09
+      - 俄罗斯-01
+      - 新加坡-08 | 中转
+      - 荷兰-01
+      - 俄罗斯-08
+      - 俄罗斯-07
+      - 香港-01 | 中转
+      - 香港-03 | 中转
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
