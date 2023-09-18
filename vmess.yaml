@@ -5,67 +5,247 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_687 | 6.81Mb, server: 43.200.245.221, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: SG_592 |76.38Mb, server: 13.215.175.74, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: Relay_-🇺🇸US_34 |23.91Mb, server: 8.222.162.31, port: 2082, type: vmess, uuid: 0917a3e2-9883-42aa-9b91-38049d9a6d12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hostodo, ws-headers: {Host: hostodo.galenet.online}, udp: true}
-  - {name: Relay_🏁ZZ-🏁ZZ_835 |28.27Mb, server: 103.239.67.2, port: 80, type: vmess, uuid: 89159225-9acc-419c-aa39-1940f8b792ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4gspeed.me, ws-headers: {Host: vn4.4gspeed.me}, udp: true}
-  - {name: HK_404 |62.38Mb, server: 42.3.68.39, port: 55455, type: vmess, uuid: d2ce45e6-9f22-492d-d81d-d639067a7583, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkt.123ddns.xyz}, udp: true}
-  - {name: _03 | 3.82Mb, server: 51.15.27.48, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: disney_netflix_IL (2), server: 77.91.69.236, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: bhldXbB67HGqwR120AW5ZP, udp: true}
-  - {name: SG_596 |62.23Mb, server: 54.255.190.166, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: US_1027, server: 74.121.191.98, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: RO_869, server: 194.14.217.115, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: IM_671, server: 192.71.211.161, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "@ZDYZ2-🇯🇵 Japan 01", server: 103.140.137.11, port: 18443, type: vmess, uuid: 9d6fd014-095e-45ca-b61f-01618eb51016, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bak-hinet.kidcc.xyz}, udp: true}
+  - {name: "@ZDYZ2-🇭🇰 Hong Kong 01", server: 14.29.206.4, port: 56015, type: ss, cipher: chacha20-ietf-poly1305, password: 6YRXJP, udp: true}
+  - {name: "@ZDYZ2-🇯🇵 Japan 09", server: 104.16.98.0, port: 8443, type: vmess, uuid: 36e23478-a6ef-4cf1-ad25-334fe67c24ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bur4.957426.xyz}, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 26", server: 104.17.187.236, port: 8443, type: vmess, uuid: 36e23478-a6ef-4cf1-ad25-334fe67c24ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bur2.957426.xyz}, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 56", server: 51.159.210.173, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇨🇦 Canada 03", server: speedip.eu.org, port: 80, type: vmess, uuid: 36c6dc4c-f6c2-4c55-a69b-74a7e12589ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: ca2.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 59", server: 51.159.221.203, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 53", server: 51.158.200.168, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 13", server: speedip.eu.org, port: 80, type: vmess, uuid: 36c6dc4c-f6c2-4c55-a69b-74a7e12589ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: us7.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 61", server: 51.158.200.63, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 54", server: 51.158.200.160, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 46", server: 51.159.221.226, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇯🇵 Japan 02", server: speedip.eu.org, port: 80, type: vmess, uuid: e3231c5c-be80-4521-a216-79cfea504e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: jp8.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 44", server: 51.159.221.228, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 11", server: 51.158.54.167, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 20", server: free1.661856.xyz, port: 8080, type: vmess, uuid: c3a396e6-ff71-419a-9962-5479a7e58301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: freeus2.661855.xyz}, udp: true}
+  - {name: "@ZDYZ2-🇩🇪 Germany 02", server: 104.31.16.70, port: 2083, type: vmess, uuid: 15bf0db4-fbff-46d0-a486-b6e4a9e74a91, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: germany-one.port888.site}, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 07", server: 51.158.200.95, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 10", server: speedip.eu.org, port: 80, type: vmess, uuid: e3231c5c-be80-4521-a216-79cfea504e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: us10.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇰🇷 South Korea 04", server: 104.19.56.102, port: 8443, type: vmess, uuid: 36e23478-a6ef-4cf1-ad25-334fe67c24ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bur3.957426.xyz}, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 23", server: bur2.957426.xyz, port: 8443, type: vmess, uuid: 36e23478-a6ef-4cf1-ad25-334fe67c24ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bur2.957426.xyz}, udp: true}
+  - {name: "@ZDYZ2-🇨🇦 Canada 01", server: 51.222.15.68, port: 443, type: trojan, password: b677cab0-554b-11ee-91ba-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 25", server: 172.67.130.134, port: 8443, type: vmess, uuid: 36e23478-a6ef-4cf1-ad25-334fe67c24ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bur2.957426.xyz}, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 04", server: 36.140.102.11, port: 50016, type: vmess, uuid: 569dad3e-46e0-474f-8350-8acc959ff5f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 42", server: 51.158.200.166, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 16", server: speedip.eu.org, port: 80, type: vmess, uuid: 36c6dc4c-f6c2-4c55-a69b-74a7e12589ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: us10.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇸🇬 Singapore 12", server: 104.16.97.0, port: 8443, type: vmess, uuid: 36e23478-a6ef-4cf1-ad25-334fe67c24ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bur1.957426.xyz}, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 05", server: 51.158.37.167, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇬🇧 United Kingdom 06", server: speedip.eu.org, port: 80, type: vmess, uuid: 36c6dc4c-f6c2-4c55-a69b-74a7e12589ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: uk2.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇯🇵 Japan 03", server: speedip.eu.org, port: 80, type: vmess, uuid: e3231c5c-be80-4521-a216-79cfea504e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: jp9.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇯🇵 Japan 04", server: speedip.eu.org, port: 80, type: vmess, uuid: e3231c5c-be80-4521-a216-79cfea504e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: jp10.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 71", server: speedip.eu.org, port: 80, type: vmess, uuid: e3231c5c-be80-4521-a216-79cfea504e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: fr2.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 07", server: speedip.eu.org, port: 80, type: vmess, uuid: e3231c5c-be80-4521-a216-79cfea504e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: us7.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 43", server: 51.159.221.229, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇸🇬 Singapore 10", server: speedip.eu.org, port: 80, type: vmess, uuid: 36c6dc4c-f6c2-4c55-a69b-74a7e12589ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: sg10.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇭🇰 Hong Kong 12", server: speedip.eu.org, port: 80, type: vmess, uuid: 36c6dc4c-f6c2-4c55-a69b-74a7e12589ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: hk8.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇭🇰 Hong Kong 06", server: speedip.eu.org, port: 80, type: vmess, uuid: e3231c5c-be80-4521-a216-79cfea504e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: hk7.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇸🇬 Singapore 07", server: speedip.eu.org, port: 80, type: vmess, uuid: 36c6dc4c-f6c2-4c55-a69b-74a7e12589ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: sg7.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇩🇪 Germany 03", server: 54.38.156.210, port: 443, type: trojan, password: e89e2410-554b-11ee-a8c1-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: "@ZDYZ2-🇸🇬 Singapore 08", server: speedip.eu.org, port: 80, type: vmess, uuid: 36c6dc4c-f6c2-4c55-a69b-74a7e12589ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: sg8.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇮🇶 Iraq 01", server: speedip.eu.org, port: 80, type: vmess, uuid: e3231c5c-be80-4521-a216-79cfea504e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: au2.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇭🇰 Hong Kong 07", server: speedip.eu.org, port: 80, type: vmess, uuid: e3231c5c-be80-4521-a216-79cfea504e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: hk8.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇮🇳 India 01", server: speedip.eu.org, port: 80, type: vmess, uuid: e3231c5c-be80-4521-a216-79cfea504e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: in2.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇮🇳 India 02", server: speedip.eu.org, port: 80, type: vmess, uuid: 36c6dc4c-f6c2-4c55-a69b-74a7e12589ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: in2.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇸🇬 Singapore 01", server: speedip.eu.org, port: 80, type: vmess, uuid: e3231c5c-be80-4521-a216-79cfea504e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: sg6.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 13", server: 51.159.222.38, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇻🇳 Viet Nam 01", server: speedip.eu.org, port: 80, type: vmess, uuid: e3231c5c-be80-4521-a216-79cfea504e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: vn2.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇰🇷 South Korea 02", server: 172.67.184.218, port: 8443, type: vmess, uuid: 36e23478-a6ef-4cf1-ad25-334fe67c24ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bur3.957426.xyz}, udp: true}
+  - {name: "@ZDYZ2-🇯🇵 Japan 10", server: 172.67.119.174, port: 8443, type: vmess, uuid: 36e23478-a6ef-4cf1-ad25-334fe67c24ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bur4.957426.xyz}, udp: true}
+  - {name: "@ZDYZ2-🇰🇷 South Korea 01", server: bur3.957426.xyz, port: 8443, type: vmess, uuid: 36e23478-a6ef-4cf1-ad25-334fe67c24ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bur3.957426.xyz}, udp: true}
+  - {name: "@ZDYZ2-🇻🇳 Viet Nam 02", server: speedip.eu.org, port: 80, type: vmess, uuid: 36c6dc4c-f6c2-4c55-a69b-74a7e12589ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: vn2.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇸🇬 Singapore 03", server: speedip.eu.org, port: 80, type: vmess, uuid: e3231c5c-be80-4521-a216-79cfea504e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: sg8.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇳🇱 Netherlands 07", server: 51.158.202.190, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 15", server: speedip.eu.org, port: 80, type: vmess, uuid: 36c6dc4c-f6c2-4c55-a69b-74a7e12589ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: us9.xingsu.fun}, udp: true}
+  - {name: "@ZDYZ2-🇫🇷 France 09", server: 51.158.200.143, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: "@ZDYZ2-🇭🇰 Hong Kong 04", server: 113.108.9.16, port: 56015, type: ss, cipher: chacha20-ietf-poly1305, password: 6YRXJP, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_687 | 6.81Mb
-      - SG_592 |76.38Mb
-      - Relay_-🇺🇸US_34 |23.91Mb
-      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
-      - HK_404 |62.38Mb
-      - _03 | 3.82Mb
-      - disney_netflix_IL (2)
-      - SG_596 |62.23Mb
-      - US_1027
-      - RO_869
-      - IM_671
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 01"
+      - "@ZDYZ2-🇯🇵 Japan 09"
+      - "@ZDYZ2-🇺🇸 United States 26"
+      - "@ZDYZ2-🇫🇷 France 56"
+      - "@ZDYZ2-🇨🇦 Canada 03"
+      - "@ZDYZ2-🇫🇷 France 59"
+      - "@ZDYZ2-🇫🇷 France 53"
+      - "@ZDYZ2-🇺🇸 United States 13"
+      - "@ZDYZ2-🇫🇷 France 61"
+      - "@ZDYZ2-🇫🇷 France 54"
+      - "@ZDYZ2-🇫🇷 France 46"
+      - "@ZDYZ2-🇯🇵 Japan 02"
+      - "@ZDYZ2-🇫🇷 France 44"
+      - "@ZDYZ2-🇫🇷 France 11"
+      - "@ZDYZ2-🇺🇸 United States 20"
+      - "@ZDYZ2-🇩🇪 Germany 02"
+      - "@ZDYZ2-🇫🇷 France 07"
+      - "@ZDYZ2-🇺🇸 United States 10"
+      - "@ZDYZ2-🇰🇷 South Korea 04"
+      - "@ZDYZ2-🇺🇸 United States 23"
+      - "@ZDYZ2-🇨🇦 Canada 01"
+      - "@ZDYZ2-🇺🇸 United States 25"
+      - "@ZDYZ2-🇺🇸 United States 04"
+      - "@ZDYZ2-🇫🇷 France 42"
+      - "@ZDYZ2-🇺🇸 United States 16"
+      - "@ZDYZ2-🇸🇬 Singapore 12"
+      - "@ZDYZ2-🇫🇷 France 05"
+      - "@ZDYZ2-🇬🇧 United Kingdom 06"
+      - "@ZDYZ2-🇯🇵 Japan 03"
+      - "@ZDYZ2-🇯🇵 Japan 04"
+      - "@ZDYZ2-🇫🇷 France 71"
+      - "@ZDYZ2-🇺🇸 United States 07"
+      - "@ZDYZ2-🇫🇷 France 43"
+      - "@ZDYZ2-🇸🇬 Singapore 10"
+      - "@ZDYZ2-🇭🇰 Hong Kong 12"
+      - "@ZDYZ2-🇭🇰 Hong Kong 06"
+      - "@ZDYZ2-🇸🇬 Singapore 07"
+      - "@ZDYZ2-🇩🇪 Germany 03"
+      - "@ZDYZ2-🇸🇬 Singapore 08"
+      - "@ZDYZ2-🇮🇶 Iraq 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 07"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇮🇳 India 02"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇫🇷 France 13"
+      - "@ZDYZ2-🇻🇳 Viet Nam 01"
+      - "@ZDYZ2-🇰🇷 South Korea 02"
+      - "@ZDYZ2-🇯🇵 Japan 10"
+      - "@ZDYZ2-🇰🇷 South Korea 01"
+      - "@ZDYZ2-🇻🇳 Viet Nam 02"
+      - "@ZDYZ2-🇸🇬 Singapore 03"
+      - "@ZDYZ2-🇳🇱 Netherlands 07"
+      - "@ZDYZ2-🇺🇸 United States 15"
+      - "@ZDYZ2-🇫🇷 France 09"
+      - "@ZDYZ2-🇭🇰 Hong Kong 04"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US_687 | 6.81Mb
-      - SG_592 |76.38Mb
-      - Relay_-🇺🇸US_34 |23.91Mb
-      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
-      - HK_404 |62.38Mb
-      - _03 | 3.82Mb
-      - disney_netflix_IL (2)
-      - SG_596 |62.23Mb
-      - US_1027
-      - RO_869
-      - IM_671
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 01"
+      - "@ZDYZ2-🇯🇵 Japan 09"
+      - "@ZDYZ2-🇺🇸 United States 26"
+      - "@ZDYZ2-🇫🇷 France 56"
+      - "@ZDYZ2-🇨🇦 Canada 03"
+      - "@ZDYZ2-🇫🇷 France 59"
+      - "@ZDYZ2-🇫🇷 France 53"
+      - "@ZDYZ2-🇺🇸 United States 13"
+      - "@ZDYZ2-🇫🇷 France 61"
+      - "@ZDYZ2-🇫🇷 France 54"
+      - "@ZDYZ2-🇫🇷 France 46"
+      - "@ZDYZ2-🇯🇵 Japan 02"
+      - "@ZDYZ2-🇫🇷 France 44"
+      - "@ZDYZ2-🇫🇷 France 11"
+      - "@ZDYZ2-🇺🇸 United States 20"
+      - "@ZDYZ2-🇩🇪 Germany 02"
+      - "@ZDYZ2-🇫🇷 France 07"
+      - "@ZDYZ2-🇺🇸 United States 10"
+      - "@ZDYZ2-🇰🇷 South Korea 04"
+      - "@ZDYZ2-🇺🇸 United States 23"
+      - "@ZDYZ2-🇨🇦 Canada 01"
+      - "@ZDYZ2-🇺🇸 United States 25"
+      - "@ZDYZ2-🇺🇸 United States 04"
+      - "@ZDYZ2-🇫🇷 France 42"
+      - "@ZDYZ2-🇺🇸 United States 16"
+      - "@ZDYZ2-🇸🇬 Singapore 12"
+      - "@ZDYZ2-🇫🇷 France 05"
+      - "@ZDYZ2-🇬🇧 United Kingdom 06"
+      - "@ZDYZ2-🇯🇵 Japan 03"
+      - "@ZDYZ2-🇯🇵 Japan 04"
+      - "@ZDYZ2-🇫🇷 France 71"
+      - "@ZDYZ2-🇺🇸 United States 07"
+      - "@ZDYZ2-🇫🇷 France 43"
+      - "@ZDYZ2-🇸🇬 Singapore 10"
+      - "@ZDYZ2-🇭🇰 Hong Kong 12"
+      - "@ZDYZ2-🇭🇰 Hong Kong 06"
+      - "@ZDYZ2-🇸🇬 Singapore 07"
+      - "@ZDYZ2-🇩🇪 Germany 03"
+      - "@ZDYZ2-🇸🇬 Singapore 08"
+      - "@ZDYZ2-🇮🇶 Iraq 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 07"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇮🇳 India 02"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇫🇷 France 13"
+      - "@ZDYZ2-🇻🇳 Viet Nam 01"
+      - "@ZDYZ2-🇰🇷 South Korea 02"
+      - "@ZDYZ2-🇯🇵 Japan 10"
+      - "@ZDYZ2-🇰🇷 South Korea 01"
+      - "@ZDYZ2-🇻🇳 Viet Nam 02"
+      - "@ZDYZ2-🇸🇬 Singapore 03"
+      - "@ZDYZ2-🇳🇱 Netherlands 07"
+      - "@ZDYZ2-🇺🇸 United States 15"
+      - "@ZDYZ2-🇫🇷 France 09"
+      - "@ZDYZ2-🇭🇰 Hong Kong 04"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_687 | 6.81Mb
-      - SG_592 |76.38Mb
-      - Relay_-🇺🇸US_34 |23.91Mb
-      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
-      - HK_404 |62.38Mb
-      - _03 | 3.82Mb
-      - disney_netflix_IL (2)
-      - SG_596 |62.23Mb
-      - US_1027
-      - RO_869
-      - IM_671
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 01"
+      - "@ZDYZ2-🇯🇵 Japan 09"
+      - "@ZDYZ2-🇺🇸 United States 26"
+      - "@ZDYZ2-🇫🇷 France 56"
+      - "@ZDYZ2-🇨🇦 Canada 03"
+      - "@ZDYZ2-🇫🇷 France 59"
+      - "@ZDYZ2-🇫🇷 France 53"
+      - "@ZDYZ2-🇺🇸 United States 13"
+      - "@ZDYZ2-🇫🇷 France 61"
+      - "@ZDYZ2-🇫🇷 France 54"
+      - "@ZDYZ2-🇫🇷 France 46"
+      - "@ZDYZ2-🇯🇵 Japan 02"
+      - "@ZDYZ2-🇫🇷 France 44"
+      - "@ZDYZ2-🇫🇷 France 11"
+      - "@ZDYZ2-🇺🇸 United States 20"
+      - "@ZDYZ2-🇩🇪 Germany 02"
+      - "@ZDYZ2-🇫🇷 France 07"
+      - "@ZDYZ2-🇺🇸 United States 10"
+      - "@ZDYZ2-🇰🇷 South Korea 04"
+      - "@ZDYZ2-🇺🇸 United States 23"
+      - "@ZDYZ2-🇨🇦 Canada 01"
+      - "@ZDYZ2-🇺🇸 United States 25"
+      - "@ZDYZ2-🇺🇸 United States 04"
+      - "@ZDYZ2-🇫🇷 France 42"
+      - "@ZDYZ2-🇺🇸 United States 16"
+      - "@ZDYZ2-🇸🇬 Singapore 12"
+      - "@ZDYZ2-🇫🇷 France 05"
+      - "@ZDYZ2-🇬🇧 United Kingdom 06"
+      - "@ZDYZ2-🇯🇵 Japan 03"
+      - "@ZDYZ2-🇯🇵 Japan 04"
+      - "@ZDYZ2-🇫🇷 France 71"
+      - "@ZDYZ2-🇺🇸 United States 07"
+      - "@ZDYZ2-🇫🇷 France 43"
+      - "@ZDYZ2-🇸🇬 Singapore 10"
+      - "@ZDYZ2-🇭🇰 Hong Kong 12"
+      - "@ZDYZ2-🇭🇰 Hong Kong 06"
+      - "@ZDYZ2-🇸🇬 Singapore 07"
+      - "@ZDYZ2-🇩🇪 Germany 03"
+      - "@ZDYZ2-🇸🇬 Singapore 08"
+      - "@ZDYZ2-🇮🇶 Iraq 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 07"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇮🇳 India 02"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇫🇷 France 13"
+      - "@ZDYZ2-🇻🇳 Viet Nam 01"
+      - "@ZDYZ2-🇰🇷 South Korea 02"
+      - "@ZDYZ2-🇯🇵 Japan 10"
+      - "@ZDYZ2-🇰🇷 South Korea 01"
+      - "@ZDYZ2-🇻🇳 Viet Nam 02"
+      - "@ZDYZ2-🇸🇬 Singapore 03"
+      - "@ZDYZ2-🇳🇱 Netherlands 07"
+      - "@ZDYZ2-🇺🇸 United States 15"
+      - "@ZDYZ2-🇫🇷 France 09"
+      - "@ZDYZ2-🇭🇰 Hong Kong 04"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,17 +264,62 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_687 | 6.81Mb
-      - SG_592 |76.38Mb
-      - Relay_-🇺🇸US_34 |23.91Mb
-      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
-      - HK_404 |62.38Mb
-      - _03 | 3.82Mb
-      - disney_netflix_IL (2)
-      - SG_596 |62.23Mb
-      - US_1027
-      - RO_869
-      - IM_671
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 01"
+      - "@ZDYZ2-🇯🇵 Japan 09"
+      - "@ZDYZ2-🇺🇸 United States 26"
+      - "@ZDYZ2-🇫🇷 France 56"
+      - "@ZDYZ2-🇨🇦 Canada 03"
+      - "@ZDYZ2-🇫🇷 France 59"
+      - "@ZDYZ2-🇫🇷 France 53"
+      - "@ZDYZ2-🇺🇸 United States 13"
+      - "@ZDYZ2-🇫🇷 France 61"
+      - "@ZDYZ2-🇫🇷 France 54"
+      - "@ZDYZ2-🇫🇷 France 46"
+      - "@ZDYZ2-🇯🇵 Japan 02"
+      - "@ZDYZ2-🇫🇷 France 44"
+      - "@ZDYZ2-🇫🇷 France 11"
+      - "@ZDYZ2-🇺🇸 United States 20"
+      - "@ZDYZ2-🇩🇪 Germany 02"
+      - "@ZDYZ2-🇫🇷 France 07"
+      - "@ZDYZ2-🇺🇸 United States 10"
+      - "@ZDYZ2-🇰🇷 South Korea 04"
+      - "@ZDYZ2-🇺🇸 United States 23"
+      - "@ZDYZ2-🇨🇦 Canada 01"
+      - "@ZDYZ2-🇺🇸 United States 25"
+      - "@ZDYZ2-🇺🇸 United States 04"
+      - "@ZDYZ2-🇫🇷 France 42"
+      - "@ZDYZ2-🇺🇸 United States 16"
+      - "@ZDYZ2-🇸🇬 Singapore 12"
+      - "@ZDYZ2-🇫🇷 France 05"
+      - "@ZDYZ2-🇬🇧 United Kingdom 06"
+      - "@ZDYZ2-🇯🇵 Japan 03"
+      - "@ZDYZ2-🇯🇵 Japan 04"
+      - "@ZDYZ2-🇫🇷 France 71"
+      - "@ZDYZ2-🇺🇸 United States 07"
+      - "@ZDYZ2-🇫🇷 France 43"
+      - "@ZDYZ2-🇸🇬 Singapore 10"
+      - "@ZDYZ2-🇭🇰 Hong Kong 12"
+      - "@ZDYZ2-🇭🇰 Hong Kong 06"
+      - "@ZDYZ2-🇸🇬 Singapore 07"
+      - "@ZDYZ2-🇩🇪 Germany 03"
+      - "@ZDYZ2-🇸🇬 Singapore 08"
+      - "@ZDYZ2-🇮🇶 Iraq 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 07"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇮🇳 India 02"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇫🇷 France 13"
+      - "@ZDYZ2-🇻🇳 Viet Nam 01"
+      - "@ZDYZ2-🇰🇷 South Korea 02"
+      - "@ZDYZ2-🇯🇵 Japan 10"
+      - "@ZDYZ2-🇰🇷 South Korea 01"
+      - "@ZDYZ2-🇻🇳 Viet Nam 02"
+      - "@ZDYZ2-🇸🇬 Singapore 03"
+      - "@ZDYZ2-🇳🇱 Netherlands 07"
+      - "@ZDYZ2-🇺🇸 United States 15"
+      - "@ZDYZ2-🇫🇷 France 09"
+      - "@ZDYZ2-🇭🇰 Hong Kong 04"
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -105,50 +330,185 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US_687 | 6.81Mb
-      - SG_592 |76.38Mb
-      - Relay_-🇺🇸US_34 |23.91Mb
-      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
-      - HK_404 |62.38Mb
-      - _03 | 3.82Mb
-      - disney_netflix_IL (2)
-      - SG_596 |62.23Mb
-      - US_1027
-      - RO_869
-      - IM_671
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 01"
+      - "@ZDYZ2-🇯🇵 Japan 09"
+      - "@ZDYZ2-🇺🇸 United States 26"
+      - "@ZDYZ2-🇫🇷 France 56"
+      - "@ZDYZ2-🇨🇦 Canada 03"
+      - "@ZDYZ2-🇫🇷 France 59"
+      - "@ZDYZ2-🇫🇷 France 53"
+      - "@ZDYZ2-🇺🇸 United States 13"
+      - "@ZDYZ2-🇫🇷 France 61"
+      - "@ZDYZ2-🇫🇷 France 54"
+      - "@ZDYZ2-🇫🇷 France 46"
+      - "@ZDYZ2-🇯🇵 Japan 02"
+      - "@ZDYZ2-🇫🇷 France 44"
+      - "@ZDYZ2-🇫🇷 France 11"
+      - "@ZDYZ2-🇺🇸 United States 20"
+      - "@ZDYZ2-🇩🇪 Germany 02"
+      - "@ZDYZ2-🇫🇷 France 07"
+      - "@ZDYZ2-🇺🇸 United States 10"
+      - "@ZDYZ2-🇰🇷 South Korea 04"
+      - "@ZDYZ2-🇺🇸 United States 23"
+      - "@ZDYZ2-🇨🇦 Canada 01"
+      - "@ZDYZ2-🇺🇸 United States 25"
+      - "@ZDYZ2-🇺🇸 United States 04"
+      - "@ZDYZ2-🇫🇷 France 42"
+      - "@ZDYZ2-🇺🇸 United States 16"
+      - "@ZDYZ2-🇸🇬 Singapore 12"
+      - "@ZDYZ2-🇫🇷 France 05"
+      - "@ZDYZ2-🇬🇧 United Kingdom 06"
+      - "@ZDYZ2-🇯🇵 Japan 03"
+      - "@ZDYZ2-🇯🇵 Japan 04"
+      - "@ZDYZ2-🇫🇷 France 71"
+      - "@ZDYZ2-🇺🇸 United States 07"
+      - "@ZDYZ2-🇫🇷 France 43"
+      - "@ZDYZ2-🇸🇬 Singapore 10"
+      - "@ZDYZ2-🇭🇰 Hong Kong 12"
+      - "@ZDYZ2-🇭🇰 Hong Kong 06"
+      - "@ZDYZ2-🇸🇬 Singapore 07"
+      - "@ZDYZ2-🇩🇪 Germany 03"
+      - "@ZDYZ2-🇸🇬 Singapore 08"
+      - "@ZDYZ2-🇮🇶 Iraq 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 07"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇮🇳 India 02"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇫🇷 France 13"
+      - "@ZDYZ2-🇻🇳 Viet Nam 01"
+      - "@ZDYZ2-🇰🇷 South Korea 02"
+      - "@ZDYZ2-🇯🇵 Japan 10"
+      - "@ZDYZ2-🇰🇷 South Korea 01"
+      - "@ZDYZ2-🇻🇳 Viet Nam 02"
+      - "@ZDYZ2-🇸🇬 Singapore 03"
+      - "@ZDYZ2-🇳🇱 Netherlands 07"
+      - "@ZDYZ2-🇺🇸 United States 15"
+      - "@ZDYZ2-🇫🇷 France 09"
+      - "@ZDYZ2-🇭🇰 Hong Kong 04"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US_687 | 6.81Mb
-      - SG_592 |76.38Mb
-      - Relay_-🇺🇸US_34 |23.91Mb
-      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
-      - HK_404 |62.38Mb
-      - _03 | 3.82Mb
-      - disney_netflix_IL (2)
-      - SG_596 |62.23Mb
-      - US_1027
-      - RO_869
-      - IM_671
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 01"
+      - "@ZDYZ2-🇯🇵 Japan 09"
+      - "@ZDYZ2-🇺🇸 United States 26"
+      - "@ZDYZ2-🇫🇷 France 56"
+      - "@ZDYZ2-🇨🇦 Canada 03"
+      - "@ZDYZ2-🇫🇷 France 59"
+      - "@ZDYZ2-🇫🇷 France 53"
+      - "@ZDYZ2-🇺🇸 United States 13"
+      - "@ZDYZ2-🇫🇷 France 61"
+      - "@ZDYZ2-🇫🇷 France 54"
+      - "@ZDYZ2-🇫🇷 France 46"
+      - "@ZDYZ2-🇯🇵 Japan 02"
+      - "@ZDYZ2-🇫🇷 France 44"
+      - "@ZDYZ2-🇫🇷 France 11"
+      - "@ZDYZ2-🇺🇸 United States 20"
+      - "@ZDYZ2-🇩🇪 Germany 02"
+      - "@ZDYZ2-🇫🇷 France 07"
+      - "@ZDYZ2-🇺🇸 United States 10"
+      - "@ZDYZ2-🇰🇷 South Korea 04"
+      - "@ZDYZ2-🇺🇸 United States 23"
+      - "@ZDYZ2-🇨🇦 Canada 01"
+      - "@ZDYZ2-🇺🇸 United States 25"
+      - "@ZDYZ2-🇺🇸 United States 04"
+      - "@ZDYZ2-🇫🇷 France 42"
+      - "@ZDYZ2-🇺🇸 United States 16"
+      - "@ZDYZ2-🇸🇬 Singapore 12"
+      - "@ZDYZ2-🇫🇷 France 05"
+      - "@ZDYZ2-🇬🇧 United Kingdom 06"
+      - "@ZDYZ2-🇯🇵 Japan 03"
+      - "@ZDYZ2-🇯🇵 Japan 04"
+      - "@ZDYZ2-🇫🇷 France 71"
+      - "@ZDYZ2-🇺🇸 United States 07"
+      - "@ZDYZ2-🇫🇷 France 43"
+      - "@ZDYZ2-🇸🇬 Singapore 10"
+      - "@ZDYZ2-🇭🇰 Hong Kong 12"
+      - "@ZDYZ2-🇭🇰 Hong Kong 06"
+      - "@ZDYZ2-🇸🇬 Singapore 07"
+      - "@ZDYZ2-🇩🇪 Germany 03"
+      - "@ZDYZ2-🇸🇬 Singapore 08"
+      - "@ZDYZ2-🇮🇶 Iraq 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 07"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇮🇳 India 02"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇫🇷 France 13"
+      - "@ZDYZ2-🇻🇳 Viet Nam 01"
+      - "@ZDYZ2-🇰🇷 South Korea 02"
+      - "@ZDYZ2-🇯🇵 Japan 10"
+      - "@ZDYZ2-🇰🇷 South Korea 01"
+      - "@ZDYZ2-🇻🇳 Viet Nam 02"
+      - "@ZDYZ2-🇸🇬 Singapore 03"
+      - "@ZDYZ2-🇳🇱 Netherlands 07"
+      - "@ZDYZ2-🇺🇸 United States 15"
+      - "@ZDYZ2-🇫🇷 France 09"
+      - "@ZDYZ2-🇭🇰 Hong Kong 04"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_687 | 6.81Mb
-      - SG_592 |76.38Mb
-      - Relay_-🇺🇸US_34 |23.91Mb
-      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
-      - HK_404 |62.38Mb
-      - _03 | 3.82Mb
-      - disney_netflix_IL (2)
-      - SG_596 |62.23Mb
-      - US_1027
-      - RO_869
-      - IM_671
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 01"
+      - "@ZDYZ2-🇯🇵 Japan 09"
+      - "@ZDYZ2-🇺🇸 United States 26"
+      - "@ZDYZ2-🇫🇷 France 56"
+      - "@ZDYZ2-🇨🇦 Canada 03"
+      - "@ZDYZ2-🇫🇷 France 59"
+      - "@ZDYZ2-🇫🇷 France 53"
+      - "@ZDYZ2-🇺🇸 United States 13"
+      - "@ZDYZ2-🇫🇷 France 61"
+      - "@ZDYZ2-🇫🇷 France 54"
+      - "@ZDYZ2-🇫🇷 France 46"
+      - "@ZDYZ2-🇯🇵 Japan 02"
+      - "@ZDYZ2-🇫🇷 France 44"
+      - "@ZDYZ2-🇫🇷 France 11"
+      - "@ZDYZ2-🇺🇸 United States 20"
+      - "@ZDYZ2-🇩🇪 Germany 02"
+      - "@ZDYZ2-🇫🇷 France 07"
+      - "@ZDYZ2-🇺🇸 United States 10"
+      - "@ZDYZ2-🇰🇷 South Korea 04"
+      - "@ZDYZ2-🇺🇸 United States 23"
+      - "@ZDYZ2-🇨🇦 Canada 01"
+      - "@ZDYZ2-🇺🇸 United States 25"
+      - "@ZDYZ2-🇺🇸 United States 04"
+      - "@ZDYZ2-🇫🇷 France 42"
+      - "@ZDYZ2-🇺🇸 United States 16"
+      - "@ZDYZ2-🇸🇬 Singapore 12"
+      - "@ZDYZ2-🇫🇷 France 05"
+      - "@ZDYZ2-🇬🇧 United Kingdom 06"
+      - "@ZDYZ2-🇯🇵 Japan 03"
+      - "@ZDYZ2-🇯🇵 Japan 04"
+      - "@ZDYZ2-🇫🇷 France 71"
+      - "@ZDYZ2-🇺🇸 United States 07"
+      - "@ZDYZ2-🇫🇷 France 43"
+      - "@ZDYZ2-🇸🇬 Singapore 10"
+      - "@ZDYZ2-🇭🇰 Hong Kong 12"
+      - "@ZDYZ2-🇭🇰 Hong Kong 06"
+      - "@ZDYZ2-🇸🇬 Singapore 07"
+      - "@ZDYZ2-🇩🇪 Germany 03"
+      - "@ZDYZ2-🇸🇬 Singapore 08"
+      - "@ZDYZ2-🇮🇶 Iraq 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 07"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇮🇳 India 02"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇫🇷 France 13"
+      - "@ZDYZ2-🇻🇳 Viet Nam 01"
+      - "@ZDYZ2-🇰🇷 South Korea 02"
+      - "@ZDYZ2-🇯🇵 Japan 10"
+      - "@ZDYZ2-🇰🇷 South Korea 01"
+      - "@ZDYZ2-🇻🇳 Viet Nam 02"
+      - "@ZDYZ2-🇸🇬 Singapore 03"
+      - "@ZDYZ2-🇳🇱 Netherlands 07"
+      - "@ZDYZ2-🇺🇸 United States 15"
+      - "@ZDYZ2-🇫🇷 France 09"
+      - "@ZDYZ2-🇭🇰 Hong Kong 04"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,17 +524,62 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_687 | 6.81Mb
-      - SG_592 |76.38Mb
-      - Relay_-🇺🇸US_34 |23.91Mb
-      - Relay_🏁ZZ-🏁ZZ_835 |28.27Mb
-      - HK_404 |62.38Mb
-      - _03 | 3.82Mb
-      - disney_netflix_IL (2)
-      - SG_596 |62.23Mb
-      - US_1027
-      - RO_869
-      - IM_671
+      - "@ZDYZ2-🇯🇵 Japan 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 01"
+      - "@ZDYZ2-🇯🇵 Japan 09"
+      - "@ZDYZ2-🇺🇸 United States 26"
+      - "@ZDYZ2-🇫🇷 France 56"
+      - "@ZDYZ2-🇨🇦 Canada 03"
+      - "@ZDYZ2-🇫🇷 France 59"
+      - "@ZDYZ2-🇫🇷 France 53"
+      - "@ZDYZ2-🇺🇸 United States 13"
+      - "@ZDYZ2-🇫🇷 France 61"
+      - "@ZDYZ2-🇫🇷 France 54"
+      - "@ZDYZ2-🇫🇷 France 46"
+      - "@ZDYZ2-🇯🇵 Japan 02"
+      - "@ZDYZ2-🇫🇷 France 44"
+      - "@ZDYZ2-🇫🇷 France 11"
+      - "@ZDYZ2-🇺🇸 United States 20"
+      - "@ZDYZ2-🇩🇪 Germany 02"
+      - "@ZDYZ2-🇫🇷 France 07"
+      - "@ZDYZ2-🇺🇸 United States 10"
+      - "@ZDYZ2-🇰🇷 South Korea 04"
+      - "@ZDYZ2-🇺🇸 United States 23"
+      - "@ZDYZ2-🇨🇦 Canada 01"
+      - "@ZDYZ2-🇺🇸 United States 25"
+      - "@ZDYZ2-🇺🇸 United States 04"
+      - "@ZDYZ2-🇫🇷 France 42"
+      - "@ZDYZ2-🇺🇸 United States 16"
+      - "@ZDYZ2-🇸🇬 Singapore 12"
+      - "@ZDYZ2-🇫🇷 France 05"
+      - "@ZDYZ2-🇬🇧 United Kingdom 06"
+      - "@ZDYZ2-🇯🇵 Japan 03"
+      - "@ZDYZ2-🇯🇵 Japan 04"
+      - "@ZDYZ2-🇫🇷 France 71"
+      - "@ZDYZ2-🇺🇸 United States 07"
+      - "@ZDYZ2-🇫🇷 France 43"
+      - "@ZDYZ2-🇸🇬 Singapore 10"
+      - "@ZDYZ2-🇭🇰 Hong Kong 12"
+      - "@ZDYZ2-🇭🇰 Hong Kong 06"
+      - "@ZDYZ2-🇸🇬 Singapore 07"
+      - "@ZDYZ2-🇩🇪 Germany 03"
+      - "@ZDYZ2-🇸🇬 Singapore 08"
+      - "@ZDYZ2-🇮🇶 Iraq 01"
+      - "@ZDYZ2-🇭🇰 Hong Kong 07"
+      - "@ZDYZ2-🇮🇳 India 01"
+      - "@ZDYZ2-🇮🇳 India 02"
+      - "@ZDYZ2-🇸🇬 Singapore 01"
+      - "@ZDYZ2-🇫🇷 France 13"
+      - "@ZDYZ2-🇻🇳 Viet Nam 01"
+      - "@ZDYZ2-🇰🇷 South Korea 02"
+      - "@ZDYZ2-🇯🇵 Japan 10"
+      - "@ZDYZ2-🇰🇷 South Korea 01"
+      - "@ZDYZ2-🇻🇳 Viet Nam 02"
+      - "@ZDYZ2-🇸🇬 Singapore 03"
+      - "@ZDYZ2-🇳🇱 Netherlands 07"
+      - "@ZDYZ2-🇺🇸 United States 15"
+      - "@ZDYZ2-🇫🇷 France 09"
+      - "@ZDYZ2-🇭🇰 Hong Kong 04"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
