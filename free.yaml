@@ -5,51 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本|01|x1, server: dhwksb.xzcloud.pro, port: 39972, type: vmess, uuid: fdad3ac0-ef88-4ac2-9269-4475c51ea551, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 土耳其|01|x1, server: dhwksb.xzcloud.pro, port: 53994, type: vmess, uuid: fdad3ac0-ef88-4ac2-9269-4475c51ea551, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 印度|01|x1, server: dhwksb.xzcloud.pro, port: 21289, type: vmess, uuid: fdad3ac0-ef88-4ac2-9269-4475c51ea551, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国|01|x1, server: dhwksb.xzcloud.pro, port: 41140, type: vmess, uuid: fdad3ac0-ef88-4ac2-9269-4475c51ea551, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国|01|x1, server: dhwksb.xzcloud.pro, port: 24643, type: vmess, uuid: fdad3ac0-ef88-4ac2-9269-4475c51ea551, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 荷兰|01, server: dhwksb.xzcloud.pro, port: 25821, type: vmess, uuid: fdad3ac0-ef88-4ac2-9269-4475c51ea551, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡|01|x1, server: dhwksb.xzcloud.pro, port: 30693, type: vmess, uuid: fdad3ac0-ef88-4ac2-9269-4475c51ea551, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港-15.15MB/s, server: 42.3.68.18, port: 55455, type: vmess, uuid: d2ce45e6-9f22-492d-d81d-d639067a7583, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 42.3.68.18}, udp: true}
+  - {name: 新加坡-766.7KB/s, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 美国-4.99MB/s, server: 107.167.30.132, port: 43900, type: vmess, uuid: 58e560b4-bba6-4843-be5f-83321022fa0d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本|01|x1
-      - 土耳其|01|x1
-      - 印度|01|x1
-      - 英国|01|x1
-      - 德国|01|x1
-      - 荷兰|01
-      - 新加坡|01|x1
+      - 香港-15.15MB/s
+      - 新加坡-766.7KB/s
+      - 美国-4.99MB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本|01|x1
-      - 土耳其|01|x1
-      - 印度|01|x1
-      - 英国|01|x1
-      - 德国|01|x1
-      - 荷兰|01
-      - 新加坡|01|x1
+      - 香港-15.15MB/s
+      - 新加坡-766.7KB/s
+      - 美国-4.99MB/s
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本|01|x1
-      - 土耳其|01|x1
-      - 印度|01|x1
-      - 英国|01|x1
-      - 德国|01|x1
-      - 荷兰|01
-      - 新加坡|01|x1
+      - 香港-15.15MB/s
+      - 新加坡-766.7KB/s
+      - 美国-4.99MB/s
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,55 +52,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本|01|x1
-      - 土耳其|01|x1
-      - 印度|01|x1
-      - 英国|01|x1
-      - 德国|01|x1
-      - 荷兰|01
-      - 新加坡|01|x1
+      - 香港-15.15MB/s
+      - 新加坡-766.7KB/s
+      - 美国-4.99MB/s
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港-15.15MB/s
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本|01|x1
-      - 土耳其|01|x1
-      - 印度|01|x1
-      - 英国|01|x1
-      - 德国|01|x1
-      - 荷兰|01
-      - 新加坡|01|x1
+      - 香港-15.15MB/s
+      - 新加坡-766.7KB/s
+      - 美国-4.99MB/s
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本|01|x1
-      - 土耳其|01|x1
-      - 印度|01|x1
-      - 英国|01|x1
-      - 德国|01|x1
-      - 荷兰|01
-      - 新加坡|01|x1
+      - 香港-15.15MB/s
+      - 新加坡-766.7KB/s
+      - 美国-4.99MB/s
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本|01|x1
-      - 土耳其|01|x1
-      - 印度|01|x1
-      - 英国|01|x1
-      - 德国|01|x1
-      - 荷兰|01
-      - 新加坡|01|x1
+      - 香港-15.15MB/s
+      - 新加坡-766.7KB/s
+      - 美国-4.99MB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +101,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本|01|x1
-      - 土耳其|01|x1
-      - 印度|01|x1
-      - 英国|01|x1
-      - 德国|01|x1
-      - 荷兰|01
-      - 新加坡|01|x1
+      - 香港-15.15MB/s
+      - 新加坡-766.7KB/s
+      - 美国-4.99MB/s
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
