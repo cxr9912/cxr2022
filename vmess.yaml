@@ -5,191 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2, server: starspeed.tbh.iosds.com, port: 26963, type: ss, cipher: chacha20-ietf-poly1305, password: e6085baa-8214-486d-8176-bc4623b75b56, udp: true}
-  - {name: 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）, server: starspeed.tbh.iosds.com, port: 47120, type: ss, cipher: chacha20-ietf-poly1305, password: faf42828-be10-4226-894d-399a4d6371ac, udp: true}
-  - {name: 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3, server: starspeed.tbh.iosds.com, port: 25854, type: ss, cipher: chacha20-ietf-poly1305, password: b4949959-cbd6-4374-83f5-9c2cd755f569, udp: true}
-  - {name: 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）, server: starspeed.tbh.iosds.com, port: 25854, type: ss, cipher: chacha20-ietf-poly1305, password: faf42828-be10-4226-894d-399a4d6371ac, udp: true}
-  - {name: 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2, server: starspeed.tbh.iosds.com, port: 25854, type: ss, cipher: chacha20-ietf-poly1305, password: e6085baa-8214-486d-8176-bc4623b75b56, udp: true}
-  - {name: 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3, server: starspeed.tbh.iosds.com, port: 47120, type: ss, cipher: chacha20-ietf-poly1305, password: b4949959-cbd6-4374-83f5-9c2cd755f569, udp: true}
-  - {name: 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）, server: starspeed.tbh.iosds.com, port: 26963, type: ss, cipher: chacha20-ietf-poly1305, password: faf42828-be10-4226-894d-399a4d6371ac, udp: true}
-  - {name: 加拿大01-南方金融专线5000M@ZDYZ2 3, server: speedip.eu.org, port: 80, type: vmess, uuid: b4949959-cbd6-4374-83f5-9c2cd755f569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: cayd1.xingsu.fun}, udp: true}
-  - {name: 英国01-南方金融专线5000M@ZDYZ2 2, server: speedip.eu.org, port: 80, type: vmess, uuid: e6085baa-8214-486d-8176-bc4623b75b56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: ukyd1.xingsu.fun}, udp: true}
-  - {name: 法国01-南方金融专线5000M@ZDYZ2, server: speedip.eu.org, port: 80, type: vmess, uuid: faf42828-be10-4226-894d-399a4d6371ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: fryd1.xingsu.fun}, udp: true}
-  - {name: 新加坡02-南方金融专线5000M@ZDYZ2 2, server: speedip.eu.org, port: 80, type: vmess, uuid: e6085baa-8214-486d-8176-bc4623b75b56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: sgyd2.xingsu.fun}, udp: true}
-  - {name: 新加坡02-南方金融专线5000M@ZDYZ2 3, server: speedip.eu.org, port: 80, type: vmess, uuid: b4949959-cbd6-4374-83f5-9c2cd755f569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: sgyd2.xingsu.fun}, udp: true}
-  - {name: 法国01-南方金融专线5000M@ZDYZ2 2, server: speedip.eu.org, port: 80, type: vmess, uuid: e6085baa-8214-486d-8176-bc4623b75b56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: fryd1.xingsu.fun}, udp: true}
-  - {name: 英国01-南方金融专线5000M@ZDYZ2 3, server: speedip.eu.org, port: 80, type: vmess, uuid: b4949959-cbd6-4374-83f5-9c2cd755f569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: ukyd1.xingsu.fun}, udp: true}
-  - {name: 美国01-南方金融专线5000M@ZDYZ2 2, server: speedip.eu.org, port: 80, type: vmess, uuid: e6085baa-8214-486d-8176-bc4623b75b56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: usyd1.xingsu.fun}, udp: true}
-  - {name: 美国02-南方金融专线5000M@ZDYZ2 2, server: speedip.eu.org, port: 80, type: vmess, uuid: e6085baa-8214-486d-8176-bc4623b75b56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: usyd2.xingsu.fun}, udp: true}
-  - {name: 美国01-南方金融专线5000M@ZDYZ2, server: speedip.eu.org, port: 80, type: vmess, uuid: faf42828-be10-4226-894d-399a4d6371ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: usyd1.xingsu.fun}, udp: true}
-  - {name: 法国01-南方金融专线5000M@ZDYZ2 3, server: speedip.eu.org, port: 80, type: vmess, uuid: b4949959-cbd6-4374-83f5-9c2cd755f569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: fryd1.xingsu.fun}, udp: true}
-  - {name: 美国02-南方金融专线5000M@ZDYZ2, server: speedip.eu.org, port: 80, type: vmess, uuid: faf42828-be10-4226-894d-399a4d6371ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: usyd2.xingsu.fun}, udp: true}
-  - {name: 新加坡02-南方金融专线5000M@ZDYZ2, server: speedip.eu.org, port: 80, type: vmess, uuid: faf42828-be10-4226-894d-399a4d6371ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: sgyd2.xingsu.fun}, udp: true}
-  - {name: 香港02-南方金融专线5000M@ZDYZ2 2, server: speedip.eu.org, port: 80, type: vmess, uuid: e6085baa-8214-486d-8176-bc4623b75b56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: hkyd2.xingsu.fun}, udp: true}
-  - {name: 美国02-南方金融专线5000M@ZDYZ2 3, server: speedip.eu.org, port: 80, type: vmess, uuid: b4949959-cbd6-4374-83f5-9c2cd755f569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: usyd2.xingsu.fun}, udp: true}
-  - {name: 香港02-南方金融专线5000M@ZDYZ2, server: speedip.eu.org, port: 80, type: vmess, uuid: faf42828-be10-4226-894d-399a4d6371ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: hkyd2.xingsu.fun}, udp: true}
-  - {name: 日本01-南方金融专线5000M@ZDYZ2 2, server: speedip.eu.org, port: 80, type: vmess, uuid: e6085baa-8214-486d-8176-bc4623b75b56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: jpyd1.xingsu.fun}, udp: true}
-  - {name: 香港01-南方金融专线5000M@ZDYZ2 2, server: speedip.eu.org, port: 80, type: vmess, uuid: e6085baa-8214-486d-8176-bc4623b75b56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: hkyd1.xingsu.fun}, udp: true}
-  - {name: 香港02-南方金融专线5000M@ZDYZ2 3, server: speedip.eu.org, port: 80, type: vmess, uuid: b4949959-cbd6-4374-83f5-9c2cd755f569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: hkyd2.xingsu.fun}, udp: true}
-  - {name: 台湾01-南方金融专线5000M@ZDYZ2 2, server: speedip.eu.org, port: 80, type: vmess, uuid: e6085baa-8214-486d-8176-bc4623b75b56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: twyd1.xingsu.fun}, udp: true}
-  - {name: 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2, server: starspeed.tbh.iosds.com, port: 19290, type: ss, cipher: chacha20-ietf-poly1305, password: e6085baa-8214-486d-8176-bc4623b75b56, udp: true}
-  - {name: 香港01-南方金融专线5000M@ZDYZ2, server: speedip.eu.org, port: 80, type: vmess, uuid: faf42828-be10-4226-894d-399a4d6371ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: hkyd1.xingsu.fun}, udp: true}
-  - {name: 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3, server: starspeed.tbh.iosds.com, port: 19290, type: ss, cipher: chacha20-ietf-poly1305, password: b4949959-cbd6-4374-83f5-9c2cd755f569, udp: true}
-  - {name: 新加坡01-南方金融专线5000M@ZDYZ2 3, server: speedip.eu.org, port: 80, type: vmess, uuid: b4949959-cbd6-4374-83f5-9c2cd755f569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: sgyd1.xingsu.fun}, udp: true}
-  - {name: 印度01-南方金融专线5000M@ZDYZ2 3, server: speedip.eu.org, port: 80, type: vmess, uuid: b4949959-cbd6-4374-83f5-9c2cd755f569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: inyd1.xingsu.fun}, udp: true}
-  - {name: 印度01-南方金融专线5000M@ZDYZ2 2, server: speedip.eu.org, port: 80, type: vmess, uuid: e6085baa-8214-486d-8176-bc4623b75b56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: inyd1.xingsu.fun}, udp: true}
-  - {name: 印度01-南方金融专线5000M@ZDYZ2, server: speedip.eu.org, port: 80, type: vmess, uuid: faf42828-be10-4226-894d-399a4d6371ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: inyd1.xingsu.fun}, udp: true}
-  - {name: 越南01-南方金融专线5000M@ZDYZ2, server: speedip.eu.org, port: 80, type: vmess, uuid: faf42828-be10-4226-894d-399a4d6371ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: vnyd1.xingsu.fun}, udp: true}
-  - {name: 越南01-南方金融专线5000M@ZDYZ2 2, server: speedip.eu.org, port: 80, type: vmess, uuid: e6085baa-8214-486d-8176-bc4623b75b56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: vnyd1.xingsu.fun}, udp: true}
-  - {name: 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）, server: starspeed.tbh.iosds.com, port: 19290, type: ss, cipher: chacha20-ietf-poly1305, password: faf42828-be10-4226-894d-399a4d6371ac, udp: true}
-  - {name: 英国01-南方金融专线5000M@ZDYZ2, server: speedip.eu.org, port: 80, type: vmess, uuid: faf42828-be10-4226-894d-399a4d6371ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: ukyd1.xingsu.fun}, udp: true}
-  - {name: 台湾01-南方金融专线5000M@ZDYZ2 3, server: speedip.eu.org, port: 80, type: vmess, uuid: b4949959-cbd6-4374-83f5-9c2cd755f569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: twyd1.xingsu.fun}, udp: true}
-  - {name: 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2, server: starspeed.tbh.iosds.com, port: 47120, type: ss, cipher: chacha20-ietf-poly1305, password: e6085baa-8214-486d-8176-bc4623b75b56, udp: true}
-  - {name: 越南01-南方金融专线5000M@ZDYZ2 3, server: speedip.eu.org, port: 80, type: vmess, uuid: b4949959-cbd6-4374-83f5-9c2cd755f569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: vnyd1.xingsu.fun}, udp: true}
-  - {name: 日本01-南方金融专线5000M@ZDYZ2, server: speedip.eu.org, port: 80, type: vmess, uuid: faf42828-be10-4226-894d-399a4d6371ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xingsuyun, ws-headers: {Host: jpyd1.xingsu.fun}, udp: true}
+  - {name: V1 | 日本 02, server: cfzzb.starnetcn.top, port: 81, type: vmess, uuid: e4e9c59c-8444-4f6e-882b-123ce6d16c8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1c1123, ws-headers: {Host: 141.147.156.33}, udp: true}
+  - {name: V1 | 日本 01, server: cfzzo.starnetcn.top, port: 81, type: vmess, uuid: e4e9c59c-8444-4f6e-882b-123ce6d16c8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1c1123, ws-headers: {Host: 141.147.156.33}, udp: true}
+  - {name: V1 | 美国 03, server: hcaptcha.com, port: 443, type: vmess, uuid: e4e9c59c-8444-4f6e-882b-123ce6d16c8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /1c1123, ws-headers: {Host: nioobs.starnetcn.top}, udp: true}
+  - {name: V1 | 新加坡 01, server: cfzzo.starnetcn.top, port: 81, type: vmess, uuid: e4e9c59c-8444-4f6e-882b-123ce6d16c8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1c1123, ws-headers: {Host: 127.0.0.1}, udp: true}
+  - {name: V1 | 新加坡 02, server: cfzzb.starnetcn.top, port: 81, type: vmess, uuid: e4e9c59c-8444-4f6e-882b-123ce6d16c8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1c1123, ws-headers: {Host: 127.0.0.1}, udp: true}
+  - {name: V1 | 韩国 01, server: cfzzo.starnetcn.top, port: 81, type: vmess, uuid: e4e9c59c-8444-4f6e-882b-123ce6d16c8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1c1123, ws-headers: {Host: cfzzs.starnetcn.top}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 加拿大01-南方金融专线5000M@ZDYZ2 3
-      - 英国01-南方金融专线5000M@ZDYZ2 2
-      - 法国01-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 3
-      - 法国01-南方金融专线5000M@ZDYZ2 2
-      - 英国01-南方金融专线5000M@ZDYZ2 3
-      - 美国01-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 2
-      - 美国01-南方金融专线5000M@ZDYZ2
-      - 法国01-南方金融专线5000M@ZDYZ2 3
-      - 美国02-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2
-      - 香港02-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 3
-      - 香港02-南方金融专线5000M@ZDYZ2
-      - 日本01-南方金融专线5000M@ZDYZ2 2
-      - 香港01-南方金融专线5000M@ZDYZ2 2
-      - 香港02-南方金融专线5000M@ZDYZ2 3
-      - 台湾01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-南方金融专线5000M@ZDYZ2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 2
-      - 印度01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 英国01-南方金融专线5000M@ZDYZ2
-      - 台湾01-南方金融专线5000M@ZDYZ2 3
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 越南01-南方金融专线5000M@ZDYZ2 3
-      - 日本01-南方金融专线5000M@ZDYZ2
+      - V1 | 日本 02
+      - V1 | 日本 01
+      - V1 | 美国 03
+      - V1 | 新加坡 01
+      - V1 | 新加坡 02
+      - V1 | 韩国 01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 加拿大01-南方金融专线5000M@ZDYZ2 3
-      - 英国01-南方金融专线5000M@ZDYZ2 2
-      - 法国01-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 3
-      - 法国01-南方金融专线5000M@ZDYZ2 2
-      - 英国01-南方金融专线5000M@ZDYZ2 3
-      - 美国01-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 2
-      - 美国01-南方金融专线5000M@ZDYZ2
-      - 法国01-南方金融专线5000M@ZDYZ2 3
-      - 美国02-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2
-      - 香港02-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 3
-      - 香港02-南方金融专线5000M@ZDYZ2
-      - 日本01-南方金融专线5000M@ZDYZ2 2
-      - 香港01-南方金融专线5000M@ZDYZ2 2
-      - 香港02-南方金融专线5000M@ZDYZ2 3
-      - 台湾01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-南方金融专线5000M@ZDYZ2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 2
-      - 印度01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 英国01-南方金融专线5000M@ZDYZ2
-      - 台湾01-南方金融专线5000M@ZDYZ2 3
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 越南01-南方金融专线5000M@ZDYZ2 3
-      - 日本01-南方金融专线5000M@ZDYZ2
+      - V1 | 日本 02
+      - V1 | 日本 01
+      - V1 | 美国 03
+      - V1 | 新加坡 01
+      - V1 | 新加坡 02
+      - V1 | 韩国 01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 加拿大01-南方金融专线5000M@ZDYZ2 3
-      - 英国01-南方金融专线5000M@ZDYZ2 2
-      - 法国01-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 3
-      - 法国01-南方金融专线5000M@ZDYZ2 2
-      - 英国01-南方金融专线5000M@ZDYZ2 3
-      - 美国01-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 2
-      - 美国01-南方金融专线5000M@ZDYZ2
-      - 法国01-南方金融专线5000M@ZDYZ2 3
-      - 美国02-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2
-      - 香港02-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 3
-      - 香港02-南方金融专线5000M@ZDYZ2
-      - 日本01-南方金融专线5000M@ZDYZ2 2
-      - 香港01-南方金融专线5000M@ZDYZ2 2
-      - 香港02-南方金融专线5000M@ZDYZ2 3
-      - 台湾01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-南方金融专线5000M@ZDYZ2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 2
-      - 印度01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 英国01-南方金融专线5000M@ZDYZ2
-      - 台湾01-南方金融专线5000M@ZDYZ2 3
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 越南01-南方金融专线5000M@ZDYZ2 3
-      - 日本01-南方金融专线5000M@ZDYZ2
+      - V1 | 日本 02
+      - V1 | 日本 01
+      - V1 | 美国 03
+      - V1 | 新加坡 01
+      - V1 | 新加坡 02
+      - V1 | 韩国 01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -208,205 +64,51 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 加拿大01-南方金融专线5000M@ZDYZ2 3
-      - 英国01-南方金融专线5000M@ZDYZ2 2
-      - 法国01-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 3
-      - 法国01-南方金融专线5000M@ZDYZ2 2
-      - 英国01-南方金融专线5000M@ZDYZ2 3
-      - 美国01-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 2
-      - 美国01-南方金融专线5000M@ZDYZ2
-      - 法国01-南方金融专线5000M@ZDYZ2 3
-      - 美国02-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2
-      - 香港02-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 3
-      - 香港02-南方金融专线5000M@ZDYZ2
-      - 日本01-南方金融专线5000M@ZDYZ2 2
-      - 香港01-南方金融专线5000M@ZDYZ2 2
-      - 香港02-南方金融专线5000M@ZDYZ2 3
-      - 台湾01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-南方金融专线5000M@ZDYZ2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 2
-      - 印度01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 英国01-南方金融专线5000M@ZDYZ2
-      - 台湾01-南方金融专线5000M@ZDYZ2 3
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 越南01-南方金融专线5000M@ZDYZ2 3
-      - 日本01-南方金融专线5000M@ZDYZ2
+      - V1 | 日本 02
+      - V1 | 日本 01
+      - V1 | 美国 03
+      - V1 | 新加坡 01
+      - V1 | 新加坡 02
+      - V1 | 韩国 01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 香港02-南方金融专线5000M@ZDYZ2 2
-      - 香港02-南方金融专线5000M@ZDYZ2
-      - 香港01-南方金融专线5000M@ZDYZ2 2
-      - 香港02-南方金融专线5000M@ZDYZ2 3
-      - 台湾01-南方金融专线5000M@ZDYZ2 2
-      - 香港01-南方金融专线5000M@ZDYZ2
-      - 台湾01-南方金融专线5000M@ZDYZ2 3
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 加拿大01-南方金融专线5000M@ZDYZ2 3
-      - 英国01-南方金融专线5000M@ZDYZ2 2
-      - 法国01-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 3
-      - 法国01-南方金融专线5000M@ZDYZ2 2
-      - 英国01-南方金融专线5000M@ZDYZ2 3
-      - 美国01-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 2
-      - 美国01-南方金融专线5000M@ZDYZ2
-      - 法国01-南方金融专线5000M@ZDYZ2 3
-      - 美国02-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2
-      - 香港02-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 3
-      - 香港02-南方金融专线5000M@ZDYZ2
-      - 日本01-南方金融专线5000M@ZDYZ2 2
-      - 香港01-南方金融专线5000M@ZDYZ2 2
-      - 香港02-南方金融专线5000M@ZDYZ2 3
-      - 台湾01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-南方金融专线5000M@ZDYZ2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 2
-      - 印度01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 英国01-南方金融专线5000M@ZDYZ2
-      - 台湾01-南方金融专线5000M@ZDYZ2 3
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 越南01-南方金融专线5000M@ZDYZ2 3
-      - 日本01-南方金融专线5000M@ZDYZ2
+      - V1 | 日本 02
+      - V1 | 日本 01
+      - V1 | 美国 03
+      - V1 | 新加坡 01
+      - V1 | 新加坡 02
+      - V1 | 韩国 01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 加拿大01-南方金融专线5000M@ZDYZ2 3
-      - 英国01-南方金融专线5000M@ZDYZ2 2
-      - 法国01-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 3
-      - 法国01-南方金融专线5000M@ZDYZ2 2
-      - 英国01-南方金融专线5000M@ZDYZ2 3
-      - 美国01-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 2
-      - 美国01-南方金融专线5000M@ZDYZ2
-      - 法国01-南方金融专线5000M@ZDYZ2 3
-      - 美国02-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2
-      - 香港02-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 3
-      - 香港02-南方金融专线5000M@ZDYZ2
-      - 日本01-南方金融专线5000M@ZDYZ2 2
-      - 香港01-南方金融专线5000M@ZDYZ2 2
-      - 香港02-南方金融专线5000M@ZDYZ2 3
-      - 台湾01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-南方金融专线5000M@ZDYZ2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 2
-      - 印度01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 英国01-南方金融专线5000M@ZDYZ2
-      - 台湾01-南方金融专线5000M@ZDYZ2 3
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 越南01-南方金融专线5000M@ZDYZ2 3
-      - 日本01-南方金融专线5000M@ZDYZ2
+      - V1 | 日本 02
+      - V1 | 日本 01
+      - V1 | 美国 03
+      - V1 | 新加坡 01
+      - V1 | 新加坡 02
+      - V1 | 韩国 01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 加拿大01-南方金融专线5000M@ZDYZ2 3
-      - 英国01-南方金融专线5000M@ZDYZ2 2
-      - 法国01-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 3
-      - 法国01-南方金融专线5000M@ZDYZ2 2
-      - 英国01-南方金融专线5000M@ZDYZ2 3
-      - 美国01-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 2
-      - 美国01-南方金融专线5000M@ZDYZ2
-      - 法国01-南方金融专线5000M@ZDYZ2 3
-      - 美国02-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2
-      - 香港02-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 3
-      - 香港02-南方金融专线5000M@ZDYZ2
-      - 日本01-南方金融专线5000M@ZDYZ2 2
-      - 香港01-南方金融专线5000M@ZDYZ2 2
-      - 香港02-南方金融专线5000M@ZDYZ2 3
-      - 台湾01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-南方金融专线5000M@ZDYZ2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 2
-      - 印度01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 英国01-南方金融专线5000M@ZDYZ2
-      - 台湾01-南方金融专线5000M@ZDYZ2 3
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 越南01-南方金融专线5000M@ZDYZ2 3
-      - 日本01-南方金融专线5000M@ZDYZ2
+      - V1 | 日本 02
+      - V1 | 日本 01
+      - V1 | 美国 03
+      - V1 | 新加坡 01
+      - V1 | 新加坡 02
+      - V1 | 韩国 01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -422,48 +124,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 日本01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 加拿大01-南方金融专线5000M@ZDYZ2 3
-      - 英国01-南方金融专线5000M@ZDYZ2 2
-      - 法国01-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 2
-      - 新加坡02-南方金融专线5000M@ZDYZ2 3
-      - 法国01-南方金融专线5000M@ZDYZ2 2
-      - 英国01-南方金融专线5000M@ZDYZ2 3
-      - 美国01-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 2
-      - 美国01-南方金融专线5000M@ZDYZ2
-      - 法国01-南方金融专线5000M@ZDYZ2 3
-      - 美国02-南方金融专线5000M@ZDYZ2
-      - 新加坡02-南方金融专线5000M@ZDYZ2
-      - 香港02-南方金融专线5000M@ZDYZ2 2
-      - 美国02-南方金融专线5000M@ZDYZ2 3
-      - 香港02-南方金融专线5000M@ZDYZ2
-      - 日本01-南方金融专线5000M@ZDYZ2 2
-      - 香港01-南方金融专线5000M@ZDYZ2 2
-      - 香港02-南方金融专线5000M@ZDYZ2 3
-      - 台湾01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 香港01-南方金融专线5000M@ZDYZ2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 3
-      - 新加坡01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 3
-      - 印度01-南方金融专线5000M@ZDYZ2 2
-      - 印度01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2
-      - 越南01-南方金融专线5000M@ZDYZ2 2
-      - 美国01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2）
-      - 英国01-南方金融专线5000M@ZDYZ2
-      - 台湾01-南方金融专线5000M@ZDYZ2 3
-      - 香港01-限时金融专线5000M@ZDYZ2（5000M@ZDYZ25000M@ZDYZ2） 2
-      - 越南01-南方金融专线5000M@ZDYZ2 3
-      - 日本01-南方金融专线5000M@ZDYZ2
+      - V1 | 日本 02
+      - V1 | 日本 01
+      - V1 | 美国 03
+      - V1 | 新加坡 01
+      - V1 | 新加坡 02
+      - V1 | 韩国 01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
