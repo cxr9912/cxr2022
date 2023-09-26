@@ -5,47 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: V1 | 日本 02, server: cfzzb.starnetcn.top, port: 81, type: vmess, uuid: e4e9c59c-8444-4f6e-882b-123ce6d16c8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1c1123, ws-headers: {Host: 141.147.156.33}, udp: true}
-  - {name: V1 | 日本 01, server: cfzzo.starnetcn.top, port: 81, type: vmess, uuid: e4e9c59c-8444-4f6e-882b-123ce6d16c8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1c1123, ws-headers: {Host: 141.147.156.33}, udp: true}
-  - {name: V1 | 美国 03, server: hcaptcha.com, port: 443, type: vmess, uuid: e4e9c59c-8444-4f6e-882b-123ce6d16c8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /1c1123, ws-headers: {Host: nioobs.starnetcn.top}, udp: true}
-  - {name: V1 | 新加坡 01, server: cfzzo.starnetcn.top, port: 81, type: vmess, uuid: e4e9c59c-8444-4f6e-882b-123ce6d16c8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1c1123, ws-headers: {Host: 127.0.0.1}, udp: true}
-  - {name: V1 | 新加坡 02, server: cfzzb.starnetcn.top, port: 81, type: vmess, uuid: e4e9c59c-8444-4f6e-882b-123ce6d16c8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1c1123, ws-headers: {Host: 127.0.0.1}, udp: true}
-  - {name: V1 | 韩国 01, server: cfzzo.starnetcn.top, port: 81, type: vmess, uuid: e4e9c59c-8444-4f6e-882b-123ce6d16c8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1c1123, ws-headers: {Host: cfzzs.starnetcn.top}, udp: true}
+  - {name: 美国-5.30MB/s, server: ci.outline-vpn.cloud, port: 43123, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知国家-5.49MB/s, server: 141.101.123.7, port: 2052, type: vmess, uuid: 4dc07574-4fc9-40db-864e-a2ca27852254, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp.bpyjc.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V1 | 日本 02
-      - V1 | 日本 01
-      - V1 | 美国 03
-      - V1 | 新加坡 01
-      - V1 | 新加坡 02
-      - V1 | 韩国 01
+      - 美国-5.30MB/s
+      - 未知国家-5.49MB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - V1 | 日本 02
-      - V1 | 日本 01
-      - V1 | 美国 03
-      - V1 | 新加坡 01
-      - V1 | 新加坡 02
-      - V1 | 韩国 01
+      - 美国-5.30MB/s
+      - 未知国家-5.49MB/s
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V1 | 日本 02
-      - V1 | 日本 01
-      - V1 | 美国 03
-      - V1 | 新加坡 01
-      - V1 | 新加坡 02
-      - V1 | 韩国 01
+      - 美国-5.30MB/s
+      - 未知国家-5.49MB/s
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,12 +48,8 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V1 | 日本 02
-      - V1 | 日本 01
-      - V1 | 美国 03
-      - V1 | 新加坡 01
-      - V1 | 新加坡 02
-      - V1 | 韩国 01
+      - 美国-5.30MB/s
+      - 未知国家-5.49MB/s
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -80,35 +60,23 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - V1 | 日本 02
-      - V1 | 日本 01
-      - V1 | 美国 03
-      - V1 | 新加坡 01
-      - V1 | 新加坡 02
-      - V1 | 韩国 01
+      - 美国-5.30MB/s
+      - 未知国家-5.49MB/s
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - V1 | 日本 02
-      - V1 | 日本 01
-      - V1 | 美国 03
-      - V1 | 新加坡 01
-      - V1 | 新加坡 02
-      - V1 | 韩国 01
+      - 美国-5.30MB/s
+      - 未知国家-5.49MB/s
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V1 | 日本 02
-      - V1 | 日本 01
-      - V1 | 美国 03
-      - V1 | 新加坡 01
-      - V1 | 新加坡 02
-      - V1 | 韩国 01
+      - 美国-5.30MB/s
+      - 未知国家-5.49MB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,12 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V1 | 日本 02
-      - V1 | 日本 01
-      - V1 | 美国 03
-      - V1 | 新加坡 01
-      - V1 | 新加坡 02
-      - V1 | 韩国 01
+      - 美国-5.30MB/s
+      - 未知国家-5.49MB/s
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
