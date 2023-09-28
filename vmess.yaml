@@ -5,31 +5,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国-5.30MB/s, server: ci.outline-vpn.cloud, port: 43123, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 未知国家-5.49MB/s, server: 141.101.123.7, port: 2052, type: vmess, uuid: 4dc07574-4fc9-40db-864e-a2ca27852254, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp.bpyjc.com}, udp: true}
+  - {name: "[DDTA]香港HKBN 01", server: cfn.alidns.moe233.org, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/7, ws-headers: {Host: dwkkjsobgvi09.cloudfront.net}, udp: true}
+  - {name: "[DDTA]泰国 02", server: cfn.alidns.moe233.org, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/22, ws-headers: {Host: d13ubur8o46pcj.cloudfront.net}, udp: true}
+  - {name: 距离下次重置剩余：6 天, server: ap-northeast.lnaspiring.com, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/42, ws-headers: {Host: d13dsoxhsk73a1.cloudfront.net}, udp: true}
+  - {name: "[IEPL]香港HKBN 03", server: 183.240.117.62, port: 42191, type: ss, cipher: aes-128-gcm, password: 5c433113-be19-43d0-a483-87d2c44ed2f6, udp: true}
+  - {name: "[DDTA]香港BGP 01", server: cfn.alidns.moe233.org, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/9, ws-headers: {Host: dnatawcm9di0z.cloudfront.net}, udp: true}
+  - {name: "[DDTA]香港HKT 01", server: ap-east-hkt.lnaspiring.com, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/11, ws-headers: {Host: d24aa72w6d27k3.cloudfront.net}, udp: true}
+  - {name: "[DDTA]荷兰 01", server: cfn.alidns.moe233.org, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/1, ws-headers: {Host: du99qi452dxg1.cloudfront.net}, udp: true}
+  - {name: "[DDTA]英国 02", server: cfn.alidns.moe233.org, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/17, ws-headers: {Host: d2pf8p0ynnkh70.cloudfront.net}, udp: true}
+  - {name: "[DDTA]土耳其 01", server: cfn.alidns.moe233.org, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/21, ws-headers: {Host: d2nq74cs9cbbzq.cloudfront.net}, udp: true}
+  - {name: "[DDTA]俄罗斯 01", server: cfn.alidns.moe233.org, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/20, ws-headers: {Host: d207gr66ulg3ul.cloudfront.net}, udp: true}
+  - {name: "[DDTA]香港BGP 02", server: ap-east.lnaspiring.com, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/9, ws-headers: {Host: dnatawcm9di0z.cloudfront.net}, udp: true}
+  - {name: "[DDTA]新加坡 02", server: ap-southeast.lnaspiring.com, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/43, ws-headers: {Host: dtsahj1gz72ox.cloudfront.net}, udp: true}
+  - {name: "[沪港]美国 03", server: shct.xcone.xyz, port: 19241, type: ss, cipher: aes-128-gcm, password: 5c433113-be19-43d0-a483-87d2c44ed2f6, udp: true}
+  - {name: "[DDTA]法国 02", server: cfn.alidns.moe233.org, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/19, ws-headers: {Host: d1da0j2hfrq186.cloudfront.net}, udp: true}
+  - {name: "[DDTA]美国 01", server: us-west.lnaspiring.com, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/2, ws-headers: {Host: d1kuoziavg1g6u.cloudfront.net}, udp: true}
+  - {name: "[IEPL]美国04", server: 183.240.117.62, port: 42192, type: ss, cipher: aes-128-gcm, password: 5c433113-be19-43d0-a483-87d2c44ed2f6, udp: true}
+  - {name: "[DDTA]新加坡 01", server: ap-southeast.lnaspiring.com, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/3, ws-headers: {Host: d28ow9oa93z2l1.cloudfront.net}, udp: true}
+  - {name: "[DDTA]泰国 01", server: ap-east-hkt.lnaspiring.com, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/22, ws-headers: {Host: d13ubur8o46pcj.cloudfront.net}, udp: true}
+  - {name: "[DDTA]台湾Hinet 02", server: cfn.alidns.moe233.org, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/13, ws-headers: {Host: d2lqppgzknfiyy.cloudfront.net}, udp: true}
+  - {name: "[DDTA]香港HKT 02", server: cfn.alidns.moe233.org, port: 80, type: vmess, uuid: 5c433113-be19-43d0-a483-87d2c44ed2f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /coco/11, ws-headers: {Host: d24aa72w6d27k3.cloudfront.net}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国-5.30MB/s
-      - 未知国家-5.49MB/s
+      - "[DDTA]香港HKBN 01"
+      - "[DDTA]泰国 02"
+      - 距离下次重置剩余：6 天
+      - "[IEPL]香港HKBN 03"
+      - "[DDTA]香港BGP 01"
+      - "[DDTA]香港HKT 01"
+      - "[DDTA]荷兰 01"
+      - "[DDTA]英国 02"
+      - "[DDTA]土耳其 01"
+      - "[DDTA]俄罗斯 01"
+      - "[DDTA]香港BGP 02"
+      - "[DDTA]新加坡 02"
+      - "[沪港]美国 03"
+      - "[DDTA]法国 02"
+      - "[DDTA]美国 01"
+      - "[IEPL]美国04"
+      - "[DDTA]新加坡 01"
+      - "[DDTA]泰国 01"
+      - "[DDTA]台湾Hinet 02"
+      - "[DDTA]香港HKT 02"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国-5.30MB/s
-      - 未知国家-5.49MB/s
+      - "[DDTA]香港HKBN 01"
+      - "[DDTA]泰国 02"
+      - 距离下次重置剩余：6 天
+      - "[IEPL]香港HKBN 03"
+      - "[DDTA]香港BGP 01"
+      - "[DDTA]香港HKT 01"
+      - "[DDTA]荷兰 01"
+      - "[DDTA]英国 02"
+      - "[DDTA]土耳其 01"
+      - "[DDTA]俄罗斯 01"
+      - "[DDTA]香港BGP 02"
+      - "[DDTA]新加坡 02"
+      - "[沪港]美国 03"
+      - "[DDTA]法国 02"
+      - "[DDTA]美国 01"
+      - "[IEPL]美国04"
+      - "[DDTA]新加坡 01"
+      - "[DDTA]泰国 01"
+      - "[DDTA]台湾Hinet 02"
+      - "[DDTA]香港HKT 02"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国-5.30MB/s
-      - 未知国家-5.49MB/s
+      - "[DDTA]香港HKBN 01"
+      - "[DDTA]泰国 02"
+      - 距离下次重置剩余：6 天
+      - "[IEPL]香港HKBN 03"
+      - "[DDTA]香港BGP 01"
+      - "[DDTA]香港HKT 01"
+      - "[DDTA]荷兰 01"
+      - "[DDTA]英国 02"
+      - "[DDTA]土耳其 01"
+      - "[DDTA]俄罗斯 01"
+      - "[DDTA]香港BGP 02"
+      - "[DDTA]新加坡 02"
+      - "[沪港]美国 03"
+      - "[DDTA]法国 02"
+      - "[DDTA]美国 01"
+      - "[IEPL]美国04"
+      - "[DDTA]新加坡 01"
+      - "[DDTA]泰国 01"
+      - "[DDTA]台湾Hinet 02"
+      - "[DDTA]香港HKT 02"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,35 +120,115 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国-5.30MB/s
-      - 未知国家-5.49MB/s
+      - "[DDTA]香港HKBN 01"
+      - "[DDTA]泰国 02"
+      - 距离下次重置剩余：6 天
+      - "[IEPL]香港HKBN 03"
+      - "[DDTA]香港BGP 01"
+      - "[DDTA]香港HKT 01"
+      - "[DDTA]荷兰 01"
+      - "[DDTA]英国 02"
+      - "[DDTA]土耳其 01"
+      - "[DDTA]俄罗斯 01"
+      - "[DDTA]香港BGP 02"
+      - "[DDTA]新加坡 02"
+      - "[沪港]美国 03"
+      - "[DDTA]法国 02"
+      - "[DDTA]美国 01"
+      - "[IEPL]美国04"
+      - "[DDTA]新加坡 01"
+      - "[DDTA]泰国 01"
+      - "[DDTA]台湾Hinet 02"
+      - "[DDTA]香港HKT 02"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - "[DDTA]香港HKBN 01"
+      - "[IEPL]香港HKBN 03"
+      - "[DDTA]香港BGP 01"
+      - "[DDTA]香港HKT 01"
+      - "[DDTA]香港BGP 02"
+      - "[沪港]美国 03"
+      - "[DDTA]台湾Hinet 02"
+      - "[DDTA]香港HKT 02"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国-5.30MB/s
-      - 未知国家-5.49MB/s
+      - "[DDTA]香港HKBN 01"
+      - "[DDTA]泰国 02"
+      - 距离下次重置剩余：6 天
+      - "[IEPL]香港HKBN 03"
+      - "[DDTA]香港BGP 01"
+      - "[DDTA]香港HKT 01"
+      - "[DDTA]荷兰 01"
+      - "[DDTA]英国 02"
+      - "[DDTA]土耳其 01"
+      - "[DDTA]俄罗斯 01"
+      - "[DDTA]香港BGP 02"
+      - "[DDTA]新加坡 02"
+      - "[沪港]美国 03"
+      - "[DDTA]法国 02"
+      - "[DDTA]美国 01"
+      - "[IEPL]美国04"
+      - "[DDTA]新加坡 01"
+      - "[DDTA]泰国 01"
+      - "[DDTA]台湾Hinet 02"
+      - "[DDTA]香港HKT 02"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国-5.30MB/s
-      - 未知国家-5.49MB/s
+      - "[DDTA]香港HKBN 01"
+      - "[DDTA]泰国 02"
+      - 距离下次重置剩余：6 天
+      - "[IEPL]香港HKBN 03"
+      - "[DDTA]香港BGP 01"
+      - "[DDTA]香港HKT 01"
+      - "[DDTA]荷兰 01"
+      - "[DDTA]英国 02"
+      - "[DDTA]土耳其 01"
+      - "[DDTA]俄罗斯 01"
+      - "[DDTA]香港BGP 02"
+      - "[DDTA]新加坡 02"
+      - "[沪港]美国 03"
+      - "[DDTA]法国 02"
+      - "[DDTA]美国 01"
+      - "[IEPL]美国04"
+      - "[DDTA]新加坡 01"
+      - "[DDTA]泰国 01"
+      - "[DDTA]台湾Hinet 02"
+      - "[DDTA]香港HKT 02"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国-5.30MB/s
-      - 未知国家-5.49MB/s
+      - "[DDTA]香港HKBN 01"
+      - "[DDTA]泰国 02"
+      - 距离下次重置剩余：6 天
+      - "[IEPL]香港HKBN 03"
+      - "[DDTA]香港BGP 01"
+      - "[DDTA]香港HKT 01"
+      - "[DDTA]荷兰 01"
+      - "[DDTA]英国 02"
+      - "[DDTA]土耳其 01"
+      - "[DDTA]俄罗斯 01"
+      - "[DDTA]香港BGP 02"
+      - "[DDTA]新加坡 02"
+      - "[沪港]美国 03"
+      - "[DDTA]法国 02"
+      - "[DDTA]美国 01"
+      - "[IEPL]美国04"
+      - "[DDTA]新加坡 01"
+      - "[DDTA]泰国 01"
+      - "[DDTA]台湾Hinet 02"
+      - "[DDTA]香港HKT 02"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +244,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国-5.30MB/s
-      - 未知国家-5.49MB/s
+      - "[DDTA]香港HKBN 01"
+      - "[DDTA]泰国 02"
+      - 距离下次重置剩余：6 天
+      - "[IEPL]香港HKBN 03"
+      - "[DDTA]香港BGP 01"
+      - "[DDTA]香港HKT 01"
+      - "[DDTA]荷兰 01"
+      - "[DDTA]英国 02"
+      - "[DDTA]土耳其 01"
+      - "[DDTA]俄罗斯 01"
+      - "[DDTA]香港BGP 02"
+      - "[DDTA]新加坡 02"
+      - "[沪港]美国 03"
+      - "[DDTA]法国 02"
+      - "[DDTA]美国 01"
+      - "[IEPL]美国04"
+      - "[DDTA]新加坡 01"
+      - "[DDTA]泰国 01"
+      - "[DDTA]台湾Hinet 02"
+      - "[DDTA]香港HKT 02"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
