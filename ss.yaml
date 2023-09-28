@@ -5,67 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "@ZDYZ2-🇸🇬 Singapore 05", server: cnmbdcm01.kczz2038.online, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: 6572a788-28de-4941-a662-c7a2b6009328, udp: true}
-  - {name: "@ZDYZ2-🇸🇬 Singapore 04", server: cnmbdcm01.kczz2038.online, port: 42213, type: ss, cipher: chacha20-ietf-poly1305, password: 6572a788-28de-4941-a662-c7a2b6009328, udp: true}
-  - {name: "@ZDYZ2-🇯🇵 Japan 13", server: cnmbdcm01.kczz2038.online, port: 40102, type: ss, cipher: chacha20-ietf-poly1305, password: 6572a788-28de-4941-a662-c7a2b6009328, udp: true}
-  - {name: "@ZDYZ2-🇦🇺 Australia 01", server: cnmbdcm01.kczz2038.online, port: 42142, type: ss, cipher: chacha20-ietf-poly1305, password: 6572a788-28de-4941-a662-c7a2b6009328, udp: true}
-  - {name: "@ZDYZ2-🇺🇸 United States 03", server: cnmbdcm01.kczz2038.online, port: 48004, type: ss, cipher: chacha20-ietf-poly1305, password: 6572a788-28de-4941-a662-c7a2b6009328, udp: true}
-  - {name: "@ZDYZ2-🇺🇸 United States 01", server: cnmbdcm01.kczz2038.online, port: 48003, type: ss, cipher: chacha20-ietf-poly1305, password: 6572a788-28de-4941-a662-c7a2b6009328, udp: true}
-  - {name: "@ZDYZ2-🇩🇪 Germany 01", server: 5.104.108.120, port: 443, type: trojan, password: 2a9abeb7-6f97-4d33-9069-f6e009d88455, skip-cert-verify: true, udp: true}
-  - {name: "@ZDYZ2-🇮🇳 India 01", server: cnmbdcm01.kczz2038.online, port: 15474, type: ss, cipher: chacha20-ietf-poly1305, password: 6572a788-28de-4941-a662-c7a2b6009328, udp: true}
-  - {name: "@ZDYZ2-🇫🇷 France 01", server: cnmbdcm01.kczz2038.online, port: 36698, type: ss, cipher: chacha20-ietf-poly1305, password: 6572a788-28de-4941-a662-c7a2b6009328, udp: true}
-  - {name: "@ZDYZ2-🇬🇧 United Kingdom 01", server: cnmbdcm01.kczz2038.online, port: 36521, type: ss, cipher: chacha20-ietf-poly1305, password: 6572a788-28de-4941-a662-c7a2b6009328, udp: true}
-  - {name: "@ZDYZ2-🇩🇪 Germany 02", server: 5.104.108.109, port: 443, type: trojan, password: 2a9abeb7-6f97-4d33-9069-f6e009d88455, skip-cert-verify: true, udp: true}
+  - {name: jp4, server: direct-jp4.xn--pzypc.store, port: 80, type: vmess, uuid: ce1684b2-d62c-4439-ac27-5323853f30b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/akile?ed=2048", ws-headers: {Host: jp4.xn--pzypc.store}, udp: true}
+  - {name: sg3, server: direct-sg3.xn--pzypc.store, port: 80, type: vmess, uuid: ce1684b2-d62c-4439-ac27-5323853f30b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/akile?ed=2048", ws-headers: {Host: sg3.xn--pzypc.store}, udp: true}
+  - {name: hk3 bgp线路, server: direct-hk3.xn--pzypc.store, port: 80, type: vmess, uuid: ce1684b2-d62c-4439-ac27-5323853f30b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/miku?ed=2048", ws-headers: {Host: hk3.xn--pzypc.store}, udp: true}
+  - {name: us1, server: direct-us1.xn--pzypc.store, port: 80, type: vmess, uuid: ce1684b2-d62c-4439-ac27-5323853f30b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/akile?ed=2048", ws-headers: {Host: us1.xn--pzypc.store}, udp: true}
+  - {name: us3, server: direct-us3.xn--pzypc.store, port: 80, type: vmess, uuid: ce1684b2-d62c-4439-ac27-5323853f30b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/akile?ed=2048", ws-headers: {Host: us3.xn--pzypc.store}, udp: true}
+  - {name: sg2, server: direct-sg2.xn--pzypc.store, port: 80, type: vmess, uuid: ce1684b2-d62c-4439-ac27-5323853f30b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/akile?ed=2048", ws-headers: {Host: sg2.xn--pzypc.store}, udp: true}
+  - {name: hk4 bgp线路, server: direct-hk4.xn--pzypc.store, port: 80, type: vmess, uuid: ce1684b2-d62c-4439-ac27-5323853f30b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/miku?ed=2048", ws-headers: {Host: hk4.xn--pzypc.store}, udp: true}
+  - {name: jp3, server: direct-jp3.xn--pzypc.store, port: 80, type: vmess, uuid: ce1684b2-d62c-4439-ac27-5323853f30b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/akile?ed=2048", ws-headers: {Host: jp3.xn--pzypc.store}, udp: true}
+  - {name: us2, server: direct-us2.xn--pzypc.store, port: 80, type: vmess, uuid: ce1684b2-d62c-4439-ac27-5323853f30b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/akile?ed=2048", ws-headers: {Host: us2.xn--pzypc.store}, udp: true}
+  - {name: sg1, server: direct-sg1.xn--pzypc.store, port: 80, type: vmess, uuid: ce1684b2-d62c-4439-ac27-5323853f30b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/akile?ed=2048", ws-headers: {Host: sg1.xn--pzypc.store}, udp: true}
+  - {name: jp1, server: direct-jp1.xn--pzypc.store, port: 80, type: vmess, uuid: ce1684b2-d62c-4439-ac27-5323853f30b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/akile?ed=2048", ws-headers: {Host: jp1.xn--pzypc.store}, udp: true}
+  - {name: us4, server: direct-us4.xn--pzypc.store, port: 80, type: vmess, uuid: ce1684b2-d62c-4439-ac27-5323853f30b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/akile?ed=2048", ws-headers: {Host: us4.xn--pzypc.store}, udp: true}
+  - {name: jp2, server: direct-jp2.xn--pzypc.store, port: 80, type: vmess, uuid: ce1684b2-d62c-4439-ac27-5323853f30b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/akile?ed=2048", ws-headers: {Host: jp2.xn--pzypc.store}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "@ZDYZ2-🇸🇬 Singapore 05"
-      - "@ZDYZ2-🇸🇬 Singapore 04"
-      - "@ZDYZ2-🇯🇵 Japan 13"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
-      - "@ZDYZ2-🇩🇪 Germany 02"
+      - jp4
+      - sg3
+      - hk3 bgp线路
+      - us1
+      - us3
+      - sg2
+      - hk4 bgp线路
+      - jp3
+      - us2
+      - sg1
+      - jp1
+      - us4
+      - jp2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "@ZDYZ2-🇸🇬 Singapore 05"
-      - "@ZDYZ2-🇸🇬 Singapore 04"
-      - "@ZDYZ2-🇯🇵 Japan 13"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
-      - "@ZDYZ2-🇩🇪 Germany 02"
+      - jp4
+      - sg3
+      - hk3 bgp线路
+      - us1
+      - us3
+      - sg2
+      - hk4 bgp线路
+      - jp3
+      - us2
+      - sg1
+      - jp1
+      - us4
+      - jp2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "@ZDYZ2-🇸🇬 Singapore 05"
-      - "@ZDYZ2-🇸🇬 Singapore 04"
-      - "@ZDYZ2-🇯🇵 Japan 13"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
-      - "@ZDYZ2-🇩🇪 Germany 02"
+      - jp4
+      - sg3
+      - hk3 bgp线路
+      - us1
+      - us3
+      - sg2
+      - hk4 bgp线路
+      - jp3
+      - us2
+      - sg1
+      - jp1
+      - us4
+      - jp2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,71 +92,81 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "@ZDYZ2-🇸🇬 Singapore 05"
-      - "@ZDYZ2-🇸🇬 Singapore 04"
-      - "@ZDYZ2-🇯🇵 Japan 13"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
-      - "@ZDYZ2-🇩🇪 Germany 02"
+      - jp4
+      - sg3
+      - hk3 bgp线路
+      - us1
+      - us3
+      - sg2
+      - hk4 bgp线路
+      - jp3
+      - us2
+      - sg1
+      - jp1
+      - us4
+      - jp2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - hk3 bgp线路
+      - hk4 bgp线路
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "@ZDYZ2-🇸🇬 Singapore 05"
-      - "@ZDYZ2-🇸🇬 Singapore 04"
-      - "@ZDYZ2-🇯🇵 Japan 13"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
-      - "@ZDYZ2-🇩🇪 Germany 02"
+      - jp4
+      - sg3
+      - hk3 bgp线路
+      - us1
+      - us3
+      - sg2
+      - hk4 bgp线路
+      - jp3
+      - us2
+      - sg1
+      - jp1
+      - us4
+      - jp2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "@ZDYZ2-🇸🇬 Singapore 05"
-      - "@ZDYZ2-🇸🇬 Singapore 04"
-      - "@ZDYZ2-🇯🇵 Japan 13"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
-      - "@ZDYZ2-🇩🇪 Germany 02"
+      - jp4
+      - sg3
+      - hk3 bgp线路
+      - us1
+      - us3
+      - sg2
+      - hk4 bgp线路
+      - jp3
+      - us2
+      - sg1
+      - jp1
+      - us4
+      - jp2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "@ZDYZ2-🇸🇬 Singapore 05"
-      - "@ZDYZ2-🇸🇬 Singapore 04"
-      - "@ZDYZ2-🇯🇵 Japan 13"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
-      - "@ZDYZ2-🇩🇪 Germany 02"
+      - jp4
+      - sg3
+      - hk3 bgp线路
+      - us1
+      - us3
+      - sg2
+      - hk4 bgp线路
+      - jp3
+      - us2
+      - sg1
+      - jp1
+      - us4
+      - jp2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,17 +182,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "@ZDYZ2-🇸🇬 Singapore 05"
-      - "@ZDYZ2-🇸🇬 Singapore 04"
-      - "@ZDYZ2-🇯🇵 Japan 13"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
-      - "@ZDYZ2-🇩🇪 Germany 02"
+      - jp4
+      - sg3
+      - hk3 bgp线路
+      - us1
+      - us3
+      - sg2
+      - hk4 bgp线路
+      - jp3
+      - us2
+      - sg1
+      - jp1
+      - us4
+      - jp2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
