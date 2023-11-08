@@ -5,51 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "@ZDYZ2-🇺🇸 United States 03", server: cm2.portalgun.ltd, port: 48004, type: ss, cipher: chacha20-ietf-poly1305, password: a95a989d-fb6f-4b0f-ad16-7653735271ed, udp: true}
-  - {name: "@ZDYZ2-🇦🇺 Australia 01", server: cm1.portalgun.ltd, port: 42142, type: ss, cipher: chacha20-ietf-poly1305, password: a95a989d-fb6f-4b0f-ad16-7653735271ed, udp: true}
-  - {name: "@ZDYZ2-🇮🇳 India 01", server: cm1.portalgun.ltd, port: 15474, type: ss, cipher: chacha20-ietf-poly1305, password: a95a989d-fb6f-4b0f-ad16-7653735271ed, udp: true}
-  - {name: "@ZDYZ2-🇺🇸 United States 01", server: cm2.portalgun.ltd, port: 48003, type: ss, cipher: chacha20-ietf-poly1305, password: a95a989d-fb6f-4b0f-ad16-7653735271ed, udp: true}
-  - {name: "@ZDYZ2-🇩🇪 Germany 01", server: cm1.portalgun.ltd, port: 40172, type: ss, cipher: chacha20-ietf-poly1305, password: a95a989d-fb6f-4b0f-ad16-7653735271ed, udp: true}
-  - {name: "@ZDYZ2-🇫🇷 France 01", server: cm2.portalgun.ltd, port: 36698, type: ss, cipher: chacha20-ietf-poly1305, password: a95a989d-fb6f-4b0f-ad16-7653735271ed, udp: true}
-  - {name: "@ZDYZ2-🇬🇧 United Kingdom 01", server: cm1.portalgun.ltd, port: 36521, type: ss, cipher: chacha20-ietf-poly1305, password: a95a989d-fb6f-4b0f-ad16-7653735271ed, udp: true}
+  - {name: 香港-备用, server: cfzl1.freeapp.buzz, port: 80, type: vmess, uuid: 67a0644c-06d4-4657-bca2-6554a191556c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /gddseeeew4@gr, ws-headers: {Host: cfhk.freeapp.buzz}, udp: true}
+  - {name: 美国-优选, server: cfyx2.freeapp.buzz, port: 80, type: vmess, uuid: 67a0644c-06d4-4657-bca2-6554a191556c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /gd3245vd2S32cr, ws-headers: {Host: cfus.freeapp.buzz}, udp: true}
+  - {name: 美国-备用, server: cfzl2.freeapp.buzz, port: 80, type: vmess, uuid: 67a0644c-06d4-4657-bca2-6554a191556c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /gd3245vd2S32cr, ws-headers: {Host: cfus.freeapp.buzz}, udp: true}
+  - {name: 香港, server: q1.freeapp.buzz, port: 44001, type: ss, cipher: aes-256-gcm, password: 67a0644c-06d4-4657-bca2-6554a191556c, udp: true}
+  - {name: 台湾, server: q1.freeapp.buzz, port: 44002, type: ss, cipher: aes-256-gcm, password: 67a0644c-06d4-4657-bca2-6554a191556c, udp: true}
+  - {name: 新加坡, server: q1.freeapp.buzz, port: 44003, type: ss, cipher: aes-256-gcm, password: 67a0644c-06d4-4657-bca2-6554a191556c, udp: true}
+  - {name: 美国, server: q1.freeapp.buzz, port: 44004, type: ss, cipher: aes-256-gcm, password: 67a0644c-06d4-4657-bca2-6554a191556c, udp: true}
+  - {name: 日本, server: q1.freeapp.buzz, port: 44005, type: ss, cipher: aes-256-gcm, password: 67a0644c-06d4-4657-bca2-6554a191556c, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - 香港-备用
+      - 美国-优选
+      - 美国-备用
+      - 香港
+      - 台湾
+      - 新加坡
+      - 美国
+      - 日本
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - 香港-备用
+      - 美国-优选
+      - 美国-备用
+      - 香港
+      - 台湾
+      - 新加坡
+      - 美国
+      - 日本
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - 香港-备用
+      - 美国-优选
+      - 美国-备用
+      - 香港
+      - 台湾
+      - 新加坡
+      - 美国
+      - 日本
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,55 +72,62 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - 香港-备用
+      - 美国-优选
+      - 美国-备用
+      - 香港
+      - 台湾
+      - 新加坡
+      - 美国
+      - 日本
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港-备用
+      - 香港
+      - 台湾
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - 香港-备用
+      - 美国-优选
+      - 美国-备用
+      - 香港
+      - 台湾
+      - 新加坡
+      - 美国
+      - 日本
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - 香港-备用
+      - 美国-优选
+      - 美国-备用
+      - 香港
+      - 台湾
+      - 新加坡
+      - 美国
+      - 日本
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - 香港-备用
+      - 美国-优选
+      - 美国-备用
+      - 香港
+      - 台湾
+      - 新加坡
+      - 美国
+      - 日本
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +143,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "@ZDYZ2-🇺🇸 United States 03"
-      - "@ZDYZ2-🇦🇺 Australia 01"
-      - "@ZDYZ2-🇮🇳 India 01"
-      - "@ZDYZ2-🇺🇸 United States 01"
-      - "@ZDYZ2-🇩🇪 Germany 01"
-      - "@ZDYZ2-🇫🇷 France 01"
-      - "@ZDYZ2-🇬🇧 United Kingdom 01"
+      - 香港-备用
+      - 美国-优选
+      - 美国-备用
+      - 香港
+      - 台湾
+      - 新加坡
+      - 美国
+      - 日本
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
