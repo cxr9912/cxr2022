@@ -5,55 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港-备用, server: cfzl1.freeapp.buzz, port: 80, type: vmess, uuid: 67a0644c-06d4-4657-bca2-6554a191556c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /gddseeeew4@gr, ws-headers: {Host: cfhk.freeapp.buzz}, udp: true}
-  - {name: 美国-优选, server: cfyx2.freeapp.buzz, port: 80, type: vmess, uuid: 67a0644c-06d4-4657-bca2-6554a191556c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /gd3245vd2S32cr, ws-headers: {Host: cfus.freeapp.buzz}, udp: true}
-  - {name: 美国-备用, server: cfzl2.freeapp.buzz, port: 80, type: vmess, uuid: 67a0644c-06d4-4657-bca2-6554a191556c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /gd3245vd2S32cr, ws-headers: {Host: cfus.freeapp.buzz}, udp: true}
-  - {name: 香港, server: q1.freeapp.buzz, port: 44001, type: ss, cipher: aes-256-gcm, password: 67a0644c-06d4-4657-bca2-6554a191556c, udp: true}
-  - {name: 台湾, server: q1.freeapp.buzz, port: 44002, type: ss, cipher: aes-256-gcm, password: 67a0644c-06d4-4657-bca2-6554a191556c, udp: true}
-  - {name: 新加坡, server: q1.freeapp.buzz, port: 44003, type: ss, cipher: aes-256-gcm, password: 67a0644c-06d4-4657-bca2-6554a191556c, udp: true}
-  - {name: 美国, server: q1.freeapp.buzz, port: 44004, type: ss, cipher: aes-256-gcm, password: 67a0644c-06d4-4657-bca2-6554a191556c, udp: true}
-  - {name: 日本, server: q1.freeapp.buzz, port: 44005, type: ss, cipher: aes-256-gcm, password: 67a0644c-06d4-4657-bca2-6554a191556c, udp: true}
+  - {name: "Anycast [1.0x] V0 日本 01", server: 172.67.140.164, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: baipiaoriben01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 日本 02", server: 172.64.106.177, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: baipiaoriben01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 日本 03", server: 172.67.132.159, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: baipiaoriben01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 日本 04", server: 172.67.73.156, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: baipiaoriben01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 日本 05", server: 198.41.223.7, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: baipiaoriben01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 新加坡 01", server: 190.93.244.211, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: freewhoringinkoreasg01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 新加坡 02", server: 172.67.143.201, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: freewhoringinkoreasg01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 新加坡 03", server: 172.64.84.214, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: freewhoringinkoreasg01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 新加坡 04", server: 172.67.75.33, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: freewhoringinkoreasg01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 新加坡 05", server: 198.41.223.61, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: freewhoringinkoreasg01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 美国 01", server: 162.159.134.13, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: baipiaomeiguo01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 美国 03", server: 172.67.121.220, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: baipiaomeiguo01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 美国 04", server: 172.64.84.214, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: baipiaomeiguo01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 美国 05", server: 172.67.56.2, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: baipiaomeiguo01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 印度 01", server: 172.67.7.122, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: baipiaoyindu01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 印度 02", server: 172.67.227.174, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: baipiaoyindu01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 印度 03", server: 172.67.5.96, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: baipiaoyindu01.360ddns.online}, udp: true}
+  - {name: "Anycast [1.0x] V0 印度 05", server: 190.93.244.211, port: 80, type: vmess, uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: baipiaoyindu01.360ddns.online}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-备用
-      - 美国-优选
-      - 美国-备用
-      - 香港
-      - 台湾
-      - 新加坡
-      - 美国
-      - 日本
+      - Anycast [1.0x] V0 日本 01
+      - Anycast [1.0x] V0 日本 02
+      - Anycast [1.0x] V0 日本 03
+      - Anycast [1.0x] V0 日本 04
+      - Anycast [1.0x] V0 日本 05
+      - Anycast [1.0x] V0 新加坡 01
+      - Anycast [1.0x] V0 新加坡 02
+      - Anycast [1.0x] V0 新加坡 03
+      - Anycast [1.0x] V0 新加坡 04
+      - Anycast [1.0x] V0 新加坡 05
+      - Anycast [1.0x] V0 美国 01
+      - Anycast [1.0x] V0 美国 03
+      - Anycast [1.0x] V0 美国 04
+      - Anycast [1.0x] V0 美国 05
+      - Anycast [1.0x] V0 印度 01
+      - Anycast [1.0x] V0 印度 02
+      - Anycast [1.0x] V0 印度 03
+      - Anycast [1.0x] V0 印度 05
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港-备用
-      - 美国-优选
-      - 美国-备用
-      - 香港
-      - 台湾
-      - 新加坡
-      - 美国
-      - 日本
+      - Anycast [1.0x] V0 日本 01
+      - Anycast [1.0x] V0 日本 02
+      - Anycast [1.0x] V0 日本 03
+      - Anycast [1.0x] V0 日本 04
+      - Anycast [1.0x] V0 日本 05
+      - Anycast [1.0x] V0 新加坡 01
+      - Anycast [1.0x] V0 新加坡 02
+      - Anycast [1.0x] V0 新加坡 03
+      - Anycast [1.0x] V0 新加坡 04
+      - Anycast [1.0x] V0 新加坡 05
+      - Anycast [1.0x] V0 美国 01
+      - Anycast [1.0x] V0 美国 03
+      - Anycast [1.0x] V0 美国 04
+      - Anycast [1.0x] V0 美国 05
+      - Anycast [1.0x] V0 印度 01
+      - Anycast [1.0x] V0 印度 02
+      - Anycast [1.0x] V0 印度 03
+      - Anycast [1.0x] V0 印度 05
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-备用
-      - 美国-优选
-      - 美国-备用
-      - 香港
-      - 台湾
-      - 新加坡
-      - 美国
-      - 日本
+      - Anycast [1.0x] V0 日本 01
+      - Anycast [1.0x] V0 日本 02
+      - Anycast [1.0x] V0 日本 03
+      - Anycast [1.0x] V0 日本 04
+      - Anycast [1.0x] V0 日本 05
+      - Anycast [1.0x] V0 新加坡 01
+      - Anycast [1.0x] V0 新加坡 02
+      - Anycast [1.0x] V0 新加坡 03
+      - Anycast [1.0x] V0 新加坡 04
+      - Anycast [1.0x] V0 新加坡 05
+      - Anycast [1.0x] V0 美国 01
+      - Anycast [1.0x] V0 美国 03
+      - Anycast [1.0x] V0 美国 04
+      - Anycast [1.0x] V0 美国 05
+      - Anycast [1.0x] V0 印度 01
+      - Anycast [1.0x] V0 印度 02
+      - Anycast [1.0x] V0 印度 03
+      - Anycast [1.0x] V0 印度 05
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,62 +112,99 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港-备用
-      - 美国-优选
-      - 美国-备用
-      - 香港
-      - 台湾
-      - 新加坡
-      - 美国
-      - 日本
+      - Anycast [1.0x] V0 日本 01
+      - Anycast [1.0x] V0 日本 02
+      - Anycast [1.0x] V0 日本 03
+      - Anycast [1.0x] V0 日本 04
+      - Anycast [1.0x] V0 日本 05
+      - Anycast [1.0x] V0 新加坡 01
+      - Anycast [1.0x] V0 新加坡 02
+      - Anycast [1.0x] V0 新加坡 03
+      - Anycast [1.0x] V0 新加坡 04
+      - Anycast [1.0x] V0 新加坡 05
+      - Anycast [1.0x] V0 美国 01
+      - Anycast [1.0x] V0 美国 03
+      - Anycast [1.0x] V0 美国 04
+      - Anycast [1.0x] V0 美国 05
+      - Anycast [1.0x] V0 印度 01
+      - Anycast [1.0x] V0 印度 02
+      - Anycast [1.0x] V0 印度 03
+      - Anycast [1.0x] V0 印度 05
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港-备用
-      - 香港
-      - 台湾
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港-备用
-      - 美国-优选
-      - 美国-备用
-      - 香港
-      - 台湾
-      - 新加坡
-      - 美国
-      - 日本
+      - Anycast [1.0x] V0 日本 01
+      - Anycast [1.0x] V0 日本 02
+      - Anycast [1.0x] V0 日本 03
+      - Anycast [1.0x] V0 日本 04
+      - Anycast [1.0x] V0 日本 05
+      - Anycast [1.0x] V0 新加坡 01
+      - Anycast [1.0x] V0 新加坡 02
+      - Anycast [1.0x] V0 新加坡 03
+      - Anycast [1.0x] V0 新加坡 04
+      - Anycast [1.0x] V0 新加坡 05
+      - Anycast [1.0x] V0 美国 01
+      - Anycast [1.0x] V0 美国 03
+      - Anycast [1.0x] V0 美国 04
+      - Anycast [1.0x] V0 美国 05
+      - Anycast [1.0x] V0 印度 01
+      - Anycast [1.0x] V0 印度 02
+      - Anycast [1.0x] V0 印度 03
+      - Anycast [1.0x] V0 印度 05
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港-备用
-      - 美国-优选
-      - 美国-备用
-      - 香港
-      - 台湾
-      - 新加坡
-      - 美国
-      - 日本
+      - Anycast [1.0x] V0 日本 01
+      - Anycast [1.0x] V0 日本 02
+      - Anycast [1.0x] V0 日本 03
+      - Anycast [1.0x] V0 日本 04
+      - Anycast [1.0x] V0 日本 05
+      - Anycast [1.0x] V0 新加坡 01
+      - Anycast [1.0x] V0 新加坡 02
+      - Anycast [1.0x] V0 新加坡 03
+      - Anycast [1.0x] V0 新加坡 04
+      - Anycast [1.0x] V0 新加坡 05
+      - Anycast [1.0x] V0 美国 01
+      - Anycast [1.0x] V0 美国 03
+      - Anycast [1.0x] V0 美国 04
+      - Anycast [1.0x] V0 美国 05
+      - Anycast [1.0x] V0 印度 01
+      - Anycast [1.0x] V0 印度 02
+      - Anycast [1.0x] V0 印度 03
+      - Anycast [1.0x] V0 印度 05
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港-备用
-      - 美国-优选
-      - 美国-备用
-      - 香港
-      - 台湾
-      - 新加坡
-      - 美国
-      - 日本
+      - Anycast [1.0x] V0 日本 01
+      - Anycast [1.0x] V0 日本 02
+      - Anycast [1.0x] V0 日本 03
+      - Anycast [1.0x] V0 日本 04
+      - Anycast [1.0x] V0 日本 05
+      - Anycast [1.0x] V0 新加坡 01
+      - Anycast [1.0x] V0 新加坡 02
+      - Anycast [1.0x] V0 新加坡 03
+      - Anycast [1.0x] V0 新加坡 04
+      - Anycast [1.0x] V0 新加坡 05
+      - Anycast [1.0x] V0 美国 01
+      - Anycast [1.0x] V0 美国 03
+      - Anycast [1.0x] V0 美国 04
+      - Anycast [1.0x] V0 美国 05
+      - Anycast [1.0x] V0 印度 01
+      - Anycast [1.0x] V0 印度 02
+      - Anycast [1.0x] V0 印度 03
+      - Anycast [1.0x] V0 印度 05
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -143,14 +220,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港-备用
-      - 美国-优选
-      - 美国-备用
-      - 香港
-      - 台湾
-      - 新加坡
-      - 美国
-      - 日本
+      - Anycast [1.0x] V0 日本 01
+      - Anycast [1.0x] V0 日本 02
+      - Anycast [1.0x] V0 日本 03
+      - Anycast [1.0x] V0 日本 04
+      - Anycast [1.0x] V0 日本 05
+      - Anycast [1.0x] V0 新加坡 01
+      - Anycast [1.0x] V0 新加坡 02
+      - Anycast [1.0x] V0 新加坡 03
+      - Anycast [1.0x] V0 新加坡 04
+      - Anycast [1.0x] V0 新加坡 05
+      - Anycast [1.0x] V0 美国 01
+      - Anycast [1.0x] V0 美国 03
+      - Anycast [1.0x] V0 美国 04
+      - Anycast [1.0x] V0 美国 05
+      - Anycast [1.0x] V0 印度 01
+      - Anycast [1.0x] V0 印度 02
+      - Anycast [1.0x] V0 印度 03
+      - Anycast [1.0x] V0 印度 05
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
