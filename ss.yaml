@@ -5,39 +5,183 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 杭州-东京-1, server: hz.888898.beauty, port: 49859, type: ss, cipher: aes-128-gcm, password: cd1fe1ad-e479-402d-9504-231efad018d8, udp: true}
-  - {name: 杭州-新加披-1, server: hz.888898.beauty, port: 46921, type: ss, cipher: chacha20-ietf-poly1305, password: cd1fe1ad-e479-402d-9504-231efad018d8, udp: true}
-  - {name: 广州-东京-1, server: gz.888898.beauty, port: 49859, type: ss, cipher: chacha20-ietf-poly1305, password: cd1fe1ad-e479-402d-9504-231efad018d8, udp: true}
-  - {name: 广州-新加披-1, server: gz.888898.beauty, port: 52631, type: ss, cipher: aes-128-gcm, password: cd1fe1ad-e479-402d-9504-231efad018d8, udp: true}
+  - {name: 香港04｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/changding-tls1?ed=2048", ws-headers: {Host: hk-hy.changding.tech}, udp: true}
+  - {name: 香港05｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1?ed=2048", ws-headers: {Host: hk-hy02.changding.tech}, udp: true}
+  - {name: 香港08｜x0.1｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/changding-tls1?ed=2048", ws-headers: {Host: hk-300.changding.tech}, udp: true}
+  - {name: 台湾02｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/changding-tls1?ed=2048", ws-headers: {Host: tw.changding.tech}, udp: true}
+  - {name: 春川01｜x0.1｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1?ed=2048", ws-headers: {Host: chunchuan.changding.tech}, udp: true}
+  - {name: 春川03｜x0.1｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1?ed=2048", ws-headers: {Host: nm.changding.tech}, udp: true}
+  - {name: 首尔01｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1?ed=2048", ws-headers: {Host: sr.changding.tech}, udp: true}
+  - {name: 首尔02｜x0.1｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1?ed=2048", ws-headers: {Host: sr2.changding.tech}, udp: true}
+  - {name: 新加坡01｜x0.1｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1?ed=2048", ws-headers: {Host: do1.changding.tech}, udp: true}
+  - {name: 新加坡04｜x0.1｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls0?ed=2048", ws-headers: {Host: dci-sg.changding.me}, udp: true}
+  - {name: 东京01｜x0.1｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1?ed=2048", ws-headers: {Host: dj.changding.tech}, udp: true}
+  - {name: 东京03｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1?ed=2048", ws-headers: {Host: jp.changding.me}, udp: true}
+  - {name: 美国01｜x0.01｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1?ed=2048", ws-headers: {Host: zjg.changding.tech}, udp: true}
+  - {name: 美国02｜x0.01｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1?ed=2048", ws-headers: {Host: shs.changding.tech}, udp: true}
+  - {name: 德国｜x0.01｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1-tls1?ed=2048", ws-headers: {Host: de.changding.tech}, udp: true}
+  - {name: 迪拜01｜x0.01｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1-tls1?ed=2048", ws-headers: {Host: db.changding.tech}, udp: true}
+  - {name: 阿布扎比｜x0.01｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1-tls1?ed=2048", ws-headers: {Host: abzb.changding.tech}, udp: true}
+  - {name: 悉尼｜x0.01｜⚡️, server: 199.15.77.157, port: 24336, type: vmess, uuid: eb0632c0-3aa3-40d7-aa7f-d5a4e436af1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vm-tls1-tls1?ed=2048", ws-headers: {Host: xn.changding.tech}, udp: true}
+  - {name: 香港03 | TUN, server: 05.xn--wbr85ozt0asys8qt.net, port: 26193, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 香港04 | TUN, server: 02.xn--wbr85ozt0asys8qt.net, port: 26193, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 香港05 | TUN, server: 02.xn--wbr85ozt0asys8qt.net, port: 34002, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 香港06 | TUN, server: 05.xn--wbr85ozt0asys8qt.net, port: 34012, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 香港07 | TUN, server: 05.xn--wbr85ozt0asys8qt.net, port: 23689, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 香港08 | TUN, server: 02.xn--wbr85ozt0asys8qt.net, port: 23689, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 台湾01 | TUN, server: 05.xn--wbr85ozt0asys8qt.net, port: 51151, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 台湾02 | TUN, server: 02.xn--wbr85ozt0asys8qt.net, port: 35341, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 日本01 | TUN, server: 02.xn--wbr85ozt0asys8qt.net, port: 34003, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 日本02 | TUN, server: 05.xn--wbr85ozt0asys8qt.net, port: 34013, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 日本03 | TUN, server: 02.xn--wbr85ozt0asys8qt.net, port: 51669, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 日本04 | TUN, server: 05.xn--wbr85ozt0asys8qt.net, port: 46308, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 首尔01 | TUN, server: 02.xn--wbr85ozt0asys8qt.net, port: 34004, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 首尔02 | TUN, server: 05.xn--wbr85ozt0asys8qt.net, port: 34014, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 首尔03 | TUN, server: 02.xn--wbr85ozt0asys8qt.net, port: 36262, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 首尔04 | TUN, server: 05.xn--wbr85ozt0asys8qt.net, port: 25245, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 春川01 | TUN, server: 02.xn--wbr85ozt0asys8qt.net, port: 34007, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 春川02 | TUN, server: 05.xn--wbr85ozt0asys8qt.net, port: 34017, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 新加坡01 | TUN, server: 02.xn--wbr85ozt0asys8qt.net, port: 34005, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 新加坡02 | TUN, server: 05.xn--wbr85ozt0asys8qt.net, port: 34015, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 美国01 | TUN, server: 02.xn--wbr85ozt0asys8qt.net, port: 34006, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
+  - {name: 美国02 | TUN, server: 05.xn--wbr85ozt0asys8qt.net, port: 34016, type: ss, cipher: chacha20-ietf-poly1305, password: f97d4bec-04db-4d82-b8cc-b3311ad180f1, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 杭州-东京-1
-      - 杭州-新加披-1
-      - 广州-东京-1
-      - 广州-新加披-1
+      - 香港04｜⚡️
+      - 香港05｜⚡️
+      - 香港08｜x0.1｜⚡️
+      - 台湾02｜⚡️
+      - 春川01｜x0.1｜⚡️
+      - 春川03｜x0.1｜⚡️
+      - 首尔01｜⚡️
+      - 首尔02｜x0.1｜⚡️
+      - 新加坡01｜x0.1｜⚡️
+      - 新加坡04｜x0.1｜⚡️
+      - 东京01｜x0.1｜⚡️
+      - 东京03｜⚡️
+      - 美国01｜x0.01｜⚡️
+      - 美国02｜x0.01｜⚡️
+      - 德国｜x0.01｜⚡️
+      - 迪拜01｜x0.01｜⚡️
+      - 阿布扎比｜x0.01｜⚡️
+      - 悉尼｜x0.01｜⚡️
+      - 香港03 | TUN
+      - 香港04 | TUN
+      - 香港05 | TUN
+      - 香港06 | TUN
+      - 香港07 | TUN
+      - 香港08 | TUN
+      - 台湾01 | TUN
+      - 台湾02 | TUN
+      - 日本01 | TUN
+      - 日本02 | TUN
+      - 日本03 | TUN
+      - 日本04 | TUN
+      - 首尔01 | TUN
+      - 首尔02 | TUN
+      - 首尔03 | TUN
+      - 首尔04 | TUN
+      - 春川01 | TUN
+      - 春川02 | TUN
+      - 新加坡01 | TUN
+      - 新加坡02 | TUN
+      - 美国01 | TUN
+      - 美国02 | TUN
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 杭州-东京-1
-      - 杭州-新加披-1
-      - 广州-东京-1
-      - 广州-新加披-1
+      - 香港04｜⚡️
+      - 香港05｜⚡️
+      - 香港08｜x0.1｜⚡️
+      - 台湾02｜⚡️
+      - 春川01｜x0.1｜⚡️
+      - 春川03｜x0.1｜⚡️
+      - 首尔01｜⚡️
+      - 首尔02｜x0.1｜⚡️
+      - 新加坡01｜x0.1｜⚡️
+      - 新加坡04｜x0.1｜⚡️
+      - 东京01｜x0.1｜⚡️
+      - 东京03｜⚡️
+      - 美国01｜x0.01｜⚡️
+      - 美国02｜x0.01｜⚡️
+      - 德国｜x0.01｜⚡️
+      - 迪拜01｜x0.01｜⚡️
+      - 阿布扎比｜x0.01｜⚡️
+      - 悉尼｜x0.01｜⚡️
+      - 香港03 | TUN
+      - 香港04 | TUN
+      - 香港05 | TUN
+      - 香港06 | TUN
+      - 香港07 | TUN
+      - 香港08 | TUN
+      - 台湾01 | TUN
+      - 台湾02 | TUN
+      - 日本01 | TUN
+      - 日本02 | TUN
+      - 日本03 | TUN
+      - 日本04 | TUN
+      - 首尔01 | TUN
+      - 首尔02 | TUN
+      - 首尔03 | TUN
+      - 首尔04 | TUN
+      - 春川01 | TUN
+      - 春川02 | TUN
+      - 新加坡01 | TUN
+      - 新加坡02 | TUN
+      - 美国01 | TUN
+      - 美国02 | TUN
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 杭州-东京-1
-      - 杭州-新加披-1
-      - 广州-东京-1
-      - 广州-新加披-1
+      - 香港04｜⚡️
+      - 香港05｜⚡️
+      - 香港08｜x0.1｜⚡️
+      - 台湾02｜⚡️
+      - 春川01｜x0.1｜⚡️
+      - 春川03｜x0.1｜⚡️
+      - 首尔01｜⚡️
+      - 首尔02｜x0.1｜⚡️
+      - 新加坡01｜x0.1｜⚡️
+      - 新加坡04｜x0.1｜⚡️
+      - 东京01｜x0.1｜⚡️
+      - 东京03｜⚡️
+      - 美国01｜x0.01｜⚡️
+      - 美国02｜x0.01｜⚡️
+      - 德国｜x0.01｜⚡️
+      - 迪拜01｜x0.01｜⚡️
+      - 阿布扎比｜x0.01｜⚡️
+      - 悉尼｜x0.01｜⚡️
+      - 香港03 | TUN
+      - 香港04 | TUN
+      - 香港05 | TUN
+      - 香港06 | TUN
+      - 香港07 | TUN
+      - 香港08 | TUN
+      - 台湾01 | TUN
+      - 台湾02 | TUN
+      - 日本01 | TUN
+      - 日本02 | TUN
+      - 日本03 | TUN
+      - 日本04 | TUN
+      - 首尔01 | TUN
+      - 首尔02 | TUN
+      - 首尔03 | TUN
+      - 首尔04 | TUN
+      - 春川01 | TUN
+      - 春川02 | TUN
+      - 新加坡01 | TUN
+      - 新加坡02 | TUN
+      - 美国01 | TUN
+      - 美国02 | TUN
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,43 +200,199 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 杭州-东京-1
-      - 杭州-新加披-1
-      - 广州-东京-1
-      - 广州-新加披-1
+      - 香港04｜⚡️
+      - 香港05｜⚡️
+      - 香港08｜x0.1｜⚡️
+      - 台湾02｜⚡️
+      - 春川01｜x0.1｜⚡️
+      - 春川03｜x0.1｜⚡️
+      - 首尔01｜⚡️
+      - 首尔02｜x0.1｜⚡️
+      - 新加坡01｜x0.1｜⚡️
+      - 新加坡04｜x0.1｜⚡️
+      - 东京01｜x0.1｜⚡️
+      - 东京03｜⚡️
+      - 美国01｜x0.01｜⚡️
+      - 美国02｜x0.01｜⚡️
+      - 德国｜x0.01｜⚡️
+      - 迪拜01｜x0.01｜⚡️
+      - 阿布扎比｜x0.01｜⚡️
+      - 悉尼｜x0.01｜⚡️
+      - 香港03 | TUN
+      - 香港04 | TUN
+      - 香港05 | TUN
+      - 香港06 | TUN
+      - 香港07 | TUN
+      - 香港08 | TUN
+      - 台湾01 | TUN
+      - 台湾02 | TUN
+      - 日本01 | TUN
+      - 日本02 | TUN
+      - 日本03 | TUN
+      - 日本04 | TUN
+      - 首尔01 | TUN
+      - 首尔02 | TUN
+      - 首尔03 | TUN
+      - 首尔04 | TUN
+      - 春川01 | TUN
+      - 春川02 | TUN
+      - 新加坡01 | TUN
+      - 新加坡02 | TUN
+      - 美国01 | TUN
+      - 美国02 | TUN
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港04｜⚡️
+      - 香港05｜⚡️
+      - 香港08｜x0.1｜⚡️
+      - 台湾02｜⚡️
+      - 香港03 | TUN
+      - 香港04 | TUN
+      - 香港05 | TUN
+      - 香港06 | TUN
+      - 香港07 | TUN
+      - 香港08 | TUN
+      - 台湾01 | TUN
+      - 台湾02 | TUN
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 杭州-东京-1
-      - 杭州-新加披-1
-      - 广州-东京-1
-      - 广州-新加披-1
+      - 香港04｜⚡️
+      - 香港05｜⚡️
+      - 香港08｜x0.1｜⚡️
+      - 台湾02｜⚡️
+      - 春川01｜x0.1｜⚡️
+      - 春川03｜x0.1｜⚡️
+      - 首尔01｜⚡️
+      - 首尔02｜x0.1｜⚡️
+      - 新加坡01｜x0.1｜⚡️
+      - 新加坡04｜x0.1｜⚡️
+      - 东京01｜x0.1｜⚡️
+      - 东京03｜⚡️
+      - 美国01｜x0.01｜⚡️
+      - 美国02｜x0.01｜⚡️
+      - 德国｜x0.01｜⚡️
+      - 迪拜01｜x0.01｜⚡️
+      - 阿布扎比｜x0.01｜⚡️
+      - 悉尼｜x0.01｜⚡️
+      - 香港03 | TUN
+      - 香港04 | TUN
+      - 香港05 | TUN
+      - 香港06 | TUN
+      - 香港07 | TUN
+      - 香港08 | TUN
+      - 台湾01 | TUN
+      - 台湾02 | TUN
+      - 日本01 | TUN
+      - 日本02 | TUN
+      - 日本03 | TUN
+      - 日本04 | TUN
+      - 首尔01 | TUN
+      - 首尔02 | TUN
+      - 首尔03 | TUN
+      - 首尔04 | TUN
+      - 春川01 | TUN
+      - 春川02 | TUN
+      - 新加坡01 | TUN
+      - 新加坡02 | TUN
+      - 美国01 | TUN
+      - 美国02 | TUN
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 杭州-东京-1
-      - 杭州-新加披-1
-      - 广州-东京-1
-      - 广州-新加披-1
+      - 香港04｜⚡️
+      - 香港05｜⚡️
+      - 香港08｜x0.1｜⚡️
+      - 台湾02｜⚡️
+      - 春川01｜x0.1｜⚡️
+      - 春川03｜x0.1｜⚡️
+      - 首尔01｜⚡️
+      - 首尔02｜x0.1｜⚡️
+      - 新加坡01｜x0.1｜⚡️
+      - 新加坡04｜x0.1｜⚡️
+      - 东京01｜x0.1｜⚡️
+      - 东京03｜⚡️
+      - 美国01｜x0.01｜⚡️
+      - 美国02｜x0.01｜⚡️
+      - 德国｜x0.01｜⚡️
+      - 迪拜01｜x0.01｜⚡️
+      - 阿布扎比｜x0.01｜⚡️
+      - 悉尼｜x0.01｜⚡️
+      - 香港03 | TUN
+      - 香港04 | TUN
+      - 香港05 | TUN
+      - 香港06 | TUN
+      - 香港07 | TUN
+      - 香港08 | TUN
+      - 台湾01 | TUN
+      - 台湾02 | TUN
+      - 日本01 | TUN
+      - 日本02 | TUN
+      - 日本03 | TUN
+      - 日本04 | TUN
+      - 首尔01 | TUN
+      - 首尔02 | TUN
+      - 首尔03 | TUN
+      - 首尔04 | TUN
+      - 春川01 | TUN
+      - 春川02 | TUN
+      - 新加坡01 | TUN
+      - 新加坡02 | TUN
+      - 美国01 | TUN
+      - 美国02 | TUN
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 杭州-东京-1
-      - 杭州-新加披-1
-      - 广州-东京-1
-      - 广州-新加披-1
+      - 香港04｜⚡️
+      - 香港05｜⚡️
+      - 香港08｜x0.1｜⚡️
+      - 台湾02｜⚡️
+      - 春川01｜x0.1｜⚡️
+      - 春川03｜x0.1｜⚡️
+      - 首尔01｜⚡️
+      - 首尔02｜x0.1｜⚡️
+      - 新加坡01｜x0.1｜⚡️
+      - 新加坡04｜x0.1｜⚡️
+      - 东京01｜x0.1｜⚡️
+      - 东京03｜⚡️
+      - 美国01｜x0.01｜⚡️
+      - 美国02｜x0.01｜⚡️
+      - 德国｜x0.01｜⚡️
+      - 迪拜01｜x0.01｜⚡️
+      - 阿布扎比｜x0.01｜⚡️
+      - 悉尼｜x0.01｜⚡️
+      - 香港03 | TUN
+      - 香港04 | TUN
+      - 香港05 | TUN
+      - 香港06 | TUN
+      - 香港07 | TUN
+      - 香港08 | TUN
+      - 台湾01 | TUN
+      - 台湾02 | TUN
+      - 日本01 | TUN
+      - 日本02 | TUN
+      - 日本03 | TUN
+      - 日本04 | TUN
+      - 首尔01 | TUN
+      - 首尔02 | TUN
+      - 首尔03 | TUN
+      - 首尔04 | TUN
+      - 春川01 | TUN
+      - 春川02 | TUN
+      - 新加坡01 | TUN
+      - 新加坡02 | TUN
+      - 美国01 | TUN
+      - 美国02 | TUN
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +408,46 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 杭州-东京-1
-      - 杭州-新加披-1
-      - 广州-东京-1
-      - 广州-新加披-1
+      - 香港04｜⚡️
+      - 香港05｜⚡️
+      - 香港08｜x0.1｜⚡️
+      - 台湾02｜⚡️
+      - 春川01｜x0.1｜⚡️
+      - 春川03｜x0.1｜⚡️
+      - 首尔01｜⚡️
+      - 首尔02｜x0.1｜⚡️
+      - 新加坡01｜x0.1｜⚡️
+      - 新加坡04｜x0.1｜⚡️
+      - 东京01｜x0.1｜⚡️
+      - 东京03｜⚡️
+      - 美国01｜x0.01｜⚡️
+      - 美国02｜x0.01｜⚡️
+      - 德国｜x0.01｜⚡️
+      - 迪拜01｜x0.01｜⚡️
+      - 阿布扎比｜x0.01｜⚡️
+      - 悉尼｜x0.01｜⚡️
+      - 香港03 | TUN
+      - 香港04 | TUN
+      - 香港05 | TUN
+      - 香港06 | TUN
+      - 香港07 | TUN
+      - 香港08 | TUN
+      - 台湾01 | TUN
+      - 台湾02 | TUN
+      - 日本01 | TUN
+      - 日本02 | TUN
+      - 日本03 | TUN
+      - 日本04 | TUN
+      - 首尔01 | TUN
+      - 首尔02 | TUN
+      - 首尔03 | TUN
+      - 首尔04 | TUN
+      - 春川01 | TUN
+      - 春川02 | TUN
+      - 新加坡01 | TUN
+      - 新加坡02 | TUN
+      - 美国01 | TUN
+      - 美国02 | TUN
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
