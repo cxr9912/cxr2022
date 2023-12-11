@@ -5,35 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 推广10％循环返佣, server: www.visa.com, port: 8080, type: vmess, uuid: ddc3549d-a327-468e-9cbb-fb089b0bba41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/v?ed=2048", ws-headers: {Host: us.tashancloud.link}, udp: true}
-  - {name: 免费套餐优惠码 年费9折优惠码进群领取, server: skk.moe, port: 8080, type: vmess, uuid: ddc3549d-a327-468e-9cbb-fb089b0bba41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/v?ed=2048", ws-headers: {Host: us.tashancloud.link}, udp: true}
-  - {name: 推出加盟计划 详情联系 @tr6543, server: yd1.992688.xyz, port: 8080, type: vmess, uuid: ddc3549d-a327-468e-9cbb-fb089b0bba41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/v?ed=2048", ws-headers: {Host: us.tashancloud.link}, udp: true}
+  - {name: 美国核心 IEPL 03, server: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 928dc6ee-495b-446f-9f20-883dedce564a, sni: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 推广10％循环返佣
-      - 免费套餐优惠码 年费9折优惠码进群领取
-      - 推出加盟计划 详情联系 @tr6543
+      - 美国核心 IEPL 03
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 推广10％循环返佣
-      - 免费套餐优惠码 年费9折优惠码进群领取
-      - 推出加盟计划 详情联系 @tr6543
+      - 美国核心 IEPL 03
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 推广10％循环返佣
-      - 免费套餐优惠码 年费9折优惠码进群领取
-      - 推出加盟计划 详情联系 @tr6543
+      - 美国核心 IEPL 03
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,9 +44,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 推广10％循环返佣
-      - 免费套餐优惠码 年费9折优惠码进群领取
-      - 推出加盟计划 详情联系 @tr6543
+      - 美国核心 IEPL 03
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -65,26 +55,20 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 推广10％循环返佣
-      - 免费套餐优惠码 年费9折优惠码进群领取
-      - 推出加盟计划 详情联系 @tr6543
+      - 美国核心 IEPL 03
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 推广10％循环返佣
-      - 免费套餐优惠码 年费9折优惠码进群领取
-      - 推出加盟计划 详情联系 @tr6543
+      - 美国核心 IEPL 03
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 推广10％循环返佣
-      - 免费套餐优惠码 年费9折优惠码进群领取
-      - 推出加盟计划 详情联系 @tr6543
+      - 美国核心 IEPL 03
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +84,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 推广10％循环返佣
-      - 免费套餐优惠码 年费9折优惠码进群领取
-      - 推出加盟计划 详情联系 @tr6543
+      - 美国核心 IEPL 03
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
