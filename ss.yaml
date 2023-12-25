@@ -5,27 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国核心 IEPL 03, server: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 928dc6ee-495b-446f-9f20-883dedce564a, sni: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
+  - {name: "@ZDYZ2-🇺🇸 United States 02", server: select-us.00hgmaq6yv.com, port: 9022, type: vmess, uuid: 2ba7339a-eb4f-3280-bf91-9167928f0e0a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@ZDYZ2-🤔 unknown 20", server: yd-02.paofunlink.com, port: 1184, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: d42f56951.microsoft.com}, udp: true}
+  - {name: "@ZDYZ2-🤔 unknown 18", server: yd-02.paofunlink.com, port: 1182, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: d42f56951.microsoft.com}, udp: true}
+  - {name: "@ZDYZ2-🤔 unknown 19", server: yd-02.paofunlink.com, port: 1183, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: d42f56951.microsoft.com}, udp: true}
+  - {name: "@ZDYZ2-🤔 unknown 16", server: yd-05.paofunlink.com, port: 1180, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: d42f56951.microsoft.com}, udp: true}
+  - {name: "@ZDYZ2-🤔 unknown 17", server: yd-05.paofunlink.com, port: 1181, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: d42f56951.microsoft.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国核心 IEPL 03
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🤔 unknown 20"
+      - "@ZDYZ2-🤔 unknown 18"
+      - "@ZDYZ2-🤔 unknown 19"
+      - "@ZDYZ2-🤔 unknown 16"
+      - "@ZDYZ2-🤔 unknown 17"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国核心 IEPL 03
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🤔 unknown 20"
+      - "@ZDYZ2-🤔 unknown 18"
+      - "@ZDYZ2-🤔 unknown 19"
+      - "@ZDYZ2-🤔 unknown 16"
+      - "@ZDYZ2-🤔 unknown 17"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国核心 IEPL 03
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🤔 unknown 20"
+      - "@ZDYZ2-🤔 unknown 18"
+      - "@ZDYZ2-🤔 unknown 19"
+      - "@ZDYZ2-🤔 unknown 16"
+      - "@ZDYZ2-🤔 unknown 17"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -44,7 +64,12 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国核心 IEPL 03
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🤔 unknown 20"
+      - "@ZDYZ2-🤔 unknown 18"
+      - "@ZDYZ2-🤔 unknown 19"
+      - "@ZDYZ2-🤔 unknown 16"
+      - "@ZDYZ2-🤔 unknown 17"
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -55,20 +80,35 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国核心 IEPL 03
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🤔 unknown 20"
+      - "@ZDYZ2-🤔 unknown 18"
+      - "@ZDYZ2-🤔 unknown 19"
+      - "@ZDYZ2-🤔 unknown 16"
+      - "@ZDYZ2-🤔 unknown 17"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国核心 IEPL 03
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🤔 unknown 20"
+      - "@ZDYZ2-🤔 unknown 18"
+      - "@ZDYZ2-🤔 unknown 19"
+      - "@ZDYZ2-🤔 unknown 16"
+      - "@ZDYZ2-🤔 unknown 17"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国核心 IEPL 03
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🤔 unknown 20"
+      - "@ZDYZ2-🤔 unknown 18"
+      - "@ZDYZ2-🤔 unknown 19"
+      - "@ZDYZ2-🤔 unknown 16"
+      - "@ZDYZ2-🤔 unknown 17"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,7 +124,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国核心 IEPL 03
+      - "@ZDYZ2-🇺🇸 United States 02"
+      - "@ZDYZ2-🤔 unknown 20"
+      - "@ZDYZ2-🤔 unknown 18"
+      - "@ZDYZ2-🤔 unknown 19"
+      - "@ZDYZ2-🤔 unknown 16"
+      - "@ZDYZ2-🤔 unknown 17"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
