@@ -5,63 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 / HK丨广港-03, server: hk03.ilpc.saobiwang.top, port: 45077, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
-  - {name: 距离下次重置剩余：3 天, server: 183.240.117.62, port: 45204, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
-  - {name: 日本 / JP丨广港-01, server: rb01.ilpc.saobiwang.top, port: 45061, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
-  - {name: 日本 / JP丨广港-02, server: rb02.ilpc.saobiwang.top, port: 45064, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
-  - {name: 日本 / JP丨广港-03, server: rb03.ilpc.saobiwang.top, port: 45063, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
-  - {name: 新加坡 / SG丨广港-02, server: xjp02.ilpc.saobiwang.top, port: 45055, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
-  - {name: 新加坡 / SG丨广港-01, server: xjp01.ilpc.saobiwang.top, port: 45051, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
-  - {name: 香港 / HK丨广港-01, server: hk01.ilpc.saobiwang.top, port: 45075, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
-  - {name: 新加坡 / SG丨广港-03, server: xjp03.ilpc.saobiwang.top, port: 45053, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
-  - {name: 香港 / HK丨广港-02, server: hk02.ilpc.saobiwang.top, port: 45079, type: ss, cipher: chacha20-ietf-poly1305, password: b6234128-142d-40d4-8612-81f795497345, udp: true}
+  - {name: 移动, server: 104.21.236.189, port: 80, type: vmess, uuid: 60be5ddb-c9f1-48ec-b0ee-f6bd4364b3ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ccs.hostmjj.com}, udp: true}
+  - {name: 联通, server: 162.159.38.136, port: 80, type: vmess, uuid: 60be5ddb-c9f1-48ec-b0ee-f6bd4364b3ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ccs.hostmjj.com}, udp: true}
+  - {name: 电信, server: 104.17.171.34, port: 80, type: vmess, uuid: 60be5ddb-c9f1-48ec-b0ee-f6bd4364b3ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ccs.hostmjj.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 / HK丨广港-03
-      - 距离下次重置剩余：3 天
-      - 日本 / JP丨广港-01
-      - 日本 / JP丨广港-02
-      - 日本 / JP丨广港-03
-      - 新加坡 / SG丨广港-02
-      - 新加坡 / SG丨广港-01
-      - 香港 / HK丨广港-01
-      - 新加坡 / SG丨广港-03
-      - 香港 / HK丨广港-02
+      - 移动
+      - 联通
+      - 电信
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 / HK丨广港-03
-      - 距离下次重置剩余：3 天
-      - 日本 / JP丨广港-01
-      - 日本 / JP丨广港-02
-      - 日本 / JP丨广港-03
-      - 新加坡 / SG丨广港-02
-      - 新加坡 / SG丨广港-01
-      - 香港 / HK丨广港-01
-      - 新加坡 / SG丨广港-03
-      - 香港 / HK丨广港-02
+      - 移动
+      - 联通
+      - 电信
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 / HK丨广港-03
-      - 距离下次重置剩余：3 天
-      - 日本 / JP丨广港-01
-      - 日本 / JP丨广港-02
-      - 日本 / JP丨广港-03
-      - 新加坡 / SG丨广港-02
-      - 新加坡 / SG丨广港-01
-      - 香港 / HK丨广港-01
-      - 新加坡 / SG丨广港-03
-      - 香港 / HK丨广港-02
+      - 移动
+      - 联通
+      - 电信
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,76 +52,39 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 / HK丨广港-03
-      - 距离下次重置剩余：3 天
-      - 日本 / JP丨广港-01
-      - 日本 / JP丨广港-02
-      - 日本 / JP丨广港-03
-      - 新加坡 / SG丨广港-02
-      - 新加坡 / SG丨广港-01
-      - 香港 / HK丨广港-01
-      - 新加坡 / SG丨广港-03
-      - 香港 / HK丨广港-02
+      - 移动
+      - 联通
+      - 电信
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 / HK丨广港-03
-      - 日本 / JP丨广港-01
-      - 日本 / JP丨广港-02
-      - 日本 / JP丨广港-03
-      - 新加坡 / SG丨广港-02
-      - 新加坡 / SG丨广港-01
-      - 香港 / HK丨广港-01
-      - 新加坡 / SG丨广港-03
-      - 香港 / HK丨广港-02
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 / HK丨广港-03
-      - 距离下次重置剩余：3 天
-      - 日本 / JP丨广港-01
-      - 日本 / JP丨广港-02
-      - 日本 / JP丨广港-03
-      - 新加坡 / SG丨广港-02
-      - 新加坡 / SG丨广港-01
-      - 香港 / HK丨广港-01
-      - 新加坡 / SG丨广港-03
-      - 香港 / HK丨广港-02
+      - 移动
+      - 联通
+      - 电信
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 / HK丨广港-03
-      - 距离下次重置剩余：3 天
-      - 日本 / JP丨广港-01
-      - 日本 / JP丨广港-02
-      - 日本 / JP丨广港-03
-      - 新加坡 / SG丨广港-02
-      - 新加坡 / SG丨广港-01
-      - 香港 / HK丨广港-01
-      - 新加坡 / SG丨广港-03
-      - 香港 / HK丨广港-02
+      - 移动
+      - 联通
+      - 电信
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 / HK丨广港-03
-      - 距离下次重置剩余：3 天
-      - 日本 / JP丨广港-01
-      - 日本 / JP丨广港-02
-      - 日本 / JP丨广港-03
-      - 新加坡 / SG丨广港-02
-      - 新加坡 / SG丨广港-01
-      - 香港 / HK丨广港-01
-      - 新加坡 / SG丨广港-03
-      - 香港 / HK丨广港-02
+      - 移动
+      - 联通
+      - 电信
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -165,16 +100,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 / HK丨广港-03
-      - 距离下次重置剩余：3 天
-      - 日本 / JP丨广港-01
-      - 日本 / JP丨广港-02
-      - 日本 / JP丨广港-03
-      - 新加坡 / SG丨广港-02
-      - 新加坡 / SG丨广港-01
-      - 香港 / HK丨广港-01
-      - 新加坡 / SG丨广港-03
-      - 香港 / HK丨广港-02
+      - 移动
+      - 联通
+      - 电信
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
