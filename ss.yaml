@@ -5,159 +5,1415 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 德国_Telegram@kxswa 8, server: 49.13.10.50, port: 1194, type: ss, cipher: chacha20-ietf-poly1305, password: Uxm4ADwftKdXq5qRA4ZfHS, udp: true}
-  - {name: 德国_Telegram@kxswa 5, server: 5.104.107.143, port: 443, type: trojan, password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a, skip-cert-verify: true, udp: true}
-  - {name: 香港_Telegram@kxswa 16, server: 45.87.153.246, port: 6199, type: ss, cipher: chacha20-ietf-poly1305, password: f7EI0dGWQM42T8gwN9CZIj, udp: true}
-  - {name: 香港_Telegram@kxswa, server: 1.65.139.54, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: /, tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 越南_Telegram@kxswa 14, server: hanoi4.speed4g.click, port: 443, type: trojan, password: b379fd8e-75c6-4bd6-8a5b-88f3e64bb3fa, sni: hanoi4.speed4g.click, skip-cert-verify: true, udp: true}
-  - {name: 香港_Telegram@kxswa 21, server: cm03.newcome.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 46961:1210-Tha, obfs-param: 5d3ee46961.microsoft.com, udp: true}
-  - {name: 德国_Telegram@kxswa 4, server: 213.202.216.14, port: 443, type: trojan, password: 7a57c3cd-2300-4867-9da2-9f8504b81af5, skip-cert-verify: true, udp: true}
-  - {name: 德国_Telegram@kxswa, server: 5.78.74.72, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [5.78.74.72]}}, udp: true}
-  - {name: 新加坡_Telegram@kxswa 6, server: 52.221.203.229, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 美国_Telegram@kxswa 20, server: 94.131.14.177, port: 80, type: vmess, uuid: ea2928cb-f9cc-4747-ab60-d23abe3ba1e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: 94.131.14.177}, udp: true}
-  - {name: 德国_Telegram@kxswa 3, server: 5.104.107.143, port: 443, type: trojan, password: 6befeeb3-702b-4948-9028-f9e072f2da98, skip-cert-verify: true, udp: true}
-  - {name: 越南_Telegram@kxswa 15, server: vip.zinok.pro, port: 443, type: trojan, password: mothai3456789080898, sni: vip.zinok.pro, skip-cert-verify: true, udp: true}
-  - {name: 香港_Telegram@kxswa 28, server: service.ouluyun9803.com, port: 26666, type: ss, cipher: chacha20-ietf-poly1305, password: 73637cec-699d-4d87-99af-0776ac880604, udp: true}
-  - {name: 美国_Telegram@kxswa 23, server: frontend.yijianlian.app, port: 54590, type: trojan, password: b5e4e360-5946-470b-aad0-db98f50faa57, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: 新加坡_Telegram@kxswa 5, server: 47.128.247.139, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 德国_Telegram@kxswa 2, server: 5.104.107.143, port: 443, type: trojan, password: 46d69a7e-9002-44a3-99c1-01c412f29726, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚_Telegram@kxswa 2, server: ap-northeast-1.openssl3.com, port: 443, type: trojan, password: tune7jerky7HAYRICK, sni: ap-northeast-1.openssl3.com, skip-cert-verify: true, udp: true}
-  - {name: 香港_Telegram@kxswa 17, server: service.ouluyun9803.com, port: 50002, type: ss, cipher: chacha20-ietf-poly1305, password: 73637cec-699d-4d87-99af-0776ac880604, udp: true}
-  - {name: 新加坡_Telegram@kxswa 2, server: 13.213.1.132, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 日本_Telegram@kxswa 5, server: 13.230.96.57, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 日本_Telegram@kxswa 2, server: 13.230.132.209, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 新加坡_Telegram@kxswa 3, server: 13.229.72.52, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 新加坡_Telegram@kxswa, server: 13.212.204.117, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 美国_Telegram@kxswa 19, server: lt2-vmess.sshmax.xyz, port: 80, type: vmess, uuid: ea2928cb-f9cc-4747-ab60-d23abe3ba1e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: lt2-vmess.sshmax.xyz}, udp: true}
-  - {name: 美国_Telegram@kxswa, server: 54.201.23.39, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 美国_Telegram@kxswa 2, server: 34.221.71.169, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 美国_Telegram@kxswa 17, server: 94.131.10.135, port: 8080, type: vmess, uuid: e2021c91-6e29-49d6-9641-14a8f2600e05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: 94.131.10.135}, udp: true}
-  - {name: 香港_Telegram@kxswa 15, server: service.ouluyun9803.com, port: 50003, type: ss, cipher: chacha20-ietf-poly1305, password: 73637cec-699d-4d87-99af-0776ac880604, udp: true}
-  - {name: 香港_Telegram@kxswa 51, server: nc.t2.go002.xyz, port: 19521, type: ss, cipher: chacha20-ietf-poly1305, password: 8c6d36b8-f1f4-45d5-a4ad-b9ac9143e064, udp: true}
-  - {name: 香港_Telegram@kxswa 53, server: nc.t1.go002.xyz, port: 19521, type: ss, cipher: chacha20-ietf-poly1305, password: 8c6d36b8-f1f4-45d5-a4ad-b9ac9143e064, udp: true}
-  - {name: 日本_Telegram@kxswa, server: 47.245.2.84, port: 2082, type: vmess, uuid: bf3d038a-93a2-4e24-886c-6bc64e3c3a90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: els_cdnone.yunjisuan.cf}, udp: true}
-  - {name: 美国_Telegram@kxswa 12, server: 38.54.108.222, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 香港_Telegram@kxswa 60, server: nc.cm.go002.xyz, port: 19593, type: ss, cipher: chacha20-ietf-poly1305, password: 8c6d36b8-f1f4-45d5-a4ad-b9ac9143e064, udp: true}
-  - {name: 美国_Telegram@kxswa 5, server: 45.56.73.46, port: 443, type: trojan, password: 9b57d792-fe3e-42f7-9561-0f0833ed6556, skip-cert-verify: true, udp: true}
+  - {name: 10804, server: 183.236.51.6, port: 10804, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10808, server: 183.236.51.6, port: 10808, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10807, server: 183.236.51.7, port: 10807, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10807 2, server: 183.236.51.6, port: 10807, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10806, server: 183.236.51.7, port: 10806, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10802, server: 183.236.51.7, port: 10802, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10802 2, server: 183.236.51.6, port: 10802, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10801, server: 183.236.51.6, port: 10801, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10807 3, server: 183.236.51.6, port: 10807, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10806 2, server: 183.236.51.7, port: 10806, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10803, server: 183.236.51.7, port: 10803, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10807 4, server: 183.236.51.7, port: 10807, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10803 2, server: 183.236.51.7, port: 10803, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10807 5, server: 183.236.51.6, port: 10807, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10801 2, server: 183.236.51.6, port: 10801, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10804 2, server: 183.236.51.7, port: 10804, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10805, server: 183.236.51.6, port: 10805, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10804 3, server: 183.236.51.6, port: 10804, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10806 3, server: 183.236.51.6, port: 10806, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10806 4, server: 183.236.51.7, port: 10806, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10802 3, server: 183.236.51.7, port: 10802, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10805 2, server: 183.236.51.6, port: 10805, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10808 2, server: 183.236.51.6, port: 10808, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10808 3, server: 183.236.51.7, port: 10808, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10805 3, server: 183.236.51.7, port: 10805, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10801 3, server: 183.236.51.7, port: 10801, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10803 3, server: 183.236.51.7, port: 10803, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10805 4, server: 183.236.51.7, port: 10805, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10806 5, server: 183.236.51.6, port: 10806, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10804 4, server: 183.236.51.7, port: 10804, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10808 4, server: 183.236.51.7, port: 10808, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10806 6, server: 183.236.51.6, port: 10806, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10801 4, server: 183.236.51.7, port: 10801, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10802 4, server: 183.236.51.7, port: 10802, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10805 5, server: 183.236.51.6, port: 10805, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10802 5, server: 183.236.51.6, port: 10802, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10801 5, server: 183.236.51.6, port: 10801, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10803 4, server: 183.236.51.6, port: 10803, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10804 5, server: 183.236.51.6, port: 10804, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10802 6, server: 183.236.51.6, port: 10802, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10808 5, server: 183.236.51.6, port: 10808, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10808 6, server: 183.236.51.7, port: 10808, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10804 6, server: 183.236.51.7, port: 10804, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10805 6, server: 183.236.51.7, port: 10805, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10804 7, server: 183.236.51.6, port: 10804, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10803 5, server: 183.236.51.6, port: 10803, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10807 6, server: 183.236.51.6, port: 10807, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10801 6, server: 183.236.51.7, port: 10801, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10806 7, server: 183.236.51.6, port: 10806, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10807 7, server: 183.236.51.7, port: 10807, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10803 6, server: 183.236.51.6, port: 10803, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10829, server: 183.236.51.6, port: 10829, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10801 7, server: 183.236.51.6, port: 10801, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10827, server: 183.236.51.7, port: 10827, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10802 7, server: 183.236.51.6, port: 10802, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10808 7, server: 183.236.51.7, port: 10808, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10828, server: 183.236.51.7, port: 10828, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10829 2, server: 183.236.51.6, port: 10829, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10829 3, server: 183.236.51.6, port: 10829, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10832, server: 183.236.51.7, port: 10832, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10830, server: 183.236.51.6, port: 10830, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10805 7, server: 183.236.51.6, port: 10805, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10834, server: 183.236.51.7, port: 10834, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10802 8, server: 183.236.51.7, port: 10802, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10805 8, server: 183.236.51.7, port: 10805, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10803 7, server: 183.236.51.6, port: 10803, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10833, server: 183.236.51.6, port: 10833, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10801 8, server: 183.236.51.7, port: 10801, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10806 8, server: 183.236.51.7, port: 10806, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10833 2, server: 183.236.51.7, port: 10833, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10830 2, server: 183.236.51.6, port: 10830, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10829 4, server: 183.236.51.7, port: 10829, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10831, server: 183.236.51.6, port: 10831, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10828 2, server: 183.236.51.7, port: 10828, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10831 2, server: 183.236.51.7, port: 10831, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10830 3, server: 183.236.51.7, port: 10830, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10803 8, server: 183.236.51.7, port: 10803, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10827 2, server: 183.236.51.6, port: 10827, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10827 3, server: 183.236.51.6, port: 10827, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10807 8, server: 183.236.51.7, port: 10807, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10829 5, server: 183.236.51.7, port: 10829, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10830 4, server: 183.236.51.6, port: 10830, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10828 3, server: 183.236.51.6, port: 10828, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10832 2, server: 183.236.51.6, port: 10832, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10804 8, server: 183.236.51.7, port: 10804, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10834 2, server: 183.236.51.7, port: 10834, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10832 3, server: 183.236.51.6, port: 10832, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10829 6, server: 183.236.51.7, port: 10829, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10828 4, server: 183.236.51.6, port: 10828, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10827 4, server: 183.236.51.7, port: 10827, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10831 3, server: 183.236.51.7, port: 10831, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10832 4, server: 183.236.51.7, port: 10832, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10832 5, server: 183.236.51.7, port: 10832, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10827 5, server: 183.236.51.6, port: 10827, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10834 3, server: 183.236.51.6, port: 10834, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10808 8, server: 183.236.51.6, port: 10808, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10827 6, server: 183.236.51.7, port: 10827, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10834 4, server: 183.236.51.7, port: 10834, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10830 5, server: 183.236.51.7, port: 10830, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10833 3, server: 183.236.51.6, port: 10833, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10828 5, server: 183.236.51.6, port: 10828, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10828 6, server: 183.236.51.7, port: 10828, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10831 4, server: 183.236.51.6, port: 10831, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10827 7, server: 183.236.51.6, port: 10827, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10810, server: 183.236.51.7, port: 10810, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10833 4, server: 183.236.51.7, port: 10833, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10833 5, server: 183.236.51.7, port: 10833, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10809, server: 183.236.51.6, port: 10809, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10834 5, server: 183.236.51.7, port: 10834, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10832 6, server: 183.236.51.7, port: 10832, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10809 2, server: 183.236.51.7, port: 10809, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10831 5, server: 183.236.51.7, port: 10831, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10834 6, server: 183.236.51.6, port: 10834, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10840, server: 183.236.51.6, port: 10840, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10833 6, server: 183.236.51.6, port: 10833, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10833 7, server: 183.236.51.7, port: 10833, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10832 7, server: 183.236.51.6, port: 10832, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10831 6, server: 183.236.51.6, port: 10831, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10810 2, server: 183.236.51.7, port: 10810, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10828 7, server: 183.236.51.7, port: 10828, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10810 3, server: 183.236.51.6, port: 10810, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10830 6, server: 183.236.51.7, port: 10830, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10835, server: 183.236.51.7, port: 10835, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10809 3, server: 183.236.51.7, port: 10809, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10832 8, server: 183.236.51.6, port: 10832, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10840 2, server: 183.236.51.7, port: 10840, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10840 3, server: 183.236.51.7, port: 10840, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10831 7, server: 183.236.51.6, port: 10831, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10809 4, server: 183.236.51.6, port: 10809, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10829 7, server: 183.236.51.6, port: 10829, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10809 5, server: 183.236.51.6, port: 10809, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10834 7, server: 183.236.51.6, port: 10834, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10809 6, server: 183.236.51.6, port: 10809, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10835 2, server: 183.236.51.7, port: 10835, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10830 7, server: 183.236.51.6, port: 10830, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10810 4, server: 183.236.51.7, port: 10810, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10840 4, server: 183.236.51.7, port: 10840, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10834 8, server: 183.236.51.6, port: 10834, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10827 8, server: 183.236.51.7, port: 10827, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10828 8, server: 183.236.51.6, port: 10828, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10829 8, server: 183.236.51.7, port: 10829, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10840 5, server: 183.236.51.6, port: 10840, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10809 7, server: 183.236.51.7, port: 10809, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10809 8, server: 183.236.51.7, port: 10809, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10840 6, server: 183.236.51.7, port: 10840, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10833 8, server: 183.236.51.6, port: 10833, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10810 5, server: 183.236.51.6, port: 10810, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10810 6, server: 183.236.51.7, port: 10810, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10835 3, server: 183.236.51.7, port: 10835, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10840 7, server: 183.236.51.6, port: 10840, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10813, server: 183.236.51.7, port: 10813, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10840 8, server: 183.236.51.6, port: 10840, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10813 2, server: 183.236.51.7, port: 10813, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10818, server: 183.236.51.6, port: 10818, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10835 4, server: 183.236.51.7, port: 10835, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10810 7, server: 183.236.51.6, port: 10810, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10816, server: 183.236.51.7, port: 10816, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10815, server: 183.236.51.7, port: 10815, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10818 2, server: 183.236.51.7, port: 10818, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10831 8, server: 183.236.51.7, port: 10831, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10815 2, server: 183.236.51.7, port: 10815, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10813 3, server: 183.236.51.7, port: 10813, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10830 8, server: 183.236.51.7, port: 10830, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10817, server: 183.236.51.6, port: 10817, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10815 3, server: 183.236.51.7, port: 10815, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10817 2, server: 183.236.51.7, port: 10817, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10810 8, server: 183.236.51.6, port: 10810, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10811, server: 183.236.51.7, port: 10811, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10818 3, server: 183.236.51.7, port: 10818, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10813 4, server: 183.236.51.6, port: 10813, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10818 4, server: 183.236.51.6, port: 10818, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10817 3, server: 183.236.51.7, port: 10817, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10816 2, server: 183.236.51.6, port: 10816, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10817 4, server: 183.236.51.7, port: 10817, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10813 5, server: 183.236.51.7, port: 10813, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10811 2, server: 183.236.51.7, port: 10811, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10816 3, server: 183.236.51.7, port: 10816, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10817 5, server: 183.236.51.6, port: 10817, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10816 4, server: 183.236.51.7, port: 10816, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10811 3, server: 183.236.51.6, port: 10811, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10811 4, server: 183.236.51.6, port: 10811, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10818 5, server: 183.236.51.7, port: 10818, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10811 5, server: 183.236.51.7, port: 10811, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10818 6, server: 183.236.51.6, port: 10818, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10816 5, server: 183.236.51.6, port: 10816, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10815 4, server: 183.236.51.7, port: 10815, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10841, server: 183.236.51.6, port: 10841, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10841 2, server: 183.236.51.7, port: 10841, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10815 5, server: 183.236.51.6, port: 10815, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10816 6, server: 183.236.51.6, port: 10816, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10815 6, server: 183.236.51.6, port: 10815, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10816 7, server: 183.236.51.6, port: 10816, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10841 3, server: 183.236.51.7, port: 10841, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10841 4, server: 183.236.51.6, port: 10841, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10841 5, server: 183.236.51.6, port: 10841, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10818 7, server: 183.236.51.7, port: 10818, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10811 6, server: 183.236.51.6, port: 10811, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10816 8, server: 183.236.51.7, port: 10816, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10817 6, server: 183.236.51.7, port: 10817, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10841 6, server: 183.236.51.6, port: 10841, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10815 7, server: 183.236.51.6, port: 10815, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10813 6, server: 183.236.51.6, port: 10813, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10841 7, server: 183.236.51.7, port: 10841, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10811 7, server: 183.236.51.7, port: 10811, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10841 8, server: 183.236.51.7, port: 10841, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10811 8, server: 183.236.51.6, port: 10811, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10817 7, server: 183.236.51.6, port: 10817, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10813 7, server: 183.236.51.6, port: 10813, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10818 8, server: 183.236.51.6, port: 10818, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10815 8, server: 183.236.51.6, port: 10815, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10813 8, server: 183.236.51.6, port: 10813, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10823, server: 183.236.51.6, port: 10823, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10819, server: 183.236.51.6, port: 10819, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10824, server: 183.236.51.7, port: 10824, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10817 8, server: 183.236.51.6, port: 10817, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10821, server: 183.236.51.6, port: 10821, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10826, server: 183.236.51.6, port: 10826, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10823 2, server: 183.236.51.6, port: 10823, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10819 2, server: 183.236.51.7, port: 10819, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10821 2, server: 183.236.51.6, port: 10821, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10826 2, server: 183.236.51.6, port: 10826, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10826 3, server: 183.236.51.6, port: 10826, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10820, server: 183.236.51.6, port: 10820, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10823 3, server: 183.236.51.6, port: 10823, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10825, server: 183.236.51.6, port: 10825, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10821 3, server: 183.236.51.6, port: 10821, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10826 4, server: 183.236.51.6, port: 10826, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10819 3, server: 183.236.51.6, port: 10819, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10823 4, server: 183.236.51.7, port: 10823, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10822, server: 183.236.51.6, port: 10822, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10822 2, server: 183.236.51.6, port: 10822, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10822 3, server: 183.236.51.6, port: 10822, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10819 4, server: 183.236.51.7, port: 10819, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10819 5, server: 183.236.51.6, port: 10819, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10820 2, server: 183.236.51.6, port: 10820, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10822 4, server: 183.236.51.7, port: 10822, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10825 2, server: 183.236.51.6, port: 10825, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10820 3, server: 183.236.51.7, port: 10820, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10823 5, server: 183.236.51.6, port: 10823, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10820 4, server: 183.236.51.6, port: 10820, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10819 6, server: 183.236.51.6, port: 10819, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10846, server: 183.236.51.6, port: 10846, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10826 5, server: 183.236.51.7, port: 10826, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10821 4, server: 183.236.51.7, port: 10821, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10825 3, server: 183.236.51.7, port: 10825, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10824 2, server: 183.236.51.6, port: 10824, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10821 5, server: 183.236.51.7, port: 10821, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10824 3, server: 183.236.51.7, port: 10824, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10823 6, server: 183.236.51.7, port: 10823, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10824 4, server: 183.236.51.6, port: 10824, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10824 5, server: 183.236.51.6, port: 10824, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10820 5, server: 183.236.51.7, port: 10820, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10823 7, server: 183.236.51.7, port: 10823, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10819 7, server: 183.236.51.7, port: 10819, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10825 4, server: 183.236.51.6, port: 10825, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10822 5, server: 183.236.51.7, port: 10822, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10824 6, server: 183.236.51.7, port: 10824, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10826 6, server: 183.236.51.7, port: 10826, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10821 6, server: 183.236.51.7, port: 10821, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10822 6, server: 183.236.51.6, port: 10822, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10824 7, server: 183.236.51.6, port: 10824, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10825 5, server: 183.236.51.6, port: 10825, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10846 2, server: 183.236.51.7, port: 10846, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10826 7, server: 183.236.51.7, port: 10826, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10825 6, server: 183.236.51.7, port: 10825, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10820 6, server: 183.236.51.6, port: 10820, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10822 7, server: 183.236.51.7, port: 10822, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10846 3, server: 183.236.51.7, port: 10846, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10846 4, server: 183.236.51.6, port: 10846, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10821 7, server: 183.236.51.6, port: 10821, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10846 5, server: 183.236.51.6, port: 10846, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10846 6, server: 183.236.51.7, port: 10846, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10822 8, server: 183.236.51.7, port: 10822, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10820 7, server: 183.236.51.7, port: 10820, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10846 7, server: 183.236.51.6, port: 10846, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10819 8, server: 183.236.51.7, port: 10819, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10821 8, server: 183.236.51.7, port: 10821, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10825 7, server: 183.236.51.7, port: 10825, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10824 8, server: 183.236.51.7, port: 10824, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10823 8, server: 183.236.51.7, port: 10823, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10847, server: 183.236.51.7, port: 10847, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10839, server: 183.236.51.6, port: 10839, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10825 8, server: 183.236.51.7, port: 10825, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10847 2, server: 183.236.51.7, port: 10847, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10847 3, server: 183.236.51.7, port: 10847, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10820 8, server: 183.236.51.7, port: 10820, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10847 4, server: 183.236.51.6, port: 10847, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10847 5, server: 183.236.51.6, port: 10847, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10849, server: 183.236.51.6, port: 10849, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10847 6, server: 183.236.51.6, port: 10847, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10826 8, server: 183.236.51.7, port: 10826, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10847 7, server: 183.236.51.6, port: 10847, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10839 2, server: 183.236.51.6, port: 10839, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10849 2, server: 183.236.51.6, port: 10849, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10848, server: 183.236.51.6, port: 10848, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10839 3, server: 183.236.51.6, port: 10839, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10839 4, server: 183.236.51.6, port: 10839, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10848 2, server: 183.236.51.6, port: 10848, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10848 3, server: 183.236.51.7, port: 10848, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10847 8, server: 183.236.51.7, port: 10847, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10849 3, server: 183.236.51.7, port: 10849, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10848 4, server: 183.236.51.6, port: 10848, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10849 4, server: 183.236.51.7, port: 10849, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10848 5, server: 183.236.51.7, port: 10848, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10848 6, server: 183.236.51.6, port: 10848, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10839 5, server: 183.236.51.7, port: 10839, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10849 5, server: 183.236.51.7, port: 10849, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10846 8, server: 183.236.51.7, port: 10846, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10839 6, server: 183.236.51.7, port: 10839, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10849 6, server: 183.236.51.6, port: 10849, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10848 7, server: 183.236.51.7, port: 10848, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10837, server: 183.236.51.6, port: 10837, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10848 8, server: 183.236.51.7, port: 10848, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10838, server: 183.236.51.6, port: 10838, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10837 2, server: 183.236.51.6, port: 10837, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10839 7, server: 183.236.51.7, port: 10839, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10849 7, server: 183.236.51.6, port: 10849, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10837 3, server: 183.236.51.7, port: 10837, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10838 2, server: 183.236.51.7, port: 10838, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10850, server: 183.236.51.6, port: 10850, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10837 4, server: 183.236.51.7, port: 10837, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10838 3, server: 183.236.51.6, port: 10838, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10837 5, server: 183.236.51.7, port: 10837, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10838 4, server: 183.236.51.7, port: 10838, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10837 6, server: 183.236.51.6, port: 10837, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10838 5, server: 183.236.51.7, port: 10838, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10839 8, server: 183.236.51.7, port: 10839, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10849 8, server: 183.236.51.7, port: 10849, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10838 6, server: 183.236.51.6, port: 10838, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10837 7, server: 183.236.51.7, port: 10837, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10850 2, server: 183.236.51.6, port: 10850, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10838 7, server: 183.236.51.7, port: 10838, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10838 8, server: 183.236.51.6, port: 10838, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10850 3, server: 183.236.51.7, port: 10850, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10850 4, server: 183.236.51.7, port: 10850, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10850 5, server: 183.236.51.7, port: 10850, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10837 8, server: 183.236.51.6, port: 10837, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10850 6, server: 183.236.51.7, port: 10850, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10850 7, server: 183.236.51.6, port: 10850, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10850 8, server: 183.236.51.6, port: 10850, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10844, server: 183.236.51.7, port: 10844, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10844 2, server: 183.236.51.7, port: 10844, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10844 3, server: 183.236.51.6, port: 10844, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10844 4, server: 183.236.51.7, port: 10844, type: trojan, password: a5b8fa58-287e-44bd-8e0d-e3653072f625, skip-cert-verify: true, udp: true}
+  - {name: 10844 5, server: 183.236.51.6, port: 10844, type: trojan, password: a5fe20ed-fd14-4692-885f-f94678403283, skip-cert-verify: true, udp: true}
+  - {name: 10844 6, server: 183.236.51.7, port: 10844, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
+  - {name: 10844 7, server: 183.236.51.6, port: 10844, type: trojan, password: 2af839ea-0376-4f6a-be7d-74cee2be1cf1, skip-cert-verify: true, udp: true}
+  - {name: 10844 8, server: 183.236.51.6, port: 10844, type: trojan, password: 3bbd7fb2-4d5b-4a71-992c-809d2574182a, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 德国_Telegram@kxswa 8
-      - 德国_Telegram@kxswa 5
-      - 香港_Telegram@kxswa 16
-      - 香港_Telegram@kxswa
-      - 越南_Telegram@kxswa 14
-      - 香港_Telegram@kxswa 21
-      - 德国_Telegram@kxswa 4
-      - 德国_Telegram@kxswa
-      - 新加坡_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 20
-      - 德国_Telegram@kxswa 3
-      - 越南_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 28
-      - 美国_Telegram@kxswa 23
-      - 新加坡_Telegram@kxswa 5
-      - 德国_Telegram@kxswa 2
-      - 澳大利亚_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 17
-      - 新加坡_Telegram@kxswa 2
-      - 日本_Telegram@kxswa 5
-      - 日本_Telegram@kxswa 2
-      - 新加坡_Telegram@kxswa 3
-      - 新加坡_Telegram@kxswa
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 17
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 51
-      - 香港_Telegram@kxswa 53
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 60
-      - 美国_Telegram@kxswa 5
+      - 10804
+      - 10808
+      - 10807
+      - 10807 2
+      - 10806
+      - 10802
+      - 10802 2
+      - 10801
+      - 10807 3
+      - 10806 2
+      - 10803
+      - 10807 4
+      - 10803 2
+      - 10807 5
+      - 10801 2
+      - 10804 2
+      - 10805
+      - 10804 3
+      - 10806 3
+      - 10806 4
+      - 10802 3
+      - 10805 2
+      - 10808 2
+      - 10808 3
+      - 10805 3
+      - 10801 3
+      - 10803 3
+      - 10805 4
+      - 10806 5
+      - 10804 4
+      - 10808 4
+      - 10806 6
+      - 10801 4
+      - 10802 4
+      - 10805 5
+      - 10802 5
+      - 10801 5
+      - 10803 4
+      - 10804 5
+      - 10802 6
+      - 10808 5
+      - 10808 6
+      - 10804 6
+      - 10805 6
+      - 10804 7
+      - 10803 5
+      - 10807 6
+      - 10801 6
+      - 10806 7
+      - 10807 7
+      - 10803 6
+      - 10829
+      - 10801 7
+      - 10827
+      - 10802 7
+      - 10808 7
+      - 10828
+      - 10829 2
+      - 10829 3
+      - 10832
+      - 10830
+      - 10805 7
+      - 10834
+      - 10802 8
+      - 10805 8
+      - 10803 7
+      - 10833
+      - 10801 8
+      - 10806 8
+      - 10833 2
+      - 10830 2
+      - 10829 4
+      - 10831
+      - 10828 2
+      - 10831 2
+      - 10830 3
+      - 10803 8
+      - 10827 2
+      - 10827 3
+      - 10807 8
+      - 10829 5
+      - 10830 4
+      - 10828 3
+      - 10832 2
+      - 10804 8
+      - 10834 2
+      - 10832 3
+      - 10829 6
+      - 10828 4
+      - 10827 4
+      - 10831 3
+      - 10832 4
+      - 10832 5
+      - 10827 5
+      - 10834 3
+      - 10808 8
+      - 10827 6
+      - 10834 4
+      - 10830 5
+      - 10833 3
+      - 10828 5
+      - 10828 6
+      - 10831 4
+      - 10827 7
+      - 10810
+      - 10833 4
+      - 10833 5
+      - 10809
+      - 10834 5
+      - 10832 6
+      - 10809 2
+      - 10831 5
+      - 10834 6
+      - 10840
+      - 10833 6
+      - 10833 7
+      - 10832 7
+      - 10831 6
+      - 10810 2
+      - 10828 7
+      - 10810 3
+      - 10830 6
+      - 10835
+      - 10809 3
+      - 10832 8
+      - 10840 2
+      - 10840 3
+      - 10831 7
+      - 10809 4
+      - 10829 7
+      - 10809 5
+      - 10834 7
+      - 10809 6
+      - 10835 2
+      - 10830 7
+      - 10810 4
+      - 10840 4
+      - 10834 8
+      - 10827 8
+      - 10828 8
+      - 10829 8
+      - 10840 5
+      - 10809 7
+      - 10809 8
+      - 10840 6
+      - 10833 8
+      - 10810 5
+      - 10810 6
+      - 10835 3
+      - 10840 7
+      - 10813
+      - 10840 8
+      - 10813 2
+      - 10818
+      - 10835 4
+      - 10810 7
+      - 10816
+      - 10815
+      - 10818 2
+      - 10831 8
+      - 10815 2
+      - 10813 3
+      - 10830 8
+      - 10817
+      - 10815 3
+      - 10817 2
+      - 10810 8
+      - 10811
+      - 10818 3
+      - 10813 4
+      - 10818 4
+      - 10817 3
+      - 10816 2
+      - 10817 4
+      - 10813 5
+      - 10811 2
+      - 10816 3
+      - 10817 5
+      - 10816 4
+      - 10811 3
+      - 10811 4
+      - 10818 5
+      - 10811 5
+      - 10818 6
+      - 10816 5
+      - 10815 4
+      - 10841
+      - 10841 2
+      - 10815 5
+      - 10816 6
+      - 10815 6
+      - 10816 7
+      - 10841 3
+      - 10841 4
+      - 10841 5
+      - 10818 7
+      - 10811 6
+      - 10816 8
+      - 10817 6
+      - 10841 6
+      - 10815 7
+      - 10813 6
+      - 10841 7
+      - 10811 7
+      - 10841 8
+      - 10811 8
+      - 10817 7
+      - 10813 7
+      - 10818 8
+      - 10815 8
+      - 10813 8
+      - 10823
+      - 10819
+      - 10824
+      - 10817 8
+      - 10821
+      - 10826
+      - 10823 2
+      - 10819 2
+      - 10821 2
+      - 10826 2
+      - 10826 3
+      - 10820
+      - 10823 3
+      - 10825
+      - 10821 3
+      - 10826 4
+      - 10819 3
+      - 10823 4
+      - 10822
+      - 10822 2
+      - 10822 3
+      - 10819 4
+      - 10819 5
+      - 10820 2
+      - 10822 4
+      - 10825 2
+      - 10820 3
+      - 10823 5
+      - 10820 4
+      - 10819 6
+      - 10846
+      - 10826 5
+      - 10821 4
+      - 10825 3
+      - 10824 2
+      - 10821 5
+      - 10824 3
+      - 10823 6
+      - 10824 4
+      - 10824 5
+      - 10820 5
+      - 10823 7
+      - 10819 7
+      - 10825 4
+      - 10822 5
+      - 10824 6
+      - 10826 6
+      - 10821 6
+      - 10822 6
+      - 10824 7
+      - 10825 5
+      - 10846 2
+      - 10826 7
+      - 10825 6
+      - 10820 6
+      - 10822 7
+      - 10846 3
+      - 10846 4
+      - 10821 7
+      - 10846 5
+      - 10846 6
+      - 10822 8
+      - 10820 7
+      - 10846 7
+      - 10819 8
+      - 10821 8
+      - 10825 7
+      - 10824 8
+      - 10823 8
+      - 10847
+      - 10839
+      - 10825 8
+      - 10847 2
+      - 10847 3
+      - 10820 8
+      - 10847 4
+      - 10847 5
+      - 10849
+      - 10847 6
+      - 10826 8
+      - 10847 7
+      - 10839 2
+      - 10849 2
+      - 10848
+      - 10839 3
+      - 10839 4
+      - 10848 2
+      - 10848 3
+      - 10847 8
+      - 10849 3
+      - 10848 4
+      - 10849 4
+      - 10848 5
+      - 10848 6
+      - 10839 5
+      - 10849 5
+      - 10846 8
+      - 10839 6
+      - 10849 6
+      - 10848 7
+      - 10837
+      - 10848 8
+      - 10838
+      - 10837 2
+      - 10839 7
+      - 10849 7
+      - 10837 3
+      - 10838 2
+      - 10850
+      - 10837 4
+      - 10838 3
+      - 10837 5
+      - 10838 4
+      - 10837 6
+      - 10838 5
+      - 10839 8
+      - 10849 8
+      - 10838 6
+      - 10837 7
+      - 10850 2
+      - 10838 7
+      - 10838 8
+      - 10850 3
+      - 10850 4
+      - 10850 5
+      - 10837 8
+      - 10850 6
+      - 10850 7
+      - 10850 8
+      - 10844
+      - 10844 2
+      - 10844 3
+      - 10844 4
+      - 10844 5
+      - 10844 6
+      - 10844 7
+      - 10844 8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 德国_Telegram@kxswa 8
-      - 德国_Telegram@kxswa 5
-      - 香港_Telegram@kxswa 16
-      - 香港_Telegram@kxswa
-      - 越南_Telegram@kxswa 14
-      - 香港_Telegram@kxswa 21
-      - 德国_Telegram@kxswa 4
-      - 德国_Telegram@kxswa
-      - 新加坡_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 20
-      - 德国_Telegram@kxswa 3
-      - 越南_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 28
-      - 美国_Telegram@kxswa 23
-      - 新加坡_Telegram@kxswa 5
-      - 德国_Telegram@kxswa 2
-      - 澳大利亚_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 17
-      - 新加坡_Telegram@kxswa 2
-      - 日本_Telegram@kxswa 5
-      - 日本_Telegram@kxswa 2
-      - 新加坡_Telegram@kxswa 3
-      - 新加坡_Telegram@kxswa
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 17
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 51
-      - 香港_Telegram@kxswa 53
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 60
-      - 美国_Telegram@kxswa 5
+      - 10804
+      - 10808
+      - 10807
+      - 10807 2
+      - 10806
+      - 10802
+      - 10802 2
+      - 10801
+      - 10807 3
+      - 10806 2
+      - 10803
+      - 10807 4
+      - 10803 2
+      - 10807 5
+      - 10801 2
+      - 10804 2
+      - 10805
+      - 10804 3
+      - 10806 3
+      - 10806 4
+      - 10802 3
+      - 10805 2
+      - 10808 2
+      - 10808 3
+      - 10805 3
+      - 10801 3
+      - 10803 3
+      - 10805 4
+      - 10806 5
+      - 10804 4
+      - 10808 4
+      - 10806 6
+      - 10801 4
+      - 10802 4
+      - 10805 5
+      - 10802 5
+      - 10801 5
+      - 10803 4
+      - 10804 5
+      - 10802 6
+      - 10808 5
+      - 10808 6
+      - 10804 6
+      - 10805 6
+      - 10804 7
+      - 10803 5
+      - 10807 6
+      - 10801 6
+      - 10806 7
+      - 10807 7
+      - 10803 6
+      - 10829
+      - 10801 7
+      - 10827
+      - 10802 7
+      - 10808 7
+      - 10828
+      - 10829 2
+      - 10829 3
+      - 10832
+      - 10830
+      - 10805 7
+      - 10834
+      - 10802 8
+      - 10805 8
+      - 10803 7
+      - 10833
+      - 10801 8
+      - 10806 8
+      - 10833 2
+      - 10830 2
+      - 10829 4
+      - 10831
+      - 10828 2
+      - 10831 2
+      - 10830 3
+      - 10803 8
+      - 10827 2
+      - 10827 3
+      - 10807 8
+      - 10829 5
+      - 10830 4
+      - 10828 3
+      - 10832 2
+      - 10804 8
+      - 10834 2
+      - 10832 3
+      - 10829 6
+      - 10828 4
+      - 10827 4
+      - 10831 3
+      - 10832 4
+      - 10832 5
+      - 10827 5
+      - 10834 3
+      - 10808 8
+      - 10827 6
+      - 10834 4
+      - 10830 5
+      - 10833 3
+      - 10828 5
+      - 10828 6
+      - 10831 4
+      - 10827 7
+      - 10810
+      - 10833 4
+      - 10833 5
+      - 10809
+      - 10834 5
+      - 10832 6
+      - 10809 2
+      - 10831 5
+      - 10834 6
+      - 10840
+      - 10833 6
+      - 10833 7
+      - 10832 7
+      - 10831 6
+      - 10810 2
+      - 10828 7
+      - 10810 3
+      - 10830 6
+      - 10835
+      - 10809 3
+      - 10832 8
+      - 10840 2
+      - 10840 3
+      - 10831 7
+      - 10809 4
+      - 10829 7
+      - 10809 5
+      - 10834 7
+      - 10809 6
+      - 10835 2
+      - 10830 7
+      - 10810 4
+      - 10840 4
+      - 10834 8
+      - 10827 8
+      - 10828 8
+      - 10829 8
+      - 10840 5
+      - 10809 7
+      - 10809 8
+      - 10840 6
+      - 10833 8
+      - 10810 5
+      - 10810 6
+      - 10835 3
+      - 10840 7
+      - 10813
+      - 10840 8
+      - 10813 2
+      - 10818
+      - 10835 4
+      - 10810 7
+      - 10816
+      - 10815
+      - 10818 2
+      - 10831 8
+      - 10815 2
+      - 10813 3
+      - 10830 8
+      - 10817
+      - 10815 3
+      - 10817 2
+      - 10810 8
+      - 10811
+      - 10818 3
+      - 10813 4
+      - 10818 4
+      - 10817 3
+      - 10816 2
+      - 10817 4
+      - 10813 5
+      - 10811 2
+      - 10816 3
+      - 10817 5
+      - 10816 4
+      - 10811 3
+      - 10811 4
+      - 10818 5
+      - 10811 5
+      - 10818 6
+      - 10816 5
+      - 10815 4
+      - 10841
+      - 10841 2
+      - 10815 5
+      - 10816 6
+      - 10815 6
+      - 10816 7
+      - 10841 3
+      - 10841 4
+      - 10841 5
+      - 10818 7
+      - 10811 6
+      - 10816 8
+      - 10817 6
+      - 10841 6
+      - 10815 7
+      - 10813 6
+      - 10841 7
+      - 10811 7
+      - 10841 8
+      - 10811 8
+      - 10817 7
+      - 10813 7
+      - 10818 8
+      - 10815 8
+      - 10813 8
+      - 10823
+      - 10819
+      - 10824
+      - 10817 8
+      - 10821
+      - 10826
+      - 10823 2
+      - 10819 2
+      - 10821 2
+      - 10826 2
+      - 10826 3
+      - 10820
+      - 10823 3
+      - 10825
+      - 10821 3
+      - 10826 4
+      - 10819 3
+      - 10823 4
+      - 10822
+      - 10822 2
+      - 10822 3
+      - 10819 4
+      - 10819 5
+      - 10820 2
+      - 10822 4
+      - 10825 2
+      - 10820 3
+      - 10823 5
+      - 10820 4
+      - 10819 6
+      - 10846
+      - 10826 5
+      - 10821 4
+      - 10825 3
+      - 10824 2
+      - 10821 5
+      - 10824 3
+      - 10823 6
+      - 10824 4
+      - 10824 5
+      - 10820 5
+      - 10823 7
+      - 10819 7
+      - 10825 4
+      - 10822 5
+      - 10824 6
+      - 10826 6
+      - 10821 6
+      - 10822 6
+      - 10824 7
+      - 10825 5
+      - 10846 2
+      - 10826 7
+      - 10825 6
+      - 10820 6
+      - 10822 7
+      - 10846 3
+      - 10846 4
+      - 10821 7
+      - 10846 5
+      - 10846 6
+      - 10822 8
+      - 10820 7
+      - 10846 7
+      - 10819 8
+      - 10821 8
+      - 10825 7
+      - 10824 8
+      - 10823 8
+      - 10847
+      - 10839
+      - 10825 8
+      - 10847 2
+      - 10847 3
+      - 10820 8
+      - 10847 4
+      - 10847 5
+      - 10849
+      - 10847 6
+      - 10826 8
+      - 10847 7
+      - 10839 2
+      - 10849 2
+      - 10848
+      - 10839 3
+      - 10839 4
+      - 10848 2
+      - 10848 3
+      - 10847 8
+      - 10849 3
+      - 10848 4
+      - 10849 4
+      - 10848 5
+      - 10848 6
+      - 10839 5
+      - 10849 5
+      - 10846 8
+      - 10839 6
+      - 10849 6
+      - 10848 7
+      - 10837
+      - 10848 8
+      - 10838
+      - 10837 2
+      - 10839 7
+      - 10849 7
+      - 10837 3
+      - 10838 2
+      - 10850
+      - 10837 4
+      - 10838 3
+      - 10837 5
+      - 10838 4
+      - 10837 6
+      - 10838 5
+      - 10839 8
+      - 10849 8
+      - 10838 6
+      - 10837 7
+      - 10850 2
+      - 10838 7
+      - 10838 8
+      - 10850 3
+      - 10850 4
+      - 10850 5
+      - 10837 8
+      - 10850 6
+      - 10850 7
+      - 10850 8
+      - 10844
+      - 10844 2
+      - 10844 3
+      - 10844 4
+      - 10844 5
+      - 10844 6
+      - 10844 7
+      - 10844 8
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 德国_Telegram@kxswa 8
-      - 德国_Telegram@kxswa 5
-      - 香港_Telegram@kxswa 16
-      - 香港_Telegram@kxswa
-      - 越南_Telegram@kxswa 14
-      - 香港_Telegram@kxswa 21
-      - 德国_Telegram@kxswa 4
-      - 德国_Telegram@kxswa
-      - 新加坡_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 20
-      - 德国_Telegram@kxswa 3
-      - 越南_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 28
-      - 美国_Telegram@kxswa 23
-      - 新加坡_Telegram@kxswa 5
-      - 德国_Telegram@kxswa 2
-      - 澳大利亚_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 17
-      - 新加坡_Telegram@kxswa 2
-      - 日本_Telegram@kxswa 5
-      - 日本_Telegram@kxswa 2
-      - 新加坡_Telegram@kxswa 3
-      - 新加坡_Telegram@kxswa
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 17
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 51
-      - 香港_Telegram@kxswa 53
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 60
-      - 美国_Telegram@kxswa 5
+      - 10804
+      - 10808
+      - 10807
+      - 10807 2
+      - 10806
+      - 10802
+      - 10802 2
+      - 10801
+      - 10807 3
+      - 10806 2
+      - 10803
+      - 10807 4
+      - 10803 2
+      - 10807 5
+      - 10801 2
+      - 10804 2
+      - 10805
+      - 10804 3
+      - 10806 3
+      - 10806 4
+      - 10802 3
+      - 10805 2
+      - 10808 2
+      - 10808 3
+      - 10805 3
+      - 10801 3
+      - 10803 3
+      - 10805 4
+      - 10806 5
+      - 10804 4
+      - 10808 4
+      - 10806 6
+      - 10801 4
+      - 10802 4
+      - 10805 5
+      - 10802 5
+      - 10801 5
+      - 10803 4
+      - 10804 5
+      - 10802 6
+      - 10808 5
+      - 10808 6
+      - 10804 6
+      - 10805 6
+      - 10804 7
+      - 10803 5
+      - 10807 6
+      - 10801 6
+      - 10806 7
+      - 10807 7
+      - 10803 6
+      - 10829
+      - 10801 7
+      - 10827
+      - 10802 7
+      - 10808 7
+      - 10828
+      - 10829 2
+      - 10829 3
+      - 10832
+      - 10830
+      - 10805 7
+      - 10834
+      - 10802 8
+      - 10805 8
+      - 10803 7
+      - 10833
+      - 10801 8
+      - 10806 8
+      - 10833 2
+      - 10830 2
+      - 10829 4
+      - 10831
+      - 10828 2
+      - 10831 2
+      - 10830 3
+      - 10803 8
+      - 10827 2
+      - 10827 3
+      - 10807 8
+      - 10829 5
+      - 10830 4
+      - 10828 3
+      - 10832 2
+      - 10804 8
+      - 10834 2
+      - 10832 3
+      - 10829 6
+      - 10828 4
+      - 10827 4
+      - 10831 3
+      - 10832 4
+      - 10832 5
+      - 10827 5
+      - 10834 3
+      - 10808 8
+      - 10827 6
+      - 10834 4
+      - 10830 5
+      - 10833 3
+      - 10828 5
+      - 10828 6
+      - 10831 4
+      - 10827 7
+      - 10810
+      - 10833 4
+      - 10833 5
+      - 10809
+      - 10834 5
+      - 10832 6
+      - 10809 2
+      - 10831 5
+      - 10834 6
+      - 10840
+      - 10833 6
+      - 10833 7
+      - 10832 7
+      - 10831 6
+      - 10810 2
+      - 10828 7
+      - 10810 3
+      - 10830 6
+      - 10835
+      - 10809 3
+      - 10832 8
+      - 10840 2
+      - 10840 3
+      - 10831 7
+      - 10809 4
+      - 10829 7
+      - 10809 5
+      - 10834 7
+      - 10809 6
+      - 10835 2
+      - 10830 7
+      - 10810 4
+      - 10840 4
+      - 10834 8
+      - 10827 8
+      - 10828 8
+      - 10829 8
+      - 10840 5
+      - 10809 7
+      - 10809 8
+      - 10840 6
+      - 10833 8
+      - 10810 5
+      - 10810 6
+      - 10835 3
+      - 10840 7
+      - 10813
+      - 10840 8
+      - 10813 2
+      - 10818
+      - 10835 4
+      - 10810 7
+      - 10816
+      - 10815
+      - 10818 2
+      - 10831 8
+      - 10815 2
+      - 10813 3
+      - 10830 8
+      - 10817
+      - 10815 3
+      - 10817 2
+      - 10810 8
+      - 10811
+      - 10818 3
+      - 10813 4
+      - 10818 4
+      - 10817 3
+      - 10816 2
+      - 10817 4
+      - 10813 5
+      - 10811 2
+      - 10816 3
+      - 10817 5
+      - 10816 4
+      - 10811 3
+      - 10811 4
+      - 10818 5
+      - 10811 5
+      - 10818 6
+      - 10816 5
+      - 10815 4
+      - 10841
+      - 10841 2
+      - 10815 5
+      - 10816 6
+      - 10815 6
+      - 10816 7
+      - 10841 3
+      - 10841 4
+      - 10841 5
+      - 10818 7
+      - 10811 6
+      - 10816 8
+      - 10817 6
+      - 10841 6
+      - 10815 7
+      - 10813 6
+      - 10841 7
+      - 10811 7
+      - 10841 8
+      - 10811 8
+      - 10817 7
+      - 10813 7
+      - 10818 8
+      - 10815 8
+      - 10813 8
+      - 10823
+      - 10819
+      - 10824
+      - 10817 8
+      - 10821
+      - 10826
+      - 10823 2
+      - 10819 2
+      - 10821 2
+      - 10826 2
+      - 10826 3
+      - 10820
+      - 10823 3
+      - 10825
+      - 10821 3
+      - 10826 4
+      - 10819 3
+      - 10823 4
+      - 10822
+      - 10822 2
+      - 10822 3
+      - 10819 4
+      - 10819 5
+      - 10820 2
+      - 10822 4
+      - 10825 2
+      - 10820 3
+      - 10823 5
+      - 10820 4
+      - 10819 6
+      - 10846
+      - 10826 5
+      - 10821 4
+      - 10825 3
+      - 10824 2
+      - 10821 5
+      - 10824 3
+      - 10823 6
+      - 10824 4
+      - 10824 5
+      - 10820 5
+      - 10823 7
+      - 10819 7
+      - 10825 4
+      - 10822 5
+      - 10824 6
+      - 10826 6
+      - 10821 6
+      - 10822 6
+      - 10824 7
+      - 10825 5
+      - 10846 2
+      - 10826 7
+      - 10825 6
+      - 10820 6
+      - 10822 7
+      - 10846 3
+      - 10846 4
+      - 10821 7
+      - 10846 5
+      - 10846 6
+      - 10822 8
+      - 10820 7
+      - 10846 7
+      - 10819 8
+      - 10821 8
+      - 10825 7
+      - 10824 8
+      - 10823 8
+      - 10847
+      - 10839
+      - 10825 8
+      - 10847 2
+      - 10847 3
+      - 10820 8
+      - 10847 4
+      - 10847 5
+      - 10849
+      - 10847 6
+      - 10826 8
+      - 10847 7
+      - 10839 2
+      - 10849 2
+      - 10848
+      - 10839 3
+      - 10839 4
+      - 10848 2
+      - 10848 3
+      - 10847 8
+      - 10849 3
+      - 10848 4
+      - 10849 4
+      - 10848 5
+      - 10848 6
+      - 10839 5
+      - 10849 5
+      - 10846 8
+      - 10839 6
+      - 10849 6
+      - 10848 7
+      - 10837
+      - 10848 8
+      - 10838
+      - 10837 2
+      - 10839 7
+      - 10849 7
+      - 10837 3
+      - 10838 2
+      - 10850
+      - 10837 4
+      - 10838 3
+      - 10837 5
+      - 10838 4
+      - 10837 6
+      - 10838 5
+      - 10839 8
+      - 10849 8
+      - 10838 6
+      - 10837 7
+      - 10850 2
+      - 10838 7
+      - 10838 8
+      - 10850 3
+      - 10850 4
+      - 10850 5
+      - 10837 8
+      - 10850 6
+      - 10850 7
+      - 10850 8
+      - 10844
+      - 10844 2
+      - 10844 3
+      - 10844 4
+      - 10844 5
+      - 10844 6
+      - 10844 7
+      - 10844 8
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -176,172 +1432,1419 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 德国_Telegram@kxswa 8
-      - 德国_Telegram@kxswa 5
-      - 香港_Telegram@kxswa 16
-      - 香港_Telegram@kxswa
-      - 越南_Telegram@kxswa 14
-      - 香港_Telegram@kxswa 21
-      - 德国_Telegram@kxswa 4
-      - 德国_Telegram@kxswa
-      - 新加坡_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 20
-      - 德国_Telegram@kxswa 3
-      - 越南_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 28
-      - 美国_Telegram@kxswa 23
-      - 新加坡_Telegram@kxswa 5
-      - 德国_Telegram@kxswa 2
-      - 澳大利亚_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 17
-      - 新加坡_Telegram@kxswa 2
-      - 日本_Telegram@kxswa 5
-      - 日本_Telegram@kxswa 2
-      - 新加坡_Telegram@kxswa 3
-      - 新加坡_Telegram@kxswa
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 17
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 51
-      - 香港_Telegram@kxswa 53
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 60
-      - 美国_Telegram@kxswa 5
+      - 10804
+      - 10808
+      - 10807
+      - 10807 2
+      - 10806
+      - 10802
+      - 10802 2
+      - 10801
+      - 10807 3
+      - 10806 2
+      - 10803
+      - 10807 4
+      - 10803 2
+      - 10807 5
+      - 10801 2
+      - 10804 2
+      - 10805
+      - 10804 3
+      - 10806 3
+      - 10806 4
+      - 10802 3
+      - 10805 2
+      - 10808 2
+      - 10808 3
+      - 10805 3
+      - 10801 3
+      - 10803 3
+      - 10805 4
+      - 10806 5
+      - 10804 4
+      - 10808 4
+      - 10806 6
+      - 10801 4
+      - 10802 4
+      - 10805 5
+      - 10802 5
+      - 10801 5
+      - 10803 4
+      - 10804 5
+      - 10802 6
+      - 10808 5
+      - 10808 6
+      - 10804 6
+      - 10805 6
+      - 10804 7
+      - 10803 5
+      - 10807 6
+      - 10801 6
+      - 10806 7
+      - 10807 7
+      - 10803 6
+      - 10829
+      - 10801 7
+      - 10827
+      - 10802 7
+      - 10808 7
+      - 10828
+      - 10829 2
+      - 10829 3
+      - 10832
+      - 10830
+      - 10805 7
+      - 10834
+      - 10802 8
+      - 10805 8
+      - 10803 7
+      - 10833
+      - 10801 8
+      - 10806 8
+      - 10833 2
+      - 10830 2
+      - 10829 4
+      - 10831
+      - 10828 2
+      - 10831 2
+      - 10830 3
+      - 10803 8
+      - 10827 2
+      - 10827 3
+      - 10807 8
+      - 10829 5
+      - 10830 4
+      - 10828 3
+      - 10832 2
+      - 10804 8
+      - 10834 2
+      - 10832 3
+      - 10829 6
+      - 10828 4
+      - 10827 4
+      - 10831 3
+      - 10832 4
+      - 10832 5
+      - 10827 5
+      - 10834 3
+      - 10808 8
+      - 10827 6
+      - 10834 4
+      - 10830 5
+      - 10833 3
+      - 10828 5
+      - 10828 6
+      - 10831 4
+      - 10827 7
+      - 10810
+      - 10833 4
+      - 10833 5
+      - 10809
+      - 10834 5
+      - 10832 6
+      - 10809 2
+      - 10831 5
+      - 10834 6
+      - 10840
+      - 10833 6
+      - 10833 7
+      - 10832 7
+      - 10831 6
+      - 10810 2
+      - 10828 7
+      - 10810 3
+      - 10830 6
+      - 10835
+      - 10809 3
+      - 10832 8
+      - 10840 2
+      - 10840 3
+      - 10831 7
+      - 10809 4
+      - 10829 7
+      - 10809 5
+      - 10834 7
+      - 10809 6
+      - 10835 2
+      - 10830 7
+      - 10810 4
+      - 10840 4
+      - 10834 8
+      - 10827 8
+      - 10828 8
+      - 10829 8
+      - 10840 5
+      - 10809 7
+      - 10809 8
+      - 10840 6
+      - 10833 8
+      - 10810 5
+      - 10810 6
+      - 10835 3
+      - 10840 7
+      - 10813
+      - 10840 8
+      - 10813 2
+      - 10818
+      - 10835 4
+      - 10810 7
+      - 10816
+      - 10815
+      - 10818 2
+      - 10831 8
+      - 10815 2
+      - 10813 3
+      - 10830 8
+      - 10817
+      - 10815 3
+      - 10817 2
+      - 10810 8
+      - 10811
+      - 10818 3
+      - 10813 4
+      - 10818 4
+      - 10817 3
+      - 10816 2
+      - 10817 4
+      - 10813 5
+      - 10811 2
+      - 10816 3
+      - 10817 5
+      - 10816 4
+      - 10811 3
+      - 10811 4
+      - 10818 5
+      - 10811 5
+      - 10818 6
+      - 10816 5
+      - 10815 4
+      - 10841
+      - 10841 2
+      - 10815 5
+      - 10816 6
+      - 10815 6
+      - 10816 7
+      - 10841 3
+      - 10841 4
+      - 10841 5
+      - 10818 7
+      - 10811 6
+      - 10816 8
+      - 10817 6
+      - 10841 6
+      - 10815 7
+      - 10813 6
+      - 10841 7
+      - 10811 7
+      - 10841 8
+      - 10811 8
+      - 10817 7
+      - 10813 7
+      - 10818 8
+      - 10815 8
+      - 10813 8
+      - 10823
+      - 10819
+      - 10824
+      - 10817 8
+      - 10821
+      - 10826
+      - 10823 2
+      - 10819 2
+      - 10821 2
+      - 10826 2
+      - 10826 3
+      - 10820
+      - 10823 3
+      - 10825
+      - 10821 3
+      - 10826 4
+      - 10819 3
+      - 10823 4
+      - 10822
+      - 10822 2
+      - 10822 3
+      - 10819 4
+      - 10819 5
+      - 10820 2
+      - 10822 4
+      - 10825 2
+      - 10820 3
+      - 10823 5
+      - 10820 4
+      - 10819 6
+      - 10846
+      - 10826 5
+      - 10821 4
+      - 10825 3
+      - 10824 2
+      - 10821 5
+      - 10824 3
+      - 10823 6
+      - 10824 4
+      - 10824 5
+      - 10820 5
+      - 10823 7
+      - 10819 7
+      - 10825 4
+      - 10822 5
+      - 10824 6
+      - 10826 6
+      - 10821 6
+      - 10822 6
+      - 10824 7
+      - 10825 5
+      - 10846 2
+      - 10826 7
+      - 10825 6
+      - 10820 6
+      - 10822 7
+      - 10846 3
+      - 10846 4
+      - 10821 7
+      - 10846 5
+      - 10846 6
+      - 10822 8
+      - 10820 7
+      - 10846 7
+      - 10819 8
+      - 10821 8
+      - 10825 7
+      - 10824 8
+      - 10823 8
+      - 10847
+      - 10839
+      - 10825 8
+      - 10847 2
+      - 10847 3
+      - 10820 8
+      - 10847 4
+      - 10847 5
+      - 10849
+      - 10847 6
+      - 10826 8
+      - 10847 7
+      - 10839 2
+      - 10849 2
+      - 10848
+      - 10839 3
+      - 10839 4
+      - 10848 2
+      - 10848 3
+      - 10847 8
+      - 10849 3
+      - 10848 4
+      - 10849 4
+      - 10848 5
+      - 10848 6
+      - 10839 5
+      - 10849 5
+      - 10846 8
+      - 10839 6
+      - 10849 6
+      - 10848 7
+      - 10837
+      - 10848 8
+      - 10838
+      - 10837 2
+      - 10839 7
+      - 10849 7
+      - 10837 3
+      - 10838 2
+      - 10850
+      - 10837 4
+      - 10838 3
+      - 10837 5
+      - 10838 4
+      - 10837 6
+      - 10838 5
+      - 10839 8
+      - 10849 8
+      - 10838 6
+      - 10837 7
+      - 10850 2
+      - 10838 7
+      - 10838 8
+      - 10850 3
+      - 10850 4
+      - 10850 5
+      - 10837 8
+      - 10850 6
+      - 10850 7
+      - 10850 8
+      - 10844
+      - 10844 2
+      - 10844 3
+      - 10844 4
+      - 10844 5
+      - 10844 6
+      - 10844 7
+      - 10844 8
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港_Telegram@kxswa 16
-      - 香港_Telegram@kxswa
-      - 香港_Telegram@kxswa 21
-      - 香港_Telegram@kxswa 28
-      - 香港_Telegram@kxswa 17
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 51
-      - 香港_Telegram@kxswa 53
-      - 香港_Telegram@kxswa 60
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 德国_Telegram@kxswa 8
-      - 德国_Telegram@kxswa 5
-      - 香港_Telegram@kxswa 16
-      - 香港_Telegram@kxswa
-      - 越南_Telegram@kxswa 14
-      - 香港_Telegram@kxswa 21
-      - 德国_Telegram@kxswa 4
-      - 德国_Telegram@kxswa
-      - 新加坡_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 20
-      - 德国_Telegram@kxswa 3
-      - 越南_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 28
-      - 美国_Telegram@kxswa 23
-      - 新加坡_Telegram@kxswa 5
-      - 德国_Telegram@kxswa 2
-      - 澳大利亚_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 17
-      - 新加坡_Telegram@kxswa 2
-      - 日本_Telegram@kxswa 5
-      - 日本_Telegram@kxswa 2
-      - 新加坡_Telegram@kxswa 3
-      - 新加坡_Telegram@kxswa
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 17
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 51
-      - 香港_Telegram@kxswa 53
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 60
-      - 美国_Telegram@kxswa 5
+      - 10804
+      - 10808
+      - 10807
+      - 10807 2
+      - 10806
+      - 10802
+      - 10802 2
+      - 10801
+      - 10807 3
+      - 10806 2
+      - 10803
+      - 10807 4
+      - 10803 2
+      - 10807 5
+      - 10801 2
+      - 10804 2
+      - 10805
+      - 10804 3
+      - 10806 3
+      - 10806 4
+      - 10802 3
+      - 10805 2
+      - 10808 2
+      - 10808 3
+      - 10805 3
+      - 10801 3
+      - 10803 3
+      - 10805 4
+      - 10806 5
+      - 10804 4
+      - 10808 4
+      - 10806 6
+      - 10801 4
+      - 10802 4
+      - 10805 5
+      - 10802 5
+      - 10801 5
+      - 10803 4
+      - 10804 5
+      - 10802 6
+      - 10808 5
+      - 10808 6
+      - 10804 6
+      - 10805 6
+      - 10804 7
+      - 10803 5
+      - 10807 6
+      - 10801 6
+      - 10806 7
+      - 10807 7
+      - 10803 6
+      - 10829
+      - 10801 7
+      - 10827
+      - 10802 7
+      - 10808 7
+      - 10828
+      - 10829 2
+      - 10829 3
+      - 10832
+      - 10830
+      - 10805 7
+      - 10834
+      - 10802 8
+      - 10805 8
+      - 10803 7
+      - 10833
+      - 10801 8
+      - 10806 8
+      - 10833 2
+      - 10830 2
+      - 10829 4
+      - 10831
+      - 10828 2
+      - 10831 2
+      - 10830 3
+      - 10803 8
+      - 10827 2
+      - 10827 3
+      - 10807 8
+      - 10829 5
+      - 10830 4
+      - 10828 3
+      - 10832 2
+      - 10804 8
+      - 10834 2
+      - 10832 3
+      - 10829 6
+      - 10828 4
+      - 10827 4
+      - 10831 3
+      - 10832 4
+      - 10832 5
+      - 10827 5
+      - 10834 3
+      - 10808 8
+      - 10827 6
+      - 10834 4
+      - 10830 5
+      - 10833 3
+      - 10828 5
+      - 10828 6
+      - 10831 4
+      - 10827 7
+      - 10810
+      - 10833 4
+      - 10833 5
+      - 10809
+      - 10834 5
+      - 10832 6
+      - 10809 2
+      - 10831 5
+      - 10834 6
+      - 10840
+      - 10833 6
+      - 10833 7
+      - 10832 7
+      - 10831 6
+      - 10810 2
+      - 10828 7
+      - 10810 3
+      - 10830 6
+      - 10835
+      - 10809 3
+      - 10832 8
+      - 10840 2
+      - 10840 3
+      - 10831 7
+      - 10809 4
+      - 10829 7
+      - 10809 5
+      - 10834 7
+      - 10809 6
+      - 10835 2
+      - 10830 7
+      - 10810 4
+      - 10840 4
+      - 10834 8
+      - 10827 8
+      - 10828 8
+      - 10829 8
+      - 10840 5
+      - 10809 7
+      - 10809 8
+      - 10840 6
+      - 10833 8
+      - 10810 5
+      - 10810 6
+      - 10835 3
+      - 10840 7
+      - 10813
+      - 10840 8
+      - 10813 2
+      - 10818
+      - 10835 4
+      - 10810 7
+      - 10816
+      - 10815
+      - 10818 2
+      - 10831 8
+      - 10815 2
+      - 10813 3
+      - 10830 8
+      - 10817
+      - 10815 3
+      - 10817 2
+      - 10810 8
+      - 10811
+      - 10818 3
+      - 10813 4
+      - 10818 4
+      - 10817 3
+      - 10816 2
+      - 10817 4
+      - 10813 5
+      - 10811 2
+      - 10816 3
+      - 10817 5
+      - 10816 4
+      - 10811 3
+      - 10811 4
+      - 10818 5
+      - 10811 5
+      - 10818 6
+      - 10816 5
+      - 10815 4
+      - 10841
+      - 10841 2
+      - 10815 5
+      - 10816 6
+      - 10815 6
+      - 10816 7
+      - 10841 3
+      - 10841 4
+      - 10841 5
+      - 10818 7
+      - 10811 6
+      - 10816 8
+      - 10817 6
+      - 10841 6
+      - 10815 7
+      - 10813 6
+      - 10841 7
+      - 10811 7
+      - 10841 8
+      - 10811 8
+      - 10817 7
+      - 10813 7
+      - 10818 8
+      - 10815 8
+      - 10813 8
+      - 10823
+      - 10819
+      - 10824
+      - 10817 8
+      - 10821
+      - 10826
+      - 10823 2
+      - 10819 2
+      - 10821 2
+      - 10826 2
+      - 10826 3
+      - 10820
+      - 10823 3
+      - 10825
+      - 10821 3
+      - 10826 4
+      - 10819 3
+      - 10823 4
+      - 10822
+      - 10822 2
+      - 10822 3
+      - 10819 4
+      - 10819 5
+      - 10820 2
+      - 10822 4
+      - 10825 2
+      - 10820 3
+      - 10823 5
+      - 10820 4
+      - 10819 6
+      - 10846
+      - 10826 5
+      - 10821 4
+      - 10825 3
+      - 10824 2
+      - 10821 5
+      - 10824 3
+      - 10823 6
+      - 10824 4
+      - 10824 5
+      - 10820 5
+      - 10823 7
+      - 10819 7
+      - 10825 4
+      - 10822 5
+      - 10824 6
+      - 10826 6
+      - 10821 6
+      - 10822 6
+      - 10824 7
+      - 10825 5
+      - 10846 2
+      - 10826 7
+      - 10825 6
+      - 10820 6
+      - 10822 7
+      - 10846 3
+      - 10846 4
+      - 10821 7
+      - 10846 5
+      - 10846 6
+      - 10822 8
+      - 10820 7
+      - 10846 7
+      - 10819 8
+      - 10821 8
+      - 10825 7
+      - 10824 8
+      - 10823 8
+      - 10847
+      - 10839
+      - 10825 8
+      - 10847 2
+      - 10847 3
+      - 10820 8
+      - 10847 4
+      - 10847 5
+      - 10849
+      - 10847 6
+      - 10826 8
+      - 10847 7
+      - 10839 2
+      - 10849 2
+      - 10848
+      - 10839 3
+      - 10839 4
+      - 10848 2
+      - 10848 3
+      - 10847 8
+      - 10849 3
+      - 10848 4
+      - 10849 4
+      - 10848 5
+      - 10848 6
+      - 10839 5
+      - 10849 5
+      - 10846 8
+      - 10839 6
+      - 10849 6
+      - 10848 7
+      - 10837
+      - 10848 8
+      - 10838
+      - 10837 2
+      - 10839 7
+      - 10849 7
+      - 10837 3
+      - 10838 2
+      - 10850
+      - 10837 4
+      - 10838 3
+      - 10837 5
+      - 10838 4
+      - 10837 6
+      - 10838 5
+      - 10839 8
+      - 10849 8
+      - 10838 6
+      - 10837 7
+      - 10850 2
+      - 10838 7
+      - 10838 8
+      - 10850 3
+      - 10850 4
+      - 10850 5
+      - 10837 8
+      - 10850 6
+      - 10850 7
+      - 10850 8
+      - 10844
+      - 10844 2
+      - 10844 3
+      - 10844 4
+      - 10844 5
+      - 10844 6
+      - 10844 7
+      - 10844 8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 德国_Telegram@kxswa 8
-      - 德国_Telegram@kxswa 5
-      - 香港_Telegram@kxswa 16
-      - 香港_Telegram@kxswa
-      - 越南_Telegram@kxswa 14
-      - 香港_Telegram@kxswa 21
-      - 德国_Telegram@kxswa 4
-      - 德国_Telegram@kxswa
-      - 新加坡_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 20
-      - 德国_Telegram@kxswa 3
-      - 越南_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 28
-      - 美国_Telegram@kxswa 23
-      - 新加坡_Telegram@kxswa 5
-      - 德国_Telegram@kxswa 2
-      - 澳大利亚_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 17
-      - 新加坡_Telegram@kxswa 2
-      - 日本_Telegram@kxswa 5
-      - 日本_Telegram@kxswa 2
-      - 新加坡_Telegram@kxswa 3
-      - 新加坡_Telegram@kxswa
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 17
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 51
-      - 香港_Telegram@kxswa 53
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 60
-      - 美国_Telegram@kxswa 5
+      - 10804
+      - 10808
+      - 10807
+      - 10807 2
+      - 10806
+      - 10802
+      - 10802 2
+      - 10801
+      - 10807 3
+      - 10806 2
+      - 10803
+      - 10807 4
+      - 10803 2
+      - 10807 5
+      - 10801 2
+      - 10804 2
+      - 10805
+      - 10804 3
+      - 10806 3
+      - 10806 4
+      - 10802 3
+      - 10805 2
+      - 10808 2
+      - 10808 3
+      - 10805 3
+      - 10801 3
+      - 10803 3
+      - 10805 4
+      - 10806 5
+      - 10804 4
+      - 10808 4
+      - 10806 6
+      - 10801 4
+      - 10802 4
+      - 10805 5
+      - 10802 5
+      - 10801 5
+      - 10803 4
+      - 10804 5
+      - 10802 6
+      - 10808 5
+      - 10808 6
+      - 10804 6
+      - 10805 6
+      - 10804 7
+      - 10803 5
+      - 10807 6
+      - 10801 6
+      - 10806 7
+      - 10807 7
+      - 10803 6
+      - 10829
+      - 10801 7
+      - 10827
+      - 10802 7
+      - 10808 7
+      - 10828
+      - 10829 2
+      - 10829 3
+      - 10832
+      - 10830
+      - 10805 7
+      - 10834
+      - 10802 8
+      - 10805 8
+      - 10803 7
+      - 10833
+      - 10801 8
+      - 10806 8
+      - 10833 2
+      - 10830 2
+      - 10829 4
+      - 10831
+      - 10828 2
+      - 10831 2
+      - 10830 3
+      - 10803 8
+      - 10827 2
+      - 10827 3
+      - 10807 8
+      - 10829 5
+      - 10830 4
+      - 10828 3
+      - 10832 2
+      - 10804 8
+      - 10834 2
+      - 10832 3
+      - 10829 6
+      - 10828 4
+      - 10827 4
+      - 10831 3
+      - 10832 4
+      - 10832 5
+      - 10827 5
+      - 10834 3
+      - 10808 8
+      - 10827 6
+      - 10834 4
+      - 10830 5
+      - 10833 3
+      - 10828 5
+      - 10828 6
+      - 10831 4
+      - 10827 7
+      - 10810
+      - 10833 4
+      - 10833 5
+      - 10809
+      - 10834 5
+      - 10832 6
+      - 10809 2
+      - 10831 5
+      - 10834 6
+      - 10840
+      - 10833 6
+      - 10833 7
+      - 10832 7
+      - 10831 6
+      - 10810 2
+      - 10828 7
+      - 10810 3
+      - 10830 6
+      - 10835
+      - 10809 3
+      - 10832 8
+      - 10840 2
+      - 10840 3
+      - 10831 7
+      - 10809 4
+      - 10829 7
+      - 10809 5
+      - 10834 7
+      - 10809 6
+      - 10835 2
+      - 10830 7
+      - 10810 4
+      - 10840 4
+      - 10834 8
+      - 10827 8
+      - 10828 8
+      - 10829 8
+      - 10840 5
+      - 10809 7
+      - 10809 8
+      - 10840 6
+      - 10833 8
+      - 10810 5
+      - 10810 6
+      - 10835 3
+      - 10840 7
+      - 10813
+      - 10840 8
+      - 10813 2
+      - 10818
+      - 10835 4
+      - 10810 7
+      - 10816
+      - 10815
+      - 10818 2
+      - 10831 8
+      - 10815 2
+      - 10813 3
+      - 10830 8
+      - 10817
+      - 10815 3
+      - 10817 2
+      - 10810 8
+      - 10811
+      - 10818 3
+      - 10813 4
+      - 10818 4
+      - 10817 3
+      - 10816 2
+      - 10817 4
+      - 10813 5
+      - 10811 2
+      - 10816 3
+      - 10817 5
+      - 10816 4
+      - 10811 3
+      - 10811 4
+      - 10818 5
+      - 10811 5
+      - 10818 6
+      - 10816 5
+      - 10815 4
+      - 10841
+      - 10841 2
+      - 10815 5
+      - 10816 6
+      - 10815 6
+      - 10816 7
+      - 10841 3
+      - 10841 4
+      - 10841 5
+      - 10818 7
+      - 10811 6
+      - 10816 8
+      - 10817 6
+      - 10841 6
+      - 10815 7
+      - 10813 6
+      - 10841 7
+      - 10811 7
+      - 10841 8
+      - 10811 8
+      - 10817 7
+      - 10813 7
+      - 10818 8
+      - 10815 8
+      - 10813 8
+      - 10823
+      - 10819
+      - 10824
+      - 10817 8
+      - 10821
+      - 10826
+      - 10823 2
+      - 10819 2
+      - 10821 2
+      - 10826 2
+      - 10826 3
+      - 10820
+      - 10823 3
+      - 10825
+      - 10821 3
+      - 10826 4
+      - 10819 3
+      - 10823 4
+      - 10822
+      - 10822 2
+      - 10822 3
+      - 10819 4
+      - 10819 5
+      - 10820 2
+      - 10822 4
+      - 10825 2
+      - 10820 3
+      - 10823 5
+      - 10820 4
+      - 10819 6
+      - 10846
+      - 10826 5
+      - 10821 4
+      - 10825 3
+      - 10824 2
+      - 10821 5
+      - 10824 3
+      - 10823 6
+      - 10824 4
+      - 10824 5
+      - 10820 5
+      - 10823 7
+      - 10819 7
+      - 10825 4
+      - 10822 5
+      - 10824 6
+      - 10826 6
+      - 10821 6
+      - 10822 6
+      - 10824 7
+      - 10825 5
+      - 10846 2
+      - 10826 7
+      - 10825 6
+      - 10820 6
+      - 10822 7
+      - 10846 3
+      - 10846 4
+      - 10821 7
+      - 10846 5
+      - 10846 6
+      - 10822 8
+      - 10820 7
+      - 10846 7
+      - 10819 8
+      - 10821 8
+      - 10825 7
+      - 10824 8
+      - 10823 8
+      - 10847
+      - 10839
+      - 10825 8
+      - 10847 2
+      - 10847 3
+      - 10820 8
+      - 10847 4
+      - 10847 5
+      - 10849
+      - 10847 6
+      - 10826 8
+      - 10847 7
+      - 10839 2
+      - 10849 2
+      - 10848
+      - 10839 3
+      - 10839 4
+      - 10848 2
+      - 10848 3
+      - 10847 8
+      - 10849 3
+      - 10848 4
+      - 10849 4
+      - 10848 5
+      - 10848 6
+      - 10839 5
+      - 10849 5
+      - 10846 8
+      - 10839 6
+      - 10849 6
+      - 10848 7
+      - 10837
+      - 10848 8
+      - 10838
+      - 10837 2
+      - 10839 7
+      - 10849 7
+      - 10837 3
+      - 10838 2
+      - 10850
+      - 10837 4
+      - 10838 3
+      - 10837 5
+      - 10838 4
+      - 10837 6
+      - 10838 5
+      - 10839 8
+      - 10849 8
+      - 10838 6
+      - 10837 7
+      - 10850 2
+      - 10838 7
+      - 10838 8
+      - 10850 3
+      - 10850 4
+      - 10850 5
+      - 10837 8
+      - 10850 6
+      - 10850 7
+      - 10850 8
+      - 10844
+      - 10844 2
+      - 10844 3
+      - 10844 4
+      - 10844 5
+      - 10844 6
+      - 10844 7
+      - 10844 8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 德国_Telegram@kxswa 8
-      - 德国_Telegram@kxswa 5
-      - 香港_Telegram@kxswa 16
-      - 香港_Telegram@kxswa
-      - 越南_Telegram@kxswa 14
-      - 香港_Telegram@kxswa 21
-      - 德国_Telegram@kxswa 4
-      - 德国_Telegram@kxswa
-      - 新加坡_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 20
-      - 德国_Telegram@kxswa 3
-      - 越南_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 28
-      - 美国_Telegram@kxswa 23
-      - 新加坡_Telegram@kxswa 5
-      - 德国_Telegram@kxswa 2
-      - 澳大利亚_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 17
-      - 新加坡_Telegram@kxswa 2
-      - 日本_Telegram@kxswa 5
-      - 日本_Telegram@kxswa 2
-      - 新加坡_Telegram@kxswa 3
-      - 新加坡_Telegram@kxswa
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 17
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 51
-      - 香港_Telegram@kxswa 53
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 60
-      - 美国_Telegram@kxswa 5
+      - 10804
+      - 10808
+      - 10807
+      - 10807 2
+      - 10806
+      - 10802
+      - 10802 2
+      - 10801
+      - 10807 3
+      - 10806 2
+      - 10803
+      - 10807 4
+      - 10803 2
+      - 10807 5
+      - 10801 2
+      - 10804 2
+      - 10805
+      - 10804 3
+      - 10806 3
+      - 10806 4
+      - 10802 3
+      - 10805 2
+      - 10808 2
+      - 10808 3
+      - 10805 3
+      - 10801 3
+      - 10803 3
+      - 10805 4
+      - 10806 5
+      - 10804 4
+      - 10808 4
+      - 10806 6
+      - 10801 4
+      - 10802 4
+      - 10805 5
+      - 10802 5
+      - 10801 5
+      - 10803 4
+      - 10804 5
+      - 10802 6
+      - 10808 5
+      - 10808 6
+      - 10804 6
+      - 10805 6
+      - 10804 7
+      - 10803 5
+      - 10807 6
+      - 10801 6
+      - 10806 7
+      - 10807 7
+      - 10803 6
+      - 10829
+      - 10801 7
+      - 10827
+      - 10802 7
+      - 10808 7
+      - 10828
+      - 10829 2
+      - 10829 3
+      - 10832
+      - 10830
+      - 10805 7
+      - 10834
+      - 10802 8
+      - 10805 8
+      - 10803 7
+      - 10833
+      - 10801 8
+      - 10806 8
+      - 10833 2
+      - 10830 2
+      - 10829 4
+      - 10831
+      - 10828 2
+      - 10831 2
+      - 10830 3
+      - 10803 8
+      - 10827 2
+      - 10827 3
+      - 10807 8
+      - 10829 5
+      - 10830 4
+      - 10828 3
+      - 10832 2
+      - 10804 8
+      - 10834 2
+      - 10832 3
+      - 10829 6
+      - 10828 4
+      - 10827 4
+      - 10831 3
+      - 10832 4
+      - 10832 5
+      - 10827 5
+      - 10834 3
+      - 10808 8
+      - 10827 6
+      - 10834 4
+      - 10830 5
+      - 10833 3
+      - 10828 5
+      - 10828 6
+      - 10831 4
+      - 10827 7
+      - 10810
+      - 10833 4
+      - 10833 5
+      - 10809
+      - 10834 5
+      - 10832 6
+      - 10809 2
+      - 10831 5
+      - 10834 6
+      - 10840
+      - 10833 6
+      - 10833 7
+      - 10832 7
+      - 10831 6
+      - 10810 2
+      - 10828 7
+      - 10810 3
+      - 10830 6
+      - 10835
+      - 10809 3
+      - 10832 8
+      - 10840 2
+      - 10840 3
+      - 10831 7
+      - 10809 4
+      - 10829 7
+      - 10809 5
+      - 10834 7
+      - 10809 6
+      - 10835 2
+      - 10830 7
+      - 10810 4
+      - 10840 4
+      - 10834 8
+      - 10827 8
+      - 10828 8
+      - 10829 8
+      - 10840 5
+      - 10809 7
+      - 10809 8
+      - 10840 6
+      - 10833 8
+      - 10810 5
+      - 10810 6
+      - 10835 3
+      - 10840 7
+      - 10813
+      - 10840 8
+      - 10813 2
+      - 10818
+      - 10835 4
+      - 10810 7
+      - 10816
+      - 10815
+      - 10818 2
+      - 10831 8
+      - 10815 2
+      - 10813 3
+      - 10830 8
+      - 10817
+      - 10815 3
+      - 10817 2
+      - 10810 8
+      - 10811
+      - 10818 3
+      - 10813 4
+      - 10818 4
+      - 10817 3
+      - 10816 2
+      - 10817 4
+      - 10813 5
+      - 10811 2
+      - 10816 3
+      - 10817 5
+      - 10816 4
+      - 10811 3
+      - 10811 4
+      - 10818 5
+      - 10811 5
+      - 10818 6
+      - 10816 5
+      - 10815 4
+      - 10841
+      - 10841 2
+      - 10815 5
+      - 10816 6
+      - 10815 6
+      - 10816 7
+      - 10841 3
+      - 10841 4
+      - 10841 5
+      - 10818 7
+      - 10811 6
+      - 10816 8
+      - 10817 6
+      - 10841 6
+      - 10815 7
+      - 10813 6
+      - 10841 7
+      - 10811 7
+      - 10841 8
+      - 10811 8
+      - 10817 7
+      - 10813 7
+      - 10818 8
+      - 10815 8
+      - 10813 8
+      - 10823
+      - 10819
+      - 10824
+      - 10817 8
+      - 10821
+      - 10826
+      - 10823 2
+      - 10819 2
+      - 10821 2
+      - 10826 2
+      - 10826 3
+      - 10820
+      - 10823 3
+      - 10825
+      - 10821 3
+      - 10826 4
+      - 10819 3
+      - 10823 4
+      - 10822
+      - 10822 2
+      - 10822 3
+      - 10819 4
+      - 10819 5
+      - 10820 2
+      - 10822 4
+      - 10825 2
+      - 10820 3
+      - 10823 5
+      - 10820 4
+      - 10819 6
+      - 10846
+      - 10826 5
+      - 10821 4
+      - 10825 3
+      - 10824 2
+      - 10821 5
+      - 10824 3
+      - 10823 6
+      - 10824 4
+      - 10824 5
+      - 10820 5
+      - 10823 7
+      - 10819 7
+      - 10825 4
+      - 10822 5
+      - 10824 6
+      - 10826 6
+      - 10821 6
+      - 10822 6
+      - 10824 7
+      - 10825 5
+      - 10846 2
+      - 10826 7
+      - 10825 6
+      - 10820 6
+      - 10822 7
+      - 10846 3
+      - 10846 4
+      - 10821 7
+      - 10846 5
+      - 10846 6
+      - 10822 8
+      - 10820 7
+      - 10846 7
+      - 10819 8
+      - 10821 8
+      - 10825 7
+      - 10824 8
+      - 10823 8
+      - 10847
+      - 10839
+      - 10825 8
+      - 10847 2
+      - 10847 3
+      - 10820 8
+      - 10847 4
+      - 10847 5
+      - 10849
+      - 10847 6
+      - 10826 8
+      - 10847 7
+      - 10839 2
+      - 10849 2
+      - 10848
+      - 10839 3
+      - 10839 4
+      - 10848 2
+      - 10848 3
+      - 10847 8
+      - 10849 3
+      - 10848 4
+      - 10849 4
+      - 10848 5
+      - 10848 6
+      - 10839 5
+      - 10849 5
+      - 10846 8
+      - 10839 6
+      - 10849 6
+      - 10848 7
+      - 10837
+      - 10848 8
+      - 10838
+      - 10837 2
+      - 10839 7
+      - 10849 7
+      - 10837 3
+      - 10838 2
+      - 10850
+      - 10837 4
+      - 10838 3
+      - 10837 5
+      - 10838 4
+      - 10837 6
+      - 10838 5
+      - 10839 8
+      - 10849 8
+      - 10838 6
+      - 10837 7
+      - 10850 2
+      - 10838 7
+      - 10838 8
+      - 10850 3
+      - 10850 4
+      - 10850 5
+      - 10837 8
+      - 10850 6
+      - 10850 7
+      - 10850 8
+      - 10844
+      - 10844 2
+      - 10844 3
+      - 10844 4
+      - 10844 5
+      - 10844 6
+      - 10844 7
+      - 10844 8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -357,40 +2860,354 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 德国_Telegram@kxswa 8
-      - 德国_Telegram@kxswa 5
-      - 香港_Telegram@kxswa 16
-      - 香港_Telegram@kxswa
-      - 越南_Telegram@kxswa 14
-      - 香港_Telegram@kxswa 21
-      - 德国_Telegram@kxswa 4
-      - 德国_Telegram@kxswa
-      - 新加坡_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 20
-      - 德国_Telegram@kxswa 3
-      - 越南_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 28
-      - 美国_Telegram@kxswa 23
-      - 新加坡_Telegram@kxswa 5
-      - 德国_Telegram@kxswa 2
-      - 澳大利亚_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 17
-      - 新加坡_Telegram@kxswa 2
-      - 日本_Telegram@kxswa 5
-      - 日本_Telegram@kxswa 2
-      - 新加坡_Telegram@kxswa 3
-      - 新加坡_Telegram@kxswa
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 17
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 51
-      - 香港_Telegram@kxswa 53
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 60
-      - 美国_Telegram@kxswa 5
+      - 10804
+      - 10808
+      - 10807
+      - 10807 2
+      - 10806
+      - 10802
+      - 10802 2
+      - 10801
+      - 10807 3
+      - 10806 2
+      - 10803
+      - 10807 4
+      - 10803 2
+      - 10807 5
+      - 10801 2
+      - 10804 2
+      - 10805
+      - 10804 3
+      - 10806 3
+      - 10806 4
+      - 10802 3
+      - 10805 2
+      - 10808 2
+      - 10808 3
+      - 10805 3
+      - 10801 3
+      - 10803 3
+      - 10805 4
+      - 10806 5
+      - 10804 4
+      - 10808 4
+      - 10806 6
+      - 10801 4
+      - 10802 4
+      - 10805 5
+      - 10802 5
+      - 10801 5
+      - 10803 4
+      - 10804 5
+      - 10802 6
+      - 10808 5
+      - 10808 6
+      - 10804 6
+      - 10805 6
+      - 10804 7
+      - 10803 5
+      - 10807 6
+      - 10801 6
+      - 10806 7
+      - 10807 7
+      - 10803 6
+      - 10829
+      - 10801 7
+      - 10827
+      - 10802 7
+      - 10808 7
+      - 10828
+      - 10829 2
+      - 10829 3
+      - 10832
+      - 10830
+      - 10805 7
+      - 10834
+      - 10802 8
+      - 10805 8
+      - 10803 7
+      - 10833
+      - 10801 8
+      - 10806 8
+      - 10833 2
+      - 10830 2
+      - 10829 4
+      - 10831
+      - 10828 2
+      - 10831 2
+      - 10830 3
+      - 10803 8
+      - 10827 2
+      - 10827 3
+      - 10807 8
+      - 10829 5
+      - 10830 4
+      - 10828 3
+      - 10832 2
+      - 10804 8
+      - 10834 2
+      - 10832 3
+      - 10829 6
+      - 10828 4
+      - 10827 4
+      - 10831 3
+      - 10832 4
+      - 10832 5
+      - 10827 5
+      - 10834 3
+      - 10808 8
+      - 10827 6
+      - 10834 4
+      - 10830 5
+      - 10833 3
+      - 10828 5
+      - 10828 6
+      - 10831 4
+      - 10827 7
+      - 10810
+      - 10833 4
+      - 10833 5
+      - 10809
+      - 10834 5
+      - 10832 6
+      - 10809 2
+      - 10831 5
+      - 10834 6
+      - 10840
+      - 10833 6
+      - 10833 7
+      - 10832 7
+      - 10831 6
+      - 10810 2
+      - 10828 7
+      - 10810 3
+      - 10830 6
+      - 10835
+      - 10809 3
+      - 10832 8
+      - 10840 2
+      - 10840 3
+      - 10831 7
+      - 10809 4
+      - 10829 7
+      - 10809 5
+      - 10834 7
+      - 10809 6
+      - 10835 2
+      - 10830 7
+      - 10810 4
+      - 10840 4
+      - 10834 8
+      - 10827 8
+      - 10828 8
+      - 10829 8
+      - 10840 5
+      - 10809 7
+      - 10809 8
+      - 10840 6
+      - 10833 8
+      - 10810 5
+      - 10810 6
+      - 10835 3
+      - 10840 7
+      - 10813
+      - 10840 8
+      - 10813 2
+      - 10818
+      - 10835 4
+      - 10810 7
+      - 10816
+      - 10815
+      - 10818 2
+      - 10831 8
+      - 10815 2
+      - 10813 3
+      - 10830 8
+      - 10817
+      - 10815 3
+      - 10817 2
+      - 10810 8
+      - 10811
+      - 10818 3
+      - 10813 4
+      - 10818 4
+      - 10817 3
+      - 10816 2
+      - 10817 4
+      - 10813 5
+      - 10811 2
+      - 10816 3
+      - 10817 5
+      - 10816 4
+      - 10811 3
+      - 10811 4
+      - 10818 5
+      - 10811 5
+      - 10818 6
+      - 10816 5
+      - 10815 4
+      - 10841
+      - 10841 2
+      - 10815 5
+      - 10816 6
+      - 10815 6
+      - 10816 7
+      - 10841 3
+      - 10841 4
+      - 10841 5
+      - 10818 7
+      - 10811 6
+      - 10816 8
+      - 10817 6
+      - 10841 6
+      - 10815 7
+      - 10813 6
+      - 10841 7
+      - 10811 7
+      - 10841 8
+      - 10811 8
+      - 10817 7
+      - 10813 7
+      - 10818 8
+      - 10815 8
+      - 10813 8
+      - 10823
+      - 10819
+      - 10824
+      - 10817 8
+      - 10821
+      - 10826
+      - 10823 2
+      - 10819 2
+      - 10821 2
+      - 10826 2
+      - 10826 3
+      - 10820
+      - 10823 3
+      - 10825
+      - 10821 3
+      - 10826 4
+      - 10819 3
+      - 10823 4
+      - 10822
+      - 10822 2
+      - 10822 3
+      - 10819 4
+      - 10819 5
+      - 10820 2
+      - 10822 4
+      - 10825 2
+      - 10820 3
+      - 10823 5
+      - 10820 4
+      - 10819 6
+      - 10846
+      - 10826 5
+      - 10821 4
+      - 10825 3
+      - 10824 2
+      - 10821 5
+      - 10824 3
+      - 10823 6
+      - 10824 4
+      - 10824 5
+      - 10820 5
+      - 10823 7
+      - 10819 7
+      - 10825 4
+      - 10822 5
+      - 10824 6
+      - 10826 6
+      - 10821 6
+      - 10822 6
+      - 10824 7
+      - 10825 5
+      - 10846 2
+      - 10826 7
+      - 10825 6
+      - 10820 6
+      - 10822 7
+      - 10846 3
+      - 10846 4
+      - 10821 7
+      - 10846 5
+      - 10846 6
+      - 10822 8
+      - 10820 7
+      - 10846 7
+      - 10819 8
+      - 10821 8
+      - 10825 7
+      - 10824 8
+      - 10823 8
+      - 10847
+      - 10839
+      - 10825 8
+      - 10847 2
+      - 10847 3
+      - 10820 8
+      - 10847 4
+      - 10847 5
+      - 10849
+      - 10847 6
+      - 10826 8
+      - 10847 7
+      - 10839 2
+      - 10849 2
+      - 10848
+      - 10839 3
+      - 10839 4
+      - 10848 2
+      - 10848 3
+      - 10847 8
+      - 10849 3
+      - 10848 4
+      - 10849 4
+      - 10848 5
+      - 10848 6
+      - 10839 5
+      - 10849 5
+      - 10846 8
+      - 10839 6
+      - 10849 6
+      - 10848 7
+      - 10837
+      - 10848 8
+      - 10838
+      - 10837 2
+      - 10839 7
+      - 10849 7
+      - 10837 3
+      - 10838 2
+      - 10850
+      - 10837 4
+      - 10838 3
+      - 10837 5
+      - 10838 4
+      - 10837 6
+      - 10838 5
+      - 10839 8
+      - 10849 8
+      - 10838 6
+      - 10837 7
+      - 10850 2
+      - 10838 7
+      - 10838 8
+      - 10850 3
+      - 10850 4
+      - 10850 5
+      - 10837 8
+      - 10850 6
+      - 10850 7
+      - 10850 8
+      - 10844
+      - 10844 2
+      - 10844 3
+      - 10844 4
+      - 10844 5
+      - 10844 6
+      - 10844 7
+      - 10844 8
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
