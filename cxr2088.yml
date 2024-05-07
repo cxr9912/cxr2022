@@ -5,131 +5,135 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Hong Kong_13, server: hk13.mmyjiedian.com, port: 10013, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Hong Kong_18, server: hk18.mmyjiedian.com, port: 10018, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Hong Kong_19, server: hk19.mmyjiedian.com, port: 10019, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Hong Kong_6, server: hk06.mmyjiedian.com, port: 10006, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Japan_1, server: jp01.mmyjiedian.com, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Japan_12, server: jp12.mmyjiedian.com, port: 30012, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Japan_13, server: jp13.mmyjiedian.com, port: 30013, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Japan_15, server: jp15.mmyjiedian.com, port: 30015, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Japan_17, server: jp17.mmyjiedian.com, port: 30017, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Japan_2, server: jp02.mmyjiedian.com, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Japan_20, server: jp20.mmyjiedian.com, port: 30020, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Japan_5, server: jp05.mmyjiedian.com, port: 30005, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Japan_6, server: jp06.mmyjiedian.com, port: 30006, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Japan_7, server: jp07.mmyjiedian.com, port: 30007, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Japan_8, server: jp08.mmyjiedian.com, port: 30008, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
   - {name: Japan_9, server: jp09.mmyjiedian.com, port: 30009, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Singapore_04, server: sg04.mmyjiedian.com, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Singapore_11, server: sg11.mmyjiedian.com, port: 20011, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Singapore_13, server: sg13.mmyjiedian.com, port: 20013, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Singapore_15, server: sg15.mmyjiedian.com, port: 20015, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Taiwan_1, server: tw01.mmyjiedian.com, port: 40006, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: United States_1, server: us01.mmyjiedian.com, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
   - {name: United States_2, server: us02.mmyjiedian.com, port: 50502, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
   - {name: United States_5, server: us05.mmyjiedian.com, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
-  - {name: Vietnam_1, server: vn01.mmyjiedian.com, port: 40001, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
   - {name: Vietnam_3, server: vn03.mmyjiedian.com, port: 40003, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Japan_20, server: jp20.mmyjiedian.com, port: 30020, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Japan_8, server: jp08.mmyjiedian.com, port: 30008, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Hong Kong_18, server: hk18.mmyjiedian.com, port: 10018, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Japan_5, server: jp05.mmyjiedian.com, port: 30005, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Singapore_15, server: sg15.mmyjiedian.com, port: 20015, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: United States_1, server: us01.mmyjiedian.com, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Japan_13, server: jp13.mmyjiedian.com, port: 30013, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Japan_7, server: jp07.mmyjiedian.com, port: 30007, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Japan_15, server: jp15.mmyjiedian.com, port: 30015, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: 距离下次重置剩余：27 天, server: hk13.mmyjiedian.com, port: 10013, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Japan_6, server: jp06.mmyjiedian.com, port: 30006, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Japan_17, server: jp17.mmyjiedian.com, port: 30017, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
   - {name: 秒秒云.me, server: hk14.mmyjiedian.com, port: 10014, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Japan_12, server: jp12.mmyjiedian.com, port: 30012, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Japan_1, server: jp01.mmyjiedian.com, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Japan_2, server: jp02.mmyjiedian.com, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Singapore_13, server: sg13.mmyjiedian.com, port: 20013, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Vietnam_1, server: vn01.mmyjiedian.com, port: 40001, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Taiwan_1, server: tw01.mmyjiedian.com, port: 40006, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Singapore_04, server: sg04.mmyjiedian.com, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Hong Kong_19, server: hk19.mmyjiedian.com, port: 10019, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Singapore_11, server: sg11.mmyjiedian.com, port: 20011, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Hong Kong_13, server: hk13.mmyjiedian.com, port: 10013, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
+  - {name: Hong Kong_6, server: hk06.mmyjiedian.com, port: 10006, type: ss, cipher: chacha20-ietf-poly1305, password: 93f86383-5185-468f-b282-0e34f4e47db8, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Hong Kong_13
-      - Hong Kong_18
-      - Hong Kong_19
-      - Hong Kong_6
-      - Japan_1
-      - Japan_12
-      - Japan_13
-      - Japan_15
-      - Japan_17
-      - Japan_2
-      - Japan_20
-      - Japan_5
-      - Japan_6
-      - Japan_7
-      - Japan_8
       - Japan_9
-      - Singapore_04
-      - Singapore_11
-      - Singapore_13
-      - Singapore_15
-      - Taiwan_1
-      - United States_1
       - United States_2
       - United States_5
-      - Vietnam_1
       - Vietnam_3
+      - Japan_20
+      - Japan_8
+      - Hong Kong_18
+      - Japan_5
+      - Singapore_15
+      - United States_1
+      - Japan_13
+      - Japan_7
+      - Japan_15
+      - 距离下次重置剩余：27 天
+      - Japan_6
+      - Japan_17
       - 秒秒云.me
+      - Japan_12
+      - Japan_1
+      - Japan_2
+      - Singapore_13
+      - Vietnam_1
+      - Taiwan_1
+      - Singapore_04
+      - Hong Kong_19
+      - Singapore_11
+      - Hong Kong_13
+      - Hong Kong_6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Hong Kong_13
-      - Hong Kong_18
-      - Hong Kong_19
-      - Hong Kong_6
-      - Japan_1
-      - Japan_12
-      - Japan_13
-      - Japan_15
-      - Japan_17
-      - Japan_2
-      - Japan_20
-      - Japan_5
-      - Japan_6
-      - Japan_7
-      - Japan_8
       - Japan_9
-      - Singapore_04
-      - Singapore_11
-      - Singapore_13
-      - Singapore_15
-      - Taiwan_1
-      - United States_1
       - United States_2
       - United States_5
-      - Vietnam_1
       - Vietnam_3
+      - Japan_20
+      - Japan_8
+      - Hong Kong_18
+      - Japan_5
+      - Singapore_15
+      - United States_1
+      - Japan_13
+      - Japan_7
+      - Japan_15
+      - 距离下次重置剩余：27 天
+      - Japan_6
+      - Japan_17
       - 秒秒云.me
+      - Japan_12
+      - Japan_1
+      - Japan_2
+      - Singapore_13
+      - Vietnam_1
+      - Taiwan_1
+      - Singapore_04
+      - Hong Kong_19
+      - Singapore_11
+      - Hong Kong_13
+      - Hong Kong_6
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Hong Kong_13
-      - Hong Kong_18
-      - Hong Kong_19
-      - Hong Kong_6
-      - Japan_1
-      - Japan_12
-      - Japan_13
-      - Japan_15
-      - Japan_17
-      - Japan_2
-      - Japan_20
-      - Japan_5
-      - Japan_6
-      - Japan_7
-      - Japan_8
       - Japan_9
-      - Singapore_04
-      - Singapore_11
-      - Singapore_13
-      - Singapore_15
-      - Taiwan_1
-      - United States_1
       - United States_2
       - United States_5
-      - Vietnam_1
       - Vietnam_3
+      - Japan_20
+      - Japan_8
+      - Hong Kong_18
+      - Japan_5
+      - Singapore_15
+      - United States_1
+      - Japan_13
+      - Japan_7
+      - Japan_15
+      - 距离下次重置剩余：27 天
+      - Japan_6
+      - Japan_17
       - 秒秒云.me
+      - Japan_12
+      - Japan_1
+      - Japan_2
+      - Singapore_13
+      - Vietnam_1
+      - Taiwan_1
+      - Singapore_04
+      - Hong Kong_19
+      - Singapore_11
+      - Hong Kong_13
+      - Hong Kong_6
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -148,33 +152,34 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Hong Kong_13
-      - Hong Kong_18
-      - Hong Kong_19
-      - Hong Kong_6
-      - Japan_1
-      - Japan_12
-      - Japan_13
-      - Japan_15
-      - Japan_17
-      - Japan_2
-      - Japan_20
-      - Japan_5
-      - Japan_6
-      - Japan_7
-      - Japan_8
       - Japan_9
-      - Singapore_04
-      - Singapore_11
-      - Singapore_13
-      - Singapore_15
-      - Taiwan_1
-      - United States_1
       - United States_2
       - United States_5
-      - Vietnam_1
       - Vietnam_3
+      - Japan_20
+      - Japan_8
+      - Hong Kong_18
+      - Japan_5
+      - Singapore_15
+      - United States_1
+      - Japan_13
+      - Japan_7
+      - Japan_15
+      - 距离下次重置剩余：27 天
+      - Japan_6
+      - Japan_17
       - 秒秒云.me
+      - Japan_12
+      - Japan_1
+      - Japan_2
+      - Singapore_13
+      - Vietnam_1
+      - Taiwan_1
+      - Singapore_04
+      - Hong Kong_19
+      - Singapore_11
+      - Hong Kong_13
+      - Hong Kong_6
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -185,98 +190,101 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Hong Kong_13
-      - Hong Kong_18
-      - Hong Kong_19
-      - Hong Kong_6
-      - Japan_1
-      - Japan_12
-      - Japan_13
-      - Japan_15
-      - Japan_17
-      - Japan_2
-      - Japan_20
-      - Japan_5
-      - Japan_6
-      - Japan_7
-      - Japan_8
       - Japan_9
-      - Singapore_04
-      - Singapore_11
-      - Singapore_13
-      - Singapore_15
-      - Taiwan_1
-      - United States_1
       - United States_2
       - United States_5
-      - Vietnam_1
       - Vietnam_3
+      - Japan_20
+      - Japan_8
+      - Hong Kong_18
+      - Japan_5
+      - Singapore_15
+      - United States_1
+      - Japan_13
+      - Japan_7
+      - Japan_15
+      - 距离下次重置剩余：27 天
+      - Japan_6
+      - Japan_17
       - 秒秒云.me
+      - Japan_12
+      - Japan_1
+      - Japan_2
+      - Singapore_13
+      - Vietnam_1
+      - Taiwan_1
+      - Singapore_04
+      - Hong Kong_19
+      - Singapore_11
+      - Hong Kong_13
+      - Hong Kong_6
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Hong Kong_13
-      - Hong Kong_18
-      - Hong Kong_19
-      - Hong Kong_6
-      - Japan_1
-      - Japan_12
-      - Japan_13
-      - Japan_15
-      - Japan_17
-      - Japan_2
-      - Japan_20
-      - Japan_5
-      - Japan_6
-      - Japan_7
-      - Japan_8
       - Japan_9
-      - Singapore_04
-      - Singapore_11
-      - Singapore_13
-      - Singapore_15
-      - Taiwan_1
-      - United States_1
       - United States_2
       - United States_5
-      - Vietnam_1
       - Vietnam_3
+      - Japan_20
+      - Japan_8
+      - Hong Kong_18
+      - Japan_5
+      - Singapore_15
+      - United States_1
+      - Japan_13
+      - Japan_7
+      - Japan_15
+      - 距离下次重置剩余：27 天
+      - Japan_6
+      - Japan_17
       - 秒秒云.me
+      - Japan_12
+      - Japan_1
+      - Japan_2
+      - Singapore_13
+      - Vietnam_1
+      - Taiwan_1
+      - Singapore_04
+      - Hong Kong_19
+      - Singapore_11
+      - Hong Kong_13
+      - Hong Kong_6
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Hong Kong_13
-      - Hong Kong_18
-      - Hong Kong_19
-      - Hong Kong_6
-      - Japan_1
-      - Japan_12
-      - Japan_13
-      - Japan_15
-      - Japan_17
-      - Japan_2
-      - Japan_20
-      - Japan_5
-      - Japan_6
-      - Japan_7
-      - Japan_8
       - Japan_9
-      - Singapore_04
-      - Singapore_11
-      - Singapore_13
-      - Singapore_15
-      - Taiwan_1
-      - United States_1
       - United States_2
       - United States_5
-      - Vietnam_1
       - Vietnam_3
+      - Japan_20
+      - Japan_8
+      - Hong Kong_18
+      - Japan_5
+      - Singapore_15
+      - United States_1
+      - Japan_13
+      - Japan_7
+      - Japan_15
+      - 距离下次重置剩余：27 天
+      - Japan_6
+      - Japan_17
       - 秒秒云.me
+      - Japan_12
+      - Japan_1
+      - Japan_2
+      - Singapore_13
+      - Vietnam_1
+      - Taiwan_1
+      - Singapore_04
+      - Hong Kong_19
+      - Singapore_11
+      - Hong Kong_13
+      - Hong Kong_6
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -292,33 +300,34 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Hong Kong_13
-      - Hong Kong_18
-      - Hong Kong_19
-      - Hong Kong_6
-      - Japan_1
-      - Japan_12
-      - Japan_13
-      - Japan_15
-      - Japan_17
-      - Japan_2
-      - Japan_20
-      - Japan_5
-      - Japan_6
-      - Japan_7
-      - Japan_8
       - Japan_9
-      - Singapore_04
-      - Singapore_11
-      - Singapore_13
-      - Singapore_15
-      - Taiwan_1
-      - United States_1
       - United States_2
       - United States_5
-      - Vietnam_1
       - Vietnam_3
+      - Japan_20
+      - Japan_8
+      - Hong Kong_18
+      - Japan_5
+      - Singapore_15
+      - United States_1
+      - Japan_13
+      - Japan_7
+      - Japan_15
+      - 距离下次重置剩余：27 天
+      - Japan_6
+      - Japan_17
       - 秒秒云.me
+      - Japan_12
+      - Japan_1
+      - Japan_2
+      - Singapore_13
+      - Vietnam_1
+      - Taiwan_1
+      - Singapore_04
+      - Hong Kong_19
+      - Singapore_11
+      - Hong Kong_13
+      - Hong Kong_6
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
