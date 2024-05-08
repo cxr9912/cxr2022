@@ -5,43 +5,119 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 卐丙星㊋, server: download.yunzhongzhuan.com, port: 443, type: vmess, uuid: 4a666995-303e-4b96-af79-cabd83175168, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: download.yunzhongzhuan.com, grpc-opts: {grpc-service-name: usyyds}, udp: true}
-  - {name: 卐已星㊌, server: upload.yunzhongzhuan.com, port: 443, type: vmess, uuid: 4a666995-303e-4b96-af79-cabd83175168, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: upload.yunzhongzhuan.com, grpc-opts: {grpc-service-name: orayyds}, udp: true}
-  - {name: 卐月球㊊, server: ip.sb, port: 443, type: vmess, uuid: 4a666995-303e-4b96-af79-cabd83175168, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: ip.sb, grpc-opts: {grpc-service-name: grpcyydsus}, udp: true}
-  - {name: 卐地球㊣, server: cdn.chigua.tk, port: 443, type: vmess, uuid: 4a666995-303e-4b96-af79-cabd83175168, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: cdn.chigua.tk, grpc-opts: {grpc-service-name: grpcyydsae}, udp: true}
-  - {name: 卐点奇卐, server: auto.hexsen.com, port: 443, type: vmess, uuid: 4a666995-303e-4b96-af79-cabd83175168, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: auto.hexsen.com, grpc-opts: {grpc-service-name: yydsqd}, udp: true}
+  - {name: baipaovpn日本东京, server: 3.112.218.182, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn亚太地区, server: 103.172.116.94, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: baipaovpn亚太地区 2, server: 103.172.116.94, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: baipaovpn新加坡, server: 46.137.236.48, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn新加坡 2, server: 54.254.62.209, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn亚太地区 3, server: 103.172.116.94, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: baipaovpn亚太地区 4, server: 103.172.116.94, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: baipaovpn新加坡 3, server: 54.151.219.143, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn韩国首尔, server: 193.122.102.220, port: 22102, type: trojan, password: e68e7dcb-d32b-4a43-9f0a-e8bd3ce1888c, skip-cert-verify: true, udp: true}
+  - {name: baipaovpn韩国, server: 103.214.68.57, port: 10001, type: vmess, uuid: ebca5f68-bf59-4081-e658-f158839c2f5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: baipaovpn新加坡 4, server: 13.212.91.18, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn日本, server: 54.95.164.206, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn亚太地区 5, server: 103.172.116.94, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: baipaovpn日本 2, server: 146.56.37.105, port: 30852, type: trojan, password: e68e7dcb-d32b-4a43-9f0a-e8bd3ce1888c, skip-cert-verify: true, udp: true}
+  - {name: baipaovpn广东省, server: 183.240.220.199, port: 34338, type: ss, cipher: chacha20-ietf-poly1305, password: f16ae665-b6a0-4a7a-8868-f164eeec9214, udp: true}
+  - {name: baipaovpn广东省 2, server: 183.240.220.199, port: 42414, type: ss, cipher: chacha20-ietf-poly1305, password: f16ae665-b6a0-4a7a-8868-f164eeec9214, udp: true}
+  - {name: baipaovpn广东省 3, server: 183.240.220.199, port: 58159, type: ss, cipher: chacha20-ietf-poly1305, password: f16ae665-b6a0-4a7a-8868-f164eeec9214, udp: true}
+  - {name: baipaovpn亚太地区 6, server: 103.172.116.94, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: baipaovpn广东省 4, server: 183.240.220.199, port: 47564, type: ss, cipher: chacha20-ietf-poly1305, password: f16ae665-b6a0-4a7a-8868-f164eeec9214, udp: true}
+  - {name: baipaovpn新加坡 5, server: 18.139.225.183, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn广东省深圳市, server: 14.116.157.118, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: f16ae665-b6a0-4a7a-8868-f164eeec9214, udp: true}
+  - {name: baipaovpn广东省 5, server: 183.240.220.199, port: 56011, type: ss, cipher: chacha20-ietf-poly1305, password: f16ae665-b6a0-4a7a-8868-f164eeec9214, udp: true}
+  - {name: baipaovpn广东省深圳市 2, server: 14.116.157.118, port: 20002, type: ss, cipher: chacha20-ietf-poly1305, password: f16ae665-b6a0-4a7a-8868-f164eeec9214, udp: true}
+  - {name: baipaovpn美国, server: 172.207.122.50, port: 443, type: trojan, password: e54888ae-fad3-4782-864f-6693e4be2cbd, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 卐丙星㊋
-      - 卐已星㊌
-      - 卐月球㊊
-      - 卐地球㊣
-      - 卐点奇卐
+      - baipaovpn日本东京
+      - baipaovpn亚太地区
+      - baipaovpn亚太地区 2
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn亚太地区 3
+      - baipaovpn亚太地区 4
+      - baipaovpn新加坡 3
+      - baipaovpn韩国首尔
+      - baipaovpn韩国
+      - baipaovpn新加坡 4
+      - baipaovpn日本
+      - baipaovpn亚太地区 5
+      - baipaovpn日本 2
+      - baipaovpn广东省
+      - baipaovpn广东省 2
+      - baipaovpn广东省 3
+      - baipaovpn亚太地区 6
+      - baipaovpn广东省 4
+      - baipaovpn新加坡 5
+      - baipaovpn广东省深圳市
+      - baipaovpn广东省 5
+      - baipaovpn广东省深圳市 2
+      - baipaovpn美国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 卐丙星㊋
-      - 卐已星㊌
-      - 卐月球㊊
-      - 卐地球㊣
-      - 卐点奇卐
+      - baipaovpn日本东京
+      - baipaovpn亚太地区
+      - baipaovpn亚太地区 2
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn亚太地区 3
+      - baipaovpn亚太地区 4
+      - baipaovpn新加坡 3
+      - baipaovpn韩国首尔
+      - baipaovpn韩国
+      - baipaovpn新加坡 4
+      - baipaovpn日本
+      - baipaovpn亚太地区 5
+      - baipaovpn日本 2
+      - baipaovpn广东省
+      - baipaovpn广东省 2
+      - baipaovpn广东省 3
+      - baipaovpn亚太地区 6
+      - baipaovpn广东省 4
+      - baipaovpn新加坡 5
+      - baipaovpn广东省深圳市
+      - baipaovpn广东省 5
+      - baipaovpn广东省深圳市 2
+      - baipaovpn美国
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 卐丙星㊋
-      - 卐已星㊌
-      - 卐月球㊊
-      - 卐地球㊣
-      - 卐点奇卐
+      - baipaovpn日本东京
+      - baipaovpn亚太地区
+      - baipaovpn亚太地区 2
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn亚太地区 3
+      - baipaovpn亚太地区 4
+      - baipaovpn新加坡 3
+      - baipaovpn韩国首尔
+      - baipaovpn韩国
+      - baipaovpn新加坡 4
+      - baipaovpn日本
+      - baipaovpn亚太地区 5
+      - baipaovpn日本 2
+      - baipaovpn广东省
+      - baipaovpn广东省 2
+      - baipaovpn广东省 3
+      - baipaovpn亚太地区 6
+      - baipaovpn广东省 4
+      - baipaovpn新加坡 5
+      - baipaovpn广东省深圳市
+      - baipaovpn广东省 5
+      - baipaovpn广东省深圳市 2
+      - baipaovpn美国
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,11 +136,30 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 卐丙星㊋
-      - 卐已星㊌
-      - 卐月球㊊
-      - 卐地球㊣
-      - 卐点奇卐
+      - baipaovpn日本东京
+      - baipaovpn亚太地区
+      - baipaovpn亚太地区 2
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn亚太地区 3
+      - baipaovpn亚太地区 4
+      - baipaovpn新加坡 3
+      - baipaovpn韩国首尔
+      - baipaovpn韩国
+      - baipaovpn新加坡 4
+      - baipaovpn日本
+      - baipaovpn亚太地区 5
+      - baipaovpn日本 2
+      - baipaovpn广东省
+      - baipaovpn广东省 2
+      - baipaovpn广东省 3
+      - baipaovpn亚太地区 6
+      - baipaovpn广东省 4
+      - baipaovpn新加坡 5
+      - baipaovpn广东省深圳市
+      - baipaovpn广东省 5
+      - baipaovpn广东省深圳市 2
+      - baipaovpn美国
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -75,32 +170,89 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 卐丙星㊋
-      - 卐已星㊌
-      - 卐月球㊊
-      - 卐地球㊣
-      - 卐点奇卐
+      - baipaovpn日本东京
+      - baipaovpn亚太地区
+      - baipaovpn亚太地区 2
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn亚太地区 3
+      - baipaovpn亚太地区 4
+      - baipaovpn新加坡 3
+      - baipaovpn韩国首尔
+      - baipaovpn韩国
+      - baipaovpn新加坡 4
+      - baipaovpn日本
+      - baipaovpn亚太地区 5
+      - baipaovpn日本 2
+      - baipaovpn广东省
+      - baipaovpn广东省 2
+      - baipaovpn广东省 3
+      - baipaovpn亚太地区 6
+      - baipaovpn广东省 4
+      - baipaovpn新加坡 5
+      - baipaovpn广东省深圳市
+      - baipaovpn广东省 5
+      - baipaovpn广东省深圳市 2
+      - baipaovpn美国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 卐丙星㊋
-      - 卐已星㊌
-      - 卐月球㊊
-      - 卐地球㊣
-      - 卐点奇卐
+      - baipaovpn日本东京
+      - baipaovpn亚太地区
+      - baipaovpn亚太地区 2
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn亚太地区 3
+      - baipaovpn亚太地区 4
+      - baipaovpn新加坡 3
+      - baipaovpn韩国首尔
+      - baipaovpn韩国
+      - baipaovpn新加坡 4
+      - baipaovpn日本
+      - baipaovpn亚太地区 5
+      - baipaovpn日本 2
+      - baipaovpn广东省
+      - baipaovpn广东省 2
+      - baipaovpn广东省 3
+      - baipaovpn亚太地区 6
+      - baipaovpn广东省 4
+      - baipaovpn新加坡 5
+      - baipaovpn广东省深圳市
+      - baipaovpn广东省 5
+      - baipaovpn广东省深圳市 2
+      - baipaovpn美国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 卐丙星㊋
-      - 卐已星㊌
-      - 卐月球㊊
-      - 卐地球㊣
-      - 卐点奇卐
+      - baipaovpn日本东京
+      - baipaovpn亚太地区
+      - baipaovpn亚太地区 2
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn亚太地区 3
+      - baipaovpn亚太地区 4
+      - baipaovpn新加坡 3
+      - baipaovpn韩国首尔
+      - baipaovpn韩国
+      - baipaovpn新加坡 4
+      - baipaovpn日本
+      - baipaovpn亚太地区 5
+      - baipaovpn日本 2
+      - baipaovpn广东省
+      - baipaovpn广东省 2
+      - baipaovpn广东省 3
+      - baipaovpn亚太地区 6
+      - baipaovpn广东省 4
+      - baipaovpn新加坡 5
+      - baipaovpn广东省深圳市
+      - baipaovpn广东省 5
+      - baipaovpn广东省深圳市 2
+      - baipaovpn美国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +268,30 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 卐丙星㊋
-      - 卐已星㊌
-      - 卐月球㊊
-      - 卐地球㊣
-      - 卐点奇卐
+      - baipaovpn日本东京
+      - baipaovpn亚太地区
+      - baipaovpn亚太地区 2
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn亚太地区 3
+      - baipaovpn亚太地区 4
+      - baipaovpn新加坡 3
+      - baipaovpn韩国首尔
+      - baipaovpn韩国
+      - baipaovpn新加坡 4
+      - baipaovpn日本
+      - baipaovpn亚太地区 5
+      - baipaovpn日本 2
+      - baipaovpn广东省
+      - baipaovpn广东省 2
+      - baipaovpn广东省 3
+      - baipaovpn亚太地区 6
+      - baipaovpn广东省 4
+      - baipaovpn新加坡 5
+      - baipaovpn广东省深圳市
+      - baipaovpn广东省 5
+      - baipaovpn广东省深圳市 2
+      - baipaovpn美国
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
