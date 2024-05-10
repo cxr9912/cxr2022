@@ -5,55 +5,79 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 台湾A|1x, server: a.skrspc.org, port: 29118, type: ss, cipher: aes-256-gcm, password: 3d4f7e72-a50b-4de0-b5df-9b03dbd4026c, udp: true}
-  - {name: 新加坡A|1x, server: a.skrspc.org, port: 29120, type: ss, cipher: aes-256-gcm, password: 3d4f7e72-a50b-4de0-b5df-9b03dbd4026c, udp: true}
-  - {name: 香港A|1x, server: a.skrspc.org, port: 29114, type: ss, cipher: aes-256-gcm, password: 3d4f7e72-a50b-4de0-b5df-9b03dbd4026c, udp: true}
-  - {name: 新加坡B|1x, server: b.skrspc.org, port: 29134, type: ss, cipher: aes-256-gcm, password: 3d4f7e72-a50b-4de0-b5df-9b03dbd4026c, udp: true}
-  - {name: 香港B|1x, server: b.skrspc.org, port: 29128, type: ss, cipher: aes-256-gcm, password: 3d4f7e72-a50b-4de0-b5df-9b03dbd4026c, udp: true}
-  - {name: 台湾B|1x, server: b.skrspc.org, port: 29129, type: ss, cipher: aes-256-gcm, password: 3d4f7e72-a50b-4de0-b5df-9b03dbd4026c, udp: true}
-  - {name: 日本A|1x, server: a.skrspc.org, port: 29101, type: ss, cipher: aes-256-gcm, password: 3d4f7e72-a50b-4de0-b5df-9b03dbd4026c, udp: true}
-  - {name: 美国A|1x, server: a.skrspc.org, port: 29102, type: ss, cipher: aes-256-gcm, password: 3d4f7e72-a50b-4de0-b5df-9b03dbd4026c, udp: true}
+  - {name: 新加坡【免费 06】, server: cf2.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: azsg01.ftclashcloud.online}, udp: true}
+  - {name: 土耳其【免费 02】, server: cf2.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: aztr01.ftclashcloud.online}, udp: true}
+  - {name: 日本【免费 02】, server: cf2.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: azjp01.ftclashcloud.online}, udp: true}
+  - {name: 美国【免费 05】, server: cf1.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: akileusa01.ftclashcloud.online}, udp: true}
+  - {name: 印度【免费 01】, server: cf1.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: azin01.ftclashcloud.online}, udp: true}
+  - {name: 美国【免费 02】, server: cf2.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: mhyusa01.ftclashcloud.online}, udp: true}
+  - {name: 美国【免费 01】, server: cf1.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: mhyusa01.ftclashcloud.online}, udp: true}
+  - {name: 土耳其【免费 01】, server: cf1.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: aztr01.ftclashcloud.online}, udp: true}
+  - {name: 印度【免费 02】, server: cf2.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: azin01.ftclashcloud.online}, udp: true}
+  - {name: 韩国【免费 02】, server: cf2.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: azkr01.ftclashcloud.online}, udp: true}
+  - {name: 美国【免费 06】, server: cf2.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: akileusa01.ftclashcloud.online}, udp: true}
+  - {name: 新加坡【免费 05】, server: cf1.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: azsg01.ftclashcloud.online}, udp: true}
+  - {name: 日本【免费 01】, server: cf1.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: azjp01.ftclashcloud.online}, udp: true}
+  - {name: 韩国【免费 01】, server: cf1.ftclashcloud.site, port: 80, type: vmess, uuid: 87630ec3-112e-4f6e-9c78-7b085a2ad3ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2560", ws-headers: {Host: azkr01.ftclashcloud.online}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾A|1x
-      - 新加坡A|1x
-      - 香港A|1x
-      - 新加坡B|1x
-      - 香港B|1x
-      - 台湾B|1x
-      - 日本A|1x
-      - 美国A|1x
+      - 新加坡【免费 06】
+      - 土耳其【免费 02】
+      - 日本【免费 02】
+      - 美国【免费 05】
+      - 印度【免费 01】
+      - 美国【免费 02】
+      - 美国【免费 01】
+      - 土耳其【免费 01】
+      - 印度【免费 02】
+      - 韩国【免费 02】
+      - 美国【免费 06】
+      - 新加坡【免费 05】
+      - 日本【免费 01】
+      - 韩国【免费 01】
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 台湾A|1x
-      - 新加坡A|1x
-      - 香港A|1x
-      - 新加坡B|1x
-      - 香港B|1x
-      - 台湾B|1x
-      - 日本A|1x
-      - 美国A|1x
+      - 新加坡【免费 06】
+      - 土耳其【免费 02】
+      - 日本【免费 02】
+      - 美国【免费 05】
+      - 印度【免费 01】
+      - 美国【免费 02】
+      - 美国【免费 01】
+      - 土耳其【免费 01】
+      - 印度【免费 02】
+      - 韩国【免费 02】
+      - 美国【免费 06】
+      - 新加坡【免费 05】
+      - 日本【免费 01】
+      - 韩国【免费 01】
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾A|1x
-      - 新加坡A|1x
-      - 香港A|1x
-      - 新加坡B|1x
-      - 香港B|1x
-      - 台湾B|1x
-      - 日本A|1x
-      - 美国A|1x
+      - 新加坡【免费 06】
+      - 土耳其【免费 02】
+      - 日本【免费 02】
+      - 美国【免费 05】
+      - 印度【免费 01】
+      - 美国【免费 02】
+      - 美国【免费 01】
+      - 土耳其【免费 01】
+      - 印度【免费 02】
+      - 韩国【免费 02】
+      - 美国【免费 06】
+      - 新加坡【免费 05】
+      - 日本【免费 01】
+      - 韩国【免费 01】
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,63 +96,83 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾A|1x
-      - 新加坡A|1x
-      - 香港A|1x
-      - 新加坡B|1x
-      - 香港B|1x
-      - 台湾B|1x
-      - 日本A|1x
-      - 美国A|1x
+      - 新加坡【免费 06】
+      - 土耳其【免费 02】
+      - 日本【免费 02】
+      - 美国【免费 05】
+      - 印度【免费 01】
+      - 美国【免费 02】
+      - 美国【免费 01】
+      - 土耳其【免费 01】
+      - 印度【免费 02】
+      - 韩国【免费 02】
+      - 美国【免费 06】
+      - 新加坡【免费 05】
+      - 日本【免费 01】
+      - 韩国【免费 01】
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾A|1x
-      - 香港A|1x
-      - 香港B|1x
-      - 台湾B|1x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台湾A|1x
-      - 新加坡A|1x
-      - 香港A|1x
-      - 新加坡B|1x
-      - 香港B|1x
-      - 台湾B|1x
-      - 日本A|1x
-      - 美国A|1x
+      - 新加坡【免费 06】
+      - 土耳其【免费 02】
+      - 日本【免费 02】
+      - 美国【免费 05】
+      - 印度【免费 01】
+      - 美国【免费 02】
+      - 美国【免费 01】
+      - 土耳其【免费 01】
+      - 印度【免费 02】
+      - 韩国【免费 02】
+      - 美国【免费 06】
+      - 新加坡【免费 05】
+      - 日本【免费 01】
+      - 韩国【免费 01】
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台湾A|1x
-      - 新加坡A|1x
-      - 香港A|1x
-      - 新加坡B|1x
-      - 香港B|1x
-      - 台湾B|1x
-      - 日本A|1x
-      - 美国A|1x
+      - 新加坡【免费 06】
+      - 土耳其【免费 02】
+      - 日本【免费 02】
+      - 美国【免费 05】
+      - 印度【免费 01】
+      - 美国【免费 02】
+      - 美国【免费 01】
+      - 土耳其【免费 01】
+      - 印度【免费 02】
+      - 韩国【免费 02】
+      - 美国【免费 06】
+      - 新加坡【免费 05】
+      - 日本【免费 01】
+      - 韩国【免费 01】
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾A|1x
-      - 新加坡A|1x
-      - 香港A|1x
-      - 新加坡B|1x
-      - 香港B|1x
-      - 台湾B|1x
-      - 日本A|1x
-      - 美国A|1x
+      - 新加坡【免费 06】
+      - 土耳其【免费 02】
+      - 日本【免费 02】
+      - 美国【免费 05】
+      - 印度【免费 01】
+      - 美国【免费 02】
+      - 美国【免费 01】
+      - 土耳其【免费 01】
+      - 印度【免费 02】
+      - 韩国【免费 02】
+      - 美国【免费 06】
+      - 新加坡【免费 05】
+      - 日本【免费 01】
+      - 韩国【免费 01】
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -144,14 +188,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾A|1x
-      - 新加坡A|1x
-      - 香港A|1x
-      - 新加坡B|1x
-      - 香港B|1x
-      - 台湾B|1x
-      - 日本A|1x
-      - 美国A|1x
+      - 新加坡【免费 06】
+      - 土耳其【免费 02】
+      - 日本【免费 02】
+      - 美国【免费 05】
+      - 印度【免费 01】
+      - 美国【免费 02】
+      - 美国【免费 01】
+      - 土耳其【免费 01】
+      - 印度【免费 02】
+      - 韩国【免费 02】
+      - 美国【免费 06】
+      - 新加坡【免费 05】
+      - 日本【免费 01】
+      - 韩国【免费 01】
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
