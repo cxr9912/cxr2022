@@ -5,403 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国_Telegram@kxswa 9, server: 104.17.142.173, port: 2052, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in17314217, ws-headers: {Host: 100.100.17.142.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 74, server: 212.102.47.198, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: 美国_Telegram@kxswa 50, server: 104.21.25.96, port: 443, type: vmess, uuid: 9805b4d2-0cdf-4440-87cc-cdb974da99e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: be1-vmess.sshmax.xyz}, udp: true}
-  - {name: 美国_Telegram@kxswa 49, server: 104.21.25.39, port: 80, type: vmess, uuid: 6a748ac2-5eaa-4ba9-bd49-a5dc4786e2f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: De2-vmess.sshmax.xyz.}, udp: true}
-  - {name: 美国_Telegram@kxswa 112, server: fr2-full.privateip.net, port: 443, type: trojan, password: 88503a0a-3c8e-42ce-8fff-f67fa3171a1e, sni: fr2-full.privateip.net, skip-cert-verify: true, udp: true}
-  - {name: 美国_Telegram@kxswa 55, server: 162.159.1.33, port: 8080, type: vmess, uuid: 4f1f8f1e-926c-4edb-a398-8627110973f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", ws-headers: {Host: do-au.alipay.ovh}, udp: true}
-  - {name: 美国_Telegram@kxswa 68, server: 172.67.75.33, port: 2087, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dabai.in172.67.75.33, ws-headers: {Host: 100-100-17-411.db-link02.top}, udp: true}
-  - {name: 香港_Telegram@kxswa 26, server: 8.210.229.184, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: h14.podds.store, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 香港_Telegram@kxswa 16, server: 183.232.170.21, port: 30056, type: vmess, uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_Telegram@kxswa 39, server: 104.20.145.85, port: 2083, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dabai.in104.20.145.85, ws-headers: {Host: 100-100-17-304.db-link01.top}, udp: true}
-  - {name: 日本_Telegram@kxswa, server: 18.176.215.63, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: (TG @WangCai2)c68b799:50307}, udp: true}
-  - {name: 美国_Telegram@kxswa 33, server: 104.19.65.210, port: 2082, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in2106519, ws-headers: {Host: 100.100.17.65.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 41, server: 104.20.163.59, port: 2095, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in5916320, ws-headers: {Host: 100.100.17.163.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 10, server: 104.17.193.189, port: 2095, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in18919317, ws-headers: {Host: 100.100.17.193.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 27, server: 104.19.186.64, port: 80, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in6418619, ws-headers: {Host: 100.100.17.186.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 43, server: 104.20.182.27, port: 80, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in2718220, ws-headers: {Host: 100.100.17.182.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 54, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: 美国_Telegram@kxswa 69, server: 172.67.82.121, port: 80, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in172.67.82.121, ws-headers: {Host: 100-100-17-475.cn-db.top}, udp: true}
-  - {name: 香港_Telegram@kxswa 33, server: data-jp-v1.usabooks.com.cn, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /debian, ws-headers: {Host: data-jp-v1.usabooks.com.cn}, udp: true}
-  - {name: 美国_Telegram@kxswa 67, server: 172.67.171.89, port: 80, type: vmess, uuid: eeb5cc8b-19e8-4b33-9193-1c29cda6dd2c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: Dk2-vmess.sshmax.xyz.}, udp: true}
-  - {name: 美国_Telegram@kxswa 107, server: 54.70.43.105, port: 8081, type: ssr, cipher: aes-256-cfb, password: SRof6TrK0, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
-  - {name: 美国_Telegram@kxswa 115, server: tj1.dalazhi.eu.org, port: 443, type: trojan, password: d256e73b-8259-490a-aeb5-23f6a3636a1a, sni: tj1.dalazhi.eu.org, skip-cert-verify: true, udp: true}
-  - {name: 美国_Telegram@kxswa 48, server: 104.20.99.6, port: 8080, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in69920, ws-headers: {Host: 100.100.17.99.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 64, server: 172.67.127.99, port: 2082, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in172.67.127.99, ws-headers: {Host: 100-100-17-437.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 66, server: 172.67.171.48, port: 80, type: vmess, uuid: a17b5497-35a2-4292-bc59-90e6e596c64b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: Fr2-vmess.sshmax.xyz.}, udp: true}
-  - {name: 香港_Telegram@kxswa 35, server: hkjs.lydurlclub.top, port: 443, type: trojan, password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f, sni: hkjs.lydurlclub.top, skip-cert-verify: true, udp: true}
-  - {name: 美国_Telegram@kxswa 46, server: 104.20.38.245, port: 8080, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in2453820, ws-headers: {Host: 100.100.17.38.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 45, server: 104.20.193.234, port: 2083, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dabai.in104.20.193.234, ws-headers: {Host: 100-100-17-241.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 65, server: 172.67.171.44, port: 443, type: vmess, uuid: 56e76d5a-374d-46f8-9147-3a4de91f8de5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: pl2-vmess.sshmax.xyz}, udp: true}
-  - {name: 美国_Telegram@kxswa 47, server: 104.20.74.208, port: 2086, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in2087420, ws-headers: {Host: 100.100.17.74.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 114, server: no.08.ijg.cc, port: 443, type: trojan, password: fMucnQTndf, sni: no.08.ijg.cc, skip-cert-verify: true, udp: true}
-  - {name: 美国_Telegram@kxswa 40, server: 104.20.155.181, port: 2052, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in18115520, ws-headers: {Host: 100.100.17.155.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 21, server: 104.18.216.123, port: 8880, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in12321618, ws-headers: {Host: 100.100.17.216.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 52, server: 132.145.208.20, port: 443, type: trojan, password: 9Mdw86d7Cz, skip-cert-verify: true, udp: true}
-  - {name: 韩国_Telegram@kxswa 9, server: kr2.twincloud.xyz, port: 443, type: trojan, password: 6455f944-7c07-4ab0-b88f-440e581f41d9, sni: kr2.twincloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港_Telegram@kxswa 30, server: 8t6w03.a3b5wy.xyz, port: 36311, type: trojan, password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610, sni: 8t6w03.a3b5wy.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国_Telegram@kxswa 35, server: 104.19.78.90, port: 8080, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in907819, ws-headers: {Host: 100.100.17.78.db-link01.top}, udp: true}
-  - {name: 香港_Telegram@kxswa 24, server: 3u1s02.a3b5wy.xyz, port: 36506, type: trojan, password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610, sni: 3u1s02.a3b5wy.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国_Telegram@kxswa 4, server: 104.16.181.218, port: 2082, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in21818116, ws-headers: {Host: 100.100.17.181.cn-db.top}, udp: true}
-  - {name: 香港_Telegram@kxswa 31, server: 9a8r01.a3b5wy.xyz, port: 36861, type: trojan, password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610, sni: 9a8r01.a3b5wy.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国_Telegram@kxswa 3, server: 104.16.153.249, port: 8080, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in24915316, ws-headers: {Host: 100.100.17.153.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 22, server: 104.18.230.161, port: 2082, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in16123018, ws-headers: {Host: 100.100.17.230.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 34, server: 104.19.73.138, port: 2052, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in1387319, ws-headers: {Host: 100.100.17.73.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 29, server: 104.19.231.211, port: 2086, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in21123119, ws-headers: {Host: 100.100.17.231.db-link02.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 25, server: 104.19.12.33, port: 2082, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in331219, ws-headers: {Host: 100.100.17.12.cn-db.top}, udp: true}
-  - {name: 韩国_Telegram@kxswa 10, server: p227.panda004.net, port: 49032, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 美国_Telegram@kxswa 12, server: 104.17.21.121, port: 80, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in1212117, ws-headers: {Host: 100.100.17.21.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa, server: 104.16.113.48, port: 8080, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in4811316, ws-headers: {Host: 100.100.17.113.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 111, server: cfcdn1.sanfencdn9.com, port: 8880, type: vmess, uuid: c5da6e6b-7918-4d29-a05c-450f4eeecb19, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video/bYdJ7Vc2We, ws-headers: {Host: us6gzxQRrE4.fzbqfrse.xyz}, udp: true}
-  - {name: 香港_Telegram@kxswa 23, server: 36.151.195.46, port: 20344, type: trojan, password: MyYoZhfX, skip-cert-verify: true, udp: true}
-  - {name: 美国_Telegram@kxswa 5, server: 104.16.20.185, port: 8080, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in1852016, ws-headers: {Host: 100.100.17.20.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 38, server: 104.20.131.240, port: 2086, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in24013120, ws-headers: {Host: 100.100.17.131.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 7, server: 104.17.12.36, port: 8880, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in361217, ws-headers: {Host: 100.100.17.12.db-link02.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 116, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, sni: tj2.dalazhi.cyou, skip-cert-verify: true, udp: true}
-  - {name: 美国_Telegram@kxswa 24, server: 104.19.104.152, port: 2082, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in15210419, ws-headers: {Host: 100.100.17.104.db-link01.top}, udp: true}
-  - {name: 香港_Telegram@kxswa 29, server: 8h2k01.a3b5wy.xyz, port: 36601, type: trojan, password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610, sni: 8h2k01.a3b5wy.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国_Telegram@kxswa 2, server: 104.16.126.7, port: 2095, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in712616, ws-headers: {Host: 100.100.17.126.db-link02.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 30, server: 104.19.234.139, port: 2086, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in13923419, ws-headers: {Host: 100.100.17.234.db-link02.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 110, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: c5da6e6b-7918-4d29-a05c-450f4eeecb19, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video/GQ2qE5Us9g, ws-headers: {Host: tw1bQiWSE4x.fzbqfrse.xyz}, udp: true}
-  - {name: 美国_Telegram@kxswa 6, server: 104.16.211.216, port: 2082, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in21621116, ws-headers: {Host: 100.100.17.211.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 17, server: 104.17.66.143, port: 80, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in1436617, ws-headers: {Host: 100.100.17.66.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 63, server: 172.64.36.208, port: 2095, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in172.64.36.208, ws-headers: {Host: 100-100-17-170.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 15, server: 104.17.226.111, port: 80, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in11122617, ws-headers: {Host: 100.100.17.226.db-link02.top}, udp: true}
-  - {name: 韩国_Telegram@kxswa, server: 125.141.26.7, port: 49032, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 美国_Telegram@kxswa 8, server: 104.17.140.73, port: 8080, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in7314017, ws-headers: {Host: 100.100.17.140.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 42, server: 104.20.171.95, port: 8880, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in9517120, ws-headers: {Host: 100.100.17.171.db-link02.top}, udp: true}
-  - {name: 香港_Telegram@kxswa 18, server: 183.240.220.84, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24:SpYUtPeJYhRk4FWC, obfs-param: 6f41b24.microsoft.com, udp: true}
-  - {name: 美国_Telegram@kxswa 14, server: 104.17.221.189, port: 80, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in18922117, ws-headers: {Host: 100.100.17.221.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 32, server: 104.19.248.137, port: 2095, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in13724819, ws-headers: {Host: 100.100.17.248.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 11, server: 104.17.201.56, port: 2095, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in5620117, ws-headers: {Host: 100.100.17.201.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 36, server: 104.19.83.225, port: 8080, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in2258319, ws-headers: {Host: 100.100.17.83.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 18, server: 104.17.77.152, port: 2095, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in1527717, ws-headers: {Host: 100.100.17.77.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 20, server: 104.18.179.96, port: 80, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in9617918, ws-headers: {Host: 100.100.17.179.db-link02.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 28, server: 104.19.224.66, port: 2082, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in6622419, ws-headers: {Host: 100.100.17.224.cn-db.top}, udp: true}
-  - {name: 香港_Telegram@kxswa 15, server: 183.232.170.21, port: 30063, type: vmess, uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_Telegram@kxswa 27, server: 8789-kf49kc85w.uy2w4vf-sg03.my777999.top, port: 37997, type: vmess, uuid: 6399ac7d-8265-436d-b348-299df4b735a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_Telegram@kxswa 19, server: 183.240.220.84, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24:SpYUtPeJYhRk4FWC, obfs-param: 6f41b24.microsoft.com, udp: true}
-  - {name: 美国_Telegram@kxswa 31, server: 104.19.248.134, port: 8880, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in13424819, ws-headers: {Host: 100.100.17.248.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 37, server: 104.19.84.4, port: 2052, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in48419, ws-headers: {Host: 100.100.17.84.db-link02.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 44, server: 104.20.182.43, port: 2086, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in4318220, ws-headers: {Host: 100.100.17.182.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 23, server: 104.18.93.151, port: 8880, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in1519318, ws-headers: {Host: 100.100.17.93.cn-db.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 19, server: 104.18.113.240, port: 2082, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in24011318, ws-headers: {Host: 100.100.17.113.db-link02.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 16, server: 104.17.37.182, port: 8880, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in1823717, ws-headers: {Host: 100.100.17.37.db-link01.top}, udp: true}
-  - {name: 美国_Telegram@kxswa 117, server: www.visa.com.sg, port: 2086, type: vmess, uuid: 9d38f641-e4a7-4c01-919f-43dae64472a8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: 9d38f641-e4a7-4c01-919f-43dae64472a8-vm, ws-headers: {Host: staying-pantyhose-exports-derived.trycloudflare.com}, udp: true}
-  - {name: 香港_Telegram@kxswa 12, server: 183.232.170.21, port: 30061, type: vmess, uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_Telegram@kxswa 22, server: 223.113.54.154, port: 15274, type: trojan, password: MyYoZhfX, skip-cert-verify: true, udp: true}
-  - {name: 日本_Telegram@kxswa 6, server: 185.212.56.168, port: 443, type: trojan, password: share.mjj-home.com, skip-cert-verify: true, udp: true}
-  - {name: 美国_Telegram@kxswa 113, server: need.uno, port: 443, type: trojan, password: 6aWFNbrFDs, sni: need.uno, skip-cert-verify: true, udp: true}
-  - {name: 韩国_Telegram@kxswa 6, server: 43.202.41.139, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 美国_Telegram@kxswa 26, server: 104.19.122.108, port: 2095, type: vmess, uuid: 7648993c-806d-318b-b187-d80139f15fe0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in10812219, ws-headers: {Host: 100.100.17.122.cn-db.top}, udp: true}
-  - {name: 香港_Telegram@kxswa 17, server: 183.232.199.61, port: 15603, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_Telegram@kxswa 13, server: 104.17.215.2, port: 443, type: trojan, password: 669d0ac7b5b64ebbb1abb75d5d540a5c, skip-cert-verify: true, udp: true}
-  - {name: 香港_Telegram@kxswa 32, server: chjs.lydurlclub.top, port: 443, type: trojan, password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f, sni: chjs.lydurlclub.top, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_Telegram@kxswa 2, server: 23.162.200.215, port: 9090, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 香港_Telegram@kxswa 14, server: 183.232.170.21, port: 30059, type: vmess, uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 - 香港 - Hytron Network Services Limited - 63, server: hk.1.thap.xyz, port: 24767, type: ss, cipher: chacha20-ietf-poly1305, password: d3339e8c-9425-4466-90ac-a8d7a3043b9b, udp: true}
+  - {name: 加拿大 - 多伦多 - Amazon Technologies Inc. - 2, server: 35.182.109.91, port: 22222, type: trojan, password: telegram-id-directvpn, skip-cert-verify: true, udp: true}
+  - {name: 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1, server: 23.162.200.215, port: 9090, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 瑞士 - 苏黎世 - Microsoft - 1, server: 51.103.247.251, port: 52244, type: ss, cipher: chacha20-ietf-poly1305, password: r8e3NWTgFYTAYkLj0A3tJb, udp: true}
+  - {name: 中国 - 香港 - Hytron Network Services Limited - 1, server: hk03.mmyjiedian.com, port: 10003, type: ss, cipher: chacha20-ietf-poly1305, password: 81cc63a4-4804-4b44-bd6c-cb9250116190, udp: true}
+  - {name: 中国 - 香港 - Proxy Registration Eons Data - 64, server: 183.232.199.61, port: 15603, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 - 達拉斯 - Datacamp Limited - 8, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: "美国 - 波特蘭 - Amazon.com, Inc. - 16", server: 54.70.43.105, port: 8081, type: ssr, cipher: aes-256-cfb, password: SRof6TrK0, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国_Telegram@kxswa 9
-      - 美国_Telegram@kxswa 74
-      - 美国_Telegram@kxswa 50
-      - 美国_Telegram@kxswa 49
-      - 美国_Telegram@kxswa 112
-      - 美国_Telegram@kxswa 55
-      - 美国_Telegram@kxswa 68
-      - 香港_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 39
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 41
-      - 美国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 27
-      - 美国_Telegram@kxswa 43
-      - 美国_Telegram@kxswa 54
-      - 美国_Telegram@kxswa 69
-      - 香港_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 67
-      - 美国_Telegram@kxswa 107
-      - 美国_Telegram@kxswa 115
-      - 美国_Telegram@kxswa 48
-      - 美国_Telegram@kxswa 64
-      - 美国_Telegram@kxswa 66
-      - 香港_Telegram@kxswa 35
-      - 美国_Telegram@kxswa 46
-      - 美国_Telegram@kxswa 45
-      - 美国_Telegram@kxswa 65
-      - 美国_Telegram@kxswa 47
-      - 美国_Telegram@kxswa 114
-      - 美国_Telegram@kxswa 40
-      - 美国_Telegram@kxswa 21
-      - 美国_Telegram@kxswa 52
-      - 韩国_Telegram@kxswa 9
-      - 香港_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 35
-      - 香港_Telegram@kxswa 24
-      - 美国_Telegram@kxswa 4
-      - 香港_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 3
-      - 美国_Telegram@kxswa 22
-      - 美国_Telegram@kxswa 34
-      - 美国_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 25
-      - 韩国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 12
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 111
-      - 香港_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 5
-      - 美国_Telegram@kxswa 38
-      - 美国_Telegram@kxswa 7
-      - 美国_Telegram@kxswa 116
-      - 美国_Telegram@kxswa 24
-      - 香港_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 110
-      - 美国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 63
-      - 美国_Telegram@kxswa 15
-      - 韩国_Telegram@kxswa
-      - 美国_Telegram@kxswa 8
-      - 美国_Telegram@kxswa 42
-      - 香港_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 14
-      - 美国_Telegram@kxswa 32
-      - 美国_Telegram@kxswa 11
-      - 美国_Telegram@kxswa 36
-      - 美国_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 20
-      - 美国_Telegram@kxswa 28
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 27
-      - 香港_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 37
-      - 美国_Telegram@kxswa 44
-      - 美国_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 117
-      - 香港_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 22
-      - 日本_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 113
-      - 韩国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 13
-      - 香港_Telegram@kxswa 32
-      - 加拿大_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 14
+      - 中国 - 香港 - Hytron Network Services Limited - 63
+      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
+      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
+      - 瑞士 - 苏黎世 - Microsoft - 1
+      - 中国 - 香港 - Hytron Network Services Limited - 1
+      - 中国 - 香港 - Proxy Registration Eons Data - 64
+      - 美国 - 達拉斯 - Datacamp Limited - 8
+      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国_Telegram@kxswa 9
-      - 美国_Telegram@kxswa 74
-      - 美国_Telegram@kxswa 50
-      - 美国_Telegram@kxswa 49
-      - 美国_Telegram@kxswa 112
-      - 美国_Telegram@kxswa 55
-      - 美国_Telegram@kxswa 68
-      - 香港_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 39
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 41
-      - 美国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 27
-      - 美国_Telegram@kxswa 43
-      - 美国_Telegram@kxswa 54
-      - 美国_Telegram@kxswa 69
-      - 香港_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 67
-      - 美国_Telegram@kxswa 107
-      - 美国_Telegram@kxswa 115
-      - 美国_Telegram@kxswa 48
-      - 美国_Telegram@kxswa 64
-      - 美国_Telegram@kxswa 66
-      - 香港_Telegram@kxswa 35
-      - 美国_Telegram@kxswa 46
-      - 美国_Telegram@kxswa 45
-      - 美国_Telegram@kxswa 65
-      - 美国_Telegram@kxswa 47
-      - 美国_Telegram@kxswa 114
-      - 美国_Telegram@kxswa 40
-      - 美国_Telegram@kxswa 21
-      - 美国_Telegram@kxswa 52
-      - 韩国_Telegram@kxswa 9
-      - 香港_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 35
-      - 香港_Telegram@kxswa 24
-      - 美国_Telegram@kxswa 4
-      - 香港_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 3
-      - 美国_Telegram@kxswa 22
-      - 美国_Telegram@kxswa 34
-      - 美国_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 25
-      - 韩国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 12
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 111
-      - 香港_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 5
-      - 美国_Telegram@kxswa 38
-      - 美国_Telegram@kxswa 7
-      - 美国_Telegram@kxswa 116
-      - 美国_Telegram@kxswa 24
-      - 香港_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 110
-      - 美国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 63
-      - 美国_Telegram@kxswa 15
-      - 韩国_Telegram@kxswa
-      - 美国_Telegram@kxswa 8
-      - 美国_Telegram@kxswa 42
-      - 香港_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 14
-      - 美国_Telegram@kxswa 32
-      - 美国_Telegram@kxswa 11
-      - 美国_Telegram@kxswa 36
-      - 美国_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 20
-      - 美国_Telegram@kxswa 28
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 27
-      - 香港_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 37
-      - 美国_Telegram@kxswa 44
-      - 美国_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 117
-      - 香港_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 22
-      - 日本_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 113
-      - 韩国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 13
-      - 香港_Telegram@kxswa 32
-      - 加拿大_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 14
+      - 中国 - 香港 - Hytron Network Services Limited - 63
+      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
+      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
+      - 瑞士 - 苏黎世 - Microsoft - 1
+      - 中国 - 香港 - Hytron Network Services Limited - 1
+      - 中国 - 香港 - Proxy Registration Eons Data - 64
+      - 美国 - 達拉斯 - Datacamp Limited - 8
+      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国_Telegram@kxswa 9
-      - 美国_Telegram@kxswa 74
-      - 美国_Telegram@kxswa 50
-      - 美国_Telegram@kxswa 49
-      - 美国_Telegram@kxswa 112
-      - 美国_Telegram@kxswa 55
-      - 美国_Telegram@kxswa 68
-      - 香港_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 39
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 41
-      - 美国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 27
-      - 美国_Telegram@kxswa 43
-      - 美国_Telegram@kxswa 54
-      - 美国_Telegram@kxswa 69
-      - 香港_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 67
-      - 美国_Telegram@kxswa 107
-      - 美国_Telegram@kxswa 115
-      - 美国_Telegram@kxswa 48
-      - 美国_Telegram@kxswa 64
-      - 美国_Telegram@kxswa 66
-      - 香港_Telegram@kxswa 35
-      - 美国_Telegram@kxswa 46
-      - 美国_Telegram@kxswa 45
-      - 美国_Telegram@kxswa 65
-      - 美国_Telegram@kxswa 47
-      - 美国_Telegram@kxswa 114
-      - 美国_Telegram@kxswa 40
-      - 美国_Telegram@kxswa 21
-      - 美国_Telegram@kxswa 52
-      - 韩国_Telegram@kxswa 9
-      - 香港_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 35
-      - 香港_Telegram@kxswa 24
-      - 美国_Telegram@kxswa 4
-      - 香港_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 3
-      - 美国_Telegram@kxswa 22
-      - 美国_Telegram@kxswa 34
-      - 美国_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 25
-      - 韩国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 12
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 111
-      - 香港_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 5
-      - 美国_Telegram@kxswa 38
-      - 美国_Telegram@kxswa 7
-      - 美国_Telegram@kxswa 116
-      - 美国_Telegram@kxswa 24
-      - 香港_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 110
-      - 美国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 63
-      - 美国_Telegram@kxswa 15
-      - 韩国_Telegram@kxswa
-      - 美国_Telegram@kxswa 8
-      - 美国_Telegram@kxswa 42
-      - 香港_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 14
-      - 美国_Telegram@kxswa 32
-      - 美国_Telegram@kxswa 11
-      - 美国_Telegram@kxswa 36
-      - 美国_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 20
-      - 美国_Telegram@kxswa 28
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 27
-      - 香港_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 37
-      - 美国_Telegram@kxswa 44
-      - 美国_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 117
-      - 香港_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 22
-      - 日本_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 113
-      - 韩国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 13
-      - 香港_Telegram@kxswa 32
-      - 加拿大_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 14
+      - 中国 - 香港 - Hytron Network Services Limited - 63
+      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
+      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
+      - 瑞士 - 苏黎世 - Microsoft - 1
+      - 中国 - 香港 - Hytron Network Services Limited - 1
+      - 中国 - 香港 - Proxy Registration Eons Data - 64
+      - 美国 - 達拉斯 - Datacamp Limited - 8
+      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -420,425 +72,62 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国_Telegram@kxswa 9
-      - 美国_Telegram@kxswa 74
-      - 美国_Telegram@kxswa 50
-      - 美国_Telegram@kxswa 49
-      - 美国_Telegram@kxswa 112
-      - 美国_Telegram@kxswa 55
-      - 美国_Telegram@kxswa 68
-      - 香港_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 39
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 41
-      - 美国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 27
-      - 美国_Telegram@kxswa 43
-      - 美国_Telegram@kxswa 54
-      - 美国_Telegram@kxswa 69
-      - 香港_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 67
-      - 美国_Telegram@kxswa 107
-      - 美国_Telegram@kxswa 115
-      - 美国_Telegram@kxswa 48
-      - 美国_Telegram@kxswa 64
-      - 美国_Telegram@kxswa 66
-      - 香港_Telegram@kxswa 35
-      - 美国_Telegram@kxswa 46
-      - 美国_Telegram@kxswa 45
-      - 美国_Telegram@kxswa 65
-      - 美国_Telegram@kxswa 47
-      - 美国_Telegram@kxswa 114
-      - 美国_Telegram@kxswa 40
-      - 美国_Telegram@kxswa 21
-      - 美国_Telegram@kxswa 52
-      - 韩国_Telegram@kxswa 9
-      - 香港_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 35
-      - 香港_Telegram@kxswa 24
-      - 美国_Telegram@kxswa 4
-      - 香港_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 3
-      - 美国_Telegram@kxswa 22
-      - 美国_Telegram@kxswa 34
-      - 美国_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 25
-      - 韩国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 12
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 111
-      - 香港_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 5
-      - 美国_Telegram@kxswa 38
-      - 美国_Telegram@kxswa 7
-      - 美国_Telegram@kxswa 116
-      - 美国_Telegram@kxswa 24
-      - 香港_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 110
-      - 美国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 63
-      - 美国_Telegram@kxswa 15
-      - 韩国_Telegram@kxswa
-      - 美国_Telegram@kxswa 8
-      - 美国_Telegram@kxswa 42
-      - 香港_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 14
-      - 美国_Telegram@kxswa 32
-      - 美国_Telegram@kxswa 11
-      - 美国_Telegram@kxswa 36
-      - 美国_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 20
-      - 美国_Telegram@kxswa 28
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 27
-      - 香港_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 37
-      - 美国_Telegram@kxswa 44
-      - 美国_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 117
-      - 香港_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 22
-      - 日本_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 113
-      - 韩国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 13
-      - 香港_Telegram@kxswa 32
-      - 加拿大_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 14
+      - 中国 - 香港 - Hytron Network Services Limited - 63
+      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
+      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
+      - 瑞士 - 苏黎世 - Microsoft - 1
+      - 中国 - 香港 - Hytron Network Services Limited - 1
+      - 中国 - 香港 - Proxy Registration Eons Data - 64
+      - 美国 - 達拉斯 - Datacamp Limited - 8
+      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 16
-      - 香港_Telegram@kxswa 33
-      - 香港_Telegram@kxswa 35
-      - 香港_Telegram@kxswa 30
-      - 香港_Telegram@kxswa 24
-      - 香港_Telegram@kxswa 31
-      - 香港_Telegram@kxswa 23
-      - 香港_Telegram@kxswa 29
-      - 香港_Telegram@kxswa 18
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 27
-      - 香港_Telegram@kxswa 19
-      - 香港_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 22
-      - 香港_Telegram@kxswa 17
-      - 香港_Telegram@kxswa 32
-      - 香港_Telegram@kxswa 14
+      - 中国 - 香港 - Hytron Network Services Limited - 63
+      - 中国 - 香港 - Hytron Network Services Limited - 1
+      - 中国 - 香港 - Proxy Registration Eons Data - 64
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国_Telegram@kxswa 9
-      - 美国_Telegram@kxswa 74
-      - 美国_Telegram@kxswa 50
-      - 美国_Telegram@kxswa 49
-      - 美国_Telegram@kxswa 112
-      - 美国_Telegram@kxswa 55
-      - 美国_Telegram@kxswa 68
-      - 香港_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 39
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 41
-      - 美国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 27
-      - 美国_Telegram@kxswa 43
-      - 美国_Telegram@kxswa 54
-      - 美国_Telegram@kxswa 69
-      - 香港_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 67
-      - 美国_Telegram@kxswa 107
-      - 美国_Telegram@kxswa 115
-      - 美国_Telegram@kxswa 48
-      - 美国_Telegram@kxswa 64
-      - 美国_Telegram@kxswa 66
-      - 香港_Telegram@kxswa 35
-      - 美国_Telegram@kxswa 46
-      - 美国_Telegram@kxswa 45
-      - 美国_Telegram@kxswa 65
-      - 美国_Telegram@kxswa 47
-      - 美国_Telegram@kxswa 114
-      - 美国_Telegram@kxswa 40
-      - 美国_Telegram@kxswa 21
-      - 美国_Telegram@kxswa 52
-      - 韩国_Telegram@kxswa 9
-      - 香港_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 35
-      - 香港_Telegram@kxswa 24
-      - 美国_Telegram@kxswa 4
-      - 香港_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 3
-      - 美国_Telegram@kxswa 22
-      - 美国_Telegram@kxswa 34
-      - 美国_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 25
-      - 韩国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 12
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 111
-      - 香港_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 5
-      - 美国_Telegram@kxswa 38
-      - 美国_Telegram@kxswa 7
-      - 美国_Telegram@kxswa 116
-      - 美国_Telegram@kxswa 24
-      - 香港_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 110
-      - 美国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 63
-      - 美国_Telegram@kxswa 15
-      - 韩国_Telegram@kxswa
-      - 美国_Telegram@kxswa 8
-      - 美国_Telegram@kxswa 42
-      - 香港_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 14
-      - 美国_Telegram@kxswa 32
-      - 美国_Telegram@kxswa 11
-      - 美国_Telegram@kxswa 36
-      - 美国_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 20
-      - 美国_Telegram@kxswa 28
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 27
-      - 香港_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 37
-      - 美国_Telegram@kxswa 44
-      - 美国_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 117
-      - 香港_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 22
-      - 日本_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 113
-      - 韩国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 13
-      - 香港_Telegram@kxswa 32
-      - 加拿大_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 14
+      - 中国 - 香港 - Hytron Network Services Limited - 63
+      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
+      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
+      - 瑞士 - 苏黎世 - Microsoft - 1
+      - 中国 - 香港 - Hytron Network Services Limited - 1
+      - 中国 - 香港 - Proxy Registration Eons Data - 64
+      - 美国 - 達拉斯 - Datacamp Limited - 8
+      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国_Telegram@kxswa 9
-      - 美国_Telegram@kxswa 74
-      - 美国_Telegram@kxswa 50
-      - 美国_Telegram@kxswa 49
-      - 美国_Telegram@kxswa 112
-      - 美国_Telegram@kxswa 55
-      - 美国_Telegram@kxswa 68
-      - 香港_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 39
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 41
-      - 美国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 27
-      - 美国_Telegram@kxswa 43
-      - 美国_Telegram@kxswa 54
-      - 美国_Telegram@kxswa 69
-      - 香港_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 67
-      - 美国_Telegram@kxswa 107
-      - 美国_Telegram@kxswa 115
-      - 美国_Telegram@kxswa 48
-      - 美国_Telegram@kxswa 64
-      - 美国_Telegram@kxswa 66
-      - 香港_Telegram@kxswa 35
-      - 美国_Telegram@kxswa 46
-      - 美国_Telegram@kxswa 45
-      - 美国_Telegram@kxswa 65
-      - 美国_Telegram@kxswa 47
-      - 美国_Telegram@kxswa 114
-      - 美国_Telegram@kxswa 40
-      - 美国_Telegram@kxswa 21
-      - 美国_Telegram@kxswa 52
-      - 韩国_Telegram@kxswa 9
-      - 香港_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 35
-      - 香港_Telegram@kxswa 24
-      - 美国_Telegram@kxswa 4
-      - 香港_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 3
-      - 美国_Telegram@kxswa 22
-      - 美国_Telegram@kxswa 34
-      - 美国_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 25
-      - 韩国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 12
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 111
-      - 香港_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 5
-      - 美国_Telegram@kxswa 38
-      - 美国_Telegram@kxswa 7
-      - 美国_Telegram@kxswa 116
-      - 美国_Telegram@kxswa 24
-      - 香港_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 110
-      - 美国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 63
-      - 美国_Telegram@kxswa 15
-      - 韩国_Telegram@kxswa
-      - 美国_Telegram@kxswa 8
-      - 美国_Telegram@kxswa 42
-      - 香港_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 14
-      - 美国_Telegram@kxswa 32
-      - 美国_Telegram@kxswa 11
-      - 美国_Telegram@kxswa 36
-      - 美国_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 20
-      - 美国_Telegram@kxswa 28
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 27
-      - 香港_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 37
-      - 美国_Telegram@kxswa 44
-      - 美国_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 117
-      - 香港_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 22
-      - 日本_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 113
-      - 韩国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 13
-      - 香港_Telegram@kxswa 32
-      - 加拿大_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 14
+      - 中国 - 香港 - Hytron Network Services Limited - 63
+      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
+      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
+      - 瑞士 - 苏黎世 - Microsoft - 1
+      - 中国 - 香港 - Hytron Network Services Limited - 1
+      - 中国 - 香港 - Proxy Registration Eons Data - 64
+      - 美国 - 達拉斯 - Datacamp Limited - 8
+      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国_Telegram@kxswa 9
-      - 美国_Telegram@kxswa 74
-      - 美国_Telegram@kxswa 50
-      - 美国_Telegram@kxswa 49
-      - 美国_Telegram@kxswa 112
-      - 美国_Telegram@kxswa 55
-      - 美国_Telegram@kxswa 68
-      - 香港_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 39
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 41
-      - 美国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 27
-      - 美国_Telegram@kxswa 43
-      - 美国_Telegram@kxswa 54
-      - 美国_Telegram@kxswa 69
-      - 香港_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 67
-      - 美国_Telegram@kxswa 107
-      - 美国_Telegram@kxswa 115
-      - 美国_Telegram@kxswa 48
-      - 美国_Telegram@kxswa 64
-      - 美国_Telegram@kxswa 66
-      - 香港_Telegram@kxswa 35
-      - 美国_Telegram@kxswa 46
-      - 美国_Telegram@kxswa 45
-      - 美国_Telegram@kxswa 65
-      - 美国_Telegram@kxswa 47
-      - 美国_Telegram@kxswa 114
-      - 美国_Telegram@kxswa 40
-      - 美国_Telegram@kxswa 21
-      - 美国_Telegram@kxswa 52
-      - 韩国_Telegram@kxswa 9
-      - 香港_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 35
-      - 香港_Telegram@kxswa 24
-      - 美国_Telegram@kxswa 4
-      - 香港_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 3
-      - 美国_Telegram@kxswa 22
-      - 美国_Telegram@kxswa 34
-      - 美国_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 25
-      - 韩国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 12
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 111
-      - 香港_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 5
-      - 美国_Telegram@kxswa 38
-      - 美国_Telegram@kxswa 7
-      - 美国_Telegram@kxswa 116
-      - 美国_Telegram@kxswa 24
-      - 香港_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 110
-      - 美国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 63
-      - 美国_Telegram@kxswa 15
-      - 韩国_Telegram@kxswa
-      - 美国_Telegram@kxswa 8
-      - 美国_Telegram@kxswa 42
-      - 香港_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 14
-      - 美国_Telegram@kxswa 32
-      - 美国_Telegram@kxswa 11
-      - 美国_Telegram@kxswa 36
-      - 美国_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 20
-      - 美国_Telegram@kxswa 28
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 27
-      - 香港_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 37
-      - 美国_Telegram@kxswa 44
-      - 美国_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 117
-      - 香港_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 22
-      - 日本_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 113
-      - 韩国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 13
-      - 香港_Telegram@kxswa 32
-      - 加拿大_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 14
+      - 中国 - 香港 - Hytron Network Services Limited - 63
+      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
+      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
+      - 瑞士 - 苏黎世 - Microsoft - 1
+      - 中国 - 香港 - Hytron Network Services Limited - 1
+      - 中国 - 香港 - Proxy Registration Eons Data - 64
+      - 美国 - 達拉斯 - Datacamp Limited - 8
+      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -854,101 +143,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国_Telegram@kxswa 9
-      - 美国_Telegram@kxswa 74
-      - 美国_Telegram@kxswa 50
-      - 美国_Telegram@kxswa 49
-      - 美国_Telegram@kxswa 112
-      - 美国_Telegram@kxswa 55
-      - 美国_Telegram@kxswa 68
-      - 香港_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 39
-      - 日本_Telegram@kxswa
-      - 美国_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 41
-      - 美国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 27
-      - 美国_Telegram@kxswa 43
-      - 美国_Telegram@kxswa 54
-      - 美国_Telegram@kxswa 69
-      - 香港_Telegram@kxswa 33
-      - 美国_Telegram@kxswa 67
-      - 美国_Telegram@kxswa 107
-      - 美国_Telegram@kxswa 115
-      - 美国_Telegram@kxswa 48
-      - 美国_Telegram@kxswa 64
-      - 美国_Telegram@kxswa 66
-      - 香港_Telegram@kxswa 35
-      - 美国_Telegram@kxswa 46
-      - 美国_Telegram@kxswa 45
-      - 美国_Telegram@kxswa 65
-      - 美国_Telegram@kxswa 47
-      - 美国_Telegram@kxswa 114
-      - 美国_Telegram@kxswa 40
-      - 美国_Telegram@kxswa 21
-      - 美国_Telegram@kxswa 52
-      - 韩国_Telegram@kxswa 9
-      - 香港_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 35
-      - 香港_Telegram@kxswa 24
-      - 美国_Telegram@kxswa 4
-      - 香港_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 3
-      - 美国_Telegram@kxswa 22
-      - 美国_Telegram@kxswa 34
-      - 美国_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 25
-      - 韩国_Telegram@kxswa 10
-      - 美国_Telegram@kxswa 12
-      - 美国_Telegram@kxswa
-      - 美国_Telegram@kxswa 111
-      - 香港_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 5
-      - 美国_Telegram@kxswa 38
-      - 美国_Telegram@kxswa 7
-      - 美国_Telegram@kxswa 116
-      - 美国_Telegram@kxswa 24
-      - 香港_Telegram@kxswa 29
-      - 美国_Telegram@kxswa 2
-      - 美国_Telegram@kxswa 30
-      - 美国_Telegram@kxswa 110
-      - 美国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 63
-      - 美国_Telegram@kxswa 15
-      - 韩国_Telegram@kxswa
-      - 美国_Telegram@kxswa 8
-      - 美国_Telegram@kxswa 42
-      - 香港_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 14
-      - 美国_Telegram@kxswa 32
-      - 美国_Telegram@kxswa 11
-      - 美国_Telegram@kxswa 36
-      - 美国_Telegram@kxswa 18
-      - 美国_Telegram@kxswa 20
-      - 美国_Telegram@kxswa 28
-      - 香港_Telegram@kxswa 15
-      - 香港_Telegram@kxswa 27
-      - 香港_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 31
-      - 美国_Telegram@kxswa 37
-      - 美国_Telegram@kxswa 44
-      - 美国_Telegram@kxswa 23
-      - 美国_Telegram@kxswa 19
-      - 美国_Telegram@kxswa 16
-      - 美国_Telegram@kxswa 117
-      - 香港_Telegram@kxswa 12
-      - 香港_Telegram@kxswa 22
-      - 日本_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 113
-      - 韩国_Telegram@kxswa 6
-      - 美国_Telegram@kxswa 26
-      - 香港_Telegram@kxswa 17
-      - 美国_Telegram@kxswa 13
-      - 香港_Telegram@kxswa 32
-      - 加拿大_Telegram@kxswa 2
-      - 香港_Telegram@kxswa 14
+      - 中国 - 香港 - Hytron Network Services Limited - 63
+      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
+      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
+      - 瑞士 - 苏黎世 - Microsoft - 1
+      - 中国 - 香港 - Hytron Network Services Limited - 1
+      - 中国 - 香港 - Proxy Registration Eons Data - 64
+      - 美国 - 達拉斯 - Datacamp Limited - 8
+      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
