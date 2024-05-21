@@ -5,55 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国 - 香港 - Hytron Network Services Limited - 63, server: hk.1.thap.xyz, port: 24767, type: ss, cipher: chacha20-ietf-poly1305, password: d3339e8c-9425-4466-90ac-a8d7a3043b9b, udp: true}
-  - {name: 加拿大 - 多伦多 - Amazon Technologies Inc. - 2, server: 35.182.109.91, port: 22222, type: trojan, password: telegram-id-directvpn, skip-cert-verify: true, udp: true}
-  - {name: 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1, server: 23.162.200.215, port: 9090, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 瑞士 - 苏黎世 - Microsoft - 1, server: 51.103.247.251, port: 52244, type: ss, cipher: chacha20-ietf-poly1305, password: r8e3NWTgFYTAYkLj0A3tJb, udp: true}
-  - {name: 中国 - 香港 - Hytron Network Services Limited - 1, server: hk03.mmyjiedian.com, port: 10003, type: ss, cipher: chacha20-ietf-poly1305, password: 81cc63a4-4804-4b44-bd6c-cb9250116190, udp: true}
-  - {name: 中国 - 香港 - Proxy Registration Eons Data - 64, server: 183.232.199.61, port: 15603, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 - 達拉斯 - Datacamp Limited - 8, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: "美国 - 波特蘭 - Amazon.com, Inc. - 16", server: 54.70.43.105, port: 8081, type: ssr, cipher: aes-256-cfb, password: SRof6TrK0, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
+  - {name: baipaovpn日本, server: 18.183.73.152, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn新加坡, server: 54.179.9.170, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn新加坡 2, server: 54.254.225.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn美国, server: 18.143.159.186, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn美国 2, server: 13.214.211.185, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn新加坡 3, server: 18.141.186.136, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn日本东京, server: 3.112.219.236, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn广东省, server: 120.233.204.91, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: 491bec7d-e6cb-3799-9e9d-552493a500e0, udp: true}
+  - {name: baipaovpn韩国首尔, server: 3.34.95.205, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn日本 2, server: 43.203.201.192, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn北京市, server: 54.222.223.172, port: 38998, type: ss, cipher: chacha20-ietf-poly1305, password: 798c4ab8-613f-468f-b3ff-daf43c88aad7, udp: true}
+  - {name: baipaovpn美国 3, server: 18.143.93.163, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn广东省江门市, server: 120.238.122.235, port: 60283, type: ss, cipher: aes-128-gcm, password: 918eba0d3ff04abc803fb00e18d0fcb5, udp: true}
+  - {name: baipaovpn日本 3, server: 18.181.198.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn新加坡 4, server: 54.151.216.148, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: baipaovpn日本 4, server: 43.203.251.59, port: 12039, type: trojan, password: MFqaSb9ETn0A, skip-cert-verify: true, udp: true}
+  - {name: baipaovpn日本 5, server: 43.207.72.91, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国 - 香港 - Hytron Network Services Limited - 63
-      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
-      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
-      - 瑞士 - 苏黎世 - Microsoft - 1
-      - 中国 - 香港 - Hytron Network Services Limited - 1
-      - 中国 - 香港 - Proxy Registration Eons Data - 64
-      - 美国 - 達拉斯 - Datacamp Limited - 8
-      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
+      - baipaovpn日本
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn美国
+      - baipaovpn美国 2
+      - baipaovpn新加坡 3
+      - baipaovpn日本东京
+      - baipaovpn广东省
+      - baipaovpn韩国首尔
+      - baipaovpn日本 2
+      - baipaovpn北京市
+      - baipaovpn美国 3
+      - baipaovpn广东省江门市
+      - baipaovpn日本 3
+      - baipaovpn新加坡 4
+      - baipaovpn日本 4
+      - baipaovpn日本 5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国 - 香港 - Hytron Network Services Limited - 63
-      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
-      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
-      - 瑞士 - 苏黎世 - Microsoft - 1
-      - 中国 - 香港 - Hytron Network Services Limited - 1
-      - 中国 - 香港 - Proxy Registration Eons Data - 64
-      - 美国 - 達拉斯 - Datacamp Limited - 8
-      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
+      - baipaovpn日本
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn美国
+      - baipaovpn美国 2
+      - baipaovpn新加坡 3
+      - baipaovpn日本东京
+      - baipaovpn广东省
+      - baipaovpn韩国首尔
+      - baipaovpn日本 2
+      - baipaovpn北京市
+      - baipaovpn美国 3
+      - baipaovpn广东省江门市
+      - baipaovpn日本 3
+      - baipaovpn新加坡 4
+      - baipaovpn日本 4
+      - baipaovpn日本 5
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国 - 香港 - Hytron Network Services Limited - 63
-      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
-      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
-      - 瑞士 - 苏黎世 - Microsoft - 1
-      - 中国 - 香港 - Hytron Network Services Limited - 1
-      - 中国 - 香港 - Proxy Registration Eons Data - 64
-      - 美国 - 達拉斯 - Datacamp Limited - 8
-      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
+      - baipaovpn日本
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn美国
+      - baipaovpn美国 2
+      - baipaovpn新加坡 3
+      - baipaovpn日本东京
+      - baipaovpn广东省
+      - baipaovpn韩国首尔
+      - baipaovpn日本 2
+      - baipaovpn北京市
+      - baipaovpn美国 3
+      - baipaovpn广东省江门市
+      - baipaovpn日本 3
+      - baipaovpn新加坡 4
+      - baipaovpn日本 4
+      - baipaovpn日本 5
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,62 +108,95 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国 - 香港 - Hytron Network Services Limited - 63
-      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
-      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
-      - 瑞士 - 苏黎世 - Microsoft - 1
-      - 中国 - 香港 - Hytron Network Services Limited - 1
-      - 中国 - 香港 - Proxy Registration Eons Data - 64
-      - 美国 - 達拉斯 - Datacamp Limited - 8
-      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
+      - baipaovpn日本
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn美国
+      - baipaovpn美国 2
+      - baipaovpn新加坡 3
+      - baipaovpn日本东京
+      - baipaovpn广东省
+      - baipaovpn韩国首尔
+      - baipaovpn日本 2
+      - baipaovpn北京市
+      - baipaovpn美国 3
+      - baipaovpn广东省江门市
+      - baipaovpn日本 3
+      - baipaovpn新加坡 4
+      - baipaovpn日本 4
+      - baipaovpn日本 5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 中国 - 香港 - Hytron Network Services Limited - 63
-      - 中国 - 香港 - Hytron Network Services Limited - 1
-      - 中国 - 香港 - Proxy Registration Eons Data - 64
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国 - 香港 - Hytron Network Services Limited - 63
-      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
-      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
-      - 瑞士 - 苏黎世 - Microsoft - 1
-      - 中国 - 香港 - Hytron Network Services Limited - 1
-      - 中国 - 香港 - Proxy Registration Eons Data - 64
-      - 美国 - 達拉斯 - Datacamp Limited - 8
-      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
+      - baipaovpn日本
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn美国
+      - baipaovpn美国 2
+      - baipaovpn新加坡 3
+      - baipaovpn日本东京
+      - baipaovpn广东省
+      - baipaovpn韩国首尔
+      - baipaovpn日本 2
+      - baipaovpn北京市
+      - baipaovpn美国 3
+      - baipaovpn广东省江门市
+      - baipaovpn日本 3
+      - baipaovpn新加坡 4
+      - baipaovpn日本 4
+      - baipaovpn日本 5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国 - 香港 - Hytron Network Services Limited - 63
-      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
-      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
-      - 瑞士 - 苏黎世 - Microsoft - 1
-      - 中国 - 香港 - Hytron Network Services Limited - 1
-      - 中国 - 香港 - Proxy Registration Eons Data - 64
-      - 美国 - 達拉斯 - Datacamp Limited - 8
-      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
+      - baipaovpn日本
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn美国
+      - baipaovpn美国 2
+      - baipaovpn新加坡 3
+      - baipaovpn日本东京
+      - baipaovpn广东省
+      - baipaovpn韩国首尔
+      - baipaovpn日本 2
+      - baipaovpn北京市
+      - baipaovpn美国 3
+      - baipaovpn广东省江门市
+      - baipaovpn日本 3
+      - baipaovpn新加坡 4
+      - baipaovpn日本 4
+      - baipaovpn日本 5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国 - 香港 - Hytron Network Services Limited - 63
-      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
-      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
-      - 瑞士 - 苏黎世 - Microsoft - 1
-      - 中国 - 香港 - Hytron Network Services Limited - 1
-      - 中国 - 香港 - Proxy Registration Eons Data - 64
-      - 美国 - 達拉斯 - Datacamp Limited - 8
-      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
+      - baipaovpn日本
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn美国
+      - baipaovpn美国 2
+      - baipaovpn新加坡 3
+      - baipaovpn日本东京
+      - baipaovpn广东省
+      - baipaovpn韩国首尔
+      - baipaovpn日本 2
+      - baipaovpn北京市
+      - baipaovpn美国 3
+      - baipaovpn广东省江门市
+      - baipaovpn日本 3
+      - baipaovpn新加坡 4
+      - baipaovpn日本 4
+      - baipaovpn日本 5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -143,14 +212,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国 - 香港 - Hytron Network Services Limited - 63
-      - 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
-      - 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
-      - 瑞士 - 苏黎世 - Microsoft - 1
-      - 中国 - 香港 - Hytron Network Services Limited - 1
-      - 中国 - 香港 - Proxy Registration Eons Data - 64
-      - 美国 - 達拉斯 - Datacamp Limited - 8
-      - 美国 - 波特蘭 - Amazon.com, Inc. - 16
+      - baipaovpn日本
+      - baipaovpn新加坡
+      - baipaovpn新加坡 2
+      - baipaovpn美国
+      - baipaovpn美国 2
+      - baipaovpn新加坡 3
+      - baipaovpn日本东京
+      - baipaovpn广东省
+      - baipaovpn韩国首尔
+      - baipaovpn日本 2
+      - baipaovpn北京市
+      - baipaovpn美国 3
+      - baipaovpn广东省江门市
+      - baipaovpn日本 3
+      - baipaovpn新加坡 4
+      - baipaovpn日本 4
+      - baipaovpn日本 5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
