@@ -5,91 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国2|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 8880, type: vmess, uuid: 0a208887-f5d4-40eb-ac7f-7bbc6584f9d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video/bYdJ7Vc2We, ws-headers: {Host: us6gzxQRrE4.fzbqfrse.xyz}, udp: true}
-  - {name: 日本特殊|@ripaojiedian, server: 18.182.6.181, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 香港8|@ripaojiedian, server: 183.232.199.61, port: 15603, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港7|@ripaojiedian, server: yes.cnmjcn.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}, udp: true}
-  - {name: 越南|@ripaojiedian, server: 529y.6bp4susm-97imynr-vn02.my777999.top, port: 40998, type: vmess, uuid: 6399ac7d-8265-436d-b348-299df4b735a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 印度2|@ripaojiedian, server: 1zg1yf-blnvbcw.0on68-ino1.my777999.top, port: 31999, type: ss, cipher: chacha20-ietf-poly1305, password: 5eec9586-f246-47d2-8b53-f7c15b9c6f9c, udp: true}
+  - {name: 美国2|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 2082, type: vmess, uuid: 1ed3f9fd-7adb-4971-b8c0-3d4916290982, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video/CuTy87zAzV/, ws-headers: {Host: us4Bb5oSgJA.fzbqfrse.xyz}, udp: true}
+  - {name: 台湾|@ripaojiedian, server: dc0.forlive.live, port: 41012, type: trojan, password: f6e21df5-ca41-4133-8901-64b240716643, sni: dc0.forlive.live, skip-cert-verify: true, udp: true}
   - {name: 香港5|@ripaojiedian, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}, udp: true}
-  - {name: 香港6|@ripaojiedian, server: 183.240.179.195, port: 15601, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港3|@ripaojiedian, server: 120.232.240.38, port: 8443, type: vmess, uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 新加坡|@ripaojiedian, server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: 0a208887-f5d4-40eb-ac7f-7bbc6584f9d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video/u4eCZTxW, ws-headers: {Host: jpafzyhfsg3.yofnhkfc.xyz}, udp: true}
-  - {name: 台湾3|@ripaojiedian, server: 15.220.83.78, port: 443, type: vmess, uuid: 80be0954-d4e3-4edf-bd4c-9f6c814c1d95, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 香港|@ripaojiedian, server: 183.240.179.195, port: 15603, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本|@ripaojiedian, server: 36.151.195.48, port: 42583, type: trojan, password: TNDSJfNv, skip-cert-verify: true, udp: true}
-  - {name: 美国4|@ripaojiedian, server: 36.151.195.48, port: 34057, type: trojan, password: TNDSJfNv, skip-cert-verify: true, udp: true}
-  - {name: 香港4|@ripaojiedian, server: 223.113.54.154, port: 28345, type: trojan, password: TNDSJfNv, skip-cert-verify: true, udp: true}
-  - {name: 美国5|@ripaojiedian, server: 36.151.195.48, port: 20344, type: trojan, password: TNDSJfNv, skip-cert-verify: true, udp: true}
-  - {name: 美国|@ripaojiedian, server: 212.102.47.198, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: 香港KT|@ripaojiedian, server: 8.210.229.184, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: h14.podds.store, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 香港4|@ripaojiedian, server: 120.236.196.21, port: 30811, type: trojan, password: TNDSJfNv, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2|@ripaojiedian, server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: 1ed3f9fd-7adb-4971-b8c0-3d4916290982, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video/c9efxRCi, ws-headers: {Host: 7nAi74jJsg1.yofnhkfc.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 印度2|@ripaojiedian
       - 美国2|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - 越南|@ripaojiedian
+      - 台湾|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 香港6|@ripaojiedian
-      - 香港3|@ripaojiedian
-      - 新加坡|@ripaojiedian
-      - 台湾3|@ripaojiedian
-      - 香港|@ripaojiedian
-      - 日本|@ripaojiedian
-      - 美国4|@ripaojiedian
       - 香港4|@ripaojiedian
-      - 美国5|@ripaojiedian
-      - 美国|@ripaojiedian
-      - 香港KT|@ripaojiedian
+      - 新加坡2|@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 印度2|@ripaojiedian
       - 美国2|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - 越南|@ripaojiedian
+      - 台湾|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 香港6|@ripaojiedian
-      - 香港3|@ripaojiedian
-      - 新加坡|@ripaojiedian
-      - 台湾3|@ripaojiedian
-      - 香港|@ripaojiedian
-      - 日本|@ripaojiedian
-      - 美国4|@ripaojiedian
       - 香港4|@ripaojiedian
-      - 美国5|@ripaojiedian
-      - 美国|@ripaojiedian
-      - 香港KT|@ripaojiedian
+      - 新加坡2|@ripaojiedian
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 印度2|@ripaojiedian
       - 美国2|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - 越南|@ripaojiedian
+      - 台湾|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 香港6|@ripaojiedian
-      - 香港3|@ripaojiedian
-      - 新加坡|@ripaojiedian
-      - 台湾3|@ripaojiedian
-      - 香港|@ripaojiedian
-      - 日本|@ripaojiedian
-      - 美国4|@ripaojiedian
       - 香港4|@ripaojiedian
-      - 美国5|@ripaojiedian
-      - 美国|@ripaojiedian
-      - 香港KT|@ripaojiedian
+      - 新加坡2|@ripaojiedian
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -108,104 +64,54 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 印度2|@ripaojiedian
       - 美国2|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - 越南|@ripaojiedian
+      - 台湾|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 香港6|@ripaojiedian
-      - 香港3|@ripaojiedian
-      - 新加坡|@ripaojiedian
-      - 台湾3|@ripaojiedian
-      - 香港|@ripaojiedian
-      - 日本|@ripaojiedian
-      - 美国4|@ripaojiedian
       - 香港4|@ripaojiedian
-      - 美国5|@ripaojiedian
-      - 美国|@ripaojiedian
-      - 香港KT|@ripaojiedian
+      - 新加坡2|@ripaojiedian
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港8|@ripaojiedian
-      - 香港7|@ripaojiedian
+      - 台湾|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 香港6|@ripaojiedian
-      - 香港3|@ripaojiedian
-      - 台湾3|@ripaojiedian
-      - 香港|@ripaojiedian
       - 香港4|@ripaojiedian
-      - 香港KT|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 印度2|@ripaojiedian
       - 美国2|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - 越南|@ripaojiedian
+      - 台湾|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 香港6|@ripaojiedian
-      - 香港3|@ripaojiedian
-      - 新加坡|@ripaojiedian
-      - 台湾3|@ripaojiedian
-      - 香港|@ripaojiedian
-      - 日本|@ripaojiedian
-      - 美国4|@ripaojiedian
       - 香港4|@ripaojiedian
-      - 美国5|@ripaojiedian
-      - 美国|@ripaojiedian
-      - 香港KT|@ripaojiedian
+      - 新加坡2|@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 印度2|@ripaojiedian
       - 美国2|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - 越南|@ripaojiedian
+      - 台湾|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 香港6|@ripaojiedian
-      - 香港3|@ripaojiedian
-      - 新加坡|@ripaojiedian
-      - 台湾3|@ripaojiedian
-      - 香港|@ripaojiedian
-      - 日本|@ripaojiedian
-      - 美国4|@ripaojiedian
       - 香港4|@ripaojiedian
-      - 美国5|@ripaojiedian
-      - 美国|@ripaojiedian
-      - 香港KT|@ripaojiedian
+      - 新加坡2|@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 印度2|@ripaojiedian
       - 美国2|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - 越南|@ripaojiedian
+      - 台湾|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 香港6|@ripaojiedian
-      - 香港3|@ripaojiedian
-      - 新加坡|@ripaojiedian
-      - 台湾3|@ripaojiedian
-      - 香港|@ripaojiedian
-      - 日本|@ripaojiedian
-      - 美国4|@ripaojiedian
       - 香港4|@ripaojiedian
-      - 美国5|@ripaojiedian
-      - 美国|@ripaojiedian
-      - 香港KT|@ripaojiedian
+      - 新加坡2|@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -221,23 +127,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 印度2|@ripaojiedian
       - 美国2|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - 越南|@ripaojiedian
+      - 台湾|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 香港6|@ripaojiedian
-      - 香港3|@ripaojiedian
-      - 新加坡|@ripaojiedian
-      - 台湾3|@ripaojiedian
-      - 香港|@ripaojiedian
-      - 日本|@ripaojiedian
-      - 美国4|@ripaojiedian
       - 香港4|@ripaojiedian
-      - 美国5|@ripaojiedian
-      - 美国|@ripaojiedian
-      - 香港KT|@ripaojiedian
+      - 新加坡2|@ripaojiedian
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
