@@ -15,7 +15,7 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：4602.53 GB', type: vmess, server: yx2.xsjhl.xyz, port: 2082, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: akus1.xsjhl.xyz } }, ws-path: '/?ed=2048', ws-headers: { Host: akus1.xsjhl.xyz } }
+    - { name: '剩余流量：4570.18 GB', type: vmess, server: yx2.xsjhl.xyz, port: 2082, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: akus1.xsjhl.xyz } }, ws-path: '/?ed=2048', ws-headers: { Host: akus1.xsjhl.xyz } }
     - { name: 套餐到期：长期有效, type: vmess, server: yx2.xsjhl.xyz, port: 2082, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: akus1.xsjhl.xyz } }, ws-path: '/?ed=2048', ws-headers: { Host: akus1.xsjhl.xyz } }
     - { name: 官网1：xsj520.top, type: vmess, server: yx2.xsjhl.xyz, port: 2082, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: akus1.xsjhl.xyz } }, ws-path: '/?ed=2048', ws-headers: { Host: akus1.xsjhl.xyz } }
     - { name: 官网2：xsjhl.xyz, type: vmess, server: yx3.xsjhl.xyz, port: 2082, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: akus1.xsjhl.xyz } }, ws-path: '/?ed=2048', ws-headers: { Host: akus1.xsjhl.xyz } }
@@ -53,9 +53,9 @@ proxies:
     - { name: op瑞士2-解锁, type: vmess, server: yx2.xsjhl.xyz, port: 2082, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: oprs.xsjhl.xyz } }, ws-path: '/?ed=2048', ws-headers: { Host: oprs.xsjhl.xyz } }
     - { name: op瑞士3-解锁, type: vmess, server: yx3.xsjhl.xyz, port: 2082, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: oprs.xsjhl.xyz } }, ws-path: '/?ed=2048', ws-headers: { Host: oprs.xsjhl.xyz } }
 proxy-groups:
-    - { name: 新世界互联, type: select, proxies: [自动选择, 故障转移, '剩余流量：4602.53 GB', 套餐到期：长期有效, 官网1：xsj520.top, 官网2：xsjhl.xyz, 美国1-解锁, 美国2-解锁, 美国3-解锁, do美国1, do美国2, do美国3, 新加坡1, 新加坡2, 新加坡3, pq香港1, pq香港2, pq香港3, pq日本1-解锁, pq日本2-解锁, pq日本3-解锁, do英国1-解锁, do英国2-解锁, do英国3-解锁, do印度1-解锁, do印度2-解锁, do印度3-解锁, do德国1-解锁, do德国2-解锁, do德国3-解锁, do荷兰1-解锁, do荷兰2-解锁, do荷兰3-解锁, op美国1-解锁, op美国2-解锁, op美国3-解锁, op瑞士1-解锁, op瑞士2-解锁, op瑞士3-解锁] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：4602.53 GB', 套餐到期：长期有效, 官网1：xsj520.top, 官网2：xsjhl.xyz, 美国1-解锁, 美国2-解锁, 美国3-解锁, do美国1, do美国2, do美国3, 新加坡1, 新加坡2, 新加坡3, pq香港1, pq香港2, pq香港3, pq日本1-解锁, pq日本2-解锁, pq日本3-解锁, do英国1-解锁, do英国2-解锁, do英国3-解锁, do印度1-解锁, do印度2-解锁, do印度3-解锁, do德国1-解锁, do德国2-解锁, do德国3-解锁, do荷兰1-解锁, do荷兰2-解锁, do荷兰3-解锁, op美国1-解锁, op美国2-解锁, op美国3-解锁, op瑞士1-解锁, op瑞士2-解锁, op瑞士3-解锁], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：4602.53 GB', 套餐到期：长期有效, 官网1：xsj520.top, 官网2：xsjhl.xyz, 美国1-解锁, 美国2-解锁, 美国3-解锁, do美国1, do美国2, do美国3, 新加坡1, 新加坡2, 新加坡3, pq香港1, pq香港2, pq香港3, pq日本1-解锁, pq日本2-解锁, pq日本3-解锁, do英国1-解锁, do英国2-解锁, do英国3-解锁, do印度1-解锁, do印度2-解锁, do印度3-解锁, do德国1-解锁, do德国2-解锁, do德国3-解锁, do荷兰1-解锁, do荷兰2-解锁, do荷兰3-解锁, op美国1-解锁, op美国2-解锁, op美国3-解锁, op瑞士1-解锁, op瑞士2-解锁, op瑞士3-解锁], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 新世界互联, type: select, proxies: [自动选择, 故障转移, '剩余流量：4570.18 GB', 套餐到期：长期有效, 官网1：xsj520.top, 官网2：xsjhl.xyz, 美国1-解锁, 美国2-解锁, 美国3-解锁, do美国1, do美国2, do美国3, 新加坡1, 新加坡2, 新加坡3, pq香港1, pq香港2, pq香港3, pq日本1-解锁, pq日本2-解锁, pq日本3-解锁, do英国1-解锁, do英国2-解锁, do英国3-解锁, do印度1-解锁, do印度2-解锁, do印度3-解锁, do德国1-解锁, do德国2-解锁, do德国3-解锁, do荷兰1-解锁, do荷兰2-解锁, do荷兰3-解锁, op美国1-解锁, op美国2-解锁, op美国3-解锁, op瑞士1-解锁, op瑞士2-解锁, op瑞士3-解锁] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：4570.18 GB', 套餐到期：长期有效, 官网1：xsj520.top, 官网2：xsjhl.xyz, 美国1-解锁, 美国2-解锁, 美国3-解锁, do美国1, do美国2, do美国3, 新加坡1, 新加坡2, 新加坡3, pq香港1, pq香港2, pq香港3, pq日本1-解锁, pq日本2-解锁, pq日本3-解锁, do英国1-解锁, do英国2-解锁, do英国3-解锁, do印度1-解锁, do印度2-解锁, do印度3-解锁, do德国1-解锁, do德国2-解锁, do德国3-解锁, do荷兰1-解锁, do荷兰2-解锁, do荷兰3-解锁, op美国1-解锁, op美国2-解锁, op美国3-解锁, op瑞士1-解锁, op瑞士2-解锁, op瑞士3-解锁], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：4570.18 GB', 套餐到期：长期有效, 官网1：xsj520.top, 官网2：xsjhl.xyz, 美国1-解锁, 美国2-解锁, 美国3-解锁, do美国1, do美国2, do美国3, 新加坡1, 新加坡2, 新加坡3, pq香港1, pq香港2, pq香港3, pq日本1-解锁, pq日本2-解锁, pq日本3-解锁, do英国1-解锁, do英国2-解锁, do英国3-解锁, do印度1-解锁, do印度2-解锁, do印度3-解锁, do德国1-解锁, do德国2-解锁, do德国3-解锁, do荷兰1-解锁, do荷兰2-解锁, do荷兰3-解锁, op美国1-解锁, op美国2-解锁, op美国3-解锁, op瑞士1-解锁, op瑞士2-解锁, op瑞士3-解锁], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN,xsj520.top,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,新世界互联'
@@ -570,4 +570,4 @@ rules:
     - 'DOMAIN-SUFFIX,cn,DIRECT'
     - 'DOMAIN-KEYWORD,-cn,DIRECT'
     - 'GEOIP,CN,DIRECT'
-    - 'MATCH,新世界互联
+    - 'MATCH,新世界互联'
