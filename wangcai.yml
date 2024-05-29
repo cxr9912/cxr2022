@@ -5,203 +5,80 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港09-流媒体, server: hk09.wbhlink.com, port: 40506, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港10-流媒体, server: hk10.wbhlink.com, port: 40507, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港01-流媒体, server: hk01.wbhlink.com, port: 40724, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港12, server: hk12.wbhlink.com, port: 54007, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 日本01-流媒体, server: jp01.wbhlink.com, port: 30503, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 日本03-流媒体, server: jp03.wbhlink.com, port: 30505, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 台湾02-流媒体, server: tw02.wbhlink.com, port: 19991, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 印度, server: in01.wbhlink.com, port: 40731, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 日本06-流媒体, server: jp06.wbhlink.com, port: 30508, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 新加坡7-流媒体, server: sg07.wbhlink.com, port: 40521, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 新加坡9-流媒体, server: sg09.wbhlink.com, port: 45081, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 美国01-流媒体, server: us01.wbhlink.com, port: 23564, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 台湾03-流媒体, server: tw03.wbhlink.com, port: 20008, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 新加坡4-流媒体, server: sg04.wbhlink.com, port: 40012, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 新加坡3-流媒体, server: sg03.wbhlink.com, port: 40010, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 新加坡5-流媒体, server: sg05.wbhlink.com, port: 40013, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 土耳其, server: tr01.wbhlink.com, port: 40732, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 美国05-流媒体, server: us05.wbhlink.com, port: 20214, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 新加坡10-流媒体, server: sg10.wbhlink.com, port: 45082, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 台湾04-流媒体, server: tw04.wbhlink.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 新加坡2-流媒体, server: sg02.wbhlink.com, port: 40513, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 日本05-流媒体, server: jp05.wbhlink.com, port: 30507, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 越南1-原生, server: vn01.wbhlink.com, port: 40730, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 新加坡6-流媒体, server: sg06.wbhlink.com, port: 40101, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 日本07-流媒体, server: jp07.wbhlink.com, port: 30509, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 日本04-流媒体, server: jp04.wbhlink.com, port: 30506, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 美国04-流媒体, server: us04.wbhlink.com, port: 20013, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 新加坡1-流媒体, server: sg01.wbhlink.com, port: 40512, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港03-流媒体, server: hk03.wbhlink.com, port: 40500, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 美国02-流媒体, server: us02.wbhlink.com, port: 20011, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港02-流媒体, server: hk02.wbhlink.com, port: 40725, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港11, server: hk11.wbhlink.com, port: 54006, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港15, server: hk15.wbhlink.com, port: 54010, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港05-流媒体, server: hk05.wbhlink.com, port: 40502, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 台湾01-流媒体, server: tw01.wbhlink.com, port: 20703, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 新加坡8-流媒体, server: sg08.wbhlink.com, port: 45080, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港04-流媒体, server: hk04.wbhlink.com, port: 40501, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港14, server: hk14.wbhlink.com, port: 54009, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港07-流媒体, server: hk07.wbhlink.com, port: 40504, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 日本02-流媒体, server: jp02.wbhlink.com, port: 30504, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港13, server: hk13.wbhlink.com, port: 54008, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港08-流媒体, server: hk08.wbhlink.com, port: 49999, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 美国03-流媒体, server: us03.wbhlink.com, port: 20112, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 日本08-流媒体, server: jp08.wbhlink.com, port: 30101, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
-  - {name: 香港06-流媒体, server: hk06.wbhlink.com, port: 40503, type: ss, cipher: chacha20-ietf-poly1305, password: feab21dc-f3cf-4e40-8d4d-966e5c6289a8, udp: true}
+  - {name: US-NEWYORK2, server: cdn.internetcdn.orgs.hk, port: 8880, type: vmess, uuid: 27efc7da-a078-448b-af37-8744788b0ebb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/microsoft/TG@pwsair/internetcdn?ed=2048", ws-headers: {Host: losangeles.sanjose.xhzshop.link}, udp: true}
+  - {name: US-NEWYORK3, server: cdn3.internetcdn.ggff.net, port: 8880, type: vmess, uuid: 27efc7da-a078-448b-af37-8744788b0ebb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/microsoft/TG@pwsair/internetcdn?ed=2048", ws-headers: {Host: losangeles.sanjose.xhzshop.link}, udp: true}
+  - {name: 香港 1 LV0-HK, server: 223.113.130.62, port: 22300, type: vmess, uuid: 654589d2-1fd8-4d83-a4ff-fcf1f72ac8f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 大阪 01, server: jp01.appleid.bf, port: 2086, type: vmess, uuid: ad7d7d74-0dc7-4612-88e0-79475509c5af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws?ed=2048", ws-headers: {Host: jp01.appleid.bf}, udp: true}
+  - {name: US | FREE6U3 | FREENODE, server: exclusively-foriran.internetcdn.ggff.net, port: 8880, type: vmess, uuid: 27efc7da-a078-448b-af37-8744788b0ebb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/microsoft/TG@pwsair/internetcdn?ed=2048", ws-headers: {Host: losangeles.sanjose.xhzshop.link}, udp: true}
+  - {name: 11圣何塞AMD1, server: 11amd1.1365365.xyz, port: 443, type: trojan, password: c08988ad-24be-47b1-8749-f53d9a0e5cda, sni: 11amd1.1365365.xyz, skip-cert-verify: true, udp: true}
+  - {name: US-DRAPER-3, server: cdnikuancdnikuan.internetcdn.ggff.net, port: 8080, type: vmess, uuid: 27efc7da-a078-448b-af37-8744788b0ebb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/Microsoftupdate?ed=2048", ws-headers: {Host: 26022940dc1234123455cf1.us.pisces.eu.org}, udp: true}
+  - {name: US-NEWYORK5, server: cdnikuancdnikuan.internetcdn.ggff.net, port: 8880, type: vmess, uuid: 27efc7da-a078-448b-af37-8744788b0ebb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/microsoft/TG@pwsair/internetcdn?ed=2048", ws-headers: {Host: losangeles.sanjose.xhzshop.link}, udp: true}
+  - {name: 55阿什本ARM, server: 55arm.1365365.xyz, port: 443, type: trojan, password: c08988ad-24be-47b1-8749-f53d9a0e5cda, sni: 55arm.1365365.xyz, skip-cert-verify: true, udp: true}
+  - {name: LS香港2-4 | x1.5
+, server: thhntry4.freecatnode.link, port: 31299, type: ss, cipher: aes-128-gcm, password: 2ba64d62-e4f3-45e1-818a-ce5cca32ee0c, udp: true}
+  - {name: 01凤凰城AMD2, server: 01amd2.1365365.xyz, port: 443, type: trojan, password: c08988ad-24be-47b1-8749-f53d9a0e5cda, sni: 01amd2.1365365.xyz, skip-cert-verify: true, udp: true}
+  - {name: 去除1条不合适线路, server: de-cdn.internetcdn.ggff.net, port: 2052, type: vmess, uuid: 27efc7da-a078-448b-af37-8744788b0ebb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/microsoftvideo/HEAC?ed=2048", ws-headers: {Host: falkenstein.cdn.pisces.eu.org}, udp: true}
+  - {name: 04日本大阪AMD, server: 04amd.1365365.xyz, port: 443, type: trojan, password: c08988ad-24be-47b1-8749-f53d9a0e5cda, sni: 04amd.1365365.xyz, skip-cert-verify: true, udp: true}
+  - {name: 59春川AMD2, server: 59amd2.1365365.xyz, port: 443, type: trojan, password: c08988ad-24be-47b1-8749-f53d9a0e5cda, sni: 59amd2.1365365.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港09-流媒体
-      - 香港10-流媒体
-      - 香港01-流媒体
-      - 香港12
-      - 日本01-流媒体
-      - 日本03-流媒体
-      - 台湾02-流媒体
-      - 印度
-      - 日本06-流媒体
-      - 新加坡7-流媒体
-      - 新加坡9-流媒体
-      - 美国01-流媒体
-      - 台湾03-流媒体
-      - 新加坡4-流媒体
-      - 新加坡3-流媒体
-      - 新加坡5-流媒体
-      - 土耳其
-      - 美国05-流媒体
-      - 新加坡10-流媒体
-      - 台湾04-流媒体
-      - 新加坡2-流媒体
-      - 日本05-流媒体
-      - 越南1-原生
-      - 新加坡6-流媒体
-      - 日本07-流媒体
-      - 日本04-流媒体
-      - 美国04-流媒体
-      - 新加坡1-流媒体
-      - 香港03-流媒体
-      - 美国02-流媒体
-      - 香港02-流媒体
-      - 香港11
-      - 香港15
-      - 香港05-流媒体
-      - 台湾01-流媒体
-      - 新加坡8-流媒体
-      - 香港04-流媒体
-      - 香港14
-      - 香港07-流媒体
-      - 日本02-流媒体
-      - 香港13
-      - 香港08-流媒体
-      - 美国03-流媒体
-      - 日本08-流媒体
-      - 香港06-流媒体
+      - US-NEWYORK2
+      - US-NEWYORK3
+      - 香港 1 LV0-HK
+      - 大阪 01
+      - US | FREE6U3 | FREENODE
+      - 11圣何塞AMD1
+      - US-DRAPER-3
+      - US-NEWYORK5
+      - 55阿什本ARM
+      - LS香港2-4 | x1.5
+      - 01凤凰城AMD2
+      - 去除1条不合适线路
+      - 04日本大阪AMD
+      - 59春川AMD2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港09-流媒体
-      - 香港10-流媒体
-      - 香港01-流媒体
-      - 香港12
-      - 日本01-流媒体
-      - 日本03-流媒体
-      - 台湾02-流媒体
-      - 印度
-      - 日本06-流媒体
-      - 新加坡7-流媒体
-      - 新加坡9-流媒体
-      - 美国01-流媒体
-      - 台湾03-流媒体
-      - 新加坡4-流媒体
-      - 新加坡3-流媒体
-      - 新加坡5-流媒体
-      - 土耳其
-      - 美国05-流媒体
-      - 新加坡10-流媒体
-      - 台湾04-流媒体
-      - 新加坡2-流媒体
-      - 日本05-流媒体
-      - 越南1-原生
-      - 新加坡6-流媒体
-      - 日本07-流媒体
-      - 日本04-流媒体
-      - 美国04-流媒体
-      - 新加坡1-流媒体
-      - 香港03-流媒体
-      - 美国02-流媒体
-      - 香港02-流媒体
-      - 香港11
-      - 香港15
-      - 香港05-流媒体
-      - 台湾01-流媒体
-      - 新加坡8-流媒体
-      - 香港04-流媒体
-      - 香港14
-      - 香港07-流媒体
-      - 日本02-流媒体
-      - 香港13
-      - 香港08-流媒体
-      - 美国03-流媒体
-      - 日本08-流媒体
-      - 香港06-流媒体
+      - US-NEWYORK2
+      - US-NEWYORK3
+      - 香港 1 LV0-HK
+      - 大阪 01
+      - US | FREE6U3 | FREENODE
+      - 11圣何塞AMD1
+      - US-DRAPER-3
+      - US-NEWYORK5
+      - 55阿什本ARM
+      - LS香港2-4 | x1.5
+      - 01凤凰城AMD2
+      - 去除1条不合适线路
+      - 04日本大阪AMD
+      - 59春川AMD2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港09-流媒体
-      - 香港10-流媒体
-      - 香港01-流媒体
-      - 香港12
-      - 日本01-流媒体
-      - 日本03-流媒体
-      - 台湾02-流媒体
-      - 印度
-      - 日本06-流媒体
-      - 新加坡7-流媒体
-      - 新加坡9-流媒体
-      - 美国01-流媒体
-      - 台湾03-流媒体
-      - 新加坡4-流媒体
-      - 新加坡3-流媒体
-      - 新加坡5-流媒体
-      - 土耳其
-      - 美国05-流媒体
-      - 新加坡10-流媒体
-      - 台湾04-流媒体
-      - 新加坡2-流媒体
-      - 日本05-流媒体
-      - 越南1-原生
-      - 新加坡6-流媒体
-      - 日本07-流媒体
-      - 日本04-流媒体
-      - 美国04-流媒体
-      - 新加坡1-流媒体
-      - 香港03-流媒体
-      - 美国02-流媒体
-      - 香港02-流媒体
-      - 香港11
-      - 香港15
-      - 香港05-流媒体
-      - 台湾01-流媒体
-      - 新加坡8-流媒体
-      - 香港04-流媒体
-      - 香港14
-      - 香港07-流媒体
-      - 日本02-流媒体
-      - 香港13
-      - 香港08-流媒体
-      - 美国03-流媒体
-      - 日本08-流媒体
-      - 香港06-流媒体
+      - US-NEWYORK2
+      - US-NEWYORK3
+      - 香港 1 LV0-HK
+      - 大阪 01
+      - US | FREE6U3 | FREENODE
+      - 11圣何塞AMD1
+      - US-DRAPER-3
+      - US-NEWYORK5
+      - 55阿什本ARM
+      - LS香港2-4 | x1.5
+      - 01凤凰城AMD2
+      - 去除1条不合适线路
+      - 04日本大阪AMD
+      - 59春川AMD2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -220,226 +97,85 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港09-流媒体
-      - 香港10-流媒体
-      - 香港01-流媒体
-      - 香港12
-      - 日本01-流媒体
-      - 日本03-流媒体
-      - 台湾02-流媒体
-      - 印度
-      - 日本06-流媒体
-      - 新加坡7-流媒体
-      - 新加坡9-流媒体
-      - 美国01-流媒体
-      - 台湾03-流媒体
-      - 新加坡4-流媒体
-      - 新加坡3-流媒体
-      - 新加坡5-流媒体
-      - 土耳其
-      - 美国05-流媒体
-      - 新加坡10-流媒体
-      - 台湾04-流媒体
-      - 新加坡2-流媒体
-      - 日本05-流媒体
-      - 越南1-原生
-      - 新加坡6-流媒体
-      - 日本07-流媒体
-      - 日本04-流媒体
-      - 美国04-流媒体
-      - 新加坡1-流媒体
-      - 香港03-流媒体
-      - 美国02-流媒体
-      - 香港02-流媒体
-      - 香港11
-      - 香港15
-      - 香港05-流媒体
-      - 台湾01-流媒体
-      - 新加坡8-流媒体
-      - 香港04-流媒体
-      - 香港14
-      - 香港07-流媒体
-      - 日本02-流媒体
-      - 香港13
-      - 香港08-流媒体
-      - 美国03-流媒体
-      - 日本08-流媒体
-      - 香港06-流媒体
+      - US-NEWYORK2
+      - US-NEWYORK3
+      - 香港 1 LV0-HK
+      - 大阪 01
+      - US | FREE6U3 | FREENODE
+      - 11圣何塞AMD1
+      - US-DRAPER-3
+      - US-NEWYORK5
+      - 55阿什本ARM
+      - LS香港2-4 | x1.5
+      - 01凤凰城AMD2
+      - 去除1条不合适线路
+      - 04日本大阪AMD
+      - 59春川AMD2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港09-流媒体
-      - 香港10-流媒体
-      - 香港01-流媒体
-      - 香港12
-      - 台湾02-流媒体
-      - 台湾03-流媒体
-      - 台湾04-流媒体
-      - 香港03-流媒体
-      - 香港02-流媒体
-      - 香港11
-      - 香港15
-      - 香港05-流媒体
-      - 台湾01-流媒体
-      - 香港04-流媒体
-      - 香港14
-      - 香港07-流媒体
-      - 香港13
-      - 香港08-流媒体
-      - 香港06-流媒体
+      - 香港 1 LV0-HK
+      - LS香港2-4 | x1.5
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港09-流媒体
-      - 香港10-流媒体
-      - 香港01-流媒体
-      - 香港12
-      - 日本01-流媒体
-      - 日本03-流媒体
-      - 台湾02-流媒体
-      - 印度
-      - 日本06-流媒体
-      - 新加坡7-流媒体
-      - 新加坡9-流媒体
-      - 美国01-流媒体
-      - 台湾03-流媒体
-      - 新加坡4-流媒体
-      - 新加坡3-流媒体
-      - 新加坡5-流媒体
-      - 土耳其
-      - 美国05-流媒体
-      - 新加坡10-流媒体
-      - 台湾04-流媒体
-      - 新加坡2-流媒体
-      - 日本05-流媒体
-      - 越南1-原生
-      - 新加坡6-流媒体
-      - 日本07-流媒体
-      - 日本04-流媒体
-      - 美国04-流媒体
-      - 新加坡1-流媒体
-      - 香港03-流媒体
-      - 美国02-流媒体
-      - 香港02-流媒体
-      - 香港11
-      - 香港15
-      - 香港05-流媒体
-      - 台湾01-流媒体
-      - 新加坡8-流媒体
-      - 香港04-流媒体
-      - 香港14
-      - 香港07-流媒体
-      - 日本02-流媒体
-      - 香港13
-      - 香港08-流媒体
-      - 美国03-流媒体
-      - 日本08-流媒体
-      - 香港06-流媒体
+      - US-NEWYORK2
+      - US-NEWYORK3
+      - 香港 1 LV0-HK
+      - 大阪 01
+      - US | FREE6U3 | FREENODE
+      - 11圣何塞AMD1
+      - US-DRAPER-3
+      - US-NEWYORK5
+      - 55阿什本ARM
+      - LS香港2-4 | x1.5
+      - 01凤凰城AMD2
+      - 去除1条不合适线路
+      - 04日本大阪AMD
+      - 59春川AMD2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港09-流媒体
-      - 香港10-流媒体
-      - 香港01-流媒体
-      - 香港12
-      - 日本01-流媒体
-      - 日本03-流媒体
-      - 台湾02-流媒体
-      - 印度
-      - 日本06-流媒体
-      - 新加坡7-流媒体
-      - 新加坡9-流媒体
-      - 美国01-流媒体
-      - 台湾03-流媒体
-      - 新加坡4-流媒体
-      - 新加坡3-流媒体
-      - 新加坡5-流媒体
-      - 土耳其
-      - 美国05-流媒体
-      - 新加坡10-流媒体
-      - 台湾04-流媒体
-      - 新加坡2-流媒体
-      - 日本05-流媒体
-      - 越南1-原生
-      - 新加坡6-流媒体
-      - 日本07-流媒体
-      - 日本04-流媒体
-      - 美国04-流媒体
-      - 新加坡1-流媒体
-      - 香港03-流媒体
-      - 美国02-流媒体
-      - 香港02-流媒体
-      - 香港11
-      - 香港15
-      - 香港05-流媒体
-      - 台湾01-流媒体
-      - 新加坡8-流媒体
-      - 香港04-流媒体
-      - 香港14
-      - 香港07-流媒体
-      - 日本02-流媒体
-      - 香港13
-      - 香港08-流媒体
-      - 美国03-流媒体
-      - 日本08-流媒体
-      - 香港06-流媒体
+      - US-NEWYORK2
+      - US-NEWYORK3
+      - 香港 1 LV0-HK
+      - 大阪 01
+      - US | FREE6U3 | FREENODE
+      - 11圣何塞AMD1
+      - US-DRAPER-3
+      - US-NEWYORK5
+      - 55阿什本ARM
+      - LS香港2-4 | x1.5
+      - 01凤凰城AMD2
+      - 去除1条不合适线路
+      - 04日本大阪AMD
+      - 59春川AMD2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港09-流媒体
-      - 香港10-流媒体
-      - 香港01-流媒体
-      - 香港12
-      - 日本01-流媒体
-      - 日本03-流媒体
-      - 台湾02-流媒体
-      - 印度
-      - 日本06-流媒体
-      - 新加坡7-流媒体
-      - 新加坡9-流媒体
-      - 美国01-流媒体
-      - 台湾03-流媒体
-      - 新加坡4-流媒体
-      - 新加坡3-流媒体
-      - 新加坡5-流媒体
-      - 土耳其
-      - 美国05-流媒体
-      - 新加坡10-流媒体
-      - 台湾04-流媒体
-      - 新加坡2-流媒体
-      - 日本05-流媒体
-      - 越南1-原生
-      - 新加坡6-流媒体
-      - 日本07-流媒体
-      - 日本04-流媒体
-      - 美国04-流媒体
-      - 新加坡1-流媒体
-      - 香港03-流媒体
-      - 美国02-流媒体
-      - 香港02-流媒体
-      - 香港11
-      - 香港15
-      - 香港05-流媒体
-      - 台湾01-流媒体
-      - 新加坡8-流媒体
-      - 香港04-流媒体
-      - 香港14
-      - 香港07-流媒体
-      - 日本02-流媒体
-      - 香港13
-      - 香港08-流媒体
-      - 美国03-流媒体
-      - 日本08-流媒体
-      - 香港06-流媒体
+      - US-NEWYORK2
+      - US-NEWYORK3
+      - 香港 1 LV0-HK
+      - 大阪 01
+      - US | FREE6U3 | FREENODE
+      - 11圣何塞AMD1
+      - US-DRAPER-3
+      - US-NEWYORK5
+      - 55阿什本ARM
+      - LS香港2-4 | x1.5
+      - 01凤凰城AMD2
+      - 去除1条不合适线路
+      - 04日本大阪AMD
+      - 59春川AMD2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -455,51 +191,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港09-流媒体
-      - 香港10-流媒体
-      - 香港01-流媒体
-      - 香港12
-      - 日本01-流媒体
-      - 日本03-流媒体
-      - 台湾02-流媒体
-      - 印度
-      - 日本06-流媒体
-      - 新加坡7-流媒体
-      - 新加坡9-流媒体
-      - 美国01-流媒体
-      - 台湾03-流媒体
-      - 新加坡4-流媒体
-      - 新加坡3-流媒体
-      - 新加坡5-流媒体
-      - 土耳其
-      - 美国05-流媒体
-      - 新加坡10-流媒体
-      - 台湾04-流媒体
-      - 新加坡2-流媒体
-      - 日本05-流媒体
-      - 越南1-原生
-      - 新加坡6-流媒体
-      - 日本07-流媒体
-      - 日本04-流媒体
-      - 美国04-流媒体
-      - 新加坡1-流媒体
-      - 香港03-流媒体
-      - 美国02-流媒体
-      - 香港02-流媒体
-      - 香港11
-      - 香港15
-      - 香港05-流媒体
-      - 台湾01-流媒体
-      - 新加坡8-流媒体
-      - 香港04-流媒体
-      - 香港14
-      - 香港07-流媒体
-      - 日本02-流媒体
-      - 香港13
-      - 香港08-流媒体
-      - 美国03-流媒体
-      - 日本08-流媒体
-      - 香港06-流媒体
+      - US-NEWYORK2
+      - US-NEWYORK3
+      - 香港 1 LV0-HK
+      - 大阪 01
+      - US | FREE6U3 | FREENODE
+      - 11圣何塞AMD1
+      - US-DRAPER-3
+      - US-NEWYORK5
+      - 55阿什本ARM
+      - LS香港2-4 | x1.5
+      - 01凤凰城AMD2
+      - 去除1条不合适线路
+      - 04日本大阪AMD
+      - 59春川AMD2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
