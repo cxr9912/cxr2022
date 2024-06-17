@@ -15,20 +15,40 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：88 GB', server: dxjp.qjfjc.top, port: 7328, udp: true, skip-cert-verify: true, sni: dxjp.qjfjc.top, type: hysteria2, password: 262d2395-a293-4f63-9995-bb0bbd632c22 }
-    - { name: 套餐到期：2024-07-03, server: dxjp.qjfjc.top, port: 7328, udp: true, skip-cert-verify: true, sni: dxjp.qjfjc.top, type: hysteria2, password: 262d2395-a293-4f63-9995-bb0bbd632c22 }
-    - { name: 官网：qjfjc.top, server: dxjp.qjfjc.top, port: 7328, udp: true, skip-cert-verify: true, sni: dxjp.qjfjc.top, type: hysteria2, password: 262d2395-a293-4f63-9995-bb0bbd632c22 }
-    - { name: 纽约hy2|普通, server: dny.qjfjc.top, port: 7328, udp: true, skip-cert-verify: true, sni: dny.qjfjc.top, type: hysteria2, password: 262d2395-a293-4f63-9995-bb0bbd632c22 }
-    - { name: 新加坡hy2|普通, server: dxjp.qjfjc.top, port: 7328, udp: true, skip-cert-verify: true, sni: dxjp.qjfjc.top, type: hysteria2, password: 262d2395-a293-4f63-9995-bb0bbd632c22 }
-    - { name: 印度hy2|普通, server: dyd.qjfjc.top, port: 7328, udp: true, skip-cert-verify: true, sni: dyd.qjfjc.top, type: hysteria2, password: 262d2395-a293-4f63-9995-bb0bbd632c22 }
-    - { name: 澳大利亚hy2|普通, server: adly.qjfjc.top, port: 7328, udp: true, skip-cert-verify: true, sni: adly.qjfjc.top, type: hysteria2, password: 262d2395-a293-4f63-9995-bb0bbd632c22 }
-    - { name: 法国hy2|普通, server: fg.qjfjc.top, port: 7328, udp: true, skip-cert-verify: true, sni: fg.qjfjc.top, type: hysteria2, password: 262d2395-a293-4f63-9995-bb0bbd632c22 }
-    - { name: 荷兰hy2|普通, server: dhl.qjfjc.top, port: 7328, udp: true, skip-cert-verify: true, sni: dhl.qjfjc.top, type: hysteria2, password: 262d2395-a293-4f63-9995-bb0bbd632c22 }
-    - { name: 新加坡2hy2|普通, server: dxjp2.qjfjc.top, port: 7328, udp: true, skip-cert-verify: true, sni: dxjp2.qjfjc.top, type: hysteria2, password: 262d2395-a293-4f63-9995-bb0bbd632c22 }
+    - { name: '剩余流量：85.34 GB', type: vmess, server: hy1.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: hy1.qjfjc.top } } }
+    - { name: '距离下次重置剩余：16 天', type: vmess, server: hy1.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: hy1.qjfjc.top } } }
+    - { name: 套餐到期：2024-07-03, type: vmess, server: hy1.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: hy1.qjfjc.top } } }
+    - { name: 美国1, type: vmess, server: hy1.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: hy1.qjfjc.top } } }
+    - { name: 美国2, type: vmess, server: hy2.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: hy1.qjfjc.top } } }
+    - { name: 美国3, type: vmess, server: hy3.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: hy1.qjfjc.top } } }
+    - { name: 英国1, type: vmess, server: hy1.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: yg.qjfjc.top } } }
+    - { name: 英国2, type: vmess, server: hy2.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: yg.qjfjc.top } } }
+    - { name: 英国3, type: vmess, server: hy3.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: yg.qjfjc.top } } }
+    - { name: 纽约1, type: vmess, server: hy1.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: dny.qjfjc.top } } }
+    - { name: 纽约2, type: vmess, server: hy2.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: dny.qjfjc.top } } }
+    - { name: 纽约3, type: vmess, server: hy3.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: dny.qjfjc.top } } }
+    - { name: 印度1, type: vmess, server: hy1.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: dyd.qjfjc.top } } }
+    - { name: 印度2, type: vmess, server: hy2.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: dyd.qjfjc.top } } }
+    - { name: 印度3, type: vmess, server: hy2.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: dyd.qjfjc.top } } }
+    - { name: 法国1, type: vmess, server: hy1.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: fg.qjfjc.top } } }
+    - { name: 法国2, type: vmess, server: hy2.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: fg.qjfjc.top } } }
+    - { name: 法国3, type: vmess, server: hy3.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: fg.qjfjc.top } } }
+    - { name: o新加坡1, type: vmess, server: hy1.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: dxjp2.qjfjc.top } } }
+    - { name: o新加坡2, type: vmess, server: hy2.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: dxjp2.qjfjc.top } } }
+    - { name: o新加坡3, type: vmess, server: hy3.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: dxjp2.qjfjc.top } } }
+    - { name: 荷兰1, type: vmess, server: hy1.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: dhl.qjfjc.top } } }
+    - { name: 荷兰2, type: vmess, server: hy2.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: dhl.qjfjc.top } } }
+    - { name: 荷兰3, type: vmess, server: hy3.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: dhl.qjfjc.top } } }
+    - { name: 日本1, type: vmess, server: hy1.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: rb.qjfjc.top } } }
+    - { name: 日本2, type: vmess, server: hy2.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: rb.qjfjc.top } } }
+    - { name: 日本3, type: vmess, server: hy3.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: rb.qjfjc.top } } }
+    - { name: 圣保罗1, type: vmess, server: hy1.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: sbl.qjfjc.top } } }
+    - { name: 圣保罗2, type: vmess, server: hy2.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: sbl.qjfjc.top } } }
+    - { name: 圣保罗3, type: vmess, server: hy3.qjfjc.top, port: 2095, uuid: 262d2395-a293-4f63-9995-bb0bbd632c22, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: '/?ed=2048', headers: { Host: sbl.qjfjc.top } } }
 proxy-groups:
-    - { name: 全家福, type: select, proxies: [自动选择, 故障转移, '剩余流量：88 GB', 套餐到期：2024-07-03, 官网：qjfjc.top, 纽约hy2|普通, 新加坡hy2|普通, 印度hy2|普通, 澳大利亚hy2|普通, 法国hy2|普通, 荷兰hy2|普通, 新加坡2hy2|普通] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：88 GB', 套餐到期：2024-07-03, 官网：qjfjc.top, 纽约hy2|普通, 新加坡hy2|普通, 印度hy2|普通, 澳大利亚hy2|普通, 法国hy2|普通, 荷兰hy2|普通, 新加坡2hy2|普通], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：88 GB', 套餐到期：2024-07-03, 官网：qjfjc.top, 纽约hy2|普通, 新加坡hy2|普通, 印度hy2|普通, 澳大利亚hy2|普通, 法国hy2|普通, 荷兰hy2|普通, 新加坡2hy2|普通], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 全家福, type: select, proxies: [自动选择, 故障转移, '剩余流量：85.34 GB', '距离下次重置剩余：16 天', 套餐到期：2024-07-03, 美国1, 美国2, 美国3, 英国1, 英国2, 英国3, 纽约1, 纽约2, 纽约3, 印度1, 印度2, 印度3, 法国1, 法国2, 法国3, o新加坡1, o新加坡2, o新加坡3, 荷兰1, 荷兰2, 荷兰3, 日本1, 日本2, 日本3, 圣保罗1, 圣保罗2, 圣保罗3] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：85.34 GB', '距离下次重置剩余：16 天', 套餐到期：2024-07-03, 美国1, 美国2, 美国3, 英国1, 英国2, 英国3, 纽约1, 纽约2, 纽约3, 印度1, 印度2, 印度3, 法国1, 法国2, 法国3, o新加坡1, o新加坡2, o新加坡3, 荷兰1, 荷兰2, 荷兰3, 日本1, 日本2, 日本3, 圣保罗1, 圣保罗2, 圣保罗3], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：85.34 GB', '距离下次重置剩余：16 天', 套餐到期：2024-07-03, 美国1, 美国2, 美国3, 英国1, 英国2, 英国3, 纽约1, 纽约2, 纽约3, 印度1, 印度2, 印度3, 法国1, 法国2, 法国3, o新加坡1, o新加坡2, o新加坡3, 荷兰1, 荷兰2, 荷兰3, 日本1, 日本2, 日本3, 圣保罗1, 圣保罗2, 圣保罗3], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN,qjfjc.top,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,全家福'
