@@ -15,19 +15,19 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: 德国专线1, type: ss, server: bjde.cfyun.top, port: 25519, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
-    - { name: 德国专线2, type: ss, server: bjde.cfyun.top, port: 15965, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
-    - { name: 英国专线2, type: ss, server: bjde.cfyun.top, port: 28526, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
-    - { name: 日本1, type: ss, server: awsbj.cfyun.top, port: 21771, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
-    - { name: 日本2, type: ss, server: awsbj.cfyun.top, port: 10733, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
-    - { name: 日本3, type: ss, server: awsbj.cfyun.top, port: 34704, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
-    - { name: 美国1, type: ss, server: awsbj.cfyun.top, port: 26874, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
-    - { name: 美国2, type: ss, server: awsbj.cfyun.top, port: 48657, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
-    - { name: 美国3, type: ss, server: awsbj.cfyun.top, port: 28810, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
-    - { name: 加拿大1, type: ss, server: awsbj.cfyun.top, port: 36251, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
-    - { name: 新加坡1, type: ss, server: awsbj.cfyun.top, port: 15360, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
-    - { name: 新加坡2, type: ss, server: awsbj.cfyun.top, port: 37141, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
-    - { name: 新加坡3, type: ss, server: awsbj.cfyun.top, port: 47621, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
+    - { name: 德国专线1, type: ss, server: awszf2.chuanping.wang, port: 25519, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
+    - { name: 德国专线2, type: ss, server: awszf2.chuanping.wang, port: 15965, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
+    - { name: 英国专线2, type: ss, server: awszf2.chuanping.wang, port: 28526, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
+    - { name: 日本1, type: ss, server: awszf1.chuanping.wang, port: 21771, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
+    - { name: 日本2, type: ss, server: awszf1.chuanping.wang, port: 10733, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
+    - { name: 日本3, type: ss, server: awszf1.chuanping.wang, port: 34704, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
+    - { name: 美国1, type: ss, server: awszf1.chuanping.wang, port: 26874, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
+    - { name: 美国2, type: ss, server: awszf1.chuanping.wang, port: 48657, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
+    - { name: 美国3, type: ss, server: awszf1.chuanping.wang, port: 28810, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
+    - { name: 加拿大1, type: ss, server: awszf1.chuanping.wang, port: 36251, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
+    - { name: 新加坡1, type: ss, server: awszf1.chuanping.wang, port: 15360, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
+    - { name: 新加坡2, type: ss, server: awszf1.chuanping.wang, port: 37141, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
+    - { name: 新加坡3, type: ss, server: awszf1.chuanping.wang, port: 47621, cipher: aes-128-gcm, password: f95fd125-8eb8-4445-8bef-23ac29e38ed6, udp: true }
 proxy-groups:
     - { name: 穿越火线机场2.0, type: select, proxies: [自动选择, 故障转移, 德国专线1, 德国专线2, 英国专线2, 日本1, 日本2, 日本3, 美国1, 美国2, 美国3, 加拿大1, 新加坡1, 新加坡2, 新加坡3] }
     - { name: 自动选择, type: url-test, proxies: [德国专线1, 德国专线2, 英国专线2, 日本1, 日本2, 日本3, 美国1, 美国2, 美国3, 加拿大1, 新加坡1, 新加坡2, 新加坡3], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
