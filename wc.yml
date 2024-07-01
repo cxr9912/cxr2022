@@ -5,15 +5,14 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 波兰 - 弗罗茨瓦夫 - Korbank S. A. - 1, server: ambn01.dorabbb.top, port: 48876, type: ss, cipher: chacha20-ietf-poly1305, password: f0ef784c-783d-4a07-9c1f-9aaa96ac6399, udp: true}
+  - {name: /海外专用/ 台湾-TROJAN-01(Trojan Taiwan01), server: tj-tw01.yiyo2way.xyz, port: 9980, type: trojan, password: 4179ca8a-d210-34c2-9d17-125377a5abd2, sni: tj-tw01.yiyo2way.xyz, skip-cert-verify: true, udp: true}
+  - {name: /海外专用/ 日本-TROJAN-01(Trojan Japan01), server: tj-jp01.yiyo2way.xyz, port: 9980, type: trojan, password: 4179ca8a-d210-34c2-9d17-125377a5abd2, sni: tj-jp01.yiyo2way.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾01-Taiwan01, server: cm01.newcome.xyz, port: 5700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com, udp: true}
+  - {name: 新加坡04-Singapore04, server: cm03.newcome.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com, udp: true}
+  - {name: 新加坡05-Singapore05, server: cm03.newcome.xyz, port: 6704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com, udp: true}
+  - {name: 美国03-Usa03, server: cm01.newcome.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com, udp: true}
   - {name: 美国 - 洛杉矶 - Psychz Networks - 5, server: 104.19.46.103, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: cdn1.freegradely.xyz}, udp: true}
-  - {name: "西班牙 - 马德里 - Akamai Technologies, Inc. - 1", server: 104.25.226.50, port: 80, type: vmess, uuid: 078c86a6-8dde-4dcc-a08e-378990a8b3b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /RACEVPN, ws-headers: {Host: 127.0.0.1.furiosacага0безумномmaксефуриосе.反了.馬哈拉吉.mойочень.suonycars.buzz.}, udp: true}
-  - {name: 印度 - 海得拉巴 - Oracle Corporation - 1, server: ambn01.dorabbb.top, port: 45731, type: ss, cipher: chacha20-ietf-poly1305, password: f0ef784c-783d-4a07-9c1f-9aaa96ac6399, udp: true}
-  - {name: 罗马尼亚 - 布加勒斯特 - HFM S.R.L - 1, server: ambn01.dorabbb.top, port: 48737, type: ss, cipher: chacha20-ietf-poly1305, password: f0ef784c-783d-4a07-9c1f-9aaa96ac6399, udp: true}
-  - {name: 美国 - 纽约 - FranTech Solutions - 3, server: dxcdn01.dorabbb.top, port: 47737, type: ss, cipher: chacha20-ietf-poly1305, password: f0ef784c-783d-4a07-9c1f-9aaa96ac6399, udp: true}
-  - {name: "美国 - 費利蒙 - Akamai Technologies, Inc. - 2", server: cfcdn1.sanfencdn9.com, port: 8880, type: vmess, uuid: c750f7b8-1080-4881-9d4f-7e74b2c56660, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video/bYdJ7Vc2We, ws-headers: {Host: us6gzxQRrE4.fzbqfrse.xyz}, udp: true}
   - {name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15, server: 183.232.139.22, port: 4027, type: trojan, password: RmdXQRXg, skip-cert-verify: true, udp: true}
-  - {name: 中国 - 香港 - Akile LTD - 1, server: 11bfz87io11.zdt77miaxtlgnaws11zgsvy4w0g0lj9c.top, port: 10003, type: ssr, cipher: aes-256-cfb, password: c0HKqc, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 76195:rSmmW9, obfs-param: f417076195.microsoft.com, udp: true}
   - {name: 美国 - 洛杉矶 - Psychz Networks - 1, server: 172.64.175.213, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip11.freegradely.xyz}, udp: true}
   - {name: 日本 - Shibuya - M247 Europe SRL - 6, server: 223.113.54.154, port: 23621, type: trojan, password: RmdXQRXg, skip-cert-verify: true, udp: true}
 proxy-groups:
@@ -22,15 +21,14 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 波兰 - 弗罗茨瓦夫 - Korbank S. A. - 1
+      - /海外专用/ 台湾-TROJAN-01(Trojan Taiwan01)
+      - /海外专用/ 日本-TROJAN-01(Trojan Japan01)
+      - 台湾01-Taiwan01
+      - 新加坡04-Singapore04
+      - 新加坡05-Singapore05
+      - 美国03-Usa03
       - 美国 - 洛杉矶 - Psychz Networks - 5
-      - 西班牙 - 马德里 - Akamai Technologies, Inc. - 1
-      - 印度 - 海得拉巴 - Oracle Corporation - 1
-      - 罗马尼亚 - 布加勒斯特 - HFM S.R.L - 1
-      - 美国 - 纽约 - FranTech Solutions - 3
-      - 美国 - 費利蒙 - Akamai Technologies, Inc. - 2
       - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
-      - 中国 - 香港 - Akile LTD - 1
       - 美国 - 洛杉矶 - Psychz Networks - 1
       - 日本 - Shibuya - M247 Europe SRL - 6
   - name: ♻️ 自动选择
@@ -38,15 +36,14 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 波兰 - 弗罗茨瓦夫 - Korbank S. A. - 1
+      - /海外专用/ 台湾-TROJAN-01(Trojan Taiwan01)
+      - /海外专用/ 日本-TROJAN-01(Trojan Japan01)
+      - 台湾01-Taiwan01
+      - 新加坡04-Singapore04
+      - 新加坡05-Singapore05
+      - 美国03-Usa03
       - 美国 - 洛杉矶 - Psychz Networks - 5
-      - 西班牙 - 马德里 - Akamai Technologies, Inc. - 1
-      - 印度 - 海得拉巴 - Oracle Corporation - 1
-      - 罗马尼亚 - 布加勒斯特 - HFM S.R.L - 1
-      - 美国 - 纽约 - FranTech Solutions - 3
-      - 美国 - 費利蒙 - Akamai Technologies, Inc. - 2
       - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
-      - 中国 - 香港 - Akile LTD - 1
       - 美国 - 洛杉矶 - Psychz Networks - 1
       - 日本 - Shibuya - M247 Europe SRL - 6
   - name: 🎥 NETFLIX
@@ -55,15 +52,14 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 波兰 - 弗罗茨瓦夫 - Korbank S. A. - 1
+      - /海外专用/ 台湾-TROJAN-01(Trojan Taiwan01)
+      - /海外专用/ 日本-TROJAN-01(Trojan Japan01)
+      - 台湾01-Taiwan01
+      - 新加坡04-Singapore04
+      - 新加坡05-Singapore05
+      - 美国03-Usa03
       - 美国 - 洛杉矶 - Psychz Networks - 5
-      - 西班牙 - 马德里 - Akamai Technologies, Inc. - 1
-      - 印度 - 海得拉巴 - Oracle Corporation - 1
-      - 罗马尼亚 - 布加勒斯特 - HFM S.R.L - 1
-      - 美国 - 纽约 - FranTech Solutions - 3
-      - 美国 - 費利蒙 - Akamai Technologies, Inc. - 2
       - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
-      - 中国 - 香港 - Akile LTD - 1
       - 美国 - 洛杉矶 - Psychz Networks - 1
       - 日本 - Shibuya - M247 Europe SRL - 6
   - name: ⛔️ 广告拦截
@@ -84,24 +80,24 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 波兰 - 弗罗茨瓦夫 - Korbank S. A. - 1
+      - /海外专用/ 台湾-TROJAN-01(Trojan Taiwan01)
+      - /海外专用/ 日本-TROJAN-01(Trojan Japan01)
+      - 台湾01-Taiwan01
+      - 新加坡04-Singapore04
+      - 新加坡05-Singapore05
+      - 美国03-Usa03
       - 美国 - 洛杉矶 - Psychz Networks - 5
-      - 西班牙 - 马德里 - Akamai Technologies, Inc. - 1
-      - 印度 - 海得拉巴 - Oracle Corporation - 1
-      - 罗马尼亚 - 布加勒斯特 - HFM S.R.L - 1
-      - 美国 - 纽约 - FranTech Solutions - 3
-      - 美国 - 費利蒙 - Akamai Technologies, Inc. - 2
       - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
-      - 中国 - 香港 - Akile LTD - 1
       - 美国 - 洛杉矶 - Psychz Networks - 1
       - 日本 - Shibuya - M247 Europe SRL - 6
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - /海外专用/ 台湾-TROJAN-01(Trojan Taiwan01)
+      - 台湾01-Taiwan01
       - 美国 - 洛杉矶 - Psychz Networks - 5
       - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
-      - 中国 - 香港 - Akile LTD - 1
       - 美国 - 洛杉矶 - Psychz Networks - 1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
@@ -109,15 +105,14 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 波兰 - 弗罗茨瓦夫 - Korbank S. A. - 1
+      - /海外专用/ 台湾-TROJAN-01(Trojan Taiwan01)
+      - /海外专用/ 日本-TROJAN-01(Trojan Japan01)
+      - 台湾01-Taiwan01
+      - 新加坡04-Singapore04
+      - 新加坡05-Singapore05
+      - 美国03-Usa03
       - 美国 - 洛杉矶 - Psychz Networks - 5
-      - 西班牙 - 马德里 - Akamai Technologies, Inc. - 1
-      - 印度 - 海得拉巴 - Oracle Corporation - 1
-      - 罗马尼亚 - 布加勒斯特 - HFM S.R.L - 1
-      - 美国 - 纽约 - FranTech Solutions - 3
-      - 美国 - 費利蒙 - Akamai Technologies, Inc. - 2
       - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
-      - 中国 - 香港 - Akile LTD - 1
       - 美国 - 洛杉矶 - Psychz Networks - 1
       - 日本 - Shibuya - M247 Europe SRL - 6
   - name: 📲 电报信息
@@ -125,15 +120,14 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 波兰 - 弗罗茨瓦夫 - Korbank S. A. - 1
+      - /海外专用/ 台湾-TROJAN-01(Trojan Taiwan01)
+      - /海外专用/ 日本-TROJAN-01(Trojan Japan01)
+      - 台湾01-Taiwan01
+      - 新加坡04-Singapore04
+      - 新加坡05-Singapore05
+      - 美国03-Usa03
       - 美国 - 洛杉矶 - Psychz Networks - 5
-      - 西班牙 - 马德里 - Akamai Technologies, Inc. - 1
-      - 印度 - 海得拉巴 - Oracle Corporation - 1
-      - 罗马尼亚 - 布加勒斯特 - HFM S.R.L - 1
-      - 美国 - 纽约 - FranTech Solutions - 3
-      - 美国 - 費利蒙 - Akamai Technologies, Inc. - 2
       - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
-      - 中国 - 香港 - Akile LTD - 1
       - 美国 - 洛杉矶 - Psychz Networks - 1
       - 日本 - Shibuya - M247 Europe SRL - 6
   - name: 🍎 苹果服务
@@ -142,15 +136,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 波兰 - 弗罗茨瓦夫 - Korbank S. A. - 1
+      - /海外专用/ 台湾-TROJAN-01(Trojan Taiwan01)
+      - /海外专用/ 日本-TROJAN-01(Trojan Japan01)
+      - 台湾01-Taiwan01
+      - 新加坡04-Singapore04
+      - 新加坡05-Singapore05
+      - 美国03-Usa03
       - 美国 - 洛杉矶 - Psychz Networks - 5
-      - 西班牙 - 马德里 - Akamai Technologies, Inc. - 1
-      - 印度 - 海得拉巴 - Oracle Corporation - 1
-      - 罗马尼亚 - 布加勒斯特 - HFM S.R.L - 1
-      - 美国 - 纽约 - FranTech Solutions - 3
-      - 美国 - 費利蒙 - Akamai Technologies, Inc. - 2
       - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
-      - 中国 - 香港 - Akile LTD - 1
       - 美国 - 洛杉矶 - Psychz Networks - 1
       - 日本 - Shibuya - M247 Europe SRL - 6
   - name: 🎯 全球直连
@@ -168,15 +161,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 波兰 - 弗罗茨瓦夫 - Korbank S. A. - 1
+      - /海外专用/ 台湾-TROJAN-01(Trojan Taiwan01)
+      - /海外专用/ 日本-TROJAN-01(Trojan Japan01)
+      - 台湾01-Taiwan01
+      - 新加坡04-Singapore04
+      - 新加坡05-Singapore05
+      - 美国03-Usa03
       - 美国 - 洛杉矶 - Psychz Networks - 5
-      - 西班牙 - 马德里 - Akamai Technologies, Inc. - 1
-      - 印度 - 海得拉巴 - Oracle Corporation - 1
-      - 罗马尼亚 - 布加勒斯特 - HFM S.R.L - 1
-      - 美国 - 纽约 - FranTech Solutions - 3
-      - 美国 - 費利蒙 - Akamai Technologies, Inc. - 2
       - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
-      - 中国 - 香港 - Akile LTD - 1
       - 美国 - 洛杉矶 - Psychz Networks - 1
       - 日本 - Shibuya - M247 Europe SRL - 6
 rules:
