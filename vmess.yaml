@@ -5,155 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本02-Japan02, server: cm01.newcome.xyz, port: 3711, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 台湾05-Taiwan05, server: cm01.newcome.xyz, port: 5714, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 日本08-Japan08, server: cm01.newcome.xyz, port: 3717, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 新加坡03-Singapore03, server: cm03.newcome.xyz, port: 6712, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 日本06-Japan06, server: cm01.newcome.xyz, port: 3715, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 日本01-Japan01, server: cm01.newcome.xyz, port: 3710, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 台湾03-Taiwan03, server: cm01.newcome.xyz, port: 5712, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 台湾01-Taiwan01, server: cm01.newcome.xyz, port: 5710, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 新加坡02-Singapore02, server: cm03.newcome.xyz, port: 6711, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 新加坡08-Singapore08, server: cm03.newcome.xyz, port: 6717, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 新加坡06-Singapore06, server: cm03.newcome.xyz, port: 6715, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 新加坡01-Singapore01, server: cm03.newcome.xyz, port: 6710, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 新加坡09-Singapore09, server: cm03.newcome.xyz, port: 6718, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 新加坡04-Singapore04, server: cm03.newcome.xyz, port: 6713, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 台湾06-Taiwan06, server: cm01.newcome.xyz, port: 5715, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 新加坡05-Singapore05, server: cm03.newcome.xyz, port: 6714, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 日本05-Japan05, server: cm01.newcome.xyz, port: 3714, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 日本10-Japan10, server: cm01.newcome.xyz, port: 3719, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 台湾02-Taiwan02, server: cm01.newcome.xyz, port: 5711, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 新加坡10-Singapore10, server: cm03.newcome.xyz, port: 6719, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 新加坡07-Singapore07, server: cm03.newcome.xyz, port: 6716, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 日本09-Japan09, server: cm01.newcome.xyz, port: 3718, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 日本04-Japan04, server: cm01.newcome.xyz, port: 3713, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 日本07-Japan07, server: cm01.newcome.xyz, port: 3716, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 美国05-Usa05, server: cm01.newcome.xyz, port: 7714, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 美国04-Usa04, server: cm01.newcome.xyz, port: 7713, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 美国07-Usa07, server: cm01.newcome.xyz, port: 7716, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 美国02-Usa02, server: cm01.newcome.xyz, port: 7711, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 美国06-Usa06, server: cm01.newcome.xyz, port: 7715, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 台湾04-Taiwan04, server: cm01.newcome.xyz, port: 5713, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 美国08-Usa08, server: cm01.newcome.xyz, port: 7717, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 美国01-Usa01, server: cm01.newcome.xyz, port: 7710, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
-  - {name: 美国03-Usa03, server: cm01.newcome.xyz, port: 7712, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}, udp: true}
+  - {name: 英国 TG-@bearsdream, server: 209.97.142.145, port: 7330, type: ss, cipher: chacha20-ietf-poly1305, password: iVqrWLfAlChUGf8HC9DwwQ, udp: true}
+  - {name: 10日本-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17882, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
+  - {name: 25韩国-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17885, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
+  - {name: 15新加坡-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17883, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
+  - {name: 11美国-全网优化(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17884, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
+  - {name: 8韩国-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17887, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
+  - {name: 12美国凤凰城-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17886, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
+  - {name: 9韩国-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17881, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
+  - {name: 24新加坡-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17890, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
+  - {name: 1香港-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17880, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
+  - {name: 19澳洲-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17888, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
+  - {name: 2香港-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17889, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
+  - {name: "JP, Tokyo", server: 13.124.244.90, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "HK, Los Angeles", server: 54.212.69.135, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "CA, Vancouver", server: 34.216.76.22, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "US, Dallas 2", server: 54.189.133.244, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本02-Japan02
-      - 台湾05-Taiwan05
-      - 日本08-Japan08
-      - 新加坡03-Singapore03
-      - 日本06-Japan06
-      - 日本01-Japan01
-      - 台湾03-Taiwan03
-      - 台湾01-Taiwan01
-      - 新加坡02-Singapore02
-      - 新加坡08-Singapore08
-      - 新加坡06-Singapore06
-      - 新加坡01-Singapore01
-      - 新加坡09-Singapore09
-      - 新加坡04-Singapore04
-      - 台湾06-Taiwan06
-      - 新加坡05-Singapore05
-      - 日本05-Japan05
-      - 日本10-Japan10
-      - 台湾02-Taiwan02
-      - 新加坡10-Singapore10
-      - 新加坡07-Singapore07
-      - 日本09-Japan09
-      - 日本04-Japan04
-      - 日本07-Japan07
-      - 美国05-Usa05
-      - 美国04-Usa04
-      - 美国07-Usa07
-      - 美国02-Usa02
-      - 美国06-Usa06
-      - 台湾04-Taiwan04
-      - 美国08-Usa08
-      - 美国01-Usa01
-      - 美国03-Usa03
+      - 英国 TG-@bearsdream
+      - 10日本-专线(iOS优化)
+      - 25韩国-专线(iOS优化)
+      - 15新加坡-专线(iOS优化)
+      - 11美国-全网优化(iOS优化)
+      - 8韩国-专线(iOS优化)
+      - 12美国凤凰城-专线(iOS优化)
+      - 9韩国-专线(iOS优化)
+      - 24新加坡-专线(iOS优化)
+      - 1香港-专线(iOS优化)
+      - 19澳洲-专线(iOS优化)
+      - 2香港-专线(iOS优化)
+      - JP, Tokyo
+      - HK, Los Angeles
+      - CA, Vancouver
+      - US, Dallas 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本02-Japan02
-      - 台湾05-Taiwan05
-      - 日本08-Japan08
-      - 新加坡03-Singapore03
-      - 日本06-Japan06
-      - 日本01-Japan01
-      - 台湾03-Taiwan03
-      - 台湾01-Taiwan01
-      - 新加坡02-Singapore02
-      - 新加坡08-Singapore08
-      - 新加坡06-Singapore06
-      - 新加坡01-Singapore01
-      - 新加坡09-Singapore09
-      - 新加坡04-Singapore04
-      - 台湾06-Taiwan06
-      - 新加坡05-Singapore05
-      - 日本05-Japan05
-      - 日本10-Japan10
-      - 台湾02-Taiwan02
-      - 新加坡10-Singapore10
-      - 新加坡07-Singapore07
-      - 日本09-Japan09
-      - 日本04-Japan04
-      - 日本07-Japan07
-      - 美国05-Usa05
-      - 美国04-Usa04
-      - 美国07-Usa07
-      - 美国02-Usa02
-      - 美国06-Usa06
-      - 台湾04-Taiwan04
-      - 美国08-Usa08
-      - 美国01-Usa01
-      - 美国03-Usa03
+      - 英国 TG-@bearsdream
+      - 10日本-专线(iOS优化)
+      - 25韩国-专线(iOS优化)
+      - 15新加坡-专线(iOS优化)
+      - 11美国-全网优化(iOS优化)
+      - 8韩国-专线(iOS优化)
+      - 12美国凤凰城-专线(iOS优化)
+      - 9韩国-专线(iOS优化)
+      - 24新加坡-专线(iOS优化)
+      - 1香港-专线(iOS优化)
+      - 19澳洲-专线(iOS优化)
+      - 2香港-专线(iOS优化)
+      - JP, Tokyo
+      - HK, Los Angeles
+      - CA, Vancouver
+      - US, Dallas 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本02-Japan02
-      - 台湾05-Taiwan05
-      - 日本08-Japan08
-      - 新加坡03-Singapore03
-      - 日本06-Japan06
-      - 日本01-Japan01
-      - 台湾03-Taiwan03
-      - 台湾01-Taiwan01
-      - 新加坡02-Singapore02
-      - 新加坡08-Singapore08
-      - 新加坡06-Singapore06
-      - 新加坡01-Singapore01
-      - 新加坡09-Singapore09
-      - 新加坡04-Singapore04
-      - 台湾06-Taiwan06
-      - 新加坡05-Singapore05
-      - 日本05-Japan05
-      - 日本10-Japan10
-      - 台湾02-Taiwan02
-      - 新加坡10-Singapore10
-      - 新加坡07-Singapore07
-      - 日本09-Japan09
-      - 日本04-Japan04
-      - 日本07-Japan07
-      - 美国05-Usa05
-      - 美国04-Usa04
-      - 美国07-Usa07
-      - 美国02-Usa02
-      - 美国06-Usa06
-      - 台湾04-Taiwan04
-      - 美国08-Usa08
-      - 美国01-Usa01
-      - 美国03-Usa03
+      - 英国 TG-@bearsdream
+      - 10日本-专线(iOS优化)
+      - 25韩国-专线(iOS优化)
+      - 15新加坡-专线(iOS优化)
+      - 11美国-全网优化(iOS优化)
+      - 8韩国-专线(iOS优化)
+      - 12美国凤凰城-专线(iOS优化)
+      - 9韩国-专线(iOS优化)
+      - 24新加坡-专线(iOS优化)
+      - 1香港-专线(iOS优化)
+      - 19澳洲-专线(iOS优化)
+      - 2香港-专线(iOS优化)
+      - JP, Tokyo
+      - HK, Los Angeles
+      - CA, Vancouver
+      - US, Dallas 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -172,165 +104,93 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本02-Japan02
-      - 台湾05-Taiwan05
-      - 日本08-Japan08
-      - 新加坡03-Singapore03
-      - 日本06-Japan06
-      - 日本01-Japan01
-      - 台湾03-Taiwan03
-      - 台湾01-Taiwan01
-      - 新加坡02-Singapore02
-      - 新加坡08-Singapore08
-      - 新加坡06-Singapore06
-      - 新加坡01-Singapore01
-      - 新加坡09-Singapore09
-      - 新加坡04-Singapore04
-      - 台湾06-Taiwan06
-      - 新加坡05-Singapore05
-      - 日本05-Japan05
-      - 日本10-Japan10
-      - 台湾02-Taiwan02
-      - 新加坡10-Singapore10
-      - 新加坡07-Singapore07
-      - 日本09-Japan09
-      - 日本04-Japan04
-      - 日本07-Japan07
-      - 美国05-Usa05
-      - 美国04-Usa04
-      - 美国07-Usa07
-      - 美国02-Usa02
-      - 美国06-Usa06
-      - 台湾04-Taiwan04
-      - 美国08-Usa08
-      - 美国01-Usa01
-      - 美国03-Usa03
+      - 英国 TG-@bearsdream
+      - 10日本-专线(iOS优化)
+      - 25韩国-专线(iOS优化)
+      - 15新加坡-专线(iOS优化)
+      - 11美国-全网优化(iOS优化)
+      - 8韩国-专线(iOS优化)
+      - 12美国凤凰城-专线(iOS优化)
+      - 9韩国-专线(iOS优化)
+      - 24新加坡-专线(iOS优化)
+      - 1香港-专线(iOS优化)
+      - 19澳洲-专线(iOS优化)
+      - 2香港-专线(iOS优化)
+      - JP, Tokyo
+      - HK, Los Angeles
+      - CA, Vancouver
+      - US, Dallas 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾05-Taiwan05
-      - 台湾03-Taiwan03
-      - 台湾01-Taiwan01
-      - 台湾06-Taiwan06
-      - 台湾02-Taiwan02
-      - 台湾04-Taiwan04
+      - 1香港-专线(iOS优化)
+      - 2香港-专线(iOS优化)
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本02-Japan02
-      - 台湾05-Taiwan05
-      - 日本08-Japan08
-      - 新加坡03-Singapore03
-      - 日本06-Japan06
-      - 日本01-Japan01
-      - 台湾03-Taiwan03
-      - 台湾01-Taiwan01
-      - 新加坡02-Singapore02
-      - 新加坡08-Singapore08
-      - 新加坡06-Singapore06
-      - 新加坡01-Singapore01
-      - 新加坡09-Singapore09
-      - 新加坡04-Singapore04
-      - 台湾06-Taiwan06
-      - 新加坡05-Singapore05
-      - 日本05-Japan05
-      - 日本10-Japan10
-      - 台湾02-Taiwan02
-      - 新加坡10-Singapore10
-      - 新加坡07-Singapore07
-      - 日本09-Japan09
-      - 日本04-Japan04
-      - 日本07-Japan07
-      - 美国05-Usa05
-      - 美国04-Usa04
-      - 美国07-Usa07
-      - 美国02-Usa02
-      - 美国06-Usa06
-      - 台湾04-Taiwan04
-      - 美国08-Usa08
-      - 美国01-Usa01
-      - 美国03-Usa03
+      - 英国 TG-@bearsdream
+      - 10日本-专线(iOS优化)
+      - 25韩国-专线(iOS优化)
+      - 15新加坡-专线(iOS优化)
+      - 11美国-全网优化(iOS优化)
+      - 8韩国-专线(iOS优化)
+      - 12美国凤凰城-专线(iOS优化)
+      - 9韩国-专线(iOS优化)
+      - 24新加坡-专线(iOS优化)
+      - 1香港-专线(iOS优化)
+      - 19澳洲-专线(iOS优化)
+      - 2香港-专线(iOS优化)
+      - JP, Tokyo
+      - HK, Los Angeles
+      - CA, Vancouver
+      - US, Dallas 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本02-Japan02
-      - 台湾05-Taiwan05
-      - 日本08-Japan08
-      - 新加坡03-Singapore03
-      - 日本06-Japan06
-      - 日本01-Japan01
-      - 台湾03-Taiwan03
-      - 台湾01-Taiwan01
-      - 新加坡02-Singapore02
-      - 新加坡08-Singapore08
-      - 新加坡06-Singapore06
-      - 新加坡01-Singapore01
-      - 新加坡09-Singapore09
-      - 新加坡04-Singapore04
-      - 台湾06-Taiwan06
-      - 新加坡05-Singapore05
-      - 日本05-Japan05
-      - 日本10-Japan10
-      - 台湾02-Taiwan02
-      - 新加坡10-Singapore10
-      - 新加坡07-Singapore07
-      - 日本09-Japan09
-      - 日本04-Japan04
-      - 日本07-Japan07
-      - 美国05-Usa05
-      - 美国04-Usa04
-      - 美国07-Usa07
-      - 美国02-Usa02
-      - 美国06-Usa06
-      - 台湾04-Taiwan04
-      - 美国08-Usa08
-      - 美国01-Usa01
-      - 美国03-Usa03
+      - 英国 TG-@bearsdream
+      - 10日本-专线(iOS优化)
+      - 25韩国-专线(iOS优化)
+      - 15新加坡-专线(iOS优化)
+      - 11美国-全网优化(iOS优化)
+      - 8韩国-专线(iOS优化)
+      - 12美国凤凰城-专线(iOS优化)
+      - 9韩国-专线(iOS优化)
+      - 24新加坡-专线(iOS优化)
+      - 1香港-专线(iOS优化)
+      - 19澳洲-专线(iOS优化)
+      - 2香港-专线(iOS优化)
+      - JP, Tokyo
+      - HK, Los Angeles
+      - CA, Vancouver
+      - US, Dallas 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本02-Japan02
-      - 台湾05-Taiwan05
-      - 日本08-Japan08
-      - 新加坡03-Singapore03
-      - 日本06-Japan06
-      - 日本01-Japan01
-      - 台湾03-Taiwan03
-      - 台湾01-Taiwan01
-      - 新加坡02-Singapore02
-      - 新加坡08-Singapore08
-      - 新加坡06-Singapore06
-      - 新加坡01-Singapore01
-      - 新加坡09-Singapore09
-      - 新加坡04-Singapore04
-      - 台湾06-Taiwan06
-      - 新加坡05-Singapore05
-      - 日本05-Japan05
-      - 日本10-Japan10
-      - 台湾02-Taiwan02
-      - 新加坡10-Singapore10
-      - 新加坡07-Singapore07
-      - 日本09-Japan09
-      - 日本04-Japan04
-      - 日本07-Japan07
-      - 美国05-Usa05
-      - 美国04-Usa04
-      - 美国07-Usa07
-      - 美国02-Usa02
-      - 美国06-Usa06
-      - 台湾04-Taiwan04
-      - 美国08-Usa08
-      - 美国01-Usa01
-      - 美国03-Usa03
+      - 英国 TG-@bearsdream
+      - 10日本-专线(iOS优化)
+      - 25韩国-专线(iOS优化)
+      - 15新加坡-专线(iOS优化)
+      - 11美国-全网优化(iOS优化)
+      - 8韩国-专线(iOS优化)
+      - 12美国凤凰城-专线(iOS优化)
+      - 9韩国-专线(iOS优化)
+      - 24新加坡-专线(iOS优化)
+      - 1香港-专线(iOS优化)
+      - 19澳洲-专线(iOS优化)
+      - 2香港-专线(iOS优化)
+      - JP, Tokyo
+      - HK, Los Angeles
+      - CA, Vancouver
+      - US, Dallas 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -346,39 +206,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本02-Japan02
-      - 台湾05-Taiwan05
-      - 日本08-Japan08
-      - 新加坡03-Singapore03
-      - 日本06-Japan06
-      - 日本01-Japan01
-      - 台湾03-Taiwan03
-      - 台湾01-Taiwan01
-      - 新加坡02-Singapore02
-      - 新加坡08-Singapore08
-      - 新加坡06-Singapore06
-      - 新加坡01-Singapore01
-      - 新加坡09-Singapore09
-      - 新加坡04-Singapore04
-      - 台湾06-Taiwan06
-      - 新加坡05-Singapore05
-      - 日本05-Japan05
-      - 日本10-Japan10
-      - 台湾02-Taiwan02
-      - 新加坡10-Singapore10
-      - 新加坡07-Singapore07
-      - 日本09-Japan09
-      - 日本04-Japan04
-      - 日本07-Japan07
-      - 美国05-Usa05
-      - 美国04-Usa04
-      - 美国07-Usa07
-      - 美国02-Usa02
-      - 美国06-Usa06
-      - 台湾04-Taiwan04
-      - 美国08-Usa08
-      - 美国01-Usa01
-      - 美国03-Usa03
+      - 英国 TG-@bearsdream
+      - 10日本-专线(iOS优化)
+      - 25韩国-专线(iOS优化)
+      - 15新加坡-专线(iOS优化)
+      - 11美国-全网优化(iOS优化)
+      - 8韩国-专线(iOS优化)
+      - 12美国凤凰城-专线(iOS优化)
+      - 9韩国-专线(iOS优化)
+      - 24新加坡-专线(iOS优化)
+      - 1香港-专线(iOS优化)
+      - 19澳洲-专线(iOS优化)
+      - 2香港-专线(iOS优化)
+      - JP, Tokyo
+      - HK, Los Angeles
+      - CA, Vancouver
+      - US, Dallas 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
