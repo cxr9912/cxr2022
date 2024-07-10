@@ -5,87 +5,263 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 英国 TG-@bearsdream, server: 209.97.142.145, port: 7330, type: ss, cipher: chacha20-ietf-poly1305, password: iVqrWLfAlChUGf8HC9DwwQ, udp: true}
-  - {name: 10日本-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17882, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
-  - {name: 25韩国-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17885, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
-  - {name: 15新加坡-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17883, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
-  - {name: 11美国-全网优化(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17884, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
-  - {name: 8韩国-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17887, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
-  - {name: 12美国凤凰城-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17886, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
-  - {name: 9韩国-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17881, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
-  - {name: 24新加坡-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17890, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
-  - {name: 1香港-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17880, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
-  - {name: 19澳洲-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17888, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
-  - {name: 2香港-专线(iOS优化), server: dnsmart.dg-cdn.mob.networklinkpro.com, port: 17889, type: ss, cipher: chacha20-ietf-poly1305, password: f1961a75-813d-4fe4-aba1-a1a450dcd316, udp: true}
-  - {name: "JP, Tokyo", server: 13.124.244.90, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "HK, Los Angeles", server: 54.212.69.135, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "CA, Vancouver", server: 34.216.76.22, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "US, Dallas 2", server: 54.189.133.244, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 香港 03 线路1-1B, server: v01.gutingting.com, port: 30007, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾HINET 04 线路1-1A, server: v01.gutingting.com, port: 30003, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 韩国 01 线路2-1A, server: v02.gutingting.com, port: 30056, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 03 线路1-1B, server: v01.gutingting.com, port: 30021, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港HGC 01 线路2-1A, server: v02.gutingting.com, port: 30006, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港F1 01 线路1-1B, server: v01.gutingting.com, port: 30072, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港F1 03 线路1-1A, server: v01.gutingting.com, port: 30074, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 02 线路2-1A, server: v02.gutingting.com, port: 30005, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港HGC 02 线路2-1A, server: v02.gutingting.com, port: 30038, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 04 线路2-1B, server: v02.gutingting.com, port: 30008, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 02 线路1-1A, server: v01.gutingting.com, port: 30050, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 05 线路2-1A, server: v02.gutingting.com, port: 30054, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 美国1-1A, server: cloud-us1.veadev.com, port: 443, type: vmess, uuid: 06f1a56e-549f-4d25-b287-76f98678e2d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /config, ws-headers: {Host: cloud-us1.veadev.com}, udp: true}
+  - {name: 香港F1 01 线路1-1A, server: v01.gutingting.com, port: 30072, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 线路1-1A, server: v01.gutingting.com, port: 30009, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾混合 02 线路2-1B, server: v02.gutingting.com, port: 30063, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 03 线路1-1A, server: v01.gutingting.com, port: 30021, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港HGC 01 线路2-1B, server: v02.gutingting.com, port: 30006, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港-1A, server: xg1.tcity8.buzz, port: 10010, type: vmess, uuid: d2a853d4-e918-4e8c-82d8-23effbe6b3ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国 01 线路2-1B, server: v02.gutingting.com, port: 30056, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 05 线路2-1B, server: v02.gutingting.com, port: 30054, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾HINET 04 线路1-1B, server: v01.gutingting.com, port: 30003, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港F1 04 线路2-1B, server: v02.gutingting.com, port: 30071, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 线路1-1B, server: v01.gutingting.com, port: 30009, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 04 线路2-1A, server: v02.gutingting.com, port: 30008, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 03 线路1-1A, server: v01.gutingting.com, port: 30048, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 03 线路2-1A, server: v02.gutingting.com, port: 30049, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 01 限 30 MBS-1B-GPT, server: v01.gutingting.com, port: 30060, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 01 线路1-1B, server: v01.gutingting.com, port: 30017, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 02 线路1-1B, server: v01.gutingting.com, port: 30050, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 02 限 30 MBS-1B-GPT, server: v01.gutingting.com, port: 30061, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 03 线路2-1B, server: v02.gutingting.com, port: 30049, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 04 线路1-1A, server: v01.gutingting.com, port: 20223, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 01 线路1-1A, server: v01.gutingting.com, port: 20222, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 04 线路1-1B, server: v01.gutingting.com, port: 20223, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港-1B, server: xg.dashuai.cyou, port: 19901, type: vmess, uuid: ced317b4-0e68-4e86-adf5-aec2e5f07f0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 03 线路1-1B, server: v01.gutingting.com, port: 30048, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 04 线路2-1B, server: v02.gutingting.com, port: 30045, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 02 线路1-1A, server: v01.gutingting.com, port: 20225, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾混合 02 线路2-1A, server: v02.gutingting.com, port: 30063, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 06 线路1-1A, server: v01.gutingting.com, port: 30055, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 01 线路1-1B, server: v01.gutingting.com, port: 20222, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 01 线路1-1A, server: v01.gutingting.com, port: 30017, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾HINET 03 线路2-1B, server: v02.gutingting.com, port: 30002, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 02 线路1-1B, server: v01.gutingting.com, port: 20225, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 美国2-1A, server: cloud-us2.veadev.com, port: 8043, type: vmess, uuid: 06f1a56e-549f-4d25-b287-76f98678e2d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: cloud-us2.veadev.com}, udp: true}
+  - {name: 日本 06 线路1-1B, server: v01.gutingting.com, port: 30055, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 02 线路2-1A, server: v02.gutingting.com, port: 30044, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 04 线路2-1A, server: v02.gutingting.com, port: 30045, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 02 限 30 MBS-1A-GPT, server: v01.gutingting.com, port: 30061, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 03 线路1-1A, server: v01.gutingting.com, port: 30007, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港HGC 02 线路2-1B, server: v02.gutingting.com, port: 30038, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾HINET 03 线路2-1A, server: v02.gutingting.com, port: 30002, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港F1 02 线路1-1A, server: v01.gutingting.com, port: 30073, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 02 线路2-1B, server: v02.gutingting.com, port: 30005, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港F1 02 线路1-1B, server: v01.gutingting.com, port: 30073, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 香港F1 03 线路1-1B, server: v01.gutingting.com, port: 30074, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v01.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾混合 01 线路2-1B, server: v02.gutingting.com, port: 30058, type: trojan, password: ed6b87c3-50db-442b-b8f5-94411d2af4ca, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾混合 01 线路2-1A, server: v02.gutingting.com, port: 30058, type: trojan, password: f62c566a-7309-4320-b4c5-d74d9d922741, sni: v02.gutingting.com, skip-cert-verify: true, udp: true}
+  - {name: HK 香港 I IEPL, server: api-hk1.veadev.com, port: 5073, type: vmess, uuid: 06f1a56e-549f-4d25-b287-76f98678e2d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /config, ws-headers: {Host: api-hk1.veadev.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 英国 TG-@bearsdream
-      - 10日本-专线(iOS优化)
-      - 25韩国-专线(iOS优化)
-      - 15新加坡-专线(iOS优化)
-      - 11美国-全网优化(iOS优化)
-      - 8韩国-专线(iOS优化)
-      - 12美国凤凰城-专线(iOS优化)
-      - 9韩国-专线(iOS优化)
-      - 24新加坡-专线(iOS优化)
-      - 1香港-专线(iOS优化)
-      - 19澳洲-专线(iOS优化)
-      - 2香港-专线(iOS优化)
-      - JP, Tokyo
-      - HK, Los Angeles
-      - CA, Vancouver
-      - US, Dallas 2
+      - 香港 03 线路1-1B
+      - 台湾HINET 04 线路1-1A
+      - 韩国 01 线路2-1A
+      - 日本 03 线路1-1B
+      - 香港HGC 01 线路2-1A
+      - 香港F1 01 线路1-1B
+      - 香港F1 03 线路1-1A
+      - 香港 02 线路2-1A
+      - 香港HGC 02 线路2-1A
+      - 香港 04 线路2-1B
+      - 新加坡 02 线路1-1A
+      - 日本 05 线路2-1A
+      - 美国1-1A
+      - 香港F1 01 线路1-1A
+      - 日本 01 线路1-1A
+      - 台湾混合 02 线路2-1B
+      - 日本 03 线路1-1A
+      - 香港HGC 01 线路2-1B
+      - 香港-1A
+      - 韩国 01 线路2-1B
+      - 日本 05 线路2-1B
+      - 台湾HINET 04 线路1-1B
+      - 香港F1 04 线路2-1B
+      - 日本 01 线路1-1B
+      - 香港 04 线路2-1A
+      - 美国 03 线路1-1A
+      - 新加坡 03 线路2-1A
+      - 01 限 30 MBS-1B-GPT
+      - 香港 01 线路1-1B
+      - 新加坡 02 线路1-1B
+      - 02 限 30 MBS-1B-GPT
+      - 新加坡 03 线路2-1B
+      - 新加坡 04 线路1-1A
+      - 新加坡 01 线路1-1A
+      - 新加坡 04 线路1-1B
+      - 香港-1B
+      - 美国 03 线路1-1B
+      - 日本 04 线路2-1B
+      - 美国 02 线路1-1A
+      - 台湾混合 02 线路2-1A
+      - 日本 06 线路1-1A
+      - 新加坡 01 线路1-1B
+      - 香港 01 线路1-1A
+      - 台湾HINET 03 线路2-1B
+      - 美国 02 线路1-1B
+      - 美国2-1A
+      - 日本 06 线路1-1B
+      - 日本 02 线路2-1A
+      - 日本 04 线路2-1A
+      - 02 限 30 MBS-1A-GPT
+      - 香港 03 线路1-1A
+      - 香港HGC 02 线路2-1B
+      - 台湾HINET 03 线路2-1A
+      - 香港F1 02 线路1-1A
+      - 香港 02 线路2-1B
+      - 香港F1 02 线路1-1B
+      - 香港F1 03 线路1-1B
+      - 台湾混合 01 线路2-1B
+      - 台湾混合 01 线路2-1A
+      - HK 香港 I IEPL
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 英国 TG-@bearsdream
-      - 10日本-专线(iOS优化)
-      - 25韩国-专线(iOS优化)
-      - 15新加坡-专线(iOS优化)
-      - 11美国-全网优化(iOS优化)
-      - 8韩国-专线(iOS优化)
-      - 12美国凤凰城-专线(iOS优化)
-      - 9韩国-专线(iOS优化)
-      - 24新加坡-专线(iOS优化)
-      - 1香港-专线(iOS优化)
-      - 19澳洲-专线(iOS优化)
-      - 2香港-专线(iOS优化)
-      - JP, Tokyo
-      - HK, Los Angeles
-      - CA, Vancouver
-      - US, Dallas 2
+      - 香港 03 线路1-1B
+      - 台湾HINET 04 线路1-1A
+      - 韩国 01 线路2-1A
+      - 日本 03 线路1-1B
+      - 香港HGC 01 线路2-1A
+      - 香港F1 01 线路1-1B
+      - 香港F1 03 线路1-1A
+      - 香港 02 线路2-1A
+      - 香港HGC 02 线路2-1A
+      - 香港 04 线路2-1B
+      - 新加坡 02 线路1-1A
+      - 日本 05 线路2-1A
+      - 美国1-1A
+      - 香港F1 01 线路1-1A
+      - 日本 01 线路1-1A
+      - 台湾混合 02 线路2-1B
+      - 日本 03 线路1-1A
+      - 香港HGC 01 线路2-1B
+      - 香港-1A
+      - 韩国 01 线路2-1B
+      - 日本 05 线路2-1B
+      - 台湾HINET 04 线路1-1B
+      - 香港F1 04 线路2-1B
+      - 日本 01 线路1-1B
+      - 香港 04 线路2-1A
+      - 美国 03 线路1-1A
+      - 新加坡 03 线路2-1A
+      - 01 限 30 MBS-1B-GPT
+      - 香港 01 线路1-1B
+      - 新加坡 02 线路1-1B
+      - 02 限 30 MBS-1B-GPT
+      - 新加坡 03 线路2-1B
+      - 新加坡 04 线路1-1A
+      - 新加坡 01 线路1-1A
+      - 新加坡 04 线路1-1B
+      - 香港-1B
+      - 美国 03 线路1-1B
+      - 日本 04 线路2-1B
+      - 美国 02 线路1-1A
+      - 台湾混合 02 线路2-1A
+      - 日本 06 线路1-1A
+      - 新加坡 01 线路1-1B
+      - 香港 01 线路1-1A
+      - 台湾HINET 03 线路2-1B
+      - 美国 02 线路1-1B
+      - 美国2-1A
+      - 日本 06 线路1-1B
+      - 日本 02 线路2-1A
+      - 日本 04 线路2-1A
+      - 02 限 30 MBS-1A-GPT
+      - 香港 03 线路1-1A
+      - 香港HGC 02 线路2-1B
+      - 台湾HINET 03 线路2-1A
+      - 香港F1 02 线路1-1A
+      - 香港 02 线路2-1B
+      - 香港F1 02 线路1-1B
+      - 香港F1 03 线路1-1B
+      - 台湾混合 01 线路2-1B
+      - 台湾混合 01 线路2-1A
+      - HK 香港 I IEPL
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 英国 TG-@bearsdream
-      - 10日本-专线(iOS优化)
-      - 25韩国-专线(iOS优化)
-      - 15新加坡-专线(iOS优化)
-      - 11美国-全网优化(iOS优化)
-      - 8韩国-专线(iOS优化)
-      - 12美国凤凰城-专线(iOS优化)
-      - 9韩国-专线(iOS优化)
-      - 24新加坡-专线(iOS优化)
-      - 1香港-专线(iOS优化)
-      - 19澳洲-专线(iOS优化)
-      - 2香港-专线(iOS优化)
-      - JP, Tokyo
-      - HK, Los Angeles
-      - CA, Vancouver
-      - US, Dallas 2
+      - 香港 03 线路1-1B
+      - 台湾HINET 04 线路1-1A
+      - 韩国 01 线路2-1A
+      - 日本 03 线路1-1B
+      - 香港HGC 01 线路2-1A
+      - 香港F1 01 线路1-1B
+      - 香港F1 03 线路1-1A
+      - 香港 02 线路2-1A
+      - 香港HGC 02 线路2-1A
+      - 香港 04 线路2-1B
+      - 新加坡 02 线路1-1A
+      - 日本 05 线路2-1A
+      - 美国1-1A
+      - 香港F1 01 线路1-1A
+      - 日本 01 线路1-1A
+      - 台湾混合 02 线路2-1B
+      - 日本 03 线路1-1A
+      - 香港HGC 01 线路2-1B
+      - 香港-1A
+      - 韩国 01 线路2-1B
+      - 日本 05 线路2-1B
+      - 台湾HINET 04 线路1-1B
+      - 香港F1 04 线路2-1B
+      - 日本 01 线路1-1B
+      - 香港 04 线路2-1A
+      - 美国 03 线路1-1A
+      - 新加坡 03 线路2-1A
+      - 01 限 30 MBS-1B-GPT
+      - 香港 01 线路1-1B
+      - 新加坡 02 线路1-1B
+      - 02 限 30 MBS-1B-GPT
+      - 新加坡 03 线路2-1B
+      - 新加坡 04 线路1-1A
+      - 新加坡 01 线路1-1A
+      - 新加坡 04 线路1-1B
+      - 香港-1B
+      - 美国 03 线路1-1B
+      - 日本 04 线路2-1B
+      - 美国 02 线路1-1A
+      - 台湾混合 02 线路2-1A
+      - 日本 06 线路1-1A
+      - 新加坡 01 线路1-1B
+      - 香港 01 线路1-1A
+      - 台湾HINET 03 线路2-1B
+      - 美国 02 线路1-1B
+      - 美国2-1A
+      - 日本 06 线路1-1B
+      - 日本 02 线路2-1A
+      - 日本 04 线路2-1A
+      - 02 限 30 MBS-1A-GPT
+      - 香港 03 线路1-1A
+      - 香港HGC 02 线路2-1B
+      - 台湾HINET 03 线路2-1A
+      - 香港F1 02 线路1-1A
+      - 香港 02 线路2-1B
+      - 香港F1 02 线路1-1B
+      - 香港F1 03 线路1-1B
+      - 台湾混合 01 线路2-1B
+      - 台湾混合 01 线路2-1A
+      - HK 香港 I IEPL
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -104,93 +280,297 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 英国 TG-@bearsdream
-      - 10日本-专线(iOS优化)
-      - 25韩国-专线(iOS优化)
-      - 15新加坡-专线(iOS优化)
-      - 11美国-全网优化(iOS优化)
-      - 8韩国-专线(iOS优化)
-      - 12美国凤凰城-专线(iOS优化)
-      - 9韩国-专线(iOS优化)
-      - 24新加坡-专线(iOS优化)
-      - 1香港-专线(iOS优化)
-      - 19澳洲-专线(iOS优化)
-      - 2香港-专线(iOS优化)
-      - JP, Tokyo
-      - HK, Los Angeles
-      - CA, Vancouver
-      - US, Dallas 2
+      - 香港 03 线路1-1B
+      - 台湾HINET 04 线路1-1A
+      - 韩国 01 线路2-1A
+      - 日本 03 线路1-1B
+      - 香港HGC 01 线路2-1A
+      - 香港F1 01 线路1-1B
+      - 香港F1 03 线路1-1A
+      - 香港 02 线路2-1A
+      - 香港HGC 02 线路2-1A
+      - 香港 04 线路2-1B
+      - 新加坡 02 线路1-1A
+      - 日本 05 线路2-1A
+      - 美国1-1A
+      - 香港F1 01 线路1-1A
+      - 日本 01 线路1-1A
+      - 台湾混合 02 线路2-1B
+      - 日本 03 线路1-1A
+      - 香港HGC 01 线路2-1B
+      - 香港-1A
+      - 韩国 01 线路2-1B
+      - 日本 05 线路2-1B
+      - 台湾HINET 04 线路1-1B
+      - 香港F1 04 线路2-1B
+      - 日本 01 线路1-1B
+      - 香港 04 线路2-1A
+      - 美国 03 线路1-1A
+      - 新加坡 03 线路2-1A
+      - 01 限 30 MBS-1B-GPT
+      - 香港 01 线路1-1B
+      - 新加坡 02 线路1-1B
+      - 02 限 30 MBS-1B-GPT
+      - 新加坡 03 线路2-1B
+      - 新加坡 04 线路1-1A
+      - 新加坡 01 线路1-1A
+      - 新加坡 04 线路1-1B
+      - 香港-1B
+      - 美国 03 线路1-1B
+      - 日本 04 线路2-1B
+      - 美国 02 线路1-1A
+      - 台湾混合 02 线路2-1A
+      - 日本 06 线路1-1A
+      - 新加坡 01 线路1-1B
+      - 香港 01 线路1-1A
+      - 台湾HINET 03 线路2-1B
+      - 美国 02 线路1-1B
+      - 美国2-1A
+      - 日本 06 线路1-1B
+      - 日本 02 线路2-1A
+      - 日本 04 线路2-1A
+      - 02 限 30 MBS-1A-GPT
+      - 香港 03 线路1-1A
+      - 香港HGC 02 线路2-1B
+      - 台湾HINET 03 线路2-1A
+      - 香港F1 02 线路1-1A
+      - 香港 02 线路2-1B
+      - 香港F1 02 线路1-1B
+      - 香港F1 03 线路1-1B
+      - 台湾混合 01 线路2-1B
+      - 台湾混合 01 线路2-1A
+      - HK 香港 I IEPL
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 1香港-专线(iOS优化)
-      - 2香港-专线(iOS优化)
+      - 香港 03 线路1-1B
+      - 台湾HINET 04 线路1-1A
+      - 香港HGC 01 线路2-1A
+      - 香港F1 01 线路1-1B
+      - 香港F1 03 线路1-1A
+      - 香港 02 线路2-1A
+      - 香港HGC 02 线路2-1A
+      - 香港 04 线路2-1B
+      - 香港F1 01 线路1-1A
+      - 台湾混合 02 线路2-1B
+      - 香港HGC 01 线路2-1B
+      - 香港-1A
+      - 台湾HINET 04 线路1-1B
+      - 香港F1 04 线路2-1B
+      - 香港 04 线路2-1A
+      - 香港 01 线路1-1B
+      - 香港-1B
+      - 台湾混合 02 线路2-1A
+      - 香港 01 线路1-1A
+      - 台湾HINET 03 线路2-1B
+      - 香港 03 线路1-1A
+      - 香港HGC 02 线路2-1B
+      - 台湾HINET 03 线路2-1A
+      - 香港F1 02 线路1-1A
+      - 香港 02 线路2-1B
+      - 香港F1 02 线路1-1B
+      - 香港F1 03 线路1-1B
+      - 台湾混合 01 线路2-1B
+      - 台湾混合 01 线路2-1A
+      - HK 香港 I IEPL
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 英国 TG-@bearsdream
-      - 10日本-专线(iOS优化)
-      - 25韩国-专线(iOS优化)
-      - 15新加坡-专线(iOS优化)
-      - 11美国-全网优化(iOS优化)
-      - 8韩国-专线(iOS优化)
-      - 12美国凤凰城-专线(iOS优化)
-      - 9韩国-专线(iOS优化)
-      - 24新加坡-专线(iOS优化)
-      - 1香港-专线(iOS优化)
-      - 19澳洲-专线(iOS优化)
-      - 2香港-专线(iOS优化)
-      - JP, Tokyo
-      - HK, Los Angeles
-      - CA, Vancouver
-      - US, Dallas 2
+      - 香港 03 线路1-1B
+      - 台湾HINET 04 线路1-1A
+      - 韩国 01 线路2-1A
+      - 日本 03 线路1-1B
+      - 香港HGC 01 线路2-1A
+      - 香港F1 01 线路1-1B
+      - 香港F1 03 线路1-1A
+      - 香港 02 线路2-1A
+      - 香港HGC 02 线路2-1A
+      - 香港 04 线路2-1B
+      - 新加坡 02 线路1-1A
+      - 日本 05 线路2-1A
+      - 美国1-1A
+      - 香港F1 01 线路1-1A
+      - 日本 01 线路1-1A
+      - 台湾混合 02 线路2-1B
+      - 日本 03 线路1-1A
+      - 香港HGC 01 线路2-1B
+      - 香港-1A
+      - 韩国 01 线路2-1B
+      - 日本 05 线路2-1B
+      - 台湾HINET 04 线路1-1B
+      - 香港F1 04 线路2-1B
+      - 日本 01 线路1-1B
+      - 香港 04 线路2-1A
+      - 美国 03 线路1-1A
+      - 新加坡 03 线路2-1A
+      - 01 限 30 MBS-1B-GPT
+      - 香港 01 线路1-1B
+      - 新加坡 02 线路1-1B
+      - 02 限 30 MBS-1B-GPT
+      - 新加坡 03 线路2-1B
+      - 新加坡 04 线路1-1A
+      - 新加坡 01 线路1-1A
+      - 新加坡 04 线路1-1B
+      - 香港-1B
+      - 美国 03 线路1-1B
+      - 日本 04 线路2-1B
+      - 美国 02 线路1-1A
+      - 台湾混合 02 线路2-1A
+      - 日本 06 线路1-1A
+      - 新加坡 01 线路1-1B
+      - 香港 01 线路1-1A
+      - 台湾HINET 03 线路2-1B
+      - 美国 02 线路1-1B
+      - 美国2-1A
+      - 日本 06 线路1-1B
+      - 日本 02 线路2-1A
+      - 日本 04 线路2-1A
+      - 02 限 30 MBS-1A-GPT
+      - 香港 03 线路1-1A
+      - 香港HGC 02 线路2-1B
+      - 台湾HINET 03 线路2-1A
+      - 香港F1 02 线路1-1A
+      - 香港 02 线路2-1B
+      - 香港F1 02 线路1-1B
+      - 香港F1 03 线路1-1B
+      - 台湾混合 01 线路2-1B
+      - 台湾混合 01 线路2-1A
+      - HK 香港 I IEPL
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 英国 TG-@bearsdream
-      - 10日本-专线(iOS优化)
-      - 25韩国-专线(iOS优化)
-      - 15新加坡-专线(iOS优化)
-      - 11美国-全网优化(iOS优化)
-      - 8韩国-专线(iOS优化)
-      - 12美国凤凰城-专线(iOS优化)
-      - 9韩国-专线(iOS优化)
-      - 24新加坡-专线(iOS优化)
-      - 1香港-专线(iOS优化)
-      - 19澳洲-专线(iOS优化)
-      - 2香港-专线(iOS优化)
-      - JP, Tokyo
-      - HK, Los Angeles
-      - CA, Vancouver
-      - US, Dallas 2
+      - 香港 03 线路1-1B
+      - 台湾HINET 04 线路1-1A
+      - 韩国 01 线路2-1A
+      - 日本 03 线路1-1B
+      - 香港HGC 01 线路2-1A
+      - 香港F1 01 线路1-1B
+      - 香港F1 03 线路1-1A
+      - 香港 02 线路2-1A
+      - 香港HGC 02 线路2-1A
+      - 香港 04 线路2-1B
+      - 新加坡 02 线路1-1A
+      - 日本 05 线路2-1A
+      - 美国1-1A
+      - 香港F1 01 线路1-1A
+      - 日本 01 线路1-1A
+      - 台湾混合 02 线路2-1B
+      - 日本 03 线路1-1A
+      - 香港HGC 01 线路2-1B
+      - 香港-1A
+      - 韩国 01 线路2-1B
+      - 日本 05 线路2-1B
+      - 台湾HINET 04 线路1-1B
+      - 香港F1 04 线路2-1B
+      - 日本 01 线路1-1B
+      - 香港 04 线路2-1A
+      - 美国 03 线路1-1A
+      - 新加坡 03 线路2-1A
+      - 01 限 30 MBS-1B-GPT
+      - 香港 01 线路1-1B
+      - 新加坡 02 线路1-1B
+      - 02 限 30 MBS-1B-GPT
+      - 新加坡 03 线路2-1B
+      - 新加坡 04 线路1-1A
+      - 新加坡 01 线路1-1A
+      - 新加坡 04 线路1-1B
+      - 香港-1B
+      - 美国 03 线路1-1B
+      - 日本 04 线路2-1B
+      - 美国 02 线路1-1A
+      - 台湾混合 02 线路2-1A
+      - 日本 06 线路1-1A
+      - 新加坡 01 线路1-1B
+      - 香港 01 线路1-1A
+      - 台湾HINET 03 线路2-1B
+      - 美国 02 线路1-1B
+      - 美国2-1A
+      - 日本 06 线路1-1B
+      - 日本 02 线路2-1A
+      - 日本 04 线路2-1A
+      - 02 限 30 MBS-1A-GPT
+      - 香港 03 线路1-1A
+      - 香港HGC 02 线路2-1B
+      - 台湾HINET 03 线路2-1A
+      - 香港F1 02 线路1-1A
+      - 香港 02 线路2-1B
+      - 香港F1 02 线路1-1B
+      - 香港F1 03 线路1-1B
+      - 台湾混合 01 线路2-1B
+      - 台湾混合 01 线路2-1A
+      - HK 香港 I IEPL
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 英国 TG-@bearsdream
-      - 10日本-专线(iOS优化)
-      - 25韩国-专线(iOS优化)
-      - 15新加坡-专线(iOS优化)
-      - 11美国-全网优化(iOS优化)
-      - 8韩国-专线(iOS优化)
-      - 12美国凤凰城-专线(iOS优化)
-      - 9韩国-专线(iOS优化)
-      - 24新加坡-专线(iOS优化)
-      - 1香港-专线(iOS优化)
-      - 19澳洲-专线(iOS优化)
-      - 2香港-专线(iOS优化)
-      - JP, Tokyo
-      - HK, Los Angeles
-      - CA, Vancouver
-      - US, Dallas 2
+      - 香港 03 线路1-1B
+      - 台湾HINET 04 线路1-1A
+      - 韩国 01 线路2-1A
+      - 日本 03 线路1-1B
+      - 香港HGC 01 线路2-1A
+      - 香港F1 01 线路1-1B
+      - 香港F1 03 线路1-1A
+      - 香港 02 线路2-1A
+      - 香港HGC 02 线路2-1A
+      - 香港 04 线路2-1B
+      - 新加坡 02 线路1-1A
+      - 日本 05 线路2-1A
+      - 美国1-1A
+      - 香港F1 01 线路1-1A
+      - 日本 01 线路1-1A
+      - 台湾混合 02 线路2-1B
+      - 日本 03 线路1-1A
+      - 香港HGC 01 线路2-1B
+      - 香港-1A
+      - 韩国 01 线路2-1B
+      - 日本 05 线路2-1B
+      - 台湾HINET 04 线路1-1B
+      - 香港F1 04 线路2-1B
+      - 日本 01 线路1-1B
+      - 香港 04 线路2-1A
+      - 美国 03 线路1-1A
+      - 新加坡 03 线路2-1A
+      - 01 限 30 MBS-1B-GPT
+      - 香港 01 线路1-1B
+      - 新加坡 02 线路1-1B
+      - 02 限 30 MBS-1B-GPT
+      - 新加坡 03 线路2-1B
+      - 新加坡 04 线路1-1A
+      - 新加坡 01 线路1-1A
+      - 新加坡 04 线路1-1B
+      - 香港-1B
+      - 美国 03 线路1-1B
+      - 日本 04 线路2-1B
+      - 美国 02 线路1-1A
+      - 台湾混合 02 线路2-1A
+      - 日本 06 线路1-1A
+      - 新加坡 01 线路1-1B
+      - 香港 01 线路1-1A
+      - 台湾HINET 03 线路2-1B
+      - 美国 02 线路1-1B
+      - 美国2-1A
+      - 日本 06 线路1-1B
+      - 日本 02 线路2-1A
+      - 日本 04 线路2-1A
+      - 02 限 30 MBS-1A-GPT
+      - 香港 03 线路1-1A
+      - 香港HGC 02 线路2-1B
+      - 台湾HINET 03 线路2-1A
+      - 香港F1 02 线路1-1A
+      - 香港 02 线路2-1B
+      - 香港F1 02 线路1-1B
+      - 香港F1 03 线路1-1B
+      - 台湾混合 01 线路2-1B
+      - 台湾混合 01 线路2-1A
+      - HK 香港 I IEPL
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -206,22 +586,66 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 英国 TG-@bearsdream
-      - 10日本-专线(iOS优化)
-      - 25韩国-专线(iOS优化)
-      - 15新加坡-专线(iOS优化)
-      - 11美国-全网优化(iOS优化)
-      - 8韩国-专线(iOS优化)
-      - 12美国凤凰城-专线(iOS优化)
-      - 9韩国-专线(iOS优化)
-      - 24新加坡-专线(iOS优化)
-      - 1香港-专线(iOS优化)
-      - 19澳洲-专线(iOS优化)
-      - 2香港-专线(iOS优化)
-      - JP, Tokyo
-      - HK, Los Angeles
-      - CA, Vancouver
-      - US, Dallas 2
+      - 香港 03 线路1-1B
+      - 台湾HINET 04 线路1-1A
+      - 韩国 01 线路2-1A
+      - 日本 03 线路1-1B
+      - 香港HGC 01 线路2-1A
+      - 香港F1 01 线路1-1B
+      - 香港F1 03 线路1-1A
+      - 香港 02 线路2-1A
+      - 香港HGC 02 线路2-1A
+      - 香港 04 线路2-1B
+      - 新加坡 02 线路1-1A
+      - 日本 05 线路2-1A
+      - 美国1-1A
+      - 香港F1 01 线路1-1A
+      - 日本 01 线路1-1A
+      - 台湾混合 02 线路2-1B
+      - 日本 03 线路1-1A
+      - 香港HGC 01 线路2-1B
+      - 香港-1A
+      - 韩国 01 线路2-1B
+      - 日本 05 线路2-1B
+      - 台湾HINET 04 线路1-1B
+      - 香港F1 04 线路2-1B
+      - 日本 01 线路1-1B
+      - 香港 04 线路2-1A
+      - 美国 03 线路1-1A
+      - 新加坡 03 线路2-1A
+      - 01 限 30 MBS-1B-GPT
+      - 香港 01 线路1-1B
+      - 新加坡 02 线路1-1B
+      - 02 限 30 MBS-1B-GPT
+      - 新加坡 03 线路2-1B
+      - 新加坡 04 线路1-1A
+      - 新加坡 01 线路1-1A
+      - 新加坡 04 线路1-1B
+      - 香港-1B
+      - 美国 03 线路1-1B
+      - 日本 04 线路2-1B
+      - 美国 02 线路1-1A
+      - 台湾混合 02 线路2-1A
+      - 日本 06 线路1-1A
+      - 新加坡 01 线路1-1B
+      - 香港 01 线路1-1A
+      - 台湾HINET 03 线路2-1B
+      - 美国 02 线路1-1B
+      - 美国2-1A
+      - 日本 06 线路1-1B
+      - 日本 02 线路2-1A
+      - 日本 04 线路2-1A
+      - 02 限 30 MBS-1A-GPT
+      - 香港 03 线路1-1A
+      - 香港HGC 02 线路2-1B
+      - 台湾HINET 03 线路2-1A
+      - 香港F1 02 线路1-1A
+      - 香港 02 线路2-1B
+      - 香港F1 02 线路1-1B
+      - 香港F1 03 线路1-1B
+      - 台湾混合 01 线路2-1B
+      - 台湾混合 01 线路2-1A
+      - HK 香港 I IEPL
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
