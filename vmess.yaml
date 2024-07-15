@@ -15,16 +15,45 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：500 GB', type: ss, server: gd1.chuanping.wang, port: 10597, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
-    - { name: 'cfyun.top 官方网站', type: ss, server: gd1.chuanping.wang, port: 10597, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
-    - { name: 套餐到期：2024-07-27, type: ss, server: gd1.chuanping.wang, port: 10597, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
-    - { name: 负载均衡｜日本JP, type: ss, server: gd1.chuanping.wang, port: 10597, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
-    - { name: 负载均衡｜美国US, type: ss, server: gd1.chuanping.wang, port: 10599, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
-    - { name: 负载均衡｜新加坡SG, type: ss, server: gd1.chuanping.wang, port: 10596, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: '剩余流量：430.94 GB', type: ss, server: gd2.chuanping.wang, port: 10571, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 'cfyun.top 官方网站', type: ss, server: gd2.chuanping.wang, port: 10571, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 套餐到期：2024-07-27, type: ss, server: gd2.chuanping.wang, port: 10571, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 香港HK1, type: ss, server: gd2.chuanping.wang, port: 10571, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 香港HK2, type: ss, server: gd3.chuanping.wang, port: 10556, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 香港HK3, type: ss, server: gd3.chuanping.wang, port: 10558, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 香港HKT1, type: ss, server: gd2.chuanping.wang, port: 10574, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 香港HKT2, type: ss, server: gd3.chuanping.wang, port: 10523, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 日本JP1, type: ss, server: js1.chuanping.wang, port: 10466, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 日本JP2, type: ss, server: js1.chuanping.wang, port: 10467, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 日本JP3, type: ss, server: js1.chuanping.wang, port: 10468, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 日本JP4, type: ss, server: js1.chuanping.wang, port: 10469, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 新加坡SG1, type: ss, server: gd1.chuanping.wang, port: 10596, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 新加坡SG2, type: ss, server: gd3.chuanping.wang, port: 10519, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 新加坡SG3, type: ss, server: gd1.chuanping.wang, port: 10598, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 新加坡SG4, type: ss, server: gd2.chuanping.wang, port: 10573, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 美国US1, type: ss, server: gd1.chuanping.wang, port: 10599, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 美国US2, type: ss, server: gd1.chuanping.wang, port: 10597, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 'Netflix | 新加坡SG1', type: ss, server: gd3.chuanping.wang, port: 10559, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 'Netflix | 新加坡SG2', type: ss, server: gd3.chuanping.wang, port: 10522, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 'Netflix | 新加坡SG3', type: ss, server: gd3.chuanping.wang, port: 10524, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 'Netflix | 新加坡SG4', type: ss, server: gd3.chuanping.wang, port: 10517, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 'Netflix | 台湾TW1', type: ss, server: gd2.chuanping.wang, port: 10572, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 'Netflix | 台湾TW2', type: ss, server: gd1.chuanping.wang, port: 10521, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 'Netflix | 台湾TW3', type: ss, server: gd3.chuanping.wang, port: 10516, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 'Netflix | 日本JP1', type: ss, server: gd1.chuanping.wang, port: 10522, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 'Netflix | 日本JP2', type: ss, server: gd1.chuanping.wang, port: 10524, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 'Netflix | 美国US1', type: ss, server: gd3.chuanping.wang, port: 10557, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: 'Netflix | 美国US2', type: ss, server: gd3.chuanping.wang, port: 10521, cipher: aes-128-gcm, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true }
+    - { name: '直连 | 新加坡SG1', type: trojan, server: awssg1.trojanws.xyz, port: 443, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true, network: ws, ws-opts: { path: /CFJICHANG, headers: { Host: awssg1.trojanws.xyz } }, sni: awssg1.trojanws.xyz }
+    - { name: 'CF | 新加坡SG1 | 移动联通', type: trojan, server: cu.cfyun.top, port: 443, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true, network: ws, ws-opts: { path: /CFJICHANG, headers: { Host: cfsg1.trojanwss.xyz } }, sni: cfsg1.trojanwss.xyz }
+    - { name: 'CF | 美国US1 | 电信', type: trojan, server: ct.cfyun.top, port: 443, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true, network: ws, ws-opts: { path: /CFJICHANG, headers: { Host: cfus1.trojanwss.xyz } }, sni: cfus1.trojanwss.xyz }
+    - { name: 'CF | 美国US2 | 电信', type: trojan, server: ct.cfyun.top, port: 443, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true, network: ws, ws-opts: { path: /CFJICHANG, headers: { Host: cfus2.trojanwss.xyz } }, sni: cfus2.trojanwss.xyz }
+    - { name: 'CF | 美国US3 | 电信', type: trojan, server: ct.cfyun.top, port: 443, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true, network: ws, ws-opts: { path: /CFJICHANG, headers: { Host: cfus3.trojanwss.xyz } }, sni: cfus3.trojanwss.xyz }
+    - { name: 'CF | 美国US4 | 电信', type: trojan, server: ct.cfyun.top, port: 443, password: e7914306-ed56-4a2e-afcc-b37317c77a68, udp: true, network: ws, ws-opts: { path: /CFJICHANG, headers: { Host: cfus4.trojanwss.xyz } }, sni: cfus4.trojanwss.xyz }
 proxy-groups:
-    - { name: CF机场2.0, type: select, proxies: [自动选择, 故障转移, '剩余流量：500 GB', 'cfyun.top 官方网站', 套餐到期：2024-07-27, 负载均衡｜日本JP, 负载均衡｜美国US, 负载均衡｜新加坡SG] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：500 GB', 'cfyun.top 官方网站', 套餐到期：2024-07-27, 负载均衡｜日本JP, 负载均衡｜美国US, 负载均衡｜新加坡SG], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：500 GB', 'cfyun.top 官方网站', 套餐到期：2024-07-27, 负载均衡｜日本JP, 负载均衡｜美国US, 负载均衡｜新加坡SG], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: CF机场2.0, type: select, proxies: [自动选择, 故障转移, '剩余流量：430.94 GB', 'cfyun.top 官方网站', 套餐到期：2024-07-27, 香港HK1, 香港HK2, 香港HK3, 香港HKT1, 香港HKT2, 日本JP1, 日本JP2, 日本JP3, 日本JP4, 新加坡SG1, 新加坡SG2, 新加坡SG3, 新加坡SG4, 美国US1, 美国US2, 'Netflix | 新加坡SG1', 'Netflix | 新加坡SG2', 'Netflix | 新加坡SG3', 'Netflix | 新加坡SG4', 'Netflix | 台湾TW1', 'Netflix | 台湾TW2', 'Netflix | 台湾TW3', 'Netflix | 日本JP1', 'Netflix | 日本JP2', 'Netflix | 美国US1', 'Netflix | 美国US2', '直连 | 新加坡SG1', 'CF | 新加坡SG1 | 移动联通', 'CF | 美国US1 | 电信', 'CF | 美国US2 | 电信', 'CF | 美国US3 | 电信', 'CF | 美国US4 | 电信'] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：430.94 GB', 'cfyun.top 官方网站', 套餐到期：2024-07-27, 香港HK1, 香港HK2, 香港HK3, 香港HKT1, 香港HKT2, 日本JP1, 日本JP2, 日本JP3, 日本JP4, 新加坡SG1, 新加坡SG2, 新加坡SG3, 新加坡SG4, 美国US1, 美国US2, 'Netflix | 新加坡SG1', 'Netflix | 新加坡SG2', 'Netflix | 新加坡SG3', 'Netflix | 新加坡SG4', 'Netflix | 台湾TW1', 'Netflix | 台湾TW2', 'Netflix | 台湾TW3', 'Netflix | 日本JP1', 'Netflix | 日本JP2', 'Netflix | 美国US1', 'Netflix | 美国US2', '直连 | 新加坡SG1', 'CF | 新加坡SG1 | 移动联通', 'CF | 美国US1 | 电信', 'CF | 美国US2 | 电信', 'CF | 美国US3 | 电信', 'CF | 美国US4 | 电信'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：430.94 GB', 'cfyun.top 官方网站', 套餐到期：2024-07-27, 香港HK1, 香港HK2, 香港HK3, 香港HKT1, 香港HKT2, 日本JP1, 日本JP2, 日本JP3, 日本JP4, 新加坡SG1, 新加坡SG2, 新加坡SG3, 新加坡SG4, 美国US1, 美国US2, 'Netflix | 新加坡SG1', 'Netflix | 新加坡SG2', 'Netflix | 新加坡SG3', 'Netflix | 新加坡SG4', 'Netflix | 台湾TW1', 'Netflix | 台湾TW2', 'Netflix | 台湾TW3', 'Netflix | 日本JP1', 'Netflix | 日本JP2', 'Netflix | 美国US1', 'Netflix | 美国US2', '直连 | 新加坡SG1', 'CF | 新加坡SG1 | 移动联通', 'CF | 美国US1 | 电信', 'CF | 美国US2 | 电信', 'CF | 美国US3 | 电信', 'CF | 美国US4 | 电信'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN,duijie.cfyun.top,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,CF机场2.0'
@@ -539,4 +568,4 @@ rules:
     - 'DOMAIN-SUFFIX,cn,DIRECT'
     - 'DOMAIN-KEYWORD,-cn,DIRECT'
     - 'GEOIP,CN,DIRECT'
-    - 'MATCH,CF机场2.0'
+    - 'MATCH,CF机场2.0
