@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2024-07-08 09:34:23
+# 客户端：Clash
+# 创建时间：2024-07-17 15:56:40
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：17
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -86,60 +85,158 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇯🇵 日本 01","type":"hysteria2","server":"jp-01.worldfirst.eu.org","port":44300,"password":"e0099c6c-2cc0-4625-90bc-2a0676f7ebbf","sni":"jp-01.worldfirst.eu.org","skip-cert-verify":true}
-  - {"name":"🇺🇸 美国 01","type":"hysteria2","server":"us-01.worldfirst.eu.org","port":44300,"password":"e0099c6c-2cc0-4625-90bc-2a0676f7ebbf","sni":"us-01.worldfirst.eu.org","skip-cert-verify":true}
-  - {"name":"🇺🇸 美国🚀","type":"hysteria2","server":"zz.worldfirst.eu.org","port":46610,"password":"e0099c6c-2cc0-4625-90bc-2a0676f7ebbf","sni":"us-01.worldfirst.eu.org","skip-cert-verify":true}
+  - {"name":"罗马尼亚+-+布加勒斯特+-+M247+Europe+SRL+-+1","type":"ss","server":"194.14.217.115","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"波黑+-+新特拉夫尼克+-+Globalhost+d.o.o.+-+Web+Hosting+Solutions+-+1","type":"ss","server":"185.164.35.9","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"新加坡+-+新加坡+-+Amazon+Technologies+Inc.+-+3","type":"ss","server":"54.255.232.203","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"亚美尼亚+-+Yerevan+-+G-Core+Labs+S.A.+-+1","type":"ss","server":"146.185.248.22","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"法国+-+格拉沃利讷+-+OVH+SAS+-+19","type":"trojan","server":"51.210.182.170","port":443,"udp":true,"password":"cf1a0d20-43ad-11ef-935f-1239d0255272","sni":"fr1.test3.net","skip-cert-verify":true}
+  - {"name":"法国+-+巴黎+-+Amazon+Technologies+Inc.+-+5","type":"trojan","server":"13.37.197.109","port":22222,"udp":true,"password":"telegram-id-privatevpns","skip-cert-verify":true}
+  - {"name":"日本+-+东京+-+Amazon+Technologies+Inc.+-+2","type":"ss","server":"13.231.36.179","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"中国 - 香港 - SunnyVision Limited - 1","type":"ssr","server":"150.107.46.21","port":8083,"password":"iFqnzSscN","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"origin","group":"SSRProvider"}
+  - {"name":"以色列+-+特拉维夫+-+Interhost+Communication+Solutions+Ltd.+-+1","type":"ss","server":"192.71.27.87","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"希腊+-+塞萨洛尼基+-+SYNAPSECOM+S.A.+Provider+of+Telecommunications+and+Internet+Services+-+1","type":"ss","server":"192.71.166.100","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"日本+-+东京+-+Amazon.com,+Inc.+-+1","type":"ss","server":"57.180.39.104","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"墨西哥+-+Fuentes+del+Valle+-+Sondatech+S.A.S.+-+1","type":"ss","server":"190.103.179.23","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"丹麦+-+哥本哈根+-+M247+Europe+SRL+-+1","type":"ss","server":"38.180.20.219","port":1080,"password":"3pURuTUf-lFgg5qWg8euFA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中国 - 台湾 - Akari Networks - 3","type":"vmess","server":"pro01.dns2024.org","port":3223,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"韩国+-+首尔特别市+-+Amazon.com,+Inc.+-+1","type":"ss","server":"43.201.254.211","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"美国+-+洛杉矶+-+Global+Communication+Network+Limited+-+343","type":"ss","server":"speedtest-rtc.xtspeeder002.xyz","port":37041,"password":"JHe7ay97yuw8ue","cipher":"aes-256-ctr","plugin":"simple-obfs","plugin-opts":{"mode":"websocket"}}
+  - {"name":"韩国+-+首尔特别市+-+MOACK.Co.LTD+-+8","type":"ss","server":"kr1.mhw7e2.online","port":20019,"password":"70747514-fb14-4f31-8390-e1f0453eff6d","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵 日本 01
-      - 🇺🇸 美国 01
-      - 🇺🇸 美国🚀
+      - 罗马尼亚+-+布加勒斯特+-+M247+Europe+SRL+-+1
+      - 波黑+-+新特拉夫尼克+-+Globalhost+d.o.o.+-+Web+Hosting+Solutions+-+1
+      - 新加坡+-+新加坡+-+Amazon+Technologies+Inc.+-+3
+      - 亚美尼亚+-+Yerevan+-+G-Core+Labs+S.A.+-+1
+      - 法国+-+格拉沃利讷+-+OVH+SAS+-+19
+      - 法国+-+巴黎+-+Amazon+Technologies+Inc.+-+5
+      - 日本+-+东京+-+Amazon+Technologies+Inc.+-+2
+      - 中国 - 香港 - SunnyVision Limited - 1
+      - 以色列+-+特拉维夫+-+Interhost+Communication+Solutions+Ltd.+-+1
+      -   希腊+-+塞萨洛尼基+-+SYNAPSECOM+S.A.+Provider+of+Telecommunications+and+Internet+Services+-+1
+      - 日本+-+东京+-+Amazon.com,+Inc.+-+1
+      - 墨西哥+-+Fuentes+del+Valle+-+Sondatech+S.A.S.+-+1
+      - 丹麦+-+哥本哈根+-+M247+Europe+SRL+-+1
+      - 中国 - 台湾 - Akari Networks - 3
+      - 韩国+-+首尔特别市+-+Amazon.com,+Inc.+-+1
+      - 美国+-+洛杉矶+-+Global+Communication+Network+Limited+-+343
+      - 韩国+-+首尔特别市+-+MOACK.Co.LTD+-+8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本 01
-      - 🇺🇸 美国 01
-      - 🇺🇸 美国🚀
+      - 罗马尼亚+-+布加勒斯特+-+M247+Europe+SRL+-+1
+      - 波黑+-+新特拉夫尼克+-+Globalhost+d.o.o.+-+Web+Hosting+Solutions+-+1
+      - 新加坡+-+新加坡+-+Amazon+Technologies+Inc.+-+3
+      - 亚美尼亚+-+Yerevan+-+G-Core+Labs+S.A.+-+1
+      - 法国+-+格拉沃利讷+-+OVH+SAS+-+19
+      - 法国+-+巴黎+-+Amazon+Technologies+Inc.+-+5
+      - 日本+-+东京+-+Amazon+Technologies+Inc.+-+2
+      - 中国 - 香港 - SunnyVision Limited - 1
+      - 以色列+-+特拉维夫+-+Interhost+Communication+Solutions+Ltd.+-+1
+      -   希腊+-+塞萨洛尼基+-+SYNAPSECOM+S.A.+Provider+of+Telecommunications+and+Internet+Services+-+1
+      - 日本+-+东京+-+Amazon.com,+Inc.+-+1
+      - 墨西哥+-+Fuentes+del+Valle+-+Sondatech+S.A.S.+-+1
+      - 丹麦+-+哥本哈根+-+M247+Europe+SRL+-+1
+      - 中国 - 台湾 - Akari Networks - 3
+      - 韩国+-+首尔特别市+-+Amazon.com,+Inc.+-+1
+      - 美国+-+洛杉矶+-+Global+Communication+Network+Limited+-+343
+      - 韩国+-+首尔特别市+-+MOACK.Co.LTD+-+8
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本 01
-      - 🇺🇸 美国 01
-      - 🇺🇸 美国🚀
+      - 罗马尼亚+-+布加勒斯特+-+M247+Europe+SRL+-+1
+      - 波黑+-+新特拉夫尼克+-+Globalhost+d.o.o.+-+Web+Hosting+Solutions+-+1
+      - 新加坡+-+新加坡+-+Amazon+Technologies+Inc.+-+3
+      - 亚美尼亚+-+Yerevan+-+G-Core+Labs+S.A.+-+1
+      - 法国+-+格拉沃利讷+-+OVH+SAS+-+19
+      - 法国+-+巴黎+-+Amazon+Technologies+Inc.+-+5
+      - 日本+-+东京+-+Amazon+Technologies+Inc.+-+2
+      - 中国 - 香港 - SunnyVision Limited - 1
+      - 以色列+-+特拉维夫+-+Interhost+Communication+Solutions+Ltd.+-+1
+      -   希腊+-+塞萨洛尼基+-+SYNAPSECOM+S.A.+Provider+of+Telecommunications+and+Internet+Services+-+1
+      - 日本+-+东京+-+Amazon.com,+Inc.+-+1
+      - 墨西哥+-+Fuentes+del+Valle+-+Sondatech+S.A.S.+-+1
+      - 丹麦+-+哥本哈根+-+M247+Europe+SRL+-+1
+      - 中国 - 台湾 - Akari Networks - 3
+      - 韩国+-+首尔特别市+-+Amazon.com,+Inc.+-+1
+      - 美国+-+洛杉矶+-+Global+Communication+Network+Limited+-+343
+      - 韩国+-+首尔特别市+-+MOACK.Co.LTD+-+8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本 01
-      - 🇺🇸 美国 01
-      - 🇺🇸 美国🚀
+      - 罗马尼亚+-+布加勒斯特+-+M247+Europe+SRL+-+1
+      - 波黑+-+新特拉夫尼克+-+Globalhost+d.o.o.+-+Web+Hosting+Solutions+-+1
+      - 新加坡+-+新加坡+-+Amazon+Technologies+Inc.+-+3
+      - 亚美尼亚+-+Yerevan+-+G-Core+Labs+S.A.+-+1
+      - 法国+-+格拉沃利讷+-+OVH+SAS+-+19
+      - 法国+-+巴黎+-+Amazon+Technologies+Inc.+-+5
+      - 日本+-+东京+-+Amazon+Technologies+Inc.+-+2
+      - 中国 - 香港 - SunnyVision Limited - 1
+      - 以色列+-+特拉维夫+-+Interhost+Communication+Solutions+Ltd.+-+1
+      -   希腊+-+塞萨洛尼基+-+SYNAPSECOM+S.A.+Provider+of+Telecommunications+and+Internet+Services+-+1
+      - 日本+-+东京+-+Amazon.com,+Inc.+-+1
+      - 墨西哥+-+Fuentes+del+Valle+-+Sondatech+S.A.S.+-+1
+      - 丹麦+-+哥本哈根+-+M247+Europe+SRL+-+1
+      - 中国 - 台湾 - Akari Networks - 3
+      - 韩国+-+首尔特别市+-+Amazon.com,+Inc.+-+1
+      - 美国+-+洛杉矶+-+Global+Communication+Network+Limited+-+343
+      - 韩国+-+首尔特别市+-+MOACK.Co.LTD+-+8
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵 日本 01
-      - 🇺🇸 美国 01
-      - 🇺🇸 美国🚀
+      - 罗马尼亚+-+布加勒斯特+-+M247+Europe+SRL+-+1
+      - 波黑+-+新特拉夫尼克+-+Globalhost+d.o.o.+-+Web+Hosting+Solutions+-+1
+      - 新加坡+-+新加坡+-+Amazon+Technologies+Inc.+-+3
+      - 亚美尼亚+-+Yerevan+-+G-Core+Labs+S.A.+-+1
+      - 法国+-+格拉沃利讷+-+OVH+SAS+-+19
+      - 法国+-+巴黎+-+Amazon+Technologies+Inc.+-+5
+      - 日本+-+东京+-+Amazon+Technologies+Inc.+-+2
+      - 中国 - 香港 - SunnyVision Limited - 1
+      - 以色列+-+特拉维夫+-+Interhost+Communication+Solutions+Ltd.+-+1
+      -   希腊+-+塞萨洛尼基+-+SYNAPSECOM+S.A.+Provider+of+Telecommunications+and+Internet+Services+-+1
+      - 日本+-+东京+-+Amazon.com,+Inc.+-+1
+      - 墨西哥+-+Fuentes+del+Valle+-+Sondatech+S.A.S.+-+1
+      - 丹麦+-+哥本哈根+-+M247+Europe+SRL+-+1
+      - 中国 - 台湾 - Akari Networks - 3
+      - 韩国+-+首尔特别市+-+Amazon.com,+Inc.+-+1
+      - 美国+-+洛杉矶+-+Global+Communication+Network+Limited+-+343
+      - 韩国+-+首尔特别市+-+MOACK.Co.LTD+-+8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本 01
-      - 🇺🇸 美国 01
-      - 🇺🇸 美国🚀
+      - 罗马尼亚+-+布加勒斯特+-+M247+Europe+SRL+-+1
+      - 波黑+-+新特拉夫尼克+-+Globalhost+d.o.o.+-+Web+Hosting+Solutions+-+1
+      - 新加坡+-+新加坡+-+Amazon+Technologies+Inc.+-+3
+      - 亚美尼亚+-+Yerevan+-+G-Core+Labs+S.A.+-+1
+      - 法国+-+格拉沃利讷+-+OVH+SAS+-+19
+      - 法国+-+巴黎+-+Amazon+Technologies+Inc.+-+5
+      - 日本+-+东京+-+Amazon+Technologies+Inc.+-+2
+      - 中国 - 香港 - SunnyVision Limited - 1
+      - 以色列+-+特拉维夫+-+Interhost+Communication+Solutions+Ltd.+-+1
+      -   希腊+-+塞萨洛尼基+-+SYNAPSECOM+S.A.+Provider+of+Telecommunications+and+Internet+Services+-+1
+      - 日本+-+东京+-+Amazon.com,+Inc.+-+1
+      - 墨西哥+-+Fuentes+del+Valle+-+Sondatech+S.A.S.+-+1
+      - 丹麦+-+哥本哈根+-+M247+Europe+SRL+-+1
+      - 中国 - 台湾 - Akari Networks - 3
+      - 韩国+-+首尔特别市+-+Amazon.com,+Inc.+-+1
+      - 美国+-+洛杉矶+-+Global+Communication+Network+Limited+-+343
+      - 韩国+-+首尔特别市+-+MOACK.Co.LTD+-+8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,9 +259,23 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本 01
-      - 🇺🇸 美国 01
-      - 🇺🇸 美国🚀
+      - 罗马尼亚+-+布加勒斯特+-+M247+Europe+SRL+-+1
+      - 波黑+-+新特拉夫尼克+-+Globalhost+d.o.o.+-+Web+Hosting+Solutions+-+1
+      - 新加坡+-+新加坡+-+Amazon+Technologies+Inc.+-+3
+      - 亚美尼亚+-+Yerevan+-+G-Core+Labs+S.A.+-+1
+      - 法国+-+格拉沃利讷+-+OVH+SAS+-+19
+      - 法国+-+巴黎+-+Amazon+Technologies+Inc.+-+5
+      - 日本+-+东京+-+Amazon+Technologies+Inc.+-+2
+      - 中国 - 香港 - SunnyVision Limited - 1
+      - 以色列+-+特拉维夫+-+Interhost+Communication+Solutions+Ltd.+-+1
+      -   希腊+-+塞萨洛尼基+-+SYNAPSECOM+S.A.+Provider+of+Telecommunications+and+Internet+Services+-+1
+      - 日本+-+东京+-+Amazon.com,+Inc.+-+1
+      - 墨西哥+-+Fuentes+del+Valle+-+Sondatech+S.A.S.+-+1
+      - 丹麦+-+哥本哈根+-+M247+Europe+SRL+-+1
+      - 中国 - 台湾 - Akari Networks - 3
+      - 韩国+-+首尔特别市+-+Amazon.com,+Inc.+-+1
+      - 美国+-+洛杉矶+-+Global+Communication+Network+Limited+-+343
+      - 韩国+-+首尔特别市+-+MOACK.Co.LTD+-+8
 
 rules:
 # 本地/局域网地址
