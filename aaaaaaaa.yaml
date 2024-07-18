@@ -5,139 +5,123 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 台湾 - IEPL - SS/SSR - 04, server: cm1-tw.hutaonode3.top, port: 12554, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 新加坡 - IEPL - SS/SSR - 05, server: cm1-sg.hutaonode3.top, port: 12355, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 香港 - IEPL - SS/SSR - 06, server: cm1-hk.hutaonode3.top, port: 12456, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 香港 - IEPL - SS/SSR - 08, server: cm1-hk.hutaonode3.top, port: 12458, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 香港 - IEPL - SS/SSR - 03, server: cm1-hk.hutaonode3.top, port: 12453, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 香港 - IEPL - SS/SSR - 05, server: cm1-hk.hutaonode3.top, port: 12455, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 台湾 - IEPL - SS/SSR - 06, server: cm1-tw.hutaonode3.top, port: 12556, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 台湾 - IEPL - SS/SSR - 05, server: cm1-tw.hutaonode3.top, port: 12555, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 新加坡 - IEPL - SS/SSR - 03, server: cm1-sg.hutaonode3.top, port: 12353, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 香港 - IEPL - SS/SSR - 09, server: cm1-hk.hutaonode3.top, port: 12459, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 新加坡 - IEPL - SS/SSR - 04, server: cm1-sg.hutaonode3.top, port: 12354, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 新加坡 - IEPL - SS/SSR - 02, server: cm1-sg.hutaonode3.top, port: 12352, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 香港 - IEPL - SS/SSR - 11, server: cm1-hk.hutaonode3.top, port: 12461, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 美国 - IEPL - SS/SSR - 04, server: cm1-us.hutaonode3.top, port: 12254, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 美国 - IEPL - SS/SSR - 06, server: cm1-us.hutaonode3.top, port: 12256, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 新加坡 - IEPL - SS/SSR - 06, server: cm1-sg.hutaonode3.top, port: 12356, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 香港 - IEPL - SS/SSR - 07, server: cm1-hk.hutaonode3.top, port: 12457, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 台湾 - IEPL - SS/SSR - 01, server: cm1-tw.hutaonode3.top, port: 12551, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 新加坡 - IEPL - SS/SSR - 01, server: cm1-sg.hutaonode3.top, port: 12351, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 香港 - IEPL - SS/SSR - 04, server: cm1-hk.hutaonode3.top, port: 12454, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 新加坡 - IEPL - SS/SSR - 07, server: cm1-sg.hutaonode3.top, port: 12357, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 香港 - IEPL - SS/SSR - 12, server: cm1-hk.hutaonode3.top, port: 12462, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 香港 - IEPL - SS/SSR - 02, server: cm1-hk.hutaonode3.top, port: 12452, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 台湾 - IEPL - SS/SSR - 02, server: cm1-tw.hutaonode3.top, port: 12552, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 香港 - IEPL - SS/SSR - 10, server: cm1-hk.hutaonode3.top, port: 12460, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 台湾 - IEPL - SS/SSR - 03, server: cm1-tw.hutaonode3.top, port: 12553, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 日本 - IEPL - SS/SSR - 01, server: cm1-jp.hutaonode3.top, port: 12051, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 日本 - IEPL - SS/SSR - 05, server: cm1-jp.hutaonode3.top, port: 12055, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
-  - {name: 新加坡 - IEPL - SS/SSR - 08, server: cm1-sg.hutaonode3.top, port: 12358, type: ss, cipher: chacha20-ietf, password: HuTaoCloud, plugin: obfs, plugin-opts: {mode: http, host: 36a1a32505.microsoft.com}, udp: true}
+  - {name: Netflix | 日本JP2, server: gd1.chuanping.wang, port: 10524, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: Netflix | 美国US2, server: gd3.chuanping.wang, port: 10521, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 日本JP1, server: js1.chuanping.wang, port: 10466, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 日本JP4, server: js1.chuanping.wang, port: 10469, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 香港HKT1, server: gd2.chuanping.wang, port: 10574, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: Netflix | 美国US1, server: gd3.chuanping.wang, port: 10557, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: Netflix | 新加坡SG1, server: gd3.chuanping.wang, port: 10559, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: Netflix | 新加坡SG2, server: gd3.chuanping.wang, port: 10522, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 新加坡SG3, server: gd1.chuanping.wang, port: 10598, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: Netflix | 新加坡SG3, server: gd3.chuanping.wang, port: 10524, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 日本JP2, server: js1.chuanping.wang, port: 10467, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 新加坡SG1, server: gd1.chuanping.wang, port: 10596, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: Netflix | 日本JP1, server: gd1.chuanping.wang, port: 10522, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 香港HKT2, server: gd3.chuanping.wang, port: 10523, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 日本JP3, server: js1.chuanping.wang, port: 10468, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 美国US1, server: gd1.chuanping.wang, port: 10599, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: Netflix | 台湾TW1, server: gd2.chuanping.wang, port: 10572, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 香港HK2, server: gd3.chuanping.wang, port: 10556, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: Netflix | 新加坡SG4, server: gd3.chuanping.wang, port: 10517, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 新加坡SG2, server: gd3.chuanping.wang, port: 10519, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: Netflix | 台湾TW3, server: gd3.chuanping.wang, port: 10516, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 香港HK3, server: gd3.chuanping.wang, port: 10558, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 美国US2, server: gd1.chuanping.wang, port: 10597, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: Netflix | 台湾TW2, server: gd1.chuanping.wang, port: 10521, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
+  - {name: 新加坡SG4, server: gd2.chuanping.wang, port: 10573, type: ss, cipher: aes-128-gcm, password: c0b1f63a-42ee-4075-9473-228ea03794ba, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 05
-      - 香港 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 08
-      - 香港 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 05
-      - 台湾 - IEPL - SS/SSR - 06
-      - 台湾 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 09
-      - 新加坡 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 11
-      - 美国 - IEPL - SS/SSR - 04
-      - 美国 - IEPL - SS/SSR - 06
-      - 新加坡 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 07
-      - 台湾 - IEPL - SS/SSR - 01
-      - 新加坡 - IEPL - SS/SSR - 01
-      - 香港 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 07
-      - 香港 - IEPL - SS/SSR - 12
-      - 香港 - IEPL - SS/SSR - 02
-      - 台湾 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 10
-      - 台湾 - IEPL - SS/SSR - 03
-      - 日本 - IEPL - SS/SSR - 01
-      - 日本 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 08
+      - Netflix | 日本JP2
+      - Netflix | 美国US2
+      - 日本JP1
+      - 日本JP4
+      - 香港HKT1
+      - Netflix | 美国US1
+      - Netflix | 新加坡SG1
+      - Netflix | 新加坡SG2
+      - 新加坡SG3
+      - Netflix | 新加坡SG3
+      - 日本JP2
+      - 新加坡SG1
+      - Netflix | 日本JP1
+      - 香港HKT2
+      - 日本JP3
+      - 美国US1
+      - Netflix | 台湾TW1
+      - 香港HK2
+      - Netflix | 新加坡SG4
+      - 新加坡SG2
+      - Netflix | 台湾TW3
+      - 香港HK3
+      - 美国US2
+      - Netflix | 台湾TW2
+      - 新加坡SG4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 台湾 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 05
-      - 香港 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 08
-      - 香港 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 05
-      - 台湾 - IEPL - SS/SSR - 06
-      - 台湾 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 09
-      - 新加坡 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 11
-      - 美国 - IEPL - SS/SSR - 04
-      - 美国 - IEPL - SS/SSR - 06
-      - 新加坡 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 07
-      - 台湾 - IEPL - SS/SSR - 01
-      - 新加坡 - IEPL - SS/SSR - 01
-      - 香港 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 07
-      - 香港 - IEPL - SS/SSR - 12
-      - 香港 - IEPL - SS/SSR - 02
-      - 台湾 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 10
-      - 台湾 - IEPL - SS/SSR - 03
-      - 日本 - IEPL - SS/SSR - 01
-      - 日本 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 08
+      - Netflix | 日本JP2
+      - Netflix | 美国US2
+      - 日本JP1
+      - 日本JP4
+      - 香港HKT1
+      - Netflix | 美国US1
+      - Netflix | 新加坡SG1
+      - Netflix | 新加坡SG2
+      - 新加坡SG3
+      - Netflix | 新加坡SG3
+      - 日本JP2
+      - 新加坡SG1
+      - Netflix | 日本JP1
+      - 香港HKT2
+      - 日本JP3
+      - 美国US1
+      - Netflix | 台湾TW1
+      - 香港HK2
+      - Netflix | 新加坡SG4
+      - 新加坡SG2
+      - Netflix | 台湾TW3
+      - 香港HK3
+      - 美国US2
+      - Netflix | 台湾TW2
+      - 新加坡SG4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 05
-      - 香港 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 08
-      - 香港 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 05
-      - 台湾 - IEPL - SS/SSR - 06
-      - 台湾 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 09
-      - 新加坡 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 11
-      - 美国 - IEPL - SS/SSR - 04
-      - 美国 - IEPL - SS/SSR - 06
-      - 新加坡 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 07
-      - 台湾 - IEPL - SS/SSR - 01
-      - 新加坡 - IEPL - SS/SSR - 01
-      - 香港 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 07
-      - 香港 - IEPL - SS/SSR - 12
-      - 香港 - IEPL - SS/SSR - 02
-      - 台湾 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 10
-      - 台湾 - IEPL - SS/SSR - 03
-      - 日本 - IEPL - SS/SSR - 01
-      - 日本 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 08
+      - Netflix | 日本JP2
+      - Netflix | 美国US2
+      - 日本JP1
+      - 日本JP4
+      - 香港HKT1
+      - Netflix | 美国US1
+      - Netflix | 新加坡SG1
+      - Netflix | 新加坡SG2
+      - 新加坡SG3
+      - Netflix | 新加坡SG3
+      - 日本JP2
+      - 新加坡SG1
+      - Netflix | 日本JP1
+      - 香港HKT2
+      - 日本JP3
+      - 美国US1
+      - Netflix | 台湾TW1
+      - 香港HK2
+      - Netflix | 新加坡SG4
+      - 新加坡SG2
+      - Netflix | 台湾TW3
+      - 香港HK3
+      - 美国US2
+      - Netflix | 台湾TW2
+      - 新加坡SG4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -156,160 +140,134 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 05
-      - 香港 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 08
-      - 香港 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 05
-      - 台湾 - IEPL - SS/SSR - 06
-      - 台湾 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 09
-      - 新加坡 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 11
-      - 美国 - IEPL - SS/SSR - 04
-      - 美国 - IEPL - SS/SSR - 06
-      - 新加坡 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 07
-      - 台湾 - IEPL - SS/SSR - 01
-      - 新加坡 - IEPL - SS/SSR - 01
-      - 香港 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 07
-      - 香港 - IEPL - SS/SSR - 12
-      - 香港 - IEPL - SS/SSR - 02
-      - 台湾 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 10
-      - 台湾 - IEPL - SS/SSR - 03
-      - 日本 - IEPL - SS/SSR - 01
-      - 日本 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 08
+      - Netflix | 日本JP2
+      - Netflix | 美国US2
+      - 日本JP1
+      - 日本JP4
+      - 香港HKT1
+      - Netflix | 美国US1
+      - Netflix | 新加坡SG1
+      - Netflix | 新加坡SG2
+      - 新加坡SG3
+      - Netflix | 新加坡SG3
+      - 日本JP2
+      - 新加坡SG1
+      - Netflix | 日本JP1
+      - 香港HKT2
+      - 日本JP3
+      - 美国US1
+      - Netflix | 台湾TW1
+      - 香港HK2
+      - Netflix | 新加坡SG4
+      - 新加坡SG2
+      - Netflix | 台湾TW3
+      - 香港HK3
+      - 美国US2
+      - Netflix | 台湾TW2
+      - 新加坡SG4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾 - IEPL - SS/SSR - 04
-      - 香港 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 08
-      - 香港 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 05
-      - 台湾 - IEPL - SS/SSR - 06
-      - 台湾 - IEPL - SS/SSR - 05
-      - 香港 - IEPL - SS/SSR - 09
-      - 香港 - IEPL - SS/SSR - 11
-      - 香港 - IEPL - SS/SSR - 07
-      - 台湾 - IEPL - SS/SSR - 01
-      - 香港 - IEPL - SS/SSR - 04
-      - 香港 - IEPL - SS/SSR - 12
-      - 香港 - IEPL - SS/SSR - 02
-      - 台湾 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 10
-      - 台湾 - IEPL - SS/SSR - 03
+      - 香港HKT1
+      - 香港HKT2
+      - Netflix | 台湾TW1
+      - 香港HK2
+      - Netflix | 台湾TW3
+      - 香港HK3
+      - Netflix | 台湾TW2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台湾 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 05
-      - 香港 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 08
-      - 香港 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 05
-      - 台湾 - IEPL - SS/SSR - 06
-      - 台湾 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 09
-      - 新加坡 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 11
-      - 美国 - IEPL - SS/SSR - 04
-      - 美国 - IEPL - SS/SSR - 06
-      - 新加坡 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 07
-      - 台湾 - IEPL - SS/SSR - 01
-      - 新加坡 - IEPL - SS/SSR - 01
-      - 香港 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 07
-      - 香港 - IEPL - SS/SSR - 12
-      - 香港 - IEPL - SS/SSR - 02
-      - 台湾 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 10
-      - 台湾 - IEPL - SS/SSR - 03
-      - 日本 - IEPL - SS/SSR - 01
-      - 日本 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 08
+      - Netflix | 日本JP2
+      - Netflix | 美国US2
+      - 日本JP1
+      - 日本JP4
+      - 香港HKT1
+      - Netflix | 美国US1
+      - Netflix | 新加坡SG1
+      - Netflix | 新加坡SG2
+      - 新加坡SG3
+      - Netflix | 新加坡SG3
+      - 日本JP2
+      - 新加坡SG1
+      - Netflix | 日本JP1
+      - 香港HKT2
+      - 日本JP3
+      - 美国US1
+      - Netflix | 台湾TW1
+      - 香港HK2
+      - Netflix | 新加坡SG4
+      - 新加坡SG2
+      - Netflix | 台湾TW3
+      - 香港HK3
+      - 美国US2
+      - Netflix | 台湾TW2
+      - 新加坡SG4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台湾 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 05
-      - 香港 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 08
-      - 香港 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 05
-      - 台湾 - IEPL - SS/SSR - 06
-      - 台湾 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 09
-      - 新加坡 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 11
-      - 美国 - IEPL - SS/SSR - 04
-      - 美国 - IEPL - SS/SSR - 06
-      - 新加坡 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 07
-      - 台湾 - IEPL - SS/SSR - 01
-      - 新加坡 - IEPL - SS/SSR - 01
-      - 香港 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 07
-      - 香港 - IEPL - SS/SSR - 12
-      - 香港 - IEPL - SS/SSR - 02
-      - 台湾 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 10
-      - 台湾 - IEPL - SS/SSR - 03
-      - 日本 - IEPL - SS/SSR - 01
-      - 日本 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 08
+      - Netflix | 日本JP2
+      - Netflix | 美国US2
+      - 日本JP1
+      - 日本JP4
+      - 香港HKT1
+      - Netflix | 美国US1
+      - Netflix | 新加坡SG1
+      - Netflix | 新加坡SG2
+      - 新加坡SG3
+      - Netflix | 新加坡SG3
+      - 日本JP2
+      - 新加坡SG1
+      - Netflix | 日本JP1
+      - 香港HKT2
+      - 日本JP3
+      - 美国US1
+      - Netflix | 台湾TW1
+      - 香港HK2
+      - Netflix | 新加坡SG4
+      - 新加坡SG2
+      - Netflix | 台湾TW3
+      - 香港HK3
+      - 美国US2
+      - Netflix | 台湾TW2
+      - 新加坡SG4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 05
-      - 香港 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 08
-      - 香港 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 05
-      - 台湾 - IEPL - SS/SSR - 06
-      - 台湾 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 09
-      - 新加坡 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 11
-      - 美国 - IEPL - SS/SSR - 04
-      - 美国 - IEPL - SS/SSR - 06
-      - 新加坡 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 07
-      - 台湾 - IEPL - SS/SSR - 01
-      - 新加坡 - IEPL - SS/SSR - 01
-      - 香港 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 07
-      - 香港 - IEPL - SS/SSR - 12
-      - 香港 - IEPL - SS/SSR - 02
-      - 台湾 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 10
-      - 台湾 - IEPL - SS/SSR - 03
-      - 日本 - IEPL - SS/SSR - 01
-      - 日本 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 08
+      - Netflix | 日本JP2
+      - Netflix | 美国US2
+      - 日本JP1
+      - 日本JP4
+      - 香港HKT1
+      - Netflix | 美国US1
+      - Netflix | 新加坡SG1
+      - Netflix | 新加坡SG2
+      - 新加坡SG3
+      - Netflix | 新加坡SG3
+      - 日本JP2
+      - 新加坡SG1
+      - Netflix | 日本JP1
+      - 香港HKT2
+      - 日本JP3
+      - 美国US1
+      - Netflix | 台湾TW1
+      - 香港HK2
+      - Netflix | 新加坡SG4
+      - 新加坡SG2
+      - Netflix | 台湾TW3
+      - 香港HK3
+      - 美国US2
+      - Netflix | 台湾TW2
+      - 新加坡SG4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -325,35 +283,31 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 05
-      - 香港 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 08
-      - 香港 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 05
-      - 台湾 - IEPL - SS/SSR - 06
-      - 台湾 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 03
-      - 香港 - IEPL - SS/SSR - 09
-      - 新加坡 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 11
-      - 美国 - IEPL - SS/SSR - 04
-      - 美国 - IEPL - SS/SSR - 06
-      - 新加坡 - IEPL - SS/SSR - 06
-      - 香港 - IEPL - SS/SSR - 07
-      - 台湾 - IEPL - SS/SSR - 01
-      - 新加坡 - IEPL - SS/SSR - 01
-      - 香港 - IEPL - SS/SSR - 04
-      - 新加坡 - IEPL - SS/SSR - 07
-      - 香港 - IEPL - SS/SSR - 12
-      - 香港 - IEPL - SS/SSR - 02
-      - 台湾 - IEPL - SS/SSR - 02
-      - 香港 - IEPL - SS/SSR - 10
-      - 台湾 - IEPL - SS/SSR - 03
-      - 日本 - IEPL - SS/SSR - 01
-      - 日本 - IEPL - SS/SSR - 05
-      - 新加坡 - IEPL - SS/SSR - 08
+      - Netflix | 日本JP2
+      - Netflix | 美国US2
+      - 日本JP1
+      - 日本JP4
+      - 香港HKT1
+      - Netflix | 美国US1
+      - Netflix | 新加坡SG1
+      - Netflix | 新加坡SG2
+      - 新加坡SG3
+      - Netflix | 新加坡SG3
+      - 日本JP2
+      - 新加坡SG1
+      - Netflix | 日本JP1
+      - 香港HKT2
+      - 日本JP3
+      - 美国US1
+      - Netflix | 台湾TW1
+      - 香港HK2
+      - Netflix | 新加坡SG4
+      - 新加坡SG2
+      - Netflix | 台湾TW3
+      - 香港HK3
+      - 美国US2
+      - Netflix | 台湾TW2
+      - 新加坡SG4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
