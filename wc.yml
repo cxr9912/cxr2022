@@ -5,43 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本IPLC砖线, server: 13.125.35.190, port: 80, type: ss, cipher: aes-256-gcm, password: amazonskr05, udp: true}
   - {name: US6, server: www.pcmag.com, port: 8080, type: vmess, uuid: d4532294-c46e-45eb-90d1-c0c2aa377ee2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cs.tashancloud.link}, udp: true}
-  - {name: TG频道@CitizenScyu, server: 54.255.232.203, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 韩国IPLC砖线, server: 52.79.114.234, port: 80, type: ss, cipher: aes-256-gcm, password: amazonskr05, udp: true}
-  - {name: 新加坡IPLC砖线, server: 43.203.250.158, port: 80, type: ss, cipher: aes-256-gcm, password: amazonskr05, udp: true}
+  - {name: 韩国Max Pro, server: 36.155.110.108, port: 10279, type: ss, cipher: aes-256-gcm, password: 903952f7-796c-4154-b7d4-bbd3d0b8127c, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本IPLC砖线
       - US6
-      - TG频道@CitizenScyu
-      - 韩国IPLC砖线
-      - 新加坡IPLC砖线
+      - 韩国Max Pro
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本IPLC砖线
       - US6
-      - TG频道@CitizenScyu
-      - 韩国IPLC砖线
-      - 新加坡IPLC砖线
+      - 韩国Max Pro
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本IPLC砖线
       - US6
-      - TG频道@CitizenScyu
-      - 韩国IPLC砖线
-      - 新加坡IPLC砖线
+      - 韩国Max Pro
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,11 +48,8 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本IPLC砖线
       - US6
-      - TG频道@CitizenScyu
-      - 韩国IPLC砖线
-      - 新加坡IPLC砖线
+      - 韩国Max Pro
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -75,32 +60,23 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本IPLC砖线
       - US6
-      - TG频道@CitizenScyu
-      - 韩国IPLC砖线
-      - 新加坡IPLC砖线
+      - 韩国Max Pro
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本IPLC砖线
       - US6
-      - TG频道@CitizenScyu
-      - 韩国IPLC砖线
-      - 新加坡IPLC砖线
+      - 韩国Max Pro
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本IPLC砖线
       - US6
-      - TG频道@CitizenScyu
-      - 韩国IPLC砖线
-      - 新加坡IPLC砖线
+      - 韩国Max Pro
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本IPLC砖线
       - US6
-      - TG频道@CitizenScyu
-      - 韩国IPLC砖线
-      - 新加坡IPLC砖线
+      - 韩国Max Pro
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
