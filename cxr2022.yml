@@ -5,291 +5,219 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡-5, server: sg-5.skyorg.me, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 新加坡-6, server: 18.141.144.151, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 美国-7, server: 103.196.20.127, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 东京-2-移动>联通, server: 18.183.184.199, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 美国-2, server: 144.34.161.186, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 香港-6-三网, server: 103.51.144.28, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 香港-4-三网, server: 8.218.198.214, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 8x-台湾解锁-1, server: p3.yadang888.top, port: 31482, type: ss, cipher: chacha20-ietf-poly1305, password: ee7c8b76-92a9-4121-b021-e88ea7499564, udp: true}
-  - {name: "法兰克福-1-电信,移动", server: 138.2.139.126, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 美国-6, server: 148.135.44.200, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.bing.com}, udp: true}
-  - {name: 香港-3, server: wawo-hk.skyorg.me, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: GPT-WARP-限速-1, server: 8.211.128.156, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: GPT-WARP-限速-5, server: 8.209.240.64, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 美国-3, server: 148.135.30.26, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 圣保罗-2, server: 144.22.211.71, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 巴西-1-移动>联通=电信, server: 168.75.101.184, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 西班牙-三网, server: vir-dapan.skyorg.me, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 芝加哥-1, server: 107.172.193.109, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 香港解锁-3-移动>联通, server: 45.39.199.108, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 圣保罗-4, server: 144.22.202.124, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 圣何塞-禁大带宽, server: 38.55.129.69, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 8x-香港解锁-中转-1, server: p1.yadang888.top, port: 46358, type: ss, cipher: chacha20-ietf-poly1305, password: ee7c8b76-92a9-4121-b021-e88ea7499564, udp: true}
-  - {name: CF-WARP, server: pr-v6.skyorg.me, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pr-v6.skyorg.me}, udp: true}
-  - {name: 日本-解锁(移动>联通), server: 38.207.137.201, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 巴西-2-移动>联通=电信, server: 152.70.222.182, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 俄勒冈-1, server: 54.186.136.114, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 阿什本-2-移动=联通>电信, server: 150.136.196.220, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 8x-解锁-新加坡-1, server: p1.yadang888.top, port: 62371, type: ss, cipher: chacha20-ietf-poly1305, password: ee7c8b76-92a9-4121-b021-e88ea7499564, udp: true}
-  - {name: 圣保罗-1, server: 168.138.135.0, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 香港-禁大带宽, server: 123.136.94.55, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 新加坡-7, server: 13.229.75.109, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 圣保罗-5, server: 129.148.32.197, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 美国-CDN-2, server: x8wz5sa2.95dns.cc, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 俄勒冈-2, server: 35.94.53.246, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: "法兰克福-2-电信,移动", server: 130.162.231.198, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 法国-CF中转-GPT, server: faguo-kuxue.mjjloc.xyz, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: faguo-kuxue.mjjloc.xyz}, udp: true}
-  - {name: 7.6x-解锁-新加坡-2, server: p1.yadang888.top, port: 33696, type: ss, cipher: chacha20-ietf-poly1305, password: ee7c8b76-92a9-4121-b021-e88ea7499564, udp: true}
-  - {name: 香港-5-(移动>联通), server: 38.207.173.28, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 美国-CDN-5, server: kj9n5xea.fyx.566768.xyz, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.apple.com}, udp: true}
-  - {name: 香港解锁-1, server: 85.113.71.217, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 巴西-4-移动>联通=电信, server: 132.226.164.98, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 俄勒冈-3, server: 35.91.237.160, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 美国-CF中转-2-GPT, server: wawo-us.skyorg.me, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: wawo-us.skyorg.me}, udp: true}
-  - {name: 7.6x-中转-日本解锁-1, server: p3.yadang888.top, port: 19383, type: ss, cipher: chacha20-ietf-poly1305, password: ee7c8b76-92a9-4121-b021-e88ea7499564, udp: true}
-  - {name: 美国-1, server: 103.196.20.175, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 香港-原生, server: 43.247.134.87, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 美国-下载线路-0.2x, server: mhyidc-us.skyorg.me, port: 443, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mhyidc-us.skyorg.me}, udp: true}
-  - {name: 香港-CF中转-1, server: duo-hk-v6.moshen.tech, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: duo-hk-v6.moshen.tech}, udp: true}
-  - {name: 美国-CDN-4, server: nyza97q6.cnmnmsl.top, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 新加坡解锁-2, server: 154.204.183.138, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 美国-4, server: 107.172.22.239, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 美国-CDN-1, server: 4vw5uety.cjs.566768.xyz, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 芝加哥-2, server: 107.172.193.170, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 阿什本-1-移动=联通>电信, server: 150.136.244.26, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 香港-CF中转-2, server: dci-hk.skygov.de, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dci-hk.skygov.de}, udp: true}
-  - {name: 香港-1-三网, server: 202.181.26.160, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 硅谷-禁大带宽, server: 137.175.66.203, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 巴西-3-移动>联通=电信, server: 129.148.53.239, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 韩国-1-移动>联通>电信, server: 13.125.31.210, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cdn, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 圣保罗-3, server: 164.152.52.56, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 台湾解锁-1, server: 108.165.144.158, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: 美国-5, server: 103.196.20.232, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: GPT-英国(联通>移动), server: 89.213.40.221, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gw.alicdn.com}, udp: true}
-  - {name: US6, server: www.pcmag.com, port: 8080, type: vmess, uuid: d4532294-c46e-45eb-90d1-c0c2aa377ee2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cs.tashancloud.link}, udp: true}
-  - {name: 美国 - 洛杉矶 - Global Communication Network Limited - 251, server: speedtest-rtc.xtspeeder002.xyz, port: 37041, type: ss, cipher: aes-256-ctr, password: JHe7ay97yuw8ue, plugin: obfs, plugin-opts: {mode: http, host: 607ab498e8.v4-dy.ixigua.com}, udp: true}
-  - {name: GPT-WARP-4, server: tem.skyorg.me, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tem.skyorg.me}, udp: true}
-  - {name: "韩国 - 首尔特别市 - Amazon.com, Inc. - 4", server: 3.38.104.248, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 香港10, server: asiacdn.housenetworkmp3.xyz, port: 47110, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 新加坡02, server: asiacdn2.housenetworkmp3.xyz, port: 47122, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 土耳其, server: ukm1.cdn.housenetworkmp3.xyz, port: 47221, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 台湾02, server: asiacdn4.housenetworkmp3.xyz, port: 47182, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 澳大利亚01, server: othercdn.housenetworkmp3.xyz, port: 47241, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 新加坡01, server: asiacdn2.housenetworkmp3.xyz, port: 47121, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 泰国, server: othercdn.housenetworkmp3.xyz, port: 47231, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 德国, server: ukm1.cdn.housenetworkmp3.xyz, port: 47201, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 台湾04, server: asiacdn4.housenetworkmp3.xyz, port: 47184, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 香港07, server: asiacdn.housenetworkmp3.xyz, port: 47107, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 香港08, server: asiacdn.housenetworkmp3.xyz, port: 47108, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 印度, server: othercdn.housenetworkmp3.xyz, port: 47211, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 香港09, server: asiacdn.housenetworkmp3.xyz, port: 47109, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 台湾03, server: asiacdn4.housenetworkmp3.xyz, port: 47183, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 台湾05, server: asiacdn4.housenetworkmp3.xyz, port: 47185, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 尼日利亚, server: othercdn.housenetworkmp3.xyz, port: 48091, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 巴西, server: ukm1.cdn.housenetworkmp3.xyz, port: 47381, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 台湾01, server: asiacdn4.housenetworkmp3.xyz, port: 47181, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 英国, server: ukm1.cdn.housenetworkmp3.xyz, port: 47191, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 新加坡06, server: asiacdn2.housenetworkmp3.xyz, port: 47126, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 新加坡09, server: asiacdn2.housenetworkmp3.xyz, port: 47129, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 香港03, server: asiacdn.housenetworkmp3.xyz, port: 47103, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 香港02, server: asiacdn.housenetworkmp3.xyz, port: 47102, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 新加坡04, server: asiacdn2.housenetworkmp3.xyz, port: 47124, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 香港05, server: asiacdn.housenetworkmp3.xyz, port: 47105, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 日本04, server: asiacdn3.housenetworkmp3.xyz, port: 47144, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 柬埔寨, server: othercdn.housenetworkmp3.xyz, port: 47761, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 埃及, server: othercdn.housenetworkmp3.xyz, port: 47801, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 香港06, server: asiacdn.housenetworkmp3.xyz, port: 47106, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 巴基斯坦, server: othercdn.housenetworkmp3.xyz, port: 48101, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 朝鲜, server: othercdn.housenetworkmp3.xyz, port: 47501, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 美国03, server: usm1.cdn.housenetworkmp3.xyz, port: 47163, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 美国05, server: usm1.cdn.housenetworkmp3.xyz, port: 47165, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 缅甸, server: othercdn.housenetworkmp3.xyz, port: 48061, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 韩国02, server: asiacdn3.housenetworkmp3.xyz, port: 48402, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 韩国01, server: asiacdn3.housenetworkmp3.xyz, port: 48401, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 菲律宾, server: othercdn.housenetworkmp3.xyz, port: 47481, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 香港01, server: asiacdn.housenetworkmp3.xyz, port: 47101, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 马来西亚, server: othercdn.housenetworkmp3.xyz, port: 47461, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 美国01, server: usm1.cdn.housenetworkmp3.xyz, port: 47161, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 香港04, server: asiacdn.housenetworkmp3.xyz, port: 47104, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 迪拜, server: othercdn.housenetworkmp3.xyz, port: 48441, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 老挝, server: othercdn.housenetworkmp3.xyz, port: 47961, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 澳大利亚02, server: othercdn.housenetworkmp3.xyz, port: 47242, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 荷兰, server: ukm1.cdn.housenetworkmp3.xyz, port: 48421, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 瑞典, server: ukm1.cdn.housenetworkmp3.xyz, port: 48431, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 越南, server: othercdn.housenetworkmp3.xyz, port: 47261, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 美国04, server: usm1.cdn.housenetworkmp3.xyz, port: 47164, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
+  - {name: 日本03, server: asiacdn3.housenetworkmp3.xyz, port: 47143, type: ss, cipher: aes-128-gcm, password: b57bc643-fc63-5c16-803b-abb1bcd23c50, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡-5
-      - 新加坡-6
-      - 美国-7
-      - 东京-2-移动>联通
-      - 美国-2
-      - 香港-6-三网
-      - 香港-4-三网
-      - 8x-台湾解锁-1
-      - 法兰克福-1-电信,移动
-      - 美国-6
-      - 香港-3
-      - GPT-WARP-限速-1
-      - GPT-WARP-限速-5
-      - 美国-3
-      - 圣保罗-2
-      - 巴西-1-移动>联通=电信
-      - 西班牙-三网
-      - 芝加哥-1
-      - 香港解锁-3-移动>联通
-      - 圣保罗-4
-      - 圣何塞-禁大带宽
-      - 8x-香港解锁-中转-1
-      - CF-WARP
-      - 日本-解锁(移动>联通)
-      - 巴西-2-移动>联通=电信
-      - 俄勒冈-1
-      - 阿什本-2-移动=联通>电信
-      - 8x-解锁-新加坡-1
-      - 圣保罗-1
-      - 香港-禁大带宽
-      - 新加坡-7
-      - 圣保罗-5
-      - 美国-CDN-2
-      - 俄勒冈-2
-      - 法兰克福-2-电信,移动
-      - 法国-CF中转-GPT
-      - 7.6x-解锁-新加坡-2
-      - 香港-5-(移动>联通)
-      - 美国-CDN-5
-      - 香港解锁-1
-      - 巴西-4-移动>联通=电信
-      - 俄勒冈-3
-      - 美国-CF中转-2-GPT
-      - 7.6x-中转-日本解锁-1
-      - 美国-1
-      - 香港-原生
-      - 美国-下载线路-0.2x
-      - 香港-CF中转-1
-      - 美国-CDN-4
-      - 新加坡解锁-2
-      - 美国-4
-      - 美国-CDN-1
-      - 芝加哥-2
-      - 阿什本-1-移动=联通>电信
-      - 香港-CF中转-2
-      - 香港-1-三网
-      - 硅谷-禁大带宽
-      - 巴西-3-移动>联通=电信
-      - 韩国-1-移动>联通>电信
-      - 圣保罗-3
-      - 台湾解锁-1
-      - 美国-5
-      - GPT-英国(联通>移动)
-      - US6
-      - 美国 - 洛杉矶 - Global Communication Network Limited - 251
-      - GPT-WARP-4
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 4
+      - 香港10
+      - 新加坡02
+      - 土耳其
+      - 台湾02
+      - 澳大利亚01
+      - 新加坡01
+      - 泰国
+      - 德国
+      - 台湾04
+      - 香港07
+      - 香港08
+      - 印度
+      - 香港09
+      - 台湾03
+      - 台湾05
+      - 尼日利亚
+      - 巴西
+      - 台湾01
+      - 英国
+      - 新加坡06
+      - 新加坡09
+      - 香港03
+      - 香港02
+      - 新加坡04
+      - 香港05
+      - 日本04
+      - 柬埔寨
+      - 埃及
+      - 香港06
+      - 巴基斯坦
+      - 朝鲜
+      - 美国03
+      - 美国05
+      - 缅甸
+      - 韩国02
+      - 韩国01
+      - 菲律宾
+      - 香港01
+      - 马来西亚
+      - 美国01
+      - 香港04
+      - 迪拜
+      - 老挝
+      - 澳大利亚02
+      - 荷兰
+      - 瑞典
+      - 越南
+      - 美国04
+      - 日本03
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡-5
-      - 新加坡-6
-      - 美国-7
-      - 东京-2-移动>联通
-      - 美国-2
-      - 香港-6-三网
-      - 香港-4-三网
-      - 8x-台湾解锁-1
-      - 法兰克福-1-电信,移动
-      - 美国-6
-      - 香港-3
-      - GPT-WARP-限速-1
-      - GPT-WARP-限速-5
-      - 美国-3
-      - 圣保罗-2
-      - 巴西-1-移动>联通=电信
-      - 西班牙-三网
-      - 芝加哥-1
-      - 香港解锁-3-移动>联通
-      - 圣保罗-4
-      - 圣何塞-禁大带宽
-      - 8x-香港解锁-中转-1
-      - CF-WARP
-      - 日本-解锁(移动>联通)
-      - 巴西-2-移动>联通=电信
-      - 俄勒冈-1
-      - 阿什本-2-移动=联通>电信
-      - 8x-解锁-新加坡-1
-      - 圣保罗-1
-      - 香港-禁大带宽
-      - 新加坡-7
-      - 圣保罗-5
-      - 美国-CDN-2
-      - 俄勒冈-2
-      - 法兰克福-2-电信,移动
-      - 法国-CF中转-GPT
-      - 7.6x-解锁-新加坡-2
-      - 香港-5-(移动>联通)
-      - 美国-CDN-5
-      - 香港解锁-1
-      - 巴西-4-移动>联通=电信
-      - 俄勒冈-3
-      - 美国-CF中转-2-GPT
-      - 7.6x-中转-日本解锁-1
-      - 美国-1
-      - 香港-原生
-      - 美国-下载线路-0.2x
-      - 香港-CF中转-1
-      - 美国-CDN-4
-      - 新加坡解锁-2
-      - 美国-4
-      - 美国-CDN-1
-      - 芝加哥-2
-      - 阿什本-1-移动=联通>电信
-      - 香港-CF中转-2
-      - 香港-1-三网
-      - 硅谷-禁大带宽
-      - 巴西-3-移动>联通=电信
-      - 韩国-1-移动>联通>电信
-      - 圣保罗-3
-      - 台湾解锁-1
-      - 美国-5
-      - GPT-英国(联通>移动)
-      - US6
-      - 美国 - 洛杉矶 - Global Communication Network Limited - 251
-      - GPT-WARP-4
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 4
+      - 香港10
+      - 新加坡02
+      - 土耳其
+      - 台湾02
+      - 澳大利亚01
+      - 新加坡01
+      - 泰国
+      - 德国
+      - 台湾04
+      - 香港07
+      - 香港08
+      - 印度
+      - 香港09
+      - 台湾03
+      - 台湾05
+      - 尼日利亚
+      - 巴西
+      - 台湾01
+      - 英国
+      - 新加坡06
+      - 新加坡09
+      - 香港03
+      - 香港02
+      - 新加坡04
+      - 香港05
+      - 日本04
+      - 柬埔寨
+      - 埃及
+      - 香港06
+      - 巴基斯坦
+      - 朝鲜
+      - 美国03
+      - 美国05
+      - 缅甸
+      - 韩国02
+      - 韩国01
+      - 菲律宾
+      - 香港01
+      - 马来西亚
+      - 美国01
+      - 香港04
+      - 迪拜
+      - 老挝
+      - 澳大利亚02
+      - 荷兰
+      - 瑞典
+      - 越南
+      - 美国04
+      - 日本03
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡-5
-      - 新加坡-6
-      - 美国-7
-      - 东京-2-移动>联通
-      - 美国-2
-      - 香港-6-三网
-      - 香港-4-三网
-      - 8x-台湾解锁-1
-      - 法兰克福-1-电信,移动
-      - 美国-6
-      - 香港-3
-      - GPT-WARP-限速-1
-      - GPT-WARP-限速-5
-      - 美国-3
-      - 圣保罗-2
-      - 巴西-1-移动>联通=电信
-      - 西班牙-三网
-      - 芝加哥-1
-      - 香港解锁-3-移动>联通
-      - 圣保罗-4
-      - 圣何塞-禁大带宽
-      - 8x-香港解锁-中转-1
-      - CF-WARP
-      - 日本-解锁(移动>联通)
-      - 巴西-2-移动>联通=电信
-      - 俄勒冈-1
-      - 阿什本-2-移动=联通>电信
-      - 8x-解锁-新加坡-1
-      - 圣保罗-1
-      - 香港-禁大带宽
-      - 新加坡-7
-      - 圣保罗-5
-      - 美国-CDN-2
-      - 俄勒冈-2
-      - 法兰克福-2-电信,移动
-      - 法国-CF中转-GPT
-      - 7.6x-解锁-新加坡-2
-      - 香港-5-(移动>联通)
-      - 美国-CDN-5
-      - 香港解锁-1
-      - 巴西-4-移动>联通=电信
-      - 俄勒冈-3
-      - 美国-CF中转-2-GPT
-      - 7.6x-中转-日本解锁-1
-      - 美国-1
-      - 香港-原生
-      - 美国-下载线路-0.2x
-      - 香港-CF中转-1
-      - 美国-CDN-4
-      - 新加坡解锁-2
-      - 美国-4
-      - 美国-CDN-1
-      - 芝加哥-2
-      - 阿什本-1-移动=联通>电信
-      - 香港-CF中转-2
-      - 香港-1-三网
-      - 硅谷-禁大带宽
-      - 巴西-3-移动>联通=电信
-      - 韩国-1-移动>联通>电信
-      - 圣保罗-3
-      - 台湾解锁-1
-      - 美国-5
-      - GPT-英国(联通>移动)
-      - US6
-      - 美国 - 洛杉矶 - Global Communication Network Limited - 251
-      - GPT-WARP-4
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 4
+      - 香港10
+      - 新加坡02
+      - 土耳其
+      - 台湾02
+      - 澳大利亚01
+      - 新加坡01
+      - 泰国
+      - 德国
+      - 台湾04
+      - 香港07
+      - 香港08
+      - 印度
+      - 香港09
+      - 台湾03
+      - 台湾05
+      - 尼日利亚
+      - 巴西
+      - 台湾01
+      - 英国
+      - 新加坡06
+      - 新加坡09
+      - 香港03
+      - 香港02
+      - 新加坡04
+      - 香港05
+      - 日本04
+      - 柬埔寨
+      - 埃及
+      - 香港06
+      - 巴基斯坦
+      - 朝鲜
+      - 美国03
+      - 美国05
+      - 缅甸
+      - 韩国02
+      - 韩国01
+      - 菲律宾
+      - 香港01
+      - 马来西亚
+      - 美国01
+      - 香港04
+      - 迪拜
+      - 老挝
+      - 澳大利亚02
+      - 荷兰
+      - 瑞典
+      - 越南
+      - 美国04
+      - 日本03
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -308,310 +236,238 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡-5
-      - 新加坡-6
-      - 美国-7
-      - 东京-2-移动>联通
-      - 美国-2
-      - 香港-6-三网
-      - 香港-4-三网
-      - 8x-台湾解锁-1
-      - 法兰克福-1-电信,移动
-      - 美国-6
-      - 香港-3
-      - GPT-WARP-限速-1
-      - GPT-WARP-限速-5
-      - 美国-3
-      - 圣保罗-2
-      - 巴西-1-移动>联通=电信
-      - 西班牙-三网
-      - 芝加哥-1
-      - 香港解锁-3-移动>联通
-      - 圣保罗-4
-      - 圣何塞-禁大带宽
-      - 8x-香港解锁-中转-1
-      - CF-WARP
-      - 日本-解锁(移动>联通)
-      - 巴西-2-移动>联通=电信
-      - 俄勒冈-1
-      - 阿什本-2-移动=联通>电信
-      - 8x-解锁-新加坡-1
-      - 圣保罗-1
-      - 香港-禁大带宽
-      - 新加坡-7
-      - 圣保罗-5
-      - 美国-CDN-2
-      - 俄勒冈-2
-      - 法兰克福-2-电信,移动
-      - 法国-CF中转-GPT
-      - 7.6x-解锁-新加坡-2
-      - 香港-5-(移动>联通)
-      - 美国-CDN-5
-      - 香港解锁-1
-      - 巴西-4-移动>联通=电信
-      - 俄勒冈-3
-      - 美国-CF中转-2-GPT
-      - 7.6x-中转-日本解锁-1
-      - 美国-1
-      - 香港-原生
-      - 美国-下载线路-0.2x
-      - 香港-CF中转-1
-      - 美国-CDN-4
-      - 新加坡解锁-2
-      - 美国-4
-      - 美国-CDN-1
-      - 芝加哥-2
-      - 阿什本-1-移动=联通>电信
-      - 香港-CF中转-2
-      - 香港-1-三网
-      - 硅谷-禁大带宽
-      - 巴西-3-移动>联通=电信
-      - 韩国-1-移动>联通>电信
-      - 圣保罗-3
-      - 台湾解锁-1
-      - 美国-5
-      - GPT-英国(联通>移动)
-      - US6
-      - 美国 - 洛杉矶 - Global Communication Network Limited - 251
-      - GPT-WARP-4
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 4
+      - 香港10
+      - 新加坡02
+      - 土耳其
+      - 台湾02
+      - 澳大利亚01
+      - 新加坡01
+      - 泰国
+      - 德国
+      - 台湾04
+      - 香港07
+      - 香港08
+      - 印度
+      - 香港09
+      - 台湾03
+      - 台湾05
+      - 尼日利亚
+      - 巴西
+      - 台湾01
+      - 英国
+      - 新加坡06
+      - 新加坡09
+      - 香港03
+      - 香港02
+      - 新加坡04
+      - 香港05
+      - 日本04
+      - 柬埔寨
+      - 埃及
+      - 香港06
+      - 巴基斯坦
+      - 朝鲜
+      - 美国03
+      - 美国05
+      - 缅甸
+      - 韩国02
+      - 韩国01
+      - 菲律宾
+      - 香港01
+      - 马来西亚
+      - 美国01
+      - 香港04
+      - 迪拜
+      - 老挝
+      - 澳大利亚02
+      - 荷兰
+      - 瑞典
+      - 越南
+      - 美国04
+      - 日本03
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港-6-三网
-      - 香港-4-三网
-      - 8x-台湾解锁-1
-      - 香港-3
-      - 香港解锁-3-移动>联通
-      - 8x-香港解锁-中转-1
-      - 香港-禁大带宽
-      - 香港-5-(移动>联通)
-      - 香港解锁-1
-      - 香港-原生
-      - 香港-CF中转-1
-      - 香港-CF中转-2
-      - 香港-1-三网
-      - 台湾解锁-1
-      - 美国 - 洛杉矶 - Global Communication Network Limited - 251
+      - 香港10
+      - 台湾02
+      - 台湾04
+      - 香港07
+      - 香港08
+      - 香港09
+      - 台湾03
+      - 台湾05
+      - 台湾01
+      - 香港03
+      - 香港02
+      - 香港05
+      - 香港06
+      - 香港01
+      - 香港04
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡-5
-      - 新加坡-6
-      - 美国-7
-      - 东京-2-移动>联通
-      - 美国-2
-      - 香港-6-三网
-      - 香港-4-三网
-      - 8x-台湾解锁-1
-      - 法兰克福-1-电信,移动
-      - 美国-6
-      - 香港-3
-      - GPT-WARP-限速-1
-      - GPT-WARP-限速-5
-      - 美国-3
-      - 圣保罗-2
-      - 巴西-1-移动>联通=电信
-      - 西班牙-三网
-      - 芝加哥-1
-      - 香港解锁-3-移动>联通
-      - 圣保罗-4
-      - 圣何塞-禁大带宽
-      - 8x-香港解锁-中转-1
-      - CF-WARP
-      - 日本-解锁(移动>联通)
-      - 巴西-2-移动>联通=电信
-      - 俄勒冈-1
-      - 阿什本-2-移动=联通>电信
-      - 8x-解锁-新加坡-1
-      - 圣保罗-1
-      - 香港-禁大带宽
-      - 新加坡-7
-      - 圣保罗-5
-      - 美国-CDN-2
-      - 俄勒冈-2
-      - 法兰克福-2-电信,移动
-      - 法国-CF中转-GPT
-      - 7.6x-解锁-新加坡-2
-      - 香港-5-(移动>联通)
-      - 美国-CDN-5
-      - 香港解锁-1
-      - 巴西-4-移动>联通=电信
-      - 俄勒冈-3
-      - 美国-CF中转-2-GPT
-      - 7.6x-中转-日本解锁-1
-      - 美国-1
-      - 香港-原生
-      - 美国-下载线路-0.2x
-      - 香港-CF中转-1
-      - 美国-CDN-4
-      - 新加坡解锁-2
-      - 美国-4
-      - 美国-CDN-1
-      - 芝加哥-2
-      - 阿什本-1-移动=联通>电信
-      - 香港-CF中转-2
-      - 香港-1-三网
-      - 硅谷-禁大带宽
-      - 巴西-3-移动>联通=电信
-      - 韩国-1-移动>联通>电信
-      - 圣保罗-3
-      - 台湾解锁-1
-      - 美国-5
-      - GPT-英国(联通>移动)
-      - US6
-      - 美国 - 洛杉矶 - Global Communication Network Limited - 251
-      - GPT-WARP-4
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 4
+      - 香港10
+      - 新加坡02
+      - 土耳其
+      - 台湾02
+      - 澳大利亚01
+      - 新加坡01
+      - 泰国
+      - 德国
+      - 台湾04
+      - 香港07
+      - 香港08
+      - 印度
+      - 香港09
+      - 台湾03
+      - 台湾05
+      - 尼日利亚
+      - 巴西
+      - 台湾01
+      - 英国
+      - 新加坡06
+      - 新加坡09
+      - 香港03
+      - 香港02
+      - 新加坡04
+      - 香港05
+      - 日本04
+      - 柬埔寨
+      - 埃及
+      - 香港06
+      - 巴基斯坦
+      - 朝鲜
+      - 美国03
+      - 美国05
+      - 缅甸
+      - 韩国02
+      - 韩国01
+      - 菲律宾
+      - 香港01
+      - 马来西亚
+      - 美国01
+      - 香港04
+      - 迪拜
+      - 老挝
+      - 澳大利亚02
+      - 荷兰
+      - 瑞典
+      - 越南
+      - 美国04
+      - 日本03
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡-5
-      - 新加坡-6
-      - 美国-7
-      - 东京-2-移动>联通
-      - 美国-2
-      - 香港-6-三网
-      - 香港-4-三网
-      - 8x-台湾解锁-1
-      - 法兰克福-1-电信,移动
-      - 美国-6
-      - 香港-3
-      - GPT-WARP-限速-1
-      - GPT-WARP-限速-5
-      - 美国-3
-      - 圣保罗-2
-      - 巴西-1-移动>联通=电信
-      - 西班牙-三网
-      - 芝加哥-1
-      - 香港解锁-3-移动>联通
-      - 圣保罗-4
-      - 圣何塞-禁大带宽
-      - 8x-香港解锁-中转-1
-      - CF-WARP
-      - 日本-解锁(移动>联通)
-      - 巴西-2-移动>联通=电信
-      - 俄勒冈-1
-      - 阿什本-2-移动=联通>电信
-      - 8x-解锁-新加坡-1
-      - 圣保罗-1
-      - 香港-禁大带宽
-      - 新加坡-7
-      - 圣保罗-5
-      - 美国-CDN-2
-      - 俄勒冈-2
-      - 法兰克福-2-电信,移动
-      - 法国-CF中转-GPT
-      - 7.6x-解锁-新加坡-2
-      - 香港-5-(移动>联通)
-      - 美国-CDN-5
-      - 香港解锁-1
-      - 巴西-4-移动>联通=电信
-      - 俄勒冈-3
-      - 美国-CF中转-2-GPT
-      - 7.6x-中转-日本解锁-1
-      - 美国-1
-      - 香港-原生
-      - 美国-下载线路-0.2x
-      - 香港-CF中转-1
-      - 美国-CDN-4
-      - 新加坡解锁-2
-      - 美国-4
-      - 美国-CDN-1
-      - 芝加哥-2
-      - 阿什本-1-移动=联通>电信
-      - 香港-CF中转-2
-      - 香港-1-三网
-      - 硅谷-禁大带宽
-      - 巴西-3-移动>联通=电信
-      - 韩国-1-移动>联通>电信
-      - 圣保罗-3
-      - 台湾解锁-1
-      - 美国-5
-      - GPT-英国(联通>移动)
-      - US6
-      - 美国 - 洛杉矶 - Global Communication Network Limited - 251
-      - GPT-WARP-4
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 4
+      - 香港10
+      - 新加坡02
+      - 土耳其
+      - 台湾02
+      - 澳大利亚01
+      - 新加坡01
+      - 泰国
+      - 德国
+      - 台湾04
+      - 香港07
+      - 香港08
+      - 印度
+      - 香港09
+      - 台湾03
+      - 台湾05
+      - 尼日利亚
+      - 巴西
+      - 台湾01
+      - 英国
+      - 新加坡06
+      - 新加坡09
+      - 香港03
+      - 香港02
+      - 新加坡04
+      - 香港05
+      - 日本04
+      - 柬埔寨
+      - 埃及
+      - 香港06
+      - 巴基斯坦
+      - 朝鲜
+      - 美国03
+      - 美国05
+      - 缅甸
+      - 韩国02
+      - 韩国01
+      - 菲律宾
+      - 香港01
+      - 马来西亚
+      - 美国01
+      - 香港04
+      - 迪拜
+      - 老挝
+      - 澳大利亚02
+      - 荷兰
+      - 瑞典
+      - 越南
+      - 美国04
+      - 日本03
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡-5
-      - 新加坡-6
-      - 美国-7
-      - 东京-2-移动>联通
-      - 美国-2
-      - 香港-6-三网
-      - 香港-4-三网
-      - 8x-台湾解锁-1
-      - 法兰克福-1-电信,移动
-      - 美国-6
-      - 香港-3
-      - GPT-WARP-限速-1
-      - GPT-WARP-限速-5
-      - 美国-3
-      - 圣保罗-2
-      - 巴西-1-移动>联通=电信
-      - 西班牙-三网
-      - 芝加哥-1
-      - 香港解锁-3-移动>联通
-      - 圣保罗-4
-      - 圣何塞-禁大带宽
-      - 8x-香港解锁-中转-1
-      - CF-WARP
-      - 日本-解锁(移动>联通)
-      - 巴西-2-移动>联通=电信
-      - 俄勒冈-1
-      - 阿什本-2-移动=联通>电信
-      - 8x-解锁-新加坡-1
-      - 圣保罗-1
-      - 香港-禁大带宽
-      - 新加坡-7
-      - 圣保罗-5
-      - 美国-CDN-2
-      - 俄勒冈-2
-      - 法兰克福-2-电信,移动
-      - 法国-CF中转-GPT
-      - 7.6x-解锁-新加坡-2
-      - 香港-5-(移动>联通)
-      - 美国-CDN-5
-      - 香港解锁-1
-      - 巴西-4-移动>联通=电信
-      - 俄勒冈-3
-      - 美国-CF中转-2-GPT
-      - 7.6x-中转-日本解锁-1
-      - 美国-1
-      - 香港-原生
-      - 美国-下载线路-0.2x
-      - 香港-CF中转-1
-      - 美国-CDN-4
-      - 新加坡解锁-2
-      - 美国-4
-      - 美国-CDN-1
-      - 芝加哥-2
-      - 阿什本-1-移动=联通>电信
-      - 香港-CF中转-2
-      - 香港-1-三网
-      - 硅谷-禁大带宽
-      - 巴西-3-移动>联通=电信
-      - 韩国-1-移动>联通>电信
-      - 圣保罗-3
-      - 台湾解锁-1
-      - 美国-5
-      - GPT-英国(联通>移动)
-      - US6
-      - 美国 - 洛杉矶 - Global Communication Network Limited - 251
-      - GPT-WARP-4
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 4
+      - 香港10
+      - 新加坡02
+      - 土耳其
+      - 台湾02
+      - 澳大利亚01
+      - 新加坡01
+      - 泰国
+      - 德国
+      - 台湾04
+      - 香港07
+      - 香港08
+      - 印度
+      - 香港09
+      - 台湾03
+      - 台湾05
+      - 尼日利亚
+      - 巴西
+      - 台湾01
+      - 英国
+      - 新加坡06
+      - 新加坡09
+      - 香港03
+      - 香港02
+      - 新加坡04
+      - 香港05
+      - 日本04
+      - 柬埔寨
+      - 埃及
+      - 香港06
+      - 巴基斯坦
+      - 朝鲜
+      - 美国03
+      - 美国05
+      - 缅甸
+      - 韩国02
+      - 韩国01
+      - 菲律宾
+      - 香港01
+      - 马来西亚
+      - 美国01
+      - 香港04
+      - 迪拜
+      - 老挝
+      - 澳大利亚02
+      - 荷兰
+      - 瑞典
+      - 越南
+      - 美国04
+      - 日本03
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -627,73 +483,55 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡-5
-      - 新加坡-6
-      - 美国-7
-      - 东京-2-移动>联通
-      - 美国-2
-      - 香港-6-三网
-      - 香港-4-三网
-      - 8x-台湾解锁-1
-      - 法兰克福-1-电信,移动
-      - 美国-6
-      - 香港-3
-      - GPT-WARP-限速-1
-      - GPT-WARP-限速-5
-      - 美国-3
-      - 圣保罗-2
-      - 巴西-1-移动>联通=电信
-      - 西班牙-三网
-      - 芝加哥-1
-      - 香港解锁-3-移动>联通
-      - 圣保罗-4
-      - 圣何塞-禁大带宽
-      - 8x-香港解锁-中转-1
-      - CF-WARP
-      - 日本-解锁(移动>联通)
-      - 巴西-2-移动>联通=电信
-      - 俄勒冈-1
-      - 阿什本-2-移动=联通>电信
-      - 8x-解锁-新加坡-1
-      - 圣保罗-1
-      - 香港-禁大带宽
-      - 新加坡-7
-      - 圣保罗-5
-      - 美国-CDN-2
-      - 俄勒冈-2
-      - 法兰克福-2-电信,移动
-      - 法国-CF中转-GPT
-      - 7.6x-解锁-新加坡-2
-      - 香港-5-(移动>联通)
-      - 美国-CDN-5
-      - 香港解锁-1
-      - 巴西-4-移动>联通=电信
-      - 俄勒冈-3
-      - 美国-CF中转-2-GPT
-      - 7.6x-中转-日本解锁-1
-      - 美国-1
-      - 香港-原生
-      - 美国-下载线路-0.2x
-      - 香港-CF中转-1
-      - 美国-CDN-4
-      - 新加坡解锁-2
-      - 美国-4
-      - 美国-CDN-1
-      - 芝加哥-2
-      - 阿什本-1-移动=联通>电信
-      - 香港-CF中转-2
-      - 香港-1-三网
-      - 硅谷-禁大带宽
-      - 巴西-3-移动>联通=电信
-      - 韩国-1-移动>联通>电信
-      - 圣保罗-3
-      - 台湾解锁-1
-      - 美国-5
-      - GPT-英国(联通>移动)
-      - US6
-      - 美国 - 洛杉矶 - Global Communication Network Limited - 251
-      - GPT-WARP-4
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 4
+      - 香港10
+      - 新加坡02
+      - 土耳其
+      - 台湾02
+      - 澳大利亚01
+      - 新加坡01
+      - 泰国
+      - 德国
+      - 台湾04
+      - 香港07
+      - 香港08
+      - 印度
+      - 香港09
+      - 台湾03
+      - 台湾05
+      - 尼日利亚
+      - 巴西
+      - 台湾01
+      - 英国
+      - 新加坡06
+      - 新加坡09
+      - 香港03
+      - 香港02
+      - 新加坡04
+      - 香港05
+      - 日本04
+      - 柬埔寨
+      - 埃及
+      - 香港06
+      - 巴基斯坦
+      - 朝鲜
+      - 美国03
+      - 美国05
+      - 缅甸
+      - 韩国02
+      - 韩国01
+      - 菲律宾
+      - 香港01
+      - 马来西亚
+      - 美国01
+      - 香港04
+      - 迪拜
+      - 老挝
+      - 澳大利亚02
+      - 荷兰
+      - 瑞典
+      - 越南
+      - 美国04
+      - 日本03
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
