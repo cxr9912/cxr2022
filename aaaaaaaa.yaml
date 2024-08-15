@@ -5,123 +5,119 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 - 洛杉矶 - Psychz Networks - 6, server: 172.64.175.213, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.1457230.xyz}, udp: true}
-  - {name: 美国 - 洛杉矶 - Psychz Networks - 3, server: 172.64.233.32, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.1457230.xyz}, udp: true}
-  - {name: 中国 - 香港 - G-Core Labs S.A. - 24, server: cn1.cdn.xfltd-cdn.top, port: 12003, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cn1.cdn.xfltd-cdn.top, skip-cert-verify: true, udp: true}
-  - {name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 13, server: 80.92.204.106, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 6, server: 80.92.204.106, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 9, server: 80.92.204.106, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 美国 - 洛杉矶 - Psychz Networks - 8, server: 104.26.0.56, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip14.freegradely.xyz}, udp: true}
-  - {name: 美国 - 洛杉矶 - Psychz Networks - 14, server: 104.16.148.244, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip006.freegradely.xyz}, udp: true}
-  - {name: 美国 - 洛杉矶 - Psychz Networks - 12, server: 23.227.38.5, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip006.freegradely.xyz}, udp: true}
-  - {name: 美国 - 洛杉矶 - Psychz Networks - 10, server: 172.64.167.5, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.1457230.xyz}, udp: true}
-  - {name: 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1, server: 103.163.218.2, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 美国 - 洛杉矶 - Psychz Networks - 13, server: 172.64.233.7, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.1457230.xyz}, udp: true}
-  - {name: "韩国 - 首尔特别市 - Amazon.com, Inc. - 22", server: 43.201.253.180, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 10, server: 80.92.204.106, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: 加拿大 - Beauharnois - OVH SAS - 1, server: 142.4.216.225, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: JIhN6rBKkaEboLNXVSv5rq, udp: true}
-  - {name: 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1, server: 185.123.101.241, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 马其顿 - 斯科普里 - Akton d.o.o. - 1, server: 46.183.185.15, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 美国 - 洛杉矶 - Psychz Networks - 16, server: 104.19.46.33, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip13.freegradely.xyz}, udp: true}
-  - {name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 7, server: 80.92.204.106, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
   - {name: 中国 - 香港 - G-Core Labs S.A. - 22, server: cn1.cdn.xfltd-cdn.top, port: 12004, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cn1.cdn.xfltd-cdn.top, skip-cert-verify: true, udp: true}
+  - {name: 美国 - 洛杉矶 - Psychz Networks - 8, server: 104.26.0.56, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip14.freegradely.xyz}, udp: true}
   - {name: 中国 - 香港 - G-Core Labs S.A. - 21, server: cn1.cdn.xfltd-cdn.top, port: 12001, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cn1.cdn.xfltd-cdn.top, skip-cert-verify: true, udp: true}
-  - {name: 日本 - 东京 - Amazon Technologies Inc. - 10, server: 52.197.150.228, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 中国 - 香港 - G-Core Labs S.A. - 20, server: cn1.cdn.xfltd-cdn.top, port: 12002, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cn1.cdn.xfltd-cdn.top, skip-cert-verify: true, udp: true}
-  - {name: 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1, server: 80.92.204.106, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
+  - {name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 13, server: 80.92.204.106, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: 美国 - 洛杉矶 - Psychz Networks - 13, server: 172.64.233.7, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.1457230.xyz}, udp: true}
+  - {name: 中国 - 香港 - G-Core Labs S.A. - 24, server: cn1.cdn.xfltd-cdn.top, port: 12003, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cn1.cdn.xfltd-cdn.top, skip-cert-verify: true, udp: true}
+  - {name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 6, server: 80.92.204.106, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: 美国 - 洛杉矶 - Psychz Networks - 12, server: 23.227.38.5, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip006.freegradely.xyz}, udp: true}
+  - {name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 10, server: 80.92.204.106, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 7, server: 80.92.204.106, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
   - {name: 中国 - 香港 - G-Core Labs S.A. - 23, server: cn1.cdn.xfltd-cdn.top, port: 12005, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cn1.cdn.xfltd-cdn.top, skip-cert-verify: true, udp: true}
+  - {name: 美国 - 洛杉矶 - Psychz Networks - 16, server: 104.19.46.33, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip13.freegradely.xyz}, udp: true}
+  - {name: 美国 - 洛杉矶 - Psychz Networks - 14, server: 104.16.148.244, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip006.freegradely.xyz}, udp: true}
+  - {name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 9, server: 80.92.204.106, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1, server: 185.123.101.241, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1, server: 103.163.218.2, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 美国 - 洛杉矶 - Psychz Networks - 10, server: 172.64.167.5, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.1457230.xyz}, udp: true}
+  - {name: 马其顿 - 斯科普里 - Akton d.o.o. - 1, server: 46.183.185.15, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "韩国 - 首尔特别市 - Amazon.com, Inc. - 22", server: 43.201.253.180, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 加拿大 - Beauharnois - OVH SAS - 1, server: 142.4.216.225, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: JIhN6rBKkaEboLNXVSv5rq, udp: true}
+  - {name: 美国 - 洛杉矶 - Psychz Networks - 6, server: 172.64.175.213, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.1457230.xyz}, udp: true}
+  - {name: 中国 - 香港 - G-Core Labs S.A. - 20, server: cn1.cdn.xfltd-cdn.top, port: 12002, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cn1.cdn.xfltd-cdn.top, skip-cert-verify: true, udp: true}
+  - {name: 美国 - 洛杉矶 - Psychz Networks - 3, server: 172.64.233.32, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.1457230.xyz}, udp: true}
+  - {name: 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1, server: 80.92.204.106, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 - 洛杉矶 - Psychz Networks - 6
-      - 美国 - 洛杉矶 - Psychz Networks - 3
-      - 中国 - 香港 - G-Core Labs S.A. - 24
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
-      - 美国 - 洛杉矶 - Psychz Networks - 8
-      - 美国 - 洛杉矶 - Psychz Networks - 14
-      - 美国 - 洛杉矶 - Psychz Networks - 12
-      - 美国 - 洛杉矶 - Psychz Networks - 10
-      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 13
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
-      - 加拿大 - Beauharnois - OVH SAS - 1
-      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
-      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 16
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 22
+      - 美国 - 洛杉矶 - Psychz Networks - 8
       - 中国 - 香港 - G-Core Labs S.A. - 21
-      - 日本 - 东京 - Amazon Technologies Inc. - 10
-      - 中国 - 香港 - G-Core Labs S.A. - 20
-      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
+      - 美国 - 洛杉矶 - Psychz Networks - 13
+      - 中国 - 香港 - G-Core Labs S.A. - 24
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
+      - 美国 - 洛杉矶 - Psychz Networks - 12
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 23
+      - 美国 - 洛杉矶 - Psychz Networks - 16
+      - 美国 - 洛杉矶 - Psychz Networks - 14
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
+      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
+      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 10
+      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
+      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
+      - 加拿大 - Beauharnois - OVH SAS - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 6
+      - 中国 - 香港 - G-Core Labs S.A. - 20
+      - 美国 - 洛杉矶 - Psychz Networks - 3
+      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 - 洛杉矶 - Psychz Networks - 6
-      - 美国 - 洛杉矶 - Psychz Networks - 3
-      - 中国 - 香港 - G-Core Labs S.A. - 24
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
-      - 美国 - 洛杉矶 - Psychz Networks - 8
-      - 美国 - 洛杉矶 - Psychz Networks - 14
-      - 美国 - 洛杉矶 - Psychz Networks - 12
-      - 美国 - 洛杉矶 - Psychz Networks - 10
-      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 13
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
-      - 加拿大 - Beauharnois - OVH SAS - 1
-      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
-      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 16
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 22
+      - 美国 - 洛杉矶 - Psychz Networks - 8
       - 中国 - 香港 - G-Core Labs S.A. - 21
-      - 日本 - 东京 - Amazon Technologies Inc. - 10
-      - 中国 - 香港 - G-Core Labs S.A. - 20
-      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
+      - 美国 - 洛杉矶 - Psychz Networks - 13
+      - 中国 - 香港 - G-Core Labs S.A. - 24
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
+      - 美国 - 洛杉矶 - Psychz Networks - 12
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 23
+      - 美国 - 洛杉矶 - Psychz Networks - 16
+      - 美国 - 洛杉矶 - Psychz Networks - 14
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
+      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
+      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 10
+      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
+      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
+      - 加拿大 - Beauharnois - OVH SAS - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 6
+      - 中国 - 香港 - G-Core Labs S.A. - 20
+      - 美国 - 洛杉矶 - Psychz Networks - 3
+      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 - 洛杉矶 - Psychz Networks - 6
-      - 美国 - 洛杉矶 - Psychz Networks - 3
-      - 中国 - 香港 - G-Core Labs S.A. - 24
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
-      - 美国 - 洛杉矶 - Psychz Networks - 8
-      - 美国 - 洛杉矶 - Psychz Networks - 14
-      - 美国 - 洛杉矶 - Psychz Networks - 12
-      - 美国 - 洛杉矶 - Psychz Networks - 10
-      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 13
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
-      - 加拿大 - Beauharnois - OVH SAS - 1
-      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
-      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 16
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 22
+      - 美国 - 洛杉矶 - Psychz Networks - 8
       - 中国 - 香港 - G-Core Labs S.A. - 21
-      - 日本 - 东京 - Amazon Technologies Inc. - 10
-      - 中国 - 香港 - G-Core Labs S.A. - 20
-      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
+      - 美国 - 洛杉矶 - Psychz Networks - 13
+      - 中国 - 香港 - G-Core Labs S.A. - 24
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
+      - 美国 - 洛杉矶 - Psychz Networks - 12
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 23
+      - 美国 - 洛杉矶 - Psychz Networks - 16
+      - 美国 - 洛杉矶 - Psychz Networks - 14
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
+      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
+      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 10
+      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
+      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
+      - 加拿大 - Beauharnois - OVH SAS - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 6
+      - 中国 - 香港 - G-Core Labs S.A. - 20
+      - 美国 - 洛杉矶 - Psychz Networks - 3
+      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -140,140 +136,136 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 - 洛杉矶 - Psychz Networks - 6
-      - 美国 - 洛杉矶 - Psychz Networks - 3
-      - 中国 - 香港 - G-Core Labs S.A. - 24
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
-      - 美国 - 洛杉矶 - Psychz Networks - 8
-      - 美国 - 洛杉矶 - Psychz Networks - 14
-      - 美国 - 洛杉矶 - Psychz Networks - 12
-      - 美国 - 洛杉矶 - Psychz Networks - 10
-      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 13
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
-      - 加拿大 - Beauharnois - OVH SAS - 1
-      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
-      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 16
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 22
+      - 美国 - 洛杉矶 - Psychz Networks - 8
       - 中国 - 香港 - G-Core Labs S.A. - 21
-      - 日本 - 东京 - Amazon Technologies Inc. - 10
-      - 中国 - 香港 - G-Core Labs S.A. - 20
-      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
+      - 美国 - 洛杉矶 - Psychz Networks - 13
+      - 中国 - 香港 - G-Core Labs S.A. - 24
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
+      - 美国 - 洛杉矶 - Psychz Networks - 12
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 23
+      - 美国 - 洛杉矶 - Psychz Networks - 16
+      - 美国 - 洛杉矶 - Psychz Networks - 14
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
+      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
+      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 10
+      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
+      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
+      - 加拿大 - Beauharnois - OVH SAS - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 6
+      - 中国 - 香港 - G-Core Labs S.A. - 20
+      - 美国 - 洛杉矶 - Psychz Networks - 3
+      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 美国 - 洛杉矶 - Psychz Networks - 6
-      - 美国 - 洛杉矶 - Psychz Networks - 3
-      - 中国 - 香港 - G-Core Labs S.A. - 24
-      - 美国 - 洛杉矶 - Psychz Networks - 8
-      - 美国 - 洛杉矶 - Psychz Networks - 14
-      - 美国 - 洛杉矶 - Psychz Networks - 12
-      - 美国 - 洛杉矶 - Psychz Networks - 10
-      - 美国 - 洛杉矶 - Psychz Networks - 13
-      - 美国 - 洛杉矶 - Psychz Networks - 16
       - 中国 - 香港 - G-Core Labs S.A. - 22
+      - 美国 - 洛杉矶 - Psychz Networks - 8
       - 中国 - 香港 - G-Core Labs S.A. - 21
-      - 中国 - 香港 - G-Core Labs S.A. - 20
+      - 美国 - 洛杉矶 - Psychz Networks - 13
+      - 中国 - 香港 - G-Core Labs S.A. - 24
+      - 美国 - 洛杉矶 - Psychz Networks - 12
       - 中国 - 香港 - G-Core Labs S.A. - 23
+      - 美国 - 洛杉矶 - Psychz Networks - 16
+      - 美国 - 洛杉矶 - Psychz Networks - 14
+      - 美国 - 洛杉矶 - Psychz Networks - 10
+      - 美国 - 洛杉矶 - Psychz Networks - 6
+      - 中国 - 香港 - G-Core Labs S.A. - 20
+      - 美国 - 洛杉矶 - Psychz Networks - 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 - 洛杉矶 - Psychz Networks - 6
-      - 美国 - 洛杉矶 - Psychz Networks - 3
-      - 中国 - 香港 - G-Core Labs S.A. - 24
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
-      - 美国 - 洛杉矶 - Psychz Networks - 8
-      - 美国 - 洛杉矶 - Psychz Networks - 14
-      - 美国 - 洛杉矶 - Psychz Networks - 12
-      - 美国 - 洛杉矶 - Psychz Networks - 10
-      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 13
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
-      - 加拿大 - Beauharnois - OVH SAS - 1
-      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
-      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 16
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 22
+      - 美国 - 洛杉矶 - Psychz Networks - 8
       - 中国 - 香港 - G-Core Labs S.A. - 21
-      - 日本 - 东京 - Amazon Technologies Inc. - 10
-      - 中国 - 香港 - G-Core Labs S.A. - 20
-      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
+      - 美国 - 洛杉矶 - Psychz Networks - 13
+      - 中国 - 香港 - G-Core Labs S.A. - 24
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
+      - 美国 - 洛杉矶 - Psychz Networks - 12
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 23
+      - 美国 - 洛杉矶 - Psychz Networks - 16
+      - 美国 - 洛杉矶 - Psychz Networks - 14
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
+      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
+      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 10
+      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
+      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
+      - 加拿大 - Beauharnois - OVH SAS - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 6
+      - 中国 - 香港 - G-Core Labs S.A. - 20
+      - 美国 - 洛杉矶 - Psychz Networks - 3
+      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 - 洛杉矶 - Psychz Networks - 6
-      - 美国 - 洛杉矶 - Psychz Networks - 3
-      - 中国 - 香港 - G-Core Labs S.A. - 24
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
-      - 美国 - 洛杉矶 - Psychz Networks - 8
-      - 美国 - 洛杉矶 - Psychz Networks - 14
-      - 美国 - 洛杉矶 - Psychz Networks - 12
-      - 美国 - 洛杉矶 - Psychz Networks - 10
-      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 13
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
-      - 加拿大 - Beauharnois - OVH SAS - 1
-      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
-      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 16
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 22
+      - 美国 - 洛杉矶 - Psychz Networks - 8
       - 中国 - 香港 - G-Core Labs S.A. - 21
-      - 日本 - 东京 - Amazon Technologies Inc. - 10
-      - 中国 - 香港 - G-Core Labs S.A. - 20
-      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
+      - 美国 - 洛杉矶 - Psychz Networks - 13
+      - 中国 - 香港 - G-Core Labs S.A. - 24
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
+      - 美国 - 洛杉矶 - Psychz Networks - 12
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 23
+      - 美国 - 洛杉矶 - Psychz Networks - 16
+      - 美国 - 洛杉矶 - Psychz Networks - 14
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
+      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
+      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 10
+      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
+      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
+      - 加拿大 - Beauharnois - OVH SAS - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 6
+      - 中国 - 香港 - G-Core Labs S.A. - 20
+      - 美国 - 洛杉矶 - Psychz Networks - 3
+      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 - 洛杉矶 - Psychz Networks - 6
-      - 美国 - 洛杉矶 - Psychz Networks - 3
-      - 中国 - 香港 - G-Core Labs S.A. - 24
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
-      - 美国 - 洛杉矶 - Psychz Networks - 8
-      - 美国 - 洛杉矶 - Psychz Networks - 14
-      - 美国 - 洛杉矶 - Psychz Networks - 12
-      - 美国 - 洛杉矶 - Psychz Networks - 10
-      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 13
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
-      - 加拿大 - Beauharnois - OVH SAS - 1
-      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
-      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 16
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 22
+      - 美国 - 洛杉矶 - Psychz Networks - 8
       - 中国 - 香港 - G-Core Labs S.A. - 21
-      - 日本 - 东京 - Amazon Technologies Inc. - 10
-      - 中国 - 香港 - G-Core Labs S.A. - 20
-      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
+      - 美国 - 洛杉矶 - Psychz Networks - 13
+      - 中国 - 香港 - G-Core Labs S.A. - 24
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
+      - 美国 - 洛杉矶 - Psychz Networks - 12
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 23
+      - 美国 - 洛杉矶 - Psychz Networks - 16
+      - 美国 - 洛杉矶 - Psychz Networks - 14
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
+      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
+      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 10
+      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
+      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
+      - 加拿大 - Beauharnois - OVH SAS - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 6
+      - 中国 - 香港 - G-Core Labs S.A. - 20
+      - 美国 - 洛杉矶 - Psychz Networks - 3
+      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -289,31 +281,30 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 - 洛杉矶 - Psychz Networks - 6
-      - 美国 - 洛杉矶 - Psychz Networks - 3
-      - 中国 - 香港 - G-Core Labs S.A. - 24
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
-      - 美国 - 洛杉矶 - Psychz Networks - 8
-      - 美国 - 洛杉矶 - Psychz Networks - 14
-      - 美国 - 洛杉矶 - Psychz Networks - 12
-      - 美国 - 洛杉矶 - Psychz Networks - 10
-      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 13
-      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
-      - 加拿大 - Beauharnois - OVH SAS - 1
-      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
-      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
-      - 美国 - 洛杉矶 - Psychz Networks - 16
-      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 22
+      - 美国 - 洛杉矶 - Psychz Networks - 8
       - 中国 - 香港 - G-Core Labs S.A. - 21
-      - 日本 - 东京 - Amazon Technologies Inc. - 10
-      - 中国 - 香港 - G-Core Labs S.A. - 20
-      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
+      - 美国 - 洛杉矶 - Psychz Networks - 13
+      - 中国 - 香港 - G-Core Labs S.A. - 24
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
+      - 美国 - 洛杉矶 - Psychz Networks - 12
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
       - 中国 - 香港 - G-Core Labs S.A. - 23
+      - 美国 - 洛杉矶 - Psychz Networks - 16
+      - 美国 - 洛杉矶 - Psychz Networks - 14
+      - 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
+      - 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 1
+      - 越南 - Quận Bảy - LAM A Architecture Construction Company Limited - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 10
+      - 马其顿 - 斯科普里 - Akton d.o.o. - 1
+      - 韩国 - 首尔特别市 - Amazon.com, Inc. - 22
+      - 加拿大 - Beauharnois - OVH SAS - 1
+      - 美国 - 洛杉矶 - Psychz Networks - 6
+      - 中国 - 香港 - G-Core Labs S.A. - 20
+      - 美国 - 洛杉矶 - Psychz Networks - 3
+      - 德国+-+法兰克福+-+Stark+Industries+Solutions+LTD+-+1
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
