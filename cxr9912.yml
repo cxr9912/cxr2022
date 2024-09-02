@@ -15,58 +15,462 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：80 GB', type: ss, server: cdn-p1-hk.weibo-dns.com, port: 11501, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 套餐到期：2024-09-26, type: ss, server: cdn-p1-hk.weibo-dns.com, port: 11501, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: '防失联官网①:daxun.shop', type: ss, server: cdn-p1-hk.weibo-dns.com, port: 11501, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: '防失联官网②:daxun123.xyz', type: ss, server: cdn-p1-hk.weibo-dns.com, port: 11501, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 香港01, type: ss, server: cdn-p1-hk.weibo-dns.com, port: 11501, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 香港02, type: ss, server: cdn-p1-hk.weibo-dns.com, port: 11502, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 香港03, type: ss, server: cdn-p1-hk.weibo-dns.com, port: 11503, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 日本01, type: ss, server: cdn-p1-jp.weibo-dns.com, port: 11504, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 日本02, type: ss, server: cdn-p1-jp.weibo-dns.com, port: 11505, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 日本03, type: ss, server: cdn-p1-jp.weibo-dns.com, port: 11506, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 新加坡01, type: ss, server: cdn-p1-sg.weibo-dns.com, port: 11508, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 新加坡02, type: ss, server: cdn-p1-sg.weibo-dns.com, port: 11509, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 新加坡03, type: ss, server: cdn-p1-sg.weibo-dns.com, port: 11510, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 马来西亚, type: ss, server: cdn-p1-lm.youku-dns.com, port: 11525, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 美国01, type: ss, server: cdn-p1-us.youku-dns.com, port: 11511, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 美国02, type: ss, server: cdn-p1-us.youku-dns.com, port: 11512, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 美国03, type: ss, server: cdn-p1-sg.weibo-dns.com, port: 11513, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 美国04, type: ss, server: cdn-p1-sg.weibo-dns.com, port: 11526, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 美国05, type: ss, server: cdn-p1-sg.weibo-dns.com, port: 11527, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 英国01, type: ss, server: cdn-p1-lm.youku-dns.com, port: 11514, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 英国02, type: ss, server: cdn-p1-lm.youku-dns.com, port: 11515, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 英国03, type: ss, server: cdn-p1-lm.youku-dns.com, port: 11516, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 德国, type: ss, server: cdn-p1-lm.youku-dns.com, port: 11518, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 印度, type: ss, server: cdn-p1-lm.youku-dns.com, port: 11519, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 土耳其, type: ss, server: cdn-p1-lm.youku-dns.com, port: 11520, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 加拿大, type: ss, server: cdn-p1-lm.youku-dns.com, port: 11522, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 澳大利亚, type: ss, server: cdn-p1-lm.youku-dns.com, port: 11523, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
-    - { name: 荷兰, type: ss, server: cdn-p1-lm.youku-dns.com, port: 11524, cipher: aes-256-gcm, password: 322f6750-45f4-47e0-b24d-31417596000e, udp: true }
+    - { name: '剩余流量：50 GB', server: CTCC.xn--jbyq16e.xyz, port: 41101, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 套餐到期：长期有效, server: CTCC.xn--jbyq16e.xyz, port: 41101, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀罗马🚀️101, server: CTCC.xn--jbyq16e.xyz, port: 41101, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: '电信🚀防丢:玄隐.com🚀️102', server: CTCC.xn--jbyq16e.xyz, port: 41102, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加利福尼亚🚀️103, server: CTCC.xn--jbyq16e.xyz, port: 41103, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀纽约🚀️104, server: CTCC.xn--jbyq16e.xyz, port: 41104, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加利福尼亚🚀️105, server: CTCC.xn--jbyq16e.xyz, port: 41105, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀华盛顿🚀️106, server: CTCC.xn--jbyq16e.xyz, port: 41106, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀弗吉尼亚🚀️107, server: CTCC.xn--jbyq16e.xyz, port: 41107, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀日本🚀️108, server: CTCC.xn--jbyq16e.xyz, port: 41108, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀意大利🚀️109, server: CTCC.xn--jbyq16e.xyz, port: 41109, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀纽约🚀️110, server: CTCC.xn--jbyq16e.xyz, port: 41110, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️111, server: CTCC.xn--jbyq16e.xyz, port: 41111, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️112, server: CTCC.xn--jbyq16e.xyz, port: 41112, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️113, server: CTCC.xn--jbyq16e.xyz, port: 41113, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️114, server: CTCC.xn--jbyq16e.xyz, port: 41114, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️115, server: CTCC.xn--jbyq16e.xyz, port: 41115, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀洛杉矶🚀️116, server: CTCC.xn--jbyq16e.xyz, port: 41116, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀芝加哥🚀️117, server: CTCC.xn--jbyq16e.xyz, port: 41117, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀丹佛🚀️118, server: CTCC.xn--jbyq16e.xyz, port: 41118, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀阿姆斯特丹🚀️119, server: CTCC.xn--jbyq16e.xyz, port: 41119, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀洛杉矶🚀️120, server: CTCC.xn--jbyq16e.xyz, port: 41120, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀纽约🚀️131, server: CTCC.xn--jbyq16e.xyz, port: 41131, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀洛杉矶🚀️132, server: CTCC.xn--jbyq16e.xyz, port: 41132, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀阿姆斯特丹🚀️133, server: CTCC.xn--jbyq16e.xyz, port: 41133, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀新加坡🚀️134, server: CTCC.xn--jbyq16e.xyz, port: 41134, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀伦敦🚀️135, server: CTCC.xn--jbyq16e.xyz, port: 41135, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀柏林🚀️136, server: CTCC.xn--jbyq16e.xyz, port: 41136, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀多伦多🚀️137, server: CTCC.xn--jbyq16e.xyz, port: 41137, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加尔各答🚀️138, server: CTCC.xn--jbyq16e.xyz, port: 41138, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀悉尼🚀️139, server: CTCC.xn--jbyq16e.xyz, port: 41139, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀新加坡🚀️140, server: CTCC.xn--jbyq16e.xyz, port: 41140, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀凤凰城🚀️151, server: CTCC.xn--jbyq16e.xyz, port: 41151, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀凤凰城🚀️152, server: CTCC.xn--jbyq16e.xyz, port: 41152, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀印度🚀️153, server: CTCC.xn--jbyq16e.xyz, port: 41153, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀印度🚀️154, server: CTCC.xn--jbyq16e.xyz, port: 41154, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀韩国🚀️155, server: CTCC.xn--jbyq16e.xyz, port: 41155, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀韩国🚀️156, server: CTCC.xn--jbyq16e.xyz, port: 41156, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀日本🚀️157, server: CTCC.xn--jbyq16e.xyz, port: 41157, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀日本🚀️158, server: CTCC.xn--jbyq16e.xyz, port: 41158, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀日本🚀️159, server: CTCC.xn--jbyq16e.xyz, port: 41159, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀莫斯科🚀️160, server: CTCC.xn--jbyq16e.xyz, port: 41160, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加拿大🚀️161, server: CTCC.xn--jbyq16e.xyz, port: 41161, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加拿大🚀️162, server: CTCC.xn--jbyq16e.xyz, port: 41162, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加拿大🚀️163, server: CTCC.xn--jbyq16e.xyz, port: 41163, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加拿大🚀️164, server: CTCC.xn--jbyq16e.xyz, port: 41164, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️200, server: CTCC.xn--jbyq16e.xyz, port: 41200, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀纽约🚀️201, server: CTCC.xn--jbyq16e.xyz, port: 41101, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀新加坡🚀️202, server: CTCC.xn--jbyq16e.xyz, port: 41102, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加利福尼亚🚀️203, server: CTCC.xn--jbyq16e.xyz, port: 41103, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀纽约🚀️204, server: CTCC.xn--jbyq16e.xyz, port: 41104, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加利福尼亚🚀️205, server: CTCC.xn--jbyq16e.xyz, port: 41105, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀华盛顿🚀️206, server: CTCC.xn--jbyq16e.xyz, port: 41106, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀弗吉尼亚🚀️207, server: CTCC.xn--jbyq16e.xyz, port: 41107, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀日本🚀️208, server: CTCC.xn--jbyq16e.xyz, port: 41108, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀意大利🚀️209, server: CTCC.xn--jbyq16e.xyz, port: 41109, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀纽约🚀️210, server: CTCC.xn--jbyq16e.xyz, port: 41110, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️211, server: CTCC.xn--jbyq16e.xyz, port: 41111, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️212, server: CTCC.xn--jbyq16e.xyz, port: 41112, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️213, server: CTCC.xn--jbyq16e.xyz, port: 41113, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️214, server: CTCC.xn--jbyq16e.xyz, port: 41114, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️215, server: CTCC.xn--jbyq16e.xyz, port: 41115, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀洛杉矶🚀️216, server: CTCC.xn--jbyq16e.xyz, port: 41116, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀芝加哥🚀️217, server: CTCC.xn--jbyq16e.xyz, port: 41117, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀丹佛🚀️218, server: CTCC.xn--jbyq16e.xyz, port: 41118, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀阿姆斯特丹🚀️219, server: CTCC.xn--jbyq16e.xyz, port: 41119, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀洛杉矶🚀️220, server: CTCC.xn--jbyq16e.xyz, port: 41120, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀纽约🚀️231, server: CTCC.xn--jbyq16e.xyz, port: 41131, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀洛杉矶🚀️232, server: CTCC.xn--jbyq16e.xyz, port: 41132, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀阿姆斯特丹🚀️233, server: CTCC.xn--jbyq16e.xyz, port: 41133, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀新加坡🚀️234, server: CTCC.xn--jbyq16e.xyz, port: 41134, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀伦敦🚀️235, server: CTCC.xn--jbyq16e.xyz, port: 41135, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀柏林🚀️236, server: CTCC.xn--jbyq16e.xyz, port: 41136, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀多伦多🚀️237, server: CTCC.xn--jbyq16e.xyz, port: 41137, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加尔各答🚀️238, server: CTCC.xn--jbyq16e.xyz, port: 41138, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀悉尼🚀️239, server: CTCC.xn--jbyq16e.xyz, port: 41139, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀新加坡🚀️240, server: CTCC.xn--jbyq16e.xyz, port: 41140, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀凤凰城🚀️251, server: CTCC.xn--jbyq16e.xyz, port: 41151, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀凤凰城🚀️252, server: CTCC.xn--jbyq16e.xyz, port: 41152, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀印度🚀️253, server: CTCC.xn--jbyq16e.xyz, port: 41153, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀印度🚀️254, server: CTCC.xn--jbyq16e.xyz, port: 41154, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀韩国🚀️255, server: CTCC.xn--jbyq16e.xyz, port: 41155, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀韩国🚀️256, server: CTCC.xn--jbyq16e.xyz, port: 41156, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀日本🚀️257, server: CTCC.xn--jbyq16e.xyz, port: 41157, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀日本🚀️258, server: CTCC.xn--jbyq16e.xyz, port: 41158, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀日本🚀️259, server: CTCC.xn--jbyq16e.xyz, port: 41159, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀莫斯科🚀️260, server: CTCC.xn--jbyq16e.xyz, port: 41160, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加拿大🚀️261, server: CTCC.xn--jbyq16e.xyz, port: 41161, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加拿大🚀️262, server: CTCC.xn--jbyq16e.xyz, port: 41162, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加拿大🚀️263, server: CTCC.xn--jbyq16e.xyz, port: 41163, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加拿大🚀️264, server: CTCC.xn--jbyq16e.xyz, port: 41164, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️300, server: CTCC.xn--jbyq16e.xyz, port: 41200, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀纽约🚀️301, server: CTCC.xn--jbyq16e.xyz, port: 41101, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀新加坡🚀️302, server: CTCC.xn--jbyq16e.xyz, port: 41102, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加利福尼亚🚀️303, server: CTCC.xn--jbyq16e.xyz, port: 41103, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀纽约🚀️304, server: CTCC.xn--jbyq16e.xyz, port: 41104, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加利福尼亚🚀️305, server: CTCC.xn--jbyq16e.xyz, port: 41105, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀华盛顿🚀️306, server: CTCC.xn--jbyq16e.xyz, port: 41106, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀弗吉尼亚🚀️307, server: CTCC.xn--jbyq16e.xyz, port: 41107, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀日本🚀️308, server: CTCC.xn--jbyq16e.xyz, port: 41108, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀意大利🚀️309, server: CTCC.xn--jbyq16e.xyz, port: 41109, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀纽约🚀️310, server: CTCC.xn--jbyq16e.xyz, port: 41110, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️311, server: CTCC.xn--jbyq16e.xyz, port: 41111, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️312, server: CTCC.xn--jbyq16e.xyz, port: 41112, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️313, server: CTCC.xn--jbyq16e.xyz, port: 41113, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️314, server: CTCC.xn--jbyq16e.xyz, port: 41114, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️315, server: CTCC.xn--jbyq16e.xyz, port: 41115, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀洛杉矶🚀️316, server: CTCC.xn--jbyq16e.xyz, port: 41116, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀芝加哥🚀️317, server: CTCC.xn--jbyq16e.xyz, port: 41117, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀丹佛🚀️318, server: CTCC.xn--jbyq16e.xyz, port: 41118, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀阿姆斯特丹🚀️319, server: CTCC.xn--jbyq16e.xyz, port: 41119, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀洛杉矶🚀️320, server: CTCC.xn--jbyq16e.xyz, port: 41120, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀纽约🚀️331, server: CTCC.xn--jbyq16e.xyz, port: 41131, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀洛杉矶🚀️332, server: CTCC.xn--jbyq16e.xyz, port: 41132, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀阿姆斯特丹🚀️333, server: CTCC.xn--jbyq16e.xyz, port: 41133, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀新加坡🚀️334, server: CTCC.xn--jbyq16e.xyz, port: 41134, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀伦敦🚀️335, server: CTCC.xn--jbyq16e.xyz, port: 41135, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀柏林🚀️336, server: CTCC.xn--jbyq16e.xyz, port: 41136, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀多伦多🚀️337, server: CTCC.xn--jbyq16e.xyz, port: 41137, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加尔各答🚀️338, server: CTCC.xn--jbyq16e.xyz, port: 41138, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀悉尼🚀️339, server: CTCC.xn--jbyq16e.xyz, port: 41139, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀新加坡🚀️340, server: CTCC.xn--jbyq16e.xyz, port: 41140, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀凤凰城🚀️351, server: CTCC.xn--jbyq16e.xyz, port: 41151, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀凤凰城🚀️352, server: CTCC.xn--jbyq16e.xyz, port: 41152, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀印度🚀️353, server: CTCC.xn--jbyq16e.xyz, port: 41153, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀印度🚀️354, server: CTCC.xn--jbyq16e.xyz, port: 41154, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀韩国🚀️355, server: CTCC.xn--jbyq16e.xyz, port: 41155, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀韩国🚀️356, server: CTCC.xn--jbyq16e.xyz, port: 41156, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀日本🚀️357, server: CTCC.xn--jbyq16e.xyz, port: 41157, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀日本🚀️358, server: CTCC.xn--jbyq16e.xyz, port: 41158, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀日本🚀️359, server: CTCC.xn--jbyq16e.xyz, port: 41159, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀莫斯科🚀️360, server: CTCC.xn--jbyq16e.xyz, port: 41160, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加拿大🚀️361, server: CTCC.xn--jbyq16e.xyz, port: 41161, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加拿大🚀️362, server: CTCC.xn--jbyq16e.xyz, port: 41162, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加拿大🚀️363, server: CTCC.xn--jbyq16e.xyz, port: 41163, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀加拿大🚀️364, server: CTCC.xn--jbyq16e.xyz, port: 41164, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 电信🚀香港🚀️400, server: CTCC.xn--jbyq16e.xyz, port: 41200, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀纽约🚀️401, server: CUCC.xn--jbyq16e.xyz, port: 41101, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀新加坡🚀️402, server: CUCC.xn--jbyq16e.xyz, port: 41102, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加利福尼亚🚀️403, server: CUCC.xn--jbyq16e.xyz, port: 41103, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀纽约🚀️404, server: CUCC.xn--jbyq16e.xyz, port: 41104, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加利福尼亚🚀️405, server: CUCC.xn--jbyq16e.xyz, port: 41105, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀华盛顿🚀️406, server: CUCC.xn--jbyq16e.xyz, port: 41106, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀弗吉尼亚🚀️407, server: CUCC.xn--jbyq16e.xyz, port: 41107, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀日本🚀️408, server: CUCC.xn--jbyq16e.xyz, port: 41108, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀意大利🚀️409, server: CUCC.xn--jbyq16e.xyz, port: 41109, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀纽约🚀️410, server: CUCC.xn--jbyq16e.xyz, port: 41110, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️411, server: CUCC.xn--jbyq16e.xyz, port: 41111, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️412, server: CUCC.xn--jbyq16e.xyz, port: 41112, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️413, server: CUCC.xn--jbyq16e.xyz, port: 41113, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️414, server: CUCC.xn--jbyq16e.xyz, port: 41114, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️415, server: CUCC.xn--jbyq16e.xyz, port: 41115, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀洛杉矶🚀️416, server: CUCC.xn--jbyq16e.xyz, port: 41116, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀芝加哥🚀️417, server: CUCC.xn--jbyq16e.xyz, port: 41117, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀丹佛🚀️418, server: CUCC.xn--jbyq16e.xyz, port: 41118, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀阿姆斯特丹🚀️419, server: CUCC.xn--jbyq16e.xyz, port: 41119, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀洛杉矶🚀️420, server: CUCC.xn--jbyq16e.xyz, port: 41120, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀纽约🚀️431, server: CUCC.xn--jbyq16e.xyz, port: 41131, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀洛杉矶🚀️432, server: CUCC.xn--jbyq16e.xyz, port: 41132, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀阿姆斯特丹🚀️433, server: CUCC.xn--jbyq16e.xyz, port: 41133, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀新加坡🚀️434, server: CUCC.xn--jbyq16e.xyz, port: 41134, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀伦敦🚀️435, server: CUCC.xn--jbyq16e.xyz, port: 41135, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀柏林🚀️436, server: CUCC.xn--jbyq16e.xyz, port: 41136, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀多伦多🚀️437, server: CUCC.xn--jbyq16e.xyz, port: 41137, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加尔各答🚀️438, server: CUCC.xn--jbyq16e.xyz, port: 41138, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀悉尼🚀️439, server: CUCC.xn--jbyq16e.xyz, port: 41139, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀新加坡🚀️440, server: CUCC.xn--jbyq16e.xyz, port: 41140, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀凤凰城🚀️451, server: CUCC.xn--jbyq16e.xyz, port: 41151, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀凤凰城🚀️452, server: CUCC.xn--jbyq16e.xyz, port: 41152, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀印度🚀️453, server: CUCC.xn--jbyq16e.xyz, port: 41153, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀印度🚀️454, server: CUCC.xn--jbyq16e.xyz, port: 41154, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀韩国🚀️455, server: CUCC.xn--jbyq16e.xyz, port: 41155, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀韩国🚀️456, server: CUCC.xn--jbyq16e.xyz, port: 41156, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀日本🚀️457, server: CUCC.xn--jbyq16e.xyz, port: 41157, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀日本🚀️458, server: CUCC.xn--jbyq16e.xyz, port: 41158, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀日本🚀️459, server: CUCC.xn--jbyq16e.xyz, port: 41159, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀莫斯科🚀️460, server: CUCC.xn--jbyq16e.xyz, port: 41160, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加拿大🚀️461, server: CUCC.xn--jbyq16e.xyz, port: 41161, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加拿大🚀️462, server: CUCC.xn--jbyq16e.xyz, port: 41162, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加拿大🚀️463, server: CUCC.xn--jbyq16e.xyz, port: 41163, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加拿大🚀️464, server: CUCC.xn--jbyq16e.xyz, port: 41164, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️500, server: CUCC.xn--jbyq16e.xyz, port: 41200, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀纽约🚀️501, server: CUCC.xn--jbyq16e.xyz, port: 41101, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀新加坡🚀️502, server: CUCC.xn--jbyq16e.xyz, port: 41102, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加利福尼亚🚀️503, server: CUCC.xn--jbyq16e.xyz, port: 41103, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀纽约🚀️504, server: CUCC.xn--jbyq16e.xyz, port: 41104, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加利福尼亚🚀️505, server: CUCC.xn--jbyq16e.xyz, port: 41105, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀华盛顿🚀️506, server: CUCC.xn--jbyq16e.xyz, port: 41106, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀弗吉尼亚🚀️507, server: CUCC.xn--jbyq16e.xyz, port: 41107, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀日本🚀️508, server: CUCC.xn--jbyq16e.xyz, port: 41108, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀意大利🚀️509, server: CUCC.xn--jbyq16e.xyz, port: 41109, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️510, server: CUCC.xn--jbyq16e.xyz, port: 41110, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️511, server: CUCC.xn--jbyq16e.xyz, port: 41111, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️512, server: CUCC.xn--jbyq16e.xyz, port: 41112, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️513, server: CUCC.xn--jbyq16e.xyz, port: 41113, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️514, server: CUCC.xn--jbyq16e.xyz, port: 41114, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️515, server: CUCC.xn--jbyq16e.xyz, port: 41115, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀洛杉矶🚀️516, server: CUCC.xn--jbyq16e.xyz, port: 41116, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀芝加哥🚀️517, server: CUCC.xn--jbyq16e.xyz, port: 41117, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀丹佛🚀️518, server: CUCC.xn--jbyq16e.xyz, port: 41118, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀阿姆斯特丹🚀️519, server: CUCC.xn--jbyq16e.xyz, port: 41119, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀洛杉矶🚀️520, server: CUCC.xn--jbyq16e.xyz, port: 41120, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀纽约🚀️531, server: CUCC.xn--jbyq16e.xyz, port: 41131, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀洛杉矶🚀️532, server: CUCC.xn--jbyq16e.xyz, port: 41132, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀阿姆斯特丹🚀️533, server: CUCC.xn--jbyq16e.xyz, port: 41133, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀新加坡🚀️534, server: CUCC.xn--jbyq16e.xyz, port: 41134, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀伦敦🚀️535, server: CUCC.xn--jbyq16e.xyz, port: 41135, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀柏林🚀️536, server: CUCC.xn--jbyq16e.xyz, port: 41136, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀多伦多🚀️537, server: CUCC.xn--jbyq16e.xyz, port: 41137, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加尔各答🚀️538, server: CUCC.xn--jbyq16e.xyz, port: 41138, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀悉尼🚀️539, server: CUCC.xn--jbyq16e.xyz, port: 41139, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀新加坡🚀️540, server: CUCC.xn--jbyq16e.xyz, port: 41140, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀凤凰城🚀️551, server: CUCC.xn--jbyq16e.xyz, port: 41151, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀凤凰城🚀️552, server: CUCC.xn--jbyq16e.xyz, port: 41152, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀印度🚀️553, server: CUCC.xn--jbyq16e.xyz, port: 41153, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀印度🚀️554, server: CUCC.xn--jbyq16e.xyz, port: 41154, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀韩国🚀️555, server: CUCC.xn--jbyq16e.xyz, port: 41155, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀韩国🚀️556, server: CUCC.xn--jbyq16e.xyz, port: 41156, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀日本🚀️557, server: CUCC.xn--jbyq16e.xyz, port: 41157, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀日本🚀️558, server: CUCC.xn--jbyq16e.xyz, port: 41158, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀日本🚀️559, server: CUCC.xn--jbyq16e.xyz, port: 41159, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀莫斯科🚀️560, server: CUCC.xn--jbyq16e.xyz, port: 41160, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加拿大🚀️561, server: CUCC.xn--jbyq16e.xyz, port: 41161, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加拿大🚀️562, server: CUCC.xn--jbyq16e.xyz, port: 41162, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加拿大🚀️563, server: CUCC.xn--jbyq16e.xyz, port: 41163, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加拿大🚀️564, server: CUCC.xn--jbyq16e.xyz, port: 41164, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️600, server: CUCC.xn--jbyq16e.xyz, port: 41200, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀纽约🚀️601, server: CUCC.xn--jbyq16e.xyz, port: 41101, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀新加坡🚀️602, server: CUCC.xn--jbyq16e.xyz, port: 41102, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加利福尼亚🚀️603, server: CUCC.xn--jbyq16e.xyz, port: 41103, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀纽约🚀️604, server: CUCC.xn--jbyq16e.xyz, port: 41104, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加利福尼亚🚀️605, server: CUCC.xn--jbyq16e.xyz, port: 41105, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀华盛顿🚀️606, server: CUCC.xn--jbyq16e.xyz, port: 41106, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀弗吉尼亚🚀️607, server: CUCC.xn--jbyq16e.xyz, port: 41107, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀日本🚀️608, server: CUCC.xn--jbyq16e.xyz, port: 41108, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀意大利🚀️609, server: CUCC.xn--jbyq16e.xyz, port: 41109, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀纽约🚀️610, server: CUCC.xn--jbyq16e.xyz, port: 41110, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️611, server: CUCC.xn--jbyq16e.xyz, port: 41111, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️612, server: CUCC.xn--jbyq16e.xyz, port: 41112, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️613, server: CUCC.xn--jbyq16e.xyz, port: 41113, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️614, server: CUCC.xn--jbyq16e.xyz, port: 41114, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️615, server: CUCC.xn--jbyq16e.xyz, port: 41115, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀洛杉矶🚀️616, server: CUCC.xn--jbyq16e.xyz, port: 41116, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀芝加哥🚀️617, server: CUCC.xn--jbyq16e.xyz, port: 41117, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀丹佛🚀️618, server: CUCC.xn--jbyq16e.xyz, port: 41118, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀阿姆斯特丹🚀️619, server: CUCC.xn--jbyq16e.xyz, port: 41119, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀洛杉矶🚀️620, server: CUCC.xn--jbyq16e.xyz, port: 41120, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀纽约🚀️631, server: CUCC.xn--jbyq16e.xyz, port: 41131, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀洛杉矶🚀️632, server: CUCC.xn--jbyq16e.xyz, port: 41132, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀阿姆斯特丹🚀️633, server: CUCC.xn--jbyq16e.xyz, port: 41133, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀新加坡🚀️634, server: CUCC.xn--jbyq16e.xyz, port: 41134, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀伦敦🚀️635, server: CUCC.xn--jbyq16e.xyz, port: 41135, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀柏林🚀️636, server: CUCC.xn--jbyq16e.xyz, port: 41136, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀多伦多🚀️637, server: CUCC.xn--jbyq16e.xyz, port: 41137, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加尔各答🚀️638, server: CUCC.xn--jbyq16e.xyz, port: 41138, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀悉尼🚀️639, server: CUCC.xn--jbyq16e.xyz, port: 41139, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀新加坡🚀️640, server: CUCC.xn--jbyq16e.xyz, port: 41140, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀凤凰城🚀️651, server: CUCC.xn--jbyq16e.xyz, port: 41151, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀凤凰城🚀️652, server: CUCC.xn--jbyq16e.xyz, port: 41152, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀印度🚀️653, server: CUCC.xn--jbyq16e.xyz, port: 41153, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀印度🚀️654, server: CUCC.xn--jbyq16e.xyz, port: 41154, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀韩国🚀️655, server: CUCC.xn--jbyq16e.xyz, port: 41155, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀韩国🚀️656, server: CUCC.xn--jbyq16e.xyz, port: 41156, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀日本🚀️657, server: CUCC.xn--jbyq16e.xyz, port: 41157, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀日本🚀️658, server: CUCC.xn--jbyq16e.xyz, port: 41158, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀日本🚀️659, server: CUCC.xn--jbyq16e.xyz, port: 41159, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀莫斯科🚀️660, server: CUCC.xn--jbyq16e.xyz, port: 41160, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加拿大🚀️661, server: CUCC.xn--jbyq16e.xyz, port: 41161, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加拿大🚀️662, server: CUCC.xn--jbyq16e.xyz, port: 41162, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加拿大🚀️663, server: CUCC.xn--jbyq16e.xyz, port: 41163, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀加拿大🚀️664, server: CUCC.xn--jbyq16e.xyz, port: 41164, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 联通🚀香港🚀️700, server: CUCC.xn--jbyq16e.xyz, port: 41200, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀纽约🚀️701, server: cmcc.xn--jbyq16e.xyz, port: 41101, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀新加坡🚀️702, server: cmcc.xn--jbyq16e.xyz, port: 41102, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加利福尼亚🚀️703, server: cmcc.xn--jbyq16e.xyz, port: 41103, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀纽约🚀️704, server: cmcc.xn--jbyq16e.xyz, port: 41104, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加利福尼亚🚀️705, server: cmcc.xn--jbyq16e.xyz, port: 41105, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀华盛顿🚀️706, server: cmcc.xn--jbyq16e.xyz, port: 41106, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀弗吉尼亚🚀️707, server: cmcc.xn--jbyq16e.xyz, port: 41107, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀日本🚀️708, server: cmcc.xn--jbyq16e.xyz, port: 41108, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀意大利🚀️709, server: cmcc.xn--jbyq16e.xyz, port: 41109, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀纽约🚀️710, server: cmcc.xn--jbyq16e.xyz, port: 41110, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️711, server: cmcc.xn--jbyq16e.xyz, port: 41111, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️712, server: cmcc.xn--jbyq16e.xyz, port: 41112, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️713, server: cmcc.xn--jbyq16e.xyz, port: 41113, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️714, server: cmcc.xn--jbyq16e.xyz, port: 41114, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️715, server: cmcc.xn--jbyq16e.xyz, port: 41115, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀洛杉矶🚀️716, server: cmcc.xn--jbyq16e.xyz, port: 41116, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀芝加哥🚀️717, server: cmcc.xn--jbyq16e.xyz, port: 41117, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀丹佛🚀️718, server: cmcc.xn--jbyq16e.xyz, port: 41118, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀阿姆斯特丹🚀️719, server: cmcc.xn--jbyq16e.xyz, port: 41119, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀洛杉矶🚀️720, server: cmcc.xn--jbyq16e.xyz, port: 41120, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀纽约🚀️731, server: cmcc.xn--jbyq16e.xyz, port: 41131, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀洛杉矶🚀️732, server: cmcc.xn--jbyq16e.xyz, port: 41132, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀阿姆斯特丹🚀️733, server: cmcc.xn--jbyq16e.xyz, port: 41133, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀新加坡🚀️734, server: cmcc.xn--jbyq16e.xyz, port: 41134, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀伦敦🚀️735, server: cmcc.xn--jbyq16e.xyz, port: 41135, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀柏林🚀️736, server: cmcc.xn--jbyq16e.xyz, port: 41136, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀多伦多🚀️737, server: cmcc.xn--jbyq16e.xyz, port: 41137, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加尔各答🚀️738, server: cmcc.xn--jbyq16e.xyz, port: 41138, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀悉尼🚀️739, server: cmcc.xn--jbyq16e.xyz, port: 41139, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀新加坡🚀️740, server: cmcc.xn--jbyq16e.xyz, port: 41140, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀凤凰城🚀️751, server: cmcc.xn--jbyq16e.xyz, port: 41151, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀凤凰城🚀️752, server: cmcc.xn--jbyq16e.xyz, port: 41152, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀印度🚀️753, server: cmcc.xn--jbyq16e.xyz, port: 41153, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀印度🚀️754, server: cmcc.xn--jbyq16e.xyz, port: 41154, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀韩国🚀️755, server: cmcc.xn--jbyq16e.xyz, port: 41155, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀韩国🚀️756, server: cmcc.xn--jbyq16e.xyz, port: 41156, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀日本🚀️757, server: cmcc.xn--jbyq16e.xyz, port: 41157, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀日本🚀️758, server: cmcc.xn--jbyq16e.xyz, port: 41158, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀日本🚀️759, server: cmcc.xn--jbyq16e.xyz, port: 41159, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀莫斯科🚀️760, server: cmcc.xn--jbyq16e.xyz, port: 41160, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加拿大🚀️761, server: cmcc.xn--jbyq16e.xyz, port: 41161, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加拿大🚀️762, server: cmcc.xn--jbyq16e.xyz, port: 41162, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加拿大🚀️763, server: cmcc.xn--jbyq16e.xyz, port: 41163, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加拿大🚀️764, server: cmcc.xn--jbyq16e.xyz, port: 41164, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️800, server: cmcc.xn--jbyq16e.xyz, port: 41200, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀纽约🚀️801, server: cmcc.xn--jbyq16e.xyz, port: 41101, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀新加坡🚀️802, server: cmcc.xn--jbyq16e.xyz, port: 41102, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加利福尼亚🚀️803, server: cmcc.xn--jbyq16e.xyz, port: 41103, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀纽约🚀️804, server: cmcc.xn--jbyq16e.xyz, port: 41104, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加利福尼亚🚀️805, server: cmcc.xn--jbyq16e.xyz, port: 41105, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀华盛顿🚀️806, server: cmcc.xn--jbyq16e.xyz, port: 41106, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀弗吉尼亚🚀️807, server: cmcc.xn--jbyq16e.xyz, port: 41107, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀日本🚀️808, server: cmcc.xn--jbyq16e.xyz, port: 41108, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀意大利🚀️809, server: cmcc.xn--jbyq16e.xyz, port: 41109, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀纽约🚀️810, server: cmcc.xn--jbyq16e.xyz, port: 41110, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️811, server: cmcc.xn--jbyq16e.xyz, port: 41111, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️812, server: cmcc.xn--jbyq16e.xyz, port: 41112, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️813, server: cmcc.xn--jbyq16e.xyz, port: 41113, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️814, server: cmcc.xn--jbyq16e.xyz, port: 41114, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️815, server: cmcc.xn--jbyq16e.xyz, port: 41115, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀洛杉矶🚀️816, server: cmcc.xn--jbyq16e.xyz, port: 41116, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀芝加哥🚀️817, server: cmcc.xn--jbyq16e.xyz, port: 41117, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀丹佛🚀️818, server: cmcc.xn--jbyq16e.xyz, port: 41118, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀阿姆斯特丹🚀️819, server: cmcc.xn--jbyq16e.xyz, port: 41119, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀洛杉矶🚀️820, server: cmcc.xn--jbyq16e.xyz, port: 41120, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀纽约🚀️831, server: cmcc.xn--jbyq16e.xyz, port: 41131, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀洛杉矶🚀️832, server: cmcc.xn--jbyq16e.xyz, port: 41132, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀阿姆斯特丹🚀️833, server: cmcc.xn--jbyq16e.xyz, port: 41133, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀新加坡🚀️834, server: cmcc.xn--jbyq16e.xyz, port: 41134, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀伦敦🚀️835, server: cmcc.xn--jbyq16e.xyz, port: 41135, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀柏林🚀️836, server: cmcc.xn--jbyq16e.xyz, port: 41136, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀多伦多🚀️837, server: cmcc.xn--jbyq16e.xyz, port: 41137, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加尔各答🚀️838, server: cmcc.xn--jbyq16e.xyz, port: 41138, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀悉尼🚀️839, server: cmcc.xn--jbyq16e.xyz, port: 41139, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀新加坡🚀️840, server: cmcc.xn--jbyq16e.xyz, port: 41140, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀凤凰城🚀️851, server: cmcc.xn--jbyq16e.xyz, port: 41151, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀凤凰城🚀️852, server: cmcc.xn--jbyq16e.xyz, port: 41152, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀印度🚀️853, server: cmcc.xn--jbyq16e.xyz, port: 41153, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀印度🚀️854, server: cmcc.xn--jbyq16e.xyz, port: 41154, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀韩国🚀️855, server: cmcc.xn--jbyq16e.xyz, port: 41155, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀韩国🚀️856, server: cmcc.xn--jbyq16e.xyz, port: 41156, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀日本🚀️857, server: cmcc.xn--jbyq16e.xyz, port: 41157, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀日本🚀️858, server: cmcc.xn--jbyq16e.xyz, port: 41158, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀日本🚀️859, server: cmcc.xn--jbyq16e.xyz, port: 41159, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀莫斯科🚀️860, server: cmcc.xn--jbyq16e.xyz, port: 41160, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加拿大🚀️861, server: cmcc.xn--jbyq16e.xyz, port: 41161, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加拿大🚀️862, server: cmcc.xn--jbyq16e.xyz, port: 41162, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加拿大🚀️863, server: cmcc.xn--jbyq16e.xyz, port: 41163, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加拿大🚀️864, server: cmcc.xn--jbyq16e.xyz, port: 41164, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️900, server: cmcc.xn--jbyq16e.xyz, port: 41200, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀纽约🚀️901, server: cmcc.xn--jbyq16e.xyz, port: 41101, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀新加坡🚀️902, server: cmcc.xn--jbyq16e.xyz, port: 41102, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加利福尼亚🚀️903, server: cmcc.xn--jbyq16e.xyz, port: 41103, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀纽约🚀️904, server: cmcc.xn--jbyq16e.xyz, port: 41104, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加利福尼亚🚀️905, server: cmcc.xn--jbyq16e.xyz, port: 41105, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀华盛顿🚀️906, server: cmcc.xn--jbyq16e.xyz, port: 41106, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀弗吉尼亚🚀️907, server: cmcc.xn--jbyq16e.xyz, port: 41107, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀日本🚀️908, server: cmcc.xn--jbyq16e.xyz, port: 41108, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀意大利🚀️909, server: cmcc.xn--jbyq16e.xyz, port: 41109, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀纽约🚀️910, server: cmcc.xn--jbyq16e.xyz, port: 41110, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️911, server: cmcc.xn--jbyq16e.xyz, port: 41111, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️912, server: cmcc.xn--jbyq16e.xyz, port: 41112, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️913, server: cmcc.xn--jbyq16e.xyz, port: 41113, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️914, server: cmcc.xn--jbyq16e.xyz, port: 41114, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️915, server: cmcc.xn--jbyq16e.xyz, port: 41115, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀洛杉矶🚀️916, server: cmcc.xn--jbyq16e.xyz, port: 41116, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀芝加哥🚀️917, server: cmcc.xn--jbyq16e.xyz, port: 41117, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀丹佛🚀️918, server: cmcc.xn--jbyq16e.xyz, port: 41118, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀阿姆斯特丹🚀️919, server: cmcc.xn--jbyq16e.xyz, port: 41119, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀洛杉矶🚀️920, server: cmcc.xn--jbyq16e.xyz, port: 41120, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀纽约🚀️931, server: cmcc.xn--jbyq16e.xyz, port: 41131, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀洛杉矶🚀️932, server: cmcc.xn--jbyq16e.xyz, port: 41132, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀阿姆斯特丹🚀️933, server: cmcc.xn--jbyq16e.xyz, port: 41133, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀新加坡🚀️934, server: cmcc.xn--jbyq16e.xyz, port: 41134, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀伦敦🚀️935, server: cmcc.xn--jbyq16e.xyz, port: 41135, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀柏林🚀️936, server: cmcc.xn--jbyq16e.xyz, port: 41136, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀多伦多🚀️937, server: cmcc.xn--jbyq16e.xyz, port: 41137, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加尔各答🚀️938, server: cmcc.xn--jbyq16e.xyz, port: 41138, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀悉尼🚀️939, server: cmcc.xn--jbyq16e.xyz, port: 41139, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀新加坡🚀️940, server: cmcc.xn--jbyq16e.xyz, port: 41140, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀凤凰城🚀️951, server: cmcc.xn--jbyq16e.xyz, port: 41151, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀凤凰城🚀️952, server: cmcc.xn--jbyq16e.xyz, port: 41152, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀印度🚀️953, server: cmcc.xn--jbyq16e.xyz, port: 41153, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀印度🚀️954, server: cmcc.xn--jbyq16e.xyz, port: 41154, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀韩国🚀️955, server: cmcc.xn--jbyq16e.xyz, port: 41155, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀韩国🚀️956, server: cmcc.xn--jbyq16e.xyz, port: 41156, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀日本🚀️957, server: cmcc.xn--jbyq16e.xyz, port: 41157, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀日本🚀️958, server: cmcc.xn--jbyq16e.xyz, port: 41158, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀日本🚀️959, server: cmcc.xn--jbyq16e.xyz, port: 41159, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀莫斯科🚀️960, server: cmcc.xn--jbyq16e.xyz, port: 41160, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加拿大🚀️961, server: cmcc.xn--jbyq16e.xyz, port: 41161, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加拿大🚀️962, server: cmcc.xn--jbyq16e.xyz, port: 41162, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加拿大🚀️963, server: cmcc.xn--jbyq16e.xyz, port: 41163, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀加拿大🚀️964, server: cmcc.xn--jbyq16e.xyz, port: 41164, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
+    - { name: 移动🚀香港🚀️1000, server: cmcc.xn--jbyq16e.xyz, port: 41200, sni: apple.com, up: 100, down: 100, skip-cert-verify: true, type: hysteria2, password: 0149ec57-3956-44c5-a38e-73abeea0c5ae }
 proxy-groups:
-    - { name: 大讯云, type: select, proxies: [自动选择, 故障转移, '剩余流量：80 GB', 套餐到期：2024-09-26, '防失联官网①:daxun.shop', '防失联官网②:daxun123.xyz', 香港01, 香港02, 香港03, 日本01, 日本02, 日本03, 新加坡01, 新加坡02, 新加坡03, 马来西亚, 美国01, 美国02, 美国03, 美国04, 美国05, 英国01, 英国02, 英国03, 德国, 印度, 土耳其, 加拿大, 澳大利亚, 荷兰] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：80 GB', 套餐到期：2024-09-26, '防失联官网①:daxun.shop', '防失联官网②:daxun123.xyz', 香港01, 香港02, 香港03, 日本01, 日本02, 日本03, 新加坡01, 新加坡02, 新加坡03, 马来西亚, 美国01, 美国02, 美国03, 美国04, 美国05, 英国01, 英国02, 英国03, 德国, 印度, 土耳其, 加拿大, 澳大利亚, 荷兰], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：80 GB', 套餐到期：2024-09-26, '防失联官网①:daxun.shop', '防失联官网②:daxun123.xyz', 香港01, 香港02, 香港03, 日本01, 日本02, 日本03, 新加坡01, 新加坡02, 新加坡03, 马来西亚, 美国01, 美国02, 美国03, 美国04, 美国05, 英国01, 英国02, 英国03, 德国, 印度, 土耳其, 加拿大, 澳大利亚, 荷兰], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: Mystic, type: select, proxies: [自动选择, 故障转移, '剩余流量：50 GB', 套餐到期：长期有效, 电信🚀罗马🚀️101, '电信🚀防丢:玄隐.com🚀️102', 电信🚀加利福尼亚🚀️103, 电信🚀纽约🚀️104, 电信🚀加利福尼亚🚀️105, 电信🚀华盛顿🚀️106, 电信🚀弗吉尼亚🚀️107, 电信🚀日本🚀️108, 电信🚀意大利🚀️109, 电信🚀纽约🚀️110, 电信🚀香港🚀️111, 电信🚀香港🚀️112, 电信🚀香港🚀️113, 电信🚀香港🚀️114, 电信🚀香港🚀️115, 电信🚀洛杉矶🚀️116, 电信🚀芝加哥🚀️117, 电信🚀丹佛🚀️118, 电信🚀阿姆斯特丹🚀️119, 电信🚀洛杉矶🚀️120, 电信🚀纽约🚀️131, 电信🚀洛杉矶🚀️132, 电信🚀阿姆斯特丹🚀️133, 电信🚀新加坡🚀️134, 电信🚀伦敦🚀️135, 电信🚀柏林🚀️136, 电信🚀多伦多🚀️137, 电信🚀加尔各答🚀️138, 电信🚀悉尼🚀️139, 电信🚀新加坡🚀️140, 电信🚀凤凰城🚀️151, 电信🚀凤凰城🚀️152, 电信🚀印度🚀️153, 电信🚀印度🚀️154, 电信🚀韩国🚀️155, 电信🚀韩国🚀️156, 电信🚀日本🚀️157, 电信🚀日本🚀️158, 电信🚀日本🚀️159, 电信🚀莫斯科🚀️160, 电信🚀加拿大🚀️161, 电信🚀加拿大🚀️162, 电信🚀加拿大🚀️163, 电信🚀加拿大🚀️164, 电信🚀香港🚀️200, 电信🚀纽约🚀️201, 电信🚀新加坡🚀️202, 电信🚀加利福尼亚🚀️203, 电信🚀纽约🚀️204, 电信🚀加利福尼亚🚀️205, 电信🚀华盛顿🚀️206, 电信🚀弗吉尼亚🚀️207, 电信🚀日本🚀️208, 电信🚀意大利🚀️209, 电信🚀纽约🚀️210, 电信🚀香港🚀️211, 电信🚀香港🚀️212, 电信🚀香港🚀️213, 电信🚀香港🚀️214, 电信🚀香港🚀️215, 电信🚀洛杉矶🚀️216, 电信🚀芝加哥🚀️217, 电信🚀丹佛🚀️218, 电信🚀阿姆斯特丹🚀️219, 电信🚀洛杉矶🚀️220, 电信🚀纽约🚀️231, 电信🚀洛杉矶🚀️232, 电信🚀阿姆斯特丹🚀️233, 电信🚀新加坡🚀️234, 电信🚀伦敦🚀️235, 电信🚀柏林🚀️236, 电信🚀多伦多🚀️237, 电信🚀加尔各答🚀️238, 电信🚀悉尼🚀️239, 电信🚀新加坡🚀️240, 电信🚀凤凰城🚀️251, 电信🚀凤凰城🚀️252, 电信🚀印度🚀️253, 电信🚀印度🚀️254, 电信🚀韩国🚀️255, 电信🚀韩国🚀️256, 电信🚀日本🚀️257, 电信🚀日本🚀️258, 电信🚀日本🚀️259, 电信🚀莫斯科🚀️260, 电信🚀加拿大🚀️261, 电信🚀加拿大🚀️262, 电信🚀加拿大🚀️263, 电信🚀加拿大🚀️264, 电信🚀香港🚀️300, 电信🚀纽约🚀️301, 电信🚀新加坡🚀️302, 电信🚀加利福尼亚🚀️303, 电信🚀纽约🚀️304, 电信🚀加利福尼亚🚀️305, 电信🚀华盛顿🚀️306, 电信🚀弗吉尼亚🚀️307, 电信🚀日本🚀️308, 电信🚀意大利🚀️309, 电信🚀纽约🚀️310, 电信🚀香港🚀️311, 电信🚀香港🚀️312, 电信🚀香港🚀️313, 电信🚀香港🚀️314, 电信🚀香港🚀️315, 电信🚀洛杉矶🚀️316, 电信🚀芝加哥🚀️317, 电信🚀丹佛🚀️318, 电信🚀阿姆斯特丹🚀️319, 电信🚀洛杉矶🚀️320, 电信🚀纽约🚀️331, 电信🚀洛杉矶🚀️332, 电信🚀阿姆斯特丹🚀️333, 电信🚀新加坡🚀️334, 电信🚀伦敦🚀️335, 电信🚀柏林🚀️336, 电信🚀多伦多🚀️337, 电信🚀加尔各答🚀️338, 电信🚀悉尼🚀️339, 电信🚀新加坡🚀️340, 电信🚀凤凰城🚀️351, 电信🚀凤凰城🚀️352, 电信🚀印度🚀️353, 电信🚀印度🚀️354, 电信🚀韩国🚀️355, 电信🚀韩国🚀️356, 电信🚀日本🚀️357, 电信🚀日本🚀️358, 电信🚀日本🚀️359, 电信🚀莫斯科🚀️360, 电信🚀加拿大🚀️361, 电信🚀加拿大🚀️362, 电信🚀加拿大🚀️363, 电信🚀加拿大🚀️364, 电信🚀香港🚀️400, 联通🚀纽约🚀️401, 联通🚀新加坡🚀️402, 联通🚀加利福尼亚🚀️403, 联通🚀纽约🚀️404, 联通🚀加利福尼亚🚀️405, 联通🚀华盛顿🚀️406, 联通🚀弗吉尼亚🚀️407, 联通🚀日本🚀️408, 联通🚀意大利🚀️409, 联通🚀纽约🚀️410, 联通🚀香港🚀️411, 联通🚀香港🚀️412, 联通🚀香港🚀️413, 联通🚀香港🚀️414, 联通🚀香港🚀️415, 联通🚀洛杉矶🚀️416, 联通🚀芝加哥🚀️417, 联通🚀丹佛🚀️418, 联通🚀阿姆斯特丹🚀️419, 联通🚀洛杉矶🚀️420, 联通🚀纽约🚀️431, 联通🚀洛杉矶🚀️432, 联通🚀阿姆斯特丹🚀️433, 联通🚀新加坡🚀️434, 联通🚀伦敦🚀️435, 联通🚀柏林🚀️436, 联通🚀多伦多🚀️437, 联通🚀加尔各答🚀️438, 联通🚀悉尼🚀️439, 联通🚀新加坡🚀️440, 联通🚀凤凰城🚀️451, 联通🚀凤凰城🚀️452, 联通🚀印度🚀️453, 联通🚀印度🚀️454, 联通🚀韩国🚀️455, 联通🚀韩国🚀️456, 联通🚀日本🚀️457, 联通🚀日本🚀️458, 联通🚀日本🚀️459, 联通🚀莫斯科🚀️460, 联通🚀加拿大🚀️461, 联通🚀加拿大🚀️462, 联通🚀加拿大🚀️463, 联通🚀加拿大🚀️464, 联通🚀香港🚀️500, 联通🚀纽约🚀️501, 联通🚀新加坡🚀️502, 联通🚀加利福尼亚🚀️503, 联通🚀纽约🚀️504, 联通🚀加利福尼亚🚀️505, 联通🚀华盛顿🚀️506, 联通🚀弗吉尼亚🚀️507, 联通🚀日本🚀️508, 联通🚀意大利🚀️509, 联通🚀香港🚀️510, 联通🚀香港🚀️511, 联通🚀香港🚀️512, 联通🚀香港🚀️513, 联通🚀香港🚀️514, 联通🚀香港🚀️515, 联通🚀洛杉矶🚀️516, 联通🚀芝加哥🚀️517, 联通🚀丹佛🚀️518, 联通🚀阿姆斯特丹🚀️519, 联通🚀洛杉矶🚀️520, 联通🚀纽约🚀️531, 联通🚀洛杉矶🚀️532, 联通🚀阿姆斯特丹🚀️533, 联通🚀新加坡🚀️534, 联通🚀伦敦🚀️535, 联通🚀柏林🚀️536, 联通🚀多伦多🚀️537, 联通🚀加尔各答🚀️538, 联通🚀悉尼🚀️539, 联通🚀新加坡🚀️540, 联通🚀凤凰城🚀️551, 联通🚀凤凰城🚀️552, 联通🚀印度🚀️553, 联通🚀印度🚀️554, 联通🚀韩国🚀️555, 联通🚀韩国🚀️556, 联通🚀日本🚀️557, 联通🚀日本🚀️558, 联通🚀日本🚀️559, 联通🚀莫斯科🚀️560, 联通🚀加拿大🚀️561, 联通🚀加拿大🚀️562, 联通🚀加拿大🚀️563, 联通🚀加拿大🚀️564, 联通🚀香港🚀️600, 联通🚀纽约🚀️601, 联通🚀新加坡🚀️602, 联通🚀加利福尼亚🚀️603, 联通🚀纽约🚀️604, 联通🚀加利福尼亚🚀️605, 联通🚀华盛顿🚀️606, 联通🚀弗吉尼亚🚀️607, 联通🚀日本🚀️608, 联通🚀意大利🚀️609, 联通🚀纽约🚀️610, 联通🚀香港🚀️611, 联通🚀香港🚀️612, 联通🚀香港🚀️613, 联通🚀香港🚀️614, 联通🚀香港🚀️615, 联通🚀洛杉矶🚀️616, 联通🚀芝加哥🚀️617, 联通🚀丹佛🚀️618, 联通🚀阿姆斯特丹🚀️619, 联通🚀洛杉矶🚀️620, 联通🚀纽约🚀️631, 联通🚀洛杉矶🚀️632, 联通🚀阿姆斯特丹🚀️633, 联通🚀新加坡🚀️634, 联通🚀伦敦🚀️635, 联通🚀柏林🚀️636, 联通🚀多伦多🚀️637, 联通🚀加尔各答🚀️638, 联通🚀悉尼🚀️639, 联通🚀新加坡🚀️640, 联通🚀凤凰城🚀️651, 联通🚀凤凰城🚀️652, 联通🚀印度🚀️653, 联通🚀印度🚀️654, 联通🚀韩国🚀️655, 联通🚀韩国🚀️656, 联通🚀日本🚀️657, 联通🚀日本🚀️658, 联通🚀日本🚀️659, 联通🚀莫斯科🚀️660, 联通🚀加拿大🚀️661, 联通🚀加拿大🚀️662, 联通🚀加拿大🚀️663, 联通🚀加拿大🚀️664, 联通🚀香港🚀️700, 移动🚀纽约🚀️701, 移动🚀新加坡🚀️702, 移动🚀加利福尼亚🚀️703, 移动🚀纽约🚀️704, 移动🚀加利福尼亚🚀️705, 移动🚀华盛顿🚀️706, 移动🚀弗吉尼亚🚀️707, 移动🚀日本🚀️708, 移动🚀意大利🚀️709, 移动🚀纽约🚀️710, 移动🚀香港🚀️711, 移动🚀香港🚀️712, 移动🚀香港🚀️713, 移动🚀香港🚀️714, 移动🚀香港🚀️715, 移动🚀洛杉矶🚀️716, 移动🚀芝加哥🚀️717, 移动🚀丹佛🚀️718, 移动🚀阿姆斯特丹🚀️719, 移动🚀洛杉矶🚀️720, 移动🚀纽约🚀️731, 移动🚀洛杉矶🚀️732, 移动🚀阿姆斯特丹🚀️733, 移动🚀新加坡🚀️734, 移动🚀伦敦🚀️735, 移动🚀柏林🚀️736, 移动🚀多伦多🚀️737, 移动🚀加尔各答🚀️738, 移动🚀悉尼🚀️739, 移动🚀新加坡🚀️740, 移动🚀凤凰城🚀️751, 移动🚀凤凰城🚀️752, 移动🚀印度🚀️753, 移动🚀印度🚀️754, 移动🚀韩国🚀️755, 移动🚀韩国🚀️756, 移动🚀日本🚀️757, 移动🚀日本🚀️758, 移动🚀日本🚀️759, 移动🚀莫斯科🚀️760, 移动🚀加拿大🚀️761, 移动🚀加拿大🚀️762, 移动🚀加拿大🚀️763, 移动🚀加拿大🚀️764, 移动🚀香港🚀️800, 移动🚀纽约🚀️801, 移动🚀新加坡🚀️802, 移动🚀加利福尼亚🚀️803, 移动🚀纽约🚀️804, 移动🚀加利福尼亚🚀️805, 移动🚀华盛顿🚀️806, 移动🚀弗吉尼亚🚀️807, 移动🚀日本🚀️808, 移动🚀意大利🚀️809, 移动🚀纽约🚀️810, 移动🚀香港🚀️811, 移动🚀香港🚀️812, 移动🚀香港🚀️813, 移动🚀香港🚀️814, 移动🚀香港🚀️815, 移动🚀洛杉矶🚀️816, 移动🚀芝加哥🚀️817, 移动🚀丹佛🚀️818, 移动🚀阿姆斯特丹🚀️819, 移动🚀洛杉矶🚀️820, 移动🚀纽约🚀️831, 移动🚀洛杉矶🚀️832, 移动🚀阿姆斯特丹🚀️833, 移动🚀新加坡🚀️834, 移动🚀伦敦🚀️835, 移动🚀柏林🚀️836, 移动🚀多伦多🚀️837, 移动🚀加尔各答🚀️838, 移动🚀悉尼🚀️839, 移动🚀新加坡🚀️840, 移动🚀凤凰城🚀️851, 移动🚀凤凰城🚀️852, 移动🚀印度🚀️853, 移动🚀印度🚀️854, 移动🚀韩国🚀️855, 移动🚀韩国🚀️856, 移动🚀日本🚀️857, 移动🚀日本🚀️858, 移动🚀日本🚀️859, 移动🚀莫斯科🚀️860, 移动🚀加拿大🚀️861, 移动🚀加拿大🚀️862, 移动🚀加拿大🚀️863, 移动🚀加拿大🚀️864, 移动🚀香港🚀️900, 移动🚀纽约🚀️901, 移动🚀新加坡🚀️902, 移动🚀加利福尼亚🚀️903, 移动🚀纽约🚀️904, 移动🚀加利福尼亚🚀️905, 移动🚀华盛顿🚀️906, 移动🚀弗吉尼亚🚀️907, 移动🚀日本🚀️908, 移动🚀意大利🚀️909, 移动🚀纽约🚀️910, 移动🚀香港🚀️911, 移动🚀香港🚀️912, 移动🚀香港🚀️913, 移动🚀香港🚀️914, 移动🚀香港🚀️915, 移动🚀洛杉矶🚀️916, 移动🚀芝加哥🚀️917, 移动🚀丹佛🚀️918, 移动🚀阿姆斯特丹🚀️919, 移动🚀洛杉矶🚀️920, 移动🚀纽约🚀️931, 移动🚀洛杉矶🚀️932, 移动🚀阿姆斯特丹🚀️933, 移动🚀新加坡🚀️934, 移动🚀伦敦🚀️935, 移动🚀柏林🚀️936, 移动🚀多伦多🚀️937, 移动🚀加尔各答🚀️938, 移动🚀悉尼🚀️939, 移动🚀新加坡🚀️940, 移动🚀凤凰城🚀️951, 移动🚀凤凰城🚀️952, 移动🚀印度🚀️953, 移动🚀印度🚀️954, 移动🚀韩国🚀️955, 移动🚀韩国🚀️956, 移动🚀日本🚀️957, 移动🚀日本🚀️958, 移动🚀日本🚀️959, 移动🚀莫斯科🚀️960, 移动🚀加拿大🚀️961, 移动🚀加拿大🚀️962, 移动🚀加拿大🚀️963, 移动🚀加拿大🚀️964, 移动🚀香港🚀️1000] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：50 GB', 套餐到期：长期有效, 电信🚀罗马🚀️101, '电信🚀防丢:玄隐.com🚀️102', 电信🚀加利福尼亚🚀️103, 电信🚀纽约🚀️104, 电信🚀加利福尼亚🚀️105, 电信🚀华盛顿🚀️106, 电信🚀弗吉尼亚🚀️107, 电信🚀日本🚀️108, 电信🚀意大利🚀️109, 电信🚀纽约🚀️110, 电信🚀香港🚀️111, 电信🚀香港🚀️112, 电信🚀香港🚀️113, 电信🚀香港🚀️114, 电信🚀香港🚀️115, 电信🚀洛杉矶🚀️116, 电信🚀芝加哥🚀️117, 电信🚀丹佛🚀️118, 电信🚀阿姆斯特丹🚀️119, 电信🚀洛杉矶🚀️120, 电信🚀纽约🚀️131, 电信🚀洛杉矶🚀️132, 电信🚀阿姆斯特丹🚀️133, 电信🚀新加坡🚀️134, 电信🚀伦敦🚀️135, 电信🚀柏林🚀️136, 电信🚀多伦多🚀️137, 电信🚀加尔各答🚀️138, 电信🚀悉尼🚀️139, 电信🚀新加坡🚀️140, 电信🚀凤凰城🚀️151, 电信🚀凤凰城🚀️152, 电信🚀印度🚀️153, 电信🚀印度🚀️154, 电信🚀韩国🚀️155, 电信🚀韩国🚀️156, 电信🚀日本🚀️157, 电信🚀日本🚀️158, 电信🚀日本🚀️159, 电信🚀莫斯科🚀️160, 电信🚀加拿大🚀️161, 电信🚀加拿大🚀️162, 电信🚀加拿大🚀️163, 电信🚀加拿大🚀️164, 电信🚀香港🚀️200, 电信🚀纽约🚀️201, 电信🚀新加坡🚀️202, 电信🚀加利福尼亚🚀️203, 电信🚀纽约🚀️204, 电信🚀加利福尼亚🚀️205, 电信🚀华盛顿🚀️206, 电信🚀弗吉尼亚🚀️207, 电信🚀日本🚀️208, 电信🚀意大利🚀️209, 电信🚀纽约🚀️210, 电信🚀香港🚀️211, 电信🚀香港🚀️212, 电信🚀香港🚀️213, 电信🚀香港🚀️214, 电信🚀香港🚀️215, 电信🚀洛杉矶🚀️216, 电信🚀芝加哥🚀️217, 电信🚀丹佛🚀️218, 电信🚀阿姆斯特丹🚀️219, 电信🚀洛杉矶🚀️220, 电信🚀纽约🚀️231, 电信🚀洛杉矶🚀️232, 电信🚀阿姆斯特丹🚀️233, 电信🚀新加坡🚀️234, 电信🚀伦敦🚀️235, 电信🚀柏林🚀️236, 电信🚀多伦多🚀️237, 电信🚀加尔各答🚀️238, 电信🚀悉尼🚀️239, 电信🚀新加坡🚀️240, 电信🚀凤凰城🚀️251, 电信🚀凤凰城🚀️252, 电信🚀印度🚀️253, 电信🚀印度🚀️254, 电信🚀韩国🚀️255, 电信🚀韩国🚀️256, 电信🚀日本🚀️257, 电信🚀日本🚀️258, 电信🚀日本🚀️259, 电信🚀莫斯科🚀️260, 电信🚀加拿大🚀️261, 电信🚀加拿大🚀️262, 电信🚀加拿大🚀️263, 电信🚀加拿大🚀️264, 电信🚀香港🚀️300, 电信🚀纽约🚀️301, 电信🚀新加坡🚀️302, 电信🚀加利福尼亚🚀️303, 电信🚀纽约🚀️304, 电信🚀加利福尼亚🚀️305, 电信🚀华盛顿🚀️306, 电信🚀弗吉尼亚🚀️307, 电信🚀日本🚀️308, 电信🚀意大利🚀️309, 电信🚀纽约🚀️310, 电信🚀香港🚀️311, 电信🚀香港🚀️312, 电信🚀香港🚀️313, 电信🚀香港🚀️314, 电信🚀香港🚀️315, 电信🚀洛杉矶🚀️316, 电信🚀芝加哥🚀️317, 电信🚀丹佛🚀️318, 电信🚀阿姆斯特丹🚀️319, 电信🚀洛杉矶🚀️320, 电信🚀纽约🚀️331, 电信🚀洛杉矶🚀️332, 电信🚀阿姆斯特丹🚀️333, 电信🚀新加坡🚀️334, 电信🚀伦敦🚀️335, 电信🚀柏林🚀️336, 电信🚀多伦多🚀️337, 电信🚀加尔各答🚀️338, 电信🚀悉尼🚀️339, 电信🚀新加坡🚀️340, 电信🚀凤凰城🚀️351, 电信🚀凤凰城🚀️352, 电信🚀印度🚀️353, 电信🚀印度🚀️354, 电信🚀韩国🚀️355, 电信🚀韩国🚀️356, 电信🚀日本🚀️357, 电信🚀日本🚀️358, 电信🚀日本🚀️359, 电信🚀莫斯科🚀️360, 电信🚀加拿大🚀️361, 电信🚀加拿大🚀️362, 电信🚀加拿大🚀️363, 电信🚀加拿大🚀️364, 电信🚀香港🚀️400, 联通🚀纽约🚀️401, 联通🚀新加坡🚀️402, 联通🚀加利福尼亚🚀️403, 联通🚀纽约🚀️404, 联通🚀加利福尼亚🚀️405, 联通🚀华盛顿🚀️406, 联通🚀弗吉尼亚🚀️407, 联通🚀日本🚀️408, 联通🚀意大利🚀️409, 联通🚀纽约🚀️410, 联通🚀香港🚀️411, 联通🚀香港🚀️412, 联通🚀香港🚀️413, 联通🚀香港🚀️414, 联通🚀香港🚀️415, 联通🚀洛杉矶🚀️416, 联通🚀芝加哥🚀️417, 联通🚀丹佛🚀️418, 联通🚀阿姆斯特丹🚀️419, 联通🚀洛杉矶🚀️420, 联通🚀纽约🚀️431, 联通🚀洛杉矶🚀️432, 联通🚀阿姆斯特丹🚀️433, 联通🚀新加坡🚀️434, 联通🚀伦敦🚀️435, 联通🚀柏林🚀️436, 联通🚀多伦多🚀️437, 联通🚀加尔各答🚀️438, 联通🚀悉尼🚀️439, 联通🚀新加坡🚀️440, 联通🚀凤凰城🚀️451, 联通🚀凤凰城🚀️452, 联通🚀印度🚀️453, 联通🚀印度🚀️454, 联通🚀韩国🚀️455, 联通🚀韩国🚀️456, 联通🚀日本🚀️457, 联通🚀日本🚀️458, 联通🚀日本🚀️459, 联通🚀莫斯科🚀️460, 联通🚀加拿大🚀️461, 联通🚀加拿大🚀️462, 联通🚀加拿大🚀️463, 联通🚀加拿大🚀️464, 联通🚀香港🚀️500, 联通🚀纽约🚀️501, 联通🚀新加坡🚀️502, 联通🚀加利福尼亚🚀️503, 联通🚀纽约🚀️504, 联通🚀加利福尼亚🚀️505, 联通🚀华盛顿🚀️506, 联通🚀弗吉尼亚🚀️507, 联通🚀日本🚀️508, 联通🚀意大利🚀️509, 联通🚀香港🚀️510, 联通🚀香港🚀️511, 联通🚀香港🚀️512, 联通🚀香港🚀️513, 联通🚀香港🚀️514, 联通🚀香港🚀️515, 联通🚀洛杉矶🚀️516, 联通🚀芝加哥🚀️517, 联通🚀丹佛🚀️518, 联通🚀阿姆斯特丹🚀️519, 联通🚀洛杉矶🚀️520, 联通🚀纽约🚀️531, 联通🚀洛杉矶🚀️532, 联通🚀阿姆斯特丹🚀️533, 联通🚀新加坡🚀️534, 联通🚀伦敦🚀️535, 联通🚀柏林🚀️536, 联通🚀多伦多🚀️537, 联通🚀加尔各答🚀️538, 联通🚀悉尼🚀️539, 联通🚀新加坡🚀️540, 联通🚀凤凰城🚀️551, 联通🚀凤凰城🚀️552, 联通🚀印度🚀️553, 联通🚀印度🚀️554, 联通🚀韩国🚀️555, 联通🚀韩国🚀️556, 联通🚀日本🚀️557, 联通🚀日本🚀️558, 联通🚀日本🚀️559, 联通🚀莫斯科🚀️560, 联通🚀加拿大🚀️561, 联通🚀加拿大🚀️562, 联通🚀加拿大🚀️563, 联通🚀加拿大🚀️564, 联通🚀香港🚀️600, 联通🚀纽约🚀️601, 联通🚀新加坡🚀️602, 联通🚀加利福尼亚🚀️603, 联通🚀纽约🚀️604, 联通🚀加利福尼亚🚀️605, 联通🚀华盛顿🚀️606, 联通🚀弗吉尼亚🚀️607, 联通🚀日本🚀️608, 联通🚀意大利🚀️609, 联通🚀纽约🚀️610, 联通🚀香港🚀️611, 联通🚀香港🚀️612, 联通🚀香港🚀️613, 联通🚀香港🚀️614, 联通🚀香港🚀️615, 联通🚀洛杉矶🚀️616, 联通🚀芝加哥🚀️617, 联通🚀丹佛🚀️618, 联通🚀阿姆斯特丹🚀️619, 联通🚀洛杉矶🚀️620, 联通🚀纽约🚀️631, 联通🚀洛杉矶🚀️632, 联通🚀阿姆斯特丹🚀️633, 联通🚀新加坡🚀️634, 联通🚀伦敦🚀️635, 联通🚀柏林🚀️636, 联通🚀多伦多🚀️637, 联通🚀加尔各答🚀️638, 联通🚀悉尼🚀️639, 联通🚀新加坡🚀️640, 联通🚀凤凰城🚀️651, 联通🚀凤凰城🚀️652, 联通🚀印度🚀️653, 联通🚀印度🚀️654, 联通🚀韩国🚀️655, 联通🚀韩国🚀️656, 联通🚀日本🚀️657, 联通🚀日本🚀️658, 联通🚀日本🚀️659, 联通🚀莫斯科🚀️660, 联通🚀加拿大🚀️661, 联通🚀加拿大🚀️662, 联通🚀加拿大🚀️663, 联通🚀加拿大🚀️664, 联通🚀香港🚀️700, 移动🚀纽约🚀️701, 移动🚀新加坡🚀️702, 移动🚀加利福尼亚🚀️703, 移动🚀纽约🚀️704, 移动🚀加利福尼亚🚀️705, 移动🚀华盛顿🚀️706, 移动🚀弗吉尼亚🚀️707, 移动🚀日本🚀️708, 移动🚀意大利🚀️709, 移动🚀纽约🚀️710, 移动🚀香港🚀️711, 移动🚀香港🚀️712, 移动🚀香港🚀️713, 移动🚀香港🚀️714, 移动🚀香港🚀️715, 移动🚀洛杉矶🚀️716, 移动🚀芝加哥🚀️717, 移动🚀丹佛🚀️718, 移动🚀阿姆斯特丹🚀️719, 移动🚀洛杉矶🚀️720, 移动🚀纽约🚀️731, 移动🚀洛杉矶🚀️732, 移动🚀阿姆斯特丹🚀️733, 移动🚀新加坡🚀️734, 移动🚀伦敦🚀️735, 移动🚀柏林🚀️736, 移动🚀多伦多🚀️737, 移动🚀加尔各答🚀️738, 移动🚀悉尼🚀️739, 移动🚀新加坡🚀️740, 移动🚀凤凰城🚀️751, 移动🚀凤凰城🚀️752, 移动🚀印度🚀️753, 移动🚀印度🚀️754, 移动🚀韩国🚀️755, 移动🚀韩国🚀️756, 移动🚀日本🚀️757, 移动🚀日本🚀️758, 移动🚀日本🚀️759, 移动🚀莫斯科🚀️760, 移动🚀加拿大🚀️761, 移动🚀加拿大🚀️762, 移动🚀加拿大🚀️763, 移动🚀加拿大🚀️764, 移动🚀香港🚀️800, 移动🚀纽约🚀️801, 移动🚀新加坡🚀️802, 移动🚀加利福尼亚🚀️803, 移动🚀纽约🚀️804, 移动🚀加利福尼亚🚀️805, 移动🚀华盛顿🚀️806, 移动🚀弗吉尼亚🚀️807, 移动🚀日本🚀️808, 移动🚀意大利🚀️809, 移动🚀纽约🚀️810, 移动🚀香港🚀️811, 移动🚀香港🚀️812, 移动🚀香港🚀️813, 移动🚀香港🚀️814, 移动🚀香港🚀️815, 移动🚀洛杉矶🚀️816, 移动🚀芝加哥🚀️817, 移动🚀丹佛🚀️818, 移动🚀阿姆斯特丹🚀️819, 移动🚀洛杉矶🚀️820, 移动🚀纽约🚀️831, 移动🚀洛杉矶🚀️832, 移动🚀阿姆斯特丹🚀️833, 移动🚀新加坡🚀️834, 移动🚀伦敦🚀️835, 移动🚀柏林🚀️836, 移动🚀多伦多🚀️837, 移动🚀加尔各答🚀️838, 移动🚀悉尼🚀️839, 移动🚀新加坡🚀️840, 移动🚀凤凰城🚀️851, 移动🚀凤凰城🚀️852, 移动🚀印度🚀️853, 移动🚀印度🚀️854, 移动🚀韩国🚀️855, 移动🚀韩国🚀️856, 移动🚀日本🚀️857, 移动🚀日本🚀️858, 移动🚀日本🚀️859, 移动🚀莫斯科🚀️860, 移动🚀加拿大🚀️861, 移动🚀加拿大🚀️862, 移动🚀加拿大🚀️863, 移动🚀加拿大🚀️864, 移动🚀香港🚀️900, 移动🚀纽约🚀️901, 移动🚀新加坡🚀️902, 移动🚀加利福尼亚🚀️903, 移动🚀纽约🚀️904, 移动🚀加利福尼亚🚀️905, 移动🚀华盛顿🚀️906, 移动🚀弗吉尼亚🚀️907, 移动🚀日本🚀️908, 移动🚀意大利🚀️909, 移动🚀纽约🚀️910, 移动🚀香港🚀️911, 移动🚀香港🚀️912, 移动🚀香港🚀️913, 移动🚀香港🚀️914, 移动🚀香港🚀️915, 移动🚀洛杉矶🚀️916, 移动🚀芝加哥🚀️917, 移动🚀丹佛🚀️918, 移动🚀阿姆斯特丹🚀️919, 移动🚀洛杉矶🚀️920, 移动🚀纽约🚀️931, 移动🚀洛杉矶🚀️932, 移动🚀阿姆斯特丹🚀️933, 移动🚀新加坡🚀️934, 移动🚀伦敦🚀️935, 移动🚀柏林🚀️936, 移动🚀多伦多🚀️937, 移动🚀加尔各答🚀️938, 移动🚀悉尼🚀️939, 移动🚀新加坡🚀️940, 移动🚀凤凰城🚀️951, 移动🚀凤凰城🚀️952, 移动🚀印度🚀️953, 移动🚀印度🚀️954, 移动🚀韩国🚀️955, 移动🚀韩国🚀️956, 移动🚀日本🚀️957, 移动🚀日本🚀️958, 移动🚀日本🚀️959, 移动🚀莫斯科🚀️960, 移动🚀加拿大🚀️961, 移动🚀加拿大🚀️962, 移动🚀加拿大🚀️963, 移动🚀加拿大🚀️964, 移动🚀香港🚀️1000], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：50 GB', 套餐到期：长期有效, 电信🚀罗马🚀️101, '电信🚀防丢:玄隐.com🚀️102', 电信🚀加利福尼亚🚀️103, 电信🚀纽约🚀️104, 电信🚀加利福尼亚🚀️105, 电信🚀华盛顿🚀️106, 电信🚀弗吉尼亚🚀️107, 电信🚀日本🚀️108, 电信🚀意大利🚀️109, 电信🚀纽约🚀️110, 电信🚀香港🚀️111, 电信🚀香港🚀️112, 电信🚀香港🚀️113, 电信🚀香港🚀️114, 电信🚀香港🚀️115, 电信🚀洛杉矶🚀️116, 电信🚀芝加哥🚀️117, 电信🚀丹佛🚀️118, 电信🚀阿姆斯特丹🚀️119, 电信🚀洛杉矶🚀️120, 电信🚀纽约🚀️131, 电信🚀洛杉矶🚀️132, 电信🚀阿姆斯特丹🚀️133, 电信🚀新加坡🚀️134, 电信🚀伦敦🚀️135, 电信🚀柏林🚀️136, 电信🚀多伦多🚀️137, 电信🚀加尔各答🚀️138, 电信🚀悉尼🚀️139, 电信🚀新加坡🚀️140, 电信🚀凤凰城🚀️151, 电信🚀凤凰城🚀️152, 电信🚀印度🚀️153, 电信🚀印度🚀️154, 电信🚀韩国🚀️155, 电信🚀韩国🚀️156, 电信🚀日本🚀️157, 电信🚀日本🚀️158, 电信🚀日本🚀️159, 电信🚀莫斯科🚀️160, 电信🚀加拿大🚀️161, 电信🚀加拿大🚀️162, 电信🚀加拿大🚀️163, 电信🚀加拿大🚀️164, 电信🚀香港🚀️200, 电信🚀纽约🚀️201, 电信🚀新加坡🚀️202, 电信🚀加利福尼亚🚀️203, 电信🚀纽约🚀️204, 电信🚀加利福尼亚🚀️205, 电信🚀华盛顿🚀️206, 电信🚀弗吉尼亚🚀️207, 电信🚀日本🚀️208, 电信🚀意大利🚀️209, 电信🚀纽约🚀️210, 电信🚀香港🚀️211, 电信🚀香港🚀️212, 电信🚀香港🚀️213, 电信🚀香港🚀️214, 电信🚀香港🚀️215, 电信🚀洛杉矶🚀️216, 电信🚀芝加哥🚀️217, 电信🚀丹佛🚀️218, 电信🚀阿姆斯特丹🚀️219, 电信🚀洛杉矶🚀️220, 电信🚀纽约🚀️231, 电信🚀洛杉矶🚀️232, 电信🚀阿姆斯特丹🚀️233, 电信🚀新加坡🚀️234, 电信🚀伦敦🚀️235, 电信🚀柏林🚀️236, 电信🚀多伦多🚀️237, 电信🚀加尔各答🚀️238, 电信🚀悉尼🚀️239, 电信🚀新加坡🚀️240, 电信🚀凤凰城🚀️251, 电信🚀凤凰城🚀️252, 电信🚀印度🚀️253, 电信🚀印度🚀️254, 电信🚀韩国🚀️255, 电信🚀韩国🚀️256, 电信🚀日本🚀️257, 电信🚀日本🚀️258, 电信🚀日本🚀️259, 电信🚀莫斯科🚀️260, 电信🚀加拿大🚀️261, 电信🚀加拿大🚀️262, 电信🚀加拿大🚀️263, 电信🚀加拿大🚀️264, 电信🚀香港🚀️300, 电信🚀纽约🚀️301, 电信🚀新加坡🚀️302, 电信🚀加利福尼亚🚀️303, 电信🚀纽约🚀️304, 电信🚀加利福尼亚🚀️305, 电信🚀华盛顿🚀️306, 电信🚀弗吉尼亚🚀️307, 电信🚀日本🚀️308, 电信🚀意大利🚀️309, 电信🚀纽约🚀️310, 电信🚀香港🚀️311, 电信🚀香港🚀️312, 电信🚀香港🚀️313, 电信🚀香港🚀️314, 电信🚀香港🚀️315, 电信🚀洛杉矶🚀️316, 电信🚀芝加哥🚀️317, 电信🚀丹佛🚀️318, 电信🚀阿姆斯特丹🚀️319, 电信🚀洛杉矶🚀️320, 电信🚀纽约🚀️331, 电信🚀洛杉矶🚀️332, 电信🚀阿姆斯特丹🚀️333, 电信🚀新加坡🚀️334, 电信🚀伦敦🚀️335, 电信🚀柏林🚀️336, 电信🚀多伦多🚀️337, 电信🚀加尔各答🚀️338, 电信🚀悉尼🚀️339, 电信🚀新加坡🚀️340, 电信🚀凤凰城🚀️351, 电信🚀凤凰城🚀️352, 电信🚀印度🚀️353, 电信🚀印度🚀️354, 电信🚀韩国🚀️355, 电信🚀韩国🚀️356, 电信🚀日本🚀️357, 电信🚀日本🚀️358, 电信🚀日本🚀️359, 电信🚀莫斯科🚀️360, 电信🚀加拿大🚀️361, 电信🚀加拿大🚀️362, 电信🚀加拿大🚀️363, 电信🚀加拿大🚀️364, 电信🚀香港🚀️400, 联通🚀纽约🚀️401, 联通🚀新加坡🚀️402, 联通🚀加利福尼亚🚀️403, 联通🚀纽约🚀️404, 联通🚀加利福尼亚🚀️405, 联通🚀华盛顿🚀️406, 联通🚀弗吉尼亚🚀️407, 联通🚀日本🚀️408, 联通🚀意大利🚀️409, 联通🚀纽约🚀️410, 联通🚀香港🚀️411, 联通🚀香港🚀️412, 联通🚀香港🚀️413, 联通🚀香港🚀️414, 联通🚀香港🚀️415, 联通🚀洛杉矶🚀️416, 联通🚀芝加哥🚀️417, 联通🚀丹佛🚀️418, 联通🚀阿姆斯特丹🚀️419, 联通🚀洛杉矶🚀️420, 联通🚀纽约🚀️431, 联通🚀洛杉矶🚀️432, 联通🚀阿姆斯特丹🚀️433, 联通🚀新加坡🚀️434, 联通🚀伦敦🚀️435, 联通🚀柏林🚀️436, 联通🚀多伦多🚀️437, 联通🚀加尔各答🚀️438, 联通🚀悉尼🚀️439, 联通🚀新加坡🚀️440, 联通🚀凤凰城🚀️451, 联通🚀凤凰城🚀️452, 联通🚀印度🚀️453, 联通🚀印度🚀️454, 联通🚀韩国🚀️455, 联通🚀韩国🚀️456, 联通🚀日本🚀️457, 联通🚀日本🚀️458, 联通🚀日本🚀️459, 联通🚀莫斯科🚀️460, 联通🚀加拿大🚀️461, 联通🚀加拿大🚀️462, 联通🚀加拿大🚀️463, 联通🚀加拿大🚀️464, 联通🚀香港🚀️500, 联通🚀纽约🚀️501, 联通🚀新加坡🚀️502, 联通🚀加利福尼亚🚀️503, 联通🚀纽约🚀️504, 联通🚀加利福尼亚🚀️505, 联通🚀华盛顿🚀️506, 联通🚀弗吉尼亚🚀️507, 联通🚀日本🚀️508, 联通🚀意大利🚀️509, 联通🚀香港🚀️510, 联通🚀香港🚀️511, 联通🚀香港🚀️512, 联通🚀香港🚀️513, 联通🚀香港🚀️514, 联通🚀香港🚀️515, 联通🚀洛杉矶🚀️516, 联通🚀芝加哥🚀️517, 联通🚀丹佛🚀️518, 联通🚀阿姆斯特丹🚀️519, 联通🚀洛杉矶🚀️520, 联通🚀纽约🚀️531, 联通🚀洛杉矶🚀️532, 联通🚀阿姆斯特丹🚀️533, 联通🚀新加坡🚀️534, 联通🚀伦敦🚀️535, 联通🚀柏林🚀️536, 联通🚀多伦多🚀️537, 联通🚀加尔各答🚀️538, 联通🚀悉尼🚀️539, 联通🚀新加坡🚀️540, 联通🚀凤凰城🚀️551, 联通🚀凤凰城🚀️552, 联通🚀印度🚀️553, 联通🚀印度🚀️554, 联通🚀韩国🚀️555, 联通🚀韩国🚀️556, 联通🚀日本🚀️557, 联通🚀日本🚀️558, 联通🚀日本🚀️559, 联通🚀莫斯科🚀️560, 联通🚀加拿大🚀️561, 联通🚀加拿大🚀️562, 联通🚀加拿大🚀️563, 联通🚀加拿大🚀️564, 联通🚀香港🚀️600, 联通🚀纽约🚀️601, 联通🚀新加坡🚀️602, 联通🚀加利福尼亚🚀️603, 联通🚀纽约🚀️604, 联通🚀加利福尼亚🚀️605, 联通🚀华盛顿🚀️606, 联通🚀弗吉尼亚🚀️607, 联通🚀日本🚀️608, 联通🚀意大利🚀️609, 联通🚀纽约🚀️610, 联通🚀香港🚀️611, 联通🚀香港🚀️612, 联通🚀香港🚀️613, 联通🚀香港🚀️614, 联通🚀香港🚀️615, 联通🚀洛杉矶🚀️616, 联通🚀芝加哥🚀️617, 联通🚀丹佛🚀️618, 联通🚀阿姆斯特丹🚀️619, 联通🚀洛杉矶🚀️620, 联通🚀纽约🚀️631, 联通🚀洛杉矶🚀️632, 联通🚀阿姆斯特丹🚀️633, 联通🚀新加坡🚀️634, 联通🚀伦敦🚀️635, 联通🚀柏林🚀️636, 联通🚀多伦多🚀️637, 联通🚀加尔各答🚀️638, 联通🚀悉尼🚀️639, 联通🚀新加坡🚀️640, 联通🚀凤凰城🚀️651, 联通🚀凤凰城🚀️652, 联通🚀印度🚀️653, 联通🚀印度🚀️654, 联通🚀韩国🚀️655, 联通🚀韩国🚀️656, 联通🚀日本🚀️657, 联通🚀日本🚀️658, 联通🚀日本🚀️659, 联通🚀莫斯科🚀️660, 联通🚀加拿大🚀️661, 联通🚀加拿大🚀️662, 联通🚀加拿大🚀️663, 联通🚀加拿大🚀️664, 联通🚀香港🚀️700, 移动🚀纽约🚀️701, 移动🚀新加坡🚀️702, 移动🚀加利福尼亚🚀️703, 移动🚀纽约🚀️704, 移动🚀加利福尼亚🚀️705, 移动🚀华盛顿🚀️706, 移动🚀弗吉尼亚🚀️707, 移动🚀日本🚀️708, 移动🚀意大利🚀️709, 移动🚀纽约🚀️710, 移动🚀香港🚀️711, 移动🚀香港🚀️712, 移动🚀香港🚀️713, 移动🚀香港🚀️714, 移动🚀香港🚀️715, 移动🚀洛杉矶🚀️716, 移动🚀芝加哥🚀️717, 移动🚀丹佛🚀️718, 移动🚀阿姆斯特丹🚀️719, 移动🚀洛杉矶🚀️720, 移动🚀纽约🚀️731, 移动🚀洛杉矶🚀️732, 移动🚀阿姆斯特丹🚀️733, 移动🚀新加坡🚀️734, 移动🚀伦敦🚀️735, 移动🚀柏林🚀️736, 移动🚀多伦多🚀️737, 移动🚀加尔各答🚀️738, 移动🚀悉尼🚀️739, 移动🚀新加坡🚀️740, 移动🚀凤凰城🚀️751, 移动🚀凤凰城🚀️752, 移动🚀印度🚀️753, 移动🚀印度🚀️754, 移动🚀韩国🚀️755, 移动🚀韩国🚀️756, 移动🚀日本🚀️757, 移动🚀日本🚀️758, 移动🚀日本🚀️759, 移动🚀莫斯科🚀️760, 移动🚀加拿大🚀️761, 移动🚀加拿大🚀️762, 移动🚀加拿大🚀️763, 移动🚀加拿大🚀️764, 移动🚀香港🚀️800, 移动🚀纽约🚀️801, 移动🚀新加坡🚀️802, 移动🚀加利福尼亚🚀️803, 移动🚀纽约🚀️804, 移动🚀加利福尼亚🚀️805, 移动🚀华盛顿🚀️806, 移动🚀弗吉尼亚🚀️807, 移动🚀日本🚀️808, 移动🚀意大利🚀️809, 移动🚀纽约🚀️810, 移动🚀香港🚀️811, 移动🚀香港🚀️812, 移动🚀香港🚀️813, 移动🚀香港🚀️814, 移动🚀香港🚀️815, 移动🚀洛杉矶🚀️816, 移动🚀芝加哥🚀️817, 移动🚀丹佛🚀️818, 移动🚀阿姆斯特丹🚀️819, 移动🚀洛杉矶🚀️820, 移动🚀纽约🚀️831, 移动🚀洛杉矶🚀️832, 移动🚀阿姆斯特丹🚀️833, 移动🚀新加坡🚀️834, 移动🚀伦敦🚀️835, 移动🚀柏林🚀️836, 移动🚀多伦多🚀️837, 移动🚀加尔各答🚀️838, 移动🚀悉尼🚀️839, 移动🚀新加坡🚀️840, 移动🚀凤凰城🚀️851, 移动🚀凤凰城🚀️852, 移动🚀印度🚀️853, 移动🚀印度🚀️854, 移动🚀韩国🚀️855, 移动🚀韩国🚀️856, 移动🚀日本🚀️857, 移动🚀日本🚀️858, 移动🚀日本🚀️859, 移动🚀莫斯科🚀️860, 移动🚀加拿大🚀️861, 移动🚀加拿大🚀️862, 移动🚀加拿大🚀️863, 移动🚀加拿大🚀️864, 移动🚀香港🚀️900, 移动🚀纽约🚀️901, 移动🚀新加坡🚀️902, 移动🚀加利福尼亚🚀️903, 移动🚀纽约🚀️904, 移动🚀加利福尼亚🚀️905, 移动🚀华盛顿🚀️906, 移动🚀弗吉尼亚🚀️907, 移动🚀日本🚀️908, 移动🚀意大利🚀️909, 移动🚀纽约🚀️910, 移动🚀香港🚀️911, 移动🚀香港🚀️912, 移动🚀香港🚀️913, 移动🚀香港🚀️914, 移动🚀香港🚀️915, 移动🚀洛杉矶🚀️916, 移动🚀芝加哥🚀️917, 移动🚀丹佛🚀️918, 移动🚀阿姆斯特丹🚀️919, 移动🚀洛杉矶🚀️920, 移动🚀纽约🚀️931, 移动🚀洛杉矶🚀️932, 移动🚀阿姆斯特丹🚀️933, 移动🚀新加坡🚀️934, 移动🚀伦敦🚀️935, 移动🚀柏林🚀️936, 移动🚀多伦多🚀️937, 移动🚀加尔各答🚀️938, 移动🚀悉尼🚀️939, 移动🚀新加坡🚀️940, 移动🚀凤凰城🚀️951, 移动🚀凤凰城🚀️952, 移动🚀印度🚀️953, 移动🚀印度🚀️954, 移动🚀韩国🚀️955, 移动🚀韩国🚀️956, 移动🚀日本🚀️957, 移动🚀日本🚀️958, 移动🚀日本🚀️959, 移动🚀莫斯科🚀️960, 移动🚀加拿大🚀️961, 移动🚀加拿大🚀️962, 移动🚀加拿大🚀️963, 移动🚀加拿大🚀️964, 移动🚀香港🚀️1000], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
-    - 'DOMAIN,s1.daxun-link.com:8888,DIRECT'
-    - 'DOMAIN-SUFFIX,services.googleapis.cn,大讯云'
-    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,大讯云'
+    - 'IP-CIDR,2.56.116.168/32,DIRECT,no-resolve'
+    - 'IP-CIDR,141.11.78.215/32,DIRECT,no-resolve'
+    - 'IP-CIDR,45.207.221.78/32,DIRECT,no-resolve'
+    - 'IP-CIDR,206.237.10.145/32,DIRECT,no-resolve'
+    - 'IP-CIDR,103.47.226.141/32,DIRECT,no-resolve'
+    - 'IP-CIDR,150.230.6.200/32,DIRECT,no-resolve'
+    - 'IP-CIDR,129.154.248.132/32,DIRECT,no-resolve'
+    - 'IP-CIDR,208.65.87.150/32,DIRECT,no-resolve'
+    - 'IP-CIDR,140.83.55.91/32,DIRECT,no-resolve'
+    - 'IP-CIDR,168.138.47.39/32,DIRECT,no-resolve'
+    - 'IP-CIDR,141.147.144.70/32,DIRECT,no-resolve'
+    - 'IP-CIDR,144.24.113.163/32,DIRECT,no-resolve'
+    - 'IP-CIDR,138.2.52.121/32,DIRECT,no-resolve'
+    - 'IP-CIDR,150.230.6.56/32,DIRECT,no-resolve'
+    - 'IP-CIDR,204.188.204.114/32,DIRECT,no-resolve'
+    - 'IP-CIDR,193.123.254.8/32,DIRECT,no-resolve'
+    - 'IP-CIDR,64.32.22.163/32,DIRECT,no-resolve'
+    - 'IP-CIDR,208.98.39.108/32,DIRECT,no-resolve'
+    - 'IP-CIDR,172.245.108.105/32,DIRECT,no-resolve'
+    - 'IP-CIDR,23.94.225.131/32,DIRECT,no-resolve'
+    - 'IP-CIDR,45.58.188.107/32,DIRECT,no-resolve'
+    - 'IP-CIDR,193.122.115.113/32,DIRECT,no-resolve'
+    - 'IP-CIDR,107.174.172.115/32,DIRECT,no-resolve'
+    - 'IP-CIDR,70.39.99.160/32,DIRECT,no-resolve'
+    - 'IP-CIDR,107.172.255.98/32,DIRECT,no-resolve'
+    - 'DOMAIN,sub.xn--jbyq16e.xyz,DIRECT'
+    - 'DOMAIN-SUFFIX,services.googleapis.cn,Mystic'
+    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,Mystic'
     - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
     - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
-    - 'DOMAIN,developer.apple.com,大讯云'
-    - 'DOMAIN-SUFFIX,digicert.com,大讯云'
-    - 'DOMAIN,ocsp.apple.com,大讯云'
-    - 'DOMAIN,ocsp.comodoca.com,大讯云'
-    - 'DOMAIN,ocsp.usertrust.com,大讯云'
-    - 'DOMAIN,ocsp.sectigo.com,大讯云'
-    - 'DOMAIN,ocsp.verisign.net,大讯云'
-    - 'DOMAIN-SUFFIX,apple-dns.net,大讯云'
-    - 'DOMAIN,testflight.apple.com,大讯云'
-    - 'DOMAIN,sandbox.itunes.apple.com,大讯云'
-    - 'DOMAIN,itunes.apple.com,大讯云'
-    - 'DOMAIN-SUFFIX,apps.apple.com,大讯云'
-    - 'DOMAIN-SUFFIX,blobstore.apple.com,大讯云'
-    - 'DOMAIN,cvws.icloud-content.com,大讯云'
+    - 'DOMAIN,developer.apple.com,Mystic'
+    - 'DOMAIN-SUFFIX,digicert.com,Mystic'
+    - 'DOMAIN,ocsp.apple.com,Mystic'
+    - 'DOMAIN,ocsp.comodoca.com,Mystic'
+    - 'DOMAIN,ocsp.usertrust.com,Mystic'
+    - 'DOMAIN,ocsp.sectigo.com,Mystic'
+    - 'DOMAIN,ocsp.verisign.net,Mystic'
+    - 'DOMAIN-SUFFIX,apple-dns.net,Mystic'
+    - 'DOMAIN,testflight.apple.com,Mystic'
+    - 'DOMAIN,sandbox.itunes.apple.com,Mystic'
+    - 'DOMAIN,itunes.apple.com,Mystic'
+    - 'DOMAIN-SUFFIX,apps.apple.com,Mystic'
+    - 'DOMAIN-SUFFIX,blobstore.apple.com,Mystic'
+    - 'DOMAIN,cvws.icloud-content.com,Mystic'
     - 'DOMAIN-SUFFIX,mzstatic.com,DIRECT'
     - 'DOMAIN-SUFFIX,itunes.apple.com,DIRECT'
     - 'DOMAIN-SUFFIX,icloud.com,DIRECT'
@@ -208,20 +612,20 @@ rules:
     - 'DOMAIN-SUFFIX,zhimg.com,DIRECT'
     - 'DOMAIN-SUFFIX,zimuzu.tv,DIRECT'
     - 'DOMAIN-SUFFIX,zoho.com,DIRECT'
-    - 'DOMAIN-KEYWORD,amazon,大讯云'
-    - 'DOMAIN-KEYWORD,google,大讯云'
-    - 'DOMAIN-KEYWORD,gmail,大讯云'
-    - 'DOMAIN-KEYWORD,youtube,大讯云'
-    - 'DOMAIN-KEYWORD,facebook,大讯云'
-    - 'DOMAIN-SUFFIX,fb.me,大讯云'
-    - 'DOMAIN-SUFFIX,fbcdn.net,大讯云'
-    - 'DOMAIN-KEYWORD,twitter,大讯云'
-    - 'DOMAIN-KEYWORD,instagram,大讯云'
-    - 'DOMAIN-KEYWORD,dropbox,大讯云'
-    - 'DOMAIN-SUFFIX,twimg.com,大讯云'
-    - 'DOMAIN-KEYWORD,blogspot,大讯云'
-    - 'DOMAIN-SUFFIX,youtu.be,大讯云'
-    - 'DOMAIN-KEYWORD,whatsapp,大讯云'
+    - 'DOMAIN-KEYWORD,amazon,Mystic'
+    - 'DOMAIN-KEYWORD,google,Mystic'
+    - 'DOMAIN-KEYWORD,gmail,Mystic'
+    - 'DOMAIN-KEYWORD,youtube,Mystic'
+    - 'DOMAIN-KEYWORD,facebook,Mystic'
+    - 'DOMAIN-SUFFIX,fb.me,Mystic'
+    - 'DOMAIN-SUFFIX,fbcdn.net,Mystic'
+    - 'DOMAIN-KEYWORD,twitter,Mystic'
+    - 'DOMAIN-KEYWORD,instagram,Mystic'
+    - 'DOMAIN-KEYWORD,dropbox,Mystic'
+    - 'DOMAIN-SUFFIX,twimg.com,Mystic'
+    - 'DOMAIN-KEYWORD,blogspot,Mystic'
+    - 'DOMAIN-SUFFIX,youtu.be,Mystic'
+    - 'DOMAIN-KEYWORD,whatsapp,Mystic'
     - 'DOMAIN-KEYWORD,admarvel,REJECT'
     - 'DOMAIN-KEYWORD,admaster,REJECT'
     - 'DOMAIN-KEYWORD,adsage,REJECT'
@@ -249,304 +653,304 @@ rules:
     - 'DOMAIN-SUFFIX,vungle.com,REJECT'
     - 'DOMAIN-KEYWORD,wlmonitor,REJECT'
     - 'DOMAIN-KEYWORD,zjtoolbar,REJECT'
-    - 'DOMAIN-SUFFIX,9to5mac.com,大讯云'
-    - 'DOMAIN-SUFFIX,abpchina.org,大讯云'
-    - 'DOMAIN-SUFFIX,adblockplus.org,大讯云'
-    - 'DOMAIN-SUFFIX,adobe.com,大讯云'
-    - 'DOMAIN-SUFFIX,akamaized.net,大讯云'
-    - 'DOMAIN-SUFFIX,alfredapp.com,大讯云'
-    - 'DOMAIN-SUFFIX,amplitude.com,大讯云'
-    - 'DOMAIN-SUFFIX,ampproject.org,大讯云'
-    - 'DOMAIN-SUFFIX,android.com,大讯云'
-    - 'DOMAIN-SUFFIX,angularjs.org,大讯云'
-    - 'DOMAIN-SUFFIX,aolcdn.com,大讯云'
-    - 'DOMAIN-SUFFIX,apkpure.com,大讯云'
-    - 'DOMAIN-SUFFIX,appledaily.com,大讯云'
-    - 'DOMAIN-SUFFIX,appshopper.com,大讯云'
-    - 'DOMAIN-SUFFIX,appspot.com,大讯云'
-    - 'DOMAIN-SUFFIX,arcgis.com,大讯云'
-    - 'DOMAIN-SUFFIX,archive.org,大讯云'
-    - 'DOMAIN-SUFFIX,armorgames.com,大讯云'
-    - 'DOMAIN-SUFFIX,aspnetcdn.com,大讯云'
-    - 'DOMAIN-SUFFIX,att.com,大讯云'
-    - 'DOMAIN-SUFFIX,awsstatic.com,大讯云'
-    - 'DOMAIN-SUFFIX,azureedge.net,大讯云'
-    - 'DOMAIN-SUFFIX,azurewebsites.net,大讯云'
-    - 'DOMAIN-SUFFIX,bing.com,大讯云'
-    - 'DOMAIN-SUFFIX,bintray.com,大讯云'
-    - 'DOMAIN-SUFFIX,bit.com,大讯云'
-    - 'DOMAIN-SUFFIX,bit.ly,大讯云'
-    - 'DOMAIN-SUFFIX,bitbucket.org,大讯云'
-    - 'DOMAIN-SUFFIX,bjango.com,大讯云'
-    - 'DOMAIN-SUFFIX,bkrtx.com,大讯云'
-    - 'DOMAIN-SUFFIX,blog.com,大讯云'
-    - 'DOMAIN-SUFFIX,blogcdn.com,大讯云'
-    - 'DOMAIN-SUFFIX,blogger.com,大讯云'
-    - 'DOMAIN-SUFFIX,blogsmithmedia.com,大讯云'
-    - 'DOMAIN-SUFFIX,blogspot.com,大讯云'
-    - 'DOMAIN-SUFFIX,blogspot.hk,大讯云'
-    - 'DOMAIN-SUFFIX,bloomberg.com,大讯云'
-    - 'DOMAIN-SUFFIX,box.com,大讯云'
-    - 'DOMAIN-SUFFIX,box.net,大讯云'
-    - 'DOMAIN-SUFFIX,cachefly.net,大讯云'
-    - 'DOMAIN-SUFFIX,chromium.org,大讯云'
-    - 'DOMAIN-SUFFIX,cl.ly,大讯云'
-    - 'DOMAIN-SUFFIX,cloudflare.com,大讯云'
-    - 'DOMAIN-SUFFIX,cloudfront.net,大讯云'
-    - 'DOMAIN-SUFFIX,cloudmagic.com,大讯云'
-    - 'DOMAIN-SUFFIX,cmail19.com,大讯云'
-    - 'DOMAIN-SUFFIX,cnet.com,大讯云'
-    - 'DOMAIN-SUFFIX,cocoapods.org,大讯云'
-    - 'DOMAIN-SUFFIX,comodoca.com,大讯云'
-    - 'DOMAIN-SUFFIX,crashlytics.com,大讯云'
-    - 'DOMAIN-SUFFIX,culturedcode.com,大讯云'
-    - 'DOMAIN-SUFFIX,d.pr,大讯云'
-    - 'DOMAIN-SUFFIX,danilo.to,大讯云'
-    - 'DOMAIN-SUFFIX,dayone.me,大讯云'
-    - 'DOMAIN-SUFFIX,db.tt,大讯云'
-    - 'DOMAIN-SUFFIX,deskconnect.com,大讯云'
-    - 'DOMAIN-SUFFIX,disq.us,大讯云'
-    - 'DOMAIN-SUFFIX,disqus.com,大讯云'
-    - 'DOMAIN-SUFFIX,disquscdn.com,大讯云'
-    - 'DOMAIN-SUFFIX,dnsimple.com,大讯云'
-    - 'DOMAIN-SUFFIX,docker.com,大讯云'
-    - 'DOMAIN-SUFFIX,dribbble.com,大讯云'
-    - 'DOMAIN-SUFFIX,droplr.com,大讯云'
-    - 'DOMAIN-SUFFIX,duckduckgo.com,大讯云'
-    - 'DOMAIN-SUFFIX,dueapp.com,大讯云'
-    - 'DOMAIN-SUFFIX,dytt8.net,大讯云'
-    - 'DOMAIN-SUFFIX,edgecastcdn.net,大讯云'
-    - 'DOMAIN-SUFFIX,edgekey.net,大讯云'
-    - 'DOMAIN-SUFFIX,edgesuite.net,大讯云'
-    - 'DOMAIN-SUFFIX,engadget.com,大讯云'
-    - 'DOMAIN-SUFFIX,entrust.net,大讯云'
-    - 'DOMAIN-SUFFIX,eurekavpt.com,大讯云'
-    - 'DOMAIN-SUFFIX,evernote.com,大讯云'
-    - 'DOMAIN-SUFFIX,fabric.io,大讯云'
-    - 'DOMAIN-SUFFIX,fast.com,大讯云'
-    - 'DOMAIN-SUFFIX,fastly.net,大讯云'
-    - 'DOMAIN-SUFFIX,fc2.com,大讯云'
-    - 'DOMAIN-SUFFIX,feedburner.com,大讯云'
-    - 'DOMAIN-SUFFIX,feedly.com,大讯云'
-    - 'DOMAIN-SUFFIX,feedsportal.com,大讯云'
-    - 'DOMAIN-SUFFIX,fiftythree.com,大讯云'
-    - 'DOMAIN-SUFFIX,firebaseio.com,大讯云'
-    - 'DOMAIN-SUFFIX,flexibits.com,大讯云'
-    - 'DOMAIN-SUFFIX,flickr.com,大讯云'
-    - 'DOMAIN-SUFFIX,flipboard.com,大讯云'
-    - 'DOMAIN-SUFFIX,g.co,大讯云'
-    - 'DOMAIN-SUFFIX,gabia.net,大讯云'
-    - 'DOMAIN-SUFFIX,geni.us,大讯云'
-    - 'DOMAIN-SUFFIX,gfx.ms,大讯云'
-    - 'DOMAIN-SUFFIX,ggpht.com,大讯云'
-    - 'DOMAIN-SUFFIX,ghostnoteapp.com,大讯云'
-    - 'DOMAIN-SUFFIX,git.io,大讯云'
-    - 'DOMAIN-KEYWORD,github,大讯云'
-    - 'DOMAIN-SUFFIX,globalsign.com,大讯云'
-    - 'DOMAIN-SUFFIX,gmodules.com,大讯云'
-    - 'DOMAIN-SUFFIX,godaddy.com,大讯云'
-    - 'DOMAIN-SUFFIX,golang.org,大讯云'
-    - 'DOMAIN-SUFFIX,gongm.in,大讯云'
-    - 'DOMAIN-SUFFIX,goo.gl,大讯云'
-    - 'DOMAIN-SUFFIX,goodreaders.com,大讯云'
-    - 'DOMAIN-SUFFIX,goodreads.com,大讯云'
-    - 'DOMAIN-SUFFIX,gravatar.com,大讯云'
-    - 'DOMAIN-SUFFIX,gstatic.com,大讯云'
-    - 'DOMAIN-SUFFIX,gvt0.com,大讯云'
-    - 'DOMAIN-SUFFIX,hockeyapp.net,大讯云'
-    - 'DOMAIN-SUFFIX,hotmail.com,大讯云'
-    - 'DOMAIN-SUFFIX,icons8.com,大讯云'
-    - 'DOMAIN-SUFFIX,ifixit.com,大讯云'
-    - 'DOMAIN-SUFFIX,ift.tt,大讯云'
-    - 'DOMAIN-SUFFIX,ifttt.com,大讯云'
-    - 'DOMAIN-SUFFIX,iherb.com,大讯云'
-    - 'DOMAIN-SUFFIX,imageshack.us,大讯云'
-    - 'DOMAIN-SUFFIX,img.ly,大讯云'
-    - 'DOMAIN-SUFFIX,imgur.com,大讯云'
-    - 'DOMAIN-SUFFIX,imore.com,大讯云'
-    - 'DOMAIN-SUFFIX,instapaper.com,大讯云'
-    - 'DOMAIN-SUFFIX,ipn.li,大讯云'
-    - 'DOMAIN-SUFFIX,is.gd,大讯云'
-    - 'DOMAIN-SUFFIX,issuu.com,大讯云'
-    - 'DOMAIN-SUFFIX,itgonglun.com,大讯云'
-    - 'DOMAIN-SUFFIX,itun.es,大讯云'
-    - 'DOMAIN-SUFFIX,ixquick.com,大讯云'
-    - 'DOMAIN-SUFFIX,j.mp,大讯云'
-    - 'DOMAIN-SUFFIX,js.revsci.net,大讯云'
-    - 'DOMAIN-SUFFIX,jshint.com,大讯云'
-    - 'DOMAIN-SUFFIX,jtvnw.net,大讯云'
-    - 'DOMAIN-SUFFIX,justgetflux.com,大讯云'
-    - 'DOMAIN-SUFFIX,kat.cr,大讯云'
-    - 'DOMAIN-SUFFIX,klip.me,大讯云'
-    - 'DOMAIN-SUFFIX,libsyn.com,大讯云'
-    - 'DOMAIN-SUFFIX,linkedin.com,大讯云'
-    - 'DOMAIN-SUFFIX,line-apps.com,大讯云'
-    - 'DOMAIN-SUFFIX,linode.com,大讯云'
-    - 'DOMAIN-SUFFIX,lithium.com,大讯云'
-    - 'DOMAIN-SUFFIX,littlehj.com,大讯云'
-    - 'DOMAIN-SUFFIX,live.com,大讯云'
-    - 'DOMAIN-SUFFIX,live.net,大讯云'
-    - 'DOMAIN-SUFFIX,livefilestore.com,大讯云'
-    - 'DOMAIN-SUFFIX,llnwd.net,大讯云'
-    - 'DOMAIN-SUFFIX,macid.co,大讯云'
-    - 'DOMAIN-SUFFIX,macromedia.com,大讯云'
-    - 'DOMAIN-SUFFIX,macrumors.com,大讯云'
-    - 'DOMAIN-SUFFIX,mashable.com,大讯云'
-    - 'DOMAIN-SUFFIX,mathjax.org,大讯云'
-    - 'DOMAIN-SUFFIX,medium.com,大讯云'
-    - 'DOMAIN-SUFFIX,mega.co.nz,大讯云'
-    - 'DOMAIN-SUFFIX,mega.nz,大讯云'
-    - 'DOMAIN-SUFFIX,megaupload.com,大讯云'
-    - 'DOMAIN-SUFFIX,microsofttranslator.com,大讯云'
-    - 'DOMAIN-SUFFIX,mindnode.com,大讯云'
-    - 'DOMAIN-SUFFIX,mobile01.com,大讯云'
-    - 'DOMAIN-SUFFIX,modmyi.com,大讯云'
-    - 'DOMAIN-SUFFIX,msedge.net,大讯云'
-    - 'DOMAIN-SUFFIX,myfontastic.com,大讯云'
-    - 'DOMAIN-SUFFIX,name.com,大讯云'
-    - 'DOMAIN-SUFFIX,nextmedia.com,大讯云'
-    - 'DOMAIN-SUFFIX,nsstatic.net,大讯云'
-    - 'DOMAIN-SUFFIX,nssurge.com,大讯云'
-    - 'DOMAIN-SUFFIX,nyt.com,大讯云'
-    - 'DOMAIN-SUFFIX,nytimes.com,大讯云'
-    - 'DOMAIN-SUFFIX,omnigroup.com,大讯云'
-    - 'DOMAIN-SUFFIX,onedrive.com,大讯云'
-    - 'DOMAIN-SUFFIX,onenote.com,大讯云'
-    - 'DOMAIN-SUFFIX,ooyala.com,大讯云'
-    - 'DOMAIN-SUFFIX,openvpn.net,大讯云'
-    - 'DOMAIN-SUFFIX,openwrt.org,大讯云'
-    - 'DOMAIN-SUFFIX,orkut.com,大讯云'
-    - 'DOMAIN-SUFFIX,osxdaily.com,大讯云'
-    - 'DOMAIN-SUFFIX,outlook.com,大讯云'
-    - 'DOMAIN-SUFFIX,ow.ly,大讯云'
-    - 'DOMAIN-SUFFIX,paddleapi.com,大讯云'
-    - 'DOMAIN-SUFFIX,parallels.com,大讯云'
-    - 'DOMAIN-SUFFIX,parse.com,大讯云'
-    - 'DOMAIN-SUFFIX,pdfexpert.com,大讯云'
-    - 'DOMAIN-SUFFIX,periscope.tv,大讯云'
-    - 'DOMAIN-SUFFIX,pinboard.in,大讯云'
-    - 'DOMAIN-SUFFIX,pinterest.com,大讯云'
-    - 'DOMAIN-SUFFIX,pixelmator.com,大讯云'
-    - 'DOMAIN-SUFFIX,pixiv.net,大讯云'
-    - 'DOMAIN-SUFFIX,playpcesor.com,大讯云'
-    - 'DOMAIN-SUFFIX,playstation.com,大讯云'
-    - 'DOMAIN-SUFFIX,playstation.com.hk,大讯云'
-    - 'DOMAIN-SUFFIX,playstation.net,大讯云'
-    - 'DOMAIN-SUFFIX,playstationnetwork.com,大讯云'
-    - 'DOMAIN-SUFFIX,pushwoosh.com,大讯云'
-    - 'DOMAIN-SUFFIX,rime.im,大讯云'
-    - 'DOMAIN-SUFFIX,servebom.com,大讯云'
-    - 'DOMAIN-SUFFIX,sfx.ms,大讯云'
-    - 'DOMAIN-SUFFIX,shadowsocks.org,大讯云'
-    - 'DOMAIN-SUFFIX,sharethis.com,大讯云'
-    - 'DOMAIN-SUFFIX,shazam.com,大讯云'
-    - 'DOMAIN-SUFFIX,skype.com,大讯云'
-    - 'DOMAIN-SUFFIX,smartdns大讯云.com,大讯云'
-    - 'DOMAIN-SUFFIX,smartmailcloud.com,大讯云'
-    - 'DOMAIN-SUFFIX,sndcdn.com,大讯云'
-    - 'DOMAIN-SUFFIX,sony.com,大讯云'
-    - 'DOMAIN-SUFFIX,soundcloud.com,大讯云'
-    - 'DOMAIN-SUFFIX,sourceforge.net,大讯云'
-    - 'DOMAIN-SUFFIX,spotify.com,大讯云'
-    - 'DOMAIN-SUFFIX,squarespace.com,大讯云'
-    - 'DOMAIN-SUFFIX,sstatic.net,大讯云'
-    - 'DOMAIN-SUFFIX,st.luluku.pw,大讯云'
-    - 'DOMAIN-SUFFIX,stackoverflow.com,大讯云'
-    - 'DOMAIN-SUFFIX,startpage.com,大讯云'
-    - 'DOMAIN-SUFFIX,staticflickr.com,大讯云'
-    - 'DOMAIN-SUFFIX,steamcommunity.com,大讯云'
-    - 'DOMAIN-SUFFIX,symauth.com,大讯云'
-    - 'DOMAIN-SUFFIX,symcb.com,大讯云'
-    - 'DOMAIN-SUFFIX,symcd.com,大讯云'
-    - 'DOMAIN-SUFFIX,tapbots.com,大讯云'
-    - 'DOMAIN-SUFFIX,tapbots.net,大讯云'
-    - 'DOMAIN-SUFFIX,tdesktop.com,大讯云'
-    - 'DOMAIN-SUFFIX,techcrunch.com,大讯云'
-    - 'DOMAIN-SUFFIX,techsmith.com,大讯云'
-    - 'DOMAIN-SUFFIX,thepiratebay.org,大讯云'
-    - 'DOMAIN-SUFFIX,theverge.com,大讯云'
-    - 'DOMAIN-SUFFIX,time.com,大讯云'
-    - 'DOMAIN-SUFFIX,timeinc.net,大讯云'
-    - 'DOMAIN-SUFFIX,tiny.cc,大讯云'
-    - 'DOMAIN-SUFFIX,tinypic.com,大讯云'
-    - 'DOMAIN-SUFFIX,tmblr.co,大讯云'
-    - 'DOMAIN-SUFFIX,todoist.com,大讯云'
-    - 'DOMAIN-SUFFIX,trello.com,大讯云'
-    - 'DOMAIN-SUFFIX,trustasiassl.com,大讯云'
-    - 'DOMAIN-SUFFIX,tumblr.co,大讯云'
-    - 'DOMAIN-SUFFIX,tumblr.com,大讯云'
-    - 'DOMAIN-SUFFIX,tweetdeck.com,大讯云'
-    - 'DOMAIN-SUFFIX,tweetmarker.net,大讯云'
-    - 'DOMAIN-SUFFIX,twitch.tv,大讯云'
-    - 'DOMAIN-SUFFIX,txmblr.com,大讯云'
-    - 'DOMAIN-SUFFIX,typekit.net,大讯云'
-    - 'DOMAIN-SUFFIX,ubertags.com,大讯云'
-    - 'DOMAIN-SUFFIX,ublock.org,大讯云'
-    - 'DOMAIN-SUFFIX,ubnt.com,大讯云'
-    - 'DOMAIN-SUFFIX,ulyssesapp.com,大讯云'
-    - 'DOMAIN-SUFFIX,urchin.com,大讯云'
-    - 'DOMAIN-SUFFIX,usertrust.com,大讯云'
-    - 'DOMAIN-SUFFIX,v.gd,大讯云'
-    - 'DOMAIN-SUFFIX,v2ex.com,大讯云'
-    - 'DOMAIN-SUFFIX,vimeo.com,大讯云'
-    - 'DOMAIN-SUFFIX,vimeocdn.com,大讯云'
-    - 'DOMAIN-SUFFIX,vine.co,大讯云'
-    - 'DOMAIN-SUFFIX,vivaldi.com,大讯云'
-    - 'DOMAIN-SUFFIX,vox-cdn.com,大讯云'
-    - 'DOMAIN-SUFFIX,vsco.co,大讯云'
-    - 'DOMAIN-SUFFIX,vultr.com,大讯云'
-    - 'DOMAIN-SUFFIX,w.org,大讯云'
-    - 'DOMAIN-SUFFIX,w3schools.com,大讯云'
-    - 'DOMAIN-SUFFIX,webtype.com,大讯云'
-    - 'DOMAIN-SUFFIX,wikiwand.com,大讯云'
-    - 'DOMAIN-SUFFIX,wikileaks.org,大讯云'
-    - 'DOMAIN-SUFFIX,wikimedia.org,大讯云'
-    - 'DOMAIN-SUFFIX,wikipedia.com,大讯云'
-    - 'DOMAIN-SUFFIX,wikipedia.org,大讯云'
-    - 'DOMAIN-SUFFIX,windows.com,大讯云'
-    - 'DOMAIN-SUFFIX,windows.net,大讯云'
-    - 'DOMAIN-SUFFIX,wire.com,大讯云'
-    - 'DOMAIN-SUFFIX,wordpress.com,大讯云'
-    - 'DOMAIN-SUFFIX,workflowy.com,大讯云'
-    - 'DOMAIN-SUFFIX,wp.com,大讯云'
-    - 'DOMAIN-SUFFIX,wsj.com,大讯云'
-    - 'DOMAIN-SUFFIX,wsj.net,大讯云'
-    - 'DOMAIN-SUFFIX,xda-developers.com,大讯云'
-    - 'DOMAIN-SUFFIX,xeeno.com,大讯云'
-    - 'DOMAIN-SUFFIX,xiti.com,大讯云'
-    - 'DOMAIN-SUFFIX,yahoo.com,大讯云'
-    - 'DOMAIN-SUFFIX,yimg.com,大讯云'
-    - 'DOMAIN-SUFFIX,ying.com,大讯云'
-    - 'DOMAIN-SUFFIX,yoyo.org,大讯云'
-    - 'DOMAIN-SUFFIX,ytimg.com,大讯云'
-    - 'DOMAIN-SUFFIX,telegra.ph,大讯云'
-    - 'DOMAIN-SUFFIX,telegram.org,大讯云'
-    - 'IP-CIDR,91.108.4.0/22,大讯云,no-resolve'
-    - 'IP-CIDR,91.108.8.0/21,大讯云,no-resolve'
-    - 'IP-CIDR,91.108.16.0/22,大讯云,no-resolve'
-    - 'IP-CIDR,91.108.56.0/22,大讯云,no-resolve'
-    - 'IP-CIDR,149.154.160.0/20,大讯云,no-resolve'
-    - 'IP-CIDR6,2001:67c:4e8::/48,大讯云,no-resolve'
-    - 'IP-CIDR6,2001:b28:f23d::/48,大讯云,no-resolve'
-    - 'IP-CIDR6,2001:b28:f23f::/48,大讯云,no-resolve'
-    - 'IP-CIDR,120.232.181.162/32,大讯云,no-resolve'
-    - 'IP-CIDR,120.241.147.226/32,大讯云,no-resolve'
-    - 'IP-CIDR,120.253.253.226/32,大讯云,no-resolve'
-    - 'IP-CIDR,120.253.255.162/32,大讯云,no-resolve'
-    - 'IP-CIDR,120.253.255.34/32,大讯云,no-resolve'
-    - 'IP-CIDR,120.253.255.98/32,大讯云,no-resolve'
-    - 'IP-CIDR,180.163.150.162/32,大讯云,no-resolve'
-    - 'IP-CIDR,180.163.150.34/32,大讯云,no-resolve'
-    - 'IP-CIDR,180.163.151.162/32,大讯云,no-resolve'
-    - 'IP-CIDR,180.163.151.34/32,大讯云,no-resolve'
-    - 'IP-CIDR,203.208.39.0/24,大讯云,no-resolve'
-    - 'IP-CIDR,203.208.40.0/24,大讯云,no-resolve'
-    - 'IP-CIDR,203.208.41.0/24,大讯云,no-resolve'
-    - 'IP-CIDR,203.208.43.0/24,大讯云,no-resolve'
-    - 'IP-CIDR,203.208.50.0/24,大讯云,no-resolve'
-    - 'IP-CIDR,220.181.174.162/32,大讯云,no-resolve'
-    - 'IP-CIDR,220.181.174.226/32,大讯云,no-resolve'
-    - 'IP-CIDR,220.181.174.34/32,大讯云,no-resolve'
+    - 'DOMAIN-SUFFIX,9to5mac.com,Mystic'
+    - 'DOMAIN-SUFFIX,abpchina.org,Mystic'
+    - 'DOMAIN-SUFFIX,adblockplus.org,Mystic'
+    - 'DOMAIN-SUFFIX,adobe.com,Mystic'
+    - 'DOMAIN-SUFFIX,akamaized.net,Mystic'
+    - 'DOMAIN-SUFFIX,alfredapp.com,Mystic'
+    - 'DOMAIN-SUFFIX,amplitude.com,Mystic'
+    - 'DOMAIN-SUFFIX,ampproject.org,Mystic'
+    - 'DOMAIN-SUFFIX,android.com,Mystic'
+    - 'DOMAIN-SUFFIX,angularjs.org,Mystic'
+    - 'DOMAIN-SUFFIX,aolcdn.com,Mystic'
+    - 'DOMAIN-SUFFIX,apkpure.com,Mystic'
+    - 'DOMAIN-SUFFIX,appledaily.com,Mystic'
+    - 'DOMAIN-SUFFIX,appshopper.com,Mystic'
+    - 'DOMAIN-SUFFIX,appspot.com,Mystic'
+    - 'DOMAIN-SUFFIX,arcgis.com,Mystic'
+    - 'DOMAIN-SUFFIX,archive.org,Mystic'
+    - 'DOMAIN-SUFFIX,armorgames.com,Mystic'
+    - 'DOMAIN-SUFFIX,aspnetcdn.com,Mystic'
+    - 'DOMAIN-SUFFIX,att.com,Mystic'
+    - 'DOMAIN-SUFFIX,awsstatic.com,Mystic'
+    - 'DOMAIN-SUFFIX,azureedge.net,Mystic'
+    - 'DOMAIN-SUFFIX,azurewebsites.net,Mystic'
+    - 'DOMAIN-SUFFIX,bing.com,Mystic'
+    - 'DOMAIN-SUFFIX,bintray.com,Mystic'
+    - 'DOMAIN-SUFFIX,bit.com,Mystic'
+    - 'DOMAIN-SUFFIX,bit.ly,Mystic'
+    - 'DOMAIN-SUFFIX,bitbucket.org,Mystic'
+    - 'DOMAIN-SUFFIX,bjango.com,Mystic'
+    - 'DOMAIN-SUFFIX,bkrtx.com,Mystic'
+    - 'DOMAIN-SUFFIX,blog.com,Mystic'
+    - 'DOMAIN-SUFFIX,blogcdn.com,Mystic'
+    - 'DOMAIN-SUFFIX,blogger.com,Mystic'
+    - 'DOMAIN-SUFFIX,blogsmithmedia.com,Mystic'
+    - 'DOMAIN-SUFFIX,blogspot.com,Mystic'
+    - 'DOMAIN-SUFFIX,blogspot.hk,Mystic'
+    - 'DOMAIN-SUFFIX,bloomberg.com,Mystic'
+    - 'DOMAIN-SUFFIX,box.com,Mystic'
+    - 'DOMAIN-SUFFIX,box.net,Mystic'
+    - 'DOMAIN-SUFFIX,cachefly.net,Mystic'
+    - 'DOMAIN-SUFFIX,chromium.org,Mystic'
+    - 'DOMAIN-SUFFIX,cl.ly,Mystic'
+    - 'DOMAIN-SUFFIX,cloudflare.com,Mystic'
+    - 'DOMAIN-SUFFIX,cloudfront.net,Mystic'
+    - 'DOMAIN-SUFFIX,cloudmagic.com,Mystic'
+    - 'DOMAIN-SUFFIX,cmail19.com,Mystic'
+    - 'DOMAIN-SUFFIX,cnet.com,Mystic'
+    - 'DOMAIN-SUFFIX,cocoapods.org,Mystic'
+    - 'DOMAIN-SUFFIX,comodoca.com,Mystic'
+    - 'DOMAIN-SUFFIX,crashlytics.com,Mystic'
+    - 'DOMAIN-SUFFIX,culturedcode.com,Mystic'
+    - 'DOMAIN-SUFFIX,d.pr,Mystic'
+    - 'DOMAIN-SUFFIX,danilo.to,Mystic'
+    - 'DOMAIN-SUFFIX,dayone.me,Mystic'
+    - 'DOMAIN-SUFFIX,db.tt,Mystic'
+    - 'DOMAIN-SUFFIX,deskconnect.com,Mystic'
+    - 'DOMAIN-SUFFIX,disq.us,Mystic'
+    - 'DOMAIN-SUFFIX,disqus.com,Mystic'
+    - 'DOMAIN-SUFFIX,disquscdn.com,Mystic'
+    - 'DOMAIN-SUFFIX,dnsimple.com,Mystic'
+    - 'DOMAIN-SUFFIX,docker.com,Mystic'
+    - 'DOMAIN-SUFFIX,dribbble.com,Mystic'
+    - 'DOMAIN-SUFFIX,droplr.com,Mystic'
+    - 'DOMAIN-SUFFIX,duckduckgo.com,Mystic'
+    - 'DOMAIN-SUFFIX,dueapp.com,Mystic'
+    - 'DOMAIN-SUFFIX,dytt8.net,Mystic'
+    - 'DOMAIN-SUFFIX,edgecastcdn.net,Mystic'
+    - 'DOMAIN-SUFFIX,edgekey.net,Mystic'
+    - 'DOMAIN-SUFFIX,edgesuite.net,Mystic'
+    - 'DOMAIN-SUFFIX,engadget.com,Mystic'
+    - 'DOMAIN-SUFFIX,entrust.net,Mystic'
+    - 'DOMAIN-SUFFIX,eurekavpt.com,Mystic'
+    - 'DOMAIN-SUFFIX,evernote.com,Mystic'
+    - 'DOMAIN-SUFFIX,fabric.io,Mystic'
+    - 'DOMAIN-SUFFIX,fast.com,Mystic'
+    - 'DOMAIN-SUFFIX,fastly.net,Mystic'
+    - 'DOMAIN-SUFFIX,fc2.com,Mystic'
+    - 'DOMAIN-SUFFIX,feedburner.com,Mystic'
+    - 'DOMAIN-SUFFIX,feedly.com,Mystic'
+    - 'DOMAIN-SUFFIX,feedsportal.com,Mystic'
+    - 'DOMAIN-SUFFIX,fiftythree.com,Mystic'
+    - 'DOMAIN-SUFFIX,firebaseio.com,Mystic'
+    - 'DOMAIN-SUFFIX,flexibits.com,Mystic'
+    - 'DOMAIN-SUFFIX,flickr.com,Mystic'
+    - 'DOMAIN-SUFFIX,flipboard.com,Mystic'
+    - 'DOMAIN-SUFFIX,g.co,Mystic'
+    - 'DOMAIN-SUFFIX,gabia.net,Mystic'
+    - 'DOMAIN-SUFFIX,geni.us,Mystic'
+    - 'DOMAIN-SUFFIX,gfx.ms,Mystic'
+    - 'DOMAIN-SUFFIX,ggpht.com,Mystic'
+    - 'DOMAIN-SUFFIX,ghostnoteapp.com,Mystic'
+    - 'DOMAIN-SUFFIX,git.io,Mystic'
+    - 'DOMAIN-KEYWORD,github,Mystic'
+    - 'DOMAIN-SUFFIX,globalsign.com,Mystic'
+    - 'DOMAIN-SUFFIX,gmodules.com,Mystic'
+    - 'DOMAIN-SUFFIX,godaddy.com,Mystic'
+    - 'DOMAIN-SUFFIX,golang.org,Mystic'
+    - 'DOMAIN-SUFFIX,gongm.in,Mystic'
+    - 'DOMAIN-SUFFIX,goo.gl,Mystic'
+    - 'DOMAIN-SUFFIX,goodreaders.com,Mystic'
+    - 'DOMAIN-SUFFIX,goodreads.com,Mystic'
+    - 'DOMAIN-SUFFIX,gravatar.com,Mystic'
+    - 'DOMAIN-SUFFIX,gstatic.com,Mystic'
+    - 'DOMAIN-SUFFIX,gvt0.com,Mystic'
+    - 'DOMAIN-SUFFIX,hockeyapp.net,Mystic'
+    - 'DOMAIN-SUFFIX,hotmail.com,Mystic'
+    - 'DOMAIN-SUFFIX,icons8.com,Mystic'
+    - 'DOMAIN-SUFFIX,ifixit.com,Mystic'
+    - 'DOMAIN-SUFFIX,ift.tt,Mystic'
+    - 'DOMAIN-SUFFIX,ifttt.com,Mystic'
+    - 'DOMAIN-SUFFIX,iherb.com,Mystic'
+    - 'DOMAIN-SUFFIX,imageshack.us,Mystic'
+    - 'DOMAIN-SUFFIX,img.ly,Mystic'
+    - 'DOMAIN-SUFFIX,imgur.com,Mystic'
+    - 'DOMAIN-SUFFIX,imore.com,Mystic'
+    - 'DOMAIN-SUFFIX,instapaper.com,Mystic'
+    - 'DOMAIN-SUFFIX,ipn.li,Mystic'
+    - 'DOMAIN-SUFFIX,is.gd,Mystic'
+    - 'DOMAIN-SUFFIX,issuu.com,Mystic'
+    - 'DOMAIN-SUFFIX,itgonglun.com,Mystic'
+    - 'DOMAIN-SUFFIX,itun.es,Mystic'
+    - 'DOMAIN-SUFFIX,ixquick.com,Mystic'
+    - 'DOMAIN-SUFFIX,j.mp,Mystic'
+    - 'DOMAIN-SUFFIX,js.revsci.net,Mystic'
+    - 'DOMAIN-SUFFIX,jshint.com,Mystic'
+    - 'DOMAIN-SUFFIX,jtvnw.net,Mystic'
+    - 'DOMAIN-SUFFIX,justgetflux.com,Mystic'
+    - 'DOMAIN-SUFFIX,kat.cr,Mystic'
+    - 'DOMAIN-SUFFIX,klip.me,Mystic'
+    - 'DOMAIN-SUFFIX,libsyn.com,Mystic'
+    - 'DOMAIN-SUFFIX,linkedin.com,Mystic'
+    - 'DOMAIN-SUFFIX,line-apps.com,Mystic'
+    - 'DOMAIN-SUFFIX,linode.com,Mystic'
+    - 'DOMAIN-SUFFIX,lithium.com,Mystic'
+    - 'DOMAIN-SUFFIX,littlehj.com,Mystic'
+    - 'DOMAIN-SUFFIX,live.com,Mystic'
+    - 'DOMAIN-SUFFIX,live.net,Mystic'
+    - 'DOMAIN-SUFFIX,livefilestore.com,Mystic'
+    - 'DOMAIN-SUFFIX,llnwd.net,Mystic'
+    - 'DOMAIN-SUFFIX,macid.co,Mystic'
+    - 'DOMAIN-SUFFIX,macromedia.com,Mystic'
+    - 'DOMAIN-SUFFIX,macrumors.com,Mystic'
+    - 'DOMAIN-SUFFIX,mashable.com,Mystic'
+    - 'DOMAIN-SUFFIX,mathjax.org,Mystic'
+    - 'DOMAIN-SUFFIX,medium.com,Mystic'
+    - 'DOMAIN-SUFFIX,mega.co.nz,Mystic'
+    - 'DOMAIN-SUFFIX,mega.nz,Mystic'
+    - 'DOMAIN-SUFFIX,megaupload.com,Mystic'
+    - 'DOMAIN-SUFFIX,microsofttranslator.com,Mystic'
+    - 'DOMAIN-SUFFIX,mindnode.com,Mystic'
+    - 'DOMAIN-SUFFIX,mobile01.com,Mystic'
+    - 'DOMAIN-SUFFIX,modmyi.com,Mystic'
+    - 'DOMAIN-SUFFIX,msedge.net,Mystic'
+    - 'DOMAIN-SUFFIX,myfontastic.com,Mystic'
+    - 'DOMAIN-SUFFIX,name.com,Mystic'
+    - 'DOMAIN-SUFFIX,nextmedia.com,Mystic'
+    - 'DOMAIN-SUFFIX,nsstatic.net,Mystic'
+    - 'DOMAIN-SUFFIX,nssurge.com,Mystic'
+    - 'DOMAIN-SUFFIX,nyt.com,Mystic'
+    - 'DOMAIN-SUFFIX,nytimes.com,Mystic'
+    - 'DOMAIN-SUFFIX,omnigroup.com,Mystic'
+    - 'DOMAIN-SUFFIX,onedrive.com,Mystic'
+    - 'DOMAIN-SUFFIX,onenote.com,Mystic'
+    - 'DOMAIN-SUFFIX,ooyala.com,Mystic'
+    - 'DOMAIN-SUFFIX,openvpn.net,Mystic'
+    - 'DOMAIN-SUFFIX,openwrt.org,Mystic'
+    - 'DOMAIN-SUFFIX,orkut.com,Mystic'
+    - 'DOMAIN-SUFFIX,osxdaily.com,Mystic'
+    - 'DOMAIN-SUFFIX,outlook.com,Mystic'
+    - 'DOMAIN-SUFFIX,ow.ly,Mystic'
+    - 'DOMAIN-SUFFIX,paddleapi.com,Mystic'
+    - 'DOMAIN-SUFFIX,parallels.com,Mystic'
+    - 'DOMAIN-SUFFIX,parse.com,Mystic'
+    - 'DOMAIN-SUFFIX,pdfexpert.com,Mystic'
+    - 'DOMAIN-SUFFIX,periscope.tv,Mystic'
+    - 'DOMAIN-SUFFIX,pinboard.in,Mystic'
+    - 'DOMAIN-SUFFIX,pinterest.com,Mystic'
+    - 'DOMAIN-SUFFIX,pixelmator.com,Mystic'
+    - 'DOMAIN-SUFFIX,pixiv.net,Mystic'
+    - 'DOMAIN-SUFFIX,playpcesor.com,Mystic'
+    - 'DOMAIN-SUFFIX,playstation.com,Mystic'
+    - 'DOMAIN-SUFFIX,playstation.com.hk,Mystic'
+    - 'DOMAIN-SUFFIX,playstation.net,Mystic'
+    - 'DOMAIN-SUFFIX,playstationnetwork.com,Mystic'
+    - 'DOMAIN-SUFFIX,pushwoosh.com,Mystic'
+    - 'DOMAIN-SUFFIX,rime.im,Mystic'
+    - 'DOMAIN-SUFFIX,servebom.com,Mystic'
+    - 'DOMAIN-SUFFIX,sfx.ms,Mystic'
+    - 'DOMAIN-SUFFIX,shadowsocks.org,Mystic'
+    - 'DOMAIN-SUFFIX,sharethis.com,Mystic'
+    - 'DOMAIN-SUFFIX,shazam.com,Mystic'
+    - 'DOMAIN-SUFFIX,skype.com,Mystic'
+    - 'DOMAIN-SUFFIX,smartdnsMystic.com,Mystic'
+    - 'DOMAIN-SUFFIX,smartmailcloud.com,Mystic'
+    - 'DOMAIN-SUFFIX,sndcdn.com,Mystic'
+    - 'DOMAIN-SUFFIX,sony.com,Mystic'
+    - 'DOMAIN-SUFFIX,soundcloud.com,Mystic'
+    - 'DOMAIN-SUFFIX,sourceforge.net,Mystic'
+    - 'DOMAIN-SUFFIX,spotify.com,Mystic'
+    - 'DOMAIN-SUFFIX,squarespace.com,Mystic'
+    - 'DOMAIN-SUFFIX,sstatic.net,Mystic'
+    - 'DOMAIN-SUFFIX,st.luluku.pw,Mystic'
+    - 'DOMAIN-SUFFIX,stackoverflow.com,Mystic'
+    - 'DOMAIN-SUFFIX,startpage.com,Mystic'
+    - 'DOMAIN-SUFFIX,staticflickr.com,Mystic'
+    - 'DOMAIN-SUFFIX,steamcommunity.com,Mystic'
+    - 'DOMAIN-SUFFIX,symauth.com,Mystic'
+    - 'DOMAIN-SUFFIX,symcb.com,Mystic'
+    - 'DOMAIN-SUFFIX,symcd.com,Mystic'
+    - 'DOMAIN-SUFFIX,tapbots.com,Mystic'
+    - 'DOMAIN-SUFFIX,tapbots.net,Mystic'
+    - 'DOMAIN-SUFFIX,tdesktop.com,Mystic'
+    - 'DOMAIN-SUFFIX,techcrunch.com,Mystic'
+    - 'DOMAIN-SUFFIX,techsmith.com,Mystic'
+    - 'DOMAIN-SUFFIX,thepiratebay.org,Mystic'
+    - 'DOMAIN-SUFFIX,theverge.com,Mystic'
+    - 'DOMAIN-SUFFIX,time.com,Mystic'
+    - 'DOMAIN-SUFFIX,timeinc.net,Mystic'
+    - 'DOMAIN-SUFFIX,tiny.cc,Mystic'
+    - 'DOMAIN-SUFFIX,tinypic.com,Mystic'
+    - 'DOMAIN-SUFFIX,tmblr.co,Mystic'
+    - 'DOMAIN-SUFFIX,todoist.com,Mystic'
+    - 'DOMAIN-SUFFIX,trello.com,Mystic'
+    - 'DOMAIN-SUFFIX,trustasiassl.com,Mystic'
+    - 'DOMAIN-SUFFIX,tumblr.co,Mystic'
+    - 'DOMAIN-SUFFIX,tumblr.com,Mystic'
+    - 'DOMAIN-SUFFIX,tweetdeck.com,Mystic'
+    - 'DOMAIN-SUFFIX,tweetmarker.net,Mystic'
+    - 'DOMAIN-SUFFIX,twitch.tv,Mystic'
+    - 'DOMAIN-SUFFIX,txmblr.com,Mystic'
+    - 'DOMAIN-SUFFIX,typekit.net,Mystic'
+    - 'DOMAIN-SUFFIX,ubertags.com,Mystic'
+    - 'DOMAIN-SUFFIX,ublock.org,Mystic'
+    - 'DOMAIN-SUFFIX,ubnt.com,Mystic'
+    - 'DOMAIN-SUFFIX,ulyssesapp.com,Mystic'
+    - 'DOMAIN-SUFFIX,urchin.com,Mystic'
+    - 'DOMAIN-SUFFIX,usertrust.com,Mystic'
+    - 'DOMAIN-SUFFIX,v.gd,Mystic'
+    - 'DOMAIN-SUFFIX,v2ex.com,Mystic'
+    - 'DOMAIN-SUFFIX,vimeo.com,Mystic'
+    - 'DOMAIN-SUFFIX,vimeocdn.com,Mystic'
+    - 'DOMAIN-SUFFIX,vine.co,Mystic'
+    - 'DOMAIN-SUFFIX,vivaldi.com,Mystic'
+    - 'DOMAIN-SUFFIX,vox-cdn.com,Mystic'
+    - 'DOMAIN-SUFFIX,vsco.co,Mystic'
+    - 'DOMAIN-SUFFIX,vultr.com,Mystic'
+    - 'DOMAIN-SUFFIX,w.org,Mystic'
+    - 'DOMAIN-SUFFIX,w3schools.com,Mystic'
+    - 'DOMAIN-SUFFIX,webtype.com,Mystic'
+    - 'DOMAIN-SUFFIX,wikiwand.com,Mystic'
+    - 'DOMAIN-SUFFIX,wikileaks.org,Mystic'
+    - 'DOMAIN-SUFFIX,wikimedia.org,Mystic'
+    - 'DOMAIN-SUFFIX,wikipedia.com,Mystic'
+    - 'DOMAIN-SUFFIX,wikipedia.org,Mystic'
+    - 'DOMAIN-SUFFIX,windows.com,Mystic'
+    - 'DOMAIN-SUFFIX,windows.net,Mystic'
+    - 'DOMAIN-SUFFIX,wire.com,Mystic'
+    - 'DOMAIN-SUFFIX,wordpress.com,Mystic'
+    - 'DOMAIN-SUFFIX,workflowy.com,Mystic'
+    - 'DOMAIN-SUFFIX,wp.com,Mystic'
+    - 'DOMAIN-SUFFIX,wsj.com,Mystic'
+    - 'DOMAIN-SUFFIX,wsj.net,Mystic'
+    - 'DOMAIN-SUFFIX,xda-developers.com,Mystic'
+    - 'DOMAIN-SUFFIX,xeeno.com,Mystic'
+    - 'DOMAIN-SUFFIX,xiti.com,Mystic'
+    - 'DOMAIN-SUFFIX,yahoo.com,Mystic'
+    - 'DOMAIN-SUFFIX,yimg.com,Mystic'
+    - 'DOMAIN-SUFFIX,ying.com,Mystic'
+    - 'DOMAIN-SUFFIX,yoyo.org,Mystic'
+    - 'DOMAIN-SUFFIX,ytimg.com,Mystic'
+    - 'DOMAIN-SUFFIX,telegra.ph,Mystic'
+    - 'DOMAIN-SUFFIX,telegram.org,Mystic'
+    - 'IP-CIDR,91.108.4.0/22,Mystic,no-resolve'
+    - 'IP-CIDR,91.108.8.0/21,Mystic,no-resolve'
+    - 'IP-CIDR,91.108.16.0/22,Mystic,no-resolve'
+    - 'IP-CIDR,91.108.56.0/22,Mystic,no-resolve'
+    - 'IP-CIDR,149.154.160.0/20,Mystic,no-resolve'
+    - 'IP-CIDR6,2001:67c:4e8::/48,Mystic,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23d::/48,Mystic,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23f::/48,Mystic,no-resolve'
+    - 'IP-CIDR,120.232.181.162/32,Mystic,no-resolve'
+    - 'IP-CIDR,120.241.147.226/32,Mystic,no-resolve'
+    - 'IP-CIDR,120.253.253.226/32,Mystic,no-resolve'
+    - 'IP-CIDR,120.253.255.162/32,Mystic,no-resolve'
+    - 'IP-CIDR,120.253.255.34/32,Mystic,no-resolve'
+    - 'IP-CIDR,120.253.255.98/32,Mystic,no-resolve'
+    - 'IP-CIDR,180.163.150.162/32,Mystic,no-resolve'
+    - 'IP-CIDR,180.163.150.34/32,Mystic,no-resolve'
+    - 'IP-CIDR,180.163.151.162/32,Mystic,no-resolve'
+    - 'IP-CIDR,180.163.151.34/32,Mystic,no-resolve'
+    - 'IP-CIDR,203.208.39.0/24,Mystic,no-resolve'
+    - 'IP-CIDR,203.208.40.0/24,Mystic,no-resolve'
+    - 'IP-CIDR,203.208.41.0/24,Mystic,no-resolve'
+    - 'IP-CIDR,203.208.43.0/24,Mystic,no-resolve'
+    - 'IP-CIDR,203.208.50.0/24,Mystic,no-resolve'
+    - 'IP-CIDR,220.181.174.162/32,Mystic,no-resolve'
+    - 'IP-CIDR,220.181.174.226/32,Mystic,no-resolve'
+    - 'IP-CIDR,220.181.174.34/32,Mystic,no-resolve'
     - 'DOMAIN,injections.adguard.org,DIRECT'
     - 'DOMAIN,local.adguard.org,DIRECT'
     - 'DOMAIN-SUFFIX,local,DIRECT'
@@ -561,4 +965,4 @@ rules:
     - 'DOMAIN-SUFFIX,cn,DIRECT'
     - 'DOMAIN-KEYWORD,-cn,DIRECT'
     - 'GEOIP,CN,DIRECT'
-    - 'MATCH,大讯云'
+    - 'MATCH,Mystic'
