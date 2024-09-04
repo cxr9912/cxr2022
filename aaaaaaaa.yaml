@@ -5,111 +5,367 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[vmess]🇹🇼 台湾|02|1.0x", server: TNL-04.PLNODE.XYZ, port: 10691, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇯🇵 日本|01|1.0x", server: TNL-01.PLNODE.XYZ, port: 10059, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇦🇪 迪拜|1.0x", server: TNL-04.PLNODE.XYZ, port: 10038, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇱🇹 立陶宛|维尔纽斯|1.0x", server: TNL-04.PLNODE.XYZ, port: 10049, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇯🇵 日本|02|1.0x", server: TNL-04.PLNODE.XYZ, port: 10060, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇰🇷 韩国|01|仁川|1.0x", server: TNL-01.PLNODE.XYZ, port: 10058, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇰🇷 韩国|02|仁川|1.0x", server: TNL-04.PLNODE.XYZ, port: 10058, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇵🇭 菲律宾|马尼拉|1.0x", server: TNL-04.PLNODE.XYZ, port: 10036, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇺🇸 美国|03|1.0x", server: TNL-04.PLNODE.XYZ, port: 10062, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇺🇸 美国|01|1.0x", server: TNL-04.PLNODE.XYZ, port: 10061, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇮🇩 印尼|雅加达|1.0x", server: TNL-04.PLNODE.XYZ, port: 10027, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇲🇾 马来西亚|怡保|1.0x", server: TNL-04.PLNODE.XYZ, port: 10041, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇭🇰 香港|02|1.0x", server: TNL-01.PLNODE.XYZ, port: 10053, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇫🇷 法国|巴黎|1.0x", server: TNL-04.PLNODE.XYZ, port: 10030, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇵🇱 波兰|华沙|1.0x", server: TNL-04.PLNODE.XYZ, port: 10031, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇨🇦 加拿大|蒙特利尔|1.0x", server: TNL-04.PLNODE.XYZ, port: 10026, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇦🇺 澳大利亚|悉尼|1.0x", server: TNL-04.PLNODE.XYZ, port: 10033, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇸🇪 瑞典|斯德哥尔摩|1.0x", server: TNL-04.PLNODE.XYZ, port: 10028, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇰🇿 哈萨克斯塔|阿斯塔纳|1.0x", server: TNL-04.PLNODE.XYZ, port: 10043, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇻🇳 越南|河内|1.0x", server: TNL-04.PLNODE.XYZ, port: 10037, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇮🇸 冰岛|雷克亚维克|1.0x", server: TNL-04.PLNODE.XYZ, port: 10047, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇷🇸 塞尔维亚|贝尔格莱德|1.0x", server: TNL-04.PLNODE.XYZ, port: 10046, type: vmess, uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾中转 02, server: gstdnb.myfczy168.top, port: 17010, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 澳大利亚原生1-1B, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: a93feeb8-1804-4ca6-baef-fcdc9fc7e421, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本4-1D, server: unionb.fengwo.site, port: 59606, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 日本3-1D, server: uniona.fengwo.site, port: 34433, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 日本02-1E, server: uniona.fengwo.site, port: 23712, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 香港-04-1D, server: unionb.fengwo.site, port: 12770, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 香港中转 04, server: gstdnb.myfczy168.top, port: 11618, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 马来01-1D, server: uniona.fengwo.site, port: 22112, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 台湾专线-03-1D, server: uniona.fengwo.site, port: 48068, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 日本02-1D, server: uniona.fengwo.site, port: 23712, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 新加坡-01-1D, server: uniona.fengwo.site, port: 30579, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 香港-03-1C, server: uniona.fengwo.site, port: 59974, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 台湾中转 01, server: gstdnb.myfczy168.top, port: 27110, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 英国-01-1C, server: uniona.fengwo.site, port: 30308, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 香港中转 01, server: gstdnb.myfczy168.top, port: 43641, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 台湾中转 05, server: gstdnb.myfczy168.top, port: 35846, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 日本 C JP, server: jp3.iepl.cooc.icu, port: 19881, type: ss, cipher: chacha20-ietf-poly1305, password: 9c04ee96-b136-42fd-b8c6-91a13b160154, udp: true}
+  - {name: 印尼-02-1D, server: unionb.fengwo.site, port: 23671, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 法国 巴黎 CDN加速-1B, server: qxcstxwbcvb_cdn.hfhfb.homes, port: 2095, type: vmess, uuid: aa0329d0-dc8e-4a1d-8a4c-7431693b8655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=1024", ws-headers: {Host: frcdn.fask511.cfd}, udp: true}
+  - {name: 3中转-2-1B, server: gdcub.yunnode.win, port: 52688, type: ss, cipher: chacha20-ietf-poly1305, password: 11cd5f58-ce33-47a4-94d3-ba349cf037f6, udp: true}
+  - {name: IEPL专线 印度 NO1, server: i.needss.top, port: 15442, type: vmess, uuid: 836cf6f3-8723-4516-aa20-4c5561c4c931, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本03, server: gy.666666222.shop, port: 20006, type: ss, cipher: chacha20-ietf-poly1305, password: 59850912-9d86-4753-866d-2b6bb80eca0d, udp: true}
+  - {name: 德国 DE | BIZ, server: ge.cooc.icu, port: 35607, type: ss, cipher: chacha20-ietf-poly1305, password: 9c04ee96-b136-42fd-b8c6-91a13b160154, udp: true}
+  - {name: 美国02-1D, server: unionb.fengwo.site, port: 39400, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: IEPL专线 日本 NO1, server: i.needss.top, port: 20017, type: vmess, uuid: 836cf6f3-8723-4516-aa20-4c5561c4c931, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本04, server: gy.666666222.shop, port: 20008, type: ss, cipher: chacha20-ietf-poly1305, password: 59850912-9d86-4753-866d-2b6bb80eca0d, udp: true}
+  - {name: 台湾中转 04, server: gstdnb.myfczy168.top, port: 25149, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 西班牙-巴塞罗那-1D, server: unionb.fengwo.site, port: 53675, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 日本 A JP, server: jp1.iepl.cooc.icu, port: 47100, type: ss, cipher: chacha20-ietf-poly1305, password: 9c04ee96-b136-42fd-b8c6-91a13b160154, udp: true}
+  - {name: 韩国02-1D, server: unionb.fengwo.site, port: 21458, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 澳大利亚原生1-1C, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 5f634f75-2db1-4a3c-98ed-ac82ad5e1d61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡NO.1-1C, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 5f634f75-2db1-4a3c-98ed-ac82ad5e1d61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本中转 04, server: gstdnb.myfczy168.top, port: 38649, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 印度2-1C, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 5f634f75-2db1-4a3c-98ed-ac82ad5e1d61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国NO.1-1B, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: a93feeb8-1804-4ca6-baef-fcdc9fc7e421, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国-汉堡-1D, server: uniona.fengwo.site, port: 40148, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 美国中转 02, server: gstdnb.myfczy168.top, port: 15070, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 新加坡-03-1D, server: uniona.fengwo.site, port: 13436, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 新加坡-02-1D, server: unionb.fengwo.site, port: 30216, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 加拿大-多伦多-1C, server: uniona.fengwo.site, port: 11469, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 美国01-1E, server: uniona.fengwo.site, port: 10257, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 马来02-1D, server: unionb.fengwo.site, port: 22078, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 台湾 A TW, server: tw1.iepl.cooc.icu, port: 35109, type: ss, cipher: chacha20-ietf-poly1305, password: 9c04ee96-b136-42fd-b8c6-91a13b160154, udp: true}
+  - {name: 日本中转 01, server: gstdnb.myfczy168.top, port: 13706, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 日本中转 05, server: gstdnb.myfczy168.top, port: 21743, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 英国中转 03, server: gstdnb.myfczy168.top, port: 13708, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 香港NO.1-1B, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: a93feeb8-1804-4ca6-baef-fcdc9fc7e421, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰-阿姆斯特丹-1D, server: uniona.fengwo.site, port: 37155, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 日本NO.1-1C, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 5f634f75-2db1-4a3c-98ed-ac82ad5e1d61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 印度1-1C, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 5f634f75-2db1-4a3c-98ed-ac82ad5e1d61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IEPL专线 台湾 NO1, server: i.needss.top, port: 52103, type: vmess, uuid: 836cf6f3-8723-4516-aa20-4c5561c4c931, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 波兰-华沙-1D, server: uniona.fengwo.site, port: 32278, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 澳大利亚-02-1D, server: unionb.fengwo.site, port: 23192, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 香港-02-1D, server: unionb.fengwo.site, port: 51812, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 英国中转 02, server: gstdnb.myfczy168.top, port: 34013, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 印度-新德里-1D, server: uniona.fengwo.site, port: 30089, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 印度1-1B, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: a93feeb8-1804-4ca6-baef-fcdc9fc7e421, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 3中转-2-1D, server: gdcub.yunnode.win, port: 52688, type: ss, cipher: chacha20-ietf-poly1305, password: cec73b34-7888-4931-8a7d-4a32e98a3e8a, udp: true}
+  - {name: 香港-03-1D, server: uniona.fengwo.site, port: 59974, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 美国 C US, server: usa3.iepl.cooc.icu, port: 33881, type: ss, cipher: chacha20-ietf-poly1305, password: 9c04ee96-b136-42fd-b8c6-91a13b160154, udp: true}
+  - {name: 日本中转 02, server: gstdnb.myfczy168.top, port: 40005, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 台湾专线-04-1D, server: unionb.fengwo.site, port: 39240, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 香港-02-1C, server: unionb.fengwo.site, port: 51812, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 香港中转 05, server: gstdnb.myfczy168.top, port: 20901, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 韩国01-1C, server: uniona.fengwo.site, port: 31217, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 日本中转 03, server: gstdnb.myfczy168.top, port: 38225, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 韩国02-1C, server: unionb.fengwo.site, port: 21458, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 香港 A HK, server: hk1.iepl.cooc.icu, port: 21881, type: ss, cipher: chacha20-ietf-poly1305, password: 9c04ee96-b136-42fd-b8c6-91a13b160154, udp: true}
+  - {name: 印尼-01-1D, server: uniona.fengwo.site, port: 20457, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 加拿大-多伦多-1D, server: uniona.fengwo.site, port: 11469, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 台湾中转 03, server: gstdnb.myfczy168.top, port: 14232, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 日本 B JP, server: jp2.iepl.cooc.icu, port: 47101, type: ss, cipher: chacha20-ietf-poly1305, password: 9c04ee96-b136-42fd-b8c6-91a13b160154, udp: true}
+  - {name: 新加坡-01-1C, server: uniona.fengwo.site, port: 30579, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 马来02-1C, server: unionb.fengwo.site, port: 22078, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 新加坡-03-1C, server: uniona.fengwo.site, port: 13436, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 香港-04-1C, server: unionb.fengwo.site, port: 12770, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 印尼-02-1C, server: unionb.fengwo.site, port: 23671, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 新加坡-04-1D, server: unionb.fengwo.site, port: 17430, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 日本01-1E, server: unionb.fengwo.site, port: 13166, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 美国 B US, server: usa2.iepl.cooc.icu, port: 32881, type: ss, cipher: chacha20-ietf-poly1305, password: 9c04ee96-b136-42fd-b8c6-91a13b160154, udp: true}
+  - {name: 韩国01-1D, server: uniona.fengwo.site, port: 31217, type: ss, cipher: chacha20-ietf-poly1305, password: 291bba44-ff98-4f82-b2cd-78862ccea9e8, udp: true}
+  - {name: 新加坡-02-1C, server: unionb.fengwo.site, port: 30216, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 日本 冻精 CDN加速-1B, server: aqerdsf_cdn.hfhfb.homes, port: 2086, type: vmess, uuid: aa0329d0-dc8e-4a1d-8a4c-7431693b8655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=1024", ws-headers: {Host: rbcdn.fask511.cfd}, udp: true}
+  - {name: 香港中转 03, server: gstdnb.myfczy168.top, port: 14407, type: ss, cipher: chacha20-ietf-poly1305, password: 12e39273-3d2d-4e75-8ae9-14b8c3c434e5, udp: true}
+  - {name: 马来01-1C, server: uniona.fengwo.site, port: 22112, type: ss, cipher: chacha20-ietf-poly1305, password: fa18c8bc-5356-4aef-aead-3e5eef1cb02b, udp: true}
+  - {name: 香港 C HK, server: hk3.iepl.cooc.icu, port: 23881, type: ss, cipher: chacha20-ietf-poly1305, password: 9c04ee96-b136-42fd-b8c6-91a13b160154, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[vmess]🇹🇼 台湾|02|1.0x"
-      - "[vmess]🇯🇵 日本|01|1.0x"
-      - "[vmess]🇦🇪 迪拜|1.0x"
-      - "[vmess]🇱🇹 立陶宛|维尔纽斯|1.0x"
-      - "[vmess]🇯🇵 日本|02|1.0x"
-      - "[vmess]🇰🇷 韩国|01|仁川|1.0x"
-      - "[vmess]🇰🇷 韩国|02|仁川|1.0x"
-      - "[vmess]🇵🇭 菲律宾|马尼拉|1.0x"
-      - "[vmess]🇺🇸 美国|03|1.0x"
-      - "[vmess]🇺🇸 美国|01|1.0x"
-      - "[vmess]🇮🇩 印尼|雅加达|1.0x"
-      - "[vmess]🇲🇾 马来西亚|怡保|1.0x"
-      - "[vmess]🇭🇰 香港|02|1.0x"
-      - "[vmess]🇫🇷 法国|巴黎|1.0x"
-      - "[vmess]🇵🇱 波兰|华沙|1.0x"
-      - "[vmess]🇨🇦 加拿大|蒙特利尔|1.0x"
-      - "[vmess]🇦🇺 澳大利亚|悉尼|1.0x"
-      - "[vmess]🇸🇪 瑞典|斯德哥尔摩|1.0x"
-      - "[vmess]🇰🇿 哈萨克斯塔|阿斯塔纳|1.0x"
-      - "[vmess]🇻🇳 越南|河内|1.0x"
-      - "[vmess]🇮🇸 冰岛|雷克亚维克|1.0x"
-      - "[vmess]🇷🇸 塞尔维亚|贝尔格莱德|1.0x"
+      - 台湾中转 02
+      - 澳大利亚原生1-1B
+      - 日本4-1D
+      - 日本3-1D
+      - 日本02-1E
+      - 香港-04-1D
+      - 香港中转 04
+      - 马来01-1D
+      - 台湾专线-03-1D
+      - 日本02-1D
+      - 新加坡-01-1D
+      - 香港-03-1C
+      - 台湾中转 01
+      - 英国-01-1C
+      - 香港中转 01
+      - 台湾中转 05
+      - 日本 C JP
+      - 印尼-02-1D
+      - 法国 巴黎 CDN加速-1B
+      - 3中转-2-1B
+      - IEPL专线 印度 NO1
+      - 日本03
+      - 德国 DE | BIZ
+      - 美国02-1D
+      - IEPL专线 日本 NO1
+      - 日本04
+      - 台湾中转 04
+      - 西班牙-巴塞罗那-1D
+      - 日本 A JP
+      - 韩国02-1D
+      - 澳大利亚原生1-1C
+      - 新加坡NO.1-1C
+      - 日本中转 04
+      - 印度2-1C
+      - 美国NO.1-1B
+      - 德国-汉堡-1D
+      - 美国中转 02
+      - 新加坡-03-1D
+      - 新加坡-02-1D
+      - 加拿大-多伦多-1C
+      - 美国01-1E
+      - 马来02-1D
+      - 台湾 A TW
+      - 日本中转 01
+      - 日本中转 05
+      - 英国中转 03
+      - 香港NO.1-1B
+      - 荷兰-阿姆斯特丹-1D
+      - 日本NO.1-1C
+      - 印度1-1C
+      - IEPL专线 台湾 NO1
+      - 波兰-华沙-1D
+      - 澳大利亚-02-1D
+      - 香港-02-1D
+      - 英国中转 02
+      - 印度-新德里-1D
+      - 印度1-1B
+      - 3中转-2-1D
+      - 香港-03-1D
+      - 美国 C US
+      - 日本中转 02
+      - 台湾专线-04-1D
+      - 香港-02-1C
+      - 香港中转 05
+      - 韩国01-1C
+      - 日本中转 03
+      - 韩国02-1C
+      - 香港 A HK
+      - 印尼-01-1D
+      - 加拿大-多伦多-1D
+      - 台湾中转 03
+      - 日本 B JP
+      - 新加坡-01-1C
+      - 马来02-1C
+      - 新加坡-03-1C
+      - 香港-04-1C
+      - 印尼-02-1C
+      - 新加坡-04-1D
+      - 日本01-1E
+      - 美国 B US
+      - 韩国01-1D
+      - 新加坡-02-1C
+      - 日本 冻精 CDN加速-1B
+      - 香港中转 03
+      - 马来01-1C
+      - 香港 C HK
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[vmess]🇹🇼 台湾|02|1.0x"
-      - "[vmess]🇯🇵 日本|01|1.0x"
-      - "[vmess]🇦🇪 迪拜|1.0x"
-      - "[vmess]🇱🇹 立陶宛|维尔纽斯|1.0x"
-      - "[vmess]🇯🇵 日本|02|1.0x"
-      - "[vmess]🇰🇷 韩国|01|仁川|1.0x"
-      - "[vmess]🇰🇷 韩国|02|仁川|1.0x"
-      - "[vmess]🇵🇭 菲律宾|马尼拉|1.0x"
-      - "[vmess]🇺🇸 美国|03|1.0x"
-      - "[vmess]🇺🇸 美国|01|1.0x"
-      - "[vmess]🇮🇩 印尼|雅加达|1.0x"
-      - "[vmess]🇲🇾 马来西亚|怡保|1.0x"
-      - "[vmess]🇭🇰 香港|02|1.0x"
-      - "[vmess]🇫🇷 法国|巴黎|1.0x"
-      - "[vmess]🇵🇱 波兰|华沙|1.0x"
-      - "[vmess]🇨🇦 加拿大|蒙特利尔|1.0x"
-      - "[vmess]🇦🇺 澳大利亚|悉尼|1.0x"
-      - "[vmess]🇸🇪 瑞典|斯德哥尔摩|1.0x"
-      - "[vmess]🇰🇿 哈萨克斯塔|阿斯塔纳|1.0x"
-      - "[vmess]🇻🇳 越南|河内|1.0x"
-      - "[vmess]🇮🇸 冰岛|雷克亚维克|1.0x"
-      - "[vmess]🇷🇸 塞尔维亚|贝尔格莱德|1.0x"
+      - 台湾中转 02
+      - 澳大利亚原生1-1B
+      - 日本4-1D
+      - 日本3-1D
+      - 日本02-1E
+      - 香港-04-1D
+      - 香港中转 04
+      - 马来01-1D
+      - 台湾专线-03-1D
+      - 日本02-1D
+      - 新加坡-01-1D
+      - 香港-03-1C
+      - 台湾中转 01
+      - 英国-01-1C
+      - 香港中转 01
+      - 台湾中转 05
+      - 日本 C JP
+      - 印尼-02-1D
+      - 法国 巴黎 CDN加速-1B
+      - 3中转-2-1B
+      - IEPL专线 印度 NO1
+      - 日本03
+      - 德国 DE | BIZ
+      - 美国02-1D
+      - IEPL专线 日本 NO1
+      - 日本04
+      - 台湾中转 04
+      - 西班牙-巴塞罗那-1D
+      - 日本 A JP
+      - 韩国02-1D
+      - 澳大利亚原生1-1C
+      - 新加坡NO.1-1C
+      - 日本中转 04
+      - 印度2-1C
+      - 美国NO.1-1B
+      - 德国-汉堡-1D
+      - 美国中转 02
+      - 新加坡-03-1D
+      - 新加坡-02-1D
+      - 加拿大-多伦多-1C
+      - 美国01-1E
+      - 马来02-1D
+      - 台湾 A TW
+      - 日本中转 01
+      - 日本中转 05
+      - 英国中转 03
+      - 香港NO.1-1B
+      - 荷兰-阿姆斯特丹-1D
+      - 日本NO.1-1C
+      - 印度1-1C
+      - IEPL专线 台湾 NO1
+      - 波兰-华沙-1D
+      - 澳大利亚-02-1D
+      - 香港-02-1D
+      - 英国中转 02
+      - 印度-新德里-1D
+      - 印度1-1B
+      - 3中转-2-1D
+      - 香港-03-1D
+      - 美国 C US
+      - 日本中转 02
+      - 台湾专线-04-1D
+      - 香港-02-1C
+      - 香港中转 05
+      - 韩国01-1C
+      - 日本中转 03
+      - 韩国02-1C
+      - 香港 A HK
+      - 印尼-01-1D
+      - 加拿大-多伦多-1D
+      - 台湾中转 03
+      - 日本 B JP
+      - 新加坡-01-1C
+      - 马来02-1C
+      - 新加坡-03-1C
+      - 香港-04-1C
+      - 印尼-02-1C
+      - 新加坡-04-1D
+      - 日本01-1E
+      - 美国 B US
+      - 韩国01-1D
+      - 新加坡-02-1C
+      - 日本 冻精 CDN加速-1B
+      - 香港中转 03
+      - 马来01-1C
+      - 香港 C HK
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[vmess]🇹🇼 台湾|02|1.0x"
-      - "[vmess]🇯🇵 日本|01|1.0x"
-      - "[vmess]🇦🇪 迪拜|1.0x"
-      - "[vmess]🇱🇹 立陶宛|维尔纽斯|1.0x"
-      - "[vmess]🇯🇵 日本|02|1.0x"
-      - "[vmess]🇰🇷 韩国|01|仁川|1.0x"
-      - "[vmess]🇰🇷 韩国|02|仁川|1.0x"
-      - "[vmess]🇵🇭 菲律宾|马尼拉|1.0x"
-      - "[vmess]🇺🇸 美国|03|1.0x"
-      - "[vmess]🇺🇸 美国|01|1.0x"
-      - "[vmess]🇮🇩 印尼|雅加达|1.0x"
-      - "[vmess]🇲🇾 马来西亚|怡保|1.0x"
-      - "[vmess]🇭🇰 香港|02|1.0x"
-      - "[vmess]🇫🇷 法国|巴黎|1.0x"
-      - "[vmess]🇵🇱 波兰|华沙|1.0x"
-      - "[vmess]🇨🇦 加拿大|蒙特利尔|1.0x"
-      - "[vmess]🇦🇺 澳大利亚|悉尼|1.0x"
-      - "[vmess]🇸🇪 瑞典|斯德哥尔摩|1.0x"
-      - "[vmess]🇰🇿 哈萨克斯塔|阿斯塔纳|1.0x"
-      - "[vmess]🇻🇳 越南|河内|1.0x"
-      - "[vmess]🇮🇸 冰岛|雷克亚维克|1.0x"
-      - "[vmess]🇷🇸 塞尔维亚|贝尔格莱德|1.0x"
+      - 台湾中转 02
+      - 澳大利亚原生1-1B
+      - 日本4-1D
+      - 日本3-1D
+      - 日本02-1E
+      - 香港-04-1D
+      - 香港中转 04
+      - 马来01-1D
+      - 台湾专线-03-1D
+      - 日本02-1D
+      - 新加坡-01-1D
+      - 香港-03-1C
+      - 台湾中转 01
+      - 英国-01-1C
+      - 香港中转 01
+      - 台湾中转 05
+      - 日本 C JP
+      - 印尼-02-1D
+      - 法国 巴黎 CDN加速-1B
+      - 3中转-2-1B
+      - IEPL专线 印度 NO1
+      - 日本03
+      - 德国 DE | BIZ
+      - 美国02-1D
+      - IEPL专线 日本 NO1
+      - 日本04
+      - 台湾中转 04
+      - 西班牙-巴塞罗那-1D
+      - 日本 A JP
+      - 韩国02-1D
+      - 澳大利亚原生1-1C
+      - 新加坡NO.1-1C
+      - 日本中转 04
+      - 印度2-1C
+      - 美国NO.1-1B
+      - 德国-汉堡-1D
+      - 美国中转 02
+      - 新加坡-03-1D
+      - 新加坡-02-1D
+      - 加拿大-多伦多-1C
+      - 美国01-1E
+      - 马来02-1D
+      - 台湾 A TW
+      - 日本中转 01
+      - 日本中转 05
+      - 英国中转 03
+      - 香港NO.1-1B
+      - 荷兰-阿姆斯特丹-1D
+      - 日本NO.1-1C
+      - 印度1-1C
+      - IEPL专线 台湾 NO1
+      - 波兰-华沙-1D
+      - 澳大利亚-02-1D
+      - 香港-02-1D
+      - 英国中转 02
+      - 印度-新德里-1D
+      - 印度1-1B
+      - 3中转-2-1D
+      - 香港-03-1D
+      - 美国 C US
+      - 日本中转 02
+      - 台湾专线-04-1D
+      - 香港-02-1C
+      - 香港中转 05
+      - 韩国01-1C
+      - 日本中转 03
+      - 韩国02-1C
+      - 香港 A HK
+      - 印尼-01-1D
+      - 加拿大-多伦多-1D
+      - 台湾中转 03
+      - 日本 B JP
+      - 新加坡-01-1C
+      - 马来02-1C
+      - 新加坡-03-1C
+      - 香港-04-1C
+      - 印尼-02-1C
+      - 新加坡-04-1D
+      - 日本01-1E
+      - 美国 B US
+      - 韩国01-1D
+      - 新加坡-02-1C
+      - 日本 冻精 CDN加速-1B
+      - 香港中转 03
+      - 马来01-1C
+      - 香港 C HK
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -128,117 +384,393 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[vmess]🇹🇼 台湾|02|1.0x"
-      - "[vmess]🇯🇵 日本|01|1.0x"
-      - "[vmess]🇦🇪 迪拜|1.0x"
-      - "[vmess]🇱🇹 立陶宛|维尔纽斯|1.0x"
-      - "[vmess]🇯🇵 日本|02|1.0x"
-      - "[vmess]🇰🇷 韩国|01|仁川|1.0x"
-      - "[vmess]🇰🇷 韩国|02|仁川|1.0x"
-      - "[vmess]🇵🇭 菲律宾|马尼拉|1.0x"
-      - "[vmess]🇺🇸 美国|03|1.0x"
-      - "[vmess]🇺🇸 美国|01|1.0x"
-      - "[vmess]🇮🇩 印尼|雅加达|1.0x"
-      - "[vmess]🇲🇾 马来西亚|怡保|1.0x"
-      - "[vmess]🇭🇰 香港|02|1.0x"
-      - "[vmess]🇫🇷 法国|巴黎|1.0x"
-      - "[vmess]🇵🇱 波兰|华沙|1.0x"
-      - "[vmess]🇨🇦 加拿大|蒙特利尔|1.0x"
-      - "[vmess]🇦🇺 澳大利亚|悉尼|1.0x"
-      - "[vmess]🇸🇪 瑞典|斯德哥尔摩|1.0x"
-      - "[vmess]🇰🇿 哈萨克斯塔|阿斯塔纳|1.0x"
-      - "[vmess]🇻🇳 越南|河内|1.0x"
-      - "[vmess]🇮🇸 冰岛|雷克亚维克|1.0x"
-      - "[vmess]🇷🇸 塞尔维亚|贝尔格莱德|1.0x"
+      - 台湾中转 02
+      - 澳大利亚原生1-1B
+      - 日本4-1D
+      - 日本3-1D
+      - 日本02-1E
+      - 香港-04-1D
+      - 香港中转 04
+      - 马来01-1D
+      - 台湾专线-03-1D
+      - 日本02-1D
+      - 新加坡-01-1D
+      - 香港-03-1C
+      - 台湾中转 01
+      - 英国-01-1C
+      - 香港中转 01
+      - 台湾中转 05
+      - 日本 C JP
+      - 印尼-02-1D
+      - 法国 巴黎 CDN加速-1B
+      - 3中转-2-1B
+      - IEPL专线 印度 NO1
+      - 日本03
+      - 德国 DE | BIZ
+      - 美国02-1D
+      - IEPL专线 日本 NO1
+      - 日本04
+      - 台湾中转 04
+      - 西班牙-巴塞罗那-1D
+      - 日本 A JP
+      - 韩国02-1D
+      - 澳大利亚原生1-1C
+      - 新加坡NO.1-1C
+      - 日本中转 04
+      - 印度2-1C
+      - 美国NO.1-1B
+      - 德国-汉堡-1D
+      - 美国中转 02
+      - 新加坡-03-1D
+      - 新加坡-02-1D
+      - 加拿大-多伦多-1C
+      - 美国01-1E
+      - 马来02-1D
+      - 台湾 A TW
+      - 日本中转 01
+      - 日本中转 05
+      - 英国中转 03
+      - 香港NO.1-1B
+      - 荷兰-阿姆斯特丹-1D
+      - 日本NO.1-1C
+      - 印度1-1C
+      - IEPL专线 台湾 NO1
+      - 波兰-华沙-1D
+      - 澳大利亚-02-1D
+      - 香港-02-1D
+      - 英国中转 02
+      - 印度-新德里-1D
+      - 印度1-1B
+      - 3中转-2-1D
+      - 香港-03-1D
+      - 美国 C US
+      - 日本中转 02
+      - 台湾专线-04-1D
+      - 香港-02-1C
+      - 香港中转 05
+      - 韩国01-1C
+      - 日本中转 03
+      - 韩国02-1C
+      - 香港 A HK
+      - 印尼-01-1D
+      - 加拿大-多伦多-1D
+      - 台湾中转 03
+      - 日本 B JP
+      - 新加坡-01-1C
+      - 马来02-1C
+      - 新加坡-03-1C
+      - 香港-04-1C
+      - 印尼-02-1C
+      - 新加坡-04-1D
+      - 日本01-1E
+      - 美国 B US
+      - 韩国01-1D
+      - 新加坡-02-1C
+      - 日本 冻精 CDN加速-1B
+      - 香港中转 03
+      - 马来01-1C
+      - 香港 C HK
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[vmess]🇹🇼 台湾|02|1.0x"
-      - "[vmess]🇭🇰 香港|02|1.0x"
+      - 台湾中转 02
+      - 香港-04-1D
+      - 香港中转 04
+      - 台湾专线-03-1D
+      - 香港-03-1C
+      - 台湾中转 01
+      - 香港中转 01
+      - 台湾中转 05
+      - 台湾中转 04
+      - 台湾 A TW
+      - 香港NO.1-1B
+      - IEPL专线 台湾 NO1
+      - 香港-02-1D
+      - 香港-03-1D
+      - 台湾专线-04-1D
+      - 香港-02-1C
+      - 香港中转 05
+      - 香港 A HK
+      - 台湾中转 03
+      - 香港-04-1C
+      - 香港中转 03
+      - 香港 C HK
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[vmess]🇹🇼 台湾|02|1.0x"
-      - "[vmess]🇯🇵 日本|01|1.0x"
-      - "[vmess]🇦🇪 迪拜|1.0x"
-      - "[vmess]🇱🇹 立陶宛|维尔纽斯|1.0x"
-      - "[vmess]🇯🇵 日本|02|1.0x"
-      - "[vmess]🇰🇷 韩国|01|仁川|1.0x"
-      - "[vmess]🇰🇷 韩国|02|仁川|1.0x"
-      - "[vmess]🇵🇭 菲律宾|马尼拉|1.0x"
-      - "[vmess]🇺🇸 美国|03|1.0x"
-      - "[vmess]🇺🇸 美国|01|1.0x"
-      - "[vmess]🇮🇩 印尼|雅加达|1.0x"
-      - "[vmess]🇲🇾 马来西亚|怡保|1.0x"
-      - "[vmess]🇭🇰 香港|02|1.0x"
-      - "[vmess]🇫🇷 法国|巴黎|1.0x"
-      - "[vmess]🇵🇱 波兰|华沙|1.0x"
-      - "[vmess]🇨🇦 加拿大|蒙特利尔|1.0x"
-      - "[vmess]🇦🇺 澳大利亚|悉尼|1.0x"
-      - "[vmess]🇸🇪 瑞典|斯德哥尔摩|1.0x"
-      - "[vmess]🇰🇿 哈萨克斯塔|阿斯塔纳|1.0x"
-      - "[vmess]🇻🇳 越南|河内|1.0x"
-      - "[vmess]🇮🇸 冰岛|雷克亚维克|1.0x"
-      - "[vmess]🇷🇸 塞尔维亚|贝尔格莱德|1.0x"
+      - 台湾中转 02
+      - 澳大利亚原生1-1B
+      - 日本4-1D
+      - 日本3-1D
+      - 日本02-1E
+      - 香港-04-1D
+      - 香港中转 04
+      - 马来01-1D
+      - 台湾专线-03-1D
+      - 日本02-1D
+      - 新加坡-01-1D
+      - 香港-03-1C
+      - 台湾中转 01
+      - 英国-01-1C
+      - 香港中转 01
+      - 台湾中转 05
+      - 日本 C JP
+      - 印尼-02-1D
+      - 法国 巴黎 CDN加速-1B
+      - 3中转-2-1B
+      - IEPL专线 印度 NO1
+      - 日本03
+      - 德国 DE | BIZ
+      - 美国02-1D
+      - IEPL专线 日本 NO1
+      - 日本04
+      - 台湾中转 04
+      - 西班牙-巴塞罗那-1D
+      - 日本 A JP
+      - 韩国02-1D
+      - 澳大利亚原生1-1C
+      - 新加坡NO.1-1C
+      - 日本中转 04
+      - 印度2-1C
+      - 美国NO.1-1B
+      - 德国-汉堡-1D
+      - 美国中转 02
+      - 新加坡-03-1D
+      - 新加坡-02-1D
+      - 加拿大-多伦多-1C
+      - 美国01-1E
+      - 马来02-1D
+      - 台湾 A TW
+      - 日本中转 01
+      - 日本中转 05
+      - 英国中转 03
+      - 香港NO.1-1B
+      - 荷兰-阿姆斯特丹-1D
+      - 日本NO.1-1C
+      - 印度1-1C
+      - IEPL专线 台湾 NO1
+      - 波兰-华沙-1D
+      - 澳大利亚-02-1D
+      - 香港-02-1D
+      - 英国中转 02
+      - 印度-新德里-1D
+      - 印度1-1B
+      - 3中转-2-1D
+      - 香港-03-1D
+      - 美国 C US
+      - 日本中转 02
+      - 台湾专线-04-1D
+      - 香港-02-1C
+      - 香港中转 05
+      - 韩国01-1C
+      - 日本中转 03
+      - 韩国02-1C
+      - 香港 A HK
+      - 印尼-01-1D
+      - 加拿大-多伦多-1D
+      - 台湾中转 03
+      - 日本 B JP
+      - 新加坡-01-1C
+      - 马来02-1C
+      - 新加坡-03-1C
+      - 香港-04-1C
+      - 印尼-02-1C
+      - 新加坡-04-1D
+      - 日本01-1E
+      - 美国 B US
+      - 韩国01-1D
+      - 新加坡-02-1C
+      - 日本 冻精 CDN加速-1B
+      - 香港中转 03
+      - 马来01-1C
+      - 香港 C HK
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[vmess]🇹🇼 台湾|02|1.0x"
-      - "[vmess]🇯🇵 日本|01|1.0x"
-      - "[vmess]🇦🇪 迪拜|1.0x"
-      - "[vmess]🇱🇹 立陶宛|维尔纽斯|1.0x"
-      - "[vmess]🇯🇵 日本|02|1.0x"
-      - "[vmess]🇰🇷 韩国|01|仁川|1.0x"
-      - "[vmess]🇰🇷 韩国|02|仁川|1.0x"
-      - "[vmess]🇵🇭 菲律宾|马尼拉|1.0x"
-      - "[vmess]🇺🇸 美国|03|1.0x"
-      - "[vmess]🇺🇸 美国|01|1.0x"
-      - "[vmess]🇮🇩 印尼|雅加达|1.0x"
-      - "[vmess]🇲🇾 马来西亚|怡保|1.0x"
-      - "[vmess]🇭🇰 香港|02|1.0x"
-      - "[vmess]🇫🇷 法国|巴黎|1.0x"
-      - "[vmess]🇵🇱 波兰|华沙|1.0x"
-      - "[vmess]🇨🇦 加拿大|蒙特利尔|1.0x"
-      - "[vmess]🇦🇺 澳大利亚|悉尼|1.0x"
-      - "[vmess]🇸🇪 瑞典|斯德哥尔摩|1.0x"
-      - "[vmess]🇰🇿 哈萨克斯塔|阿斯塔纳|1.0x"
-      - "[vmess]🇻🇳 越南|河内|1.0x"
-      - "[vmess]🇮🇸 冰岛|雷克亚维克|1.0x"
-      - "[vmess]🇷🇸 塞尔维亚|贝尔格莱德|1.0x"
+      - 台湾中转 02
+      - 澳大利亚原生1-1B
+      - 日本4-1D
+      - 日本3-1D
+      - 日本02-1E
+      - 香港-04-1D
+      - 香港中转 04
+      - 马来01-1D
+      - 台湾专线-03-1D
+      - 日本02-1D
+      - 新加坡-01-1D
+      - 香港-03-1C
+      - 台湾中转 01
+      - 英国-01-1C
+      - 香港中转 01
+      - 台湾中转 05
+      - 日本 C JP
+      - 印尼-02-1D
+      - 法国 巴黎 CDN加速-1B
+      - 3中转-2-1B
+      - IEPL专线 印度 NO1
+      - 日本03
+      - 德国 DE | BIZ
+      - 美国02-1D
+      - IEPL专线 日本 NO1
+      - 日本04
+      - 台湾中转 04
+      - 西班牙-巴塞罗那-1D
+      - 日本 A JP
+      - 韩国02-1D
+      - 澳大利亚原生1-1C
+      - 新加坡NO.1-1C
+      - 日本中转 04
+      - 印度2-1C
+      - 美国NO.1-1B
+      - 德国-汉堡-1D
+      - 美国中转 02
+      - 新加坡-03-1D
+      - 新加坡-02-1D
+      - 加拿大-多伦多-1C
+      - 美国01-1E
+      - 马来02-1D
+      - 台湾 A TW
+      - 日本中转 01
+      - 日本中转 05
+      - 英国中转 03
+      - 香港NO.1-1B
+      - 荷兰-阿姆斯特丹-1D
+      - 日本NO.1-1C
+      - 印度1-1C
+      - IEPL专线 台湾 NO1
+      - 波兰-华沙-1D
+      - 澳大利亚-02-1D
+      - 香港-02-1D
+      - 英国中转 02
+      - 印度-新德里-1D
+      - 印度1-1B
+      - 3中转-2-1D
+      - 香港-03-1D
+      - 美国 C US
+      - 日本中转 02
+      - 台湾专线-04-1D
+      - 香港-02-1C
+      - 香港中转 05
+      - 韩国01-1C
+      - 日本中转 03
+      - 韩国02-1C
+      - 香港 A HK
+      - 印尼-01-1D
+      - 加拿大-多伦多-1D
+      - 台湾中转 03
+      - 日本 B JP
+      - 新加坡-01-1C
+      - 马来02-1C
+      - 新加坡-03-1C
+      - 香港-04-1C
+      - 印尼-02-1C
+      - 新加坡-04-1D
+      - 日本01-1E
+      - 美国 B US
+      - 韩国01-1D
+      - 新加坡-02-1C
+      - 日本 冻精 CDN加速-1B
+      - 香港中转 03
+      - 马来01-1C
+      - 香港 C HK
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[vmess]🇹🇼 台湾|02|1.0x"
-      - "[vmess]🇯🇵 日本|01|1.0x"
-      - "[vmess]🇦🇪 迪拜|1.0x"
-      - "[vmess]🇱🇹 立陶宛|维尔纽斯|1.0x"
-      - "[vmess]🇯🇵 日本|02|1.0x"
-      - "[vmess]🇰🇷 韩国|01|仁川|1.0x"
-      - "[vmess]🇰🇷 韩国|02|仁川|1.0x"
-      - "[vmess]🇵🇭 菲律宾|马尼拉|1.0x"
-      - "[vmess]🇺🇸 美国|03|1.0x"
-      - "[vmess]🇺🇸 美国|01|1.0x"
-      - "[vmess]🇮🇩 印尼|雅加达|1.0x"
-      - "[vmess]🇲🇾 马来西亚|怡保|1.0x"
-      - "[vmess]🇭🇰 香港|02|1.0x"
-      - "[vmess]🇫🇷 法国|巴黎|1.0x"
-      - "[vmess]🇵🇱 波兰|华沙|1.0x"
-      - "[vmess]🇨🇦 加拿大|蒙特利尔|1.0x"
-      - "[vmess]🇦🇺 澳大利亚|悉尼|1.0x"
-      - "[vmess]🇸🇪 瑞典|斯德哥尔摩|1.0x"
-      - "[vmess]🇰🇿 哈萨克斯塔|阿斯塔纳|1.0x"
-      - "[vmess]🇻🇳 越南|河内|1.0x"
-      - "[vmess]🇮🇸 冰岛|雷克亚维克|1.0x"
-      - "[vmess]🇷🇸 塞尔维亚|贝尔格莱德|1.0x"
+      - 台湾中转 02
+      - 澳大利亚原生1-1B
+      - 日本4-1D
+      - 日本3-1D
+      - 日本02-1E
+      - 香港-04-1D
+      - 香港中转 04
+      - 马来01-1D
+      - 台湾专线-03-1D
+      - 日本02-1D
+      - 新加坡-01-1D
+      - 香港-03-1C
+      - 台湾中转 01
+      - 英国-01-1C
+      - 香港中转 01
+      - 台湾中转 05
+      - 日本 C JP
+      - 印尼-02-1D
+      - 法国 巴黎 CDN加速-1B
+      - 3中转-2-1B
+      - IEPL专线 印度 NO1
+      - 日本03
+      - 德国 DE | BIZ
+      - 美国02-1D
+      - IEPL专线 日本 NO1
+      - 日本04
+      - 台湾中转 04
+      - 西班牙-巴塞罗那-1D
+      - 日本 A JP
+      - 韩国02-1D
+      - 澳大利亚原生1-1C
+      - 新加坡NO.1-1C
+      - 日本中转 04
+      - 印度2-1C
+      - 美国NO.1-1B
+      - 德国-汉堡-1D
+      - 美国中转 02
+      - 新加坡-03-1D
+      - 新加坡-02-1D
+      - 加拿大-多伦多-1C
+      - 美国01-1E
+      - 马来02-1D
+      - 台湾 A TW
+      - 日本中转 01
+      - 日本中转 05
+      - 英国中转 03
+      - 香港NO.1-1B
+      - 荷兰-阿姆斯特丹-1D
+      - 日本NO.1-1C
+      - 印度1-1C
+      - IEPL专线 台湾 NO1
+      - 波兰-华沙-1D
+      - 澳大利亚-02-1D
+      - 香港-02-1D
+      - 英国中转 02
+      - 印度-新德里-1D
+      - 印度1-1B
+      - 3中转-2-1D
+      - 香港-03-1D
+      - 美国 C US
+      - 日本中转 02
+      - 台湾专线-04-1D
+      - 香港-02-1C
+      - 香港中转 05
+      - 韩国01-1C
+      - 日本中转 03
+      - 韩国02-1C
+      - 香港 A HK
+      - 印尼-01-1D
+      - 加拿大-多伦多-1D
+      - 台湾中转 03
+      - 日本 B JP
+      - 新加坡-01-1C
+      - 马来02-1C
+      - 新加坡-03-1C
+      - 香港-04-1C
+      - 印尼-02-1C
+      - 新加坡-04-1D
+      - 日本01-1E
+      - 美国 B US
+      - 韩国01-1D
+      - 新加坡-02-1C
+      - 日本 冻精 CDN加速-1B
+      - 香港中转 03
+      - 马来01-1C
+      - 香港 C HK
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -254,28 +786,92 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[vmess]🇹🇼 台湾|02|1.0x"
-      - "[vmess]🇯🇵 日本|01|1.0x"
-      - "[vmess]🇦🇪 迪拜|1.0x"
-      - "[vmess]🇱🇹 立陶宛|维尔纽斯|1.0x"
-      - "[vmess]🇯🇵 日本|02|1.0x"
-      - "[vmess]🇰🇷 韩国|01|仁川|1.0x"
-      - "[vmess]🇰🇷 韩国|02|仁川|1.0x"
-      - "[vmess]🇵🇭 菲律宾|马尼拉|1.0x"
-      - "[vmess]🇺🇸 美国|03|1.0x"
-      - "[vmess]🇺🇸 美国|01|1.0x"
-      - "[vmess]🇮🇩 印尼|雅加达|1.0x"
-      - "[vmess]🇲🇾 马来西亚|怡保|1.0x"
-      - "[vmess]🇭🇰 香港|02|1.0x"
-      - "[vmess]🇫🇷 法国|巴黎|1.0x"
-      - "[vmess]🇵🇱 波兰|华沙|1.0x"
-      - "[vmess]🇨🇦 加拿大|蒙特利尔|1.0x"
-      - "[vmess]🇦🇺 澳大利亚|悉尼|1.0x"
-      - "[vmess]🇸🇪 瑞典|斯德哥尔摩|1.0x"
-      - "[vmess]🇰🇿 哈萨克斯塔|阿斯塔纳|1.0x"
-      - "[vmess]🇻🇳 越南|河内|1.0x"
-      - "[vmess]🇮🇸 冰岛|雷克亚维克|1.0x"
-      - "[vmess]🇷🇸 塞尔维亚|贝尔格莱德|1.0x"
+      - 台湾中转 02
+      - 澳大利亚原生1-1B
+      - 日本4-1D
+      - 日本3-1D
+      - 日本02-1E
+      - 香港-04-1D
+      - 香港中转 04
+      - 马来01-1D
+      - 台湾专线-03-1D
+      - 日本02-1D
+      - 新加坡-01-1D
+      - 香港-03-1C
+      - 台湾中转 01
+      - 英国-01-1C
+      - 香港中转 01
+      - 台湾中转 05
+      - 日本 C JP
+      - 印尼-02-1D
+      - 法国 巴黎 CDN加速-1B
+      - 3中转-2-1B
+      - IEPL专线 印度 NO1
+      - 日本03
+      - 德国 DE | BIZ
+      - 美国02-1D
+      - IEPL专线 日本 NO1
+      - 日本04
+      - 台湾中转 04
+      - 西班牙-巴塞罗那-1D
+      - 日本 A JP
+      - 韩国02-1D
+      - 澳大利亚原生1-1C
+      - 新加坡NO.1-1C
+      - 日本中转 04
+      - 印度2-1C
+      - 美国NO.1-1B
+      - 德国-汉堡-1D
+      - 美国中转 02
+      - 新加坡-03-1D
+      - 新加坡-02-1D
+      - 加拿大-多伦多-1C
+      - 美国01-1E
+      - 马来02-1D
+      - 台湾 A TW
+      - 日本中转 01
+      - 日本中转 05
+      - 英国中转 03
+      - 香港NO.1-1B
+      - 荷兰-阿姆斯特丹-1D
+      - 日本NO.1-1C
+      - 印度1-1C
+      - IEPL专线 台湾 NO1
+      - 波兰-华沙-1D
+      - 澳大利亚-02-1D
+      - 香港-02-1D
+      - 英国中转 02
+      - 印度-新德里-1D
+      - 印度1-1B
+      - 3中转-2-1D
+      - 香港-03-1D
+      - 美国 C US
+      - 日本中转 02
+      - 台湾专线-04-1D
+      - 香港-02-1C
+      - 香港中转 05
+      - 韩国01-1C
+      - 日本中转 03
+      - 韩国02-1C
+      - 香港 A HK
+      - 印尼-01-1D
+      - 加拿大-多伦多-1D
+      - 台湾中转 03
+      - 日本 B JP
+      - 新加坡-01-1C
+      - 马来02-1C
+      - 新加坡-03-1C
+      - 香港-04-1C
+      - 印尼-02-1C
+      - 新加坡-04-1D
+      - 日本01-1E
+      - 美国 B US
+      - 韩国01-1D
+      - 新加坡-02-1C
+      - 日本 冻精 CDN加速-1B
+      - 香港中转 03
+      - 马来01-1C
+      - 香港 C HK
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
