@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-09-03 09:20:55
+# 创建时间：2024-09-05 09:19:53
 # 使用模版：V2RaySE 默认模版
-# 节点数量：7
+# 节点数量：25
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,88 +85,214 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"韩国","type":"vmess","server":"36.138.213.42","port":10116,"cipher":"auto","uuid":"6a098c35-535e-4d1a-8ec2-cc68610b6474","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/name","headers":{"host":"36.138.213.42"}}}
-  - {"name":"日本😡","type":"vmess","server":"36.138.213.42","port":10117,"cipher":"auto","uuid":"6a098c35-535e-4d1a-8ec2-cc68610b6474","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"36.138.213.42"}}}
-  - {"name":"香港5Gbs MAX Pro","type":"vmess","server":"36.138.213.42","port":10115,"cipher":"auto","uuid":"6a098c35-535e-4d1a-8ec2-cc68610b6474","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/name","headers":{"host":"36.138.213.42"}}}
-  - {"name":"美国150bps","type":"vmess","server":"110.40.68.42","port":18485,"cipher":"auto","uuid":"6a098c35-535e-4d1a-8ec2-cc68610b6474","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"110.40.68.42"}}}
-  - {"name":"越南1区直连","type":"vmess","server":"yn1.s2fjeyeeyafe.bond","port":92,"cipher":"auto","uuid":"6a098c35-535e-4d1a-8ec2-cc68610b6474","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"yn1.s2fjeyeeyafe.bond"}}}
-  - {"name":"越南3区普通","type":"vmess","server":"yn3.s2fjeyeeyafe.bond","port":1850,"cipher":"auto","uuid":"6a098c35-535e-4d1a-8ec2-cc68610b6474","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/zh-cn","headers":{"host":"yn3.s2fjeyeeyafe.bond"}}}
-  - {"name":"香港MAX pro 电信测试","type":"vmess","server":"42.202.37.49","port":11009,"cipher":"auto","uuid":"6a098c35-535e-4d1a-8ec2-cc68610b6474","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/name","headers":{"host":"42.202.37.49"}}}
+  - {"name":"CF-Worker-31","type":"trojan","server":"18.234.212.2","port":16014,"udp":true,"password":")Dwmt6jxouT(","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"SG-CF-Worker-22","type":"trojan","server":"47.128.222.20","port":16057,"udp":true,"password":"1LTQlYCuLcM7","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"CF-Worker-30","type":"trojan","server":"18.237.183.205","port":16017,"udp":true,"password":"xNscZWqP9ZMH","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"DE-CF-Worker-5","type":"trojan","server":"3.79.148.168","port":16045,"udp":true,"password":"xKm86HiAam0z","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"CF-Worker-29","type":"trojan","server":"35.160.168.91","port":16044,"udp":true,"password":"kruKmmUsBzAQ","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"GB-CF-Worker-13","type":"trojan","server":"13.40.9.33","port":16033,"udp":true,"password":"L8Zk7YZYTak8","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"DE-CF-Worker-9","type":"trojan","server":"18.197.51.8","port":16052,"udp":true,"password":"MN1yf5borPkQ","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"FR-CF-Worker-11","type":"trojan","server":"35.180.54.96","port":16049,"udp":true,"password":"3PLPmsaMe4LY","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"DE-CF-Worker-6","type":"trojan","server":"35.157.229.94","port":16019,"udp":true,"password":"x4ZI4Ot2ws7D","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"CF-Worker-23","type":"trojan","server":"34.214.184.248","port":16039,"udp":true,"password":"ZM0V10wwBNKs","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"CA-CF-Worker-3","type":"trojan","server":"15.156.193.87","port":16036,"udp":true,"password":"p14vDO0ySbdT","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"GB-CF-Worker-12","type":"trojan","server":"18.175.122.207","port":16025,"udp":true,"password":"BLPv3GmilEqo","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"DE-CF-Worker-7","type":"trojan","server":"18.194.53.50","port":16031,"udp":true,"password":")5thxow)u69o","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"CA-CF-Worker-4","type":"trojan","server":"35.183.120.53","port":16048,"udp":true,"password":"CWTdPKGNVJqB","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"CF-Worker-28","type":"trojan","server":"54.234.83.103","port":16037,"udp":true,"password":"KfzyID)n9Iny","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"GB-CF-Worker-14","type":"trojan","server":"18.171.170.232","port":16039,"udp":true,"password":"4BMLtapdBg68","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"FR-CF-Worker-10","type":"trojan","server":"13.39.161.102","port":16034,"udp":true,"password":"H1A1kniK(cxB","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"CF-Worker-25","type":"trojan","server":"3.145.169.75","port":16053,"udp":true,"password":"9GwRKEmI63l9","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"CA-CF-Worker-2","type":"trojan","server":"35.182.197.84","port":16053,"udp":true,"password":"i5H73PXn6mvb","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"CA-CF-Worker-1","type":"trojan","server":"35.183.110.161","port":16039,"udp":true,"password":"i8x)TJI0R1HT","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"CF-Worker-24","type":"trojan","server":"34.233.134.226","port":16023,"udp":true,"password":"9zfnMi5Tb7tF","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"CF-Worker-26","type":"trojan","server":"3.87.236.122","port":16034,"udp":true,"password":")VLLRjhajSPZ","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"DE-CF-Worker-8","type":"trojan","server":"3.67.176.228","port":16017,"udp":true,"password":"Dl0KdKutODzV","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"KR-CF-Worker-17","type":"trojan","server":"3.38.135.85","port":16031,"udp":true,"password":"t)7EOTgkW1Iv","sni":"appsvs.shop","skip-cert-verify":true}
+  - {"name":"SG-CF-Worker-20","type":"trojan","server":"54.169.90.179","port":16025,"udp":true,"password":"hdolb4YHRlE6","sni":"appsvs.shop","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 韩国
-      - 日本😡
-      - 香港5Gbs MAX Pro
-      - 美国150bps
-      - 越南1区直连
-      - 越南3区普通
-      - 香港MAX pro 电信测试
+      - CF-Worker-31
+      - SG-CF-Worker-22
+      - CF-Worker-30
+      - DE-CF-Worker-5
+      - CF-Worker-29
+      - GB-CF-Worker-13
+      - DE-CF-Worker-9
+      - FR-CF-Worker-11
+      - DE-CF-Worker-6
+      - CF-Worker-23
+      - CA-CF-Worker-3
+      - GB-CF-Worker-12
+      - DE-CF-Worker-7
+      - CA-CF-Worker-4
+      - CF-Worker-28
+      - GB-CF-Worker-14
+      - FR-CF-Worker-10
+      - CF-Worker-25
+      - CA-CF-Worker-2
+      - CA-CF-Worker-1
+      - CF-Worker-24
+      - CF-Worker-26
+      - DE-CF-Worker-8
+      - KR-CF-Worker-17
+      - SG-CF-Worker-20
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 韩国
-      - 日本😡
-      - 香港5Gbs MAX Pro
-      - 美国150bps
-      - 越南1区直连
-      - 越南3区普通
-      - 香港MAX pro 电信测试
+      - CF-Worker-31
+      - SG-CF-Worker-22
+      - CF-Worker-30
+      - DE-CF-Worker-5
+      - CF-Worker-29
+      - GB-CF-Worker-13
+      - DE-CF-Worker-9
+      - FR-CF-Worker-11
+      - DE-CF-Worker-6
+      - CF-Worker-23
+      - CA-CF-Worker-3
+      - GB-CF-Worker-12
+      - DE-CF-Worker-7
+      - CA-CF-Worker-4
+      - CF-Worker-28
+      - GB-CF-Worker-14
+      - FR-CF-Worker-10
+      - CF-Worker-25
+      - CA-CF-Worker-2
+      - CA-CF-Worker-1
+      - CF-Worker-24
+      - CF-Worker-26
+      - DE-CF-Worker-8
+      - KR-CF-Worker-17
+      - SG-CF-Worker-20
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 韩国
-      - 日本😡
-      - 香港5Gbs MAX Pro
-      - 美国150bps
-      - 越南1区直连
-      - 越南3区普通
-      - 香港MAX pro 电信测试
+      - CF-Worker-31
+      - SG-CF-Worker-22
+      - CF-Worker-30
+      - DE-CF-Worker-5
+      - CF-Worker-29
+      - GB-CF-Worker-13
+      - DE-CF-Worker-9
+      - FR-CF-Worker-11
+      - DE-CF-Worker-6
+      - CF-Worker-23
+      - CA-CF-Worker-3
+      - GB-CF-Worker-12
+      - DE-CF-Worker-7
+      - CA-CF-Worker-4
+      - CF-Worker-28
+      - GB-CF-Worker-14
+      - FR-CF-Worker-10
+      - CF-Worker-25
+      - CA-CF-Worker-2
+      - CA-CF-Worker-1
+      - CF-Worker-24
+      - CF-Worker-26
+      - DE-CF-Worker-8
+      - KR-CF-Worker-17
+      - SG-CF-Worker-20
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 韩国
-      - 日本😡
-      - 香港5Gbs MAX Pro
-      - 美国150bps
-      - 越南1区直连
-      - 越南3区普通
-      - 香港MAX pro 电信测试
+      - CF-Worker-31
+      - SG-CF-Worker-22
+      - CF-Worker-30
+      - DE-CF-Worker-5
+      - CF-Worker-29
+      - GB-CF-Worker-13
+      - DE-CF-Worker-9
+      - FR-CF-Worker-11
+      - DE-CF-Worker-6
+      - CF-Worker-23
+      - CA-CF-Worker-3
+      - GB-CF-Worker-12
+      - DE-CF-Worker-7
+      - CA-CF-Worker-4
+      - CF-Worker-28
+      - GB-CF-Worker-14
+      - FR-CF-Worker-10
+      - CF-Worker-25
+      - CA-CF-Worker-2
+      - CA-CF-Worker-1
+      - CF-Worker-24
+      - CF-Worker-26
+      - DE-CF-Worker-8
+      - KR-CF-Worker-17
+      - SG-CF-Worker-20
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 韩国
-      - 日本😡
-      - 香港5Gbs MAX Pro
-      - 美国150bps
-      - 越南1区直连
-      - 越南3区普通
-      - 香港MAX pro 电信测试
+      - CF-Worker-31
+      - SG-CF-Worker-22
+      - CF-Worker-30
+      - DE-CF-Worker-5
+      - CF-Worker-29
+      - GB-CF-Worker-13
+      - DE-CF-Worker-9
+      - FR-CF-Worker-11
+      - DE-CF-Worker-6
+      - CF-Worker-23
+      - CA-CF-Worker-3
+      - GB-CF-Worker-12
+      - DE-CF-Worker-7
+      - CA-CF-Worker-4
+      - CF-Worker-28
+      - GB-CF-Worker-14
+      - FR-CF-Worker-10
+      - CF-Worker-25
+      - CA-CF-Worker-2
+      - CA-CF-Worker-1
+      - CF-Worker-24
+      - CF-Worker-26
+      - DE-CF-Worker-8
+      - KR-CF-Worker-17
+      - SG-CF-Worker-20
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 韩国
-      - 日本😡
-      - 香港5Gbs MAX Pro
-      - 美国150bps
-      - 越南1区直连
-      - 越南3区普通
-      - 香港MAX pro 电信测试
+      - CF-Worker-31
+      - SG-CF-Worker-22
+      - CF-Worker-30
+      - DE-CF-Worker-5
+      - CF-Worker-29
+      - GB-CF-Worker-13
+      - DE-CF-Worker-9
+      - FR-CF-Worker-11
+      - DE-CF-Worker-6
+      - CF-Worker-23
+      - CA-CF-Worker-3
+      - GB-CF-Worker-12
+      - DE-CF-Worker-7
+      - CA-CF-Worker-4
+      - CF-Worker-28
+      - GB-CF-Worker-14
+      - FR-CF-Worker-10
+      - CF-Worker-25
+      - CA-CF-Worker-2
+      - CA-CF-Worker-1
+      - CF-Worker-24
+      - CF-Worker-26
+      - DE-CF-Worker-8
+      - KR-CF-Worker-17
+      - SG-CF-Worker-20
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -189,13 +315,31 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 韩国
-      - 日本😡
-      - 香港5Gbs MAX Pro
-      - 美国150bps
-      - 越南1区直连
-      - 越南3区普通
-      - 香港MAX pro 电信测试
+      - CF-Worker-31
+      - SG-CF-Worker-22
+      - CF-Worker-30
+      - DE-CF-Worker-5
+      - CF-Worker-29
+      - GB-CF-Worker-13
+      - DE-CF-Worker-9
+      - FR-CF-Worker-11
+      - DE-CF-Worker-6
+      - CF-Worker-23
+      - CA-CF-Worker-3
+      - GB-CF-Worker-12
+      - DE-CF-Worker-7
+      - CA-CF-Worker-4
+      - CF-Worker-28
+      - GB-CF-Worker-14
+      - FR-CF-Worker-10
+      - CF-Worker-25
+      - CA-CF-Worker-2
+      - CA-CF-Worker-1
+      - CF-Worker-24
+      - CF-Worker-26
+      - DE-CF-Worker-8
+      - KR-CF-Worker-17
+      - SG-CF-Worker-20
 
 rules:
 # 本地/局域网地址
