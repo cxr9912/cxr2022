@@ -1,1809 +1,334 @@
-port: 7890
-socks-port: 7891
-allow-lan: true
-mode: Rule
+# 生成地址：v2rayse.com
+# 模版名称：defaultName
+# 生成时间：2024-09-19 16:04:09
+# 不要随意改变关键字，否则会导致出错
+# acl4SSR规则
+# 去广告：支持
+# 自动测速：支持
+# 微软分流：支持
+# 苹果分流：支持
+# 增强中国IP段：不支持
+# 增强国外GFW：不支持
+
+mixed-port: 7890
+allow-lan: false
+mode: rule
+ipv6: false
 log-level: info
-external-controller: :9090
+external-controller: 0.0.0.0:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+  nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+    - 119.29.29.29
+    - 180.76.76.76
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - router.asus.com
+    - localhost.sec.qq.com
+    - localhost.ptlogin2.qq.com
+    - +.msftconnecttest.com
+tun:
+  enable: true
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - 114.114.114.114
+    - 180.76.76.76
+    - 119.29.29.29
+    - 223.5.5.5
+    - 8.8.8.8
+    - 8.8.4.4
+    - 1.1.1.1
+    - 1.0.0.1
 proxies:
-  - {name: 🇬🇧 英国_Telegram@kxswa, server: 5.44.249.42, port: 3306, type: trojan, password: b84d16a244460e09, skip-cert-verify: true}
-  - {name: 🇬🇧 英国_Telegram@kxswa 2, server: 5.44.249.42, port: 3306, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true}
-  - {name: 🇬🇧 英国_Telegram@kxswa 3, server: 5.44.249.42, port: 3306, type: trojan, password: c992d4055f0a7383, skip-cert-verify: true}
-  - {name: 🇬🇧 英国_Telegram@kxswa 4, server: 5.44.249.42, port: 3306, type: trojan, password: f653ef08c54e21b3, skip-cert-verify: true}
-  - {name: 🇬🇧 英国_Telegram@kxswa 5, server: 5.44.249.42, port: 3306, type: trojan, password: dc2d9db59868ba6b, skip-cert-verify: true}
-  - {name: 🇬🇧 英国_Telegram@kxswa 6, server: 5.44.249.42, port: 3306, type: trojan, password: 4bacb8f1a089763b, skip-cert-verify: true}
-  - {name: 🇬🇧 英国_Telegram@kxswa 7, server: 5.44.249.42, port: 3306, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true}
-  - {name: 🇬🇧 英国_Telegram@kxswa 8, server: 5.44.249.42, port: 3306, type: trojan, password: 36fe28a331638747, skip-cert-verify: true}
-  - {name: 🇬🇧 英国_Telegram@kxswa 9, server: 5.44.249.42, port: 3306, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true}
-  - {name: 🇬🇧 英国_Telegram@kxswa 10, server: 5.44.249.42, port: 3306, type: trojan, password: 8a1ab0df6abea549, skip-cert-verify: true}
-  - {name: 🇬🇧 英国_Telegram@kxswa 11, server: 5.44.249.42, port: 3306, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true}
-  - {name: 🇬🇧 英国_Telegram@kxswa 12, server: 5.44.249.42, port: 3306, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: true}
-  - {name: 🇬🇧 英国_Telegram@kxswa 13, server: 5.44.249.42, port: 3306, type: trojan, password: 26a663656e575c0b, skip-cert-verify: true}
-  - {name: 🇬🇧 英国_Telegram@kxswa 14, server: 51.38.65.155, port: 443, type: trojan, password: 1d7692c0-f51c-11ee-91eb-1239d0255272, skip-cert-verify: true}
-  - {name: 🇮🇩 印尼_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12061, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇮🇩 印尼_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12061, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇮🇳 印度_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12072, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇮🇳 印度_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12072, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇮🇹 意大利_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12062, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇮🇹 意大利_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12062, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_Telegram@kxswa, server: 188.166.252.91, port: 443, type: trojan, password: I4bO2YDEgs, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12021, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_Telegram@kxswa 3, server: cn2.cdn.xfltd-cdn.top, port: 12022, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_Telegram@kxswa 4, server: cn2.cdn.xfltd-cdn.top, port: 12023, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_Telegram@kxswa 5, server: cn2.cdn.xfltd-cdn.top, port: 12024, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_Telegram@kxswa 6, server: cn2.cdn.xfltd-cdn.top, port: 12025, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_Telegram@kxswa 7, server: cn2.cdn.xfltd-cdn.top, port: 12021, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_Telegram@kxswa 8, server: cn2.cdn.xfltd-cdn.top, port: 12022, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_Telegram@kxswa 9, server: cn2.cdn.xfltd-cdn.top, port: 12023, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_Telegram@kxswa 10, server: cn2.cdn.xfltd-cdn.top, port: 12024, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_Telegram@kxswa 11, server: cn2.cdn.xfltd-cdn.top, port: 12025, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa, server: 14.29.215.158, port: 33119, type: ss, cipher: chacha20-ietf-poly1305, password: 05174439-6643-4c44-b16c-2fd7d700f1ba}
-  - {name: 🇭🇰 香港_Telegram@kxswa 2, server: 42.236.73.72, port: 443, type: trojan, password: fuck, sni: www.zitian.cn, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 3, server: cn1.cdn.xfltd-cdn.top, port: 12001, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 4, server: cn1.cdn.xfltd-cdn.top, port: 12002, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 5, server: cn1.cdn.xfltd-cdn.top, port: 12003, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 6, server: cn1.cdn.xfltd-cdn.top, port: 12004, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 7, server: cn1.cdn.xfltd-cdn.top, port: 12005, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 8, server: cn1.cdn.xfltd-cdn.top, port: 12006, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 9, server: cn1.cdn.xfltd-cdn.top, port: 12001, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 10, server: cn1.cdn.xfltd-cdn.top, port: 12002, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 11, server: cn1.cdn.xfltd-cdn.top, port: 12003, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 12, server: cn1.cdn.xfltd-cdn.top, port: 12004, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 13, server: cn1.cdn.xfltd-cdn.top, port: 12005, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 14, server: cn1.cdn.xfltd-cdn.top, port: 12006, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 15, server: jp.mjt000.com, port: 443, type: trojan, password: d0774966-fb63-4aca-9478-16c3f32be220, sni: jp.mjt000.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 16, server: kr.mjt000.com, port: 443, type: trojan, password: d0774966-fb63-4aca-9478-16c3f32be220, sni: kr.mjt000.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_Telegram@kxswa 17, server: ru0195.alibabaokz.com, port: 60194, type: trojan, password: 38571ca6-6692-4559-b901-0bc5826b7661, sni: ru0195.alibabaokz.com, skip-cert-verify: true}
-  - {name: 🇺🇦 乌克兰_Telegram@kxswa, server: 185.234.64.146, port: 2053, type: trojan, password: 5c7941b5-c393-4eea-a76d-d44b59baf8a0, skip-cert-verify: true}
-  - {name: 未知_Telegram@kxswa, server: 103.161.255.195, port: 16088, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
-  - {name: 🇹🇷 土耳其_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12064, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇹🇷 土耳其_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12064, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇹🇭 泰国_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12076, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇹🇭 泰国_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12076, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾_Telegram@kxswa, server: cn1.cdn.xfltd-cdn.top, port: 12011, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾_Telegram@kxswa 2, server: cn1.cdn.xfltd-cdn.top, port: 12012, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾_Telegram@kxswa 3, server: cn1.cdn.xfltd-cdn.top, port: 12011, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾_Telegram@kxswa 4, server: cn1.cdn.xfltd-cdn.top, port: 12012, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇯🇵 日本_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12031, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇯🇵 日本_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12032, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇯🇵 日本_Telegram@kxswa 3, server: cn2.cdn.xfltd-cdn.top, port: 12033, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇯🇵 日本_Telegram@kxswa 4, server: cn2.cdn.xfltd-cdn.top, port: 12034, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇯🇵 日本_Telegram@kxswa 5, server: cn2.cdn.xfltd-cdn.top, port: 12031, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇯🇵 日本_Telegram@kxswa 6, server: cn2.cdn.xfltd-cdn.top, port: 12032, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇯🇵 日本_Telegram@kxswa 7, server: cn2.cdn.xfltd-cdn.top, port: 12033, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇯🇵 日本_Telegram@kxswa 8, server: cn2.cdn.xfltd-cdn.top, port: 12034, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇯🇵 日本_Telegram@kxswa 9, server: cn2.cdn.xfltd-cdn.top, port: 12035, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇳🇬 尼日利亚_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12073, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇳🇬 尼日利亚_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12073, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_Telegram@kxswa, server: 104.16.148.244, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip006.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 2, server: 104.16.149.244, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 3, server: 104.17.215.2, port: 443, type: trojan, password: 669d0ac7b5b64ebbb1abb75d5d540a5c, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_Telegram@kxswa 4, server: 104.18.14.19, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 5, server: 104.18.15.19, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 6, server: 104.18.57.111, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 7, server: 104.19.123.11, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 8, server: 104.19.123.11, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 9, server: 104.19.21.230, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 10, server: 104.19.21.230, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 11, server: 104.19.21.71, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 12, server: 104.19.32.216, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 13, server: 104.19.38.62, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip006.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 14, server: 104.19.38.8, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 15, server: 104.19.42.49, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 16, server: 104.19.42.49, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 17, server: 104.19.45.13, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 18, server: 104.19.45.15, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 19, server: 104.19.45.17, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 20, server: 104.19.45.19, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 21, server: 104.19.45.35, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 22, server: 104.19.45.47, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 23, server: 104.19.45.50, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 24, server: 104.19.45.90, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 25, server: 104.19.46.103, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 26, server: 104.19.46.22, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 27, server: 104.19.46.27, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 28, server: 104.19.46.33, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 29, server: 104.19.46.36, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 30, server: 104.19.46.39, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 31, server: 104.19.46.42, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 32, server: 104.19.46.56, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 33, server: 104.19.46.59, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 34, server: 104.19.46.59, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 35, server: 104.19.46.63, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 36, server: 104.19.47.122, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 37, server: 104.19.47.22, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 38, server: 104.19.47.27, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 39, server: 104.19.47.32, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 40, server: 104.19.47.36, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 41, server: 104.19.47.45, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 42, server: 104.19.47.77, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 43, server: 104.19.47.79, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 44, server: 104.19.47.88, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 45, server: 104.19.51.232, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip005.dtku47.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 46, server: 104.19.51.232, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip006.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 47, server: 104.19.57.4, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 48, server: 104.19.57.4, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 49, server: 104.19.58.175, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 50, server: 104.20.17.186, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 51, server: 104.20.25.146, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 52, server: 104.20.25.146, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 53, server: 104.22.36.243, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 54, server: 104.26.0.50, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip5-4.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 55, server: 104.26.0.56, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 56, server: 104.26.10.11, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 57, server: 104.26.12.140, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 58, server: 104.26.12.31, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 59, server: 104.26.13.31, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 60, server: 104.26.5.103, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 61, server: 104.26.5.112, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 62, server: 104.26.5.123, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 63, server: 104.26.5.145, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 64, server: 104.26.5.57, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 65, server: 104.26.5.66, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 66, server: 104.26.5.67, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 67, server: 104.26.5.88, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 68, server: 104.26.5.90, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 69, server: 104.26.7.132, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 70, server: 104.26.7.132, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 71, server: 104.26.8.156, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 72, server: 104.26.9.156, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 73, server: 156.146.38.167, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇺🇸 美国_Telegram@kxswa 74, server: 162.159.140.19, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 75, server: 162.159.140.33, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 76, server: 162.159.140.45, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 77, server: 162.159.140.56, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 78, server: 162.159.140.66, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 79, server: 162.159.140.77, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 80, server: 162.159.140.89, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 81, server: 162.159.140.91, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 82, server: 162.159.140.93, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 83, server: 167.88.61.235, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇺🇸 美国_Telegram@kxswa 84, server: 167.88.61.235, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 美国_Telegram@kxswa 85, server: 167.88.61.235, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 美国_Telegram@kxswa 86, server: 167.88.61.235, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 美国_Telegram@kxswa 87, server: 172.64.166.12, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 88, server: 172.64.166.20, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 89, server: 172.64.166.22, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 90, server: 172.64.166.28, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 91, server: 172.64.166.32, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 92, server: 172.64.166.33, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 93, server: 172.64.166.8, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 94, server: 172.64.167.10, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 95, server: 172.64.167.15, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 96, server: 172.64.167.19, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 97, server: 172.64.167.22, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 98, server: 172.64.167.25, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 99, server: 172.64.167.35, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 100, server: 172.64.167.44, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 101, server: 172.64.167.5, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 102, server: 172.64.167.8, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 103, server: 172.64.175.213, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 104, server: 172.64.175.88, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 105, server: 172.64.175.88, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 106, server: 172.64.198.249, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 107, server: 172.64.198.249, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 108, server: 172.64.99.22, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 109, server: 172.67.2.238, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 110, server: 172.67.71.187, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 111, server: 172.67.75.194, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 112, server: 23.227.38.3, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 113, server: 23.227.38.3, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 114, server: 23.227.38.5, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip006.freegradely.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 115, server: 23.227.38.6, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip004.dtku47.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 116, server: 23.227.38.6, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip006.dtku47.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 117, server: cfcdn1.sanfencdn9.com, port: 2095, type: vmess, uuid: 75781b8f-db32-44b5-936c-0065a3064a98, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video/qYZue4zaWS, headers: {Host: us82pRzxDMb.fzbqfrse.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 118, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: a7fa0544-86ec-4cf6-b216-fc0ee4422b8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video/QXjZG5u4F2, headers: {Host: us3AJ8biuQx.fzbqfrse.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 119, server: cn2.cdn.xfltd-cdn.top, port: 12051, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_Telegram@kxswa 120, server: cn2.cdn.xfltd-cdn.top, port: 12052, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_Telegram@kxswa 121, server: cn2.cdn.xfltd-cdn.top, port: 12053, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_Telegram@kxswa 122, server: cn2.cdn.xfltd-cdn.top, port: 12051, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_Telegram@kxswa 123, server: cn2.cdn.xfltd-cdn.top, port: 12052, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_Telegram@kxswa 124, server: cn2.cdn.xfltd-cdn.top, port: 12053, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_Telegram@kxswa 125, server: fbi.gov, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 126, server: icook.tw, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 127, server: ip.sb, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 128, server: japan.com, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 129, server: malaysia.com, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 130, server: node-sg-singapore-vip01.acegate.io, port: 443, type: vmess, uuid: 34a4bbeb-fbec-4902-af64-578d4c98389c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /LUqwr, headers: {Host: node-sg-singapore-vip01.acegate.io}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 131, server: russia.com, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 132, server: singapore.com, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 133, server: skk.moe, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 134, server: www.visa.com, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇲🇾 马来西亚_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12067, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇲🇾 马来西亚_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12067, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇳🇱 荷兰_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12074, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇳🇱 荷兰_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12074, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇰🇷 韩国_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12041, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇰🇷 韩国_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12041, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇫🇷 法国_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12065, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇫🇷 法国_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12065, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇷🇺 俄罗斯_Telegram@kxswa, server: 176.32.35.167, port: 1007, type: trojan, password: 85bce006-4885-11ee-8792-f23c9164ca5d, skip-cert-verify: true}
-  - {name: 🇷🇺 俄罗斯_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12075, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇷🇺 俄罗斯_Telegram@kxswa 3, server: cn2.cdn.xfltd-cdn.top, port: 12075, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇩🇪 德国_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12070, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇩🇪 德国_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12070, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇦🇺 澳大利亚_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12068, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇦🇺 澳大利亚_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12068, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇦🇷 阿根廷_Telegram@kxswa, server: cn2.cdn.xfltd-cdn.top, port: 12066, type: trojan, password: 45b8ba85-da52-42ef-bc6b-8a81c45e93ac, sni: cdn.alibaba.com, skip-cert-verify: true}
-  - {name: 🇦🇷 阿根廷_Telegram@kxswa 2, server: cn2.cdn.xfltd-cdn.top, port: 12066, type: trojan, password: 66776fe3-a989-4d1c-a9ef-3565f8e6c179, sni: cdn.alibaba.com, skip-cert-verify: true}
+  - name: 土耳其_Telegram@kxswa+3
+    port: 12064
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 印尼_Telegram@kxswa+2
+    port: 12061
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 荷兰_Telegram@kxswa+2
+    port: 12074
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 法国_Telegram@kxswa+2
+    port: 12065
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 英国_Telegram@kxswa+3
+    port: 12069
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 印度_Telegram@kxswa+2
+    port: 12072
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 澳大利亚_Telegram@kxswa+2
+    port: 12068
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 美国_Telegram@kxswa+126
+    port: 12051
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 瑞典_Telegram@kxswa+2
+    port: 12071
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 德国_Telegram@kxswa+3
+    port: 12070
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 日本_Telegram@kxswa+3
+    port: 12031
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 泰国_Telegram@kxswa+2
+    port: 12076
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 新加坡_Telegram@kxswa+3
+    port: 12021
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 马来西亚_Telegram@kxswa+2
+    port: 12067
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 台湾_Telegram@kxswa+2
+    port: 12011
+    server: cn1.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 韩国_Telegram@kxswa+2
+    port: 12041
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
+  - name: 尼日利亚_Telegram@kxswa+2
+    port: 12073
+    server: cn2.cdn.xfltd-cdn.top
+    type: trojan
+    udp: true
+    sni: cdn.alibaba.com
+    password: 2d7fd178-8831-4b36-a25f-a4848c850123
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇬🇧 英国_Telegram@kxswa
-      - 🇬🇧 英国_Telegram@kxswa 2
-      - 🇬🇧 英国_Telegram@kxswa 3
-      - 🇬🇧 英国_Telegram@kxswa 4
-      - 🇬🇧 英国_Telegram@kxswa 5
-      - 🇬🇧 英国_Telegram@kxswa 6
-      - 🇬🇧 英国_Telegram@kxswa 7
-      - 🇬🇧 英国_Telegram@kxswa 8
-      - 🇬🇧 英国_Telegram@kxswa 9
-      - 🇬🇧 英国_Telegram@kxswa 10
-      - 🇬🇧 英国_Telegram@kxswa 11
-      - 🇬🇧 英国_Telegram@kxswa 12
-      - 🇬🇧 英国_Telegram@kxswa 13
-      - 🇬🇧 英国_Telegram@kxswa 14
-      - 🇮🇩 印尼_Telegram@kxswa
-      - 🇮🇩 印尼_Telegram@kxswa 2
-      - 🇮🇳 印度_Telegram@kxswa
-      - 🇮🇳 印度_Telegram@kxswa 2
-      - 🇮🇹 意大利_Telegram@kxswa
-      - 🇮🇹 意大利_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa
-      - 🇸🇬 新加坡_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa 3
-      - 🇸🇬 新加坡_Telegram@kxswa 4
-      - 🇸🇬 新加坡_Telegram@kxswa 5
-      - 🇸🇬 新加坡_Telegram@kxswa 6
-      - 🇸🇬 新加坡_Telegram@kxswa 7
-      - 🇸🇬 新加坡_Telegram@kxswa 8
-      - 🇸🇬 新加坡_Telegram@kxswa 9
-      - 🇸🇬 新加坡_Telegram@kxswa 10
-      - 🇸🇬 新加坡_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa
-      - 🇭🇰 香港_Telegram@kxswa 2
-      - 🇭🇰 香港_Telegram@kxswa 3
-      - 🇭🇰 香港_Telegram@kxswa 4
-      - 🇭🇰 香港_Telegram@kxswa 5
-      - 🇭🇰 香港_Telegram@kxswa 6
-      - 🇭🇰 香港_Telegram@kxswa 7
-      - 🇭🇰 香港_Telegram@kxswa 8
-      - 🇭🇰 香港_Telegram@kxswa 9
-      - 🇭🇰 香港_Telegram@kxswa 10
-      - 🇭🇰 香港_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa 12
-      - 🇭🇰 香港_Telegram@kxswa 13
-      - 🇭🇰 香港_Telegram@kxswa 14
-      - 🇭🇰 香港_Telegram@kxswa 15
-      - 🇭🇰 香港_Telegram@kxswa 16
-      - 🇭🇰 香港_Telegram@kxswa 17
-      - 🇺🇦 乌克兰_Telegram@kxswa
-      - 未知_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa 2
-      - 🇹🇭 泰国_Telegram@kxswa
-      - 🇹🇭 泰国_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa
-      - 🇨🇳 台湾_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa 3
-      - 🇨🇳 台湾_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa
-      - 🇯🇵 日本_Telegram@kxswa 2
-      - 🇯🇵 日本_Telegram@kxswa 3
-      - 🇯🇵 日本_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa 5
-      - 🇯🇵 日本_Telegram@kxswa 6
-      - 🇯🇵 日本_Telegram@kxswa 7
-      - 🇯🇵 日本_Telegram@kxswa 8
-      - 🇯🇵 日本_Telegram@kxswa 9
-      - 🇳🇬 尼日利亚_Telegram@kxswa
-      - 🇳🇬 尼日利亚_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa
-      - 🇺🇸 美国_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa 3
-      - 🇺🇸 美国_Telegram@kxswa 4
-      - 🇺🇸 美国_Telegram@kxswa 5
-      - 🇺🇸 美国_Telegram@kxswa 6
-      - 🇺🇸 美国_Telegram@kxswa 7
-      - 🇺🇸 美国_Telegram@kxswa 8
-      - 🇺🇸 美国_Telegram@kxswa 9
-      - 🇺🇸 美国_Telegram@kxswa 10
-      - 🇺🇸 美国_Telegram@kxswa 11
-      - 🇺🇸 美国_Telegram@kxswa 12
-      - 🇺🇸 美国_Telegram@kxswa 13
-      - 🇺🇸 美国_Telegram@kxswa 14
-      - 🇺🇸 美国_Telegram@kxswa 15
-      - 🇺🇸 美国_Telegram@kxswa 16
-      - 🇺🇸 美国_Telegram@kxswa 17
-      - 🇺🇸 美国_Telegram@kxswa 18
-      - 🇺🇸 美国_Telegram@kxswa 19
-      - 🇺🇸 美国_Telegram@kxswa 20
-      - 🇺🇸 美国_Telegram@kxswa 21
-      - 🇺🇸 美国_Telegram@kxswa 22
-      - 🇺🇸 美国_Telegram@kxswa 23
-      - 🇺🇸 美国_Telegram@kxswa 24
-      - 🇺🇸 美国_Telegram@kxswa 25
-      - 🇺🇸 美国_Telegram@kxswa 26
-      - 🇺🇸 美国_Telegram@kxswa 27
-      - 🇺🇸 美国_Telegram@kxswa 28
-      - 🇺🇸 美国_Telegram@kxswa 29
-      - 🇺🇸 美国_Telegram@kxswa 30
-      - 🇺🇸 美国_Telegram@kxswa 31
-      - 🇺🇸 美国_Telegram@kxswa 32
-      - 🇺🇸 美国_Telegram@kxswa 33
-      - 🇺🇸 美国_Telegram@kxswa 34
-      - 🇺🇸 美国_Telegram@kxswa 35
-      - 🇺🇸 美国_Telegram@kxswa 36
-      - 🇺🇸 美国_Telegram@kxswa 37
-      - 🇺🇸 美国_Telegram@kxswa 38
-      - 🇺🇸 美国_Telegram@kxswa 39
-      - 🇺🇸 美国_Telegram@kxswa 40
-      - 🇺🇸 美国_Telegram@kxswa 41
-      - 🇺🇸 美国_Telegram@kxswa 42
-      - 🇺🇸 美国_Telegram@kxswa 43
-      - 🇺🇸 美国_Telegram@kxswa 44
-      - 🇺🇸 美国_Telegram@kxswa 45
-      - 🇺🇸 美国_Telegram@kxswa 46
-      - 🇺🇸 美国_Telegram@kxswa 47
-      - 🇺🇸 美国_Telegram@kxswa 48
-      - 🇺🇸 美国_Telegram@kxswa 49
-      - 🇺🇸 美国_Telegram@kxswa 50
-      - 🇺🇸 美国_Telegram@kxswa 51
-      - 🇺🇸 美国_Telegram@kxswa 52
-      - 🇺🇸 美国_Telegram@kxswa 53
-      - 🇺🇸 美国_Telegram@kxswa 54
-      - 🇺🇸 美国_Telegram@kxswa 55
-      - 🇺🇸 美国_Telegram@kxswa 56
-      - 🇺🇸 美国_Telegram@kxswa 57
-      - 🇺🇸 美国_Telegram@kxswa 58
-      - 🇺🇸 美国_Telegram@kxswa 59
-      - 🇺🇸 美国_Telegram@kxswa 60
-      - 🇺🇸 美国_Telegram@kxswa 61
-      - 🇺🇸 美国_Telegram@kxswa 62
-      - 🇺🇸 美国_Telegram@kxswa 63
-      - 🇺🇸 美国_Telegram@kxswa 64
-      - 🇺🇸 美国_Telegram@kxswa 65
-      - 🇺🇸 美国_Telegram@kxswa 66
-      - 🇺🇸 美国_Telegram@kxswa 67
-      - 🇺🇸 美国_Telegram@kxswa 68
-      - 🇺🇸 美国_Telegram@kxswa 69
-      - 🇺🇸 美国_Telegram@kxswa 70
-      - 🇺🇸 美国_Telegram@kxswa 71
-      - 🇺🇸 美国_Telegram@kxswa 72
-      - 🇺🇸 美国_Telegram@kxswa 73
-      - 🇺🇸 美国_Telegram@kxswa 74
-      - 🇺🇸 美国_Telegram@kxswa 75
-      - 🇺🇸 美国_Telegram@kxswa 76
-      - 🇺🇸 美国_Telegram@kxswa 77
-      - 🇺🇸 美国_Telegram@kxswa 78
-      - 🇺🇸 美国_Telegram@kxswa 79
-      - 🇺🇸 美国_Telegram@kxswa 80
-      - 🇺🇸 美国_Telegram@kxswa 81
-      - 🇺🇸 美国_Telegram@kxswa 82
-      - 🇺🇸 美国_Telegram@kxswa 83
-      - 🇺🇸 美国_Telegram@kxswa 84
-      - 🇺🇸 美国_Telegram@kxswa 85
-      - 🇺🇸 美国_Telegram@kxswa 86
-      - 🇺🇸 美国_Telegram@kxswa 87
-      - 🇺🇸 美国_Telegram@kxswa 88
-      - 🇺🇸 美国_Telegram@kxswa 89
-      - 🇺🇸 美国_Telegram@kxswa 90
-      - 🇺🇸 美国_Telegram@kxswa 91
-      - 🇺🇸 美国_Telegram@kxswa 92
-      - 🇺🇸 美国_Telegram@kxswa 93
-      - 🇺🇸 美国_Telegram@kxswa 94
-      - 🇺🇸 美国_Telegram@kxswa 95
-      - 🇺🇸 美国_Telegram@kxswa 96
-      - 🇺🇸 美国_Telegram@kxswa 97
-      - 🇺🇸 美国_Telegram@kxswa 98
-      - 🇺🇸 美国_Telegram@kxswa 99
-      - 🇺🇸 美国_Telegram@kxswa 100
-      - 🇺🇸 美国_Telegram@kxswa 101
-      - 🇺🇸 美国_Telegram@kxswa 102
-      - 🇺🇸 美国_Telegram@kxswa 103
-      - 🇺🇸 美国_Telegram@kxswa 104
-      - 🇺🇸 美国_Telegram@kxswa 105
-      - 🇺🇸 美国_Telegram@kxswa 106
-      - 🇺🇸 美国_Telegram@kxswa 107
-      - 🇺🇸 美国_Telegram@kxswa 108
-      - 🇺🇸 美国_Telegram@kxswa 109
-      - 🇺🇸 美国_Telegram@kxswa 110
-      - 🇺🇸 美国_Telegram@kxswa 111
-      - 🇺🇸 美国_Telegram@kxswa 112
-      - 🇺🇸 美国_Telegram@kxswa 113
-      - 🇺🇸 美国_Telegram@kxswa 114
-      - 🇺🇸 美国_Telegram@kxswa 115
-      - 🇺🇸 美国_Telegram@kxswa 116
-      - 🇺🇸 美国_Telegram@kxswa 117
-      - 🇺🇸 美国_Telegram@kxswa 118
-      - 🇺🇸 美国_Telegram@kxswa 119
-      - 🇺🇸 美国_Telegram@kxswa 120
-      - 🇺🇸 美国_Telegram@kxswa 121
-      - 🇺🇸 美国_Telegram@kxswa 122
-      - 🇺🇸 美国_Telegram@kxswa 123
-      - 🇺🇸 美国_Telegram@kxswa 124
-      - 🇺🇸 美国_Telegram@kxswa 125
-      - 🇺🇸 美国_Telegram@kxswa 126
-      - 🇺🇸 美国_Telegram@kxswa 127
-      - 🇺🇸 美国_Telegram@kxswa 128
-      - 🇺🇸 美国_Telegram@kxswa 129
-      - 🇺🇸 美国_Telegram@kxswa 130
-      - 🇺🇸 美国_Telegram@kxswa 131
-      - 🇺🇸 美国_Telegram@kxswa 132
-      - 🇺🇸 美国_Telegram@kxswa 133
-      - 🇺🇸 美国_Telegram@kxswa 134
-      - 🇲🇾 马来西亚_Telegram@kxswa
-      - 🇲🇾 马来西亚_Telegram@kxswa 2
-      - 🇳🇱 荷兰_Telegram@kxswa
-      - 🇳🇱 荷兰_Telegram@kxswa 2
-      - 🇰🇷 韩国_Telegram@kxswa
-      - 🇰🇷 韩国_Telegram@kxswa 2
-      - 🇫🇷 法国_Telegram@kxswa
-      - 🇫🇷 法国_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa
-      - 🇷🇺 俄罗斯_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa 3
-      - 🇩🇪 德国_Telegram@kxswa
-      - 🇩🇪 德国_Telegram@kxswa 2
-      - 🇦🇺 澳大利亚_Telegram@kxswa
-      - 🇦🇺 澳大利亚_Telegram@kxswa 2
-      - 🇦🇷 阿根廷_Telegram@kxswa
-      - 🇦🇷 阿根廷_Telegram@kxswa 2
+      - 土耳其_Telegram@kxswa+3
+      - 印尼_Telegram@kxswa+2
+      - 荷兰_Telegram@kxswa+2
+      - 法国_Telegram@kxswa+2
+      - 英国_Telegram@kxswa+3
+      - 印度_Telegram@kxswa+2
+      - 澳大利亚_Telegram@kxswa+2
+      - 美国_Telegram@kxswa+126
+      - 瑞典_Telegram@kxswa+2
+      - 德国_Telegram@kxswa+3
+      - 日本_Telegram@kxswa+3
+      - 泰国_Telegram@kxswa+2
+      - 新加坡_Telegram@kxswa+3
+      - 马来西亚_Telegram@kxswa+2
+      - 台湾_Telegram@kxswa+2
+      - 韩国_Telegram@kxswa+2
+      - 尼日利亚_Telegram@kxswa+2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇬🇧 英国_Telegram@kxswa
-      - 🇬🇧 英国_Telegram@kxswa 2
-      - 🇬🇧 英国_Telegram@kxswa 3
-      - 🇬🇧 英国_Telegram@kxswa 4
-      - 🇬🇧 英国_Telegram@kxswa 5
-      - 🇬🇧 英国_Telegram@kxswa 6
-      - 🇬🇧 英国_Telegram@kxswa 7
-      - 🇬🇧 英国_Telegram@kxswa 8
-      - 🇬🇧 英国_Telegram@kxswa 9
-      - 🇬🇧 英国_Telegram@kxswa 10
-      - 🇬🇧 英国_Telegram@kxswa 11
-      - 🇬🇧 英国_Telegram@kxswa 12
-      - 🇬🇧 英国_Telegram@kxswa 13
-      - 🇬🇧 英国_Telegram@kxswa 14
-      - 🇮🇩 印尼_Telegram@kxswa
-      - 🇮🇩 印尼_Telegram@kxswa 2
-      - 🇮🇳 印度_Telegram@kxswa
-      - 🇮🇳 印度_Telegram@kxswa 2
-      - 🇮🇹 意大利_Telegram@kxswa
-      - 🇮🇹 意大利_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa
-      - 🇸🇬 新加坡_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa 3
-      - 🇸🇬 新加坡_Telegram@kxswa 4
-      - 🇸🇬 新加坡_Telegram@kxswa 5
-      - 🇸🇬 新加坡_Telegram@kxswa 6
-      - 🇸🇬 新加坡_Telegram@kxswa 7
-      - 🇸🇬 新加坡_Telegram@kxswa 8
-      - 🇸🇬 新加坡_Telegram@kxswa 9
-      - 🇸🇬 新加坡_Telegram@kxswa 10
-      - 🇸🇬 新加坡_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa
-      - 🇭🇰 香港_Telegram@kxswa 2
-      - 🇭🇰 香港_Telegram@kxswa 3
-      - 🇭🇰 香港_Telegram@kxswa 4
-      - 🇭🇰 香港_Telegram@kxswa 5
-      - 🇭🇰 香港_Telegram@kxswa 6
-      - 🇭🇰 香港_Telegram@kxswa 7
-      - 🇭🇰 香港_Telegram@kxswa 8
-      - 🇭🇰 香港_Telegram@kxswa 9
-      - 🇭🇰 香港_Telegram@kxswa 10
-      - 🇭🇰 香港_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa 12
-      - 🇭🇰 香港_Telegram@kxswa 13
-      - 🇭🇰 香港_Telegram@kxswa 14
-      - 🇭🇰 香港_Telegram@kxswa 15
-      - 🇭🇰 香港_Telegram@kxswa 16
-      - 🇭🇰 香港_Telegram@kxswa 17
-      - 🇺🇦 乌克兰_Telegram@kxswa
-      - 未知_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa 2
-      - 🇹🇭 泰国_Telegram@kxswa
-      - 🇹🇭 泰国_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa
-      - 🇨🇳 台湾_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa 3
-      - 🇨🇳 台湾_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa
-      - 🇯🇵 日本_Telegram@kxswa 2
-      - 🇯🇵 日本_Telegram@kxswa 3
-      - 🇯🇵 日本_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa 5
-      - 🇯🇵 日本_Telegram@kxswa 6
-      - 🇯🇵 日本_Telegram@kxswa 7
-      - 🇯🇵 日本_Telegram@kxswa 8
-      - 🇯🇵 日本_Telegram@kxswa 9
-      - 🇳🇬 尼日利亚_Telegram@kxswa
-      - 🇳🇬 尼日利亚_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa
-      - 🇺🇸 美国_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa 3
-      - 🇺🇸 美国_Telegram@kxswa 4
-      - 🇺🇸 美国_Telegram@kxswa 5
-      - 🇺🇸 美国_Telegram@kxswa 6
-      - 🇺🇸 美国_Telegram@kxswa 7
-      - 🇺🇸 美国_Telegram@kxswa 8
-      - 🇺🇸 美国_Telegram@kxswa 9
-      - 🇺🇸 美国_Telegram@kxswa 10
-      - 🇺🇸 美国_Telegram@kxswa 11
-      - 🇺🇸 美国_Telegram@kxswa 12
-      - 🇺🇸 美国_Telegram@kxswa 13
-      - 🇺🇸 美国_Telegram@kxswa 14
-      - 🇺🇸 美国_Telegram@kxswa 15
-      - 🇺🇸 美国_Telegram@kxswa 16
-      - 🇺🇸 美国_Telegram@kxswa 17
-      - 🇺🇸 美国_Telegram@kxswa 18
-      - 🇺🇸 美国_Telegram@kxswa 19
-      - 🇺🇸 美国_Telegram@kxswa 20
-      - 🇺🇸 美国_Telegram@kxswa 21
-      - 🇺🇸 美国_Telegram@kxswa 22
-      - 🇺🇸 美国_Telegram@kxswa 23
-      - 🇺🇸 美国_Telegram@kxswa 24
-      - 🇺🇸 美国_Telegram@kxswa 25
-      - 🇺🇸 美国_Telegram@kxswa 26
-      - 🇺🇸 美国_Telegram@kxswa 27
-      - 🇺🇸 美国_Telegram@kxswa 28
-      - 🇺🇸 美国_Telegram@kxswa 29
-      - 🇺🇸 美国_Telegram@kxswa 30
-      - 🇺🇸 美国_Telegram@kxswa 31
-      - 🇺🇸 美国_Telegram@kxswa 32
-      - 🇺🇸 美国_Telegram@kxswa 33
-      - 🇺🇸 美国_Telegram@kxswa 34
-      - 🇺🇸 美国_Telegram@kxswa 35
-      - 🇺🇸 美国_Telegram@kxswa 36
-      - 🇺🇸 美国_Telegram@kxswa 37
-      - 🇺🇸 美国_Telegram@kxswa 38
-      - 🇺🇸 美国_Telegram@kxswa 39
-      - 🇺🇸 美国_Telegram@kxswa 40
-      - 🇺🇸 美国_Telegram@kxswa 41
-      - 🇺🇸 美国_Telegram@kxswa 42
-      - 🇺🇸 美国_Telegram@kxswa 43
-      - 🇺🇸 美国_Telegram@kxswa 44
-      - 🇺🇸 美国_Telegram@kxswa 45
-      - 🇺🇸 美国_Telegram@kxswa 46
-      - 🇺🇸 美国_Telegram@kxswa 47
-      - 🇺🇸 美国_Telegram@kxswa 48
-      - 🇺🇸 美国_Telegram@kxswa 49
-      - 🇺🇸 美国_Telegram@kxswa 50
-      - 🇺🇸 美国_Telegram@kxswa 51
-      - 🇺🇸 美国_Telegram@kxswa 52
-      - 🇺🇸 美国_Telegram@kxswa 53
-      - 🇺🇸 美国_Telegram@kxswa 54
-      - 🇺🇸 美国_Telegram@kxswa 55
-      - 🇺🇸 美国_Telegram@kxswa 56
-      - 🇺🇸 美国_Telegram@kxswa 57
-      - 🇺🇸 美国_Telegram@kxswa 58
-      - 🇺🇸 美国_Telegram@kxswa 59
-      - 🇺🇸 美国_Telegram@kxswa 60
-      - 🇺🇸 美国_Telegram@kxswa 61
-      - 🇺🇸 美国_Telegram@kxswa 62
-      - 🇺🇸 美国_Telegram@kxswa 63
-      - 🇺🇸 美国_Telegram@kxswa 64
-      - 🇺🇸 美国_Telegram@kxswa 65
-      - 🇺🇸 美国_Telegram@kxswa 66
-      - 🇺🇸 美国_Telegram@kxswa 67
-      - 🇺🇸 美国_Telegram@kxswa 68
-      - 🇺🇸 美国_Telegram@kxswa 69
-      - 🇺🇸 美国_Telegram@kxswa 70
-      - 🇺🇸 美国_Telegram@kxswa 71
-      - 🇺🇸 美国_Telegram@kxswa 72
-      - 🇺🇸 美国_Telegram@kxswa 73
-      - 🇺🇸 美国_Telegram@kxswa 74
-      - 🇺🇸 美国_Telegram@kxswa 75
-      - 🇺🇸 美国_Telegram@kxswa 76
-      - 🇺🇸 美国_Telegram@kxswa 77
-      - 🇺🇸 美国_Telegram@kxswa 78
-      - 🇺🇸 美国_Telegram@kxswa 79
-      - 🇺🇸 美国_Telegram@kxswa 80
-      - 🇺🇸 美国_Telegram@kxswa 81
-      - 🇺🇸 美国_Telegram@kxswa 82
-      - 🇺🇸 美国_Telegram@kxswa 83
-      - 🇺🇸 美国_Telegram@kxswa 84
-      - 🇺🇸 美国_Telegram@kxswa 85
-      - 🇺🇸 美国_Telegram@kxswa 86
-      - 🇺🇸 美国_Telegram@kxswa 87
-      - 🇺🇸 美国_Telegram@kxswa 88
-      - 🇺🇸 美国_Telegram@kxswa 89
-      - 🇺🇸 美国_Telegram@kxswa 90
-      - 🇺🇸 美国_Telegram@kxswa 91
-      - 🇺🇸 美国_Telegram@kxswa 92
-      - 🇺🇸 美国_Telegram@kxswa 93
-      - 🇺🇸 美国_Telegram@kxswa 94
-      - 🇺🇸 美国_Telegram@kxswa 95
-      - 🇺🇸 美国_Telegram@kxswa 96
-      - 🇺🇸 美国_Telegram@kxswa 97
-      - 🇺🇸 美国_Telegram@kxswa 98
-      - 🇺🇸 美国_Telegram@kxswa 99
-      - 🇺🇸 美国_Telegram@kxswa 100
-      - 🇺🇸 美国_Telegram@kxswa 101
-      - 🇺🇸 美国_Telegram@kxswa 102
-      - 🇺🇸 美国_Telegram@kxswa 103
-      - 🇺🇸 美国_Telegram@kxswa 104
-      - 🇺🇸 美国_Telegram@kxswa 105
-      - 🇺🇸 美国_Telegram@kxswa 106
-      - 🇺🇸 美国_Telegram@kxswa 107
-      - 🇺🇸 美国_Telegram@kxswa 108
-      - 🇺🇸 美国_Telegram@kxswa 109
-      - 🇺🇸 美国_Telegram@kxswa 110
-      - 🇺🇸 美国_Telegram@kxswa 111
-      - 🇺🇸 美国_Telegram@kxswa 112
-      - 🇺🇸 美国_Telegram@kxswa 113
-      - 🇺🇸 美国_Telegram@kxswa 114
-      - 🇺🇸 美国_Telegram@kxswa 115
-      - 🇺🇸 美国_Telegram@kxswa 116
-      - 🇺🇸 美国_Telegram@kxswa 117
-      - 🇺🇸 美国_Telegram@kxswa 118
-      - 🇺🇸 美国_Telegram@kxswa 119
-      - 🇺🇸 美国_Telegram@kxswa 120
-      - 🇺🇸 美国_Telegram@kxswa 121
-      - 🇺🇸 美国_Telegram@kxswa 122
-      - 🇺🇸 美国_Telegram@kxswa 123
-      - 🇺🇸 美国_Telegram@kxswa 124
-      - 🇺🇸 美国_Telegram@kxswa 125
-      - 🇺🇸 美国_Telegram@kxswa 126
-      - 🇺🇸 美国_Telegram@kxswa 127
-      - 🇺🇸 美国_Telegram@kxswa 128
-      - 🇺🇸 美国_Telegram@kxswa 129
-      - 🇺🇸 美国_Telegram@kxswa 130
-      - 🇺🇸 美国_Telegram@kxswa 131
-      - 🇺🇸 美国_Telegram@kxswa 132
-      - 🇺🇸 美国_Telegram@kxswa 133
-      - 🇺🇸 美国_Telegram@kxswa 134
-      - 🇲🇾 马来西亚_Telegram@kxswa
-      - 🇲🇾 马来西亚_Telegram@kxswa 2
-      - 🇳🇱 荷兰_Telegram@kxswa
-      - 🇳🇱 荷兰_Telegram@kxswa 2
-      - 🇰🇷 韩国_Telegram@kxswa
-      - 🇰🇷 韩国_Telegram@kxswa 2
-      - 🇫🇷 法国_Telegram@kxswa
-      - 🇫🇷 法国_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa
-      - 🇷🇺 俄罗斯_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa 3
-      - 🇩🇪 德国_Telegram@kxswa
-      - 🇩🇪 德国_Telegram@kxswa 2
-      - 🇦🇺 澳大利亚_Telegram@kxswa
-      - 🇦🇺 澳大利亚_Telegram@kxswa 2
-      - 🇦🇷 阿根廷_Telegram@kxswa
-      - 🇦🇷 阿根廷_Telegram@kxswa 2
+      - 土耳其_Telegram@kxswa+3
+      - 印尼_Telegram@kxswa+2
+      - 荷兰_Telegram@kxswa+2
+      - 法国_Telegram@kxswa+2
+      - 英国_Telegram@kxswa+3
+      - 印度_Telegram@kxswa+2
+      - 澳大利亚_Telegram@kxswa+2
+      - 美国_Telegram@kxswa+126
+      - 瑞典_Telegram@kxswa+2
+      - 德国_Telegram@kxswa+3
+      - 日本_Telegram@kxswa+3
+      - 泰国_Telegram@kxswa+2
+      - 新加坡_Telegram@kxswa+3
+      - 马来西亚_Telegram@kxswa+2
+      - 台湾_Telegram@kxswa+2
+      - 韩国_Telegram@kxswa+2
+      - 尼日利亚_Telegram@kxswa+2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 英国_Telegram@kxswa
-      - 🇬🇧 英国_Telegram@kxswa 2
-      - 🇬🇧 英国_Telegram@kxswa 3
-      - 🇬🇧 英国_Telegram@kxswa 4
-      - 🇬🇧 英国_Telegram@kxswa 5
-      - 🇬🇧 英国_Telegram@kxswa 6
-      - 🇬🇧 英国_Telegram@kxswa 7
-      - 🇬🇧 英国_Telegram@kxswa 8
-      - 🇬🇧 英国_Telegram@kxswa 9
-      - 🇬🇧 英国_Telegram@kxswa 10
-      - 🇬🇧 英国_Telegram@kxswa 11
-      - 🇬🇧 英国_Telegram@kxswa 12
-      - 🇬🇧 英国_Telegram@kxswa 13
-      - 🇬🇧 英国_Telegram@kxswa 14
-      - 🇮🇩 印尼_Telegram@kxswa
-      - 🇮🇩 印尼_Telegram@kxswa 2
-      - 🇮🇳 印度_Telegram@kxswa
-      - 🇮🇳 印度_Telegram@kxswa 2
-      - 🇮🇹 意大利_Telegram@kxswa
-      - 🇮🇹 意大利_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa
-      - 🇸🇬 新加坡_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa 3
-      - 🇸🇬 新加坡_Telegram@kxswa 4
-      - 🇸🇬 新加坡_Telegram@kxswa 5
-      - 🇸🇬 新加坡_Telegram@kxswa 6
-      - 🇸🇬 新加坡_Telegram@kxswa 7
-      - 🇸🇬 新加坡_Telegram@kxswa 8
-      - 🇸🇬 新加坡_Telegram@kxswa 9
-      - 🇸🇬 新加坡_Telegram@kxswa 10
-      - 🇸🇬 新加坡_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa
-      - 🇭🇰 香港_Telegram@kxswa 2
-      - 🇭🇰 香港_Telegram@kxswa 3
-      - 🇭🇰 香港_Telegram@kxswa 4
-      - 🇭🇰 香港_Telegram@kxswa 5
-      - 🇭🇰 香港_Telegram@kxswa 6
-      - 🇭🇰 香港_Telegram@kxswa 7
-      - 🇭🇰 香港_Telegram@kxswa 8
-      - 🇭🇰 香港_Telegram@kxswa 9
-      - 🇭🇰 香港_Telegram@kxswa 10
-      - 🇭🇰 香港_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa 12
-      - 🇭🇰 香港_Telegram@kxswa 13
-      - 🇭🇰 香港_Telegram@kxswa 14
-      - 🇭🇰 香港_Telegram@kxswa 15
-      - 🇭🇰 香港_Telegram@kxswa 16
-      - 🇭🇰 香港_Telegram@kxswa 17
-      - 🇺🇦 乌克兰_Telegram@kxswa
-      - 未知_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa 2
-      - 🇹🇭 泰国_Telegram@kxswa
-      - 🇹🇭 泰国_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa
-      - 🇨🇳 台湾_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa 3
-      - 🇨🇳 台湾_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa
-      - 🇯🇵 日本_Telegram@kxswa 2
-      - 🇯🇵 日本_Telegram@kxswa 3
-      - 🇯🇵 日本_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa 5
-      - 🇯🇵 日本_Telegram@kxswa 6
-      - 🇯🇵 日本_Telegram@kxswa 7
-      - 🇯🇵 日本_Telegram@kxswa 8
-      - 🇯🇵 日本_Telegram@kxswa 9
-      - 🇳🇬 尼日利亚_Telegram@kxswa
-      - 🇳🇬 尼日利亚_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa
-      - 🇺🇸 美国_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa 3
-      - 🇺🇸 美国_Telegram@kxswa 4
-      - 🇺🇸 美国_Telegram@kxswa 5
-      - 🇺🇸 美国_Telegram@kxswa 6
-      - 🇺🇸 美国_Telegram@kxswa 7
-      - 🇺🇸 美国_Telegram@kxswa 8
-      - 🇺🇸 美国_Telegram@kxswa 9
-      - 🇺🇸 美国_Telegram@kxswa 10
-      - 🇺🇸 美国_Telegram@kxswa 11
-      - 🇺🇸 美国_Telegram@kxswa 12
-      - 🇺🇸 美国_Telegram@kxswa 13
-      - 🇺🇸 美国_Telegram@kxswa 14
-      - 🇺🇸 美国_Telegram@kxswa 15
-      - 🇺🇸 美国_Telegram@kxswa 16
-      - 🇺🇸 美国_Telegram@kxswa 17
-      - 🇺🇸 美国_Telegram@kxswa 18
-      - 🇺🇸 美国_Telegram@kxswa 19
-      - 🇺🇸 美国_Telegram@kxswa 20
-      - 🇺🇸 美国_Telegram@kxswa 21
-      - 🇺🇸 美国_Telegram@kxswa 22
-      - 🇺🇸 美国_Telegram@kxswa 23
-      - 🇺🇸 美国_Telegram@kxswa 24
-      - 🇺🇸 美国_Telegram@kxswa 25
-      - 🇺🇸 美国_Telegram@kxswa 26
-      - 🇺🇸 美国_Telegram@kxswa 27
-      - 🇺🇸 美国_Telegram@kxswa 28
-      - 🇺🇸 美国_Telegram@kxswa 29
-      - 🇺🇸 美国_Telegram@kxswa 30
-      - 🇺🇸 美国_Telegram@kxswa 31
-      - 🇺🇸 美国_Telegram@kxswa 32
-      - 🇺🇸 美国_Telegram@kxswa 33
-      - 🇺🇸 美国_Telegram@kxswa 34
-      - 🇺🇸 美国_Telegram@kxswa 35
-      - 🇺🇸 美国_Telegram@kxswa 36
-      - 🇺🇸 美国_Telegram@kxswa 37
-      - 🇺🇸 美国_Telegram@kxswa 38
-      - 🇺🇸 美国_Telegram@kxswa 39
-      - 🇺🇸 美国_Telegram@kxswa 40
-      - 🇺🇸 美国_Telegram@kxswa 41
-      - 🇺🇸 美国_Telegram@kxswa 42
-      - 🇺🇸 美国_Telegram@kxswa 43
-      - 🇺🇸 美国_Telegram@kxswa 44
-      - 🇺🇸 美国_Telegram@kxswa 45
-      - 🇺🇸 美国_Telegram@kxswa 46
-      - 🇺🇸 美国_Telegram@kxswa 47
-      - 🇺🇸 美国_Telegram@kxswa 48
-      - 🇺🇸 美国_Telegram@kxswa 49
-      - 🇺🇸 美国_Telegram@kxswa 50
-      - 🇺🇸 美国_Telegram@kxswa 51
-      - 🇺🇸 美国_Telegram@kxswa 52
-      - 🇺🇸 美国_Telegram@kxswa 53
-      - 🇺🇸 美国_Telegram@kxswa 54
-      - 🇺🇸 美国_Telegram@kxswa 55
-      - 🇺🇸 美国_Telegram@kxswa 56
-      - 🇺🇸 美国_Telegram@kxswa 57
-      - 🇺🇸 美国_Telegram@kxswa 58
-      - 🇺🇸 美国_Telegram@kxswa 59
-      - 🇺🇸 美国_Telegram@kxswa 60
-      - 🇺🇸 美国_Telegram@kxswa 61
-      - 🇺🇸 美国_Telegram@kxswa 62
-      - 🇺🇸 美国_Telegram@kxswa 63
-      - 🇺🇸 美国_Telegram@kxswa 64
-      - 🇺🇸 美国_Telegram@kxswa 65
-      - 🇺🇸 美国_Telegram@kxswa 66
-      - 🇺🇸 美国_Telegram@kxswa 67
-      - 🇺🇸 美国_Telegram@kxswa 68
-      - 🇺🇸 美国_Telegram@kxswa 69
-      - 🇺🇸 美国_Telegram@kxswa 70
-      - 🇺🇸 美国_Telegram@kxswa 71
-      - 🇺🇸 美国_Telegram@kxswa 72
-      - 🇺🇸 美国_Telegram@kxswa 73
-      - 🇺🇸 美国_Telegram@kxswa 74
-      - 🇺🇸 美国_Telegram@kxswa 75
-      - 🇺🇸 美国_Telegram@kxswa 76
-      - 🇺🇸 美国_Telegram@kxswa 77
-      - 🇺🇸 美国_Telegram@kxswa 78
-      - 🇺🇸 美国_Telegram@kxswa 79
-      - 🇺🇸 美国_Telegram@kxswa 80
-      - 🇺🇸 美国_Telegram@kxswa 81
-      - 🇺🇸 美国_Telegram@kxswa 82
-      - 🇺🇸 美国_Telegram@kxswa 83
-      - 🇺🇸 美国_Telegram@kxswa 84
-      - 🇺🇸 美国_Telegram@kxswa 85
-      - 🇺🇸 美国_Telegram@kxswa 86
-      - 🇺🇸 美国_Telegram@kxswa 87
-      - 🇺🇸 美国_Telegram@kxswa 88
-      - 🇺🇸 美国_Telegram@kxswa 89
-      - 🇺🇸 美国_Telegram@kxswa 90
-      - 🇺🇸 美国_Telegram@kxswa 91
-      - 🇺🇸 美国_Telegram@kxswa 92
-      - 🇺🇸 美国_Telegram@kxswa 93
-      - 🇺🇸 美国_Telegram@kxswa 94
-      - 🇺🇸 美国_Telegram@kxswa 95
-      - 🇺🇸 美国_Telegram@kxswa 96
-      - 🇺🇸 美国_Telegram@kxswa 97
-      - 🇺🇸 美国_Telegram@kxswa 98
-      - 🇺🇸 美国_Telegram@kxswa 99
-      - 🇺🇸 美国_Telegram@kxswa 100
-      - 🇺🇸 美国_Telegram@kxswa 101
-      - 🇺🇸 美国_Telegram@kxswa 102
-      - 🇺🇸 美国_Telegram@kxswa 103
-      - 🇺🇸 美国_Telegram@kxswa 104
-      - 🇺🇸 美国_Telegram@kxswa 105
-      - 🇺🇸 美国_Telegram@kxswa 106
-      - 🇺🇸 美国_Telegram@kxswa 107
-      - 🇺🇸 美国_Telegram@kxswa 108
-      - 🇺🇸 美国_Telegram@kxswa 109
-      - 🇺🇸 美国_Telegram@kxswa 110
-      - 🇺🇸 美国_Telegram@kxswa 111
-      - 🇺🇸 美国_Telegram@kxswa 112
-      - 🇺🇸 美国_Telegram@kxswa 113
-      - 🇺🇸 美国_Telegram@kxswa 114
-      - 🇺🇸 美国_Telegram@kxswa 115
-      - 🇺🇸 美国_Telegram@kxswa 116
-      - 🇺🇸 美国_Telegram@kxswa 117
-      - 🇺🇸 美国_Telegram@kxswa 118
-      - 🇺🇸 美国_Telegram@kxswa 119
-      - 🇺🇸 美国_Telegram@kxswa 120
-      - 🇺🇸 美国_Telegram@kxswa 121
-      - 🇺🇸 美国_Telegram@kxswa 122
-      - 🇺🇸 美国_Telegram@kxswa 123
-      - 🇺🇸 美国_Telegram@kxswa 124
-      - 🇺🇸 美国_Telegram@kxswa 125
-      - 🇺🇸 美国_Telegram@kxswa 126
-      - 🇺🇸 美国_Telegram@kxswa 127
-      - 🇺🇸 美国_Telegram@kxswa 128
-      - 🇺🇸 美国_Telegram@kxswa 129
-      - 🇺🇸 美国_Telegram@kxswa 130
-      - 🇺🇸 美国_Telegram@kxswa 131
-      - 🇺🇸 美国_Telegram@kxswa 132
-      - 🇺🇸 美国_Telegram@kxswa 133
-      - 🇺🇸 美国_Telegram@kxswa 134
-      - 🇲🇾 马来西亚_Telegram@kxswa
-      - 🇲🇾 马来西亚_Telegram@kxswa 2
-      - 🇳🇱 荷兰_Telegram@kxswa
-      - 🇳🇱 荷兰_Telegram@kxswa 2
-      - 🇰🇷 韩国_Telegram@kxswa
-      - 🇰🇷 韩国_Telegram@kxswa 2
-      - 🇫🇷 法国_Telegram@kxswa
-      - 🇫🇷 法国_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa
-      - 🇷🇺 俄罗斯_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa 3
-      - 🇩🇪 德国_Telegram@kxswa
-      - 🇩🇪 德国_Telegram@kxswa 2
-      - 🇦🇺 澳大利亚_Telegram@kxswa
-      - 🇦🇺 澳大利亚_Telegram@kxswa 2
-      - 🇦🇷 阿根廷_Telegram@kxswa
-      - 🇦🇷 阿根廷_Telegram@kxswa 2
+      - 土耳其_Telegram@kxswa+3
+      - 印尼_Telegram@kxswa+2
+      - 荷兰_Telegram@kxswa+2
+      - 法国_Telegram@kxswa+2
+      - 英国_Telegram@kxswa+3
+      - 印度_Telegram@kxswa+2
+      - 澳大利亚_Telegram@kxswa+2
+      - 美国_Telegram@kxswa+126
+      - 瑞典_Telegram@kxswa+2
+      - 德国_Telegram@kxswa+3
+      - 日本_Telegram@kxswa+3
+      - 泰国_Telegram@kxswa+2
+      - 新加坡_Telegram@kxswa+3
+      - 马来西亚_Telegram@kxswa+2
+      - 台湾_Telegram@kxswa+2
+      - 韩国_Telegram@kxswa+2
+      - 尼日利亚_Telegram@kxswa+2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇬🇧 英国_Telegram@kxswa
-      - 🇬🇧 英国_Telegram@kxswa 2
-      - 🇬🇧 英国_Telegram@kxswa 3
-      - 🇬🇧 英国_Telegram@kxswa 4
-      - 🇬🇧 英国_Telegram@kxswa 5
-      - 🇬🇧 英国_Telegram@kxswa 6
-      - 🇬🇧 英国_Telegram@kxswa 7
-      - 🇬🇧 英国_Telegram@kxswa 8
-      - 🇬🇧 英国_Telegram@kxswa 9
-      - 🇬🇧 英国_Telegram@kxswa 10
-      - 🇬🇧 英国_Telegram@kxswa 11
-      - 🇬🇧 英国_Telegram@kxswa 12
-      - 🇬🇧 英国_Telegram@kxswa 13
-      - 🇬🇧 英国_Telegram@kxswa 14
-      - 🇮🇩 印尼_Telegram@kxswa
-      - 🇮🇩 印尼_Telegram@kxswa 2
-      - 🇮🇳 印度_Telegram@kxswa
-      - 🇮🇳 印度_Telegram@kxswa 2
-      - 🇮🇹 意大利_Telegram@kxswa
-      - 🇮🇹 意大利_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa
-      - 🇸🇬 新加坡_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa 3
-      - 🇸🇬 新加坡_Telegram@kxswa 4
-      - 🇸🇬 新加坡_Telegram@kxswa 5
-      - 🇸🇬 新加坡_Telegram@kxswa 6
-      - 🇸🇬 新加坡_Telegram@kxswa 7
-      - 🇸🇬 新加坡_Telegram@kxswa 8
-      - 🇸🇬 新加坡_Telegram@kxswa 9
-      - 🇸🇬 新加坡_Telegram@kxswa 10
-      - 🇸🇬 新加坡_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa
-      - 🇭🇰 香港_Telegram@kxswa 2
-      - 🇭🇰 香港_Telegram@kxswa 3
-      - 🇭🇰 香港_Telegram@kxswa 4
-      - 🇭🇰 香港_Telegram@kxswa 5
-      - 🇭🇰 香港_Telegram@kxswa 6
-      - 🇭🇰 香港_Telegram@kxswa 7
-      - 🇭🇰 香港_Telegram@kxswa 8
-      - 🇭🇰 香港_Telegram@kxswa 9
-      - 🇭🇰 香港_Telegram@kxswa 10
-      - 🇭🇰 香港_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa 12
-      - 🇭🇰 香港_Telegram@kxswa 13
-      - 🇭🇰 香港_Telegram@kxswa 14
-      - 🇭🇰 香港_Telegram@kxswa 15
-      - 🇭🇰 香港_Telegram@kxswa 16
-      - 🇭🇰 香港_Telegram@kxswa 17
-      - 🇺🇦 乌克兰_Telegram@kxswa
-      - 未知_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa 2
-      - 🇹🇭 泰国_Telegram@kxswa
-      - 🇹🇭 泰国_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa
-      - 🇨🇳 台湾_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa 3
-      - 🇨🇳 台湾_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa
-      - 🇯🇵 日本_Telegram@kxswa 2
-      - 🇯🇵 日本_Telegram@kxswa 3
-      - 🇯🇵 日本_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa 5
-      - 🇯🇵 日本_Telegram@kxswa 6
-      - 🇯🇵 日本_Telegram@kxswa 7
-      - 🇯🇵 日本_Telegram@kxswa 8
-      - 🇯🇵 日本_Telegram@kxswa 9
-      - 🇳🇬 尼日利亚_Telegram@kxswa
-      - 🇳🇬 尼日利亚_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa
-      - 🇺🇸 美国_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa 3
-      - 🇺🇸 美国_Telegram@kxswa 4
-      - 🇺🇸 美国_Telegram@kxswa 5
-      - 🇺🇸 美国_Telegram@kxswa 6
-      - 🇺🇸 美国_Telegram@kxswa 7
-      - 🇺🇸 美国_Telegram@kxswa 8
-      - 🇺🇸 美国_Telegram@kxswa 9
-      - 🇺🇸 美国_Telegram@kxswa 10
-      - 🇺🇸 美国_Telegram@kxswa 11
-      - 🇺🇸 美国_Telegram@kxswa 12
-      - 🇺🇸 美国_Telegram@kxswa 13
-      - 🇺🇸 美国_Telegram@kxswa 14
-      - 🇺🇸 美国_Telegram@kxswa 15
-      - 🇺🇸 美国_Telegram@kxswa 16
-      - 🇺🇸 美国_Telegram@kxswa 17
-      - 🇺🇸 美国_Telegram@kxswa 18
-      - 🇺🇸 美国_Telegram@kxswa 19
-      - 🇺🇸 美国_Telegram@kxswa 20
-      - 🇺🇸 美国_Telegram@kxswa 21
-      - 🇺🇸 美国_Telegram@kxswa 22
-      - 🇺🇸 美国_Telegram@kxswa 23
-      - 🇺🇸 美国_Telegram@kxswa 24
-      - 🇺🇸 美国_Telegram@kxswa 25
-      - 🇺🇸 美国_Telegram@kxswa 26
-      - 🇺🇸 美国_Telegram@kxswa 27
-      - 🇺🇸 美国_Telegram@kxswa 28
-      - 🇺🇸 美国_Telegram@kxswa 29
-      - 🇺🇸 美国_Telegram@kxswa 30
-      - 🇺🇸 美国_Telegram@kxswa 31
-      - 🇺🇸 美国_Telegram@kxswa 32
-      - 🇺🇸 美国_Telegram@kxswa 33
-      - 🇺🇸 美国_Telegram@kxswa 34
-      - 🇺🇸 美国_Telegram@kxswa 35
-      - 🇺🇸 美国_Telegram@kxswa 36
-      - 🇺🇸 美国_Telegram@kxswa 37
-      - 🇺🇸 美国_Telegram@kxswa 38
-      - 🇺🇸 美国_Telegram@kxswa 39
-      - 🇺🇸 美国_Telegram@kxswa 40
-      - 🇺🇸 美国_Telegram@kxswa 41
-      - 🇺🇸 美国_Telegram@kxswa 42
-      - 🇺🇸 美国_Telegram@kxswa 43
-      - 🇺🇸 美国_Telegram@kxswa 44
-      - 🇺🇸 美国_Telegram@kxswa 45
-      - 🇺🇸 美国_Telegram@kxswa 46
-      - 🇺🇸 美国_Telegram@kxswa 47
-      - 🇺🇸 美国_Telegram@kxswa 48
-      - 🇺🇸 美国_Telegram@kxswa 49
-      - 🇺🇸 美国_Telegram@kxswa 50
-      - 🇺🇸 美国_Telegram@kxswa 51
-      - 🇺🇸 美国_Telegram@kxswa 52
-      - 🇺🇸 美国_Telegram@kxswa 53
-      - 🇺🇸 美国_Telegram@kxswa 54
-      - 🇺🇸 美国_Telegram@kxswa 55
-      - 🇺🇸 美国_Telegram@kxswa 56
-      - 🇺🇸 美国_Telegram@kxswa 57
-      - 🇺🇸 美国_Telegram@kxswa 58
-      - 🇺🇸 美国_Telegram@kxswa 59
-      - 🇺🇸 美国_Telegram@kxswa 60
-      - 🇺🇸 美国_Telegram@kxswa 61
-      - 🇺🇸 美国_Telegram@kxswa 62
-      - 🇺🇸 美国_Telegram@kxswa 63
-      - 🇺🇸 美国_Telegram@kxswa 64
-      - 🇺🇸 美国_Telegram@kxswa 65
-      - 🇺🇸 美国_Telegram@kxswa 66
-      - 🇺🇸 美国_Telegram@kxswa 67
-      - 🇺🇸 美国_Telegram@kxswa 68
-      - 🇺🇸 美国_Telegram@kxswa 69
-      - 🇺🇸 美国_Telegram@kxswa 70
-      - 🇺🇸 美国_Telegram@kxswa 71
-      - 🇺🇸 美国_Telegram@kxswa 72
-      - 🇺🇸 美国_Telegram@kxswa 73
-      - 🇺🇸 美国_Telegram@kxswa 74
-      - 🇺🇸 美国_Telegram@kxswa 75
-      - 🇺🇸 美国_Telegram@kxswa 76
-      - 🇺🇸 美国_Telegram@kxswa 77
-      - 🇺🇸 美国_Telegram@kxswa 78
-      - 🇺🇸 美国_Telegram@kxswa 79
-      - 🇺🇸 美国_Telegram@kxswa 80
-      - 🇺🇸 美国_Telegram@kxswa 81
-      - 🇺🇸 美国_Telegram@kxswa 82
-      - 🇺🇸 美国_Telegram@kxswa 83
-      - 🇺🇸 美国_Telegram@kxswa 84
-      - 🇺🇸 美国_Telegram@kxswa 85
-      - 🇺🇸 美国_Telegram@kxswa 86
-      - 🇺🇸 美国_Telegram@kxswa 87
-      - 🇺🇸 美国_Telegram@kxswa 88
-      - 🇺🇸 美国_Telegram@kxswa 89
-      - 🇺🇸 美国_Telegram@kxswa 90
-      - 🇺🇸 美国_Telegram@kxswa 91
-      - 🇺🇸 美国_Telegram@kxswa 92
-      - 🇺🇸 美国_Telegram@kxswa 93
-      - 🇺🇸 美国_Telegram@kxswa 94
-      - 🇺🇸 美国_Telegram@kxswa 95
-      - 🇺🇸 美国_Telegram@kxswa 96
-      - 🇺🇸 美国_Telegram@kxswa 97
-      - 🇺🇸 美国_Telegram@kxswa 98
-      - 🇺🇸 美国_Telegram@kxswa 99
-      - 🇺🇸 美国_Telegram@kxswa 100
-      - 🇺🇸 美国_Telegram@kxswa 101
-      - 🇺🇸 美国_Telegram@kxswa 102
-      - 🇺🇸 美国_Telegram@kxswa 103
-      - 🇺🇸 美国_Telegram@kxswa 104
-      - 🇺🇸 美国_Telegram@kxswa 105
-      - 🇺🇸 美国_Telegram@kxswa 106
-      - 🇺🇸 美国_Telegram@kxswa 107
-      - 🇺🇸 美国_Telegram@kxswa 108
-      - 🇺🇸 美国_Telegram@kxswa 109
-      - 🇺🇸 美国_Telegram@kxswa 110
-      - 🇺🇸 美国_Telegram@kxswa 111
-      - 🇺🇸 美国_Telegram@kxswa 112
-      - 🇺🇸 美国_Telegram@kxswa 113
-      - 🇺🇸 美国_Telegram@kxswa 114
-      - 🇺🇸 美国_Telegram@kxswa 115
-      - 🇺🇸 美国_Telegram@kxswa 116
-      - 🇺🇸 美国_Telegram@kxswa 117
-      - 🇺🇸 美国_Telegram@kxswa 118
-      - 🇺🇸 美国_Telegram@kxswa 119
-      - 🇺🇸 美国_Telegram@kxswa 120
-      - 🇺🇸 美国_Telegram@kxswa 121
-      - 🇺🇸 美国_Telegram@kxswa 122
-      - 🇺🇸 美国_Telegram@kxswa 123
-      - 🇺🇸 美国_Telegram@kxswa 124
-      - 🇺🇸 美国_Telegram@kxswa 125
-      - 🇺🇸 美国_Telegram@kxswa 126
-      - 🇺🇸 美国_Telegram@kxswa 127
-      - 🇺🇸 美国_Telegram@kxswa 128
-      - 🇺🇸 美国_Telegram@kxswa 129
-      - 🇺🇸 美国_Telegram@kxswa 130
-      - 🇺🇸 美国_Telegram@kxswa 131
-      - 🇺🇸 美国_Telegram@kxswa 132
-      - 🇺🇸 美国_Telegram@kxswa 133
-      - 🇺🇸 美国_Telegram@kxswa 134
-      - 🇲🇾 马来西亚_Telegram@kxswa
-      - 🇲🇾 马来西亚_Telegram@kxswa 2
-      - 🇳🇱 荷兰_Telegram@kxswa
-      - 🇳🇱 荷兰_Telegram@kxswa 2
-      - 🇰🇷 韩国_Telegram@kxswa
-      - 🇰🇷 韩国_Telegram@kxswa 2
-      - 🇫🇷 法国_Telegram@kxswa
-      - 🇫🇷 法国_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa
-      - 🇷🇺 俄罗斯_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa 3
-      - 🇩🇪 德国_Telegram@kxswa
-      - 🇩🇪 德国_Telegram@kxswa 2
-      - 🇦🇺 澳大利亚_Telegram@kxswa
-      - 🇦🇺 澳大利亚_Telegram@kxswa 2
-      - 🇦🇷 阿根廷_Telegram@kxswa
-      - 🇦🇷 阿根廷_Telegram@kxswa 2
+      - 土耳其_Telegram@kxswa+3
+      - 印尼_Telegram@kxswa+2
+      - 荷兰_Telegram@kxswa+2
+      - 法国_Telegram@kxswa+2
+      - 英国_Telegram@kxswa+3
+      - 印度_Telegram@kxswa+2
+      - 澳大利亚_Telegram@kxswa+2
+      - 美国_Telegram@kxswa+126
+      - 瑞典_Telegram@kxswa+2
+      - 德国_Telegram@kxswa+3
+      - 日本_Telegram@kxswa+3
+      - 泰国_Telegram@kxswa+2
+      - 新加坡_Telegram@kxswa+3
+      - 马来西亚_Telegram@kxswa+2
+      - 台湾_Telegram@kxswa+2
+      - 韩国_Telegram@kxswa+2
+      - 尼日利亚_Telegram@kxswa+2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇬🇧 英国_Telegram@kxswa
-      - 🇬🇧 英国_Telegram@kxswa 2
-      - 🇬🇧 英国_Telegram@kxswa 3
-      - 🇬🇧 英国_Telegram@kxswa 4
-      - 🇬🇧 英国_Telegram@kxswa 5
-      - 🇬🇧 英国_Telegram@kxswa 6
-      - 🇬🇧 英国_Telegram@kxswa 7
-      - 🇬🇧 英国_Telegram@kxswa 8
-      - 🇬🇧 英国_Telegram@kxswa 9
-      - 🇬🇧 英国_Telegram@kxswa 10
-      - 🇬🇧 英国_Telegram@kxswa 11
-      - 🇬🇧 英国_Telegram@kxswa 12
-      - 🇬🇧 英国_Telegram@kxswa 13
-      - 🇬🇧 英国_Telegram@kxswa 14
-      - 🇮🇩 印尼_Telegram@kxswa
-      - 🇮🇩 印尼_Telegram@kxswa 2
-      - 🇮🇳 印度_Telegram@kxswa
-      - 🇮🇳 印度_Telegram@kxswa 2
-      - 🇮🇹 意大利_Telegram@kxswa
-      - 🇮🇹 意大利_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa
-      - 🇸🇬 新加坡_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa 3
-      - 🇸🇬 新加坡_Telegram@kxswa 4
-      - 🇸🇬 新加坡_Telegram@kxswa 5
-      - 🇸🇬 新加坡_Telegram@kxswa 6
-      - 🇸🇬 新加坡_Telegram@kxswa 7
-      - 🇸🇬 新加坡_Telegram@kxswa 8
-      - 🇸🇬 新加坡_Telegram@kxswa 9
-      - 🇸🇬 新加坡_Telegram@kxswa 10
-      - 🇸🇬 新加坡_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa
-      - 🇭🇰 香港_Telegram@kxswa 2
-      - 🇭🇰 香港_Telegram@kxswa 3
-      - 🇭🇰 香港_Telegram@kxswa 4
-      - 🇭🇰 香港_Telegram@kxswa 5
-      - 🇭🇰 香港_Telegram@kxswa 6
-      - 🇭🇰 香港_Telegram@kxswa 7
-      - 🇭🇰 香港_Telegram@kxswa 8
-      - 🇭🇰 香港_Telegram@kxswa 9
-      - 🇭🇰 香港_Telegram@kxswa 10
-      - 🇭🇰 香港_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa 12
-      - 🇭🇰 香港_Telegram@kxswa 13
-      - 🇭🇰 香港_Telegram@kxswa 14
-      - 🇭🇰 香港_Telegram@kxswa 15
-      - 🇭🇰 香港_Telegram@kxswa 16
-      - 🇭🇰 香港_Telegram@kxswa 17
-      - 🇺🇦 乌克兰_Telegram@kxswa
-      - 未知_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa 2
-      - 🇹🇭 泰国_Telegram@kxswa
-      - 🇹🇭 泰国_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa
-      - 🇨🇳 台湾_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa 3
-      - 🇨🇳 台湾_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa
-      - 🇯🇵 日本_Telegram@kxswa 2
-      - 🇯🇵 日本_Telegram@kxswa 3
-      - 🇯🇵 日本_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa 5
-      - 🇯🇵 日本_Telegram@kxswa 6
-      - 🇯🇵 日本_Telegram@kxswa 7
-      - 🇯🇵 日本_Telegram@kxswa 8
-      - 🇯🇵 日本_Telegram@kxswa 9
-      - 🇳🇬 尼日利亚_Telegram@kxswa
-      - 🇳🇬 尼日利亚_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa
-      - 🇺🇸 美国_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa 3
-      - 🇺🇸 美国_Telegram@kxswa 4
-      - 🇺🇸 美国_Telegram@kxswa 5
-      - 🇺🇸 美国_Telegram@kxswa 6
-      - 🇺🇸 美国_Telegram@kxswa 7
-      - 🇺🇸 美国_Telegram@kxswa 8
-      - 🇺🇸 美国_Telegram@kxswa 9
-      - 🇺🇸 美国_Telegram@kxswa 10
-      - 🇺🇸 美国_Telegram@kxswa 11
-      - 🇺🇸 美国_Telegram@kxswa 12
-      - 🇺🇸 美国_Telegram@kxswa 13
-      - 🇺🇸 美国_Telegram@kxswa 14
-      - 🇺🇸 美国_Telegram@kxswa 15
-      - 🇺🇸 美国_Telegram@kxswa 16
-      - 🇺🇸 美国_Telegram@kxswa 17
-      - 🇺🇸 美国_Telegram@kxswa 18
-      - 🇺🇸 美国_Telegram@kxswa 19
-      - 🇺🇸 美国_Telegram@kxswa 20
-      - 🇺🇸 美国_Telegram@kxswa 21
-      - 🇺🇸 美国_Telegram@kxswa 22
-      - 🇺🇸 美国_Telegram@kxswa 23
-      - 🇺🇸 美国_Telegram@kxswa 24
-      - 🇺🇸 美国_Telegram@kxswa 25
-      - 🇺🇸 美国_Telegram@kxswa 26
-      - 🇺🇸 美国_Telegram@kxswa 27
-      - 🇺🇸 美国_Telegram@kxswa 28
-      - 🇺🇸 美国_Telegram@kxswa 29
-      - 🇺🇸 美国_Telegram@kxswa 30
-      - 🇺🇸 美国_Telegram@kxswa 31
-      - 🇺🇸 美国_Telegram@kxswa 32
-      - 🇺🇸 美国_Telegram@kxswa 33
-      - 🇺🇸 美国_Telegram@kxswa 34
-      - 🇺🇸 美国_Telegram@kxswa 35
-      - 🇺🇸 美国_Telegram@kxswa 36
-      - 🇺🇸 美国_Telegram@kxswa 37
-      - 🇺🇸 美国_Telegram@kxswa 38
-      - 🇺🇸 美国_Telegram@kxswa 39
-      - 🇺🇸 美国_Telegram@kxswa 40
-      - 🇺🇸 美国_Telegram@kxswa 41
-      - 🇺🇸 美国_Telegram@kxswa 42
-      - 🇺🇸 美国_Telegram@kxswa 43
-      - 🇺🇸 美国_Telegram@kxswa 44
-      - 🇺🇸 美国_Telegram@kxswa 45
-      - 🇺🇸 美国_Telegram@kxswa 46
-      - 🇺🇸 美国_Telegram@kxswa 47
-      - 🇺🇸 美国_Telegram@kxswa 48
-      - 🇺🇸 美国_Telegram@kxswa 49
-      - 🇺🇸 美国_Telegram@kxswa 50
-      - 🇺🇸 美国_Telegram@kxswa 51
-      - 🇺🇸 美国_Telegram@kxswa 52
-      - 🇺🇸 美国_Telegram@kxswa 53
-      - 🇺🇸 美国_Telegram@kxswa 54
-      - 🇺🇸 美国_Telegram@kxswa 55
-      - 🇺🇸 美国_Telegram@kxswa 56
-      - 🇺🇸 美国_Telegram@kxswa 57
-      - 🇺🇸 美国_Telegram@kxswa 58
-      - 🇺🇸 美国_Telegram@kxswa 59
-      - 🇺🇸 美国_Telegram@kxswa 60
-      - 🇺🇸 美国_Telegram@kxswa 61
-      - 🇺🇸 美国_Telegram@kxswa 62
-      - 🇺🇸 美国_Telegram@kxswa 63
-      - 🇺🇸 美国_Telegram@kxswa 64
-      - 🇺🇸 美国_Telegram@kxswa 65
-      - 🇺🇸 美国_Telegram@kxswa 66
-      - 🇺🇸 美国_Telegram@kxswa 67
-      - 🇺🇸 美国_Telegram@kxswa 68
-      - 🇺🇸 美国_Telegram@kxswa 69
-      - 🇺🇸 美国_Telegram@kxswa 70
-      - 🇺🇸 美国_Telegram@kxswa 71
-      - 🇺🇸 美国_Telegram@kxswa 72
-      - 🇺🇸 美国_Telegram@kxswa 73
-      - 🇺🇸 美国_Telegram@kxswa 74
-      - 🇺🇸 美国_Telegram@kxswa 75
-      - 🇺🇸 美国_Telegram@kxswa 76
-      - 🇺🇸 美国_Telegram@kxswa 77
-      - 🇺🇸 美国_Telegram@kxswa 78
-      - 🇺🇸 美国_Telegram@kxswa 79
-      - 🇺🇸 美国_Telegram@kxswa 80
-      - 🇺🇸 美国_Telegram@kxswa 81
-      - 🇺🇸 美国_Telegram@kxswa 82
-      - 🇺🇸 美国_Telegram@kxswa 83
-      - 🇺🇸 美国_Telegram@kxswa 84
-      - 🇺🇸 美国_Telegram@kxswa 85
-      - 🇺🇸 美国_Telegram@kxswa 86
-      - 🇺🇸 美国_Telegram@kxswa 87
-      - 🇺🇸 美国_Telegram@kxswa 88
-      - 🇺🇸 美国_Telegram@kxswa 89
-      - 🇺🇸 美国_Telegram@kxswa 90
-      - 🇺🇸 美国_Telegram@kxswa 91
-      - 🇺🇸 美国_Telegram@kxswa 92
-      - 🇺🇸 美国_Telegram@kxswa 93
-      - 🇺🇸 美国_Telegram@kxswa 94
-      - 🇺🇸 美国_Telegram@kxswa 95
-      - 🇺🇸 美国_Telegram@kxswa 96
-      - 🇺🇸 美国_Telegram@kxswa 97
-      - 🇺🇸 美国_Telegram@kxswa 98
-      - 🇺🇸 美国_Telegram@kxswa 99
-      - 🇺🇸 美国_Telegram@kxswa 100
-      - 🇺🇸 美国_Telegram@kxswa 101
-      - 🇺🇸 美国_Telegram@kxswa 102
-      - 🇺🇸 美国_Telegram@kxswa 103
-      - 🇺🇸 美国_Telegram@kxswa 104
-      - 🇺🇸 美国_Telegram@kxswa 105
-      - 🇺🇸 美国_Telegram@kxswa 106
-      - 🇺🇸 美国_Telegram@kxswa 107
-      - 🇺🇸 美国_Telegram@kxswa 108
-      - 🇺🇸 美国_Telegram@kxswa 109
-      - 🇺🇸 美国_Telegram@kxswa 110
-      - 🇺🇸 美国_Telegram@kxswa 111
-      - 🇺🇸 美国_Telegram@kxswa 112
-      - 🇺🇸 美国_Telegram@kxswa 113
-      - 🇺🇸 美国_Telegram@kxswa 114
-      - 🇺🇸 美国_Telegram@kxswa 115
-      - 🇺🇸 美国_Telegram@kxswa 116
-      - 🇺🇸 美国_Telegram@kxswa 117
-      - 🇺🇸 美国_Telegram@kxswa 118
-      - 🇺🇸 美国_Telegram@kxswa 119
-      - 🇺🇸 美国_Telegram@kxswa 120
-      - 🇺🇸 美国_Telegram@kxswa 121
-      - 🇺🇸 美国_Telegram@kxswa 122
-      - 🇺🇸 美国_Telegram@kxswa 123
-      - 🇺🇸 美国_Telegram@kxswa 124
-      - 🇺🇸 美国_Telegram@kxswa 125
-      - 🇺🇸 美国_Telegram@kxswa 126
-      - 🇺🇸 美国_Telegram@kxswa 127
-      - 🇺🇸 美国_Telegram@kxswa 128
-      - 🇺🇸 美国_Telegram@kxswa 129
-      - 🇺🇸 美国_Telegram@kxswa 130
-      - 🇺🇸 美国_Telegram@kxswa 131
-      - 🇺🇸 美国_Telegram@kxswa 132
-      - 🇺🇸 美国_Telegram@kxswa 133
-      - 🇺🇸 美国_Telegram@kxswa 134
-      - 🇲🇾 马来西亚_Telegram@kxswa
-      - 🇲🇾 马来西亚_Telegram@kxswa 2
-      - 🇳🇱 荷兰_Telegram@kxswa
-      - 🇳🇱 荷兰_Telegram@kxswa 2
-      - 🇰🇷 韩国_Telegram@kxswa
-      - 🇰🇷 韩国_Telegram@kxswa 2
-      - 🇫🇷 法国_Telegram@kxswa
-      - 🇫🇷 法国_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa
-      - 🇷🇺 俄罗斯_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa 3
-      - 🇩🇪 德国_Telegram@kxswa
-      - 🇩🇪 德国_Telegram@kxswa 2
-      - 🇦🇺 澳大利亚_Telegram@kxswa
-      - 🇦🇺 澳大利亚_Telegram@kxswa 2
-      - 🇦🇷 阿根廷_Telegram@kxswa
-      - 🇦🇷 阿根廷_Telegram@kxswa 2
+      - 土耳其_Telegram@kxswa+3
+      - 印尼_Telegram@kxswa+2
+      - 荷兰_Telegram@kxswa+2
+      - 法国_Telegram@kxswa+2
+      - 英国_Telegram@kxswa+3
+      - 印度_Telegram@kxswa+2
+      - 澳大利亚_Telegram@kxswa+2
+      - 美国_Telegram@kxswa+126
+      - 瑞典_Telegram@kxswa+2
+      - 德国_Telegram@kxswa+3
+      - 日本_Telegram@kxswa+3
+      - 泰国_Telegram@kxswa+2
+      - 新加坡_Telegram@kxswa+3
+      - 马来西亚_Telegram@kxswa+2
+      - 台湾_Telegram@kxswa+2
+      - 韩国_Telegram@kxswa+2
+      - 尼日利亚_Telegram@kxswa+2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇬🇧 英国_Telegram@kxswa
-      - 🇬🇧 英国_Telegram@kxswa 2
-      - 🇬🇧 英国_Telegram@kxswa 3
-      - 🇬🇧 英国_Telegram@kxswa 4
-      - 🇬🇧 英国_Telegram@kxswa 5
-      - 🇬🇧 英国_Telegram@kxswa 6
-      - 🇬🇧 英国_Telegram@kxswa 7
-      - 🇬🇧 英国_Telegram@kxswa 8
-      - 🇬🇧 英国_Telegram@kxswa 9
-      - 🇬🇧 英国_Telegram@kxswa 10
-      - 🇬🇧 英国_Telegram@kxswa 11
-      - 🇬🇧 英国_Telegram@kxswa 12
-      - 🇬🇧 英国_Telegram@kxswa 13
-      - 🇬🇧 英国_Telegram@kxswa 14
-      - 🇮🇩 印尼_Telegram@kxswa
-      - 🇮🇩 印尼_Telegram@kxswa 2
-      - 🇮🇳 印度_Telegram@kxswa
-      - 🇮🇳 印度_Telegram@kxswa 2
-      - 🇮🇹 意大利_Telegram@kxswa
-      - 🇮🇹 意大利_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa
-      - 🇸🇬 新加坡_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa 3
-      - 🇸🇬 新加坡_Telegram@kxswa 4
-      - 🇸🇬 新加坡_Telegram@kxswa 5
-      - 🇸🇬 新加坡_Telegram@kxswa 6
-      - 🇸🇬 新加坡_Telegram@kxswa 7
-      - 🇸🇬 新加坡_Telegram@kxswa 8
-      - 🇸🇬 新加坡_Telegram@kxswa 9
-      - 🇸🇬 新加坡_Telegram@kxswa 10
-      - 🇸🇬 新加坡_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa
-      - 🇭🇰 香港_Telegram@kxswa 2
-      - 🇭🇰 香港_Telegram@kxswa 3
-      - 🇭🇰 香港_Telegram@kxswa 4
-      - 🇭🇰 香港_Telegram@kxswa 5
-      - 🇭🇰 香港_Telegram@kxswa 6
-      - 🇭🇰 香港_Telegram@kxswa 7
-      - 🇭🇰 香港_Telegram@kxswa 8
-      - 🇭🇰 香港_Telegram@kxswa 9
-      - 🇭🇰 香港_Telegram@kxswa 10
-      - 🇭🇰 香港_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa 12
-      - 🇭🇰 香港_Telegram@kxswa 13
-      - 🇭🇰 香港_Telegram@kxswa 14
-      - 🇭🇰 香港_Telegram@kxswa 15
-      - 🇭🇰 香港_Telegram@kxswa 16
-      - 🇭🇰 香港_Telegram@kxswa 17
-      - 🇺🇦 乌克兰_Telegram@kxswa
-      - 未知_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa 2
-      - 🇹🇭 泰国_Telegram@kxswa
-      - 🇹🇭 泰国_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa
-      - 🇨🇳 台湾_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa 3
-      - 🇨🇳 台湾_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa
-      - 🇯🇵 日本_Telegram@kxswa 2
-      - 🇯🇵 日本_Telegram@kxswa 3
-      - 🇯🇵 日本_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa 5
-      - 🇯🇵 日本_Telegram@kxswa 6
-      - 🇯🇵 日本_Telegram@kxswa 7
-      - 🇯🇵 日本_Telegram@kxswa 8
-      - 🇯🇵 日本_Telegram@kxswa 9
-      - 🇳🇬 尼日利亚_Telegram@kxswa
-      - 🇳🇬 尼日利亚_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa
-      - 🇺🇸 美国_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa 3
-      - 🇺🇸 美国_Telegram@kxswa 4
-      - 🇺🇸 美国_Telegram@kxswa 5
-      - 🇺🇸 美国_Telegram@kxswa 6
-      - 🇺🇸 美国_Telegram@kxswa 7
-      - 🇺🇸 美国_Telegram@kxswa 8
-      - 🇺🇸 美国_Telegram@kxswa 9
-      - 🇺🇸 美国_Telegram@kxswa 10
-      - 🇺🇸 美国_Telegram@kxswa 11
-      - 🇺🇸 美国_Telegram@kxswa 12
-      - 🇺🇸 美国_Telegram@kxswa 13
-      - 🇺🇸 美国_Telegram@kxswa 14
-      - 🇺🇸 美国_Telegram@kxswa 15
-      - 🇺🇸 美国_Telegram@kxswa 16
-      - 🇺🇸 美国_Telegram@kxswa 17
-      - 🇺🇸 美国_Telegram@kxswa 18
-      - 🇺🇸 美国_Telegram@kxswa 19
-      - 🇺🇸 美国_Telegram@kxswa 20
-      - 🇺🇸 美国_Telegram@kxswa 21
-      - 🇺🇸 美国_Telegram@kxswa 22
-      - 🇺🇸 美国_Telegram@kxswa 23
-      - 🇺🇸 美国_Telegram@kxswa 24
-      - 🇺🇸 美国_Telegram@kxswa 25
-      - 🇺🇸 美国_Telegram@kxswa 26
-      - 🇺🇸 美国_Telegram@kxswa 27
-      - 🇺🇸 美国_Telegram@kxswa 28
-      - 🇺🇸 美国_Telegram@kxswa 29
-      - 🇺🇸 美国_Telegram@kxswa 30
-      - 🇺🇸 美国_Telegram@kxswa 31
-      - 🇺🇸 美国_Telegram@kxswa 32
-      - 🇺🇸 美国_Telegram@kxswa 33
-      - 🇺🇸 美国_Telegram@kxswa 34
-      - 🇺🇸 美国_Telegram@kxswa 35
-      - 🇺🇸 美国_Telegram@kxswa 36
-      - 🇺🇸 美国_Telegram@kxswa 37
-      - 🇺🇸 美国_Telegram@kxswa 38
-      - 🇺🇸 美国_Telegram@kxswa 39
-      - 🇺🇸 美国_Telegram@kxswa 40
-      - 🇺🇸 美国_Telegram@kxswa 41
-      - 🇺🇸 美国_Telegram@kxswa 42
-      - 🇺🇸 美国_Telegram@kxswa 43
-      - 🇺🇸 美国_Telegram@kxswa 44
-      - 🇺🇸 美国_Telegram@kxswa 45
-      - 🇺🇸 美国_Telegram@kxswa 46
-      - 🇺🇸 美国_Telegram@kxswa 47
-      - 🇺🇸 美国_Telegram@kxswa 48
-      - 🇺🇸 美国_Telegram@kxswa 49
-      - 🇺🇸 美国_Telegram@kxswa 50
-      - 🇺🇸 美国_Telegram@kxswa 51
-      - 🇺🇸 美国_Telegram@kxswa 52
-      - 🇺🇸 美国_Telegram@kxswa 53
-      - 🇺🇸 美国_Telegram@kxswa 54
-      - 🇺🇸 美国_Telegram@kxswa 55
-      - 🇺🇸 美国_Telegram@kxswa 56
-      - 🇺🇸 美国_Telegram@kxswa 57
-      - 🇺🇸 美国_Telegram@kxswa 58
-      - 🇺🇸 美国_Telegram@kxswa 59
-      - 🇺🇸 美国_Telegram@kxswa 60
-      - 🇺🇸 美国_Telegram@kxswa 61
-      - 🇺🇸 美国_Telegram@kxswa 62
-      - 🇺🇸 美国_Telegram@kxswa 63
-      - 🇺🇸 美国_Telegram@kxswa 64
-      - 🇺🇸 美国_Telegram@kxswa 65
-      - 🇺🇸 美国_Telegram@kxswa 66
-      - 🇺🇸 美国_Telegram@kxswa 67
-      - 🇺🇸 美国_Telegram@kxswa 68
-      - 🇺🇸 美国_Telegram@kxswa 69
-      - 🇺🇸 美国_Telegram@kxswa 70
-      - 🇺🇸 美国_Telegram@kxswa 71
-      - 🇺🇸 美国_Telegram@kxswa 72
-      - 🇺🇸 美国_Telegram@kxswa 73
-      - 🇺🇸 美国_Telegram@kxswa 74
-      - 🇺🇸 美国_Telegram@kxswa 75
-      - 🇺🇸 美国_Telegram@kxswa 76
-      - 🇺🇸 美国_Telegram@kxswa 77
-      - 🇺🇸 美国_Telegram@kxswa 78
-      - 🇺🇸 美国_Telegram@kxswa 79
-      - 🇺🇸 美国_Telegram@kxswa 80
-      - 🇺🇸 美国_Telegram@kxswa 81
-      - 🇺🇸 美国_Telegram@kxswa 82
-      - 🇺🇸 美国_Telegram@kxswa 83
-      - 🇺🇸 美国_Telegram@kxswa 84
-      - 🇺🇸 美国_Telegram@kxswa 85
-      - 🇺🇸 美国_Telegram@kxswa 86
-      - 🇺🇸 美国_Telegram@kxswa 87
-      - 🇺🇸 美国_Telegram@kxswa 88
-      - 🇺🇸 美国_Telegram@kxswa 89
-      - 🇺🇸 美国_Telegram@kxswa 90
-      - 🇺🇸 美国_Telegram@kxswa 91
-      - 🇺🇸 美国_Telegram@kxswa 92
-      - 🇺🇸 美国_Telegram@kxswa 93
-      - 🇺🇸 美国_Telegram@kxswa 94
-      - 🇺🇸 美国_Telegram@kxswa 95
-      - 🇺🇸 美国_Telegram@kxswa 96
-      - 🇺🇸 美国_Telegram@kxswa 97
-      - 🇺🇸 美国_Telegram@kxswa 98
-      - 🇺🇸 美国_Telegram@kxswa 99
-      - 🇺🇸 美国_Telegram@kxswa 100
-      - 🇺🇸 美国_Telegram@kxswa 101
-      - 🇺🇸 美国_Telegram@kxswa 102
-      - 🇺🇸 美国_Telegram@kxswa 103
-      - 🇺🇸 美国_Telegram@kxswa 104
-      - 🇺🇸 美国_Telegram@kxswa 105
-      - 🇺🇸 美国_Telegram@kxswa 106
-      - 🇺🇸 美国_Telegram@kxswa 107
-      - 🇺🇸 美国_Telegram@kxswa 108
-      - 🇺🇸 美国_Telegram@kxswa 109
-      - 🇺🇸 美国_Telegram@kxswa 110
-      - 🇺🇸 美国_Telegram@kxswa 111
-      - 🇺🇸 美国_Telegram@kxswa 112
-      - 🇺🇸 美国_Telegram@kxswa 113
-      - 🇺🇸 美国_Telegram@kxswa 114
-      - 🇺🇸 美国_Telegram@kxswa 115
-      - 🇺🇸 美国_Telegram@kxswa 116
-      - 🇺🇸 美国_Telegram@kxswa 117
-      - 🇺🇸 美国_Telegram@kxswa 118
-      - 🇺🇸 美国_Telegram@kxswa 119
-      - 🇺🇸 美国_Telegram@kxswa 120
-      - 🇺🇸 美国_Telegram@kxswa 121
-      - 🇺🇸 美国_Telegram@kxswa 122
-      - 🇺🇸 美国_Telegram@kxswa 123
-      - 🇺🇸 美国_Telegram@kxswa 124
-      - 🇺🇸 美国_Telegram@kxswa 125
-      - 🇺🇸 美国_Telegram@kxswa 126
-      - 🇺🇸 美国_Telegram@kxswa 127
-      - 🇺🇸 美国_Telegram@kxswa 128
-      - 🇺🇸 美国_Telegram@kxswa 129
-      - 🇺🇸 美国_Telegram@kxswa 130
-      - 🇺🇸 美国_Telegram@kxswa 131
-      - 🇺🇸 美国_Telegram@kxswa 132
-      - 🇺🇸 美国_Telegram@kxswa 133
-      - 🇺🇸 美国_Telegram@kxswa 134
-      - 🇲🇾 马来西亚_Telegram@kxswa
-      - 🇲🇾 马来西亚_Telegram@kxswa 2
-      - 🇳🇱 荷兰_Telegram@kxswa
-      - 🇳🇱 荷兰_Telegram@kxswa 2
-      - 🇰🇷 韩国_Telegram@kxswa
-      - 🇰🇷 韩国_Telegram@kxswa 2
-      - 🇫🇷 法国_Telegram@kxswa
-      - 🇫🇷 法国_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa
-      - 🇷🇺 俄罗斯_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa 3
-      - 🇩🇪 德国_Telegram@kxswa
-      - 🇩🇪 德国_Telegram@kxswa 2
-      - 🇦🇺 澳大利亚_Telegram@kxswa
-      - 🇦🇺 澳大利亚_Telegram@kxswa 2
-      - 🇦🇷 阿根廷_Telegram@kxswa
-      - 🇦🇷 阿根廷_Telegram@kxswa 2
-  - name: 📢 谷歌FCM
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-      - 🇬🇧 英国_Telegram@kxswa
-      - 🇬🇧 英国_Telegram@kxswa 2
-      - 🇬🇧 英国_Telegram@kxswa 3
-      - 🇬🇧 英国_Telegram@kxswa 4
-      - 🇬🇧 英国_Telegram@kxswa 5
-      - 🇬🇧 英国_Telegram@kxswa 6
-      - 🇬🇧 英国_Telegram@kxswa 7
-      - 🇬🇧 英国_Telegram@kxswa 8
-      - 🇬🇧 英国_Telegram@kxswa 9
-      - 🇬🇧 英国_Telegram@kxswa 10
-      - 🇬🇧 英国_Telegram@kxswa 11
-      - 🇬🇧 英国_Telegram@kxswa 12
-      - 🇬🇧 英国_Telegram@kxswa 13
-      - 🇬🇧 英国_Telegram@kxswa 14
-      - 🇮🇩 印尼_Telegram@kxswa
-      - 🇮🇩 印尼_Telegram@kxswa 2
-      - 🇮🇳 印度_Telegram@kxswa
-      - 🇮🇳 印度_Telegram@kxswa 2
-      - 🇮🇹 意大利_Telegram@kxswa
-      - 🇮🇹 意大利_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa
-      - 🇸🇬 新加坡_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa 3
-      - 🇸🇬 新加坡_Telegram@kxswa 4
-      - 🇸🇬 新加坡_Telegram@kxswa 5
-      - 🇸🇬 新加坡_Telegram@kxswa 6
-      - 🇸🇬 新加坡_Telegram@kxswa 7
-      - 🇸🇬 新加坡_Telegram@kxswa 8
-      - 🇸🇬 新加坡_Telegram@kxswa 9
-      - 🇸🇬 新加坡_Telegram@kxswa 10
-      - 🇸🇬 新加坡_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa
-      - 🇭🇰 香港_Telegram@kxswa 2
-      - 🇭🇰 香港_Telegram@kxswa 3
-      - 🇭🇰 香港_Telegram@kxswa 4
-      - 🇭🇰 香港_Telegram@kxswa 5
-      - 🇭🇰 香港_Telegram@kxswa 6
-      - 🇭🇰 香港_Telegram@kxswa 7
-      - 🇭🇰 香港_Telegram@kxswa 8
-      - 🇭🇰 香港_Telegram@kxswa 9
-      - 🇭🇰 香港_Telegram@kxswa 10
-      - 🇭🇰 香港_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa 12
-      - 🇭🇰 香港_Telegram@kxswa 13
-      - 🇭🇰 香港_Telegram@kxswa 14
-      - 🇭🇰 香港_Telegram@kxswa 15
-      - 🇭🇰 香港_Telegram@kxswa 16
-      - 🇭🇰 香港_Telegram@kxswa 17
-      - 🇺🇦 乌克兰_Telegram@kxswa
-      - 未知_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa 2
-      - 🇹🇭 泰国_Telegram@kxswa
-      - 🇹🇭 泰国_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa
-      - 🇨🇳 台湾_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa 3
-      - 🇨🇳 台湾_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa
-      - 🇯🇵 日本_Telegram@kxswa 2
-      - 🇯🇵 日本_Telegram@kxswa 3
-      - 🇯🇵 日本_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa 5
-      - 🇯🇵 日本_Telegram@kxswa 6
-      - 🇯🇵 日本_Telegram@kxswa 7
-      - 🇯🇵 日本_Telegram@kxswa 8
-      - 🇯🇵 日本_Telegram@kxswa 9
-      - 🇳🇬 尼日利亚_Telegram@kxswa
-      - 🇳🇬 尼日利亚_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa
-      - 🇺🇸 美国_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa 3
-      - 🇺🇸 美国_Telegram@kxswa 4
-      - 🇺🇸 美国_Telegram@kxswa 5
-      - 🇺🇸 美国_Telegram@kxswa 6
-      - 🇺🇸 美国_Telegram@kxswa 7
-      - 🇺🇸 美国_Telegram@kxswa 8
-      - 🇺🇸 美国_Telegram@kxswa 9
-      - 🇺🇸 美国_Telegram@kxswa 10
-      - 🇺🇸 美国_Telegram@kxswa 11
-      - 🇺🇸 美国_Telegram@kxswa 12
-      - 🇺🇸 美国_Telegram@kxswa 13
-      - 🇺🇸 美国_Telegram@kxswa 14
-      - 🇺🇸 美国_Telegram@kxswa 15
-      - 🇺🇸 美国_Telegram@kxswa 16
-      - 🇺🇸 美国_Telegram@kxswa 17
-      - 🇺🇸 美国_Telegram@kxswa 18
-      - 🇺🇸 美国_Telegram@kxswa 19
-      - 🇺🇸 美国_Telegram@kxswa 20
-      - 🇺🇸 美国_Telegram@kxswa 21
-      - 🇺🇸 美国_Telegram@kxswa 22
-      - 🇺🇸 美国_Telegram@kxswa 23
-      - 🇺🇸 美国_Telegram@kxswa 24
-      - 🇺🇸 美国_Telegram@kxswa 25
-      - 🇺🇸 美国_Telegram@kxswa 26
-      - 🇺🇸 美国_Telegram@kxswa 27
-      - 🇺🇸 美国_Telegram@kxswa 28
-      - 🇺🇸 美国_Telegram@kxswa 29
-      - 🇺🇸 美国_Telegram@kxswa 30
-      - 🇺🇸 美国_Telegram@kxswa 31
-      - 🇺🇸 美国_Telegram@kxswa 32
-      - 🇺🇸 美国_Telegram@kxswa 33
-      - 🇺🇸 美国_Telegram@kxswa 34
-      - 🇺🇸 美国_Telegram@kxswa 35
-      - 🇺🇸 美国_Telegram@kxswa 36
-      - 🇺🇸 美国_Telegram@kxswa 37
-      - 🇺🇸 美国_Telegram@kxswa 38
-      - 🇺🇸 美国_Telegram@kxswa 39
-      - 🇺🇸 美国_Telegram@kxswa 40
-      - 🇺🇸 美国_Telegram@kxswa 41
-      - 🇺🇸 美国_Telegram@kxswa 42
-      - 🇺🇸 美国_Telegram@kxswa 43
-      - 🇺🇸 美国_Telegram@kxswa 44
-      - 🇺🇸 美国_Telegram@kxswa 45
-      - 🇺🇸 美国_Telegram@kxswa 46
-      - 🇺🇸 美国_Telegram@kxswa 47
-      - 🇺🇸 美国_Telegram@kxswa 48
-      - 🇺🇸 美国_Telegram@kxswa 49
-      - 🇺🇸 美国_Telegram@kxswa 50
-      - 🇺🇸 美国_Telegram@kxswa 51
-      - 🇺🇸 美国_Telegram@kxswa 52
-      - 🇺🇸 美国_Telegram@kxswa 53
-      - 🇺🇸 美国_Telegram@kxswa 54
-      - 🇺🇸 美国_Telegram@kxswa 55
-      - 🇺🇸 美国_Telegram@kxswa 56
-      - 🇺🇸 美国_Telegram@kxswa 57
-      - 🇺🇸 美国_Telegram@kxswa 58
-      - 🇺🇸 美国_Telegram@kxswa 59
-      - 🇺🇸 美国_Telegram@kxswa 60
-      - 🇺🇸 美国_Telegram@kxswa 61
-      - 🇺🇸 美国_Telegram@kxswa 62
-      - 🇺🇸 美国_Telegram@kxswa 63
-      - 🇺🇸 美国_Telegram@kxswa 64
-      - 🇺🇸 美国_Telegram@kxswa 65
-      - 🇺🇸 美国_Telegram@kxswa 66
-      - 🇺🇸 美国_Telegram@kxswa 67
-      - 🇺🇸 美国_Telegram@kxswa 68
-      - 🇺🇸 美国_Telegram@kxswa 69
-      - 🇺🇸 美国_Telegram@kxswa 70
-      - 🇺🇸 美国_Telegram@kxswa 71
-      - 🇺🇸 美国_Telegram@kxswa 72
-      - 🇺🇸 美国_Telegram@kxswa 73
-      - 🇺🇸 美国_Telegram@kxswa 74
-      - 🇺🇸 美国_Telegram@kxswa 75
-      - 🇺🇸 美国_Telegram@kxswa 76
-      - 🇺🇸 美国_Telegram@kxswa 77
-      - 🇺🇸 美国_Telegram@kxswa 78
-      - 🇺🇸 美国_Telegram@kxswa 79
-      - 🇺🇸 美国_Telegram@kxswa 80
-      - 🇺🇸 美国_Telegram@kxswa 81
-      - 🇺🇸 美国_Telegram@kxswa 82
-      - 🇺🇸 美国_Telegram@kxswa 83
-      - 🇺🇸 美国_Telegram@kxswa 84
-      - 🇺🇸 美国_Telegram@kxswa 85
-      - 🇺🇸 美国_Telegram@kxswa 86
-      - 🇺🇸 美国_Telegram@kxswa 87
-      - 🇺🇸 美国_Telegram@kxswa 88
-      - 🇺🇸 美国_Telegram@kxswa 89
-      - 🇺🇸 美国_Telegram@kxswa 90
-      - 🇺🇸 美国_Telegram@kxswa 91
-      - 🇺🇸 美国_Telegram@kxswa 92
-      - 🇺🇸 美国_Telegram@kxswa 93
-      - 🇺🇸 美国_Telegram@kxswa 94
-      - 🇺🇸 美国_Telegram@kxswa 95
-      - 🇺🇸 美国_Telegram@kxswa 96
-      - 🇺🇸 美国_Telegram@kxswa 97
-      - 🇺🇸 美国_Telegram@kxswa 98
-      - 🇺🇸 美国_Telegram@kxswa 99
-      - 🇺🇸 美国_Telegram@kxswa 100
-      - 🇺🇸 美国_Telegram@kxswa 101
-      - 🇺🇸 美国_Telegram@kxswa 102
-      - 🇺🇸 美国_Telegram@kxswa 103
-      - 🇺🇸 美国_Telegram@kxswa 104
-      - 🇺🇸 美国_Telegram@kxswa 105
-      - 🇺🇸 美国_Telegram@kxswa 106
-      - 🇺🇸 美国_Telegram@kxswa 107
-      - 🇺🇸 美国_Telegram@kxswa 108
-      - 🇺🇸 美国_Telegram@kxswa 109
-      - 🇺🇸 美国_Telegram@kxswa 110
-      - 🇺🇸 美国_Telegram@kxswa 111
-      - 🇺🇸 美国_Telegram@kxswa 112
-      - 🇺🇸 美国_Telegram@kxswa 113
-      - 🇺🇸 美国_Telegram@kxswa 114
-      - 🇺🇸 美国_Telegram@kxswa 115
-      - 🇺🇸 美国_Telegram@kxswa 116
-      - 🇺🇸 美国_Telegram@kxswa 117
-      - 🇺🇸 美国_Telegram@kxswa 118
-      - 🇺🇸 美国_Telegram@kxswa 119
-      - 🇺🇸 美国_Telegram@kxswa 120
-      - 🇺🇸 美国_Telegram@kxswa 121
-      - 🇺🇸 美国_Telegram@kxswa 122
-      - 🇺🇸 美国_Telegram@kxswa 123
-      - 🇺🇸 美国_Telegram@kxswa 124
-      - 🇺🇸 美国_Telegram@kxswa 125
-      - 🇺🇸 美国_Telegram@kxswa 126
-      - 🇺🇸 美国_Telegram@kxswa 127
-      - 🇺🇸 美国_Telegram@kxswa 128
-      - 🇺🇸 美国_Telegram@kxswa 129
-      - 🇺🇸 美国_Telegram@kxswa 130
-      - 🇺🇸 美国_Telegram@kxswa 131
-      - 🇺🇸 美国_Telegram@kxswa 132
-      - 🇺🇸 美国_Telegram@kxswa 133
-      - 🇺🇸 美国_Telegram@kxswa 134
-      - 🇲🇾 马来西亚_Telegram@kxswa
-      - 🇲🇾 马来西亚_Telegram@kxswa 2
-      - 🇳🇱 荷兰_Telegram@kxswa
-      - 🇳🇱 荷兰_Telegram@kxswa 2
-      - 🇰🇷 韩国_Telegram@kxswa
-      - 🇰🇷 韩国_Telegram@kxswa 2
-      - 🇫🇷 法国_Telegram@kxswa
-      - 🇫🇷 法国_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa
-      - 🇷🇺 俄罗斯_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa 3
-      - 🇩🇪 德国_Telegram@kxswa
-      - 🇩🇪 德国_Telegram@kxswa 2
-      - 🇦🇺 澳大利亚_Telegram@kxswa
-      - 🇦🇺 澳大利亚_Telegram@kxswa 2
-      - 🇦🇷 阿根廷_Telegram@kxswa
-      - 🇦🇷 阿根廷_Telegram@kxswa 2
+      - 土耳其_Telegram@kxswa+3
+      - 印尼_Telegram@kxswa+2
+      - 荷兰_Telegram@kxswa+2
+      - 法国_Telegram@kxswa+2
+      - 英国_Telegram@kxswa+3
+      - 印度_Telegram@kxswa+2
+      - 澳大利亚_Telegram@kxswa+2
+      - 美国_Telegram@kxswa+126
+      - 瑞典_Telegram@kxswa+2
+      - 德国_Telegram@kxswa+3
+      - 日本_Telegram@kxswa+3
+      - 泰国_Telegram@kxswa+2
+      - 新加坡_Telegram@kxswa+3
+      - 马来西亚_Telegram@kxswa+2
+      - 台湾_Telegram@kxswa+2
+      - 韩国_Telegram@kxswa+2
+      - 尼日利亚_Telegram@kxswa+2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1826,226 +351,23 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 英国_Telegram@kxswa
-      - 🇬🇧 英国_Telegram@kxswa 2
-      - 🇬🇧 英国_Telegram@kxswa 3
-      - 🇬🇧 英国_Telegram@kxswa 4
-      - 🇬🇧 英国_Telegram@kxswa 5
-      - 🇬🇧 英国_Telegram@kxswa 6
-      - 🇬🇧 英国_Telegram@kxswa 7
-      - 🇬🇧 英国_Telegram@kxswa 8
-      - 🇬🇧 英国_Telegram@kxswa 9
-      - 🇬🇧 英国_Telegram@kxswa 10
-      - 🇬🇧 英国_Telegram@kxswa 11
-      - 🇬🇧 英国_Telegram@kxswa 12
-      - 🇬🇧 英国_Telegram@kxswa 13
-      - 🇬🇧 英国_Telegram@kxswa 14
-      - 🇮🇩 印尼_Telegram@kxswa
-      - 🇮🇩 印尼_Telegram@kxswa 2
-      - 🇮🇳 印度_Telegram@kxswa
-      - 🇮🇳 印度_Telegram@kxswa 2
-      - 🇮🇹 意大利_Telegram@kxswa
-      - 🇮🇹 意大利_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa
-      - 🇸🇬 新加坡_Telegram@kxswa 2
-      - 🇸🇬 新加坡_Telegram@kxswa 3
-      - 🇸🇬 新加坡_Telegram@kxswa 4
-      - 🇸🇬 新加坡_Telegram@kxswa 5
-      - 🇸🇬 新加坡_Telegram@kxswa 6
-      - 🇸🇬 新加坡_Telegram@kxswa 7
-      - 🇸🇬 新加坡_Telegram@kxswa 8
-      - 🇸🇬 新加坡_Telegram@kxswa 9
-      - 🇸🇬 新加坡_Telegram@kxswa 10
-      - 🇸🇬 新加坡_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa
-      - 🇭🇰 香港_Telegram@kxswa 2
-      - 🇭🇰 香港_Telegram@kxswa 3
-      - 🇭🇰 香港_Telegram@kxswa 4
-      - 🇭🇰 香港_Telegram@kxswa 5
-      - 🇭🇰 香港_Telegram@kxswa 6
-      - 🇭🇰 香港_Telegram@kxswa 7
-      - 🇭🇰 香港_Telegram@kxswa 8
-      - 🇭🇰 香港_Telegram@kxswa 9
-      - 🇭🇰 香港_Telegram@kxswa 10
-      - 🇭🇰 香港_Telegram@kxswa 11
-      - 🇭🇰 香港_Telegram@kxswa 12
-      - 🇭🇰 香港_Telegram@kxswa 13
-      - 🇭🇰 香港_Telegram@kxswa 14
-      - 🇭🇰 香港_Telegram@kxswa 15
-      - 🇭🇰 香港_Telegram@kxswa 16
-      - 🇭🇰 香港_Telegram@kxswa 17
-      - 🇺🇦 乌克兰_Telegram@kxswa
-      - 未知_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa
-      - 🇹🇷 土耳其_Telegram@kxswa 2
-      - 🇹🇭 泰国_Telegram@kxswa
-      - 🇹🇭 泰国_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa
-      - 🇨🇳 台湾_Telegram@kxswa 2
-      - 🇨🇳 台湾_Telegram@kxswa 3
-      - 🇨🇳 台湾_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa
-      - 🇯🇵 日本_Telegram@kxswa 2
-      - 🇯🇵 日本_Telegram@kxswa 3
-      - 🇯🇵 日本_Telegram@kxswa 4
-      - 🇯🇵 日本_Telegram@kxswa 5
-      - 🇯🇵 日本_Telegram@kxswa 6
-      - 🇯🇵 日本_Telegram@kxswa 7
-      - 🇯🇵 日本_Telegram@kxswa 8
-      - 🇯🇵 日本_Telegram@kxswa 9
-      - 🇳🇬 尼日利亚_Telegram@kxswa
-      - 🇳🇬 尼日利亚_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa
-      - 🇺🇸 美国_Telegram@kxswa 2
-      - 🇺🇸 美国_Telegram@kxswa 3
-      - 🇺🇸 美国_Telegram@kxswa 4
-      - 🇺🇸 美国_Telegram@kxswa 5
-      - 🇺🇸 美国_Telegram@kxswa 6
-      - 🇺🇸 美国_Telegram@kxswa 7
-      - 🇺🇸 美国_Telegram@kxswa 8
-      - 🇺🇸 美国_Telegram@kxswa 9
-      - 🇺🇸 美国_Telegram@kxswa 10
-      - 🇺🇸 美国_Telegram@kxswa 11
-      - 🇺🇸 美国_Telegram@kxswa 12
-      - 🇺🇸 美国_Telegram@kxswa 13
-      - 🇺🇸 美国_Telegram@kxswa 14
-      - 🇺🇸 美国_Telegram@kxswa 15
-      - 🇺🇸 美国_Telegram@kxswa 16
-      - 🇺🇸 美国_Telegram@kxswa 17
-      - 🇺🇸 美国_Telegram@kxswa 18
-      - 🇺🇸 美国_Telegram@kxswa 19
-      - 🇺🇸 美国_Telegram@kxswa 20
-      - 🇺🇸 美国_Telegram@kxswa 21
-      - 🇺🇸 美国_Telegram@kxswa 22
-      - 🇺🇸 美国_Telegram@kxswa 23
-      - 🇺🇸 美国_Telegram@kxswa 24
-      - 🇺🇸 美国_Telegram@kxswa 25
-      - 🇺🇸 美国_Telegram@kxswa 26
-      - 🇺🇸 美国_Telegram@kxswa 27
-      - 🇺🇸 美国_Telegram@kxswa 28
-      - 🇺🇸 美国_Telegram@kxswa 29
-      - 🇺🇸 美国_Telegram@kxswa 30
-      - 🇺🇸 美国_Telegram@kxswa 31
-      - 🇺🇸 美国_Telegram@kxswa 32
-      - 🇺🇸 美国_Telegram@kxswa 33
-      - 🇺🇸 美国_Telegram@kxswa 34
-      - 🇺🇸 美国_Telegram@kxswa 35
-      - 🇺🇸 美国_Telegram@kxswa 36
-      - 🇺🇸 美国_Telegram@kxswa 37
-      - 🇺🇸 美国_Telegram@kxswa 38
-      - 🇺🇸 美国_Telegram@kxswa 39
-      - 🇺🇸 美国_Telegram@kxswa 40
-      - 🇺🇸 美国_Telegram@kxswa 41
-      - 🇺🇸 美国_Telegram@kxswa 42
-      - 🇺🇸 美国_Telegram@kxswa 43
-      - 🇺🇸 美国_Telegram@kxswa 44
-      - 🇺🇸 美国_Telegram@kxswa 45
-      - 🇺🇸 美国_Telegram@kxswa 46
-      - 🇺🇸 美国_Telegram@kxswa 47
-      - 🇺🇸 美国_Telegram@kxswa 48
-      - 🇺🇸 美国_Telegram@kxswa 49
-      - 🇺🇸 美国_Telegram@kxswa 50
-      - 🇺🇸 美国_Telegram@kxswa 51
-      - 🇺🇸 美国_Telegram@kxswa 52
-      - 🇺🇸 美国_Telegram@kxswa 53
-      - 🇺🇸 美国_Telegram@kxswa 54
-      - 🇺🇸 美国_Telegram@kxswa 55
-      - 🇺🇸 美国_Telegram@kxswa 56
-      - 🇺🇸 美国_Telegram@kxswa 57
-      - 🇺🇸 美国_Telegram@kxswa 58
-      - 🇺🇸 美国_Telegram@kxswa 59
-      - 🇺🇸 美国_Telegram@kxswa 60
-      - 🇺🇸 美国_Telegram@kxswa 61
-      - 🇺🇸 美国_Telegram@kxswa 62
-      - 🇺🇸 美国_Telegram@kxswa 63
-      - 🇺🇸 美国_Telegram@kxswa 64
-      - 🇺🇸 美国_Telegram@kxswa 65
-      - 🇺🇸 美国_Telegram@kxswa 66
-      - 🇺🇸 美国_Telegram@kxswa 67
-      - 🇺🇸 美国_Telegram@kxswa 68
-      - 🇺🇸 美国_Telegram@kxswa 69
-      - 🇺🇸 美国_Telegram@kxswa 70
-      - 🇺🇸 美国_Telegram@kxswa 71
-      - 🇺🇸 美国_Telegram@kxswa 72
-      - 🇺🇸 美国_Telegram@kxswa 73
-      - 🇺🇸 美国_Telegram@kxswa 74
-      - 🇺🇸 美国_Telegram@kxswa 75
-      - 🇺🇸 美国_Telegram@kxswa 76
-      - 🇺🇸 美国_Telegram@kxswa 77
-      - 🇺🇸 美国_Telegram@kxswa 78
-      - 🇺🇸 美国_Telegram@kxswa 79
-      - 🇺🇸 美国_Telegram@kxswa 80
-      - 🇺🇸 美国_Telegram@kxswa 81
-      - 🇺🇸 美国_Telegram@kxswa 82
-      - 🇺🇸 美国_Telegram@kxswa 83
-      - 🇺🇸 美国_Telegram@kxswa 84
-      - 🇺🇸 美国_Telegram@kxswa 85
-      - 🇺🇸 美国_Telegram@kxswa 86
-      - 🇺🇸 美国_Telegram@kxswa 87
-      - 🇺🇸 美国_Telegram@kxswa 88
-      - 🇺🇸 美国_Telegram@kxswa 89
-      - 🇺🇸 美国_Telegram@kxswa 90
-      - 🇺🇸 美国_Telegram@kxswa 91
-      - 🇺🇸 美国_Telegram@kxswa 92
-      - 🇺🇸 美国_Telegram@kxswa 93
-      - 🇺🇸 美国_Telegram@kxswa 94
-      - 🇺🇸 美国_Telegram@kxswa 95
-      - 🇺🇸 美国_Telegram@kxswa 96
-      - 🇺🇸 美国_Telegram@kxswa 97
-      - 🇺🇸 美国_Telegram@kxswa 98
-      - 🇺🇸 美国_Telegram@kxswa 99
-      - 🇺🇸 美国_Telegram@kxswa 100
-      - 🇺🇸 美国_Telegram@kxswa 101
-      - 🇺🇸 美国_Telegram@kxswa 102
-      - 🇺🇸 美国_Telegram@kxswa 103
-      - 🇺🇸 美国_Telegram@kxswa 104
-      - 🇺🇸 美国_Telegram@kxswa 105
-      - 🇺🇸 美国_Telegram@kxswa 106
-      - 🇺🇸 美国_Telegram@kxswa 107
-      - 🇺🇸 美国_Telegram@kxswa 108
-      - 🇺🇸 美国_Telegram@kxswa 109
-      - 🇺🇸 美国_Telegram@kxswa 110
-      - 🇺🇸 美国_Telegram@kxswa 111
-      - 🇺🇸 美国_Telegram@kxswa 112
-      - 🇺🇸 美国_Telegram@kxswa 113
-      - 🇺🇸 美国_Telegram@kxswa 114
-      - 🇺🇸 美国_Telegram@kxswa 115
-      - 🇺🇸 美国_Telegram@kxswa 116
-      - 🇺🇸 美国_Telegram@kxswa 117
-      - 🇺🇸 美国_Telegram@kxswa 118
-      - 🇺🇸 美国_Telegram@kxswa 119
-      - 🇺🇸 美国_Telegram@kxswa 120
-      - 🇺🇸 美国_Telegram@kxswa 121
-      - 🇺🇸 美国_Telegram@kxswa 122
-      - 🇺🇸 美国_Telegram@kxswa 123
-      - 🇺🇸 美国_Telegram@kxswa 124
-      - 🇺🇸 美国_Telegram@kxswa 125
-      - 🇺🇸 美国_Telegram@kxswa 126
-      - 🇺🇸 美国_Telegram@kxswa 127
-      - 🇺🇸 美国_Telegram@kxswa 128
-      - 🇺🇸 美国_Telegram@kxswa 129
-      - 🇺🇸 美国_Telegram@kxswa 130
-      - 🇺🇸 美国_Telegram@kxswa 131
-      - 🇺🇸 美国_Telegram@kxswa 132
-      - 🇺🇸 美国_Telegram@kxswa 133
-      - 🇺🇸 美国_Telegram@kxswa 134
-      - 🇲🇾 马来西亚_Telegram@kxswa
-      - 🇲🇾 马来西亚_Telegram@kxswa 2
-      - 🇳🇱 荷兰_Telegram@kxswa
-      - 🇳🇱 荷兰_Telegram@kxswa 2
-      - 🇰🇷 韩国_Telegram@kxswa
-      - 🇰🇷 韩国_Telegram@kxswa 2
-      - 🇫🇷 法国_Telegram@kxswa
-      - 🇫🇷 法国_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa
-      - 🇷🇺 俄罗斯_Telegram@kxswa 2
-      - 🇷🇺 俄罗斯_Telegram@kxswa 3
-      - 🇩🇪 德国_Telegram@kxswa
-      - 🇩🇪 德国_Telegram@kxswa 2
-      - 🇦🇺 澳大利亚_Telegram@kxswa
-      - 🇦🇺 澳大利亚_Telegram@kxswa 2
-      - 🇦🇷 阿根廷_Telegram@kxswa
-      - 🇦🇷 阿根廷_Telegram@kxswa 2
+      - 土耳其_Telegram@kxswa+3
+      - 印尼_Telegram@kxswa+2
+      - 荷兰_Telegram@kxswa+2
+      - 法国_Telegram@kxswa+2
+      - 英国_Telegram@kxswa+3
+      - 印度_Telegram@kxswa+2
+      - 澳大利亚_Telegram@kxswa+2
+      - 美国_Telegram@kxswa+126
+      - 瑞典_Telegram@kxswa+2
+      - 德国_Telegram@kxswa+3
+      - 日本_Telegram@kxswa+3
+      - 泰国_Telegram@kxswa+2
+      - 新加坡_Telegram@kxswa+3
+      - 马来西亚_Telegram@kxswa+2
+      - 台湾_Telegram@kxswa+2
+      - 韩国_Telegram@kxswa+2
+      - 尼日利亚_Telegram@kxswa+2
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -2082,24 +404,6 @@ rules:
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
   - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
   - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
-  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
-  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
-  - DOMAIN,dl.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
-  - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
-  - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
-  - DOMAIN,fairplay.l.qq.com,🎯 全球直连
-  - DOMAIN,livew.l.qq.com,🎯 全球直连
-  - DOMAIN,vd.l.qq.com,🎯 全球直连
-  - DOMAIN,errlog.umeng.com,🎯 全球直连
-  - DOMAIN,msg.umeng.com,🎯 全球直连
-  - DOMAIN,msg.umengcloud.com,🎯 全球直连
-  - DOMAIN,tracking.miui.com,🎯 全球直连
-  - DOMAIN,app.adjust.com,🎯 全球直连
-  - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
-  - DOMAIN,rewards.hypixel.net,🎯 全球直连
-  - DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
-  - DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
@@ -2417,6 +721,7 @@ rules:
   - DOMAIN-SUFFIX,rtbasia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sanya1.com,🛑 全球拦截
   - DOMAIN-SUFFIX,scupio.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,serving-sys.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuiguo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuzilm.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,similarweb.com,🛑 全球拦截
@@ -2484,7 +789,6 @@ rules:
   - DOMAIN-SUFFIX,wqmobile.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wrating.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wumii.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,xcy8.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xdrig.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xiaozhen.com,🛑 全球拦截
@@ -2518,6 +822,7 @@ rules:
   - DOMAIN-SUFFIX,zhjfad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zqzxz.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zzsx8.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,acuityplatform.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-stir.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-survey.com,🛑 全球拦截
@@ -3714,41 +2019,6 @@ rules:
   - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
   - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
   - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
-  - DOMAIN,alt1-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt2-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt3-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt4-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt5-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt6-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt7-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt8-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,mtalk.google.com,📢 谷歌FCM
-  - IP-CIDR,64.233.177.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,64.233.186.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,64.233.187.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,64.233.188.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,64.233.189.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.23.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.24.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.28.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.127.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.137.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.203.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.204.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.206.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,108.177.125.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,142.250.4.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,142.250.10.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,142.250.31.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,142.250.96.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,172.217.194.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,172.217.218.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,172.217.219.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,172.253.63.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,172.253.122.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,173.194.175.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,173.194.218.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,209.85.233.188/32,📢 谷歌FCM,no-resolve
   - DOMAIN-SUFFIX,265.com,🎯 全球直连
   - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -3902,18 +2172,6 @@ rules:
   - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
-  - DOMAIN-SUFFIX,t.me,📲 电报信息
-  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
-  - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
-  - DOMAIN-SUFFIX,telegram.me,📲 电报信息
-  - DOMAIN-SUFFIX,telegram.org,📲 电报信息
-  - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
-  - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
-  - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
-  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
@@ -4054,7 +2312,6 @@ rules:
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
   - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,iwara.tv,🌍 国外媒体
   - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
   - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
   - DOMAIN-KEYWORD,japonx,🌍 国外媒体
@@ -4153,6 +2410,7 @@ rules:
   - DOMAIN-SUFFIX,olevod.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,olevodtv.com,🌍 国外媒体
   - DOMAIN-KEYWORD,openai,🌍 国外媒体
+  - DOMAIN,gemini.google.com,🌍 国外媒体
   - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
   - DOMAIN-SUFFIX,challenges.cloudflare.com,🌍 国外媒体
   - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
@@ -4238,6 +2496,18 @@ rules:
   - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
   - DOMAIN,music.youtube.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,t.me,📲 电报信息
+  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
+  - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
+  - DOMAIN-SUFFIX,telegram.me,📲 电报信息
+  - DOMAIN-SUFFIX,telegram.org,📲 电报信息
+  - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
+  - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
+  - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
+  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
   - DOMAIN-SUFFIX,1password.com,🚀 节点选择
   - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
   - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
@@ -4438,13 +2708,6 @@ rules:
   - DOMAIN-SUFFIX,spring.io,🚀 节点选择
   - DOMAIN-SUFFIX,spring.net,🚀 节点选择
   - DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
-  - DOMAIN,d1q6f0aelx0por.cloudfront.net,🚀 节点选择
-  - DOMAIN,d2wy8f7a9ursnm.cloudfront.net,🚀 节点选择
-  - DOMAIN,d36jcksde1wxzq.cloudfront.net,🚀 节点选择
-  - DOMAIN-SUFFIX,compose-spec.io,🚀 节点选择
-  - DOMAIN-SUFFIX,docker.com,🚀 节点选择
-  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
-  - DOMAIN-SUFFIX,dockerhub.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.co,🚀 节点选择
   - DOMAIN-SUFFIX,discord.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.gg,🚀 节点选择
@@ -4518,7 +2781,6 @@ rules:
   - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
-  - DOMAIN-SUFFIX,iwara.tv,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
   - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
@@ -4832,8 +3094,6 @@ rules:
   - DOMAIN-SUFFIX,didialift.com,🎯 全球直连
   - DOMAIN-SUFFIX,didiglobal.com,🎯 全球直连
   - DOMAIN-SUFFIX,udache.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytefcdnrd.com,🎯 全球直连
-  - DOMAIN-SUFFIX,edgesrv.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.tv,🎯 全球直连
   - DOMAIN-SUFFIX,douyuscdn.com,🎯 全球直连
@@ -5143,7 +3403,6 @@ rules:
   - DOMAIN-SUFFIX,kaola.com,🎯 全球直连
   - DOMAIN-SUFFIX,knewone.com,🎯 全球直连
   - DOMAIN-SUFFIX,koowo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,koyso.com,🎯 全球直连
   - DOMAIN-SUFFIX,ksyungslb.com,🎯 全球直连
   - DOMAIN-SUFFIX,kuaidi100.com,🎯 全球直连
   - DOMAIN-SUFFIX,kugou.com,🎯 全球直连
