@@ -15,42 +15,46 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：2111.33 GB', server: hk1.xunlian.site, port: 34080, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: '距离下次重置剩余：26 天', server: hk1.xunlian.site, port: 34080, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 套餐到期：2138-11-03, server: hk1.xunlian.site, port: 34080, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: '官网 xunlian.site 注册送永久套餐', server: hk1.xunlian.site, port: 34080, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 香港家宽01HKT, server: hk1.xunlian.site, port: 34080, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 香港家宽02HKT, server: hk2.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 香港家宽03HKT, server: hk3.xunlian.site, port: 57000, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 日本01解锁, server: jp01.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 日本02解锁, server: jp02.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 日本03解锁, server: jp3.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 日本04解锁, server: jp4.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 日本05解锁, server: jp5.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 新加坡01解锁, server: sg1.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 新加坡02解锁, server: sg2.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 新加坡03解锁, server: sg3.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 新加坡04解锁, server: sg4.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 美国01, server: us1.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 美国02, server: us2.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
-    - { name: 美国03, server: us3.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 4e2cb571-060e-4415-9424-8b5aa9e58932 }
+    - { name: '剩余流量：8876.31 GB', server: hk1.xunlian.site, port: 34080, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: '距离下次重置剩余：23 天', server: hk1.xunlian.site, port: 34080, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 套餐到期：2138-11-03, server: hk1.xunlian.site, port: 34080, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: '官网 xunlian.site 注册送永久套餐', server: hk1.xunlian.site, port: 34080, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 香港家宽01HKT, server: hk1.xunlian.site, port: 34080, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 香港家宽02HKT, server: hk2.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 香港家宽03HKT, server: hk3.xunlian.site, port: 57000, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 台湾家宽01Hinet, server: tw1.xunlian.site, port: 34081, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 日本01解锁, server: jp01.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 日本02解锁, server: jp02.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 日本03解锁, server: jp3.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 日本04解锁, server: jp4.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 新加坡01解锁, server: sg1.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 新加坡02解锁, server: sg2.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 新加坡03解锁, server: sg3.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 新加坡04解锁, server: sg4.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 新加坡05解锁, server: sg5.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 美国01, server: us1.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 美国02, server: us2.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 美国03, server: us3.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
+    - { name: 俄罗斯, server: ru1.xunlian.site, port: 6608, sni: hk2.xunlian.site, up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: 35d89ed7-7847-4581-beab-b95f8686ef70 }
 proxy-groups:
-    - { name: 迅联, type: select, proxies: [自动选择, 故障转移, '剩余流量：2111.33 GB', '距离下次重置剩余：26 天', 套餐到期：2138-11-03, '官网 xunlian.site 注册送永久套餐', 香港家宽01HKT, 香港家宽02HKT, 香港家宽03HKT, 日本01解锁, 日本02解锁, 日本03解锁, 日本04解锁, 日本05解锁, 新加坡01解锁, 新加坡02解锁, 新加坡03解锁, 新加坡04解锁, 美国01, 美国02, 美国03] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：2111.33 GB', '距离下次重置剩余：26 天', 套餐到期：2138-11-03, '官网 xunlian.site 注册送永久套餐', 香港家宽01HKT, 香港家宽02HKT, 香港家宽03HKT, 日本01解锁, 日本02解锁, 日本03解锁, 日本04解锁, 日本05解锁, 新加坡01解锁, 新加坡02解锁, 新加坡03解锁, 新加坡04解锁, 美国01, 美国02, 美国03], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：2111.33 GB', '距离下次重置剩余：26 天', 套餐到期：2138-11-03, '官网 xunlian.site 注册送永久套餐', 香港家宽01HKT, 香港家宽02HKT, 香港家宽03HKT, 日本01解锁, 日本02解锁, 日本03解锁, 日本04解锁, 日本05解锁, 新加坡01解锁, 新加坡02解锁, 新加坡03解锁, 新加坡04解锁, 美国01, 美国02, 美国03], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 迅联, type: select, proxies: [自动选择, 故障转移, '剩余流量：8876.31 GB', '距离下次重置剩余：23 天', 套餐到期：2138-11-03, '官网 xunlian.site 注册送永久套餐', 香港家宽01HKT, 香港家宽02HKT, 香港家宽03HKT, 台湾家宽01Hinet, 日本01解锁, 日本02解锁, 日本03解锁, 日本04解锁, 新加坡01解锁, 新加坡02解锁, 新加坡03解锁, 新加坡04解锁, 新加坡05解锁, 美国01, 美国02, 美国03, 俄罗斯] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：8876.31 GB', '距离下次重置剩余：23 天', 套餐到期：2138-11-03, '官网 xunlian.site 注册送永久套餐', 香港家宽01HKT, 香港家宽02HKT, 香港家宽03HKT, 台湾家宽01Hinet, 日本01解锁, 日本02解锁, 日本03解锁, 日本04解锁, 新加坡01解锁, 新加坡02解锁, 新加坡03解锁, 新加坡04解锁, 新加坡05解锁, 美国01, 美国02, 美国03, 俄罗斯], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：8876.31 GB', '距离下次重置剩余：23 天', 套餐到期：2138-11-03, '官网 xunlian.site 注册送永久套餐', 香港家宽01HKT, 香港家宽02HKT, 香港家宽03HKT, 台湾家宽01Hinet, 日本01解锁, 日本02解锁, 日本03解锁, 日本04解锁, 新加坡01解锁, 新加坡02解锁, 新加坡03解锁, 新加坡04解锁, 新加坡05解锁, 美国01, 美国02, 美国03, 俄罗斯], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
+    - 'IP-CIDR,185.22.154.206/32,DIRECT,no-resolve'
     - 'IP-CIDR,95.182.101.244/32,DIRECT,no-resolve'
     - 'IP-CIDR,83.147.42.144/32,DIRECT,no-resolve'
     - 'IP-CIDR,107.174.52.160/32,DIRECT,no-resolve'
+    - 'IP-CIDR,194.36.178.126/32,DIRECT,no-resolve'
     - 'IP-CIDR,194.36.179.226/32,DIRECT,no-resolve'
     - 'IP-CIDR,194.36.179.225/32,DIRECT,no-resolve'
     - 'IP-CIDR,139.162.39.128/32,DIRECT,no-resolve'
     - 'IP-CIDR,172.236.140.32/32,DIRECT,no-resolve'
-    - 'IP-CIDR,160.251.137.177/32,DIRECT,no-resolve'
     - 'IP-CIDR,160.251.200.108/32,DIRECT,no-resolve'
     - 'IP-CIDR,160.251.235.72/32,DIRECT,no-resolve'
     - 'IP-CIDR,172.233.84.4/32,DIRECT,no-resolve'
     - 'IP-CIDR,172.104.100.110/32,DIRECT,no-resolve'
+    - 'IP-CIDR,1.168.177.69/32,DIRECT,no-resolve'
     - 'IP-CIDR,119.237.142.48/32,DIRECT,no-resolve'
     - 'IP-CIDR,203.198.116.95/32,DIRECT,no-resolve'
     - 'IP-CIDR,119.237.241.196/32,DIRECT,no-resolve'
