@@ -15,13 +15,13 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '🇺🇸 MF-1｜United States', type: trojan, server: 12372.96110.one, port: 23872, password: 1f2ad491-3c99-4f62-a197-09fb0dd007cb, udp: true, sni: www.icloud.com, skip-cert-verify: true }
-    - { name: '🇸🇬 MF-1｜Singapore', type: trojan, server: 23489.96110.one, port: 53296, password: 1f2ad491-3c99-4f62-a197-09fb0dd007cb, udp: true, sni: www.icloud.com, skip-cert-verify: true }
-    - { name: 🇭🇰网站：doubao.one, type: ss, server: 29783.96110.one, port: 43628, cipher: aes-128-gcm, password: 1f2ad491-3c99-4f62-a197-09fb0dd007cb, udp: true }
+    - { name: '🇨🇳 网站：doubao.one', type: ss, server: 29783.96110.one, port: 43628, cipher: aes-128-gcm, password: 9923bfe0-0fc7-436f-a8ee-89f98025939d, udp: true }
+    - { name: '🇺🇸 MF-1｜United States', type: trojan, server: 12372.96110.one, port: 23872, password: 9923bfe0-0fc7-436f-a8ee-89f98025939d, udp: true, sni: www.icloud.com, skip-cert-verify: true }
+    - { name: '🇸🇬 MF-1｜Singapore', type: trojan, server: 23489.96110.one, port: 53296, password: 9923bfe0-0fc7-436f-a8ee-89f98025939d, udp: true, sni: www.icloud.com, skip-cert-verify: true }
 proxy-groups:
-    - { name: 豆包, type: select, proxies: [自动选择, 故障转移, '🇺🇸 MF-1｜United States', '🇸🇬 MF-1｜Singapore', 🇭🇰网站：doubao.one] }
-    - { name: 自动选择, type: url-test, proxies: ['🇺🇸 MF-1｜United States', '🇸🇬 MF-1｜Singapore', 🇭🇰网站：doubao.one], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['🇺🇸 MF-1｜United States', '🇸🇬 MF-1｜Singapore', 🇭🇰网站：doubao.one], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 豆包, type: select, proxies: [自动选择, 故障转移, '🇨🇳 网站：doubao.one', '🇺🇸 MF-1｜United States', '🇸🇬 MF-1｜Singapore'] }
+    - { name: 自动选择, type: url-test, proxies: ['🇨🇳 网站：doubao.one', '🇺🇸 MF-1｜United States', '🇸🇬 MF-1｜Singapore'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['🇨🇳 网站：doubao.one', '🇺🇸 MF-1｜United States', '🇸🇬 MF-1｜Singapore'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN,interface.doubao.one,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,豆包'
