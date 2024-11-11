@@ -15,29 +15,30 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: 请按教程使用最新版软件, type: ss, server: 1.1.1.1, port: 443, cipher: chacha20-ietf-poly1305, password: 63c25c04-58f1-4473-aadb-96403641133f, udp: true }
-    - { name: 新加坡01-1Gbps, type: ss, server: 183.232.249.247, port: 48609, cipher: chacha20-ietf-poly1305, password: 63c25c04-58f1-4473-aadb-96403641133f, udp: true }
-    - { name: 香港01-1Gbps, type: ss, server: 183.232.249.247, port: 24131, cipher: chacha20-ietf-poly1305, password: 63c25c04-58f1-4473-aadb-96403641133f, udp: true }
-    - { name: 阿姆斯特丹, type: vless, server: 141.227.130.8, port: 2000, uuid: 63c25c04-58f1-4473-aadb-96403641133f, alterId: 0, cipher: auto, udp: true, tls: true, servername: chatbot.chronopost.fr, reality-opts: { public-key: 57MdXhi5xKVlKz9_t-oai5dZ_dcuF3LpSQQVSl9BwR8, short-id: 5273fd24 }, client-fingerprint: ios }
-    - { name: 孟买, type: vless, server: 148.113.37.24, port: 2000, uuid: 63c25c04-58f1-4473-aadb-96403641133f, alterId: 0, cipher: auto, udp: true, tls: true, servername: chatbot.chronopost.fr, reality-opts: { public-key: 57MdXhi5xKVlKz9_t-oai5dZ_dcuF3LpSQQVSl9BwR8, short-id: 5273fd24 }, client-fingerprint: firefox }
-    - { name: 法国, type: vless, server: 152.228.231.89, port: 2000, uuid: 63c25c04-58f1-4473-aadb-96403641133f, alterId: 0, cipher: auto, udp: true, tls: true, servername: chatbot.chronopost.fr, reality-opts: { public-key: 57MdXhi5xKVlKz9_t-oai5dZ_dcuF3LpSQQVSl9BwR8, short-id: 5273fd24 }, client-fingerprint: qq }
-    - { name: 米兰, type: vless, server: 141.227.140.37, port: 2000, uuid: 63c25c04-58f1-4473-aadb-96403641133f, alterId: 0, cipher: auto, udp: true, tls: true, servername: chatbot.chronopost.fr, reality-opts: { public-key: 57MdXhi5xKVlKz9_t-oai5dZ_dcuF3LpSQQVSl9BwR8, short-id: 5273fd24 }, client-fingerprint: chrome }
-    - { name: 加拿大, type: vless, server: 148.113.174.149, port: 2000, uuid: 63c25c04-58f1-4473-aadb-96403641133f, alterId: 0, cipher: auto, udp: true, tls: true, servername: www.huntingdon.edu, reality-opts: { public-key: 57MdXhi5xKVlKz9_t-oai5dZ_dcuF3LpSQQVSl9BwR8, short-id: 5273fd24 }, client-fingerprint: qq }
-    - { name: 德国（GPT流媒体）, type: vless, server: 183.94.31.85, port: 52862, uuid: 63c25c04-58f1-4473-aadb-96403641133f, alterId: 0, cipher: auto, udp: true, tls: true, servername: www.huntingdon.edu, reality-opts: { public-key: 57MdXhi5xKVlKz9_t-oai5dZ_dcuF3LpSQQVSl9BwR8, short-id: 5273fd24 }, client-fingerprint: firefox }
-    - { name: '日本  (GPT流媒体）', type: vless, server: 183.94.31.85, port: 20000, uuid: 63c25c04-58f1-4473-aadb-96403641133f, alterId: 0, cipher: auto, udp: true, tls: true, servername: s7ap1.scene7.com, reality-opts: { public-key: 57MdXhi5xKVlKz9_t-oai5dZ_dcuF3LpSQQVSl9BwR8, short-id: 5273fd24 }, client-fingerprint: firefox }
-    - { name: 英国s, type: ss, server: 183.94.31.85, port: 55872, cipher: chacha20-ietf-poly1305, password: 63c25c04-58f1-4473-aadb-96403641133f, udp: true }
+    - { name: 请按教程使用最新版软件, type: ss, server: 1.1.1.1, port: 443, cipher: chacha20-ietf-poly1305, password: 2865bfaa-4cd3-47c9-80ea-1656c72d9ee5, udp: true }
+    - { name: 俄罗斯, type: ss, server: 45.140.169.157, port: 8829, cipher: chacha20-ietf-poly1305, password: 2865bfaa-4cd3-47c9-80ea-1656c72d9ee5, udp: true }
+    - { name: 新加坡01-1Gbps, type: ss, server: 183.232.249.247, port: 48609, cipher: chacha20-ietf-poly1305, password: 2865bfaa-4cd3-47c9-80ea-1656c72d9ee5, udp: true }
+    - { name: 香港01, type: ss, server: 183.94.31.85, port: 20809, cipher: chacha20-ietf-poly1305, password: 2865bfaa-4cd3-47c9-80ea-1656c72d9ee5, udp: true }
+    - { name: 香港02, type: ss, server: 183.94.31.85, port: 18829, cipher: chacha20-ietf-poly1305, password: 2865bfaa-4cd3-47c9-80ea-1656c72d9ee5, udp: true }
+    - { name: 阿姆斯特丹, type: vless, server: 141.227.130.8, port: 2000, uuid: 2865bfaa-4cd3-47c9-80ea-1656c72d9ee5, alterId: 0, cipher: auto, udp: true, tls: true, servername: chatbot.chronopost.fr, reality-opts: { public-key: 57MdXhi5xKVlKz9_t-oai5dZ_dcuF3LpSQQVSl9BwR8, short-id: 5273fd24 }, client-fingerprint: chrome }
+    - { name: 孟买, type: vless, server: 148.113.37.24, port: 2000, uuid: 2865bfaa-4cd3-47c9-80ea-1656c72d9ee5, alterId: 0, cipher: auto, udp: true, tls: true, servername: chatbot.chronopost.fr, reality-opts: { public-key: 57MdXhi5xKVlKz9_t-oai5dZ_dcuF3LpSQQVSl9BwR8, short-id: 5273fd24 }, client-fingerprint: qq }
+    - { name: 法国, type: vless, server: 152.228.231.89, port: 2000, uuid: 2865bfaa-4cd3-47c9-80ea-1656c72d9ee5, alterId: 0, cipher: auto, udp: true, tls: true, servername: chatbot.chronopost.fr, reality-opts: { public-key: 57MdXhi5xKVlKz9_t-oai5dZ_dcuF3LpSQQVSl9BwR8, short-id: 5273fd24 }, client-fingerprint: qq }
+    - { name: 米兰, type: vless, server: 141.227.140.37, port: 2000, uuid: 2865bfaa-4cd3-47c9-80ea-1656c72d9ee5, alterId: 0, cipher: auto, udp: true, tls: true, servername: chatbot.chronopost.fr, reality-opts: { public-key: 57MdXhi5xKVlKz9_t-oai5dZ_dcuF3LpSQQVSl9BwR8, short-id: 5273fd24 }, client-fingerprint: safari }
+    - { name: 德国（GPT流媒体）, type: vless, server: 183.94.31.85, port: 52862, uuid: 2865bfaa-4cd3-47c9-80ea-1656c72d9ee5, alterId: 0, cipher: auto, udp: true, tls: true, servername: www.huntingdon.edu, reality-opts: { public-key: 57MdXhi5xKVlKz9_t-oai5dZ_dcuF3LpSQQVSl9BwR8, short-id: 5273fd24 }, client-fingerprint: safari }
+    - { name: '日本  (GPT流媒体）', type: vless, server: 183.94.31.85, port: 20000, uuid: 2865bfaa-4cd3-47c9-80ea-1656c72d9ee5, alterId: 0, cipher: auto, udp: true, tls: true, servername: s7ap1.scene7.com, reality-opts: { public-key: 57MdXhi5xKVlKz9_t-oai5dZ_dcuF3LpSQQVSl9BwR8, short-id: 5273fd24 }, client-fingerprint: safari }
+    - { name: 英国s, type: ss, server: 183.94.31.85, port: 55872, cipher: chacha20-ietf-poly1305, password: 2865bfaa-4cd3-47c9-80ea-1656c72d9ee5, udp: true }
 proxy-groups:
-    - { name: X Cloud, type: select, proxies: [自动选择, 故障转移, 请按教程使用最新版软件, 新加坡01-1Gbps, 香港01-1Gbps, 阿姆斯特丹, 孟买, 法国, 米兰, 加拿大, 德国（GPT流媒体）, '日本  (GPT流媒体）', 英国s] }
-    - { name: 自动选择, type: url-test, proxies: [请按教程使用最新版软件, 新加坡01-1Gbps, 香港01-1Gbps, 阿姆斯特丹, 孟买, 法国, 米兰, 加拿大, 德国（GPT流媒体）, '日本  (GPT流媒体）', 英国s], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: [请按教程使用最新版软件, 新加坡01-1Gbps, 香港01-1Gbps, 阿姆斯特丹, 孟买, 法国, 米兰, 加拿大, 德国（GPT流媒体）, '日本  (GPT流媒体）', 英国s], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: X Cloud, type: select, proxies: [自动选择, 故障转移, 请按教程使用最新版软件, 俄罗斯, 新加坡01-1Gbps, 香港01, 香港02, 阿姆斯特丹, 孟买, 法国, 米兰, 德国（GPT流媒体）, '日本  (GPT流媒体）', 英国s] }
+    - { name: 自动选择, type: url-test, proxies: [请按教程使用最新版软件, 俄罗斯, 新加坡01-1Gbps, 香港01, 香港02, 阿姆斯特丹, 孟买, 法国, 米兰, 德国（GPT流媒体）, '日本  (GPT流媒体）', 英国s], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: [请按教程使用最新版软件, 俄罗斯, 新加坡01-1Gbps, 香港01, 香港02, 阿姆斯特丹, 孟买, 法国, 米兰, 德国（GPT流媒体）, '日本  (GPT流媒体）', 英国s], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
-    - 'IP-CIDR,183.94.31.85/32,DIRECT,no-resolve'
-    - 'IP-CIDR,148.113.174.149/32,DIRECT,no-resolve'
     - 'IP-CIDR,141.227.140.37/32,DIRECT,no-resolve'
     - 'IP-CIDR,152.228.231.89/32,DIRECT,no-resolve'
     - 'IP-CIDR,148.113.37.24/32,DIRECT,no-resolve'
     - 'IP-CIDR,141.227.130.8/32,DIRECT,no-resolve'
+    - 'IP-CIDR,183.94.31.85/32,DIRECT,no-resolve'
     - 'IP-CIDR,183.232.249.247/32,DIRECT,no-resolve'
+    - 'IP-CIDR,45.140.169.157/32,DIRECT,no-resolve'
     - 'IP-CIDR,1.1.1.1/32,DIRECT,no-resolve'
     - 'DOMAIN,vips.lol,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,X Cloud'
