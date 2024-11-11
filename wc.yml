@@ -1,6 +1,6 @@
 # 生成地址：v2rayse.com
 # 模版名称：defaultName
-# 生成时间：2024-11-08 17:32:34
+# 生成时间：2024-11-11 11:14:35
 # 不要随意改变关键字，否则会导致出错
 # acl4SSR规则
 # 去广告：支持
@@ -107,6 +107,20 @@ proxies:
     udp: true
     password: 8b5cf2e4-05f9-4169-9eec-a6681fda6134
     skip-cert-verify: true
+  - name: HK 01
+    port: 19280
+    server: 103.17.99.54
+    type: vless
+    network: tcp
+    udp: true
+    servername: cdn-dynmedia-1.microsoft.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: F5_aTQFA2QRCig3L-qT0Qth76JdewSHK5MgEt_p8Dlo
+      short-id: a8bd783f
+    uuid: 89b90001-4206-4871-a99d-1744d48f215b
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -120,6 +134,7 @@ proxy-groups:
       - 白嫖专用节点2
       - 白嫖专用节点3
       - 白嫖专用节点4
+      - HK 01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -133,6 +148,7 @@ proxy-groups:
       - 白嫖专用节点2
       - 白嫖专用节点3
       - 白嫖专用节点4
+      - HK 01
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -146,6 +162,7 @@ proxy-groups:
       - 白嫖专用节点2
       - 白嫖专用节点3
       - 白嫖专用节点4
+      - HK 01
   - name: 📲 电报信息
     type: select
     proxies:
@@ -158,6 +175,7 @@ proxy-groups:
       - 白嫖专用节点2
       - 白嫖专用节点3
       - 白嫖专用节点4
+      - HK 01
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -170,6 +188,7 @@ proxy-groups:
       - 白嫖专用节点2
       - 白嫖专用节点3
       - 白嫖专用节点4
+      - HK 01
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -182,6 +201,7 @@ proxy-groups:
       - 白嫖专用节点2
       - 白嫖专用节点3
       - 白嫖专用节点4
+      - HK 01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -211,6 +231,7 @@ proxy-groups:
       - 白嫖专用节点2
       - 白嫖专用节点3
       - 白嫖专用节点4
+      - HK 01
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
