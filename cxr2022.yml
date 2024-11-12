@@ -1,1342 +1,608 @@
-#!MANAGED-CONFIG https://kcsub.vip/link/U3q6DvpKNpIHVeOi?clash=1
-
-#---------------------------------------------------#
-## 上次更新于：2024-07-10 10:18:15
-#---------------------------------------------------#
-
 mixed-port: 7890
 allow-lan: true
+bind-address: '*'
 mode: rule
 log-level: info
-external-controller: '0.0.0.0:9090'
-secret: ''
+external-controller: '127.0.0.1:9090'
 dns:
-  enable: true
-  ipv6: false
-  listen: '0.0.0.0:5353'
-  enhanced-mode: fake-ip
-  fake-ip-filter:
-    - '*.lan'
-    - localhost.ptlogin2.qq.com
-  nameserver:
-    - 'https://223.5.5.5/dns-query'
-    - 'https://doh.pub/dns-query'
-  fallback:
-    - 'https://162.159.36.1/dns-query'
-    - 'https://dns.google/dns-query'
-    - 'tls://8.8.8.8:853'
-  fallback-filter:
-    geoip: false
-    ipcidr:
-      - 0.0.0.0/8
-      - 10.0.0.0/8
-      - 100.64.0.0/10
-      - 127.0.0.0/8
-      - 169.254.0.0/16
-      - 172.16.0.0/12
-      - 192.0.0.0/24
-      - 192.0.2.0/24
-      - 192.88.99.0/24
-      - 192.168.0.0/16
-      - 198.18.0.0/15
-      - 198.51.100.0/24
-      - 203.0.113.0/24
-      - 224.0.0.0/4
-      - 240.0.0.0/4
-      - 255.255.255.255/32
-    domain:
-      - +.google.com
-      - +.facebook.com
-      - +.youtube.com
-      - +.githubusercontent.com
-      
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-
-
-
-  - name: wjkc123.com
-    type: vmess
-    server: 117.176.203.229
-    port: 34014
-    uuid: d3890dc8-cdac-4d63-b496-920371d2ac05
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: wj-kc.com
-    type: vmess
-    server: 117.176.203.229
-    port: 34014
-    uuid: 28f30e78-3b5f-49c0-97dd-93e26c9963ae
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: netcars.store
-    type: vmess
-    server: 183.232.159.51
-    port: 34014
-    uuid: 8822c8f3-367f-41f1-b54a-891ac9361d33
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 上面都是官网
-    type: vmess
-    server: 122.188.71.203
-    port: 34014
-    uuid: c02ca3ba-6c46-49c1-b983-49f97d42a617
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 每日官网换订阅
-    type: vmess
-    server: 120.226.29.10
-    port: 34014
-    uuid: 6e3bda8f-cb37-4963-8efe-48a461337208
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 否则连不上
-    type: vmess
-    server: 183.232.159.51
-    port: 34014
-    uuid: 69e08cbc-7e0e-4390-8179-ab6c8913c60e
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 账号:88888888@wjkc123.com
-    type: vmess
-    server: 183.232.159.51
-    port: 34014
-    uuid: 103e7304-919d-431d-8102-76358ffa9ea1
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 密码:88888888
-    type: vmess
-    server: 122.188.71.203
-    port: 34014
-    uuid: 1077dc5d-aac9-4539-ae0b-c9629209c728
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 每日200G不限速
-    type: vmess
-    server: 122.188.71.122
-    port: 34014
-    uuid: 02ffe962-3327-4022-a60d-9e71a54df2b0
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 超过后限速20Mb
-    type: vmess
-    server: 120.226.29.10
-    port: 34014
-    uuid: 9627b262-19ed-4196-a28e-9dd2ab7d1809
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 官网每日免费流量
-    type: vmess
-    server: 183.232.159.51
-    port: 34014
-    uuid: 5469980d-b7d9-42c4-9a2d-d03abdb95006
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 官网有体验券
-    type: vmess
-    server: 117.176.203.229
-    port: 34014
-    uuid: 752a352d-5ce1-4b78-ade7-e67dbec32084
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 共享账号时长持续增加
-    type: vmess
-    server: 183.232.159.51
-    port: 34014
-    uuid: 41f87cf4-547a-4575-bda4-440ef7287d62
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 这是共享账号
-    type: vmess
-    server: 117.176.203.229
-    port: 34014
-    uuid: 7ac534f7-b257-4b29-8fb1-89775668f593
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 独立账号速度快节点多
-    type: vmess
-    server: 183.232.159.51
-    port: 34014
-    uuid: 58fbb590-ea5a-4f13-b0c1-8fbc85ec57c4
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 推广50%现金返利
-    type: vmess
-    server: 122.188.71.203
-    port: 34014
-    uuid: 2d61f48a-9684-41b8-ab48-347620eff227
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 包时不限流量
-    type: vmess
-    server: 122.188.71.122
-    port: 34014
-    uuid: 9f79b8dd-28d4-41e1-b1b1-54354e51ce09
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 包量不限期限
-    type: vmess
-    server: 120.226.29.10
-    port: 34014
-    uuid: cd818d5f-3b67-4ddc-965e-f5655ffd06d4
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 设备数量不限
-    type: vmess
-    server: 183.232.159.51
-    port: 34014
-    uuid: ebf3a35e-c4a1-4fea-aa1d-8d2d9c3f792e
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 全平台客户端
-    type: vmess
-    server: 117.176.203.229
-    port: 34014
-    uuid: c5c74cc7-c84a-427f-9e33-da420a95d322
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 彩蛋
-    type: vmess
-    server: 183.232.159.51
-    port: 34014
-    uuid: ab0cb58b-d2b1-4493-86ad-0504e14d153a
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 分享越多流量越多
-    type: vmess
-    server: 120.226.29.10
-    port: 34014
-    uuid: c4f89969-f0ac-4a9c-90c8-c415d78f772f
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 1000人进官网
-    type: vmess
-    server: 122.188.71.203
-    port: 34014
-    uuid: 1a520325-7962-4c11-8559-f593661df20e
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: TG群内有折扣
-    type: vmess
-    server: 117.176.203.229
-    port: 34014
-    uuid: 203f977c-68c8-4443-8190-0a78d803df22
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 欢迎分享
-    type: vmess
-    server: 183.232.159.51
-    port: 34014
-    uuid: 93af7459-53a8-48d8-b624-c5e6bebc6bb6
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 不能用就官网换订阅链接
-    type: vmess
-    server: 120.226.29.10
-    port: 34014
-    uuid: d83dc08d-9f6f-4c9b-9186-44c184d98ab6
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 共享加100人加一个月
-    type: vmess
-    server: 122.188.71.203
-    port: 34014
-    uuid: b273e9ba-d9e3-4720-8372-4737ad109545
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 注册账号有专线
-    type: vmess
-    server: 117.176.203.229
-    port: 34014
-    uuid: bef184f4-f7c9-4589-b7c7-1b31afe65203
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
-
-  - name: 注册账号有18个国家
-    type: vmess
-    server: 117.176.203.229
-    port: 34014
-    uuid: 207bd6e0-e303-4be2-abb6-7f63e0214c2c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-
-    
-    
-
+    - { name: '剩余流量：190.25 GB', type: ss, server: node-hk.dlg365.com, port: 49901, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '距离下次重置剩余：27 天', type: ss, server: node-hk.dlg365.com, port: 49901, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: 套餐到期：2024-12-09, type: ss, server: node-hk.dlg365.com, port: 49901, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 01', type: ss, server: node-hk.dlg365.com, port: 49901, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 02', type: ss, server: node-hk.dlg365.com, port: 49902, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 03', type: ss, server: node-hk.dlg365.com, port: 49903, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 04', type: ss, server: node-hk.dlg365.com, port: 49904, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 05', type: ss, server: node-hk.dlg365.com, port: 49905, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 06', type: ss, server: node-hk.dlg365.com, port: 49906, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 07', type: ss, server: node-hk.dlg365.com, port: 49907, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 08', type: ss, server: node-hk.dlg365.com, port: 49908, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 09', type: ss, server: node-hk.dlg365.com, port: 49909, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 10', type: ss, server: node-hk.dlg365.com, port: 49910, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 11', type: ss, server: node-hk.dlg365.com, port: 49911, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 12', type: ss, server: node-hk.dlg365.com, port: 49912, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 13', type: ss, server: node-hk.dlg365.com, port: 49913, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 14', type: ss, server: node-hk.dlg365.com, port: 49914, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 15', type: ss, server: node-hk.dlg365.com, port: 49915, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 16', type: ss, server: node-hk.dlg365.com, port: 49916, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 17', type: ss, server: node-hk.dlg365.com, port: 49917, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 18', type: ss, server: node-hk.dlg365.com, port: 49918, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 19', type: ss, server: node-hk.dlg365.com, port: 49919, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇭🇰 HK 20', type: ss, server: node-hk.dlg365.com, port: 49920, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 01', type: ss, server: node-sg.dlg365.com, port: 49921, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 02', type: ss, server: node-sg.dlg365.com, port: 49922, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 03', type: ss, server: node-sg.dlg365.com, port: 49923, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 04', type: ss, server: node-sg.dlg365.com, port: 49924, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 05', type: ss, server: node-sg.dlg365.com, port: 49925, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 06', type: ss, server: node-sg.dlg365.com, port: 49926, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 07', type: ss, server: node-sg.dlg365.com, port: 49927, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 08', type: ss, server: node-sg.dlg365.com, port: 49928, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 09', type: ss, server: node-sg.dlg365.com, port: 49929, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 10', type: ss, server: node-sg.dlg365.com, port: 49930, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 11', type: ss, server: node-sg.dlg365.com, port: 49931, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 12', type: ss, server: node-sg.dlg365.com, port: 49932, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 13', type: ss, server: node-sg.dlg365.com, port: 49933, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 14', type: ss, server: node-sg.dlg365.com, port: 49934, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇸🇬 SG 15', type: ss, server: node-sg.dlg365.com, port: 49935, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 01', type: ss, server: node-jp.dlg365.com, port: 49936, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 02', type: ss, server: node-jp.dlg365.com, port: 49937, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 03', type: ss, server: node-jp.dlg365.com, port: 49938, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 04', type: ss, server: node-jp.dlg365.com, port: 49939, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 05', type: ss, server: node-jp.dlg365.com, port: 49940, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 06', type: ss, server: node-jp.dlg365.com, port: 49941, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 07', type: ss, server: node-jp.dlg365.com, port: 49942, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 08', type: ss, server: node-jp.dlg365.com, port: 49943, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 09', type: ss, server: node-jp.dlg365.com, port: 49944, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 10', type: ss, server: node-jp.dlg365.com, port: 49945, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 11', type: ss, server: node-jp.dlg365.com, port: 49946, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 12', type: ss, server: node-jp.dlg365.com, port: 49947, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 13', type: ss, server: node-jp.dlg365.com, port: 49948, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 14', type: ss, server: node-jp.dlg365.com, port: 49949, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇯🇵 JP 15', type: ss, server: node-jp.dlg365.com, port: 49950, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇺🇸 US 01', type: ss, server: node-us.dlg365.com, port: 49951, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇺🇸 US 02', type: ss, server: node-us.dlg365.com, port: 49952, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇺🇸 US 03', type: ss, server: node-us.dlg365.com, port: 49953, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇺🇸 US 04', type: ss, server: node-us.dlg365.com, port: 49954, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇺🇸 US 05', type: ss, server: node-us.dlg365.com, port: 49955, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇺🇸 US 06', type: ss, server: node-us.dlg365.com, port: 49956, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇺🇸 US 07', type: ss, server: node-us.dlg365.com, port: 49957, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇺🇸 US 08', type: ss, server: node-us.dlg365.com, port: 49958, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇺🇸 US 09', type: ss, server: node-us.dlg365.com, port: 49959, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇺🇸 US 10', type: ss, server: node-us.dlg365.com, port: 49960, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇹🇼 TW 01', type: ss, server: node-tw.dlg365.com, port: 49961, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇹🇼 TW 02', type: ss, server: node-tw.dlg365.com, port: 49962, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇹🇼 TW 03', type: ss, server: node-tw.dlg365.com, port: 49963, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇹🇼 TW 04', type: ss, server: node-tw.dlg365.com, port: 49964, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇹🇼 TW 05', type: ss, server: node-tw.dlg365.com, port: 49965, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇬🇧 UK 01 英国', type: ss, server: node-a.dlg365.com, port: 59966, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇬🇧 UK 02 英国', type: ss, server: node-a.dlg365.com, port: 49967, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇹🇷 TR 土耳其', type: ss, server: node-a.dlg365.com, port: 49971, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇨🇭 CH 瑞士', type: ss, server: node-a.dlg365.com, port: 49969, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
+    - { name: '🇳🇱 NL 荷兰', type: ss, server: node-a.dlg365.com, port: 49970, cipher: chacha20-ietf-poly1305, password: 362ff3b5-bb2b-43a6-86a9-b7179685aa53, udp: true }
 proxy-groups:
-  -
-    name: '🍃 节点选择'
-    type: select
-    proxies:
-      - '⭐️ 自动选择'
-      - wjkc123.com
-      - wj-kc.com
-      - netcars.store
-      - 上面都是官网
-      - 每日官网换订阅
-      - 否则连不上
-      - 账号:88888888@wjkc123.com
-      - 密码:88888888
-      - 每日200G不限速
-      - 超过后限速20Mb
-      - 官网每日免费流量
-      - 官网有体验券
-      - 共享账号时长持续增加
-      - 这是共享账号
-      - 独立账号速度快节点多
-      - 推广50%现金返利
-      - 包时不限流量
-      - 包量不限期限
-      - 设备数量不限
-      - 全平台客户端
-      - 彩蛋
-      - 分享越多流量越多
-      - 1000人进官网
-      - TG群内有折扣
-      - 欢迎分享
-      - 不能用就官网换订阅链接
-      - 共享加100人加一个月
-      - 注册账号有专线
-      - 注册账号有18个国家
-
-
-  -
-    name: '🍂 Domestic'
-    type: select
-    proxies:
-      - DIRECT
-
-  -
-    name: '☁️ Others'
-    type: select
-    proxies:
-      - '🍃 节点选择'
-      - DIRECT
-
-  -
-    name: '⭐️ 自动选择'
-    type: url-test
-    proxies:
-      - wjkc123.com
-      - wj-kc.com
-      - netcars.store
-      - 上面都是官网
-      - 每日官网换订阅
-      - 否则连不上
-      - 账号:88888888@wjkc123.com
-      - 密码:88888888
-      - 每日200G不限速
-      - 超过后限速20Mb
-      - 官网每日免费流量
-      - 官网有体验券
-      - 共享账号时长持续增加
-      - 这是共享账号
-      - 独立账号速度快节点多
-      - 推广50%现金返利
-      - 包时不限流量
-      - 包量不限期限
-      - 设备数量不限
-      - 全平台客户端
-      - 彩蛋
-      - 分享越多流量越多
-      - 1000人进官网
-      - TG群内有折扣
-      - 欢迎分享
-      - 不能用就官网换订阅链接
-      - 共享加100人加一个月
-      - 注册账号有专线
-      - 注册账号有18个国家
-
-    url: 'http://www.gstatic.com/generate_204'
-    interval: '28800'
-
-
+    - { name: 动力港, type: select, proxies: [自动选择, 故障转移, '剩余流量：190.25 GB', '距离下次重置剩余：27 天', 套餐到期：2024-12-09, '🇭🇰 HK 01', '🇭🇰 HK 02', '🇭🇰 HK 03', '🇭🇰 HK 04', '🇭🇰 HK 05', '🇭🇰 HK 06', '🇭🇰 HK 07', '🇭🇰 HK 08', '🇭🇰 HK 09', '🇭🇰 HK 10', '🇭🇰 HK 11', '🇭🇰 HK 12', '🇭🇰 HK 13', '🇭🇰 HK 14', '🇭🇰 HK 15', '🇭🇰 HK 16', '🇭🇰 HK 17', '🇭🇰 HK 18', '🇭🇰 HK 19', '🇭🇰 HK 20', '🇸🇬 SG 01', '🇸🇬 SG 02', '🇸🇬 SG 03', '🇸🇬 SG 04', '🇸🇬 SG 05', '🇸🇬 SG 06', '🇸🇬 SG 07', '🇸🇬 SG 08', '🇸🇬 SG 09', '🇸🇬 SG 10', '🇸🇬 SG 11', '🇸🇬 SG 12', '🇸🇬 SG 13', '🇸🇬 SG 14', '🇸🇬 SG 15', '🇯🇵 JP 01', '🇯🇵 JP 02', '🇯🇵 JP 03', '🇯🇵 JP 04', '🇯🇵 JP 05', '🇯🇵 JP 06', '🇯🇵 JP 07', '🇯🇵 JP 08', '🇯🇵 JP 09', '🇯🇵 JP 10', '🇯🇵 JP 11', '🇯🇵 JP 12', '🇯🇵 JP 13', '🇯🇵 JP 14', '🇯🇵 JP 15', '🇺🇸 US 01', '🇺🇸 US 02', '🇺🇸 US 03', '🇺🇸 US 04', '🇺🇸 US 05', '🇺🇸 US 06', '🇺🇸 US 07', '🇺🇸 US 08', '🇺🇸 US 09', '🇺🇸 US 10', '🇹🇼 TW 01', '🇹🇼 TW 02', '🇹🇼 TW 03', '🇹🇼 TW 04', '🇹🇼 TW 05', '🇬🇧 UK 01 英国', '🇬🇧 UK 02 英国', '🇹🇷 TR 土耳其', '🇨🇭 CH 瑞士', '🇳🇱 NL 荷兰'] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：190.25 GB', '距离下次重置剩余：27 天', 套餐到期：2024-12-09, '🇭🇰 HK 01', '🇭🇰 HK 02', '🇭🇰 HK 03', '🇭🇰 HK 04', '🇭🇰 HK 05', '🇭🇰 HK 06', '🇭🇰 HK 07', '🇭🇰 HK 08', '🇭🇰 HK 09', '🇭🇰 HK 10', '🇭🇰 HK 11', '🇭🇰 HK 12', '🇭🇰 HK 13', '🇭🇰 HK 14', '🇭🇰 HK 15', '🇭🇰 HK 16', '🇭🇰 HK 17', '🇭🇰 HK 18', '🇭🇰 HK 19', '🇭🇰 HK 20', '🇸🇬 SG 01', '🇸🇬 SG 02', '🇸🇬 SG 03', '🇸🇬 SG 04', '🇸🇬 SG 05', '🇸🇬 SG 06', '🇸🇬 SG 07', '🇸🇬 SG 08', '🇸🇬 SG 09', '🇸🇬 SG 10', '🇸🇬 SG 11', '🇸🇬 SG 12', '🇸🇬 SG 13', '🇸🇬 SG 14', '🇸🇬 SG 15', '🇯🇵 JP 01', '🇯🇵 JP 02', '🇯🇵 JP 03', '🇯🇵 JP 04', '🇯🇵 JP 05', '🇯🇵 JP 06', '🇯🇵 JP 07', '🇯🇵 JP 08', '🇯🇵 JP 09', '🇯🇵 JP 10', '🇯🇵 JP 11', '🇯🇵 JP 12', '🇯🇵 JP 13', '🇯🇵 JP 14', '🇯🇵 JP 15', '🇺🇸 US 01', '🇺🇸 US 02', '🇺🇸 US 03', '🇺🇸 US 04', '🇺🇸 US 05', '🇺🇸 US 06', '🇺🇸 US 07', '🇺🇸 US 08', '🇺🇸 US 09', '🇺🇸 US 10', '🇹🇼 TW 01', '🇹🇼 TW 02', '🇹🇼 TW 03', '🇹🇼 TW 04', '🇹🇼 TW 05', '🇬🇧 UK 01 英国', '🇬🇧 UK 02 英国', '🇹🇷 TR 土耳其', '🇨🇭 CH 瑞士', '🇳🇱 NL 荷兰'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：190.25 GB', '距离下次重置剩余：27 天', 套餐到期：2024-12-09, '🇭🇰 HK 01', '🇭🇰 HK 02', '🇭🇰 HK 03', '🇭🇰 HK 04', '🇭🇰 HK 05', '🇭🇰 HK 06', '🇭🇰 HK 07', '🇭🇰 HK 08', '🇭🇰 HK 09', '🇭🇰 HK 10', '🇭🇰 HK 11', '🇭🇰 HK 12', '🇭🇰 HK 13', '🇭🇰 HK 14', '🇭🇰 HK 15', '🇭🇰 HK 16', '🇭🇰 HK 17', '🇭🇰 HK 18', '🇭🇰 HK 19', '🇭🇰 HK 20', '🇸🇬 SG 01', '🇸🇬 SG 02', '🇸🇬 SG 03', '🇸🇬 SG 04', '🇸🇬 SG 05', '🇸🇬 SG 06', '🇸🇬 SG 07', '🇸🇬 SG 08', '🇸🇬 SG 09', '🇸🇬 SG 10', '🇸🇬 SG 11', '🇸🇬 SG 12', '🇸🇬 SG 13', '🇸🇬 SG 14', '🇸🇬 SG 15', '🇯🇵 JP 01', '🇯🇵 JP 02', '🇯🇵 JP 03', '🇯🇵 JP 04', '🇯🇵 JP 05', '🇯🇵 JP 06', '🇯🇵 JP 07', '🇯🇵 JP 08', '🇯🇵 JP 09', '🇯🇵 JP 10', '🇯🇵 JP 11', '🇯🇵 JP 12', '🇯🇵 JP 13', '🇯🇵 JP 14', '🇯🇵 JP 15', '🇺🇸 US 01', '🇺🇸 US 02', '🇺🇸 US 03', '🇺🇸 US 04', '🇺🇸 US 05', '🇺🇸 US 06', '🇺🇸 US 07', '🇺🇸 US 08', '🇺🇸 US 09', '🇺🇸 US 10', '🇹🇼 TW 01', '🇹🇼 TW 02', '🇹🇼 TW 03', '🇹🇼 TW 04', '🇹🇼 TW 05', '🇬🇧 UK 01 英国', '🇬🇧 UK 02 英国', '🇹🇷 TR 土耳其', '🇨🇭 CH 瑞士', '🇳🇱 NL 荷兰'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
-# (Global_TV)
-# > ABC
-- DOMAIN-SUFFIX,edgedatg.com,🍃 节点选择
-- DOMAIN-SUFFIX,go.com,🍃 节点选择
-
-# > AbemaTV
-- DOMAIN,linear-abematv.akamaized.net,🍃 节点选择
-- DOMAIN-SUFFIX,abema.io,🍃 节点选择
-- DOMAIN-SUFFIX,abema.tv,🍃 节点选择
-- DOMAIN-SUFFIX,akamaized.net,🍃 节点选择
-- DOMAIN-SUFFIX,ameba.jp,🍃 节点选择
-- DOMAIN-SUFFIX,hayabusa.io,🍃 节点选择
-
-# > Amazon Prime Video
-- DOMAIN-SUFFIX,aiv-cdn.net,🍃 节点选择
-- DOMAIN-SUFFIX,amazonaws.com,🍃 节点选择
-- DOMAIN-SUFFIX,amazonvideo.com,🍃 节点选择
-- DOMAIN-SUFFIX,llnwd.net,🍃 节点选择
-
-# > Bahamut
-- DOMAIN-SUFFIX,bahamut.com.tw,🍃 节点选择
-- DOMAIN-SUFFIX,gamer.com.tw,🍃 节点选择
-- DOMAIN-SUFFIX,hinet.net,🍃 节点选择
-
-# > BBC
-- DOMAIN-KEYWORD,bbcfmt,🍃 节点选择
-- DOMAIN-KEYWORD,co.uk,🍃 节点选择
-- DOMAIN-KEYWORD,uk-live,🍃 节点选择
-- DOMAIN-SUFFIX,bbc.co,🍃 节点选择
-- DOMAIN-SUFFIX,bbc.co.uk,🍃 节点选择
-- DOMAIN-SUFFIX,bbc.com,🍃 节点选择
-- DOMAIN-SUFFIX,bbci.co,🍃 节点选择
-- DOMAIN-SUFFIX,bbci.co.uk,🍃 节点选择
-
-# > CHOCO TV
-- DOMAIN-SUFFIX,chocotv.com.tw,🍃 节点选择
-
-# > Epicgames
-- DOMAIN-KEYWORD,epicgames,🍃 节点选择
-- DOMAIN-SUFFIX,helpshift.com,🍃 节点选择
-
-# > Fox+
-- DOMAIN-KEYWORD,foxplus,🍃 节点选择
-- DOMAIN-SUFFIX,config.fox.com,🍃 节点选择
-- DOMAIN-SUFFIX,emome.net,🍃 节点选择
-- DOMAIN-SUFFIX,fox.com,🍃 节点选择
-- DOMAIN-SUFFIX,foxdcg.com,🍃 节点选择
-- DOMAIN-SUFFIX,foxnow.com,🍃 节点选择
-- DOMAIN-SUFFIX,foxplus.com,🍃 节点选择
-- DOMAIN-SUFFIX,foxplay.com,🍃 节点选择
-- DOMAIN-SUFFIX,ipinfo.io,🍃 节点选择
-- DOMAIN-SUFFIX,mstage.io,🍃 节点选择
-- DOMAIN-SUFFIX,now.com,🍃 节点选择
-- DOMAIN-SUFFIX,theplatform.com,🍃 节点选择
-- DOMAIN-SUFFIX,urlload.net,🍃 节点选择
-
-# > HBO && HBO Go
-- DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,🍃 节点选择
-- DOMAIN-SUFFIX,hbo.com,🍃 节点选择
-- DOMAIN-SUFFIX,hboasia.com,🍃 节点选择
-- DOMAIN-SUFFIX,hbogo.com,🍃 节点选择
-- DOMAIN-SUFFIX,hbogoasia.hk,🍃 节点选择
-
-# > Hulu
-- DOMAIN-SUFFIX,happyon.jp,🍃 节点选择
-- DOMAIN-SUFFIX,hulu.com,🍃 节点选择
-- DOMAIN-SUFFIX,huluim.com,🍃 节点选择
-- DOMAIN-SUFFIX,hulustream.com,🍃 节点选择
-
-# > Imkan
-- DOMAIN-SUFFIX,imkan.tv,🍃 节点选择
-
-# > JOOX
-- DOMAIN-SUFFIX,joox.com,🍃 节点选择
-
-# > MytvSUPER
-- DOMAIN-KEYWORD,nowtv100,🍃 节点选择
-- DOMAIN-KEYWORD,rthklive,🍃 节点选择
-- DOMAIN-SUFFIX,mytvsuper.com,🍃 节点选择
-- DOMAIN-SUFFIX,tvb.com,🍃 节点选择
-
-# > Netflix
-- DOMAIN-SUFFIX,netflix.com,🍃 节点选择
-- DOMAIN-SUFFIX,netflix.net,🍃 节点选择
-- DOMAIN-SUFFIX,nflxext.com,🍃 节点选择
-- DOMAIN-SUFFIX,nflximg.com,🍃 节点选择
-- DOMAIN-SUFFIX,nflximg.net,🍃 节点选择
-- DOMAIN-SUFFIX,nflxso.net,🍃 节点选择
-- DOMAIN-SUFFIX,nflxvideo.net,🍃 节点选择
-
-# > Pandora
-- DOMAIN-SUFFIX,pandora.com,🍃 节点选择
-
-# > Sky GO
-- DOMAIN-SUFFIX,sky.com,🍃 节点选择
-- DOMAIN-SUFFIX,skygo.co.nz,🍃 节点选择
-
-# > Spotify
-- DOMAIN-KEYWORD,spotify,🍃 节点选择
-- DOMAIN-SUFFIX,scdn.co,🍃 节点选择
-- DOMAIN-SUFFIX,spoti.fi,🍃 节点选择
-
-# > viuTV
-- DOMAIN-SUFFIX,viu.tv,🍃 节点选择
-
-# > Youtube
-- DOMAIN-KEYWORD,youtube,🍃 节点选择
-- DOMAIN-SUFFIX,googlevideo.com,🍃 节点选择
-- DOMAIN-SUFFIX,gvt2.com,🍃 节点选择
-- DOMAIN-SUFFIX,youtu.be,🍃 节点选择
-
-# (Asian_TV)
-# > Bilibili
-- DOMAIN-KEYWORD,bilibili,🍂 Domestic
-- DOMAIN-SUFFIX,acg.tv,🍂 Domestic
-- DOMAIN-SUFFIX,acgvideo.com,🍂 Domestic
-- DOMAIN-SUFFIX,b23.tv,🍂 Domestic
-- DOMAIN-SUFFIX,biliapi.com,🍂 Domestic
-- DOMAIN-SUFFIX,biliapi.net,🍂 Domestic
-- DOMAIN-SUFFIX,bilibili.com,🍂 Domestic
-- DOMAIN-SUFFIX,biligame.com,🍂 Domestic
-- DOMAIN-SUFFIX,biligame.net,🍂 Domestic
-- DOMAIN-SUFFIX,hdslb.com,🍂 Domestic
-- DOMAIN-SUFFIX,im9.com,🍂 Domestic
-
-# > IQIYI
-- DOMAIN-KEYWORD,qiyi,🍂 Domestic
-- DOMAIN-SUFFIX,qy.net,🍂 Domestic
-
-# > letv
-- DOMAIN-SUFFIX,api.mob.app.letv.com,🍂 Domestic
-
-# > NeteaseMusic
-- DOMAIN-SUFFIX,163yun.com,🍂 Domestic
-- DOMAIN-SUFFIX,music.126.net,🍂 Domestic
-- DOMAIN-SUFFIX,music.163.com,🍂 Domestic
-
-# > Tencent Video
-- DOMAIN-SUFFIX,vv.video.qq.com,🍂 Domestic
-
-# China Area Network
-# > Microsoft
-- DOMAIN-SUFFIX,microsoft.com,🍂 Domestic
-- DOMAIN-SUFFIX,windows.net,🍂 Domestic
-- DOMAIN-SUFFIX,sfx.ms,🍂 Domestic
-- DOMAIN-SUFFIX,sharepoint.com,🍂 Domestic
-- DOMAIN-KEYWORD,officecdn,🍂 Domestic
-# > Blizzard
-- DOMAIN-SUFFIX,blizzard.com,🍂 Domestic
-- DOMAIN-SUFFIX,battle.net,🍂 Domestic
-- DOMAIN,blzddist1-a.akamaihd.net,🍂 Domestic
-# > Tencent
-#USER-AGENT,MicroMessenger%20Client,🍂 Domestic
-#USER-AGENT,WeChat*,🍂 Domestic
-- DOMAIN-SUFFIX,qq.com,🍂 Domestic
-- DOMAIN-SUFFIX,qpic.cn,🍂 Domestic
-- DOMAIN-SUFFIX,tencent.com,🍂 Domestic
-# > Alibaba
-- DOMAIN-SUFFIX,alibaba.com,🍂 Domestic
-- DOMAIN-SUFFIX,alicdn.com,🍂 Domestic
-- DOMAIN-SUFFIX,amap.com,🍂 Domestic
-- DOMAIN-SUFFIX,dingtalk.com,🍂 Domestic
-- DOMAIN-SUFFIX,taobao.com,🍂 Domestic
-- DOMAIN-SUFFIX,tmall.com,🍂 Domestic
-- DOMAIN-SUFFIX,ykimg.com,🍂 Domestic
-- DOMAIN-SUFFIX,youku.com,🍂 Domestic
-- DOMAIN-SUFFIX,xiami.com,🍂 Domestic
-- DOMAIN-SUFFIX,xiami.net,🍂 Domestic
-# > NetEase
-- DOMAIN-SUFFIX,163.com,🍂 Domestic
-- DOMAIN-SUFFIX,126.net,🍂 Domestic
-- DOMAIN-SUFFIX,163yun.com,🍂 Domestic
-# > Sohu
-- DOMAIN-SUFFIX,sohu.com.cn,🍂 Domestic
-- DOMAIN-SUFFIX,itc.cn,🍂 Domestic
-- DOMAIN-SUFFIX,sohu.com,🍂 Domestic
-- DOMAIN-SUFFIX,v-56.com,🍂 Domestic
-# > Sina
-- DOMAIN-SUFFIX,weibo.com,🍂 Domestic
-- DOMAIN-SUFFIX,weibo.cn,🍂 Domestic
-# > JD
-- DOMAIN-SUFFIX,jd.com,🍂 Domestic
-- DOMAIN-SUFFIX,jd.hk,🍂 Domestic
-- DOMAIN-SUFFIX,360buyimg.com,🍂 Domestic
-# > MI
-- DOMAIN-SUFFIX,duokan.com,🍂 Domestic
-- DOMAIN-SUFFIX,mi-img.com,🍂 Domestic
-- DOMAIN-SUFFIX,mifile.cn,🍂 Domestic
-- DOMAIN-SUFFIX,xiaomi.com,🍂 Domestic
-# > bilibili
-- DOMAIN-SUFFIX,acgvideo.com,🍂 Domestic
-- DOMAIN-SUFFIX,bilibili.com,🍂 Domestic
-- DOMAIN-SUFFIX,hdslb.com,🍂 Domestic
-# > iQiyi
-- DOMAIN-SUFFIX,iqiyi.com,🍂 Domestic
-- DOMAIN-SUFFIX,iqiyipic.com,🍂 Domestic
-- DOMAIN-SUFFIX,71.am.com,🍂 Domestic
-# > HunanTV
-- DOMAIN-SUFFIX,hitv.com,🍂 Domestic
-- DOMAIN-SUFFIX,mgtv.com,🍂 Domestic
-# > Meitu
-- DOMAIN-SUFFIX,meitu.com,🍂 Domestic
-- DOMAIN-SUFFIX,meitudata.com,🍂 Domestic
-- DOMAIN-SUFFIX,meipai.com,🍂 Domestic
-# > YYeTs
-- DOMAIN-SUFFIX,zmzapi.com,🍂 Domestic
-- DOMAIN-SUFFIX,zimuzu.tv,🍂 Domestic
-- DOMAIN-SUFFIX,zmzfile.com,🍂 Domestic
-- DOMAIN-SUFFIX,zmzapi.net,🍂 Domestic
-# > 蛋蛋赞
-- DOMAIN-SUFFIX,baduziyuan.com,🍂 Domestic
-- DOMAIN-SUFFIX,com-hs-hkdy.com,🍂 Domestic
-- DOMAIN-SUFFIX,czybjz.com,🍂 Domestic
-- DOMAIN-SUFFIX,dandanzan.com,🍂 Domestic
-- DOMAIN-SUFFIX,fjhps.com,🍂 Domestic
-- DOMAIN-SUFFIX,kuyunbo.club,🍂 Domestic
-# > Baidu
-- DOMAIN-SUFFIX,baidu.com,🍂 Domestic
-- DOMAIN-SUFFIX,baidubcr.com,🍂 Domestic
-- DOMAIN-SUFFIX,bdstatic.com,🍂 Domestic
-# > ChinaNet
-- DOMAIN-SUFFIX,189.cn,🍂 Domestic
-- DOMAIN-SUFFIX,21cn.com,🍂 Domestic
-# > ByteDance
-- DOMAIN-SUFFIX,bytecdn.cn,🍂 Domestic
-- DOMAIN-SUFFIX,pstatp.com,🍂 Domestic
-- DOMAIN-SUFFIX,snssdk.com,🍂 Domestic
-- DOMAIN-SUFFIX,toutiao.com,🍂 Domestic
-# > Content Delivery Network
-# > Akamai
-- DOMAIN-SUFFIX,akadns.net,🍂 Domestic
-# - DOMAIN-SUFFIX,akamai.net,🍂 Domestic
-# - DOMAIN-SUFFIX,akamaiedge.net,🍂 Domestic
-# - DOMAIN-SUFFIX,akamaihd.net,🍂 Domestic
-# - DOMAIN-SUFFIX,akamaistream.net,🍂 Domestic
-# - DOMAIN-SUFFIX,akamaized.net,🍂 Domestic
-# > ChinaNetCenter
-- DOMAIN-SUFFIX,chinanetcenter.com,🍂 Domestic
-- DOMAIN-SUFFIX,wangsu.com,🍂 Domestic
-# > IP Query
-- DOMAIN-SUFFIX,ipip.net,🍂 Domestic
-- DOMAIN-SUFFIX,ip.cn,🍂 Domestic
-- DOMAIN-SUFFIX,ip.la,🍂 Domestic
-- DOMAIN-SUFFIX,ip-cdn.com,🍂 Domestic
-- DOMAIN-SUFFIX,ipv6-test.com,🍂 Domestic
-- DOMAIN-SUFFIX,test-ipv6.com,🍂 Domestic
-- DOMAIN-SUFFIX,whatismyip.com,🍂 Domestic
-- DOMAIN,ip.bjango.com,🍂 Domestic
-# > Other
-- DOMAIN-SUFFIX,40017.cn,🍂 Domestic
-- DOMAIN-SUFFIX,broadcasthe.net,🍂 Domestic
-- DOMAIN-SUFFIX,cailianpress.com,🍂 Domestic
-- DOMAIN-SUFFIX,chdbits.co,🍂 Domestic
-- DOMAIN-SUFFIX,chushou.tv,🍂 Domestic
-- DOMAIN-SUFFIX,cmbchina.com,🍂 Domestic
-- DOMAIN-SUFFIX,cmbimg.com,🍂 Domestic
-- DOMAIN-SUFFIX,cmct.tv,🍂 Domestic
-- DOMAIN-SUFFIX,cmvideo.cn,🍂 Domestic
-- DOMAIN-SUFFIX,cnlang.org,🍂 Domestic
-- DOMAIN-SUFFIX,doubanio.com,🍂 Domestic
-- DOMAIN-SUFFIX,douyu.com,🍂 Domestic
-- DOMAIN-SUFFIX,douyucdn.cn,🍂 Domestic
-- DOMAIN-SUFFIX,dxycdn.com,🍂 Domestic
-- DOMAIN-SUFFIX,hicloud.com,🍂 Domestic
-- DOMAIN-SUFFIX,hdchina.org,🍂 Domestic
-- DOMAIN-SUFFIX,hdcmct.org,🍂 Domestic
-- DOMAIN-SUFFIX,ithome.com,🍂 Domestic
-- DOMAIN-SUFFIX,kkmh.com,🍂 Domestic
-- DOMAIN-SUFFIX,ksosoft.com,🍂 Domestic
-- DOMAIN-SUFFIX,maoyun.tv,🍂 Domestic
-- DOMAIN-SUFFIX,meituan.net,🍂 Domestic
-- DOMAIN-SUFFIX,mobike.com,🍂 Domestic
-- DOMAIN-SUFFIX,mubu.com,🍂 Domestic
-- DOMAIN-SUFFIX,myzaker.com,🍂 Domestic
-- DOMAIN-SUFFIX,ourbits.club,🍂 Domestic
-- DOMAIN-SUFFIX,passthepopcorn.me,🍂 Domestic
-- DOMAIN-SUFFIX,paypal.com,🍂 Domestic
-- DOMAIN-SUFFIX,paypalobjects.com,🍂 Domestic
-- DOMAIN-SUFFIX,privatehd.to,🍂 Domestic
-- DOMAIN-SUFFIX,redacted.ch,🍂 Domestic
-- DOMAIN-SUFFIX,ruguoapp.com,🍂 Domestic
-- DOMAIN-SUFFIX,smzdm.com,🍂 Domestic
-- DOMAIN-SUFFIX,sogou.com,🍂 Domestic
-- DOMAIN-SUFFIX,teamviewer.com,🍂 Domestic
-- DOMAIN-SUFFIX,totheglory.im,🍂 Domestic
-- DOMAIN-SUFFIX,udacity.com,🍂 Domestic
-- DOMAIN-SUFFIX,xmcdn.com,🍂 Domestic
-- DOMAIN-SUFFIX,yangkeduo.com,🍂 Domestic
-- DOMAIN-SUFFIX,zhihu.com,🍂 Domestic
-- DOMAIN-SUFFIX,zhimg.com,🍂 Domestic
-#USER-AGENT,NeteaseMusic*,🍂 Domestic
-#USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,🍂 Domestic
-
-# (DNS Cache Pollution Protection)
-# > Google
-- DOMAIN-SUFFIX,appspot.com,🍃 节点选择
-- DOMAIN-SUFFIX,blogger.com,🍃 节点选择
-- DOMAIN-SUFFIX,getoutline.org,🍃 节点选择
-- DOMAIN-SUFFIX,gvt0.com,🍃 节点选择
-- DOMAIN-SUFFIX,gvt1.com,🍃 节点选择
-- DOMAIN-SUFFIX,gvt3.com,🍃 节点选择
-- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🍃 节点选择
-- DOMAIN-KEYWORD,google,🍃 节点选择
-- DOMAIN-KEYWORD,blogspot,🍃 节点选择
-# > Facebook
-- DOMAIN-SUFFIX,cdninstagram.com,🍃 节点选择
-- DOMAIN-SUFFIX,fb.com,🍃 节点选择
-- DOMAIN-SUFFIX,fb.me,🍃 节点选择
-- DOMAIN-SUFFIX,fbaddins.com,🍃 节点选择
-- DOMAIN-SUFFIX,fbcdn.net,🍃 节点选择
-- DOMAIN-SUFFIX,fbsbx.com,🍃 节点选择
-- DOMAIN-SUFFIX,fbworkmail.com,🍃 节点选择
-- DOMAIN-SUFFIX,instagram.com,🍃 节点选择
-- DOMAIN-SUFFIX,m.me,🍃 节点选择
-- DOMAIN-SUFFIX,messenger.com,🍃 节点选择
-- DOMAIN-SUFFIX,oculus.com,🍃 节点选择
-- DOMAIN-SUFFIX,oculuscdn.com,🍃 节点选择
-- DOMAIN-SUFFIX,rocksdb.org,🍃 节点选择
-- DOMAIN-SUFFIX,whatsapp.com,🍃 节点选择
-- DOMAIN-SUFFIX,whatsapp.net,🍃 节点选择
-- DOMAIN-KEYWORD,facebook,🍃 节点选择
-# > Twitter
-- DOMAIN-SUFFIX,pscp.tv,🍃 节点选择
-- DOMAIN-SUFFIX,periscope.tv,🍃 节点选择
-- DOMAIN-SUFFIX,t.co,🍃 节点选择
-- DOMAIN-SUFFIX,twimg.co,🍃 节点选择
-- DOMAIN-SUFFIX,twimg.com,🍃 节点选择
-- DOMAIN-SUFFIX,twitpic.com,🍃 节点选择
-- DOMAIN-SUFFIX,vine.co,🍃 节点选择
-- DOMAIN-KEYWORD,twitter,🍃 节点选择
-# > Telegram
-- DOMAIN-SUFFIX,t.me,🍃 节点选择
-- DOMAIN-SUFFIX,tdesktop.com,🍃 节点选择
-- DOMAIN-SUFFIX,telegra.ph,🍃 节点选择
-- DOMAIN-SUFFIX,telegram.me,🍃 节点选择
-- DOMAIN-SUFFIX,telegram.org,🍃 节点选择
-# > Line
-- DOMAIN-SUFFIX,line.me,🍃 节点选择
-- DOMAIN-SUFFIX,line-apps.com,🍃 节点选择
-- DOMAIN-SUFFIX,line-scdn.net,🍃 节点选择
-- DOMAIN-SUFFIX,naver.jp,🍃 节点选择
-# > Other
-- DOMAIN-SUFFIX,4shared.com,🍃 节点选择
-- DOMAIN-SUFFIX,881903.com,🍃 节点选择
-- DOMAIN-SUFFIX,abc.net.au,🍃 节点选择
-- DOMAIN-SUFFIX,abebooks.com,🍃 节点选择
-- DOMAIN-SUFFIX,amazon.co.jp,🍃 节点选择
-- DOMAIN-SUFFIX,apigee.com,🍃 节点选择
-- DOMAIN-SUFFIX,apk-dl.com,🍃 节点选择
-- DOMAIN-SUFFIX,apkmirror.com,🍃 节点选择
-- DOMAIN-SUFFIX,apkmonk.com,🍃 节点选择
-- DOMAIN-SUFFIX,apkpure.com,🍃 节点选择
-- DOMAIN-SUFFIX,aptoide.com,🍃 节点选择
-- DOMAIN-SUFFIX,archive.is,🍃 节点选择
-- DOMAIN-SUFFIX,archive.org,🍃 节点选择
-- DOMAIN-SUFFIX,arte.tv,🍃 节点选择
-- DOMAIN-SUFFIX,ask.com,🍃 节点选择
-- DOMAIN-SUFFIX,avgle.com,🍃 节点选择
-- DOMAIN-SUFFIX,badoo.com,🍃 节点选择
-- DOMAIN-SUFFIX,bandwagonhost.com,🍃 节点选择
-- DOMAIN-SUFFIX,bbc.com,🍃 节点选择
-- DOMAIN-SUFFIX,behance.net,🍃 节点选择
-- DOMAIN-SUFFIX,bibox.com,🍃 节点选择
-- DOMAIN-SUFFIX,biggo.com.tw,🍃 节点选择
-- DOMAIN-SUFFIX,binance.com,🍃 节点选择
-- DOMAIN-SUFFIX,bitcointalk.org,🍃 节点选择
-- DOMAIN-SUFFIX,bitfinex.com,🍃 节点选择
-- DOMAIN-SUFFIX,bitmex.com,🍃 节点选择
-- DOMAIN-SUFFIX,bit-z.com,🍃 节点选择
-- DOMAIN-SUFFIX,bloglovin.com,🍃 节点选择
-- DOMAIN-SUFFIX,bloomberg.cn,🍃 节点选择
-- DOMAIN-SUFFIX,bloomberg.com,🍃 节点选择
-- DOMAIN-SUFFIX,book.com.tw,🍃 节点选择
-- DOMAIN-SUFFIX,booklive.jp,🍃 节点选择
-- DOMAIN-SUFFIX,books.com.tw,🍃 节点选择
-- DOMAIN-SUFFIX,box.com,🍃 节点选择
-- DOMAIN-SUFFIX,brookings.edu,🍃 节点选择
-- DOMAIN-SUFFIX,businessinsider.com,🍃 节点选择
-- DOMAIN-SUFFIX,bwh1.net,🍃 节点选择
-- DOMAIN-SUFFIX,castbox.fm,🍃 节点选择
-- DOMAIN-SUFFIX,cbc.ca,🍃 节点选择
-- DOMAIN-SUFFIX,cdw.com,🍃 节点选择
-- DOMAIN-SUFFIX,change.org,🍃 节点选择
-- DOMAIN-SUFFIX,ck101.com,🍃 节点选择
-- DOMAIN-SUFFIX,clarionproject.org,🍃 节点选择
-- DOMAIN-SUFFIX,clyp.it,🍃 节点选择
-- DOMAIN-SUFFIX,cna.com.tw,🍃 节点选择
-- DOMAIN-SUFFIX,comparitech.com,🍃 节点选择
-- DOMAIN-SUFFIX,conoha.jp,🍃 节点选择
-- DOMAIN-SUFFIX,crucial.com,🍃 节点选择
-- DOMAIN-SUFFIX,cts.com.tw,🍃 节点选择
-- DOMAIN-SUFFIX,cw.com.tw,🍃 节点选择
-- DOMAIN-SUFFIX,cyberctm.com,🍃 节点选择
-- DOMAIN-SUFFIX,dailymotion.com,🍃 节点选择
-- DOMAIN-SUFFIX,dailyview.tw,🍃 节点选择
-- DOMAIN-SUFFIX,daum.net,🍃 节点选择
-- DOMAIN-SUFFIX,daumcdn.net,🍃 节点选择
-- DOMAIN-SUFFIX,dcard.tw,🍃 节点选择
-- DOMAIN-SUFFIX,deepdiscount.com,🍃 节点选择
-- DOMAIN-SUFFIX,deezer.com,🍃 节点选择
-- DOMAIN-SUFFIX,depositphotos.com,🍃 节点选择
-- DOMAIN-SUFFIX,disconnect.me,🍃 节点选择
-- DOMAIN-SUFFIX,discordapp.com,🍃 节点选择
-- DOMAIN-SUFFIX,discordapp.net,🍃 节点选择
-- DOMAIN-SUFFIX,disqus.com,🍃 节点选择
-- DOMAIN-SUFFIX,dns2go.com,🍃 节点选择
-- DOMAIN-SUFFIX,dropbox.com,🍃 节点选择
-- DOMAIN-SUFFIX,dropboxusercontent.com,🍃 节点选择
-- DOMAIN-SUFFIX,duckduckgo.com,🍃 节点选择
-- DOMAIN-SUFFIX,dw.com,🍃 节点选择
-- DOMAIN-SUFFIX,dynu.com,🍃 节点选择
-- DOMAIN-SUFFIX,earthcam.com,🍃 节点选择
-- DOMAIN-SUFFIX,ebookservice.tw,🍃 节点选择
-- DOMAIN-SUFFIX,economist.com,🍃 节点选择
-- DOMAIN-SUFFIX,edgecastcdn.net,🍃 节点选择
-- DOMAIN-SUFFIX,edu,🍃 节点选择
-- DOMAIN-SUFFIX,elpais.com,🍃 节点选择
-- DOMAIN-SUFFIX,enanyang.my,🍃 节点选择
-- DOMAIN-SUFFIX,euronews.com,🍃 节点选择
-- DOMAIN-SUFFIX,feedly.com,🍃 节点选择
-- DOMAIN-SUFFIX,files.wordpress.com,🍃 节点选择
-- DOMAIN-SUFFIX,flickr.com,🍃 节点选择
-- DOMAIN-SUFFIX,flitto.com,🍃 节点选择
-- DOMAIN-SUFFIX,foreignpolicy.com,🍃 节点选择
-- DOMAIN-SUFFIX,friday.tw,🍃 节点选择
-- DOMAIN-SUFFIX,gate.io,🍃 节点选择
-- DOMAIN-SUFFIX,getlantern.org,🍃 节点选择
-- DOMAIN-SUFFIX,getsync.com,🍃 节点选择
-- DOMAIN-SUFFIX,🍃 节点选择voices.org,🍃 节点选择
-- DOMAIN-SUFFIX,goo.ne.jp,🍃 节点选择
-- DOMAIN-SUFFIX,goodreads.com,🍃 节点选择
-- DOMAIN-SUFFIX,gov.tw,🍃 节点选择
-- DOMAIN-SUFFIX,gumroad.com,🍃 节点选择
-- DOMAIN-SUFFIX,hbg.com,🍃 节点选择
-- DOMAIN-SUFFIX,hightail.com,🍃 节点选择
-- DOMAIN-SUFFIX,hk01.com,🍃 节点选择
-- DOMAIN-SUFFIX,hkbf.org,🍃 节点选择
-- DOMAIN-SUFFIX,hkbookcity.com,🍃 节点选择
-- DOMAIN-SUFFIX,hkej.com,🍃 节点选择
-- DOMAIN-SUFFIX,hket.com,🍃 节点选择
-- DOMAIN-SUFFIX,hkgolden.com,🍃 节点选择
-- DOMAIN-SUFFIX,hootsuite.com,🍃 节点选择
-- DOMAIN-SUFFIX,hudson.org,🍃 节点选择
-- DOMAIN-SUFFIX,huobi.pro,🍃 节点选择
-- DOMAIN-SUFFIX,initiummall.com,🍃 节点选择
-- DOMAIN-SUFFIX,ipfs.io,🍃 节点选择
-- DOMAIN-SUFFIX,issuu.com,🍃 节点选择
-- DOMAIN-SUFFIX,japantimes.co.jp,🍃 节点选择
-- DOMAIN-SUFFIX,jiji.com,🍃 节点选择
-- DOMAIN-SUFFIX,jinx.com,🍃 节点选择
-- DOMAIN-SUFFIX,jkforum.net,🍃 节点选择
-- DOMAIN-SUFFIX,joinmastodon.org,🍃 节点选择
-- DOMAIN-SUFFIX,kakao.com,🍃 节点选择
-- DOMAIN-SUFFIX,lihkg.com,🍃 节点选择
-- DOMAIN-SUFFIX,live.com,🍃 节点选择
-- DOMAIN-SUFFIX,mail.ru,🍃 节点选择
-- DOMAIN-SUFFIX,matters.news,🍃 节点选择
-- DOMAIN-SUFFIX,medium.com,🍃 节点选择
-- DOMAIN-SUFFIX,mega.nz,🍃 节点选择
-- DOMAIN-SUFFIX,mil,🍃 节点选择
-- DOMAIN-SUFFIX,mobile01.com,🍃 节点选择
-- DOMAIN-SUFFIX,naver.com,🍃 节点选择
-- DOMAIN-SUFFIX,nikkei.com,🍃 节点选择
-- DOMAIN-SUFFIX,nofile.io,🍃 节点选择
-- DOMAIN-SUFFIX,now.com,🍃 节点选择
-- DOMAIN-SUFFIX,nyt.com,🍃 节点选择
-- DOMAIN-SUFFIX,nytchina.com,🍃 节点选择
-- DOMAIN-SUFFIX,nytcn.me,🍃 节点选择
-- DOMAIN-SUFFIX,nytco.com,🍃 节点选择
-- DOMAIN-SUFFIX,nytimes.com,🍃 节点选择
-- DOMAIN-SUFFIX,nytimg.com,🍃 节点选择
-- DOMAIN-SUFFIX,nytlog.com,🍃 节点选择
-- DOMAIN-SUFFIX,nytstyle.com,🍃 节点选择
-- DOMAIN-SUFFIX,ok.ru,🍃 节点选择
-- DOMAIN-SUFFIX,okex.com,🍃 节点选择
-- DOMAIN-SUFFIX,pcloud.com,🍃 节点选择
-- DOMAIN-SUFFIX,pinimg.com,🍃 节点选择
-- DOMAIN-SUFFIX,pixiv.net,🍃 节点选择
-- DOMAIN-SUFFIX,pornhub.com,🍃 节点选择
-- DOMAIN-SUFFIX,pureapk.com,🍃 节点选择
-- DOMAIN-SUFFIX,quora.com,🍃 节点选择
-- DOMAIN-SUFFIX,quoracdn.net,🍃 节点选择
-- DOMAIN-SUFFIX,rakuten.co.jp,🍃 节点选择
-- DOMAIN-SUFFIX,reddit.com,🍃 节点选择
-- DOMAIN-SUFFIX,redditmedia.com,🍃 节点选择
-- DOMAIN-SUFFIX,resilio.com,🍃 节点选择
-- DOMAIN-SUFFIX,reuters.com,🍃 节点选择
-- DOMAIN-SUFFIX,scmp.com,🍃 节点选择
-- DOMAIN-SUFFIX,scribd.com,🍃 节点选择
-- DOMAIN-SUFFIX,seatguru.com,🍃 节点选择
-- DOMAIN-SUFFIX,shadowsocks.org,🍃 节点选择
-- DOMAIN-SUFFIX,slideshare.net,🍃 节点选择
-- DOMAIN-SUFFIX,soundcloud.com,🍃 节点选择
-- DOMAIN-SUFFIX,startpage.com,🍃 节点选择
-- DOMAIN-SUFFIX,steemit.com,🍃 节点选择
-- DOMAIN-SUFFIX,t66y.com,🍃 节点选择
-- DOMAIN-SUFFIX,teco-hk.org,🍃 节点选择
-- DOMAIN-SUFFIX,teco-mo.org,🍃 节点选择
-- DOMAIN-SUFFIX,teddysun.com,🍃 节点选择
-- DOMAIN-SUFFIX,theinitium.com,🍃 节点选择
-- DOMAIN-SUFFIX,tineye.com,🍃 节点选择
-- DOMAIN-SUFFIX,torproject.org,🍃 节点选择
-- DOMAIN-SUFFIX,tumblr.com,🍃 节点选择
-- DOMAIN-SUFFIX,turbobit.net,🍃 节点选择
-- DOMAIN-SUFFIX,twitch.tv,🍃 节点选择
-- DOMAIN-SUFFIX,udn.com,🍃 节点选择
-- DOMAIN-SUFFIX,unseen.is,🍃 节点选择
-- DOMAIN-SUFFIX,upmedia.mg,🍃 节点选择
-- DOMAIN-SUFFIX,uptodown.com,🍃 节点选择
-- DOMAIN-SUFFIX,ustream.tv,🍃 节点选择
-- DOMAIN-SUFFIX,uwants.com,🍃 节点选择
-- DOMAIN-SUFFIX,v2ray.com,🍃 节点选择
-- DOMAIN-SUFFIX,viber.com,🍃 节点选择
-- DOMAIN-SUFFIX,videopress.com,🍃 节点选择
-- DOMAIN-SUFFIX,vimeo.com,🍃 节点选择
-- DOMAIN-SUFFIX,voxer.com,🍃 节点选择
-- DOMAIN-SUFFIX,vzw.com,🍃 节点选择
-- DOMAIN-SUFFIX,w3schools.com,🍃 节点选择
-- DOMAIN-SUFFIX,wattpad.com,🍃 节点选择
-- DOMAIN-SUFFIX,whoer.net,🍃 节点选择
-- DOMAIN-SUFFIX,wikimapia.org,🍃 节点选择
-- DOMAIN-SUFFIX,wikipedia.org,🍃 节点选择
-- DOMAIN-SUFFIX,wire.com,🍃 节点选择
-- DOMAIN-SUFFIX,worldcat.org,🍃 节点选择
-- DOMAIN-SUFFIX,wsj.com,🍃 节点选择
-- DOMAIN-SUFFIX,wsj.net,🍃 节点选择
-- DOMAIN-SUFFIX,xboxlive.com,🍃 节点选择
-- DOMAIN-SUFFIX,xvideos.com,🍃 节点选择
-- DOMAIN-SUFFIX,yahoo.com,🍃 节点选择
-- DOMAIN-SUFFIX,yesasia.com,🍃 节点选择
-- DOMAIN-SUFFIX,yes-news.com,🍃 节点选择
-- DOMAIN-SUFFIX,yomiuri.co.jp,🍃 节点选择
-- DOMAIN-SUFFIX,you-get.org,🍃 节点选择
-- DOMAIN-SUFFIX,zb.com,🍃 节点选择
-- DOMAIN-SUFFIX,zello.com,🍃 节点选择
-- DOMAIN-SUFFIX,zeronet.io,🍃 节点选择
-- DOMAIN,cdn-images.mailchimp.com,🍃 节点选择
-- DOMAIN,id.heroku.com,🍃 节点选择
-- DOMAIN-KEYWORD,github,🍃 节点选择
-- DOMAIN-KEYWORD,jav,🍃 节点选择
-- DOMAIN-KEYWORD,pinterest,🍃 节点选择
-- DOMAIN-KEYWORD,porn,🍃 节点选择
-- DOMAIN-KEYWORD,wikileaks,🍃 节点选择
-
-# (Region-Restricted Access Denied)
-- DOMAIN-SUFFIX,apartmentratings.com,🍃 节点选择
-- DOMAIN-SUFFIX,apartments.com,🍃 节点选择
-- DOMAIN-SUFFIX,bankmobilevibe.com,🍃 节点选择
-- DOMAIN-SUFFIX,bing.com,🍃 节点选择
-- DOMAIN-SUFFIX,booktopia.com.au,🍃 节点选择
-- DOMAIN-SUFFIX,centauro.com.br,🍃 节点选择
-- DOMAIN-SUFFIX,clearsurance.com,🍃 节点选择
-- DOMAIN-SUFFIX,costco.com,🍃 节点选择
-- DOMAIN-SUFFIX,crackle.com,🍃 节点选择
-- DOMAIN-SUFFIX,depositphotos.cn,🍃 节点选择
-- DOMAIN-SUFFIX,dish.com,🍃 节点选择
-- DOMAIN-SUFFIX,dmm.co.jp,🍃 节点选择
-- DOMAIN-SUFFIX,dmm.com,🍃 节点选择
-- DOMAIN-SUFFIX,dnvod.tv,🍃 节点选择
-- DOMAIN-SUFFIX,esurance.com,🍃 节点选择
-- DOMAIN-SUFFIX,extmatrix.com,🍃 节点选择
-- DOMAIN-SUFFIX,fastpic.ru,🍃 节点选择
-- DOMAIN-SUFFIX,flipboard.com,🍃 节点选择
-- DOMAIN-SUFFIX,fnac.be,🍃 节点选择
-- DOMAIN-SUFFIX,fnac.com,🍃 节点选择
-- DOMAIN-SUFFIX,funkyimg.com,🍃 节点选择
-- DOMAIN-SUFFIX,fxnetworks.com,🍃 节点选择
-- DOMAIN-SUFFIX,gettyimages.com,🍃 节点选择
-- DOMAIN-SUFFIX,jcpenney.com,🍃 节点选择
-- DOMAIN-SUFFIX,kknews.cc,🍃 节点选择
-- DOMAIN-SUFFIX,nationwide.com,🍃 节点选择
-- DOMAIN-SUFFIX,nbc.com,🍃 节点选择
-- DOMAIN-SUFFIX,nordstrom.com,🍃 节点选择
-- DOMAIN-SUFFIX,nordstromimage.com,🍃 节点选择
-- DOMAIN-SUFFIX,nordstromrack.com,🍃 节点选择
-- DOMAIN-SUFFIX,read01.com,🍃 节点选择
-- DOMAIN-SUFFIX,superpages.com,🍃 节点选择
-- DOMAIN-SUFFIX,target.com,🍃 节点选择
-- DOMAIN-SUFFIX,thinkgeek.com,🍃 节点选择
-- DOMAIN-SUFFIX,tracfone.com,🍃 节点选择
-- DOMAIN-SUFFIX,uploader.jp,🍃 节点选择
-- DOMAIN-SUFFIX,vevo.com,🍃 节点选择
-- DOMAIN-SUFFIX,viu.tv,🍃 节点选择
-- DOMAIN-SUFFIX,vk.com,🍃 节点选择
-- DOMAIN-SUFFIX,vsco.co,🍃 节点选择
-- DOMAIN-SUFFIX,xfinity.com,🍃 节点选择
-- DOMAIN-SUFFIX,zattoo.com,🍃 节点选择
-- DOMAIN,abc.com,🍃 节点选择
-- DOMAIN,abc.go.com,🍃 节点选择
-- DOMAIN,abc.net.au,🍃 节点选择
-- DOMAIN,wego.here.com,🍃 节点选择
-#USER-AGENT,Roam*,🍃 节点选择
-
-# (The Most Popular Sites)
-# > Apple
-# > Apple URL Shortener
-- DOMAIN-SUFFIX,appsto.re,🍃 节点选择
-# > TestFlight
-- DOMAIN,beta.itunes.apple.com,🍃 节点选择
-# > iBooks Store download
-- DOMAIN,books.itunes.apple.com,🍃 节点选择
-# > iTunes Store Moveis Trailers
-- DOMAIN,hls.itunes.apple.com,🍃 节点选择
-# App Store Preview
-- DOMAIN,itunes.apple.com,🍃 节点选择
-# > Spotlight
-- DOMAIN,api-glb-sea.smoot.apple.com,🍃 节点选择
-# > Dictionary
-- DOMAIN,lookup-api.apple.com,🍃 节点选择
-#PROCESS-NAME,LookupViewService,🍃 节点选择
-# > Google
-- DOMAIN-SUFFIX,abc.xyz,🍃 节点选择
-- DOMAIN-SUFFIX,android.com,🍃 节点选择
-- DOMAIN-SUFFIX,androidify.com,🍃 节点选择
-- DOMAIN-SUFFIX,dialogflow.com,🍃 节点选择
-- DOMAIN-SUFFIX,autodraw.com,🍃 节点选择
-- DOMAIN-SUFFIX,capitalg.com,🍃 节点选择
-- DOMAIN-SUFFIX,certificate-transparency.org,🍃 节点选择
-- DOMAIN-SUFFIX,chrome.com,🍃 节点选择
-- DOMAIN-SUFFIX,chromeexperiments.com,🍃 节点选择
-- DOMAIN-SUFFIX,chromestatus.com,🍃 节点选择
-- DOMAIN-SUFFIX,chromium.org,🍃 节点选择
-- DOMAIN-SUFFIX,creativelab5.com,🍃 节点选择
-- DOMAIN-SUFFIX,debug.com,🍃 节点选择
-- DOMAIN-SUFFIX,deepmind.com,🍃 节点选择
-- DOMAIN-SUFFIX,firebaseio.com,🍃 节点选择
-- DOMAIN-SUFFIX,getmdl.io,🍃 节点选择
-- DOMAIN-SUFFIX,ggpht.com,🍃 节点选择
-- DOMAIN-SUFFIX,gmail.com,🍃 节点选择
-- DOMAIN-SUFFIX,gmodules.com,🍃 节点选择
-- DOMAIN-SUFFIX,godoc.org,🍃 节点选择
-- DOMAIN-SUFFIX,golang.org,🍃 节点选择
-- DOMAIN-SUFFIX,gstatic.com,🍃 节点选择
-- DOMAIN-SUFFIX,gv.com,🍃 节点选择
-- DOMAIN-SUFFIX,gwtproject.org,🍃 节点选择
-- DOMAIN-SUFFIX,itasoftware.com,🍃 节点选择
-- DOMAIN-SUFFIX,madewithcode.com,🍃 节点选择
-- DOMAIN-SUFFIX,material.io,🍃 节点选择
-- DOMAIN-SUFFIX,polymer-project.org,🍃 节点选择
-- DOMAIN-SUFFIX,admin.recaptcha.net,🍃 节点选择
-- DOMAIN-SUFFIX,recaptcha.net,🍃 节点选择
-- DOMAIN-SUFFIX,shattered.io,🍃 节点选择
-- DOMAIN-SUFFIX,synergyse.com,🍃 节点选择
-- DOMAIN-SUFFIX,tensorflow.org,🍃 节点选择
-- DOMAIN-SUFFIX,tiltbrush.com,🍃 节点选择
-- DOMAIN-SUFFIX,waveprotocol.org,🍃 节点选择
-- DOMAIN-SUFFIX,waymo.com,🍃 节点选择
-- DOMAIN-SUFFIX,webmproject.org,🍃 节点选择
-- DOMAIN-SUFFIX,webrtc.org,🍃 节点选择
-- DOMAIN-SUFFIX,whatbrowser.org,🍃 节点选择
-- DOMAIN-SUFFIX,widevine.com,🍃 节点选择
-- DOMAIN-SUFFIX,x.company,🍃 节点选择
-- DOMAIN-SUFFIX,youtu.be,🍃 节点选择
-- DOMAIN-SUFFIX,yt.be,🍃 节点选择
-- DOMAIN-SUFFIX,ytimg.com,🍃 节点选择
-# > Steam
-- DOMAIN,media.steampowered.com,☁️ Others
-- DOMAIN,store.steampowered.com,☁️ Others
-- DOMAIN,api.steampowered.com,☁️ Others
-- DOMAIN-SUFFIX,steamcommunity.com,☁️ Others
-- DOMAIN-SUFFIX,steampowered.com,🍂 Domestic
-# > Other
-- DOMAIN-SUFFIX,0rz.tw,🍃 节点选择
-- DOMAIN-SUFFIX,4bluestones.biz,🍃 节点选择
-- DOMAIN-SUFFIX,9bis.net,🍃 节点选择
-- DOMAIN-SUFFIX,allconnected.co,🍃 节点选择
-- DOMAIN-SUFFIX,amazonaws.com,🍃 节点选择
-- DOMAIN-SUFFIX,aol.com,🍃 节点选择
-- DOMAIN-SUFFIX,bcc.com.tw,🍃 节点选择
-- DOMAIN-SUFFIX,bit.ly,🍃 节点选择
-- DOMAIN-SUFFIX,bitshare.com,🍃 节点选择
-- DOMAIN-SUFFIX,blog.jp,🍃 节点选择
-- DOMAIN-SUFFIX,blogimg.jp,🍃 节点选择
-- DOMAIN-SUFFIX,blogtd.org,🍃 节点选择
-- DOMAIN-SUFFIX,broadcast.co.nz,🍃 节点选择
-- DOMAIN-SUFFIX,camfrog.com,🍃 节点选择
-- DOMAIN-SUFFIX,cfos.de,🍃 节点选择
-- DOMAIN-SUFFIX,citypopulation.de,🍃 节点选择
-- DOMAIN-SUFFIX,cloudfront.net,🍃 节点选择
-- DOMAIN-SUFFIX,ctitv.com.tw,🍃 节点选择
-- DOMAIN-SUFFIX,cuhk.edu.hk,🍃 节点选择
-- DOMAIN-SUFFIX,cusu.hk,🍃 节点选择
-- DOMAIN-SUFFIX,discuss.com.hk,🍃 节点选择
-- DOMAIN-SUFFIX,dropboxapi.com,🍃 节点选择
-- DOMAIN-SUFFIX,edditstatic.com,🍃 节点选择
-- DOMAIN-SUFFIX,flickriver.com,🍃 节点选择
-- DOMAIN-SUFFIX,focustaiwan.tw,🍃 节点选择
-- DOMAIN-SUFFIX,free.fr,🍃 节点选择
-- DOMAIN-SUFFIX,ftchinese.com,🍃 节点选择
-- DOMAIN-SUFFIX,gigacircle.com,🍃 节点选择
-- DOMAIN-SUFFIX,gov,🍃 节点选择
-- DOMAIN-SUFFIX,hk-pub.com,🍃 节点选择
-- DOMAIN-SUFFIX,hosting.co.uk,🍃 节点选择
-- DOMAIN-SUFFIX,hwcdn.net,🍃 节点选择
-- DOMAIN-SUFFIX,jtvnw.net,🍃 节点选择
-- DOMAIN-SUFFIX,linksalpha.com,🍃 节点选择
-- DOMAIN-SUFFIX,manyvids.com,🍃 节点选择
-- DOMAIN-SUFFIX,myactimes.com,🍃 节点选择
-- DOMAIN-SUFFIX,newsblur.com,🍃 节点选择
-- DOMAIN-SUFFIX,now.im,🍃 节点选择
-- DOMAIN-SUFFIX,redditlist.com,🍃 节点选择
-- DOMAIN-SUFFIX,signal.org,🍃 节点选择
-- DOMAIN-SUFFIX,sparknotes.com,🍃 节点选择
-- DOMAIN-SUFFIX,streetvoice.com,🍃 节点选择
-- DOMAIN-SUFFIX,ttvnw.net,🍃 节点选择
-- DOMAIN-SUFFIX,tv.com,🍃 节点选择
-- DOMAIN-SUFFIX,twitchcdn.net,🍃 节点选择
-- DOMAIN-SUFFIX,typepad.com,🍃 节点选择
-- DOMAIN-SUFFIX,udnbkk.com,🍃 节点选择
-- DOMAIN-SUFFIX,whispersystems.org,🍃 节点选择
-- DOMAIN-SUFFIX,wikia.com,🍃 节点选择
-- DOMAIN-SUFFIX,wn.com,🍃 节点选择
-- DOMAIN-SUFFIX,wolframalpha.com,🍃 节点选择
-- DOMAIN-SUFFIX,x-art.com,🍃 节点选择
-- DOMAIN-SUFFIX,yimg.com,🍃 节点选择
-- DOMAIN-SUFFIX,linkedin.com,☁️ Others
-
-# Local Area Network
-- DOMAIN-KEYWORD,announce,DIRECT
-- DOMAIN-KEYWORD,torrent,DIRECT
-- DOMAIN-KEYWORD,tracker,DIRECT
-- DOMAIN-SUFFIX,smtp,DIRECT
-- DOMAIN-SUFFIX,local,DIRECT
-- IP-CIDR,192.168.0.0/16,DIRECT
-- IP-CIDR,10.0.0.0/8,DIRECT
-- IP-CIDR,172.16.0.0/12,DIRECT
-- IP-CIDR,127.0.0.0/8,DIRECT
-- IP-CIDR,100.64.0.0/10,DIRECT
-
-# > IQIYI
-- IP-CIDR,101.227.0.0/16,🍂 Domestic
-- IP-CIDR,101.224.0.0/13,🍂 Domestic
-- IP-CIDR,119.176.0.0/12,🍂 Domestic
-
-# > Youku
-- IP-CIDR,106.11.0.0/16,🍂 Domestic
-
-# > Telegram
-- IP-CIDR,67.198.55.0/24,🍃 节点选择
-- IP-CIDR,91.108.4.0/22,🍃 节点选择
-- IP-CIDR,91.108.8.0/22,🍃 节点选择
-- IP-CIDR,91.108.12.0/22,🍃 节点选择
-- IP-CIDR,91.108.16.0/22,🍃 节点选择
-- IP-CIDR,91.108.56.0/22,🍃 节点选择
-- IP-CIDR,109.239.140.0/24,🍃 节点选择
-- IP-CIDR,149.154.160.0/20,🍃 节点选择
-- IP-CIDR,205.172.60.0/22,🍃 节点选择
-
-# (Extra IP-CIRD)
-# > Google
-- IP-CIDR,35.190.247.0/24,🍃 节点选择
-- IP-CIDR,64.233.160.0/19,🍃 节点选择
-- IP-CIDR,66.102.0.0/20,🍃 节点选择
-- IP-CIDR,66.249.80.0/20,🍃 节点选择
-- IP-CIDR,72.14.192.0/18,🍃 节点选择
-- IP-CIDR,74.125.0.0/16,🍃 节点选择
-- IP-CIDR,108.177.8.0/21,🍃 节点选择
-- IP-CIDR,172.217.0.0/16,🍃 节点选择
-- IP-CIDR,173.194.0.0/16,🍃 节点选择
-- IP-CIDR,209.85.128.0/17,🍃 节点选择
-- IP-CIDR,216.58.192.0/19,🍃 节点选择
-- IP-CIDR,216.239.32.0/19,🍃 节点选择
-# > Facebook
-- IP-CIDR,31.13.24.0/21,🍃 节点选择
-- IP-CIDR,31.13.64.0/18,🍃 节点选择
-- IP-CIDR,45.64.40.0/22,🍃 节点选择
-- IP-CIDR,66.220.144.0/20,🍃 节点选择
-- IP-CIDR,69.63.176.0/20,🍃 节点选择
-- IP-CIDR,69.171.224.0/19,🍃 节点选择
-- IP-CIDR,74.119.76.0/22,🍃 节点选择
-- IP-CIDR,103.4.96.0/22,🍃 节点选择
-- IP-CIDR,129.134.0.0/17,🍃 节点选择
-- IP-CIDR,157.240.0.0/17,🍃 节点选择
-- IP-CIDR,173.252.64.0/19,🍃 节点选择
-- IP-CIDR,173.252.96.0/19,🍃 节点选择
-- IP-CIDR,179.60.192.0/22,🍃 节点选择
-- IP-CIDR,185.60.216.0/22,🍃 节点选择
-- IP-CIDR,204.15.20.0/22,🍃 节点选择
-# > Twitter
-- IP-CIDR,69.195.160.0/19,🍃 节点选择
-- IP-CIDR,104.244.42.0/21,🍃 节点选择
-- IP-CIDR,192.133.76.0/22,🍃 节点选择
-- IP-CIDR,199.16.156.0/22,🍃 节点选择
-- IP-CIDR,199.59.148.0/22,🍃 节点选择
-- IP-CIDR,199.96.56.0/21,🍃 节点选择
-- IP-CIDR,202.160.128.0/22,🍃 节点选择
-- IP-CIDR,209.237.192.0/19,🍃 节点选择
-
-# GeoIP China
-- GEOIP,CN,🍂 Domestic
-
-- MATCH,☁️ Others
+    - 'DOMAIN-SUFFIX,services.googleapis.cn,动力港'
+    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,动力港'
+    - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
+    - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
+    - 'DOMAIN,developer.apple.com,动力港'
+    - 'DOMAIN-SUFFIX,digicert.com,动力港'
+    - 'DOMAIN,ocsp.apple.com,动力港'
+    - 'DOMAIN,ocsp.comodoca.com,动力港'
+    - 'DOMAIN,ocsp.usertrust.com,动力港'
+    - 'DOMAIN,ocsp.sectigo.com,动力港'
+    - 'DOMAIN,ocsp.verisign.net,动力港'
+    - 'DOMAIN-SUFFIX,apple-dns.net,动力港'
+    - 'DOMAIN,testflight.apple.com,动力港'
+    - 'DOMAIN,sandbox.itunes.apple.com,动力港'
+    - 'DOMAIN,itunes.apple.com,动力港'
+    - 'DOMAIN-SUFFIX,apps.apple.com,动力港'
+    - 'DOMAIN-SUFFIX,blobstore.apple.com,动力港'
+    - 'DOMAIN,cvws.icloud-content.com,动力港'
+    - 'DOMAIN-SUFFIX,mzstatic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,itunes.apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,icloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,icloud-content.com,DIRECT'
+    - 'DOMAIN-SUFFIX,me.com,DIRECT'
+    - 'DOMAIN-SUFFIX,aaplimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cdn20.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cdn-apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,akadns.net,DIRECT'
+    - 'DOMAIN-SUFFIX,akamaiedge.net,DIRECT'
+    - 'DOMAIN-SUFFIX,edgekey.net,DIRECT'
+    - 'DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,mwcname.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple-mapkit.com,DIRECT'
+    - 'DOMAIN-SUFFIX,126.com,DIRECT'
+    - 'DOMAIN-SUFFIX,126.net,DIRECT'
+    - 'DOMAIN-SUFFIX,127.net,DIRECT'
+    - 'DOMAIN-SUFFIX,163.com,DIRECT'
+    - 'DOMAIN-SUFFIX,360buyimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,36kr.com,DIRECT'
+    - 'DOMAIN-SUFFIX,acfun.tv,DIRECT'
+    - 'DOMAIN-SUFFIX,air-matters.com,DIRECT'
+    - 'DOMAIN-SUFFIX,aixifan.com,DIRECT'
+    - 'DOMAIN-KEYWORD,alicdn,DIRECT'
+    - 'DOMAIN-KEYWORD,alipay,DIRECT'
+    - 'DOMAIN-KEYWORD,taobao,DIRECT'
+    - 'DOMAIN-SUFFIX,amap.com,DIRECT'
+    - 'DOMAIN-SUFFIX,autonavi.com,DIRECT'
+    - 'DOMAIN-KEYWORD,baidu,DIRECT'
+    - 'DOMAIN-SUFFIX,bdimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bdstatic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bilibili.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bilivideo.com,DIRECT'
+    - 'DOMAIN-SUFFIX,caiyunapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,clouddn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cnbeta.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cnbetacdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cootekservice.com,DIRECT'
+    - 'DOMAIN-SUFFIX,csdn.net,DIRECT'
+    - 'DOMAIN-SUFFIX,ctrip.com,DIRECT'
+    - 'DOMAIN-SUFFIX,dgtle.com,DIRECT'
+    - 'DOMAIN-SUFFIX,dianping.com,DIRECT'
+    - 'DOMAIN-SUFFIX,douban.com,DIRECT'
+    - 'DOMAIN-SUFFIX,doubanio.com,DIRECT'
+    - 'DOMAIN-SUFFIX,duokan.com,DIRECT'
+    - 'DOMAIN-SUFFIX,easou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ele.me,DIRECT'
+    - 'DOMAIN-SUFFIX,feng.com,DIRECT'
+    - 'DOMAIN-SUFFIX,fir.im,DIRECT'
+    - 'DOMAIN-SUFFIX,frdic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,g-cores.com,DIRECT'
+    - 'DOMAIN-SUFFIX,godic.net,DIRECT'
+    - 'DOMAIN-SUFFIX,gtimg.com,DIRECT'
+    - 'DOMAIN,cdn.hockeyapp.net,DIRECT'
+    - 'DOMAIN-SUFFIX,hongxiu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,hxcdn.net,DIRECT'
+    - 'DOMAIN-SUFFIX,iciba.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ifeng.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ifengimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ipip.net,DIRECT'
+    - 'DOMAIN-SUFFIX,iqiyi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,jd.com,DIRECT'
+    - 'DOMAIN-SUFFIX,jianshu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,knewone.com,DIRECT'
+    - 'DOMAIN-SUFFIX,le.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lecloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lemicp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,licdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,luoo.net,DIRECT'
+    - 'DOMAIN-SUFFIX,meituan.com,DIRECT'
+    - 'DOMAIN-SUFFIX,meituan.net,DIRECT'
+    - 'DOMAIN-SUFFIX,mi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miaopai.com,DIRECT'
+    - 'DOMAIN-SUFFIX,microsoft.com,DIRECT'
+    - 'DOMAIN-SUFFIX,microsoftonline.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miui.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miwifi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,mob.com,DIRECT'
+    - 'DOMAIN-SUFFIX,netease.com,DIRECT'
+    - 'DOMAIN-SUFFIX,office.com,DIRECT'
+    - 'DOMAIN-SUFFIX,office365.com,DIRECT'
+    - 'DOMAIN-KEYWORD,officecdn,DIRECT'
+    - 'DOMAIN-SUFFIX,oschina.net,DIRECT'
+    - 'DOMAIN-SUFFIX,ppsimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,pstatp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qcloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qdaily.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qdmm.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qhimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qhres.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qidian.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qihucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiniu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiniucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiyipic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qq.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qqurl.com,DIRECT'
+    - 'DOMAIN-SUFFIX,rarbg.to,DIRECT'
+    - 'DOMAIN-SUFFIX,ruguoapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,segmentfault.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sinaapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,smzdm.com,DIRECT'
+    - 'DOMAIN-SUFFIX,snapdrop.net,DIRECT'
+    - 'DOMAIN-SUFFIX,sogou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sogoucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sohu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,soku.com,DIRECT'
+    - 'DOMAIN-SUFFIX,speedtest.net,DIRECT'
+    - 'DOMAIN-SUFFIX,sspai.com,DIRECT'
+    - 'DOMAIN-SUFFIX,suning.com,DIRECT'
+    - 'DOMAIN-SUFFIX,taobao.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tencent.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tenpay.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tianyancha.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tmall.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tudou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,umetrip.com,DIRECT'
+    - 'DOMAIN-SUFFIX,upaiyun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,upyun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,veryzhun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,weather.com,DIRECT'
+    - 'DOMAIN-SUFFIX,weibo.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xiami.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xiami.net,DIRECT'
+    - 'DOMAIN-SUFFIX,xiaomicp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ximalaya.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xmcdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xunlei.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yhd.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yihaodianimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yinxiang.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ykimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,youdao.com,DIRECT'
+    - 'DOMAIN-SUFFIX,youku.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zealer.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zhihu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zhimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zimuzu.tv,DIRECT'
+    - 'DOMAIN-SUFFIX,zoho.com,DIRECT'
+    - 'DOMAIN-KEYWORD,amazon,动力港'
+    - 'DOMAIN-KEYWORD,google,动力港'
+    - 'DOMAIN-KEYWORD,gmail,动力港'
+    - 'DOMAIN-KEYWORD,youtube,动力港'
+    - 'DOMAIN-KEYWORD,facebook,动力港'
+    - 'DOMAIN-SUFFIX,fb.me,动力港'
+    - 'DOMAIN-SUFFIX,fbcdn.net,动力港'
+    - 'DOMAIN-KEYWORD,twitter,动力港'
+    - 'DOMAIN-KEYWORD,instagram,动力港'
+    - 'DOMAIN-KEYWORD,dropbox,动力港'
+    - 'DOMAIN-SUFFIX,twimg.com,动力港'
+    - 'DOMAIN-KEYWORD,blogspot,动力港'
+    - 'DOMAIN-SUFFIX,youtu.be,动力港'
+    - 'DOMAIN-KEYWORD,whatsapp,动力港'
+    - 'DOMAIN-KEYWORD,admarvel,REJECT'
+    - 'DOMAIN-KEYWORD,admaster,REJECT'
+    - 'DOMAIN-KEYWORD,adsage,REJECT'
+    - 'DOMAIN-KEYWORD,adsmogo,REJECT'
+    - 'DOMAIN-KEYWORD,adsrvmedia,REJECT'
+    - 'DOMAIN-KEYWORD,adwords,REJECT'
+    - 'DOMAIN-KEYWORD,adservice,REJECT'
+    - 'DOMAIN-SUFFIX,appsflyer.com,REJECT'
+    - 'DOMAIN-KEYWORD,domob,REJECT'
+    - 'DOMAIN-SUFFIX,doubleclick.net,REJECT'
+    - 'DOMAIN-KEYWORD,duomeng,REJECT'
+    - 'DOMAIN-KEYWORD,dwtrack,REJECT'
+    - 'DOMAIN-KEYWORD,guanggao,REJECT'
+    - 'DOMAIN-KEYWORD,lianmeng,REJECT'
+    - 'DOMAIN-SUFFIX,mmstat.com,REJECT'
+    - 'DOMAIN-KEYWORD,mopub,REJECT'
+    - 'DOMAIN-KEYWORD,omgmta,REJECT'
+    - 'DOMAIN-KEYWORD,openx,REJECT'
+    - 'DOMAIN-KEYWORD,partnerad,REJECT'
+    - 'DOMAIN-KEYWORD,pingfore,REJECT'
+    - 'DOMAIN-KEYWORD,supersonicads,REJECT'
+    - 'DOMAIN-KEYWORD,uedas,REJECT'
+    - 'DOMAIN-KEYWORD,umeng,REJECT'
+    - 'DOMAIN-KEYWORD,usage,REJECT'
+    - 'DOMAIN-SUFFIX,vungle.com,REJECT'
+    - 'DOMAIN-KEYWORD,wlmonitor,REJECT'
+    - 'DOMAIN-KEYWORD,zjtoolbar,REJECT'
+    - 'DOMAIN-SUFFIX,9to5mac.com,动力港'
+    - 'DOMAIN-SUFFIX,abpchina.org,动力港'
+    - 'DOMAIN-SUFFIX,adblockplus.org,动力港'
+    - 'DOMAIN-SUFFIX,adobe.com,动力港'
+    - 'DOMAIN-SUFFIX,akamaized.net,动力港'
+    - 'DOMAIN-SUFFIX,alfredapp.com,动力港'
+    - 'DOMAIN-SUFFIX,amplitude.com,动力港'
+    - 'DOMAIN-SUFFIX,ampproject.org,动力港'
+    - 'DOMAIN-SUFFIX,android.com,动力港'
+    - 'DOMAIN-SUFFIX,angularjs.org,动力港'
+    - 'DOMAIN-SUFFIX,aolcdn.com,动力港'
+    - 'DOMAIN-SUFFIX,apkpure.com,动力港'
+    - 'DOMAIN-SUFFIX,appledaily.com,动力港'
+    - 'DOMAIN-SUFFIX,appshopper.com,动力港'
+    - 'DOMAIN-SUFFIX,appspot.com,动力港'
+    - 'DOMAIN-SUFFIX,arcgis.com,动力港'
+    - 'DOMAIN-SUFFIX,archive.org,动力港'
+    - 'DOMAIN-SUFFIX,armorgames.com,动力港'
+    - 'DOMAIN-SUFFIX,aspnetcdn.com,动力港'
+    - 'DOMAIN-SUFFIX,att.com,动力港'
+    - 'DOMAIN-SUFFIX,awsstatic.com,动力港'
+    - 'DOMAIN-SUFFIX,azureedge.net,动力港'
+    - 'DOMAIN-SUFFIX,azurewebsites.net,动力港'
+    - 'DOMAIN-SUFFIX,bing.com,动力港'
+    - 'DOMAIN-SUFFIX,bintray.com,动力港'
+    - 'DOMAIN-SUFFIX,bit.com,动力港'
+    - 'DOMAIN-SUFFIX,bit.ly,动力港'
+    - 'DOMAIN-SUFFIX,bitbucket.org,动力港'
+    - 'DOMAIN-SUFFIX,bjango.com,动力港'
+    - 'DOMAIN-SUFFIX,bkrtx.com,动力港'
+    - 'DOMAIN-SUFFIX,blog.com,动力港'
+    - 'DOMAIN-SUFFIX,blogcdn.com,动力港'
+    - 'DOMAIN-SUFFIX,blogger.com,动力港'
+    - 'DOMAIN-SUFFIX,blogsmithmedia.com,动力港'
+    - 'DOMAIN-SUFFIX,blogspot.com,动力港'
+    - 'DOMAIN-SUFFIX,blogspot.hk,动力港'
+    - 'DOMAIN-SUFFIX,bloomberg.com,动力港'
+    - 'DOMAIN-SUFFIX,box.com,动力港'
+    - 'DOMAIN-SUFFIX,box.net,动力港'
+    - 'DOMAIN-SUFFIX,cachefly.net,动力港'
+    - 'DOMAIN-SUFFIX,chromium.org,动力港'
+    - 'DOMAIN-SUFFIX,cl.ly,动力港'
+    - 'DOMAIN-SUFFIX,cloudflare.com,动力港'
+    - 'DOMAIN-SUFFIX,cloudfront.net,动力港'
+    - 'DOMAIN-SUFFIX,cloudmagic.com,动力港'
+    - 'DOMAIN-SUFFIX,cmail19.com,动力港'
+    - 'DOMAIN-SUFFIX,cnet.com,动力港'
+    - 'DOMAIN-SUFFIX,cocoapods.org,动力港'
+    - 'DOMAIN-SUFFIX,comodoca.com,动力港'
+    - 'DOMAIN-SUFFIX,crashlytics.com,动力港'
+    - 'DOMAIN-SUFFIX,culturedcode.com,动力港'
+    - 'DOMAIN-SUFFIX,d.pr,动力港'
+    - 'DOMAIN-SUFFIX,danilo.to,动力港'
+    - 'DOMAIN-SUFFIX,dayone.me,动力港'
+    - 'DOMAIN-SUFFIX,db.tt,动力港'
+    - 'DOMAIN-SUFFIX,deskconnect.com,动力港'
+    - 'DOMAIN-SUFFIX,disq.us,动力港'
+    - 'DOMAIN-SUFFIX,disqus.com,动力港'
+    - 'DOMAIN-SUFFIX,disquscdn.com,动力港'
+    - 'DOMAIN-SUFFIX,dnsimple.com,动力港'
+    - 'DOMAIN-SUFFIX,docker.com,动力港'
+    - 'DOMAIN-SUFFIX,dribbble.com,动力港'
+    - 'DOMAIN-SUFFIX,droplr.com,动力港'
+    - 'DOMAIN-SUFFIX,duckduckgo.com,动力港'
+    - 'DOMAIN-SUFFIX,dueapp.com,动力港'
+    - 'DOMAIN-SUFFIX,dytt8.net,动力港'
+    - 'DOMAIN-SUFFIX,edgecastcdn.net,动力港'
+    - 'DOMAIN-SUFFIX,edgekey.net,动力港'
+    - 'DOMAIN-SUFFIX,edgesuite.net,动力港'
+    - 'DOMAIN-SUFFIX,engadget.com,动力港'
+    - 'DOMAIN-SUFFIX,entrust.net,动力港'
+    - 'DOMAIN-SUFFIX,eurekavpt.com,动力港'
+    - 'DOMAIN-SUFFIX,evernote.com,动力港'
+    - 'DOMAIN-SUFFIX,fabric.io,动力港'
+    - 'DOMAIN-SUFFIX,fast.com,动力港'
+    - 'DOMAIN-SUFFIX,fastly.net,动力港'
+    - 'DOMAIN-SUFFIX,fc2.com,动力港'
+    - 'DOMAIN-SUFFIX,feedburner.com,动力港'
+    - 'DOMAIN-SUFFIX,feedly.com,动力港'
+    - 'DOMAIN-SUFFIX,feedsportal.com,动力港'
+    - 'DOMAIN-SUFFIX,fiftythree.com,动力港'
+    - 'DOMAIN-SUFFIX,firebaseio.com,动力港'
+    - 'DOMAIN-SUFFIX,flexibits.com,动力港'
+    - 'DOMAIN-SUFFIX,flickr.com,动力港'
+    - 'DOMAIN-SUFFIX,flipboard.com,动力港'
+    - 'DOMAIN-SUFFIX,g.co,动力港'
+    - 'DOMAIN-SUFFIX,gabia.net,动力港'
+    - 'DOMAIN-SUFFIX,geni.us,动力港'
+    - 'DOMAIN-SUFFIX,gfx.ms,动力港'
+    - 'DOMAIN-SUFFIX,ggpht.com,动力港'
+    - 'DOMAIN-SUFFIX,ghostnoteapp.com,动力港'
+    - 'DOMAIN-SUFFIX,git.io,动力港'
+    - 'DOMAIN-KEYWORD,github,动力港'
+    - 'DOMAIN-SUFFIX,globalsign.com,动力港'
+    - 'DOMAIN-SUFFIX,gmodules.com,动力港'
+    - 'DOMAIN-SUFFIX,godaddy.com,动力港'
+    - 'DOMAIN-SUFFIX,golang.org,动力港'
+    - 'DOMAIN-SUFFIX,gongm.in,动力港'
+    - 'DOMAIN-SUFFIX,goo.gl,动力港'
+    - 'DOMAIN-SUFFIX,goodreaders.com,动力港'
+    - 'DOMAIN-SUFFIX,goodreads.com,动力港'
+    - 'DOMAIN-SUFFIX,gravatar.com,动力港'
+    - 'DOMAIN-SUFFIX,gstatic.com,动力港'
+    - 'DOMAIN-SUFFIX,gvt0.com,动力港'
+    - 'DOMAIN-SUFFIX,hockeyapp.net,动力港'
+    - 'DOMAIN-SUFFIX,hotmail.com,动力港'
+    - 'DOMAIN-SUFFIX,icons8.com,动力港'
+    - 'DOMAIN-SUFFIX,ifixit.com,动力港'
+    - 'DOMAIN-SUFFIX,ift.tt,动力港'
+    - 'DOMAIN-SUFFIX,ifttt.com,动力港'
+    - 'DOMAIN-SUFFIX,iherb.com,动力港'
+    - 'DOMAIN-SUFFIX,imageshack.us,动力港'
+    - 'DOMAIN-SUFFIX,img.ly,动力港'
+    - 'DOMAIN-SUFFIX,imgur.com,动力港'
+    - 'DOMAIN-SUFFIX,imore.com,动力港'
+    - 'DOMAIN-SUFFIX,instapaper.com,动力港'
+    - 'DOMAIN-SUFFIX,ipn.li,动力港'
+    - 'DOMAIN-SUFFIX,is.gd,动力港'
+    - 'DOMAIN-SUFFIX,issuu.com,动力港'
+    - 'DOMAIN-SUFFIX,itgonglun.com,动力港'
+    - 'DOMAIN-SUFFIX,itun.es,动力港'
+    - 'DOMAIN-SUFFIX,ixquick.com,动力港'
+    - 'DOMAIN-SUFFIX,j.mp,动力港'
+    - 'DOMAIN-SUFFIX,js.revsci.net,动力港'
+    - 'DOMAIN-SUFFIX,jshint.com,动力港'
+    - 'DOMAIN-SUFFIX,jtvnw.net,动力港'
+    - 'DOMAIN-SUFFIX,justgetflux.com,动力港'
+    - 'DOMAIN-SUFFIX,kat.cr,动力港'
+    - 'DOMAIN-SUFFIX,klip.me,动力港'
+    - 'DOMAIN-SUFFIX,libsyn.com,动力港'
+    - 'DOMAIN-SUFFIX,linkedin.com,动力港'
+    - 'DOMAIN-SUFFIX,line-apps.com,动力港'
+    - 'DOMAIN-SUFFIX,linode.com,动力港'
+    - 'DOMAIN-SUFFIX,lithium.com,动力港'
+    - 'DOMAIN-SUFFIX,littlehj.com,动力港'
+    - 'DOMAIN-SUFFIX,live.com,动力港'
+    - 'DOMAIN-SUFFIX,live.net,动力港'
+    - 'DOMAIN-SUFFIX,livefilestore.com,动力港'
+    - 'DOMAIN-SUFFIX,llnwd.net,动力港'
+    - 'DOMAIN-SUFFIX,macid.co,动力港'
+    - 'DOMAIN-SUFFIX,macromedia.com,动力港'
+    - 'DOMAIN-SUFFIX,macrumors.com,动力港'
+    - 'DOMAIN-SUFFIX,mashable.com,动力港'
+    - 'DOMAIN-SUFFIX,mathjax.org,动力港'
+    - 'DOMAIN-SUFFIX,medium.com,动力港'
+    - 'DOMAIN-SUFFIX,mega.co.nz,动力港'
+    - 'DOMAIN-SUFFIX,mega.nz,动力港'
+    - 'DOMAIN-SUFFIX,megaupload.com,动力港'
+    - 'DOMAIN-SUFFIX,microsofttranslator.com,动力港'
+    - 'DOMAIN-SUFFIX,mindnode.com,动力港'
+    - 'DOMAIN-SUFFIX,mobile01.com,动力港'
+    - 'DOMAIN-SUFFIX,modmyi.com,动力港'
+    - 'DOMAIN-SUFFIX,msedge.net,动力港'
+    - 'DOMAIN-SUFFIX,myfontastic.com,动力港'
+    - 'DOMAIN-SUFFIX,name.com,动力港'
+    - 'DOMAIN-SUFFIX,nextmedia.com,动力港'
+    - 'DOMAIN-SUFFIX,nsstatic.net,动力港'
+    - 'DOMAIN-SUFFIX,nssurge.com,动力港'
+    - 'DOMAIN-SUFFIX,nyt.com,动力港'
+    - 'DOMAIN-SUFFIX,nytimes.com,动力港'
+    - 'DOMAIN-SUFFIX,omnigroup.com,动力港'
+    - 'DOMAIN-SUFFIX,onedrive.com,动力港'
+    - 'DOMAIN-SUFFIX,onenote.com,动力港'
+    - 'DOMAIN-SUFFIX,ooyala.com,动力港'
+    - 'DOMAIN-SUFFIX,openvpn.net,动力港'
+    - 'DOMAIN-SUFFIX,openwrt.org,动力港'
+    - 'DOMAIN-SUFFIX,orkut.com,动力港'
+    - 'DOMAIN-SUFFIX,osxdaily.com,动力港'
+    - 'DOMAIN-SUFFIX,outlook.com,动力港'
+    - 'DOMAIN-SUFFIX,ow.ly,动力港'
+    - 'DOMAIN-SUFFIX,paddleapi.com,动力港'
+    - 'DOMAIN-SUFFIX,parallels.com,动力港'
+    - 'DOMAIN-SUFFIX,parse.com,动力港'
+    - 'DOMAIN-SUFFIX,pdfexpert.com,动力港'
+    - 'DOMAIN-SUFFIX,periscope.tv,动力港'
+    - 'DOMAIN-SUFFIX,pinboard.in,动力港'
+    - 'DOMAIN-SUFFIX,pinterest.com,动力港'
+    - 'DOMAIN-SUFFIX,pixelmator.com,动力港'
+    - 'DOMAIN-SUFFIX,pixiv.net,动力港'
+    - 'DOMAIN-SUFFIX,playpcesor.com,动力港'
+    - 'DOMAIN-SUFFIX,playstation.com,动力港'
+    - 'DOMAIN-SUFFIX,playstation.com.hk,动力港'
+    - 'DOMAIN-SUFFIX,playstation.net,动力港'
+    - 'DOMAIN-SUFFIX,playstationnetwork.com,动力港'
+    - 'DOMAIN-SUFFIX,pushwoosh.com,动力港'
+    - 'DOMAIN-SUFFIX,rime.im,动力港'
+    - 'DOMAIN-SUFFIX,servebom.com,动力港'
+    - 'DOMAIN-SUFFIX,sfx.ms,动力港'
+    - 'DOMAIN-SUFFIX,shadowsocks.org,动力港'
+    - 'DOMAIN-SUFFIX,sharethis.com,动力港'
+    - 'DOMAIN-SUFFIX,shazam.com,动力港'
+    - 'DOMAIN-SUFFIX,skype.com,动力港'
+    - 'DOMAIN-SUFFIX,smartdns动力港.com,动力港'
+    - 'DOMAIN-SUFFIX,smartmailcloud.com,动力港'
+    - 'DOMAIN-SUFFIX,sndcdn.com,动力港'
+    - 'DOMAIN-SUFFIX,sony.com,动力港'
+    - 'DOMAIN-SUFFIX,soundcloud.com,动力港'
+    - 'DOMAIN-SUFFIX,sourceforge.net,动力港'
+    - 'DOMAIN-SUFFIX,spotify.com,动力港'
+    - 'DOMAIN-SUFFIX,squarespace.com,动力港'
+    - 'DOMAIN-SUFFIX,sstatic.net,动力港'
+    - 'DOMAIN-SUFFIX,st.luluku.pw,动力港'
+    - 'DOMAIN-SUFFIX,stackoverflow.com,动力港'
+    - 'DOMAIN-SUFFIX,startpage.com,动力港'
+    - 'DOMAIN-SUFFIX,staticflickr.com,动力港'
+    - 'DOMAIN-SUFFIX,steamcommunity.com,动力港'
+    - 'DOMAIN-SUFFIX,symauth.com,动力港'
+    - 'DOMAIN-SUFFIX,symcb.com,动力港'
+    - 'DOMAIN-SUFFIX,symcd.com,动力港'
+    - 'DOMAIN-SUFFIX,tapbots.com,动力港'
+    - 'DOMAIN-SUFFIX,tapbots.net,动力港'
+    - 'DOMAIN-SUFFIX,tdesktop.com,动力港'
+    - 'DOMAIN-SUFFIX,techcrunch.com,动力港'
+    - 'DOMAIN-SUFFIX,techsmith.com,动力港'
+    - 'DOMAIN-SUFFIX,thepiratebay.org,动力港'
+    - 'DOMAIN-SUFFIX,theverge.com,动力港'
+    - 'DOMAIN-SUFFIX,time.com,动力港'
+    - 'DOMAIN-SUFFIX,timeinc.net,动力港'
+    - 'DOMAIN-SUFFIX,tiny.cc,动力港'
+    - 'DOMAIN-SUFFIX,tinypic.com,动力港'
+    - 'DOMAIN-SUFFIX,tmblr.co,动力港'
+    - 'DOMAIN-SUFFIX,todoist.com,动力港'
+    - 'DOMAIN-SUFFIX,trello.com,动力港'
+    - 'DOMAIN-SUFFIX,trustasiassl.com,动力港'
+    - 'DOMAIN-SUFFIX,tumblr.co,动力港'
+    - 'DOMAIN-SUFFIX,tumblr.com,动力港'
+    - 'DOMAIN-SUFFIX,tweetdeck.com,动力港'
+    - 'DOMAIN-SUFFIX,tweetmarker.net,动力港'
+    - 'DOMAIN-SUFFIX,twitch.tv,动力港'
+    - 'DOMAIN-SUFFIX,txmblr.com,动力港'
+    - 'DOMAIN-SUFFIX,typekit.net,动力港'
+    - 'DOMAIN-SUFFIX,ubertags.com,动力港'
+    - 'DOMAIN-SUFFIX,ublock.org,动力港'
+    - 'DOMAIN-SUFFIX,ubnt.com,动力港'
+    - 'DOMAIN-SUFFIX,ulyssesapp.com,动力港'
+    - 'DOMAIN-SUFFIX,urchin.com,动力港'
+    - 'DOMAIN-SUFFIX,usertrust.com,动力港'
+    - 'DOMAIN-SUFFIX,v.gd,动力港'
+    - 'DOMAIN-SUFFIX,v2ex.com,动力港'
+    - 'DOMAIN-SUFFIX,vimeo.com,动力港'
+    - 'DOMAIN-SUFFIX,vimeocdn.com,动力港'
+    - 'DOMAIN-SUFFIX,vine.co,动力港'
+    - 'DOMAIN-SUFFIX,vivaldi.com,动力港'
+    - 'DOMAIN-SUFFIX,vox-cdn.com,动力港'
+    - 'DOMAIN-SUFFIX,vsco.co,动力港'
+    - 'DOMAIN-SUFFIX,vultr.com,动力港'
+    - 'DOMAIN-SUFFIX,w.org,动力港'
+    - 'DOMAIN-SUFFIX,w3schools.com,动力港'
+    - 'DOMAIN-SUFFIX,webtype.com,动力港'
+    - 'DOMAIN-SUFFIX,wikiwand.com,动力港'
+    - 'DOMAIN-SUFFIX,wikileaks.org,动力港'
+    - 'DOMAIN-SUFFIX,wikimedia.org,动力港'
+    - 'DOMAIN-SUFFIX,wikipedia.com,动力港'
+    - 'DOMAIN-SUFFIX,wikipedia.org,动力港'
+    - 'DOMAIN-SUFFIX,windows.com,动力港'
+    - 'DOMAIN-SUFFIX,windows.net,动力港'
+    - 'DOMAIN-SUFFIX,wire.com,动力港'
+    - 'DOMAIN-SUFFIX,wordpress.com,动力港'
+    - 'DOMAIN-SUFFIX,workflowy.com,动力港'
+    - 'DOMAIN-SUFFIX,wp.com,动力港'
+    - 'DOMAIN-SUFFIX,wsj.com,动力港'
+    - 'DOMAIN-SUFFIX,wsj.net,动力港'
+    - 'DOMAIN-SUFFIX,xda-developers.com,动力港'
+    - 'DOMAIN-SUFFIX,xeeno.com,动力港'
+    - 'DOMAIN-SUFFIX,xiti.com,动力港'
+    - 'DOMAIN-SUFFIX,yahoo.com,动力港'
+    - 'DOMAIN-SUFFIX,yimg.com,动力港'
+    - 'DOMAIN-SUFFIX,ying.com,动力港'
+    - 'DOMAIN-SUFFIX,yoyo.org,动力港'
+    - 'DOMAIN-SUFFIX,ytimg.com,动力港'
+    - 'DOMAIN-SUFFIX,telegra.ph,动力港'
+    - 'DOMAIN-SUFFIX,telegram.org,动力港'
+    - 'IP-CIDR,91.108.4.0/22,动力港,no-resolve'
+    - 'IP-CIDR,91.108.8.0/21,动力港,no-resolve'
+    - 'IP-CIDR,91.108.16.0/22,动力港,no-resolve'
+    - 'IP-CIDR,91.108.56.0/22,动力港,no-resolve'
+    - 'IP-CIDR,149.154.160.0/20,动力港,no-resolve'
+    - 'IP-CIDR6,2001:67c:4e8::/48,动力港,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23d::/48,动力港,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23f::/48,动力港,no-resolve'
+    - 'IP-CIDR,120.232.181.162/32,动力港,no-resolve'
+    - 'IP-CIDR,120.241.147.226/32,动力港,no-resolve'
+    - 'IP-CIDR,120.253.253.226/32,动力港,no-resolve'
+    - 'IP-CIDR,120.253.255.162/32,动力港,no-resolve'
+    - 'IP-CIDR,120.253.255.34/32,动力港,no-resolve'
+    - 'IP-CIDR,120.253.255.98/32,动力港,no-resolve'
+    - 'IP-CIDR,180.163.150.162/32,动力港,no-resolve'
+    - 'IP-CIDR,180.163.150.34/32,动力港,no-resolve'
+    - 'IP-CIDR,180.163.151.162/32,动力港,no-resolve'
+    - 'IP-CIDR,180.163.151.34/32,动力港,no-resolve'
+    - 'IP-CIDR,203.208.39.0/24,动力港,no-resolve'
+    - 'IP-CIDR,203.208.40.0/24,动力港,no-resolve'
+    - 'IP-CIDR,203.208.41.0/24,动力港,no-resolve'
+    - 'IP-CIDR,203.208.43.0/24,动力港,no-resolve'
+    - 'IP-CIDR,203.208.50.0/24,动力港,no-resolve'
+    - 'IP-CIDR,220.181.174.162/32,动力港,no-resolve'
+    - 'IP-CIDR,220.181.174.226/32,动力港,no-resolve'
+    - 'IP-CIDR,220.181.174.34/32,动力港,no-resolve'
+    - 'DOMAIN,injections.adguard.org,DIRECT'
+    - 'DOMAIN,local.adguard.org,DIRECT'
+    - 'DOMAIN-SUFFIX,local,DIRECT'
+    - 'IP-CIDR,127.0.0.0/8,DIRECT'
+    - 'IP-CIDR,172.16.0.0/12,DIRECT'
+    - 'IP-CIDR,192.168.0.0/16,DIRECT'
+    - 'IP-CIDR,10.0.0.0/8,DIRECT'
+    - 'IP-CIDR,17.0.0.0/8,DIRECT'
+    - 'IP-CIDR,100.64.0.0/10,DIRECT'
+    - 'IP-CIDR,224.0.0.0/4,DIRECT'
+    - 'IP-CIDR6,fe80::/10,DIRECT'
+    - 'DOMAIN-SUFFIX,cn,DIRECT'
+    - 'DOMAIN-KEYWORD,-cn,DIRECT'
+    - 'GEOIP,CN,DIRECT'
+    - 'MATCH,动力港'
