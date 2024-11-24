@@ -15,21 +15,31 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: 香港1, server: hk.legeth.cc, port: 26333, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: d8cd7d69-395d-4637-a0ad-59e70fdd07df, ports: 26000-26999 }
-    - { name: 香港2, server: hk.legeth.cc, port: 26281, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: d8cd7d69-395d-4637-a0ad-59e70fdd07df, ports: 26000-26999 }
-    - { name: 香港3, server: hk.legeth.cc, port: 26666, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: d8cd7d69-395d-4637-a0ad-59e70fdd07df, ports: 26000-26999 }
-    - { name: 香港4, server: hk.legeth.cc, port: 26252, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: d8cd7d69-395d-4637-a0ad-59e70fdd07df, ports: 26000-26999 }
-    - { name: 美国1, server: us.legeth.cc, port: 26801, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: d8cd7d69-395d-4637-a0ad-59e70fdd07df, ports: 26000-26999 }
-    - { name: 美国2, server: us.legeth.cc, port: 26408, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: d8cd7d69-395d-4637-a0ad-59e70fdd07df, ports: 26000-26999 }
-    - { name: 美国3, server: us.legeth.cc, port: 26690, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: d8cd7d69-395d-4637-a0ad-59e70fdd07df, ports: 26000-26999 }
-    - { name: 美国4, server: us.legeth.cc, port: 26747, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: d8cd7d69-395d-4637-a0ad-59e70fdd07df, ports: 26000-26999 }
+    - { name: 香港1, server: hk.legeth.cc, port: 20186, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 香港2, server: hk.legeth.cc, port: 20196, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 香港3, server: hk.legeth.cc, port: 20109, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 香港4, server: hk.legeth.cc, port: 20157, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 美国1, server: us.legeth.cc, port: 20134, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 美国2, server: us.legeth.cc, port: 20136, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 美国3, server: us.legeth.cc, port: 20183, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 美国4, server: us.legeth.cc, port: 20139, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 日本1, server: jp.legeth.cc, port: 20174, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 日本2, server: jp.legeth.cc, port: 20179, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 日本3, server: jp.legeth.cc, port: 20148, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 日本4, server: jp.legeth.cc, port: 20146, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 新加坡1, server: sg.legeth.cc, port: 20117, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 新加坡2, server: sg.legeth.cc, port: 20144, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 新加坡3, server: sg.legeth.cc, port: 20112, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
+    - { name: 新加坡4, server: sg.legeth.cc, port: 20173, up: 200, down: 200, skip-cert-verify: false, type: hysteria2, password: 9b52518d-88f7-4244-8b15-71264217c126, ports: 20101-20199 }
 proxy-groups:
-    - { name: 万里行机场, type: select, proxies: [自动选择, 故障转移, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4] }
-    - { name: 自动选择, type: url-test, proxies: [香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: [香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 万里行机场, type: select, proxies: [自动选择, 故障转移, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4] }
+    - { name: 自动选择, type: url-test, proxies: [香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: [香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
-    - 'IP-CIDR,184.174.96.224/32,DIRECT,no-resolve'
-    - 'IP-CIDR,50.114.156.86/32,DIRECT,no-resolve'
+    - 'IP-CIDR,154.18.187.166/32,DIRECT,no-resolve'
+    - 'IP-CIDR,172.111.146.58/32,DIRECT,no-resolve'
+    - 'IP-CIDR,66.220.29.134/32,DIRECT,no-resolve'
+    - 'IP-CIDR,210.0.138.14/32,DIRECT,no-resolve'
     - 'DOMAIN,54.245.38.78:7001,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,万里行机场'
     - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,万里行机场'
