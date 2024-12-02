@@ -15,38 +15,33 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: 美国1, server: us.pianyi.info, port: 18321, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 美国2, server: us.pianyi.info, port: 16245, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 美国3, server: us.pianyi.info, port: 17489, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 美国4, server: us.pianyi.info, port: 10596, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 香港1, server: hk.pianyi.info, port: 18282, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 香港2, server: hk.pianyi.info, port: 14366, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 香港3, server: hk.pianyi.info, port: 13352, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 香港4, server: hk.pianyi.info, port: 18988, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 台湾1, server: tw.pianyi.info, port: 16697, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 台湾2, server: tw.pianyi.info, port: 18428, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 台湾3, server: tw.pianyi.info, port: 17548, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 台湾4, server: tw.pianyi.info, port: 15617, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 俄罗斯1, server: ru.pianyi.info, port: 17171, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 俄罗斯2, server: ru.pianyi.info, port: 18993, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 俄罗斯3, server: ru.pianyi.info, port: 16755, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 俄罗斯4, server: ru.pianyi.info, port: 10108, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 德国1, server: de.pianyi.info, port: 10554, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 德国2, server: de.pianyi.info, port: 13775, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 德国3, server: de.pianyi.info, port: 17350, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
-    - { name: 德国4, server: de.pianyi.info, port: 18894, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 86c41282-6071-4bd3-b2aa-4cfac5ecddda, ports: 10001-19999 }
+    - { name: 美国1, server: us.pianyi.info, port: 13480, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 美国2, server: us.pianyi.info, port: 16452, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 美国3, server: us.pianyi.info, port: 16052, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 美国4, server: us.pianyi.info, port: 15286, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 香港1, server: hk.pianyi.info, port: 15179, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 香港2, server: hk.pianyi.info, port: 18587, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 香港3, server: hk.pianyi.info, port: 17179, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 香港4, server: hk.pianyi.info, port: 13277, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 俄罗斯1, server: ru.pianyi.info, port: 19084, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 俄罗斯2, server: ru.pianyi.info, port: 19619, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 俄罗斯3, server: ru.pianyi.info, port: 17248, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 俄罗斯4, server: ru.pianyi.info, port: 16421, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 德国1, server: de.pianyi.info, port: 14477, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 德国2, server: de.pianyi.info, port: 15791, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 德国3, server: de.pianyi.info, port: 16191, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
+    - { name: 德国4, server: de.pianyi.info, port: 11088, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b819209b-08ef-440e-9170-3aaaa70bc064, ports: 10001-19999 }
 proxy-groups:
-    - { name: 随便机场, type: select, proxies: [自动选择, 故障转移, 美国1, 美国2, 美国3, 美国4, 香港1, 香港2, 香港3, 香港4, 台湾1, 台湾2, 台湾3, 台湾4, 俄罗斯1, 俄罗斯2, 俄罗斯3, 俄罗斯4, 德国1, 德国2, 德国3, 德国4] }
-    - { name: 自动选择, type: url-test, proxies: [美国1, 美国2, 美国3, 美国4, 香港1, 香港2, 香港3, 香港4, 台湾1, 台湾2, 台湾3, 台湾4, 俄罗斯1, 俄罗斯2, 俄罗斯3, 俄罗斯4, 德国1, 德国2, 德国3, 德国4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: [美国1, 美国2, 美国3, 美国4, 香港1, 香港2, 香港3, 香港4, 台湾1, 台湾2, 台湾3, 台湾4, 俄罗斯1, 俄罗斯2, 俄罗斯3, 俄罗斯4, 德国1, 德国2, 德国3, 德国4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 随便机场, type: select, proxies: [自动选择, 故障转移, 美国1, 美国2, 美国3, 美国4, 香港1, 香港2, 香港3, 香港4, 俄罗斯1, 俄罗斯2, 俄罗斯3, 俄罗斯4, 德国1, 德国2, 德国3, 德国4] }
+    - { name: 自动选择, type: url-test, proxies: [美国1, 美国2, 美国3, 美国4, 香港1, 香港2, 香港3, 香港4, 俄罗斯1, 俄罗斯2, 俄罗斯3, 俄罗斯4, 德国1, 德国2, 德国3, 德国4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: [美国1, 美国2, 美国3, 美国4, 香港1, 香港2, 香港3, 香港4, 俄罗斯1, 俄罗斯2, 俄罗斯3, 俄罗斯4, 德国1, 德国2, 德国3, 德国4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'IP-CIDR,159.69.244.72/32,DIRECT,no-resolve'
     - 'IP-CIDR,80.85.152.22/32,DIRECT,no-resolve'
-    - 'IP-CIDR,111.253.219.149/32,DIRECT,no-resolve'
-    - 'IP-CIDR,112.120.54.100/32,DIRECT,no-resolve'
+    - 'IP-CIDR,42.200.231.97/32,DIRECT,no-resolve'
     - 'IP-CIDR,184.174.96.140/32,DIRECT,no-resolve'
-    - 'IP-CIDR,184.174.96.224/32,DIRECT,no-resolve'
     - 'IP-CIDR,192.3.172.209/32,DIRECT,no-resolve'
+    - 'IP-CIDR,184.174.96.224/32,DIRECT,no-resolve'
     - 'DOMAIN,184.174.96.140:7001,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,随便机场'
     - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,随便机场'
