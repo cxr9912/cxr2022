@@ -16,21 +16,22 @@ dns:
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
     - { name: 香港01, type: ss, server: 911.xn--fhqu06a8m1asto.icu, port: 10482, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
-    - { name: 香港02, type: ss, server: 119.xn--fhqu06a8m1asto.icu, port: 10342, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
+    - { name: 香港02, type: ss, server: 119.xn--fhqu06a8m1asto.icu, port: 10422, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
     - { name: 澳大利亚01, type: ss, server: 911.xn--fhqu06a8m1asto.icu, port: 10483, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
     - { name: 日本01, type: ss, server: 911.xn--fhqu06a8m1asto.icu, port: 10484, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
-    - { name: 以色列01, type: ss, server: 913.xn--fhqu06a8m1asto.icu, port: 10410, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
+    - { name: 以色列01, type: ss, server: 913.xn--fhqu06a8m1asto.icu, port: 10575, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
     - { name: 美国01, type: ss, server: 912.xn--fhqu06a8m1asto.icu, port: 10288, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
     - { name: 新加坡01, type: ss, server: 912.xn--fhqu06a8m1asto.icu, port: 10289, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
-    - { name: 德国01, type: ss, server: 913.xn--fhqu06a8m1asto.icu, port: 10411, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
-    - { name: 英国01, type: ss, server: 119.xn--fhqu06a8m1asto.icu, port: 10340, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
-    - { name: 韩国01, type: ss, server: 119.xn--fhqu06a8m1asto.icu, port: 10341, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
+    - { name: 德国01, type: ss, server: 913.xn--fhqu06a8m1asto.icu, port: 10576, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
+    - { name: 英国01, type: ss, server: 119.xn--fhqu06a8m1asto.icu, port: 10420, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
+    - { name: 韩国01, type: ss, server: 119.xn--fhqu06a8m1asto.icu, port: 10421, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
     - { name: 泰国家宽01ipv6入口, type: ss, server: 800.xn--fhqu06a8m1asto.icu, port: 10545, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
-    - { name: 波兰家宽01ipv6入口, type: ss, server: 801.xn--fhqu06a8m1asto.icu, port: 20545, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
+    - { name: 墨西哥01ipv6入口, type: ss, server: 801.xn--fhqu06a8m1asto.icu, port: 20545, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
+    - { name: 波兰01ipv6入口, type: ss, server: 801.xn--fhqu06a8m1asto.icu, port: 20546, cipher: chacha20-ietf-poly1305, password: 3d81293b-9c70-4a41-aff3-ace00d489905, udp: true }
 proxy-groups:
-    - { name: 网上邻居, type: select, proxies: [自动选择, 故障转移, 香港01, 香港02, 澳大利亚01, 日本01, 以色列01, 美国01, 新加坡01, 德国01, 英国01, 韩国01, 泰国家宽01ipv6入口, 波兰家宽01ipv6入口] }
-    - { name: 自动选择, type: url-test, proxies: [香港01, 香港02, 澳大利亚01, 日本01, 以色列01, 美国01, 新加坡01, 德国01, 英国01, 韩国01, 泰国家宽01ipv6入口, 波兰家宽01ipv6入口], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: [香港01, 香港02, 澳大利亚01, 日本01, 以色列01, 美国01, 新加坡01, 德国01, 英国01, 韩国01, 泰国家宽01ipv6入口, 波兰家宽01ipv6入口], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 网上邻居, type: select, proxies: [自动选择, 故障转移, 香港01, 香港02, 澳大利亚01, 日本01, 以色列01, 美国01, 新加坡01, 德国01, 英国01, 韩国01, 泰国家宽01ipv6入口, 墨西哥01ipv6入口, 波兰01ipv6入口] }
+    - { name: 自动选择, type: url-test, proxies: [香港01, 香港02, 澳大利亚01, 日本01, 以色列01, 美国01, 新加坡01, 德国01, 英国01, 韩国01, 泰国家宽01ipv6入口, 墨西哥01ipv6入口, 波兰01ipv6入口], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: [香港01, 香港02, 澳大利亚01, 日本01, 以色列01, 美国01, 新加坡01, 德国01, 英国01, 韩国01, 泰国家宽01ipv6入口, 墨西哥01ipv6入口, 波兰01ipv6入口], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN-SUFFIX,services.googleapis.cn,网上邻居'
     - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,网上邻居'
