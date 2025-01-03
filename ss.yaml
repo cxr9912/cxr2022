@@ -15,31 +15,36 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: 美国1, server: us.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 美国2, server: us.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 美国3, server: us.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 美国4, server: us.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 香港1, server: hk.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 香港2, server: hk.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 香港3, server: hk.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 香港4, server: hk.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 日本1, server: jp.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 日本2, server: jp.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 日本3, server: jp.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 日本4, server: jp.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 新加坡1, server: sg.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 新加坡2, server: sg.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 新加坡3, server: sg.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
-    - { name: 新加坡4, server: sg.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: 50b36031-f27a-4af3-a8e4-ebf6dc7b78d1 }
+    - { name: 美国1, server: us.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 美国2, server: us.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 美国3, server: us.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 美国4, server: us.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 香港1, server: hk.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 香港2, server: hk.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 香港3, server: hk.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 香港4, server: hk.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 日本1, server: jp.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 日本2, server: jp.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 日本3, server: jp.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 日本4, server: jp.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 新加坡1, server: sg.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 新加坡2, server: sg.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 新加坡3, server: sg.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 新加坡4, server: sg.tuanzi.xyz, port: 20701, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b }
+    - { name: 卢森堡1, server: lu.tuanzi.xyz, port: 20736, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b, ports: 20701-20799 }
+    - { name: 卢森堡2, server: lu.tuanzi.xyz, port: 20789, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b, ports: 20701-20799 }
+    - { name: 卢森堡3, server: lu.tuanzi.xyz, port: 20792, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b, ports: 20701-20799 }
+    - { name: 卢森堡4, server: lu.tuanzi.xyz, port: 20760, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: fdeb62f3-f91b-454b-95c5-a44b54f8393b, ports: 20701-20799 }
 proxy-groups:
-    - { name: 团子机场, type: select, proxies: [自动选择, 故障转移, 美国1, 美国2, 美国3, 美国4, 香港1, 香港2, 香港3, 香港4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4] }
-    - { name: 自动选择, type: url-test, proxies: [美国1, 美国2, 美国3, 美国4, 香港1, 香港2, 香港3, 香港4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: [美国1, 美国2, 美国3, 美国4, 香港1, 香港2, 香港3, 香港4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 团子机场, type: select, proxies: [自动选择, 故障转移, 美国1, 美国2, 美国3, 美国4, 香港1, 香港2, 香港3, 香港4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4] }
+    - { name: 自动选择, type: url-test, proxies: [美国1, 美国2, 美国3, 美国4, 香港1, 香港2, 香港3, 香港4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: [美国1, 美国2, 美国3, 美国4, 香港1, 香港2, 香港3, 香港4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
+    - 'IP-CIDR,107.189.31.71/32,DIRECT,no-resolve'
     - 'IP-CIDR,146.19.196.204/32,DIRECT,no-resolve'
     - 'IP-CIDR,172.111.146.58/32,DIRECT,no-resolve'
     - 'IP-CIDR,42.200.231.97/32,DIRECT,no-resolve'
-    - 'IP-CIDR,74.48.84.61/32,DIRECT,no-resolve'
+    - 'IP-CIDR,74.48.108.72/32,DIRECT,no-resolve'
     - 'IP-CIDR,209.141.44.218/32,DIRECT,no-resolve'
     - 'DOMAIN,66.55.76.245:7000,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,团子机场'
