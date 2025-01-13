@@ -15,37 +15,38 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '🇭🇰 香港1', type: ss, server: kaikaixinxin-hk.legeth.xyz, port: 61234, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
-    - { name: '🇭🇰 香港2', type: ss, server: kaikaixinxin-hk.legeth.xyz, port: 61402, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
-    - { name: '🇭🇰 香港3', type: ss, server: kaikaixinxin-hk.legeth.xyz, port: 61274, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
-    - { name: '🇭🇰 香港4', type: ss, server: kaikaixinxin-hk.legeth.xyz, port: 61241, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
-    - { name: '🇹🇼 台湾1', type: ss, server: kaikaixinxin-tw.legeth.xyz, port: 61159, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
-    - { name: '🇹🇼 台湾2', type: ss, server: kaikaixinxin-tw.legeth.xyz, port: 61955, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
-    - { name: '🇹🇼 台湾3', type: ss, server: kaikaixinxin-tw.legeth.xyz, port: 61258, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
-    - { name: '🇹🇼 台湾4', type: ss, server: kaikaixinxin-tw.legeth.xyz, port: 61318, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
-    - { name: '🇺🇸 美国1', server: kaikaixinxin-us.legeth.xyz, port: 61943, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605, ports: 61001-61999 }
-    - { name: '🇺🇸 美国2', server: kaikaixinxin-us.legeth.xyz, port: 61628, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605, ports: 61001-61999 }
-    - { name: '🇺🇸 美国3', server: kaikaixinxin-us.legeth.xyz, port: 61595, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605, ports: 61001-61999 }
-    - { name: '🇺🇸 美国4', server: kaikaixinxin-us.legeth.xyz, port: 61713, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605, ports: 61001-61999 }
-    - { name: '🇨🇦 加拿大1', server: kaikaixinxin-ca.legeth.xyz, port: 61150, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605, ports: 61001-61999 }
-    - { name: '🇨🇦 加拿大2', server: kaikaixinxin-ca.legeth.xyz, port: 61631, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605, ports: 61001-61999 }
-    - { name: '🇨🇦 加拿大3', server: kaikaixinxin-ca.legeth.xyz, port: 61232, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605, ports: 61001-61999 }
-    - { name: '🇨🇦 加拿大4', server: kaikaixinxin-ca.legeth.xyz, port: 61239, up: 1000, down: 1000, skip-cert-verify: false, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605, ports: 61001-61999 }
+    - { name: '剩余流量：55.54 GB', type: ss, server: kaikaixinxin-hk.legeth.xyz, port: 61050, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
+    - { name: '距离下次重置剩余：4 天', type: ss, server: kaikaixinxin-hk.legeth.xyz, port: 61050, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
+    - { name: 套餐到期：2025-01-17, type: ss, server: kaikaixinxin-hk.legeth.xyz, port: 61050, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
+    - { name: '🇭🇰 香港1', type: ss, server: kaikaixinxin-hk.legeth.xyz, port: 61050, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
+    - { name: '🇭🇰 香港2', type: ss, server: kaikaixinxin-hk.legeth.xyz, port: 61611, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
+    - { name: '🇭🇰 香港3', type: ss, server: kaikaixinxin-hk.legeth.xyz, port: 61735, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
+    - { name: '🇭🇰 香港4', type: ss, server: kaikaixinxin-hk.legeth.xyz, port: 61164, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
+    - { name: '🇹🇼 台湾1', type: ss, server: kaikaixinxin-tw.legeth.xyz, port: 61523, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
+    - { name: '🇹🇼 台湾2', type: ss, server: kaikaixinxin-tw.legeth.xyz, port: 61284, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
+    - { name: '🇹🇼 台湾3', type: ss, server: kaikaixinxin-tw.legeth.xyz, port: 61116, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
+    - { name: '🇹🇼 台湾4', type: ss, server: kaikaixinxin-tw.legeth.xyz, port: 61303, cipher: 2022-blake3-aes-256-gcm, password: 'Y2U5MWY0N2IwMDAxY2EwMmQzNzdkM2RhNDYyNjFiOGY=:Yjk4YjNmOWUtZTE1Mi00ZjkwLWEwMTAtNDg0ZWU3ZGY=', udp: true }
+    - { name: '🇺🇸 美国1', server: kaikaixinxin-us.legeth.xyz, port: 61667, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 61001-61999, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605 }
+    - { name: '🇺🇸 美国2', server: kaikaixinxin-us.legeth.xyz, port: 61206, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 61001-61999, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605 }
+    - { name: '🇺🇸 美国3', server: kaikaixinxin-us.legeth.xyz, port: 61959, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 61001-61999, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605 }
+    - { name: '🇺🇸 美国4', server: kaikaixinxin-us.legeth.xyz, port: 61201, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 61001-61999, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605 }
+    - { name: '🇨🇦 加拿大1', server: kaikaixinxin-ca.legeth.xyz, port: 61339, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 61001-61999, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605 }
+    - { name: '🇨🇦 加拿大2', server: kaikaixinxin-ca.legeth.xyz, port: 61591, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 61001-61999, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605 }
+    - { name: '🇨🇦 加拿大3', server: kaikaixinxin-ca.legeth.xyz, port: 61296, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 61001-61999, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605 }
+    - { name: '🇨🇦 加拿大4', server: kaikaixinxin-ca.legeth.xyz, port: 61324, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 61001-61999, type: hysteria2, password: b98b3f9e-e152-4f90-a010-484ee7df2605 }
 proxy-groups:
-    - { name: 开开心心大机场✈️, type: select, proxies: [自动选择, 故障转移, '🇭🇰 香港1', '🇭🇰 香港2', '🇭🇰 香港3', '🇭🇰 香港4', '🇹🇼 台湾1', '🇹🇼 台湾2', '🇹🇼 台湾3', '🇹🇼 台湾4', '🇺🇸 美国1', '🇺🇸 美国2', '🇺🇸 美国3', '🇺🇸 美国4', '🇨🇦 加拿大1', '🇨🇦 加拿大2', '🇨🇦 加拿大3', '🇨🇦 加拿大4'] }
-    - { name: 自动选择, type: url-test, proxies: ['🇭🇰 香港1', '🇭🇰 香港2', '🇭🇰 香港3', '🇭🇰 香港4', '🇹🇼 台湾1', '🇹🇼 台湾2', '🇹🇼 台湾3', '🇹🇼 台湾4', '🇺🇸 美国1', '🇺🇸 美国2', '🇺🇸 美国3', '🇺🇸 美国4', '🇨🇦 加拿大1', '🇨🇦 加拿大2', '🇨🇦 加拿大3', '🇨🇦 加拿大4'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['🇭🇰 香港1', '🇭🇰 香港2', '🇭🇰 香港3', '🇭🇰 香港4', '🇹🇼 台湾1', '🇹🇼 台湾2', '🇹🇼 台湾3', '🇹🇼 台湾4', '🇺🇸 美国1', '🇺🇸 美国2', '🇺🇸 美国3', '🇺🇸 美国4', '🇨🇦 加拿大1', '🇨🇦 加拿大2', '🇨🇦 加拿大3', '🇨🇦 加拿大4'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 开开心心大机场✈️, type: select, proxies: [自动选择, 故障转移, '剩余流量：55.54 GB', '距离下次重置剩余：4 天', 套餐到期：2025-01-17, '🇭🇰 香港1', '🇭🇰 香港2', '🇭🇰 香港3', '🇭🇰 香港4', '🇹🇼 台湾1', '🇹🇼 台湾2', '🇹🇼 台湾3', '🇹🇼 台湾4', '🇺🇸 美国1', '🇺🇸 美国2', '🇺🇸 美国3', '🇺🇸 美国4', '🇨🇦 加拿大1', '🇨🇦 加拿大2', '🇨🇦 加拿大3', '🇨🇦 加拿大4'] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：55.54 GB', '距离下次重置剩余：4 天', 套餐到期：2025-01-17, '🇭🇰 香港1', '🇭🇰 香港2', '🇭🇰 香港3', '🇭🇰 香港4', '🇹🇼 台湾1', '🇹🇼 台湾2', '🇹🇼 台湾3', '🇹🇼 台湾4', '🇺🇸 美国1', '🇺🇸 美国2', '🇺🇸 美国3', '🇺🇸 美国4', '🇨🇦 加拿大1', '🇨🇦 加拿大2', '🇨🇦 加拿大3', '🇨🇦 加拿大4'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：55.54 GB', '距离下次重置剩余：4 天', 套餐到期：2025-01-17, '🇭🇰 香港1', '🇭🇰 香港2', '🇭🇰 香港3', '🇭🇰 香港4', '🇹🇼 台湾1', '🇹🇼 台湾2', '🇹🇼 台湾3', '🇹🇼 台湾4', '🇺🇸 美国1', '🇺🇸 美国2', '🇺🇸 美国3', '🇺🇸 美国4', '🇨🇦 加拿大1', '🇨🇦 加拿大2', '🇨🇦 加拿大3', '🇨🇦 加拿大4'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'IP-CIDR,209.200.246.141/32,DIRECT,no-resolve'
     - 'IP-CIDR,209.200.246.194/32,DIRECT,no-resolve'
-    - 'IP-CIDR,209.141.59.21/32,DIRECT,no-resolve'
     - 'IP-CIDR,64.71.152.247/32,DIRECT,no-resolve'
-    - 'IP-CIDR,114.38.93.92/32,DIRECT,no-resolve'
-    - 'IP-CIDR,114.38.97.173/32,DIRECT,no-resolve'
-    - 'IP-CIDR,61.223.131.119/32,DIRECT,no-resolve'
-    - 'IP-CIDR,219.76.129.123/32,DIRECT,no-resolve'
+    - 'IP-CIDR,209.141.59.21/32,DIRECT,no-resolve'
+    - 'IP-CIDR,61.224.147.139/32,DIRECT,no-resolve'
+    - 'IP-CIDR,61.224.165.147/32,DIRECT,no-resolve'
+    - 'IP-CIDR,112.120.54.173/32,DIRECT,no-resolve'
     - 'IP-CIDR,42.200.230.176/32,DIRECT,no-resolve'
-    - 'IP-CIDR,219.76.129.108/32,DIRECT,no-resolve'
     - 'DOMAIN,kaikaixinxin.jiumaojiu.net,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,开开心心大机场✈️'
     - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,开开心心大机场✈️'
