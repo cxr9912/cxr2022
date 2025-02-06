@@ -15,33 +15,33 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: 官网：passwall.link, type: ss, server: hkg-01-a.baiducdn.icu, port: 18521, cipher: chacha20-ietf-poly1305, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 香港・01, type: ss, server: hkg-01-a.baiducdn.icu, port: 18521, cipher: chacha20-ietf-poly1305, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 香港・02, type: ss, server: hkg-02.baiducdn.icu, port: 18522, cipher: chacha20-ietf-poly1305, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 香港・03, type: ss, server: hkg-03.baiducdn.icu, port: 17000, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 香港・04, type: ss, server: hkg-04.baiducdn.icu, port: 18524, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: '香港・05 [S]', type: ss, server: hkg-05-s.baiducdn.icu, port: 18525, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: '香港・06 [S]', type: ss, server: hkg-06-s.baiducdn.icu, port: 18526, cipher: chacha20-ietf-poly1305, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 新加坡・01, type: ss, server: sg-01.baiducdn.icu, port: 15651, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 新加坡・02, type: ss, server: sg-02.baiducdn.icu, port: 15652, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: '新加坡・03 [S]', type: ss, server: sg-03.baiducdn.icu, port: 12000, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 新加坡・04, type: ss, server: sg-04.baiducdn.icu, port: 13000, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 新加坡・05, type: ss, server: sg-05.baiducdn.icu, port: 14000, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: '新加坡・06 [S]', type: ss, server: sg-06-s.baiducdn.icu, port: 15656, cipher: chacha20-ietf-poly1305, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 台湾・01, type: ss, server: tw-01.baiducdn.icu, port: 18861, cipher: chacha20-ietf-poly1305, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 台湾・02, type: ss, server: tw-02.baiducdn.icu, port: 18862, cipher: chacha20-ietf-poly1305, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 台湾・03, type: ss, server: tw-03.baiducdn.icu, port: 18863, cipher: chacha20-ietf-poly1305, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 美国・01, type: ss, server: us-01-a.baiducdn.icu, port: 21000, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 美国・02, type: ss, server: us-02.baiducdn.icu, port: 18112, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 美国・03, type: ss, server: us-03.baiducdn.icu, port: 23000, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 英国・01, type: ss, server: uk-01.baiducdn.icu, port: 15441, cipher: chacha20-ietf-poly1305, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 英国・02, type: ss, server: uk-02-s.baiducdn.icu, port: 15442, cipher: chacha20-ietf-poly1305, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 韩国・01, type: ss, server: kr-01.baiducdn.icu, port: 15821, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 韩国・02, type: ss, server: kr-02.baiducdn.icu, port: 15822, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 日本・01, type: ss, server: jp-01.baiducdn.icu, port: 25000, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 日本・02, type: ss, server: jp-02.baiducdn.icu, port: 15812, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 日本・03, type: ss, server: jp-03.baiducdn.icu, port: 27000, cipher: aes-128-gcm, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
-    - { name: 日本・04, type: ss, server: jp-04.baiducdn.icu, port: 35814, cipher: chacha20-ietf-poly1305, password: bcc39a44-b9ab-4c69-abc1-f31331e6ef3c, udp: true }
+    - { name: 官网：passwall.link, type: ss, server: hkg-01-a.baiducdn.icu, port: 18521, cipher: chacha20-ietf-poly1305, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 香港・01, type: ss, server: hkg-01-a.baiducdn.icu, port: 18521, cipher: chacha20-ietf-poly1305, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 香港・02, type: ss, server: hkg-02.baiducdn.icu, port: 18522, cipher: chacha20-ietf-poly1305, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 香港・03, type: ss, server: hkg-03.baiducdn.icu, port: 17000, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 香港・04, type: ss, server: hkg-04.baiducdn.icu, port: 18524, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: '香港・05 [S]', type: ss, server: hkg-05-s.baiducdn.icu, port: 18525, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: '香港・06 [S]', type: ss, server: hkg-06-s.baiducdn.icu, port: 18526, cipher: chacha20-ietf-poly1305, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 新加坡・01, type: ss, server: sg-01.baiducdn.icu, port: 15651, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 新加坡・02, type: ss, server: sg-02.baiducdn.icu, port: 15652, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: '新加坡・03 [S]', type: ss, server: sg-03.baiducdn.icu, port: 12000, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 新加坡・04, type: ss, server: sg-04.baiducdn.icu, port: 13000, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 新加坡・05, type: ss, server: sg-05.baiducdn.icu, port: 14000, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: '新加坡・06 [S]', type: ss, server: sg-06-s.baiducdn.icu, port: 15656, cipher: chacha20-ietf-poly1305, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 台湾・01, type: ss, server: tw-01.baiducdn.icu, port: 18861, cipher: chacha20-ietf-poly1305, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 台湾・02, type: ss, server: tw-02.baiducdn.icu, port: 18862, cipher: chacha20-ietf-poly1305, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 台湾・03, type: ss, server: tw-03.baiducdn.icu, port: 18863, cipher: chacha20-ietf-poly1305, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 美国・01, type: ss, server: us-01-a.baiducdn.icu, port: 21000, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 美国・02, type: ss, server: us-02.baiducdn.icu, port: 18112, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 美国・03, type: ss, server: us-03.baiducdn.icu, port: 23000, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 英国・01, type: ss, server: uk-01.baiducdn.icu, port: 15441, cipher: chacha20-ietf-poly1305, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 英国・02, type: ss, server: uk-02-s.baiducdn.icu, port: 15442, cipher: chacha20-ietf-poly1305, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 韩国・01, type: ss, server: kr-01.baiducdn.icu, port: 15821, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 韩国・02, type: ss, server: kr-02.baiducdn.icu, port: 15822, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 日本・01, type: ss, server: jp-01.baiducdn.icu, port: 25000, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 日本・02, type: ss, server: jp-02.baiducdn.icu, port: 15812, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 日本・03, type: ss, server: jp-03.baiducdn.icu, port: 27000, cipher: aes-128-gcm, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
+    - { name: 日本・04, type: ss, server: jp-04.baiducdn.icu, port: 35814, cipher: chacha20-ietf-poly1305, password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49, udp: true }
 proxy-groups:
     - { name: PassWall, type: select, proxies: [自动选择, 故障转移, 官网：passwall.link, 香港・01, 香港・02, 香港・03, 香港・04, '香港・05 [S]', '香港・06 [S]', 新加坡・01, 新加坡・02, '新加坡・03 [S]', 新加坡・04, 新加坡・05, '新加坡・06 [S]', 台湾・01, 台湾・02, 台湾・03, 美国・01, 美国・02, 美国・03, 英国・01, 英国・02, 韩国・01, 韩国・02, 日本・01, 日本・02, 日本・03, 日本・04] }
     - { name: 自动选择, type: url-test, proxies: [官网：passwall.link, 香港・01, 香港・02, 香港・03, 香港・04, '香港・05 [S]', '香港・06 [S]', 新加坡・01, 新加坡・02, '新加坡・03 [S]', 新加坡・04, 新加坡・05, '新加坡・06 [S]', 台湾・01, 台湾・02, 台湾・03, 美国・01, 美国・02, 美国・03, 英国・01, 英国・02, 韩国・01, 韩国・02, 日本・01, 日本・02, 日本・03, 日本・04], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
@@ -52,7 +52,7 @@ rules:
     - 'IP-CIDR,113.56.219.201/32,DIRECT,no-resolve'
     - 'IP-CIDR,121.14.61.109/32,DIRECT,no-resolve'
     - 'IP-CIDR,183.238.50.20/32,DIRECT,no-resolve'
-    - 'IP-CIDR,120.240.176.41/32,DIRECT,no-resolve'
+    - 'IP-CIDR,120.240.176.40/32,DIRECT,no-resolve'
     - 'IP-CIDR,120.198.71.184/32,DIRECT,no-resolve'
     - 'DOMAIN,127.0.0.1:7001,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,PassWall'
