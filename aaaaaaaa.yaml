@@ -15,182 +15,58 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：1000 GB', server: au.1010520.xyz, port: 29952, udp: true, skip-cert-verify: false, sni: au.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: '距离下次重置剩余：19 天', server: au.1010520.xyz, port: 29952, udp: true, skip-cert-verify: false, sni: au.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 套餐到期：2025-02-12, server: au.1010520.xyz, port: 29952, udp: true, skip-cert-verify: false, sni: au.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇦🇺澳洲01|流媒体|Udp-569, server: au.1010520.xyz, port: 29952, udp: true, skip-cert-verify: false, sni: au.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇦🇺澳洲02|流媒体|Udp-569, server: au.1010520.xyz, port: 29953, udp: true, skip-cert-verify: false, sni: au.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇦🇺澳洲03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 19254, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇦🇺澳洲04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 19254, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇦🇺澳洲05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 19254, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇺🇸美国01|流媒体|Udp-569, server: us.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: us.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇺🇸美国02|流媒体|Udp-569, server: us.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: us.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇺🇸美国03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 18739, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇺🇸美国04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 18739, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇺🇸美国05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 18739, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇳🇱荷兰01|流媒体|Udp-569, server: nl.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: nl.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇳🇱荷兰02|流媒体|Udp-569, server: nl.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: nl.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇳🇱荷兰03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 18749, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇳🇱荷兰04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 18749, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇳🇱荷兰05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 18749, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇸🇬新加坡01|流媒体|Udp-569, server: sg.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: sg.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇸🇬新加坡02|流媒体|Udp-569, server: sg.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: sg.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇸🇬新加坡03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 18759, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇸🇬新加坡04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 18759, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇸🇬新加坡05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 18759, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇬🇧英国01|流媒体|Udp-569, server: uk.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: uk.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇬🇧英国02|流媒体|Udp-569, server: uk.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: uk.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇬🇧英国03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 18769, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇬🇧英国04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 18769, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇬🇧英国05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 18769, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇩🇪德国01|流媒体|Udp-569, server: de.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: de.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇩🇪德国02|流媒体|Udp-569, server: de.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: de.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇩🇪德国03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 18779, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇩🇪德国04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 18779, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇩🇪德国05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 18779, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇨🇦加拿大01|流媒体|Udp-569, server: ca.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: ca.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇨🇦加拿大02|流媒体|Udp-569, server: ca.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: ca.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇨🇦加拿大03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 18789, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇨🇦加拿大04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 18789, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇨🇦加拿大05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 18789, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇮🇳印度01|流媒体|Udp-569, server: in.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: in.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇮🇳印度02|流媒体|Udp-569, server: in.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: in.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇮🇳印度03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 18799, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇮🇳印度04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 18799, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇮🇳印度05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 18799, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇯🇵日本01|流媒体|Udp-569, server: jp.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: jp.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇯🇵日本02|流媒体|Udp-569, server: jp.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: jp.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇯🇵日本03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 18109, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇯🇵日本04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 18109, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇯🇵日本05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 18109, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇰🇷韩国01|流媒体|Udp-569, server: kr.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: kr.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇰🇷韩国02|流媒体|Udp-569, server: kr.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: kr.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇰🇷韩国03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 18119, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇰🇷韩国04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 18119, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇰🇷韩国05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 18119, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇭🇰香港01|流媒体|Udp-569, server: hk.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: hk.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇭🇰香港02|流媒体|Udp-569, server: hk.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: hk.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇭🇰香港03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 43812, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇭🇰香港04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 43812, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇭🇰香港05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 43812, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇱🇺卢森堡01|流媒体|Udp-569, server: lu.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: lu.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇱🇺卢森堡02|流媒体|Udp-569, server: lu.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: lu.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇱🇺卢森堡03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 27564, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇱🇺卢森堡04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 27564, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇱🇺卢森堡05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 27564, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇧🇬保加利亚01|流媒体|Udp-569, server: bg.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: bg.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇧🇬保加利亚02|流媒体|Udp-569, server: bg.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: bg.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇧🇬保加利亚03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 30571, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇧🇬保加利亚04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 30571, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇧🇬保加利亚05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 30571, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇨🇭瑞士01|流媒体|Udp-569, server: ch.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: ch.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇨🇭瑞士02|流媒体|Udp-569, server: ch.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: ch.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇨🇭瑞士03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 26436, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇨🇭瑞士04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 26436, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇨🇭瑞士05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 26436, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇨🇿捷克01|流媒体|Udp-569, server: cz.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: cz.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇨🇿捷克02|流媒体|Udp-569, server: cz.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: cz.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇨🇿捷克03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 26415, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇨🇿捷克04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 26415, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇨🇿捷克05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 26415, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇩🇰丹麦01|流媒体|Udp-569, server: dk.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: dk.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇩🇰丹麦02|流媒体|Udp-569, server: dk.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: dk.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇩🇰丹麦03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 55003, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇩🇰丹麦04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 55003, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇩🇰丹麦05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 55003, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇧🇷巴西01|流媒体|Udp-569, server: br.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: br.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇧🇷巴西02|流媒体|Udp-569, server: br.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: br.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇧🇷巴西03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 32481, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇧🇷巴西04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 32481, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇧🇷巴西05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 32481, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇪🇸西班牙01|流媒体|Udp-569, server: es.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: es.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇪🇸西班牙02|流媒体|Udp-569, server: es.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: es.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇪🇸西班牙03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 45719, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇪🇸西班牙04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 45719, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇪🇸西班牙05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 45719, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇫🇮芬兰01|流媒体|Udp-569, server: fi.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: fi.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇫🇮芬兰02|流媒体|Udp-569, server: fi.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: fi.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇫🇮芬兰03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 34857, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇫🇮芬兰04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 34857, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇫🇮芬兰05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 34857, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇭🇷克罗地亚01|流媒体|Udp-569, server: hr.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: hr.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇭🇷克罗地亚02|流媒体|Udp-569, server: hr.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: hr.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇭🇷克罗地亚03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 26984, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇭🇷克罗地亚04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 26984, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇭🇷克罗地亚05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 26984, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇮🇹意大利01|流媒体|Udp-569, server: it.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: it.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇮🇹意大利02|流媒体|Udp-569, server: it.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: it.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇮🇹意大利03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 25971, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇮🇹意大利04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 25971, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇮🇹意大利05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 25971, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇫🇷法国01|流媒体|Udp-569, server: fr.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: fr.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇫🇷法国02|流媒体|Udp-569, server: fr.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: fr.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇫🇷法国03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 29186, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇫🇷法国04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 29186, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇫🇷法国05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 29186, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇷🇴罗马尼亚01|流媒体|Udp-569, server: ro.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: ro.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇷🇴罗马尼亚02|流媒体|Udp-569, server: ro.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: ro.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇷🇴罗马尼亚03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 23781, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇷🇴罗马尼亚04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 23781, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇷🇴罗马尼亚05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 23781, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇷🇸塞尔维亚01|流媒体|Udp-569, server: rs.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: rs.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇷🇸塞尔维亚02|流媒体|Udp-569, server: rs.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: rs.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇷🇸塞尔维亚03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 23984, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇷🇸塞尔维亚04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 23984, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇷🇸塞尔维亚05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 23984, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇦🇪迪拜01|流媒体|Udp-569, server: ae.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: ae.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇦🇪迪拜02|流媒体|Udp-569, server: ae.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: ae.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇦🇪迪拜03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 22349, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇦🇪迪拜04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 22349, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇦🇪迪拜05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 22349, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇹🇷土耳其01|流媒体|Udp-569, server: tr.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: tr.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇹🇷土耳其02|流媒体|Udp-569, server: tr.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: tr.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇹🇷土耳其03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 27192, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇹🇷土耳其04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 27192, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇹🇷土耳其05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 27192, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇹🇭泰国01|流媒体|Udp-569, server: th.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: th.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇹🇭泰国02|流媒体|Udp-569, server: th.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: th.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇹🇭泰国03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 26543, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇹🇭泰国04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 26543, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇹🇭泰国05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 26543, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇨🇳台湾01|流媒体|Udp-569, server: tw.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: tw.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇨🇳台湾02|流媒体|Udp-569, server: tw.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: tw.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇨🇳台湾03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 28865, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇨🇳台湾04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 28865, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇨🇳台湾05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 28865, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇮🇩印度尼西亚01|流媒体|Udp-569, server: id.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: id.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇮🇩印度尼西亚02|流媒体|Udp-569, server: id.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: id.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇮🇩印度尼西亚03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 27483, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇮🇩印度尼西亚04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 27483, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇮🇩印度尼西亚05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 27483, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇳🇴挪威01|流媒体|Udp-569, server: no.1010520.xyz, port: 1001, udp: true, skip-cert-verify: false, sni: no.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇳🇴挪威02|流媒体|Udp-569, server: no.1010520.xyz, port: 1002, udp: true, skip-cert-verify: false, sni: no.1010520.xyz, type: hysteria2, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa }
-    - { name: 🇳🇴挪威03|流媒体|专线1-569, type: ss, server: zx1.1010520.xyz, port: 56315, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇳🇴挪威04|流媒体|专线2-569, type: ss, server: zx2.1010520.xyz, port: 56315, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
-    - { name: 🇳🇴挪威05|流媒体|专线3-569, type: ss, server: zx3.1010520.xyz, port: 56315, cipher: chacha20-ietf-poly1305, password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa, udp: true }
+    - { name: '剩余流量：500 GB', server: meizi-hk.jiumaojiu.org, port: 20882, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: '距离下次重置剩余：16 天', server: meizi-hk.jiumaojiu.org, port: 20882, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 套餐到期：2025-02-22, server: meizi-hk.jiumaojiu.org, port: 20882, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 香港1, server: meizi-hk.jiumaojiu.org, port: 20882, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 香港2, server: meizi-hk.jiumaojiu.org, port: 20851, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 香港3, server: meizi-hk.jiumaojiu.org, port: 20848, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 香港4, server: meizi-hk.jiumaojiu.org, port: 20897, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 美国1, server: meizi-us.jiumaojiu.org, port: 20827, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 美国2, server: meizi-us.jiumaojiu.org, port: 20886, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 美国3, server: meizi-us.jiumaojiu.org, port: 20860, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 美国4, server: meizi-us.jiumaojiu.org, port: 20852, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 日本1, server: meizi-jp.jiumaojiu.org, port: 20846, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 日本2, server: meizi-jp.jiumaojiu.org, port: 20887, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 日本3, server: meizi-jp.jiumaojiu.org, port: 20878, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 日本4, server: meizi-jp.jiumaojiu.org, port: 20829, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 新加坡1, server: meizi-sg.jiumaojiu.org, port: 20833, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 新加坡2, server: meizi-sg.jiumaojiu.org, port: 20860, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 新加坡3, server: meizi-sg.jiumaojiu.org, port: 20821, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 新加坡4, server: meizi-sg.jiumaojiu.org, port: 20851, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 卢森堡1, server: meizi-lu.jiumaojiu.org, port: 20857, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 卢森堡2, server: meizi-lu.jiumaojiu.org, port: 20869, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 卢森堡3, server: meizi-lu.jiumaojiu.org, port: 20806, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: 卢森堡4, server: meizi-lu.jiumaojiu.org, port: 20804, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
 proxy-groups:
-    - { name: 569Cloud, type: select, proxies: [自动选择, 故障转移, '剩余流量：1000 GB', '距离下次重置剩余：19 天', 套餐到期：2025-02-12, 🇦🇺澳洲01|流媒体|Udp-569, 🇦🇺澳洲02|流媒体|Udp-569, 🇦🇺澳洲03|流媒体|专线1-569, 🇦🇺澳洲04|流媒体|专线2-569, 🇦🇺澳洲05|流媒体|专线3-569, 🇺🇸美国01|流媒体|Udp-569, 🇺🇸美国02|流媒体|Udp-569, 🇺🇸美国03|流媒体|专线1-569, 🇺🇸美国04|流媒体|专线2-569, 🇺🇸美国05|流媒体|专线3-569, 🇳🇱荷兰01|流媒体|Udp-569, 🇳🇱荷兰02|流媒体|Udp-569, 🇳🇱荷兰03|流媒体|专线1-569, 🇳🇱荷兰04|流媒体|专线2-569, 🇳🇱荷兰05|流媒体|专线3-569, 🇸🇬新加坡01|流媒体|Udp-569, 🇸🇬新加坡02|流媒体|Udp-569, 🇸🇬新加坡03|流媒体|专线1-569, 🇸🇬新加坡04|流媒体|专线2-569, 🇸🇬新加坡05|流媒体|专线3-569, 🇬🇧英国01|流媒体|Udp-569, 🇬🇧英国02|流媒体|Udp-569, 🇬🇧英国03|流媒体|专线1-569, 🇬🇧英国04|流媒体|专线2-569, 🇬🇧英国05|流媒体|专线3-569, 🇩🇪德国01|流媒体|Udp-569, 🇩🇪德国02|流媒体|Udp-569, 🇩🇪德国03|流媒体|专线1-569, 🇩🇪德国04|流媒体|专线2-569, 🇩🇪德国05|流媒体|专线3-569, 🇨🇦加拿大01|流媒体|Udp-569, 🇨🇦加拿大02|流媒体|Udp-569, 🇨🇦加拿大03|流媒体|专线1-569, 🇨🇦加拿大04|流媒体|专线2-569, 🇨🇦加拿大05|流媒体|专线3-569, 🇮🇳印度01|流媒体|Udp-569, 🇮🇳印度02|流媒体|Udp-569, 🇮🇳印度03|流媒体|专线1-569, 🇮🇳印度04|流媒体|专线2-569, 🇮🇳印度05|流媒体|专线3-569, 🇯🇵日本01|流媒体|Udp-569, 🇯🇵日本02|流媒体|Udp-569, 🇯🇵日本03|流媒体|专线1-569, 🇯🇵日本04|流媒体|专线2-569, 🇯🇵日本05|流媒体|专线3-569, 🇰🇷韩国01|流媒体|Udp-569, 🇰🇷韩国02|流媒体|Udp-569, 🇰🇷韩国03|流媒体|专线1-569, 🇰🇷韩国04|流媒体|专线2-569, 🇰🇷韩国05|流媒体|专线3-569, 🇭🇰香港01|流媒体|Udp-569, 🇭🇰香港02|流媒体|Udp-569, 🇭🇰香港03|流媒体|专线1-569, 🇭🇰香港04|流媒体|专线2-569, 🇭🇰香港05|流媒体|专线3-569, 🇱🇺卢森堡01|流媒体|Udp-569, 🇱🇺卢森堡02|流媒体|Udp-569, 🇱🇺卢森堡03|流媒体|专线1-569, 🇱🇺卢森堡04|流媒体|专线2-569, 🇱🇺卢森堡05|流媒体|专线3-569, 🇧🇬保加利亚01|流媒体|Udp-569, 🇧🇬保加利亚02|流媒体|Udp-569, 🇧🇬保加利亚03|流媒体|专线1-569, 🇧🇬保加利亚04|流媒体|专线2-569, 🇧🇬保加利亚05|流媒体|专线3-569, 🇨🇭瑞士01|流媒体|Udp-569, 🇨🇭瑞士02|流媒体|Udp-569, 🇨🇭瑞士03|流媒体|专线1-569, 🇨🇭瑞士04|流媒体|专线2-569, 🇨🇭瑞士05|流媒体|专线3-569, 🇨🇿捷克01|流媒体|Udp-569, 🇨🇿捷克02|流媒体|Udp-569, 🇨🇿捷克03|流媒体|专线1-569, 🇨🇿捷克04|流媒体|专线2-569, 🇨🇿捷克05|流媒体|专线3-569, 🇩🇰丹麦01|流媒体|Udp-569, 🇩🇰丹麦02|流媒体|Udp-569, 🇩🇰丹麦03|流媒体|专线1-569, 🇩🇰丹麦04|流媒体|专线2-569, 🇩🇰丹麦05|流媒体|专线3-569, 🇧🇷巴西01|流媒体|Udp-569, 🇧🇷巴西02|流媒体|Udp-569, 🇧🇷巴西03|流媒体|专线1-569, 🇧🇷巴西04|流媒体|专线2-569, 🇧🇷巴西05|流媒体|专线3-569, 🇪🇸西班牙01|流媒体|Udp-569, 🇪🇸西班牙02|流媒体|Udp-569, 🇪🇸西班牙03|流媒体|专线1-569, 🇪🇸西班牙04|流媒体|专线2-569, 🇪🇸西班牙05|流媒体|专线3-569, 🇫🇮芬兰01|流媒体|Udp-569, 🇫🇮芬兰02|流媒体|Udp-569, 🇫🇮芬兰03|流媒体|专线1-569, 🇫🇮芬兰04|流媒体|专线2-569, 🇫🇮芬兰05|流媒体|专线3-569, 🇭🇷克罗地亚01|流媒体|Udp-569, 🇭🇷克罗地亚02|流媒体|Udp-569, 🇭🇷克罗地亚03|流媒体|专线1-569, 🇭🇷克罗地亚04|流媒体|专线2-569, 🇭🇷克罗地亚05|流媒体|专线3-569, 🇮🇹意大利01|流媒体|Udp-569, 🇮🇹意大利02|流媒体|Udp-569, 🇮🇹意大利03|流媒体|专线1-569, 🇮🇹意大利04|流媒体|专线2-569, 🇮🇹意大利05|流媒体|专线3-569, 🇫🇷法国01|流媒体|Udp-569, 🇫🇷法国02|流媒体|Udp-569, 🇫🇷法国03|流媒体|专线1-569, 🇫🇷法国04|流媒体|专线2-569, 🇫🇷法国05|流媒体|专线3-569, 🇷🇴罗马尼亚01|流媒体|Udp-569, 🇷🇴罗马尼亚02|流媒体|Udp-569, 🇷🇴罗马尼亚03|流媒体|专线1-569, 🇷🇴罗马尼亚04|流媒体|专线2-569, 🇷🇴罗马尼亚05|流媒体|专线3-569, 🇷🇸塞尔维亚01|流媒体|Udp-569, 🇷🇸塞尔维亚02|流媒体|Udp-569, 🇷🇸塞尔维亚03|流媒体|专线1-569, 🇷🇸塞尔维亚04|流媒体|专线2-569, 🇷🇸塞尔维亚05|流媒体|专线3-569, 🇦🇪迪拜01|流媒体|Udp-569, 🇦🇪迪拜02|流媒体|Udp-569, 🇦🇪迪拜03|流媒体|专线1-569, 🇦🇪迪拜04|流媒体|专线2-569, 🇦🇪迪拜05|流媒体|专线3-569, 🇹🇷土耳其01|流媒体|Udp-569, 🇹🇷土耳其02|流媒体|Udp-569, 🇹🇷土耳其03|流媒体|专线1-569, 🇹🇷土耳其04|流媒体|专线2-569, 🇹🇷土耳其05|流媒体|专线3-569, 🇹🇭泰国01|流媒体|Udp-569, 🇹🇭泰国02|流媒体|Udp-569, 🇹🇭泰国03|流媒体|专线1-569, 🇹🇭泰国04|流媒体|专线2-569, 🇹🇭泰国05|流媒体|专线3-569, 🇨🇳台湾01|流媒体|Udp-569, 🇨🇳台湾02|流媒体|Udp-569, 🇨🇳台湾03|流媒体|专线1-569, 🇨🇳台湾04|流媒体|专线2-569, 🇨🇳台湾05|流媒体|专线3-569, 🇮🇩印度尼西亚01|流媒体|Udp-569, 🇮🇩印度尼西亚02|流媒体|Udp-569, 🇮🇩印度尼西亚03|流媒体|专线1-569, 🇮🇩印度尼西亚04|流媒体|专线2-569, 🇮🇩印度尼西亚05|流媒体|专线3-569, 🇳🇴挪威01|流媒体|Udp-569, 🇳🇴挪威02|流媒体|Udp-569, 🇳🇴挪威03|流媒体|专线1-569, 🇳🇴挪威04|流媒体|专线2-569, 🇳🇴挪威05|流媒体|专线3-569] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：1000 GB', '距离下次重置剩余：19 天', 套餐到期：2025-02-12, 🇦🇺澳洲01|流媒体|Udp-569, 🇦🇺澳洲02|流媒体|Udp-569, 🇦🇺澳洲03|流媒体|专线1-569, 🇦🇺澳洲04|流媒体|专线2-569, 🇦🇺澳洲05|流媒体|专线3-569, 🇺🇸美国01|流媒体|Udp-569, 🇺🇸美国02|流媒体|Udp-569, 🇺🇸美国03|流媒体|专线1-569, 🇺🇸美国04|流媒体|专线2-569, 🇺🇸美国05|流媒体|专线3-569, 🇳🇱荷兰01|流媒体|Udp-569, 🇳🇱荷兰02|流媒体|Udp-569, 🇳🇱荷兰03|流媒体|专线1-569, 🇳🇱荷兰04|流媒体|专线2-569, 🇳🇱荷兰05|流媒体|专线3-569, 🇸🇬新加坡01|流媒体|Udp-569, 🇸🇬新加坡02|流媒体|Udp-569, 🇸🇬新加坡03|流媒体|专线1-569, 🇸🇬新加坡04|流媒体|专线2-569, 🇸🇬新加坡05|流媒体|专线3-569, 🇬🇧英国01|流媒体|Udp-569, 🇬🇧英国02|流媒体|Udp-569, 🇬🇧英国03|流媒体|专线1-569, 🇬🇧英国04|流媒体|专线2-569, 🇬🇧英国05|流媒体|专线3-569, 🇩🇪德国01|流媒体|Udp-569, 🇩🇪德国02|流媒体|Udp-569, 🇩🇪德国03|流媒体|专线1-569, 🇩🇪德国04|流媒体|专线2-569, 🇩🇪德国05|流媒体|专线3-569, 🇨🇦加拿大01|流媒体|Udp-569, 🇨🇦加拿大02|流媒体|Udp-569, 🇨🇦加拿大03|流媒体|专线1-569, 🇨🇦加拿大04|流媒体|专线2-569, 🇨🇦加拿大05|流媒体|专线3-569, 🇮🇳印度01|流媒体|Udp-569, 🇮🇳印度02|流媒体|Udp-569, 🇮🇳印度03|流媒体|专线1-569, 🇮🇳印度04|流媒体|专线2-569, 🇮🇳印度05|流媒体|专线3-569, 🇯🇵日本01|流媒体|Udp-569, 🇯🇵日本02|流媒体|Udp-569, 🇯🇵日本03|流媒体|专线1-569, 🇯🇵日本04|流媒体|专线2-569, 🇯🇵日本05|流媒体|专线3-569, 🇰🇷韩国01|流媒体|Udp-569, 🇰🇷韩国02|流媒体|Udp-569, 🇰🇷韩国03|流媒体|专线1-569, 🇰🇷韩国04|流媒体|专线2-569, 🇰🇷韩国05|流媒体|专线3-569, 🇭🇰香港01|流媒体|Udp-569, 🇭🇰香港02|流媒体|Udp-569, 🇭🇰香港03|流媒体|专线1-569, 🇭🇰香港04|流媒体|专线2-569, 🇭🇰香港05|流媒体|专线3-569, 🇱🇺卢森堡01|流媒体|Udp-569, 🇱🇺卢森堡02|流媒体|Udp-569, 🇱🇺卢森堡03|流媒体|专线1-569, 🇱🇺卢森堡04|流媒体|专线2-569, 🇱🇺卢森堡05|流媒体|专线3-569, 🇧🇬保加利亚01|流媒体|Udp-569, 🇧🇬保加利亚02|流媒体|Udp-569, 🇧🇬保加利亚03|流媒体|专线1-569, 🇧🇬保加利亚04|流媒体|专线2-569, 🇧🇬保加利亚05|流媒体|专线3-569, 🇨🇭瑞士01|流媒体|Udp-569, 🇨🇭瑞士02|流媒体|Udp-569, 🇨🇭瑞士03|流媒体|专线1-569, 🇨🇭瑞士04|流媒体|专线2-569, 🇨🇭瑞士05|流媒体|专线3-569, 🇨🇿捷克01|流媒体|Udp-569, 🇨🇿捷克02|流媒体|Udp-569, 🇨🇿捷克03|流媒体|专线1-569, 🇨🇿捷克04|流媒体|专线2-569, 🇨🇿捷克05|流媒体|专线3-569, 🇩🇰丹麦01|流媒体|Udp-569, 🇩🇰丹麦02|流媒体|Udp-569, 🇩🇰丹麦03|流媒体|专线1-569, 🇩🇰丹麦04|流媒体|专线2-569, 🇩🇰丹麦05|流媒体|专线3-569, 🇧🇷巴西01|流媒体|Udp-569, 🇧🇷巴西02|流媒体|Udp-569, 🇧🇷巴西03|流媒体|专线1-569, 🇧🇷巴西04|流媒体|专线2-569, 🇧🇷巴西05|流媒体|专线3-569, 🇪🇸西班牙01|流媒体|Udp-569, 🇪🇸西班牙02|流媒体|Udp-569, 🇪🇸西班牙03|流媒体|专线1-569, 🇪🇸西班牙04|流媒体|专线2-569, 🇪🇸西班牙05|流媒体|专线3-569, 🇫🇮芬兰01|流媒体|Udp-569, 🇫🇮芬兰02|流媒体|Udp-569, 🇫🇮芬兰03|流媒体|专线1-569, 🇫🇮芬兰04|流媒体|专线2-569, 🇫🇮芬兰05|流媒体|专线3-569, 🇭🇷克罗地亚01|流媒体|Udp-569, 🇭🇷克罗地亚02|流媒体|Udp-569, 🇭🇷克罗地亚03|流媒体|专线1-569, 🇭🇷克罗地亚04|流媒体|专线2-569, 🇭🇷克罗地亚05|流媒体|专线3-569, 🇮🇹意大利01|流媒体|Udp-569, 🇮🇹意大利02|流媒体|Udp-569, 🇮🇹意大利03|流媒体|专线1-569, 🇮🇹意大利04|流媒体|专线2-569, 🇮🇹意大利05|流媒体|专线3-569, 🇫🇷法国01|流媒体|Udp-569, 🇫🇷法国02|流媒体|Udp-569, 🇫🇷法国03|流媒体|专线1-569, 🇫🇷法国04|流媒体|专线2-569, 🇫🇷法国05|流媒体|专线3-569, 🇷🇴罗马尼亚01|流媒体|Udp-569, 🇷🇴罗马尼亚02|流媒体|Udp-569, 🇷🇴罗马尼亚03|流媒体|专线1-569, 🇷🇴罗马尼亚04|流媒体|专线2-569, 🇷🇴罗马尼亚05|流媒体|专线3-569, 🇷🇸塞尔维亚01|流媒体|Udp-569, 🇷🇸塞尔维亚02|流媒体|Udp-569, 🇷🇸塞尔维亚03|流媒体|专线1-569, 🇷🇸塞尔维亚04|流媒体|专线2-569, 🇷🇸塞尔维亚05|流媒体|专线3-569, 🇦🇪迪拜01|流媒体|Udp-569, 🇦🇪迪拜02|流媒体|Udp-569, 🇦🇪迪拜03|流媒体|专线1-569, 🇦🇪迪拜04|流媒体|专线2-569, 🇦🇪迪拜05|流媒体|专线3-569, 🇹🇷土耳其01|流媒体|Udp-569, 🇹🇷土耳其02|流媒体|Udp-569, 🇹🇷土耳其03|流媒体|专线1-569, 🇹🇷土耳其04|流媒体|专线2-569, 🇹🇷土耳其05|流媒体|专线3-569, 🇹🇭泰国01|流媒体|Udp-569, 🇹🇭泰国02|流媒体|Udp-569, 🇹🇭泰国03|流媒体|专线1-569, 🇹🇭泰国04|流媒体|专线2-569, 🇹🇭泰国05|流媒体|专线3-569, 🇨🇳台湾01|流媒体|Udp-569, 🇨🇳台湾02|流媒体|Udp-569, 🇨🇳台湾03|流媒体|专线1-569, 🇨🇳台湾04|流媒体|专线2-569, 🇨🇳台湾05|流媒体|专线3-569, 🇮🇩印度尼西亚01|流媒体|Udp-569, 🇮🇩印度尼西亚02|流媒体|Udp-569, 🇮🇩印度尼西亚03|流媒体|专线1-569, 🇮🇩印度尼西亚04|流媒体|专线2-569, 🇮🇩印度尼西亚05|流媒体|专线3-569, 🇳🇴挪威01|流媒体|Udp-569, 🇳🇴挪威02|流媒体|Udp-569, 🇳🇴挪威03|流媒体|专线1-569, 🇳🇴挪威04|流媒体|专线2-569, 🇳🇴挪威05|流媒体|专线3-569], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：1000 GB', '距离下次重置剩余：19 天', 套餐到期：2025-02-12, 🇦🇺澳洲01|流媒体|Udp-569, 🇦🇺澳洲02|流媒体|Udp-569, 🇦🇺澳洲03|流媒体|专线1-569, 🇦🇺澳洲04|流媒体|专线2-569, 🇦🇺澳洲05|流媒体|专线3-569, 🇺🇸美国01|流媒体|Udp-569, 🇺🇸美国02|流媒体|Udp-569, 🇺🇸美国03|流媒体|专线1-569, 🇺🇸美国04|流媒体|专线2-569, 🇺🇸美国05|流媒体|专线3-569, 🇳🇱荷兰01|流媒体|Udp-569, 🇳🇱荷兰02|流媒体|Udp-569, 🇳🇱荷兰03|流媒体|专线1-569, 🇳🇱荷兰04|流媒体|专线2-569, 🇳🇱荷兰05|流媒体|专线3-569, 🇸🇬新加坡01|流媒体|Udp-569, 🇸🇬新加坡02|流媒体|Udp-569, 🇸🇬新加坡03|流媒体|专线1-569, 🇸🇬新加坡04|流媒体|专线2-569, 🇸🇬新加坡05|流媒体|专线3-569, 🇬🇧英国01|流媒体|Udp-569, 🇬🇧英国02|流媒体|Udp-569, 🇬🇧英国03|流媒体|专线1-569, 🇬🇧英国04|流媒体|专线2-569, 🇬🇧英国05|流媒体|专线3-569, 🇩🇪德国01|流媒体|Udp-569, 🇩🇪德国02|流媒体|Udp-569, 🇩🇪德国03|流媒体|专线1-569, 🇩🇪德国04|流媒体|专线2-569, 🇩🇪德国05|流媒体|专线3-569, 🇨🇦加拿大01|流媒体|Udp-569, 🇨🇦加拿大02|流媒体|Udp-569, 🇨🇦加拿大03|流媒体|专线1-569, 🇨🇦加拿大04|流媒体|专线2-569, 🇨🇦加拿大05|流媒体|专线3-569, 🇮🇳印度01|流媒体|Udp-569, 🇮🇳印度02|流媒体|Udp-569, 🇮🇳印度03|流媒体|专线1-569, 🇮🇳印度04|流媒体|专线2-569, 🇮🇳印度05|流媒体|专线3-569, 🇯🇵日本01|流媒体|Udp-569, 🇯🇵日本02|流媒体|Udp-569, 🇯🇵日本03|流媒体|专线1-569, 🇯🇵日本04|流媒体|专线2-569, 🇯🇵日本05|流媒体|专线3-569, 🇰🇷韩国01|流媒体|Udp-569, 🇰🇷韩国02|流媒体|Udp-569, 🇰🇷韩国03|流媒体|专线1-569, 🇰🇷韩国04|流媒体|专线2-569, 🇰🇷韩国05|流媒体|专线3-569, 🇭🇰香港01|流媒体|Udp-569, 🇭🇰香港02|流媒体|Udp-569, 🇭🇰香港03|流媒体|专线1-569, 🇭🇰香港04|流媒体|专线2-569, 🇭🇰香港05|流媒体|专线3-569, 🇱🇺卢森堡01|流媒体|Udp-569, 🇱🇺卢森堡02|流媒体|Udp-569, 🇱🇺卢森堡03|流媒体|专线1-569, 🇱🇺卢森堡04|流媒体|专线2-569, 🇱🇺卢森堡05|流媒体|专线3-569, 🇧🇬保加利亚01|流媒体|Udp-569, 🇧🇬保加利亚02|流媒体|Udp-569, 🇧🇬保加利亚03|流媒体|专线1-569, 🇧🇬保加利亚04|流媒体|专线2-569, 🇧🇬保加利亚05|流媒体|专线3-569, 🇨🇭瑞士01|流媒体|Udp-569, 🇨🇭瑞士02|流媒体|Udp-569, 🇨🇭瑞士03|流媒体|专线1-569, 🇨🇭瑞士04|流媒体|专线2-569, 🇨🇭瑞士05|流媒体|专线3-569, 🇨🇿捷克01|流媒体|Udp-569, 🇨🇿捷克02|流媒体|Udp-569, 🇨🇿捷克03|流媒体|专线1-569, 🇨🇿捷克04|流媒体|专线2-569, 🇨🇿捷克05|流媒体|专线3-569, 🇩🇰丹麦01|流媒体|Udp-569, 🇩🇰丹麦02|流媒体|Udp-569, 🇩🇰丹麦03|流媒体|专线1-569, 🇩🇰丹麦04|流媒体|专线2-569, 🇩🇰丹麦05|流媒体|专线3-569, 🇧🇷巴西01|流媒体|Udp-569, 🇧🇷巴西02|流媒体|Udp-569, 🇧🇷巴西03|流媒体|专线1-569, 🇧🇷巴西04|流媒体|专线2-569, 🇧🇷巴西05|流媒体|专线3-569, 🇪🇸西班牙01|流媒体|Udp-569, 🇪🇸西班牙02|流媒体|Udp-569, 🇪🇸西班牙03|流媒体|专线1-569, 🇪🇸西班牙04|流媒体|专线2-569, 🇪🇸西班牙05|流媒体|专线3-569, 🇫🇮芬兰01|流媒体|Udp-569, 🇫🇮芬兰02|流媒体|Udp-569, 🇫🇮芬兰03|流媒体|专线1-569, 🇫🇮芬兰04|流媒体|专线2-569, 🇫🇮芬兰05|流媒体|专线3-569, 🇭🇷克罗地亚01|流媒体|Udp-569, 🇭🇷克罗地亚02|流媒体|Udp-569, 🇭🇷克罗地亚03|流媒体|专线1-569, 🇭🇷克罗地亚04|流媒体|专线2-569, 🇭🇷克罗地亚05|流媒体|专线3-569, 🇮🇹意大利01|流媒体|Udp-569, 🇮🇹意大利02|流媒体|Udp-569, 🇮🇹意大利03|流媒体|专线1-569, 🇮🇹意大利04|流媒体|专线2-569, 🇮🇹意大利05|流媒体|专线3-569, 🇫🇷法国01|流媒体|Udp-569, 🇫🇷法国02|流媒体|Udp-569, 🇫🇷法国03|流媒体|专线1-569, 🇫🇷法国04|流媒体|专线2-569, 🇫🇷法国05|流媒体|专线3-569, 🇷🇴罗马尼亚01|流媒体|Udp-569, 🇷🇴罗马尼亚02|流媒体|Udp-569, 🇷🇴罗马尼亚03|流媒体|专线1-569, 🇷🇴罗马尼亚04|流媒体|专线2-569, 🇷🇴罗马尼亚05|流媒体|专线3-569, 🇷🇸塞尔维亚01|流媒体|Udp-569, 🇷🇸塞尔维亚02|流媒体|Udp-569, 🇷🇸塞尔维亚03|流媒体|专线1-569, 🇷🇸塞尔维亚04|流媒体|专线2-569, 🇷🇸塞尔维亚05|流媒体|专线3-569, 🇦🇪迪拜01|流媒体|Udp-569, 🇦🇪迪拜02|流媒体|Udp-569, 🇦🇪迪拜03|流媒体|专线1-569, 🇦🇪迪拜04|流媒体|专线2-569, 🇦🇪迪拜05|流媒体|专线3-569, 🇹🇷土耳其01|流媒体|Udp-569, 🇹🇷土耳其02|流媒体|Udp-569, 🇹🇷土耳其03|流媒体|专线1-569, 🇹🇷土耳其04|流媒体|专线2-569, 🇹🇷土耳其05|流媒体|专线3-569, 🇹🇭泰国01|流媒体|Udp-569, 🇹🇭泰国02|流媒体|Udp-569, 🇹🇭泰国03|流媒体|专线1-569, 🇹🇭泰国04|流媒体|专线2-569, 🇹🇭泰国05|流媒体|专线3-569, 🇨🇳台湾01|流媒体|Udp-569, 🇨🇳台湾02|流媒体|Udp-569, 🇨🇳台湾03|流媒体|专线1-569, 🇨🇳台湾04|流媒体|专线2-569, 🇨🇳台湾05|流媒体|专线3-569, 🇮🇩印度尼西亚01|流媒体|Udp-569, 🇮🇩印度尼西亚02|流媒体|Udp-569, 🇮🇩印度尼西亚03|流媒体|专线1-569, 🇮🇩印度尼西亚04|流媒体|专线2-569, 🇮🇩印度尼西亚05|流媒体|专线3-569, 🇳🇴挪威01|流媒体|Udp-569, 🇳🇴挪威02|流媒体|Udp-569, 🇳🇴挪威03|流媒体|专线1-569, 🇳🇴挪威04|流媒体|专线2-569, 🇳🇴挪威05|流媒体|专线3-569], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 妹子云, type: select, proxies: [自动选择, 故障转移, '剩余流量：500 GB', '距离下次重置剩余：16 天', 套餐到期：2025-02-22, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：500 GB', '距离下次重置剩余：16 天', 套餐到期：2025-02-22, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：500 GB', '距离下次重置剩余：16 天', 套餐到期：2025-02-22, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
-    - 'DOMAIN-SUFFIX,services.googleapis.cn,569Cloud'
-    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,569Cloud'
+    - 'IP-CIDR,107.189.31.71/32,DIRECT,no-resolve'
+    - 'IP-CIDR,146.19.196.204/32,DIRECT,no-resolve'
+    - 'IP-CIDR,172.111.146.58/32,DIRECT,no-resolve'
+    - 'IP-CIDR,209.141.44.218/32,DIRECT,no-resolve'
+    - 'IP-CIDR,42.200.230.169/32,DIRECT,no-resolve'
+    - 'DOMAIN,45.61.52.132:8009,DIRECT'
+    - 'DOMAIN-SUFFIX,services.googleapis.cn,妹子云'
+    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,妹子云'
     - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
     - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
-    - 'DOMAIN,developer.apple.com,569Cloud'
-    - 'DOMAIN-SUFFIX,digicert.com,569Cloud'
-    - 'DOMAIN,ocsp.apple.com,569Cloud'
-    - 'DOMAIN,ocsp.comodoca.com,569Cloud'
-    - 'DOMAIN,ocsp.usertrust.com,569Cloud'
-    - 'DOMAIN,ocsp.sectigo.com,569Cloud'
-    - 'DOMAIN,ocsp.verisign.net,569Cloud'
-    - 'DOMAIN-SUFFIX,apple-dns.net,569Cloud'
-    - 'DOMAIN,testflight.apple.com,569Cloud'
-    - 'DOMAIN,sandbox.itunes.apple.com,569Cloud'
-    - 'DOMAIN,itunes.apple.com,569Cloud'
-    - 'DOMAIN-SUFFIX,apps.apple.com,569Cloud'
-    - 'DOMAIN-SUFFIX,blobstore.apple.com,569Cloud'
-    - 'DOMAIN,cvws.icloud-content.com,569Cloud'
+    - 'DOMAIN,developer.apple.com,妹子云'
+    - 'DOMAIN-SUFFIX,digicert.com,妹子云'
+    - 'DOMAIN,ocsp.apple.com,妹子云'
+    - 'DOMAIN,ocsp.comodoca.com,妹子云'
+    - 'DOMAIN,ocsp.usertrust.com,妹子云'
+    - 'DOMAIN,ocsp.sectigo.com,妹子云'
+    - 'DOMAIN,ocsp.verisign.net,妹子云'
+    - 'DOMAIN-SUFFIX,apple-dns.net,妹子云'
+    - 'DOMAIN,testflight.apple.com,妹子云'
+    - 'DOMAIN,sandbox.itunes.apple.com,妹子云'
+    - 'DOMAIN,itunes.apple.com,妹子云'
+    - 'DOMAIN-SUFFIX,apps.apple.com,妹子云'
+    - 'DOMAIN-SUFFIX,blobstore.apple.com,妹子云'
+    - 'DOMAIN,cvws.icloud-content.com,妹子云'
     - 'DOMAIN-SUFFIX,mzstatic.com,DIRECT'
     - 'DOMAIN-SUFFIX,itunes.apple.com,DIRECT'
     - 'DOMAIN-SUFFIX,icloud.com,DIRECT'
@@ -332,20 +208,20 @@ rules:
     - 'DOMAIN-SUFFIX,zhimg.com,DIRECT'
     - 'DOMAIN-SUFFIX,zimuzu.tv,DIRECT'
     - 'DOMAIN-SUFFIX,zoho.com,DIRECT'
-    - 'DOMAIN-KEYWORD,amazon,569Cloud'
-    - 'DOMAIN-KEYWORD,google,569Cloud'
-    - 'DOMAIN-KEYWORD,gmail,569Cloud'
-    - 'DOMAIN-KEYWORD,youtube,569Cloud'
-    - 'DOMAIN-KEYWORD,facebook,569Cloud'
-    - 'DOMAIN-SUFFIX,fb.me,569Cloud'
-    - 'DOMAIN-SUFFIX,fbcdn.net,569Cloud'
-    - 'DOMAIN-KEYWORD,twitter,569Cloud'
-    - 'DOMAIN-KEYWORD,instagram,569Cloud'
-    - 'DOMAIN-KEYWORD,dropbox,569Cloud'
-    - 'DOMAIN-SUFFIX,twimg.com,569Cloud'
-    - 'DOMAIN-KEYWORD,blogspot,569Cloud'
-    - 'DOMAIN-SUFFIX,youtu.be,569Cloud'
-    - 'DOMAIN-KEYWORD,whatsapp,569Cloud'
+    - 'DOMAIN-KEYWORD,amazon,妹子云'
+    - 'DOMAIN-KEYWORD,google,妹子云'
+    - 'DOMAIN-KEYWORD,gmail,妹子云'
+    - 'DOMAIN-KEYWORD,youtube,妹子云'
+    - 'DOMAIN-KEYWORD,facebook,妹子云'
+    - 'DOMAIN-SUFFIX,fb.me,妹子云'
+    - 'DOMAIN-SUFFIX,fbcdn.net,妹子云'
+    - 'DOMAIN-KEYWORD,twitter,妹子云'
+    - 'DOMAIN-KEYWORD,instagram,妹子云'
+    - 'DOMAIN-KEYWORD,dropbox,妹子云'
+    - 'DOMAIN-SUFFIX,twimg.com,妹子云'
+    - 'DOMAIN-KEYWORD,blogspot,妹子云'
+    - 'DOMAIN-SUFFIX,youtu.be,妹子云'
+    - 'DOMAIN-KEYWORD,whatsapp,妹子云'
     - 'DOMAIN-KEYWORD,admarvel,REJECT'
     - 'DOMAIN-KEYWORD,admaster,REJECT'
     - 'DOMAIN-KEYWORD,adsage,REJECT'
@@ -373,304 +249,304 @@ rules:
     - 'DOMAIN-SUFFIX,vungle.com,REJECT'
     - 'DOMAIN-KEYWORD,wlmonitor,REJECT'
     - 'DOMAIN-KEYWORD,zjtoolbar,REJECT'
-    - 'DOMAIN-SUFFIX,9to5mac.com,569Cloud'
-    - 'DOMAIN-SUFFIX,abpchina.org,569Cloud'
-    - 'DOMAIN-SUFFIX,adblockplus.org,569Cloud'
-    - 'DOMAIN-SUFFIX,adobe.com,569Cloud'
-    - 'DOMAIN-SUFFIX,akamaized.net,569Cloud'
-    - 'DOMAIN-SUFFIX,alfredapp.com,569Cloud'
-    - 'DOMAIN-SUFFIX,amplitude.com,569Cloud'
-    - 'DOMAIN-SUFFIX,ampproject.org,569Cloud'
-    - 'DOMAIN-SUFFIX,android.com,569Cloud'
-    - 'DOMAIN-SUFFIX,angularjs.org,569Cloud'
-    - 'DOMAIN-SUFFIX,aolcdn.com,569Cloud'
-    - 'DOMAIN-SUFFIX,apkpure.com,569Cloud'
-    - 'DOMAIN-SUFFIX,appledaily.com,569Cloud'
-    - 'DOMAIN-SUFFIX,appshopper.com,569Cloud'
-    - 'DOMAIN-SUFFIX,appspot.com,569Cloud'
-    - 'DOMAIN-SUFFIX,arcgis.com,569Cloud'
-    - 'DOMAIN-SUFFIX,archive.org,569Cloud'
-    - 'DOMAIN-SUFFIX,armorgames.com,569Cloud'
-    - 'DOMAIN-SUFFIX,aspnetcdn.com,569Cloud'
-    - 'DOMAIN-SUFFIX,att.com,569Cloud'
-    - 'DOMAIN-SUFFIX,awsstatic.com,569Cloud'
-    - 'DOMAIN-SUFFIX,azureedge.net,569Cloud'
-    - 'DOMAIN-SUFFIX,azurewebsites.net,569Cloud'
-    - 'DOMAIN-SUFFIX,bing.com,569Cloud'
-    - 'DOMAIN-SUFFIX,bintray.com,569Cloud'
-    - 'DOMAIN-SUFFIX,bit.com,569Cloud'
-    - 'DOMAIN-SUFFIX,bit.ly,569Cloud'
-    - 'DOMAIN-SUFFIX,bitbucket.org,569Cloud'
-    - 'DOMAIN-SUFFIX,bjango.com,569Cloud'
-    - 'DOMAIN-SUFFIX,bkrtx.com,569Cloud'
-    - 'DOMAIN-SUFFIX,blog.com,569Cloud'
-    - 'DOMAIN-SUFFIX,blogcdn.com,569Cloud'
-    - 'DOMAIN-SUFFIX,blogger.com,569Cloud'
-    - 'DOMAIN-SUFFIX,blogsmithmedia.com,569Cloud'
-    - 'DOMAIN-SUFFIX,blogspot.com,569Cloud'
-    - 'DOMAIN-SUFFIX,blogspot.hk,569Cloud'
-    - 'DOMAIN-SUFFIX,bloomberg.com,569Cloud'
-    - 'DOMAIN-SUFFIX,box.com,569Cloud'
-    - 'DOMAIN-SUFFIX,box.net,569Cloud'
-    - 'DOMAIN-SUFFIX,cachefly.net,569Cloud'
-    - 'DOMAIN-SUFFIX,chromium.org,569Cloud'
-    - 'DOMAIN-SUFFIX,cl.ly,569Cloud'
-    - 'DOMAIN-SUFFIX,cloudflare.com,569Cloud'
-    - 'DOMAIN-SUFFIX,cloudfront.net,569Cloud'
-    - 'DOMAIN-SUFFIX,cloudmagic.com,569Cloud'
-    - 'DOMAIN-SUFFIX,cmail19.com,569Cloud'
-    - 'DOMAIN-SUFFIX,cnet.com,569Cloud'
-    - 'DOMAIN-SUFFIX,cocoapods.org,569Cloud'
-    - 'DOMAIN-SUFFIX,comodoca.com,569Cloud'
-    - 'DOMAIN-SUFFIX,crashlytics.com,569Cloud'
-    - 'DOMAIN-SUFFIX,culturedcode.com,569Cloud'
-    - 'DOMAIN-SUFFIX,d.pr,569Cloud'
-    - 'DOMAIN-SUFFIX,danilo.to,569Cloud'
-    - 'DOMAIN-SUFFIX,dayone.me,569Cloud'
-    - 'DOMAIN-SUFFIX,db.tt,569Cloud'
-    - 'DOMAIN-SUFFIX,deskconnect.com,569Cloud'
-    - 'DOMAIN-SUFFIX,disq.us,569Cloud'
-    - 'DOMAIN-SUFFIX,disqus.com,569Cloud'
-    - 'DOMAIN-SUFFIX,disquscdn.com,569Cloud'
-    - 'DOMAIN-SUFFIX,dnsimple.com,569Cloud'
-    - 'DOMAIN-SUFFIX,docker.com,569Cloud'
-    - 'DOMAIN-SUFFIX,dribbble.com,569Cloud'
-    - 'DOMAIN-SUFFIX,droplr.com,569Cloud'
-    - 'DOMAIN-SUFFIX,duckduckgo.com,569Cloud'
-    - 'DOMAIN-SUFFIX,dueapp.com,569Cloud'
-    - 'DOMAIN-SUFFIX,dytt8.net,569Cloud'
-    - 'DOMAIN-SUFFIX,edgecastcdn.net,569Cloud'
-    - 'DOMAIN-SUFFIX,edgekey.net,569Cloud'
-    - 'DOMAIN-SUFFIX,edgesuite.net,569Cloud'
-    - 'DOMAIN-SUFFIX,engadget.com,569Cloud'
-    - 'DOMAIN-SUFFIX,entrust.net,569Cloud'
-    - 'DOMAIN-SUFFIX,eurekavpt.com,569Cloud'
-    - 'DOMAIN-SUFFIX,evernote.com,569Cloud'
-    - 'DOMAIN-SUFFIX,fabric.io,569Cloud'
-    - 'DOMAIN-SUFFIX,fast.com,569Cloud'
-    - 'DOMAIN-SUFFIX,fastly.net,569Cloud'
-    - 'DOMAIN-SUFFIX,fc2.com,569Cloud'
-    - 'DOMAIN-SUFFIX,feedburner.com,569Cloud'
-    - 'DOMAIN-SUFFIX,feedly.com,569Cloud'
-    - 'DOMAIN-SUFFIX,feedsportal.com,569Cloud'
-    - 'DOMAIN-SUFFIX,fiftythree.com,569Cloud'
-    - 'DOMAIN-SUFFIX,firebaseio.com,569Cloud'
-    - 'DOMAIN-SUFFIX,flexibits.com,569Cloud'
-    - 'DOMAIN-SUFFIX,flickr.com,569Cloud'
-    - 'DOMAIN-SUFFIX,flipboard.com,569Cloud'
-    - 'DOMAIN-SUFFIX,g.co,569Cloud'
-    - 'DOMAIN-SUFFIX,gabia.net,569Cloud'
-    - 'DOMAIN-SUFFIX,geni.us,569Cloud'
-    - 'DOMAIN-SUFFIX,gfx.ms,569Cloud'
-    - 'DOMAIN-SUFFIX,ggpht.com,569Cloud'
-    - 'DOMAIN-SUFFIX,ghostnoteapp.com,569Cloud'
-    - 'DOMAIN-SUFFIX,git.io,569Cloud'
-    - 'DOMAIN-KEYWORD,github,569Cloud'
-    - 'DOMAIN-SUFFIX,globalsign.com,569Cloud'
-    - 'DOMAIN-SUFFIX,gmodules.com,569Cloud'
-    - 'DOMAIN-SUFFIX,godaddy.com,569Cloud'
-    - 'DOMAIN-SUFFIX,golang.org,569Cloud'
-    - 'DOMAIN-SUFFIX,gongm.in,569Cloud'
-    - 'DOMAIN-SUFFIX,goo.gl,569Cloud'
-    - 'DOMAIN-SUFFIX,goodreaders.com,569Cloud'
-    - 'DOMAIN-SUFFIX,goodreads.com,569Cloud'
-    - 'DOMAIN-SUFFIX,gravatar.com,569Cloud'
-    - 'DOMAIN-SUFFIX,gstatic.com,569Cloud'
-    - 'DOMAIN-SUFFIX,gvt0.com,569Cloud'
-    - 'DOMAIN-SUFFIX,hockeyapp.net,569Cloud'
-    - 'DOMAIN-SUFFIX,hotmail.com,569Cloud'
-    - 'DOMAIN-SUFFIX,icons8.com,569Cloud'
-    - 'DOMAIN-SUFFIX,ifixit.com,569Cloud'
-    - 'DOMAIN-SUFFIX,ift.tt,569Cloud'
-    - 'DOMAIN-SUFFIX,ifttt.com,569Cloud'
-    - 'DOMAIN-SUFFIX,iherb.com,569Cloud'
-    - 'DOMAIN-SUFFIX,imageshack.us,569Cloud'
-    - 'DOMAIN-SUFFIX,img.ly,569Cloud'
-    - 'DOMAIN-SUFFIX,imgur.com,569Cloud'
-    - 'DOMAIN-SUFFIX,imore.com,569Cloud'
-    - 'DOMAIN-SUFFIX,instapaper.com,569Cloud'
-    - 'DOMAIN-SUFFIX,ipn.li,569Cloud'
-    - 'DOMAIN-SUFFIX,is.gd,569Cloud'
-    - 'DOMAIN-SUFFIX,issuu.com,569Cloud'
-    - 'DOMAIN-SUFFIX,itgonglun.com,569Cloud'
-    - 'DOMAIN-SUFFIX,itun.es,569Cloud'
-    - 'DOMAIN-SUFFIX,ixquick.com,569Cloud'
-    - 'DOMAIN-SUFFIX,j.mp,569Cloud'
-    - 'DOMAIN-SUFFIX,js.revsci.net,569Cloud'
-    - 'DOMAIN-SUFFIX,jshint.com,569Cloud'
-    - 'DOMAIN-SUFFIX,jtvnw.net,569Cloud'
-    - 'DOMAIN-SUFFIX,justgetflux.com,569Cloud'
-    - 'DOMAIN-SUFFIX,kat.cr,569Cloud'
-    - 'DOMAIN-SUFFIX,klip.me,569Cloud'
-    - 'DOMAIN-SUFFIX,libsyn.com,569Cloud'
-    - 'DOMAIN-SUFFIX,linkedin.com,569Cloud'
-    - 'DOMAIN-SUFFIX,line-apps.com,569Cloud'
-    - 'DOMAIN-SUFFIX,linode.com,569Cloud'
-    - 'DOMAIN-SUFFIX,lithium.com,569Cloud'
-    - 'DOMAIN-SUFFIX,littlehj.com,569Cloud'
-    - 'DOMAIN-SUFFIX,live.com,569Cloud'
-    - 'DOMAIN-SUFFIX,live.net,569Cloud'
-    - 'DOMAIN-SUFFIX,livefilestore.com,569Cloud'
-    - 'DOMAIN-SUFFIX,llnwd.net,569Cloud'
-    - 'DOMAIN-SUFFIX,macid.co,569Cloud'
-    - 'DOMAIN-SUFFIX,macromedia.com,569Cloud'
-    - 'DOMAIN-SUFFIX,macrumors.com,569Cloud'
-    - 'DOMAIN-SUFFIX,mashable.com,569Cloud'
-    - 'DOMAIN-SUFFIX,mathjax.org,569Cloud'
-    - 'DOMAIN-SUFFIX,medium.com,569Cloud'
-    - 'DOMAIN-SUFFIX,mega.co.nz,569Cloud'
-    - 'DOMAIN-SUFFIX,mega.nz,569Cloud'
-    - 'DOMAIN-SUFFIX,megaupload.com,569Cloud'
-    - 'DOMAIN-SUFFIX,microsofttranslator.com,569Cloud'
-    - 'DOMAIN-SUFFIX,mindnode.com,569Cloud'
-    - 'DOMAIN-SUFFIX,mobile01.com,569Cloud'
-    - 'DOMAIN-SUFFIX,modmyi.com,569Cloud'
-    - 'DOMAIN-SUFFIX,msedge.net,569Cloud'
-    - 'DOMAIN-SUFFIX,myfontastic.com,569Cloud'
-    - 'DOMAIN-SUFFIX,name.com,569Cloud'
-    - 'DOMAIN-SUFFIX,nextmedia.com,569Cloud'
-    - 'DOMAIN-SUFFIX,nsstatic.net,569Cloud'
-    - 'DOMAIN-SUFFIX,nssurge.com,569Cloud'
-    - 'DOMAIN-SUFFIX,nyt.com,569Cloud'
-    - 'DOMAIN-SUFFIX,nytimes.com,569Cloud'
-    - 'DOMAIN-SUFFIX,omnigroup.com,569Cloud'
-    - 'DOMAIN-SUFFIX,onedrive.com,569Cloud'
-    - 'DOMAIN-SUFFIX,onenote.com,569Cloud'
-    - 'DOMAIN-SUFFIX,ooyala.com,569Cloud'
-    - 'DOMAIN-SUFFIX,openvpn.net,569Cloud'
-    - 'DOMAIN-SUFFIX,openwrt.org,569Cloud'
-    - 'DOMAIN-SUFFIX,orkut.com,569Cloud'
-    - 'DOMAIN-SUFFIX,osxdaily.com,569Cloud'
-    - 'DOMAIN-SUFFIX,outlook.com,569Cloud'
-    - 'DOMAIN-SUFFIX,ow.ly,569Cloud'
-    - 'DOMAIN-SUFFIX,paddleapi.com,569Cloud'
-    - 'DOMAIN-SUFFIX,parallels.com,569Cloud'
-    - 'DOMAIN-SUFFIX,parse.com,569Cloud'
-    - 'DOMAIN-SUFFIX,pdfexpert.com,569Cloud'
-    - 'DOMAIN-SUFFIX,periscope.tv,569Cloud'
-    - 'DOMAIN-SUFFIX,pinboard.in,569Cloud'
-    - 'DOMAIN-SUFFIX,pinterest.com,569Cloud'
-    - 'DOMAIN-SUFFIX,pixelmator.com,569Cloud'
-    - 'DOMAIN-SUFFIX,pixiv.net,569Cloud'
-    - 'DOMAIN-SUFFIX,playpcesor.com,569Cloud'
-    - 'DOMAIN-SUFFIX,playstation.com,569Cloud'
-    - 'DOMAIN-SUFFIX,playstation.com.hk,569Cloud'
-    - 'DOMAIN-SUFFIX,playstation.net,569Cloud'
-    - 'DOMAIN-SUFFIX,playstationnetwork.com,569Cloud'
-    - 'DOMAIN-SUFFIX,pushwoosh.com,569Cloud'
-    - 'DOMAIN-SUFFIX,rime.im,569Cloud'
-    - 'DOMAIN-SUFFIX,servebom.com,569Cloud'
-    - 'DOMAIN-SUFFIX,sfx.ms,569Cloud'
-    - 'DOMAIN-SUFFIX,shadowsocks.org,569Cloud'
-    - 'DOMAIN-SUFFIX,sharethis.com,569Cloud'
-    - 'DOMAIN-SUFFIX,shazam.com,569Cloud'
-    - 'DOMAIN-SUFFIX,skype.com,569Cloud'
-    - 'DOMAIN-SUFFIX,smartdns569Cloud.com,569Cloud'
-    - 'DOMAIN-SUFFIX,smartmailcloud.com,569Cloud'
-    - 'DOMAIN-SUFFIX,sndcdn.com,569Cloud'
-    - 'DOMAIN-SUFFIX,sony.com,569Cloud'
-    - 'DOMAIN-SUFFIX,soundcloud.com,569Cloud'
-    - 'DOMAIN-SUFFIX,sourceforge.net,569Cloud'
-    - 'DOMAIN-SUFFIX,spotify.com,569Cloud'
-    - 'DOMAIN-SUFFIX,squarespace.com,569Cloud'
-    - 'DOMAIN-SUFFIX,sstatic.net,569Cloud'
-    - 'DOMAIN-SUFFIX,st.luluku.pw,569Cloud'
-    - 'DOMAIN-SUFFIX,stackoverflow.com,569Cloud'
-    - 'DOMAIN-SUFFIX,startpage.com,569Cloud'
-    - 'DOMAIN-SUFFIX,staticflickr.com,569Cloud'
-    - 'DOMAIN-SUFFIX,steamcommunity.com,569Cloud'
-    - 'DOMAIN-SUFFIX,symauth.com,569Cloud'
-    - 'DOMAIN-SUFFIX,symcb.com,569Cloud'
-    - 'DOMAIN-SUFFIX,symcd.com,569Cloud'
-    - 'DOMAIN-SUFFIX,tapbots.com,569Cloud'
-    - 'DOMAIN-SUFFIX,tapbots.net,569Cloud'
-    - 'DOMAIN-SUFFIX,tdesktop.com,569Cloud'
-    - 'DOMAIN-SUFFIX,techcrunch.com,569Cloud'
-    - 'DOMAIN-SUFFIX,techsmith.com,569Cloud'
-    - 'DOMAIN-SUFFIX,thepiratebay.org,569Cloud'
-    - 'DOMAIN-SUFFIX,theverge.com,569Cloud'
-    - 'DOMAIN-SUFFIX,time.com,569Cloud'
-    - 'DOMAIN-SUFFIX,timeinc.net,569Cloud'
-    - 'DOMAIN-SUFFIX,tiny.cc,569Cloud'
-    - 'DOMAIN-SUFFIX,tinypic.com,569Cloud'
-    - 'DOMAIN-SUFFIX,tmblr.co,569Cloud'
-    - 'DOMAIN-SUFFIX,todoist.com,569Cloud'
-    - 'DOMAIN-SUFFIX,trello.com,569Cloud'
-    - 'DOMAIN-SUFFIX,trustasiassl.com,569Cloud'
-    - 'DOMAIN-SUFFIX,tumblr.co,569Cloud'
-    - 'DOMAIN-SUFFIX,tumblr.com,569Cloud'
-    - 'DOMAIN-SUFFIX,tweetdeck.com,569Cloud'
-    - 'DOMAIN-SUFFIX,tweetmarker.net,569Cloud'
-    - 'DOMAIN-SUFFIX,twitch.tv,569Cloud'
-    - 'DOMAIN-SUFFIX,txmblr.com,569Cloud'
-    - 'DOMAIN-SUFFIX,typekit.net,569Cloud'
-    - 'DOMAIN-SUFFIX,ubertags.com,569Cloud'
-    - 'DOMAIN-SUFFIX,ublock.org,569Cloud'
-    - 'DOMAIN-SUFFIX,ubnt.com,569Cloud'
-    - 'DOMAIN-SUFFIX,ulyssesapp.com,569Cloud'
-    - 'DOMAIN-SUFFIX,urchin.com,569Cloud'
-    - 'DOMAIN-SUFFIX,usertrust.com,569Cloud'
-    - 'DOMAIN-SUFFIX,v.gd,569Cloud'
-    - 'DOMAIN-SUFFIX,v2ex.com,569Cloud'
-    - 'DOMAIN-SUFFIX,vimeo.com,569Cloud'
-    - 'DOMAIN-SUFFIX,vimeocdn.com,569Cloud'
-    - 'DOMAIN-SUFFIX,vine.co,569Cloud'
-    - 'DOMAIN-SUFFIX,vivaldi.com,569Cloud'
-    - 'DOMAIN-SUFFIX,vox-cdn.com,569Cloud'
-    - 'DOMAIN-SUFFIX,vsco.co,569Cloud'
-    - 'DOMAIN-SUFFIX,vultr.com,569Cloud'
-    - 'DOMAIN-SUFFIX,w.org,569Cloud'
-    - 'DOMAIN-SUFFIX,w3schools.com,569Cloud'
-    - 'DOMAIN-SUFFIX,webtype.com,569Cloud'
-    - 'DOMAIN-SUFFIX,wikiwand.com,569Cloud'
-    - 'DOMAIN-SUFFIX,wikileaks.org,569Cloud'
-    - 'DOMAIN-SUFFIX,wikimedia.org,569Cloud'
-    - 'DOMAIN-SUFFIX,wikipedia.com,569Cloud'
-    - 'DOMAIN-SUFFIX,wikipedia.org,569Cloud'
-    - 'DOMAIN-SUFFIX,windows.com,569Cloud'
-    - 'DOMAIN-SUFFIX,windows.net,569Cloud'
-    - 'DOMAIN-SUFFIX,wire.com,569Cloud'
-    - 'DOMAIN-SUFFIX,wordpress.com,569Cloud'
-    - 'DOMAIN-SUFFIX,workflowy.com,569Cloud'
-    - 'DOMAIN-SUFFIX,wp.com,569Cloud'
-    - 'DOMAIN-SUFFIX,wsj.com,569Cloud'
-    - 'DOMAIN-SUFFIX,wsj.net,569Cloud'
-    - 'DOMAIN-SUFFIX,xda-developers.com,569Cloud'
-    - 'DOMAIN-SUFFIX,xeeno.com,569Cloud'
-    - 'DOMAIN-SUFFIX,xiti.com,569Cloud'
-    - 'DOMAIN-SUFFIX,yahoo.com,569Cloud'
-    - 'DOMAIN-SUFFIX,yimg.com,569Cloud'
-    - 'DOMAIN-SUFFIX,ying.com,569Cloud'
-    - 'DOMAIN-SUFFIX,yoyo.org,569Cloud'
-    - 'DOMAIN-SUFFIX,ytimg.com,569Cloud'
-    - 'DOMAIN-SUFFIX,telegra.ph,569Cloud'
-    - 'DOMAIN-SUFFIX,telegram.org,569Cloud'
-    - 'IP-CIDR,91.108.4.0/22,569Cloud,no-resolve'
-    - 'IP-CIDR,91.108.8.0/21,569Cloud,no-resolve'
-    - 'IP-CIDR,91.108.16.0/22,569Cloud,no-resolve'
-    - 'IP-CIDR,91.108.56.0/22,569Cloud,no-resolve'
-    - 'IP-CIDR,149.154.160.0/20,569Cloud,no-resolve'
-    - 'IP-CIDR6,2001:67c:4e8::/48,569Cloud,no-resolve'
-    - 'IP-CIDR6,2001:b28:f23d::/48,569Cloud,no-resolve'
-    - 'IP-CIDR6,2001:b28:f23f::/48,569Cloud,no-resolve'
-    - 'IP-CIDR,120.232.181.162/32,569Cloud,no-resolve'
-    - 'IP-CIDR,120.241.147.226/32,569Cloud,no-resolve'
-    - 'IP-CIDR,120.253.253.226/32,569Cloud,no-resolve'
-    - 'IP-CIDR,120.253.255.162/32,569Cloud,no-resolve'
-    - 'IP-CIDR,120.253.255.34/32,569Cloud,no-resolve'
-    - 'IP-CIDR,120.253.255.98/32,569Cloud,no-resolve'
-    - 'IP-CIDR,180.163.150.162/32,569Cloud,no-resolve'
-    - 'IP-CIDR,180.163.150.34/32,569Cloud,no-resolve'
-    - 'IP-CIDR,180.163.151.162/32,569Cloud,no-resolve'
-    - 'IP-CIDR,180.163.151.34/32,569Cloud,no-resolve'
-    - 'IP-CIDR,203.208.39.0/24,569Cloud,no-resolve'
-    - 'IP-CIDR,203.208.40.0/24,569Cloud,no-resolve'
-    - 'IP-CIDR,203.208.41.0/24,569Cloud,no-resolve'
-    - 'IP-CIDR,203.208.43.0/24,569Cloud,no-resolve'
-    - 'IP-CIDR,203.208.50.0/24,569Cloud,no-resolve'
-    - 'IP-CIDR,220.181.174.162/32,569Cloud,no-resolve'
-    - 'IP-CIDR,220.181.174.226/32,569Cloud,no-resolve'
-    - 'IP-CIDR,220.181.174.34/32,569Cloud,no-resolve'
+    - 'DOMAIN-SUFFIX,9to5mac.com,妹子云'
+    - 'DOMAIN-SUFFIX,abpchina.org,妹子云'
+    - 'DOMAIN-SUFFIX,adblockplus.org,妹子云'
+    - 'DOMAIN-SUFFIX,adobe.com,妹子云'
+    - 'DOMAIN-SUFFIX,akamaized.net,妹子云'
+    - 'DOMAIN-SUFFIX,alfredapp.com,妹子云'
+    - 'DOMAIN-SUFFIX,amplitude.com,妹子云'
+    - 'DOMAIN-SUFFIX,ampproject.org,妹子云'
+    - 'DOMAIN-SUFFIX,android.com,妹子云'
+    - 'DOMAIN-SUFFIX,angularjs.org,妹子云'
+    - 'DOMAIN-SUFFIX,aolcdn.com,妹子云'
+    - 'DOMAIN-SUFFIX,apkpure.com,妹子云'
+    - 'DOMAIN-SUFFIX,appledaily.com,妹子云'
+    - 'DOMAIN-SUFFIX,appshopper.com,妹子云'
+    - 'DOMAIN-SUFFIX,appspot.com,妹子云'
+    - 'DOMAIN-SUFFIX,arcgis.com,妹子云'
+    - 'DOMAIN-SUFFIX,archive.org,妹子云'
+    - 'DOMAIN-SUFFIX,armorgames.com,妹子云'
+    - 'DOMAIN-SUFFIX,aspnetcdn.com,妹子云'
+    - 'DOMAIN-SUFFIX,att.com,妹子云'
+    - 'DOMAIN-SUFFIX,awsstatic.com,妹子云'
+    - 'DOMAIN-SUFFIX,azureedge.net,妹子云'
+    - 'DOMAIN-SUFFIX,azurewebsites.net,妹子云'
+    - 'DOMAIN-SUFFIX,bing.com,妹子云'
+    - 'DOMAIN-SUFFIX,bintray.com,妹子云'
+    - 'DOMAIN-SUFFIX,bit.com,妹子云'
+    - 'DOMAIN-SUFFIX,bit.ly,妹子云'
+    - 'DOMAIN-SUFFIX,bitbucket.org,妹子云'
+    - 'DOMAIN-SUFFIX,bjango.com,妹子云'
+    - 'DOMAIN-SUFFIX,bkrtx.com,妹子云'
+    - 'DOMAIN-SUFFIX,blog.com,妹子云'
+    - 'DOMAIN-SUFFIX,blogcdn.com,妹子云'
+    - 'DOMAIN-SUFFIX,blogger.com,妹子云'
+    - 'DOMAIN-SUFFIX,blogsmithmedia.com,妹子云'
+    - 'DOMAIN-SUFFIX,blogspot.com,妹子云'
+    - 'DOMAIN-SUFFIX,blogspot.hk,妹子云'
+    - 'DOMAIN-SUFFIX,bloomberg.com,妹子云'
+    - 'DOMAIN-SUFFIX,box.com,妹子云'
+    - 'DOMAIN-SUFFIX,box.net,妹子云'
+    - 'DOMAIN-SUFFIX,cachefly.net,妹子云'
+    - 'DOMAIN-SUFFIX,chromium.org,妹子云'
+    - 'DOMAIN-SUFFIX,cl.ly,妹子云'
+    - 'DOMAIN-SUFFIX,cloudflare.com,妹子云'
+    - 'DOMAIN-SUFFIX,cloudfront.net,妹子云'
+    - 'DOMAIN-SUFFIX,cloudmagic.com,妹子云'
+    - 'DOMAIN-SUFFIX,cmail19.com,妹子云'
+    - 'DOMAIN-SUFFIX,cnet.com,妹子云'
+    - 'DOMAIN-SUFFIX,cocoapods.org,妹子云'
+    - 'DOMAIN-SUFFIX,comodoca.com,妹子云'
+    - 'DOMAIN-SUFFIX,crashlytics.com,妹子云'
+    - 'DOMAIN-SUFFIX,culturedcode.com,妹子云'
+    - 'DOMAIN-SUFFIX,d.pr,妹子云'
+    - 'DOMAIN-SUFFIX,danilo.to,妹子云'
+    - 'DOMAIN-SUFFIX,dayone.me,妹子云'
+    - 'DOMAIN-SUFFIX,db.tt,妹子云'
+    - 'DOMAIN-SUFFIX,deskconnect.com,妹子云'
+    - 'DOMAIN-SUFFIX,disq.us,妹子云'
+    - 'DOMAIN-SUFFIX,disqus.com,妹子云'
+    - 'DOMAIN-SUFFIX,disquscdn.com,妹子云'
+    - 'DOMAIN-SUFFIX,dnsimple.com,妹子云'
+    - 'DOMAIN-SUFFIX,docker.com,妹子云'
+    - 'DOMAIN-SUFFIX,dribbble.com,妹子云'
+    - 'DOMAIN-SUFFIX,droplr.com,妹子云'
+    - 'DOMAIN-SUFFIX,duckduckgo.com,妹子云'
+    - 'DOMAIN-SUFFIX,dueapp.com,妹子云'
+    - 'DOMAIN-SUFFIX,dytt8.net,妹子云'
+    - 'DOMAIN-SUFFIX,edgecastcdn.net,妹子云'
+    - 'DOMAIN-SUFFIX,edgekey.net,妹子云'
+    - 'DOMAIN-SUFFIX,edgesuite.net,妹子云'
+    - 'DOMAIN-SUFFIX,engadget.com,妹子云'
+    - 'DOMAIN-SUFFIX,entrust.net,妹子云'
+    - 'DOMAIN-SUFFIX,eurekavpt.com,妹子云'
+    - 'DOMAIN-SUFFIX,evernote.com,妹子云'
+    - 'DOMAIN-SUFFIX,fabric.io,妹子云'
+    - 'DOMAIN-SUFFIX,fast.com,妹子云'
+    - 'DOMAIN-SUFFIX,fastly.net,妹子云'
+    - 'DOMAIN-SUFFIX,fc2.com,妹子云'
+    - 'DOMAIN-SUFFIX,feedburner.com,妹子云'
+    - 'DOMAIN-SUFFIX,feedly.com,妹子云'
+    - 'DOMAIN-SUFFIX,feedsportal.com,妹子云'
+    - 'DOMAIN-SUFFIX,fiftythree.com,妹子云'
+    - 'DOMAIN-SUFFIX,firebaseio.com,妹子云'
+    - 'DOMAIN-SUFFIX,flexibits.com,妹子云'
+    - 'DOMAIN-SUFFIX,flickr.com,妹子云'
+    - 'DOMAIN-SUFFIX,flipboard.com,妹子云'
+    - 'DOMAIN-SUFFIX,g.co,妹子云'
+    - 'DOMAIN-SUFFIX,gabia.net,妹子云'
+    - 'DOMAIN-SUFFIX,geni.us,妹子云'
+    - 'DOMAIN-SUFFIX,gfx.ms,妹子云'
+    - 'DOMAIN-SUFFIX,ggpht.com,妹子云'
+    - 'DOMAIN-SUFFIX,ghostnoteapp.com,妹子云'
+    - 'DOMAIN-SUFFIX,git.io,妹子云'
+    - 'DOMAIN-KEYWORD,github,妹子云'
+    - 'DOMAIN-SUFFIX,globalsign.com,妹子云'
+    - 'DOMAIN-SUFFIX,gmodules.com,妹子云'
+    - 'DOMAIN-SUFFIX,godaddy.com,妹子云'
+    - 'DOMAIN-SUFFIX,golang.org,妹子云'
+    - 'DOMAIN-SUFFIX,gongm.in,妹子云'
+    - 'DOMAIN-SUFFIX,goo.gl,妹子云'
+    - 'DOMAIN-SUFFIX,goodreaders.com,妹子云'
+    - 'DOMAIN-SUFFIX,goodreads.com,妹子云'
+    - 'DOMAIN-SUFFIX,gravatar.com,妹子云'
+    - 'DOMAIN-SUFFIX,gstatic.com,妹子云'
+    - 'DOMAIN-SUFFIX,gvt0.com,妹子云'
+    - 'DOMAIN-SUFFIX,hockeyapp.net,妹子云'
+    - 'DOMAIN-SUFFIX,hotmail.com,妹子云'
+    - 'DOMAIN-SUFFIX,icons8.com,妹子云'
+    - 'DOMAIN-SUFFIX,ifixit.com,妹子云'
+    - 'DOMAIN-SUFFIX,ift.tt,妹子云'
+    - 'DOMAIN-SUFFIX,ifttt.com,妹子云'
+    - 'DOMAIN-SUFFIX,iherb.com,妹子云'
+    - 'DOMAIN-SUFFIX,imageshack.us,妹子云'
+    - 'DOMAIN-SUFFIX,img.ly,妹子云'
+    - 'DOMAIN-SUFFIX,imgur.com,妹子云'
+    - 'DOMAIN-SUFFIX,imore.com,妹子云'
+    - 'DOMAIN-SUFFIX,instapaper.com,妹子云'
+    - 'DOMAIN-SUFFIX,ipn.li,妹子云'
+    - 'DOMAIN-SUFFIX,is.gd,妹子云'
+    - 'DOMAIN-SUFFIX,issuu.com,妹子云'
+    - 'DOMAIN-SUFFIX,itgonglun.com,妹子云'
+    - 'DOMAIN-SUFFIX,itun.es,妹子云'
+    - 'DOMAIN-SUFFIX,ixquick.com,妹子云'
+    - 'DOMAIN-SUFFIX,j.mp,妹子云'
+    - 'DOMAIN-SUFFIX,js.revsci.net,妹子云'
+    - 'DOMAIN-SUFFIX,jshint.com,妹子云'
+    - 'DOMAIN-SUFFIX,jtvnw.net,妹子云'
+    - 'DOMAIN-SUFFIX,justgetflux.com,妹子云'
+    - 'DOMAIN-SUFFIX,kat.cr,妹子云'
+    - 'DOMAIN-SUFFIX,klip.me,妹子云'
+    - 'DOMAIN-SUFFIX,libsyn.com,妹子云'
+    - 'DOMAIN-SUFFIX,linkedin.com,妹子云'
+    - 'DOMAIN-SUFFIX,line-apps.com,妹子云'
+    - 'DOMAIN-SUFFIX,linode.com,妹子云'
+    - 'DOMAIN-SUFFIX,lithium.com,妹子云'
+    - 'DOMAIN-SUFFIX,littlehj.com,妹子云'
+    - 'DOMAIN-SUFFIX,live.com,妹子云'
+    - 'DOMAIN-SUFFIX,live.net,妹子云'
+    - 'DOMAIN-SUFFIX,livefilestore.com,妹子云'
+    - 'DOMAIN-SUFFIX,llnwd.net,妹子云'
+    - 'DOMAIN-SUFFIX,macid.co,妹子云'
+    - 'DOMAIN-SUFFIX,macromedia.com,妹子云'
+    - 'DOMAIN-SUFFIX,macrumors.com,妹子云'
+    - 'DOMAIN-SUFFIX,mashable.com,妹子云'
+    - 'DOMAIN-SUFFIX,mathjax.org,妹子云'
+    - 'DOMAIN-SUFFIX,medium.com,妹子云'
+    - 'DOMAIN-SUFFIX,mega.co.nz,妹子云'
+    - 'DOMAIN-SUFFIX,mega.nz,妹子云'
+    - 'DOMAIN-SUFFIX,megaupload.com,妹子云'
+    - 'DOMAIN-SUFFIX,microsofttranslator.com,妹子云'
+    - 'DOMAIN-SUFFIX,mindnode.com,妹子云'
+    - 'DOMAIN-SUFFIX,mobile01.com,妹子云'
+    - 'DOMAIN-SUFFIX,modmyi.com,妹子云'
+    - 'DOMAIN-SUFFIX,msedge.net,妹子云'
+    - 'DOMAIN-SUFFIX,myfontastic.com,妹子云'
+    - 'DOMAIN-SUFFIX,name.com,妹子云'
+    - 'DOMAIN-SUFFIX,nextmedia.com,妹子云'
+    - 'DOMAIN-SUFFIX,nsstatic.net,妹子云'
+    - 'DOMAIN-SUFFIX,nssurge.com,妹子云'
+    - 'DOMAIN-SUFFIX,nyt.com,妹子云'
+    - 'DOMAIN-SUFFIX,nytimes.com,妹子云'
+    - 'DOMAIN-SUFFIX,omnigroup.com,妹子云'
+    - 'DOMAIN-SUFFIX,onedrive.com,妹子云'
+    - 'DOMAIN-SUFFIX,onenote.com,妹子云'
+    - 'DOMAIN-SUFFIX,ooyala.com,妹子云'
+    - 'DOMAIN-SUFFIX,openvpn.net,妹子云'
+    - 'DOMAIN-SUFFIX,openwrt.org,妹子云'
+    - 'DOMAIN-SUFFIX,orkut.com,妹子云'
+    - 'DOMAIN-SUFFIX,osxdaily.com,妹子云'
+    - 'DOMAIN-SUFFIX,outlook.com,妹子云'
+    - 'DOMAIN-SUFFIX,ow.ly,妹子云'
+    - 'DOMAIN-SUFFIX,paddleapi.com,妹子云'
+    - 'DOMAIN-SUFFIX,parallels.com,妹子云'
+    - 'DOMAIN-SUFFIX,parse.com,妹子云'
+    - 'DOMAIN-SUFFIX,pdfexpert.com,妹子云'
+    - 'DOMAIN-SUFFIX,periscope.tv,妹子云'
+    - 'DOMAIN-SUFFIX,pinboard.in,妹子云'
+    - 'DOMAIN-SUFFIX,pinterest.com,妹子云'
+    - 'DOMAIN-SUFFIX,pixelmator.com,妹子云'
+    - 'DOMAIN-SUFFIX,pixiv.net,妹子云'
+    - 'DOMAIN-SUFFIX,playpcesor.com,妹子云'
+    - 'DOMAIN-SUFFIX,playstation.com,妹子云'
+    - 'DOMAIN-SUFFIX,playstation.com.hk,妹子云'
+    - 'DOMAIN-SUFFIX,playstation.net,妹子云'
+    - 'DOMAIN-SUFFIX,playstationnetwork.com,妹子云'
+    - 'DOMAIN-SUFFIX,pushwoosh.com,妹子云'
+    - 'DOMAIN-SUFFIX,rime.im,妹子云'
+    - 'DOMAIN-SUFFIX,servebom.com,妹子云'
+    - 'DOMAIN-SUFFIX,sfx.ms,妹子云'
+    - 'DOMAIN-SUFFIX,shadowsocks.org,妹子云'
+    - 'DOMAIN-SUFFIX,sharethis.com,妹子云'
+    - 'DOMAIN-SUFFIX,shazam.com,妹子云'
+    - 'DOMAIN-SUFFIX,skype.com,妹子云'
+    - 'DOMAIN-SUFFIX,smartdns妹子云.com,妹子云'
+    - 'DOMAIN-SUFFIX,smartmailcloud.com,妹子云'
+    - 'DOMAIN-SUFFIX,sndcdn.com,妹子云'
+    - 'DOMAIN-SUFFIX,sony.com,妹子云'
+    - 'DOMAIN-SUFFIX,soundcloud.com,妹子云'
+    - 'DOMAIN-SUFFIX,sourceforge.net,妹子云'
+    - 'DOMAIN-SUFFIX,spotify.com,妹子云'
+    - 'DOMAIN-SUFFIX,squarespace.com,妹子云'
+    - 'DOMAIN-SUFFIX,sstatic.net,妹子云'
+    - 'DOMAIN-SUFFIX,st.luluku.pw,妹子云'
+    - 'DOMAIN-SUFFIX,stackoverflow.com,妹子云'
+    - 'DOMAIN-SUFFIX,startpage.com,妹子云'
+    - 'DOMAIN-SUFFIX,staticflickr.com,妹子云'
+    - 'DOMAIN-SUFFIX,steamcommunity.com,妹子云'
+    - 'DOMAIN-SUFFIX,symauth.com,妹子云'
+    - 'DOMAIN-SUFFIX,symcb.com,妹子云'
+    - 'DOMAIN-SUFFIX,symcd.com,妹子云'
+    - 'DOMAIN-SUFFIX,tapbots.com,妹子云'
+    - 'DOMAIN-SUFFIX,tapbots.net,妹子云'
+    - 'DOMAIN-SUFFIX,tdesktop.com,妹子云'
+    - 'DOMAIN-SUFFIX,techcrunch.com,妹子云'
+    - 'DOMAIN-SUFFIX,techsmith.com,妹子云'
+    - 'DOMAIN-SUFFIX,thepiratebay.org,妹子云'
+    - 'DOMAIN-SUFFIX,theverge.com,妹子云'
+    - 'DOMAIN-SUFFIX,time.com,妹子云'
+    - 'DOMAIN-SUFFIX,timeinc.net,妹子云'
+    - 'DOMAIN-SUFFIX,tiny.cc,妹子云'
+    - 'DOMAIN-SUFFIX,tinypic.com,妹子云'
+    - 'DOMAIN-SUFFIX,tmblr.co,妹子云'
+    - 'DOMAIN-SUFFIX,todoist.com,妹子云'
+    - 'DOMAIN-SUFFIX,trello.com,妹子云'
+    - 'DOMAIN-SUFFIX,trustasiassl.com,妹子云'
+    - 'DOMAIN-SUFFIX,tumblr.co,妹子云'
+    - 'DOMAIN-SUFFIX,tumblr.com,妹子云'
+    - 'DOMAIN-SUFFIX,tweetdeck.com,妹子云'
+    - 'DOMAIN-SUFFIX,tweetmarker.net,妹子云'
+    - 'DOMAIN-SUFFIX,twitch.tv,妹子云'
+    - 'DOMAIN-SUFFIX,txmblr.com,妹子云'
+    - 'DOMAIN-SUFFIX,typekit.net,妹子云'
+    - 'DOMAIN-SUFFIX,ubertags.com,妹子云'
+    - 'DOMAIN-SUFFIX,ublock.org,妹子云'
+    - 'DOMAIN-SUFFIX,ubnt.com,妹子云'
+    - 'DOMAIN-SUFFIX,ulyssesapp.com,妹子云'
+    - 'DOMAIN-SUFFIX,urchin.com,妹子云'
+    - 'DOMAIN-SUFFIX,usertrust.com,妹子云'
+    - 'DOMAIN-SUFFIX,v.gd,妹子云'
+    - 'DOMAIN-SUFFIX,v2ex.com,妹子云'
+    - 'DOMAIN-SUFFIX,vimeo.com,妹子云'
+    - 'DOMAIN-SUFFIX,vimeocdn.com,妹子云'
+    - 'DOMAIN-SUFFIX,vine.co,妹子云'
+    - 'DOMAIN-SUFFIX,vivaldi.com,妹子云'
+    - 'DOMAIN-SUFFIX,vox-cdn.com,妹子云'
+    - 'DOMAIN-SUFFIX,vsco.co,妹子云'
+    - 'DOMAIN-SUFFIX,vultr.com,妹子云'
+    - 'DOMAIN-SUFFIX,w.org,妹子云'
+    - 'DOMAIN-SUFFIX,w3schools.com,妹子云'
+    - 'DOMAIN-SUFFIX,webtype.com,妹子云'
+    - 'DOMAIN-SUFFIX,wikiwand.com,妹子云'
+    - 'DOMAIN-SUFFIX,wikileaks.org,妹子云'
+    - 'DOMAIN-SUFFIX,wikimedia.org,妹子云'
+    - 'DOMAIN-SUFFIX,wikipedia.com,妹子云'
+    - 'DOMAIN-SUFFIX,wikipedia.org,妹子云'
+    - 'DOMAIN-SUFFIX,windows.com,妹子云'
+    - 'DOMAIN-SUFFIX,windows.net,妹子云'
+    - 'DOMAIN-SUFFIX,wire.com,妹子云'
+    - 'DOMAIN-SUFFIX,wordpress.com,妹子云'
+    - 'DOMAIN-SUFFIX,workflowy.com,妹子云'
+    - 'DOMAIN-SUFFIX,wp.com,妹子云'
+    - 'DOMAIN-SUFFIX,wsj.com,妹子云'
+    - 'DOMAIN-SUFFIX,wsj.net,妹子云'
+    - 'DOMAIN-SUFFIX,xda-developers.com,妹子云'
+    - 'DOMAIN-SUFFIX,xeeno.com,妹子云'
+    - 'DOMAIN-SUFFIX,xiti.com,妹子云'
+    - 'DOMAIN-SUFFIX,yahoo.com,妹子云'
+    - 'DOMAIN-SUFFIX,yimg.com,妹子云'
+    - 'DOMAIN-SUFFIX,ying.com,妹子云'
+    - 'DOMAIN-SUFFIX,yoyo.org,妹子云'
+    - 'DOMAIN-SUFFIX,ytimg.com,妹子云'
+    - 'DOMAIN-SUFFIX,telegra.ph,妹子云'
+    - 'DOMAIN-SUFFIX,telegram.org,妹子云'
+    - 'IP-CIDR,91.108.4.0/22,妹子云,no-resolve'
+    - 'IP-CIDR,91.108.8.0/21,妹子云,no-resolve'
+    - 'IP-CIDR,91.108.16.0/22,妹子云,no-resolve'
+    - 'IP-CIDR,91.108.56.0/22,妹子云,no-resolve'
+    - 'IP-CIDR,149.154.160.0/20,妹子云,no-resolve'
+    - 'IP-CIDR6,2001:67c:4e8::/48,妹子云,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23d::/48,妹子云,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23f::/48,妹子云,no-resolve'
+    - 'IP-CIDR,120.232.181.162/32,妹子云,no-resolve'
+    - 'IP-CIDR,120.241.147.226/32,妹子云,no-resolve'
+    - 'IP-CIDR,120.253.253.226/32,妹子云,no-resolve'
+    - 'IP-CIDR,120.253.255.162/32,妹子云,no-resolve'
+    - 'IP-CIDR,120.253.255.34/32,妹子云,no-resolve'
+    - 'IP-CIDR,120.253.255.98/32,妹子云,no-resolve'
+    - 'IP-CIDR,180.163.150.162/32,妹子云,no-resolve'
+    - 'IP-CIDR,180.163.150.34/32,妹子云,no-resolve'
+    - 'IP-CIDR,180.163.151.162/32,妹子云,no-resolve'
+    - 'IP-CIDR,180.163.151.34/32,妹子云,no-resolve'
+    - 'IP-CIDR,203.208.39.0/24,妹子云,no-resolve'
+    - 'IP-CIDR,203.208.40.0/24,妹子云,no-resolve'
+    - 'IP-CIDR,203.208.41.0/24,妹子云,no-resolve'
+    - 'IP-CIDR,203.208.43.0/24,妹子云,no-resolve'
+    - 'IP-CIDR,203.208.50.0/24,妹子云,no-resolve'
+    - 'IP-CIDR,220.181.174.162/32,妹子云,no-resolve'
+    - 'IP-CIDR,220.181.174.226/32,妹子云,no-resolve'
+    - 'IP-CIDR,220.181.174.34/32,妹子云,no-resolve'
     - 'DOMAIN,injections.adguard.org,DIRECT'
     - 'DOMAIN,local.adguard.org,DIRECT'
     - 'DOMAIN-SUFFIX,local,DIRECT'
@@ -685,4 +561,4 @@ rules:
     - 'DOMAIN-SUFFIX,cn,DIRECT'
     - 'DOMAIN-KEYWORD,-cn,DIRECT'
     - 'GEOIP,CN,DIRECT'
-    - 'MATCH,569Cloud'
+    - 'MATCH,妹子云'
