@@ -15,15 +15,15 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '[Hy2]自动跳转官网https://c.lcjx02.xyz', server: jpv1.tigrdn1.xyz, port: 21225, sni: jpv1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 31a1e1a0-3eb4-425b-b695-99742e657424, ports: 21000-26000 }
-    - { name: '[Hy2]备用地址https://47.239.42.117/', server: jpv1.tigrdn1.xyz, port: 23125, sni: jpv1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 31a1e1a0-3eb4-425b-b695-99742e657424, ports: 21000-26000 }
-    - { name: '[Hy2]Telegram群组https://t.me/lcjx0v0', server: jpv1.tigrdn1.xyz, port: 24782, sni: jpv1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 31a1e1a0-3eb4-425b-b695-99742e657424, ports: 21000-26000 }
-    - { name: '[Hy2]日本v1(x2)', server: jpv1.tigrdn1.xyz, port: 22615, sni: jpv1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 31a1e1a0-3eb4-425b-b695-99742e657424, ports: 21000-26000 }
-    - { name: '[Hy2]日本d1(x0.5)仅移动优化', server: jpd1.tigrdn1.xyz, port: 23554, sni: jpd1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 31a1e1a0-3eb4-425b-b695-99742e657424, ports: 21000-26000 }
-    - { name: '[Hy2]新加坡v1(x2)', server: sgv1.tigrdn1.xyz, port: 24796, sni: sgv1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 31a1e1a0-3eb4-425b-b695-99742e657424, ports: 21000-26000 }
-    - { name: '[Hy2]新加坡e1(x1)仅移动优化', server: sge1.tigrdn1.xyz, port: 21955, sni: sge1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 31a1e1a0-3eb4-425b-b695-99742e657424, ports: 21000-26000 }
-    - { name: '[Hy2]香港E1(x1)仅移动优化', server: hkn1.tigrdn1.xyz, port: 24781, sni: hkn1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 31a1e1a0-3eb4-425b-b695-99742e657424, ports: 21000-26000 }
-    - { name: '[Hy2]香港H1(x0.2)可能无优化？', server: hkh1.tigrdn1.xyz, port: 22225, sni: hkh1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 31a1e1a0-3eb4-425b-b695-99742e657424, ports: 21000-26000 }
+    - { name: '[Hy2]自动跳转官网https://c.lcjx02.xyz', server: jpv1.tigrdn1.xyz, port: 23152, sni: jpv1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 26a2956f-10aa-4e8a-96cc-454f048ef784, ports: 21000-26000 }
+    - { name: '[Hy2]备用地址https://47.239.42.117/', server: jpv1.tigrdn1.xyz, port: 24069, sni: jpv1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 26a2956f-10aa-4e8a-96cc-454f048ef784, ports: 21000-26000 }
+    - { name: '[Hy2]Telegram群组https://t.me/lcjx0v0', server: jpv1.tigrdn1.xyz, port: 25061, sni: jpv1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 26a2956f-10aa-4e8a-96cc-454f048ef784, ports: 21000-26000 }
+    - { name: '[Hy2]日本v1(x2)', server: jpv1.tigrdn1.xyz, port: 22489, sni: jpv1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 26a2956f-10aa-4e8a-96cc-454f048ef784, ports: 21000-26000 }
+    - { name: '[Hy2]日本d1(x0.5)仅移动优化', server: jpd1.tigrdn1.xyz, port: 23311, sni: jpd1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 26a2956f-10aa-4e8a-96cc-454f048ef784, ports: 21000-26000 }
+    - { name: '[Hy2]新加坡v1(x2)', server: sgv1.tigrdn1.xyz, port: 25247, sni: sgv1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 26a2956f-10aa-4e8a-96cc-454f048ef784, ports: 21000-26000 }
+    - { name: '[Hy2]新加坡e1(x1)仅移动优化', server: sge1.tigrdn1.xyz, port: 23462, sni: sge1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 26a2956f-10aa-4e8a-96cc-454f048ef784, ports: 21000-26000 }
+    - { name: '[Hy2]香港E1(x1)仅移动优化', server: hkn1.tigrdn1.xyz, port: 24042, sni: hkn1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 26a2956f-10aa-4e8a-96cc-454f048ef784, ports: 21000-26000 }
+    - { name: '[Hy2]香港H1(x0.2)可能无优化？', server: hkh1.tigrdn1.xyz, port: 24580, sni: hkh1.tigrdn1.xyz, up: 1000, down: 1000, skip-cert-verify: true, type: hysteria2, password: 26a2956f-10aa-4e8a-96cc-454f048ef784, ports: 21000-26000 }
 proxy-groups:
     - { name: 辣炒巨蜥, type: select, proxies: [自动选择, 故障转移, '[Hy2]自动跳转官网https://c.lcjx02.xyz', '[Hy2]备用地址https://47.239.42.117/', '[Hy2]Telegram群组https://t.me/lcjx0v0', '[Hy2]日本v1(x2)', '[Hy2]日本d1(x0.5)仅移动优化', '[Hy2]新加坡v1(x2)', '[Hy2]新加坡e1(x1)仅移动优化', '[Hy2]香港E1(x1)仅移动优化', '[Hy2]香港H1(x0.2)可能无优化？'] }
     - { name: 自动选择, type: url-test, proxies: ['[Hy2]自动跳转官网https://c.lcjx02.xyz', '[Hy2]备用地址https://47.239.42.117/', '[Hy2]Telegram群组https://t.me/lcjx0v0', '[Hy2]日本v1(x2)', '[Hy2]日本d1(x0.5)仅移动优化', '[Hy2]新加坡v1(x2)', '[Hy2]新加坡e1(x1)仅移动优化', '[Hy2]香港E1(x1)仅移动优化', '[Hy2]香港H1(x0.2)可能无优化？'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
@@ -34,8 +34,8 @@ rules:
     - 'IP-CIDR,205.198.72.89/32,DIRECT,no-resolve'
     - 'IP-CIDR,18.141.180.219/32,DIRECT,no-resolve'
     - 'IP-CIDR,154.31.113.36/32,DIRECT,no-resolve'
-    - 'IP-CIDR,54.95.255.156/32,DIRECT,no-resolve'
     - 'IP-CIDR,18.183.215.195/32,DIRECT,no-resolve'
+    - 'IP-CIDR,54.95.255.156/32,DIRECT,no-resolve'
     - 'DOMAIN,lcjx.xyz,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,辣炒巨蜥'
     - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,辣炒巨蜥'
