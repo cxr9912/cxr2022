@@ -15,39 +15,39 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：500 GB', server: meizi-hk.jiumaojiu.org, port: 20882, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: '距离下次重置剩余：16 天', server: meizi-hk.jiumaojiu.org, port: 20882, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 套餐到期：2025-02-22, server: meizi-hk.jiumaojiu.org, port: 20882, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 香港1, server: meizi-hk.jiumaojiu.org, port: 20882, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 香港2, server: meizi-hk.jiumaojiu.org, port: 20851, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 香港3, server: meizi-hk.jiumaojiu.org, port: 20848, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 香港4, server: meizi-hk.jiumaojiu.org, port: 20897, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 美国1, server: meizi-us.jiumaojiu.org, port: 20827, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 美国2, server: meizi-us.jiumaojiu.org, port: 20886, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 美国3, server: meizi-us.jiumaojiu.org, port: 20860, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 美国4, server: meizi-us.jiumaojiu.org, port: 20852, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 日本1, server: meizi-jp.jiumaojiu.org, port: 20846, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 日本2, server: meizi-jp.jiumaojiu.org, port: 20887, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 日本3, server: meizi-jp.jiumaojiu.org, port: 20878, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 日本4, server: meizi-jp.jiumaojiu.org, port: 20829, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 新加坡1, server: meizi-sg.jiumaojiu.org, port: 20833, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 新加坡2, server: meizi-sg.jiumaojiu.org, port: 20860, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 新加坡3, server: meizi-sg.jiumaojiu.org, port: 20821, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 新加坡4, server: meizi-sg.jiumaojiu.org, port: 20851, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 卢森堡1, server: meizi-lu.jiumaojiu.org, port: 20857, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 卢森堡2, server: meizi-lu.jiumaojiu.org, port: 20869, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 卢森堡3, server: meizi-lu.jiumaojiu.org, port: 20806, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
-    - { name: 卢森堡4, server: meizi-lu.jiumaojiu.org, port: 20804, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: a8af17fd-732c-497c-8dfe-7961aa4ea3b0 }
+    - { name: '剩余流量：495.52 GB', server: meizi-hk.jiumaojiu.org, port: 20815, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: '距离下次重置剩余：9 天', server: meizi-hk.jiumaojiu.org, port: 20815, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 套餐到期：2025-02-22, server: meizi-hk.jiumaojiu.org, port: 20815, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 香港1, server: meizi-hk.jiumaojiu.org, port: 20815, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 香港2, server: meizi-hk.jiumaojiu.org, port: 20865, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 香港3, server: meizi-hk.jiumaojiu.org, port: 20888, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 香港4, server: meizi-hk.jiumaojiu.org, port: 20882, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 美国1, server: meizi-us.jiumaojiu.org, port: 20850, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 美国2, server: meizi-us.jiumaojiu.org, port: 20807, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 美国3, server: meizi-us.jiumaojiu.org, port: 20859, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 美国4, server: meizi-us.jiumaojiu.org, port: 20886, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 日本1, server: meizi-jp.jiumaojiu.org, port: 20899, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 日本2, server: meizi-jp.jiumaojiu.org, port: 20811, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 日本3, server: meizi-jp.jiumaojiu.org, port: 20848, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 日本4, server: meizi-jp.jiumaojiu.org, port: 20812, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 新加坡1, server: meizi-sg.jiumaojiu.org, port: 20838, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 新加坡2, server: meizi-sg.jiumaojiu.org, port: 20832, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 新加坡3, server: meizi-sg.jiumaojiu.org, port: 20836, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 新加坡4, server: meizi-sg.jiumaojiu.org, port: 20893, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 卢森堡1, server: meizi-lu.jiumaojiu.org, port: 20837, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 卢森堡2, server: meizi-lu.jiumaojiu.org, port: 20880, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 卢森堡3, server: meizi-lu.jiumaojiu.org, port: 20834, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
+    - { name: 卢森堡4, server: meizi-lu.jiumaojiu.org, port: 20894, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20801-20899, type: hysteria2, password: 72f64ffb-9263-4a55-8a9e-b85ea5179967 }
 proxy-groups:
-    - { name: 妹子云, type: select, proxies: [自动选择, 故障转移, '剩余流量：500 GB', '距离下次重置剩余：16 天', 套餐到期：2025-02-22, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：500 GB', '距离下次重置剩余：16 天', 套餐到期：2025-02-22, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：500 GB', '距离下次重置剩余：16 天', 套餐到期：2025-02-22, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 妹子云, type: select, proxies: [自动选择, 故障转移, '剩余流量：495.52 GB', '距离下次重置剩余：9 天', 套餐到期：2025-02-22, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：495.52 GB', '距离下次重置剩余：9 天', 套餐到期：2025-02-22, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：495.52 GB', '距离下次重置剩余：9 天', 套餐到期：2025-02-22, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'IP-CIDR,107.189.31.71/32,DIRECT,no-resolve'
     - 'IP-CIDR,146.19.196.204/32,DIRECT,no-resolve'
     - 'IP-CIDR,172.111.146.58/32,DIRECT,no-resolve'
     - 'IP-CIDR,209.141.44.218/32,DIRECT,no-resolve'
-    - 'IP-CIDR,42.200.230.169/32,DIRECT,no-resolve'
+    - 'IP-CIDR,42.200.231.130/32,DIRECT,no-resolve'
     - 'DOMAIN,45.61.52.132:8009,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,妹子云'
     - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,妹子云'
