@@ -15,8 +15,8 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：149.64 GB', type: vmess, server: yoyo.cmyiphone.top, port: 49309, uuid: 2bc22b95-bee2-489f-8912-739a0552d882, alterId: 0, cipher: auto, udp: true }
-    - { name: '距离下次重置剩余：13 天', type: vmess, server: yoyo.cmyiphone.top, port: 49309, uuid: 2bc22b95-bee2-489f-8912-739a0552d882, alterId: 0, cipher: auto, udp: true }
+    - { name: '剩余流量：105.3 GB', type: vmess, server: yoyo.cmyiphone.top, port: 49309, uuid: 2bc22b95-bee2-489f-8912-739a0552d882, alterId: 0, cipher: auto, udp: true }
+    - { name: '距离下次重置剩余：10 天', type: vmess, server: yoyo.cmyiphone.top, port: 49309, uuid: 2bc22b95-bee2-489f-8912-739a0552d882, alterId: 0, cipher: auto, udp: true }
     - { name: 套餐到期：2025-02-24, type: vmess, server: yoyo.cmyiphone.top, port: 49309, uuid: 2bc22b95-bee2-489f-8912-739a0552d882, alterId: 0, cipher: auto, udp: true }
     - { name: caomei2025.com（官网）, type: vmess, server: yoyo.cmyiphone.top, port: 49309, uuid: 2bc22b95-bee2-489f-8912-739a0552d882, alterId: 0, cipher: auto, udp: true }
     - { name: 复制下方网址联系客服, type: vmess, server: yoyo.cmyiphone.top, port: 49309, uuid: 2bc22b95-bee2-489f-8912-739a0552d882, alterId: 0, cipher: auto, udp: true }
@@ -41,9 +41,9 @@ proxies:
     - { name: 韩国原生ip, type: ss, server: yoyo.cmyiphone.top, port: 49311, cipher: chacha20-ietf-poly1305, password: 2bc22b95-bee2-489f-8912-739a0552d882, udp: true }
     - { name: 澳大利亚原生ip, type: ss, server: yoyo.cmyiphone.top, port: 49314, cipher: chacha20-ietf-poly1305, password: 2bc22b95-bee2-489f-8912-739a0552d882, udp: true }
 proxy-groups:
-    - { name: 草莓云, type: select, proxies: [自动选择, 故障转移, '剩余流量：149.64 GB', '距离下次重置剩余：13 天', 套餐到期：2025-02-24, caomei2025.com（官网）, 复制下方网址联系客服, cm.kefu2025.com, TG客服@zdzq520, 784893370（Q群）, 台湾丨解GPT, '香港 01【IEPL】', '香港 02【IEPL】', 日本丨解GPT, 新加坡丨解GPT, '美国 01【IEPL】', '美国 02【IEPL】', 泰国丨快速, 越南丨解GPT, 马来西亚丨解GPT, 加拿大丨快速, 日本原生ip, 英国原生ip, 印度原生ip, 德国原生ip, 韩国原生ip, 澳大利亚原生ip] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：149.64 GB', '距离下次重置剩余：13 天', 套餐到期：2025-02-24, caomei2025.com（官网）, 复制下方网址联系客服, cm.kefu2025.com, TG客服@zdzq520, 784893370（Q群）, 台湾丨解GPT, '香港 01【IEPL】', '香港 02【IEPL】', 日本丨解GPT, 新加坡丨解GPT, '美国 01【IEPL】', '美国 02【IEPL】', 泰国丨快速, 越南丨解GPT, 马来西亚丨解GPT, 加拿大丨快速, 日本原生ip, 英国原生ip, 印度原生ip, 德国原生ip, 韩国原生ip, 澳大利亚原生ip], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：149.64 GB', '距离下次重置剩余：13 天', 套餐到期：2025-02-24, caomei2025.com（官网）, 复制下方网址联系客服, cm.kefu2025.com, TG客服@zdzq520, 784893370（Q群）, 台湾丨解GPT, '香港 01【IEPL】', '香港 02【IEPL】', 日本丨解GPT, 新加坡丨解GPT, '美国 01【IEPL】', '美国 02【IEPL】', 泰国丨快速, 越南丨解GPT, 马来西亚丨解GPT, 加拿大丨快速, 日本原生ip, 英国原生ip, 印度原生ip, 德国原生ip, 韩国原生ip, 澳大利亚原生ip], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 草莓云, type: select, proxies: [自动选择, 故障转移, '剩余流量：105.3 GB', '距离下次重置剩余：10 天', 套餐到期：2025-02-24, caomei2025.com（官网）, 复制下方网址联系客服, cm.kefu2025.com, TG客服@zdzq520, 784893370（Q群）, 台湾丨解GPT, '香港 01【IEPL】', '香港 02【IEPL】', 日本丨解GPT, 新加坡丨解GPT, '美国 01【IEPL】', '美国 02【IEPL】', 泰国丨快速, 越南丨解GPT, 马来西亚丨解GPT, 加拿大丨快速, 日本原生ip, 英国原生ip, 印度原生ip, 德国原生ip, 韩国原生ip, 澳大利亚原生ip] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：105.3 GB', '距离下次重置剩余：10 天', 套餐到期：2025-02-24, caomei2025.com（官网）, 复制下方网址联系客服, cm.kefu2025.com, TG客服@zdzq520, 784893370（Q群）, 台湾丨解GPT, '香港 01【IEPL】', '香港 02【IEPL】', 日本丨解GPT, 新加坡丨解GPT, '美国 01【IEPL】', '美国 02【IEPL】', 泰国丨快速, 越南丨解GPT, 马来西亚丨解GPT, 加拿大丨快速, 日本原生ip, 英国原生ip, 印度原生ip, 德国原生ip, 韩国原生ip, 澳大利亚原生ip], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：105.3 GB', '距离下次重置剩余：10 天', 套餐到期：2025-02-24, caomei2025.com（官网）, 复制下方网址联系客服, cm.kefu2025.com, TG客服@zdzq520, 784893370（Q群）, 台湾丨解GPT, '香港 01【IEPL】', '香港 02【IEPL】', 日本丨解GPT, 新加坡丨解GPT, '美国 01【IEPL】', '美国 02【IEPL】', 泰国丨快速, 越南丨解GPT, 马来西亚丨解GPT, 加拿大丨快速, 日本原生ip, 英国原生ip, 印度原生ip, 德国原生ip, 韩国原生ip, 澳大利亚原生ip], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN-SUFFIX,services.googleapis.cn,草莓云'
     - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,草莓云'
