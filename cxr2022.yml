@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
 dns:
-    enable: false
+    enable: true
     ipv6: false
     default-nameserver: [223.5.5.5, 119.29.29.29]
     enhanced-mode: fake-ip
@@ -15,19 +15,20 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：200 GB', server: dg.laosijicc.top, port: 34564, udp: true, skip-cert-verify: true, sni: dg.laosijicc.top, type: hysteria2, password: 093f36f2-739f-4323-b443-8630e8cea614 }
-    - { name: 套餐到期：2025-03-11, server: dg.laosijicc.top, port: 34564, udp: true, skip-cert-verify: true, sni: dg.laosijicc.top, type: hysteria2, password: 093f36f2-739f-4323-b443-8630e8cea614 }
-    - { name: '官网:laosijicc.top', server: dg.laosijicc.top, port: 34564, udp: true, skip-cert-verify: true, sni: dg.laosijicc.top, type: hysteria2, password: 093f36f2-739f-4323-b443-8630e8cea614 }
-    - { name: 香港, server: xg.laosijicc.top, port: 34561, udp: true, skip-cert-verify: true, sni: xg.laosijicc.top, type: hysteria2, password: 093f36f2-739f-4323-b443-8630e8cea614 }
-    - { name: 美国, server: mg.laosijicc.top, port: 34562, udp: true, skip-cert-verify: true, sni: mg.laosijicc.top, type: hysteria2, password: 093f36f2-739f-4323-b443-8630e8cea614 }
-    - { name: 英国, server: yg.laosijicc.top, port: 34563, udp: true, skip-cert-verify: true, sni: yg.laosijicc.top, type: hysteria2, password: 093f36f2-739f-4323-b443-8630e8cea614 }
-    - { name: 德国, server: dg.laosijicc.top, port: 34564, udp: true, skip-cert-verify: true, sni: dg.laosijicc.top, type: hysteria2, password: 093f36f2-739f-4323-b443-8630e8cea614 }
-    - { name: 新加坡, server: xjp.laosijicc.top, port: 34565, udp: true, skip-cert-verify: true, sni: xjp.laosijicc.top, type: hysteria2, password: 093f36f2-739f-4323-b443-8630e8cea614 }
-    - { name: 日本, server: rb.laosijicc.top, port: 34566, udp: true, skip-cert-verify: true, sni: rb.laosijicc.top, type: hysteria2, password: 093f36f2-739f-4323-b443-8630e8cea614 }
+    - { name: '剩余流量：200 GB', server: dg.laosijicc.top, port: 34564, udp: true, skip-cert-verify: true, sni: dg.laosijicc.top, type: hysteria2, password: 13589a67-6b11-4f84-a755-268e1516ca26 }
+    - { name: '距离下次重置剩余：24 天', server: dg.laosijicc.top, port: 34564, udp: true, skip-cert-verify: true, sni: dg.laosijicc.top, type: hysteria2, password: 13589a67-6b11-4f84-a755-268e1516ca26 }
+    - { name: 套餐到期：2025-03-12, server: dg.laosijicc.top, port: 34564, udp: true, skip-cert-verify: true, sni: dg.laosijicc.top, type: hysteria2, password: 13589a67-6b11-4f84-a755-268e1516ca26 }
+    - { name: '官网:laosijicc.top', server: dg.laosijicc.top, port: 34564, udp: true, skip-cert-verify: true, sni: dg.laosijicc.top, type: hysteria2, password: 13589a67-6b11-4f84-a755-268e1516ca26 }
+    - { name: 香港, server: xg.laosijicc.top, port: 34561, udp: true, skip-cert-verify: true, sni: xg.laosijicc.top, type: hysteria2, password: 13589a67-6b11-4f84-a755-268e1516ca26 }
+    - { name: 美国, server: mg.laosijicc.top, port: 34562, udp: true, skip-cert-verify: true, sni: mg.laosijicc.top, type: hysteria2, password: 13589a67-6b11-4f84-a755-268e1516ca26 }
+    - { name: 英国, server: yg.laosijicc.top, port: 34563, udp: true, skip-cert-verify: true, sni: yg.laosijicc.top, type: hysteria2, password: 13589a67-6b11-4f84-a755-268e1516ca26 }
+    - { name: 德国, server: dg.laosijicc.top, port: 34564, udp: true, skip-cert-verify: true, sni: dg.laosijicc.top, type: hysteria2, password: 13589a67-6b11-4f84-a755-268e1516ca26 }
+    - { name: 新加坡, server: xjp.laosijicc.top, port: 34565, udp: true, skip-cert-verify: true, sni: xjp.laosijicc.top, type: hysteria2, password: 13589a67-6b11-4f84-a755-268e1516ca26 }
+    - { name: 日本, server: rb.laosijicc.top, port: 34566, udp: true, skip-cert-verify: true, sni: rb.laosijicc.top, type: hysteria2, password: 13589a67-6b11-4f84-a755-268e1516ca26 }
 proxy-groups:
-    - { name: 老司机, type: select, proxies: [自动选择, 故障转移, '剩余流量：200 GB', 套餐到期：2025-03-11, '官网:laosijicc.top', 香港, 美国, 英国, 德国, 新加坡, 日本] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：200 GB', 套餐到期：2025-03-11, '官网:laosijicc.top', 香港, 美国, 英国, 德国, 新加坡, 日本], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：200 GB', 套餐到期：2025-03-11, '官网:laosijicc.top', 香港, 美国, 英国, 德国, 新加坡, 日本], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 老司机, type: select, proxies: [自动选择, 故障转移, '剩余流量：200 GB', '距离下次重置剩余：24 天', 套餐到期：2025-03-12, '官网:laosijicc.top', 香港, 美国, 英国, 德国, 新加坡, 日本] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：200 GB', '距离下次重置剩余：24 天', 套餐到期：2025-03-12, '官网:laosijicc.top', 香港, 美国, 英国, 德国, 新加坡, 日本], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：200 GB', '距离下次重置剩余：24 天', 套餐到期：2025-03-12, '官网:laosijicc.top', 香港, 美国, 英国, 德国, 新加坡, 日本], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN-SUFFIX,services.googleapis.cn,老司机'
     - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,老司机'
