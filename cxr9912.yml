@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
 dns:
-    enable: false
+    enable: true
     ipv6: false
     default-nameserver: [223.5.5.5, 119.29.29.29]
     enhanced-mode: fake-ip
@@ -15,33 +15,33 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：500 GB', server: pianyi-hk.jiumaojiu.org, port: 20150, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: '距离下次重置剩余：7 天', server: pianyi-hk.jiumaojiu.org, port: 20150, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 套餐到期：2025-03-17, server: pianyi-hk.jiumaojiu.org, port: 20150, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 香港1, server: pianyi-hk.jiumaojiu.org, port: 20150, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 香港2, server: pianyi-hk.jiumaojiu.org, port: 20184, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 香港3, server: pianyi-hk.jiumaojiu.org, port: 20160, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 香港4, server: pianyi-hk.jiumaojiu.org, port: 20124, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 美国1, server: pianyi-us.jiumaojiu.org, port: 20161, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 美国2, server: pianyi-us.jiumaojiu.org, port: 20160, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 美国3, server: pianyi-us.jiumaojiu.org, port: 20128, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 美国4, server: pianyi-us.jiumaojiu.org, port: 20103, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 日本1, server: pianyi-jp.jiumaojiu.org, port: 20120, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 日本2, server: pianyi-jp.jiumaojiu.org, port: 20117, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 日本3, server: pianyi-jp.jiumaojiu.org, port: 20159, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 日本4, server: pianyi-jp.jiumaojiu.org, port: 20191, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 新加坡1, server: pianyi-sg.jiumaojiu.org, port: 20138, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 新加坡2, server: pianyi-sg.jiumaojiu.org, port: 20111, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 新加坡3, server: pianyi-sg.jiumaojiu.org, port: 20168, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 新加坡4, server: pianyi-sg.jiumaojiu.org, port: 20175, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 卢森堡1, server: pianyi-lu.jiumaojiu.org, port: 20131, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 卢森堡2, server: pianyi-lu.jiumaojiu.org, port: 20116, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 卢森堡3, server: pianyi-lu.jiumaojiu.org, port: 20116, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
-    - { name: 卢森堡4, server: pianyi-lu.jiumaojiu.org, port: 20177, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 404659e1-97c0-4207-aaaf-c9ab8272ac20 }
+    - { name: '剩余流量：490.43 GB', server: pianyi-hk.jiumaojiu.org, port: 20181, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: '距离下次重置剩余：5 天', server: pianyi-hk.jiumaojiu.org, port: 20181, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 套餐到期：2025-03-17, server: pianyi-hk.jiumaojiu.org, port: 20181, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 香港1, server: pianyi-hk.jiumaojiu.org, port: 20181, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 香港2, server: pianyi-hk.jiumaojiu.org, port: 20195, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 香港3, server: pianyi-hk.jiumaojiu.org, port: 20169, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 香港4, server: pianyi-hk.jiumaojiu.org, port: 20186, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 美国1, server: pianyi-us.jiumaojiu.org, port: 20107, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 美国2, server: pianyi-us.jiumaojiu.org, port: 20107, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 美国3, server: pianyi-us.jiumaojiu.org, port: 20143, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 美国4, server: pianyi-us.jiumaojiu.org, port: 20182, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 日本1, server: pianyi-jp.jiumaojiu.org, port: 20171, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 日本2, server: pianyi-jp.jiumaojiu.org, port: 20145, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 日本3, server: pianyi-jp.jiumaojiu.org, port: 20143, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 日本4, server: pianyi-jp.jiumaojiu.org, port: 20162, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 新加坡1, server: pianyi-sg.jiumaojiu.org, port: 20167, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 新加坡2, server: pianyi-sg.jiumaojiu.org, port: 20144, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 新加坡3, server: pianyi-sg.jiumaojiu.org, port: 20155, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 新加坡4, server: pianyi-sg.jiumaojiu.org, port: 20174, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 卢森堡1, server: pianyi-lu.jiumaojiu.org, port: 20156, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 卢森堡2, server: pianyi-lu.jiumaojiu.org, port: 20162, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 卢森堡3, server: pianyi-lu.jiumaojiu.org, port: 20103, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
+    - { name: 卢森堡4, server: pianyi-lu.jiumaojiu.org, port: 20109, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 20101-20199, type: hysteria2, password: 65a7460c-1d9f-4eac-8eb7-1e5ed85a25e0 }
 proxy-groups:
-    - { name: 便宜机场, type: select, proxies: [自动选择, 故障转移, '剩余流量：500 GB', '距离下次重置剩余：7 天', 套餐到期：2025-03-17, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：500 GB', '距离下次重置剩余：7 天', 套餐到期：2025-03-17, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：500 GB', '距离下次重置剩余：7 天', 套餐到期：2025-03-17, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 便宜机场, type: select, proxies: [自动选择, 故障转移, '剩余流量：490.43 GB', '距离下次重置剩余：5 天', 套餐到期：2025-03-17, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：490.43 GB', '距离下次重置剩余：5 天', 套餐到期：2025-03-17, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：490.43 GB', '距离下次重置剩余：5 天', 套餐到期：2025-03-17, 香港1, 香港2, 香港3, 香港4, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 卢森堡1, 卢森堡2, 卢森堡3, 卢森堡4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN,45.61.52.132:8005,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,便宜机场'
