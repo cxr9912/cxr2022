@@ -1,575 +1,212 @@
-mixed-port: 7890
-allow-lan: true
-bind-address: '*'
 mode: rule
-log-level: info
-external-controller: '127.0.0.1:9090'
+profile:
+  store-selected: true
+  fake-ip: true
+unified-delay: true
+tcp-concurrent: true
+tun:
+  dns-hijack:
+  - 114.114.114.114
+  - 180.76.76.76
+  - 119.29.29.29
+  - 223.6.6.6
+  - 223.5.5.5
+  - 8.8.8.8
+  - 8.8.4.4
+  - 1.1.1.1
+  - 1.0.0.1
 dns:
-    enable: true
-    ipv6: false
-    default-nameserver: [223.5.5.5, 119.29.29.29]
-    enhanced-mode: fake-ip
-    fake-ip-range: 198.18.0.1/16
-    use-hosts: true
-    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
-    fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
-    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+  enable: true
+  ipv6: false
+  use-system-hosts: false
+  use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver: [ https://223.6.6.6/dns-query, https://doh.pub/dns-query ]
+  fallback-filter: { geoip: true, ipcidr: [ 240.0.0.0/4, 0.0.0.0/32 ] }
+  fallback: [ 'tls://223.5.5.5:853', 'tls://119.29.29.29:853' ]
+  default-nameserver: [ 119.29.29.29, 223.5.5.5 ]
 proxies:
-    - { name: '官网https://www.nuomi.info', type: vless, server: 37.114.60.244, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: 如非最新app没网请卸载重装, type: vless, server: 37.114.60.244, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: '剩余流量：29.94 GB', type: vless, server: 37.114.60.244, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: '距离下次重置剩余：5 天', type: vless, server: 37.114.60.244, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: 套餐到期：2025-03-15, type: vless, server: 37.114.60.244, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·德国·FRA-alve-gpt, type: vless, server: 37.114.60.244, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·美国·ALL-CA·Multacc, type: vless, server: 204.13.155.242, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·美国·ALL-CAcs2-gpt, type: vless, server: 107.172.231.66, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·美国·ALL-NYcs-gpt, type: vless, server: 23.94.180.61, port: 52108, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: A-美国·ALL-TXrn-gpt, type: vless, server: 192.3.236.30, port: 52021, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: A-美国·ALL-AZgc-gpt, type: vless, server: 173.249.203.43, port: 52017, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·美国·ALL-CAjh-gpt/nf, type: vless, server: 207.174.28.24, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·台灣·Hinet家寬(新春限时体验)台北, type: vless, server: 1000tw.duboji.vip, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·台灣·Hinet家寬(新春限时体验)新北, type: vless, server: tw1000.duboji.vip, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·日本-jh1, type: vless, server: 212.192.221.139, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·日本-jh2, type: vless, server: 212.192.221.150, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·香港·移动CMI-1, type: vless, server: 154.16.183.133, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·香港·移动CMI-2, type: vless, server: 62.72.163.218, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·香港·移动CMI·smo20, type: vless, server: 103.171.176.111, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·新加坡·移动CMI·ac-gpt/nf, type: vless, server: 45.145.154.156, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·新加坡·移动CMI·jh-gpt/nf, type: vless, server: 192.124.176.246, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: As·越南-ALL-VH, type: vless, server: 203.145.46.7, port: 52009, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
-    - { name: Asc·法国·ALL-VOH, type: vless, server: optimize-fr.168829.xyz, port: 443, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: '', client-fingerprint: firefox, servername: media-frv6.168829.xyz, network: ws, ws-opts: { path: /search, headers: { Host: media-frv6.168829.xyz } } }
-    - { name: Asc·加拿大·ALL-VOH, type: vless, server: optimize-ca.168829.xyz, port: 443, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: '', client-fingerprint: firefox, servername: media-cav6.168829.xyz, network: ws, ws-opts: { path: /search, headers: { Host: media-cav6.168829.xyz } } }
-    - { name: Asc·加拿大·ALL-KWH, type: vless, server: optimize-ca1.168829.xyz, port: 443, uuid: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac, udp: true, tls: true, skip-cert-verify: false, flow: '', client-fingerprint: firefox, servername: media-ca1v6.168829.xyz, network: ws, ws-opts: { path: /search, headers: { Host: media-ca1v6.168829.xyz } } }
-    - { name: H·德国·alve-hop, server: 37.114.60.244, port: 52018, ports: 52018-62017, mport: 52018-62017, udp: true, skip-cert-verify: true, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
-    - { name: H-美国-CAcc-hop, server: 204.13.155.242, port: 52018, ports: 52018-62017, mport: 52018-62017, udp: true, skip-cert-verify: true, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
-    - { name: H-美国-NYcs·x0.1-hop, server: 107.175.70.7, port: 52018, ports: 52018-62017, mport: 52018-62017, udp: true, skip-cert-verify: true, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
-    - { name: H-美国-CAcs1-hop, server: 23.94.180.61, port: 52018, ports: 52018-62017, mport: 52018-62017, udp: true, skip-cert-verify: true, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
-    - { name: H-美国-CAcs2-hop, server: 107.172.231.66, port: 52018, ports: 52018-62017, mport: 52018-62017, udp: true, skip-cert-verify: true, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
-    - { name: H-美国-TXrn-hop, server: 192.3.236.30, port: 52018, ports: 52018-62017, mport: 52018-62017, udp: true, skip-cert-verify: true, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
-    - { name: H-美国-AZgc-hop, server: 173.249.203.43, port: 52018, ports: 52018-62017, mport: 52018-62017, udp: true, skip-cert-verify: true, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
-    - { name: H-台湾-台北·AC-hop, server: 85.237.206.107, port: 52018, ports: 52018-62017, mport: 52018-62017, udp: true, skip-cert-verify: true, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
-    - { name: H-香港·AC·CMI-1-hop, server: 154.16.183.133, port: 52018, ports: 52018-62017, mport: 52018-62017, udp: true, skip-cert-verify: true, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
-    - { name: H-香港·AC·CMI-2-hop, server: 154.16.183.64, port: 52018, ports: 52018-62017, mport: 52018-62017, udp: true, skip-cert-verify: true, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
-    - { name: H-香港·AC·CMI-3-hop, server: 62.72.163.218, port: 52018, ports: 52018-62017, mport: 52018-62017, udp: true, skip-cert-verify: true, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
-    - { name: H-新加坡·ac·cmi·1-hop, server: 45.145.154.156, port: 52018, ports: 52018-62017, mport: 52018-62017, udp: true, skip-cert-verify: true, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
-    - { name: H-新加坡·ac·cmi·2-hop, server: 185.151.146.228, port: 52018, ports: 52018-62017, mport: 52018-62017, udp: true, skip-cert-verify: true, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
-    - { name: 请定期刷新订阅获取新配置, server: 8.8.8.8, port: 80, udp: true, skip-cert-verify: false, sni: files.xjqxz.top, type: hysteria2, password: 346d7ce9-b5d4-4f6a-bc4b-224397c6f5ac }
+- { name: 🌐 官网： xship.top, type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
+- { name: "⚠️  持续防控刷流和抢占带宽", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
+- { name: "🚀 当前免费订阅已触发风控", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
+- { name: "🌊 恢复时间：3/13 16:00", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
+- { name: "🔰 流速标准为油管1080P及以下", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
+- { name: "⚡️ 并发跑流前后台下载易触发", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
+- { name: "♻️ 当前提示节点无风控可应急使用", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
+- { name: "✨ 升级订阅畅享无限丝滑", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
+- { name: "💻 前往 xship.top 查看详情", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
+- { name: 🇸🇬 新加坡1, type: hysteria2, server: starlink-sgp3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇸🇬 新加坡2, type: hysteria2, server: starlink-sgp4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇸🇬 新加坡3, type: hysteria2, server: starlink-sgp3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇸🇬 新加坡4, type: hysteria2, server: starlink-sgp4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇸🇬 新加坡5, type: hysteria2, server: starlink-sgp3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇸🇬 新加坡6, type: hysteria2, server: starlink-sgp4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇸🇬 新加坡7, type: hysteria2, server: starlink-sgp4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇸🇬 新加坡8, type: hysteria2, server: starlink-sgp3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇸🇬 新加坡9, type: hysteria2, server: starlink-sgp4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇸🇬 新加坡10, type: hysteria2, server: starlink-sgp3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇯🇵 日本1, type: hysteria2, server: starlink-tko2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇯🇵 日本2, type: hysteria2, server: starlink-tko3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇯🇵 日本3, type: hysteria2, server: starlink-tko.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇯🇵 日本4, type: hysteria2, server: starlink-tko4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇯🇵 日本5, type: hysteria2, server: starlink-tko3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇯🇵 日本6, type: hysteria2, server: starlink-tko2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇯🇵 日本7, type: hysteria2, server: starlink-tko4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇯🇵 日本8, type: hysteria2, server: starlink-tko2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇯🇵 日本9, type: hysteria2, server: starlink-tko4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇯🇵 日本10, type: hysteria2, server: starlink-tko2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇰🇷 韩国1, type: hysteria2, server: starlink-sol.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇰🇷 韩国2, type: hysteria2, server: starlink-sol2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇰🇷 韩国3, type: hysteria2, server: starlink-sol3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇰🇷 韩国4, type: hysteria2, server: starlink-sol4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇰🇷 韩国5, type: hysteria2, server: starlink-sol2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇰🇷 韩国6, type: hysteria2, server: starlink-sol4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇺🇸 美国1, type: hysteria2, server: starlink-sfo.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇺🇸 美国2, type: hysteria2, server: starlink-sfo2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇺🇸 美国3, type: hysteria2, server: starlink-sfo3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇺🇸 美国4, type: hysteria2, server: starlink-sfo4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇺🇸 美国5, type: hysteria2, server: starlink-sfo1.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇺🇸 美国6, type: hysteria2, server: starlink-lax.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇺🇸 美国7, type: hysteria2, server: starlink-lax2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇺🇸 美国8, type: hysteria2, server: starlink-lax3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇺🇸 美国9, type: hysteria2, server: starlink-sfo4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇺🇸 美国10, type: hysteria2, server: starlink-lax3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇺🇸 美国11, type: hysteria2, server: starlink-sfo4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇺🇸 美国12, type: hysteria2, server: starlink-lax3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇮🇳 印度1, type: hysteria2, server: starlink-blr.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇮🇳 印度2, type: hysteria2, server: starlink-blr.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇮🇳 印度3, type: hysteria2, server: starlink-blr.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇮🇳 印度4, type: hysteria2, server: starlink-blr.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇮🇳 印度5, type: hysteria2, server: starlink-blr.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇮🇳 印度6, type: hysteria2, server: starlink-blr.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇫🇷 法国1, type: hysteria2, server: starlink-par.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇫🇷 法国2, type: hysteria2, server: starlink-par.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇫🇷 法国3, type: hysteria2, server: starlink-par.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇫🇷 法国4, type: hysteria2, server: starlink-par.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇩🇪 德国1, type: hysteria2, server: starlink-fra.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇩🇪 德国2, type: hysteria2, server: starlink-fra2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇩🇪 德国3, type: hysteria2, server: starlink-fra.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇩🇪 德国4, type: hysteria2, server: starlink-fra2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇮🇹 意大利1, type: hysteria2, server: starlink-mil.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇮🇹 意大利2, type: hysteria2, server: starlink-mil.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇪🇸 西班牙1, type: hysteria2, server: starlink-mad.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇪🇸 西班牙2, type: hysteria2, server: starlink-mad.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇳🇱 荷兰1, type: hysteria2, server: starlink-ams.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇳🇱 荷兰2, type: hysteria2, server: starlink-ams.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇬🇧 英国1, type: hysteria2, server: starlink-lon.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇬🇧 英国2, type: hysteria2, server: starlink-lon.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇸🇪 瑞典1, type: hysteria2, server: starlink-sto.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇸🇪 瑞典2, type: hysteria2, server: starlink-sto2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇸🇪 瑞典3, type: hysteria2, server: starlink-sto.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇸🇪 瑞典4, type: hysteria2, server: starlink-sto2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇦🇺 澳大利亚1, type: hysteria2, server: starlink-syd.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇦🇺 澳大利亚2, type: hysteria2, server: starlink-mel.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇦🇺 澳大利亚3, type: hysteria2, server: starlink-syd.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇦🇺 澳大利亚4, type: hysteria2, server: starlink-mel.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇨🇦 加拿大1, type: hysteria2, server: starlink-tor.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇨🇦 加拿大2, type: hysteria2, server: starlink-tor.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇧🇷 巴西1, type: hysteria2, server: starlink-gru.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+- { name: 🇧🇷 巴西2, type: hysteria2, server: starlink-gru.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
+
 proxy-groups:
-    - { name: 糯米, type: select, proxies: [自动选择, 故障转移, '官网https://www.nuomi.info', 如非最新app没网请卸载重装, '剩余流量：29.94 GB', '距离下次重置剩余：5 天', 套餐到期：2025-03-15, As·德国·FRA-alve-gpt, As·美国·ALL-CA·Multacc, As·美国·ALL-CAcs2-gpt, As·美国·ALL-NYcs-gpt, A-美国·ALL-TXrn-gpt, A-美国·ALL-AZgc-gpt, As·美国·ALL-CAjh-gpt/nf, As·台灣·Hinet家寬(新春限时体验)台北, As·台灣·Hinet家寬(新春限时体验)新北, As·日本-jh1, As·日本-jh2, As·香港·移动CMI-1, As·香港·移动CMI-2, As·香港·移动CMI·smo20, As·新加坡·移动CMI·ac-gpt/nf, As·新加坡·移动CMI·jh-gpt/nf, As·越南-ALL-VH, Asc·法国·ALL-VOH, Asc·加拿大·ALL-VOH, Asc·加拿大·ALL-KWH, H·德国·alve-hop, H-美国-CAcc-hop, H-美国-NYcs·x0.1-hop, H-美国-CAcs1-hop, H-美国-CAcs2-hop, H-美国-TXrn-hop, H-美国-AZgc-hop, H-台湾-台北·AC-hop, H-香港·AC·CMI-1-hop, H-香港·AC·CMI-2-hop, H-香港·AC·CMI-3-hop, H-新加坡·ac·cmi·1-hop, H-新加坡·ac·cmi·2-hop, 请定期刷新订阅获取新配置] }
-    - { name: 自动选择, type: url-test, proxies: ['官网https://www.nuomi.info', 如非最新app没网请卸载重装, '剩余流量：29.94 GB', '距离下次重置剩余：5 天', 套餐到期：2025-03-15, As·德国·FRA-alve-gpt, As·美国·ALL-CA·Multacc, As·美国·ALL-CAcs2-gpt, As·美国·ALL-NYcs-gpt, A-美国·ALL-TXrn-gpt, A-美国·ALL-AZgc-gpt, As·美国·ALL-CAjh-gpt/nf, As·台灣·Hinet家寬(新春限时体验)台北, As·台灣·Hinet家寬(新春限时体验)新北, As·日本-jh1, As·日本-jh2, As·香港·移动CMI-1, As·香港·移动CMI-2, As·香港·移动CMI·smo20, As·新加坡·移动CMI·ac-gpt/nf, As·新加坡·移动CMI·jh-gpt/nf, As·越南-ALL-VH, Asc·法国·ALL-VOH, Asc·加拿大·ALL-VOH, Asc·加拿大·ALL-KWH, H·德国·alve-hop, H-美国-CAcc-hop, H-美国-NYcs·x0.1-hop, H-美国-CAcs1-hop, H-美国-CAcs2-hop, H-美国-TXrn-hop, H-美国-AZgc-hop, H-台湾-台北·AC-hop, H-香港·AC·CMI-1-hop, H-香港·AC·CMI-2-hop, H-香港·AC·CMI-3-hop, H-新加坡·ac·cmi·1-hop, H-新加坡·ac·cmi·2-hop, 请定期刷新订阅获取新配置], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['官网https://www.nuomi.info', 如非最新app没网请卸载重装, '剩余流量：29.94 GB', '距离下次重置剩余：5 天', 套餐到期：2025-03-15, As·德国·FRA-alve-gpt, As·美国·ALL-CA·Multacc, As·美国·ALL-CAcs2-gpt, As·美国·ALL-NYcs-gpt, A-美国·ALL-TXrn-gpt, A-美国·ALL-AZgc-gpt, As·美国·ALL-CAjh-gpt/nf, As·台灣·Hinet家寬(新春限时体验)台北, As·台灣·Hinet家寬(新春限时体验)新北, As·日本-jh1, As·日本-jh2, As·香港·移动CMI-1, As·香港·移动CMI-2, As·香港·移动CMI·smo20, As·新加坡·移动CMI·ac-gpt/nf, As·新加坡·移动CMI·jh-gpt/nf, As·越南-ALL-VH, Asc·法国·ALL-VOH, Asc·加拿大·ALL-VOH, Asc·加拿大·ALL-KWH, H·德国·alve-hop, H-美国-CAcc-hop, H-美国-NYcs·x0.1-hop, H-美国-CAcs1-hop, H-美国-CAcs2-hop, H-美国-TXrn-hop, H-美国-AZgc-hop, H-台湾-台北·AC-hop, H-香港·AC·CMI-1-hop, H-香港·AC·CMI-2-hop, H-香港·AC·CMI-3-hop, H-新加坡·ac·cmi·1-hop, H-新加坡·ac·cmi·2-hop, 请定期刷新订阅获取新配置], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+- name: "✨ 星链Starlink"
+  type: select
+  proxies:
+  - "🌐 官网： xship.top"
+  - "⚠️  持续防控刷流和抢占带宽"
+  - "🚀 当前免费订阅已触发风控"
+  - "🌊 恢复时间：3/13 16:00"
+  - "🔰 流速标准为油管1080P及以下"
+  - "⚡️ 并发跑流前后台下载易触发"
+  - "♻️ 当前提示节点无风控可应急使用"
+  - "✨ 升级订阅畅享无限丝滑"
+  - "💻 前往 xship.top 查看详情"
+  - 🇸🇬 新加坡1
+  - 🇸🇬 新加坡2
+  - 🇸🇬 新加坡3
+  - 🇸🇬 新加坡4
+  - 🇸🇬 新加坡5
+  - 🇸🇬 新加坡6
+  - 🇸🇬 新加坡7
+  - 🇸🇬 新加坡8
+  - 🇸🇬 新加坡9
+  - 🇸🇬 新加坡10
+  - 🇯🇵 日本1
+  - 🇯🇵 日本2
+  - 🇯🇵 日本3
+  - 🇯🇵 日本4
+  - 🇯🇵 日本5
+  - 🇯🇵 日本6
+  - 🇯🇵 日本7
+  - 🇯🇵 日本8
+  - 🇯🇵 日本9
+  - 🇯🇵 日本10
+  - 🇰🇷 韩国1
+  - 🇰🇷 韩国2
+  - 🇰🇷 韩国3
+  - 🇰🇷 韩国4
+  - 🇰🇷 韩国5
+  - 🇰🇷 韩国6
+  - 🇺🇸 美国1
+  - 🇺🇸 美国2
+  - 🇺🇸 美国3
+  - 🇺🇸 美国4
+  - 🇺🇸 美国5
+  - 🇺🇸 美国6
+  - 🇺🇸 美国7
+  - 🇺🇸 美国8
+  - 🇺🇸 美国9
+  - 🇺🇸 美国10
+  - 🇺🇸 美国11
+  - 🇺🇸 美国12
+  - 🇮🇳 印度1
+  - 🇮🇳 印度2
+  - 🇮🇳 印度3
+  - 🇮🇳 印度4
+  - 🇮🇳 印度5
+  - 🇮🇳 印度6
+  - 🇩🇪 德国1
+  - 🇩🇪 德国2
+  - 🇩🇪 德国3
+  - 🇩🇪 德国4
+  - 🇫🇷 法国1
+  - 🇫🇷 法国2
+  - 🇫🇷 法国3
+  - 🇫🇷 法国4
+  - 🇮🇹 意大利1
+  - 🇮🇹 意大利2
+  - 🇪🇸 西班牙1
+  - 🇪🇸 西班牙2
+  - 🇬🇧 英国1
+  - 🇬🇧 英国2
+  - 🇳🇱 荷兰1
+  - 🇳🇱 荷兰2
+  - 🇸🇪 瑞典1
+  - 🇸🇪 瑞典2
+  - 🇸🇪 瑞典3
+  - 🇸🇪 瑞典4
+  - 🇦🇺 澳大利亚1
+  - 🇦🇺 澳大利亚2
+  - 🇦🇺 澳大利亚3
+  - 🇦🇺 澳大利亚4
+  - 🇨🇦 加拿大1
+  - 🇨🇦 加拿大2
+  - 🇧🇷 巴西1
+  - 🇧🇷 巴西2
 rules:
-    - 'DOMAIN,adminctrl.nuomi.info,DIRECT'
-    - 'DOMAIN-SUFFIX,services.googleapis.cn,糯米'
-    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,糯米'
-    - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
-    - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
-    - 'DOMAIN,developer.apple.com,糯米'
-    - 'DOMAIN-SUFFIX,digicert.com,糯米'
-    - 'DOMAIN,ocsp.apple.com,糯米'
-    - 'DOMAIN,ocsp.comodoca.com,糯米'
-    - 'DOMAIN,ocsp.usertrust.com,糯米'
-    - 'DOMAIN,ocsp.sectigo.com,糯米'
-    - 'DOMAIN,ocsp.verisign.net,糯米'
-    - 'DOMAIN-SUFFIX,apple-dns.net,糯米'
-    - 'DOMAIN,testflight.apple.com,糯米'
-    - 'DOMAIN,sandbox.itunes.apple.com,糯米'
-    - 'DOMAIN,itunes.apple.com,糯米'
-    - 'DOMAIN-SUFFIX,apps.apple.com,糯米'
-    - 'DOMAIN-SUFFIX,blobstore.apple.com,糯米'
-    - 'DOMAIN,cvws.icloud-content.com,糯米'
-    - 'DOMAIN-SUFFIX,mzstatic.com,DIRECT'
-    - 'DOMAIN-SUFFIX,itunes.apple.com,DIRECT'
-    - 'DOMAIN-SUFFIX,icloud.com,DIRECT'
-    - 'DOMAIN-SUFFIX,icloud-content.com,DIRECT'
-    - 'DOMAIN-SUFFIX,me.com,DIRECT'
-    - 'DOMAIN-SUFFIX,aaplimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cdn20.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cdn-apple.com,DIRECT'
-    - 'DOMAIN-SUFFIX,akadns.net,DIRECT'
-    - 'DOMAIN-SUFFIX,akamaiedge.net,DIRECT'
-    - 'DOMAIN-SUFFIX,edgekey.net,DIRECT'
-    - 'DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,mwcname.com,DIRECT'
-    - 'DOMAIN-SUFFIX,apple.com,DIRECT'
-    - 'DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT'
-    - 'DOMAIN-SUFFIX,apple-mapkit.com,DIRECT'
-    - 'DOMAIN-SUFFIX,126.com,DIRECT'
-    - 'DOMAIN-SUFFIX,126.net,DIRECT'
-    - 'DOMAIN-SUFFIX,127.net,DIRECT'
-    - 'DOMAIN-SUFFIX,163.com,DIRECT'
-    - 'DOMAIN-SUFFIX,360buyimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,36kr.com,DIRECT'
-    - 'DOMAIN-SUFFIX,acfun.tv,DIRECT'
-    - 'DOMAIN-SUFFIX,air-matters.com,DIRECT'
-    - 'DOMAIN-SUFFIX,aixifan.com,DIRECT'
-    - 'DOMAIN-KEYWORD,alicdn,DIRECT'
-    - 'DOMAIN-KEYWORD,alipay,DIRECT'
-    - 'DOMAIN-KEYWORD,taobao,DIRECT'
-    - 'DOMAIN-SUFFIX,amap.com,DIRECT'
-    - 'DOMAIN-SUFFIX,autonavi.com,DIRECT'
-    - 'DOMAIN-KEYWORD,baidu,DIRECT'
-    - 'DOMAIN-SUFFIX,bdimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,bdstatic.com,DIRECT'
-    - 'DOMAIN-SUFFIX,bilibili.com,DIRECT'
-    - 'DOMAIN-SUFFIX,bilivideo.com,DIRECT'
-    - 'DOMAIN-SUFFIX,caiyunapp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,clouddn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cnbeta.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cnbetacdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cootekservice.com,DIRECT'
-    - 'DOMAIN-SUFFIX,csdn.net,DIRECT'
-    - 'DOMAIN-SUFFIX,ctrip.com,DIRECT'
-    - 'DOMAIN-SUFFIX,dgtle.com,DIRECT'
-    - 'DOMAIN-SUFFIX,dianping.com,DIRECT'
-    - 'DOMAIN-SUFFIX,douban.com,DIRECT'
-    - 'DOMAIN-SUFFIX,doubanio.com,DIRECT'
-    - 'DOMAIN-SUFFIX,duokan.com,DIRECT'
-    - 'DOMAIN-SUFFIX,easou.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ele.me,DIRECT'
-    - 'DOMAIN-SUFFIX,feng.com,DIRECT'
-    - 'DOMAIN-SUFFIX,fir.im,DIRECT'
-    - 'DOMAIN-SUFFIX,frdic.com,DIRECT'
-    - 'DOMAIN-SUFFIX,g-cores.com,DIRECT'
-    - 'DOMAIN-SUFFIX,godic.net,DIRECT'
-    - 'DOMAIN-SUFFIX,gtimg.com,DIRECT'
-    - 'DOMAIN,cdn.hockeyapp.net,DIRECT'
-    - 'DOMAIN-SUFFIX,hongxiu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,hxcdn.net,DIRECT'
-    - 'DOMAIN-SUFFIX,iciba.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ifeng.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ifengimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ipip.net,DIRECT'
-    - 'DOMAIN-SUFFIX,iqiyi.com,DIRECT'
-    - 'DOMAIN-SUFFIX,jd.com,DIRECT'
-    - 'DOMAIN-SUFFIX,jianshu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,knewone.com,DIRECT'
-    - 'DOMAIN-SUFFIX,le.com,DIRECT'
-    - 'DOMAIN-SUFFIX,lecloud.com,DIRECT'
-    - 'DOMAIN-SUFFIX,lemicp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,licdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,luoo.net,DIRECT'
-    - 'DOMAIN-SUFFIX,meituan.com,DIRECT'
-    - 'DOMAIN-SUFFIX,meituan.net,DIRECT'
-    - 'DOMAIN-SUFFIX,mi.com,DIRECT'
-    - 'DOMAIN-SUFFIX,miaopai.com,DIRECT'
-    - 'DOMAIN-SUFFIX,microsoft.com,DIRECT'
-    - 'DOMAIN-SUFFIX,microsoftonline.com,DIRECT'
-    - 'DOMAIN-SUFFIX,miui.com,DIRECT'
-    - 'DOMAIN-SUFFIX,miwifi.com,DIRECT'
-    - 'DOMAIN-SUFFIX,mob.com,DIRECT'
-    - 'DOMAIN-SUFFIX,netease.com,DIRECT'
-    - 'DOMAIN-SUFFIX,office.com,DIRECT'
-    - 'DOMAIN-SUFFIX,office365.com,DIRECT'
-    - 'DOMAIN-KEYWORD,officecdn,DIRECT'
-    - 'DOMAIN-SUFFIX,oschina.net,DIRECT'
-    - 'DOMAIN-SUFFIX,ppsimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,pstatp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qcloud.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qdaily.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qdmm.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qhimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qhres.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qidian.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qihucdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qiniu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qiniucdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qiyipic.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qq.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qqurl.com,DIRECT'
-    - 'DOMAIN-SUFFIX,rarbg.to,DIRECT'
-    - 'DOMAIN-SUFFIX,ruguoapp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,segmentfault.com,DIRECT'
-    - 'DOMAIN-SUFFIX,sinaapp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,smzdm.com,DIRECT'
-    - 'DOMAIN-SUFFIX,snapdrop.net,DIRECT'
-    - 'DOMAIN-SUFFIX,sogou.com,DIRECT'
-    - 'DOMAIN-SUFFIX,sogoucdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,sohu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,soku.com,DIRECT'
-    - 'DOMAIN-SUFFIX,speedtest.net,DIRECT'
-    - 'DOMAIN-SUFFIX,sspai.com,DIRECT'
-    - 'DOMAIN-SUFFIX,suning.com,DIRECT'
-    - 'DOMAIN-SUFFIX,taobao.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tencent.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tenpay.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tianyancha.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tmall.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tudou.com,DIRECT'
-    - 'DOMAIN-SUFFIX,umetrip.com,DIRECT'
-    - 'DOMAIN-SUFFIX,upaiyun.com,DIRECT'
-    - 'DOMAIN-SUFFIX,upyun.com,DIRECT'
-    - 'DOMAIN-SUFFIX,veryzhun.com,DIRECT'
-    - 'DOMAIN-SUFFIX,weather.com,DIRECT'
-    - 'DOMAIN-SUFFIX,weibo.com,DIRECT'
-    - 'DOMAIN-SUFFIX,xiami.com,DIRECT'
-    - 'DOMAIN-SUFFIX,xiami.net,DIRECT'
-    - 'DOMAIN-SUFFIX,xiaomicp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ximalaya.com,DIRECT'
-    - 'DOMAIN-SUFFIX,xmcdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,xunlei.com,DIRECT'
-    - 'DOMAIN-SUFFIX,yhd.com,DIRECT'
-    - 'DOMAIN-SUFFIX,yihaodianimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,yinxiang.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ykimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,youdao.com,DIRECT'
-    - 'DOMAIN-SUFFIX,youku.com,DIRECT'
-    - 'DOMAIN-SUFFIX,zealer.com,DIRECT'
-    - 'DOMAIN-SUFFIX,zhihu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,zhimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,zimuzu.tv,DIRECT'
-    - 'DOMAIN-SUFFIX,zoho.com,DIRECT'
-    - 'DOMAIN-KEYWORD,amazon,糯米'
-    - 'DOMAIN-KEYWORD,google,糯米'
-    - 'DOMAIN-KEYWORD,gmail,糯米'
-    - 'DOMAIN-KEYWORD,youtube,糯米'
-    - 'DOMAIN-KEYWORD,facebook,糯米'
-    - 'DOMAIN-SUFFIX,fb.me,糯米'
-    - 'DOMAIN-SUFFIX,fbcdn.net,糯米'
-    - 'DOMAIN-KEYWORD,twitter,糯米'
-    - 'DOMAIN-KEYWORD,instagram,糯米'
-    - 'DOMAIN-KEYWORD,dropbox,糯米'
-    - 'DOMAIN-SUFFIX,twimg.com,糯米'
-    - 'DOMAIN-KEYWORD,blogspot,糯米'
-    - 'DOMAIN-SUFFIX,youtu.be,糯米'
-    - 'DOMAIN-KEYWORD,whatsapp,糯米'
-    - 'DOMAIN-KEYWORD,admarvel,REJECT'
-    - 'DOMAIN-KEYWORD,admaster,REJECT'
-    - 'DOMAIN-KEYWORD,adsage,REJECT'
-    - 'DOMAIN-KEYWORD,adsmogo,REJECT'
-    - 'DOMAIN-KEYWORD,adsrvmedia,REJECT'
-    - 'DOMAIN-KEYWORD,adwords,REJECT'
-    - 'DOMAIN-KEYWORD,adservice,REJECT'
-    - 'DOMAIN-SUFFIX,appsflyer.com,REJECT'
-    - 'DOMAIN-KEYWORD,domob,REJECT'
-    - 'DOMAIN-SUFFIX,doubleclick.net,REJECT'
-    - 'DOMAIN-KEYWORD,duomeng,REJECT'
-    - 'DOMAIN-KEYWORD,dwtrack,REJECT'
-    - 'DOMAIN-KEYWORD,guanggao,REJECT'
-    - 'DOMAIN-KEYWORD,lianmeng,REJECT'
-    - 'DOMAIN-SUFFIX,mmstat.com,REJECT'
-    - 'DOMAIN-KEYWORD,mopub,REJECT'
-    - 'DOMAIN-KEYWORD,omgmta,REJECT'
-    - 'DOMAIN-KEYWORD,openx,REJECT'
-    - 'DOMAIN-KEYWORD,partnerad,REJECT'
-    - 'DOMAIN-KEYWORD,pingfore,REJECT'
-    - 'DOMAIN-KEYWORD,supersonicads,REJECT'
-    - 'DOMAIN-KEYWORD,uedas,REJECT'
-    - 'DOMAIN-KEYWORD,umeng,REJECT'
-    - 'DOMAIN-KEYWORD,usage,REJECT'
-    - 'DOMAIN-SUFFIX,vungle.com,REJECT'
-    - 'DOMAIN-KEYWORD,wlmonitor,REJECT'
-    - 'DOMAIN-KEYWORD,zjtoolbar,REJECT'
-    - 'DOMAIN-SUFFIX,9to5mac.com,糯米'
-    - 'DOMAIN-SUFFIX,abpchina.org,糯米'
-    - 'DOMAIN-SUFFIX,adblockplus.org,糯米'
-    - 'DOMAIN-SUFFIX,adobe.com,糯米'
-    - 'DOMAIN-SUFFIX,akamaized.net,糯米'
-    - 'DOMAIN-SUFFIX,alfredapp.com,糯米'
-    - 'DOMAIN-SUFFIX,amplitude.com,糯米'
-    - 'DOMAIN-SUFFIX,ampproject.org,糯米'
-    - 'DOMAIN-SUFFIX,android.com,糯米'
-    - 'DOMAIN-SUFFIX,angularjs.org,糯米'
-    - 'DOMAIN-SUFFIX,aolcdn.com,糯米'
-    - 'DOMAIN-SUFFIX,apkpure.com,糯米'
-    - 'DOMAIN-SUFFIX,appledaily.com,糯米'
-    - 'DOMAIN-SUFFIX,appshopper.com,糯米'
-    - 'DOMAIN-SUFFIX,appspot.com,糯米'
-    - 'DOMAIN-SUFFIX,arcgis.com,糯米'
-    - 'DOMAIN-SUFFIX,archive.org,糯米'
-    - 'DOMAIN-SUFFIX,armorgames.com,糯米'
-    - 'DOMAIN-SUFFIX,aspnetcdn.com,糯米'
-    - 'DOMAIN-SUFFIX,att.com,糯米'
-    - 'DOMAIN-SUFFIX,awsstatic.com,糯米'
-    - 'DOMAIN-SUFFIX,azureedge.net,糯米'
-    - 'DOMAIN-SUFFIX,azurewebsites.net,糯米'
-    - 'DOMAIN-SUFFIX,bing.com,糯米'
-    - 'DOMAIN-SUFFIX,bintray.com,糯米'
-    - 'DOMAIN-SUFFIX,bit.com,糯米'
-    - 'DOMAIN-SUFFIX,bit.ly,糯米'
-    - 'DOMAIN-SUFFIX,bitbucket.org,糯米'
-    - 'DOMAIN-SUFFIX,bjango.com,糯米'
-    - 'DOMAIN-SUFFIX,bkrtx.com,糯米'
-    - 'DOMAIN-SUFFIX,blog.com,糯米'
-    - 'DOMAIN-SUFFIX,blogcdn.com,糯米'
-    - 'DOMAIN-SUFFIX,blogger.com,糯米'
-    - 'DOMAIN-SUFFIX,blogsmithmedia.com,糯米'
-    - 'DOMAIN-SUFFIX,blogspot.com,糯米'
-    - 'DOMAIN-SUFFIX,blogspot.hk,糯米'
-    - 'DOMAIN-SUFFIX,bloomberg.com,糯米'
-    - 'DOMAIN-SUFFIX,box.com,糯米'
-    - 'DOMAIN-SUFFIX,box.net,糯米'
-    - 'DOMAIN-SUFFIX,cachefly.net,糯米'
-    - 'DOMAIN-SUFFIX,chromium.org,糯米'
-    - 'DOMAIN-SUFFIX,cl.ly,糯米'
-    - 'DOMAIN-SUFFIX,cloudflare.com,糯米'
-    - 'DOMAIN-SUFFIX,cloudfront.net,糯米'
-    - 'DOMAIN-SUFFIX,cloudmagic.com,糯米'
-    - 'DOMAIN-SUFFIX,cmail19.com,糯米'
-    - 'DOMAIN-SUFFIX,cnet.com,糯米'
-    - 'DOMAIN-SUFFIX,cocoapods.org,糯米'
-    - 'DOMAIN-SUFFIX,comodoca.com,糯米'
-    - 'DOMAIN-SUFFIX,crashlytics.com,糯米'
-    - 'DOMAIN-SUFFIX,culturedcode.com,糯米'
-    - 'DOMAIN-SUFFIX,d.pr,糯米'
-    - 'DOMAIN-SUFFIX,danilo.to,糯米'
-    - 'DOMAIN-SUFFIX,dayone.me,糯米'
-    - 'DOMAIN-SUFFIX,db.tt,糯米'
-    - 'DOMAIN-SUFFIX,deskconnect.com,糯米'
-    - 'DOMAIN-SUFFIX,disq.us,糯米'
-    - 'DOMAIN-SUFFIX,disqus.com,糯米'
-    - 'DOMAIN-SUFFIX,disquscdn.com,糯米'
-    - 'DOMAIN-SUFFIX,dnsimple.com,糯米'
-    - 'DOMAIN-SUFFIX,docker.com,糯米'
-    - 'DOMAIN-SUFFIX,dribbble.com,糯米'
-    - 'DOMAIN-SUFFIX,droplr.com,糯米'
-    - 'DOMAIN-SUFFIX,duckduckgo.com,糯米'
-    - 'DOMAIN-SUFFIX,dueapp.com,糯米'
-    - 'DOMAIN-SUFFIX,dytt8.net,糯米'
-    - 'DOMAIN-SUFFIX,edgecastcdn.net,糯米'
-    - 'DOMAIN-SUFFIX,edgekey.net,糯米'
-    - 'DOMAIN-SUFFIX,edgesuite.net,糯米'
-    - 'DOMAIN-SUFFIX,engadget.com,糯米'
-    - 'DOMAIN-SUFFIX,entrust.net,糯米'
-    - 'DOMAIN-SUFFIX,eurekavpt.com,糯米'
-    - 'DOMAIN-SUFFIX,evernote.com,糯米'
-    - 'DOMAIN-SUFFIX,fabric.io,糯米'
-    - 'DOMAIN-SUFFIX,fast.com,糯米'
-    - 'DOMAIN-SUFFIX,fastly.net,糯米'
-    - 'DOMAIN-SUFFIX,fc2.com,糯米'
-    - 'DOMAIN-SUFFIX,feedburner.com,糯米'
-    - 'DOMAIN-SUFFIX,feedly.com,糯米'
-    - 'DOMAIN-SUFFIX,feedsportal.com,糯米'
-    - 'DOMAIN-SUFFIX,fiftythree.com,糯米'
-    - 'DOMAIN-SUFFIX,firebaseio.com,糯米'
-    - 'DOMAIN-SUFFIX,flexibits.com,糯米'
-    - 'DOMAIN-SUFFIX,flickr.com,糯米'
-    - 'DOMAIN-SUFFIX,flipboard.com,糯米'
-    - 'DOMAIN-SUFFIX,g.co,糯米'
-    - 'DOMAIN-SUFFIX,gabia.net,糯米'
-    - 'DOMAIN-SUFFIX,geni.us,糯米'
-    - 'DOMAIN-SUFFIX,gfx.ms,糯米'
-    - 'DOMAIN-SUFFIX,ggpht.com,糯米'
-    - 'DOMAIN-SUFFIX,ghostnoteapp.com,糯米'
-    - 'DOMAIN-SUFFIX,git.io,糯米'
-    - 'DOMAIN-KEYWORD,github,糯米'
-    - 'DOMAIN-SUFFIX,globalsign.com,糯米'
-    - 'DOMAIN-SUFFIX,gmodules.com,糯米'
-    - 'DOMAIN-SUFFIX,godaddy.com,糯米'
-    - 'DOMAIN-SUFFIX,golang.org,糯米'
-    - 'DOMAIN-SUFFIX,gongm.in,糯米'
-    - 'DOMAIN-SUFFIX,goo.gl,糯米'
-    - 'DOMAIN-SUFFIX,goodreaders.com,糯米'
-    - 'DOMAIN-SUFFIX,goodreads.com,糯米'
-    - 'DOMAIN-SUFFIX,gravatar.com,糯米'
-    - 'DOMAIN-SUFFIX,gstatic.com,糯米'
-    - 'DOMAIN-SUFFIX,gvt0.com,糯米'
-    - 'DOMAIN-SUFFIX,hockeyapp.net,糯米'
-    - 'DOMAIN-SUFFIX,hotmail.com,糯米'
-    - 'DOMAIN-SUFFIX,icons8.com,糯米'
-    - 'DOMAIN-SUFFIX,ifixit.com,糯米'
-    - 'DOMAIN-SUFFIX,ift.tt,糯米'
-    - 'DOMAIN-SUFFIX,ifttt.com,糯米'
-    - 'DOMAIN-SUFFIX,iherb.com,糯米'
-    - 'DOMAIN-SUFFIX,imageshack.us,糯米'
-    - 'DOMAIN-SUFFIX,img.ly,糯米'
-    - 'DOMAIN-SUFFIX,imgur.com,糯米'
-    - 'DOMAIN-SUFFIX,imore.com,糯米'
-    - 'DOMAIN-SUFFIX,instapaper.com,糯米'
-    - 'DOMAIN-SUFFIX,ipn.li,糯米'
-    - 'DOMAIN-SUFFIX,is.gd,糯米'
-    - 'DOMAIN-SUFFIX,issuu.com,糯米'
-    - 'DOMAIN-SUFFIX,itgonglun.com,糯米'
-    - 'DOMAIN-SUFFIX,itun.es,糯米'
-    - 'DOMAIN-SUFFIX,ixquick.com,糯米'
-    - 'DOMAIN-SUFFIX,j.mp,糯米'
-    - 'DOMAIN-SUFFIX,js.revsci.net,糯米'
-    - 'DOMAIN-SUFFIX,jshint.com,糯米'
-    - 'DOMAIN-SUFFIX,jtvnw.net,糯米'
-    - 'DOMAIN-SUFFIX,justgetflux.com,糯米'
-    - 'DOMAIN-SUFFIX,kat.cr,糯米'
-    - 'DOMAIN-SUFFIX,klip.me,糯米'
-    - 'DOMAIN-SUFFIX,libsyn.com,糯米'
-    - 'DOMAIN-SUFFIX,linkedin.com,糯米'
-    - 'DOMAIN-SUFFIX,line-apps.com,糯米'
-    - 'DOMAIN-SUFFIX,linode.com,糯米'
-    - 'DOMAIN-SUFFIX,lithium.com,糯米'
-    - 'DOMAIN-SUFFIX,littlehj.com,糯米'
-    - 'DOMAIN-SUFFIX,live.com,糯米'
-    - 'DOMAIN-SUFFIX,live.net,糯米'
-    - 'DOMAIN-SUFFIX,livefilestore.com,糯米'
-    - 'DOMAIN-SUFFIX,llnwd.net,糯米'
-    - 'DOMAIN-SUFFIX,macid.co,糯米'
-    - 'DOMAIN-SUFFIX,macromedia.com,糯米'
-    - 'DOMAIN-SUFFIX,macrumors.com,糯米'
-    - 'DOMAIN-SUFFIX,mashable.com,糯米'
-    - 'DOMAIN-SUFFIX,mathjax.org,糯米'
-    - 'DOMAIN-SUFFIX,medium.com,糯米'
-    - 'DOMAIN-SUFFIX,mega.co.nz,糯米'
-    - 'DOMAIN-SUFFIX,mega.nz,糯米'
-    - 'DOMAIN-SUFFIX,megaupload.com,糯米'
-    - 'DOMAIN-SUFFIX,microsofttranslator.com,糯米'
-    - 'DOMAIN-SUFFIX,mindnode.com,糯米'
-    - 'DOMAIN-SUFFIX,mobile01.com,糯米'
-    - 'DOMAIN-SUFFIX,modmyi.com,糯米'
-    - 'DOMAIN-SUFFIX,msedge.net,糯米'
-    - 'DOMAIN-SUFFIX,myfontastic.com,糯米'
-    - 'DOMAIN-SUFFIX,name.com,糯米'
-    - 'DOMAIN-SUFFIX,nextmedia.com,糯米'
-    - 'DOMAIN-SUFFIX,nsstatic.net,糯米'
-    - 'DOMAIN-SUFFIX,nssurge.com,糯米'
-    - 'DOMAIN-SUFFIX,nyt.com,糯米'
-    - 'DOMAIN-SUFFIX,nytimes.com,糯米'
-    - 'DOMAIN-SUFFIX,omnigroup.com,糯米'
-    - 'DOMAIN-SUFFIX,onedrive.com,糯米'
-    - 'DOMAIN-SUFFIX,onenote.com,糯米'
-    - 'DOMAIN-SUFFIX,ooyala.com,糯米'
-    - 'DOMAIN-SUFFIX,openvpn.net,糯米'
-    - 'DOMAIN-SUFFIX,openwrt.org,糯米'
-    - 'DOMAIN-SUFFIX,orkut.com,糯米'
-    - 'DOMAIN-SUFFIX,osxdaily.com,糯米'
-    - 'DOMAIN-SUFFIX,outlook.com,糯米'
-    - 'DOMAIN-SUFFIX,ow.ly,糯米'
-    - 'DOMAIN-SUFFIX,paddleapi.com,糯米'
-    - 'DOMAIN-SUFFIX,parallels.com,糯米'
-    - 'DOMAIN-SUFFIX,parse.com,糯米'
-    - 'DOMAIN-SUFFIX,pdfexpert.com,糯米'
-    - 'DOMAIN-SUFFIX,periscope.tv,糯米'
-    - 'DOMAIN-SUFFIX,pinboard.in,糯米'
-    - 'DOMAIN-SUFFIX,pinterest.com,糯米'
-    - 'DOMAIN-SUFFIX,pixelmator.com,糯米'
-    - 'DOMAIN-SUFFIX,pixiv.net,糯米'
-    - 'DOMAIN-SUFFIX,playpcesor.com,糯米'
-    - 'DOMAIN-SUFFIX,playstation.com,糯米'
-    - 'DOMAIN-SUFFIX,playstation.com.hk,糯米'
-    - 'DOMAIN-SUFFIX,playstation.net,糯米'
-    - 'DOMAIN-SUFFIX,playstationnetwork.com,糯米'
-    - 'DOMAIN-SUFFIX,pushwoosh.com,糯米'
-    - 'DOMAIN-SUFFIX,rime.im,糯米'
-    - 'DOMAIN-SUFFIX,servebom.com,糯米'
-    - 'DOMAIN-SUFFIX,sfx.ms,糯米'
-    - 'DOMAIN-SUFFIX,shadowsocks.org,糯米'
-    - 'DOMAIN-SUFFIX,sharethis.com,糯米'
-    - 'DOMAIN-SUFFIX,shazam.com,糯米'
-    - 'DOMAIN-SUFFIX,skype.com,糯米'
-    - 'DOMAIN-SUFFIX,smartdns糯米.com,糯米'
-    - 'DOMAIN-SUFFIX,smartmailcloud.com,糯米'
-    - 'DOMAIN-SUFFIX,sndcdn.com,糯米'
-    - 'DOMAIN-SUFFIX,sony.com,糯米'
-    - 'DOMAIN-SUFFIX,soundcloud.com,糯米'
-    - 'DOMAIN-SUFFIX,sourceforge.net,糯米'
-    - 'DOMAIN-SUFFIX,spotify.com,糯米'
-    - 'DOMAIN-SUFFIX,squarespace.com,糯米'
-    - 'DOMAIN-SUFFIX,sstatic.net,糯米'
-    - 'DOMAIN-SUFFIX,st.luluku.pw,糯米'
-    - 'DOMAIN-SUFFIX,stackoverflow.com,糯米'
-    - 'DOMAIN-SUFFIX,startpage.com,糯米'
-    - 'DOMAIN-SUFFIX,staticflickr.com,糯米'
-    - 'DOMAIN-SUFFIX,steamcommunity.com,糯米'
-    - 'DOMAIN-SUFFIX,symauth.com,糯米'
-    - 'DOMAIN-SUFFIX,symcb.com,糯米'
-    - 'DOMAIN-SUFFIX,symcd.com,糯米'
-    - 'DOMAIN-SUFFIX,tapbots.com,糯米'
-    - 'DOMAIN-SUFFIX,tapbots.net,糯米'
-    - 'DOMAIN-SUFFIX,tdesktop.com,糯米'
-    - 'DOMAIN-SUFFIX,techcrunch.com,糯米'
-    - 'DOMAIN-SUFFIX,techsmith.com,糯米'
-    - 'DOMAIN-SUFFIX,thepiratebay.org,糯米'
-    - 'DOMAIN-SUFFIX,theverge.com,糯米'
-    - 'DOMAIN-SUFFIX,time.com,糯米'
-    - 'DOMAIN-SUFFIX,timeinc.net,糯米'
-    - 'DOMAIN-SUFFIX,tiny.cc,糯米'
-    - 'DOMAIN-SUFFIX,tinypic.com,糯米'
-    - 'DOMAIN-SUFFIX,tmblr.co,糯米'
-    - 'DOMAIN-SUFFIX,todoist.com,糯米'
-    - 'DOMAIN-SUFFIX,trello.com,糯米'
-    - 'DOMAIN-SUFFIX,trustasiassl.com,糯米'
-    - 'DOMAIN-SUFFIX,tumblr.co,糯米'
-    - 'DOMAIN-SUFFIX,tumblr.com,糯米'
-    - 'DOMAIN-SUFFIX,tweetdeck.com,糯米'
-    - 'DOMAIN-SUFFIX,tweetmarker.net,糯米'
-    - 'DOMAIN-SUFFIX,twitch.tv,糯米'
-    - 'DOMAIN-SUFFIX,txmblr.com,糯米'
-    - 'DOMAIN-SUFFIX,typekit.net,糯米'
-    - 'DOMAIN-SUFFIX,ubertags.com,糯米'
-    - 'DOMAIN-SUFFIX,ublock.org,糯米'
-    - 'DOMAIN-SUFFIX,ubnt.com,糯米'
-    - 'DOMAIN-SUFFIX,ulyssesapp.com,糯米'
-    - 'DOMAIN-SUFFIX,urchin.com,糯米'
-    - 'DOMAIN-SUFFIX,usertrust.com,糯米'
-    - 'DOMAIN-SUFFIX,v.gd,糯米'
-    - 'DOMAIN-SUFFIX,v2ex.com,糯米'
-    - 'DOMAIN-SUFFIX,vimeo.com,糯米'
-    - 'DOMAIN-SUFFIX,vimeocdn.com,糯米'
-    - 'DOMAIN-SUFFIX,vine.co,糯米'
-    - 'DOMAIN-SUFFIX,vivaldi.com,糯米'
-    - 'DOMAIN-SUFFIX,vox-cdn.com,糯米'
-    - 'DOMAIN-SUFFIX,vsco.co,糯米'
-    - 'DOMAIN-SUFFIX,vultr.com,糯米'
-    - 'DOMAIN-SUFFIX,w.org,糯米'
-    - 'DOMAIN-SUFFIX,w3schools.com,糯米'
-    - 'DOMAIN-SUFFIX,webtype.com,糯米'
-    - 'DOMAIN-SUFFIX,wikiwand.com,糯米'
-    - 'DOMAIN-SUFFIX,wikileaks.org,糯米'
-    - 'DOMAIN-SUFFIX,wikimedia.org,糯米'
-    - 'DOMAIN-SUFFIX,wikipedia.com,糯米'
-    - 'DOMAIN-SUFFIX,wikipedia.org,糯米'
-    - 'DOMAIN-SUFFIX,windows.com,糯米'
-    - 'DOMAIN-SUFFIX,windows.net,糯米'
-    - 'DOMAIN-SUFFIX,wire.com,糯米'
-    - 'DOMAIN-SUFFIX,wordpress.com,糯米'
-    - 'DOMAIN-SUFFIX,workflowy.com,糯米'
-    - 'DOMAIN-SUFFIX,wp.com,糯米'
-    - 'DOMAIN-SUFFIX,wsj.com,糯米'
-    - 'DOMAIN-SUFFIX,wsj.net,糯米'
-    - 'DOMAIN-SUFFIX,xda-developers.com,糯米'
-    - 'DOMAIN-SUFFIX,xeeno.com,糯米'
-    - 'DOMAIN-SUFFIX,xiti.com,糯米'
-    - 'DOMAIN-SUFFIX,yahoo.com,糯米'
-    - 'DOMAIN-SUFFIX,yimg.com,糯米'
-    - 'DOMAIN-SUFFIX,ying.com,糯米'
-    - 'DOMAIN-SUFFIX,yoyo.org,糯米'
-    - 'DOMAIN-SUFFIX,ytimg.com,糯米'
-    - 'DOMAIN-SUFFIX,telegra.ph,糯米'
-    - 'DOMAIN-SUFFIX,telegram.org,糯米'
-    - 'IP-CIDR,91.108.4.0/22,糯米,no-resolve'
-    - 'IP-CIDR,91.108.8.0/21,糯米,no-resolve'
-    - 'IP-CIDR,91.108.16.0/22,糯米,no-resolve'
-    - 'IP-CIDR,91.108.56.0/22,糯米,no-resolve'
-    - 'IP-CIDR,149.154.160.0/20,糯米,no-resolve'
-    - 'IP-CIDR6,2001:67c:4e8::/48,糯米,no-resolve'
-    - 'IP-CIDR6,2001:b28:f23d::/48,糯米,no-resolve'
-    - 'IP-CIDR6,2001:b28:f23f::/48,糯米,no-resolve'
-    - 'IP-CIDR,120.232.181.162/32,糯米,no-resolve'
-    - 'IP-CIDR,120.241.147.226/32,糯米,no-resolve'
-    - 'IP-CIDR,120.253.253.226/32,糯米,no-resolve'
-    - 'IP-CIDR,120.253.255.162/32,糯米,no-resolve'
-    - 'IP-CIDR,120.253.255.34/32,糯米,no-resolve'
-    - 'IP-CIDR,120.253.255.98/32,糯米,no-resolve'
-    - 'IP-CIDR,180.163.150.162/32,糯米,no-resolve'
-    - 'IP-CIDR,180.163.150.34/32,糯米,no-resolve'
-    - 'IP-CIDR,180.163.151.162/32,糯米,no-resolve'
-    - 'IP-CIDR,180.163.151.34/32,糯米,no-resolve'
-    - 'IP-CIDR,203.208.39.0/24,糯米,no-resolve'
-    - 'IP-CIDR,203.208.40.0/24,糯米,no-resolve'
-    - 'IP-CIDR,203.208.41.0/24,糯米,no-resolve'
-    - 'IP-CIDR,203.208.43.0/24,糯米,no-resolve'
-    - 'IP-CIDR,203.208.50.0/24,糯米,no-resolve'
-    - 'IP-CIDR,220.181.174.162/32,糯米,no-resolve'
-    - 'IP-CIDR,220.181.174.226/32,糯米,no-resolve'
-    - 'IP-CIDR,220.181.174.34/32,糯米,no-resolve'
-    - 'DOMAIN,injections.adguard.org,DIRECT'
-    - 'DOMAIN,local.adguard.org,DIRECT'
-    - 'DOMAIN-SUFFIX,local,DIRECT'
-    - 'IP-CIDR,127.0.0.0/8,DIRECT'
-    - 'IP-CIDR,172.16.0.0/12,DIRECT'
-    - 'IP-CIDR,192.168.0.0/16,DIRECT'
-    - 'IP-CIDR,10.0.0.0/8,DIRECT'
-    - 'IP-CIDR,17.0.0.0/8,DIRECT'
-    - 'IP-CIDR,100.64.0.0/10,DIRECT'
-    - 'IP-CIDR,224.0.0.0/4,DIRECT'
-    - 'IP-CIDR6,fe80::/10,DIRECT'
-    - 'DOMAIN-SUFFIX,cn,DIRECT'
-    - 'DOMAIN-KEYWORD,-cn,DIRECT'
-    - 'GEOIP,CN,DIRECT'
-    - 'MATCH,糯米'
+- 'DOMAIN-SUFFIX,xship.top,DIRECT'
+- 'GEOIP,CN,DIRECT'
+- 'DOMAIN-SUFFIX,t.me,✨ 星链Starlink'
+- 'DOMAIN-SUFFIX,telegram.org,✨ 星链Starlink'
+- 'DOMAIN-SUFFIX,telegram.me,✨ 星链Starlink'
+- 'DOMAIN-SUFFIX,telegra.ph,✨ 星链Starlink'
+- 'IP-CIDR,91.108.4.0/22,✨ 星链Starlink,no-resolve'
+- 'IP-CIDR,91.108.8.0/21,✨ 星链Starlink,no-resolve'
+- 'IP-CIDR,91.108.16.0/22,✨ 星链Starlink,no-resolve'
+- 'IP-CIDR,91.108.56.0/22,✨ 星链Starlink,no-resolve'
+- 'IP-CIDR,149.154.160.0/20,✨ 星链Starlink,no-resolve'
+- 'IP-CIDR6,2001:67c:4e8::/48,✨ 星链Starlink,no-resolve'
+- 'IP-CIDR6,2001:b28:f23d::/48,✨ 星链Starlink,no-resolve'
+- 'IP-CIDR6,2001:b28:f23f::/48,✨ 星链Starlink,no-resolve'
+- 'MATCH,✨ 星链Starlink'
