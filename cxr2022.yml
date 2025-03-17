@@ -27,15 +27,15 @@ dns:
   fallback: [ 'tls://223.5.5.5:853', 'tls://119.29.29.29:853' ]
   default-nameserver: [ 119.29.29.29, 223.5.5.5 ]
 proxies:
-- { name: 🌐 官网： xship.top, type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
-- { name: "⚠️  持续防控刷流和抢占带宽", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
-- { name: "🚀 当前免费订阅已触发风控", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
-- { name: "🌊 恢复时间：3/13 16:00", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
-- { name: "🔰 流速标准为油管1080P及以下", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
-- { name: "⚡️ 并发跑流前后台下载易触发", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
-- { name: "♻️ 当前提示节点无风控可应急使用", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
-- { name: "✨ 升级订阅畅享无限丝滑", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
-- { name: "💻 前往 xship.top 查看详情", type: trojan, server: 88.119.175.241, port: 443, password: 5a1e5048426d0f9700a54cf2c6ebb771, sni: www.cloudflare.com, skip-cert-verify: true }
+- { name: 🌐 官网： xship.top, type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
+- { name: "⚠️  持续防控刷流和抢占带宽", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
+- { name: "🚀 当前免费订阅已触发风控", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
+- { name: "🌊 恢复时间：3/17 16:00", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
+- { name: "🔰 流速标准为油管1080P及以下", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
+- { name: "⚡️ 并发跑流前后台下载易触发", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
+- { name: "♻️ 当前提示节点无风控可应急使用", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
+- { name: "✨ 升级订阅畅享无限丝滑", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
+- { name: "💻 前往 xship.top 查看详情", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
 - { name: 🇸🇬 新加坡1, type: hysteria2, server: starlink-sgp3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
 - { name: 🇸🇬 新加坡2, type: hysteria2, server: starlink-sgp4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
 - { name: 🇸🇬 新加坡3, type: hysteria2, server: starlink-sgp3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
@@ -116,7 +116,7 @@ proxy-groups:
   - "🌐 官网： xship.top"
   - "⚠️  持续防控刷流和抢占带宽"
   - "🚀 当前免费订阅已触发风控"
-  - "🌊 恢复时间：3/13 16:00"
+  - "🌊 恢复时间：3/17 16:00"
   - "🔰 流速标准为油管1080P及以下"
   - "⚡️ 并发跑流前后台下载易触发"
   - "♻️ 当前提示节点无风控可应急使用"
