@@ -1,212 +1,591 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
 mode: rule
-profile:
-  store-selected: true
-  fake-ip: true
-unified-delay: true
-tcp-concurrent: true
-tun:
-  dns-hijack:
-  - 114.114.114.114
-  - 180.76.76.76
-  - 119.29.29.29
-  - 223.6.6.6
-  - 223.5.5.5
-  - 8.8.8.8
-  - 8.8.4.4
-  - 1.1.1.1
-  - 1.0.0.1
+log-level: info
+external-controller: '127.0.0.1:9090'
 dns:
-  enable: true
-  ipv6: false
-  use-system-hosts: false
-  use-hosts: true
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  nameserver: [ https://223.6.6.6/dns-query, https://doh.pub/dns-query ]
-  fallback-filter: { geoip: true, ipcidr: [ 240.0.0.0/4, 0.0.0.0/32 ] }
-  fallback: [ 'tls://223.5.5.5:853', 'tls://119.29.29.29:853' ]
-  default-nameserver: [ 119.29.29.29, 223.5.5.5 ]
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-- { name: 🌐 官网： xship.top, type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
-- { name: "⚠️  持续防控刷流和抢占带宽", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
-- { name: "🚀 当前免费订阅已触发风控", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
-- { name: "🌊 恢复时间：3/17 16:00", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
-- { name: "🔰 流速标准为油管1080P及以下", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
-- { name: "⚡️ 并发跑流前后台下载易触发", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
-- { name: "♻️ 当前提示节点无风控可应急使用", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
-- { name: "✨ 升级订阅畅享无限丝滑", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
-- { name: "💻 前往 xship.top 查看详情", type: trojan, server: 88.119.175.241, port: 443, password: 37a051f21a94dd0150111ee8c68034b0, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
-- { name: 🇸🇬 新加坡1, type: hysteria2, server: starlink-sgp3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇸🇬 新加坡2, type: hysteria2, server: starlink-sgp4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇸🇬 新加坡3, type: hysteria2, server: starlink-sgp3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇸🇬 新加坡4, type: hysteria2, server: starlink-sgp4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇸🇬 新加坡5, type: hysteria2, server: starlink-sgp3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇸🇬 新加坡6, type: hysteria2, server: starlink-sgp4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇸🇬 新加坡7, type: hysteria2, server: starlink-sgp4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇸🇬 新加坡8, type: hysteria2, server: starlink-sgp3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇸🇬 新加坡9, type: hysteria2, server: starlink-sgp4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇸🇬 新加坡10, type: hysteria2, server: starlink-sgp3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇯🇵 日本1, type: hysteria2, server: starlink-tko2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇯🇵 日本2, type: hysteria2, server: starlink-tko3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇯🇵 日本3, type: hysteria2, server: starlink-tko.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇯🇵 日本4, type: hysteria2, server: starlink-tko4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇯🇵 日本5, type: hysteria2, server: starlink-tko3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇯🇵 日本6, type: hysteria2, server: starlink-tko2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇯🇵 日本7, type: hysteria2, server: starlink-tko4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇯🇵 日本8, type: hysteria2, server: starlink-tko2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇯🇵 日本9, type: hysteria2, server: starlink-tko4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇯🇵 日本10, type: hysteria2, server: starlink-tko2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇰🇷 韩国1, type: hysteria2, server: starlink-sol.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇰🇷 韩国2, type: hysteria2, server: starlink-sol2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇰🇷 韩国3, type: hysteria2, server: starlink-sol3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇰🇷 韩国4, type: hysteria2, server: starlink-sol4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇰🇷 韩国5, type: hysteria2, server: starlink-sol2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇰🇷 韩国6, type: hysteria2, server: starlink-sol4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇺🇸 美国1, type: hysteria2, server: starlink-sfo.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇺🇸 美国2, type: hysteria2, server: starlink-sfo2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇺🇸 美国3, type: hysteria2, server: starlink-sfo3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇺🇸 美国4, type: hysteria2, server: starlink-sfo4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇺🇸 美国5, type: hysteria2, server: starlink-sfo1.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇺🇸 美国6, type: hysteria2, server: starlink-lax.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇺🇸 美国7, type: hysteria2, server: starlink-lax2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇺🇸 美国8, type: hysteria2, server: starlink-lax3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇺🇸 美国9, type: hysteria2, server: starlink-sfo4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇺🇸 美国10, type: hysteria2, server: starlink-lax3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇺🇸 美国11, type: hysteria2, server: starlink-sfo4.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇺🇸 美国12, type: hysteria2, server: starlink-lax3.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇮🇳 印度1, type: hysteria2, server: starlink-blr.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇮🇳 印度2, type: hysteria2, server: starlink-blr.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇮🇳 印度3, type: hysteria2, server: starlink-blr.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇮🇳 印度4, type: hysteria2, server: starlink-blr.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇮🇳 印度5, type: hysteria2, server: starlink-blr.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇮🇳 印度6, type: hysteria2, server: starlink-blr.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇫🇷 法国1, type: hysteria2, server: starlink-par.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇫🇷 法国2, type: hysteria2, server: starlink-par.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇫🇷 法国3, type: hysteria2, server: starlink-par.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇫🇷 法国4, type: hysteria2, server: starlink-par.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇩🇪 德国1, type: hysteria2, server: starlink-fra.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇩🇪 德国2, type: hysteria2, server: starlink-fra2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇩🇪 德国3, type: hysteria2, server: starlink-fra.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇩🇪 德国4, type: hysteria2, server: starlink-fra2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇮🇹 意大利1, type: hysteria2, server: starlink-mil.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇮🇹 意大利2, type: hysteria2, server: starlink-mil.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇪🇸 西班牙1, type: hysteria2, server: starlink-mad.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇪🇸 西班牙2, type: hysteria2, server: starlink-mad.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇳🇱 荷兰1, type: hysteria2, server: starlink-ams.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇳🇱 荷兰2, type: hysteria2, server: starlink-ams.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇬🇧 英国1, type: hysteria2, server: starlink-lon.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇬🇧 英国2, type: hysteria2, server: starlink-lon.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇸🇪 瑞典1, type: hysteria2, server: starlink-sto.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇸🇪 瑞典2, type: hysteria2, server: starlink-sto2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇸🇪 瑞典3, type: hysteria2, server: starlink-sto.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇸🇪 瑞典4, type: hysteria2, server: starlink-sto2.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇦🇺 澳大利亚1, type: hysteria2, server: starlink-syd.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇦🇺 澳大利亚2, type: hysteria2, server: starlink-mel.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇦🇺 澳大利亚3, type: hysteria2, server: starlink-syd.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇦🇺 澳大利亚4, type: hysteria2, server: starlink-mel.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇨🇦 加拿大1, type: hysteria2, server: starlink-tor.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇨🇦 加拿大2, type: hysteria2, server: starlink-tor.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇧🇷 巴西1, type: hysteria2, server: starlink-gru.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-- { name: 🇧🇷 巴西2, type: hysteria2, server: starlink-gru.2513142.xyz, password: 1, port: 443, skip-cert-verify: true, sni: www.cloudflare.com }
-
+    - { name: '[ss]剩余流量：59.75 GB', type: ss, server: dns.a123.my, port: 50741, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]距离下次重置剩余：5 天', type: ss, server: dns.a123.my, port: 50741, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]套餐到期：2025-03-23', type: ss, server: dns.a123.my, port: 50741, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]官网：ziyouren.net', type: ss, server: dns.a123.my, port: 50741, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]香港 01 | 专线', type: ss, server: dns.a123.my, port: 50741, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]香港 02 | 专线', type: ss, server: dns.a123.my, port: 50741, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]香港 03 | 专线', type: ss, server: dns.a123.my, port: 50741, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]香港 04 | 专线', type: ss, server: dns.a123.my, port: 50741, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]香港 05 | 专线', type: ss, server: dns.a123.my, port: 50741, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]日本01 | 专线', type: ss, server: dns.a123.my, port: 19852, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]日本02 | 专线', type: ss, server: dns.a123.my, port: 19852, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]日本03 | 专线', type: ss, server: dns.a123.my, port: 19852, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]日本04 | 专线', type: ss, server: dns.a123.my, port: 19852, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]日本05 | 专线', type: ss, server: dns.a123.my, port: 19852, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]新加坡01 | 专线', type: ss, server: dns.a123.my, port: 41158, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]新加坡02 | 专线', type: ss, server: dns.a123.my, port: 41158, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]新加坡03 | 专线', type: ss, server: dns.a123.my, port: 41158, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]新加坡04 | 专线', type: ss, server: dns.a123.my, port: 41158, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]新加坡05 | 专线', type: ss, server: dns.a123.my, port: 41158, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]美国01 | 专线', type: ss, server: dns.a123.my, port: 24663, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]美国02 | 专线', type: ss, server: dns.a123.my, port: 24663, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]美国03 | 专线', type: ss, server: dns.a123.my, port: 24663, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]美国04 | 专线', type: ss, server: dns.a123.my, port: 24663, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]美国05 | 专线', type: ss, server: dns.a123.my, port: 24663, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]台湾01 | 专线', type: ss, server: dns.a123.my, port: 25720, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]台湾02 | 专线', type: ss, server: dns.a123.my, port: 25720, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]台湾03 | 专线', type: ss, server: dns.a123.my, port: 25720, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]台湾04 | 专线', type: ss, server: dns.a123.my, port: 25720, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]台湾05 | 专线', type: ss, server: dns.a123.my, port: 25720, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]英国01 | 专线', type: ss, server: dns.a123.my, port: 27797, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]英国02 | 专线', type: ss, server: dns.a123.my, port: 27797, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]英国03 | 专线', type: ss, server: dns.a123.my, port: 27797, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]英国04 | 专线', type: ss, server: dns.a123.my, port: 27797, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]英国05 | 专线', type: ss, server: dns.a123.my, port: 27797, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]泰国 | 专线', type: ss, server: dns.a123.my, port: 26847, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]土耳其 | 专线', type: ss, server: dns.a123.my, port: 22362, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]德国 | 专线', type: ss, server: dns.a123.my, port: 39152, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]越南 | 专线', type: ss, server: dns.a123.my, port: 17523, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]柬埔寨 | 专线', type: ss, server: dns.a123.my, port: 21414, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[ss]印度 | 专线', type: ss, server: dns.a123.my, port: 31196, cipher: aes-128-gcm, password: fe173ff9-b7fe-421e-a060-3646915bb834, udp: true }
+    - { name: '[Hy2]香港01 | 不计费', server: hk1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: Ofm9GVr5kczJCAg0 }
+    - { name: '[Hy2]香港02 | 不计费', server: hk1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: Ofm9GVr5kczJCAg0 }
+    - { name: '[Hy2]香港03 | 不计费', server: hk1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: Ofm9GVr5kczJCAg0 }
+    - { name: '[Hy2]香港04 | 不计费', server: hk1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: Ofm9GVr5kczJCAg0 }
+    - { name: '[Hy2]香港05 | 不计费', server: hk1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: Ofm9GVr5kczJCAg0 }
+    - { name: '[Hy2]日本01 | 不计费', server: jp1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: Ofm9GVr5kczJCAg0 }
+    - { name: '[Hy2]日本02 | 不计费', server: jp1.a123.my, port: 6370, sni: null, up: 50, down: 150, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: Ofm9GVr5kczJCAg0 }
+    - { name: '[Hy2]日本03 | 不计费', server: jp1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: Ofm9GVr5kczJCAg0 }
+    - { name: '[Hy2]日本04 | 不计费', server: jp1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: Ofm9GVr5kczJCAg0 }
+    - { name: '[Hy2]日本05 | 不计费', server: jp1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: Ofm9GVr5kczJCAg0 }
+    - { name: '[Hy2]新加坡01 | 不计费', server: gs1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: 4RDZD4jNUKPQ4s3u }
+    - { name: '[Hy2]新加坡02 | 不计费', server: gs1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: 4RDZD4jNUKPQ4s3u }
+    - { name: '[Hy2]新加坡03 | 不计费', server: gs1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: 4RDZD4jNUKPQ4s3u }
+    - { name: '[Hy2]新加坡04 | 不计费', server: gs1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: 4RDZD4jNUKPQ4s3u }
+    - { name: '[Hy2]新加坡05 | 不计费', server: gs1.a123.my, port: 6370, sni: null, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: fe173ff9-b7fe-421e-a060-3646915bb834, obfs: salamander, obfs-password: 4RDZD4jNUKPQ4s3u }
 proxy-groups:
-- name: "✨ 星链Starlink"
-  type: select
-  proxies:
-  - "🌐 官网： xship.top"
-  - "⚠️  持续防控刷流和抢占带宽"
-  - "🚀 当前免费订阅已触发风控"
-  - "🌊 恢复时间：3/17 16:00"
-  - "🔰 流速标准为油管1080P及以下"
-  - "⚡️ 并发跑流前后台下载易触发"
-  - "♻️ 当前提示节点无风控可应急使用"
-  - "✨ 升级订阅畅享无限丝滑"
-  - "💻 前往 xship.top 查看详情"
-  - 🇸🇬 新加坡1
-  - 🇸🇬 新加坡2
-  - 🇸🇬 新加坡3
-  - 🇸🇬 新加坡4
-  - 🇸🇬 新加坡5
-  - 🇸🇬 新加坡6
-  - 🇸🇬 新加坡7
-  - 🇸🇬 新加坡8
-  - 🇸🇬 新加坡9
-  - 🇸🇬 新加坡10
-  - 🇯🇵 日本1
-  - 🇯🇵 日本2
-  - 🇯🇵 日本3
-  - 🇯🇵 日本4
-  - 🇯🇵 日本5
-  - 🇯🇵 日本6
-  - 🇯🇵 日本7
-  - 🇯🇵 日本8
-  - 🇯🇵 日本9
-  - 🇯🇵 日本10
-  - 🇰🇷 韩国1
-  - 🇰🇷 韩国2
-  - 🇰🇷 韩国3
-  - 🇰🇷 韩国4
-  - 🇰🇷 韩国5
-  - 🇰🇷 韩国6
-  - 🇺🇸 美国1
-  - 🇺🇸 美国2
-  - 🇺🇸 美国3
-  - 🇺🇸 美国4
-  - 🇺🇸 美国5
-  - 🇺🇸 美国6
-  - 🇺🇸 美国7
-  - 🇺🇸 美国8
-  - 🇺🇸 美国9
-  - 🇺🇸 美国10
-  - 🇺🇸 美国11
-  - 🇺🇸 美国12
-  - 🇮🇳 印度1
-  - 🇮🇳 印度2
-  - 🇮🇳 印度3
-  - 🇮🇳 印度4
-  - 🇮🇳 印度5
-  - 🇮🇳 印度6
-  - 🇩🇪 德国1
-  - 🇩🇪 德国2
-  - 🇩🇪 德国3
-  - 🇩🇪 德国4
-  - 🇫🇷 法国1
-  - 🇫🇷 法国2
-  - 🇫🇷 法国3
-  - 🇫🇷 法国4
-  - 🇮🇹 意大利1
-  - 🇮🇹 意大利2
-  - 🇪🇸 西班牙1
-  - 🇪🇸 西班牙2
-  - 🇬🇧 英国1
-  - 🇬🇧 英国2
-  - 🇳🇱 荷兰1
-  - 🇳🇱 荷兰2
-  - 🇸🇪 瑞典1
-  - 🇸🇪 瑞典2
-  - 🇸🇪 瑞典3
-  - 🇸🇪 瑞典4
-  - 🇦🇺 澳大利亚1
-  - 🇦🇺 澳大利亚2
-  - 🇦🇺 澳大利亚3
-  - 🇦🇺 澳大利亚4
-  - 🇨🇦 加拿大1
-  - 🇨🇦 加拿大2
-  - 🇧🇷 巴西1
-  - 🇧🇷 巴西2
+    - { name: ✈️自由人VPN机场, type: select, proxies: [自动选择, 故障转移, '[ss]剩余流量：59.75 GB', '[ss]距离下次重置剩余：5 天', '[ss]套餐到期：2025-03-23', '[ss]官网：ziyouren.net', '[ss]香港 01 | 专线', '[ss]香港 02 | 专线', '[ss]香港 03 | 专线', '[ss]香港 04 | 专线', '[ss]香港 05 | 专线', '[ss]日本01 | 专线', '[ss]日本02 | 专线', '[ss]日本03 | 专线', '[ss]日本04 | 专线', '[ss]日本05 | 专线', '[ss]新加坡01 | 专线', '[ss]新加坡02 | 专线', '[ss]新加坡03 | 专线', '[ss]新加坡04 | 专线', '[ss]新加坡05 | 专线', '[ss]美国01 | 专线', '[ss]美国02 | 专线', '[ss]美国03 | 专线', '[ss]美国04 | 专线', '[ss]美国05 | 专线', '[ss]台湾01 | 专线', '[ss]台湾02 | 专线', '[ss]台湾03 | 专线', '[ss]台湾04 | 专线', '[ss]台湾05 | 专线', '[ss]英国01 | 专线', '[ss]英国02 | 专线', '[ss]英国03 | 专线', '[ss]英国04 | 专线', '[ss]英国05 | 专线', '[ss]泰国 | 专线', '[ss]土耳其 | 专线', '[ss]德国 | 专线', '[ss]越南 | 专线', '[ss]柬埔寨 | 专线', '[ss]印度 | 专线', '[Hy2]香港01 | 不计费', '[Hy2]香港02 | 不计费', '[Hy2]香港03 | 不计费', '[Hy2]香港04 | 不计费', '[Hy2]香港05 | 不计费', '[Hy2]日本01 | 不计费', '[Hy2]日本02 | 不计费', '[Hy2]日本03 | 不计费', '[Hy2]日本04 | 不计费', '[Hy2]日本05 | 不计费', '[Hy2]新加坡01 | 不计费', '[Hy2]新加坡02 | 不计费', '[Hy2]新加坡03 | 不计费', '[Hy2]新加坡04 | 不计费', '[Hy2]新加坡05 | 不计费'] }
+    - { name: 自动选择, type: url-test, proxies: ['[ss]剩余流量：59.75 GB', '[ss]距离下次重置剩余：5 天', '[ss]套餐到期：2025-03-23', '[ss]官网：ziyouren.net', '[ss]香港 01 | 专线', '[ss]香港 02 | 专线', '[ss]香港 03 | 专线', '[ss]香港 04 | 专线', '[ss]香港 05 | 专线', '[ss]日本01 | 专线', '[ss]日本02 | 专线', '[ss]日本03 | 专线', '[ss]日本04 | 专线', '[ss]日本05 | 专线', '[ss]新加坡01 | 专线', '[ss]新加坡02 | 专线', '[ss]新加坡03 | 专线', '[ss]新加坡04 | 专线', '[ss]新加坡05 | 专线', '[ss]美国01 | 专线', '[ss]美国02 | 专线', '[ss]美国03 | 专线', '[ss]美国04 | 专线', '[ss]美国05 | 专线', '[ss]台湾01 | 专线', '[ss]台湾02 | 专线', '[ss]台湾03 | 专线', '[ss]台湾04 | 专线', '[ss]台湾05 | 专线', '[ss]英国01 | 专线', '[ss]英国02 | 专线', '[ss]英国03 | 专线', '[ss]英国04 | 专线', '[ss]英国05 | 专线', '[ss]泰国 | 专线', '[ss]土耳其 | 专线', '[ss]德国 | 专线', '[ss]越南 | 专线', '[ss]柬埔寨 | 专线', '[ss]印度 | 专线', '[Hy2]香港01 | 不计费', '[Hy2]香港02 | 不计费', '[Hy2]香港03 | 不计费', '[Hy2]香港04 | 不计费', '[Hy2]香港05 | 不计费', '[Hy2]日本01 | 不计费', '[Hy2]日本02 | 不计费', '[Hy2]日本03 | 不计费', '[Hy2]日本04 | 不计费', '[Hy2]日本05 | 不计费', '[Hy2]新加坡01 | 不计费', '[Hy2]新加坡02 | 不计费', '[Hy2]新加坡03 | 不计费', '[Hy2]新加坡04 | 不计费', '[Hy2]新加坡05 | 不计费'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['[ss]剩余流量：59.75 GB', '[ss]距离下次重置剩余：5 天', '[ss]套餐到期：2025-03-23', '[ss]官网：ziyouren.net', '[ss]香港 01 | 专线', '[ss]香港 02 | 专线', '[ss]香港 03 | 专线', '[ss]香港 04 | 专线', '[ss]香港 05 | 专线', '[ss]日本01 | 专线', '[ss]日本02 | 专线', '[ss]日本03 | 专线', '[ss]日本04 | 专线', '[ss]日本05 | 专线', '[ss]新加坡01 | 专线', '[ss]新加坡02 | 专线', '[ss]新加坡03 | 专线', '[ss]新加坡04 | 专线', '[ss]新加坡05 | 专线', '[ss]美国01 | 专线', '[ss]美国02 | 专线', '[ss]美国03 | 专线', '[ss]美国04 | 专线', '[ss]美国05 | 专线', '[ss]台湾01 | 专线', '[ss]台湾02 | 专线', '[ss]台湾03 | 专线', '[ss]台湾04 | 专线', '[ss]台湾05 | 专线', '[ss]英国01 | 专线', '[ss]英国02 | 专线', '[ss]英国03 | 专线', '[ss]英国04 | 专线', '[ss]英国05 | 专线', '[ss]泰国 | 专线', '[ss]土耳其 | 专线', '[ss]德国 | 专线', '[ss]越南 | 专线', '[ss]柬埔寨 | 专线', '[ss]印度 | 专线', '[Hy2]香港01 | 不计费', '[Hy2]香港02 | 不计费', '[Hy2]香港03 | 不计费', '[Hy2]香港04 | 不计费', '[Hy2]香港05 | 不计费', '[Hy2]日本01 | 不计费', '[Hy2]日本02 | 不计费', '[Hy2]日本03 | 不计费', '[Hy2]日本04 | 不计费', '[Hy2]日本05 | 不计费', '[Hy2]新加坡01 | 不计费', '[Hy2]新加坡02 | 不计费', '[Hy2]新加坡03 | 不计费', '[Hy2]新加坡04 | 不计费', '[Hy2]新加坡05 | 不计费'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
-- 'DOMAIN-SUFFIX,xship.top,DIRECT'
-- 'GEOIP,CN,DIRECT'
-- 'DOMAIN-SUFFIX,t.me,✨ 星链Starlink'
-- 'DOMAIN-SUFFIX,telegram.org,✨ 星链Starlink'
-- 'DOMAIN-SUFFIX,telegram.me,✨ 星链Starlink'
-- 'DOMAIN-SUFFIX,telegra.ph,✨ 星链Starlink'
-- 'IP-CIDR,91.108.4.0/22,✨ 星链Starlink,no-resolve'
-- 'IP-CIDR,91.108.8.0/21,✨ 星链Starlink,no-resolve'
-- 'IP-CIDR,91.108.16.0/22,✨ 星链Starlink,no-resolve'
-- 'IP-CIDR,91.108.56.0/22,✨ 星链Starlink,no-resolve'
-- 'IP-CIDR,149.154.160.0/20,✨ 星链Starlink,no-resolve'
-- 'IP-CIDR6,2001:67c:4e8::/48,✨ 星链Starlink,no-resolve'
-- 'IP-CIDR6,2001:b28:f23d::/48,✨ 星链Starlink,no-resolve'
-- 'IP-CIDR6,2001:b28:f23f::/48,✨ 星链Starlink,no-resolve'
-- 'MATCH,✨ 星链Starlink'
+    - 'DOMAIN,avf.a123.la,DIRECT'
+    - 'DOMAIN-SUFFIX,services.googleapis.cn,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,✈️自由人VPN机场'
+    - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
+    - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
+    - 'DOMAIN,developer.apple.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,digicert.com,✈️自由人VPN机场'
+    - 'DOMAIN,ocsp.apple.com,✈️自由人VPN机场'
+    - 'DOMAIN,ocsp.comodoca.com,✈️自由人VPN机场'
+    - 'DOMAIN,ocsp.usertrust.com,✈️自由人VPN机场'
+    - 'DOMAIN,ocsp.sectigo.com,✈️自由人VPN机场'
+    - 'DOMAIN,ocsp.verisign.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,apple-dns.net,✈️自由人VPN机场'
+    - 'DOMAIN,testflight.apple.com,✈️自由人VPN机场'
+    - 'DOMAIN,sandbox.itunes.apple.com,✈️自由人VPN机场'
+    - 'DOMAIN,itunes.apple.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,apps.apple.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,blobstore.apple.com,✈️自由人VPN机场'
+    - 'DOMAIN,cvws.icloud-content.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,mzstatic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,itunes.apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,icloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,icloud-content.com,DIRECT'
+    - 'DOMAIN-SUFFIX,me.com,DIRECT'
+    - 'DOMAIN-SUFFIX,aaplimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cdn20.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cdn-apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,akadns.net,DIRECT'
+    - 'DOMAIN-SUFFIX,akamaiedge.net,DIRECT'
+    - 'DOMAIN-SUFFIX,edgekey.net,DIRECT'
+    - 'DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,mwcname.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple-mapkit.com,DIRECT'
+    - 'DOMAIN-SUFFIX,126.com,DIRECT'
+    - 'DOMAIN-SUFFIX,126.net,DIRECT'
+    - 'DOMAIN-SUFFIX,127.net,DIRECT'
+    - 'DOMAIN-SUFFIX,163.com,DIRECT'
+    - 'DOMAIN-SUFFIX,360buyimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,36kr.com,DIRECT'
+    - 'DOMAIN-SUFFIX,acfun.tv,DIRECT'
+    - 'DOMAIN-SUFFIX,air-matters.com,DIRECT'
+    - 'DOMAIN-SUFFIX,aixifan.com,DIRECT'
+    - 'DOMAIN-KEYWORD,alicdn,DIRECT'
+    - 'DOMAIN-KEYWORD,alipay,DIRECT'
+    - 'DOMAIN-KEYWORD,taobao,DIRECT'
+    - 'DOMAIN-SUFFIX,amap.com,DIRECT'
+    - 'DOMAIN-SUFFIX,autonavi.com,DIRECT'
+    - 'DOMAIN-KEYWORD,baidu,DIRECT'
+    - 'DOMAIN-SUFFIX,bdimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bdstatic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bilibili.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bilivideo.com,DIRECT'
+    - 'DOMAIN-SUFFIX,caiyunapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,clouddn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cnbeta.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cnbetacdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cootekservice.com,DIRECT'
+    - 'DOMAIN-SUFFIX,csdn.net,DIRECT'
+    - 'DOMAIN-SUFFIX,ctrip.com,DIRECT'
+    - 'DOMAIN-SUFFIX,dgtle.com,DIRECT'
+    - 'DOMAIN-SUFFIX,dianping.com,DIRECT'
+    - 'DOMAIN-SUFFIX,douban.com,DIRECT'
+    - 'DOMAIN-SUFFIX,doubanio.com,DIRECT'
+    - 'DOMAIN-SUFFIX,duokan.com,DIRECT'
+    - 'DOMAIN-SUFFIX,easou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ele.me,DIRECT'
+    - 'DOMAIN-SUFFIX,feng.com,DIRECT'
+    - 'DOMAIN-SUFFIX,fir.im,DIRECT'
+    - 'DOMAIN-SUFFIX,frdic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,g-cores.com,DIRECT'
+    - 'DOMAIN-SUFFIX,godic.net,DIRECT'
+    - 'DOMAIN-SUFFIX,gtimg.com,DIRECT'
+    - 'DOMAIN,cdn.hockeyapp.net,DIRECT'
+    - 'DOMAIN-SUFFIX,hongxiu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,hxcdn.net,DIRECT'
+    - 'DOMAIN-SUFFIX,iciba.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ifeng.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ifengimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ipip.net,DIRECT'
+    - 'DOMAIN-SUFFIX,iqiyi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,jd.com,DIRECT'
+    - 'DOMAIN-SUFFIX,jianshu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,knewone.com,DIRECT'
+    - 'DOMAIN-SUFFIX,le.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lecloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lemicp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,licdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,luoo.net,DIRECT'
+    - 'DOMAIN-SUFFIX,meituan.com,DIRECT'
+    - 'DOMAIN-SUFFIX,meituan.net,DIRECT'
+    - 'DOMAIN-SUFFIX,mi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miaopai.com,DIRECT'
+    - 'DOMAIN-SUFFIX,microsoft.com,DIRECT'
+    - 'DOMAIN-SUFFIX,microsoftonline.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miui.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miwifi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,mob.com,DIRECT'
+    - 'DOMAIN-SUFFIX,netease.com,DIRECT'
+    - 'DOMAIN-SUFFIX,office.com,DIRECT'
+    - 'DOMAIN-SUFFIX,office365.com,DIRECT'
+    - 'DOMAIN-KEYWORD,officecdn,DIRECT'
+    - 'DOMAIN-SUFFIX,oschina.net,DIRECT'
+    - 'DOMAIN-SUFFIX,ppsimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,pstatp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qcloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qdaily.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qdmm.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qhimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qhres.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qidian.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qihucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiniu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiniucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiyipic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qq.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qqurl.com,DIRECT'
+    - 'DOMAIN-SUFFIX,rarbg.to,DIRECT'
+    - 'DOMAIN-SUFFIX,ruguoapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,segmentfault.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sinaapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,smzdm.com,DIRECT'
+    - 'DOMAIN-SUFFIX,snapdrop.net,DIRECT'
+    - 'DOMAIN-SUFFIX,sogou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sogoucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sohu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,soku.com,DIRECT'
+    - 'DOMAIN-SUFFIX,speedtest.net,DIRECT'
+    - 'DOMAIN-SUFFIX,sspai.com,DIRECT'
+    - 'DOMAIN-SUFFIX,suning.com,DIRECT'
+    - 'DOMAIN-SUFFIX,taobao.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tencent.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tenpay.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tianyancha.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tmall.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tudou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,umetrip.com,DIRECT'
+    - 'DOMAIN-SUFFIX,upaiyun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,upyun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,veryzhun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,weather.com,DIRECT'
+    - 'DOMAIN-SUFFIX,weibo.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xiami.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xiami.net,DIRECT'
+    - 'DOMAIN-SUFFIX,xiaomicp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ximalaya.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xmcdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xunlei.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yhd.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yihaodianimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yinxiang.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ykimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,youdao.com,DIRECT'
+    - 'DOMAIN-SUFFIX,youku.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zealer.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zhihu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zhimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zimuzu.tv,DIRECT'
+    - 'DOMAIN-SUFFIX,zoho.com,DIRECT'
+    - 'DOMAIN-KEYWORD,amazon,✈️自由人VPN机场'
+    - 'DOMAIN-KEYWORD,google,✈️自由人VPN机场'
+    - 'DOMAIN-KEYWORD,gmail,✈️自由人VPN机场'
+    - 'DOMAIN-KEYWORD,youtube,✈️自由人VPN机场'
+    - 'DOMAIN-KEYWORD,facebook,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,fb.me,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,fbcdn.net,✈️自由人VPN机场'
+    - 'DOMAIN-KEYWORD,twitter,✈️自由人VPN机场'
+    - 'DOMAIN-KEYWORD,instagram,✈️自由人VPN机场'
+    - 'DOMAIN-KEYWORD,dropbox,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,twimg.com,✈️自由人VPN机场'
+    - 'DOMAIN-KEYWORD,blogspot,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,youtu.be,✈️自由人VPN机场'
+    - 'DOMAIN-KEYWORD,whatsapp,✈️自由人VPN机场'
+    - 'DOMAIN-KEYWORD,admarvel,REJECT'
+    - 'DOMAIN-KEYWORD,admaster,REJECT'
+    - 'DOMAIN-KEYWORD,adsage,REJECT'
+    - 'DOMAIN-KEYWORD,adsmogo,REJECT'
+    - 'DOMAIN-KEYWORD,adsrvmedia,REJECT'
+    - 'DOMAIN-KEYWORD,adwords,REJECT'
+    - 'DOMAIN-KEYWORD,adservice,REJECT'
+    - 'DOMAIN-SUFFIX,appsflyer.com,REJECT'
+    - 'DOMAIN-KEYWORD,domob,REJECT'
+    - 'DOMAIN-SUFFIX,doubleclick.net,REJECT'
+    - 'DOMAIN-KEYWORD,duomeng,REJECT'
+    - 'DOMAIN-KEYWORD,dwtrack,REJECT'
+    - 'DOMAIN-KEYWORD,guanggao,REJECT'
+    - 'DOMAIN-KEYWORD,lianmeng,REJECT'
+    - 'DOMAIN-SUFFIX,mmstat.com,REJECT'
+    - 'DOMAIN-KEYWORD,mopub,REJECT'
+    - 'DOMAIN-KEYWORD,omgmta,REJECT'
+    - 'DOMAIN-KEYWORD,openx,REJECT'
+    - 'DOMAIN-KEYWORD,partnerad,REJECT'
+    - 'DOMAIN-KEYWORD,pingfore,REJECT'
+    - 'DOMAIN-KEYWORD,supersonicads,REJECT'
+    - 'DOMAIN-KEYWORD,uedas,REJECT'
+    - 'DOMAIN-KEYWORD,umeng,REJECT'
+    - 'DOMAIN-KEYWORD,usage,REJECT'
+    - 'DOMAIN-SUFFIX,vungle.com,REJECT'
+    - 'DOMAIN-KEYWORD,wlmonitor,REJECT'
+    - 'DOMAIN-KEYWORD,zjtoolbar,REJECT'
+    - 'DOMAIN-SUFFIX,9to5mac.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,abpchina.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,adblockplus.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,adobe.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,akamaized.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,alfredapp.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,amplitude.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ampproject.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,android.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,angularjs.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,aolcdn.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,apkpure.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,appledaily.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,appshopper.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,appspot.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,arcgis.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,archive.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,armorgames.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,aspnetcdn.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,att.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,awsstatic.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,azureedge.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,azurewebsites.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,bing.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,bintray.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,bit.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,bit.ly,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,bitbucket.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,bjango.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,bkrtx.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,blog.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,blogcdn.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,blogger.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,blogsmithmedia.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,blogspot.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,blogspot.hk,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,bloomberg.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,box.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,box.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,cachefly.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,chromium.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,cl.ly,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,cloudflare.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,cloudfront.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,cloudmagic.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,cmail19.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,cnet.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,cocoapods.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,comodoca.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,crashlytics.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,culturedcode.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,d.pr,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,danilo.to,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,dayone.me,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,db.tt,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,deskconnect.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,disq.us,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,disqus.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,disquscdn.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,dnsimple.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,docker.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,dribbble.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,droplr.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,duckduckgo.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,dueapp.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,dytt8.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,edgecastcdn.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,edgekey.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,edgesuite.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,engadget.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,entrust.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,eurekavpt.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,evernote.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,fabric.io,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,fast.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,fastly.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,fc2.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,feedburner.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,feedly.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,feedsportal.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,fiftythree.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,firebaseio.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,flexibits.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,flickr.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,flipboard.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,g.co,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,gabia.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,geni.us,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,gfx.ms,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ggpht.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ghostnoteapp.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,git.io,✈️自由人VPN机场'
+    - 'DOMAIN-KEYWORD,github,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,globalsign.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,gmodules.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,godaddy.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,golang.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,gongm.in,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,goo.gl,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,goodreaders.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,goodreads.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,gravatar.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,gstatic.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,gvt0.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,hockeyapp.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,hotmail.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,icons8.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ifixit.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ift.tt,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ifttt.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,iherb.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,imageshack.us,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,img.ly,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,imgur.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,imore.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,instapaper.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ipn.li,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,is.gd,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,issuu.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,itgonglun.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,itun.es,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ixquick.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,j.mp,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,js.revsci.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,jshint.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,jtvnw.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,justgetflux.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,kat.cr,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,klip.me,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,libsyn.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,linkedin.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,line-apps.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,linode.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,lithium.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,littlehj.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,live.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,live.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,livefilestore.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,llnwd.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,macid.co,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,macromedia.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,macrumors.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,mashable.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,mathjax.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,medium.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,mega.co.nz,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,mega.nz,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,megaupload.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,microsofttranslator.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,mindnode.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,mobile01.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,modmyi.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,msedge.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,myfontastic.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,name.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,nextmedia.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,nsstatic.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,nssurge.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,nyt.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,nytimes.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,omnigroup.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,onedrive.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,onenote.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ooyala.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,openvpn.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,openwrt.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,orkut.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,osxdaily.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,outlook.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ow.ly,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,paddleapi.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,parallels.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,parse.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,pdfexpert.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,periscope.tv,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,pinboard.in,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,pinterest.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,pixelmator.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,pixiv.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,playpcesor.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,playstation.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,playstation.com.hk,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,playstation.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,playstationnetwork.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,pushwoosh.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,rime.im,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,servebom.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,sfx.ms,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,shadowsocks.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,sharethis.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,shazam.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,skype.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,smartdns✈️自由人VPN机场.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,smartmailcloud.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,sndcdn.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,sony.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,soundcloud.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,sourceforge.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,spotify.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,squarespace.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,sstatic.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,st.luluku.pw,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,stackoverflow.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,startpage.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,staticflickr.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,steamcommunity.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,symauth.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,symcb.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,symcd.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,tapbots.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,tapbots.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,tdesktop.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,techcrunch.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,techsmith.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,thepiratebay.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,theverge.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,time.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,timeinc.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,tiny.cc,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,tinypic.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,tmblr.co,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,todoist.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,trello.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,trustasiassl.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,tumblr.co,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,tumblr.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,tweetdeck.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,tweetmarker.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,twitch.tv,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,txmblr.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,typekit.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ubertags.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ublock.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ubnt.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ulyssesapp.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,urchin.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,usertrust.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,v.gd,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,v2ex.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,vimeo.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,vimeocdn.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,vine.co,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,vivaldi.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,vox-cdn.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,vsco.co,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,vultr.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,w.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,w3schools.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,webtype.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,wikiwand.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,wikileaks.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,wikimedia.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,wikipedia.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,wikipedia.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,windows.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,windows.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,wire.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,wordpress.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,workflowy.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,wp.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,wsj.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,wsj.net,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,xda-developers.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,xeeno.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,xiti.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,yahoo.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,yimg.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ying.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,yoyo.org,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,ytimg.com,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,telegra.ph,✈️自由人VPN机场'
+    - 'DOMAIN-SUFFIX,telegram.org,✈️自由人VPN机场'
+    - 'IP-CIDR,91.108.4.0/22,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,91.108.8.0/21,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,91.108.16.0/22,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,91.108.56.0/22,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,149.154.160.0/20,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR6,2001:67c:4e8::/48,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23d::/48,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23f::/48,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,120.232.181.162/32,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,120.241.147.226/32,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,120.253.253.226/32,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,120.253.255.162/32,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,120.253.255.34/32,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,120.253.255.98/32,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,180.163.150.162/32,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,180.163.150.34/32,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,180.163.151.162/32,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,180.163.151.34/32,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,203.208.39.0/24,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,203.208.40.0/24,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,203.208.41.0/24,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,203.208.43.0/24,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,203.208.50.0/24,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,220.181.174.162/32,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,220.181.174.226/32,✈️自由人VPN机场,no-resolve'
+    - 'IP-CIDR,220.181.174.34/32,✈️自由人VPN机场,no-resolve'
+    - 'DOMAIN,injections.adguard.org,DIRECT'
+    - 'DOMAIN,local.adguard.org,DIRECT'
+    - 'DOMAIN-SUFFIX,local,DIRECT'
+    - 'IP-CIDR,127.0.0.0/8,DIRECT'
+    - 'IP-CIDR,172.16.0.0/12,DIRECT'
+    - 'IP-CIDR,192.168.0.0/16,DIRECT'
+    - 'IP-CIDR,10.0.0.0/8,DIRECT'
+    - 'IP-CIDR,17.0.0.0/8,DIRECT'
+    - 'IP-CIDR,100.64.0.0/10,DIRECT'
+    - 'IP-CIDR,224.0.0.0/4,DIRECT'
+    - 'IP-CIDR6,fe80::/10,DIRECT'
+    - 'DOMAIN-SUFFIX,cn,DIRECT'
+    - 'DOMAIN-KEYWORD,-cn,DIRECT'
+    - 'GEOIP,CN,DIRECT'
+    - 'MATCH,✈️自由人VPN机场'
