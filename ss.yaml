@@ -15,33 +15,33 @@ dns:
     fallback: ['https://public.dns.iij.jp/dns-query', 'https://dns.dnswarden.com/uncensored', 'https://sky.rethinkdns.com/dns-query', 'https://0ms.dev/dns-query', 'https://doh.applied-privacy.net/query', 'https://dns.switch.ch/dns-query', 'tls://168.95.1.1:853', 'tls://168.95.192.1:853', 'tls://94.140.14.14:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：499.93 GB', server: aimanman-us.sanguayun.com, port: 22215, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: '距离下次重置剩余：24 天', server: aimanman-us.sanguayun.com, port: 22215, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 套餐到期：2025-04-10, server: aimanman-us.sanguayun.com, port: 22215, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 美国1, server: aimanman-us.sanguayun.com, port: 22215, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 美国2, server: aimanman-us.sanguayun.com, port: 22992, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 美国3, server: aimanman-us.sanguayun.com, port: 22215, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 美国4, server: aimanman-us.sanguayun.com, port: 22013, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 日本1, server: aimanman-jp.sanguayun.com, port: 22931, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 日本2, server: aimanman-jp.sanguayun.com, port: 22011, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 日本3, server: aimanman-jp.sanguayun.com, port: 22267, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 日本4, server: aimanman-jp.sanguayun.com, port: 22013, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 韩国1, server: aimanman-kr.sanguayun.com, port: 22429, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 韩国2, server: aimanman-kr.sanguayun.com, port: 22082, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 韩国3, server: aimanman-kr.sanguayun.com, port: 22663, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 韩国4, server: aimanman-kr.sanguayun.com, port: 22159, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 新加坡1, server: aimanman-sg.sanguayun.com, port: 22107, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 新加坡2, server: aimanman-sg.sanguayun.com, port: 22774, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 新加坡3, server: aimanman-sg.sanguayun.com, port: 22648, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 新加坡4, server: aimanman-sg.sanguayun.com, port: 22521, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 英国1, server: aimanman-uk.sanguayun.com, port: 22222, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 英国2, server: aimanman-uk.sanguayun.com, port: 22354, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 英国3, server: aimanman-uk.sanguayun.com, port: 22498, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
-    - { name: 英国4, server: aimanman-uk.sanguayun.com, port: 22934, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: 2d32e23b-2c51-4559-ac36-3a926e46eda5 }
+    - { name: '剩余流量：500 GB', server: aimanman-us.sanguayun.com, port: 22822, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: '距离下次重置剩余：17 天', server: aimanman-us.sanguayun.com, port: 22822, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 套餐到期：2025-04-10, server: aimanman-us.sanguayun.com, port: 22822, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 美国1, server: aimanman-us.sanguayun.com, port: 22822, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 美国2, server: aimanman-us.sanguayun.com, port: 22681, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 美国3, server: aimanman-us.sanguayun.com, port: 22849, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 美国4, server: aimanman-us.sanguayun.com, port: 22699, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 日本1, server: aimanman-jp.sanguayun.com, port: 22089, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 日本2, server: aimanman-jp.sanguayun.com, port: 22295, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 日本3, server: aimanman-jp.sanguayun.com, port: 22296, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 日本4, server: aimanman-jp.sanguayun.com, port: 22386, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 韩国1, server: aimanman-kr.sanguayun.com, port: 22542, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 韩国2, server: aimanman-kr.sanguayun.com, port: 22025, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 韩国3, server: aimanman-kr.sanguayun.com, port: 22325, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 韩国4, server: aimanman-kr.sanguayun.com, port: 22492, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 新加坡1, server: aimanman-sg.sanguayun.com, port: 22042, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 新加坡2, server: aimanman-sg.sanguayun.com, port: 22545, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 新加坡3, server: aimanman-sg.sanguayun.com, port: 22918, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 新加坡4, server: aimanman-sg.sanguayun.com, port: 22730, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 英国1, server: aimanman-uk.sanguayun.com, port: 22966, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 英国2, server: aimanman-uk.sanguayun.com, port: 22833, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 英国3, server: aimanman-uk.sanguayun.com, port: 22538, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
+    - { name: 英国4, server: aimanman-uk.sanguayun.com, port: 22025, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 22001-22999, type: hysteria2, password: b446b7c3-afbf-4a2e-80cc-6382c0680716 }
 proxy-groups:
-    - { name: 爱满满, type: select, proxies: [自动选择, 故障转移, '剩余流量：499.93 GB', '距离下次重置剩余：24 天', 套餐到期：2025-04-10, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 韩国1, 韩国2, 韩国3, 韩国4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 英国1, 英国2, 英国3, 英国4] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：499.93 GB', '距离下次重置剩余：24 天', 套餐到期：2025-04-10, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 韩国1, 韩国2, 韩国3, 韩国4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 英国1, 英国2, 英国3, 英国4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：499.93 GB', '距离下次重置剩余：24 天', 套餐到期：2025-04-10, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 韩国1, 韩国2, 韩国3, 韩国4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 英国1, 英国2, 英国3, 英国4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 爱满满, type: select, proxies: [自动选择, 故障转移, '剩余流量：500 GB', '距离下次重置剩余：17 天', 套餐到期：2025-04-10, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 韩国1, 韩国2, 韩国3, 韩国4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 英国1, 英国2, 英国3, 英国4] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：500 GB', '距离下次重置剩余：17 天', 套餐到期：2025-04-10, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 韩国1, 韩国2, 韩国3, 韩国4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 英国1, 英国2, 英国3, 英国4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：500 GB', '距离下次重置剩余：17 天', 套餐到期：2025-04-10, 美国1, 美国2, 美国3, 美国4, 日本1, 日本2, 日本3, 日本4, 韩国1, 韩国2, 韩国3, 韩国4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 英国1, 英国2, 英国3, 英国4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN,aimanman.me,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,爱满满'
