@@ -15,25 +15,34 @@ dns:
     fallback: ['https://public.dns.iij.jp/dns-query', 'https://dns.dnswarden.com/uncensored', 'https://sky.rethinkdns.com/dns-query', 'https://0ms.dev/dns-query', 'https://doh.applied-privacy.net/query', 'https://dns.switch.ch/dns-query', 'tls://168.95.1.1:853', 'tls://168.95.192.1:853', 'tls://94.140.14.14:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：500 GB', server: youhui-jp.sanguayun.com, port: 55530, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: '距离下次重置剩余：16 天', server: youhui-jp.sanguayun.com, port: 55530, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: 套餐到期：2025-04-19, server: youhui-jp.sanguayun.com, port: 55530, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: 日本1, server: youhui-jp.sanguayun.com, port: 55530, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: 日本2, server: youhui-jp.sanguayun.com, port: 58260, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: 日本3, server: youhui-jp.sanguayun.com, port: 55276, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: 日本4, server: youhui-jp.sanguayun.com, port: 56720, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: 法国1, server: youhui-fr.sanguayun.com, port: 50872, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: 法国2, server: youhui-fr.sanguayun.com, port: 54264, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: 法国3, server: youhui-fr.sanguayun.com, port: 50524, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: 法国4, server: youhui-fr.sanguayun.com, port: 58673, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: 加拿大1, server: youhui-ca.sanguayun.com, port: 50621, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: 加拿大2, server: youhui-ca.sanguayun.com, port: 59274, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: 加拿大3, server: youhui-ca.sanguayun.com, port: 50107, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
-    - { name: 加拿大4, server: youhui-ca.sanguayun.com, port: 55174, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 2110cdcf-920e-4ddf-a6d3-14b6ba99c273 }
+    - { name: '剩余流量：500 GB', server: youhui-jp.sanguayun.com, port: 52844, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: '距离下次重置剩余：17 天', server: youhui-jp.sanguayun.com, port: 52844, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 套餐到期：2025-04-26, server: youhui-jp.sanguayun.com, port: 52844, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 日本1, server: youhui-jp.sanguayun.com, port: 52844, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 日本2, server: youhui-jp.sanguayun.com, port: 51333, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 日本3, server: youhui-jp.sanguayun.com, port: 57913, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 日本4, server: youhui-jp.sanguayun.com, port: 50403, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 法国1, server: youhui-fr.sanguayun.com, port: 50637, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 法国2, server: youhui-fr.sanguayun.com, port: 59375, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 法国3, server: youhui-fr.sanguayun.com, port: 57169, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 法国4, server: youhui-fr.sanguayun.com, port: 59724, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 加拿大1, server: youhui-ca.sanguayun.com, port: 55450, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 加拿大2, server: youhui-ca.sanguayun.com, port: 53807, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 加拿大3, server: youhui-ca.sanguayun.com, port: 53872, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 加拿大4, server: youhui-ca.sanguayun.com, port: 57459, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 伊拉克1, server: youhui-iq.sanguayun.com, port: 53457, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 伊拉克2, server: youhui-iq.sanguayun.com, port: 52967, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 伊拉克3, server: youhui-iq.sanguayun.com, port: 56736, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 伊拉克4, server: youhui-iq.sanguayun.com, port: 58947, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 美国1, server: youhui-us.sanguayun.com, port: 57511, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 美国2, server: youhui-us.sanguayun.com, port: 58624, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 美国3, server: youhui-us.sanguayun.com, port: 51547, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 美国4, server: youhui-us.sanguayun.com, port: 54211, sni: null, up: 1000, down: 1000, skip-cert-verify: false, ports: 50001-59999, type: hysteria2, password: 684acbd6-dbba-439b-958e-398a346a3790 }
+    - { name: 美国测试, type: ss, server: yige-jp.sanguayun.com, port: 8081, cipher: 2022-blake3-aes-256-gcm, password: 'NDFmZTkwYWVjYWQxY2VmYWNlNDg1ODU0M2FiZTE4ODg=:Njg0YWNiZDYtZGJiYS00MzliLTk1OGUtMzk4YTM0NmE=', udp: true }
 proxy-groups:
-    - { name: 优惠机场, type: select, proxies: [自动选择, 故障转移, '剩余流量：500 GB', '距离下次重置剩余：16 天', 套餐到期：2025-04-19, 日本1, 日本2, 日本3, 日本4, 法国1, 法国2, 法国3, 法国4, 加拿大1, 加拿大2, 加拿大3, 加拿大4] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：500 GB', '距离下次重置剩余：16 天', 套餐到期：2025-04-19, 日本1, 日本2, 日本3, 日本4, 法国1, 法国2, 法国3, 法国4, 加拿大1, 加拿大2, 加拿大3, 加拿大4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：500 GB', '距离下次重置剩余：16 天', 套餐到期：2025-04-19, 日本1, 日本2, 日本3, 日本4, 法国1, 法国2, 法国3, 法国4, 加拿大1, 加拿大2, 加拿大3, 加拿大4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 优惠机场, type: select, proxies: [自动选择, 故障转移, '剩余流量：500 GB', '距离下次重置剩余：17 天', 套餐到期：2025-04-26, 日本1, 日本2, 日本3, 日本4, 法国1, 法国2, 法国3, 法国4, 加拿大1, 加拿大2, 加拿大3, 加拿大4, 伊拉克1, 伊拉克2, 伊拉克3, 伊拉克4, 美国1, 美国2, 美国3, 美国4, 美国测试] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：500 GB', '距离下次重置剩余：17 天', 套餐到期：2025-04-26, 日本1, 日本2, 日本3, 日本4, 法国1, 法国2, 法国3, 法国4, 加拿大1, 加拿大2, 加拿大3, 加拿大4, 伊拉克1, 伊拉克2, 伊拉克3, 伊拉克4, 美国1, 美国2, 美国3, 美国4, 美国测试], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：500 GB', '距离下次重置剩余：17 天', 套餐到期：2025-04-26, 日本1, 日本2, 日本3, 日本4, 法国1, 法国2, 法国3, 法国4, 加拿大1, 加拿大2, 加拿大3, 加拿大4, 伊拉克1, 伊拉克2, 伊拉克3, 伊拉克4, 美国1, 美国2, 美国3, 美国4, 美国测试], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN,xn--4oq11ryli3rg.com,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,优惠机场'
