@@ -9,7 +9,7 @@ p: &p {type: http, interval: 3600, health-check: {enable: true, url: "https://ww
 proxy-providers:
   provider1:
     <<: *p
-    url: "https://raw.githubusercontent.com/cxr9912/cxr2022/refs/heads/main/cxr2022.yml"
+    url: "https://raw.githubusercontent.com/cxr9912/cxr2022/refs/heads/main/epc.yml"
   provider2:
     <<: *p
     url: "https://sanguayun.jiumaojiu.net/s/2d360090a8de4139c"
