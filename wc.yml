@@ -1,559 +1,164 @@
-mixed-port: 7890
+######### 锚点 start #######
+# 策略组相关
+pr: &pr {type: select, proxies: [默认, 香港, 香港自动选择, 台湾, 台湾自动选择, 日本, 日本自动选择, 新加坡, 新加坡自动选择, 美国, 美国自动选择, 其它地区, 全部节点, 自动选择, 直连]}
+#这里是订阅更新和延迟测试相关的
+p: &p {type: http, interval: 3600, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300}}
+######### 锚点 end #######
+
+# url 里填写自己的订阅,名称不能重复
+proxy-providers:
+  provider1:
+    <<: *p
+    url: "https://sub.xn--4gqvd492adjr.com/s/6a401b142084ee1cbae1251e76f25118"
+  provider2:
+    <<: *p
+    url: "https://sub.mogufan.com/s/48bf81a9b1ec4f10b7e14576bdfe131f"
+provider3:
+    <<: *p
+    url: "https://bakconntoserver.nuomi.info/search?token=ad8d88146901a52189dde3fdc6341245"
+ipv6: true
 allow-lan: true
-bind-address: '*'
-mode: rule
-log-level: info
-external-controller: '127.0.0.1:9090'
+mixed-port: 7890
+external-controller: 127.0.0.1:9090
+profile:
+  store-selected: true
+  store-fake-ip: true
 dns:
-    enable: true
-    ipv6: false
-    default-nameserver: [223.5.5.5, 119.29.29.29]
-    enhanced-mode: fake-ip
-    fake-ip-range: 198.18.0.1/16
-    use-hosts: true
-    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
-    fallback: ['https://public.dns.iij.jp/dns-query', 'https://dns.dnswarden.com/uncensored', 'https://sky.rethinkdns.com/dns-query', 'https://0ms.dev/dns-query', 'https://doh.applied-privacy.net/query', 'https://dns.switch.ch/dns-query', 'tls://168.95.1.1:853', 'tls://168.95.192.1:853', 'tls://94.140.14.14:853']
-    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+  enable: true
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 28.0.0.1/8
+  fake-ip-filter:
+    - "*"
+    - "+.lan"
+    - "+.local"
+  default-nameserver:
+    - 223.5.5.5
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+
 proxies:
-    - { name: '剩余流量：414.95 GB', type: vless, server: yige-jp.sanguayun.com, port: 32069, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: chrome }
-    - { name: '距离下次重置剩余：22 天', type: vless, server: yige-jp.sanguayun.com, port: 32069, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: qq }
-    - { name: 套餐到期：2025-05-02, type: vless, server: yige-jp.sanguayun.com, port: 32069, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: chrome }
-    - { name: 日本1, type: vless, server: yige-jp.sanguayun.com, port: 32069, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: edge }
-    - { name: 日本2, type: vless, server: yige-jp.sanguayun.com, port: 32834, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: qq }
-    - { name: 日本3, type: vless, server: yige-jp.sanguayun.com, port: 32038, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: edge }
-    - { name: 日本4, type: vless, server: yige-jp.sanguayun.com, port: 32937, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: chrome }
-    - { name: 韩国1, type: vless, server: yige-kr.sanguayun.com, port: 32750, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: ios }
-    - { name: 韩国2, type: vless, server: yige-kr.sanguayun.com, port: 32054, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: ios }
-    - { name: 韩国3, type: vless, server: yige-kr.sanguayun.com, port: 32283, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: qq }
-    - { name: 韩国4, type: vless, server: yige-kr.sanguayun.com, port: 32329, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: edge }
-    - { name: 新加坡1, type: vless, server: yige-sg.sanguayun.com, port: 32669, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: chrome }
-    - { name: 新加坡2, type: vless, server: yige-sg.sanguayun.com, port: 32891, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: qq }
-    - { name: 新加坡3, type: vless, server: yige-sg.sanguayun.com, port: 32786, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: firefox }
-    - { name: 新加坡4, type: vless, server: yige-sg.sanguayun.com, port: 32940, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: qq }
-    - { name: 美国1, type: vless, server: yige-us.sanguayun.com, port: 32015, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: edge }
-    - { name: 美国2, type: vless, server: yige-us.sanguayun.com, port: 32116, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: firefox }
-    - { name: 美国3, type: vless, server: yige-us.sanguayun.com, port: 32386, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: qq }
-    - { name: 美国4, type: vless, server: yige-us.sanguayun.com, port: 32657, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: safari }
-    - { name: 英国1, type: vless, server: yige-uk.sanguayun.com, port: 32039, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: ios }
-    - { name: 英国2, type: vless, server: yige-uk.sanguayun.com, port: 32731, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: firefox }
-    - { name: 英国3, type: vless, server: yige-uk.sanguayun.com, port: 32756, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: qq }
-    - { name: 英国4, type: vless, server: yige-uk.sanguayun.com, port: 32737, uuid: 01fbc910-da78-4ebf-9b4b-fdb9aeebcabd, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, servername: s0.awsstatic.com, reality-opts: { public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU, short-id: null }, client-fingerprint: edge }
+- name: "直连"
+  type: direct
+  udp: true
 proxy-groups:
-    - { name: 一个机场, type: select, proxies: [自动选择, 故障转移, '剩余流量：414.95 GB', '距离下次重置剩余：22 天', 套餐到期：2025-05-02, 日本1, 日本2, 日本3, 日本4, 韩国1, 韩国2, 韩国3, 韩国4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 美国1, 美国2, 美国3, 美国4, 英国1, 英国2, 英国3, 英国4] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：414.95 GB', '距离下次重置剩余：22 天', 套餐到期：2025-05-02, 日本1, 日本2, 日本3, 日本4, 韩国1, 韩国2, 韩国3, 韩国4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 美国1, 美国2, 美国3, 美国4, 英国1, 英国2, 英国3, 英国4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：414.95 GB', '距离下次重置剩余：22 天', 套餐到期：2025-05-02, 日本1, 日本2, 日本3, 日本4, 韩国1, 韩国2, 韩国3, 韩国4, 新加坡1, 新加坡2, 新加坡3, 新加坡4, 美国1, 美国2, 美国3, 美国4, 英国1, 英国2, 英国3, 英国4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+- {name: 默认, type: select, proxies: [自动选择, 直连, 香港, 香港自动选择, 台湾, 台湾自动选择, 日本, 日本自动选择, 新加坡, 新加坡自动选择, 美国, 美国自动选择, 其它地区, 全部节点], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Proxy.png"}
+- {name: Google, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Google_Search.png"}
+- {name: Apple, <<: *pr, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Apple.png}
+- {name: Telegram, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Telegram.png"}
+- {name: Twitter, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Twitter.png"}
+- {name: ehentai, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Panda.png"}
+- {name: 哔哩哔哩, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/bilibili.png"}
+- {name: 哔哩东南亚, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/bilibili.png"}
+- {name: 巴哈姆特, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Bahamut.png"}
+- {name: YouTube, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/YouTube.png"}
+- {name: NETFLIX, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Netflix.png"}
+- {name: Spotify, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Spotify.png"}
+- {name: 国内, type: select, proxies: [直连, 默认, 香港, 香港自动选择, 台湾, 台湾自动选择, 日本, 日本自动选择, 新加坡, 新加坡自动选择, 美国, 美国自动选择, 其它地区, 全部节点, 自动选择], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/China_Map.png"}
+- {name: 其他, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Final.png"}
+  #分隔,下面是地区分组
+- {name: 香港, type: select, include-all: true, filter: "(?i)(?!直连)(港|hk|hongkong|hong kong)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/HK.png"}
+- {name: 台湾, type: select, include-all: true, filter: "(?i)(?!直连)(台|tw|taiwan)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/TW.png"}
+- {name: 日本, type: select, include-all: true, filter: "(?i)(?!直连)(日|jp|japan)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/JP.png"}
+- {name: 美国, type: select, include-all: true, filter: "(?i)(?!直连)(美|us|unitedstates|united states)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/US.png"}
+- {name: 新加坡, type: select, include-all: true, filter: "(?i)(?!直连)(新|sg|singapore)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/SG.png"}
+- {name: 其它地区, type: select, include-all: true, filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates|直连)).*", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Available.png"}
+- {name: 自动选择, type: url-test, include-all: true, tolerance: 10, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Auto.png"}
+- {name: 全部节点, type: select, include-all: true, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Global.png"}
+
+- {name: 香港自动选择,type: url-test, include-all: true, filter: "(?i)(?!直连)(港|hk|hongkong|hong kong)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/HK.png"}
+- {name: 台湾自动选择,type: url-test, include-all: true, filter: "(?i)(?!直连)(台|tw|taiwan)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/TW.png"}
+- {name: 日本自动选择,type: url-test, include-all: true, filter: "(?i)(?!直连)(日|jp|japan)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/JP.png"}
+- {name: 美国自动选择,type: url-test, include-all: true, filter: "(?i)(?!直连)(美|us|unitedstates|united states)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/US.png"}
+- {name: 新加坡自动选择,type: url-test, include-all: true, filter: "(?i)(新|sg|singapore)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/SG.png"}
+
 rules:
-    - 'DOMAIN,66.55.76.185:8005,DIRECT'
-    - 'DOMAIN-SUFFIX,services.googleapis.cn,一个机场'
-    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,一个机场'
-    - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
-    - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
-    - 'DOMAIN,developer.apple.com,一个机场'
-    - 'DOMAIN-SUFFIX,digicert.com,一个机场'
-    - 'DOMAIN,ocsp.apple.com,一个机场'
-    - 'DOMAIN,ocsp.comodoca.com,一个机场'
-    - 'DOMAIN,ocsp.usertrust.com,一个机场'
-    - 'DOMAIN,ocsp.sectigo.com,一个机场'
-    - 'DOMAIN,ocsp.verisign.net,一个机场'
-    - 'DOMAIN-SUFFIX,apple-dns.net,一个机场'
-    - 'DOMAIN,testflight.apple.com,一个机场'
-    - 'DOMAIN,sandbox.itunes.apple.com,一个机场'
-    - 'DOMAIN,itunes.apple.com,一个机场'
-    - 'DOMAIN-SUFFIX,apps.apple.com,一个机场'
-    - 'DOMAIN-SUFFIX,blobstore.apple.com,一个机场'
-    - 'DOMAIN,cvws.icloud-content.com,一个机场'
-    - 'DOMAIN-SUFFIX,mzstatic.com,DIRECT'
-    - 'DOMAIN-SUFFIX,itunes.apple.com,DIRECT'
-    - 'DOMAIN-SUFFIX,icloud.com,DIRECT'
-    - 'DOMAIN-SUFFIX,icloud-content.com,DIRECT'
-    - 'DOMAIN-SUFFIX,me.com,DIRECT'
-    - 'DOMAIN-SUFFIX,aaplimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cdn20.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cdn-apple.com,DIRECT'
-    - 'DOMAIN-SUFFIX,akadns.net,DIRECT'
-    - 'DOMAIN-SUFFIX,akamaiedge.net,DIRECT'
-    - 'DOMAIN-SUFFIX,edgekey.net,DIRECT'
-    - 'DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,mwcname.com,DIRECT'
-    - 'DOMAIN-SUFFIX,apple.com,DIRECT'
-    - 'DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT'
-    - 'DOMAIN-SUFFIX,apple-mapkit.com,DIRECT'
-    - 'DOMAIN-SUFFIX,126.com,DIRECT'
-    - 'DOMAIN-SUFFIX,126.net,DIRECT'
-    - 'DOMAIN-SUFFIX,127.net,DIRECT'
-    - 'DOMAIN-SUFFIX,163.com,DIRECT'
-    - 'DOMAIN-SUFFIX,360buyimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,36kr.com,DIRECT'
-    - 'DOMAIN-SUFFIX,acfun.tv,DIRECT'
-    - 'DOMAIN-SUFFIX,air-matters.com,DIRECT'
-    - 'DOMAIN-SUFFIX,aixifan.com,DIRECT'
-    - 'DOMAIN-KEYWORD,alicdn,DIRECT'
-    - 'DOMAIN-KEYWORD,alipay,DIRECT'
-    - 'DOMAIN-KEYWORD,taobao,DIRECT'
-    - 'DOMAIN-SUFFIX,amap.com,DIRECT'
-    - 'DOMAIN-SUFFIX,autonavi.com,DIRECT'
-    - 'DOMAIN-KEYWORD,baidu,DIRECT'
-    - 'DOMAIN-SUFFIX,bdimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,bdstatic.com,DIRECT'
-    - 'DOMAIN-SUFFIX,bilibili.com,DIRECT'
-    - 'DOMAIN-SUFFIX,bilivideo.com,DIRECT'
-    - 'DOMAIN-SUFFIX,caiyunapp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,clouddn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cnbeta.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cnbetacdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cootekservice.com,DIRECT'
-    - 'DOMAIN-SUFFIX,csdn.net,DIRECT'
-    - 'DOMAIN-SUFFIX,ctrip.com,DIRECT'
-    - 'DOMAIN-SUFFIX,dgtle.com,DIRECT'
-    - 'DOMAIN-SUFFIX,dianping.com,DIRECT'
-    - 'DOMAIN-SUFFIX,douban.com,DIRECT'
-    - 'DOMAIN-SUFFIX,doubanio.com,DIRECT'
-    - 'DOMAIN-SUFFIX,duokan.com,DIRECT'
-    - 'DOMAIN-SUFFIX,easou.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ele.me,DIRECT'
-    - 'DOMAIN-SUFFIX,feng.com,DIRECT'
-    - 'DOMAIN-SUFFIX,fir.im,DIRECT'
-    - 'DOMAIN-SUFFIX,frdic.com,DIRECT'
-    - 'DOMAIN-SUFFIX,g-cores.com,DIRECT'
-    - 'DOMAIN-SUFFIX,godic.net,DIRECT'
-    - 'DOMAIN-SUFFIX,gtimg.com,DIRECT'
-    - 'DOMAIN,cdn.hockeyapp.net,DIRECT'
-    - 'DOMAIN-SUFFIX,hongxiu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,hxcdn.net,DIRECT'
-    - 'DOMAIN-SUFFIX,iciba.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ifeng.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ifengimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ipip.net,DIRECT'
-    - 'DOMAIN-SUFFIX,iqiyi.com,DIRECT'
-    - 'DOMAIN-SUFFIX,jd.com,DIRECT'
-    - 'DOMAIN-SUFFIX,jianshu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,knewone.com,DIRECT'
-    - 'DOMAIN-SUFFIX,le.com,DIRECT'
-    - 'DOMAIN-SUFFIX,lecloud.com,DIRECT'
-    - 'DOMAIN-SUFFIX,lemicp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,licdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,luoo.net,DIRECT'
-    - 'DOMAIN-SUFFIX,meituan.com,DIRECT'
-    - 'DOMAIN-SUFFIX,meituan.net,DIRECT'
-    - 'DOMAIN-SUFFIX,mi.com,DIRECT'
-    - 'DOMAIN-SUFFIX,miaopai.com,DIRECT'
-    - 'DOMAIN-SUFFIX,microsoft.com,DIRECT'
-    - 'DOMAIN-SUFFIX,microsoftonline.com,DIRECT'
-    - 'DOMAIN-SUFFIX,miui.com,DIRECT'
-    - 'DOMAIN-SUFFIX,miwifi.com,DIRECT'
-    - 'DOMAIN-SUFFIX,mob.com,DIRECT'
-    - 'DOMAIN-SUFFIX,netease.com,DIRECT'
-    - 'DOMAIN-SUFFIX,office.com,DIRECT'
-    - 'DOMAIN-SUFFIX,office365.com,DIRECT'
-    - 'DOMAIN-KEYWORD,officecdn,DIRECT'
-    - 'DOMAIN-SUFFIX,oschina.net,DIRECT'
-    - 'DOMAIN-SUFFIX,ppsimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,pstatp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qcloud.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qdaily.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qdmm.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qhimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qhres.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qidian.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qihucdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qiniu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qiniucdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qiyipic.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qq.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qqurl.com,DIRECT'
-    - 'DOMAIN-SUFFIX,rarbg.to,DIRECT'
-    - 'DOMAIN-SUFFIX,ruguoapp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,segmentfault.com,DIRECT'
-    - 'DOMAIN-SUFFIX,sinaapp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,smzdm.com,DIRECT'
-    - 'DOMAIN-SUFFIX,snapdrop.net,DIRECT'
-    - 'DOMAIN-SUFFIX,sogou.com,DIRECT'
-    - 'DOMAIN-SUFFIX,sogoucdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,sohu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,soku.com,DIRECT'
-    - 'DOMAIN-SUFFIX,speedtest.net,DIRECT'
-    - 'DOMAIN-SUFFIX,sspai.com,DIRECT'
-    - 'DOMAIN-SUFFIX,suning.com,DIRECT'
-    - 'DOMAIN-SUFFIX,taobao.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tencent.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tenpay.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tianyancha.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tmall.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tudou.com,DIRECT'
-    - 'DOMAIN-SUFFIX,umetrip.com,DIRECT'
-    - 'DOMAIN-SUFFIX,upaiyun.com,DIRECT'
-    - 'DOMAIN-SUFFIX,upyun.com,DIRECT'
-    - 'DOMAIN-SUFFIX,veryzhun.com,DIRECT'
-    - 'DOMAIN-SUFFIX,weather.com,DIRECT'
-    - 'DOMAIN-SUFFIX,weibo.com,DIRECT'
-    - 'DOMAIN-SUFFIX,xiami.com,DIRECT'
-    - 'DOMAIN-SUFFIX,xiami.net,DIRECT'
-    - 'DOMAIN-SUFFIX,xiaomicp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ximalaya.com,DIRECT'
-    - 'DOMAIN-SUFFIX,xmcdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,xunlei.com,DIRECT'
-    - 'DOMAIN-SUFFIX,yhd.com,DIRECT'
-    - 'DOMAIN-SUFFIX,yihaodianimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,yinxiang.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ykimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,youdao.com,DIRECT'
-    - 'DOMAIN-SUFFIX,youku.com,DIRECT'
-    - 'DOMAIN-SUFFIX,zealer.com,DIRECT'
-    - 'DOMAIN-SUFFIX,zhihu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,zhimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,zimuzu.tv,DIRECT'
-    - 'DOMAIN-SUFFIX,zoho.com,DIRECT'
-    - 'DOMAIN-KEYWORD,amazon,一个机场'
-    - 'DOMAIN-KEYWORD,google,一个机场'
-    - 'DOMAIN-KEYWORD,gmail,一个机场'
-    - 'DOMAIN-KEYWORD,youtube,一个机场'
-    - 'DOMAIN-KEYWORD,facebook,一个机场'
-    - 'DOMAIN-SUFFIX,fb.me,一个机场'
-    - 'DOMAIN-SUFFIX,fbcdn.net,一个机场'
-    - 'DOMAIN-KEYWORD,twitter,一个机场'
-    - 'DOMAIN-KEYWORD,instagram,一个机场'
-    - 'DOMAIN-KEYWORD,dropbox,一个机场'
-    - 'DOMAIN-SUFFIX,twimg.com,一个机场'
-    - 'DOMAIN-KEYWORD,blogspot,一个机场'
-    - 'DOMAIN-SUFFIX,youtu.be,一个机场'
-    - 'DOMAIN-KEYWORD,whatsapp,一个机场'
-    - 'DOMAIN-KEYWORD,admarvel,REJECT'
-    - 'DOMAIN-KEYWORD,admaster,REJECT'
-    - 'DOMAIN-KEYWORD,adsage,REJECT'
-    - 'DOMAIN-KEYWORD,adsmogo,REJECT'
-    - 'DOMAIN-KEYWORD,adsrvmedia,REJECT'
-    - 'DOMAIN-KEYWORD,adwords,REJECT'
-    - 'DOMAIN-KEYWORD,adservice,REJECT'
-    - 'DOMAIN-SUFFIX,appsflyer.com,REJECT'
-    - 'DOMAIN-KEYWORD,domob,REJECT'
-    - 'DOMAIN-SUFFIX,doubleclick.net,REJECT'
-    - 'DOMAIN-KEYWORD,duomeng,REJECT'
-    - 'DOMAIN-KEYWORD,dwtrack,REJECT'
-    - 'DOMAIN-KEYWORD,guanggao,REJECT'
-    - 'DOMAIN-KEYWORD,lianmeng,REJECT'
-    - 'DOMAIN-SUFFIX,mmstat.com,REJECT'
-    - 'DOMAIN-KEYWORD,mopub,REJECT'
-    - 'DOMAIN-KEYWORD,omgmta,REJECT'
-    - 'DOMAIN-KEYWORD,openx,REJECT'
-    - 'DOMAIN-KEYWORD,partnerad,REJECT'
-    - 'DOMAIN-KEYWORD,pingfore,REJECT'
-    - 'DOMAIN-KEYWORD,supersonicads,REJECT'
-    - 'DOMAIN-KEYWORD,uedas,REJECT'
-    - 'DOMAIN-KEYWORD,umeng,REJECT'
-    - 'DOMAIN-KEYWORD,usage,REJECT'
-    - 'DOMAIN-SUFFIX,vungle.com,REJECT'
-    - 'DOMAIN-KEYWORD,wlmonitor,REJECT'
-    - 'DOMAIN-KEYWORD,zjtoolbar,REJECT'
-    - 'DOMAIN-SUFFIX,9to5mac.com,一个机场'
-    - 'DOMAIN-SUFFIX,abpchina.org,一个机场'
-    - 'DOMAIN-SUFFIX,adblockplus.org,一个机场'
-    - 'DOMAIN-SUFFIX,adobe.com,一个机场'
-    - 'DOMAIN-SUFFIX,akamaized.net,一个机场'
-    - 'DOMAIN-SUFFIX,alfredapp.com,一个机场'
-    - 'DOMAIN-SUFFIX,amplitude.com,一个机场'
-    - 'DOMAIN-SUFFIX,ampproject.org,一个机场'
-    - 'DOMAIN-SUFFIX,android.com,一个机场'
-    - 'DOMAIN-SUFFIX,angularjs.org,一个机场'
-    - 'DOMAIN-SUFFIX,aolcdn.com,一个机场'
-    - 'DOMAIN-SUFFIX,apkpure.com,一个机场'
-    - 'DOMAIN-SUFFIX,appledaily.com,一个机场'
-    - 'DOMAIN-SUFFIX,appshopper.com,一个机场'
-    - 'DOMAIN-SUFFIX,appspot.com,一个机场'
-    - 'DOMAIN-SUFFIX,arcgis.com,一个机场'
-    - 'DOMAIN-SUFFIX,archive.org,一个机场'
-    - 'DOMAIN-SUFFIX,armorgames.com,一个机场'
-    - 'DOMAIN-SUFFIX,aspnetcdn.com,一个机场'
-    - 'DOMAIN-SUFFIX,att.com,一个机场'
-    - 'DOMAIN-SUFFIX,awsstatic.com,一个机场'
-    - 'DOMAIN-SUFFIX,azureedge.net,一个机场'
-    - 'DOMAIN-SUFFIX,azurewebsites.net,一个机场'
-    - 'DOMAIN-SUFFIX,bing.com,一个机场'
-    - 'DOMAIN-SUFFIX,bintray.com,一个机场'
-    - 'DOMAIN-SUFFIX,bit.com,一个机场'
-    - 'DOMAIN-SUFFIX,bit.ly,一个机场'
-    - 'DOMAIN-SUFFIX,bitbucket.org,一个机场'
-    - 'DOMAIN-SUFFIX,bjango.com,一个机场'
-    - 'DOMAIN-SUFFIX,bkrtx.com,一个机场'
-    - 'DOMAIN-SUFFIX,blog.com,一个机场'
-    - 'DOMAIN-SUFFIX,blogcdn.com,一个机场'
-    - 'DOMAIN-SUFFIX,blogger.com,一个机场'
-    - 'DOMAIN-SUFFIX,blogsmithmedia.com,一个机场'
-    - 'DOMAIN-SUFFIX,blogspot.com,一个机场'
-    - 'DOMAIN-SUFFIX,blogspot.hk,一个机场'
-    - 'DOMAIN-SUFFIX,bloomberg.com,一个机场'
-    - 'DOMAIN-SUFFIX,box.com,一个机场'
-    - 'DOMAIN-SUFFIX,box.net,一个机场'
-    - 'DOMAIN-SUFFIX,cachefly.net,一个机场'
-    - 'DOMAIN-SUFFIX,chromium.org,一个机场'
-    - 'DOMAIN-SUFFIX,cl.ly,一个机场'
-    - 'DOMAIN-SUFFIX,cloudflare.com,一个机场'
-    - 'DOMAIN-SUFFIX,cloudfront.net,一个机场'
-    - 'DOMAIN-SUFFIX,cloudmagic.com,一个机场'
-    - 'DOMAIN-SUFFIX,cmail19.com,一个机场'
-    - 'DOMAIN-SUFFIX,cnet.com,一个机场'
-    - 'DOMAIN-SUFFIX,cocoapods.org,一个机场'
-    - 'DOMAIN-SUFFIX,comodoca.com,一个机场'
-    - 'DOMAIN-SUFFIX,crashlytics.com,一个机场'
-    - 'DOMAIN-SUFFIX,culturedcode.com,一个机场'
-    - 'DOMAIN-SUFFIX,d.pr,一个机场'
-    - 'DOMAIN-SUFFIX,danilo.to,一个机场'
-    - 'DOMAIN-SUFFIX,dayone.me,一个机场'
-    - 'DOMAIN-SUFFIX,db.tt,一个机场'
-    - 'DOMAIN-SUFFIX,deskconnect.com,一个机场'
-    - 'DOMAIN-SUFFIX,disq.us,一个机场'
-    - 'DOMAIN-SUFFIX,disqus.com,一个机场'
-    - 'DOMAIN-SUFFIX,disquscdn.com,一个机场'
-    - 'DOMAIN-SUFFIX,dnsimple.com,一个机场'
-    - 'DOMAIN-SUFFIX,docker.com,一个机场'
-    - 'DOMAIN-SUFFIX,dribbble.com,一个机场'
-    - 'DOMAIN-SUFFIX,droplr.com,一个机场'
-    - 'DOMAIN-SUFFIX,duckduckgo.com,一个机场'
-    - 'DOMAIN-SUFFIX,dueapp.com,一个机场'
-    - 'DOMAIN-SUFFIX,dytt8.net,一个机场'
-    - 'DOMAIN-SUFFIX,edgecastcdn.net,一个机场'
-    - 'DOMAIN-SUFFIX,edgekey.net,一个机场'
-    - 'DOMAIN-SUFFIX,edgesuite.net,一个机场'
-    - 'DOMAIN-SUFFIX,engadget.com,一个机场'
-    - 'DOMAIN-SUFFIX,entrust.net,一个机场'
-    - 'DOMAIN-SUFFIX,eurekavpt.com,一个机场'
-    - 'DOMAIN-SUFFIX,evernote.com,一个机场'
-    - 'DOMAIN-SUFFIX,fabric.io,一个机场'
-    - 'DOMAIN-SUFFIX,fast.com,一个机场'
-    - 'DOMAIN-SUFFIX,fastly.net,一个机场'
-    - 'DOMAIN-SUFFIX,fc2.com,一个机场'
-    - 'DOMAIN-SUFFIX,feedburner.com,一个机场'
-    - 'DOMAIN-SUFFIX,feedly.com,一个机场'
-    - 'DOMAIN-SUFFIX,feedsportal.com,一个机场'
-    - 'DOMAIN-SUFFIX,fiftythree.com,一个机场'
-    - 'DOMAIN-SUFFIX,firebaseio.com,一个机场'
-    - 'DOMAIN-SUFFIX,flexibits.com,一个机场'
-    - 'DOMAIN-SUFFIX,flickr.com,一个机场'
-    - 'DOMAIN-SUFFIX,flipboard.com,一个机场'
-    - 'DOMAIN-SUFFIX,g.co,一个机场'
-    - 'DOMAIN-SUFFIX,gabia.net,一个机场'
-    - 'DOMAIN-SUFFIX,geni.us,一个机场'
-    - 'DOMAIN-SUFFIX,gfx.ms,一个机场'
-    - 'DOMAIN-SUFFIX,ggpht.com,一个机场'
-    - 'DOMAIN-SUFFIX,ghostnoteapp.com,一个机场'
-    - 'DOMAIN-SUFFIX,git.io,一个机场'
-    - 'DOMAIN-KEYWORD,github,一个机场'
-    - 'DOMAIN-SUFFIX,globalsign.com,一个机场'
-    - 'DOMAIN-SUFFIX,gmodules.com,一个机场'
-    - 'DOMAIN-SUFFIX,godaddy.com,一个机场'
-    - 'DOMAIN-SUFFIX,golang.org,一个机场'
-    - 'DOMAIN-SUFFIX,gongm.in,一个机场'
-    - 'DOMAIN-SUFFIX,goo.gl,一个机场'
-    - 'DOMAIN-SUFFIX,goodreaders.com,一个机场'
-    - 'DOMAIN-SUFFIX,goodreads.com,一个机场'
-    - 'DOMAIN-SUFFIX,gravatar.com,一个机场'
-    - 'DOMAIN-SUFFIX,gstatic.com,一个机场'
-    - 'DOMAIN-SUFFIX,gvt0.com,一个机场'
-    - 'DOMAIN-SUFFIX,hockeyapp.net,一个机场'
-    - 'DOMAIN-SUFFIX,hotmail.com,一个机场'
-    - 'DOMAIN-SUFFIX,icons8.com,一个机场'
-    - 'DOMAIN-SUFFIX,ifixit.com,一个机场'
-    - 'DOMAIN-SUFFIX,ift.tt,一个机场'
-    - 'DOMAIN-SUFFIX,ifttt.com,一个机场'
-    - 'DOMAIN-SUFFIX,iherb.com,一个机场'
-    - 'DOMAIN-SUFFIX,imageshack.us,一个机场'
-    - 'DOMAIN-SUFFIX,img.ly,一个机场'
-    - 'DOMAIN-SUFFIX,imgur.com,一个机场'
-    - 'DOMAIN-SUFFIX,imore.com,一个机场'
-    - 'DOMAIN-SUFFIX,instapaper.com,一个机场'
-    - 'DOMAIN-SUFFIX,ipn.li,一个机场'
-    - 'DOMAIN-SUFFIX,is.gd,一个机场'
-    - 'DOMAIN-SUFFIX,issuu.com,一个机场'
-    - 'DOMAIN-SUFFIX,itgonglun.com,一个机场'
-    - 'DOMAIN-SUFFIX,itun.es,一个机场'
-    - 'DOMAIN-SUFFIX,ixquick.com,一个机场'
-    - 'DOMAIN-SUFFIX,j.mp,一个机场'
-    - 'DOMAIN-SUFFIX,js.revsci.net,一个机场'
-    - 'DOMAIN-SUFFIX,jshint.com,一个机场'
-    - 'DOMAIN-SUFFIX,jtvnw.net,一个机场'
-    - 'DOMAIN-SUFFIX,justgetflux.com,一个机场'
-    - 'DOMAIN-SUFFIX,kat.cr,一个机场'
-    - 'DOMAIN-SUFFIX,klip.me,一个机场'
-    - 'DOMAIN-SUFFIX,libsyn.com,一个机场'
-    - 'DOMAIN-SUFFIX,linkedin.com,一个机场'
-    - 'DOMAIN-SUFFIX,line-apps.com,一个机场'
-    - 'DOMAIN-SUFFIX,linode.com,一个机场'
-    - 'DOMAIN-SUFFIX,lithium.com,一个机场'
-    - 'DOMAIN-SUFFIX,littlehj.com,一个机场'
-    - 'DOMAIN-SUFFIX,live.com,一个机场'
-    - 'DOMAIN-SUFFIX,live.net,一个机场'
-    - 'DOMAIN-SUFFIX,livefilestore.com,一个机场'
-    - 'DOMAIN-SUFFIX,llnwd.net,一个机场'
-    - 'DOMAIN-SUFFIX,macid.co,一个机场'
-    - 'DOMAIN-SUFFIX,macromedia.com,一个机场'
-    - 'DOMAIN-SUFFIX,macrumors.com,一个机场'
-    - 'DOMAIN-SUFFIX,mashable.com,一个机场'
-    - 'DOMAIN-SUFFIX,mathjax.org,一个机场'
-    - 'DOMAIN-SUFFIX,medium.com,一个机场'
-    - 'DOMAIN-SUFFIX,mega.co.nz,一个机场'
-    - 'DOMAIN-SUFFIX,mega.nz,一个机场'
-    - 'DOMAIN-SUFFIX,megaupload.com,一个机场'
-    - 'DOMAIN-SUFFIX,microsofttranslator.com,一个机场'
-    - 'DOMAIN-SUFFIX,mindnode.com,一个机场'
-    - 'DOMAIN-SUFFIX,mobile01.com,一个机场'
-    - 'DOMAIN-SUFFIX,modmyi.com,一个机场'
-    - 'DOMAIN-SUFFIX,msedge.net,一个机场'
-    - 'DOMAIN-SUFFIX,myfontastic.com,一个机场'
-    - 'DOMAIN-SUFFIX,name.com,一个机场'
-    - 'DOMAIN-SUFFIX,nextmedia.com,一个机场'
-    - 'DOMAIN-SUFFIX,nsstatic.net,一个机场'
-    - 'DOMAIN-SUFFIX,nssurge.com,一个机场'
-    - 'DOMAIN-SUFFIX,nyt.com,一个机场'
-    - 'DOMAIN-SUFFIX,nytimes.com,一个机场'
-    - 'DOMAIN-SUFFIX,omnigroup.com,一个机场'
-    - 'DOMAIN-SUFFIX,onedrive.com,一个机场'
-    - 'DOMAIN-SUFFIX,onenote.com,一个机场'
-    - 'DOMAIN-SUFFIX,ooyala.com,一个机场'
-    - 'DOMAIN-SUFFIX,openvpn.net,一个机场'
-    - 'DOMAIN-SUFFIX,openwrt.org,一个机场'
-    - 'DOMAIN-SUFFIX,orkut.com,一个机场'
-    - 'DOMAIN-SUFFIX,osxdaily.com,一个机场'
-    - 'DOMAIN-SUFFIX,outlook.com,一个机场'
-    - 'DOMAIN-SUFFIX,ow.ly,一个机场'
-    - 'DOMAIN-SUFFIX,paddleapi.com,一个机场'
-    - 'DOMAIN-SUFFIX,parallels.com,一个机场'
-    - 'DOMAIN-SUFFIX,parse.com,一个机场'
-    - 'DOMAIN-SUFFIX,pdfexpert.com,一个机场'
-    - 'DOMAIN-SUFFIX,periscope.tv,一个机场'
-    - 'DOMAIN-SUFFIX,pinboard.in,一个机场'
-    - 'DOMAIN-SUFFIX,pinterest.com,一个机场'
-    - 'DOMAIN-SUFFIX,pixelmator.com,一个机场'
-    - 'DOMAIN-SUFFIX,pixiv.net,一个机场'
-    - 'DOMAIN-SUFFIX,playpcesor.com,一个机场'
-    - 'DOMAIN-SUFFIX,playstation.com,一个机场'
-    - 'DOMAIN-SUFFIX,playstation.com.hk,一个机场'
-    - 'DOMAIN-SUFFIX,playstation.net,一个机场'
-    - 'DOMAIN-SUFFIX,playstationnetwork.com,一个机场'
-    - 'DOMAIN-SUFFIX,pushwoosh.com,一个机场'
-    - 'DOMAIN-SUFFIX,rime.im,一个机场'
-    - 'DOMAIN-SUFFIX,servebom.com,一个机场'
-    - 'DOMAIN-SUFFIX,sfx.ms,一个机场'
-    - 'DOMAIN-SUFFIX,shadowsocks.org,一个机场'
-    - 'DOMAIN-SUFFIX,sharethis.com,一个机场'
-    - 'DOMAIN-SUFFIX,shazam.com,一个机场'
-    - 'DOMAIN-SUFFIX,skype.com,一个机场'
-    - 'DOMAIN-SUFFIX,smartdns一个机场.com,一个机场'
-    - 'DOMAIN-SUFFIX,smartmailcloud.com,一个机场'
-    - 'DOMAIN-SUFFIX,sndcdn.com,一个机场'
-    - 'DOMAIN-SUFFIX,sony.com,一个机场'
-    - 'DOMAIN-SUFFIX,soundcloud.com,一个机场'
-    - 'DOMAIN-SUFFIX,sourceforge.net,一个机场'
-    - 'DOMAIN-SUFFIX,spotify.com,一个机场'
-    - 'DOMAIN-SUFFIX,squarespace.com,一个机场'
-    - 'DOMAIN-SUFFIX,sstatic.net,一个机场'
-    - 'DOMAIN-SUFFIX,st.luluku.pw,一个机场'
-    - 'DOMAIN-SUFFIX,stackoverflow.com,一个机场'
-    - 'DOMAIN-SUFFIX,startpage.com,一个机场'
-    - 'DOMAIN-SUFFIX,staticflickr.com,一个机场'
-    - 'DOMAIN-SUFFIX,steamcommunity.com,一个机场'
-    - 'DOMAIN-SUFFIX,symauth.com,一个机场'
-    - 'DOMAIN-SUFFIX,symcb.com,一个机场'
-    - 'DOMAIN-SUFFIX,symcd.com,一个机场'
-    - 'DOMAIN-SUFFIX,tapbots.com,一个机场'
-    - 'DOMAIN-SUFFIX,tapbots.net,一个机场'
-    - 'DOMAIN-SUFFIX,tdesktop.com,一个机场'
-    - 'DOMAIN-SUFFIX,techcrunch.com,一个机场'
-    - 'DOMAIN-SUFFIX,techsmith.com,一个机场'
-    - 'DOMAIN-SUFFIX,thepiratebay.org,一个机场'
-    - 'DOMAIN-SUFFIX,theverge.com,一个机场'
-    - 'DOMAIN-SUFFIX,time.com,一个机场'
-    - 'DOMAIN-SUFFIX,timeinc.net,一个机场'
-    - 'DOMAIN-SUFFIX,tiny.cc,一个机场'
-    - 'DOMAIN-SUFFIX,tinypic.com,一个机场'
-    - 'DOMAIN-SUFFIX,tmblr.co,一个机场'
-    - 'DOMAIN-SUFFIX,todoist.com,一个机场'
-    - 'DOMAIN-SUFFIX,trello.com,一个机场'
-    - 'DOMAIN-SUFFIX,trustasiassl.com,一个机场'
-    - 'DOMAIN-SUFFIX,tumblr.co,一个机场'
-    - 'DOMAIN-SUFFIX,tumblr.com,一个机场'
-    - 'DOMAIN-SUFFIX,tweetdeck.com,一个机场'
-    - 'DOMAIN-SUFFIX,tweetmarker.net,一个机场'
-    - 'DOMAIN-SUFFIX,twitch.tv,一个机场'
-    - 'DOMAIN-SUFFIX,txmblr.com,一个机场'
-    - 'DOMAIN-SUFFIX,typekit.net,一个机场'
-    - 'DOMAIN-SUFFIX,ubertags.com,一个机场'
-    - 'DOMAIN-SUFFIX,ublock.org,一个机场'
-    - 'DOMAIN-SUFFIX,ubnt.com,一个机场'
-    - 'DOMAIN-SUFFIX,ulyssesapp.com,一个机场'
-    - 'DOMAIN-SUFFIX,urchin.com,一个机场'
-    - 'DOMAIN-SUFFIX,usertrust.com,一个机场'
-    - 'DOMAIN-SUFFIX,v.gd,一个机场'
-    - 'DOMAIN-SUFFIX,v2ex.com,一个机场'
-    - 'DOMAIN-SUFFIX,vimeo.com,一个机场'
-    - 'DOMAIN-SUFFIX,vimeocdn.com,一个机场'
-    - 'DOMAIN-SUFFIX,vine.co,一个机场'
-    - 'DOMAIN-SUFFIX,vivaldi.com,一个机场'
-    - 'DOMAIN-SUFFIX,vox-cdn.com,一个机场'
-    - 'DOMAIN-SUFFIX,vsco.co,一个机场'
-    - 'DOMAIN-SUFFIX,vultr.com,一个机场'
-    - 'DOMAIN-SUFFIX,w.org,一个机场'
-    - 'DOMAIN-SUFFIX,w3schools.com,一个机场'
-    - 'DOMAIN-SUFFIX,webtype.com,一个机场'
-    - 'DOMAIN-SUFFIX,wikiwand.com,一个机场'
-    - 'DOMAIN-SUFFIX,wikileaks.org,一个机场'
-    - 'DOMAIN-SUFFIX,wikimedia.org,一个机场'
-    - 'DOMAIN-SUFFIX,wikipedia.com,一个机场'
-    - 'DOMAIN-SUFFIX,wikipedia.org,一个机场'
-    - 'DOMAIN-SUFFIX,windows.com,一个机场'
-    - 'DOMAIN-SUFFIX,windows.net,一个机场'
-    - 'DOMAIN-SUFFIX,wire.com,一个机场'
-    - 'DOMAIN-SUFFIX,wordpress.com,一个机场'
-    - 'DOMAIN-SUFFIX,workflowy.com,一个机场'
-    - 'DOMAIN-SUFFIX,wp.com,一个机场'
-    - 'DOMAIN-SUFFIX,wsj.com,一个机场'
-    - 'DOMAIN-SUFFIX,wsj.net,一个机场'
-    - 'DOMAIN-SUFFIX,xda-developers.com,一个机场'
-    - 'DOMAIN-SUFFIX,xeeno.com,一个机场'
-    - 'DOMAIN-SUFFIX,xiti.com,一个机场'
-    - 'DOMAIN-SUFFIX,yahoo.com,一个机场'
-    - 'DOMAIN-SUFFIX,yimg.com,一个机场'
-    - 'DOMAIN-SUFFIX,ying.com,一个机场'
-    - 'DOMAIN-SUFFIX,yoyo.org,一个机场'
-    - 'DOMAIN-SUFFIX,ytimg.com,一个机场'
-    - 'DOMAIN-SUFFIX,telegra.ph,一个机场'
-    - 'DOMAIN-SUFFIX,telegram.org,一个机场'
-    - 'IP-CIDR,91.108.4.0/22,一个机场,no-resolve'
-    - 'IP-CIDR,91.108.8.0/21,一个机场,no-resolve'
-    - 'IP-CIDR,91.108.16.0/22,一个机场,no-resolve'
-    - 'IP-CIDR,91.108.56.0/22,一个机场,no-resolve'
-    - 'IP-CIDR,149.154.160.0/20,一个机场,no-resolve'
-    - 'IP-CIDR6,2001:67c:4e8::/48,一个机场,no-resolve'
-    - 'IP-CIDR6,2001:b28:f23d::/48,一个机场,no-resolve'
-    - 'IP-CIDR6,2001:b28:f23f::/48,一个机场,no-resolve'
-    - 'IP-CIDR,120.232.181.162/32,一个机场,no-resolve'
-    - 'IP-CIDR,120.241.147.226/32,一个机场,no-resolve'
-    - 'IP-CIDR,120.253.253.226/32,一个机场,no-resolve'
-    - 'IP-CIDR,120.253.255.162/32,一个机场,no-resolve'
-    - 'IP-CIDR,120.253.255.34/32,一个机场,no-resolve'
-    - 'IP-CIDR,120.253.255.98/32,一个机场,no-resolve'
-    - 'IP-CIDR,180.163.150.162/32,一个机场,no-resolve'
-    - 'IP-CIDR,180.163.150.34/32,一个机场,no-resolve'
-    - 'IP-CIDR,180.163.151.162/32,一个机场,no-resolve'
-    - 'IP-CIDR,180.163.151.34/32,一个机场,no-resolve'
-    - 'IP-CIDR,203.208.39.0/24,一个机场,no-resolve'
-    - 'IP-CIDR,203.208.40.0/24,一个机场,no-resolve'
-    - 'IP-CIDR,203.208.41.0/24,一个机场,no-resolve'
-    - 'IP-CIDR,203.208.43.0/24,一个机场,no-resolve'
-    - 'IP-CIDR,203.208.50.0/24,一个机场,no-resolve'
-    - 'IP-CIDR,220.181.174.162/32,一个机场,no-resolve'
-    - 'IP-CIDR,220.181.174.226/32,一个机场,no-resolve'
-    - 'IP-CIDR,220.181.174.34/32,一个机场,no-resolve'
-    - 'DOMAIN,injections.adguard.org,DIRECT'
-    - 'DOMAIN,local.adguard.org,DIRECT'
-    - 'DOMAIN-SUFFIX,local,DIRECT'
-    - 'IP-CIDR,127.0.0.0/8,DIRECT'
-    - 'IP-CIDR,172.16.0.0/12,DIRECT'
-    - 'IP-CIDR,192.168.0.0/16,DIRECT'
-    - 'IP-CIDR,10.0.0.0/8,DIRECT'
-    - 'IP-CIDR,17.0.0.0/8,DIRECT'
-    - 'IP-CIDR,100.64.0.0/10,DIRECT'
-    - 'IP-CIDR,224.0.0.0/4,DIRECT'
-    - 'IP-CIDR6,fe80::/10,DIRECT'
-    - 'DOMAIN-SUFFIX,cn,DIRECT'
-    - 'DOMAIN-KEYWORD,-cn,DIRECT'
-    - 'GEOIP,CN,DIRECT'
-    - 'MATCH,一个机场'
+- GEOIP,lan,直连,no-resolve
+- RULE-SET,biliintl_domain,哔哩东南亚
+- RULE-SET,ehentai_domain,ehentai
+- RULE-SET,github_domain,其他
+- RULE-SET,twitter_domain,Twitter
+- RULE-SET,youtube_domain,YouTube
+- RULE-SET,google_domain,Google
+- RULE-SET,telegram_domain,Telegram
+- RULE-SET,netflix_domain,NETFLIX
+- RULE-SET,bilibili_domain,哔哩哔哩
+- RULE-SET,bahamut_domain,巴哈姆特
+- RULE-SET,spotify_domain,Spotify
+- RULE-SET,pixiv_domain,其他
+- RULE-SET,geolocation-!cn,其他
+
+- RULE-SET,google_ip,Google
+- RULE-SET,netflix_ip,NETFLIX
+- RULE-SET,telegram_ip,Telegram
+- RULE-SET,twitter_ip,Twitter
+- RULE-SET,cn_domain,国内
+- RULE-SET,cn_ip,国内
+- MATCH,其他
+
+rule-anchor:
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: text}
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: text}
+rule-providers:
+  private:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.list"
+  cn_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.list"
+  biliintl_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/biliintl.list"
+  ehentai_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ehentai.list"
+  github_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.list"
+  twitter_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.list"
+  youtube_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.list"
+  google_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.list"
+  telegram_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.list"
+  netflix_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.list"
+  bilibili_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.list"
+  bahamut_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bahamut.list"
+  spotify_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.list"
+  pixiv_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pixiv.list"
+  geolocation-!cn:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.list"
+
+  cn_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.list"
+  google_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.list"
+  netflix_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.list"
+  twitter_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.list"
+  telegram_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.list"
