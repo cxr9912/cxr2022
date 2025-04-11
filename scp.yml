@@ -15,6 +15,7 @@ proxy-providers:
     health-check: {enable: true,url: "https://www.gstatic.com/generate_204",interval: 300}
     override:
       additional-prefix: "[provider2]"
+      
 provider3:
     url: "https://api-hy.02000.net/api/v1/client/subscribe?token=2808560fac47839734ffb1ba1124e087"
     type: http
