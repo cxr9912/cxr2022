@@ -1,564 +1,164 @@
-mixed-port: 7890
+######### 锚点 start #######
+# 策略组相关
+pr: &pr {type: select, proxies: [默认, 香港, 香港自动选择, 台湾, 台湾自动选择, 日本, 日本自动选择, 新加坡, 新加坡自动选择, 美国, 美国自动选择, 其它地区, 全部节点, 自动选择, 直连]}
+#这里是订阅更新和延迟测试相关的
+p: &p {type: http, interval: 3600, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300}}
+######### 锚点 end #######
+
+# url 里填写自己的订阅,名称不能重复
+proxy-providers:
+  provider1:
+    <<: *p
+    url: "https://api-hx.02000.net/api/v1/client/subscribe?token=fd28677f0644386310b6aec24aff1d15"
+  provider2:
+    <<: *p
+    url: "https://sub.verybigball.org/download-sub/?sid=241325&uid=5134&token=c799b890b576678331a1&app=clashforwindows"
+provider3:
+    <<: *p
+    url: "https://submit.xz61.cn:23443/api/v1/client/subscribe?token=1479dd3f125de56b8cf6a6ab9405aa37"
+ipv6: true
 allow-lan: true
-bind-address: '*'
-mode: rule
-log-level: info
-external-controller: '127.0.0.1:9090'
+mixed-port: 7890
+external-controller: 127.0.0.1:9090
+profile:
+  store-selected: true
+  store-fake-ip: true
 dns:
-    enable: true
-    ipv6: false
-    default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
-    enhanced-mode: fake-ip
-    fake-ip-range: 198.18.0.1/16
-    use-hosts: true
-    respect-rules: true
-    proxy-server-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
-    nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
-    fallback: [1.1.1.1, 8.8.8.8]
-    fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
+  enable: true
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 28.0.0.1/8
+  fake-ip-filter:
+    - "*"
+    - "+.lan"
+    - "+.local"
+  default-nameserver:
+    - 223.5.5.5
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+
 proxies:
-    - { name: '剩余流量：405.37 GB', server: japan.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '距离下次重置剩余：22 天', server: japan.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: 套餐到期：2025-05-02, server: japan.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '官网 ansuyun.xyz', server: japan.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: 'tg频道：https://t.me/ansuyun', server: japan.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '香港 鸡蛋仔', server: hongkong.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '香港 碗仔翅', server: hongkong.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '香港 咖喱鱼蛋', server: hongkong.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '香港 车仔面', server: hongkong.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '香港 菠萝包', server: hongkong.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '日本 たこ焼き', server: japan.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '日本 やきとり', server: japan.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '日本 おでん', server: japan.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '日本 おにぎり', server: japan.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '日本 うなぎのひつまぶし', server: japan.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '新加坡 Chilli Crab', server: sg.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '新加坡 Satay', server: sg.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '新加坡 Char Kway Teow', server: sg.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '新加坡 Laksa', server: sg.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '新加坡 Carrot Cake', server: sg.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '韩国 떡볶이', server: kr.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '韩国 회', server: kr.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '俄罗斯 Драники', server: ru.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
-    - { name: '俄罗斯 Маринованные огурцы', server: ru.ansuyun.xyz, port: 20000, udp: true, skip-cert-verify: true, sni: apple.com, type: hysteria2, password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA== }
+- name: "直连"
+  type: direct
+  udp: true
 proxy-groups:
-    - { name: 安速云, type: select, proxies: [自动选择, 故障转移, '剩余流量：405.37 GB', '距离下次重置剩余：22 天', 套餐到期：2025-05-02, '官网 ansuyun.xyz', 'tg频道：https://t.me/ansuyun', '香港 鸡蛋仔', '香港 碗仔翅', '香港 咖喱鱼蛋', '香港 车仔面', '香港 菠萝包', '日本 たこ焼き', '日本 やきとり', '日本 おでん', '日本 おにぎり', '日本 うなぎのひつまぶし', '新加坡 Chilli Crab', '新加坡 Satay', '新加坡 Char Kway Teow', '新加坡 Laksa', '新加坡 Carrot Cake', '韩国 떡볶이', '韩国 회', '俄罗斯 Драники', '俄罗斯 Маринованные огурцы'] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：405.37 GB', '距离下次重置剩余：22 天', 套餐到期：2025-05-02, '官网 ansuyun.xyz', 'tg频道：https://t.me/ansuyun', '香港 鸡蛋仔', '香港 碗仔翅', '香港 咖喱鱼蛋', '香港 车仔面', '香港 菠萝包', '日本 たこ焼き', '日本 やきとり', '日本 おでん', '日本 おにぎり', '日本 うなぎのひつまぶし', '新加坡 Chilli Crab', '新加坡 Satay', '新加坡 Char Kway Teow', '新加坡 Laksa', '新加坡 Carrot Cake', '韩国 떡볶이', '韩国 회', '俄罗斯 Драники', '俄罗斯 Маринованные огурцы'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：405.37 GB', '距离下次重置剩余：22 天', 套餐到期：2025-05-02, '官网 ansuyun.xyz', 'tg频道：https://t.me/ansuyun', '香港 鸡蛋仔', '香港 碗仔翅', '香港 咖喱鱼蛋', '香港 车仔面', '香港 菠萝包', '日本 たこ焼き', '日本 やきとり', '日本 おでん', '日本 おにぎり', '日本 うなぎのひつまぶし', '新加坡 Chilli Crab', '新加坡 Satay', '新加坡 Char Kway Teow', '新加坡 Laksa', '新加坡 Carrot Cake', '韩国 떡볶이', '韩国 회', '俄罗斯 Драники', '俄罗斯 Маринованные огурцы'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+- {name: 默认, type: select, proxies: [自动选择, 直连, 香港, 香港自动选择, 台湾, 台湾自动选择, 日本, 日本自动选择, 新加坡, 新加坡自动选择, 美国, 美国自动选择, 其它地区, 全部节点], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Proxy.png"}
+- {name: Google, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Google_Search.png"}
+- {name: Apple, <<: *pr, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Apple.png}
+- {name: Telegram, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Telegram.png"}
+- {name: Twitter, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Twitter.png"}
+- {name: ehentai, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Panda.png"}
+- {name: 哔哩哔哩, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/bilibili.png"}
+- {name: 哔哩东南亚, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/bilibili.png"}
+- {name: 巴哈姆特, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Bahamut.png"}
+- {name: YouTube, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/YouTube.png"}
+- {name: NETFLIX, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Netflix.png"}
+- {name: Spotify, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Spotify.png"}
+- {name: 国内, type: select, proxies: [直连, 默认, 香港, 香港自动选择, 台湾, 台湾自动选择, 日本, 日本自动选择, 新加坡, 新加坡自动选择, 美国, 美国自动选择, 其它地区, 全部节点, 自动选择], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/China_Map.png"}
+- {name: 其他, <<: *pr, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Final.png"}
+  #分隔,下面是地区分组
+- {name: 香港, type: select, include-all: true, filter: "(?i)(?!直连)(港|hk|hongkong|hong kong)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/HK.png"}
+- {name: 台湾, type: select, include-all: true, filter: "(?i)(?!直连)(台|tw|taiwan)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/TW.png"}
+- {name: 日本, type: select, include-all: true, filter: "(?i)(?!直连)(日|jp|japan)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/JP.png"}
+- {name: 美国, type: select, include-all: true, filter: "(?i)(?!直连)(美|us|unitedstates|united states)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/US.png"}
+- {name: 新加坡, type: select, include-all: true, filter: "(?i)(?!直连)(新|sg|singapore)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/SG.png"}
+- {name: 其它地区, type: select, include-all: true, filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates|直连)).*", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Available.png"}
+- {name: 自动选择, type: url-test, include-all: true, tolerance: 10, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Auto.png"}
+- {name: 全部节点, type: select, include-all: true, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Global.png"}
+
+- {name: 香港自动选择,type: url-test, include-all: true, filter: "(?i)(?!直连)(港|hk|hongkong|hong kong)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/HK.png"}
+- {name: 台湾自动选择,type: url-test, include-all: true, filter: "(?i)(?!直连)(台|tw|taiwan)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/TW.png"}
+- {name: 日本自动选择,type: url-test, include-all: true, filter: "(?i)(?!直连)(日|jp|japan)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/JP.png"}
+- {name: 美国自动选择,type: url-test, include-all: true, filter: "(?i)(?!直连)(美|us|unitedstates|united states)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/US.png"}
+- {name: 新加坡自动选择,type: url-test, include-all: true, filter: "(?i)(新|sg|singapore)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/SG.png"}
+
 rules:
-    - 'IP-CIDR,1.1.1.1/32,安速云,no-resolve'
-    - 'IP-CIDR,8.8.8.8/32,安速云,no-resolve'
-    - 'DOMAIN-SUFFIX,services.googleapis.cn,安速云'
-    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,安速云'
-    - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
-    - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
-    - 'DOMAIN,developer.apple.com,安速云'
-    - 'DOMAIN-SUFFIX,digicert.com,安速云'
-    - 'DOMAIN,ocsp.apple.com,安速云'
-    - 'DOMAIN,ocsp.comodoca.com,安速云'
-    - 'DOMAIN,ocsp.usertrust.com,安速云'
-    - 'DOMAIN,ocsp.sectigo.com,安速云'
-    - 'DOMAIN,ocsp.verisign.net,安速云'
-    - 'DOMAIN-SUFFIX,apple-dns.net,安速云'
-    - 'DOMAIN,testflight.apple.com,安速云'
-    - 'DOMAIN,sandbox.itunes.apple.com,安速云'
-    - 'DOMAIN,itunes.apple.com,安速云'
-    - 'DOMAIN-SUFFIX,apps.apple.com,安速云'
-    - 'DOMAIN-SUFFIX,blobstore.apple.com,安速云'
-    - 'DOMAIN,cvws.icloud-content.com,安速云'
-    - 'DOMAIN-SUFFIX,mzstatic.com,DIRECT'
-    - 'DOMAIN-SUFFIX,itunes.apple.com,DIRECT'
-    - 'DOMAIN-SUFFIX,icloud.com,DIRECT'
-    - 'DOMAIN-SUFFIX,icloud-content.com,DIRECT'
-    - 'DOMAIN-SUFFIX,me.com,DIRECT'
-    - 'DOMAIN-SUFFIX,aaplimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cdn20.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cdn-apple.com,DIRECT'
-    - 'DOMAIN-SUFFIX,akadns.net,DIRECT'
-    - 'DOMAIN-SUFFIX,akamaiedge.net,DIRECT'
-    - 'DOMAIN-SUFFIX,edgekey.net,DIRECT'
-    - 'DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,mwcname.com,DIRECT'
-    - 'DOMAIN-SUFFIX,apple.com,DIRECT'
-    - 'DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT'
-    - 'DOMAIN-SUFFIX,apple-mapkit.com,DIRECT'
-    - 'DOMAIN,cn.bing.com,DIRECT'
-    - 'DOMAIN-SUFFIX,126.com,DIRECT'
-    - 'DOMAIN-SUFFIX,126.net,DIRECT'
-    - 'DOMAIN-SUFFIX,127.net,DIRECT'
-    - 'DOMAIN-SUFFIX,163.com,DIRECT'
-    - 'DOMAIN-SUFFIX,360buyimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,36kr.com,DIRECT'
-    - 'DOMAIN-SUFFIX,acfun.tv,DIRECT'
-    - 'DOMAIN-SUFFIX,air-matters.com,DIRECT'
-    - 'DOMAIN-SUFFIX,aixifan.com,DIRECT'
-    - 'DOMAIN-KEYWORD,alicdn,DIRECT'
-    - 'DOMAIN-KEYWORD,alipay,DIRECT'
-    - 'DOMAIN-KEYWORD,taobao,DIRECT'
-    - 'DOMAIN-SUFFIX,amap.com,DIRECT'
-    - 'DOMAIN-SUFFIX,autonavi.com,DIRECT'
-    - 'DOMAIN-KEYWORD,baidu,DIRECT'
-    - 'DOMAIN-SUFFIX,bdimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,bdstatic.com,DIRECT'
-    - 'DOMAIN-SUFFIX,bilibili.com,DIRECT'
-    - 'DOMAIN-SUFFIX,bilivideo.com,DIRECT'
-    - 'DOMAIN-SUFFIX,caiyunapp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,clouddn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cnbeta.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cnbetacdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,cootekservice.com,DIRECT'
-    - 'DOMAIN-SUFFIX,csdn.net,DIRECT'
-    - 'DOMAIN-SUFFIX,ctrip.com,DIRECT'
-    - 'DOMAIN-SUFFIX,dgtle.com,DIRECT'
-    - 'DOMAIN-SUFFIX,dianping.com,DIRECT'
-    - 'DOMAIN-SUFFIX,douban.com,DIRECT'
-    - 'DOMAIN-SUFFIX,doubanio.com,DIRECT'
-    - 'DOMAIN-SUFFIX,duokan.com,DIRECT'
-    - 'DOMAIN-SUFFIX,easou.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ele.me,DIRECT'
-    - 'DOMAIN-SUFFIX,feng.com,DIRECT'
-    - 'DOMAIN-SUFFIX,fir.im,DIRECT'
-    - 'DOMAIN-SUFFIX,frdic.com,DIRECT'
-    - 'DOMAIN-SUFFIX,g-cores.com,DIRECT'
-    - 'DOMAIN-SUFFIX,godic.net,DIRECT'
-    - 'DOMAIN-SUFFIX,gtimg.com,DIRECT'
-    - 'DOMAIN,cdn.hockeyapp.net,DIRECT'
-    - 'DOMAIN-SUFFIX,hongxiu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,hxcdn.net,DIRECT'
-    - 'DOMAIN-SUFFIX,iciba.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ifeng.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ifengimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ipip.net,DIRECT'
-    - 'DOMAIN-SUFFIX,iqiyi.com,DIRECT'
-    - 'DOMAIN-SUFFIX,jd.com,DIRECT'
-    - 'DOMAIN-SUFFIX,jianshu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,knewone.com,DIRECT'
-    - 'DOMAIN-SUFFIX,le.com,DIRECT'
-    - 'DOMAIN-SUFFIX,lecloud.com,DIRECT'
-    - 'DOMAIN-SUFFIX,lemicp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,licdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,luoo.net,DIRECT'
-    - 'DOMAIN-SUFFIX,meituan.com,DIRECT'
-    - 'DOMAIN-SUFFIX,meituan.net,DIRECT'
-    - 'DOMAIN-SUFFIX,mi.com,DIRECT'
-    - 'DOMAIN-SUFFIX,miaopai.com,DIRECT'
-    - 'DOMAIN-SUFFIX,microsoft.com,DIRECT'
-    - 'DOMAIN-SUFFIX,microsoftonline.com,DIRECT'
-    - 'DOMAIN-SUFFIX,miui.com,DIRECT'
-    - 'DOMAIN-SUFFIX,miwifi.com,DIRECT'
-    - 'DOMAIN-SUFFIX,mob.com,DIRECT'
-    - 'DOMAIN-SUFFIX,netease.com,DIRECT'
-    - 'DOMAIN-SUFFIX,office.com,DIRECT'
-    - 'DOMAIN-SUFFIX,office365.com,DIRECT'
-    - 'DOMAIN-KEYWORD,officecdn,DIRECT'
-    - 'DOMAIN-SUFFIX,oschina.net,DIRECT'
-    - 'DOMAIN-SUFFIX,ppsimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,pstatp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qcloud.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qdaily.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qdmm.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qhimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qhres.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qidian.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qihucdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qiniu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qiniucdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qiyipic.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qq.com,DIRECT'
-    - 'DOMAIN-SUFFIX,qqurl.com,DIRECT'
-    - 'DOMAIN-SUFFIX,rarbg.to,DIRECT'
-    - 'DOMAIN-SUFFIX,ruguoapp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,segmentfault.com,DIRECT'
-    - 'DOMAIN-SUFFIX,sinaapp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,smzdm.com,DIRECT'
-    - 'DOMAIN-SUFFIX,snapdrop.net,DIRECT'
-    - 'DOMAIN-SUFFIX,sogou.com,DIRECT'
-    - 'DOMAIN-SUFFIX,sogoucdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,sohu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,soku.com,DIRECT'
-    - 'DOMAIN-SUFFIX,speedtest.net,DIRECT'
-    - 'DOMAIN-SUFFIX,sspai.com,DIRECT'
-    - 'DOMAIN-SUFFIX,suning.com,DIRECT'
-    - 'DOMAIN-SUFFIX,taobao.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tencent.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tenpay.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tianyancha.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tmall.com,DIRECT'
-    - 'DOMAIN-SUFFIX,tudou.com,DIRECT'
-    - 'DOMAIN-SUFFIX,umetrip.com,DIRECT'
-    - 'DOMAIN-SUFFIX,upaiyun.com,DIRECT'
-    - 'DOMAIN-SUFFIX,upyun.com,DIRECT'
-    - 'DOMAIN-SUFFIX,veryzhun.com,DIRECT'
-    - 'DOMAIN-SUFFIX,weather.com,DIRECT'
-    - 'DOMAIN-SUFFIX,weibo.com,DIRECT'
-    - 'DOMAIN-SUFFIX,xiami.com,DIRECT'
-    - 'DOMAIN-SUFFIX,xiami.net,DIRECT'
-    - 'DOMAIN-SUFFIX,xiaomicp.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ximalaya.com,DIRECT'
-    - 'DOMAIN-SUFFIX,xmcdn.com,DIRECT'
-    - 'DOMAIN-SUFFIX,xunlei.com,DIRECT'
-    - 'DOMAIN-SUFFIX,yhd.com,DIRECT'
-    - 'DOMAIN-SUFFIX,yihaodianimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,yinxiang.com,DIRECT'
-    - 'DOMAIN-SUFFIX,ykimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,youdao.com,DIRECT'
-    - 'DOMAIN-SUFFIX,youku.com,DIRECT'
-    - 'DOMAIN-SUFFIX,zealer.com,DIRECT'
-    - 'DOMAIN-SUFFIX,zhihu.com,DIRECT'
-    - 'DOMAIN-SUFFIX,zhimg.com,DIRECT'
-    - 'DOMAIN-SUFFIX,zimuzu.tv,DIRECT'
-    - 'DOMAIN-SUFFIX,zoho.com,DIRECT'
-    - 'DOMAIN-KEYWORD,amazon,安速云'
-    - 'DOMAIN-KEYWORD,google,安速云'
-    - 'DOMAIN-KEYWORD,gmail,安速云'
-    - 'DOMAIN-KEYWORD,youtube,安速云'
-    - 'DOMAIN-KEYWORD,facebook,安速云'
-    - 'DOMAIN-SUFFIX,fb.me,安速云'
-    - 'DOMAIN-SUFFIX,fbcdn.net,安速云'
-    - 'DOMAIN-KEYWORD,twitter,安速云'
-    - 'DOMAIN-KEYWORD,instagram,安速云'
-    - 'DOMAIN-KEYWORD,dropbox,安速云'
-    - 'DOMAIN-SUFFIX,twimg.com,安速云'
-    - 'DOMAIN-KEYWORD,blogspot,安速云'
-    - 'DOMAIN-SUFFIX,youtu.be,安速云'
-    - 'DOMAIN-KEYWORD,whatsapp,安速云'
-    - 'DOMAIN-KEYWORD,admarvel,REJECT'
-    - 'DOMAIN-KEYWORD,admaster,REJECT'
-    - 'DOMAIN-KEYWORD,adsage,REJECT'
-    - 'DOMAIN-KEYWORD,adsmogo,REJECT'
-    - 'DOMAIN-KEYWORD,adsrvmedia,REJECT'
-    - 'DOMAIN-KEYWORD,adwords,REJECT'
-    - 'DOMAIN-KEYWORD,adservice,REJECT'
-    - 'DOMAIN-SUFFIX,appsflyer.com,REJECT'
-    - 'DOMAIN-KEYWORD,domob,REJECT'
-    - 'DOMAIN-SUFFIX,doubleclick.net,REJECT'
-    - 'DOMAIN-KEYWORD,duomeng,REJECT'
-    - 'DOMAIN-KEYWORD,dwtrack,REJECT'
-    - 'DOMAIN-KEYWORD,guanggao,REJECT'
-    - 'DOMAIN-KEYWORD,lianmeng,REJECT'
-    - 'DOMAIN-SUFFIX,mmstat.com,REJECT'
-    - 'DOMAIN-KEYWORD,mopub,REJECT'
-    - 'DOMAIN-KEYWORD,omgmta,REJECT'
-    - 'DOMAIN-KEYWORD,openx,REJECT'
-    - 'DOMAIN-KEYWORD,partnerad,REJECT'
-    - 'DOMAIN-KEYWORD,pingfore,REJECT'
-    - 'DOMAIN-KEYWORD,supersonicads,REJECT'
-    - 'DOMAIN-KEYWORD,uedas,REJECT'
-    - 'DOMAIN-KEYWORD,umeng,REJECT'
-    - 'DOMAIN-KEYWORD,usage,REJECT'
-    - 'DOMAIN-SUFFIX,vungle.com,REJECT'
-    - 'DOMAIN-KEYWORD,wlmonitor,REJECT'
-    - 'DOMAIN-KEYWORD,zjtoolbar,REJECT'
-    - 'DOMAIN-SUFFIX,9to5mac.com,安速云'
-    - 'DOMAIN-SUFFIX,abpchina.org,安速云'
-    - 'DOMAIN-SUFFIX,adblockplus.org,安速云'
-    - 'DOMAIN-SUFFIX,adobe.com,安速云'
-    - 'DOMAIN-SUFFIX,akamaized.net,安速云'
-    - 'DOMAIN-SUFFIX,alfredapp.com,安速云'
-    - 'DOMAIN-SUFFIX,amplitude.com,安速云'
-    - 'DOMAIN-SUFFIX,ampproject.org,安速云'
-    - 'DOMAIN-SUFFIX,android.com,安速云'
-    - 'DOMAIN-SUFFIX,angularjs.org,安速云'
-    - 'DOMAIN-SUFFIX,aolcdn.com,安速云'
-    - 'DOMAIN-SUFFIX,apkpure.com,安速云'
-    - 'DOMAIN-SUFFIX,appledaily.com,安速云'
-    - 'DOMAIN-SUFFIX,appshopper.com,安速云'
-    - 'DOMAIN-SUFFIX,appspot.com,安速云'
-    - 'DOMAIN-SUFFIX,arcgis.com,安速云'
-    - 'DOMAIN-SUFFIX,archive.org,安速云'
-    - 'DOMAIN-SUFFIX,armorgames.com,安速云'
-    - 'DOMAIN-SUFFIX,aspnetcdn.com,安速云'
-    - 'DOMAIN-SUFFIX,att.com,安速云'
-    - 'DOMAIN-SUFFIX,awsstatic.com,安速云'
-    - 'DOMAIN-SUFFIX,azureedge.net,安速云'
-    - 'DOMAIN-SUFFIX,azurewebsites.net,安速云'
-    - 'DOMAIN-SUFFIX,bing.com,安速云'
-    - 'DOMAIN-SUFFIX,bintray.com,安速云'
-    - 'DOMAIN-SUFFIX,bit.com,安速云'
-    - 'DOMAIN-SUFFIX,bit.ly,安速云'
-    - 'DOMAIN-SUFFIX,bitbucket.org,安速云'
-    - 'DOMAIN-SUFFIX,bjango.com,安速云'
-    - 'DOMAIN-SUFFIX,bkrtx.com,安速云'
-    - 'DOMAIN-SUFFIX,blog.com,安速云'
-    - 'DOMAIN-SUFFIX,blogcdn.com,安速云'
-    - 'DOMAIN-SUFFIX,blogger.com,安速云'
-    - 'DOMAIN-SUFFIX,blogsmithmedia.com,安速云'
-    - 'DOMAIN-SUFFIX,blogspot.com,安速云'
-    - 'DOMAIN-SUFFIX,blogspot.hk,安速云'
-    - 'DOMAIN-SUFFIX,bloomberg.com,安速云'
-    - 'DOMAIN-SUFFIX,box.com,安速云'
-    - 'DOMAIN-SUFFIX,box.net,安速云'
-    - 'DOMAIN-SUFFIX,cachefly.net,安速云'
-    - 'DOMAIN-SUFFIX,chromium.org,安速云'
-    - 'DOMAIN-SUFFIX,cl.ly,安速云'
-    - 'DOMAIN-SUFFIX,cloudflare.com,安速云'
-    - 'DOMAIN-SUFFIX,cloudfront.net,安速云'
-    - 'DOMAIN-SUFFIX,cloudmagic.com,安速云'
-    - 'DOMAIN-SUFFIX,cmail19.com,安速云'
-    - 'DOMAIN-SUFFIX,cnet.com,安速云'
-    - 'DOMAIN-SUFFIX,cocoapods.org,安速云'
-    - 'DOMAIN-SUFFIX,comodoca.com,安速云'
-    - 'DOMAIN-SUFFIX,crashlytics.com,安速云'
-    - 'DOMAIN-SUFFIX,culturedcode.com,安速云'
-    - 'DOMAIN-SUFFIX,d.pr,安速云'
-    - 'DOMAIN-SUFFIX,danilo.to,安速云'
-    - 'DOMAIN-SUFFIX,dayone.me,安速云'
-    - 'DOMAIN-SUFFIX,db.tt,安速云'
-    - 'DOMAIN-SUFFIX,deskconnect.com,安速云'
-    - 'DOMAIN-SUFFIX,disq.us,安速云'
-    - 'DOMAIN-SUFFIX,disqus.com,安速云'
-    - 'DOMAIN-SUFFIX,disquscdn.com,安速云'
-    - 'DOMAIN-SUFFIX,dnsimple.com,安速云'
-    - 'DOMAIN-SUFFIX,docker.com,安速云'
-    - 'DOMAIN-SUFFIX,dribbble.com,安速云'
-    - 'DOMAIN-SUFFIX,droplr.com,安速云'
-    - 'DOMAIN-SUFFIX,duckduckgo.com,安速云'
-    - 'DOMAIN-SUFFIX,dueapp.com,安速云'
-    - 'DOMAIN-SUFFIX,dytt8.net,安速云'
-    - 'DOMAIN-SUFFIX,edgecastcdn.net,安速云'
-    - 'DOMAIN-SUFFIX,edgekey.net,安速云'
-    - 'DOMAIN-SUFFIX,edgesuite.net,安速云'
-    - 'DOMAIN-SUFFIX,engadget.com,安速云'
-    - 'DOMAIN-SUFFIX,entrust.net,安速云'
-    - 'DOMAIN-SUFFIX,eurekavpt.com,安速云'
-    - 'DOMAIN-SUFFIX,evernote.com,安速云'
-    - 'DOMAIN-SUFFIX,fabric.io,安速云'
-    - 'DOMAIN-SUFFIX,fast.com,安速云'
-    - 'DOMAIN-SUFFIX,fastly.net,安速云'
-    - 'DOMAIN-SUFFIX,fc2.com,安速云'
-    - 'DOMAIN-SUFFIX,feedburner.com,安速云'
-    - 'DOMAIN-SUFFIX,feedly.com,安速云'
-    - 'DOMAIN-SUFFIX,feedsportal.com,安速云'
-    - 'DOMAIN-SUFFIX,fiftythree.com,安速云'
-    - 'DOMAIN-SUFFIX,firebaseio.com,安速云'
-    - 'DOMAIN-SUFFIX,flexibits.com,安速云'
-    - 'DOMAIN-SUFFIX,flickr.com,安速云'
-    - 'DOMAIN-SUFFIX,flipboard.com,安速云'
-    - 'DOMAIN-SUFFIX,g.co,安速云'
-    - 'DOMAIN-SUFFIX,gabia.net,安速云'
-    - 'DOMAIN-SUFFIX,geni.us,安速云'
-    - 'DOMAIN-SUFFIX,gfx.ms,安速云'
-    - 'DOMAIN-SUFFIX,ggpht.com,安速云'
-    - 'DOMAIN-SUFFIX,ghostnoteapp.com,安速云'
-    - 'DOMAIN-SUFFIX,git.io,安速云'
-    - 'DOMAIN-KEYWORD,github,安速云'
-    - 'DOMAIN-SUFFIX,globalsign.com,安速云'
-    - 'DOMAIN-SUFFIX,gmodules.com,安速云'
-    - 'DOMAIN-SUFFIX,godaddy.com,安速云'
-    - 'DOMAIN-SUFFIX,golang.org,安速云'
-    - 'DOMAIN-SUFFIX,gongm.in,安速云'
-    - 'DOMAIN-SUFFIX,goo.gl,安速云'
-    - 'DOMAIN-SUFFIX,goodreaders.com,安速云'
-    - 'DOMAIN-SUFFIX,goodreads.com,安速云'
-    - 'DOMAIN-SUFFIX,gravatar.com,安速云'
-    - 'DOMAIN-SUFFIX,gstatic.com,安速云'
-    - 'DOMAIN-SUFFIX,gvt0.com,安速云'
-    - 'DOMAIN-SUFFIX,hockeyapp.net,安速云'
-    - 'DOMAIN-SUFFIX,hotmail.com,安速云'
-    - 'DOMAIN-SUFFIX,icons8.com,安速云'
-    - 'DOMAIN-SUFFIX,ifixit.com,安速云'
-    - 'DOMAIN-SUFFIX,ift.tt,安速云'
-    - 'DOMAIN-SUFFIX,ifttt.com,安速云'
-    - 'DOMAIN-SUFFIX,iherb.com,安速云'
-    - 'DOMAIN-SUFFIX,imageshack.us,安速云'
-    - 'DOMAIN-SUFFIX,img.ly,安速云'
-    - 'DOMAIN-SUFFIX,imgur.com,安速云'
-    - 'DOMAIN-SUFFIX,imore.com,安速云'
-    - 'DOMAIN-SUFFIX,instapaper.com,安速云'
-    - 'DOMAIN-SUFFIX,ipn.li,安速云'
-    - 'DOMAIN-SUFFIX,is.gd,安速云'
-    - 'DOMAIN-SUFFIX,issuu.com,安速云'
-    - 'DOMAIN-SUFFIX,itgonglun.com,安速云'
-    - 'DOMAIN-SUFFIX,itun.es,安速云'
-    - 'DOMAIN-SUFFIX,ixquick.com,安速云'
-    - 'DOMAIN-SUFFIX,j.mp,安速云'
-    - 'DOMAIN-SUFFIX,js.revsci.net,安速云'
-    - 'DOMAIN-SUFFIX,jshint.com,安速云'
-    - 'DOMAIN-SUFFIX,jtvnw.net,安速云'
-    - 'DOMAIN-SUFFIX,justgetflux.com,安速云'
-    - 'DOMAIN-SUFFIX,kat.cr,安速云'
-    - 'DOMAIN-SUFFIX,klip.me,安速云'
-    - 'DOMAIN-SUFFIX,libsyn.com,安速云'
-    - 'DOMAIN-SUFFIX,linkedin.com,安速云'
-    - 'DOMAIN-SUFFIX,line-apps.com,安速云'
-    - 'DOMAIN-SUFFIX,linode.com,安速云'
-    - 'DOMAIN-SUFFIX,lithium.com,安速云'
-    - 'DOMAIN-SUFFIX,littlehj.com,安速云'
-    - 'DOMAIN-SUFFIX,live.com,安速云'
-    - 'DOMAIN-SUFFIX,live.net,安速云'
-    - 'DOMAIN-SUFFIX,livefilestore.com,安速云'
-    - 'DOMAIN-SUFFIX,llnwd.net,安速云'
-    - 'DOMAIN-SUFFIX,macid.co,安速云'
-    - 'DOMAIN-SUFFIX,macromedia.com,安速云'
-    - 'DOMAIN-SUFFIX,macrumors.com,安速云'
-    - 'DOMAIN-SUFFIX,mashable.com,安速云'
-    - 'DOMAIN-SUFFIX,mathjax.org,安速云'
-    - 'DOMAIN-SUFFIX,medium.com,安速云'
-    - 'DOMAIN-SUFFIX,mega.co.nz,安速云'
-    - 'DOMAIN-SUFFIX,mega.nz,安速云'
-    - 'DOMAIN-SUFFIX,megaupload.com,安速云'
-    - 'DOMAIN-SUFFIX,microsofttranslator.com,安速云'
-    - 'DOMAIN-SUFFIX,mindnode.com,安速云'
-    - 'DOMAIN-SUFFIX,mobile01.com,安速云'
-    - 'DOMAIN-SUFFIX,modmyi.com,安速云'
-    - 'DOMAIN-SUFFIX,msedge.net,安速云'
-    - 'DOMAIN-SUFFIX,myfontastic.com,安速云'
-    - 'DOMAIN-SUFFIX,name.com,安速云'
-    - 'DOMAIN-SUFFIX,nextmedia.com,安速云'
-    - 'DOMAIN-SUFFIX,nsstatic.net,安速云'
-    - 'DOMAIN-SUFFIX,nssurge.com,安速云'
-    - 'DOMAIN-SUFFIX,nyt.com,安速云'
-    - 'DOMAIN-SUFFIX,nytimes.com,安速云'
-    - 'DOMAIN-SUFFIX,omnigroup.com,安速云'
-    - 'DOMAIN-SUFFIX,onedrive.com,安速云'
-    - 'DOMAIN-SUFFIX,onenote.com,安速云'
-    - 'DOMAIN-SUFFIX,ooyala.com,安速云'
-    - 'DOMAIN-SUFFIX,openvpn.net,安速云'
-    - 'DOMAIN-SUFFIX,openwrt.org,安速云'
-    - 'DOMAIN-SUFFIX,orkut.com,安速云'
-    - 'DOMAIN-SUFFIX,osxdaily.com,安速云'
-    - 'DOMAIN-SUFFIX,outlook.com,安速云'
-    - 'DOMAIN-SUFFIX,ow.ly,安速云'
-    - 'DOMAIN-SUFFIX,paddleapi.com,安速云'
-    - 'DOMAIN-SUFFIX,parallels.com,安速云'
-    - 'DOMAIN-SUFFIX,parse.com,安速云'
-    - 'DOMAIN-SUFFIX,pdfexpert.com,安速云'
-    - 'DOMAIN-SUFFIX,periscope.tv,安速云'
-    - 'DOMAIN-SUFFIX,pinboard.in,安速云'
-    - 'DOMAIN-SUFFIX,pinterest.com,安速云'
-    - 'DOMAIN-SUFFIX,pixelmator.com,安速云'
-    - 'DOMAIN-SUFFIX,pixiv.net,安速云'
-    - 'DOMAIN-SUFFIX,playpcesor.com,安速云'
-    - 'DOMAIN-SUFFIX,playstation.com,安速云'
-    - 'DOMAIN-SUFFIX,playstation.com.hk,安速云'
-    - 'DOMAIN-SUFFIX,playstation.net,安速云'
-    - 'DOMAIN-SUFFIX,playstationnetwork.com,安速云'
-    - 'DOMAIN-SUFFIX,pushwoosh.com,安速云'
-    - 'DOMAIN-SUFFIX,rime.im,安速云'
-    - 'DOMAIN-SUFFIX,servebom.com,安速云'
-    - 'DOMAIN-SUFFIX,sfx.ms,安速云'
-    - 'DOMAIN-SUFFIX,shadowsocks.org,安速云'
-    - 'DOMAIN-SUFFIX,sharethis.com,安速云'
-    - 'DOMAIN-SUFFIX,shazam.com,安速云'
-    - 'DOMAIN-SUFFIX,skype.com,安速云'
-    - 'DOMAIN-SUFFIX,smartdns安速云.com,安速云'
-    - 'DOMAIN-SUFFIX,smartmailcloud.com,安速云'
-    - 'DOMAIN-SUFFIX,sndcdn.com,安速云'
-    - 'DOMAIN-SUFFIX,sony.com,安速云'
-    - 'DOMAIN-SUFFIX,soundcloud.com,安速云'
-    - 'DOMAIN-SUFFIX,sourceforge.net,安速云'
-    - 'DOMAIN-SUFFIX,spotify.com,安速云'
-    - 'DOMAIN-SUFFIX,squarespace.com,安速云'
-    - 'DOMAIN-SUFFIX,sstatic.net,安速云'
-    - 'DOMAIN-SUFFIX,st.luluku.pw,安速云'
-    - 'DOMAIN-SUFFIX,stackoverflow.com,安速云'
-    - 'DOMAIN-SUFFIX,startpage.com,安速云'
-    - 'DOMAIN-SUFFIX,staticflickr.com,安速云'
-    - 'DOMAIN-SUFFIX,steamcommunity.com,安速云'
-    - 'DOMAIN-SUFFIX,symauth.com,安速云'
-    - 'DOMAIN-SUFFIX,symcb.com,安速云'
-    - 'DOMAIN-SUFFIX,symcd.com,安速云'
-    - 'DOMAIN-SUFFIX,tapbots.com,安速云'
-    - 'DOMAIN-SUFFIX,tapbots.net,安速云'
-    - 'DOMAIN-SUFFIX,tdesktop.com,安速云'
-    - 'DOMAIN-SUFFIX,techcrunch.com,安速云'
-    - 'DOMAIN-SUFFIX,techsmith.com,安速云'
-    - 'DOMAIN-SUFFIX,thepiratebay.org,安速云'
-    - 'DOMAIN-SUFFIX,theverge.com,安速云'
-    - 'DOMAIN-SUFFIX,time.com,安速云'
-    - 'DOMAIN-SUFFIX,timeinc.net,安速云'
-    - 'DOMAIN-SUFFIX,tiny.cc,安速云'
-    - 'DOMAIN-SUFFIX,tinypic.com,安速云'
-    - 'DOMAIN-SUFFIX,tmblr.co,安速云'
-    - 'DOMAIN-SUFFIX,todoist.com,安速云'
-    - 'DOMAIN-SUFFIX,trello.com,安速云'
-    - 'DOMAIN-SUFFIX,trustasiassl.com,安速云'
-    - 'DOMAIN-SUFFIX,tumblr.co,安速云'
-    - 'DOMAIN-SUFFIX,tumblr.com,安速云'
-    - 'DOMAIN-SUFFIX,tweetdeck.com,安速云'
-    - 'DOMAIN-SUFFIX,tweetmarker.net,安速云'
-    - 'DOMAIN-SUFFIX,twitch.tv,安速云'
-    - 'DOMAIN-SUFFIX,txmblr.com,安速云'
-    - 'DOMAIN-SUFFIX,typekit.net,安速云'
-    - 'DOMAIN-SUFFIX,ubertags.com,安速云'
-    - 'DOMAIN-SUFFIX,ublock.org,安速云'
-    - 'DOMAIN-SUFFIX,ubnt.com,安速云'
-    - 'DOMAIN-SUFFIX,ulyssesapp.com,安速云'
-    - 'DOMAIN-SUFFIX,urchin.com,安速云'
-    - 'DOMAIN-SUFFIX,usertrust.com,安速云'
-    - 'DOMAIN-SUFFIX,v.gd,安速云'
-    - 'DOMAIN-SUFFIX,v2ex.com,安速云'
-    - 'DOMAIN-SUFFIX,vimeo.com,安速云'
-    - 'DOMAIN-SUFFIX,vimeocdn.com,安速云'
-    - 'DOMAIN-SUFFIX,vine.co,安速云'
-    - 'DOMAIN-SUFFIX,vivaldi.com,安速云'
-    - 'DOMAIN-SUFFIX,vox-cdn.com,安速云'
-    - 'DOMAIN-SUFFIX,vsco.co,安速云'
-    - 'DOMAIN-SUFFIX,vultr.com,安速云'
-    - 'DOMAIN-SUFFIX,w.org,安速云'
-    - 'DOMAIN-SUFFIX,w3schools.com,安速云'
-    - 'DOMAIN-SUFFIX,webtype.com,安速云'
-    - 'DOMAIN-SUFFIX,wikiwand.com,安速云'
-    - 'DOMAIN-SUFFIX,wikileaks.org,安速云'
-    - 'DOMAIN-SUFFIX,wikimedia.org,安速云'
-    - 'DOMAIN-SUFFIX,wikipedia.com,安速云'
-    - 'DOMAIN-SUFFIX,wikipedia.org,安速云'
-    - 'DOMAIN-SUFFIX,windows.com,安速云'
-    - 'DOMAIN-SUFFIX,windows.net,安速云'
-    - 'DOMAIN-SUFFIX,wire.com,安速云'
-    - 'DOMAIN-SUFFIX,wordpress.com,安速云'
-    - 'DOMAIN-SUFFIX,workflowy.com,安速云'
-    - 'DOMAIN-SUFFIX,wp.com,安速云'
-    - 'DOMAIN-SUFFIX,wsj.com,安速云'
-    - 'DOMAIN-SUFFIX,wsj.net,安速云'
-    - 'DOMAIN-SUFFIX,xda-developers.com,安速云'
-    - 'DOMAIN-SUFFIX,xeeno.com,安速云'
-    - 'DOMAIN-SUFFIX,xiti.com,安速云'
-    - 'DOMAIN-SUFFIX,yahoo.com,安速云'
-    - 'DOMAIN-SUFFIX,yimg.com,安速云'
-    - 'DOMAIN-SUFFIX,ying.com,安速云'
-    - 'DOMAIN-SUFFIX,yoyo.org,安速云'
-    - 'DOMAIN-SUFFIX,ytimg.com,安速云'
-    - 'DOMAIN-SUFFIX,telegra.ph,安速云'
-    - 'DOMAIN-SUFFIX,telegram.org,安速云'
-    - 'IP-CIDR,91.108.4.0/22,安速云,no-resolve'
-    - 'IP-CIDR,91.108.8.0/21,安速云,no-resolve'
-    - 'IP-CIDR,91.108.16.0/22,安速云,no-resolve'
-    - 'IP-CIDR,91.108.56.0/22,安速云,no-resolve'
-    - 'IP-CIDR,149.154.160.0/20,安速云,no-resolve'
-    - 'IP-CIDR6,2001:67c:4e8::/48,安速云,no-resolve'
-    - 'IP-CIDR6,2001:b28:f23d::/48,安速云,no-resolve'
-    - 'IP-CIDR6,2001:b28:f23f::/48,安速云,no-resolve'
-    - 'IP-CIDR,120.232.181.162/32,安速云,no-resolve'
-    - 'IP-CIDR,120.241.147.226/32,安速云,no-resolve'
-    - 'IP-CIDR,120.253.253.226/32,安速云,no-resolve'
-    - 'IP-CIDR,120.253.255.162/32,安速云,no-resolve'
-    - 'IP-CIDR,120.253.255.34/32,安速云,no-resolve'
-    - 'IP-CIDR,120.253.255.98/32,安速云,no-resolve'
-    - 'IP-CIDR,180.163.150.162/32,安速云,no-resolve'
-    - 'IP-CIDR,180.163.150.34/32,安速云,no-resolve'
-    - 'IP-CIDR,180.163.151.162/32,安速云,no-resolve'
-    - 'IP-CIDR,180.163.151.34/32,安速云,no-resolve'
-    - 'IP-CIDR,203.208.39.0/24,安速云,no-resolve'
-    - 'IP-CIDR,203.208.40.0/24,安速云,no-resolve'
-    - 'IP-CIDR,203.208.41.0/24,安速云,no-resolve'
-    - 'IP-CIDR,203.208.43.0/24,安速云,no-resolve'
-    - 'IP-CIDR,203.208.50.0/24,安速云,no-resolve'
-    - 'IP-CIDR,220.181.174.162/32,安速云,no-resolve'
-    - 'IP-CIDR,220.181.174.226/32,安速云,no-resolve'
-    - 'IP-CIDR,220.181.174.34/32,安速云,no-resolve'
-    - 'DOMAIN,injections.adguard.org,DIRECT'
-    - 'DOMAIN,local.adguard.org,DIRECT'
-    - 'DOMAIN-SUFFIX,local,DIRECT'
-    - 'IP-CIDR,127.0.0.0/8,DIRECT'
-    - 'IP-CIDR,172.16.0.0/12,DIRECT'
-    - 'IP-CIDR,192.168.0.0/16,DIRECT'
-    - 'IP-CIDR,10.0.0.0/8,DIRECT'
-    - 'IP-CIDR,17.0.0.0/8,DIRECT'
-    - 'IP-CIDR,100.64.0.0/10,DIRECT'
-    - 'IP-CIDR,224.0.0.0/4,DIRECT'
-    - 'IP-CIDR6,fe80::/10,DIRECT'
-    - 'DOMAIN-SUFFIX,cn,DIRECT'
-    - 'DOMAIN-KEYWORD,-cn,DIRECT'
-    - 'GEOIP,CN,DIRECT'
-    - 'MATCH,安速云'
+- GEOIP,lan,直连,no-resolve
+- RULE-SET,biliintl_domain,哔哩东南亚
+- RULE-SET,ehentai_domain,ehentai
+- RULE-SET,github_domain,其他
+- RULE-SET,twitter_domain,Twitter
+- RULE-SET,youtube_domain,YouTube
+- RULE-SET,google_domain,Google
+- RULE-SET,telegram_domain,Telegram
+- RULE-SET,netflix_domain,NETFLIX
+- RULE-SET,bilibili_domain,哔哩哔哩
+- RULE-SET,bahamut_domain,巴哈姆特
+- RULE-SET,spotify_domain,Spotify
+- RULE-SET,pixiv_domain,其他
+- RULE-SET,geolocation-!cn,其他
+
+- RULE-SET,google_ip,Google
+- RULE-SET,netflix_ip,NETFLIX
+- RULE-SET,telegram_ip,Telegram
+- RULE-SET,twitter_ip,Twitter
+- RULE-SET,cn_domain,国内
+- RULE-SET,cn_ip,国内
+- MATCH,其他
+
+rule-anchor:
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: text}
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: text}
+rule-providers:
+  private:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.list"
+  cn_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.list"
+  biliintl_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/biliintl.list"
+  ehentai_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ehentai.list"
+  github_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.list"
+  twitter_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.list"
+  youtube_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.list"
+  google_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.list"
+  telegram_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.list"
+  netflix_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.list"
+  bilibili_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.list"
+  bahamut_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bahamut.list"
+  spotify_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.list"
+  pixiv_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pixiv.list"
+  geolocation-!cn:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.list"
+
+  cn_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.list"
+  google_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.list"
+  netflix_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.list"
+  twitter_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.list"
+  telegram_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.list"
