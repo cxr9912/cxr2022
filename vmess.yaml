@@ -9,13 +9,13 @@ p: &p {type: http, interval: 3600, health-check: {enable: true, url: "https://ww
 proxy-providers:
   provider1:
     <<: *p
-    url: "https://api-hx.02000.net/api/v1/client/subscribe?token=fd28677f0644386310b6aec24aff1d15"
+    url: "https://submit.xz61.cn:23443/api/v1/client/subscribe?token=1479dd3f125de56b8cf6a6ab9405aa37"
   provider2:
     <<: *p
     url: "https://sub.verybigball.org/download-sub/?sid=241325&uid=5134&token=c799b890b576678331a1&app=clashforwindows"
 provider3:
     <<: *p
-    url: "https://submit.xz61.cn:23443/api/v1/client/subscribe?token=1479dd3f125de56b8cf6a6ab9405aa37"
+    url: "https://api-hx.02000.net/api/v1/client/subscribe?token=fd28677f0644386310b6aec24aff1d15"
 ipv6: true
 allow-lan: true
 mixed-port: 7890
