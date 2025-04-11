@@ -9,10 +9,10 @@ p: &p {type: http, interval: 3600, health-check: {enable: true, url: "https://ww
 proxy-providers:
   provider1:
     <<: *p
-    url: "https://raw.githubusercontent.com/cxr9912/cxr2022/refs/heads/main/epc.yml"
+    url: "https://epclub.xyz/api/epclub?token=0237391b6f171919560aa653984117ac"
   provider2:
     <<: *p
-    url: "https://raw.githubusercontent.com/cxr9912/cxr2022/refs/heads/main/bpy.yml"
+    url: "https://xn--9kqx21a0sv.com/api/bpyun?token=729ed45772fd18aca1f4bde53ac6bf3d&flag=meta"
 ipv6: true
 allow-lan: true
 mixed-port: 7890
