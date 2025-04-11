@@ -9,10 +9,10 @@ p: &p {type: http, interval: 3600, health-check: {enable: true, url: "https://ww
 proxy-providers:
   provider1:
     <<: *p
-    url: "https://ansuyun.xyz/api/as?token=4cadc3d6625d18a9d335142a8a317aee"
+    url: "https://ansuyun.xyz/api/as?token=4cadc8a317aee"
   provider2:
     <<: *p
-    url: "https://sanguayun.jiumaojiu.net/s/2d360090a398dcb86382aee58de4139c"
+    url: "https://sanguayun.jiumaojiu.net/s/2d360090a8de4139c"
 ipv6: true
 allow-lan: true
 mixed-port: 7890
